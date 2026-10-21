@@ -2,9 +2,23 @@
 
 Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://github.com/lbotao399-stack/All-loop-holomorphic-kernels) (the operators $Q_n$ used below).
 
+## Summary: classes tested for quantum lifting for the first time
+
+![Summary table](summary_table.png)
+
+| gauge group | class | charges, letters, $j$ | what it is | tested | result |
+|---|---|---|---|---|---|
+| SU(2) | **P39** | $(5,5,5;3,0)$, $Y=9$, $j=39$ | new fortuitous primary | $d_1$–$d_5$ outgoing; no states for $r\ge6$; no incoming ($n_-=0$) | **not lifted at any order** (mod p, two primes) |
+| SU(2) | **X40** | $(7,5,5;1,1)$, $Y=10$, $j=40$ | new non-graviton, Coulomb-visible | $d_1$–$d_5$ outgoing; no states for $r\ge6$; incoming $d_1$ source empty | **not lifted at any order** (mod p, two primes) |
+| SU(3) | **$X_7$ multiplet** | $(2,2,2;2,2)$, $Y=7$, $j=24$ | new non-graviton long multiplet, Coulomb-visible | $d_1,d_2$ incoming and outgoing; no states for $r\ge3$ | **not lifted at any order** (mod p; $d_1$ at three primes) |
+| SU(3) | F1, $n=3$ | $(7,4,4;0,0)$, $Y=10$, $j=30$ | known fortuitous class; orders beyond $d_1$ not tested before | $d_1,d_3,d_4$ outgoing; no incoming ($n_\pm=0$) | not lifted by $d_1,d_3$; $d_4=0$ conditional; $d_2$ open (mod p) |
+| Sp(3) | $\omega$ | $(5,0,0;3,3)$, $Y=9$, $j=28$ | fortuitous, no SO(7) counterpart at the same charges and $Y$ | no outgoing ($\theta_2=\theta_3=0$); incoming $d_1,d_2,d_3$ | not lifted except possibly by incoming $d_2$ (454 Coulomb-visible sources) |
+
+$d_r$ = lifting by the $r$-loop correction $Q_r$ of the supercharge ($d_1$: one loop). Conditional: see §3.2.
+
 ## 0. Setup
 
-$$Q(\hbar)=\sum_{n\ge0}\hbar^nQ_n,\qquad E_1=H(Q_0),\qquad d_r\ \leftrightarrow\ (r+1)\text{-loop lifting}$$
+$$Q(\hbar)=\sum_{n\ge0}\hbar^nQ_n,\qquad E_1=H(Q_0),\qquad d_r\ \leftrightarrow\ \text{lifting by the }r\text{-loop correction }Q_r$$
 
 $$\lambda=(\theta_1,\theta_2,\theta_3;n_+,n_-),\qquad Y=\#\text{letters},\qquad j=2(\theta_1+\theta_2+\theta_3)+3(n_++n_-),\qquad d=(1,1,1;-1,-1)$$
 
