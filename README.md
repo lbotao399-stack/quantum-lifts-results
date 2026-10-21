@@ -56,9 +56,9 @@ SU(2) P39, $(5,5,5;3,0)Y9$ [p,p']:
 | $r$ | target $(\lambda-rd,\,Y+1-r)$ | target data | residual | verdict |
 |---|---|---|---|---|
 | 1 | $(4,4,4;4,1)$, 9 | $h=13$ | $Q_1O'$ | $d_1=0$ |
-| 2 | $(3,3,3;5,2)$, 8 | $g_8=583$ | $R_2$, 45,450,714 terms | $R_2\in\operatorname{im}Q_0$ |
-| 3 | $(2,2,2;6,3)$, 7 | $h=1$ | $R_3$, 17,787,235 terms | $R_3\in\operatorname{im}Q_0$ |
-| 4 | $(1,1,1;7,4)$, 6 | $h=\rho=g=152$ | $R_4$, 1,276,152 terms | $R_4\in\operatorname{im}Q_0$ |
+| 2 | $(3,3,3;5,2)$, 8 | $g_8=583$ | $R_2$, 45,450,714 terms | $R_2\in\mathrm{im}\,Q_0$ |
+| 3 | $(2,2,2;6,3)$, 7 | $h=1$ | $R_3$, 17,787,235 terms | $R_3\in\mathrm{im}\,Q_0$ |
+| 4 | $(1,1,1;7,4)$, 6 | $h=\rho=g=152$ | $R_4$, 1,276,152 terms | $R_4\in\mathrm{im}\,Q_0$ |
 | 5 | $(0,0,0;8,5)$, 5 | $h=0$ | – | empty |
 
 SU(2) X40, $(7,5,5;1,1)Y10$ [p,p']:
@@ -66,10 +66,10 @@ SU(2) X40, $(7,5,5;1,1)Y10$ [p,p']:
 | $r$ | target | target data | residual | verdict |
 |---|---|---|---|---|
 | 1 | $(6,4,4;2,2)$, 10 | – | $Q_1O$, 4,429,603 terms | $d_1=0$ |
-| 2 | $(5,3,3;3,3)$, 9 | – | $R_2$, 73,125,561 terms | $R_2\in\operatorname{im}Q_0+Q_1H$; corrected $O_1$ |
-| 3 | $(4,2,2;4,4)$, 8 | $g_8=1112$ | $R_3$, 55,171,813 terms | $R_3\in\operatorname{im}Q_0$ |
-| 4 | $(3,1,1;5,5)$, 7 | – | $R_4$, 8,915,576 terms | $R_4\in\operatorname{im}Q_0$ |
-| 5 | $(2,0,0;6,6)$, 6 | $h=\rho=g=30$ | $R_5$, 187,328 terms, $\operatorname{res}R_5=0$ | $[R_5]=0$ |
+| 2 | $(5,3,3;3,3)$, 9 | – | $R_2$, 73,125,561 terms | $R_2\in\mathrm{im}\,Q_0+Q_1H$; corrected $O_1$ |
+| 3 | $(4,2,2;4,4)$, 8 | $g_8=1112$ | $R_3$, 55,171,813 terms | $R_3\in\mathrm{im}\,Q_0$ |
+| 4 | $(3,1,1;5,5)$, 7 | – | $R_4$, 8,915,576 terms | $R_4\in\mathrm{im}\,Q_0$ |
+| 5 | $(2,0,0;6,6)$, 6 | $h=\rho=g=30$ | $R_5$, 187,328 terms, $\mathrm{res}\,R_5=0$ | $[R_5]=0$ |
 
 SU(3) $X_7$, $(2,2,2;2,2)Y7$, $C=-1$ [p]:
 
@@ -105,13 +105,13 @@ $$\#\{\text{Cartan-null}\}_{SO(7)}=\#\{\text{Cartan-null}\}_{Sp(3)}=3:\ \omega\ 
 
 ### 3.1 Massey-type one-loop generators (SU(2), $Y=11$, $j41$–$45$)
 
-$$7\ \text{blocks},\quad \dim E_2=1+1+2+2+4+2+5=17,\quad \text{every }E_2\text{ class}\in\operatorname{span}(E_2\cdot E_2)\ \ [p].$$
+$$7\ \text{blocks},\quad \dim E_2=1+1+2+2+4+2+5=17,\quad \text{every }E_2\text{ class}\in\mathrm{span}\,(E_2\cdot E_2)\ \ [p].$$
 
 ### 3.2 Cartan-null targets
 
-$$\operatorname{res}(\hbar)Q(\hbar)=Q_{\rm IR}(\hbar)\operatorname{res}(\hbar),\qquad Q_{\rm IR}=0\ \Longrightarrow\ \operatorname{res}(R_r)=0\ \ \forall r\ \Longrightarrow\ h=\rho\text{ at the target}\Rightarrow d_r=0.$$
+$$\mathrm{res}\,(\hbar)Q(\hbar)=Q_{\rm IR}(\hbar)\mathrm{res}\,(\hbar),\qquad Q_{\rm IR}=0\ \Longrightarrow\ \mathrm{res}\,(R_r)=0\ \ \forall r\ \Longrightarrow\ h=\rho\text{ at the target}\Rightarrow d_r=0.$$
 
-$r=1$: proven (arXiv:2610.22332). All $r$: $\operatorname{res}(\hbar)$ = integration over the massive root multiplets on the Coulomb branch; [cond] on $Q_{\rm IR}=0$ for Cartan composites. Data: $\operatorname{res}(R_r)=0$ identically in every computed residual ($R_5$ of X40: 187,328 terms; $R_2$ of the SU(2) $(8,7,7;0,0)$ block: 31,625,138 terms).
+$r=1$: proven (arXiv:2610.22332). All $r$: $\mathrm{res}\,(\hbar)$ = integration over the massive root multiplets on the Coulomb branch; [cond] on $Q_{\rm IR}=0$ for Cartan composites. Data: $\mathrm{res}\,(R_r)=0$ identically in every computed residual ($R_5$ of X40: 187,328 terms; $R_2$ of the SU(2) $(8,7,7;0,0)$ block: 31,625,138 terms).
 
 ### 3.3 Index
 
@@ -128,7 +128,7 @@ $$0\ne[X_7]\in H^7\!\left(\mathfrak{sl}_3[z_+,z_-],\mathfrak{sl}_3;\mathbb C\rig
 
 $$z=x_{H_6,(0,1)}\wedge x_{H_7,(0,1)}\wedge x_{H_6,(1,0)}\wedge x_{H_7,(1,0)}\wedge x_{H_7,(0,2)}\wedge x_{H_7,(1,1)}\wedge x_{H_7,(2,0)},\quad \partial z=0,\quad X_7(z)=4838400$$
 
-$$\operatorname{im}(\text{relative Feigin map})\cap H^7_{(5,5)}=0\ \Longrightarrow\ \text{the relative Feigin map for }\mathfrak{sl}_3[z_+,z_-]\text{ is not surjective}\qquad[\mathbb Q]$$
+$$\mathrm{im}\,(\text{relative Feigin map})\cap H^7_{(5,5)}=0\ \Longrightarrow\ \text{the relative Feigin map for }\mathfrak{sl}_3[z_+,z_-]\text{ is not surjective}\qquad[\mathbb Q]$$
 
 ## 5. Open
 
