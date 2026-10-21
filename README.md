@@ -11,10 +11,10 @@ Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://gith
 | SU(2) | **P39** | $(5,5,5;3,0)$, $Y=9$, $j=39$ | new fortuitous primary | $d_1,\dots,d_5$ outgoing; no states for $r\ge6$; no incoming ($n_-=0$) | **not lifted at any order** (mod p, two primes) |
 | SU(2) | **X40** | $(7,5,5;1,1)$, $Y=10$, $j=40$ | new non-graviton, Coulomb-visible | $d_1,\dots,d_5$ outgoing; no states for $r\ge6$; incoming $d_1$ source empty | **not lifted at any order** (mod p, two primes) |
 | SU(3) | **$X_7$ multiplet** | $(2,2,2;2,2)$, $Y=7$, $j=24$ | new non-graviton long multiplet, Coulomb-visible | $d_1,d_2$ incoming and outgoing; no states for $r\ge3$ | **not lifted at any order** (mod p; $d_1$ at three primes) |
-| SU(3) | F1, $n=3$ | $(7,4,4;0,0)$, $Y=10$, $j=30$ | known fortuitous class; orders beyond $d_1$ not tested before | $d_1,d_3,d_4$ outgoing; no incoming ($n_\pm=0$) | not lifted by $d_1,d_3$; $d_4=0$ conditional; $d_2$ open (mod p) |
+| SU(3) | **F1, $n=3$** | $(7,4,4;0,0)$, $Y=10$, $j=30$ | known fortuitous class; orders beyond $d_1$ not tested before | closed completion $O_0,\dots,O_4$ (explicit solves at $r=1,\dots,4$); no states for $r\ge5$; no incoming ($n_\pm=0$) | **not lifted at any order** (mod p) |
 | Sp(3) | $\omega$ | $(5,0,0;3,3)$, $Y=9$, $j=28$ | fortuitous, no SO(7) counterpart at the same charges and $Y$ | no outgoing ($\theta_2=\theta_3=0$); incoming $d_1,d_2,d_3$ | not lifted except possibly by incoming $d_2$ (454 Coulomb-visible sources) |
 
-$d_r$ = lifting by the $r$-loop correction $Q_r$ of the supercharge ($d_1$: one loop). Conditional: see §3.2.
+$d_r$ = lifting by the $r$-loop correction $Q_r$ of the supercharge ($d_1$: one loop).
 
 ## 0. Setup
 
@@ -44,7 +44,7 @@ Certification levels: **[Q]** exact over $\mathbb Q$; **[p]** ranks modulo $p=2^
 | SU(2) | X40 (new primary) | $(7,5,5;1,1)$; $Y10$, $j40$ | Coulomb-visible non-graviton, $(h,\rho,g)=(8,8,7)$ | **survives all orders**: closed completion $\sum_{r\le5}\hbar^rO_r$; incoming $d_1$ source empty | [p,p'] |
 | SU(3) | $X_7$ (new multiplet) | $(2,2,2;2,2)$; $Y7$, $C=-1$, $j24$ | Coulomb-visible non-graviton, $(h,\rho,g)=(26,26,25)$; one long multiplet (35 HW blocks, $j=24,\dots,30$) | **survives all orders**: $d_1=0$ in and out; $d_2$ target $(0,0,0;4,4)Y6$ empty; incoming $d_2$ source empty in $C=-1$; no pages $r\ge3$ | [p] ($d_1$: three primes) |
 | SU(3) | $X_7$ pure-ghost member | $(0,0,0;5,5)$; $Y7$, $j30$ | exact rational representative (26 trace generators) | incoming $d_1=0$; no outgoing pages | class [Q]; $d_1$ [p] |
-| SU(3) | F1 $n=3$ | $(7,4,4;0,0)$; $Y10$, $C=-1$, $j30$ | fortuitous (known) | $d_1=0$, $d_3=0$ (targets empty); $d_4=0$ [cond] (target $h=\rho=34$); **$d_2$ open** (target $h=609,\rho=608$) | [p] |
+| SU(3) | F1 $n=3$ | $(7,4,4;0,0)$; $Y10$, $C=-1$, $j30$ | fortuitous (known) | **survives all orders**: closed completion $\sum_{r\le4}\hbar^rO_r$ ($R_2$ exact with the direct $O_1$; $d_2$ target $h=609,\rho=608$); no states for $r\ge5$; no incoming | [p] |
 | SU(3) | new primary | $(7,4,4;1,0)$; $Y11$, $C=+1$, $j33$ | $h=2,\rho=0$ (one F1 $n=4$ descendant + one new class) | $d_3=0$ (target empty); $d_4=0$ [cond] (target $h=\rho=63$); $d_1,d_2$ open; no incoming | [p] |
 | Sp(3) | $\omega$ | $(5,0,0;3,3)$; $Y9$, $j28$ | fortuitous; $h=1$, $\rho=0$; absent in SO(7) at this $(\lambda,Y)$ | no outgoing differential ($\theta_2=\theta_3=0$); incoming $d_1$, $d_3$ impossible (sources $h=0$); incoming $d_2$ only from 454 Coulomb-visible classes at $(7,2,2;1,1)Y10$ | class [Q]; sources [p] |
 | SO(7) | $\beta$ | $(6,1,1;2,2)$; $Y10$ | Cartan-null, $h-\rho=1$ (Sp(3): 0) | only one-loop dynamics possible (incoming $d_2$ source empty, outgoing $r\le1$) | [p] |
@@ -53,11 +53,11 @@ Certification levels: **[Q]** exact over $\mathbb Q$; **[p]** ranks modulo $p=2^
 
 ### 1.1 Proven not lifted at any order
 
-$$\text{SU(2): } O_0\ (j24),\quad \text{P39}\ (j39),\quad \text{X40}\ (j40);\qquad \text{SU(3): } X_7\ (j24).$$
+$$\text{SU(2): } O_0\ (j24),\quad \text{P39}\ (j39),\quad \text{X40}\ (j40);\qquad \text{SU(3): } X_7\ (j24),\quad \text{F1}_{n=3}\ (j30).$$
 
 ### 1.2 Partial exclusions
 
-$$\text{F1: } d_1=d_3=0,\ d_4=0\ [\text{cond}],\ d_2\ \text{open};\qquad j33:\ d_3=0,\ d_4=0\ [\text{cond}];\qquad \omega:\ \text{only incoming } d_2\ \text{remains}.$$
+$$j33:\ d_3=0,\ d_4=0\ [\text{cond}];\qquad \omega:\ \text{only incoming } d_2\ \text{remains}.$$
 
 ### 1.3 Lifted
 
@@ -97,12 +97,15 @@ SU(3) $X_7$, $(2,2,2;2,2)Y7$, $C=-1$ [p]:
 
 SU(3) F1 $n=3$, $(7,4,4;0,0)Y10$, $C=-1$ [p]:
 
-| $r$ | target | $\dim$ | $h$ | $\rho$ |
-|---|---|---|---|---|
-| 1 | $(6,3,3;1,1)$, 10 | 34430 | 0 | 0 |
-| 2 | $(5,2,2;2,2)$, 9 | – | 609 | 608 |
-| 3 | $(4,1,1;3,3)$, 8 | 26400 | 0 | 0 |
-| 4 | $(3,0,0;4,4)$, 7 | 1896 | 34 | 34 |
+| $r$ | target | $\dim$ | $h$ | $\rho$ | residual | correction $O_r$ (coordinates; rank of $Q_0$ into target) | verdict |
+|---|---|---|---|---|---|---|---|
+| 1 | $(6,3,3;1,1)$, 10 | 34430 | 0 | 0 | $Q_1O_0$ | $O_1$ at $Y9$ (28311; 18003) | exact |
+| 2 | $(5,2,2;2,2)$, 9 | 63983 | 609 | 608 | $R_2=Q_2O_0+Q_1O_1$ | $O_2$ at $Y8$ (49328; 32144) | exact |
+| 3 | $(4,1,1;3,3)$, 8 | 26400 | 0 | 0 | $R_3=Q_2O_1+Q_1O_2$ | $O_3$ at $Y7$ (18919; 13063) | exact |
+| 4 | $(3,0,0;4,4)$, 7 | 1896 | 34 | 34 | $R_4=Q_3O_1+Q_2O_2+Q_1O_3$ | $O_4$ at $Y6$ (1169; 825) | exact |
+| $\ge5$ | $\theta_I<0$ | – | – | – | – | – | no cochains |
+
+$Q_3O_0=Q_4O_0=0$. $Q_n$ applied to trace-word generators by colour reconnection, coordinates at AH3 probe frames.
 
 Sp(3) $\omega$ orbit (classes with equal physical charges) [p]:
 
@@ -146,4 +149,4 @@ $$\mathrm{im}\,(\text{relative Feigin map})\cap H^7_{(5,5)}=0\ \Longrightarrow\ 
 
 ## 5. Open
 
-$$\text{F1: } d_2;\qquad j33:\ d_1,d_2;\qquad \omega:\ \text{incoming }d_2\ (\text{454 Coulomb-visible sources});\qquad \text{§3.2 at all orders}.$$
+$$j33:\ d_1,d_2;\qquad \omega:\ \text{incoming }d_2\ (\text{454 Coulomb-visible sources});\qquad \text{§3.2 at all orders}.$$
