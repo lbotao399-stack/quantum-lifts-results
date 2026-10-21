@@ -8,8 +8,8 @@ Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://gith
 
 | gauge group | class | charges, letters, $j$ | what it is | tested | result |
 |---|---|---|---|---|---|
-| SU(2) | **P39** | $(5,5,5;3,0)$, $Y=9$, $j=39$ | new fortuitous primary | $d_1$–$d_5$ outgoing; no states for $r\ge6$; no incoming ($n_-=0$) | **not lifted at any order** (mod p, two primes) |
-| SU(2) | **X40** | $(7,5,5;1,1)$, $Y=10$, $j=40$ | new non-graviton, Coulomb-visible | $d_1$–$d_5$ outgoing; no states for $r\ge6$; incoming $d_1$ source empty | **not lifted at any order** (mod p, two primes) |
+| SU(2) | **P39** | $(5,5,5;3,0)$, $Y=9$, $j=39$ | new fortuitous primary | $d_1,\dots,d_5$ outgoing; no states for $r\ge6$; no incoming ($n_-=0$) | **not lifted at any order** (mod p, two primes) |
+| SU(2) | **X40** | $(7,5,5;1,1)$, $Y=10$, $j=40$ | new non-graviton, Coulomb-visible | $d_1,\dots,d_5$ outgoing; no states for $r\ge6$; incoming $d_1$ source empty | **not lifted at any order** (mod p, two primes) |
 | SU(3) | **$X_7$ multiplet** | $(2,2,2;2,2)$, $Y=7$, $j=24$ | new non-graviton long multiplet, Coulomb-visible | $d_1,d_2$ incoming and outgoing; no states for $r\ge3$ | **not lifted at any order** (mod p; $d_1$ at three primes) |
 | SU(3) | F1, $n=3$ | $(7,4,4;0,0)$, $Y=10$, $j=30$ | known fortuitous class; orders beyond $d_1$ not tested before | $d_1,d_3,d_4$ outgoing; no incoming ($n_\pm=0$) | not lifted by $d_1,d_3$; $d_4=0$ conditional; $d_2$ open (mod p) |
 | Sp(3) | $\omega$ | $(5,0,0;3,3)$, $Y=9$, $j=28$ | fortuitous, no SO(7) counterpart at the same charges and $Y$ | no outgoing ($\theta_2=\theta_3=0$); incoming $d_1,d_2,d_3$ | not lifted except possibly by incoming $d_2$ (454 Coulomb-visible sources) |
@@ -42,7 +42,7 @@ Certification levels: **[Q]** exact over $\mathbb Q$; **[p]** ranks modulo $p=2^
 | SU(2) | $O_1$ | $(6,6,6;0,0)$; $Y9$, $j36$ | fortuitous | **lifted at one loop**: $d_1\ne0$ (as in arXiv:2606.27955) | [p,p'] |
 | SU(2) | P39 (new primary) | $(5,5,5;3,0)$; $Y9$, $j39$ | fortuitous; one fresh class beyond 12 known | **survives all orders**: closed completion $\sum_{r\le4}\hbar^rO_r$, $r=5$ target empty, no incoming | [p,p'] |
 | SU(2) | X40 (new primary) | $(7,5,5;1,1)$; $Y10$, $j40$ | Coulomb-visible non-graviton, $(h,\rho,g)=(8,8,7)$ | **survives all orders**: closed completion $\sum_{r\le5}\hbar^rO_r$; incoming $d_1$ source empty | [p,p'] |
-| SU(3) | $X_7$ (new multiplet) | $(2,2,2;2,2)$; $Y7$, $C=-1$, $j24$ | Coulomb-visible non-graviton, $(h,\rho,g)=(26,26,25)$; one long multiplet (35 HW blocks, $j24$–$30$) | **survives all orders**: $d_1=0$ in and out; $d_2$ target $(0,0,0;4,4)Y6$ empty; incoming $d_2$ source empty in $C=-1$; no pages $r\ge3$ | [p] ($d_1$: three primes) |
+| SU(3) | $X_7$ (new multiplet) | $(2,2,2;2,2)$; $Y7$, $C=-1$, $j24$ | Coulomb-visible non-graviton, $(h,\rho,g)=(26,26,25)$; one long multiplet (35 HW blocks, $j=24,\dots,30$) | **survives all orders**: $d_1=0$ in and out; $d_2$ target $(0,0,0;4,4)Y6$ empty; incoming $d_2$ source empty in $C=-1$; no pages $r\ge3$ | [p] ($d_1$: three primes) |
 | SU(3) | $X_7$ pure-ghost member | $(0,0,0;5,5)$; $Y7$, $j30$ | exact rational representative (26 trace generators) | incoming $d_1=0$; no outgoing pages | class [Q]; $d_1$ [p] |
 | SU(3) | F1 $n=3$ | $(7,4,4;0,0)$; $Y10$, $C=-1$, $j30$ | fortuitous (known) | $d_1=0$, $d_3=0$ (targets empty); $d_4=0$ [cond] (target $h=\rho=34$); **$d_2$ open** (target $h=609,\rho=608$) | [p] |
 | SU(3) | new primary | $(7,4,4;1,0)$; $Y11$, $C=+1$, $j33$ | $h=2,\rho=0$ (one F1 $n=4$ descendant + one new class) | $d_3=0$ (target empty); $d_4=0$ [cond] (target $h=\rho=63$); $d_1,d_2$ open; no incoming | [p] |
@@ -117,7 +117,7 @@ $$\#\{\text{Cartan-null}\}_{SO(7)}=\#\{\text{Cartan-null}\}_{Sp(3)}=3:\ \omega\ 
 
 ## 3. Structural results
 
-### 3.1 Massey-type one-loop generators (SU(2), $Y=11$, $j41$–$45$)
+### 3.1 Massey-type one-loop generators (SU(2), $Y=11$, $j=41,\dots,45$)
 
 $$7\ \text{blocks},\quad \dim E_2=1+1+2+2+4+2+5=17,\quad \text{every }E_2\text{ class}\in\mathrm{span}\,(E_2\cdot E_2)\ \ [p].$$
 
