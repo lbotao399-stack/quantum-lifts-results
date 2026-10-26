@@ -19,6 +19,7 @@ Red = class not found in publications.
 | N=4, SO(2N+1), Sp(N) | E+J_L ≤ 23/2 (SO(5), SO(7), SO(9)); ≤ 12 (Sp(3), Sp(4), Sp(5), SO(11)) | O_0 (SO(3)=Sp(1)); $\color{red}{\text{SO(5)=Sp(2)}}$ (3,2,2;1,1) Y7; O_f (SO(7)); $\color{red}{\text{Sp(3)}}$ (5,2,2;1,1) Y9 and $\color{red}{\omega}$; $\color{red}{\text{SO(9)}}$ (5,3,3;0,0) Y10; $\color{red}{\text{SO(11)}}$ (7,3,3;0,0) Y12 | SO(5) class: all orders; O_f and the SO(9) class: one loop; Sp(3), SO(11): running | §2 |
 | N=2 Z2 quiver, SU(N)×SU(N) | E+J_L ≤ 10 (N=2), ≤ 9 (N=3) | fortuity split open | d_2 = 0 on every candidate pair; E_r(κ) ≅ E_r(1) | §3 |
 | N=2 SCQCD, SU(N), N_f=2N | E+J_L ≤ 12 (N=2), ≤ 9 (N=3) | fortuity split open | SU(2): d_1 = 0; d_2 = 0 on every candidate pair | §4 |
+| N=4 SU(3), β and Leigh–Strassler deformations | E+J_L ≤ 9 | $\color{red}{\text{fortuitous}}$ (Θ,c;n+,n−)_Y = (7,0;0,0)_5, (7,0;1,0)_5 (LS) | $\color{red}{\text{LS: rank }d_2=1}$ at (7,0;0,0)_5, (8,0;0,0)_6, (7,0;1,0)_5; β: d_2 = 0 on 11 pairs | §6 |
 | massive-adjoint flows | w ≤ 16 (N=4 SU(2), one mass), w ≤ 12 (SU(3), one mass), w ≤ 13 (SCQCD SU(2) and Z2 quiver), w ≤ 11 (SCQCD SU(3)) | O_7, O_16 (Choi–Kim) | O_7, O_16: all orders; d_2 = d_3 = 0 on every candidate pair | §5 |
 
 ## Conventions
