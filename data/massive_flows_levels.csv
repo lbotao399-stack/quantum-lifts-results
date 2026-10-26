@@ -12,6 +12,7 @@ N4_SU2_one_mass,13,50,0,90,317,29,0,90,317,4,0,4,d2,cluster
 N4_SU2_one_mass,14,70,0,154,569,47,0,154,569,11,0,11,d2,cluster
 N4_SU2_one_mass,15,70,0,151,845,56,0,151,845,14,0,13,d2d3,cluster
 N4_SU2_one_mass,16,95,0,240,1473,85,1,240,1471,32,0,31,d2d3,cluster
+N4_SU2_one_mass,17,95,1,241,2194,101,0,241,2194,36,0,33,d2d3,cluster
 N4_SU3_one_mass,4,7,0,6,6,0,0,6,6,0,0,0,,cluster
 N4_SU3_one_mass,5,7,0,10,10,0,0,10,10,0,0,0,,cluster
 N4_SU3_one_mass,6,13,0,19,23,2,0,19,23,0,0,0,,cluster
@@ -31,6 +32,7 @@ SCQCD_SU2_plus_mass,10,34,0,62,826,9,0,62,826,2,0,2,d2,local
 SCQCD_SU2_plus_mass,11,34,0,0,0,0,0,0,0,0,0,0,,local
 SCQCD_SU2_plus_mass,12,50,0,109,3371,23,0,109,3371,7,0,7,d2,local
 SCQCD_SU2_plus_mass,13,50,0,0,0,0,0,0,0,0,0,0,,local
+SCQCD_SU2_plus_mass,15,70,0,0,0,0,0,0,0,0,0,0,,cluster
 SCQCD_SU3_plus_mass,4,7,0,8,11,1,0,8,11,0,0,0,,cluster
 SCQCD_SU3_plus_mass,5,7,0,0,0,0,0,0,0,0,0,0,,cluster
 SCQCD_SU3_plus_mass,6,13,0,18,44,3,0,18,44,0,0,0,,cluster
