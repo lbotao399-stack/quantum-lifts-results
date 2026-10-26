@@ -18,6 +18,7 @@ Z2_quiver_orbifold_point,2,17,17/2,44,0,73,716,15,4,73,696,1,0,2,d2,local
 Z2_quiver_orbifold_point,2,18,9,84,0,140,1298,43,7,140,1258,7,0,10,d2,local
 Z2_quiver_orbifold_point,2,19,19/2,61,0,110,1690,27,8,110,1640,5,0,8,d2,cluster
 Z2_quiver_orbifold_point,2,20,10,111,0,205,3153,63,13,203,3059,11,0,18,d2,cluster
+Z2_quiver_orbifold_point,2,21,21/2,84,0,169,4088,45,13,169,3960,8,0,16,d2,cluster
 Z2_quiver_orbifold_point,3,4,2,4,0,3,4,0,0,3,4,0,0,0,,cluster
 Z2_quiver_orbifold_point,3,5,5/2,2,0,1,2,0,0,1,2,0,0,0,,cluster
 Z2_quiver_orbifold_point,3,6,3,8,0,5,8,1,0,5,8,0,0,0,,cluster
