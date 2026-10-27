@@ -17,6 +17,7 @@ Red = class not found in publications.
 | N=4, SU(4) | E+J_L ≤ 27/2 | $\color{red}{\text{first SU(4) class}}$ (4,2,2;2,2) Y9, K=1 over Q | all orders | §1 |
 | N=4, SU(5) … SU(15) | E+J_L ≤ 14, 15, 15, 31/2, 33/2, 17, 18 (N=5…10, 11–15) | none | – | §1 |
 | N=4, SO(2N+1), Sp(N) | E+J_L ≤ 23/2 (SO(5), SO(7), SO(9)); ≤ 12 (Sp(3), Sp(4), Sp(5), SO(11)) | O_0 (SO(3)=Sp(1)); $\color{red}{\text{SO(5)=Sp(2)}}$ (3,2,2;1,1) Y7; O_f (SO(7)); $\color{red}{\text{Sp(3)}}$ (5,2,2;1,1) Y9 and $\color{red}{\omega}$; $\color{red}{\text{SO(9)}}$ (5,3,3;0,0) Y10; $\color{red}{\text{SO(11)}}$ (7,3,3;0,0) Y12 | SO(5), Sp(3) classes: all orders; O_f and the SO(9) class: one loop; SO(11): running. S-duality test: dim E_2^{SO(7)} = dim E_2^{Sp(3)} at every (E, R_I, J_L, J_R), E+J_L ≤ 11 (classical mismatch at 2, 2, 6, 7, 12 charges for E+J_L = 9 … 11, all removed by d_1 of SO(7)); SO(9) vs Sp(4) running | §2 |
+| N=4, G2 | E+J_L ≤ 10 | $\color{red}{\text{scalar class with }\rho=0}$ (2,2,2;0,0) Y6 (E = 6, R = (2,2,2)): 4 invariants vs 3 exact terms; absent for SU(3), SO(5), Sp(2); non-Cartan classes 1, 1, 3, 5, 9, 11, 20, 23, 43 at E+J_L = 6 … 10 | (2,2,2;0,0) Y6: all orders; d_1 = 0 everywhere, d_2 none, d_3 rank 0 | §7 |
 | N=2 Z2 quiver, SU(N)×SU(N) | E+J_L ≤ 10 (N=2), ≤ 9 (N=3) | fortuity split open | d_2 = 0 on every candidate pair; E_r(κ) ≅ E_r(1) | §3 |
 | N=2 SCQCD, SU(N), N_f=2N | E+J_L ≤ 12 (N=2), ≤ 9 (N=3) | fortuity split open | SU(2): d_1 = 0; d_2 = 0 on every candidate pair | §4 |
 | N=4 SU(3), β and Leigh–Strassler deformations | E+J_L ≤ 9 | $\color{red}{\text{fortuitous}}$ (Θ,c;n+,n−)_Y = (7,0;0,0)_5, (7,0;1,0)_5 (LS) | $\color{red}{\text{LS: rank }d_2=1}$ at (7,0;0,0)_5, (8,0;0,0)_6, (7,0;1,0)_5; β: d_2 = 0 on 11 pairs | §6 |
@@ -50,4 +51,5 @@ Certification: [Q] exact over Q; [p] ranks modulo p = 2^31 − 1; [p,p'] also p'
 | [data/N2_Z2_quiver_orbifold_point_levels.csv](data/N2_Z2_quiver_orbifold_point_levels.csv) | Z2 quiver per level: h, d_1, E_2, d_2 pairs and ranks |
 | [data/N2_SCQCD_levels.csv](data/N2_SCQCD_levels.csv) | SCQCD per level |
 | [data/massive_flows_levels.csv](data/massive_flows_levels.csv) | massive flows per w |
+| [data/N4_G2_levels.txt](data/N4_G2_levels.txt) | G2 per level: sectors, fails, Σh, Σ(h−ρ), d_1 ≠ 0 blocks, Σ dim E_2, d_2/d_3 candidates and ranks |
 | [data/sdual_SO7_Sp3.txt](data/sdual_SO7_Sp3.txt), [data/sdual_SO9_Sp4.txt](data/sdual_SO9_Sp4.txt) | per level: Σh, number of charges with h or E_2 different, d_1 ≠ 0 blocks, d_2/d_3 candidates and ranks |
