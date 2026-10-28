@@ -23,6 +23,11 @@ Red = class not found in publications.
 | N=4 SU(3), β and Leigh–Strassler deformations | E+J_L ≤ 9 | $\color{red}{\text{fortuitous}}$ (Θ,c;n+,n−)_Y = (7,0;0,0)_5, (7,0;1,0)_5 (LS) | $\color{red}{\text{LS: rank }d_2=1}$ at (7,0;0,0)_5, (8,0;0,0)_6, (7,0;1,0)_5; β: d_2 = 0 on 11 pairs | §6 |
 | massive-adjoint flows | w ≤ 16 (N=4 SU(2), one mass), w ≤ 12 (SU(3), one mass), w ≤ 13 (SCQCD SU(2) and Z2 quiver), w ≤ 11 (SCQCD SU(3)) | O_7, O_16 (Choi–Kim) | O_7, O_16: all orders; d_2 = d_3 = 0 on every candidate pair | §5 |
 
+## Notes
+
+**[Gram determinants on commuting schemes and the Chevalley restriction map](notes/Gram_determinants_commuting_schemes.pdf)** (October 2026, 12 pp.; [argument map](notes/Gram_determinants_argument_map.png)).
+For simple g and d commuting copies, the SL_d-invariant degree-2d part of k[C^d_g]^G is one-dimensional exactly when d < h∨ (dual Coxeter number), spanned by the Gram determinant det B(x_i, x_j); the proof transfers the N=1 chiral-ring theorem S^{h∨−1} ≠ 0 (Cachazo–Douglas–Seiberg–Witten) to commuting tuples. For rk g < d < h∨ this class is nilpotent with zero Cartan restriction: a counterexample to the Chen–Ngô conjecture for G2 (d = 3), so_n (n ≥ 7) and all exceptional types, and to Song–Xia–Xu, Thm 1.2 (smallest case so(7), d = 4), whose Lemma 5.2 fails for every d ≥ 2. In the N=4 super-commuting setting the same classes give the G2 class at (2,2,2;0,0) Y6 and the non-Cartan so(7) class behind the first SO(7)/Sp(3) mismatch.
+
 ## Conventions
 
 ```
