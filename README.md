@@ -13,7 +13,7 @@ Red = class not found in publications.
 | theory | complete frontier (all sectors) | fortuitous generators and classes | quantum lift | PDF |
 |---|---|---|---|---|
 | N=4, SU(2) | E+J_L ≤ 33/2 | O_0 and its multiplet, O_1, products; $\color{red}{\text{P39}}$, $\color{red}{\text{X40}}$ | O_0, P39, X40: all orders; O_1: one loop | §1 |
-| N=4, SU(3) | E+J_L ≤ 15 | $\color{red}{\text{X7 multiplet}}$, F1 and B1 towers; $\color{red}{\text{new primaries}}$ (5,4,4;1,1) Y10, (7,4,4;1,0) Y11, (6,4,4;1,1) Y11, (7,5,4;1,0) Y11 | X7, F1 (n=3): all orders; (7,4,4;1,0): all orders [cond]; (5,4,4;1,1): d_2 running | §1 |
+| N=4, SU(3) | E+J_L ≤ 15 | $\color{red}{\text{X7 multiplet}}$, F1 and B1 towers; $\color{red}{\text{new primaries}}$ (5,4,4;1,1) Y10, (7,4,4;1,0) Y11, (6,4,4;1,1) Y11, (7,5,4;1,0) Y11 | X7, F1 (n=3): all orders; (7,4,4;1,0): all orders [cond]; (5,4,4;1,1): d_1 = d_2 = d_3 = 0, d_4 = 0 [cond] | §1 |
 | N=4, SU(4) | E+J_L ≤ 27/2 | $\color{red}{\text{first SU(4) class}}$ (4,2,2;2,2) Y9, K=1 over Q | all orders | §1 |
 | N=4, SU(5) … SU(15) | E+J_L ≤ 14, 15, 15, 31/2, 33/2, 17, 18 (N=5…10, 11–15) | none | – | §1 |
 | N=4, SO(2N+1), Sp(N) | E+J_L ≤ 23/2 (SO(5), SO(7), SO(9)); ≤ 12 (Sp(3), Sp(4), Sp(5), SO(11)) | O_0 (SO(3)=Sp(1)); $\color{red}{\text{SO(5)=Sp(2)}}$ (3,2,2;1,1) Y7; O_f (SO(7)); $\color{red}{\text{Sp(3)}}$ (5,2,2;1,1) Y9 and $\color{red}{\omega}$; $\color{red}{\text{SO(9)}}$ (5,3,3;0,0) Y10; $\color{red}{\text{SO(11)}}$ (7,3,3;0,0) Y12 | SO(5), Sp(3) classes: all orders; O_f and the SO(9) class: one loop; SO(11): running. S-duality test: dim E_2^{SO(7)} = dim E_2^{Sp(3)} at every (E, R_I, J_L, J_R), E+J_L ≤ 11 (classical mismatch at 2, 2, 6, 7, 12 charges for E+J_L = 9 … 11, all removed by d_1 of SO(7)); SO(9) vs Sp(4) running | §2 |
