@@ -1,0 +1,13 @@
+theory,wt,J,blocks,ker_d1_nonzero,d3_tested,d4_tested,d4_target_nonzero
+singlet,6--20,0--4,13402,302,302,296,51
+singlet_cubic_self,6--18,0--4,3869,33,26,22,3
+singlet_quartic,8--14,0--3,1382,70,65,0,0
+massive_singlet,8--24,0--3,3498,20,12,12,1
+sqed_quartic,8--18,0--3,1292,18,14,0,0
+two_hypers,6--14,0--3,16944,264,264,264,9
+massive_two_hypers,8--16,0--3,4828,248,248,248,2
+quartic_two_flavour,8--14,0--2,1604,102,102,0,0
+two_massive_singlets,8--17,0--2,4840,33,33,33,0
+offdiag_mass,8--17,0--2,9913,142,142,142,1
+triangle,6--12,0--2,13949,40,37,37,0
+triangle_massive,8--15,0--2,8463,23,18,18,0
