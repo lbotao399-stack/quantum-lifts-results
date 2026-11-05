@@ -22,7 +22,8 @@ Red = class not found in publications.
 | N=2 SCQCD, SU(N), N_f=2N | E+J_L ≤ 12 (N=2), ≤ 9 (N=3) | fortuity split open | SU(2): d_1 = 0; d_2 = 0 on every candidate pair | §4 |
 | N=4 SU(3), β and Leigh–Strassler deformations | E+J_L ≤ 9 | $\color{red}{\text{fortuitous}}$ (Θ,c;n+,n−)_Y = (7,0;0,0)_5, (7,0;1,0)_5 (LS) | $\color{red}{\text{LS: rank }d_2=1}$ at (7,0;0,0)_5, (8,0;0,0)_6, (7,0;1,0)_5; β: d_2 = 0 on 11 pairs | §6 |
 | massive-adjoint flows | w ≤ 16 (N=4 SU(2), one mass), w ≤ 12 (SU(3), one mass), w ≤ 13 (SCQCD SU(2) and Z2 quiver), w ≤ 11 (SCQCD SU(3)) | O_7, O_16 (Choi–Kim) | O_7, O_16: all orders; d_2 = d_3 = 0 on every candidate pair | §5 |
-| abelian, U(1)^k with W (N=2 SQED N_f=1, 2 and N=1 deformations, U(1)^2 triangles) | wt ≤ 20 (N=2 SQED N_f=1), ≤ 24 (+ mass); about 84,000 blocks | classes from the never-contracted letters (U(1) gaugino jets, neutral chirals): products a·x and triple Massey products ⟨a,Z,Y⟩ | $\color{red}{\text{first d₃ ≠ 0}}$: N=2 SQED N_f=1 (Seiberg–Witten monopole-point theory), cubic singlet, quartic SQED; $\color{red}{\text{d₂ ≠ 0}}$ in N=1 deformations (Massey products); d_2 = 0 in N=2 SQED; d_4 = 0 on every tested block | §8 |
+| abelian, U(1)^k with W (N=2 SQED N_f=1, 2 and N=1 deformations, U(1)^2 triangles) | wt ≤ 20 (N=2 SQED N_f=1), ≤ 24 (+ mass); about 84,000 blocks | classes from the never-contracted letters (U(1) gaugino jets, neutral chirals): products a·x and triple Massey products ⟨a,Z,Y⟩ | $\color{red}{\text{first d₃ ≠ 0}}$: N=2 SQED N_f=1 (Seiberg–Witten monopole-point theory), cubic singlet, quartic SQED; $\color{red}{\text{d₂ ≠ 0}}$ in N=1 deformations (Massey products); d_2 = 0 in N=2 SQED, but $\color{red}{\text{d₂ ≠ 0}}$ in the N=2 U(1)² linear quiver; d_4 = 0 on every tested block | §8 |
+| N=2 SU(2), SU(3) SYM; SU(2) + adjoint + flip singlet (components, gauge-invariant subcomplex) | wt ≤ 12, J = n₊+n₋ ≤ 2 (SU(2) theories; wt 13, 14 running); wt 8–12, J ≤ 1 (SU(3), running) | products L·M: L = tr(bΦ) lifted at one loop, M with M·Q₁L exact (Massey-type); flip: flavour current J_f times M | $\color{red}{\text{first non-abelian d₂ ≠ 0}}$: N=2 SU(2) at (10;0,0;−5)₋₂ (exact over Q), (11;0,0;−6), (12;1,1;−5), (13;1,1;−6), (14;0,0;−7); N=2 SU(3) at (11;0,0;−5), (12;0,0;−6); flip at (9;1,1;−3)₀ (exact over Q), (11;0,0;−5), (12;0,0;−6); $\color{red}{\text{first non-abelian d₃ ≠ 0}}$: flip at (14;1,0;−6)₂, exact over Q (rational certificate: chain and dual functional verified on all 134,867 monomials of the stage blocks) | §9 |
 
 ## Notes
 
@@ -44,11 +45,13 @@ massive flows, (A,B; n±; gh):  A = θ1+θ3,  B = θ2+θ3,  gh = Y − Θ
 R1+R3 = A+gh,   R2+R3 = B+gh,   R_IR = (R1+R2)/2 + R3,   E_IR = (3/2) R_IR + 2 J_L
 w = A + B + 2(n+ + n−) = (4/3)(E_IR + J_L)
 
-abelian, (wt; n+, n−; gh):  wt(γ_g) = w_g, wt(β^g) = D − w_g, wt(b) = D, wt(c) = 0   (D = weight of W)
+abelian and SU(N) components, (wt; n+, n−; gh):  wt(γ_g) = w_g, wt(β^g) = D − w_g, wt(b) = D, wt(c) = 0   (D = weight of W)
 R = 2 wt/D + gh,   J_L = (n+ + n− − gh)/2,   J_R = (n+ − n−)/2,   (R; J_L, J_R)(Q) = (1; −1/2, 0)
+SU(N) components: gauge-invariant subcomplex (zero Cartan charge, kernel of the simple raising generators);
+  subscript f = #γ_Φ − #β_Φ − 2(#γ_S − #β_S)
 ```
 
-Certification: [Q] exact over Q; [p] ranks modulo p = 2^31 − 1; [p,p'] also p' = 2147483629; [cond] res(R_r) = 0 at targets with h = ρ.
+Certification: [Q] exact over Q; [Q, cert] rational chain (x_0, …, x_{r−1}) and dual functional φ verified exactly over Q on every monomial of the stage blocks; [p] ranks modulo p = 2^31 − 1; [p,p'] also p' = 2147483629; [cond] res(R_r) = 0 at targets with h = ρ.
 
 ## Data
 
@@ -63,4 +66,5 @@ Certification: [Q] exact over Q; [p] ranks modulo p = 2^31 − 1; [p,p'] also p'
 | [data/N4_G2_levels.txt](data/N4_G2_levels.txt) | G2 per level: sectors, fails, Σh, Σ(h−ρ), d_1 ≠ 0 blocks, Σ dim E_2, d_2/d_3 candidates and ranks |
 | [data/abelian_census.csv](data/abelian_census.csv) | abelian theories: blocks, ker d_1 ≠ 0, d_3 and d_4 tests per theory |
 | [data/abelian_primary_lifts.csv](data/abelian_primary_lifts.csv) | abelian primary lifts: block, flavour, (R, J_L, J_R), r, rank d_r, origin of d_2 |
+| [data/su2_lifts.csv](data/su2_lifts.csv) | SU(2), SU(3) components: lifted blocks, (R, J_L, J_R), E_1, rank d_1, r, rank d_r, certification |
 | [data/sdual_SO7_Sp3.txt](data/sdual_SO7_Sp3.txt), [data/sdual_SO9_Sp4.txt](data/sdual_SO9_Sp4.txt) | per level: Σh, number of charges with h or E_2 different, d_1 ≠ 0 blocks, d_2/d_3 candidates and ranks |

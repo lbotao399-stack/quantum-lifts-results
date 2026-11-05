@@ -32,7 +32,7 @@
 </head>
 <body>
 <div class="wrap">
-<h1>Quantum-lifting tests of fortuitous BPS classes (2026-10-26)</h1>
+<h1>Quantum-lifting tests of fortuitous BPS classes (2026-11-06)</h1>
 <table>
 <colgroup>
   <col style="width:9%"><col style="width:12%"><col style="width:15%"><col style="width:17%"><col style="width:23%"><col style="width:24%">
@@ -111,6 +111,12 @@
 
 <tr class="sec"><td colspan="6">Lifted at three loops</td></tr>
 <tr>
+  <td>SU(2) + adjoint Φ + singlet S, W = S tr Φ<sup>2</sup>/2 (components)</td><td class="cls new">X·Y, first non-abelian d<sub>3</sub></td>
+  <td class="q">(wt; n<sub>±</sub>; gh)<sub>f</sub> = (14; 1,0; −6)<sub>2</sub></td><td class="q">R = 10/3; J<sub>L</sub> = 7/2, J<sub>R</sub> = 1/2</td>
+  <td>gauge-invariant subcomplex; d<sub>1</sub> = d<sub>2</sub> = 0, d<sub>3</sub> into (5; 4,3; 1)<sub>2</sub>; X ∈ E<sub>1</sub>(11; 0,0; −5)<sub>2</sub>, Y ∈ E<sub>1</sub>(3; 1,0; −1)<sub>0</sub>; d<sub>4</sub> = 0 on every tested block</td>
+  <td><span class="badge lift">Lifted at three loops (rank d<sub>3</sub> = 1)</span><span class="sub">exact over ℚ: rational certificate (chain and dual functional verified on all 134,867 monomials of the stage blocks)</span></td>
+</tr>
+<tr>
   <td>N=2 U(1), N<sub>f</sub>=1 (Seiberg–Witten monopole-point theory)</td><td class="cls new">d<sub>3</sub> source</td>
   <td class="q">(wt; n<sub>±</sub>; gh) = (11; 1,1; −5)</td><td class="q">R = 7/3; J<sub>L</sub> = 7/2, J<sub>R</sub> = 0</td>
   <td>d<sub>1</sub> = d<sub>2</sub> = 0, d<sub>3</sub> into (2; 4,4; 2); 7 primary d<sub>3</sub> blocks, wt 11–17; d<sub>2</sub> = 0 on all 566 N=2 blocks with ker d<sub>1</sub> ≠ 0; d<sub>4</sub> = 0 on every tested block</td>
@@ -120,7 +126,7 @@
   <td>U(1), W = γ<sub>s</sub>γ<sub>+</sub>γ<sub>−</sub> + γ<sub>s</sub><sup>3</sup>/3</td><td class="cls new">d<sub>3</sub> source</td>
   <td class="q">(11; 1,0; −5)</td><td class="q">R = 7/3; J<sub>L</sub> = 3, J<sub>R</sub> = 1/2</td>
   <td>4 primary d<sub>3</sub> blocks (wt 11, 13, 14, 17); also d<sub>2</sub> lifts</td>
-  <td><span class="badge lift">Lifted at three loops (rank d<sub>3</sub> = 1)</span><span class="sub">mod p</span></td>
+  <td><span class="badge lift">Lifted at three loops (rank d<sub>3</sub> = 1)</span><span class="sub">exact over ℚ at (11; 1,0; −5); others mod p</span></td>
 </tr>
 <tr>
   <td>U(1), W = γ<sub>+</sub><sup>2</sup>γ<sub>−</sub><sup>2</sup></td><td class="cls new">d<sub>3</sub> source</td>
@@ -130,6 +136,24 @@
 </tr>
 
 <tr class="sec"><td colspan="6">Lifted at two loops</td></tr>
+<tr>
+  <td>N=2 SU(2) SYM (components)</td><td class="cls new">L·M<sub>1</sub> = tr(bΦ) · (β<sub>Φ</sub>)<sub>E</sub>(β<sub>Φ</sub>)<sub>F</sub>(β<sub>Φ</sub>)<sub>H</sub></td>
+  <td class="q">(10; 0,0; −5)<sub>−2</sub></td><td class="q">J<sub>L</sub> = 5/2, J<sub>R</sub> = 0</td>
+  <td>L = tr(bΦ) lifted at one loop, M<sub>1</sub>Q<sub>1</sub>L exact; also (11; 0,0; −6), (12; 1,1; −5), (13; 1,1; −6) rank 3, (14; 0,0; −7); N=2 SU(3): (11; 0,0; −5), (12; 0,0; −6)</td>
+  <td><span class="badge lift">Lifted at two loops (rank d<sub>2</sub> = 1)</span><span class="sub">exact over ℚ at (10; 0,0; −5); others mod p</span></td>
+</tr>
+<tr>
+  <td>SU(2) + adjoint Φ + singlet S, W = S tr Φ<sup>2</sup>/2 (components)</td><td class="cls new">J<sub>f</sub>·M, J<sub>f</sub> = β<sub>S</sub>γ<sub>S</sub> − ½ tr(β<sub>Φ</sub>γ<sub>Φ</sub>)</td>
+  <td class="q">(9; 1,1; −3)<sub>0</sub></td><td class="q">R = 3; J<sub>L</sub> = 5/2, J<sub>R</sub> = 0</td>
+  <td>flavour current J<sub>f</sub> times M ∈ E<sub>1</sub>(6; 1,1; −2)<sub>0</sub>; also L·M at (11; 0,0; −5)<sub>2</sub>, (12; 0,0; −6)<sub>3</sub></td>
+  <td><span class="badge lift">Lifted at two loops (rank d<sub>2</sub> = 1)</span><span class="sub">exact over ℚ at (9; 1,1; −3); others mod p</span></td>
+</tr>
+<tr>
+  <td>N=2 U(1)<sup>2</sup> linear quiver, W = γ<sub>s</sub>(γ<sub>x</sub>γ<sub>y</sub> + γ<sub>u</sub>γ<sub>v</sub>) + γ<sub>t</sub>(γ<sub>p</sub>γ<sub>r</sub> − γ<sub>u</sub>γ<sub>v</sub>)</td><td class="cls new">d<sub>2</sub> source</td>
+  <td class="q">(11; 1,1; −4), two flavour sectors</td><td class="q">R = 10/3; J<sub>L</sub> = 3, J<sub>R</sub> = 0</td>
+  <td>N=2 field content with d<sub>2</sub> ≠ 0 (N=2 SQED N<sub>f</sub> = 1, 2: d<sub>2</sub> = 0 on 566 blocks)</td>
+  <td><span class="badge lift">Lifted at two loops (rank d<sub>2</sub> = 1)</span><span class="sub">mod p</span></td>
+</tr>
 <tr>
   <td>N=2 U(1), N<sub>f</sub>=1 + adjoint mass; its IR quartic SQED</td><td class="cls new">∂<sub>+</sub>c · (b<sup>3</sup>γ<sub>s</sub> − 3β<sup>+</sup>β<sup>−</sup>b<sup>2</sup>)</td>
   <td class="q">(14; 1,0; −5)</td><td class="q">R = 2; J<sub>L</sub> = 3, J<sub>R</sub> = 1/2</td>
