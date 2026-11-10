@@ -1,0 +1,2456 @@
+\pdfoutput=1
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=25mm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{microtype,booktabs,longtable,array,needspace}
+\usepackage{tabularx,xltabular}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{placeins}
+\captionsetup{font=small,labelfont=bf}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,decorations.markings,calc}
+\usepackage[most]{tcolorbox}
+% Pictograms for the circuit dictionary
+\tikzset{
+  pict/.style={baseline={(0,-.55ex)},line width=.5pt,font=\scriptsize},
+  pR/.style={rectangle,draw,fill=white,minimum width=4.4mm,minimum height=1.5mm,inner sep=0pt,sloped,line width=.5pt},
+  pdot/.style={circle,fill=black,inner sep=1.05pt},
+  parr/.style={-{Stealth[length=1.3mm,width=1mm]},line width=.45pt},
+  pcur/.style={postaction={decorate},decoration={markings,mark=at position .84 with {\arrow{Stealth[length=1.3mm,width=1mm]}}}},
+}
+\newcommand{\pictResistor}{\tikz[pict]{\draw (0,0)--(1.1,0); \node[pR] at (.55,0) {}; \node at (.55,.22) {$t_e$};}}
+\newcommand{\pictCurrent}{\tikz[pict]{\draw[pcur] (0,0)--(1.25,0); \node[pR] at (.48,0) {}; \node at (1.02,.2) {$y_e$};}}
+\newcommand{\pictSource}{\tikz[pict]{\node[pdot] (v) at (0,0) {}; \draw (v)--(-.42,-.2) (v)--(.42,-.2); \draw[parr] (0,.46)--(v); \node[anchor=west] at (.03,.34) {$\lambda_v$}; \node[anchor=north] at (0,-.04) {$v$};}}
+\newcommand{\pictKirchhoff}{\tikz[pict]{\node[pdot] (v) at (0,0) {}; \draw[parr] (0,.46)--(v); \node[anchor=west] at (.03,.34) {$\lambda_v$};
+  \draw[pcur] (v)--(.55,-.22); \draw[pcur] (v)--(-.55,-.22); \draw[pcur] (-.6,.16)--(v);}}
+\newcommand{\pictLoop}{\tikz[pict]{\coordinate (a) at (0,-.3); \coordinate (b) at (1.3,-.3); \coordinate (c) at (.65,.5);
+  \draw (a)--node[pR,minimum width=3.4mm,minimum height=1.3mm]{}(b)--node[pR,minimum width=3.4mm,minimum height=1.3mm]{}(c)--node[pR,minimum width=3.4mm,minimum height=1.3mm]{}(a);
+  \draw[parr] (.79,.1) arc (0:290:.13);}}
+\newcommand{\pictConductance}{\tikz[pict]{\node[pdot] (u) at (0,0) {}; \node[pdot] (w) at (1.1,0) {}; \draw (u)--node[pR]{}(w); \node at (.55,.24) {$1/t_e$};}}
+\newcommand{\pictInsert}{\tikz[pict]{\draw (0,0)--(1.3,0); \node[pR] at (.42,0) {};
+  \draw[blue!65!black,line width=.9pt,-{Stealth[length=1.5mm,width=1.2mm]}] (.78,.12)--(1.24,.12); \node[blue!65!black] at (1.0,.31) {$y_{e,+\dot a}$};}}
+\newcommand{\pictLaman}{\tikz[pict]{\draw[dashed,fill=black!6] (.65,.08) ellipse (.95 and .5);
+  \node[pdot] (a) at (0,-.18) {}; \node[pdot] (b) at (1.3,-.18) {}; \node[pdot] (c) at (.65,.42) {};
+  \draw (a)--node[pR,minimum width=3.4mm,minimum height=1.3mm]{}(b)--node[pR,minimum width=3.4mm,minimum height=1.3mm]{}(c)--node[pR,minimum width=3.4mm,minimum height=1.3mm]{}(a);
+  \node at (1.72,.42) {$S$};}}
+\newcommand{\pictVolume}{\tikz[pict]{\draw[parr] (0,-.25)--(1.05,-.25); \draw[parr] (0,-.25)--(0,.48);
+  \fill[blue!12,draw=blue!65!black,line width=.45pt] (.2,-.14)--(.86,-.08) to[bend right=25] (.34,.38)--cycle;
+  \draw[parr,blue!65!black] (.6,.06) arc (0:280:.12);}}
+\usepackage[hyphens]{url}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!60!black}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\newcounter{rthmc}[section]
+\renewcommand{\therthmc}{\thesection.\arabic{rthmc}}
+\newcommand{\rthm}[3]{\par\addvspace{\medskipamount}\noindent\refstepcounter{rthmc}\label{#2}\textbf{#1~\therthmc}\if\relax\detokenize{#3}\relax\else\ (#3)\fi\textbf{.}}
+\newtcolorbox{proofbox}{breakable,enhanced,colback=white,colframe=black!28,boxrule=0.4pt,arc=1pt,
+  left=5pt,right=5pt,top=3pt,bottom=3pt,before skip=6pt,after skip=8pt,parbox=false}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\sgn}{sgn}
+\allowdisplaybreaks[3]
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{1.2em}
+\setlength{\emergencystretch}{2em}
+\hypersetup{pdftitle={Supplementary material: algorithm for the lifting tests},pdfauthor={Botao Li, Chi-Ming Chang, Kangning Liu}}
+\renewcommand{\thesection}{S\arabic{section}}
+\title{Supplementary material for\\ ``Holomorphic Feynman diagrams in four dimensions\\ and the quantum BPS ring'':\\[4pt] algorithm for the lifting tests}
+\author{Botao Li$^{1}$, Chi-Ming Chang and Kangning Liu\\[6pt]
+{\normalsize $^{1}$Peking University}}
+\date{}
+\begin{document}
+\maketitle
+\noindent This document is the supplementary material of the article \cite{MainArticle}. Sections, equations and statements of this supplement carry the prefix S; references without that prefix are to the article.
+{\small\setcounter{tocdepth}{2}\tableofcontents}
+\bigskip
+
+We compute the lifting tests of Section~9 up to a fixed level by reducing each charge sector to finite-dimensional linear algebra.
+
+The algorithm below produces the cohomology counts and obstruction ranks; the later sections apply it theory by theory and give explicit representatives and their corrections.
+
+Its outputs are $h=\dim E_1$ with $E_1=H(Q_0)$, the Cartan-restriction rank $\rho$, the fortuitous count $f$, and the ranks of the successive differentials $d_r$.
+
+The computed sector tables are in \href{https://github.com/lbotao399-stack/quantum-lifts-results}{quantum-lifts-results}.
+
+\section{The census algorithm}\label{sec-E-alg}
+
+We construct the cochains in each charge sector, evaluate the loop corrections, and compute the successive obstruction ranks.
+
+Cartan restriction and comparison with stable cohomology then identify the non-Cartan and fortuitous classes, while exact and finite-field checks record how the results are certified.
+
+\subsection{Charge sectors and the grading of the loop corrections}\label{sec-E-sectors}
+
+For $\mathcal N=4$ Yang--Mills theory, we organize the cochains by their letter weights and derivative counts.
+
+Counting the vertices and contractions gives the grading of each loop correction, which determines its target sector and bounds the possible obstruction orders.
+
+For the $\mathcal N=4$ letters, $\theta_I$ counts the $I$th odd-coordinate weight in $C$, and $n_\pm$ counts $\partial_{+\dot\pm}$ derivatives.
+
+For a monomial with $Y$ letters, let $e_I$ be the $I$th unit vector and write
+\begin{equation}\label{eq-E-sector}
+\begin{gathered}\lambda=(\theta_1,\theta_2,\theta_3;n_+,n_-),\qquad \Theta=\theta_1+\theta_2+\theta_3,\qquad \mathsf d=(1,1,1;-1,-1),\\ \theta(\gamma^I)=e_I,\qquad \theta(\beta_I)=(1,1,1)-e_I,\qquad \theta(\mathsf b)=(1,1,1),\qquad \theta(\mathsf c)=0,\end{gathered}
+\end{equation}
+
+$C^Y(\lambda)$, also written $(\lambda)_Y$, is the cochain sector with weight $\lambda$ and $Y$ letters. Its component degree is $\Theta=\deg_\theta$.
+\begin{equation}\label{eq-2-62}
+\deg_\theta\mathsf c=0,\quad\deg_\theta\gamma=1,\quad\deg_\theta\beta=2,\quad\deg_\theta\mathsf b=3,\qquad\deg_\theta(\partial_{+\dot a}X)=\deg_\theta X,
+\end{equation}
+
+At order $n$, a product graph has $n$ cubic vertices and $2n$ physical edges, each pairing component degrees that sum to three.
+\begin{equation}\label{eq-2-63}
+\deg_\theta\mathcal O_n=\deg_\theta\mathcal O_0+{3n}-{6n}=\deg_\theta\mathcal O_0-3n,\qquad\mathcal O_n=0\quad\text{if }3n>\deg_\theta\mathcal O_0.
+\end{equation}
+
+The degree losses add under iterated products.
+
+For a nonzero $Q_nX$, the $n+1$ cubic vertices and $2n+1$ edges give
+\begin{equation}\label{eq-graviton-differential-degree}
+\deg_\theta(Q_nX)
+=\deg_\theta X+3(n+1)-3(2n+1)=\deg_\theta X-3n
+\end{equation}
+
+The physical charges are the dimension $E$, the three $SU(4)_R$ Cartan charges $R_I$, and the spins $J_L,J_R$.
+\begin{equation}\label{eq-E-charges}
+\begin{gathered}E=\tfrac12(\Theta+Y)+n_++n_-,\qquad R_I=\theta_I-\tfrac12(\Theta-Y),\\ J_L=\tfrac12(\Theta-Y+n_++n_-),\qquad J_R=\tfrac12(n_+-n_-),\\ E=R_1+R_2+R_3+2J_L,\qquad 2(E+J_L)=2\Theta+3(n_++n_-).\end{gathered}
+\end{equation}
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}l>{\raggedright\arraybackslash}Xllllll@{}}
+\toprule
+letter & physical field & $\theta$ & $(n_+,n_-)$ & $E$ & $(R_1,R_2,R_3)$ & $J_L$ & $J_R$\\
+\midrule\endhead
+$\gamma^I$ & scalar $\bar\phi_I$ & $e_I$ & $(0,0)$ & $1$ & $e_I$ & $0$ & $0$\\
+$\beta_I$ & fermion $\psi^I_+$ & $(1,1,1)-e_I$ & $(0,0)$ & $\tfrac32$ & $(\tfrac12,\tfrac12,\tfrac12)-e_I$ & $\tfrac12$ & $0$\\
+$\mathsf b$ & field strength $f_{++}$ & $(1,1,1)$ & $(0,0)$ & $2$ & $(0,0,0)$ & $1$ & $0$\\
+$\partial_{+\dot\pm}\mathsf c$ & gaugino $\bar\lambda_{\dot\pm}$ & $0$ & $(1,0),(0,1)$ & $\tfrac32$ & $(\tfrac12,\tfrac12,\tfrac12)$ & $0$ & $\pm\tfrac12$\\
+$\partial_{+\dot\pm}$ & covariant derivative $\nabla_{+\dot\pm}$ & $0$ & $(1,0),(0,1)$ & $1$ & $(0,0,0)$ & $\tfrac12$ & $\pm\tfrac12$\\
+\bottomrule
+\end{xltabular}}
+
+The level is $E+J_L$. Equation \eqref{eq-E-charges} makes its set of sectors finite.
+
+\begin{proofbox}
+\textbf{Example Threshold charges}
+
+The $SU(2)$ threshold class \eqref{eq-threshold-source} has two $\gamma$, five $\beta$ and zero derivatives.
+\begin{equation*}
+\begin{gathered}\lambda=(4,4,4;0,0),\quad Y=7,\\E=\frac{19}{2},\qquad R_I=\frac32,\qquad J_L=\frac52,\qquad E+J_L=12.\end{gathered}
+\end{equation*}
+\end{proofbox}
+
+The current form (B.19) has degree $n$ in each dotted component, giving
+\begin{equation}\label{eq-derivative-homogeneity}
+\mathcal I_\Gamma^{\mathrm{raw\ cut}}
+\bigl(\lambda_{v,+\dot a}\mapsto c\lambda_{v,+\dot a};\,
+z_e^{+\dot a}\mapsto c^{-1}z_e^{+\dot a}\bigr)
+=c^n\,\mathcal I_\Gamma^{\mathrm{raw\ cut}}(\lambda;z),
+\qquad c>0.
+\end{equation}
+
+The $\lambda$ powers supply output derivatives and the $z$ powers remove input derivatives. Hence $Q_n$ adds $n$ derivatives in each direction \cite[Equations (3.44)--(3.45)]{semichiral}.
+
+$Q_0$ preserves both totals. Choose homogeneous contractions $(i_r,\pi_r,h_r)$ in (8.23).
+
+\rthm{Proposition}{appE2-0024}{}
+
+For $n\ge0$ and $r\ge1$,
+\begin{equation}\label{eq-E-grading}
+Q_n:C^Y(\lambda)\to C^{Y+1-n}(\lambda-n\mathsf d),\qquad d_r:E_r^Y(\lambda)\to E_r^{Y+1-r}(\lambda-r\mathsf d).
+\end{equation}
+
+Both maps have $(\Delta E;\Delta R_I;\Delta J_L,\Delta J_R)=(\tfrac12;\tfrac12,\tfrac12,\tfrac12;-\tfrac12,0)$.
+
+\begin{proofbox}
+\textbf{Proof}
+\begin{equation*}
+\Delta Y=3(n+1)-2(2n+1)=1-n,\qquad\theta_I(Q_nX)-\theta_I(X)=(n+1)-(2n+1)=-n.
+\end{equation*}
+
+The vertex and edge counts give the letter and flavour shifts. Equation \eqref{eq-derivative-homogeneity} supplies $n$ derivatives in each direction.
+
+The homogeneous contractions and transferred coefficients obey
+\begin{equation}\label{local-ch8-transfer-grading}
+\begin{gathered}
+h_r:E_r^Y(\lambda)\longrightarrow E_r^{Y+r-1}(\lambda+r\mathsf d),\\
+[\hbar^m]\mathbf Q^{(r)}:
+E_r^Y(\lambda)\longrightarrow E_r^{Y+1-r-m}\bigl(\lambda-(r+m)\mathsf d\bigr).
+\end{gathered}
+\end{equation}
+
+For $[\hbar^m]\mathbf Q^{(r+1)}$, let $\ell$ count perturbation factors. Their orders sum to $m+1$, and the term contains $\ell-1$ copies of $h_r$.
+\begin{equation}\label{local-ch8-transfer-grading-calculation}
+\begin{aligned}
+\Delta Y&=\ell(1-r)-(m+1)+(\ell-1)(r-1)=-r-m,\\
+\Delta\lambda&=-(\ell r+m+1)\mathsf d+(\ell-1)r\mathsf d=-(r+m+1)\mathsf d.
+\end{aligned}
+\end{equation}
+
+This proves the induction from $\mathbf Q^{(0)}=\mathbf Q$. Set $m=0$ for $d_{r+1}$ and insert the shifts into \eqref{eq-E-charges}.
+\begin{equation*}
+\Delta\Theta=-3n,\qquad\Delta(n_++n_-)=2n,\qquad(\Delta E;\Delta R_I;\Delta J_L,\Delta J_R)=\left(\frac12;\frac12,\frac12,\frac12;-\frac12,0\right).
+\end{equation*}
+
+\par\vspace{-\medskipamount}\noindent\hspace*{\fill}\qedsymbol
+\end{proofbox}
+
+The sectors $(\lambda+k\mathsf d)_{Y+k}$, $k\in\mathbb Z$, have the same physical charges. The cochain grading distinguishes the loop orders.
+
+\rthm{Corollary}{b-00758}{}
+
+An outgoing $d_r$ requires $r\le\min_I\theta_I$, and an incoming $d_r$ requires $r\le\min(n_+,n_-)$.
+
+A class with zero input derivatives has no incoming $d_r$ for $r\ge1$.
+
+\begin{proofbox}
+\textbf{Proof}
+\begin{equation*}
+\theta_I-r\ge0\quad\Longleftrightarrow\quad r\le\min_I\theta_I,\qquad n_\pm-r\ge0\quad\Longleftrightarrow\quad r\le\min(n_+,n_-).
+\end{equation*}
+
+\par\vspace{-\medskipamount}\noindent\hspace*{\fill}\qedsymbol
+\end{proofbox}
+
+\subsection{Highest-weight cochains}\label{sec-E-hw}
+
+We reduce the $\mathcal N=4$ calculation to highest-weight cochains so that each symmetry multiplet is counted once.
+
+We construct spanning sets from letter and derivative data, then compare their ranks with the exact dimensions obtained from group characters.
+
+The flavour raising operators $E_{12},E_{23}$ and the dotted-index raising operator $J_+$ commute with $Q_n$ by the $SL(3)$ invariance and spinor contractions in (7.3).
+
+Compute the maps on their common highest-weight space.
+\begin{equation}\label{eq-E-hw}
+\begin{gathered}C^Y_{\mathrm{HW}}(\lambda)=C^Y(\lambda)\cap\ker E_{12}\cap\ker E_{23}\cap\ker J_+,\\ \theta_1\ge\theta_2\ge\theta_3\ge0,\qquad n_+\ge n_-\ge0.\end{gathered}
+\end{equation}
+
+Each highest-weight class represents an $SU(3)\times SU(2)$ multiplet, with the product of the two irreducible dimensions.
+
+Encode a letter with $r,s$ derivatives by $u^rv^s$, so $J_+=u\partial_v$. Its type and total order $r+s$ form a skeleton entry.
+
+Group cochains by multisets of these entries. Compute each exact dimension by gauge-group Weyl integration and highest-weight extraction for $SU(3)\times SU(2)$.
+
+For $SU(2)$ and $SU(3)$, combine flavour, dotted and colour tableaux.
+
+The flavour slots are $\gamma^I\mapsto e_I$, $\beta_I\mapsto e_{I+1}\wedge e_{I+2}$, $\mathsf b\mapsto e_1\wedge e_2\wedge e_3$, and the empty slot for $\mathsf c$.
+
+The dotted tableau uses $n_-$ brackets $[pq]=u_pv_q-v_pu_q$ and $n_+-n_-$ further $u$ factors. Contract the colour slots into trace words.
+
+Match the spanning-set rank to the exact dimension. For $SU(3)$, split by charge conjugation $C:t_A\mapsto-t_A^{\mathsf T}$.
+
+For $SU(N)$ with $N\ge4$, use $V=\mathbb C^{3|2}$ and the $\mathfrak{gl}(3|2)$ Young diagrams $\mu$ with $\mu_4\le2$. Its coordinates are $\theta_1,\theta_2,\theta_3$ and the two holomorphic coordinates.
+
+A diagram with $|\mu|=\Theta+n_++n_-$ gives
+\begin{equation}\label{eq-E-young}
+\begin{gathered}\lambda(\mu)=\bigl(\mu_1,\mu_2,\mu_3;\ \#\{i\ge4:\mu_i\ge1\},\ \#\{i\ge4:\mu_i\ge2\}\bigr),\\ 2(E+J_L)=2(\mu_1+\mu_2+\mu_3)+3\sum_{i\ge4}\mu_i,\end{gathered}
+\end{equation}
+
+\subsection{Evaluation at finite rank}\label{sec-E-eval}
+
+We evaluate trace words or invariant tensors on Lie-algebra-valued letters of the chosen gauge group, so that finite-rank identities are imposed directly. The same evaluations turn the graph rule for each loop correction into a matrix acting between the specified charge sectors.
+
+Evaluate trace words, or invariant tensors for $SO$, $Sp$ and $G_2$, on random Lie-algebra-valued letters modulo $p=2^{31}-1$.
+
+These evaluations impose the finite-rank trace identities. Rank equal to the exact sector dimension certifies the spanning set.
+
+For $SU(N)$, use traceless $N\times N$ matrices and $\kappa_{RS}=\operatorname{tr}(t_Rt_S)$, $t^R=\kappa^{RS}t_S$.
+\begin{equation*}
+\sum_R(t_R)_{ab}(t^R)_{cd}=\delta_{ad}\delta_{bc}-\frac1N\delta_{ab}\delta_{cd}.
+\end{equation*}
+
+For $SO(2n+1)$ or $Sp(n)$, impose $A^{\mathsf T}F+FA=0$, with $\bar\imath=N_F+1-i$. Use $F_{i\bar\imath}=1$, $N_F=2n+1$, or $F_{i\bar\imath}=s_i$, $N_F=2n$, where $s_i=1$ for $i\le n$ and $-1$ otherwise.
+\begin{equation}\label{eq-E-casimir}
+\sum_R(t_R)_{ab}(t^R)_{cd}=\tfrac12\delta_{ad}\delta_{bc}-\tfrac12F_{ac}F_{bd}.
+\end{equation}
+
+Apply (7.3) by selecting $n+1$ input slots and replacing them with two differentiated output letters, using the selected Taylor coefficient.
+
+The colour chain becomes nested commutators.
+\begin{equation}\label{eq-E-chain}
+Q_nF\ \ni\ F\bigl(\ldots,\underbrace{[P,t_{R_1}]}_{\text{slot }i_1},\ldots,\underbrace{[t^{R_1},t_{R_2}]}_{\text{slot }i_2},\ldots,\underbrace{[t^{R_n},Q]}_{\text{slot }i_{n+1}},\ldots\bigr),
+\end{equation}
+
+Sum over ordered slot choices. Here $P,Q$ are the output letters, and the Casimir tensor contracts each $R_j$.
+
+\subsection{Ranks of the successive differentials}\label{sec-E-pages}
+
+We compute successive obstructions by solving the correction equations and measuring the residuals modulo all allowed lower-order corrections. Choosing bases for boundaries, cohomology representatives, and their primitives makes this calculation explicit and yields the rank tests below.
+
+For $d_r^k:E_r^k\to E_r^{k+1}$, choose boundary columns $B_r^k$, extend them to cycle columns $(B_r^k\;H_r^k)$, and choose primitive columns $L_r^k$ satisfying
+\begin{equation}\label{eq-page-basis-splitting}
+d_r^kL_r^k=B_r^{k+1},\qquad
+(B_r^k\;H_r^k\;L_r^k)\ \text{is invertible}.
+\end{equation}
+
+The corresponding contraction is
+\begin{equation}\label{eq-page-matrix-contraction}
+\begin{aligned}
+i_r^k&=H_r^k,\\
+\pi_r^k&=(0\;1\;0)(B_r^k\;H_r^k\;L_r^k)^{-1},\\
+h_r^k&=L_r^{k-1}(1\;0\;0)(B_r^k\;H_r^k\;L_r^k)^{-1}.
+\end{aligned}
+\end{equation}
+
+The block $1$ is the identity on the indicated columns. These matrices satisfy
+\begin{equation}\label{eq-page-matrix-checks}
+\begin{gathered}
+d_r^{k-1}h_r^k+h_r^{k+1}d_r^k=1-i_r^k\pi_r^k,
+\qquad \pi_r^ki_r^k=1,\\
+h_r^{k-1}h_r^k=0,\qquad h_r^ki_r^k=0,
+\qquad \pi_r^{k-1}h_r^k=0.
+\end{gathered}
+\end{equation}
+
+\emph{Pivot splitting.} Order the monomials and reduce the columns of $d_r^k$ over $\mathbb Q$. New-pivot preimages form $L_r^k$, their images form $B_r^{k+1}$, and independent kernel columns modulo $B_r^k$ form $H_r^k$.
+
+For large sectors, select pivots after modular row projection, reconstruct their coefficients over $\mathbb Q$, and verify them by exact $Q_0$ application.
+
+\emph{Orthogonal splitting.} With orthonormal monomials, take $H_r^k=\ker d_r^k\cap(\operatorname{im}d_r^{k-1})^\perp$, orthogonal projection $\pi_r$, and the Moore--Penrose pseudoinverse $h_r$ of $d_r$.
+
+\emph{Decoupled pair.} For $Q_0\beta^s=-m\gamma_s'$ and $Q_0\gamma_s'=0$ in \eqref{eq-massshift}, replace each differentiated $\gamma_s'$ by the same derivative of $-\beta^s/m$, with the odd-derivation sign, and divide by the number of $\gamma_s',\beta^s$ letters. The projection sets these letters to zero.
+
+Two contractions give conjugate transferred differentials by (8.25).
+\begin{equation}\label{eq-page-choice}
+\hbar\,\pi_r'(\hbar)i_r(\hbar)\,\mathbf Q^{(r+1)}
+=\pi_r'(\hbar)\,\mathbf Q^{(r)}\,i_r(\hbar)
+=\hbar\,\mathbf Q'^{(r+1)}\,\pi_r'(\hbar)i_r(\hbar),
+\end{equation}
+
+The constant term $\pi_r' i_r$ is invertible on $E_{r+1}$, so the ranks and class vanishing are independent of the splitting.
+
+Check nilpotence and the inclusion-intertwining identity through the retained order in $\hbar$.
+
+Let $\mathcal K$ be a basis of source $Q_0$-cycles in $(\lambda)_Y$.
+
+Corrections lie in $C_m=C^{Y-m}(\lambda-m\mathsf d)$ and order-$k$ residuals in $C'_k=C^{Y+1-k}(\lambda-k\mathsf d)$.
+
+Assemble the source and correction columns into
+\begin{equation}\label{eq-E-rank}
+\begin{gathered}M_R=\Bigl[\ \underbrace{Q_k\mathcal K}_{\text{source cocycles}}\ \Big|\ \underbrace{Q_{k-m}:C_m\to C'_k}_{\text{corrections}}\ \Bigr]_{1\le m\le k\le R},\qquad M'_R=M_R\setminus\{Q_k\mathcal K\},\\ \operatorname{rank}d_R=\bigl(\operatorname{rank}M_R-\operatorname{rank}M_{R-1}\bigr)-\bigl(\operatorname{rank}M'_R-\operatorname{rank}M'_{R-1}\bigr),\end{gathered}
+\end{equation}
+
+Block row $k$ lies in $C'_k$, with $M_0=M'_0=0$.
+
+\rthm{Proposition}{appE2-0065}{}
+
+Equation \eqref{eq-E-rank} computes $\operatorname{rank}d_R$ on $E_R^Y(\lambda)$.
+
+\begin{proofbox}
+\textbf{Proof}
+\begin{equation*}
+\operatorname{rank}\begin{pmatrix}A&0\\B&C\end{pmatrix}=\operatorname{rank}A+\operatorname{rank}\bigl[B|_{\ker A}\ \ C\bigr].
+\end{equation*}
+
+For $M'_2$, row elimination leaves $\operatorname{im}Q_0+Q_1\ker Q_0$ in $C'_2$, with cycles taken in $C_1$. For $M_2$, it also leaves $Q_2\mathcal O_0+Q_1\mathcal O_1$ for every pair satisfying $Q_1\mathcal O_0+Q_0\mathcal O_1=0$. Their rank difference is the quotient test \eqref{eq-d2-quotient-test}.
+
+Exact sources give residuals in this denominator. For $Q_0z=Q_0y=0$,
+\begin{equation*}
+\begin{aligned}\mathcal O_0=Q_0x,\quad\mathcal O_1=Q_1x+z&\quad\Longrightarrow\quad Q_2\mathcal O_0+Q_1\mathcal O_1=-Q_0Q_2x+Q_1z,\\\mathcal O_0=Q_1y,\quad\mathcal O_1=Q_2y+z&\quad\Longrightarrow\quad Q_2\mathcal O_0+Q_1\mathcal O_1=-Q_0Q_3y+Q_1z.\end{aligned}
+\end{equation*}
+
+The same row elimination through $R$ reproduces (8.39).\hfill\qedsymbol
+\end{proofbox}
+
+The second-page test is
+\begin{equation}\label{eq-d2-quotient-test}
+d_2[\mathcal O_0]_2=0
+\quad\Longleftrightarrow\quad
+Q_2\mathcal O_0+Q_1\mathcal O_1\in\operatorname{im}Q_0+Q_1\ker Q_0,
+\end{equation}
+
+Take $\ker Q_0$ in the first-correction sector, so it includes every cycle added to $\mathcal O_1$.
+
+A rational functional annihilating this denominator and nonzero on the residual certifies $d_2[\mathcal O_0]_2\ne0$, as in \ref{sec-SQEDlift}.
+
+The surviving dimension is
+\begin{equation}\label{eq-page-rank}
+\dim E_{r+1}^k
+=\dim E_r^k-\operatorname{rank}d_r^k
+              -\operatorname{rank}d_r^{k-1}.
+\end{equation}
+
+For candidate cycles $v_1,\ldots,v_m\in\ker d_r^k$, their independent classes number
+\begin{equation}\label{eq-page-independence}
+\operatorname{rank}(B_r^k\;v_1\;\cdots\;v_m)
+-\operatorname{rank}B_r^k
+=\operatorname{rank}\bigl[\pi_r^k(v_1\;\cdots\;v_m)\bigr].
+\end{equation}
+
+Reconstruct representatives with $i_0(\hbar)\cdots i_r(\hbar)$.
+
+Evaluate block rows at probe points and reduce modulo $p$, using the pivot splitting.
+
+For a single class, solve each correction and check the residual directly.
+\begin{equation*}
+R_r=\sum_{k=1}^rQ_k\mathcal O_{r-k},\qquad Q_0\mathcal O_r=-R_r,\qquad R_r\in\operatorname{im}Q_0.
+\end{equation*}
+
+\subsection{Cartan restriction and fortuity}\label{sec-E-fort}
+
+We perform two separate tests: Cartan restriction detects non-Cartan classes, while comparison with stable cohomology detects fortuitous classes. Both tests reduce to ranks of linear maps, with finite-rank trace identities supplying an alternative computation of the fortuitous count.
+
+Cartan restriction sets the $Q_0$ commutators to zero, so it descends to $E_1$ with rank $\rho$.
+
+Its kernel consists of non-Cartan classes \cite[Definition 1]{ChangChevalley}.
+
+Fortuitous classes are independent modulo the image of stable cohomology at rank $N$ \cite{microstates,ChangChevalley}.
+
+Let $C_\infty$ be the stable trace complex, $\pi_N:C_\infty\to C_N$ its rank restriction, and $R_N=\ker\pi_N$ its trace identities.
+
+With $B_N=\operatorname{im}Q_0$ and $h=\dim E_1$, compute
+\begin{equation}\label{eq-E-fort}
+f=h-\operatorname{rank}\pi_N^*,\qquad \operatorname{rank}\pi_N^*=\operatorname{rank}\begin{pmatrix}\pi_N&B_N\\ Q_0^\infty&0\end{pmatrix}-\operatorname{rank}Q_0^\infty-\operatorname{rank}B_N,
+\end{equation}
+
+The sequence $0\to R_N\to C_\infty\to C_N\to0$ identifies degree-$Y-1$ fortuity with $K(Y)=\dim\ker[H^Y(R_N)\to H^Y(C_\infty)]$. In the formula below, $Q$ is the restriction of $Q_0^\infty$ to $R_N$, and $\iota$ is its inclusion.
+\begin{equation}\label{eq-E-K}
+\begin{gathered}f(Y-1)=K(Y)=\dim R^Y-\operatorname{rank}\begin{pmatrix}Q:R^Y\to R^{Y+1}&0\\ \iota:R^Y\to C^Y_\infty&Q_0:C^{Y-1}_\infty\to C^Y_\infty\end{pmatrix}\\ +\operatorname{rank}Q_0\big|_{C^{Y-1}_\infty}-\operatorname{rank}Q\big|_{R^{Y-1}}.\end{gathered}
+\end{equation}
+
+The block kernel consists of $Qz=0$, $\iota z=Q_0w$, with $z\in R^Y$ and $w\in C_\infty^{Y-1}$. Subtract the freedom $\ker Q_0$ in $w$ and the boundaries in $R$.
+
+For $SU(N\ge4)$, compute $R_N$ diagram by diagram using \eqref{eq-E-young}.
+
+$SU(N)$ trace identities start at $N+1$ letters. The sector with $Y$ letters is stable for $N\ge Y+1$.
+
+The $SO(2n+1)$ and $Sp(n)$ stable trace algebras agree by trace reversal. Count them by the Burnside action of $\prod_kS_2\wr S_k$ on perfect matchings. The stable ranges are respectively $Y<2n+2$ and $Y<n+1$, where $f=0$.
+
+\subsection{Selection rules and the all-order criterion}\label{sec-E-select}
+
+At fixed charges, the grading permits only finitely many incoming and outgoing differentials. We combine these bounds with the graviton completion theorem to determine which obstruction tests are needed for all-order survival.
+
+Theorem 8.1 makes every outgoing $d_r$ vanish on the graviton part. The source ranks obey the fortuitous-rank bound~(8.51).
+
+For all-order survival, check every outgoing map with $r\le\min_I\theta_I$ vanishes on the class and every incoming map with $r\le\min(n_+,n_-)$ misses it.
+
+These finite tests give a closed completion by (8.39).
+
+The scans compute $(h,\rho)$ sectorwise and $d_1,d_2,d_3$ on pairs with nonzero source and target pages. For $SU(N)$, they compute $(h,f)$ and follow the fortuitous classes found.
+
+\subsection{Certification and gates}\label{sec-E-cert}
+
+We record which rank computations are certified over the rational numbers and which are supported by independent finite-field probes. Nilpotence, deliberate perturbations of the graph rules, and low-rank group identifications provide additional checks on the calculation.
+
+Evaluate ranks modulo $p=2^{31}-1$.
+
+The modular rank bounds the rational rank from below. Equality with the source or target dimension certifies the rank.
+
+The label [p,p$\prime$] records independent probes at $p'=2147483629$. The label [$\mathbb Q$] records rational elimination or Chinese-remainder reconstruction beyond the Hadamard bound for the minors.
+
+Check $\sum_{j=0}^nQ_jQ_{n-j}=0$ for $n\le3$. Perturbing a loop coefficient, vertex sign or projection must fail these checks.
+
+Compare the adjoint counts of $SO(3),Sp(1),SU(2)$ and of $SO(5),Sp(2)$, then compare orbit sums with full torus sums sectorwise.
+
+\subsection{A worked chain}\label{sec-E-chain}
+
+We apply the preceding tests to the $SU(2)$ class P39, following its obstruction chain through every order allowed by the grading. The table records the target sectors and residual calculations used to establish its all-order survival.
+
+\begin{proofbox}
+\textbf{Worked chain P39}
+\begin{equation*}
+(\lambda)_Y=(5,5,5;3,0)_9,\qquad E=15,\qquad R_I=2,\qquad J_L=\frac92,\qquad J_R=\frac32.
+\end{equation*}
+
+For the $SU(2)$ class P39, $n_-=0$ excludes incoming maps and Corollary~\ref{b-00758} bounds outgoing maps by $r\le5$.
+
+Solve the residuals in the following target sectors.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+$r$ & target $(\lambda-r\mathsf d)_{Y+1-r}$ & target data & result\\
+\midrule\endhead
+$1$ & $(4,4,4;4,1)_9$ & $h=13$ & $d_1=0$\\
+$2$ & $(3,3,3;5,2)_8$ & $583$ graviton classes & $R_2\in\operatorname{im}Q_0$ ($45{,}450{,}714$ terms)\\
+$3$ & $(2,2,2;6,3)_7$ & $h=1$ & $R_3\in\operatorname{im}Q_0$ ($17{,}787{,}235$ terms)\\
+$4$ & $(1,1,1;7,4)_6$ & $h=\rho=g=152$ & $R_4\in\operatorname{im}Q_0$ ($1{,}276{,}152$ terms)\\
+$5$ & $(0,0,0;8,5)_5$ & $h=0$ & no target\\
+\bottomrule
+\end{xltabular}}
+
+Here $g$ counts graviton classes, and the term counts refer to the residuals.
+
+The completion is closed through four loops. Its fifth target is zero, giving all-order survival [p,p$\prime$].
+\end{proofbox}
+
+\section{N=4 Yang--Mills theory with gauge group SU(N)}\label{sec-E-SU}
+
+We apply the census and lifting tests to the special unitary gauge groups. The tables record the completed search ranges, the fortuitous classes found, and their successive obstructions or closed quantum completions.
+
+\subsection{Frontier}\label{sec-E-SU-frontier}
+
+We first specify which charge sectors have been searched at each rank. The census separates completed ranges from partial scans and records the cohomology and fortuitous-class counts within them.
+
+Census over $\mathbb F_p$.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+$G$ & all sectors through $E+J_L$ & partial levels (sectors done) & fortuitous classes found\\
+\midrule\endhead
+$SU(2)$ & $\tfrac{33}2$ & $\tfrac{35}2$ by the restriction detector; chains at $\tfrac{39}2$, $20$ & $\mathcal O_0$ and its descendants, $\mathcal O_1$, P39, X40\\
+$SU(3)$ & $15$ & detector through $17$ & $X_7$, the towers $F_1$, $B_1$, four further primaries\\
+$SU(4)$ & $\tfrac{27}2$ & $14$: $34$ of $38$ diagrams & one class at $(4,2,2;2,2)_9$\\
+$SU(5)$ & $14$ & $\tfrac{29}2$: $26/29$; $15$: $3/53$ & none\\
+$SU(6)$ & $15$ & $\tfrac{31}2$: $1/38$ & none\\
+$SU(7)$ & $15$ & $\tfrac{31}2$: $19/37$; $16$: $14/62$ & none\\
+$SU(8)$ & $\tfrac{31}2$ & $16$: $45/56$; $\tfrac{33}2$: $19/45$ & none\\
+$SU(9)$ & $\tfrac{33}2$ & $17$: $41/64$; $\tfrac{35}2$: $18/50$ & none\\
+$SU(10)$ & $17$ & $\tfrac{35}2$: $33/38$; $18$: $39/72$ & none\\
+$SU(11)$--$SU(15)$ & $18$ &  & none\\
+\bottomrule
+\end{xltabular}}
+
+The earlier $SU(3)$ scan reached $E+J_L=\tfrac{23}2$ \cite{KLLS}.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+$E+J_L$ & sectors & classes & boson states & fermion states & non-graviton blocks & non-graviton classes\\
+\midrule\endhead
+$1$ & 1 & 0 & 0 & 0 & 0 & 0\\
+$\tfrac{3}{2}$ & 1 & 0 & 0 & 0 & 0 & 0\\
+$2$ & 2 & 1 & 6 & 0 & 0 & 0\\
+$\tfrac{5}{2}$ & 1 & 1 & 0 & 6 & 0 & 0\\
+$3$ & 5 & 2 & 1 & 8 & 0 & 0\\
+$\tfrac{7}{2}$ & 2 & 2 & 18 & 0 & 0 & 0\\
+$4$ & 6 & 4 & 18 & 12 & 0 & 0\\
+$\tfrac{9}{2}$ & 5 & 4 & 2 & 38 & 0 & 0\\
+$5$ & 9 & 6 & 36 & 30 & 0 & 0\\
+$\tfrac{11}{2}$ & 6 & 7 & 102 & 18 & 0 & 0\\
+$6$ & 16 & 15 & 59 & 139 & 0 & 0\\
+$\tfrac{13}{2}$ & 9 & 17 & 96 & 228 & 0 & 0\\
+$7$ & 19 & 29 & 423 & 114 & 0 & 0\\
+$\tfrac{15}{2}$ & 16 & 37 & 402 & 420 & 0 & 0\\
+$8$ & 26 & 60 & 345 & 912 & 0 & 0\\
+$\tfrac{17}{2}$ & 19 & 72 & 1230 & 714 & 0 & 0\\
+$9$ & 39 & 112 & 1786 & 1173 & 0 & 0\\
+$\tfrac{19}{2}$ & 26 & 140 & 1542 & 2934 & 0 & 0\\
+$10$ & 46 & 211 & 3327 & 3507 & 0 & 0\\
+$\tfrac{21}{2}$ & 39 & 271 & 6618 & 3734 & 0 & 0\\
+$11$ & 59 & 413 & 6807 & 8733 & 0 & 0\\
+$\tfrac{23}{2}$ & 46 & 531 & 9582 & 13824 & 0 & 0\\
+$12$ & 81 & 811 & 21483 & 13593 & 1 & 1\\
+$\tfrac{25}{2}$ & 59 & 1053 & 26406 & 25614 & 1 & 1\\
+$13$ & 94 & 1563 & 30504 & 46380 & 3 & 3\\
+$\tfrac{27}{2}$ & 81 & 2028 & 63444 & 49640 & 4 & 5\\
+$14$ & 116 & 2986 & 90111 & 74934 & 7 & 9\\
+$\tfrac{29}{2}$ & 94 & 3835 & 101250 & 138786 & 7 & 11\\
+$15$ & 150 & 5567 & 177657 & 170608 & 12 & 19\\
+$\tfrac{31}{2}$ & 116 & 7203 & 280314 & 222792 & 9 & 19\\
+$16$ & 172 & 10330 & 333117 & 391821 & 14 & 27\\
+$\tfrac{33}{2}$ & 150 & 13377 & 494548 & 548270 & 15 & 30\\
+\bottomrule
+\end{xltabular}}
+
+$SU(2)$ counts are highest weights, with $SU(3)\times SU(2)$ multiplicities for states. Seven-letter classes through level $\tfrac{33}2$ belong to $\mathcal O_0$. Nine-letter classes at $16,\tfrac{33}2$ are its graviton products and descendants.
+
+\subsection{Fortuitous classes}\label{sec-E-SU-classes}
+
+We list the fortuitous classes by their charges and highest-weight sectors. The rank calculation for the first $SU(4)$ example shows how the restriction detector isolates a class beyond the stable spectrum.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$G$ & class & $(\lambda)_Y$ & $E$ & $(R_1,R_2,R_3)$ & $J_L$ & $J_R$ & data\\
+\midrule\endhead
+$SU(2)$ & $\mathcal O_0$ & $(4,4,4;0,0)_7$ & $\tfrac{19}2$ & $(\tfrac32,\tfrac32,\tfrac32)$ & $\tfrac52$ & $0$ & \cite[Section 3.1]{ChangLinWords,KKLP}\\
+ & $\mathcal O_1$ & $(6,6,6;0,0)_9$ & $\tfrac{27}2$ & $(\tfrac32,\tfrac32,\tfrac32)$ & $\tfrac92$ & $0$ & \cite{microstates}\\
+ & P39 & $(5,5,5;3,0)_9$ & $15$ & $(2,2,2)$ & $\tfrac92$ & $\tfrac32$ & $h=13$: $12$ products and descendants, one new class [p,p$\prime$]\\
+ & X40 & $(7,5,5;1,1)_{10}$ & $\tfrac{31}2$ & $(\tfrac72,\tfrac32,\tfrac32)$ & $\tfrac92$ & $0$ & $(h,\rho,g)=(8,8,7)$ [p,p$\prime$]\\
+$SU(3)$ & $X_7$ & $(2,2,2;2,2)_7$ & $\tfrac{21}2$ & $(\tfrac52,\tfrac52,\tfrac52)$ & $\tfrac32$ & $0$ & $(h,\rho,g)=(26,26,25)$; odd under $C$; $35$ highest-weight blocks in its multiplet\\
+ & $X_7$ member & $(0,0,0;5,5)_7$ & $\tfrac{27}2$ & $(\tfrac72,\tfrac72,\tfrac72)$ & $\tfrac32$ & $0$ & fortuitous [$\mathbb Q$]; $26$ trace generators\\
+ & $F_1$ tower & $(n+4,4,4;0,0)_{n+7}$ & $n+\tfrac{19}2$ & $(n+\tfrac32,\tfrac32,\tfrac32)$ & $\tfrac52$ & $0$ & $n\ge3$ \cite{BraneFused,KLLS}\\
+ & $B_1$ tower & $(n+5,5,4;0,0)_{n+8}$ & $n+11$ & $(n+2,2,1)$ & $3$ & $0$ & \cite{BraneFused,KLLS}\\
+ & primary & $(5,4,4;1,1)_{10}$ & $\tfrac{27}2$ & $(\tfrac72,\tfrac52,\tfrac52)$ & $\tfrac52$ & $0$ & $h=2$, $\rho=0$, odd under $C$\\
+ & primary & $(7,4,4;1,0)_{11}$ & $14$ & $(5,2,2)$ & $\tfrac52$ & $\tfrac12$ & $h=2$ (one beyond the $F_1$ descendant), $\rho=0$\\
+ & primary & $(6,4,4;1,1)_{11}$ & $\tfrac{29}2$ & $(\tfrac92,\tfrac52,\tfrac52)$ & $\tfrac52$ & $0$ & $h=3$, $\rho=0$\\
+ & primary & $(7,5,4;1,0)_{11}$ & $\tfrac{29}2$ & $(\tfrac92,\tfrac52,\tfrac32)$ & $3$ & $\tfrac12$ & $h=4$, $\rho=0$\\
+$SU(4)$ & first class & $(4,2,2;2,2)_9$ & $\tfrac{25}2$ & $(\tfrac92,\tfrac52,\tfrac52)$ & $\tfrac32$ & $0$ & $f=1$ [$\mathbb Q$]; odd under $C$\\
+\bottomrule
+\end{xltabular}}
+
+$C$ denotes charge conjugation $t_A\mapsto-t_A^{\mathsf T}$. $(0,0,0;5,5)_7$ represents a nonzero class of $H^7(\mathfrak{sl}_3[z_+,z_-],\mathfrak{sl}_3)$ over $\mathbb Q$. Raising operators give fixed-$Y$ shifts $(-e_I;+e_\pm)$ and $(+e_I;0)$, e.g. $(7,4,4;1,0)_{11}\to(6,4,4;1,1)_{11}$.
+
+Apply \eqref{eq-E-K} to the $SU(4)$ diagram $(4,2,2,2,2)$.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}llllllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$Y$ & $5$ & $6$ & $7$ & $8$ & $9$ & $10$ & $11$ & $12$\\
+\midrule\endhead
+$\dim R^Y$ & $17$ & $213$ & $1201$ & $3430$ & $5321$ & $4579$ & $2085$ & $404$\\
+$\operatorname{rank}Q|_{R^Y}$ & $17$ & $196$ & $1005$ & $2424$ & $2894$ & $1681$ & $401$ & $0$\\
+$\dim H^Y(R_4)$ & $0$ & $0$ & $0$ & $1$ & $3$ & $4$ & $3$ & $3$\\
+$K(Y)$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$\\
+\bottomrule
+\end{xltabular}}
+
+At $Y=10$, $K=4579-7900+6216-2894=1$ over $\mathbb Q$, hence $f(9)=1$. The same diagram for $SU(5)$ and the other completed $SU(4)$ diagrams have $K=0$.
+
+\subsection{Lifting}\label{sec-E-SU-lift}
+
+We follow the listed classes through the successive obstruction equations. The tables give the target sectors, exactness tests and incoming differentials used to determine whether each class survives.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+class & result & level\\
+\midrule\endhead
+$\mathcal O_0$ ($SU(2)$) & closed completion $\sum_{r\le4}\hbar^r\mathcal O_r$, no incoming $d_r$: all orders (Section~\ref{sec-fortuitous}) & [$\mathbb Q$]\\
+$\mathcal O_1$ ($SU(2)$) & $d_1\ne0$ \cite[Section 3.3]{KKLP} & [p,p$\prime$]\\
+P39 & $d_1=0$; $R_2,R_3,R_4\in\operatorname{im}Q_0$; $r=5$ target $h=0$; no incoming: all orders & [p,p$\prime$]\\
+X40 & $d_1=0$; $R_2\in\operatorname{im}Q_0+Q_1\ker Q_0$; $R_3,R_4\in\operatorname{im}Q_0$; $[R_5]=0$; incoming sources $h=0$: all orders & [p,p$\prime$] for $r\le2$, [p]\\
+$X_7$ & $d_1=0$ in and out; outgoing $d_2$ target and incoming $d_2$ source have $h=0$; $r\ge3$ empty: all orders & [p]\\
+$F_1$, $n=3$ & closed completion $\mathcal O_0,\ldots,\mathcal O_4$; $r\ge5$ empty; no incoming: all orders & [p]\\
+$(5,4,4;1,1)_{10}$ & $d_1=d_2=0$ on both classes; the $d_3$ target has $h=0$; no incoming & [p]\\
+$SU(4)$, $(4,2,2;2,2)_9$ & $R_1$ exact in $(3,1,1;3,3)_9$ ($h=111$); $R_2$ exact ($h=0$); $r\ge3$ empty; incoming $d_1$ rank $0$ from $453$ sources, incoming $d_2$ source $h=0$: all orders & [p]\\
+\bottomrule
+\end{xltabular}}
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}Xll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+class & $r$ & target & data & result\\
+\midrule\endhead
+X40 & $1$ & $(6,4,4;2,2)_{10}$ &  & $d_1=0$ ($4{,}429{,}603$ terms)\\
+ & $2$ & $(5,3,3;3,3)_9$ &  & $R_2\in\operatorname{im}Q_0+Q_1\ker Q_0$\\
+ & $3$ & $(4,2,2;4,4)_8$ & $1112$ graviton classes & $R_3\in\operatorname{im}Q_0$\\
+ & $4$ & $(3,1,1;5,5)_7$ &  & $R_4\in\operatorname{im}Q_0$\\
+ & $5$ & $(2,0,0;6,6)_6$ & $h=\rho=g=30$ & restriction of $R_5$ zero\\
+$F_1$, $n=3$, $(7,4,4;0,0)_{10}$ & $1$ & $(6,3,3;1,1)_{10}$ & $h=0$ & $\mathcal O_1$ in $Y=9$\\
+ & $2$ & $(5,2,2;2,2)_9$ & $h=609$, $\rho=608$ & $\mathcal O_2$ in $Y=8$\\
+ & $3$ & $(4,1,1;3,3)_8$ & $h=0$ & $\mathcal O_3$ in $Y=7$\\
+ & $4$ & $(3,0,0;4,4)_7$ & $h=\rho=34$ & $\mathcal O_4$ in $Y=6$\\
+$SU(4)$, $(4,2,2;2,2)_9$ & $1$ & $(3,1,1;3,3)_9$ & $h=111$ & $R_1$ exact\\
+ & $2$ & $(2,0,0;4,4)_8$ & $h=0$ & $R_2$ exact\\
+ & in $1$ & $(5,3,3;1,1)_9$ & $h=453$ & incoming $d_1$ rank $0$\\
+ & in $2$ & $(6,4,4;0,0)_{10}$ & $h=0$ & no incoming $d_2$\\
+$(5,4,4;1,1)_{10}$ & $1$ & $(4,3,3;2,2)_{10}$ & $h=0$ & $R_1$ exact on both classes\\
+ & $2$ & $(3,2,2;3,3)_9$ & $h=331$, $\rho=329$ & $R_2$ exact on both classes\\
+\bottomrule
+\end{xltabular}}
+
+The $17$ second-page classes in seven eleven-letter $SU(2)$ blocks are products.
+
+\section{SO(2N+1), Sp(N) and S-duality}\label{sec-E-SOSp}
+
+We compare the orthogonal and symplectic censuses to locate the classical classes responsible for unequal counts. We then apply the lifting tests and compare the surviving spectra at fixed physical charges.
+
+S-duality predicts equality at each charge for $SO(2N+1)$ and $Sp(N)$. The quantities $Y$, $n_+$ and $n_-$ are not conserved charges. The first mismatch, at $SO(7),Sp(3)$ \cite{GLRT,ChangLin}, is lifted by $d_1$ \cite{KonishiBH}.
+
+\subsection{First fortuitous levels}\label{sec-E-SOSp-first}
+
+We locate the first fortuitous levels in each orthogonal and symplectic theory. The tables give the charges and lifting status of these classes alongside the census counts from which they were found.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+$G$ & $(\lambda)_Y$ & $E$ & $(R_1,R_2,R_3)$ & $J_L$ & data & lifted or not\\
+\midrule\endhead
+$SO(3)=Sp(1)$ & $(4,4,4;0,0)_7$ & $\tfrac{19}2$ & $(\tfrac32,\tfrac32,\tfrac32)$ & $\tfrac52$ & the $SU(2)$ class $\mathcal O_0$ & all orders survival\\
+$SO(5)=Sp(2)$ & $(3,2,2;1,1)_7$ & $9$ & $(3,2,2)$ & $1$ & $f=1$, $\rho=0$ & all orders [p]\\
+$SO(7)$ & $(3,3,3;0,0)_8$ & $\tfrac{17}2$ & $(\tfrac52,\tfrac52,\tfrac52)$ & $\tfrac12$ & $O_f$ \cite{GLRT}; $(h,\rho)=(1,1)$ & $d_1$ into $(2,2,2;1,1)_8$ \cite{KonishiBH}\\
+$Sp(3)$ & $(5,2,2;1,1)_9$ & $11$ & $(5,2,2)$ & $1$ & $h=f=1$ & all orders [p]\\
+$Sp(3)$ & $(5,0,0;3,3)_9$ & $13$ & $(7,2,2)$ & $1$ & $h=1$, $\rho=0$ & no outgoing; incoming $d_2$ open\\
+$SO(9)$ & $(5,3,3;0,0)_{10}$ & $\tfrac{21}2$ & $(\tfrac92,\tfrac52,\tfrac52)$ & $\tfrac12$ & $h=6$, one beyond $Sp(4)$ & $d_1$ into $(4,2,2;1,1)_{10}$ [p]\\
+$SO(11)$ & $(7,3,3;0,0)_{12}$ & $\tfrac{25}2$ & $(\tfrac{13}2,\tfrac52,\tfrac52)$ & $\tfrac12$ & $h=23$, $f=1$ & $d_1$ into $(6,2,2;1,1)_{12}$ [p]\\
+\bottomrule
+\end{xltabular}}
+
+For $N=3,4,5$, the first $SO(2N+1)$ class has $E=\tfrac{4N+5}2$, $J_L=\tfrac12$, and the lift $(2N-3,3,3;0,0)_{2N+2}\xrightarrow{d_1}(2N-4,2,2;1,1)_{2N+2}$. For $Sp(3)$, $(5,2,2;1,1)_9\to(5,0,0;3,3)_9$ has shift $(0,-2,-2;+2,+2)$ at fixed $Y$. For $Sp(3)$ sector $(5,2,2;1,1)_9$ and $SO(5)=Sp(2)$, outgoing targets have $E_r=0$ or zero rank, and incoming sources have $h=0$. Entries give $\sum h$/fortuitous count. An asterisk excludes stable-range sectors from $h$, and superscript p marks a partial level.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}llllllllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$E+J_L$ & $SO(3)$ & $Sp(1)$ & $SO(5)$ & $Sp(2)$ & $SO(7)$ & $Sp(3)$ & $SO(9)$ & $Sp(4)$ & $SO(11)$ & $Sp(5)$\\
+\midrule\endhead
+$8$ & 60 & 60 & 164 & 164 & $43^{*}$ & 203 & $0^{*}$ & 207 & $0^{*}$ & 207\\
+$\tfrac{17}{2}$ & 72 & 72 & 207 & 207 & $117^{*}$ & 255 & $0^{*}$ & 261 & $0^{*}$ & 261\\
+$9$ & 112 & 112 & 381 & 381 & $385/1^{*}$ & 495 & $0^{*}$ & 516 & $0^{*}$ & 516\\
+$\tfrac{19}{2}$ & 140 & 140 & 495 & 495 & $596/1^{*}$ & 647 & $0^{*}$ & 675 & $0^{*}$ & 675\\
+$10$ & 211 & 211 & 877/1 & 877/1 & $1218/3^{*}$ & 1230 & $168^{*}$ & 1304 & $0^{*}$ & 1309\\
+$\tfrac{21}{2}$ & 271 & 271 & 1151/2 & 1151/2 & $1641/5^{*}$ & 1636 & $554^{*}$ & 1736 & $0^{*}$ & 1745\\
+$11$ & 413 & 413 & 1996/6 & 1996/6 & 3047/9 & 3029 & $2058/1^{*}$ & 3277 & $0^{*}$ & 3308\\
+$\tfrac{23}{2}$ & 531 & 531 & 2665/9 & 2665/9 & 4099/11 & 4077 & $3627/2^{*}$ & 4426 & $0^{*}$ & 4470\\
+$12$ & 811/1 & 811/1 & $90/1^{\mathrm p}$ & $90/1^{\mathrm p}$ & $100^{\mathrm p}$ & 7408/1 & $0^{\mathrm p}$ & 8252 & $651^{*}$ & 8374\\
+$\tfrac{25}{2}$ & -- & -- & -- & -- & -- & $1385^{\mathrm p}$ & -- & $1748^{\mathrm p}$ & $1642^{\mathrm p}$ & $1821^{\mathrm p}$\\
+$13$ & $261^{\mathrm p}$ & $261^{\mathrm p}$ & $726/7^{\mathrm p}$ & $726/7^{\mathrm p}$ & $868^{\mathrm p}$ & $1380^{\mathrm p}$ & $842^{\mathrm p}$ & $1659^{\mathrm p}$ & $848/1^{\mathrm p}$ & $1741^{\mathrm p}$\\
+$\tfrac{27}{2}$ & -- & -- & -- & -- & -- & $24^{\mathrm p}$ & -- & $44^{\mathrm p}$ & $50^{\mathrm p}$ & $50^{\mathrm p}$\\
+$14$ & $160^{\mathrm p}$ & $160^{\mathrm p}$ & $378/6^{\mathrm p}$ & $378/6^{\mathrm p}$ & $429^{\mathrm p}$ & $424^{\mathrm p}$ & $434^{\mathrm p}$ & $442^{\mathrm p}$ & $13^{\mathrm p}$ & $447^{\mathrm p}$\\
+\bottomrule
+\end{xltabular}}
+
+\subsection{One-loop lifts}\label{sec-E-SOSp-lift}
+
+We calculate the one-loop differentials connecting the extra classical classes to their targets. The source and target ranks show which orthogonal classes are removed and how the corresponding symplectic sectors differ.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+source & target & result & level\\
+\midrule\endhead
+$SO(7)$ $(3,3,3;0,0)_8$, $O_f$ & $(2,2,2;1,1)_8$, $(h,\rho)=(2,1)$ & $d_1$ rank $1$ \cite{KonishiBH} & [p], three primes\\
+$SO(7)$ $(4,3,3;0,0)_8$ & $(3,2,2;1,1)_8$, $(h,\rho)=(11,10)$ & $d_1$ rank $1$ & [p]\\
+$SO(7)$ $(3,1,1;2,2)_8$ & $(2,0,0;3,3)_8$, $(h,\rho)=(2,1)$ & $d_1\ne0$; for $Sp(3)$ $d_1=0$ & [$\mathbb Q$]\\
+$SO(9)$ $(5,3,3;0,0)_{10}$ & $(4,2,2;1,1)_{10}$, $(h,\rho)=(10,9)$ & $d_1$ rank $1$ & [p]\\
+$SO(11)$ $(7,3,3;0,0)_{12}$ & $(6,2,2;1,1)_{12}$ & $d_1$ rank $1$ & [p]\\
+$SO(7)$ $(6,1,1;2,2)_{10}$, $h-\rho=1$, $f=0$ & from $(7,2,2;1,1)_{10}$ & incoming $d_1$ rank $0$; incoming $d_2$ source $h=0$ & [p]\\
+\bottomrule
+\end{xltabular}}
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}l>{\raggedright\arraybackslash}Xl@{}}
+\toprule
+sector & $(h,\rho)$ for $SO(2N+1)$ & $(h,\rho)$ for $Sp(N)$\\
+\midrule\endhead
+$(3,3,3;0,0)_8$ & $(1,1)$ & $(0,0)$\\
+$(2,2,2;1,1)_8$ & $(2,1)$ & $(1,1)$\\
+$(4,3,3;0,0)_8$ & $(7,7)$ & $(6,6)$\\
+$(3,2,2;1,1)_8$ & $(11,10)$ & $(10,10)$\\
+$(5,3,3;0,0)_{10}$ & $(6,6)$ & $(5,5)$\\
+$(4,2,2;1,1)_{10}$ & $(10,9)$ & $(9,9)$\\
+\bottomrule
+\end{xltabular}}
+
+Along the $\mathsf d$-orbit $(5,0,0;3,3)_9$, $(6,1,1;2,2)_{10}$, $(7,2,2;1,1)_{11}$, $(8,3,3;0,0)_{12}$, the $h/\rho$ values are $0/0,355/354,1/0,41/40$ for $SO(7)$ and $1/0,354/354,1/0,41/40$ for $Sp(3)$.
+
+\subsection{The per-charge S-duality test}\label{sec-E-sdual}
+
+We test S-duality by collecting the surviving classes at each fixed set of physical charges. The comparison sums over all sectors with those charges and records the remaining candidates for higher differentials.
+
+Assuming $E_2=E_\infty$ and perturbative S-duality, at every charge $(E;R_I;J_L,J_R)$,
+\begin{equation}\label{eq-E-sdual}
+\sum_{(\lambda)_Y\mapsto(E;R_I;J_L,J_R)}\dim E_2^{SO(2N+1)}(\lambda)_Y=\sum_{(\lambda)_Y\mapsto(E;R_I;J_L,J_R)}\dim E_2^{Sp(N)}(\lambda)_Y,
+\end{equation}
+
+The sums run over fixed-charge sectors related by $k\mathsf d$ in Proposition~\ref{appE2-0024}. A mismatch requires a higher $d_r$ or a nonperturbative lift.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xl>{\raggedright\arraybackslash}Xl@{}}
+\toprule
+$E+J_L$ & $\sum h^{SO}$ & $\sum h^{Sp}$ & charges with $h^{SO}\ne h^{Sp}$ & sectors with $d_1\ne0$ ($SO/Sp$) & $\sum\dim E_2$ & charges with $E_2^{SO}\ne E_2^{Sp}$ & $d_3$ pairs\\
+\midrule\endhead
+\multicolumn{8}{@{}l@{}}{$SO(7)$ and $Sp(3)$}\\
+$\le\tfrac{17}2$ & \multicolumn{2}{@{}l@{}}{equal} & $0$ & $0/0$ & equal & $0$ & ---\\
+$9$ & $497$ & $495$ & $2$ & $1/0$ & $495$ & $0$ & ---\\
+$\tfrac{19}2$ & $649$ & $647$ & $2$ & $1/0$ & $647$ & $0$ & ---\\
+$10$ & $1236$ & $1230$ & $6$ & $3/0$ & $1230$ & $0$ & $2$, rank $0$\\
+$\tfrac{21}2$ & $1646$ & $1636$ & $7$ & $4/0$ & $1636$ & $0$ & $2$, rank $0$\\
+$11$ & $3047$ & $3029$ & $12$ & $7/0$ & $3029$ & $0$ & $5$, rank $0$\\
+\multicolumn{8}{@{}l@{}}{$SO(9)$ and $Sp(4)$}\\
+$\le\tfrac{19}2$ & \multicolumn{2}{@{}l@{}}{equal} & $0$ & $0/0$ & equal & $0$ & ---\\
+$10$ & $1304$ & $1304$ & $0$ & $0/0$ & $1304$ & $0$ & $2$, rank $0$\\
+$\tfrac{21}2$ & $1736$ & $1736$ & $0$ & $0/0$ & $1736$ & $0$ & $2$, rank $0$\\
+$11$ & $3279$ & $3277$ & $2$ & $1/0$ & $3277$ & $0$ & $5$, rank $0$\\
+\bottomrule
+\end{xltabular}}
+
+Through level $11$, $E_2$ agrees charge by charge. The $d_2$ candidate set is empty, and all $d_3$ ranks vanish \cite{ChangChevalley}.
+
+\section{Commuting schemes and non-Cartan classes}\label{sec-E-gram}
+
+We construct invariant functions on commuting tuples that vanish on a Cartan subalgebra but remain nonzero in the commuting-scheme quotient. Their Gram determinants account for the additional orthogonal classes and give explicit counterexamples to the cited Cartan-restriction claims.
+
+\subsection{Setting}\label{sec-E-gram-setting}
+
+We set up the quotient by the commutator relations and its restriction to a Cartan subalgebra. The Gram determinant and the chiral-ring theorem provide the two ingredients for detecting invariant classes that this restriction misses.
+
+Work over algebraically closed $k$ of characteristic zero, with connected reductive $G$, Lie algebra $\mathfrak g$, Cartan subalgebra $\mathfrak h$ and $W=N_G(\mathfrak h)/Z_G(\mathfrak h)$. For a tuple $(x_1,\ldots,x_d)$ of $d\ge1$ Lie-algebra elements, the commutator ideal $I_d=([x_i,x_j])_{i<j}$ defines $k[\mathcal C^d_{\mathfrak g}]=k[\mathfrak g^d]/I_d$ and
+\begin{equation}\label{eq-E-Phi}
+\Phi:\ k[\mathcal C^d_{\mathfrak g}]^G\longrightarrow k[\mathfrak h^d]^W.
+\end{equation}
+
+Chen--Ng\^o Conjecture~3.1 asserts that $\Phi$ is an isomorphism, equivalently a reduced normal quotient.
+
+Conjecture~3.2 implies injectivity \cite[Section 3]{ChenNgo}. The isomorphism holds for $GL_n$ \cite[Theorem 3.3]{Vaccarino,Domokos,ChenNgo} and $Sp_{2n}$ \cite[Theorem 4.1]{ChenNgoSp}, and is asserted for $O_n,SO_n$ \cite[Theorem 1.2]{SXX}. It also holds for $d=2$ \cite[Theorem 1.4.11, 47, 48]{LNY}. Reduced-scheme restriction is an isomorphism in types A--D and $G_2$ \cite{Hunziker,Richardson}.
+
+Fix a nondegenerate invariant symmetric form $B$.
+\begin{equation}\label{eq-E-gram}
+T(x)=\bigl(B(x_i,x_j)\bigr)_{1\le i,j\le d},\qquad \det T\in k[\mathfrak g^d]^G_{2d}.
+\end{equation}
+
+For $g\in GL_d$, linear recombination of $(x_1,\ldots,x_d)^{\mathsf T}$ by $g$ sends its Gram matrix to $gTg^{\mathsf T}$.
+\begin{equation*}
+\det(gTg^{\mathsf T})=(\det g)(\det T)(\det g^{\mathsf T})=(\det g)^2\det T.
+\end{equation*}
+
+Weight $\det^2$ means that this recombination multiplies $\det T$ by $(\det g)^2$.
+
+For $d>\operatorname{rk}\mathfrak g$, $\det T|_{\mathfrak h^d}=0$. For three adjoint scalars and the trace form, $\det T=\tfrac16\varepsilon_{IJK}\varepsilon_{LMN}\operatorname{tr}(\gamma^I\gamma^L)\operatorname{tr}(\gamma^J\gamma^M)\operatorname{tr}(\gamma^K\gamma^N)$.
+
+\rthm{Definition}{appE2-0160}{}
+
+For finite-dimensional super $E$, set $\mathcal O(\mathcal C_E)=\mathrm{Sym}(E\otimes\mathfrak g^*)/J_E$, where $J_E$ is generated by $\xi([\theta(e),\theta(e')])$, $e,e'\in E$, $\xi\in\mathfrak g^*$. Its $R$-points are even $\theta\in\mathrm{Hom}(E,\mathfrak g)\otimes R$ satisfying these equations. Restriction gives $\Phi_E:\mathcal O(\mathcal C_E)^G\to\mathcal O(\mathrm{Hom}(E,\mathfrak h))^W$.
+
+$E=k^d$ gives the commuting scheme, and $E=k^{d_B|d_F}$ gives the super-commuting scheme \cite[Section 2]{ChangChevalley}. Use the following external chiral-ring theorem.
+
+\rthm{Theorem}{appE2-0164}{Cachazo--Douglas--Seiberg--Witten}
+
+Let $\mathfrak g$ be simple with dual Coxeter number $h^\vee$. For a basis $(e_a)$ and odd generators $X^a,Y^a$, put $X=\sum_ae_a\otimes X^a$, $Y=\sum_ae_a\otimes Y^a$ and $A=\Lambda(X^a,Y^a)/(\{X,X\},\{X,Y\},\{Y,Y\})$, with $\{X,Y\}=\sum_{a,b}[e_a,e_b]\otimes X^aY^b$. For $S=\sum_{a,b}B(e_a,e_b)X^aY^b$, (i) $A^{\mathfrak g}=k[S]$, (ii) $S^{h^\vee}=0$, and (iii) $S^{h^\vee-1}\ne0$.
+
+The theorem was conjectured in \cite{CDSW}. Proofs cover (i) in \cite{Kumar}, classical types in \cite{CDSW,WittenSpSO,EtingofII}, $\mathfrak g_2$ in \cite{EtingofKac}, and the remaining exceptional types in \cite{CederwallFerretti}. $A=\mathcal O(\mathcal C_{\Pi k^2})$, with $\Pi k^2$ purely odd of dimension $0|2$.
+
+\subsection{The transfer}\label{sec-E-gram-transfer}
+
+We test whether the Gram determinant survives the commutator quotient by evaluating the commuting variables in the chiral-ring algebra. The resulting determinant identity reduces its nonvanishing to the known powers of the chiral-ring generator.
+
+\rthm{Lemma}{appE2-0168}{}
+
+For the exterior algebra $\Lambda=\Lambda[u_1,\ldots,u_d,v_1,\ldots,v_d]$ on odd generators, set $N_{ij}=u_iv_j+u_jv_i$.
+\begin{equation}\label{eq-E-grass}
+\det(N_{ij})_{1\le i,j\le d}=(d+1)!\;u_1v_1u_2v_2\cdots u_dv_d.
+\end{equation}
+
+\begin{proofbox}
+Proof.
+
+For odd $\theta_i,\bar\theta_i$, Berezin integration extracts $\bar\theta_1\theta_1\cdots\bar\theta_d\theta_d$.
+\begin{equation*}
+\frac1{d!}\left(\sum_{i,j}\bar\theta_iM_{ij}\theta_j\right)^d=\det M\,\bar\theta_1\theta_1\cdots\bar\theta_d\theta_d,\qquad \det M=\int e^{\bar\theta M\theta}\quad(M\in\mathrm{Mat}_d(\Lambda_{\bar0})).
+\end{equation*}
+
+Put $\alpha=\sum_i\bar\theta_iu_i$, $\beta=\sum_jv_j\theta_j$, $\gamma=\sum_i\bar\theta_iv_i$, $\varepsilon=\sum_ju_j\theta_j$. These are even, and $\bar\theta N\theta=\alpha\beta-\gamma\varepsilon$, so $\det N=\int\sum_{r+s=d}\frac{(-1)^s}{r!s!}\alpha^r\gamma^s\beta^r\varepsilon^s$.
+\begin{equation*}
+\begin{aligned}\alpha^r\gamma^s&=r!s!\sum_{I\sqcup J=[d],\ |I|=r}\prod_{i\in I}\bar\theta_i u_i\prod_{j\in J}\bar\theta_jv_j,\\\beta^r\varepsilon^s&=r!s!\sum_{K\sqcup L=[d],\ |K|=r}\prod_{i\in K}v_i\theta_i\prod_{j\in L}u_j\theta_j,\\\text{nonzero terms}&\Longleftrightarrow K=I,\ L=J.\end{aligned}
+\end{equation*}
+\begin{equation*}
+\bar\theta_iu_iv_i\theta_i=\bar\theta_i\theta_i u_iv_i,\qquad\bar\theta_jv_ju_j\theta_j=-\bar\theta_j\theta_j u_jv_j.
+\end{equation*}
+{\small
+\begin{equation*}
+\det N=\sum_{r=0}^d\frac{(-1)^s}{r!s!}(r!s!)^2\binom dr(-1)^s\prod_mu_mv_m=\sum_{r=0}^dd!\prod_mu_mv_m=(d+1)!\prod_mu_mv_m,\qquad s=d-r.
+\end{equation*}
+}
+
+\par\vspace{-\medskipamount}\noindent\hspace*{\fill}\qedsymbol
+\end{proofbox}
+
+\rthm{Proposition}{appE2-0177}{}
+
+For simple $\mathfrak g$, set $R_d=(A\otimes\Lambda)_{\bar0}$ and $x_i=Xu_i+Yv_i$. Then $[x_i,x_j]=0$, $B(x_i,x_j)=-S(u_iv_j+u_jv_i)$, and evaluation gives $\varphi(\det T)=(-1)^d(d+1)!S^d\otimes u_1v_1\cdots u_dv_d$.
+
+\begin{proofbox}
+Proof.
+
+Moving the odd coefficients past $X,Y$ gives $[x_i,x_j]=-\sum_{a,b}[e_a,e_b]\otimes(X^aX^bu_iu_j+X^aY^bu_iv_j+Y^aX^bv_iu_j+Y^aY^bv_iv_j)$.
+\begin{equation*}
+\{X,X\}=\{X,Y\}=\{Y,X\}=\{Y,Y\}=0\quad\Longrightarrow\quad[x_i,x_j]=0.
+\end{equation*}
+
+With $B_{ab}=B(e_a,e_b)$, the $XX$ and $YY$ terms vanish by symmetry, while $\sum B_{ab}X^aY^b=S$, $\sum B_{ab}Y^aX^b=-S$ and $v_iu_j=-u_jv_i$. Hence $B(x_i,x_j)=-S(u_iv_j+u_jv_i)$.
+\begin{equation*}
+\varphi(I_d)=0,\qquad\varphi(\det T)=\det(-SN_{ij})=(-S)^d\det N.
+\end{equation*}
+
+\par\vspace{-\medskipamount}\noindent\hspace*{\fill}\qedsymbol
+\end{proofbox}
+
+\rthm{Corollary}{appE2-0184}{}
+
+*If $d<h^\vee$, then $\det T\notin I_d$.*
+
+\begin{proofbox}
+Proof.
+
+For $d<h^\vee$, Theorem~\ref{appE2-0164} gives $S^d\ne0$. Freeness over $A$ gives $S^d\otimes u_1v_1\cdots u_dv_d\ne0$, hence $\varphi(\det T)\ne0$.
+\begin{equation*}
+\varphi(I_d)=0,\qquad\varphi(\det T)\ne0\quad\Longrightarrow\quad\det T\notin I_d.
+\end{equation*}
+
+\par\vspace{-\medskipamount}\noindent\hspace*{\fill}\qedsymbol
+\end{proofbox}
+
+\subsection{The Gram component}\label{sec-E-gram-component}
+
+We separate dependence on the space of field labels from dependence on the Lie algebra. This identifies the full representation containing the Gram determinant and determines exactly when its multiplicity is one or zero.
+
+\rthm{Lemma}{appE2-0190}{}
+
+For $n\ge0$, a $G\times S_n$-module $V_n$ independent of $E$ satisfies $\mathcal O(\mathcal C_E)_n\cong(E^{\otimes n}\otimes V_n)_{S_n}$. The $S_n$ action on $E^{\otimes n}$ uses Koszul signs.
+
+\begin{proofbox}
+Proof.
+
+$\mathrm{Sym}^n(E\otimes\mathfrak g^*)=(E^{\otimes n}\otimes(\mathfrak g^*)^{\otimes n})_{S_n}$. For the transposed bracket $c:\mathfrak g^*\to(\mathfrak g^*)^{\otimes2}$, set $K_2=c(\mathfrak g^*)$. The relations are the classes of $e\otimes e'\otimes c(\xi)$.
+\begin{equation*}
+K_n=\langle S_n\cdot(K_2\otimes(\mathfrak g^*)^{\otimes(n-2)})\rangle,\qquad(J_E)_n=(E^{\otimes n}\otimes K_n)_{S_n}.
+\end{equation*}
+
+Exactness of coinvariants in characteristic zero gives $V_n=(\mathfrak g^*)^{\otimes n}/K_n$ and the asserted quotient.\hfill\qedsymbol
+\end{proofbox}
+
+For a Specht module $\mathrm{Sp}_\lambda$, $\lambda\vdash n$, super Schur--Weyl duality gives $\mathbb S_\lambda(E)=(E^{\otimes n}\otimes\mathrm{Sp}_\lambda)_{S_n}$ \cite{Sergeev,BereleRegev}. At $E=k^{m|p}$, it is nonzero exactly when $\lambda_{m+1}\le p$. These modules are irreducible and pairwise non-isomorphic, with $\mathbb S_\lambda(\Pi k^e)\cong\mathbb S_{\lambda'}(k^e)$. Here $\lambda'$ is the transpose partition.
+\begin{equation*}
+V_n=\bigoplus_{\lambda\vdash n}\mathrm{Sp}_\lambda\otimes M_\lambda,\qquad M_\lambda=\mathrm{Hom}_{S_n}(\mathrm{Sp}_\lambda,V_n).
+\end{equation*}
+\begin{equation}\label{eq-E-decomp}
+\mathcal O(\mathcal C_E)_n=\bigoplus_{\lambda\vdash n}\mathbb S_\lambda(E)\otimes M_\lambda,\qquad \mathcal O(\mathcal C_E)^G_n=\bigoplus_{\lambda\vdash n}\mathbb S_\lambda(E)\otimes M^G_\lambda.
+\end{equation}
+
+\rthm{Lemma}{appE2-0199}{}
+
+There are maps $\phi_\lambda:M^G_\lambda\to\mathbb S_\lambda(\mathfrak h^*)^W$, independent of $E$, such that $\Phi_E=\bigoplus_\lambda\mathrm{id}_{\mathbb S_\lambda(E)}\otimes\phi_\lambda$. Components with more than $\operatorname{rk}\mathfrak g$ parts restrict to zero.
+
+\begin{proofbox}
+Proof.
+
+Restriction induces $(\mathfrak g^*)^{\otimes n}\to(\mathfrak h^*)^{\otimes n}$ and kills $K_n$ because $\mathfrak h$ is abelian. Apply $(E^{\otimes n}\otimes-)_{S_n}$ and use $\mathrm{Hom}_{S_n}(\mathrm{Sp}_\lambda,(\mathfrak h^*)^{\otimes n})=\mathbb S_\lambda(\mathfrak h^*)$. Taking $G$-invariants gives $\phi_\lambda$. If $\lambda$ has more than $\dim\mathfrak h$ parts, $\mathbb S_\lambda(\mathfrak h^*)=0$.\hfill\qedsymbol
+\end{proofbox}
+
+\rthm{Theorem}{appE2-0205}{Gram component}
+
+Let $\mathfrak g$ be simple, $G$ connected and $d\ge1$. For every finite-dimensional super $E$, the multiplicity space $L_d$ is independent of $E$ and
+\begin{equation}\label{eq-E-gram-thm}
+\mathcal O(\mathcal C_E)^G_{(2^d)}\cong\mathbb S_{(2^d)}(E)\otimes L_d,\qquad \dim L_d=\begin{cases}1,&d<h^\vee,\\ 0,&d\ge h^\vee,\end{cases}
+\end{equation}
+
+Here $(2^d)$ has $d$ parts. For $E=k^d$, the degree-$2d$ $SL_d$-invariants are spanned by $\det T$ when $d<h^\vee$.
+
+\begin{proofbox}
+Proof.
+
+Equation \eqref{eq-E-decomp} gives $L_d=M^G_{(2^d)}$. At $E=\Pi k^2$, degree-$2d$ $SL_2$-invariance selects $\lambda'=(d,d)$, giving $(A^G_{2d})^{SL_2}\cong L_d$. Theorem~\ref{appE2-0164} gives $(A^G_{2d})^{SL_2}=kS^d$, since $S\mapsto\det(g)S$. Its dimension is $1$ for $d<h^\vee$ and $0$ otherwise. At $E=k^d$, $SL_d$-invariance selects $\mathbb S_{(2^d)}(k^d)=\det^2$. The nonzero $\det T$ of Corollary~\ref{appE2-0184} spans it.\hfill\qedsymbol
+\end{proofbox}
+
+\subsection{Cartan restriction and nilpotency}\label{sec-E-gram-cartan}
+
+We compare the Gram component with its restriction to a Cartan subalgebra. The calculation identifies the range in which the determinant is nonzero in the quotient but vanishes at every ordinary commuting tuple, hence is nilpotent.
+
+\rthm{Lemma}{appE2-0213}{}
+
+For semisimple $\mathfrak g$ and commuting $x_i=s_i+n_i$, the semisimple parts $s_i$ share a Cartan subalgebra, and $f(x)=f(s)$ for every invariant polynomial $f$.
+
+\begin{proofbox}
+Proof.
+
+Since $\operatorname{ad}s_i,\operatorname{ad}n_i$ are polynomial in $\operatorname{ad}x_i$, all $s_i,n_j$ commute. The $s_i$ span a toral subalgebra. In $L=Z_G(s_1,\ldots,s_d)^\circ$, all $n_i$ lie in a common Borel nilradical. A cocharacter positive on this nilradical gives $\mu(t)\cdot x_i\to s_i$ and $f(x)=f(\mu(t)\cdot x)\to f(s)$. See \cite{Richardson}, \cite[Section 6]{Hunziker} and \cite[Section 3]{ChenNgo}.\hfill\qedsymbol
+\end{proofbox}
+
+\rthm{Corollary}{appE2-0220}{}
+
+For simple $\mathfrak g$ and $\operatorname{rk}\mathfrak g<d<h^\vee$, $\det T$ is nonzero nilpotent with $\Phi(\det T)=0$. This contradicts Conjectures~3.1 and 3.2 of \cite{ChenNgo}.
+
+\begin{proofbox}
+Proof.
+
+Corollary~\ref{appE2-0184} gives $\det T\notin I_d$.
+\begin{equation*}
+d>\dim\mathfrak h\quad\Longrightarrow\quad\Phi(\det T)=0.
+\end{equation*}
+
+Lemma~\ref{appE2-0213} gives $\det T(x)=\det T(s)=0$ at every $k$-point. The Nullstellensatz gives $\det T\in\sqrt{I_d}$, proving nilpotency. Both conjectures require injectivity \cite[Section 3]{ChenNgo}.\hfill\qedsymbol
+\end{proofbox}
+
+For $d\le\operatorname{rk}\mathfrak g$, $\Phi:L_d\to\mathbb S_{(2^d)}(\mathfrak h^*)^W$ is an isomorphism. The Gram determinant is nonzero, and Steinberg's irreducibility gives $\dim\mathrm{Sym}^2(\Lambda^d\mathfrak h^*)^W=1$ \cite[Chapter V, Section 2, Exercise 3]{Bourbaki}. The range $\operatorname{rk}\mathfrak g<d<h^\vee$ is
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lll>{\raggedright\arraybackslash}X@{}}
+\toprule
+type & $\operatorname{rk}$ & $h^\vee$ & $d$ with $\operatorname{rk}<d<h^\vee$\\
+\midrule\endhead
+$A_n$ & $n$ & $n+1$ & ---\\
+$B_n$, $n\ge2$ & $n$ & $2n-1$ & $n+1\le d\le2n-2$ ($n\ge3$)\\
+$C_n$, $n\ge3$ & $n$ & $n+1$ & ---\\
+$D_n$, $n\ge4$ & $n$ & $2n-2$ & $n+1\le d\le2n-3$\\
+$G_2$ & $2$ & $4$ & $d=3$\\
+$F_4$ & $4$ & $9$ & $5\le d\le8$\\
+$E_6$ & $6$ & $12$ & $7\le d\le11$\\
+$E_7$ & $7$ & $18$ & $8\le d\le17$\\
+$E_8$ & $8$ & $30$ & $9\le d\le29$\\
+\bottomrule
+\end{xltabular}}
+
+\subsection{Two examples}\label{sec-E-gram-examples}
+
+We work out the nonzero restriction-kernel classes for $G_2$ and $SO(7)$. Explicit trace identities and commutator ranks distinguish these classes from Gram determinants that vanish in the quotient.
+
+For multilinear $m(a_1,a_2,a_3,b_1,b_2,b_3)$, define the antisymmetrization
+\begin{equation}\label{eq-E-antisym}
+\langle m\rangle=\sum_{\sigma,\tau\in S_3}\operatorname{sgn}\sigma\,\operatorname{sgn}\tau\;m\bigl(x_{\sigma(1)},x_{\sigma(2)},x_{\sigma(3)},x_{\tau(1)},x_{\tau(2)},x_{\tau(3)}\bigr),
+\end{equation}
+
+For the trace form, $\langle\operatorname{tr}(a_1b_1)\operatorname{tr}(a_2b_2)\operatorname{tr}(a_3b_3)\rangle=6\det T$.
+
+\begin{proofbox}
+\rthm{Example}{appE2-0233}{$\mathfrak g_2$, $d=3$}
+
+Here $2<3<4=h^\vee$. Set $Z_3=(\mathbb S_{(2,2,2)}\mathfrak g_2)^{G_2}$, $Y_3=(\mathfrak g_2\otimes\mathbb S_{(2,1,1)}\mathfrak g_2)^{G_2}$. Reductivity and Pieri's rule give $I_3\cap Z_3=\operatorname{im}Y_3$. Exact dimensions are $4,3$. Lemma~\ref{appE2-0199} and Theorem~\ref{appE2-0205} give $\Phi(Z_3)=0$, $Z_3/(I_3\cap Z_3)=k\det T$.
+
+Use traces in the seven-dimensional representation.
+\begin{equation}\label{eq-E-g2-basis}
+\begin{gathered}S_{6a}=\langle\operatorname{tr}(a_1a_2a_3b_1b_2b_3)\rangle,\qquad S_{6b}=\langle\operatorname{tr}(a_1b_1a_2b_2a_3b_3)\rangle,\\ F_{42}=\langle\operatorname{tr}(a_1a_2b_1b_2)\operatorname{tr}(a_3b_3)\rangle,\qquad F_{33}=\langle\operatorname{tr}(a_1a_2a_3)\operatorname{tr}(b_1b_2b_3)\rangle.\end{gathered}
+\end{equation}
+\begin{equation*}
+\begin{gathered}Z_3=\operatorname{span}\{S_{6a},S_{6b},F_{42},\det T\},\qquad I_3\cap Z_3=\operatorname{span}\{S_{6a},S_{6b},F_{42}\},\\-18S_{6a}-6S_{6b}+3F_{42}+4F_{33}=0.\end{gathered}
+\end{equation*}
+
+Through degree $10$, $\ker\Phi=k\det T$ in type $(2,2,2)$. Moreover $(\det T)^2\in I_3$, since the $30$-dimensional $(\mathbb S_{(4,4,4)}\mathfrak g_2)^{G_2}$ lies in the commutator image. For $\mathfrak{sl}_3,\mathfrak{so}_5,\mathfrak{sp}_4$, $\operatorname{rk}=2$ and $h^\vee=3$. With defining traces, the explicit certificates for $\det T\in I_3$ are
+\begin{equation}\label{eq-E-detT-rank2}
+\begin{aligned}\mathfrak{sl}_3:\ \det T&=\bigl\langle-\tfrac56\operatorname{tr}([a_1,a_2]a_3b_1b_2b_3)-\tfrac23\operatorname{tr}([a_1,a_2]b_1a_3b_2b_3)\\ &\qquad+\tfrac5{18}\operatorname{tr}([a_1,a_2]a_3)\operatorname{tr}(b_1b_2b_3)\bigr\rangle,\\ \mathfrak{sp}_4:\ \det T&=\bigl\langle-\tfrac16\operatorname{tr}([a_1,a_2]a_3b_1b_2b_3)-\tfrac56\operatorname{tr}([a_1,a_2]b_1a_3b_2b_3)\\ &\qquad+\tfrac14\operatorname{tr}([a_1,a_2]b_1b_3)\operatorname{tr}(a_3b_2)\bigr\rangle,\\ \mathfrak{so}_5:\ \det T&=\bigl\langle\tfrac{10}3\operatorname{tr}([a_1,a_2]a_3b_1b_2b_3)-\tfrac43\operatorname{tr}([a_1,a_2]b_1a_3b_2b_3)\\ &\qquad-\tfrac23\operatorname{tr}([a_1,a_2]a_3)\operatorname{tr}(b_1b_2b_3)\\ &\qquad+\operatorname{tr}([a_1,a_2]b_1b_3)\operatorname{tr}(a_3b_2)\bigr\rangle.\end{aligned}
+\end{equation}
+
+Each term contains a commutator and lies in $I_3$.
+\end{proofbox}
+
+\begin{proofbox}
+\rthm{Example}{appE2-0240}{$\mathfrak{so}_7$, $d=4$}
+
+Here $3<4<5=h^\vee$. The $O_7$-invariant $\det T$ is nonzero nilpotent with zero restriction. The target and commutator-source dimensions are $9,12$. Rank is at least $8$ modulo three primes and at most $8$ by Theorem~\ref{appE2-0205}, hence exactly $8$.
+
+Set $Z_d=(\mathbb S_{(2^d)}\mathfrak g)^G$, $Y_d=(\mathfrak g\otimes\mathbb S_{(2^{d-2},1,1)}\mathfrak g)^G$ for the target and source of commutator substitution.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$\mathfrak g$, $d$ & $(\dim Y_d,\dim Z_d)$ & rank & $\det T\in I_d$ & $\dim L_d$ & $\Phi(\det T)$\\
+\midrule\endhead
+$\mathfrak{sl}_3$, $3$ & $(4,3)$ & $3$ & yes & $0$ & ---\\
+$\mathfrak{so}_5,\mathfrak{sp}_4$, $3$ & $(4,4)$ & $4$ & yes & $0$ & ---\\
+$\mathfrak g_2$, $3$ & $(3,4)$ & $3$ & no & $1$ & $0$\\
+$\mathfrak{so}_7,\mathfrak{sp}_6$, $3$ & $(4,5)$ & $4$ & no & $1$ & $\ne0$\\
+$\mathfrak{sl}_4$, $3$ & $(5,5)$ & $\ge4$ & no & $1$ & $\ne0$\\
+$\mathfrak{so}_5$, $4$ & $(9,5)$ & $5$ & yes & $0$ & ---\\
+$\mathfrak g_2$, $4$ & $(7,5)$ & $5$ & yes & $0$ & ---\\
+$\mathfrak{sl}_4$, $4$ & $(20,8)$ & $8$ & yes & $0$ & ---\\
+$\mathfrak{sp}_6$, $4$ & $(12,8)$ & $8$ & yes & $0$ & ---\\
+$\mathfrak{so}_7$, $4$ & $(12,9)$ & $\ge8$ & no & $1$ & $0$\\
+\bottomrule
+\end{xltabular}}
+
+Corollary~\ref{appE2-0184} proves the nonzero classes in lower-bound rows. Other ranks are exact, including all $d=3$ ranks over $\mathbb Z$ and a second octonionic $\mathfrak g_2$ realization.
+\end{proofbox}
+
+\subsection{The orthogonal case of Song, Xia and Xu}\label{sec-E-SXX}
+
+We check the Pfaffian lemma used in the orthogonal Cartan-restriction argument of Song, Xia and Xu. An explicit rank bound contradicts its required nonvanishing and identifies the orthogonal conclusions affected by that failure.
+
+The orthogonal proof of \cite[Theorem 1.2]{SXX} uses Theorem~3.4, Proposition~3.1 and Lemmas~3.2--3.3. Lemma~3.3 depends on Lemmas~5.3 and 5.2. Even $SO_{2m}$ uses the $O_{2m}$ theorem. The symplectic proof uses the Chen--Ng\^o Pfaffian independently. For generic skew $(t_{ij})$ of size $2d+3$, write $h_{i_1\cdots i_k}$ for the Pfaffian with those indices deleted, and zero for repeated indices. The $2d\times2d$ matrix is
+\begin{equation}\label{eq-E-Asxx}
+\mathsf A_{ij}=h^2_{i,j,2d+2}+h^2_{i,2d+1,2d+2}+h^2_{j,2d+1,2d+2},\qquad 1\le i,j\le2d.
+\end{equation}
+
+\cite[Lemma 5.2]{SXX} asserts a common solution of $h_{2d+2}=0$ and $h_{2d+3}\det\mathsf A\ne0$.
+
+\rthm{Theorem}{appE2-0249}{}
+
+On $h_{2d+2}=0$, $\operatorname{rk}\mathsf A\le3$. Thus $\det\mathsf A\in(h_{2d+2})$ for $d\ge2$, contradicting \cite[Lemma 5.2]{SXX}.
+
+\begin{proofbox}
+Proof.
+
+Deleting index $2d+2$ gives $P$ of size $2d+2$, with $\operatorname{Pf}P=h_{2d+2}$ and final original index $2d+3$. Define $P^\sharp_{ab}=(-1)^{a+b}\operatorname{Pf}P(\hat a,\hat b)$ for $a<b$ and $P^\sharp_{ba}=-P^\sharp_{ab}$. Pfaffian expansion gives $PP^\sharp=(\operatorname{Pf}P)\mathbf1$, $h_{i,j,2d+2}=\pm P^\sharp_{ij}$ and $h_{i,2d+1,2d+2}=\pm P^\sharp_{i,2d+1}$. On $\operatorname{Pf}P=0$, $\operatorname{im}P^\sharp\subseteq\ker P$. Rank $2d$ gives $\dim\ker P=2$. Rank at most $2d-2$ gives $P^\sharp=0$. Thus $P^\sharp=vw^{\mathsf T}-wv^{\mathsf T}$. Squaring gives $h^2_{i,j,2d+2}=(v_iw_j-v_jw_i)^2$ and $h^2_{i,2d+1,2d+2}=\ell_i^2$, with $\ell_i=w_{2d+1}v_i-v_{2d+1}w_i$. Put $f_i=(v_i^2,w_i^2,v_iw_i,1)$, $a=w_{2d+1}^2$, $b=v_{2d+1}^2$, $c=-2w_{2d+1}v_{2d+1}$. Then $\mathsf A_{ij}=f_iMf_j^{\mathsf T}$, where
+\begin{equation}\label{eq-E-SXX-M}
+\begin{gathered}M=\begin{pmatrix}0&1&0&a\\1&0&0&b\\0&0&-2&c\\a&b&c&0\end{pmatrix},\\ \det M=-2\det\begin{pmatrix}0&1&a\\1&0&b\\a&b&0\end{pmatrix}+c^2=-4ab+c^2=0.\end{gathered}
+\end{equation}
+\begin{equation*}
+\operatorname{rk}\mathsf A\le\operatorname{rk}M\le3<2d.
+\end{equation*}
+
+The Pfaffian $h_{2d+2}$ is irreducible \cite[Lemma B.2.10]{GoodmanWallach}. The Nullstellensatz gives $\det\mathsf A\in(h_{2d+2})$.\hfill\qedsymbol
+\end{proofbox}
+
+The identities also hold in characteristic $p>2$, invalidating \cite[Lemma 5.2]{SXX} and its orthogonal consequences for $d\ge2$. The induction in \cite[Lemma 5.2]{SXX} asserts degree $4d-4$ in $t_{12}$ with a prescribed product coefficient. The leading rows of $\mathsf A_{1j},\mathsf A_{2j}$ coincide, cancelling $t_{12}^{4d}$. At $d=2,3$, the exact degree is $4d-2$, and integer specializations contradict the proposed $t_{12}^{4d-4}$ coefficient. At $d=1$, $\det\mathsf A=-(t_{35}^2+(t_{25}+t_{15})^2)(t_{35}^2+(t_{25}-t_{15})^2)$, consistent with the base case and $2d\le3$. On sampled rational points of $h_{2d+2}=0$, the ranks are $2$ for $d=1$ and $3$ for $d=2,3,4$.
+
+\rthm{Corollary}{appE2-0264}{}
+
+For $n=2m+1\ge7$, $m+1\le d\le2m-2$, or $n=2m\ge8$, $m+1\le d\le2m-3$, both $O_n,SO_n$ have nonzero $\ker\Phi$ and invariant nilradical. This contradicts \cite[Theorem 1.2(1), Corollary 1.3]{SXX} at $n=7,d=4$ and Lemmas~3.3,5.3 in the stated orthogonal ranges.
+
+\begin{proofbox}
+Proof.
+
+Apply Corollary~\ref{appE2-0220} in types $B_m,D_m$. The certificate $\det T$ is also $O_n$-invariant. The independent Proposition~3.1 and Lemma~3.2 of \cite{SXX} force Lemma~3.3 to fail.\hfill\qedsymbol
+\end{proofbox}
+
+\subsection{Super-commuting schemes and N=4 theory}\label{sec-E-gram-N4}
+
+We translate the commuting-scheme results into the classical cohomology of the Yang--Mills theory. The resulting highest-weight sectors identify the exceptional and orthogonal non-Cartan classes, while the symplectic restriction remains injective.
+
+Chang--Yin \cite{ChangYin} identify classical cohomology with $H^\bullet(\mathfrak g[\mathsf A],\mathfrak g;\mathbb C)$, where $\mathsf A=\mathbb C[z_+,z_-]\otimes\Lambda(\theta_1,\theta_2,\theta_3)$. At top degree $p=|n|$, $n=(n_{z_+},n_{z_-},n_{\theta_1},n_{\theta_2},n_{\theta_3})$, this is $\mathcal O(\mathcal C_{k^{3|2}})^G_n$ \cite[Proposition 4]{ChangChevalley}. The $\theta_i$-components are even and $z_\pm$-components odd. This is sector $(n_{\theta_1},n_{\theta_2},n_{\theta_3};n_{z_+},n_{z_-})$ with $Y=p$ in Appendix \ref{sec-E-sectors}.
+
+\rthm{Corollary}{appE2-0272}{}
+
+For simple $\mathfrak g$ and $1\le d<h^\vee$, the component $\mathbb S_{(2^d)}(k^{3|2})\otimes L_d$ is nonzero of degree $2d$. For the even-first Borel, its highest weight is $((2^{\min(d,3)},0^{3-\min(d,3)})\mid(c,c))$, $c=\max(d-3,0)$. The highest-weight sectors are $(2,0,0;0,0)_2$, $(2,2,0;0,0)_4$, and $(2,2,2;d-3,d-3)_{2d}$ for $d=1,2,\ge3$. Its $(0,0,0;d,d)_{2d}$ part is $kS^d$, with $S=B(X,Y)$. For $d>\operatorname{rk}\mathfrak g$, the component lies in $\ker\Phi_{k^{3|2}}$.
+
+\begin{proofbox}
+Proof.
+
+Apply the hook condition $\lambda_4\le2$ and highest-weight formula $(\lambda_1,\lambda_2,\lambda_3\mid\max(\lambda'_1-3,0),\max(\lambda'_2-3,0))$ to $\lambda=(2^d)$ \cite{BereleRegev}. Even-coordinate degree zero gives $\mathcal O(\mathcal C_{\Pi k^2})=A$ and $\mathbb S_{(2^d)}(\Pi k^2)=\det^d$. Theorem~\ref{appE2-0205} gives $(A^G_{2d})^{SL_2}=kS^d$, and Lemma~\ref{appE2-0199} gives the restriction statement.\hfill\qedsymbol
+\end{proofbox}
+
+\rthm{Corollary}{appE2-0278}{}
+
+If every $\Phi_{k^d}$ is an isomorphism, so is $\Phi_E$ for every finite-dimensional super vector space $E$. For $\mathfrak g=\mathfrak{sp}_{2N}$, this makes $\Phi_{k^{3|2}}$ an isomorphism.
+
+\begin{proofbox}
+Proof.
+
+Every partition occurs in some $k^d$, so every $\phi_\lambda$ is invertible in $\Phi_{k^d}=\bigoplus_\lambda\mathrm{id}\otimes\phi_\lambda$. The same decomposition gives $\Phi_E$. The symplectic hypothesis is \cite[Theorem 4.1]{ChenNgoSp}.\hfill\qedsymbol
+\end{proofbox}
+
+For $\mathfrak g_2$, $d=3$ gives the non-Cartan class $\det T$ in $(2,2,2;0,0)_6$, protected to all orders in Appendix \ref{sec-E-G2}. For $\mathfrak{so}_7$, $d=4$ gives $(2,2,2;1,1)_8$ at level $9$, of dimension $85$ versus $84$ for $\mathfrak{sp}_6$ \cite[Section 3, Table 1]{ChangLin}. Corollary~\ref{appE2-0272} spans its one-dimensional restriction kernel, the $O_f$ target \ref{sec-E-SOSp} \cite[Theorem 1]{ChangChevalley}. For $(\mathfrak{so}_{2N+1},\mathfrak{sp}_{2N})$, $h^\vee=(2N-1,N+1)$. The orthogonal non-Cartan sectors are $(2,2,2;d-3,d-3)_{2d}$, $N+1\le d\le2N-2$, whereas the symplectic restriction is injective. At $N=4$, these are $(2,2,2;2,2)_{10}$ and $(2,2,2;3,3)_{12}$, with $E=12,15$, $R_I=E/3$ and $J_L=J_R=0$. The odd coordinates are $\lambda_\pm$ \cite[Section 2]{KvLM}. For $\operatorname{rk}\mathfrak g<d<h^\vee$, $[S^d]$ is the non-Coulomb monotone class in the same $\mathfrak{gl}(3|2)$ module as $(2,2,2;d-3,d-3)_{2d}$ \cite[Section 5]{KvLM}.
+
+\section{G$_2$}\label{sec-E-G2}
+
+We apply the census to $G_2$ using its seven-dimensional representation. The calculation isolates a scalar class invisible on the Cartan and tests its perturbative survival alongside the remaining charge sectors.
+
+\subsection{Realization}\label{sec-E-G2-real}
+
+We first construct the matrices needed to evaluate $G_2$ cochains and loop corrections. Invariant dimensions and the first nilpotence identities check the representation and the resulting operators.
+
+Realize $\mathfrak g_2\subset\mathfrak{gl}(7)$ by preserving $\eta_{i\bar\imath}=1$, $\bar\imath=8-i$, and the three-form
+\begin{equation}\label{eq-E-phi}
+\begin{gathered}\phi=e^{123}+2\,e^{567}+e^{147}+e^{246}+e^{345},\\ \sum_d\bigl(A_{da}\phi_{dbc}+A_{db}\phi_{adc}+A_{dc}\phi_{abd}\bigr)=0,\end{gathered}
+\end{equation}
+
+The Cartan elements are $\operatorname{diag}(a_1,a_2,-a_1-a_2,0,a_1+a_2,-a_2,-a_1)$. Short roots are $\pm(1,0),\pm(0,1),\pm(1,1)$ and long roots are $\pm(1,-1),\pm(2,1),\pm(1,2)$.
+\begin{equation*}
+\begin{gathered}\dim\mathrm{Sym}^k(\mathfrak g_2)^{G_2}=1,1,2,2,2,3,3\quad(k=2,4,\ldots,14),\\\dim\Lambda^k(\mathfrak g_2)^{G_2}=1\quad(k=0,3,11,14),\qquad\dim\mathrm{Hom}_{G_2}(\mathfrak g_2^{\otimes4},\mathbb C)=5.\end{gathered}
+\end{equation*}
+
+Check $Q_0Q_1+Q_1Q_0=0$ in $(3,3,3;0,0)_5$, $(4,3,3;0,0)_6$, $(3,3,2;1,0)_5$, with $275,5254,7646$ entries. Check $Q_0Q_2+Q_1^2+Q_2Q_0=0$ in $(4,4,4;0,0)_6$, $(4,4,3;1,0)_6$, with $32{,}186,2{,}077{,}705$ entries. Seven-dimensional trace words span the exact dimensions in every computed sector.
+
+\subsection{The scalar class}\label{sec-E-G2-class}
+
+We identify the extra scalar class by comparing invariant polynomials with classical boundaries. Its vanishing Cartan restriction and the available differential targets then determine its non-Cartan character and all-order survival.
+
+In $(2,2,2;0,0)_6$, $E=6$, $R_I=2$, $J_L=J_R=0$. Use six-scalar singlets and $\beta\gamma^4$ boundaries. Cauchy and Pieri give $C^6=Z_3$, $C^5=Y_3$ of Example~\ref{appE2-0233}.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$\mathfrak g$ & $\dim C^5$ & $\dim C^6$ & $h$ & $\rho$ & $\det T\in\operatorname{im}Q_0$\\
+\midrule\endhead
+$\mathfrak{su}_3$ & $4$ & $3$ & $0$ & $0$ & yes\\
+$\mathfrak{so}_5=\mathfrak{sp}_4$ & $4$ & $4$ & $0$ & $0$ & yes\\
+$\mathfrak g_2$ & $3$ & $4$ & $1$ & $0$ & no\\
+$\mathfrak{so}_7$, $\mathfrak{sp}_6$ & $4$ & $5$ & $1$ & $1$ & no\\
+$\mathfrak{su}_4$ & $5$ & $5$ & $1$ & $1$ & no\\
+\bottomrule
+\end{xltabular}}
+
+For $\mathfrak g_2$, the class is $[\det_{IJ}\operatorname{tr}_7(\gamma^I\gamma^J)]=[\tfrac16\varepsilon_{IJK}\varepsilon_{LMN}\operatorname{tr}_7(\gamma^I\gamma^L)\operatorname{tr}_7(\gamma^J\gamma^M)\operatorname{tr}_7(\gamma^K\gamma^N)]$, with cochain and boundary ranks $4,3$ over $\mathbb Q$ and $\rho=0$. Trace types are $(2,2,2),(2,4),(3,3),(6)$. Commutator insertion gives the boundary space, with complement the $(2,2,2)$ class. $n_\pm=0$ excludes incoming differentials. Outgoing $d_1=0$ and the $d_2$ targets have $h=0$, giving all-order survival. Purely scalar blocks have $h=\rho$ for $SO(7),Sp(3)$ through level $11$ and $SO(9),Sp(4)$ through $\tfrac{19}2$. For $G_2$ through $10$, the exception is $(2,2,2;0,0)_6$. Its products with quadratic and quartic flavour covariants are exact.
+
+\subsection{Census}\label{sec-E-G2-census}
+
+The table collects the complete $G_2$ census through $E+J_L=\tfrac{23}{2}$. It records classical and non-Cartan dimensions together with the tested loop differentials.
+
+Complete $G_2$ census through $E+J_L=\tfrac{23}2$.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}llllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$E+J_L$ & sectors & $\sum h$ & $\sum(h-\rho)$ & $d_1\ne0$ & $d_2$ pairs & $d_3$ pairs\\
+\midrule\endhead
+$4$ & $6$ & $5$ & $0$ & $0$ & --- & ---\\
+$\tfrac92$ & $5$ & $5$ & $0$ & $0$ & --- & ---\\
+$5$ & $9$ & $10$ & $0$ & $0$ & --- & ---\\
+$\tfrac{11}2$ & $6$ & $12$ & $0$ & $0$ & --- & ---\\
+$6$ & $16$ & $27$ & $1$ & $0$ & --- & ---\\
+$\tfrac{13}2$ & $9$ & $31$ & $1$ & $0$ & --- & ---\\
+$7$ & $19$ & $58$ & $3$ & $0$ & --- & ---\\
+$\tfrac{15}2$ & $16$ & $73$ & $5$ & $0$ & --- & ---\\
+$8$ & $26$ & $137$ & $9$ & $0$ & --- & ---\\
+$\tfrac{17}2$ & $19$ & $171$ & $11$ & $0$ & --- & ---\\
+$9$ & $39$ & $307$ & $20$ & $0$ & --- & ---\\
+$\tfrac{19}2$ & $26$ & $397$ & $23$ & $0$ & --- & ---\\
+$10$ & $46$ & $693$ & $43$ & $0$ & --- & rank $0$\\
+$\tfrac{21}2$ & $39$ & $911$ & $62$ & $0$ & --- & rank $0$\\
+$11$ & $59$ & $1564$ & $120$ & $0$ & --- & rank $0$\\
+$\tfrac{23}2$ & $46$ & $2075$ & $170$ & $0$ & --- & rank $0$\\
+\bottomrule
+\end{xltabular}}
+
+\section{Two-loop lifts in the Leigh--Strassler deformation}\label{sec-E-LS}
+
+We use the deformed cubic vertex to find classes lifted at two loops in the Leigh--Strassler theory. The census is followed by tests of translation descendants, scheme dependence, parameter dependence and fortuity.
+
+\subsection{The theory and its sectors}\label{sec-E-LS-setup}
+
+We specify the interaction and the charge sectors preserved by the Leigh--Strassler deformation. These data determine the fan operators and the symmetry multiplicities used in the census.
+
+For the Leigh--Strassler deformation of $SU(3)$ \cite{LeighStrassler}, the cubic interaction is
+\begin{equation}\label{eq-E-LS}
+\begin{gathered}\frac{1+q}4\cdot\frac i{3!}\bigl(\varepsilon_{IJK}C_{ABC}-iS_{IJK}d_{ABC}\bigr)(\gamma^I)^A(\gamma^J)^B(\gamma^K)^C,\\ S_{IJK}=\rho\,|\varepsilon_{IJK}|+h_e\,\delta_{IJK},\qquad \rho=\frac{1-q}{1+q},\qquad h_e=\frac{2h}{1+q},\end{gathered}
+\end{equation}
+
+$d_{ABC}=2\operatorname{tr}(t_A\{t_B,t_C\})$, $\operatorname{tr}(t_At_B)=\tfrac12\delta_{AB}$, $\operatorname{tr}(t_At_Bt_C)=\tfrac14(d_{ABC}+iC_{ABC})$. Set $\delta_{IJK}=1$ for $I=J=K$, zero otherwise. $(q,h)=(1,0)$ gives $\mathcal N=4$ and $h=0$ gives the $\beta$-deformation. For $SU(2)$, $d_{ABC}=0$. In each fan (7.3), replace the cubic scalar vertex by $\varepsilon_{IJK}[\,\cdot\,,\cdot\,]+S_{IJK}\{\,\cdot\,,\cdot\,\}_{\mathfrak{su}(3)}$, with $\{L,R\}_{\mathfrak{su}(3)}=\{L,R\}-\tfrac23\operatorname{tr}(LR)\mathbf1$. The $h_e$ term preserves $U(1)\times\mathbb Z_3$, giving sectors
+\begin{equation}\label{eq-E-LS-sector}
+\begin{gathered}(\Theta,c;n_+,n_-)_Y=\bigoplus_{\theta_1+\theta_2+\theta_3=\Theta,\ \theta_2+2\theta_3\equiv c\ (3)}C^Y(\theta;n_+,n_-),\\ d_r:(\Theta,c;n_\pm)_Y\to(\Theta-3r,c;n_\pm+r)_{Y+1-r}.\end{gathered}
+\end{equation}
+
+The conserved charges are $E,J_L,J_R$, $\sum_IR_I=\tfrac12(3Y-\Theta)$ and $c$. Flavour cycling sends $c\mapsto c+\Theta$. For $\Theta\not\equiv0\pmod3$, each rank unit at $c=0$ counts three states. For $\Theta\equiv0$, compute $c=0,1$ and recover $c=2$ with $(\rho,h_e)\mapsto(-\rho,-h_e)$. Use $(\rho,h_e)=(\tfrac{12345}{678},\tfrac{4321}{97})$. Through level $\tfrac{17}2$, $d_2$ agrees at $(q,h)=(-\tfrac{3889}{4341},\tfrac{976546}{421077})$, $(4,\tfrac{85}6)$, $(1,\tfrac{4321}{97})$, a second seed and $p'$. Check nilpotence through cubic order. Wrong vertex signs, $\mathfrak{su}(3)$ projection or $h$-weight violate it.
+
+\subsection{The census}\label{sec-E-LS-census}
+
+We enumerate the classical classes and successive differential ranks through $E+J_L=11$. The detailed source--target tables separate the direct two-loop action from the obstruction after the first correction has been included.
+
+Complete census through $E+J_L=11$, including all candidate $d_1,d_2,d_3$ pairs.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllllllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$E+J_L$ & sectors & $\sum h_{E_1}$ & $d_1$ pairs & $d_1\ne0$ & $d_2$ pairs & $d_2\ne0$ & $d_3$ pairs & $d_3\ne0$ & $\sum h_{E_\infty}$\\
+\midrule\endhead
+$1$ & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+$\tfrac{3}2$ & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+$2$ & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 2\\
+$\tfrac{5}2$ & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
+$3$ & 6 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 3\\
+$\tfrac{7}2$ & 1 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 3\\
+$4$ & 3 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 6\\
+$\tfrac{9}2$ & 6 & 11 & 1 & 0 & 0 & 0 & 0 & 0 & 11\\
+$5$ & 3 & 9 & 0 & 0 & 0 & 0 & 0 & 0 & 9\\
+$\tfrac{11}2$ & 3 & 14 & 1 & 0 & 0 & 0 & 0 & 0 & 14\\
+$6$ & 12 & 56 & 3 & 1 & 0 & 0 & 0 & 0 & 54\\
+$\tfrac{13}2$ & 3 & 26 & 2 & 0 & 0 & 0 & 0 & 0 & 26\\
+$7$ & 6 & 54 & 3 & 1 & 1 & 1 & 0 & 0 & 46\\
+$\tfrac{15}2$ & 12 & 136 & 6 & 3 & 1 & 0 & 0 & 0 & 118\\
+$8$ & 6 & 88 & 6 & 1 & 1 & 1 & 0 & 0 & 84\\
+$\tfrac{17}2$ & 6 & 143 & 5 & 2 & 2 & 1 & 0 & 0 & 121\\
+$9$ & 20 & 460 & 14 & 9 & 3 & 0 & 0 & 0 & 382\\
+$\tfrac{19}2$ & 6 & 267 & 8 & 4 & 2 & 2 & 0 & 0 & 239\\
+$10$ & 10 & 460 & 12 & 6 & 4 & 1 & 0 & 0 & 396\\
+$\tfrac{21}2$ & 20 & 1224 & 21 & 15 & 5 & 2 & 0 & 0 & 1012\\
+$11$ & 10 & 962 & 18 & 11 & 5 & 4 & 0 & 0 & 752\\
+\bottomrule
+\end{xltabular}}
+
+The charge columns give $(E,J_L,J_R,\sum_IR_I)$.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}l>{\raggedright\arraybackslash}Xlllll@{}}
+\toprule
+$E+J_L$ & source & target & source charges & target charges & $\operatorname{rank}d_2$ & origin\\
+\midrule\endhead
+$7$ & $(7,0;0,0)_5$ & $(1,0;2,2)_4$ & $(6,1,0,4)$ & $(\tfrac{13}2,\tfrac12,0,\tfrac{11}2)$ & $1$ & $P_{14}$\\
+$8$ & $(8,0;0,0)_6$ & $(2,0;2,2)_5$ & $(7,1,0,5)$ & $(\tfrac{15}2,\tfrac12,0,\tfrac{13}2)$ & $1$ & $P_{16}$\\
+$\tfrac{17}2$ & $(7,0;1,0)_5$ & $(1,0;3,2)_4$ & $(7,\tfrac32,\tfrac12,4)$ & $(\tfrac{15}2,1,\tfrac12,\tfrac{11}2)$ & $1$ & $\partial_{+\dot+}P_{14}$\\
+$\tfrac{19}2$ & $(8,0;1,0)_6$ & $(2,0;3,2)_5$ & $(8,\tfrac32,\tfrac12,5)$ & $(\tfrac{17}2,1,\tfrac12,\tfrac{13}2)$ & $1$ & $\partial_{+\dot+}P_{16}$\\
+$\tfrac{19}2$ & $(8,0;1,0)_7$ & $(2,0;3,2)_6$ & $(\tfrac{17}2,1,\tfrac12,\tfrac{13}2)$ & $(9,\tfrac12,\tfrac12,8)$ & $1$ & $P_{19}$\\
+$10$ & $(7,0;2,0)_5$ & $(1,0;4,2)_4$ & $(8,2,1,4)$ & $(\tfrac{17}2,\tfrac32,1,\tfrac{11}2)$ & $1$ & $\partial_{+\dot+}^2P_{14}$\\
+$\tfrac{21}2$ & $(9,c;1,0)_7$, $c=0,1$ & $(3,c;3,2)_6$ & $(9,\tfrac32,\tfrac12,6)$ & $(\tfrac{19}2,1,\tfrac12,\tfrac{15}2)$ & $6$ each & $P_{21}$\\
+$11$ & $(8,0;1,1)_7$ & $(2,0;3,3)_6$ & $(\tfrac{19}2,\tfrac32,0,\tfrac{13}2)$ & $(10,1,0,8)$ & $5$ & \\
+$11$ & $(8,0;2,0)_6$ & $(2,0;4,2)_5$ & $(9,2,1,5)$ & $(\tfrac{19}2,\tfrac32,1,\tfrac{13}2)$ & $1$ & $\partial_{+\dot+}^2P_{16}$\\
+$11$ & $(8,0;2,0)_7$ & $(2,0;4,2)_6$ & $(\tfrac{19}2,\tfrac32,1,\tfrac{13}2)$ & $(10,1,1,8)$ & $5$ & contains $\partial_{+\dot+}P_{19}$\\
+$11$ & $(8,0;2,0)_8$ & $(2,0;4,2)_7$ & $(10,1,1,8)$ & $(\tfrac{21}2,\tfrac12,1,\tfrac{19}2)$ & $1$ & \\
+\bottomrule
+\end{xltabular}}
+
+$P_m$ labels source level $m=2(E+J_L)$. At $(7,0;0,0)_5$, $\dim E_1=5$, $\operatorname{rank}d_1=3$, $\dim E_2=2$, $\operatorname{rank}d_2=1$, $\dim E_\infty=1$. Since $Q_2\mathcal O_0=0$, $d_2[\mathcal O_0]_2=[Q_1\mathcal O_1]_2$ (8.33).
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}llllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$E+J_L$ & source & target & $\dim E_2$ source & $\dim E_2$ target & $Q_2\mathcal K\ne0$ & $\operatorname{rank}d_2$\\
+\midrule\endhead
+$7$ & $(7,0;0,0)_{5}$ & $(1,0;2,2)_{4}$ & 2 & 2 & 0 & 1\\
+$\tfrac{15}2$ & $(6,0;1,0)_{5}$ & $(0,0;3,2)_{4}$ & 2 & 1 & 0 & 0\\
+$8$ & $(8,0;0,0)_{6}$ & $(2,0;2,2)_{5}$ & 3 & 3 & 0 & 1\\
+$\tfrac{17}2$ & $(7,0;1,0)_{5}$ & $(1,0;3,2)_{4}$ & 2 & 4 & 2112 & 1\\
+$\tfrac{17}2$ & $(7,0;1,0)_{6}$ & $(1,0;3,2)_{5}$ & 3 & 1 & 0 & 0\\
+$9$ & $(6,0;2,0)_{5}$ & $(0,0;4,2)_{4}$ & 4 & 2 & 5680 & 0\\
+$9$ & $(9,0;0,0)_{7}$ & $(3,0;2,2)_{6}$ & 8 & 4 & 0 & 0\\
+$9$ & $(9,1;0,0)_{7}$ & $(3,1;2,2)_{6}$ & 6 & 3 & 0 & 0\\
+\bottomrule
+\end{xltabular}}
+
+The column $Q_2\mathcal K\ne0$ counts nonzero entries of the direct action on source cocycles. At levels $7,8$, the lift is $[Q_1\mathcal O_1]_2$.
+
+\subsection{Translation towers}\label{sec-E-LS-towers}
+
+We compare lifted classes with their holomorphic translation descendants. The induced maps identify which census entries belong to the same tower and which require new source classes.
+
+\rthm{Proposition}{appE2-0325}{}
+
+$\partial_{+\dot+}$ raises $n_+$, commutes with $Q_n,d_r$, and maps $E_r(\Theta,c;n_+,n_-)_Y\to E_r(\Theta,c;n_++1,n_-)_Y$. The displayed maps are injective [p].
+
+\begin{proofbox}
+Proof.
+
+Translation commutes with (7.3) and $J_+$, preserving highest weights. Homogeneous contractions transfer this commutation to $d_r$ by (8.23). The matrix check passes for $n\le2$ and fails for an altered derivation coefficient.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}Xlll@{}}
+\toprule
+map & $E_1$ & $E_2$ & $E_\infty$\\
+\midrule\endhead
+$(7,0;0,0)_5\to(7,0;1,0)_5$ & $5\to5$, isomorphism & $2\to2$, isomorphism & $1\to1$, isomorphism\\
+$(7,0;1,0)_5\to(7,0;2,0)_5$ & $5\to5$, isomorphism & $2\to2$, isomorphism & $1\to1$, isomorphism\\
+$(8,0;0,0)_6\to(8,0;1,0)_6$ & $4\to6$, injective & $3\to3$, isomorphism & $2\to2$, isomorphism\\
+$(1,0;2,2)_4\to(1,0;3,2)_4$ & $2\to4$, injective & $2\to4$, injective & $1\to3$, injective\\
+$(1,0;3,2)_4\to(1,0;4,2)_4$ & $4\to6$, injective & $4\to6$, injective & $3\to5$, injective\\
+$(2,0;2,2)_5\to(2,0;3,2)_5$ & $3\to11$, injective & $3\to11$, injective & $2\to10$, injective\\
+\bottomrule
+\end{xltabular}}
+
+\par\vspace{-\medskipamount}\noindent\hspace*{\fill}\qedsymbol
+\end{proofbox}
+
+For $J_R=0$, the $SL_2$ highest-weight translation descendants are $\partial_{+\dot+}^k$, giving $n_-=0$ below level $11$. $P_{19}$ has predecessor $h=0$. The rank-$6$ $P_{21}$ has predecessors with $d_2=0$. $P_{21}$ matches $P_{14}$ times the six $\operatorname{tr}\Phi^{(I}\Phi^{J)}$ primaries, giving rank $6$ per $c$.
+
+\subsection{Independence of the two-loop scheme}\label{sec-E-LS-scheme}
+
+We test whether the first two-loop lifts change under an allowed modification of the two-loop operator. Charge bounds and the classical kernel in the target show that the stated symmetry-preserving changes vanish on these sources.
+\begin{equation*}
+Q_2\longmapsto Q_2+\delta,\qquad[Q_0,\delta]=0,\qquad\delta\ \bmod\ [Q_0,X].
+\end{equation*}
+
+The induced change of $d_2$ is $[\delta\mathcal O_0]_2$.
+
+\rthm{Proposition}{appE2-0340}{}
+
+Let $\delta$ have the charges of $Q_2$, preserve gauge, $SU(2)_R$, clock and shift symmetries, and act on at most three letters. At levels $7,8,\tfrac{17}2$, every source has $\delta\mathcal O_0=0$, fixing $d_2$ from $Q_0,Q_1$ and nilpotence.
+
+\begin{proofbox}
+Proof.
+
+Proposition~\ref{appE2-0024} gives $\Delta\Theta=-6$, so a contributing subword must have $\Theta\ge6$. Source words are $\gamma^4\mathsf b,\gamma^3\beta^2$ and $\gamma^5\mathsf b,\gamma^4\beta^2$, whose three-letter subwords have $\Theta\le5$. Hence $\delta=0$ on these source spaces, as is $Q_2$. At $(7,0;1,0)_5$, candidates are $\partial\mathsf c\,\gamma\,(\gamma^I\beta_I\mathsf b)$ and $\partial\mathsf c\,\gamma\,(\beta_1\beta_2\beta_3)$. Their $SU(2)_R$-allowed target skeleton has dimension $8$.
+\begin{equation*}
+\ker(Q_0|_{\text{target skeleton}})=0\quad\text{[p]},\qquad Q_0\delta\mathcal O_0=-\delta Q_0\mathcal O_0=0\quad\Longrightarrow\quad\delta\mathcal O_0=0.
+\end{equation*}
+
+\par\vspace{-\medskipamount}\noindent\hspace*{\fill}\qedsymbol
+\end{proofbox}
+
+The source colour space $\mathrm{Hom}_G(\mathbf8^{\otimes3},\Lambda^2\mathbf8)$ has dimension $16$ for $(\gamma^I\beta_I\mathsf b)$. Cyclic $(\beta_1\beta_2\beta_3)$ and, for $h\ne0$, $(\beta_I)^3$ contribute $6,3$, giving at most $25$ parameters. Without $SU(2)_R$, the three-dimensional $Q_0$-kernel reaches one independent target direction and can raise rank $1\to2$. For input edges $1o,2o,3o$ and $\lambda_2=0$, the Gui--Wang--Williams kernel is $-\tfrac1{24}(\lambda_1\wedge\lambda_3)^2$ \cite[Section 4.5]{GWW}, versus $+\tfrac1{24}(\lambda_P\wedge\lambda_Q)^2$ here. This holds for all twenty input-derivative patterns of order at most three. The one-loop sign is $+1$, and nilpotence fixes the relative convention.
+
+\subsection{The vanishing locus}\label{sec-E-LS-locus}
+
+We track how the first two-loop ranks vary with the deformation parameters. Hesse symmetry and polynomial rank tests organize the vanishing curves and exceptional points listed below.
+
+The symmetric cubic is $C=h_e(x^3+y^3+z^3)+6\rho xyz$. Superpotentials related by $GL_3$ on $\gamma^I$ give equivalent twisted theories. The order-$24$ Hesse group is generated by $(\rho,h_e)\mapsto(\rho,\omega h_e)$, $\omega^3=1$, and $(\rho,h_e)\mapsto-\tfrac{\sqrt{-3}}3(h_e-\rho,h_e+2\rho)$. Its invariants are
+\begin{equation}\label{eq-E-hesse}
+\begin{gathered}S=\rho(h_e^3-\rho^3),\qquad T=h_e^6-20h_e^3\rho^3-8\rho^6,\\ T^2+64S^3=h_e^3(h_e^3+8\rho^3)^3,\\ \Delta_4=h_e(h_e^3+8\rho^3)=\frac{16\,h\bigl(h^3-(q-1)^3\bigr)}{(1+q)^4}.\end{gathered}
+\end{equation}
+
+$C$ is singular exactly on $\Delta_4=0$, where the theory is $GL_3$-equivalent to a $\beta$-deformation \cite[Section 3]{BundzikMansson}. $C_8=S^2-18S-T-27$ factors over $\mathbb Q(\omega)$ into $q=0,\infty$ and $1-\omega^iq+\omega^jh=0$, $i\ne0$. Set $O_8=4S^2-36S-3T$, irreducible over $\mathbb Q(\sqrt{-3})$.
+\begin{equation}\label{eq-E-O8}
+\begin{aligned}\frac{(1+q)^8}{64}O_8={}&(q^2-14q+1)h^6-2(q-1)(q^4-7q^3-24q^2-7q+1)h^3\\&+(q-1)^4(q^2+q+1)^2.\end{aligned}
+\end{equation}
+
+\rthm{Proposition}{appE2-0355}{}
+
+\emph{Every block of the $d_2$ computation at the hits $E+J_L=7,8,\tfrac{17}2$ is affine in $(\rho,h_e)$, and its ranks are constant on Hesse orbits. } \emph{Modulo $p$, along random rational lines in the parameter plane, the curves on which $\operatorname{rank}d_2$ drops from $1$ to $0$ are $\Delta_4=0$ at $E+J_L=7$ and $\tfrac{17}2$, and $\Delta_4\,S\,O_8=0$ at $E+J_L=8$. } \emph{On $\Delta_4=0$, $d_2=0$ except at the eight points of the Hesse orbit of $(\rho,h_e)=(\pm\sqrt{-3},0)$, the $\beta$-deformations with $q^3=1$, where $\operatorname{rank}d_2=1$ at $E+J_L=7$ and $\tfrac{17}2$. } \emph{Near $\Delta_4=0$, $d_2$ vanishes to second order in the distance.}
+
+\begin{proofbox}
+\emph{Proof.}
+
+The blocks are fitted to the affine form at three points and checked at three further points; at the default point they reproduce the ranks of the census. Along a line, the rank-drop divisor of each block is the greatest common divisor of two randomly projected maximal minors, computed exactly modulo $p$ by characteristic polynomials; the factors of $\Delta_4$ are removed, and each remaining factor is reconstructed as a bivariate polynomial, checked on oblique lines and written in $S$ and $T$. By \eqref{eq-E-rank}, $\operatorname{rank}d_2=\operatorname{rank}M_2-\operatorname{rank}M_1-\operatorname{rank}M'_2+\operatorname{rank}M'_1$, and the orders of vanishing in $h_e$ of the corresponding determinants are $7-5-4+4=8-6-5+5=11-9-8+8=2$ at the three hits. At $E+J_L=7$, isolated drop points off these curves were excluded for every block except $M_1$ and $M_2$, by resultants of two projected minors; the failure probability of each step is of order $\deg/p$.\hfill\qedsymbol
+\end{proofbox}
+
+Entries give source $\dim E_1$, outgoing $\operatorname{rank}d_1$, source and target $\dim E_2$, then $\operatorname{rank}d_2$.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}Xlll@{}}
+\toprule
+point & $E+J_L=7$ & $E+J_L=8$ & $E+J_L=\tfrac{17}2$\\
+\midrule\endhead
+generic & $5/3/2,2/1$ & $4/1/3,3/1$ & $5/3/2,4/1$\\
+$\beta$ line, generic $\rho$ & $5/2/3,2/0$ & $6/1/5,3/0$ & $5/2/3,4/0$\\
+triangle lines, Sklyanin point $(q,h)=(-\omega,1)$ & $5/2/3,2/0$ & $6/1/5,3/0$ & $5/2/3,4/0$\\
+$\beta$ line, $q^3=1$ & $9/3/6,1/1$ & $14/6/8,1/0$ & $9/3/6,3/1$\\
+$S=0$ & $5/3/2,2/1$ & $4/2/2,2/0$ & $5/3/2,4/1$\\
+$O_8=0$ &  & $4/2/2,2/0$ & \\
+$C_8=0$ & $d_2=1$ & $d_2=1$ & $d_2=1$\\
+$\mathcal N=4$ point & $47/0/47,2/0$ & $98/0/98,5/0$ & $129/0/129,4/0$\\
+\bottomrule
+\end{xltabular}}
+
+On $S O_8=0$, the level-$8$ outgoing/incoming $d_1$ ranks rise $1,0\to2,1$, and both $E_2$ dimensions fall $3\to2$. The pure-$h$ line lies on $S=0$. On $C_8=0$, the Sklyanin point scheme degenerates. The changes affect $E_1$ at $Y+1,Y+2$, with the same $d_2$.
+
+\subsection{Fortuity of the sources}\label{sec-E-LS-fortuity}
+
+We compare the source cohomology at finite gauge rank with its stable value. The differences give lower bounds on the number of fortuitous classes and identify sectors in which every source is fortuitous.
+
+For $N\ge Y+1$, $SU(N)$ computes stable cohomology, giving $f\ge h_{SU(3)}-h_{SU(N)}$ and $f=h_{SU(3)}$ when $h_{SU(N)}=0$ \ref{sec-E-fort}. Weyl-orbit summation reduces the $Y=7$ $SU(8)$ grid from $8.9\times10^8$ to $82{,}225$ points.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}Xlll>{\raggedright\arraybackslash}X@{}}
+\toprule
+source & $h_{SU(3)}$ & large rank & $h$ there & fortuitous classes\\
+\midrule\endhead
+$P_{14}=(7,0;0,0)_5$ & $5$ & $SU(6)$ & $0$ & all $5$\\
+$(7,0;1,0)_5$ & $5$ & $SU(6)$ & $0$ & all $5$\\
+$(7,0;2,0)_5$ & $5$ & $SU(6)$ & $0$ & all $5$\\
+$(8,0;1,0)_6$ & $6$ & $SU(7)$ & $4$ & $\ge2$\\
+$P_{19}=(8,0;1,0)_7$ & $19$ & $SU(8)$ & $6$ & $\ge13$\\
+$P_{21}$, $c=0$: $(9,0;1,0)_7$ & $40$ & $SU(8)$ & $5$ & $\ge35$\\
+$P_{21}$, $c=1$: $(9,1;1,0)_7$ & $36$ & $SU(8)$ & $0$ & all $36$\\
+\bottomrule
+\end{xltabular}}
+
+Classical dimensions $h_{E_1}$ by gauge rank.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}llllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+class & $Y$ & $SU(3)$ & $SU(4)$ & $SU(5)$ & $SU(6)$ & $SU(7)$\\
+\midrule\endhead
+$(7,0;0,0)$ & 5 & 5 & 0 & 0 & 0 & 0\\
+$(7,0;0,0)$ & 6 & 0 & 16 & 0 & 0 & 0\\
+$(7,0;0,0)$ & 7 & 0 &  &  & 11 & 23\\
+$(1,0;2,2)$ & 4 & 2 & 2 &  & 2 & \\
+$(8,0;0,0)$ & 6 & 4 & 11 & 2 &  & 2\\
+$(2,0;2,2)$ & 5 &  &  &  & 8 & \\
+$(7,0;1,0)$ & 5 & 5 & 0 & 0 & 0 & \\
+$(7,0;1,0)$ & 6 & 10 & 41 & 9 & 9 & \\
+$(1,0;3,2)$ & 4 &  &  &  & 4 & \\
+\bottomrule
+\end{xltabular}}
+
+Blank entries were uncomputed. At $\mathcal N=4$, sector $(7,0;0,0)$ has $h=8,47,76,42$ for $Y=4,\ldots,7$, all non-fortuitous. Deformation leaves five fortuitous classes at $Y=5$, one lifted per triplet.
+
+\subsection{The $\beta$-deformation}\label{sec-E-beta}
+
+We repeat the census on the $\beta$-deformation line, where individual flavour weights remain available. The tables locate a rank-one two-loop lift and show how it arises from the first correction to the source.
+
+For $h_e=0$, $\rho=\tfrac{12345}{678}$, use the individual flavour weights of \ref{sec-E-sectors}, with the flavour raising operators omitted. Complete census through $E+J_L=\tfrac{21}2$.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllllllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$E+J_L$ & sectors & $\sum h_{E_1}$ & $d_1$ pairs & $d_1\ne0$ & $d_2$ pairs & $d_2\ne0$ & $d_3$ pairs & $d_3\ne0$ & $\sum h_{E_\infty}$\\
+\midrule\endhead
+$1$ & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+$\tfrac{3}2$ & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+$2$ & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 2\\
+$\tfrac{5}2$ & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
+$3$ & 5 & 5 & 1 & 0 & 0 & 0 & 0 & 0 & 5\\
+$\tfrac{7}2$ & 2 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 3\\
+$4$ & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 6\\
+$\tfrac{9}2$ & 5 & 9 & 1 & 0 & 0 & 0 & 0 & 0 & 9\\
+$5$ & 9 & 14 & 2 & 0 & 0 & 0 & 0 & 0 & 14\\
+$\tfrac{11}2$ & 6 & 16 & 1 & 0 & 0 & 0 & 0 & 0 & 16\\
+$6$ & 16 & 44 & 5 & 0 & 1 & 0 & 0 & 0 & 44\\
+$\tfrac{13}2$ & 9 & 40 & 3 & 0 & 0 & 0 & 0 & 0 & 40\\
+$7$ & 19 & 71 & 8 & 2 & 0 & 0 & 0 & 0 & 67\\
+$\tfrac{15}2$ & 16 & 108 & 8 & 1 & 1 & 0 & 0 & 0 & 106\\
+$8$ & 26 & 149 & 17 & 1 & 4 & 0 & 0 & 0 & 147\\
+$\tfrac{17}2$ & 19 & 190 & 13 & 4 & 1 & 0 & 0 & 0 & 182\\
+$9$ & 39 & 383 & 25 & 7 & 4 & 0 & 0 & 0 & 369\\
+$\tfrac{19}2$ & 26 & 417 & 23 & 5 & 5 & 0 & 0 & 0 & 407\\
+$10$ & 46 & 675 & 37 & 11 & 7 & 0 & 1 & 0 & 641\\
+$\tfrac{21}2$ & 39 & 1054 & 38 & 13 & 8 & 1 & 1 & 0 & 1004\\
+\bottomrule
+\end{xltabular}}
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}llllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$E+J_L$ & source & target & $\dim E_2$ source & $\dim E_2$ target & $Q_2\mathcal K\ne0$ & $\operatorname{rank}d_2$\\
+\midrule\endhead
+$6$ & $(2,2,2;0,0)_{5}$ & $(0,0,0;2,2)_{4}$ & 2 & 1 & 0 & 0\\
+$\tfrac{15}2$ & $(2,2,2;1,0)_{5}$ & $(0,0,0;3,2)_{4}$ & 6 & 1 & 0 & 0\\
+$8$ & $(3,3,2;0,0)_{6}$ & $(1,1,0;2,2)_{5}$ & 2 & 1 & 0 & 0\\
+$8$ & $(4,2,2;0,0)_{5}$ & $(2,0,0;2,2)_{4}$ & 1 & 2 & 4 & 0\\
+$8$ & $(4,2,2;0,0)_{6}$ & $(2,0,0;2,2)_{5}$ & 1 & 2 & 0 & 0\\
+$8$ & $(4,2,2;0,0)_{7}$ & $(2,0,0;2,2)_{6}$ & 1 & 1 & 0 & 0\\
+$\tfrac{17}2$ & $(3,2,2;1,0)_{6}$ & $(1,0,0;3,2)_{5}$ & 9 & 1 & 0 & 0\\
+$9$ & $(2,2,2;2,0)_{5}$ & $(0,0,0;4,2)_{4}$ & 9 & 2 & 4330 & 0\\
+$9$ & $(3,3,3;0,0)_{6}$ & $(1,1,1;2,2)_{5}$ & 2 & 2 & 2672 & 0\\
+$9$ & $(3,3,3;0,0)_{7}$ & $(1,1,1;2,2)_{6}$ & 1 & 5 & 0 & 0\\
+$9$ & $(5,2,2;0,0)_{7}$ & $(3,0,0;2,2)_{6}$ & 3 & 2 & 0 & 0\\
+\bottomrule
+\end{xltabular}}
+
+\begin{equation}\label{eq-E-beta-hit}
+\begin{gathered}(5,2,2;1,0)_8\ \xrightarrow{\ d_2\ }\ (3,0,0;3,2)_7,\qquad \operatorname{rank}d_2=1\ \text{[p,p']},\\ (E;R_I;J_L,J_R):\ (\tfrac{19}2;\tfrac92,\tfrac32,\tfrac32;1,\tfrac12)\to(10;5,2,2;\tfrac12,\tfrac12).\end{gathered}
+\end{equation}
+
+Here the source has $h=1$, the target has $\dim E_2=4$, and $Q_2\mathcal O_0=0$. Thus $d_2[\mathcal O_0]_2=[Q_1\mathcal O_1]_2$.
+
+\section{N=2 quiver, SQCD and mass deformations}\label{sec-E-N2}
+
+We adapt the same charge-sector calculation to the $\mathcal N=2$ quiver, SQCD and their adjoint-mass deformations. The resulting tables record the successive differential ranks with the symmetries and gradings appropriate to each theory.
+
+\subsection{The quiver and SQCD}\label{sec-E-N2-quiver}
+
+We obtain the quiver complex by the orbifold projection and SQCD by decoupling one gauge node. A field rescaling relates nonzero coupling ratios, after which the census tests the surviving loop differentials.
+
+The $SU(N)\times SU(N)$ quiver keeps $\mathsf c,\mathsf b,\gamma^3,\beta_3$ block-diagonal in $SU(2N)$ and $\gamma^{1,2},\beta_{1,2}$ off-diagonal. Its orbifold action is $C(\theta_1,\theta_2,\theta_3)\mapsto C(-\theta_1,-\theta_2,\theta_3)$. Use the grading of \ref{sec-E-sectors} and highest weights of $GL(2)_{12}\times GL(1)_3\times SL(2)$.
+
+\rthm{Proposition}{appE2-0386}{}
+
+For $\kappa=g_2/g_1\ne0$, $E_r(\kappa)\cong E_r(1)$ for every $r$.
+
+\begin{proofbox}
+Proof.
+
+The power of $\kappa^2$ counts consumed minus produced second-node $\mathsf b,\beta_3$ letters. Rescaling these letters by $\kappa^2$ gives $Q_n(\kappa)=\phi_\kappa^{-1}Q_n(1)\phi_\kappa$ and conjugate transferred differentials.\hfill\qedsymbol
+\end{proofbox}
+
+The $\kappa\to0$ limit gives $\mathcal N=2$ SQCD with $N_f=2N$. Compute flavour singlets using the second-node Haar measure. Quiver census at $\kappa^2=1,9$, followed by SQCD. $Q_2\mathcal K\ne0$ counts nonzero direct actions.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllllllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$N$ & $E+J_L$ & sectors & blocks & $\sum h$ & $d_1\ne0$ & $\sum\dim E_2$ & $d_2$ pairs & max rank $d_2$ & $Q_2\mathcal K\ne0$\\
+\midrule\endhead
+$2$ & $2$ & 4 & 3 & 4 & 0 & 4 & 0 & -- & --\\
+$2$ & $\tfrac{5}{2}$ & 2 & 1 & 2 & 0 & 2 & 0 & -- & --\\
+$2$ & $3$ & 8 & 4 & 6 & 0 & 6 & 0 & -- & --\\
+$2$ & $\tfrac{7}{2}$ & 4 & 4 & 6 & 0 & 6 & 0 & -- & --\\
+$2$ & $4$ & 13 & 11 & 17 & 0 & 17 & 0 & -- & --\\
+$2$ & $\tfrac{9}{2}$ & 8 & 7 & 14 & 0 & 14 & 0 & -- & --\\
+$2$ & $5$ & 20 & 19 & 38 & 1 & 36 & 0 & -- & --\\
+$2$ & $\tfrac{11}{2}$ & 13 & 15 & 42 & 1 & 40 & 0 & -- & --\\
+$2$ & $6$ & 31 & 34 & 93 & 2 & 89 & 0 & -- & --\\
+$2$ & $\tfrac{13}{2}$ & 20 & 26 & 116 & 1 & 112 & 0 & -- & --\\
+$2$ & $7$ & 44 & 57 & 240 & 3 & 230 & 1 & 0 & 0\\
+$2$ & $\tfrac{15}{2}$ & 31 & 43 & 276 & 3 & 268 & 1 & 0 & 0\\
+$2$ & $8$ & 61 & 90 & 560 & 5 & 544 & 3 & 0 & 4\\
+$2$ & $\tfrac{17}{2}$ & 44 & 73 & 716 & 4 & 696 & 1 & 0 & 2\\
+$2$ & $9$ & 84 & 140 & 1298 & 7 & 1258 & 7 & 0 & 10\\
+$2$ & $\tfrac{19}{2}$ & 61 & 110 & 1690 & 8 & 1640 & 5 & 0 & 8\\
+$2$ & $10$ & 111 & 205 & 3153 & 13 & 3059 & 11 & 0 & 18\\
+$2$ & $\tfrac{21}{2}$ & 84 & 169 & 4088 & 13 & 3960 & 8 & 0 & 16\\
+$3$ & $2$ & 4 & 3 & 4 & 0 & 4 & 0 & -- & --\\
+$3$ & $\tfrac{5}{2}$ & 2 & 1 & 2 & 0 & 2 & 0 & -- & --\\
+$3$ & $3$ & 8 & 5 & 8 & 0 & 8 & 0 & -- & --\\
+$3$ & $\tfrac{7}{2}$ & 4 & 5 & 8 & 0 & 8 & 0 & -- & --\\
+$3$ & $4$ & 13 & 12 & 21 & 0 & 21 & 0 & -- & --\\
+$3$ & $\tfrac{9}{2}$ & 8 & 8 & 18 & 0 & 18 & 0 & -- & --\\
+$3$ & $5$ & 20 & 24 & 54 & 0 & 54 & 0 & -- & --\\
+$3$ & $\tfrac{11}{2}$ & 13 & 19 & 62 & 0 & 62 & 0 & -- & --\\
+$3$ & $6$ & 31 & 40 & 149 & 1 & 147 & 1 & 0 & 0\\
+$3$ & $\tfrac{13}{2}$ & 20 & 32 & 176 & 1 & 174 & 0 & -- & --\\
+$3$ & $7$ & 44 & 69 & 400 & 4 & 390 & 2 & 0 & 0\\
+$3$ & $\tfrac{15}{2}$ & 31 & 54 & 478 & 3 & 468 & 1 & 0 & 0\\
+$3$ & $8$ & 61 & 113 & 1016 & 8 & 986 & 8 & 0 & 4\\
+$3$ & $\tfrac{17}{2}$ & 44 & 92 & 1304 & 7 & 1270 & 3 & 0 & 2\\
+$3$ & $9$ & 84 & 171 & 2634 & 19 & 2542 & 11 & 0 & 12\\
+\bottomrule
+\end{xltabular}}
+
+SQCD census.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllllllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+$N$ & $E+J_L$ & sectors & blocks & $\sum h$ & $d_1\ne0$ & $\sum\dim E_2$ & $d_2$ pairs & max rank $d_2$ & $Q_2\mathcal K\ne0$\\
+\midrule\endhead
+$2$ & $2$ & 4 & 3 & 3 & 0 & 3 & 0 & -- & --\\
+$2$ & $\tfrac{5}{2}$ & 2 & 1 & 1 & 0 & 1 & 0 & -- & --\\
+$2$ & $3$ & 8 & 3 & 4 & 0 & 4 & 0 & -- & --\\
+$2$ & $\tfrac{7}{2}$ & 4 & 3 & 4 & 0 & 4 & 0 & -- & --\\
+$2$ & $4$ & 13 & 7 & 10 & 0 & 10 & 0 & -- & --\\
+$2$ & $\tfrac{9}{2}$ & 8 & 4 & 6 & 0 & 6 & 0 & -- & --\\
+$2$ & $5$ & 20 & 9 & 21 & 0 & 21 & 0 & -- & --\\
+$2$ & $\tfrac{11}{2}$ & 13 & 9 & 21 & 0 & 21 & 0 & -- & --\\
+$2$ & $6$ & 31 & 19 & 37 & 0 & 37 & 0 & -- & --\\
+$2$ & $\tfrac{13}{2}$ & 20 & 14 & 54 & 0 & 54 & 0 & -- & --\\
+$2$ & $7$ & 44 & 26 & 112 & 0 & 112 & 0 & -- & --\\
+$2$ & $\tfrac{15}{2}$ & 31 & 23 & 109 & 0 & 109 & 0 & -- & --\\
+$2$ & $8$ & 61 & 42 & 232 & 0 & 232 & 1 & 0 & 0\\
+$2$ & $\tfrac{17}{2}$ & 44 & 30 & 307 & 0 & 307 & 1 & 0 & 1\\
+$2$ & $9$ & 84 & 59 & 481 & 0 & 481 & 1 & 0 & 1\\
+$2$ & $\tfrac{19}{2}$ & 61 & 54 & 623 & 0 & 623 & 1 & 0 & 1\\
+$2$ & $10$ & 111 & 87 & 1263 & 0 & 1263 & 4 & 0 & 4\\
+$2$ & $\tfrac{21}{2}$ & 84 & 75 & 1527 & 0 & 1527 & 5 & 0 & 5\\
+$2$ & $11$ & 144 & 122 & 2632 & 0 & 2632 & 8 & 0 & 8\\
+$2$ & $\tfrac{23}{2}$ & 111 & 106 & 3850 & 0 & 3850 & 7 & 0 & 7\\
+$2$ & $12$ & 186 & 155 & 6440 & 0 & 6440 & 14 & 0 & 14\\
+$3$ & $2$ & 4 & 3 & 3 & 0 & 3 & 0 & -- & --\\
+$3$ & $\tfrac{5}{2}$ & 2 & 1 & 1 & 0 & 1 & 0 & -- & --\\
+$3$ & $3$ & 8 & 4 & 5 & 0 & 5 & 0 & -- & --\\
+$3$ & $\tfrac{7}{2}$ & 4 & 4 & 5 & 0 & 5 & 0 & -- & --\\
+$3$ & $4$ & 13 & 9 & 12 & 0 & 12 & 0 & -- & --\\
+$3$ & $\tfrac{9}{2}$ & 8 & 6 & 8 & 0 & 8 & 0 & -- & --\\
+$3$ & $5$ & 20 & 14 & 25 & 0 & 25 & 0 & -- & --\\
+$3$ & $\tfrac{11}{2}$ & 13 & 12 & 26 & 0 & 26 & 0 & -- & --\\
+$3$ & $6$ & 31 & 26 & 55 & 0 & 55 & 0 & -- & --\\
+$3$ & $\tfrac{13}{2}$ & 20 & 23 & 66 & 0 & 66 & 0 & -- & --\\
+$3$ & $7$ & 44 & 40 & 150 & 1 & 148 & 1 & 0 & 0\\
+$3$ & $\tfrac{15}{2}$ & 31 & 35 & 161 & 1 & 159 & 1 & 0 & 0\\
+$3$ & $8$ & 61 & 69 & 323 & 2 & 319 & 2 & 0 & 0\\
+$3$ & $\tfrac{17}{2}$ & 44 & 56 & 424 & 1 & 420 & 2 & 0 & 1\\
+$3$ & $9$ & 84 & 101 & 781 & 3 & 773 & 7 & 0 & 4\\
+\bottomrule
+\end{xltabular}}
+
+All quiver $d_3$ pairs at levels $9,10$ have rank zero at both couplings. The control $Q_2\mapsto4Q_2$ gives rank $3$ on the corresponding $SU(2)\times SU(2)$ pairs. For SQCD at $N=3$, nonzero $d_1$ occur in $(1,1,5;0,0)_6$, $(1,1,4;1,0)_6$, $(1,1,3;1,1)_6$, $(1,1,6;0,0)_6$, $(1,1,5;1,0)_6$, $(1,1,4;1,1)_6$, $(1,1,4;2,0)_6$, $(1,1,7;0,0)_8$. At $N=2$, $d_1=0$ through level $12$.
+
+\subsection{Mass deformations}\label{sec-E-N2-mass}
+
+We add the adjoint mass to the classical differential and reorganize the calculation by the surviving charges. The census then tests lifting in the quartic theories reached by the mass deformation.
+
+An adjoint mass adds $\Lambda^{AB}(\gamma^3)_B\partial/\partial(\beta_3)^A$ to $Q_0$. Use the massless $Q_{n\ge1}$. The flows give quartic \ref{sec-quartic-fortuitous}, quartic SQCD, and Klebanov--Witten for masses $(M,-M)$. The mass breaks $\theta_3$. Use the grading
+\begin{equation}\label{eq-E-mass}
+\begin{gathered}A=\theta_1+\theta_3,\qquad B=\theta_2+\theta_3,\qquad \mathrm{gh}=Y-\Theta,\qquad R_{\mathrm{IR}}=\tfrac12(R_1+R_2)+R_3,\\ E_{\mathrm{IR}}=\tfrac32R_{\mathrm{IR}}+2J_L,\qquad w=A+B+2(n_++n_-)=\tfrac43(E_{\mathrm{IR}}+J_L),\\ d_r:(A,B;n_\pm;\mathrm{gh})\to(A-2r,B-2r;n_\pm+r;\mathrm{gh}+1+2r),\end{gathered}
+\end{equation}
+
+The one-mass $SU(2)$ classes of \cite{CK}.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lllll>{\raggedright\arraybackslash}X@{}}
+\toprule
+class & $(A,B;n_+,n_-;\mathrm{gh})$ & $J_L$ & $R_{\mathrm{IR}}$ & $E_{\mathrm{IR}}$ & quantum\\
+\midrule\endhead
+$w$ & $(3,3;0,0;-2)$ & $1$ & $1$ & $\tfrac72$ & graviton\\
+$w^2$ & $(6,6;0,0;-4)$ & $2$ & $2$ & $7$ & closed completion to $\hbar^3$ (Section~\ref{sec-quartic-fortuitous})\\
+$\mathcal O_7$ & $(5,2;0,0;-2)$ & $1$ & $\tfrac32$ & $\tfrac{17}4$ & $d_1=0$, $r\ge2$ empty: all orders [p]\\
+$\mathcal O_{16}$ & $(8,8;0,0;-5)$ & $\tfrac52$ & $3$ & $\tfrac{19}2$ & $d_1,d_2,d_3,d_4=0$, no $d_5$, no incoming: all orders [p]\\
+\bottomrule
+\end{xltabular}}
+
+For $\mathcal O_{16}$, the $d_1,d_2,d_3$ targets have $h=0,7,8$, with $Q_2\mathcal O_{16}\ne0$ and $Q_4\mathcal O_{16}=0$.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}Xllllllll@{}}
+\toprule
+theory & $w$ & sectors & blocks & $\sum h$ & $d_1\ne0$ & $\sum\dim E_2$ & $d_r$ pairs & $r$ tested\\
+\midrule\endhead
+$\mathcal N{=}4$ $SU(2)$, one mass & $4$ & 7 & 4 & 4 & 0 & 4 & -- & --\\
+ & $5$ & 7 & 4 & 4 & 0 & 4 & -- & --\\
+ & $6$ & 13 & 11 & 11 & 0 & 11 & -- & --\\
+ & $7$ & 13 & 12 & 13 & 0 & 13 & -- & --\\
+ & $8$ & 22 & 25 & 30 & 0 & 30 & -- & --\\
+ & $9$ & 22 & 24 & 40 & 0 & 40 & -- & --\\
+ & $10$ & 34 & 51 & 81 & 0 & 81 & -- & --\\
+ & $11$ & 34 & 49 & 115 & 0 & 115 & -- & --\\
+ & $12$ & 50 & 93 & 218 & 0 & 218 & 4 & $d_2$\\
+ & $13$ & 50 & 90 & 317 & 0 & 317 & 4 & $d_2$\\
+ & $14$ & 70 & 154 & 569 & 0 & 569 & 11 & $d_2$\\
+ & $15$ & 70 & 151 & 845 & 0 & 845 & 14 & $d_2,d_3$\\
+ & $16$ & 95 & 240 & 1473 & 1 & 1471 & 32 & $d_2,d_3$\\
+ & $17$ & 95 & 241 & 2194 & 0 & 2194 & 36 & $d_2,d_3$\\
+$\mathcal N{=}4$ $SU(3)$, one mass & $4$ & 7 & 6 & 6 & 0 & 6 & -- & --\\
+ & $5$ & 7 & 10 & 10 & 0 & 10 & -- & --\\
+ & $6$ & 13 & 19 & 23 & 0 & 23 & -- & --\\
+ & $7$ & 13 & 27 & 42 & 0 & 42 & -- & --\\
+ & $8$ & 22 & 50 & 96 & 0 & 96 & 1 & $d_2$\\
+ & $9$ & 22 & 58 & 171 & 0 & 171 & 1 & $d_2$\\
+ & $10$ & 34 & 98 & 358 & 0 & 358 & 5 & $d_2$\\
+ & $11$ & 34 & 112 & 641 & 0 & 641 & 7 & $d_2$\\
+ & $12$ & 50 & 178 & 1284 & 0 & 1284 & 15 & $d_2$\\
+ & $13$ & 50 & 194 & 2300 & 0 & 2300 & 20 & $d_2,d_3$\\
+SCQCD $SU(2)$ $+$ mass & $4$ & 7 & 8 & 11 & 0 & 11 & -- & --\\
+ & $5$ & 7 & 0 & 0 & 0 & 0 & -- & --\\
+ & $6$ & 13 & 16 & 46 & 0 & 46 & -- & --\\
+ & $7$ & 13 & 0 & 0 & 0 & 0 & -- & --\\
+ & $8$ & 22 & 34 & 194 & 0 & 194 & -- & --\\
+ & $9$ & 22 & 0 & 0 & 0 & 0 & -- & --\\
+ & $10$ & 34 & 62 & 826 & 0 & 826 & 2 & $d_2$\\
+ & $11$ & 34 & 0 & 0 & 0 & 0 & -- & --\\
+ & $12$ & 50 & 109 & 3371 & 0 & 3371 & 7 & $d_2$\\
+ & $13$ & 50 & 0 & 0 & 0 & 0 & -- & --\\
+ & $14$ & 70 & 173 & 13622 & 0 & 13622 & 18 & $d_2,d_3$\\
+ & $15$ & 70 & 0 & 0 & 0 & 0 & -- & --\\
+SCQCD $SU(3)$ $+$ mass & $4$ & 7 & 8 & 11 & 0 & 11 & -- & --\\
+ & $5$ & 7 & 0 & 0 & 0 & 0 & -- & --\\
+ & $6$ & 13 & 18 & 44 & 0 & 44 & -- & --\\
+ & $7$ & 13 & 0 & 0 & 0 & 0 & -- & --\\
+ & $8$ & 22 & 35 & 203 & 0 & 203 & 1 & $d_2$\\
+ & $9$ & 22 & 0 & 0 & 0 & 0 & -- & --\\
+ & $10$ & 34 & 71 & 934 & 0 & 934 & 3 & $d_2$\\
+ & $11$ & 34 & 0 & 0 & 0 & 0 & -- & --\\
+ & $12$ & 50 & 125 & 4430 & 0 & 4430 & 9 & $d_2$\\
+ & $13$ & 50 & 0 & 0 & 0 & 0 & -- & --\\
+$\mathbb Z_2$ quiver $SU(2)^2$, masses $(M,-M)$ & $4$ & 7 & 10 & 16 & 0 & 16 & -- & --\\
+ & $5$ & 7 & 0 & 0 & 0 & 0 & -- & --\\
+ & $6$ & 13 & 26 & 66 & 0 & 66 & -- & --\\
+ & $7$ & 13 & 0 & 0 & 0 & 0 & -- & --\\
+ & $8$ & 22 & 53 & 299 & 1 & 297 & -- & --\\
+ & $9$ & 22 & 0 & 0 & 0 & 0 & -- & --\\
+ & $10$ & 34 & 98 & 1306 & 1 & 1304 & 3 & $d_2$\\
+ & $11$ & 34 & 0 & 0 & 0 & 0 & -- & --\\
+ & $12$ & 50 & 170 & 5442 & 1 & 5440 & 13 & $d_2,d_3$\\
+ & $13$ & 50 & 0 & 0 & 0 & 0 & -- & --\\
+\bottomrule
+\end{xltabular}}
+
+All $d_2,d_3$ ranks vanish. Nonzero $d_1$ occur at $(6,6;1,1;-3)$ in one-mass $SU(2)$ and $(2,2;k,1;1)$, $k=1,2,3$, in the quiver. At the massive-SQED weight \ref{sec-SQEDlift}, one-mass $SU(2)$ has $h=0$ and mass-deformed SQCD has $E_1=0$. The neighbouring $SU(2)$ ghost number has $h=1,d_2=0$.
+
+\section{Explicit representatives and obstruction certificates}\label{sec-E-explicit-representatives}
+
+We now display representatives and their corrections so that the lifting tests can be checked directly. Massive SQED supplies a nonzero obstruction; the remaining examples give finite closed completions and tests of nonexactness.
+
+\subsection{Massive SQED two-loop obstruction}\label{sec-SQEDlift}
+
+We follow one massive-SQED class through its first correction and its second-order obstruction. Eliminating the massive pair reduces the final test to a rational rank calculation in the light-field complex.
+
+\begin{proofbox}
+Eliminate the massive pair and test the second-order residual.
+
+Take $U(1)$ matter of charges $+1,-1,0$, with neutral mass $m$ and cubic coupling $y$.
+\begin{equation}\label{eq-3-11}
+\mathcal I=ig\mathsf c(\gamma_+\beta^+-\gamma_-\beta^-)+\frac m2\gamma_s^2+y\gamma_s\gamma_+\gamma_-,\qquad my\ne0,
+\end{equation}
+
+\paragraph{The massive pair.}\label{the-massive-pair}
+
+We separate the massive fields by a canonical change of variables. Contracting this pair gives the quartic light-field interaction and the transferred loop operators.
+
+Eliminate the massive pair by the canonical shift
+\begin{equation}\label{eq-massshift}
+\gamma_s'=\gamma_s+\frac ym\gamma_+\gamma_-,\qquad
+\beta^{+\prime}=\beta^+-\frac ym\gamma_-\beta^s,\qquad
+\beta^{-\prime}=\beta^--\frac ym\gamma_+\beta^s
+\end{equation}
+
+The shift preserves the cotangent pairing and completes the square.
+\begin{equation}\label{eq-masssquare}
+\frac m2\gamma_s^2+y\gamma_s\gamma_+\gamma_-
+=\frac m2(\gamma_s')^2-\frac{y^2}{2m}(\gamma_+\gamma_-)^2.
+\end{equation}
+
+The pair $Q_0\beta^s=-m\gamma_s^{\prime}$, $Q_0\gamma_s^{\prime}=0$ is contractible.
+\begin{equation}\label{b-00773}
+\bar W_{\mathrm{eff}}=-\frac{y^2}{2m}(\gamma_+\gamma_-)^2,
+\qquad\bar W_{\mathrm{eff}}^{++--}=-\frac{2y^2}{m}.
+\end{equation}
+
+The superscript $++--$ takes two derivatives in each of $\gamma_+,\gamma_-$.
+
+Express $Q_n$ in the shifted fields, then transfer to the light fields.
+
+Here $\pi$ sets $\gamma_s^{\prime},\beta^s$ and their jets to zero, $\iota$ includes light fields, and $h$ contracts the massive pair.
+\begin{equation}\label{eq-3-15}
+\begin{aligned}
+Q_0h+hQ_0&=1-\iota\pi,\\
+Q_{1,\mathrm{eff}}&=\pi Q_1\iota,\\
+Q_{2,\mathrm{eff}}&=\pi Q_2\iota-
+{\pi Q_1hQ_1\iota}.
+\end{aligned}
+\end{equation}
+
+\paragraph{The source.}\label{the-source}
+
+We choose a gauge-invariant operator and verify its classical closure term by term. Rewriting it in the shifted fields prepares the same class for the light-field calculation.
+
+For $gmy\ne0$, choose the gauge-invariant source below, with free dotted index $\dot a$.
+\begin{equation}\label{eq-SQEDsource}
+\begin{aligned}
+\mathcal O_0=ig\Big[&\beta^+\beta^-\mathsf b^2
++\frac ym(\gamma_-\beta^--\gamma_+\beta^+)\beta^s\mathsf b^2\\
+&+\frac{y^2}{3m\,ig}\gamma_+\gamma_-\mathsf b^3\Big]
+\partial_{+\dot a}\mathsf c .
+\end{aligned}
+\end{equation}
+
+Use $Q_0\mathsf c=0$ and the following three variations to check $Q_0\mathcal O_0=0$.
+\begin{equation}\label{eq-SQEDclosure}
+\begin{aligned}
+Q_0(\beta^+\beta^-\mathsf b^2)
+&=y\gamma_s(\gamma_+\beta^+-\gamma_-\beta^-)\mathsf b^2,\\
+Q_0\big[(\gamma_-\beta^--\gamma_+\beta^+)\beta^s\mathsf b^2\big]
+&=-(\gamma_+\beta^+-\gamma_-\beta^-)
+(m\gamma_s+y\gamma_+\gamma_-)\mathsf b^2,\\
+Q_0(\gamma_+\gamma_-\mathsf b^3)
+&=3ig\gamma_+\gamma_-(\gamma_+\beta^+-\gamma_-\beta^-)\mathsf b^2.
+\end{aligned}
+\end{equation}
+
+In the shifted fields, the same source is
+\begin{equation}\label{b-00783}
+\mathcal O_0=ig\left(
+\beta^{+\prime}\beta^{-\prime}\mathsf b^2
+-\frac{\bar W_{\mathrm{eff}}^{++--}}{6ig}\gamma_+\gamma_-\mathsf b^3
+\right)\partial_{+\dot a}\mathsf c,
+\qquad
+\bar W_{\mathrm{eff}}^{++--}=-\frac{2y^2}{m}.
+\end{equation}
+
+\paragraph{One loop.}\label{one-loop}
+
+We evaluate the triangle on the chosen source and solve the first correction equation. The displayed correction cancels the one-loop variation and permits the two-loop obstruction test.
+
+The triangle acts on this source as follows.
+\begin{equation}\label{eq-SQEDoneaction}
+\begin{aligned}
+(64\pi^2)Q_1\mathcal O_0
+={}&2(ig)^3\Big\{
+ \mathsf b\,\partial_{+\dot b}(\beta^{+\prime}\beta^{-\prime})
+                    \partial_+{}^{\dot b}\mathsf c
+ -(\partial_{+\dot b}\beta^{+\prime})\beta^{+\prime}\beta^{-\prime}
+                    \partial_+{}^{\dot b}\gamma_+\\
+&\quad+\beta^{+\prime}(\partial_{+\dot b}\beta^{-\prime})\beta^{-\prime}
+                    \partial_+{}^{\dot b}\gamma_-
+ +\frac ym(\partial_{+\dot b}\beta^s)\mathsf b
+   (\beta^{-\prime}\gamma_--\beta^{+\prime}\gamma_+)
+                    \partial_+{}^{\dot b}\mathsf c\\
+&\quad-\frac ym(\partial_{+\dot b}\beta^s)\beta^{+\prime}\beta^{-\prime}
+                    \partial_+{}^{\dot b}(\gamma_+\gamma_-)
+ \Big\}\partial_{+\dot a}\mathsf c\\
+&+2(ig)^2y\Big\{
+ \mathsf b^2(\partial_{+\dot b}\mathsf c)
+                    \partial_+{}^{\dot b}\gamma_s'
+ -\mathsf b(\partial_{+\dot b}\gamma_s')
+   \bigl(\beta^{+\prime}\partial_+{}^{\dot b}\gamma_+
+        +\beta^{-\prime}\partial_+{}^{\dot b}\gamma_-\bigr)
+ \Big\}\partial_{+\dot a}\mathsf c\\
+&-\frac{2(ig)^2y^2}{m}\Big\{
+ 2\mathsf b^2(\partial_{+\dot b}\mathsf c)
+                    \partial_+{}^{\dot b}(\gamma_+\gamma_-)
+ +3\mathsf b(\beta^{+\prime}\gamma_+-\beta^{-\prime}\gamma_-)
+       (\partial_{+\dot b}\gamma_+)\partial_+{}^{\dot b}\gamma_-\\
+&\quad+\mathsf b\gamma_+\gamma_-
+  \bigl[(\partial_{+\dot b}\beta^{+\prime})\partial_+{}^{\dot b}\gamma_+
+       +(\partial_{+\dot b}\beta^{-\prime})\partial_+{}^{\dot b}\gamma_-\bigr]\\
+&\quad+\frac ym\mathsf b\gamma_+\gamma_-
+       (\partial_{+\dot b}\beta^s)\partial_+{}^{\dot b}(\gamma_+\gamma_-)
+ \Big\}\partial_{+\dot a}\mathsf c .
+\end{aligned}
+\end{equation}
+
+Solve $Q_0\mathcal O_1=-Q_1\mathcal O_0$ with
+\begin{equation}\label{eq-SQEDfirst}
+\begin{aligned}
+(64\pi^2)\mathcal O_1
+={}&\frac23\left[(ig)^2\beta^{+\prime}\beta^{-\prime}
+             +\frac{igy^2}{m}\mathsf b\gamma_+\gamma_-\right]\\
+&\quad\times\Big[
+ (\partial_{+\dot a}\partial_{+\dot b}\beta^{+\prime})
+                                      \partial_+{}^{\dot b}\gamma_+
+ -(\partial_{+\dot b}\beta^{+\prime})
+                         \partial_{+\dot a}\partial_+{}^{\dot b}\gamma_+\\
+&\qquad\quad
+ -(\partial_{+\dot a}\partial_{+\dot b}\beta^{-\prime})
+                                      \partial_+{}^{\dot b}\gamma_-
+ +(\partial_{+\dot b}\beta^{-\prime})
+                         \partial_{+\dot a}\partial_+{}^{\dot b}\gamma_-
+ \Big]\\
+&+\frac{2(ig)^2}{3}\mathsf b\Big\{
+ \bigl[(\partial_{+\dot b}\beta^{+\prime})\beta^{-\prime}
+       -\beta^{+\prime}\partial_{+\dot b}\beta^{-\prime}\bigr]
+                         \partial_{+\dot a}\partial_+{}^{\dot b}\mathsf c\\
+&\qquad\quad-
+ \bigl[(\partial_{+\dot a}\partial_{+\dot b}\beta^{+\prime})\beta^{-\prime}
+       -\beta^{+\prime}\partial_{+\dot a}\partial_{+\dot b}\beta^{-\prime}\bigr]
+                                      \partial_+{}^{\dot b}\mathsf c
+ \Big\}\\
+&+\frac{8igy^2}{3m}\mathsf b
+  \bigl(\beta^{+\prime}\partial_{+\dot a}\gamma_+
+       +\beta^{-\prime}\partial_{+\dot a}\gamma_-\bigr)
+  (\partial_{+\dot b}\gamma_+)\partial_+{}^{\dot b}\gamma_-\\
+&+\frac{4igy^2}{3m}\mathsf b\Big[
+ \beta^{+\prime}\gamma_-(\partial_{+\dot b}\gamma_+)
+                         \partial_{+\dot a}\partial_+{}^{\dot b}\gamma_+
+ -\beta^{-\prime}\gamma_+(\partial_{+\dot b}\gamma_-)
+                         \partial_{+\dot a}\partial_+{}^{\dot b}\gamma_-
+ \Big]\\
+&+\frac{igy^2}{3m}\mathsf b^2\Big\{
+ (\partial_{+\dot b}\mathsf c)
+ \bigl(\gamma_-\partial_{+\dot a}\partial_+{}^{\dot b}\gamma_+
+      -\gamma_+\partial_{+\dot a}\partial_+{}^{\dot b}\gamma_-\bigr)\\
+&\qquad\quad+
+ (\partial_{+\dot a}\partial_{+\dot b}\mathsf c)
+ \bigl(\gamma_+\partial_+{}^{\dot b}\gamma_-
+      -\gamma_-\partial_+{}^{\dot b}\gamma_+\bigr)
+ +15(\partial_{+\dot a}\mathsf c)
+       (\partial_{+\dot b}\gamma_+)\partial_+{}^{\dot b}\gamma_-
+ \Big\}\\
+&+\frac{(ig)^2y}{m}\Big\{
+ \mathsf b^2(\partial_{+\dot a}\beta^s)
+       (\partial_{+\dot b}\mathsf c)\partial_+{}^{\dot b}\mathsf c\\
+&\qquad\quad-2\mathsf b(\partial_{+\dot b}\beta^s)
+   \bigl(\beta^{+\prime}\partial_+{}^{\dot b}\gamma_+
+        +\beta^{-\prime}\partial_+{}^{\dot b}\gamma_-\bigr)
+                         \partial_{+\dot a}\mathsf c
+ \Big\}.
+\end{aligned}
+\end{equation}
+\begin{equation}\label{eq-SQEDfirst-closure}
+Q_0\mathcal O_1=-Q_1\mathcal O_0.
+\end{equation}
+
+\paragraph{The second obstruction.}\label{the-second-obstruction}
+
+We combine the direct two-loop action with the one-loop action on the first correction. Field weights and derivative totals specify the finite cochain spaces needed to test this residual.
+
+Test the combined second-order residual.
+\begin{equation}\label{eq-SQEDcochains}
+d_2[\mathcal O_0]_2=[Q_2\mathcal O_0+Q_1\mathcal O_1]_2.
+\end{equation}
+
+Enumerate gauge-invariant light-field monomials by fermion number, field weight, and derivative totals in the two holomorphic directions.
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}lll>{\raggedright\arraybackslash}X@{}}
+\toprule
+Field & $U(1)$ charge & Fermion number & Field weight\\
+\midrule\endhead
+$\gamma_+$ & $1$ & $0$ & $1$\\
+$\gamma_-$ & $-1$ & $0$ & $1$\\
+$\beta^+$ & $-1$ & $1$ & $3$\\
+$\beta^-$ & $1$ & $1$ & $3$\\
+$\gamma_s$ & $0$ & $0$ & $2$\\
+$\beta^s$ & $0$ & $1$ & $2$\\
+$\mathsf b$ & $0$ & $0$ & $4$\\
+$\mathsf c$ & $0$ & $1$ & $0$\\
+\bottomrule
+\end{xltabular}}
+
+The parameters $m,y,g$ and holomorphic derivatives have weight zero.
+
+Each interaction and contracted pair has weight four, so $Q_n$ changes field weight by $4(n+1)-4(2n+1)=-4n$ and derivative totals by $(n,n)$.
+
+The homotopy preserves these degrees because $\gamma_s^{\prime}$ and $\beta^s$ both have weight two.
+
+Work in the relative gauge-invariant complex, with differentiated ghosts and gauge-invariant light-field polynomials.
+
+\paragraph{The quotient test.}\label{the-quotient-test}
+
+We test the residual after quotienting by classical boundaries and changes of the first correction. A rank increase and a rational functional give independent certificates that the obstruction is nonzero.
+
+For $\dot a=\dot+$, rational elimination gives
+
+{\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Space or map & Dimension or rank\\
+\midrule\endhead
+Odd source space, weight $14$, derivatives $(1,0)$ & $33$\\
+Classical source cycles and boundaries & $18,\ 17$\\
+First-correction space, weight $10$, derivatives $(2,1)$ & $365$\\
+Classical cycles in the first-correction space & $180$\\
+Second primitives, weight $6$, derivatives $(3,2)$ & $752$\\
+Columns of $\operatorname{im}Q_0+Q_{1,\mathrm{eff}}\ker Q_0$ & $932$\\
+Rank of these columns & $394$\\
+Rank after adjoining the second obstruction & $395$\\
+\bottomrule
+\end{xltabular}}
+
+The source defines one surviving class since $18-17=1$ and a $d_1$-preimage would require derivative totals $(0,-1)$.
+
+For second-order candidates $V$ and first-correction cycles $Z$, the quotient removes $Q_0V$ and $Q_{1,\mathrm{eff}}Z$, with $Q_0Z=0$.
+
+The \href{/app/downloads/SQED_two_loop_repro.zip}{exact coefficient archive} supplies a rational functional $\ell$ annihilating both freedoms.
+\begin{equation}\label{b-00801}
+\begin{gathered}
+\ell(Q_0V)=0,\qquad
+\ell(Q_{1,\mathrm{eff}}Z)=0\quad (Q_0Z=0),\\
+\ell\pi(Q_2\mathcal O_0+Q_1\mathcal O_1)
+=-\frac{16(ig)^2y^4}{m^2(64\pi^2)^2}.
+\end{gathered}
+\end{equation}
+
+The residual class is
+\begin{equation}\label{eq-SQEDlift}
+\begin{aligned}
+d_2[\mathcal O_0]_2
+&=-\frac{2(ig)^2y^4}{m^2(64\pi^2)^2}\Big[
+\partial_{+\dot a}(\gamma_+\gamma_-)\\[-2pt]
+&\qquad\times\partial_{+\dot b}\partial_{+\dot c}(\gamma_+\gamma_-)
+\partial_+{}^{\dot b}\partial_+{}^{\dot c}(\gamma_+\gamma_-)
+\Big]_2\ne0.
+\end{aligned}
+\end{equation}
+
+The rank increase $394\to395$ and the nonzero value in \eqref{b-00801} certify the two-loop lift.
+\end{proofbox}
+
+\subsection{Complete multi-graviton checks in $SU(2)$ and $SU(3)$}\label{sec-finite-sectors}
+
+We enumerate complete finite sectors of multi-graviton classes for $SU(2)$ and $SU(3)$. Explicit corrections verify closure, while Cartan restriction and the derivative bounds certify survival.
+
+\begin{proofbox}
+Compute the finite-sector completions.
+
+Quantum multiplication completes these multi-graviton classes by Theorem 8.1.
+
+Use the two-letter single graviton \cite[Eq. (2.14)]{KKLP}
+\begin{equation}\label{eq-w2}
+(w_2)^I=\operatorname{Tr}\!\left(
+\frac{\gamma^I\mathsf b}{ig}
+-\frac12\varepsilon^{IJK}\beta_J\beta_K\right).
+\end{equation}
+
+For $SU(2)$, enumerate zero-jet invariants with at most four letters and $\deg_\theta-\#\text{letters}=3$.
+
+Flavour weights count superfield $\theta_I$ indices, with $\gamma^I$ contributing $I$, $\beta_I$ the complementary pair, and $\mathsf b$ all three.
+
+The nonzero classical cohomology sectors have four letters.
+\begin{equation}\label{b-00809}
+\begin{array}{c|rrrrr}
+\text{flavour weight}&\text{invariants}&\dim\ker Q_0&
+\dim\operatorname{im}Q_0&\dim H(Q_0)&\text{orbit size}\\\hline
+(3,2,2)&13&4&1&3&3\\
+(3,3,1)&5&2&1&1&3\\
+(4,2,1)&3&1&0&1&6
+\end{array}
+\end{equation}
+
+Flavour permutations give $3\cdot3+1\cdot3+1\cdot6=18$ classes.
+
+Cartan restriction kills $Q_0$ boundaries and has ranks $3,1,1$ on these blocks, certifying their independence.
+
+Generate representatives from the five seeds by flavour permutations preserving $\varepsilon^{IJK}$.
+\begin{equation}\label{b-00811}
+\begin{aligned}
+\mathcal O_0^{(1)}&=-\operatorname{Tr}(\beta_2\gamma^1)(w_2)^2,\\
+\mathcal O_0^{(2)}&=-\bigl[\operatorname{Tr}(\beta_2\gamma^2)
+-\operatorname{Tr}(\beta_1\gamma^1)\bigr](w_2)^1,\\
+\mathcal O_0^{(3)}&=-\operatorname{Tr}(\beta_3\gamma^1)(w_2)^3,\\
+\mathcal O_0^{(4)}&=-\operatorname{Tr}(\beta_3\gamma^1)(w_2)^2,\\
+\mathcal O_0^{(5)}&=-\operatorname{Tr}(\beta_3\gamma^1)(w_2)^1.
+\end{aligned}
+\end{equation}
+
+For the fifth seed, the first correction is
+\begin{equation}\label{eq-su2-short-correction}
+\begin{aligned}
+\mathcal O_1^{(5)}=-\frac{i}{64\pi^2}C_A{}^{BC}
+\Big[& (\beta_3)^A(\partial_{+\dot a}\gamma^1)_B
+(\partial_+{}^{\dot a}\gamma^1)_C\\
+&-2(\partial_{+\dot a}\beta_3)^A(\gamma^1)_B
+(\partial_+{}^{\dot a}\gamma^1)_C\Big].
+\end{aligned}
+\end{equation}
+
+All five seeds satisfy
+\begin{equation}\label{b-00815}
+\begin{gathered}
+Q_1\mathcal O_0^{(j)}=-Q_0\mathcal O_1^{(j)}\ne0,\qquad
+Q_2\mathcal O_0^{(j)}=Q_1\mathcal O_1^{(j)}=0,\\
+\mathbf Q\bigl(\mathcal O_0^{(j)}+\hbar\mathcal O_1^{(j)}\bigr)=0.
+\end{gathered}
+\end{equation}
+
+The coefficient degrees are $7,4$, and closure equations at order $r\ge3$ have degree $7-3r<0$.
+
+Corollary \ref{b-00758} excludes incoming differentials for these zero-jet classes.
+
+For $SU(3)$, enumerate five-letter zero-jet invariants of flavour weight $(3,3,2)$.
+\begin{equation}\label{b-00818}
+\dim(\text{sources})=147,\qquad
+\dim\ker Q_0=35,\qquad
+\dim\operatorname{im}Q_0=26,\qquad
+\dim H(Q_0)=9.
+\end{equation}
+
+The nine classes are products of two- and three-letter graviton traces, with Cartan-restriction rank nine.
+
+One representative and its corrections are
+\begin{equation}\label{eq-su3-example-source}
+\mathcal O_0=\operatorname{Tr}\!\left(
+\frac{\mathsf b\gamma^2}{ig}+\beta_1\beta_3\right)
+\operatorname{Tr}(\beta_2\gamma^1\gamma^2-\beta_3\gamma^3\gamma^1).
+\end{equation}
+
+Here $[X,Y]=XY-YX$ and $\{X,Y\}=XY+YX$, in the displayed field order.
+\begin{equation}\label{eq-su3-example-first}
+\begin{aligned}
+\mathcal O_1=-\frac{1}{64\pi^2}
+\operatorname{Tr}\Big\{
+&(\partial_{+\dot a}\mathsf c)
+[\partial_+{}^{\dot a}\mathsf b,\gamma^1\gamma^2]\\
+&+ig(\partial_{+\dot a}\mathsf c)
+\bigl(\{\gamma^1\beta_3,\partial_+{}^{\dot a}\beta_1\}
++\{\gamma^2\beta_2-\beta_3\gamma^3,
+\partial_+{}^{\dot a}\beta_3\}\bigr)\\
+&+\gamma^1\gamma^2\bigl(
+[\partial_{+\dot a}\gamma^1,\partial_+{}^{\dot a}\beta_1]
+-[\partial_{+\dot a}\gamma^2,\partial_+{}^{\dot a}\beta_2]
++[\partial_{+\dot a}\gamma^3,\partial_+{}^{\dot a}\beta_3]\bigr)\\
+&+2\gamma^1(\partial_{+\dot a}\gamma^2)
+\bigl(-(\partial_+{}^{\dot a}\gamma^2)\beta_2
++(\partial_+{}^{\dot a}\beta_3)\gamma^3\bigr)\\
+&+\gamma^1\beta_3[\partial_{+\dot a}\gamma^2,\partial_+{}^{\dot a}\gamma^3]
++2\gamma^1(\partial_{+\dot a}\beta_3)(\partial_+{}^{\dot a}\gamma^2)\gamma^3\\
+&-(\partial_{+\dot a}\gamma^1)
+[\partial_+{}^{\dot a}\gamma^2,\gamma^2\beta_2-\beta_3\gamma^3]
+\Big\},
+\end{aligned}
+\end{equation}
+\begin{equation}\label{eq-su3-example-second}
+\begin{aligned}
+\mathcal O_2=-\frac{ig}
+{2(64\pi^2)^2}\operatorname{Tr}\Big[&
+(\partial_{+\dot a}\partial_{+\dot c}\mathsf c)
+\bigl([\partial_+{}^{\dot a}\partial_+{}^{\dot c}\gamma^1,\gamma^2]\\
+&\hspace{15mm}-ig(\partial_+{}^{\dot a}\partial_+{}^{\dot c}\mathsf c)\beta_3\bigr)
+\Big].
+\end{aligned}
+\end{equation}
+
+Check the three equations
+\begin{equation}\label{b-00825}
+Q_1\mathcal O_0=-Q_0\mathcal O_1,\qquad
+Q_2\mathcal O_0=0,\qquad Q_1\mathcal O_1=-Q_0\mathcal O_2\ne0.
+\end{equation}
+
+The coefficient degrees $8,5,2$ give closure degree $8-3r<0$ for $r\ge3$.
+
+Cartan independence and Corollary \ref{b-00758} certify nine surviving classes.
+\end{proofbox}
+
+\subsection{The $SU(2)$ threshold class and its graviton hair}\label{sec-fortuitous}
+
+We complete the $SU(2)$ threshold class and then attach its graviton dressings by quantum multiplication. The final tests exclude incoming differentials for the three dressed classes, including the derivative hair.
+
+\begin{proofbox}
+Complete the threshold core and its graviton dressings.
+
+\paragraph{The threshold class.}\label{the-threshold-class}
+
+We solve the correction equations for the lowest-charge $SU(2)$ fortuitous class. The coefficient degrees terminate the completion at fourth order, giving a closed perturbative representative.
+
+Take the lowest-charge $SU(2)$ fortuitous class \cite[Section 3.1]{KKLP}.
+\begin{equation}\label{eq-threshold-source}
+\mathcal O_0=-\varepsilon^{IJK}
+\operatorname{Tr}(\gamma^L\beta_I)
+\operatorname{Tr}(\gamma^M\beta_J)
+\operatorname{Tr}(\beta_L\beta_M\beta_K).
+\end{equation}
+
+This $SU(3)_R$ singlet has two scalars, five fermions, and component degree twelve.
+
+Solve its four representative equations.
+\begin{equation}\label{eq-threshold-completion}
+\mathcal O[\mathcal O_0]=\sum_{r=0}^{4}\hbar^r\mathcal O_r,
+\qquad
+\sum_{n=0}^{r}Q_n\mathcal O_{r-n}=0
+\quad(0\le r\le4).
+\end{equation}
+\begin{equation}\label{b-00834}
+\begin{array}{c|rrrrr}
+r&0&1&2&3&4\\\hline
+\text{number of letters}&7&6&5&4&3\\
+\deg_\theta&12&9&6&3&0\\
+\text{number of derivatives}&0&2&4&6&8
+\end{array}
+\end{equation}
+
+The last coefficient is
+\begin{equation}\label{eq-threshold-fourth}
+\begin{aligned}
+\mathcal O_4={}&-\frac{42731(ig)^3}{432(32\pi^2)^4}
+\operatorname{Tr}\!\Big[
+ (\partial_{+\dot a}\partial_{+\dot b}\partial_{+\dot c}\partial_{+\dot d}\mathsf c)
+ (\partial_+{}^{\dot a}\partial_+{}^{\dot b}\partial_+{}^{\dot c}\mathsf c)
+ (\partial_+{}^{\dot d}\mathsf c)\Big]\\
+&+\frac{23323(ig)^3}{216(32\pi^2)^4}
+\operatorname{Tr}\!\Big[
+ (\partial_{+\dot a}\partial_{+\dot b}\partial_{+\dot c}\partial_{+\dot d}\mathsf c)
+ (\partial_+{}^{\dot a}\partial_+{}^{\dot b}\mathsf c)
+ (\partial_+{}^{\dot c}\partial_+{}^{\dot d}\mathsf c)\Big]\\
+&+\frac{90043(ig)^3}{432(32\pi^2)^4}
+\operatorname{Tr}\!\Big[
+ (\partial_{+\dot a}\partial_{+\dot b}\partial_{+\dot c}\mathsf c)
+ (\partial_+{}^{\dot a}\partial_+{}^{\dot b}\partial_{+\dot d}\mathsf c)
+ (\partial_+{}^{\dot c}\partial_+{}^{\dot d}\mathsf c)\Big].
+\end{aligned}
+\end{equation}
+
+The \href{/app/downloads/Higher_Supercharges_and_Quantum_Cohomology_Repro.zip}{coefficient archive} supplies $\mathcal O_1,\mathcal O_2,\mathcal O_3$.
+
+At two loops the cancellation is
+\begin{equation}\label{b-00838}
+Q_2\mathcal O_0\ne0,\qquad
+Q_2\mathcal O_0+Q_1\mathcal O_1=-Q_0\mathcal O_2,\qquad
+ d_2[\mathcal O_0]_2=0.
+\end{equation}
+
+The closure degree $12-3r<0$ for $r\ge5$ terminates the recursion.
+\begin{equation}\label{b-00840}
+\mathbf Q\mathcal O[\mathcal O_0]=0.
+\end{equation}
+
+Classical nonexactness \cite[Section 3.1]{KKLP} and Corollary \ref{b-00758} certify perturbative survival.
+
+\paragraph{Graviton hair.}\label{graviton-hair}
+
+We attach the two-letter graviton to the completed threshold class using the quantum product. The component supersymmetry transformations then give the completion of its second classical dressing.
+
+Dress the core with $(w_2)^I$ of \eqref{eq-w2} \cite[Eq. (3.3)]{KKLP}.
+
+Translation of $\theta_I$ acts by
+\begin{equation}\label{eq-hair-graviton}
+igQ_+^I\mathsf c=\gamma^I,\qquad
+Q_+^I\gamma^J=\varepsilon^{IJK}\beta_K,\qquad
+Q_+^I\beta_J=-\frac{\delta^I_J}{ig}\mathsf b,\qquad
+Q_+^I\mathsf b=0.
+\end{equation}
+
+Theorem 8.1, common $\theta$ translation, and these component transformations give
+\begin{equation}\label{b-00846}
+Q_n(w_2)^I=0,\qquad
+\{Q_n,Q_+^I\}=0,\qquad Q_+^I(w_2)^K=0.
+\end{equation}
+
+The primes and subscript in $\mathcal O^{\prime}_1,\mathcal O^{\prime\prime}_1$ label the classical hairy classes of \cite[Section 3.2]{KKLP}.
+
+Complete the two classical products \cite[Eqs. (3.3)--(3.4)]{KKLP} by quantum multiplication.
+\begin{equation}\label{eq-hair-completion}
+\begin{aligned}
+\mathcal O[(w_2)^I\mathcal O_0]
+&=(w_2)^I\star\mathcal O[\mathcal O_0],\\
+\mathcal O'_1
+&=\varepsilon_{IJK}(Q_+^IQ_+^J\mathcal O_0)(w_2)^K,\\
+\mathcal O[\mathcal O'_1]
+&=\varepsilon_{IJK}Q_+^IQ_+^J
+\bigl((w_2)^K\star\mathcal O[\mathcal O_0]\bigr).
+\end{aligned}
+\end{equation}
+
+\paragraph{The derivative hair $\mathcal O''_1$.}\label{the-derivative-hair-mathcal-o_1}
+
+We express the derivative dressing as a two-letter graviton factor multiplying the threshold class. Closure of this factor and the binary chain identity turn the classical product into a finite quantum completion.
+
+For the derivative hair, differentiate the graviton current \cite[Eq. (2.14)]{KKLP}.
+\begin{equation}\label{eq-hair-current}
+\begin{aligned}
+&\frac18\partial_+{}^{\dot a}\operatorname{Tr}\!\left[
+\mathsf b\partial_{+\dot a}\mathsf c
++\frac23(\partial_{+\dot a}\gamma^I)\beta_I
+-\frac13\gamma^I\partial_{+\dot a}\beta_I
+\right]\\
+&\qquad=\frac18\operatorname{Tr}\!\left[
+(\partial_+{}^{\dot a}\mathsf b)(\partial_{+\dot a}\mathsf c)
+-(\partial_+{}^{\dot a}\gamma^I)(\partial_{+\dot a}\beta_I)
+\right].
+\end{aligned}
+\end{equation}
+
+Antisymmetry kills two derivatives on one field, while the remaining coefficients combine as $-2/3-1/3=-1$.
+
+The resulting nine-letter flavour singlet has derivative totals $(1,1)$ \cite[Eq. (3.5)]{KKLP}.
+\begin{equation}\label{eq-hair-derivative}
+\mathcal O''_1=\frac18\operatorname{Tr}\!\left[
+(\partial_+{}^{\dot a}\mathsf b)(\partial_{+\dot a}\mathsf c)
+-(\partial_+{}^{\dot a}\gamma^I)(\partial_{+\dot a}\beta_I)
+\right]\mathcal O_0.
+\end{equation}
+
+Its two-letter graviton factor equals
+\begin{equation}\label{eq-hair-factor-superfield}
+\begin{aligned}
+&\frac18\operatorname{Tr}\!\left[
+(\partial_+{}^{\dot a}\mathsf b)(\partial_{+\dot a}\mathsf c)
+-(\partial_+{}^{\dot a}\gamma^I)(\partial_{+\dot a}\beta_I)
+\right]\\
+&\qquad=\frac1{16}\int d^3\theta\,
+\operatorname{Tr}\!\left[(\partial_+{}^{\dot a}C)
+(\partial_{+\dot a}C)\right].
+\end{aligned}
+\end{equation}
+
+The classical variation is a trace commutator, the one-loop odd kernel vanishes at equal $\theta$, and higher fans require at least three letters.
+
+The binary chain identity (5.13) therefore gives
+\begin{equation}\label{eq-hair-derivative-completion}
+\begin{aligned}
+\mathcal O[\mathcal O''_1]
+={}&\frac18\operatorname{Tr}\!\left[
+(\partial_+{}^{\dot a}\mathsf b)(\partial_{+\dot a}\mathsf c)
+-(\partial_+{}^{\dot a}\gamma^I)(\partial_{+\dot a}\beta_I)
+\right]\star\mathcal O[\mathcal O_0],\\
+&\mathbf Q\mathcal O[\mathcal O''_1]=0.
+\end{aligned}
+\end{equation}
+
+Coefficient degree $15-3r$ ends the completion at order five.
+
+\paragraph{Exactness.}\label{exactness}
+
+We test whether the closed dressed representatives can become exact at a later page. Derivative bounds exclude the higher incoming maps, and the remaining one-loop possibility for the derivative hair is ruled out by the displayed image calculation.
+
+For the first two zero-jet hairs, classical nonexactness \cite[Section 3.2]{KKLP} and Corollary \ref{b-00758} exclude incoming differentials.
+
+For the derivative hair, totals $(1,1)$ require any preimage to satisfy
+\begin{equation}\label{eq-hair-incoming}
+\mathcal O''_1=Q_1\Lambda_0+Q_0\Lambda_1,
+\qquad Q_0\Lambda_0=0,
+\end{equation}
+
+Here $\Lambda_0,\Lambda_1$ are the leading preimage and its first correction.
+
+Taking $Q_0,Q_1$ on the full $\Lambda_1,\Lambda_0$ candidate spaces with the required charges and flavour-singlet representation gives \cite[Section 3.2]{KKLP}
+\begin{equation*}
+\begin{gathered}\dim\operatorname{im}Q_0=912,\qquad\dim\operatorname{im}Q_1=25,\\\dim(\operatorname{im}Q_0\cap\operatorname{im}Q_1)=7,\\\dim(\operatorname{im}Q_0+\operatorname{im}Q_1)=912+25-7=930,\\\mathcal O^{\prime\prime}_1\notin\operatorname{im}Q_0+\operatorname{im}Q_1.\end{gathered}
+\end{equation*}
+
+Corollary \ref{b-00758} excludes $d_r$-preimages for $r\ge2$, completing the survival test for all three hairs.
+\end{proofbox}
+
+\subsection{Explicit completions in the quartic deformation}\label{sec-quartic-fortuitous}
+
+We construct explicit completions of two fortuitous representatives in the quartic $SU(2)$ deformation. Spider operations give their corrections, and the field weights terminate the closure equations after finitely many orders.
+
+\begin{proofbox}
+Complete the two quartic representatives.
+
+Classically eliminate one adjoint of mass $M$ from $\mathcal N=4$ theory and take the resulting $SU(2)$ theory with constant gauge kinetic function.
+\begin{equation}\label{b-00867}
+\bar W=-\frac1{2M}\operatorname{Tr}[\gamma^1,\gamma^2]^2,
+\qquad M\ne0.
+\end{equation}
+
+Apply the spider kernels of Section 6 to the quartic interaction.
+
+First take the graviton square \cite[Eq. (4.51)]{CK}.
+\begin{equation}\label{eq-quartic-square}
+w=\frac1{igM}\operatorname{Tr}([\gamma^1,\gamma^2]\mathsf b)
++\operatorname{Tr}(\beta_1\beta_2),\qquad \mathcal O_0=w^2.
+\end{equation}
+
+On diagonal $SU(2)$ fields, $w^2=0$ by odd nilpotency.
+
+For gauge-invariant polynomials, each surviving $Q_0$ variation introduces a scalar, so the scalar-free $\beta^4$ term proves classical nonexactness.
+
+The spider operations give $\mathcal O[w^2]=w^2+\hbar\mathcal O_1+\hbar^2\mathcal O_2+\hbar^3\mathcal O_3$.
+
+The \href{/app/downloads/Higher_Supercharges_and_Quantum_Cohomology_Repro.zip}{coefficient archive} supplies the first two corrections, and the last is
+\begin{equation}\label{eq-quartic-third}
+\mathcal O_3=-\frac{29g^2}{3M(64\pi^2)^3}
+\operatorname{Tr}\!\left[
+(\partial_{+\dot a}\partial_{+\dot b}\partial_{+\dot c}\mathsf c)
+(\partial_+{}^{\dot a}\partial_+{}^{\dot b}\partial_+{}^{\dot c}\mathsf c)
+\right].
+\end{equation}
+
+At third order, check
+\begin{equation}\label{b-00874}
+\begin{aligned}
+Q_3\mathcal O_0={}&-\frac{16g^3C_{ABC}}{M(64\pi^2)^3}
+(\partial_{+\dot a}\mathsf c^B)
+(\partial_{+\dot b}\partial_{+\dot c}\mathsf c^C)
+(\partial_+{}^{\dot a}\partial_+{}^{\dot b}\partial_+{}^{\dot c}\mathsf c^A),\\
+Q_1\mathcal O_2={}&-\frac{42g^3C_{ABC}}{M(64\pi^2)^3}
+(\partial_{+\dot a}\mathsf c^B)
+(\partial_{+\dot b}\partial_{+\dot c}\mathsf c^C)
+(\partial_+{}^{\dot a}\partial_+{}^{\dot b}\partial_+{}^{\dot c}\mathsf c^A),\\
+Q_0\mathcal O_3={}&\frac{58g^3C_{ABC}}{M(64\pi^2)^3}
+(\partial_{+\dot a}\mathsf c^B)
+(\partial_{+\dot b}\partial_{+\dot c}\mathsf c^C)
+(\partial_+{}^{\dot a}\partial_+{}^{\dot b}\partial_+{}^{\dot c}\mathsf c^A),\\
+Q_2\mathcal O_1={}&0.
+\end{aligned}
+\end{equation}
+\begin{equation*}
+-16-42+58=0.
+\end{equation*}
+
+Weights $(1,3,4,0)$ for $(\gamma,\beta,\mathsf b,\mathsf c)$ give weight four to every interaction and contracted pair.
+\begin{equation*}
+12-4r<0\quad(r\ge4),\qquad\mathbf Q\mathcal O[w^2]=0.
+\end{equation*}
+
+Classical nonexactness and Corollary \ref{b-00758} certify survival.
+
+Next take the weight-sixteen flavour singlet $\mathcal O_{16}$ \cite[Eq. (4.53)]{CK}.
+
+Use the source flavour indices $a,b,c=1,2$, with $\epsilon^{12}=1=-\epsilon_{12}$, $\beta^a=\epsilon^{ab}\beta_b$, and $\gamma_a=\epsilon_{ab}\gamma^b$.
+\begin{equation}\label{eq-quartic-sixteen}
+\begin{aligned}
+\mathcal O_{16}={}&-\frac16C_{ABC}C_{DE}{}^F
+(\beta^a)^A(\beta^b)^B(\beta^c)^C
+(\beta_a)^D(\beta_b)^E(\gamma_c)_F\\
+&+\frac1{(ig)^2M^2}C^{ABC}C_D{}^{EF}\delta^{GH}
+\mathsf b_A(\gamma^a)_B(\gamma_a)_C
+\mathsf b_G(\gamma^b)_H(\beta_b)^D(\gamma^c)_E(\gamma_c)_F\\
+&-\frac1{gM}C_A{}^{BC}\delta^{DE}\delta_{FG}
+\mathsf b_D(\gamma^a)_E(\beta_a)^A
+(\gamma^b)_B(\gamma_b)_C(\beta^c)^F(\beta_c)^G\\
+&-\frac2{gM}C_A{}^{BC}
+\mathsf b_D(\beta^a)^D(\gamma_a)_E(\beta^b)^E
+(\beta_b)^A(\gamma^c)_B(\gamma_c)_C.
+\end{aligned}
+\end{equation}
+
+A preimage of the leading $\gamma\beta^5$ term would require a $\beta^4\mathsf b$ flavour singlet, absent among the $SU(2)$ contractions \cite[Section 4.4]{CK}.
+
+The representative vanishes on diagonal fields.
+
+For $M\ne0$, solve
+\begin{equation}\label{eq-quartic-sixteen-completion}
+\mathcal O[\mathcal O_{16}]=\sum_{r=0}^4\hbar^r\mathcal O_r[\mathcal O_{16}],
+\qquad
+\sum_{n=0}^{r}Q_n\mathcal O_{r-n}[\mathcal O_{16}]=0
+\quad(0\le r\le4).
+\end{equation}
+
+The same archive supplies the four corrections, of weights $16-4r$, and their polynomial closure identities.
+
+A four-loop operation contracts at most five input letters in \eqref{eq-quartic-sixteen}, of total weight at most fifteen, and lowers weight by sixteen.
+\begin{equation*}
+Q_4\mathcal O_{16}=0,\qquad16-4r<0\quad(r\ge5),\qquad\mathbf Q\mathcal O[\mathcal O_{16}]=0.
+\end{equation*}
+
+Classical nonexactness and Corollary \ref{b-00758} certify the resulting perturbative class.
+\end{proofbox}
+
+
+\begin{thebibliography}{99}
+\small
+\bibitem{MainArticle}
+B.~Li, C.-M.~Chang and K.~Liu, ``Holomorphic Feynman Diagrams in Four Dimensions and the Quantum BPS Ring,'' to appear.
+\bibitem{semichiral}
+K.~Budzik, D.~Gaiotto, J.~Kulp, B.~R.~Williams, J.~Wu and M.~Yu, ``Semi-Chiral Operators in 4d $\mathcal N=1$ Gauge Theories,'' \emph{JHEP} \textbf{05} (2024), 245, \href{https://arxiv.org/abs/2306.01039}{arXiv:2306.01039}.
+\bibitem{ChangChevalley}
+C.-M.~Chang, ``Super-Chevalley Restriction and Relative Lie Algebra Cohomology over the $2|3$ Algebra,'' \href{https://arxiv.org/abs/2604.23549}{arXiv:2604.23549}.
+\bibitem{microstates}
+S.~Choi, S.~Kim, E.~Lee, S.~Lee and J.~Park, ``Towards Quantum Black Hole Microstates,'' \emph{JHEP} \textbf{11} (2023), 175, \href{https://arxiv.org/abs/2304.10155}{arXiv:2304.10155}.
+\bibitem{KLLS}
+S.~Kim, J.~Lee, S.~Lee and J.~Song, ``Black Hole Cohomologies in $\mathcal N=4$ SYM,'' \href{https://arxiv.org/abs/2610.20340}{arXiv:2610.20340}.
+\bibitem{ChangLinWords}
+C.-M.~Chang and Y.-H.~Lin, ``Words to Describe a Black Hole,'' \emph{JHEP} \textbf{02} (2023), 109, \href{https://arxiv.org/abs/2209.06728}{arXiv:2209.06728}.
+\bibitem{KKLP}
+S.~Kim, S.~Kim, S.~Lee and J.~Park, ``Quantum Black Hole Cohomologies,'' \href{https://arxiv.org/abs/2606.27955}{arXiv:2606.27955}.
+\bibitem{BraneFused}
+R.~de~Mello~Koch, M.~Kim, S.~Kim, J.~Lee and S.~Lee, ``Brane-Fused Black Hole Operators,'' \emph{JHEP} \textbf{07} (2025), 216, \href{https://arxiv.org/abs/2412.08695}{arXiv:2412.08695}.
+\bibitem{GLRT}
+A.~Gadde, E.~Lee, R.~Raj and S.~Tomar, ``Probing Non-Graviton Spectra in $\mathcal N=4$ SYM via BMN Truncation and S-Duality,'' \emph{JHEP} \textbf{02} (2026), 026, \href{https://arxiv.org/abs/2506.13887}{arXiv:2506.13887}.
+\bibitem{ChangLin}
+C.-M.~Chang and Y.-H.~Lin, ``Violation of S-duality in Classical $Q$-Cohomology,'' \href{https://arxiv.org/abs/2510.24008}{arXiv:2510.24008}.
+\bibitem{KonishiBH}
+J.~Choi and E.~Lee, ``Konishi Lifts a Black Hole,'' \href{https://arxiv.org/abs/2511.09519}{arXiv:2511.09519}.
+\bibitem{ChenNgo}
+T.-H.~Chen and B.~C.~Ng\^o, ``On the Hitchin Morphism for Higher Dimensional Varieties,'' \emph{Duke Math. J.} \textbf{169} (2020), 1971--2004, \href{https://arxiv.org/abs/1905.04741}{arXiv:1905.04741}.
+\bibitem{Vaccarino}
+F.~Vaccarino, ``Linear Representations, Symmetric Products and the Commuting Scheme,'' \emph{J. Algebra} \textbf{317} (2007), 634--641.
+\bibitem{Domokos}
+M.~Domokos, ``Vector Invariants of a Class of Pseudoreflection Groups and Multisymmetric Syzygies,'' \emph{J. Lie Theory} \textbf{19} (2009), 507--525.
+\bibitem{ChenNgoSp}
+T.-H.~Chen and B.~C.~Ng\^o, ``Invariant Theory for the Commuting Scheme of Symplectic Lie Algebras,'' \href{https://arxiv.org/abs/2102.01849}{arXiv:2102.01849}.
+\bibitem{SXX}
+L.~Song, X.~Xia and J.~Xu, ``A Higher-Dimensional Chevalley Restriction Theorem for Orthogonal Groups,'' \emph{Adv. Math.} \textbf{426} (2023), 109104, \href{https://arxiv.org/abs/2207.03147}{arXiv:2207.03147}.
+\bibitem{LNY}
+P.~Li, D.~Nadler and Z.~Yun, ``Functions on the Commuting Stack via Langlands Duality,'' \emph{Ann. of Math.} \textbf{200} (2024), 609--748, \href{https://arxiv.org/abs/2301.02618}{arXiv:2301.02618}.
+\bibitem{Hunziker}
+M.~Hunziker, ``Classical Invariant Theory for Finite Reflection Groups,'' \emph{Transform. Groups} \textbf{2} (1997), 147--163.
+\bibitem{Richardson}
+R.~W.~Richardson, ``Conjugacy Classes of $n$-Tuples in Lie Algebras and Algebraic Groups,'' \emph{Duke Math. J.} \textbf{57} (1988), 1--35.
+\bibitem{CDSW}
+F.~Cachazo, M.~R.~Douglas, N.~Seiberg and E.~Witten, ``Chiral Rings and Anomalies in Supersymmetric Gauge Theory,'' \emph{JHEP} \textbf{12} (2002), 071, \href{https://arxiv.org/abs/hep-th/0211170}{arXiv:hep-th/0211170}.
+\bibitem{Kumar}
+S.~Kumar, ``On Cachazo--Douglas--Seiberg--Witten Conjecture for Simple Lie Algebras,'' \emph{J. Amer. Math. Soc.} \textbf{21} (2008), 797--808, \href{https://arxiv.org/abs/math/0412201}{arXiv:math/0412201}.
+\bibitem{WittenSpSO}
+E.~Witten, ``Chiral Ring of $Sp(N)$ and $SO(N)$ Supersymmetric Gauge Theory in Four Dimensions,'' \href{https://arxiv.org/abs/hep-th/0302194}{arXiv:hep-th/0302194}.
+\bibitem{EtingofII}
+P.~Etingof, ``On the Cachazo--Douglas--Seiberg--Witten Conjecture for Simple Lie Algebras, II,'' \href{https://arxiv.org/abs/math/0312452}{arXiv:math/0312452}.
+\bibitem{EtingofKac}
+P.~Etingof and V.~Kac, ``On the Cachazo--Douglas--Seiberg--Witten Conjecture for Simple Lie Algebras,'' \href{https://arxiv.org/abs/math/0305175}{arXiv:math/0305175}.
+\bibitem{CederwallFerretti}
+M.~Cederwall and G.~Ferretti, ``The Chiral Ring of $D=4$, $\mathcal N=1$ SYM with Exceptional Gauge Groups,'' \emph{Fortsch. Phys.} \textbf{72} (2024), 2400027, \href{https://arxiv.org/abs/2311.12119}{arXiv:2311.12119}.
+\bibitem{Sergeev}
+A.~N.~Sergeev, ``The Tensor Algebra of the Identity Representation as a Module over the Lie Superalgebras $\mathfrak{gl}(n,m)$ and $Q(n)$,'' \emph{Math. USSR Sb.} \textbf{51} (1985), 419--427.
+\bibitem{BereleRegev}
+A.~Berele and A.~Regev, ``Hook Young Diagrams with Applications to Combinatorics and to Representations of Lie Superalgebras,'' \emph{Adv. Math.} \textbf{64} (1987), 118--175.
+\bibitem{Bourbaki}
+N.~Bourbaki, \emph{Groupes et alg\`ebres de Lie}, Chapitres IV--VI, Hermann (1968).
+\bibitem{GoodmanWallach}
+R.~Goodman and N.~R.~Wallach, \emph{Symmetry, Representations, and Invariants}, Graduate Texts in Mathematics \textbf{255}, Springer (2009).
+\bibitem{ChangYin}
+C.-M.~Chang and X.~Yin, ``1/16 BPS States in $\mathcal N=4$ Super-Yang--Mills Theory,'' \emph{Phys. Rev. D} \textbf{88} (2013), 106005, \href{https://arxiv.org/abs/1305.6314}{arXiv:1305.6314}.
+\bibitem{KvLM}
+T.~Kibe, S.~van~Leuven and K.~Mathieson, ``Non-Coulomb $Q$-Cohomology and Quantum Lifting,'' \href{https://arxiv.org/abs/2610.22332}{arXiv:2610.22332}.
+\bibitem{LeighStrassler}
+R.~G.~Leigh and M.~J.~Strassler, ``Exactly Marginal Operators and Duality in Four Dimensional $\mathcal N=1$ Supersymmetric Gauge Theory,'' \emph{Nucl. Phys. B} \textbf{447} (1995), 95--136, \href{https://arxiv.org/abs/hep-th/9503121}{arXiv:hep-th/9503121}.
+\bibitem{GWW}
+Z.~Gui, M.~Wang and B.~R.~Williams, ``Higher-dimensional Chiral Algebras in the Jouanolou Model and Free-Field Realization,'' \href{https://arxiv.org/abs/2510.26608}{arXiv:2510.26608}.
+\bibitem{BundzikMansson}
+D.~Bundzik and T.~M{\aa}nsson, ``The General Leigh--Strassler Deformation and Integrability,'' \emph{JHEP} \textbf{01} (2006), 116, \href{https://arxiv.org/abs/hep-th/0512093}{arXiv:hep-th/0512093}.
+\bibitem{CK}
+J.~Choi and S.~Kim, ``Fortuity and Relevant Deformation,'' \href{https://arxiv.org/abs/2512.12674}{arXiv:2512.12674}.
+\end{thebibliography}
+
+\end{document}
