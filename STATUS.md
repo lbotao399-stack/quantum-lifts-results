@@ -23,8 +23,8 @@ Updated 2026-11-10 from the cluster harvests (A8 2026-11-10 22:45, A6 2026-11-10
 - 86 blocks computed, 92 unfinished; d3 tested 80 (nonzero targets 63), d4 tested 77 (nonzero targets 53)
   - d3 rank 1, singlet [18,2,2,-9,[0],[0,-3]]
   - d3 rank 1, singlet [19,2,1,-10,[0],[0,-2]]
-  - d3 rank 1, singlet_cubic_self [16,1,1,-8,[0],[0]]
-  - d4 rank 1, singlet_cubic_self [16,1,1,-8,[0],[0]]
+  - d3 rank 1, singlet_cubic_self [16,1,1,-8,[0],[0]] (b0-multiple of [13,1,1,-6,[0],[0]])
+  - **d4 rank 1, singlet_cubic_self [16,1,1,-8,[0],[0]] — CERTIFIED EXACT OVER Q (`[Q, cert]`, verified on all 106,587 stage monomials; primary, since all lower blocks [10,1,1,-4], [13,1,1,-6], [16,1,0,-8], [16,0,1,-8] have d4 = 0; see [`certificates/`](certificates/))**
   - d2 rank 1, singlet_cubic_self [15,2,1,-7,[0],[0]]
   - d3 rank 2, singlet_cubic_self [15,2,1,-7,[0],[0]]
   - d2 rank 4, n2_quiver2 [10,2,1,-3,[0,0],[1,-1,-1,-1]]
