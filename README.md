@@ -6,7 +6,7 @@ Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://gith
 
 **Master report (updated in place): [Fortuity_Lift_Master.pdf](Fortuity_Lift_Master.pdf).** Per theory: twisted action and components, Lie-algebra realization, highest-weight algorithm (which weights), frontier in conserved charges, fortuitous generators and classes, quantum-lift status, per-level data.
 
-**Supplement (algorithm for the lifting tests): [supplement/Supplement_algorithm_for_the_lifting_tests.pdf](supplement/Supplement_algorithm_for_the_lifting_tests.pdf)**, with its LaTeX source. It is the supplementary material of the article "Holomorphic Feynman diagrams in four dimensions and the quantum BPS ring" (B. Li, C.-M. Chang, K. Liu): census algorithm, certification, and theory-by-theory tables and representatives (Sections S1–S8).
+**Supplement (algorithm for the lifting tests): [supplement/Supplement_algorithm_for_the_lifting_tests.pdf](supplement/Supplement_algorithm_for_the_lifting_tests.pdf)**, with its LaTeX source. It is the supplementary material of the article "Holomorphic Feynman diagrams in four dimensions and the quantum BPS ring" (B. Li, K. Liu, C.-M. Chang): census algorithm, certification, and theory-by-theory tables and representatives (Sections S1–S8).
 
 Red = class not found in publications.
 
