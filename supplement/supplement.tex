@@ -71,7 +71,7 @@
 {\small\setcounter{tocdepth}{2}\tableofcontents}
 \bigskip
 
-We compute the lifting tests of Section~9 up to a fixed level by reducing each charge sector to finite-dimensional linear algebra.
+We compute the lifting tests of Section~10 up to a fixed level by reducing each charge sector to finite-dimensional linear algebra.
 
 The algorithm below produces the cohomology counts and obstruction ranks; the later sections apply it theory by theory and give explicit representatives and their corrections.
 
@@ -145,7 +145,7 @@ The $SU(2)$ threshold class \eqref{eq-threshold-source} has two $\gamma$, five $
 \end{equation*}
 \end{proofbox}
 
-The current form (B.19) has degree $n$ in each dotted component, giving
+The current form (3.28) has degree $n$ in each dotted component, giving
 \begin{equation}\label{eq-derivative-homogeneity}
 \mathcal I_\Gamma^{\mathrm{raw\ cut}}
 \bigl(\lambda_{v,+\dot a}\mapsto c\lambda_{v,+\dot a};\,
@@ -156,7 +156,7 @@ z_e^{+\dot a}\mapsto c^{-1}z_e^{+\dot a}\bigr)
 
 The $\lambda$ powers supply output derivatives and the $z$ powers remove input derivatives. Hence $Q_n$ adds $n$ derivatives in each direction \cite[Equations (3.44)--(3.45)]{semichiral}.
 
-$Q_0$ preserves both totals. Choose homogeneous contractions $(i_r,\pi_r,h_r)$ in (8.23).
+$Q_0$ preserves both totals. Choose homogeneous contractions $(i_r,\pi_r,h_r)$ in (9.23).
 
 \rthm{Proposition}{appE2-0024}{}
 
@@ -223,7 +223,7 @@ We reduce the $\mathcal N=4$ calculation to highest-weight cochains so that each
 
 We construct spanning sets from letter and derivative data, then compare their ranks with the exact dimensions obtained from group characters.
 
-The flavour raising operators $E_{12},E_{23}$ and the dotted-index raising operator $J_+$ commute with $Q_n$ by the $SL(3)$ invariance and spinor contractions in (7.3).
+The flavour raising operators $E_{12},E_{23}$ and the dotted-index raising operator $J_+$ commute with $Q_n$ by the $SL(3)$ invariance and spinor contractions in (8.3).
 
 Compute the maps on their common highest-weight space.
 \begin{equation}\label{eq-E-hw}
@@ -269,7 +269,7 @@ For $SO(2n+1)$ or $Sp(n)$, impose $A^{\mathsf T}F+FA=0$, with $\bar\imath=N_F+1-
 \sum_R(t_R)_{ab}(t^R)_{cd}=\tfrac12\delta_{ad}\delta_{bc}-\tfrac12F_{ac}F_{bd}.
 \end{equation}
 
-Apply (7.3) by selecting $n+1$ input slots and replacing them with two differentiated output letters, using the selected Taylor coefficient.
+Apply (8.3) by selecting $n+1$ input slots and replacing them with two differentiated output letters, using the selected Taylor coefficient.
 
 The colour chain becomes nested commutators.
 \begin{equation}\label{eq-E-chain}
@@ -315,7 +315,7 @@ For large sectors, select pivots after modular row projection, reconstruct their
 
 \emph{Decoupled pair.} For $Q_0\beta^s=-m\gamma_s'$ and $Q_0\gamma_s'=0$ in \eqref{eq-massshift}, replace each differentiated $\gamma_s'$ by the same derivative of $-\beta^s/m$, with the odd-derivation sign, and divide by the number of $\gamma_s',\beta^s$ letters. The projection sets these letters to zero.
 
-Two contractions give conjugate transferred differentials by (8.25).
+Two contractions give conjugate transferred differentials by (9.25).
 \begin{equation}\label{eq-page-choice}
 \hbar\,\pi_r'(\hbar)i_r(\hbar)\,\mathbf Q^{(r+1)}
 =\pi_r'(\hbar)\,\mathbf Q^{(r)}\,i_r(\hbar)
@@ -354,7 +354,7 @@ Exact sources give residuals in this denominator. For $Q_0z=Q_0y=0$,
 \begin{aligned}\mathcal O_0=Q_0x,\quad\mathcal O_1=Q_1x+z&\quad\Longrightarrow\quad Q_2\mathcal O_0+Q_1\mathcal O_1=-Q_0Q_2x+Q_1z,\\\mathcal O_0=Q_1y,\quad\mathcal O_1=Q_2y+z&\quad\Longrightarrow\quad Q_2\mathcal O_0+Q_1\mathcal O_1=-Q_0Q_3y+Q_1z.\end{aligned}
 \end{equation*}
 
-The same row elimination through $R$ reproduces (8.39).\hfill\qedsymbol
+The same row elimination through $R$ reproduces (9.39).\hfill\qedsymbol
 \end{proofbox}
 
 The second-page test is
@@ -425,11 +425,11 @@ The $SO(2n+1)$ and $Sp(n)$ stable trace algebras agree by trace reversal. Count 
 
 At fixed charges, the grading permits only finitely many incoming and outgoing differentials. We combine these bounds with the graviton completion theorem to determine which obstruction tests are needed for all-order survival.
 
-Theorem 8.1 makes every outgoing $d_r$ vanish on the graviton part. The source ranks obey the fortuitous-rank bound~(8.51).
+Theorem 9.1 makes every outgoing $d_r$ vanish on the graviton part. The source ranks obey the fortuitous-rank bound~(9.51).
 
 For all-order survival, check every outgoing map with $r\le\min_I\theta_I$ vanishes on the class and every incoming map with $r\le\min(n_+,n_-)$ misses it.
 
-These finite tests give a closed completion by (8.39).
+These finite tests give a closed completion by (9.39).
 
 The scans compute $(h,\rho)$ sectorwise and $d_1,d_2,d_3$ on pairs with nonzero source and target pages. For $SU(N)$, they compute $(h,f)$ and follow the fortuitous classes found.
 
@@ -1072,7 +1072,7 @@ Apply Corollary~\ref{appE2-0220} in types $B_m,D_m$. The certificate $\det T$ is
 
 We translate the commuting-scheme results into the classical cohomology of the Yang--Mills theory. The resulting highest-weight sectors identify the exceptional and orthogonal non-Cartan classes, while the symplectic restriction remains injective.
 
-Chang--Yin \cite{ChangYin} identify classical cohomology with $H^\bullet(\mathfrak g[\mathsf A],\mathfrak g;\mathbb C)$, where $\mathsf A=\mathbb C[z_+,z_-]\otimes\Lambda(\theta_1,\theta_2,\theta_3)$. At top degree $p=|n|$, $n=(n_{z_+},n_{z_-},n_{\theta_1},n_{\theta_2},n_{\theta_3})$, this is $\mathcal O(\mathcal C_{k^{3|2}})^G_n$ \cite[Proposition 4]{ChangChevalley}. The $\theta_i$-components are even and $z_\pm$-components odd. This is sector $(n_{\theta_1},n_{\theta_2},n_{\theta_3};n_{z_+},n_{z_-})$ with $Y=p$ in Appendix \ref{sec-E-sectors}.
+Chang--Yin \cite{ChangYin} identify classical cohomology with $H^\bullet(\mathfrak g[\mathsf A],\mathfrak g;\mathbb C)$, where $\mathsf A=\mathbb C[z_+,z_-]\otimes\Lambda(\theta_1,\theta_2,\theta_3)$. At top degree $p=|n|$, $n=(n_{z_+},n_{z_-},n_{\theta_1},n_{\theta_2},n_{\theta_3})$, this is $\mathcal O(\mathcal C_{k^{3|2}})^G_n$ \cite[Proposition 4]{ChangChevalley}. The $\theta_i$-components are even and $z_\pm$-components odd. This is sector $(n_{\theta_1},n_{\theta_2},n_{\theta_3};n_{z_+},n_{z_-})$ with $Y=p$ in Section \ref{sec-E-sectors}.
 
 \rthm{Corollary}{appE2-0272}{}
 
@@ -1094,7 +1094,7 @@ Proof.
 Every partition occurs in some $k^d$, so every $\phi_\lambda$ is invertible in $\Phi_{k^d}=\bigoplus_\lambda\mathrm{id}\otimes\phi_\lambda$. The same decomposition gives $\Phi_E$. The symplectic hypothesis is \cite[Theorem 4.1]{ChenNgoSp}.\hfill\qedsymbol
 \end{proofbox}
 
-For $\mathfrak g_2$, $d=3$ gives the non-Cartan class $\det T$ in $(2,2,2;0,0)_6$, protected to all orders in Appendix \ref{sec-E-G2}. For $\mathfrak{so}_7$, $d=4$ gives $(2,2,2;1,1)_8$ at level $9$, of dimension $85$ versus $84$ for $\mathfrak{sp}_6$ \cite[Section 3, Table 1]{ChangLin}. Corollary~\ref{appE2-0272} spans its one-dimensional restriction kernel, the $O_f$ target \ref{sec-E-SOSp} \cite[Theorem 1]{ChangChevalley}. For $(\mathfrak{so}_{2N+1},\mathfrak{sp}_{2N})$, $h^\vee=(2N-1,N+1)$. The orthogonal non-Cartan sectors are $(2,2,2;d-3,d-3)_{2d}$, $N+1\le d\le2N-2$, whereas the symplectic restriction is injective. At $N=4$, these are $(2,2,2;2,2)_{10}$ and $(2,2,2;3,3)_{12}$, with $E=12,15$, $R_I=E/3$ and $J_L=J_R=0$. The odd coordinates are $\lambda_\pm$ \cite[Section 2]{KvLM}. For $\operatorname{rk}\mathfrak g<d<h^\vee$, $[S^d]$ is the non-Coulomb monotone class in the same $\mathfrak{gl}(3|2)$ module as $(2,2,2;d-3,d-3)_{2d}$ \cite[Section 5]{KvLM}.
+For $\mathfrak g_2$, $d=3$ gives the non-Cartan class $\det T$ in $(2,2,2;0,0)_6$, protected to all orders in Section \ref{sec-E-G2}. For $\mathfrak{so}_7$, $d=4$ gives $(2,2,2;1,1)_8$ at level $9$, of dimension $85$ versus $84$ for $\mathfrak{sp}_6$ \cite[Section 3, Table 1]{ChangLin}. Corollary~\ref{appE2-0272} spans its one-dimensional restriction kernel, the $O_f$ target \ref{sec-E-SOSp} \cite[Theorem 1]{ChangChevalley}. For $(\mathfrak{so}_{2N+1},\mathfrak{sp}_{2N})$, $h^\vee=(2N-1,N+1)$. The orthogonal non-Cartan sectors are $(2,2,2;d-3,d-3)_{2d}$, $N+1\le d\le2N-2$, whereas the symplectic restriction is injective. At $N=4$, these are $(2,2,2;2,2)_{10}$ and $(2,2,2;3,3)_{12}$, with $E=12,15$, $R_I=E/3$ and $J_L=J_R=0$. The odd coordinates are $\lambda_\pm$ \cite[Section 2]{KvLM}. For $\operatorname{rk}\mathfrak g<d<h^\vee$, $[S^d]$ is the non-Coulomb monotone class in the same $\mathfrak{gl}(3|2)$ module as $(2,2,2;d-3,d-3)_{2d}$ \cite[Section 5]{KvLM}.
 
 \section{G$_2$}\label{sec-E-G2}
 
@@ -1180,7 +1180,7 @@ For the Leigh--Strassler deformation of $SU(3)$ \cite{LeighStrassler}, the cubic
 \begin{gathered}\frac{1+q}4\cdot\frac i{3!}\bigl(\varepsilon_{IJK}C_{ABC}-iS_{IJK}d_{ABC}\bigr)(\gamma^I)^A(\gamma^J)^B(\gamma^K)^C,\\ S_{IJK}=\rho\,|\varepsilon_{IJK}|+h_e\,\delta_{IJK},\qquad \rho=\frac{1-q}{1+q},\qquad h_e=\frac{2h}{1+q},\end{gathered}
 \end{equation}
 
-$d_{ABC}=2\operatorname{tr}(t_A\{t_B,t_C\})$, $\operatorname{tr}(t_At_B)=\tfrac12\delta_{AB}$, $\operatorname{tr}(t_At_Bt_C)=\tfrac14(d_{ABC}+iC_{ABC})$. Set $\delta_{IJK}=1$ for $I=J=K$, zero otherwise. $(q,h)=(1,0)$ gives $\mathcal N=4$ and $h=0$ gives the $\beta$-deformation. For $SU(2)$, $d_{ABC}=0$. In each fan (7.3), replace the cubic scalar vertex by $\varepsilon_{IJK}[\,\cdot\,,\cdot\,]+S_{IJK}\{\,\cdot\,,\cdot\,\}_{\mathfrak{su}(3)}$, with $\{L,R\}_{\mathfrak{su}(3)}=\{L,R\}-\tfrac23\operatorname{tr}(LR)\mathbf1$. The $h_e$ term preserves $U(1)\times\mathbb Z_3$, giving sectors
+$d_{ABC}=2\operatorname{tr}(t_A\{t_B,t_C\})$, $\operatorname{tr}(t_At_B)=\tfrac12\delta_{AB}$, $\operatorname{tr}(t_At_Bt_C)=\tfrac14(d_{ABC}+iC_{ABC})$. Set $\delta_{IJK}=1$ for $I=J=K$, zero otherwise. $(q,h)=(1,0)$ gives $\mathcal N=4$ and $h=0$ gives the $\beta$-deformation. For $SU(2)$, $d_{ABC}=0$. In each fan (8.3), replace the cubic scalar vertex by $\varepsilon_{IJK}[\,\cdot\,,\cdot\,]+S_{IJK}\{\,\cdot\,,\cdot\,\}_{\mathfrak{su}(3)}$, with $\{L,R\}_{\mathfrak{su}(3)}=\{L,R\}-\tfrac23\operatorname{tr}(LR)\mathbf1$. The $h_e$ term preserves $U(1)\times\mathbb Z_3$, giving sectors
 \begin{equation}\label{eq-E-LS-sector}
 \begin{gathered}(\Theta,c;n_+,n_-)_Y=\bigoplus_{\theta_1+\theta_2+\theta_3=\Theta,\ \theta_2+2\theta_3\equiv c\ (3)}C^Y(\theta;n_+,n_-),\\ d_r:(\Theta,c;n_\pm)_Y\to(\Theta-3r,c;n_\pm+r)_{Y+1-r}.\end{gathered}
 \end{equation}
@@ -1243,7 +1243,7 @@ $11$ & $(8,0;2,0)_8$ & $(2,0;4,2)_7$ & $(10,1,1,8)$ & $(\tfrac{21}2,\tfrac12,1,\
 \bottomrule
 \end{xltabular}}
 
-$P_m$ labels source level $m=2(E+J_L)$. At $(7,0;0,0)_5$, $\dim E_1=5$, $\operatorname{rank}d_1=3$, $\dim E_2=2$, $\operatorname{rank}d_2=1$, $\dim E_\infty=1$. Since $Q_2\mathcal O_0=0$, $d_2[\mathcal O_0]_2=[Q_1\mathcal O_1]_2$ (8.33).
+$P_m$ labels source level $m=2(E+J_L)$. At $(7,0;0,0)_5$, $\dim E_1=5$, $\operatorname{rank}d_1=3$, $\dim E_2=2$, $\operatorname{rank}d_2=1$, $\dim E_\infty=1$. Since $Q_2\mathcal O_0=0$, $d_2[\mathcal O_0]_2=[Q_1\mathcal O_1]_2$ (9.33).
 
 {\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
 \begin{xltabular}{\linewidth}{@{}llllll>{\raggedright\arraybackslash}X@{}}
@@ -1274,7 +1274,7 @@ $\partial_{+\dot+}$ raises $n_+$, commutes with $Q_n,d_r$, and maps $E_r(\Theta,
 \begin{proofbox}
 Proof.
 
-Translation commutes with (7.3) and $J_+$, preserving highest weights. Homogeneous contractions transfer this commutation to $d_r$ by (8.23). The matrix check passes for $n\le2$ and fails for an altered derivation coefficient.
+Translation commutes with (8.3) and $J_+$, preserving highest weights. Homogeneous contractions transfer this commutation to $d_r$ by (9.23). The matrix check passes for $n\le2$ and fails for an altered derivation coefficient.
 
 {\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
 \begin{xltabular}{\linewidth}{@{}>{\raggedright\arraybackslash}Xlll@{}}
@@ -1954,7 +1954,7 @@ We enumerate complete finite sectors of multi-graviton classes for $SU(2)$ and $
 \begin{proofbox}
 Compute the finite-sector completions.
 
-Quantum multiplication completes these multi-graviton classes by Theorem 8.1.
+Quantum multiplication completes these multi-graviton classes by Theorem 9.1.
 
 Use the two-letter single graviton \cite[Eq. (2.14)]{KKLP}
 \begin{equation}\label{eq-w2}
@@ -2170,7 +2170,7 @@ Q_+^I\beta_J=-\frac{\delta^I_J}{ig}\mathsf b,\qquad
 Q_+^I\mathsf b=0.
 \end{equation}
 
-Theorem 8.1, common $\theta$ translation, and these component transformations give
+Theorem 9.1, common $\theta$ translation, and these component transformations give
 \begin{equation}\label{b-00846}
 Q_n(w_2)^I=0,\qquad
 \{Q_n,Q_+^I\}=0,\qquad Q_+^I(w_2)^K=0.
@@ -2235,7 +2235,7 @@ Its two-letter graviton factor equals
 
 The classical variation is a trace commutator, the one-loop odd kernel vanishes at equal $\theta$, and higher fans require at least three letters.
 
-The binary chain identity (5.13) therefore gives
+The binary chain identity (6.13) therefore gives
 \begin{equation}\label{eq-hair-derivative-completion}
 \begin{aligned}
 \mathcal O[\mathcal O''_1]
@@ -2284,7 +2284,7 @@ Classically eliminate one adjoint of mass $M$ from $\mathcal N=4$ theory and tak
 \qquad M\ne0.
 \end{equation}
 
-Apply the spider kernels of Section 6 to the quartic interaction.
+Apply the spider kernels of Section 7 to the quartic interaction.
 
 First take the graviton square \cite[Eq. (4.51)]{CK}.
 \begin{equation}\label{eq-quartic-square}
