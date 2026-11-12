@@ -28,3 +28,14 @@ PRIME=0 python3 verify_abelian_cert.py singlet_cubic_self '[13,1,1,-6,[0],[0]]' 
 # Verify the four-loop (r = 4) certificate at weight 16 over Q (~55 s, 106,587 stage monomials):
 PRIME=0 python3 verify_abelian_cert.py singlet_cubic_self '[16,1,1,-8,[0],[0]]' 4 singlet_cubic_self_16_1_1_m8_d4_cert.json.gz
 ```
+
+## Exact rank runs of 12 November 2026 (`exact_runs_2026-11-12/`)
+
+Records behind the entries marked $[\mathbb Q]$ in Section 2.3 of the article (Tables of the Leigh–Strassler lifts and of the lifts at two, three and four loops). Every run is an exact elimination over $\mathbb Q$ (`PRIME=0`) of the complete block; the reported ranks are therefore rational ranks.
+
+| File | Content |
+|---|---|
+| `LS_P14_exact.log`, `LS_dP14_exact.log` | $SU(3)$ Leigh–Strassler theory, sources $(7,0;0,0)_5$ and $(7,0;1,0)_5$: pages $5/3/2$, $\operatorname{rank}d_1=3$, $\operatorname{rank}d_2=1$, field $\mathbb Q$, all checks passed |
+| `exact_<theory>_<block>.json.gz`, `abelian_exact_block_runs.log` | abelian theories (massive SQED, quartic SQED, cubic singlet, $\gamma_s^2\gamma_+\gamma_-$, $U(1)^2$ triangle and its mass deformation, $\mathcal N=2$ SQED with $N_f=1$): dimensions, $E_1$, and the ranks of $d_2$, $d_3$ of the block named in the file |
+| `su2_exact_rank_runs.log` | pure $\mathcal N=2$ $SU(2)$ Yang–Mills theory and $SU(2)$ with a flipping singlet: exact $d_2$ ranks of nine blocks |
+

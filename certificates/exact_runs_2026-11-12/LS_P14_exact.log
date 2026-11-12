@@ -1,0 +1,77 @@
+[    0.4s] sectors {'src': (7, 0, 0, 0, 5), 'o1': (4, 0, 1, 1, 4), 'd1': (4, 0, 1, 1, 5), 'tgt': (1, 0, 2, 2, 4), 'tgm': (1, 0, 2, 2, 3)} exact
+[    2.8s] source words 375 dim 257
+[  156.1s] cocycles 72 boundaries 67
+[  183.0s] E1 source 5
+[  362.3s] first-correction sector dim 415 rank Q0 into d1 sector 297
+[  403.7s] rank d1 3 d1-closed classes 2
+[  558.4s] target words 29 boundaries 12 kernel in first-correction sector 118 dim V 12
+[  583.2s] rank d2 1
+[  627.4s] {
+ "hit": "j14",
+ "field": "Q",
+ "rho": "12345/678",
+ "h_e": "4321/97",
+ "sectors": {
+  "src": [
+   7,
+   0,
+   0,
+   0,
+   5
+  ],
+  "o1": [
+   4,
+   0,
+   1,
+   1,
+   4
+  ],
+  "d1": [
+   4,
+   0,
+   1,
+   1,
+   5
+  ],
+  "tgt": [
+   1,
+   0,
+   2,
+   2,
+   4
+  ],
+  "tgm": [
+   1,
+   0,
+   2,
+   2,
+   3
+  ]
+ },
+ "E1_src": 5,
+ "rank_d1_out": 3,
+ "E2_src": 2,
+ "dim_im_Q0_tgt": 12,
+ "dim_V": 12,
+ "rank_d2": 1,
+ "checks": {
+  "Q0_O0_zero": true,
+  "Q0_O1_plus_Q1_O0_zero": true,
+  "max_theta_of_3_letters_in_O0": 5,
+  "Q2_O0_zero_by_degree": true,
+  "R_not_in_V": true,
+  "lam_kills_im_Q0_on_all_words": true,
+  "words_tgm": 19,
+  "lam_Q1_eq_mu_Q0_on_all_words": true,
+  "words_o1": 482,
+  "lam_R": "-4816124282247264439155875567051262497939343448821305332118325063457723617737271582720/91473134300122639561581610964353826397987773138806075831519417869567002589347257350193",
+  "minus_mu_Q1_O0": "-4816124282247264439155875567051262497939343448821305332118325063457723617737271582720/91473134300122639561581610964353826397987773138806075831519417869567002589347257350193",
+  "lam_terms": 2,
+  "mu_terms": 161
+ },
+ "all_passed": true,
+ "O0_terms": 12062,
+ "O1_terms": 15260,
+ "R_terms": 958,
+ "seconds": 627.4
+}
