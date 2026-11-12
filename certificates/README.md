@@ -35,7 +35,8 @@ Records behind the entries marked $[\mathbb Q]$ in Section 2.3 of the article (T
 
 | File | Content |
 |---|---|
-| `LS_P14_exact.log`, `LS_dP14_exact.log` | $SU(3)$ Leigh–Strassler theory, sources $(7,0;0,0)_5$ and $(7,0;1,0)_5$: pages $5/3/2$, $\operatorname{rank}d_1=3$, $\operatorname{rank}d_2=1$, field $\mathbb Q$, all checks passed |
+| `LS_P14_exact.log` | $SU(3)$ Leigh–Strassler theory, source $(7,0;0,0)_5$: $\dim E_1=5$, $\operatorname{rank}d_1=3$, $\operatorname{rank}d_2=1$, with the rational certificate of the two-loop lift (field $\mathbb Q$, all checks passed) |
+| `LS_dP14_exact.log` | the same theory, source $(7,0;1,0)_5$: rational certificate of the two-loop lift (field $\mathbb Q$, all checks passed) |
 | `exact_<theory>_<block>.json.gz`, `abelian_exact_block_runs.log` | abelian theories (massive SQED, quartic SQED, cubic singlet, $\gamma_s^2\gamma_+\gamma_-$, $U(1)^2$ triangle and its mass deformation, $\mathcal N=2$ SQED with $N_f=1$): dimensions, $E_1$, and the ranks of $d_2$, $d_3$ of the block named in the file |
 | `su2_exact_rank_runs.log` | pure $\mathcal N=2$ $SU(2)$ Yang–Mills theory and $SU(2)$ with a flipping singlet: exact $d_2$ ranks of nine blocks |
 
