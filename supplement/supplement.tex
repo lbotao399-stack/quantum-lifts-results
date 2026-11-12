@@ -313,7 +313,7 @@ For large sectors, select pivots after modular row projection, reconstruct their
 
 \emph{Orthogonal splitting.} With orthonormal monomials, take $H_r^k=\ker d_r^k\cap(\operatorname{im}d_r^{k-1})^\perp$, orthogonal projection $\pi_r$, and the Moore--Penrose pseudoinverse $h_r$ of $d_r$.
 
-\emph{Decoupled pair.} For $Q_0\beta^s=-m\gamma_s'$ and $Q_0\gamma_s'=0$ in \eqref{eq-massshift}, replace each differentiated $\gamma_s'$ by the same derivative of $-\beta^s/m$, with the odd-derivation sign, and divide by the number of $\gamma_s',\beta^s$ letters. The projection sets these letters to zero.
+\emph{Decoupled pair.} For $Q_0\beta^0=-m\gamma_0'$ and $Q_0\gamma_0'=0$ in \eqref{eq-massshift}, replace each differentiated $\gamma_0'$ by the same derivative of $-\beta^0/m$, with the odd-derivation sign, and divide by the number of $\gamma_0',\beta^0$ letters. The projection sets these letters to zero.
 
 Two contractions give conjugate transferred differentials by (9.25).
 \begin{equation}\label{eq-page-choice}
@@ -1681,7 +1681,7 @@ Eliminate the massive pair and test the second-order residual.
 
 Take $U(1)$ matter of charges $+1,-1,0$, with neutral mass $m$ and cubic coupling $y$.
 \begin{equation}\label{eq-3-11}
-\mathcal I=ig\mathsf c(\gamma_+\beta^+-\gamma_-\beta^-)+\frac m2\gamma_s^2+y\gamma_s\gamma_+\gamma_-,\qquad my\ne0,
+\mathcal I=ig\mathsf c(\gamma_+\beta^+-\gamma_-\beta^-)+\frac m2\gamma_0^2+y\gamma_0\gamma_+\gamma_-,\qquad my\ne0,
 \end{equation}
 
 \paragraph{The massive pair.}\label{the-massive-pair}
@@ -1690,18 +1690,18 @@ We separate the massive fields by a canonical change of variables. Contracting t
 
 Eliminate the massive pair by the canonical shift
 \begin{equation}\label{eq-massshift}
-\gamma_s'=\gamma_s+\frac ym\gamma_+\gamma_-,\qquad
-\beta^{+\prime}=\beta^+-\frac ym\gamma_-\beta^s,\qquad
-\beta^{-\prime}=\beta^--\frac ym\gamma_+\beta^s
+\gamma_0'=\gamma_0+\frac ym\gamma_+\gamma_-,\qquad
+\beta^{+\prime}=\beta^+-\frac ym\gamma_-\beta^0,\qquad
+\beta^{-\prime}=\beta^--\frac ym\gamma_+\beta^0
 \end{equation}
 
 The shift preserves the cotangent pairing and completes the square.
 \begin{equation}\label{eq-masssquare}
-\frac m2\gamma_s^2+y\gamma_s\gamma_+\gamma_-
-=\frac m2(\gamma_s')^2-\frac{y^2}{2m}(\gamma_+\gamma_-)^2.
+\frac m2\gamma_0^2+y\gamma_0\gamma_+\gamma_-
+=\frac m2(\gamma_0')^2-\frac{y^2}{2m}(\gamma_+\gamma_-)^2.
 \end{equation}
 
-The pair $Q_0\beta^s=-m\gamma_s^{\prime}$, $Q_0\gamma_s^{\prime}=0$ is contractible.
+The pair $Q_0\beta^0=-m\gamma_0^{\prime}$, $Q_0\gamma_0^{\prime}=0$ is contractible.
 \begin{equation}\label{b-00773}
 \bar W_{\mathrm{eff}}=-\frac{y^2}{2m}(\gamma_+\gamma_-)^2,
 \qquad\bar W_{\mathrm{eff}}^{++--}=-\frac{2y^2}{m}.
@@ -1711,7 +1711,7 @@ The superscript $++--$ takes two derivatives in each of $\gamma_+,\gamma_-$.
 
 Express $Q_n$ in the shifted fields, then transfer to the light fields.
 
-Here $\pi$ sets $\gamma_s^{\prime},\beta^s$ and their jets to zero, $\iota$ includes light fields, and $h$ contracts the massive pair.
+Here $\pi$ sets $\gamma_0^{\prime},\beta^0$ and their jets to zero, $\iota$ includes light fields, and $h$ contracts the massive pair.
 \begin{equation}\label{eq-3-15}
 \begin{aligned}
 Q_0h+hQ_0&=1-\iota\pi,\\
@@ -1729,7 +1729,7 @@ For $gmy\ne0$, choose the gauge-invariant source below, with free dotted index $
 \begin{equation}\label{eq-SQEDsource}
 \begin{aligned}
 \mathcal O_0=ig\Big[&\beta^+\beta^-\mathsf b^2
-+\frac ym(\gamma_-\beta^--\gamma_+\beta^+)\beta^s\mathsf b^2\\
++\frac ym(\gamma_-\beta^--\gamma_+\beta^+)\beta^0\mathsf b^2\\
 &+\frac{y^2}{3m\,ig}\gamma_+\gamma_-\mathsf b^3\Big]
 \partial_{+\dot a}\mathsf c .
 \end{aligned}
@@ -1739,10 +1739,10 @@ Use $Q_0\mathsf c=0$ and the following three variations to check $Q_0\mathcal O_
 \begin{equation}\label{eq-SQEDclosure}
 \begin{aligned}
 Q_0(\beta^+\beta^-\mathsf b^2)
-&=y\gamma_s(\gamma_+\beta^+-\gamma_-\beta^-)\mathsf b^2,\\
-Q_0\big[(\gamma_-\beta^--\gamma_+\beta^+)\beta^s\mathsf b^2\big]
+&=y\gamma_0(\gamma_+\beta^+-\gamma_-\beta^-)\mathsf b^2,\\
+Q_0\big[(\gamma_-\beta^--\gamma_+\beta^+)\beta^0\mathsf b^2\big]
 &=-(\gamma_+\beta^+-\gamma_-\beta^-)
-(m\gamma_s+y\gamma_+\gamma_-)\mathsf b^2,\\
+(m\gamma_0+y\gamma_+\gamma_-)\mathsf b^2,\\
 Q_0(\gamma_+\gamma_-\mathsf b^3)
 &=3ig\gamma_+\gamma_-(\gamma_+\beta^+-\gamma_-\beta^-)\mathsf b^2.
 \end{aligned}
@@ -1773,16 +1773,16 @@ The triangle acts on this source as follows.
                     \partial_+{}^{\dot b}\gamma_+\\
 &\quad+\beta^{+\prime}(\partial_{+\dot b}\beta^{-\prime})\beta^{-\prime}
                     \partial_+{}^{\dot b}\gamma_-
- +\frac ym(\partial_{+\dot b}\beta^s)\mathsf b
+ +\frac ym(\partial_{+\dot b}\beta^0)\mathsf b
    (\beta^{-\prime}\gamma_--\beta^{+\prime}\gamma_+)
                     \partial_+{}^{\dot b}\mathsf c\\
-&\quad-\frac ym(\partial_{+\dot b}\beta^s)\beta^{+\prime}\beta^{-\prime}
+&\quad-\frac ym(\partial_{+\dot b}\beta^0)\beta^{+\prime}\beta^{-\prime}
                     \partial_+{}^{\dot b}(\gamma_+\gamma_-)
  \Big\}\partial_{+\dot a}\mathsf c\\
 &+2(ig)^2y\Big\{
  \mathsf b^2(\partial_{+\dot b}\mathsf c)
-                    \partial_+{}^{\dot b}\gamma_s'
- -\mathsf b(\partial_{+\dot b}\gamma_s')
+                    \partial_+{}^{\dot b}\gamma_0'
+ -\mathsf b(\partial_{+\dot b}\gamma_0')
    \bigl(\beta^{+\prime}\partial_+{}^{\dot b}\gamma_+
         +\beta^{-\prime}\partial_+{}^{\dot b}\gamma_-\bigr)
  \Big\}\partial_{+\dot a}\mathsf c\\
@@ -1795,7 +1795,7 @@ The triangle acts on this source as follows.
   \bigl[(\partial_{+\dot b}\beta^{+\prime})\partial_+{}^{\dot b}\gamma_+
        +(\partial_{+\dot b}\beta^{-\prime})\partial_+{}^{\dot b}\gamma_-\bigr]\\
 &\quad+\frac ym\mathsf b\gamma_+\gamma_-
-       (\partial_{+\dot b}\beta^s)\partial_+{}^{\dot b}(\gamma_+\gamma_-)
+       (\partial_{+\dot b}\beta^0)\partial_+{}^{\dot b}(\gamma_+\gamma_-)
  \Big\}\partial_{+\dot a}\mathsf c .
 \end{aligned}
 \end{equation}
@@ -1848,9 +1848,9 @@ Solve $Q_0\mathcal O_1=-Q_1\mathcal O_0$ with
        (\partial_{+\dot b}\gamma_+)\partial_+{}^{\dot b}\gamma_-
  \Big\}\\
 &+\frac{(ig)^2y}{m}\Big\{
- \mathsf b^2(\partial_{+\dot a}\beta^s)
+ \mathsf b^2(\partial_{+\dot a}\beta^0)
        (\partial_{+\dot b}\mathsf c)\partial_+{}^{\dot b}\mathsf c\\
-&\qquad\quad-2\mathsf b(\partial_{+\dot b}\beta^s)
+&\qquad\quad-2\mathsf b(\partial_{+\dot b}\beta^0)
    \bigl(\beta^{+\prime}\partial_+{}^{\dot b}\gamma_+
         +\beta^{-\prime}\partial_+{}^{\dot b}\gamma_-\bigr)
                          \partial_{+\dot a}\mathsf c
@@ -1881,8 +1881,8 @@ $\gamma_+$ & $1$ & $0$ & $1$\\
 $\gamma_-$ & $-1$ & $0$ & $1$\\
 $\beta^+$ & $-1$ & $1$ & $3$\\
 $\beta^-$ & $1$ & $1$ & $3$\\
-$\gamma_s$ & $0$ & $0$ & $2$\\
-$\beta^s$ & $0$ & $1$ & $2$\\
+$\gamma_0$ & $0$ & $0$ & $2$\\
+$\beta^0$ & $0$ & $1$ & $2$\\
 $\mathsf b$ & $0$ & $0$ & $4$\\
 $\mathsf c$ & $0$ & $1$ & $0$\\
 \bottomrule
@@ -1892,7 +1892,7 @@ The parameters $m,y,g$ and holomorphic derivatives have weight zero.
 
 Each interaction and contracted pair has weight four, so $Q_n$ changes field weight by $4(n+1)-4(2n+1)=-4n$ and derivative totals by $(n,n)$.
 
-The homotopy preserves these degrees because $\gamma_s^{\prime}$ and $\beta^s$ both have weight two.
+The homotopy preserves these degrees because $\gamma_0^{\prime}$ and $\beta^0$ both have weight two.
 
 Work in the relative gauge-invariant complex, with differentiated ghosts and gauge-invariant light-field polynomials.
 
