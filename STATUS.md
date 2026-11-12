@@ -1,6 +1,6 @@
 # Running computations: daily status
 
-Updated 2026-11-11 from the cluster harvests (A8 2026-11-11 22:33, A6 2026-11-11 22:34). Ranks are modulo p = 2^31 - 1 unless stated; blocks are labelled as in the master report. Nonzero differentials listed here are raw scan output: not yet rechecked at a second prime and not yet separated into primary classes and descendants. Full records: [data/daily/harvest_2026-11-11.json](data/daily/harvest_2026-11-11.json).
+Updated 2026-11-12 from the cluster harvests (A8 2026-11-12 22:33, A6 2026-11-12 22:34). Ranks are modulo p = 2^31 - 1 unless stated; blocks are labelled as in the master report. Nonzero differentials listed here are raw scan output: not yet rechecked at a second prime and not yet separated into primary classes and descendants. Full records: [data/daily/harvest_2026-11-12.json](data/daily/harvest_2026-11-12.json).
 
 ## N=4 SU(4), all letters, levels 28-30 (trace-relation count of fortuitous classes)
 
@@ -20,7 +20,7 @@ Updated 2026-11-11 from the cluster harvests (A8 2026-11-11 22:33, A6 2026-11-11
 
 ## Rerun of blocks left unfinished by earlier tiers
 
-- 87 blocks computed, 92 unfinished; d3 tested 81 (nonzero targets 64), d4 tested 78 (nonzero targets 54)
+- 91 blocks computed, 94 unfinished; d3 tested 85 (nonzero targets 68), d4 tested 81 (nonzero targets 57)
   - d3 rank 1, singlet [18,2,2,-9,[0],[0,-3]]
   - d3 rank 1, singlet [19,2,1,-10,[0],[0,-2]]
   - d3 rank 1, singlet_cubic_self [16,1,1,-8,[0],[0]]
@@ -29,11 +29,11 @@ Updated 2026-11-11 from the cluster harvests (A8 2026-11-11 22:33, A6 2026-11-11
   - d3 rank 2, singlet_cubic_self [15,2,1,-7,[0],[0]]
   - d2 rank 4, n2_quiver2 [10,2,1,-3,[0,0],[1,-1,-1,-1]]
   - d2 rank 4, n2_quiver2 [10,2,1,-3,[0,0],[-1,1,1,0]]
+  - d3 rank 2, massive_singlet [22,2,1,-8,[0],[0]]
   - d2 rank 2, n2_quiver2 [11,2,1,-4,[0,0],[1,-1,-1,0]]
   - d2 rank 2, massive_singlet [22,1,1,-9,[0],[0]]
   - d3 rank 1, singlet [18,1,1,-10,[0],[0,0]]
-  - d3 rank 2, singlet_cubic_self [20,1,1,-11,[0],[0]]
-  - ... 2 more
+  - ... 4 more
 
 ## N=2 SU(2) and SU(2) + flip singlet, weights 15-16 (components)
 
@@ -73,7 +73,6 @@ Updated 2026-11-11 from the cluster harvests (A8 2026-11-11 22:33, A6 2026-11-11
 
 | cluster | job | name | state | time | cores |
 |---|---|---|---|---|---|
-| A8 | 5554120 | gs_n2su2 | RUNNING | 13:26:15 | 32 |
-| A8 | 5478222_1 | finretry | RUNNING | 3-00:22:28 | 128 |
-| A8 | 5478222_0 | finretry | RUNNING | 3-00:25:45 | 128 |
-| A8 | 5478224 | finsu2 | RUNNING | 3-00:31:29 | 40 |
+| A8 | 5478222_1 | finretry | RUNNING | 4-00:22:42 | 128 |
+| A8 | 5478222_0 | finretry | RUNNING | 4-00:25:59 | 128 |
+| A8 | 5478224 | finsu2 | RUNNING | 4-00:31:43 | 40 |
