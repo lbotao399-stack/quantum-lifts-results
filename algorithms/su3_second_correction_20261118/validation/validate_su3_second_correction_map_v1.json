@@ -1,0 +1,233 @@
+{
+  "status": "passed_second_Q0_profile_blocks_rational_dense_and_frame_preservation",
+  "checks": [
+    {
+      "source": 0,
+      "target": 5,
+      "prime": 1000003,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 0,
+      "target": 10,
+      "prime": 1000003,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "prime": 1000033,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 0,
+      "target": 10,
+      "prime": 1000033,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "prime": 1000003,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 1,
+      "target": 6,
+      "prime": 1000003,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 1,
+      "target": 10,
+      "prime": 1000003,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 1,
+      "target": 12,
+      "prime": 1000003,
+      "coordinates": 18,
+      "nonzero": 0,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "prime": 1000033,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 1,
+      "target": 6,
+      "prime": 1000033,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 1,
+      "target": 10,
+      "prime": 1000033,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 1,
+      "target": 12,
+      "prime": 1000033,
+      "coordinates": 18,
+      "nonzero": 0,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 21,
+      "target": 5,
+      "prime": 1000003,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 21,
+      "target": 7,
+      "prime": 1000003,
+      "coordinates": 18,
+      "nonzero": 0,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "prime": 1000003,
+      "coordinates": 45,
+      "nonzero": 45,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "prime": 1000003,
+      "coordinates": 45,
+      "nonzero": 45,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 21,
+      "target": 5,
+      "prime": 1000033,
+      "coordinates": 18,
+      "nonzero": 18,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 21,
+      "target": 7,
+      "prime": 1000033,
+      "coordinates": 18,
+      "nonzero": 0,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "prime": 1000033,
+      "coordinates": 45,
+      "nonzero": 45,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "prime": 1000033,
+      "coordinates": 45,
+      "nonzero": 45,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 54,
+      "target": 32,
+      "prime": 1000003,
+      "coordinates": 84,
+      "nonzero": 84,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 54,
+      "target": 36,
+      "prime": 1000003,
+      "coordinates": 135,
+      "nonzero": 135,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 54,
+      "target": 32,
+      "prime": 1000033,
+      "coordinates": 84,
+      "nonzero": 84,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    },
+    {
+      "source": 54,
+      "target": 36,
+      "prime": 1000033,
+      "coordinates": 135,
+      "nonzero": 135,
+      "original_target_matrices_preserved": true,
+      "additional_letters": 5
+    }
+  ],
+  "source_profiles": [
+    0,
+    1,
+    21,
+    54
+  ],
+  "seconds": 2.9200708330608904,
+  "sources": {
+    "su3_second_correction_map_v1.py": "6baa9ba22e97a69b2e5804824794609bcc9c5b69fb5534ec5f5095f19af97c97",
+    "validate_su3_second_correction_map_v1.py": "0c302766be44ccbc24a6e53313d9ede2ca2197aaf3b523af0904b48cac10d657",
+    "native_su_parallel_v1.py": "5ce48c113046bc5a48875626ebd5f3fe77221ab145be86afd7f623b13b5e3386"
+  }
+}

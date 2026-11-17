@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
-  "phase": "G2 BMN j30 (5,5,5) complete classical cohomology and known-product quotient",
+  "phase": "SU3 second bases complete; full Q2 evaluation replay; coupled assembly validated",
   "increments": {
     "d1": 0,
     "fortuitous_generator_families": 0,
@@ -20,6 +20,10 @@
   "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
   "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet.",
   "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
-  "evidence": "algorithms/bmn_rank_certificates_20261117/g2_merged_product_evidence/",
-  "evidence_scope": "This bundle certifies the current phase. Cumulative counts are the separately audited campaign ledger."
+  "evidence": "algorithms/su3_second_correction_20261118/",
+  "evidence_scope": "This bundle verifies the stated production input and algorithm checks, not a second-order lift. Cumulative counts are the separately audited campaign ledger.",
+  "previous_phase": {
+    "phase": "G2 BMN j30 (5,5,5) complete classical cohomology and known-product quotient",
+    "evidence": "algorithms/bmn_rank_certificates_20261117/g2_merged_product_evidence/"
+  }
 }

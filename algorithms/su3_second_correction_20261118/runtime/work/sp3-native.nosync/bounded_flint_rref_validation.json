@@ -1,0 +1,28 @@
+{
+  "status": "passed_bounded_flint_rref",
+  "prime": 1000003,
+  "direct_rref_cases": 32,
+  "direct_rref_compared_coordinates": 12011,
+  "staged_controls": {
+    "status": "passed",
+    "independent_dense_flint_cases": 13,
+    "solution_residual_coordinates": 888,
+    "source_sha256": "0ea86131ba586047e8556256c969ce4fffc9323ea8944124d2c345d492678518",
+    "blas_source_sha256": "f6c99e4c4b8a42a3c210b4a6192e660057fdff34055da17118e26383f617ca96",
+    "seconds": 0.09795708302408457
+  },
+  "complete_campaign_target": [
+    6,
+    3
+  ],
+  "campaign_rank": 928,
+  "campaign_compared_coordinates": 3667456,
+  "source_sha256": {
+    "bounded_flint_rref.py": "48a2ba5450ae7dcd29b49e5e6a3d84304fb4ae5dd6adbff70e336dec4bffbaef",
+    "staged_sp2_first_correction.py": "0ea86131ba586047e8556256c969ce4fffc9323ea8944124d2c345d492678518",
+    "exact_blas_rows.py": "f6c99e4c4b8a42a3c210b4a6192e660057fdff34055da17118e26383f617ca96"
+  },
+  "driver_sha256": "2d40333368838eb401ac80c68826ebf87dbc5a27ad5f1f4d58ae6f031aa20c76",
+  "seconds": 1.912704166956246,
+  "scope": "Exact agreement with FLINT for zero, rectangular, dependent, and full-rank matrices; the frozen staged controls pass; every reduced coefficient agrees for the complete 928-dimensional campaign target. Only memory conversion and in-place FLINT reduction change."
+}

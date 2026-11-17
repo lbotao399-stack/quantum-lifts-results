@@ -1,0 +1,235 @@
+{
+  "status": "passed_all_second_rhs_profiles_negative_sign_chunks_and_dense_matrices",
+  "checks": [
+    {
+      "target": 0,
+      "terms": 0,
+      "coordinates": 2,
+      "nonzero": 0
+    },
+    {
+      "target": 1,
+      "terms": 0,
+      "coordinates": 2,
+      "nonzero": 0
+    },
+    {
+      "target": 2,
+      "terms": 0,
+      "coordinates": 2,
+      "nonzero": 0
+    },
+    {
+      "target": 3,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 4,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 5,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 6,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 7,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 8,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 9,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 10,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 11,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 12,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 13,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 14,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 15,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 16,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 17,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 18,
+      "terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "target": 19,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 20,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 21,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 22,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 23,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 24,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 25,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 26,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 27,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 28,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 29,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 30,
+      "terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "target": 31,
+      "terms": 23055,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "target": 32,
+      "terms": 0,
+      "coordinates": 56,
+      "nonzero": 0
+    },
+    {
+      "target": 33,
+      "terms": 0,
+      "coordinates": 56,
+      "nonzero": 0
+    },
+    {
+      "target": 34,
+      "terms": 0,
+      "coordinates": 56,
+      "nonzero": 0
+    },
+    {
+      "target": 35,
+      "terms": 0,
+      "coordinates": 56,
+      "nonzero": 0
+    },
+    {
+      "target": 36,
+      "terms": 0,
+      "coordinates": 90,
+      "nonzero": 0
+    }
+  ],
+  "all_input_terms": 23055,
+  "coordinates": 902,
+  "sources": {
+    "su3_second_rhs_v1.py": "545b26d73a1ea0b4388584a43fd25c5aba7d8933ba7672b38314e759382bc026",
+    "validate_su3_second_rhs_v1.py": "e4067fb41ce218f8764b4314cf2fc54cae654d64c3b3b2fb34c6ef1565ffacee",
+    "su3_second_correction_map_v1.py": "6baa9ba22e97a69b2e5804824794609bcc9c5b69fb5534ec5f5095f19af97c97"
+  },
+  "seconds": 21.702197107981192
+}

@@ -1,0 +1,68 @@
+{
+  "status": "SU3_second_bases_complete_Q2_fully_replayed_coupled_solver_validated_maps_running",
+  "at": "2026-11-17T17:05:08.741728+00:00",
+  "theory": "undeformed N=4 SYM",
+  "group": "SU(3)",
+  "level": 30,
+  "order_convention": "supercharge obstructions",
+  "counts": {
+    "d1": 5,
+    "new_fortuitous_generator_families": 3,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "phase_increments": {
+    "d1": 0,
+    "new_fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "basis": {
+    "profiles": 94,
+    "complete": 94,
+    "directions": 113311,
+    "required": 113311,
+    "incomplete": {}
+  },
+  "negative_Q2_replay": {
+    "status": "passed_all_production_negative_Q2_coordinates_independent_Python_matrices",
+    "payload_hashes": 116,
+    "profiles": 37,
+    "source_terms": 23055,
+    "coordinates": 65406,
+    "nonzero_coordinates": 480,
+    "source_json_sha256": "6f809d9990e3869c13faf0156f1a3ad8a337e4d67348ddc4789862b778c1f0d1",
+    "replay_driver_sha256": "f26cce0185b2f5f986ed5103c33db9da70bbad3fceab27d76a7d22eb2bce4ae2"
+  },
+  "coupled_variables": 77639,
+  "first_variables": 28311,
+  "second_variables": 49328,
+  "first_equation_rank": 18003,
+  "first_homogeneous_dimension": 10308,
+  "structural_Q0_couplings": 221,
+  "structural_Q1_couplings": 104,
+  "Q0_complete_rows": 13568,
+  "Q0_additional_checkpointed_rows": 392,
+  "Q0_required_rows": 49328,
+  "Q1_complete_rows": 256,
+  "Q1_additional_checkpointed_rows": 50,
+  "Q1_required_rows": 28311,
+  "solver_validation": [
+    "fixing_the_first_particular_solution_gives_a_false_obstruction",
+    "both_equation_residuals_and_all_five_homogeneous_parameters",
+    "nonzero_first_rhs_column_relocation",
+    "checkpoint_resume",
+    "nonzero_global_row_offsets",
+    "missing_rows_rejected",
+    "overlapping_rows_rejected",
+    "incompatible_evaluation_frames_rejected",
+    "genuine_inconsistency_agrees_with_independent_dense_rank"
+  ],
+  "coupled_second_equation_solved": false,
+  "rational_obstruction_certified": false,
+  "basis_inventory_sha256": "e96aa68a7286dedc136d67a1952e3f35f5ee1e3c16bc86f92d5d0552668c0f30",
+  "evidence": "algorithms/su3_second_correction_20261118/",
+  "scope": "Complete production basis saturation, full independent Q2 evaluation replay, and tested coupled assembly. The Q0/Q1 production and second coupled solve remain pending."
+}

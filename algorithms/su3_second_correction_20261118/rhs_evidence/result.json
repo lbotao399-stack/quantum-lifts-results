@@ -1,0 +1,607 @@
+{
+  "status": "complete_all_second_rhs_profiles",
+  "finished": [
+    {
+      "index": 0,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 0,
+        "input_terms": 0,
+        "columns": 922,
+        "nonzero_entries": 0,
+        "sha256": "c630d4bf0196a461e4763b65a877ef2cf4c17efb65b2e44a07a26be41f8129e0",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2469169230025727,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 1,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 1,
+        "input_terms": 0,
+        "columns": 934,
+        "nonzero_entries": 0,
+        "sha256": "08ec4c14d755605c477392804da3f698d258646be3e54fc3c9509baffc2bde1d",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2213226100138854,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 2,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 2,
+        "input_terms": 0,
+        "columns": 178,
+        "nonzero_entries": 0,
+        "sha256": "6bb302f65b05006f840769aa65b039a8e16480155fec662c9895f121c14d5ac6",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.211893326981226,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 3,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 3,
+        "input_terms": 0,
+        "columns": 882,
+        "nonzero_entries": 0,
+        "sha256": "8e7e494134c7d885117059231c833a5a315fe8871fa1866c9292970133cd6dcd",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2323912479914725,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 4,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 4,
+        "input_terms": 0,
+        "columns": 174,
+        "nonzero_entries": 0,
+        "sha256": "3390986b49f878932187fc4520cb3a49dedc6ff26d10a99cec68a769225187bd",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2137658199935686,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 5,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 5,
+        "input_terms": 0,
+        "columns": 7014,
+        "nonzero_entries": 0,
+        "sha256": "7ed23555a9fbbc17e5fb10d12d1087be3cfb6c1cb4b0cdea1892f4ee5525f57d",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2319509520020802,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 6,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 6,
+        "input_terms": 0,
+        "columns": 4332,
+        "nonzero_entries": 0,
+        "sha256": "b3379571c1cc260c2d49ff2ebda070aa7bc8bd6f348f1414fb22ac2e4c7dfaa2",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2235900039959233,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 7,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 7,
+        "input_terms": 0,
+        "columns": 4332,
+        "nonzero_entries": 0,
+        "sha256": "b3379571c1cc260c2d49ff2ebda070aa7bc8bd6f348f1414fb22ac2e4c7dfaa2",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2263328399858437,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 8,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 8,
+        "input_terms": 0,
+        "columns": 768,
+        "nonzero_entries": 0,
+        "sha256": "06d6f7a8b5dab308eb2a2d40e37470ad8b518eb49be69bb8a6f43b5f1347f956",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2071310599858407,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 10,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 10,
+        "input_terms": 0,
+        "columns": 2154,
+        "nonzero_entries": 0,
+        "sha256": "933771618a03219b1b9f50fdafaf9087a513a4f3d3a5617ec5c2377a370f8124",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2588162310130429,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 9,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 9,
+        "input_terms": 0,
+        "columns": 768,
+        "nonzero_entries": 0,
+        "sha256": "06d6f7a8b5dab308eb2a2d40e37470ad8b518eb49be69bb8a6f43b5f1347f956",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2164411199919414,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 11,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 11,
+        "input_terms": 0,
+        "columns": 882,
+        "nonzero_entries": 0,
+        "sha256": "8e7e494134c7d885117059231c833a5a315fe8871fa1866c9292970133cd6dcd",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2213628350000363,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 12,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 12,
+        "input_terms": 0,
+        "columns": 450,
+        "nonzero_entries": 0,
+        "sha256": "1515c4c219740fa913f1b92f43c016fa056e4df6ff821299415dbc7e3f79ca70",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2210807649826165,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 14,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 14,
+        "input_terms": 0,
+        "columns": 2184,
+        "nonzero_entries": 0,
+        "sha256": "05d49d0b7ac2ebc9aa888fe73f7f7b79ded67b26745291329752920679c6867a",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2200975610176101,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 13,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 13,
+        "input_terms": 0,
+        "columns": 108,
+        "nonzero_entries": 0,
+        "sha256": "7d2880f351f4091adabc9e70b1991b2e16a03e8015683d0143e39681581439bc",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2380076369736344,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 15,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 15,
+        "input_terms": 0,
+        "columns": 768,
+        "nonzero_entries": 0,
+        "sha256": "06d6f7a8b5dab308eb2a2d40e37470ad8b518eb49be69bb8a6f43b5f1347f956",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2234799370053224,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 16,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 16,
+        "input_terms": 0,
+        "columns": 768,
+        "nonzero_entries": 0,
+        "sha256": "06d6f7a8b5dab308eb2a2d40e37470ad8b518eb49be69bb8a6f43b5f1347f956",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2175577849848196,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 17,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 17,
+        "input_terms": 0,
+        "columns": 138,
+        "nonzero_entries": 0,
+        "sha256": "8e773a644960b9c1263976646fa670d5600a49635a01bfdc16ce38cfebad4f1d",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2185193100012839,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 18,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 18,
+        "input_terms": 0,
+        "columns": 108,
+        "nonzero_entries": 0,
+        "sha256": "7d2880f351f4091adabc9e70b1991b2e16a03e8015683d0143e39681581439bc",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2162672340054996,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 19,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 19,
+        "input_terms": 0,
+        "columns": 4290,
+        "nonzero_entries": 0,
+        "sha256": "ab7aa7ee75c3a9a7d25ce0bd5f3adae51c8b137a9dced75e53c6afa225a213ec",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2269882900000084,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 21,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 21,
+        "input_terms": 0,
+        "columns": 885,
+        "nonzero_entries": 0,
+        "sha256": "3f8b9edb211d770c4efa7582e8cc41fdd8006d3fdb425da5817e5029509a4d4c",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2057501900126226,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 20,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 20,
+        "input_terms": 0,
+        "columns": 1830,
+        "nonzero_entries": 0,
+        "sha256": "6ebf67ff6d8d046fbbd3eddffb83510ffee9893b0ad781707a9408444bf97b61",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2192409020208288,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 22,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 22,
+        "input_terms": 0,
+        "columns": 8385,
+        "nonzero_entries": 0,
+        "sha256": "f86b0b5cd9c2cdac839e649ea7f19497baa13b55bcea9358a28bd24a5b3643c6",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2256578230008017,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 23,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 23,
+        "input_terms": 0,
+        "columns": 8595,
+        "nonzero_entries": 0,
+        "sha256": "b3f78e1e3987fa7e43f49c299578b706545f6c279c2ee2adbe16f621ea87f93c",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.22700672398787,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 25,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 25,
+        "input_terms": 0,
+        "columns": 885,
+        "nonzero_entries": 0,
+        "sha256": "3f8b9edb211d770c4efa7582e8cc41fdd8006d3fdb425da5817e5029509a4d4c",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2001282710116357,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 24,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 24,
+        "input_terms": 0,
+        "columns": 2100,
+        "nonzero_entries": 0,
+        "sha256": "57f11329fdfeade8b0deaf1848988932f24471820aedb5f8228bb116eb6f8548",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2324753660068382,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 26,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 26,
+        "input_terms": 0,
+        "columns": 975,
+        "nonzero_entries": 0,
+        "sha256": "3ba0bd296242f6125bbe71ecc1f56c37ae1f6e91a304a96ea48736953614173a",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2135961919848341,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 27,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 27,
+        "input_terms": 0,
+        "columns": 2295,
+        "nonzero_entries": 0,
+        "sha256": "8e0d938e923a5a3c1323b4aebaf9976303da00a6a1d2477300aed298dfa1fddf",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2154561519855633,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 30,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 30,
+        "input_terms": 0,
+        "columns": 135,
+        "nonzero_entries": 0,
+        "sha256": "b54abbabeb55f30118099ca1ec05cda60b5036a8f4d7ad7417822cbc714e5142",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.209174695017282,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 28,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 28,
+        "input_terms": 0,
+        "columns": 630,
+        "nonzero_entries": 0,
+        "sha256": "7141ded8663a3fe82edede53b1750e8fd6a8e4c34c5b33541a8dfa1083887900",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2229057899967302,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 29,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 29,
+        "input_terms": 0,
+        "columns": 630,
+        "nonzero_entries": 0,
+        "sha256": "7141ded8663a3fe82edede53b1750e8fd6a8e4c34c5b33541a8dfa1083887900",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.273021514993161,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 32,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 32,
+        "input_terms": 0,
+        "columns": 1008,
+        "nonzero_entries": 0,
+        "sha256": "14d3310d47b89f7ca3e3627a46dc931d2a29432c9c5c92ef76ef68f965c9902f",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2121133689943235,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 33,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 33,
+        "input_terms": 0,
+        "columns": 1988,
+        "nonzero_entries": 0,
+        "sha256": "843166a47730f84702176494cb74524569248c636b7f20449e7b05623e89929d",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2098569160152692,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 34,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 34,
+        "input_terms": 0,
+        "columns": 2016,
+        "nonzero_entries": 0,
+        "sha256": "e2fa5c8f7019eb4b37b33bced71111edfe51e4c560952626b3917dc860784255",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2076189260114916,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 31,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 31,
+        "input_terms": 23055,
+        "columns": 480,
+        "nonzero_entries": 480,
+        "sha256": "2b7f219b5cf6143ead865e62ee2f210364a701541e240547eb9b11380e070449",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 4.471516081015579,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 35,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 35,
+        "input_terms": 0,
+        "columns": 280,
+        "nonzero_entries": 0,
+        "sha256": "9b203269955ed16dd3f8ad14a8f89745a3f9fb49c6e3691a70f5014491d43331",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.204902758996468,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    },
+    {
+      "index": 36,
+      "exit_code": 0,
+      "result": {
+        "status": "complete_negative_Q2_evaluations",
+        "target": 36,
+        "input_terms": 0,
+        "columns": 135,
+        "nonzero_entries": 0,
+        "sha256": "b54abbabeb55f30118099ca1ec05cda60b5036a8f4d7ad7417822cbc714e5142",
+        "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+        "seconds": 1.2174870820017532,
+        "points_override": 0,
+        "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+      }
+    }
+  ],
+  "seconds": 40.52019289499731,
+  "parent_job": "7642273",
+  "step": "0",
+  "node": "ga1914",
+  "additional_node_reservation_cny": "0.00",
+  "d1_increment": 0,
+  "new_generator_increment": 0,
+  "d2_increment": 0,
+  "d3_increment": 0,
+  "np_increment": 0
+}

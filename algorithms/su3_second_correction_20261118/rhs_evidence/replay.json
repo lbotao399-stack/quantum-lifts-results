@@ -1,0 +1,236 @@
+{
+  "status": "passed_all_production_negative_Q2_coordinates_independent_Python_matrices",
+  "payload_hashes": 116,
+  "profiles": 37,
+  "source_terms": 23055,
+  "coordinates": 65406,
+  "nonzero_coordinates": 480,
+  "checks": [
+    {
+      "target": 0,
+      "terms": 0,
+      "coordinates": 922,
+      "nonzero": 0
+    },
+    {
+      "target": 1,
+      "terms": 0,
+      "coordinates": 934,
+      "nonzero": 0
+    },
+    {
+      "target": 2,
+      "terms": 0,
+      "coordinates": 178,
+      "nonzero": 0
+    },
+    {
+      "target": 3,
+      "terms": 0,
+      "coordinates": 882,
+      "nonzero": 0
+    },
+    {
+      "target": 4,
+      "terms": 0,
+      "coordinates": 174,
+      "nonzero": 0
+    },
+    {
+      "target": 5,
+      "terms": 0,
+      "coordinates": 7014,
+      "nonzero": 0
+    },
+    {
+      "target": 6,
+      "terms": 0,
+      "coordinates": 4332,
+      "nonzero": 0
+    },
+    {
+      "target": 7,
+      "terms": 0,
+      "coordinates": 4332,
+      "nonzero": 0
+    },
+    {
+      "target": 8,
+      "terms": 0,
+      "coordinates": 768,
+      "nonzero": 0
+    },
+    {
+      "target": 9,
+      "terms": 0,
+      "coordinates": 768,
+      "nonzero": 0
+    },
+    {
+      "target": 10,
+      "terms": 0,
+      "coordinates": 2154,
+      "nonzero": 0
+    },
+    {
+      "target": 11,
+      "terms": 0,
+      "coordinates": 882,
+      "nonzero": 0
+    },
+    {
+      "target": 12,
+      "terms": 0,
+      "coordinates": 450,
+      "nonzero": 0
+    },
+    {
+      "target": 13,
+      "terms": 0,
+      "coordinates": 108,
+      "nonzero": 0
+    },
+    {
+      "target": 14,
+      "terms": 0,
+      "coordinates": 2184,
+      "nonzero": 0
+    },
+    {
+      "target": 15,
+      "terms": 0,
+      "coordinates": 768,
+      "nonzero": 0
+    },
+    {
+      "target": 16,
+      "terms": 0,
+      "coordinates": 768,
+      "nonzero": 0
+    },
+    {
+      "target": 17,
+      "terms": 0,
+      "coordinates": 138,
+      "nonzero": 0
+    },
+    {
+      "target": 18,
+      "terms": 0,
+      "coordinates": 108,
+      "nonzero": 0
+    },
+    {
+      "target": 19,
+      "terms": 0,
+      "coordinates": 4290,
+      "nonzero": 0
+    },
+    {
+      "target": 20,
+      "terms": 0,
+      "coordinates": 1830,
+      "nonzero": 0
+    },
+    {
+      "target": 21,
+      "terms": 0,
+      "coordinates": 885,
+      "nonzero": 0
+    },
+    {
+      "target": 22,
+      "terms": 0,
+      "coordinates": 8385,
+      "nonzero": 0
+    },
+    {
+      "target": 23,
+      "terms": 0,
+      "coordinates": 8595,
+      "nonzero": 0
+    },
+    {
+      "target": 24,
+      "terms": 0,
+      "coordinates": 2100,
+      "nonzero": 0
+    },
+    {
+      "target": 25,
+      "terms": 0,
+      "coordinates": 885,
+      "nonzero": 0
+    },
+    {
+      "target": 26,
+      "terms": 0,
+      "coordinates": 975,
+      "nonzero": 0
+    },
+    {
+      "target": 27,
+      "terms": 0,
+      "coordinates": 2295,
+      "nonzero": 0
+    },
+    {
+      "target": 28,
+      "terms": 0,
+      "coordinates": 630,
+      "nonzero": 0
+    },
+    {
+      "target": 29,
+      "terms": 0,
+      "coordinates": 630,
+      "nonzero": 0
+    },
+    {
+      "target": 30,
+      "terms": 0,
+      "coordinates": 135,
+      "nonzero": 0
+    },
+    {
+      "target": 31,
+      "terms": 23055,
+      "coordinates": 480,
+      "nonzero": 480
+    },
+    {
+      "target": 32,
+      "terms": 0,
+      "coordinates": 1008,
+      "nonzero": 0
+    },
+    {
+      "target": 33,
+      "terms": 0,
+      "coordinates": 1988,
+      "nonzero": 0
+    },
+    {
+      "target": 34,
+      "terms": 0,
+      "coordinates": 2016,
+      "nonzero": 0
+    },
+    {
+      "target": 35,
+      "terms": 0,
+      "coordinates": 280,
+      "nonzero": 0
+    },
+    {
+      "target": 36,
+      "terms": 0,
+      "coordinates": 135,
+      "nonzero": 0
+    }
+  ],
+  "seconds": 3.353419542312622,
+  "source_json_sha256": "6f809d9990e3869c13faf0156f1a3ad8a337e4d67348ddc4789862b778c1f0d1",
+  "replay_driver_sha256": "f26cce0185b2f5f986ed5103c33db9da70bbad3fceab27d76a7d22eb2bce4ae2",
+  "scope": "Complete replay of the supplied exact Q2 image in all production target frames. This does not solve the coupled equation or certify a quantum lift."
+}

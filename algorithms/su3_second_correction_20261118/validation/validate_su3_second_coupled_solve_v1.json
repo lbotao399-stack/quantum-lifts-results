@@ -1,0 +1,24 @@
+{
+  "status": "passed_second_coupled_assembly_all_homogeneous_parameters_and_dense_controls",
+  "checks": [
+    "fixing_the_first_particular_solution_gives_a_false_obstruction",
+    "both_equation_residuals_and_all_five_homogeneous_parameters",
+    "nonzero_first_rhs_column_relocation",
+    "checkpoint_resume",
+    "nonzero_global_row_offsets",
+    "missing_rows_rejected",
+    "overlapping_rows_rejected",
+    "incompatible_evaluation_frames_rejected",
+    "genuine_inconsistency_agrees_with_independent_dense_rank"
+  ],
+  "equations": 30,
+  "variables": 16,
+  "rank": 11,
+  "homogeneous_dimension": 5,
+  "source_sha256": {
+    "su3_second_coupled_solve_v1.py": "e36e8f1eee202472e7e429963e55454d98f95244b56722dc721ad5b83b16863e",
+    "validate_su3_second_coupled_solve_v1.py": "eb23ed31c6113bcd6c3040ebcbc35200f482d9da2180f111a419822ce4f6ea21",
+    "su3_coupled_solve_v1.py": "bf59ccb048eb6721b777c1d4270656ec82bfea86a3098ce62323d355ece8baa6"
+  },
+  "seconds": 0.2368429582566023
+}

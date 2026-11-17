@@ -1,0 +1,12 @@
+{
+  "status": "complete_negative_Q2_evaluations",
+  "target": 26,
+  "input_terms": 0,
+  "columns": 975,
+  "nonzero_entries": 0,
+  "sha256": "3ba0bd296242f6125bbe71ecc1f56c37ae1f6e91a304a96ea48736953614173a",
+  "source_sha256": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+  "seconds": 1.2135961919848341,
+  "points_override": 0,
+  "scope": "The exact -Q2 source evaluated in the second-target frames. A second correction and the full Q1 homogeneous quotient remain unsolved."
+}
