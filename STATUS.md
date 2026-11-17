@@ -6,6 +6,7 @@
 
 - Sp(3)=USp(6) and G2 at j=30: 41 direct highest-weight product sectors per group, 12 weight columns. None of the index-minus-certified-product-rank bounds is negative. Cancelling classical classes remain unresolved by this screen.
 - Independent replay: 209 payload hashes; 62 nonzero determinants; all 121237 minor entries reconstructed; 7168 additional matrix-evaluation coordinates; 185 exact generator-closure checks; 141 modular raising rows; rational G2 torus certificate.
+- The nonabelian G2 singlet complex additionally excludes spin labels 0,1,6,7,8,9 by exact dimension minus adjacent rank bounds. Its separate audit checks six saved minor determinants, 18 rationally projected source recipes, and 1056 symbolic-Q0/dense-matrix probe coordinates. Full minor entry reconstruction is not part of that audit. The bundle contains the matrices, recipes, replay code and production C++ backend.
 - Increment in audited d1 pairings: 0; cumulative: 5. Increment in audited fortuitous-generator families: 0; cumulative: 3. Counts are scoped to the current undeformed N=4 campaign; families are counted modulo the audited products and descendants, without a global minimal-ring or absolute literature-novelty claim.
 - Certified d2 / d3 / nonperturbative lifts in undeformed N=4: 0 / 0 / 0. Orders denote supercharge obstructions.
 - Full nonabelian G2 j=30 rank refinement and the full nonabelian SU(3) j=30 second obstruction remain under calculation.

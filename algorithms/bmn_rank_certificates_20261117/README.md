@@ -56,3 +56,32 @@ No negative difference occurs. This phase certifies no new fortuitous generator 
 - `runtime/`: the production direct-product algorithm and the independent replay code, retaining relative imports.
 
 The vendored `fortuity` modules originate from [davidsd/fortuity-ai](https://github.com/davidsd/fortuity-ai), in particular its graded trace words, BMN generators, finite-field routines, and exterior-algebra matrix evaluator. The original BMN vendor provenance pins upstream commit `4256f207986029540060fb44dd494746828f65ce`. Original file headers are preserved. The exact bundled file hashes are recorded in `SOURCE_MANIFEST.json`; no upstream license file was present in the imported snapshot, and this release does not assign it a new license. The direct highest-weight product kernel, group-specific evaluation, rational certification gates, and replay packaging are the additions here.
+
+## Nonabelian G2 initial rank evidence
+
+The `g2_initial_rank_evidence/` directory adds the initial singlet complex at highest weight `(5,5,5)`, with six saved `Q0` rank minors and the original evaluation probes. Reproduce its audit with:
+
+```sh
+.venv/bin/python runtime/work/sp3-native.nosync/replay_g2_initial_rank_evidence_v1.py --evidence g2_initial_rank_evidence
+```
+
+This audit recomputes all six determinants, the exact character dimensions, rational highest-weight projections and symbolic `Q0` nilpotence for 18 selected source recipes, and 1056 dense-matrix probe coordinates. The remaining minor entries are retained production evaluations; this audit does not independently reconstruct every entry.
+
+| Spin label | Exact dimension | Outgoing rank lower bound | Incoming rank lower bound | Cohomology upper bound |
+|---:|---:|---:|---:|---:|
+| 0 | 85 | 0 | 85 | 0 |
+| 1 | 416 | 85 | 331 | 0 |
+| 6 | 1387 | 1066 | 321 | 0 |
+| 7 | 393 | 321 | 72 | 0 |
+| 8 | 82 | 72 | 10 | 0 |
+| 9 | 10 | 10 | 0 | 0 |
+
+The spin label is the first coordinate of the archived BMN sector `(spin,5,5,5)`. Subtract the two rank lower bounds from the exact dimension. These six sectors are empty. Positive remainders in the four other sectors remain upper bounds, with no new lift or generator counted. Degree continuations must be merged in common evaluation frames before updating a full differential rank.
+
+The production G2 algorithm is `runtime/work/sp3-native.nosync/g2_bmn_complex_v1.py`; its native trace and `Q0` evaluators are included as C++ source. The independent replay above needs no compiled native evaluator. To build the production backend on the compute host, from `runtime/work/sp3-native.nosync/`:
+
+```sh
+c++ -O3 -std=c++17 -shared -fPIC -DTRACE_FRAME_MATRIX_SIZE=7 -DTRACE_FRAME_PRIME=1000003 bmn_derivation_rank_v1.cpp -o bmn_derivation_rank_v1_d7_p1000003.dylib
+```
+
+The `.dylib` filename is the driver's fixed library name on both macOS and Linux. Production workers require a scheduler allocation; source completeness is asserted only at exact character-dimension saturation.

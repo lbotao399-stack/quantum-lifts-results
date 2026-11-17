@@ -1,0 +1,247 @@
+{
+  "status": "bounded_partial_physical_bases",
+  "group": "G2",
+  "weights": [
+    5,
+    5,
+    5
+  ],
+  "prime": 1000003,
+  "records": [
+    {
+      "sector": [
+        1,
+        5,
+        5,
+        5
+      ],
+      "dimension": 416,
+      "retained_source_rows": 399,
+      "complete_physical_basis": false,
+      "source_ranks": {
+        "1": 399
+      },
+      "outgoing_rank_lower_bound": 85,
+      "incoming_rank_lower_bound": 331,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true,
+      "payload_sha256": "fb5bac631dfb6fec57618f5a7f034d953054e7dc028643725be01660e24b79b9",
+      "batches": 48,
+      "attempts": 992,
+      "projected_terms": 9469383,
+      "projection_seconds": 594.7211227696389,
+      "evaluation_seconds": 2274.7730642678216
+    },
+    {
+      "sector": [
+        2,
+        5,
+        5,
+        5
+      ],
+      "dimension": 1300,
+      "retained_source_rows": 605,
+      "complete_physical_basis": false,
+      "source_ranks": {
+        "2": 542,
+        "0": 63
+      },
+      "outgoing_rank_lower_bound": 331,
+      "incoming_rank_lower_bound": 662,
+      "cohomology_upper_bound": 307,
+      "rational_zero_cohomology_certified": false,
+      "payload_sha256": "e586aba5974e8a04f1c8fc9a359f00e793b60d32fdfa42e8c651665b33fdb4e9",
+      "batches": 57,
+      "attempts": 1297,
+      "projected_terms": 7035726,
+      "projection_seconds": 434.90346357785165,
+      "evaluation_seconds": 4778.840906734578
+    },
+    {
+      "sector": [
+        3,
+        5,
+        5,
+        5
+      ],
+      "dimension": 2843,
+      "retained_source_rows": 729,
+      "complete_physical_basis": false,
+      "source_ranks": {
+        "3": 296,
+        "1": 433
+      },
+      "outgoing_rank_lower_bound": 662,
+      "incoming_rank_lower_bound": 880,
+      "cohomology_upper_bound": 1301,
+      "rational_zero_cohomology_certified": false,
+      "payload_sha256": "ec4de61ffd58e52f9f06a4b5339f020c256a60cc9f05cc705434c49cb487cc7d",
+      "batches": 81,
+      "attempts": 1506,
+      "projected_terms": 3312846,
+      "projection_seconds": 157.71072905696929,
+      "evaluation_seconds": 6656.450846881606
+    },
+    {
+      "sector": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "dimension": 3834,
+      "retained_source_rows": 891,
+      "complete_physical_basis": false,
+      "source_ranks": {
+        "4": 258,
+        "2": 550,
+        "0": 83
+      },
+      "outgoing_rank_lower_bound": 880,
+      "incoming_rank_lower_bound": 1258,
+      "cohomology_upper_bound": 1696,
+      "rational_zero_cohomology_certified": false,
+      "payload_sha256": "3aeb440c491a99011b5bb59aca0a40ca453f3f648eb5aeb505820bbb0fdd1dae",
+      "batches": 83,
+      "attempts": 1428,
+      "projected_terms": 1776269,
+      "projection_seconds": 71.90031409822404,
+      "evaluation_seconds": 8110.284488179721
+    },
+    {
+      "sector": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "dimension": 3030,
+      "retained_source_rows": 1274,
+      "complete_physical_basis": false,
+      "source_ranks": {
+        "5": 349,
+        "3": 648,
+        "1": 277
+      },
+      "outgoing_rank_lower_bound": 1258,
+      "incoming_rank_lower_bound": 1066,
+      "cohomology_upper_bound": 706,
+      "rational_zero_cohomology_certified": false,
+      "payload_sha256": "b90da7b196b096d1686da069d4eea38f39f2913fbc42c33468b55e06ef86a9ac",
+      "batches": 135,
+      "attempts": 2250,
+      "projected_terms": 1220850,
+      "projection_seconds": 41.88656398281455,
+      "evaluation_seconds": 7404.62967779208
+    },
+    {
+      "sector": [
+        6,
+        5,
+        5,
+        5
+      ],
+      "dimension": 1387,
+      "retained_source_rows": 1243,
+      "complete_physical_basis": false,
+      "source_ranks": {
+        "6": 199,
+        "4": 636,
+        "2": 395,
+        "0": 13
+      },
+      "outgoing_rank_lower_bound": 1066,
+      "incoming_rank_lower_bound": 321,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true,
+      "payload_sha256": "5067e016f23f11c75ab47a8b57aa43ffc9d9e7c99e34dbd7a27dccf72097b224",
+      "batches": 176,
+      "attempts": 3117,
+      "projected_terms": 628162,
+      "projection_seconds": 18.232499229721725,
+      "evaluation_seconds": 3855.061748445034
+    },
+    {
+      "sector": [
+        7,
+        5,
+        5,
+        5
+      ],
+      "dimension": 393,
+      "retained_source_rows": 390,
+      "complete_physical_basis": false,
+      "source_ranks": {
+        "7": 8,
+        "5": 115,
+        "3": 214,
+        "1": 53
+      },
+      "outgoing_rank_lower_bound": 321,
+      "incoming_rank_lower_bound": 72,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true,
+      "payload_sha256": "3df8d3bbfa4378c89df3817fde7846ea64223a9149d996e7b42509c4705bc0ba",
+      "batches": 83,
+      "attempts": 1580,
+      "projected_terms": 68816,
+      "projection_seconds": 1.6980617754161358,
+      "evaluation_seconds": 202.83506105747074
+    },
+    {
+      "sector": [
+        8,
+        5,
+        5,
+        5
+      ],
+      "dimension": 82,
+      "retained_source_rows": 82,
+      "complete_physical_basis": true,
+      "source_ranks": {
+        "6": 4,
+        "4": 28,
+        "2": 44,
+        "0": 6
+      },
+      "outgoing_rank_lower_bound": 72,
+      "incoming_rank_lower_bound": 10,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true,
+      "payload_sha256": "e9ad90310c6bb5f77aac05430b7d24a6f87ff1e3782eb11a56ad9a4a6f77d05d",
+      "batches": 17,
+      "attempts": 308,
+      "projected_terms": 3052,
+      "projection_seconds": 0.1341992262750864,
+      "evaluation_seconds": 2.6365749798715115
+    },
+    {
+      "sector": [
+        9,
+        5,
+        5,
+        5
+      ],
+      "dimension": 10,
+      "retained_source_rows": 10,
+      "complete_physical_basis": true,
+      "source_ranks": {
+        "3": 5,
+        "1": 5
+      },
+      "outgoing_rank_lower_bound": 10,
+      "incoming_rank_lower_bound": 0,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true,
+      "payload_sha256": "5443e4c45ae6f31b85791dc115abd0f13b5f0908f9017ebac4d7e91e41edacf7",
+      "batches": 4,
+      "attempts": 86,
+      "projected_terms": 158,
+      "projection_seconds": 0.054781544022262096,
+      "evaluation_seconds": 0.05976609792560339
+    }
+  ],
+  "scalar_cohomology_upper_bound": 0,
+  "seconds": 1063.9738627709448,
+  "scope": "Exact character dimensions and rational rank lower bounds. Complete physical bases are recorded only at dimension saturation. Positive remainders are not certified classes or quantum obstructions."
+}

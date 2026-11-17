@@ -1,0 +1,67 @@
+{
+  "status": "passed_all_saved_minors_exact_dimensions_and_independent_symbolic_probes",
+  "records": [
+    {
+      "spin": 1,
+      "rank_lower_bound": 85,
+      "minor_determinant": 960813,
+      "independent_probe_recipes": 3,
+      "coordinates": 6,
+      "nonzero_coordinates": 6
+    },
+    {
+      "spin": 2,
+      "rank_lower_bound": 331,
+      "minor_determinant": 476973,
+      "independent_probe_recipes": 3,
+      "coordinates": 18,
+      "nonzero_coordinates": 18
+    },
+    {
+      "spin": 6,
+      "rank_lower_bound": 1066,
+      "minor_determinant": 898891,
+      "independent_probe_recipes": 3,
+      "coordinates": 204,
+      "nonzero_coordinates": 94
+    },
+    {
+      "spin": 7,
+      "rank_lower_bound": 321,
+      "minor_determinant": 717914,
+      "independent_probe_recipes": 3,
+      "coordinates": 300,
+      "nonzero_coordinates": 96
+    },
+    {
+      "spin": 8,
+      "rank_lower_bound": 72,
+      "minor_determinant": 344898,
+      "independent_probe_recipes": 3,
+      "coordinates": 312,
+      "nonzero_coordinates": 94
+    },
+    {
+      "spin": 9,
+      "rank_lower_bound": 10,
+      "minor_determinant": 935153,
+      "independent_probe_recipes": 3,
+      "coordinates": 216,
+      "nonzero_coordinates": 98
+    }
+  ],
+  "payload_hashes": 8,
+  "excluded_spins": [
+    0,
+    1,
+    6,
+    7,
+    8,
+    9
+  ],
+  "total_probe_coordinates": 1056,
+  "driver_sha256": "7e0b74f6414b2ffa48bbce4362ab64b4a6c5f8f83c4ccc95954d16684bb6663c",
+  "seconds": 55.30059766676277,
+  "all_minor_entries_independently_reconstructed": false,
+  "scope": "Every saved minor determinant and exact character dimension; selected rational projections, exact Q0 nilpotence and dense-matrix production probes. Full minor entries are retained production data."
+}
