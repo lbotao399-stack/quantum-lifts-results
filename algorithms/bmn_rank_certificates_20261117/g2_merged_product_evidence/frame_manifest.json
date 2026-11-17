@@ -1,0 +1,272 @@
+{
+  "group": "G2",
+  "weights": [
+    5,
+    5,
+    5
+  ],
+  "prime": 1000003,
+  "dimensions": {
+    "0": {
+      "0": 85
+    },
+    "1": {
+      "1": 416
+    },
+    "2": {
+      "2": 1234,
+      "0": 66
+    },
+    "3": {
+      "3": 2269,
+      "1": 574
+    },
+    "4": {
+      "4": 2257,
+      "2": 1483,
+      "0": 94
+    },
+    "5": {
+      "5": 1090,
+      "3": 1619,
+      "1": 321
+    },
+    "6": {
+      "6": 209,
+      "4": 749,
+      "2": 416,
+      "0": 13
+    },
+    "7": {
+      "7": 8,
+      "5": 115,
+      "3": 217,
+      "1": 53
+    },
+    "8": {
+      "6": 4,
+      "4": 28,
+      "2": 44,
+      "0": 6
+    },
+    "9": {
+      "3": 5,
+      "1": 5
+    }
+  },
+  "frames": {
+    "0": {
+      "0": {
+        "degree": 0,
+        "points": 109,
+        "k": 0,
+        "seed": 2026111787,
+        "columns": 109
+      }
+    },
+    "1": {
+      "1": {
+        "degree": 1,
+        "points": 147,
+        "k": 3,
+        "seed": 2026219709,
+        "columns": 441
+      }
+    },
+    "2": {
+      "0": {
+        "degree": 0,
+        "points": 90,
+        "k": 0,
+        "seed": 2026311793,
+        "columns": 90
+      },
+      "2": {
+        "degree": 2,
+        "points": 210,
+        "k": 4,
+        "seed": 2026327631,
+        "columns": 1260
+      }
+    },
+    "3": {
+      "1": {
+        "degree": 1,
+        "points": 200,
+        "k": 3,
+        "seed": 2026419715,
+        "columns": 600
+      },
+      "3": {
+        "degree": 3,
+        "points": 230,
+        "k": 5,
+        "seed": 2026435553,
+        "columns": 2300
+      }
+    },
+    "4": {
+      "0": {
+        "degree": 0,
+        "points": 118,
+        "k": 0,
+        "seed": 2026511799,
+        "columns": 118
+      },
+      "2": {
+        "degree": 2,
+        "points": 252,
+        "k": 4,
+        "seed": 2026527637,
+        "columns": 1512
+      },
+      "4": {
+        "degree": 4,
+        "points": 153,
+        "k": 6,
+        "seed": 2026543475,
+        "columns": 2295
+      }
+    },
+    "5": {
+      "1": {
+        "degree": 1,
+        "points": 115,
+        "k": 3,
+        "seed": 2026619721,
+        "columns": 345
+      },
+      "3": {
+        "degree": 3,
+        "points": 165,
+        "k": 5,
+        "seed": 2026635559,
+        "columns": 1650
+      },
+      "5": {
+        "degree": 5,
+        "points": 54,
+        "k": 7,
+        "seed": 2026651397,
+        "columns": 1134
+      }
+    },
+    "6": {
+      "0": {
+        "degree": 0,
+        "points": 37,
+        "k": 0,
+        "seed": 2026711805,
+        "columns": 37
+      },
+      "2": {
+        "degree": 2,
+        "points": 74,
+        "k": 4,
+        "seed": 2026727643,
+        "columns": 444
+      },
+      "4": {
+        "degree": 4,
+        "points": 52,
+        "k": 6,
+        "seed": 2026743481,
+        "columns": 780
+      },
+      "6": {
+        "degree": 6,
+        "points": 9,
+        "k": 8,
+        "seed": 2026759319,
+        "columns": 252
+      }
+    },
+    "7": {
+      "1": {
+        "degree": 1,
+        "points": 26,
+        "k": 3,
+        "seed": 2026819727,
+        "columns": 78
+      },
+      "3": {
+        "degree": 3,
+        "points": 25,
+        "k": 5,
+        "seed": 2026835565,
+        "columns": 250
+      },
+      "5": {
+        "degree": 5,
+        "points": 7,
+        "k": 7,
+        "seed": 2026851403,
+        "columns": 147
+      },
+      "7": {
+        "degree": 7,
+        "points": 1,
+        "k": 9,
+        "seed": 2026867241,
+        "columns": 36
+      }
+    },
+    "8": {
+      "0": {
+        "degree": 0,
+        "points": 30,
+        "k": 0,
+        "seed": 2026911811,
+        "columns": 30
+      },
+      "2": {
+        "degree": 2,
+        "points": 12,
+        "k": 4,
+        "seed": 2026927649,
+        "columns": 72
+      },
+      "4": {
+        "degree": 4,
+        "points": 4,
+        "k": 6,
+        "seed": 2026943487,
+        "columns": 60
+      },
+      "6": {
+        "degree": 6,
+        "points": 1,
+        "k": 8,
+        "seed": 2026959325,
+        "columns": 28
+      }
+    },
+    "9": {
+      "1": {
+        "degree": 1,
+        "points": 10,
+        "k": 3,
+        "seed": 2027019733,
+        "columns": 30
+      },
+      "3": {
+        "degree": 3,
+        "points": 3,
+        "k": 5,
+        "seed": 2027035571,
+        "columns": 30
+      }
+    }
+  },
+  "workers": 36,
+  "wall_seconds": 900,
+  "sources": {
+    "g2_bmn_complex_v1.py": "5f37129e9c706e2fa5feae7b729fca53b458ff7b412e27be3e6ad6024f2d0642",
+    "g2_bmn_native_v1.py": "9cce52ef146b92d7d60e8e9d83969e23c5f5598ed8015e678e7893c71a5e1f4f",
+    "native_bmn_projection_v1.py": "1d2ca9c3076e0fda88e1a1b49d640197dcd8a976178afbc45e621065cf0727c0",
+    "bmn_derivation_rank_v1.cpp": "8e0ef86d5250e2355843f62763c351f894f740d6a50510943f831519bbd0f3f5",
+    "trace_frame_bmn_rank_v1.cpp": "b607716c101896d4afe4a70a47042541d986171bc941048ad8b072b53f1f652b",
+    "bmn_derivation_rank_v1_d7_p1000003.dylib": "01e7bc4b5ccf82c37302d424bf2d65fa7e2d1b1f9ef83c476e26deefcd9c1a28"
+  },
+  "rational_bridge": "Each retained source is the pinned rational extremal projection of its saved integer trace word. Its reduction agrees modulo the prime. Independent evaluation minors certify rational ranks; character dimensions certify completeness only upon saturation."
+}

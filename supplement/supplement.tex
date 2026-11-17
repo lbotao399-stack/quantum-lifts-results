@@ -70,7 +70,7 @@
 {\small Beijing, China}\\[3pt]
 {\small $^{4}$Jefferson Physical Laboratory, Harvard University,}\\
 {\small Cambridge, Massachusetts 02138, USA}}
-\date{\small Version 20261117 (Beijing time)}
+\date{\small Version 20261118 (Beijing time)}
 \begin{document}
 \maketitle
 \noindent This document is the supplementary material of the article \cite{MainArticle}. Sections, equations and statements of this supplement carry the prefix S; references without that prefix are to the article.
@@ -496,6 +496,38 @@ For subsequent nonabelian enumeration, retain independent projected source recip
 \end{aligned}
 \end{equation*}
 Zero certifies an empty sector before either source basis has to be completed. A positive remainder is only an upper bound.
+
+For $G_2$ at highest weight $(5,5,5)$ and $j=30$, merging the source-degree continuations gives the following complete column. The spin label is the first coordinate of the BMN sector $(\mathrm{spin},5,5,5)$.
+\begin{center}
+\small
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+Spin label & Dimension & Outgoing rank & Incoming rank & $\dim H(Q_0)$\\
+\midrule
+0 & 85 & 0 & 85 & 0\\
+1 & 416 & 85 & 331 & 0\\
+2 & 1300 & 331 & 969 & 0\\
+3 & 2843 & 969 & 1874 & 0\\
+4 & 3834 & 1874 & 1960 & 0\\
+5 & 3030 & 1960 & 1066 & 4\\
+6 & 1387 & 1066 & 321 & 0\\
+7 & 393 & 321 & 72 & 0\\
+8 & 82 & 72 & 10 & 0\\
+9 & 10 & 10 & 0 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+At spin label 5, the upper bound and the known-product lower bound coincide:
+\begin{equation*}
+\begin{aligned}
+3030-1960-1066&=4,\\
+1387-321&=1066,\\
+1070-1066&=4.
+\end{aligned}
+\end{equation*}
+Here 1070 is the rank certified after adjoining known closed products to the incoming image, evaluated on generic noncommuting matrices. The second equality bounds the incoming rank from above. Thus the known products span all four cohomology classes; the nine other sectors are empty. This column contributes no new fortuitous-generator family.
+
+The accompanying replay verifies 13 nonzero determinants, 27 rational projected source recipes and 1308 independent source-probe coordinates. It regenerates all 246078 generic product coordinates, checks exact closure of 185 generators and both raising equations for 97 formal product rows. Source-minor entries beyond the probes remain production data. This calculation concerns $Q_0$ only; the campaign totals remain five audited $d_1$ pairings, three audited generator families, and zero certified $d_2$, $d_3$ or nonperturbative lifts.
 
 \subsection{A worked chain}\label{sec-E-chain}
 

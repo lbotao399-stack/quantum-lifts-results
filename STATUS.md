@@ -1,15 +1,15 @@
 # Running computations: daily status
 
-## Verified BMN phase, November 17, 2026
+## Verified BMN phase, November 18, 2026
 
 [Algorithm and complete replay bundle](algorithms/bmn_rank_certificates_20261117/README.md); [numerical table](data/N4_Sp3_G2_BMN_j30_direct_index_20261117.csv).
 
 - Sp(3)=USp(6) and G2 at j=30: 41 direct highest-weight product sectors per group, 12 weight columns. None of the index-minus-certified-product-rank bounds is negative. Cancelling classical classes remain unresolved by this screen.
 - Independent replay: 209 payload hashes; 62 nonzero determinants; all 121237 minor entries reconstructed; 7168 additional matrix-evaluation coordinates; 185 exact generator-closure checks; 141 modular raising rows; rational G2 torus certificate.
-- The nonabelian G2 singlet complex additionally excludes spin labels 0,1,6,7,8,9 by exact dimension minus adjacent rank bounds. Its separate audit checks six saved minor determinants, 18 rationally projected source recipes, and 1056 symbolic-Q0/dense-matrix probe coordinates. Full minor entry reconstruction is not part of that audit. The bundle contains the matrices, recipes, replay code and production C++ backend.
+- The completed nonabelian G2 `(5,5,5)` column has cohomology dimensions `(0,0,0,0,0,4,0,0,0,0)` for spin labels 0 through 9. At spin 5, `3030-1960-1066=4` and the known-product quotient has dimension `1070-1066=4`: known closed products exhaust all four classes. Its replay verifies 13 saved determinants, 27 rational projected recipes, 1308 independent source-probe coordinates, 185 exact generator closures, 97 modular highest-weight product rows, and all 246078 generic product coordinates. Source minor entries beyond the saved probes remain production evaluations.
 - Increment in audited d1 pairings: 0; cumulative: 5. Increment in audited fortuitous-generator families: 0; cumulative: 3. Counts are scoped to the current undeformed N=4 campaign; families are counted modulo the audited products and descendants, without a global minimal-ring or absolute literature-novelty claim.
 - Certified d2 / d3 / nonperturbative lifts in undeformed N=4: 0 / 0 / 0. Orders denote supercharge obstructions.
-- Full nonabelian G2 j=30 rank refinement and the full nonabelian SU(3) j=30 second obstruction remain under calculation.
+- The full nonabelian SU(3) j=30 second obstruction remains under calculation. Its second-correction plan has 57 source profiles of total dimension 49328, 37 target profiles of total dimension 63983, and 221 structural Q0 couplings. The coupled solve must also retain all 10308 homogeneous first-correction parameters. Profile-basis construction alone does not solve this obstruction.
 
 ## Historical snapshot, November 12, 2026
 

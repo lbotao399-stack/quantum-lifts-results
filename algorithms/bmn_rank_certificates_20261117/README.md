@@ -76,7 +76,7 @@ This audit recomputes all six determinants, the exact character dimensions, rati
 | 8 | 82 | 72 | 10 | 0 |
 | 9 | 10 | 10 | 0 | 0 |
 
-The spin label is the first coordinate of the archived BMN sector `(spin,5,5,5)`. Subtract the two rank lower bounds from the exact dimension. These six sectors are empty. Positive remainders in the four other sectors remain upper bounds, with no new lift or generator counted. Degree continuations must be merged in common evaluation frames before updating a full differential rank.
+The spin label is the first coordinate of the archived BMN sector `(spin,5,5,5)`. These were the six empty sectors certified by the initial audit. The completed calculation below supersedes the initial bounds in the four other sectors. Degree continuations replace the corresponding original source slices in common evaluation frames.
 
 The production G2 algorithm is `runtime/work/sp3-native.nosync/g2_bmn_complex_v1.py`; its native trace and `Q0` evaluators are included as C++ source. The independent replay above needs no compiled native evaluator. To build the production backend on the compute host, from `runtime/work/sp3-native.nosync/`:
 
@@ -86,3 +86,32 @@ c++ -O3 -std=c++17 -shared -fPIC -DTRACE_FRAME_MATRIX_SIZE=7 -DTRACE_FRAME_PRIME
 ```
 
 The `.dylib` filename is the driver's fixed library name on both macOS and Linux. Production workers require a scheduler allocation; source completeness is asserted only at exact character-dimension saturation.
+
+## Completed nonabelian G2 column, November 18, 2026
+
+The `g2_merged_product_evidence/` directory contains the merged rank minors and generic, noncommuting-matrix evaluations of the known closed products at highest weight `(5,5,5)`, level `j=30`.
+
+```sh
+.venv/bin/python runtime/work/sp3-native.nosync/replay_g2_merged_product_evidence_v1.py --evidence g2_merged_product_evidence
+```
+
+| Spin label | Exact dimension | Outgoing rank | Incoming rank | Cohomology dimension |
+|---:|---:|---:|---:|---:|
+| 0 | 85 | 0 | 85 | 0 |
+| 1 | 416 | 85 | 331 | 0 |
+| 2 | 1300 | 331 | 969 | 0 |
+| 3 | 2843 | 969 | 1874 | 0 |
+| 4 | 3834 | 1874 | 1960 | 0 |
+| 5 | 3030 | 1960 | 1066 | 4 |
+| 6 | 1387 | 1066 | 321 | 0 |
+| 7 | 393 | 321 | 72 | 0 |
+| 8 | 82 | 72 | 10 | 0 |
+| 9 | 10 | 10 | 0 | 0 |
+
+At spin 5 the upper bound is `3030 - 1960 - 1066 = 4`. The incoming rank also has the upper bound `1387 - 321 = 1066`. Adding the known closed products raises the certified rank to 1070, so their cohomology dimension is at least `1070 - 1066 = 4`. These products therefore exhaust the cohomology. The nine other sectors are empty. This column contributes no new fortuitous-generator family and contains no quantum-differential calculation.
+
+The replay verifies 19 input payload hashes, all 13 saved nonzero determinants, the exact character dimensions, 27 rational projected source recipes and 1308 independent dense-matrix source-probe coordinates. It also verifies exact closure of 185 generators, both raising equations for all 97 formal product rows, and regenerates all 246078 generic product coordinates. Source minor entries beyond the saved probes remain retained production data; they were not all independently reconstructed. Every generic product value was reconstructed.
+
+The rational bridge for the modular product rows is the same extremal projection used above: lift the coefficients to integers and project to highest weight. Closure is preserved and the reduction is unchanged. The combined minor therefore certifies a rational lower bound modulo the independently bounded incoming image.
+
+Production code: `g2_bmn_degree_resume_v2.py` and `g2_bmn_merge_products_v1.py` in the bundled runtime. [Exact result table](../../data/N4_G2_BMN_j30_555_classical_20261118.csv); [campaign counts](../../data/N4_lift_campaign_counts_20261118.json). Increments: `d1=0`, generator families `=0`; cumulative totals: `5`, `3`. Certified `d2/d3/nonperturbative` lifts remain `0/0/0`.

@@ -55,5 +55,8 @@
   "runtime/work/sp3-native.nosync/sp_graviton_singlets.py": "de681cfd0cb48c6981603b37ca501fa4513aaaf56a7d4319afb0755b433d8462",
   "runtime/work/sp3-native.nosync/sp_projected_basis.py": "61b2b5b0c29ce00f907f77109287b5fb69d878eea998fcec856ca08b64964736",
   "runtime/work/sp3-native.nosync/sp_sparse_formal_kernel_v1.py": "6c61457bfffc2be43331d429c2fce4b82e32d82e95763c9c75682a18b9c065a6",
-  "runtime/work/sp3-native.nosync/trace_frame_bmn_rank_v1.cpp": "b607716c101896d4afe4a70a47042541d986171bc941048ad8b072b53f1f652b"
+  "runtime/work/sp3-native.nosync/trace_frame_bmn_rank_v1.cpp": "b607716c101896d4afe4a70a47042541d986171bc941048ad8b072b53f1f652b",
+  "runtime/work/sp3-native.nosync/g2_bmn_merge_products_v1.py": "ad473a99aa37ffc620d0ca5ba134e1f8d1edee9270e694aa61407a2a861ef4e5",
+  "runtime/work/sp3-native.nosync/g2_bmn_degree_resume_v2.py": "19bdb4fb409b76bbc959fc168aafbc74b1d6b5c2a454cd150ce60a6d3894a69f",
+  "runtime/work/sp3-native.nosync/replay_g2_merged_product_evidence_v1.py": "cbe4f346b921875363b394cf25f8fee45953950b94130ff159a5a1a8f34f23e7"
 }

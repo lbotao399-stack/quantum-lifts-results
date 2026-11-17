@@ -1,0 +1,236 @@
+{
+  "status": "passed_merged_rank_minors_rational_probes_and_all_generic_product_values",
+  "group": "G2",
+  "weights": [
+    5,
+    5,
+    5
+  ],
+  "prime": 1000003,
+  "payload_hashes": 19,
+  "source_ranks": [
+    {
+      "spin": 1,
+      "rank_lower_bound": 85,
+      "minor_determinant": 960813,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 6,
+      "nonzero_probe_coordinates": 6
+    },
+    {
+      "spin": 2,
+      "rank_lower_bound": 331,
+      "minor_determinant": 957197,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 18,
+      "nonzero_probe_coordinates": 18
+    },
+    {
+      "spin": 3,
+      "rank_lower_bound": 969,
+      "minor_determinant": 332513,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 42,
+      "nonzero_probe_coordinates": 36
+    },
+    {
+      "spin": 4,
+      "rank_lower_bound": 1874,
+      "minor_determinant": 308423,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 78,
+      "nonzero_probe_coordinates": 52
+    },
+    {
+      "spin": 5,
+      "rank_lower_bound": 1960,
+      "minor_determinant": 749803,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 132,
+      "nonzero_probe_coordinates": 84
+    },
+    {
+      "spin": 6,
+      "rank_lower_bound": 1066,
+      "minor_determinant": 1330,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 204,
+      "nonzero_probe_coordinates": 110
+    },
+    {
+      "spin": 7,
+      "rank_lower_bound": 321,
+      "minor_determinant": 803191,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 300,
+      "nonzero_probe_coordinates": 110
+    },
+    {
+      "spin": 8,
+      "rank_lower_bound": 72,
+      "minor_determinant": 770071,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 312,
+      "nonzero_probe_coordinates": 110
+    },
+    {
+      "spin": 9,
+      "rank_lower_bound": 10,
+      "minor_determinant": 935153,
+      "rational_projected_recipes": 3,
+      "probe_coordinates": 216,
+      "nonzero_probe_coordinates": 98
+    }
+  ],
+  "bounds": [
+    {
+      "spin": 0,
+      "dimension": 85,
+      "outgoing_rank_lower_bound": 0,
+      "incoming_rank_lower_bound": 85,
+      "cohomology_upper_bound": 0
+    },
+    {
+      "spin": 1,
+      "dimension": 416,
+      "outgoing_rank_lower_bound": 85,
+      "incoming_rank_lower_bound": 331,
+      "cohomology_upper_bound": 0
+    },
+    {
+      "spin": 2,
+      "dimension": 1300,
+      "outgoing_rank_lower_bound": 331,
+      "incoming_rank_lower_bound": 969,
+      "cohomology_upper_bound": 0
+    },
+    {
+      "spin": 3,
+      "dimension": 2843,
+      "outgoing_rank_lower_bound": 969,
+      "incoming_rank_lower_bound": 1874,
+      "cohomology_upper_bound": 0
+    },
+    {
+      "spin": 4,
+      "dimension": 3834,
+      "outgoing_rank_lower_bound": 1874,
+      "incoming_rank_lower_bound": 1960,
+      "cohomology_upper_bound": 0
+    },
+    {
+      "spin": 5,
+      "dimension": 3030,
+      "outgoing_rank_lower_bound": 1960,
+      "incoming_rank_lower_bound": 1066,
+      "cohomology_upper_bound": 4
+    },
+    {
+      "spin": 6,
+      "dimension": 1387,
+      "outgoing_rank_lower_bound": 1066,
+      "incoming_rank_lower_bound": 321,
+      "cohomology_upper_bound": 0
+    },
+    {
+      "spin": 7,
+      "dimension": 393,
+      "outgoing_rank_lower_bound": 321,
+      "incoming_rank_lower_bound": 72,
+      "cohomology_upper_bound": 0
+    },
+    {
+      "spin": 8,
+      "dimension": 82,
+      "outgoing_rank_lower_bound": 72,
+      "incoming_rank_lower_bound": 10,
+      "cohomology_upper_bound": 0
+    },
+    {
+      "spin": 9,
+      "dimension": 10,
+      "outgoing_rank_lower_bound": 10,
+      "incoming_rank_lower_bound": 0,
+      "cohomology_upper_bound": 0
+    }
+  ],
+  "products": [
+    {
+      "spin": 1,
+      "formal_highest_weight_rows": 16,
+      "minor_determinant": 957197,
+      "product_coordinates_reconstructed": 7056,
+      "incoming_rank": 331,
+      "combined_rank_lower_bound": 331,
+      "known_product_cohomology_lower_bound": 0,
+      "cohomology_upper_bound": 0,
+      "matched_incoming_minor_coordinates": 109561,
+      "known_products_exhaust_cohomology": true
+    },
+    {
+      "spin": 3,
+      "formal_highest_weight_rows": 63,
+      "minor_determinant": 308423,
+      "product_coordinates_reconstructed": 182700,
+      "incoming_rank": 1874,
+      "combined_rank_lower_bound": 1874,
+      "known_product_cohomology_lower_bound": 0,
+      "cohomology_upper_bound": 0,
+      "matched_incoming_minor_coordinates": 3511876,
+      "known_products_exhaust_cohomology": true
+    },
+    {
+      "spin": 5,
+      "formal_highest_weight_rows": 18,
+      "minor_determinant": 255595,
+      "product_coordinates_reconstructed": 56322,
+      "incoming_rank": 1066,
+      "combined_rank_lower_bound": 1070,
+      "known_product_cohomology_lower_bound": 4,
+      "cohomology_upper_bound": 4,
+      "matched_incoming_minor_coordinates": 1136356,
+      "known_products_exhaust_cohomology": true
+    },
+    {
+      "spin": 7,
+      "formal_highest_weight_rows": 0,
+      "minor_determinant": 770071,
+      "product_coordinates_reconstructed": 0,
+      "incoming_rank": 72,
+      "combined_rank_lower_bound": 72,
+      "known_product_cohomology_lower_bound": 0,
+      "cohomology_upper_bound": 0,
+      "matched_incoming_minor_coordinates": 5184,
+      "known_products_exhaust_cohomology": true
+    }
+  ],
+  "exact_closed_generators": 185,
+  "modular_highest_weight_rows": 97,
+  "rational_projected_recipes": 27,
+  "independent_source_probe_coordinates": 1308,
+  "product_coordinates_reconstructed": 246078,
+  "nonzero_determinants": 13,
+  "all_source_minor_entries_independently_reconstructed": false,
+  "all_product_values_reconstructed": true,
+  "cohomology_dimensions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0
+  ],
+  "no_new_fortuitous_family_in_this_column": true,
+  "d1_increment": 0,
+  "new_generator_increment": 0,
+  "d2_increment": 0,
+  "d3_increment": 0,
+  "np_increment": 0,
+  "driver_sha256": "cbe4f346b921875363b394cf25f8fee45953950b94130ff159a5a1a8f34f23e7",
+  "seconds": 105.68585874978453,
+  "scope": "All saved determinants, exact character dimensions, 27 rational projected source recipes and their saved dense-matrix Q0 probes; exact generator closure, modular raising equations and every generic product value. Source minors remain production data beyond the independently reconstructed probes. No quantum differential was computed."
+}

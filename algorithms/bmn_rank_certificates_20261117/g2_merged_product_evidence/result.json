@@ -1,0 +1,138 @@
+{
+  "status": "completed_merged_degree_ranks_and_generic_products",
+  "group": "G2",
+  "weights": [
+    5,
+    5,
+    5
+  ],
+  "prime": 1000003,
+  "bounds": [
+    {
+      "spin": 0,
+      "dimension": 85,
+      "outgoing_rank_lower_bound": 0,
+      "incoming_rank_lower_bound": 85,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    },
+    {
+      "spin": 1,
+      "dimension": 416,
+      "outgoing_rank_lower_bound": 85,
+      "incoming_rank_lower_bound": 331,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    },
+    {
+      "spin": 2,
+      "dimension": 1300,
+      "outgoing_rank_lower_bound": 331,
+      "incoming_rank_lower_bound": 969,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    },
+    {
+      "spin": 3,
+      "dimension": 2843,
+      "outgoing_rank_lower_bound": 969,
+      "incoming_rank_lower_bound": 1874,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    },
+    {
+      "spin": 4,
+      "dimension": 3834,
+      "outgoing_rank_lower_bound": 1874,
+      "incoming_rank_lower_bound": 1960,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    },
+    {
+      "spin": 5,
+      "dimension": 3030,
+      "outgoing_rank_lower_bound": 1960,
+      "incoming_rank_lower_bound": 1066,
+      "cohomology_upper_bound": 4,
+      "rational_zero_cohomology_certified": false
+    },
+    {
+      "spin": 6,
+      "dimension": 1387,
+      "outgoing_rank_lower_bound": 1066,
+      "incoming_rank_lower_bound": 321,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    },
+    {
+      "spin": 7,
+      "dimension": 393,
+      "outgoing_rank_lower_bound": 321,
+      "incoming_rank_lower_bound": 72,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    },
+    {
+      "spin": 8,
+      "dimension": 82,
+      "outgoing_rank_lower_bound": 72,
+      "incoming_rank_lower_bound": 10,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    },
+    {
+      "spin": 9,
+      "dimension": 10,
+      "outgoing_rank_lower_bound": 10,
+      "incoming_rank_lower_bound": 0,
+      "cohomology_upper_bound": 0,
+      "rational_zero_cohomology_certified": true
+    }
+  ],
+  "products": [
+    {
+      "spin": 1,
+      "formal_highest_weight_rows": 16,
+      "incoming_rank_lower_bound": 331,
+      "incoming_rank_upper_bound": 331,
+      "combined_rank_lower_bound": 331,
+      "known_product_cohomology_lower_bound": 0,
+      "cohomology_upper_bound": 0,
+      "known_products_exhaust_cohomology": true
+    },
+    {
+      "spin": 3,
+      "formal_highest_weight_rows": 63,
+      "incoming_rank_lower_bound": 1874,
+      "incoming_rank_upper_bound": 1874,
+      "combined_rank_lower_bound": 1874,
+      "known_product_cohomology_lower_bound": 0,
+      "cohomology_upper_bound": 0,
+      "known_products_exhaust_cohomology": true
+    },
+    {
+      "spin": 5,
+      "formal_highest_weight_rows": 18,
+      "incoming_rank_lower_bound": 1066,
+      "incoming_rank_upper_bound": 1066,
+      "combined_rank_lower_bound": 1070,
+      "known_product_cohomology_lower_bound": 4,
+      "cohomology_upper_bound": 4,
+      "known_products_exhaust_cohomology": true
+    },
+    {
+      "spin": 7,
+      "formal_highest_weight_rows": 0,
+      "incoming_rank_lower_bound": 72,
+      "incoming_rank_upper_bound": 72,
+      "combined_rank_lower_bound": 72,
+      "known_product_cohomology_lower_bound": 0,
+      "cohomology_upper_bound": 0,
+      "known_products_exhaust_cohomology": true
+    }
+  ],
+  "exact_closed_generators": 185,
+  "seconds": 88.76505805598572,
+  "driver_sha256": "ad473a99aa37ffc620d0ca5ba134e1f8d1edee9270e694aa61407a2a861ef4e5",
+  "scope": "Rational rank lower bounds and exact dimension upper bounds. Known-product quotient tests use an independent upper bound on incoming rank. No quantum differential or new-generator claim."
+}
