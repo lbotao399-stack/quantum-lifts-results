@@ -81,6 +81,7 @@ The spin label is the first coordinate of the archived BMN sector `(spin,5,5,5)`
 The production G2 algorithm is `runtime/work/sp3-native.nosync/g2_bmn_complex_v1.py`; its native trace and `Q0` evaluators are included as C++ source. The independent replay above needs no compiled native evaluator. To build the production backend on the compute host, from `runtime/work/sp3-native.nosync/`:
 
 ```sh
+c++ -O3 -std=c++17 -shared -fPIC bmn_projection_v1.cpp -o bmn_projection_v1.dylib
 c++ -O3 -std=c++17 -shared -fPIC -DTRACE_FRAME_MATRIX_SIZE=7 -DTRACE_FRAME_PRIME=1000003 bmn_derivation_rank_v1.cpp -o bmn_derivation_rank_v1_d7_p1000003.dylib
 ```
 
