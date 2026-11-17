@@ -27,6 +27,8 @@ The assembler checks source recipes, source-basis hashes, global row offsets, ev
 
 The production Q1 plan has 892 chunks of at most 32 rows. Its existing two-row checkpoints survive interrupted scheduler steps. The solver accepts `--threads` to configure FLINT's internal thread limit; this setting alone is not a measured parallel speedup.
 
+All 804 second-Q0 chunks are complete, covering 49328 source rows. At 2026-11-18 01:24:33 CST, Q1 production had 476 checkpointed rows. The actual saved first stages passed 36006 residual coordinates after moving the RHS column: one saved particular solution and one deterministic homogeneous vector were checked. The remaining free-variable count before imposing the second equation is `77639 - 18003 = 59636 = 49328 + 10308`; see `validation/actual_first_stage_compatibility.json`.
+
 ## Reproduce the independent checks
 
 Use Python 3.13 and packages built for that interpreter. Run from this directory:
@@ -61,4 +63,4 @@ Phase increments: `d1 = 0`, audited fortuitous-generator families `= 0`. Cumulat
 
 The vendored graded trace and matrix-evaluation modules originate from [davidsd/fortuity-ai](https://github.com/davidsd/fortuity-ai), retaining the imported headers and the prior upstream pin `4256f207986029540060fb44dd494746828f65ce`. This bundle adds the profile-resolved quantum maps, preservation of target frames, staged coupled assembly, and independent evidence replay. No new license is assigned to the imported snapshot.
 
-Production matrices and the coupled second-equation result remain pending. Cluster credentials and account-specific submission scripts are not included.
+The Q1 production matrices and the coupled second-equation result remain pending. Cluster credentials and account-specific submission scripts are not included.

@@ -1,6 +1,6 @@
 {
-  "status": "SU3_second_bases_complete_Q2_fully_replayed_coupled_solver_validated_maps_running",
-  "at": "2026-11-17T17:05:08.741728+00:00",
+  "status": "SU3_Q0_second_maps_complete_Q1_running_coupled_first_stages_checked",
+  "at": "2026-11-17T17:24:33.521637+00:00",
   "theory": "undeformed N=4 SYM",
   "group": "SU(3)",
   "level": 30,
@@ -43,11 +43,11 @@
   "first_homogeneous_dimension": 10308,
   "structural_Q0_couplings": 221,
   "structural_Q1_couplings": 104,
-  "Q0_complete_rows": 13568,
-  "Q0_additional_checkpointed_rows": 392,
+  "Q0_complete_rows": 49328,
+  "Q0_additional_checkpointed_rows": 0,
   "Q0_required_rows": 49328,
   "Q1_complete_rows": 256,
-  "Q1_additional_checkpointed_rows": 50,
+  "Q1_additional_checkpointed_rows": 220,
   "Q1_required_rows": 28311,
   "solver_validation": [
     "fixing_the_first_particular_solution_gives_a_false_obstruction",
@@ -64,5 +64,11 @@
   "rational_obstruction_certified": false,
   "basis_inventory_sha256": "e96aa68a7286dedc136d67a1952e3f35f5ee1e3c16bc86f92d5d0552668c0f30",
   "evidence": "algorithms/su3_second_correction_20261118/",
-  "scope": "Complete production basis saturation, full independent Q2 evaluation replay, and tested coupled assembly. The Q0/Q1 production and second coupled solve remain pending."
+  "scope": "All 94 bases and all 804 second Q0 map chunks are complete in production. Q2 evaluations were independently replayed. Actual first-stage relocation was checked on the saved particular and one homogeneous vector. Q1 production and the coupled second solve remain pending.",
+  "previous_snapshot_at": "2026-11-17T17:05:08.741728+00:00",
+  "Q0_complete_tasks": 804,
+  "Q0_production_complete": true,
+  "actual_first_stage_residual_coordinates": 36006,
+  "actual_first_stage_residual_nonzero": 0,
+  "free_variables_before_second_equation": 59636
 }

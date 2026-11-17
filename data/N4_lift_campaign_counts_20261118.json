@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
-  "phase": "SU3 second bases complete; full Q2 evaluation replay; coupled assembly validated",
+  "phase": "SU3 second bases and Q0 maps complete; Q2 fully replayed; Q1 production running",
   "increments": {
     "d1": 0,
     "fortuitous_generator_families": 0,

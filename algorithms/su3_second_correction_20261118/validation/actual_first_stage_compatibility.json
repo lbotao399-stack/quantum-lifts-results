@@ -1,0 +1,82 @@
+{
+  "status": "passed_actual_first_stage_rhs_relocation_and_affine_homogeneous_residuals",
+  "first_stages": 13,
+  "first_rank": 18003,
+  "first_homogeneous_dimension": 10308,
+  "joint_variables": 77639,
+  "free_variables_before_second_equation": 59636,
+  "verified_basis_profiles": 94,
+  "checks": [
+    {
+      "rank": 181,
+      "residual_coordinates": 362,
+      "nonzero": 0
+    },
+    {
+      "rank": 242,
+      "residual_coordinates": 484,
+      "nonzero": 0
+    },
+    {
+      "rank": 244,
+      "residual_coordinates": 488,
+      "nonzero": 0
+    },
+    {
+      "rank": 480,
+      "residual_coordinates": 960,
+      "nonzero": 0
+    },
+    {
+      "rank": 623,
+      "residual_coordinates": 1246,
+      "nonzero": 0
+    },
+    {
+      "rank": 742,
+      "residual_coordinates": 1484,
+      "nonzero": 0
+    },
+    {
+      "rank": 2187,
+      "residual_coordinates": 4374,
+      "nonzero": 0
+    },
+    {
+      "rank": 2565,
+      "residual_coordinates": 5130,
+      "nonzero": 0
+    },
+    {
+      "rank": 2643,
+      "residual_coordinates": 5286,
+      "nonzero": 0
+    },
+    {
+      "rank": 1607,
+      "residual_coordinates": 3214,
+      "nonzero": 0
+    },
+    {
+      "rank": 2354,
+      "residual_coordinates": 4708,
+      "nonzero": 0
+    },
+    {
+      "rank": 3022,
+      "residual_coordinates": 6044,
+      "nonzero": 0
+    },
+    {
+      "rank": 1113,
+      "residual_coordinates": 2226,
+      "nonzero": 0
+    }
+  ],
+  "residual_coordinates": 36006,
+  "seconds": 9.843873203964904,
+  "flint_threads": 16,
+  "driver_sha256": "e36e8f1eee202472e7e429963e55454d98f95244b56722dc721ad5b83b16863e",
+  "scope": "Actual saved first-stage compatibility with the joint variable space; second-equation production is still pending.",
+  "tested_vectors": "The saved first particular solution and one deterministic homogeneous vector; all homogeneous vectors were not enumerated."
+}
