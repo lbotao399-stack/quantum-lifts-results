@@ -1,0 +1,116 @@
+{
+  "status": "direct_highest_weight_G2_Cartan_rank_lower_bound",
+  "group": "G2",
+  "sector": [
+    3,
+    9,
+    3,
+    3
+  ],
+  "prime": 1000003,
+  "rank_lower_bound": 5,
+  "universal_source_family_sha256": "8561fcca7b7962b43fa5ef8ae339c0105a8b424e9bfabb63e0cc9228c2d0293e",
+  "source_result_sha256": "abbcd9f45c00cce137659d96692eebca465c07aa0a372c2a777e22b8f977fd9f",
+  "frames": [
+    {
+      "degree": 1,
+      "k": 3,
+      "points": 128,
+      "seed": 2026119680,
+      "columns": 384
+    },
+    {
+      "degree": 3,
+      "k": 5,
+      "points": 128,
+      "seed": 2026135518,
+      "columns": 1280
+    }
+  ],
+  "torus_certificate": {
+    "status": "rational_stable_three_form_torus_certificate",
+    "eigenvalue_weights": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "nonzero_oriented_triples": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        0,
+        3,
+        6
+      ],
+      [
+        1,
+        4,
+        6
+      ],
+      [
+        2,
+        5,
+        6
+      ]
+    ],
+    "GL7_dimension": 49,
+    "infinitesimal_orbit_rank": 35,
+    "stabilizer_dimension": 14,
+    "diagonal_stabilizer_checks": 2,
+    "interpretation": "A three-form with open GL7 orbit has connected complex stabilizer G2. These two independent diagonal matrices lie in its Lie algebra. Their eigenvalues span the rank-two torus; the trace in seven dimensions equals the six nonzero eigenvalue trace.",
+    "equation_matrix_sha256": "ef40d5ee683c4bb3e023e6efb20eb37d9a90624f9e374904d896d7765b7bf4fb"
+  },
+  "independent_matrix_trace_coordinates": 8832,
+  "minor_rows": [
+    0,
+    1,
+    51,
+    53,
+    83
+  ],
+  "minor_columns": [
+    384,
+    385,
+    387,
+    390,
+    394
+  ],
+  "minor_determinant": 304836,
+  "values_sha256": "58737b1e0901126a1621fcea11e43c4ab1c5b6c57966502249e1aad26e74b8e4",
+  "driver_sha256": "e25b883dff8e0d72ac6a0179aa92ae1c06a661d33267c218286162f16589d363",
+  "seconds": 1.1569060799956787,
+  "scope": "Direct highest-weight lower bound for the complexified G2 gauge algebra, hence over Q. Universal formal trace rows are reused without any Sp3 physical-quotient relation. No complete Cartan image or quantum obstruction is asserted."
+}

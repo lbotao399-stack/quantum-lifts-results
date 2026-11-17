@@ -1,0 +1,151 @@
+{
+  "status": "conservative_direct_highest_weight_index_gate",
+  "records": [
+    {
+      "weights": [
+        11,
+        2,
+        2
+      ],
+      "exact_parity_index": 77,
+      "rational_Cartan_product_lower_bound": 77,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 2
+    },
+    {
+      "weights": [
+        10,
+        3,
+        2
+      ],
+      "exact_parity_index": 161,
+      "rational_Cartan_product_lower_bound": 161,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        9,
+        4,
+        2
+      ],
+      "exact_parity_index": 211,
+      "rational_Cartan_product_lower_bound": 211,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        9,
+        3,
+        3
+      ],
+      "exact_parity_index": 111,
+      "rational_Cartan_product_lower_bound": 110,
+      "kernel_parity_index_upper_bound": 1,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        8,
+        5,
+        2
+      ],
+      "exact_parity_index": 192,
+      "rational_Cartan_product_lower_bound": 192,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        8,
+        4,
+        3
+      ],
+      "exact_parity_index": 183,
+      "rational_Cartan_product_lower_bound": 181,
+      "kernel_parity_index_upper_bound": 2,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        7,
+        6,
+        2
+      ],
+      "exact_parity_index": 113,
+      "rational_Cartan_product_lower_bound": 113,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        7,
+        5,
+        3
+      ],
+      "exact_parity_index": 163,
+      "rational_Cartan_product_lower_bound": 161,
+      "kernel_parity_index_upper_bound": 2,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        7,
+        4,
+        4
+      ],
+      "exact_parity_index": 87,
+      "rational_Cartan_product_lower_bound": 86,
+      "kernel_parity_index_upper_bound": 1,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        6,
+        6,
+        3
+      ],
+      "exact_parity_index": 67,
+      "rational_Cartan_product_lower_bound": 67,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        6,
+        5,
+        4
+      ],
+      "exact_parity_index": 75,
+      "rational_Cartan_product_lower_bound": 74,
+      "kernel_parity_index_upper_bound": 1,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        5,
+        5,
+        5
+      ],
+      "exact_parity_index": 12,
+      "rational_Cartan_product_lower_bound": 12,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    }
+  ],
+  "source_index_sha256": "266e102e73af8d8c53c3a70fd5b0d30494fc2a2d289c437ff27b2b9bc733b4ab",
+  "scope": "The exact Euler characteristic is reduced only by rational lower bounds of actual highest-weight closed classes with nonzero Cartan restrictions. A negative upper bound forces odd-length classical cohomology. A nonnegative value is not an exclusion and no quantum lift is inferred."
+}

@@ -1,5 +1,17 @@
 # Running computations: daily status
 
+## Verified BMN phase, November 17, 2026
+
+[Algorithm and complete replay bundle](algorithms/bmn_rank_certificates_20261117/README.md); [numerical table](data/N4_Sp3_G2_BMN_j30_direct_index_20261117.csv).
+
+- Sp(3)=USp(6) and G2 at j=30: 41 direct highest-weight product sectors per group, 12 weight columns. None of the index-minus-certified-product-rank bounds is negative. Cancelling classical classes remain unresolved by this screen.
+- Independent replay: 209 payload hashes; 62 nonzero determinants; all 121237 minor entries reconstructed; 7168 additional matrix-evaluation coordinates; 185 exact generator-closure checks; 141 modular raising rows; rational G2 torus certificate.
+- Increment in audited d1 pairings: 0; cumulative: 5. Increment in audited fortuitous-generator families: 0; cumulative: 3. Counts are scoped to the current undeformed N=4 campaign; families are counted modulo the audited products and descendants, without a global minimal-ring or absolute literature-novelty claim.
+- Certified d2 / d3 / nonperturbative lifts in undeformed N=4: 0 / 0 / 0. Orders denote supercharge obstructions.
+- Full nonabelian G2 j=30 rank refinement and the full nonabelian SU(3) j=30 second obstruction remain under calculation.
+
+## Historical snapshot, November 12, 2026
+
 Updated 2026-11-12 from the cluster harvests (A8 2026-11-12 22:33, A6 2026-11-12 22:34). Ranks are modulo p = 2^31 - 1 unless stated; blocks are labelled as in the master report. Nonzero differentials listed here are raw scan output: not yet rechecked at a second prime and not yet separated into primary classes and descendants. Full records: [data/daily/harvest_2026-11-12.json](data/daily/harvest_2026-11-12.json).
 
 ## N=4 SU(4), all letters, levels 28-30 (trace-relation count of fortuitous classes)

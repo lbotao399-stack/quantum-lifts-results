@@ -1,0 +1,151 @@
+{
+  "status": "conservative_direct_highest_weight_G2_index_gate",
+  "records": [
+    {
+      "weights": [
+        11,
+        2,
+        2
+      ],
+      "exact_parity_index": 14,
+      "rational_Cartan_product_lower_bound": 14,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 2
+    },
+    {
+      "weights": [
+        10,
+        3,
+        2
+      ],
+      "exact_parity_index": 24,
+      "rational_Cartan_product_lower_bound": 24,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        9,
+        4,
+        2
+      ],
+      "exact_parity_index": 25,
+      "rational_Cartan_product_lower_bound": 25,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        9,
+        3,
+        3
+      ],
+      "exact_parity_index": 12,
+      "rational_Cartan_product_lower_bound": 11,
+      "kernel_parity_index_upper_bound": 1,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        8,
+        5,
+        2
+      ],
+      "exact_parity_index": 20,
+      "rational_Cartan_product_lower_bound": 20,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        8,
+        4,
+        3
+      ],
+      "exact_parity_index": 19,
+      "rational_Cartan_product_lower_bound": 17,
+      "kernel_parity_index_upper_bound": 2,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        7,
+        6,
+        2
+      ],
+      "exact_parity_index": 12,
+      "rational_Cartan_product_lower_bound": 12,
+      "kernel_parity_index_upper_bound": 0,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 3
+    },
+    {
+      "weights": [
+        7,
+        5,
+        3
+      ],
+      "exact_parity_index": 21,
+      "rational_Cartan_product_lower_bound": 18,
+      "kernel_parity_index_upper_bound": 3,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        7,
+        4,
+        4
+      ],
+      "exact_parity_index": 13,
+      "rational_Cartan_product_lower_bound": 4,
+      "kernel_parity_index_upper_bound": 9,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        6,
+        6,
+        3
+      ],
+      "exact_parity_index": 11,
+      "rational_Cartan_product_lower_bound": 8,
+      "kernel_parity_index_upper_bound": 3,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        6,
+        5,
+        4
+      ],
+      "exact_parity_index": 15,
+      "rational_Cartan_product_lower_bound": 5,
+      "kernel_parity_index_upper_bound": 10,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    },
+    {
+      "weights": [
+        5,
+        5,
+        5
+      ],
+      "exact_parity_index": 4,
+      "rational_Cartan_product_lower_bound": 0,
+      "kernel_parity_index_upper_bound": 4,
+      "forced_odd_length_cohomology_lower_bound": 0,
+      "completed_product_sectors": 4
+    }
+  ],
+  "source_index_sha256": "843f6f3b70eac47cb62a029e31d2196a734b6c10adc5415f10254546a7c604b0",
+  "scope": "The exact Euler characteristic is reduced only by rational lower bounds of actual highest-weight closed classes with nonzero Cartan restrictions. A negative upper bound forces odd-length classical cohomology. A nonnegative value is not an exclusion and no quantum lift is inferred."
+}

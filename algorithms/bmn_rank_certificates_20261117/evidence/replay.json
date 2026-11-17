@@ -1,0 +1,1147 @@
+{
+  "status": "passed_all_payload_hashes_minors_and_dense_matrix_probes",
+  "payload_hashes": 209,
+  "records": [
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        10,
+        3,
+        2
+      ],
+      "rank_lower_bound": 30,
+      "minor_determinant": 144462,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        11,
+        2,
+        2
+      ],
+      "rank_lower_bound": 19,
+      "minor_determinant": 463121,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        5,
+        5,
+        5
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 704492,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 6
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        6,
+        5,
+        4
+      ],
+      "rank_lower_bound": 3,
+      "minor_determinant": 6924,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        6,
+        6,
+        3
+      ],
+      "rank_lower_bound": 3,
+      "minor_determinant": 164683,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        7,
+        4,
+        4
+      ],
+      "rank_lower_bound": 3,
+      "minor_determinant": 270970,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        7,
+        5,
+        3
+      ],
+      "rank_lower_bound": 11,
+      "minor_determinant": 609284,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        7,
+        6,
+        2
+      ],
+      "rank_lower_bound": 13,
+      "minor_determinant": 391224,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        8,
+        4,
+        3
+      ],
+      "rank_lower_bound": 13,
+      "minor_determinant": 567833,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        8,
+        5,
+        2
+      ],
+      "rank_lower_bound": 24,
+      "minor_determinant": 65811,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        9,
+        3,
+        3
+      ],
+      "rank_lower_bound": 12,
+      "minor_determinant": 157171,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        1,
+        9,
+        4,
+        2
+      ],
+      "rank_lower_bound": 29,
+      "minor_determinant": 333034,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 18
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        10,
+        3,
+        2
+      ],
+      "rank_lower_bound": 122,
+      "minor_determinant": 867321,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        11,
+        2,
+        2
+      ],
+      "rank_lower_bound": 58,
+      "minor_determinant": 237235,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        5,
+        5,
+        5
+      ],
+      "rank_lower_bound": 4,
+      "minor_determinant": 856384,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        6,
+        5,
+        4
+      ],
+      "rank_lower_bound": 36,
+      "minor_determinant": 883036,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        6,
+        6,
+        3
+      ],
+      "rank_lower_bound": 40,
+      "minor_determinant": 333448,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        7,
+        4,
+        4
+      ],
+      "rank_lower_bound": 51,
+      "minor_determinant": 614940,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        7,
+        5,
+        3
+      ],
+      "rank_lower_bound": 97,
+      "minor_determinant": 715215,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        7,
+        6,
+        2
+      ],
+      "rank_lower_bound": 82,
+      "minor_determinant": 901306,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        8,
+        4,
+        3
+      ],
+      "rank_lower_bound": 121,
+      "minor_determinant": 137782,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        8,
+        5,
+        2
+      ],
+      "rank_lower_bound": 140,
+      "minor_determinant": 428401,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        9,
+        3,
+        3
+      ],
+      "rank_lower_bound": 78,
+      "minor_determinant": 217609,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        3,
+        9,
+        4,
+        2
+      ],
+      "rank_lower_bound": 162,
+      "minor_determinant": 211965,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        10,
+        3,
+        2
+      ],
+      "rank_lower_bound": 9,
+      "minor_determinant": 924385,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "rank_lower_bound": 7,
+      "minor_determinant": 399200,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        6,
+        5,
+        4
+      ],
+      "rank_lower_bound": 34,
+      "minor_determinant": 959996,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        6,
+        6,
+        3
+      ],
+      "rank_lower_bound": 24,
+      "minor_determinant": 507159,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        7,
+        4,
+        4
+      ],
+      "rank_lower_bound": 31,
+      "minor_determinant": 204721,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        7,
+        5,
+        3
+      ],
+      "rank_lower_bound": 52,
+      "minor_determinant": 968816,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        7,
+        6,
+        2
+      ],
+      "rank_lower_bound": 18,
+      "minor_determinant": 477811,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        8,
+        4,
+        3
+      ],
+      "rank_lower_bound": 46,
+      "minor_determinant": 39784,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        8,
+        5,
+        2
+      ],
+      "rank_lower_bound": 28,
+      "minor_determinant": 601694,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        9,
+        3,
+        3
+      ],
+      "rank_lower_bound": 20,
+      "minor_determinant": 715618,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        5,
+        9,
+        4,
+        2
+      ],
+      "rank_lower_bound": 20,
+      "minor_determinant": 922864,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        7,
+        5,
+        5,
+        5
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        7,
+        6,
+        5,
+        4
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 895415,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 140
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        7,
+        6,
+        6,
+        3
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        7,
+        7,
+        4,
+        4
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 3215,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 140
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        7,
+        7,
+        5,
+        3
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 707712,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 140
+    },
+    {
+      "group": "Sp3",
+      "sector": [
+        7,
+        8,
+        4,
+        3
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 398493,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 140
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        10,
+        3,
+        2
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        11,
+        2,
+        2
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        5,
+        5,
+        5
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        6,
+        5,
+        4
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        6,
+        6,
+        3
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        7,
+        4,
+        4
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        7,
+        5,
+        3
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        7,
+        6,
+        2
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        8,
+        4,
+        3
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        8,
+        5,
+        2
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        9,
+        3,
+        3
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        1,
+        9,
+        4,
+        2
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        10,
+        3,
+        2
+      ],
+      "rank_lower_bound": 21,
+      "minor_determinant": 449340,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        11,
+        2,
+        2
+      ],
+      "rank_lower_bound": 14,
+      "minor_determinant": 133894,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        5,
+        5,
+        5
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        6,
+        5,
+        4
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        6,
+        6,
+        3
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 185217,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 26
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        7,
+        4,
+        4
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        7,
+        5,
+        3
+      ],
+      "rank_lower_bound": 2,
+      "minor_determinant": 774711,
+      "independent_rows": 2,
+      "dense_matrix_probe_coordinates": 52
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        7,
+        6,
+        2
+      ],
+      "rank_lower_bound": 7,
+      "minor_determinant": 794705,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        8,
+        4,
+        3
+      ],
+      "rank_lower_bound": 3,
+      "minor_determinant": 340845,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        8,
+        5,
+        2
+      ],
+      "rank_lower_bound": 13,
+      "minor_determinant": 865500,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        9,
+        3,
+        3
+      ],
+      "rank_lower_bound": 5,
+      "minor_determinant": 304836,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "G2",
+      "sector": [
+        3,
+        9,
+        4,
+        2
+      ],
+      "rank_lower_bound": 20,
+      "minor_determinant": 889047,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 78
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        10,
+        3,
+        2
+      ],
+      "rank_lower_bound": 3,
+      "minor_determinant": 614868,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        6,
+        5,
+        4
+      ],
+      "rank_lower_bound": 4,
+      "minor_determinant": 736596,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        6,
+        6,
+        3
+      ],
+      "rank_lower_bound": 7,
+      "minor_determinant": 998494,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        7,
+        4,
+        4
+      ],
+      "rank_lower_bound": 3,
+      "minor_determinant": 553140,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        7,
+        5,
+        3
+      ],
+      "rank_lower_bound": 15,
+      "minor_determinant": 433815,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        7,
+        6,
+        2
+      ],
+      "rank_lower_bound": 5,
+      "minor_determinant": 15946,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        8,
+        4,
+        3
+      ],
+      "rank_lower_bound": 13,
+      "minor_determinant": 624800,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        8,
+        5,
+        2
+      ],
+      "rank_lower_bound": 7,
+      "minor_determinant": 802660,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        9,
+        3,
+        3
+      ],
+      "rank_lower_bound": 6,
+      "minor_determinant": 78265,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        5,
+        9,
+        4,
+        2
+      ],
+      "rank_lower_bound": 5,
+      "minor_determinant": 737793,
+      "independent_rows": 3,
+      "dense_matrix_probe_coordinates": 204
+    },
+    {
+      "group": "G2",
+      "sector": [
+        7,
+        5,
+        5,
+        5
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        7,
+        6,
+        5,
+        4
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 31463,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 140
+    },
+    {
+      "group": "G2",
+      "sector": [
+        7,
+        6,
+        6,
+        3
+      ],
+      "rank_lower_bound": 0,
+      "minor_determinant": 1,
+      "independent_rows": 0,
+      "dense_matrix_probe_coordinates": 0
+    },
+    {
+      "group": "G2",
+      "sector": [
+        7,
+        7,
+        4,
+        4
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 48276,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 140
+    },
+    {
+      "group": "G2",
+      "sector": [
+        7,
+        7,
+        5,
+        3
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 709124,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 140
+    },
+    {
+      "group": "G2",
+      "sector": [
+        7,
+        8,
+        4,
+        3
+      ],
+      "rank_lower_bound": 1,
+      "minor_determinant": 297137,
+      "independent_rows": 1,
+      "dense_matrix_probe_coordinates": 140
+    }
+  ],
+  "rational_G2_torus_certificate": {
+    "status": "rational_stable_three_form_torus_certificate",
+    "eigenvalue_weights": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "nonzero_oriented_triples": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        0,
+        3,
+        6
+      ],
+      [
+        1,
+        4,
+        6
+      ],
+      [
+        2,
+        5,
+        6
+      ]
+    ],
+    "GL7_dimension": 49,
+    "infinitesimal_orbit_rank": 35,
+    "stabilizer_dimension": 14,
+    "diagonal_stabilizer_checks": 2,
+    "interpretation": "A three-form with open GL7 orbit has connected complex stabilizer G2. These two independent diagonal matrices lie in its Lie algebra. Their eigenvalues span the rank-two torus; the trace in seven dimensions equals the six nonzero eigenvalue trace.",
+    "equation_matrix_sha256": "ef40d5ee683c4bb3e023e6efb20eb37d9a90624f9e374904d896d7765b7bf4fb"
+  },
+  "exact_generator_closure_checks": 185,
+  "modular_raising_rows": 141,
+  "independent_dense_matrix_coordinates": 7168,
+  "full_minor_coordinates_reconstructed": 121237,
+  "all_nonzero_minor_entries_reconstructed": true,
+  "nonempty_minors": 62,
+  "driver_sha256": "d9b7f367d9aaab4304a4a80d47e91f2dfabc5647e9f0a0444f63e617a77b5911",
+  "seconds": 11.896603500004858,
+  "scope": "Every payload hash, every nonzero minor entry and determinant independently reconstructed with the dense matrix trace evaluator, production probes, exact generator closure, and selected modular raising equations."
+}

@@ -70,7 +70,7 @@
 {\small Beijing, China}\\[3pt]
 {\small $^{4}$Jefferson Physical Laboratory, Harvard University,}\\
 {\small Cambridge, Massachusetts 02138, USA}}
-\date{\small Version 20261115-172751 (Beijing time)}
+\date{\small Version 20261117 (Beijing time)}
 \begin{document}
 \maketitle
 \noindent This document is the supplementary material of the article \cite{MainArticle}. Sections, equations and statements of this supplement carry the prefix S; references without that prefix are to the article.
@@ -452,6 +452,50 @@ The label [p,p$\prime$] records independent probes at $p'=2147483629$. The label
 Check $\sum_{j=0}^nQ_jQ_{n-j}=0$ for $n\le3$. Perturbing a loop coefficient, vertex sign or projection must fail these checks.
 
 Compare the adjoint counts of $SO(3),Sp(1),SU(2)$ and of $SO(5),Sp(2)$, then compare orbit sums with full torus sums sectorwise.
+
+\subsection{Direct highest-weight product certificates}\label{sec-E-direct-products}
+
+At $j=2(E+J_L)=30$, form products of exactly $Q_0$-closed even-length trace generators and impose both flavor-raising equations on their coefficients. Evaluate the simultaneous kernel directly in highest weight. Signed Weyl differences of sampled weight-space rank lower bounds do not give certified highest-weight rank bounds.
+
+For each modular kernel row, lift its coefficients to integers and apply the rational extremal projector, the projection to highest-weight vectors constructed from the flavor raising and lowering operators. Its denominators are invertible modulo $1000003$ in these sectors. Projection preserves $Q_0$-closure and the modular row. Since Cartan restriction annihilates boundaries, a nonzero Cartan minor certifies independent rational cohomology classes.
+
+Subtract the certified rank from the exact even-minus-odd-length index. This bounds the index after quotienting by the exhibited even-length classes. A negative upper bound forces odd-length cohomology; a nonnegative bound leaves cancelling classes unresolved. The subtraction does not compute the full Cartan kernel.
+
+The triples below are (exact index, certified Cartan-product rank lower bound, difference). The highest weights label flavor representations.
+
+\begin{center}
+\small
+\begin{tabular}{@{}ccc@{}}
+\toprule
+Highest weight & $Sp(3)=USp(6)$ & $G_2$\\
+\midrule
+$(11,2,2)$ & $(77,77,0)$ & $(14,14,0)$\\
+$(10,3,2)$ & $(161,161,0)$ & $(24,24,0)$\\
+$(9,4,2)$ & $(211,211,0)$ & $(25,25,0)$\\
+$(9,3,3)$ & $(111,110,1)$ & $(12,11,1)$\\
+$(8,5,2)$ & $(192,192,0)$ & $(20,20,0)$\\
+$(8,4,3)$ & $(183,181,2)$ & $(19,17,2)$\\
+$(7,6,2)$ & $(113,113,0)$ & $(12,12,0)$\\
+$(7,5,3)$ & $(163,161,2)$ & $(21,18,3)$\\
+$(7,4,4)$ & $(87,86,1)$ & $(13,4,9)$\\
+$(6,6,3)$ & $(67,67,0)$ & $(11,8,3)$\\
+$(6,5,4)$ & $(75,74,1)$ & $(15,5,10)$\\
+$(5,5,5)$ & $(12,12,0)$ & $(4,0,4)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+There are 41 product sectors per group. Independent dense-matrix replay reconstructs every entry of 62 nonzero minors: 121237 entries, with 7168 additional probe coordinates, 185 exact generator-closure checks and 141 modular raising rows. It also verifies the rational $G_2$ torus realization. The code and 209 hashed scientific payloads are in \href{https://github.com/lbotao399-stack/quantum-lifts-results/tree/main/algorithms/bmn_rank_certificates_20261117}{the reproducible certificate bundle}. This phase adds no fortuitous generator or quantum lift.
+
+For subsequent nonabelian enumeration, retain independent projected source recipes and their $Q_0$ images even when a source basis is incomplete. The resulting nonzero minors give rational lower bounds for both adjacent maps. Together with the exact character dimension they give
+\begin{equation*}
+\begin{aligned}
+\dim H^Y(Q_0)\leq {}&\dim C^Y\\
+&-\bigl(\text{lower bound for }\operatorname{rank}(Q_0:C^{Y-1}\to C^Y)\bigr)\\
+&-\bigl(\text{lower bound for }\operatorname{rank}(Q_0:C^Y\to C^{Y+1})\bigr).
+\end{aligned}
+\end{equation*}
+Zero certifies an empty sector before either source basis has to be completed. A positive remainder is only an upper bound.
 
 \subsection{A worked chain}\label{sec-E-chain}
 

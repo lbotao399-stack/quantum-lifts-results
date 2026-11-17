@@ -1,0 +1,64 @@
+{
+  "status": "direct_highest_weight_Cartan_rank_lower_bound",
+  "group": "Sp(3)",
+  "sector": [
+    5,
+    5,
+    5,
+    5
+  ],
+  "prime": 1000003,
+  "rank_lower_bound": 7,
+  "weight_products": 927,
+  "highest_weight_product_rows": 18,
+  "exact_closed_generators": 185,
+  "frames": [
+    {
+      "degree": 1,
+      "k": 3,
+      "points": 128,
+      "seed": 2026119680,
+      "columns": 384
+    },
+    {
+      "degree": 3,
+      "k": 5,
+      "points": 128,
+      "seed": 2026135518,
+      "columns": 1280
+    },
+    {
+      "degree": 5,
+      "k": 7,
+      "points": 128,
+      "seed": 2026151356,
+      "columns": 2688
+    }
+  ],
+  "independent_matrix_trace_coordinates": 19968,
+  "minor_rows": [
+    0,
+    2,
+    3,
+    6,
+    8,
+    9,
+    15
+  ],
+  "minor_columns": [
+    0,
+    1,
+    384,
+    385,
+    386,
+    387,
+    1664
+  ],
+  "minor_determinant": 399200,
+  "family_sha256": "b6dff4e0c3e2795d97735b453dc4aba93ce713b7e9a6381f933c829480d2a180",
+  "values_sha256": "b7fc61788421489ac4f6c5a170832b0c212fb70880b5a4f940bfec9fe782f440",
+  "driver_sha256": "d4509c3f405c950d22f8c174b92e2097b1e6b8ea181d2fe3a668eba6147f8ac6",
+  "seconds": 12.846792291849852,
+  "rational_bridge": "Integer products are exactly Q0 closed. Apply the pinned rational extremal projector to integer lifts of modular product-kernel rows. It preserves closure and their mod-p reductions; its elementary denominators are below the prime. Cartan restriction kills Q0 boundaries.",
+  "scope": "A lower bound on independent rational closed products, obtained directly in highest weight. No signed difference of sampled ranks, cohomology completeness, or quantum lift is inferred."
+}

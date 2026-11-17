@@ -1,0 +1,9468 @@
+{
+  "status": "complete_exact_integer_parity_index_gate",
+  "group": "G2",
+  "levels": [
+    {
+      "level": 28,
+      "columns": [
+        {
+          "weights": [
+            14,
+            0,
+            0
+          ],
+          "euler_characteristic": 3,
+          "even_minus_odd_length_index": 3,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                14,
+                0,
+                0
+              ],
+              "dimension": 3,
+              "by_fermions": {
+                "0": 3
+              }
+            },
+            {
+              "sector": [
+                1,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                2,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                3,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                4,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                14,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            13,
+            1,
+            0
+          ],
+          "euler_characteristic": 2,
+          "even_minus_odd_length_index": 2,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                13,
+                1,
+                0
+              ],
+              "dimension": 2,
+              "by_fermions": {
+                "0": 2
+              }
+            },
+            {
+              "sector": [
+                1,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                2,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                3,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                4,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                13,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            12,
+            2,
+            0
+          ],
+          "euler_characteristic": 3,
+          "even_minus_odd_length_index": 3,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                12,
+                2,
+                0
+              ],
+              "dimension": 12,
+              "by_fermions": {
+                "0": 12
+              }
+            },
+            {
+              "sector": [
+                1,
+                12,
+                2,
+                0
+              ],
+              "dimension": 10,
+              "by_fermions": {
+                "1": 10
+              }
+            },
+            {
+              "sector": [
+                2,
+                12,
+                2,
+                0
+              ],
+              "dimension": 1,
+              "by_fermions": {
+                "2": 1
+              }
+            },
+            {
+              "sector": [
+                3,
+                12,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                4,
+                12,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                12,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                12,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                12,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                12,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                12,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            12,
+            1,
+            1
+          ],
+          "euler_characteristic": 8,
+          "even_minus_odd_length_index": 8,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                12,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                1,
+                12,
+                1,
+                1
+              ],
+              "dimension": 10,
+              "by_fermions": {
+                "1": 10
+              }
+            },
+            {
+              "sector": [
+                2,
+                12,
+                1,
+                1
+              ],
+              "dimension": 18,
+              "by_fermions": {
+                "2": 14,
+                "0": 4
+              }
+            },
+            {
+              "sector": [
+                3,
+                12,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                4,
+                12,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                12,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                12,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                12,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                12,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                12,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            11,
+            3,
+            0
+          ],
+          "euler_characteristic": 3,
+          "even_minus_odd_length_index": 3,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                11,
+                3,
+                0
+              ],
+              "dimension": 11,
+              "by_fermions": {
+                "0": 11
+              }
+            },
+            {
+              "sector": [
+                1,
+                11,
+                3,
+                0
+              ],
+              "dimension": 20,
+              "by_fermions": {
+                "1": 20
+              }
+            },
+            {
+              "sector": [
+                2,
+                11,
+                3,
+                0
+              ],
+              "dimension": 29,
+              "by_fermions": {
+                "2": 29
+              }
+            },
+            {
+              "sector": [
+                3,
+                11,
+                3,
+                0
+              ],
+              "dimension": 17,
+              "by_fermions": {
+                "3": 17
+              }
+            },
+            {
+              "sector": [
+                4,
+                11,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                11,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                11,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                11,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                11,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                11,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            11,
+            2,
+            1
+          ],
+          "euler_characteristic": 12,
+          "even_minus_odd_length_index": 12,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                11,
+                2,
+                1
+              ],
+              "dimension": 19,
+              "by_fermions": {
+                "0": 19
+              }
+            },
+            {
+              "sector": [
+                1,
+                11,
+                2,
+                1
+              ],
+              "dimension": 68,
+              "by_fermions": {
+                "1": 68
+              }
+            },
+            {
+              "sector": [
+                2,
+                11,
+                2,
+                1
+              ],
+              "dimension": 87,
+              "by_fermions": {
+                "2": 76,
+                "0": 11
+              }
+            },
+            {
+              "sector": [
+                3,
+                11,
+                2,
+                1
+              ],
+              "dimension": 26,
+              "by_fermions": {
+                "3": 18,
+                "1": 8
+              }
+            },
+            {
+              "sector": [
+                4,
+                11,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                11,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                11,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                11,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                11,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                11,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            10,
+            4,
+            0
+          ],
+          "euler_characteristic": 3,
+          "even_minus_odd_length_index": 3,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                10,
+                4,
+                0
+              ],
+              "dimension": 32,
+              "by_fermions": {
+                "0": 32
+              }
+            },
+            {
+              "sector": [
+                1,
+                10,
+                4,
+                0
+              ],
+              "dimension": 59,
+              "by_fermions": {
+                "1": 59
+              }
+            },
+            {
+              "sector": [
+                2,
+                10,
+                4,
+                0
+              ],
+              "dimension": 67,
+              "by_fermions": {
+                "2": 67
+              }
+            },
+            {
+              "sector": [
+                3,
+                10,
+                4,
+                0
+              ],
+              "dimension": 50,
+              "by_fermions": {
+                "3": 50
+              }
+            },
+            {
+              "sector": [
+                4,
+                10,
+                4,
+                0
+              ],
+              "dimension": 13,
+              "by_fermions": {
+                "4": 13
+              }
+            },
+            {
+              "sector": [
+                5,
+                10,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                10,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                10,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                10,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                10,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            10,
+            3,
+            1
+          ],
+          "euler_characteristic": 15,
+          "even_minus_odd_length_index": 15,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                10,
+                3,
+                1
+              ],
+              "dimension": 40,
+              "by_fermions": {
+                "0": 40
+              }
+            },
+            {
+              "sector": [
+                1,
+                10,
+                3,
+                1
+              ],
+              "dimension": 202,
+              "by_fermions": {
+                "1": 202
+              }
+            },
+            {
+              "sector": [
+                2,
+                10,
+                3,
+                1
+              ],
+              "dimension": 368,
+              "by_fermions": {
+                "2": 337,
+                "0": 31
+              }
+            },
+            {
+              "sector": [
+                3,
+                10,
+                3,
+                1
+              ],
+              "dimension": 235,
+              "by_fermions": {
+                "3": 187,
+                "1": 48
+              }
+            },
+            {
+              "sector": [
+                4,
+                10,
+                3,
+                1
+              ],
+              "dimension": 44,
+              "by_fermions": {
+                "4": 23,
+                "2": 21
+              }
+            },
+            {
+              "sector": [
+                5,
+                10,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                10,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                10,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                10,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                10,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            10,
+            2,
+            2
+          ],
+          "euler_characteristic": 12,
+          "even_minus_odd_length_index": 12,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                10,
+                2,
+                2
+              ],
+              "dimension": 57,
+              "by_fermions": {
+                "0": 57
+              }
+            },
+            {
+              "sector": [
+                1,
+                10,
+                2,
+                2
+              ],
+              "dimension": 161,
+              "by_fermions": {
+                "1": 161
+              }
+            },
+            {
+              "sector": [
+                2,
+                10,
+                2,
+                2
+              ],
+              "dimension": 213,
+              "by_fermions": {
+                "2": 194,
+                "0": 19
+              }
+            },
+            {
+              "sector": [
+                3,
+                10,
+                2,
+                2
+              ],
+              "dimension": 179,
+              "by_fermions": {
+                "3": 123,
+                "1": 56
+              }
+            },
+            {
+              "sector": [
+                4,
+                10,
+                2,
+                2
+              ],
+              "dimension": 82,
+              "by_fermions": {
+                "4": 39,
+                "2": 32,
+                "0": 11
+              }
+            },
+            {
+              "sector": [
+                5,
+                10,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                10,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                10,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                10,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                10,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            9,
+            5,
+            0
+          ],
+          "euler_characteristic": 1,
+          "even_minus_odd_length_index": 1,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                9,
+                5,
+                0
+              ],
+              "dimension": 20,
+              "by_fermions": {
+                "0": 20
+              }
+            },
+            {
+              "sector": [
+                1,
+                9,
+                5,
+                0
+              ],
+              "dimension": 72,
+              "by_fermions": {
+                "1": 72
+              }
+            },
+            {
+              "sector": [
+                2,
+                9,
+                5,
+                0
+              ],
+              "dimension": 143,
+              "by_fermions": {
+                "2": 143
+              }
+            },
+            {
+              "sector": [
+                3,
+                9,
+                5,
+                0
+              ],
+              "dimension": 135,
+              "by_fermions": {
+                "3": 135
+              }
+            },
+            {
+              "sector": [
+                4,
+                9,
+                5,
+                0
+              ],
+              "dimension": 47,
+              "by_fermions": {
+                "4": 47
+              }
+            },
+            {
+              "sector": [
+                5,
+                9,
+                5,
+                0
+              ],
+              "dimension": 2,
+              "by_fermions": {
+                "5": 2
+              }
+            },
+            {
+              "sector": [
+                6,
+                9,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                9,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                9,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                9,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            9,
+            4,
+            1
+          ],
+          "euler_characteristic": 12,
+          "even_minus_odd_length_index": 12,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                9,
+                4,
+                1
+              ],
+              "dimension": 82,
+              "by_fermions": {
+                "0": 82
+              }
+            },
+            {
+              "sector": [
+                1,
+                9,
+                4,
+                1
+              ],
+              "dimension": 405,
+              "by_fermions": {
+                "1": 405
+              }
+            },
+            {
+              "sector": [
+                2,
+                9,
+                4,
+                1
+              ],
+              "dimension": 816,
+              "by_fermions": {
+                "2": 765,
+                "0": 51
+              }
+            },
+            {
+              "sector": [
+                3,
+                9,
+                4,
+                1
+              ],
+              "dimension": 747,
+              "by_fermions": {
+                "3": 627,
+                "1": 120
+              }
+            },
+            {
+              "sector": [
+                4,
+                9,
+                4,
+                1
+              ],
+              "dimension": 333,
+              "by_fermions": {
+                "4": 224,
+                "2": 109
+              }
+            },
+            {
+              "sector": [
+                5,
+                9,
+                4,
+                1
+              ],
+              "dimension": 67,
+              "by_fermions": {
+                "5": 31,
+                "3": 36
+              }
+            },
+            {
+              "sector": [
+                6,
+                9,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                9,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                9,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                9,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            9,
+            3,
+            2
+          ],
+          "euler_characteristic": 19,
+          "even_minus_odd_length_index": 19,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                9,
+                3,
+                2
+              ],
+              "dimension": 101,
+              "by_fermions": {
+                "0": 101
+              }
+            },
+            {
+              "sector": [
+                1,
+                9,
+                3,
+                2
+              ],
+              "dimension": 546,
+              "by_fermions": {
+                "1": 546
+              }
+            },
+            {
+              "sector": [
+                2,
+                9,
+                3,
+                2
+              ],
+              "dimension": 1210,
+              "by_fermions": {
+                "2": 1112,
+                "0": 98
+              }
+            },
+            {
+              "sector": [
+                3,
+                9,
+                3,
+                2
+              ],
+              "dimension": 1271,
+              "by_fermions": {
+                "3": 964,
+                "1": 307
+              }
+            },
+            {
+              "sector": [
+                4,
+                9,
+                3,
+                2
+              ],
+              "dimension": 630,
+              "by_fermions": {
+                "4": 328,
+                "2": 281,
+                "0": 21
+              }
+            },
+            {
+              "sector": [
+                5,
+                9,
+                3,
+                2
+              ],
+              "dimension": 105,
+              "by_fermions": {
+                "5": 29,
+                "3": 63,
+                "1": 13
+              }
+            },
+            {
+              "sector": [
+                6,
+                9,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                9,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                9,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            8,
+            6,
+            0
+          ],
+          "euler_characteristic": 1,
+          "even_minus_odd_length_index": 1,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                8,
+                6,
+                0
+              ],
+              "dimension": 35,
+              "by_fermions": {
+                "0": 35
+              }
+            },
+            {
+              "sector": [
+                1,
+                8,
+                6,
+                0
+              ],
+              "dimension": 87,
+              "by_fermions": {
+                "1": 87
+              }
+            },
+            {
+              "sector": [
+                2,
+                8,
+                6,
+                0
+              ],
+              "dimension": 132,
+              "by_fermions": {
+                "2": 132
+              }
+            },
+            {
+              "sector": [
+                3,
+                8,
+                6,
+                0
+              ],
+              "dimension": 141,
+              "by_fermions": {
+                "3": 141
+              }
+            },
+            {
+              "sector": [
+                4,
+                8,
+                6,
+                0
+              ],
+              "dimension": 82,
+              "by_fermions": {
+                "4": 82
+              }
+            },
+            {
+              "sector": [
+                5,
+                8,
+                6,
+                0
+              ],
+              "dimension": 22,
+              "by_fermions": {
+                "5": 22
+              }
+            },
+            {
+              "sector": [
+                6,
+                8,
+                6,
+                0
+              ],
+              "dimension": 2,
+              "by_fermions": {
+                "6": 2
+              }
+            },
+            {
+              "sector": [
+                7,
+                8,
+                6,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                8,
+                6,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                8,
+                6,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            8,
+            5,
+            1
+          ],
+          "euler_characteristic": 7,
+          "even_minus_odd_length_index": 7,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                8,
+                5,
+                1
+              ],
+              "dimension": 89,
+              "by_fermions": {
+                "0": 89
+              }
+            },
+            {
+              "sector": [
+                1,
+                8,
+                5,
+                1
+              ],
+              "dimension": 518,
+              "by_fermions": {
+                "1": 518
+              }
+            },
+            {
+              "sector": [
+                2,
+                8,
+                5,
+                1
+              ],
+              "dimension": 1202,
+              "by_fermions": {
+                "2": 1136,
+                "0": 66
+              }
+            },
+            {
+              "sector": [
+                3,
+                8,
+                5,
+                1
+              ],
+              "dimension": 1324,
+              "by_fermions": {
+                "3": 1138,
+                "1": 186
+              }
+            },
+            {
+              "sector": [
+                4,
+                8,
+                5,
+                1
+              ],
+              "dimension": 772,
+              "by_fermions": {
+                "4": 558,
+                "2": 214
+              }
+            },
+            {
+              "sector": [
+                5,
+                8,
+                5,
+                1
+              ],
+              "dimension": 248,
+              "by_fermions": {
+                "5": 135,
+                "3": 113
+              }
+            },
+            {
+              "sector": [
+                6,
+                8,
+                5,
+                1
+              ],
+              "dimension": 34,
+              "by_fermions": {
+                "6": 13,
+                "4": 21
+              }
+            },
+            {
+              "sector": [
+                7,
+                8,
+                5,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                8,
+                5,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                8,
+                5,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            8,
+            4,
+            2
+          ],
+          "euler_characteristic": 20,
+          "even_minus_odd_length_index": 20,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                8,
+                4,
+                2
+              ],
+              "dimension": 222,
+              "by_fermions": {
+                "0": 222
+              }
+            },
+            {
+              "sector": [
+                1,
+                8,
+                4,
+                2
+              ],
+              "dimension": 1107,
+              "by_fermions": {
+                "1": 1107
+              }
+            },
+            {
+              "sector": [
+                2,
+                8,
+                4,
+                2
+              ],
+              "dimension": 2597,
+              "by_fermions": {
+                "2": 2424,
+                "0": 173
+              }
+            },
+            {
+              "sector": [
+                3,
+                8,
+                4,
+                2
+              ],
+              "dimension": 3368,
+              "by_fermions": {
+                "3": 2660,
+                "1": 708
+              }
+            },
+            {
+              "sector": [
+                4,
+                8,
+                4,
+                2
+              ],
+              "dimension": 2399,
+              "by_fermions": {
+                "4": 1405,
+                "2": 930,
+                "0": 64
+              }
+            },
+            {
+              "sector": [
+                5,
+                8,
+                4,
+                2
+              ],
+              "dimension": 811,
+              "by_fermions": {
+                "5": 297,
+                "3": 436,
+                "1": 78
+              }
+            },
+            {
+              "sector": [
+                6,
+                8,
+                4,
+                2
+              ],
+              "dimension": 88,
+              "by_fermions": {
+                "6": 12,
+                "4": 53,
+                "2": 23
+              }
+            },
+            {
+              "sector": [
+                7,
+                8,
+                4,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                8,
+                4,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                8,
+                4,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            8,
+            3,
+            3
+          ],
+          "euler_characteristic": 9,
+          "even_minus_odd_length_index": 9,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                8,
+                3,
+                3
+              ],
+              "dimension": 71,
+              "by_fermions": {
+                "0": 71
+              }
+            },
+            {
+              "sector": [
+                1,
+                8,
+                3,
+                3
+              ],
+              "dimension": 623,
+              "by_fermions": {
+                "1": 623
+              }
+            },
+            {
+              "sector": [
+                2,
+                8,
+                3,
+                3
+              ],
+              "dimension": 1787,
+              "by_fermions": {
+                "2": 1642,
+                "0": 145
+              }
+            },
+            {
+              "sector": [
+                3,
+                8,
+                3,
+                3
+              ],
+              "dimension": 2298,
+              "by_fermions": {
+                "3": 1757,
+                "1": 541
+              }
+            },
+            {
+              "sector": [
+                4,
+                8,
+                3,
+                3
+              ],
+              "dimension": 1516,
+              "by_fermions": {
+                "4": 794,
+                "2": 688,
+                "0": 34
+              }
+            },
+            {
+              "sector": [
+                5,
+                8,
+                3,
+                3
+              ],
+              "dimension": 565,
+              "by_fermions": {
+                "5": 159,
+                "3": 315,
+                "1": 91
+              }
+            },
+            {
+              "sector": [
+                6,
+                8,
+                3,
+                3
+              ],
+              "dimension": 121,
+              "by_fermions": {
+                "6": 20,
+                "4": 45,
+                "2": 47,
+                "0": 9
+              }
+            },
+            {
+              "sector": [
+                7,
+                8,
+                3,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                8,
+                3,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                8,
+                3,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            7,
+            7,
+            0
+          ],
+          "euler_characteristic": 1,
+          "even_minus_odd_length_index": 1,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                7,
+                7,
+                0
+              ],
+              "dimension": 1,
+              "by_fermions": {
+                "0": 1
+              }
+            },
+            {
+              "sector": [
+                1,
+                7,
+                7,
+                0
+              ],
+              "dimension": 21,
+              "by_fermions": {
+                "1": 21
+              }
+            },
+            {
+              "sector": [
+                2,
+                7,
+                7,
+                0
+              ],
+              "dimension": 81,
+              "by_fermions": {
+                "2": 81
+              }
+            },
+            {
+              "sector": [
+                3,
+                7,
+                7,
+                0
+              ],
+              "dimension": 91,
+              "by_fermions": {
+                "3": 91
+              }
+            },
+            {
+              "sector": [
+                4,
+                7,
+                7,
+                0
+              ],
+              "dimension": 36,
+              "by_fermions": {
+                "4": 36
+              }
+            },
+            {
+              "sector": [
+                5,
+                7,
+                7,
+                0
+              ],
+              "dimension": 7,
+              "by_fermions": {
+                "5": 7
+              }
+            },
+            {
+              "sector": [
+                6,
+                7,
+                7,
+                0
+              ],
+              "dimension": 2,
+              "by_fermions": {
+                "6": 2
+              }
+            },
+            {
+              "sector": [
+                7,
+                7,
+                7,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                7,
+                7,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                7,
+                7,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            7,
+            6,
+            1
+          ],
+          "euler_characteristic": 5,
+          "even_minus_odd_length_index": 5,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                7,
+                6,
+                1
+              ],
+              "dimension": 68,
+              "by_fermions": {
+                "0": 68
+              }
+            },
+            {
+              "sector": [
+                1,
+                7,
+                6,
+                1
+              ],
+              "dimension": 388,
+              "by_fermions": {
+                "1": 388
+              }
+            },
+            {
+              "sector": [
+                2,
+                7,
+                6,
+                1
+              ],
+              "dimension": 943,
+              "by_fermions": {
+                "2": 895,
+                "0": 48
+              }
+            },
+            {
+              "sector": [
+                3,
+                7,
+                6,
+                1
+              ],
+              "dimension": 1153,
+              "by_fermions": {
+                "3": 1004,
+                "1": 149
+              }
+            },
+            {
+              "sector": [
+                4,
+                7,
+                6,
+                1
+              ],
+              "dimension": 805,
+              "by_fermions": {
+                "4": 599,
+                "2": 206
+              }
+            },
+            {
+              "sector": [
+                5,
+                7,
+                6,
+                1
+              ],
+              "dimension": 330,
+              "by_fermions": {
+                "5": 192,
+                "3": 138
+              }
+            },
+            {
+              "sector": [
+                6,
+                7,
+                6,
+                1
+              ],
+              "dimension": 63,
+              "by_fermions": {
+                "6": 25,
+                "4": 38
+              }
+            },
+            {
+              "sector": [
+                7,
+                7,
+                6,
+                1
+              ],
+              "dimension": 3,
+              "by_fermions": {
+                "5": 3
+              }
+            },
+            {
+              "sector": [
+                8,
+                7,
+                6,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                7,
+                6,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            7,
+            5,
+            2
+          ],
+          "euler_characteristic": 16,
+          "even_minus_odd_length_index": 16,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                7,
+                5,
+                2
+              ],
+              "dimension": 174,
+              "by_fermions": {
+                "0": 174
+              }
+            },
+            {
+              "sector": [
+                1,
+                7,
+                5,
+                2
+              ],
+              "dimension": 1190,
+              "by_fermions": {
+                "1": 1190
+              }
+            },
+            {
+              "sector": [
+                2,
+                7,
+                5,
+                2
+              ],
+              "dimension": 3329,
+              "by_fermions": {
+                "2": 3114,
+                "0": 215
+              }
+            },
+            {
+              "sector": [
+                3,
+                7,
+                5,
+                2
+              ],
+              "dimension": 4757,
+              "by_fermions": {
+                "3": 3845,
+                "1": 912
+              }
+            },
+            {
+              "sector": [
+                4,
+                7,
+                5,
+                2
+              ],
+              "dimension": 3785,
+              "by_fermions": {
+                "4": 2343,
+                "2": 1390,
+                "0": 52
+              }
+            },
+            {
+              "sector": [
+                5,
+                7,
+                5,
+                2
+              ],
+              "dimension": 1669,
+              "by_fermions": {
+                "5": 665,
+                "3": 894,
+                "1": 110
+              }
+            },
+            {
+              "sector": [
+                6,
+                7,
+                5,
+                2
+              ],
+              "dimension": 388,
+              "by_fermions": {
+                "6": 73,
+                "4": 226,
+                "2": 89
+              }
+            },
+            {
+              "sector": [
+                7,
+                7,
+                5,
+                2
+              ],
+              "dimension": 44,
+              "by_fermions": {
+                "7": 3,
+                "5": 16,
+                "3": 25
+              }
+            },
+            {
+              "sector": [
+                8,
+                7,
+                5,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                7,
+                5,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            7,
+            4,
+            3
+          ],
+          "euler_characteristic": 18,
+          "even_minus_odd_length_index": 18,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                7,
+                4,
+                3
+              ],
+              "dimension": 204,
+              "by_fermions": {
+                "0": 204
+              }
+            },
+            {
+              "sector": [
+                1,
+                7,
+                4,
+                3
+              ],
+              "dimension": 1409,
+              "by_fermions": {
+                "1": 1409
+              }
+            },
+            {
+              "sector": [
+                2,
+                7,
+                4,
+                3
+              ],
+              "dimension": 4105,
+              "by_fermions": {
+                "2": 3813,
+                "0": 292
+              }
+            },
+            {
+              "sector": [
+                3,
+                7,
+                4,
+                3
+              ],
+              "dimension": 6288,
+              "by_fermions": {
+                "3": 4910,
+                "1": 1378
+              }
+            },
+            {
+              "sector": [
+                4,
+                7,
+                4,
+                3
+              ],
+              "dimension": 5483,
+              "by_fermions": {
+                "4": 3076,
+                "2": 2282,
+                "0": 125
+              }
+            },
+            {
+              "sector": [
+                5,
+                7,
+                4,
+                3
+              ],
+              "dimension": 2717,
+              "by_fermions": {
+                "5": 872,
+                "3": 1506,
+                "1": 339
+              }
+            },
+            {
+              "sector": [
+                6,
+                7,
+                4,
+                3
+              ],
+              "dimension": 701,
+              "by_fermions": {
+                "6": 88,
+                "4": 350,
+                "2": 244,
+                "0": 19
+              }
+            },
+            {
+              "sector": [
+                7,
+                7,
+                4,
+                3
+              ],
+              "dimension": 61,
+              "by_fermions": {
+                "5": 17,
+                "3": 34,
+                "1": 10
+              }
+            },
+            {
+              "sector": [
+                8,
+                7,
+                4,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                7,
+                4,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            6,
+            6,
+            2
+          ],
+          "euler_characteristic": 7,
+          "even_minus_odd_length_index": 7,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                6,
+                6,
+                2
+              ],
+              "dimension": 121,
+              "by_fermions": {
+                "0": 121
+              }
+            },
+            {
+              "sector": [
+                1,
+                6,
+                6,
+                2
+              ],
+              "dimension": 583,
+              "by_fermions": {
+                "1": 583
+              }
+            },
+            {
+              "sector": [
+                2,
+                6,
+                6,
+                2
+              ],
+              "dimension": 1469,
+              "by_fermions": {
+                "2": 1384,
+                "0": 85
+              }
+            },
+            {
+              "sector": [
+                3,
+                6,
+                6,
+                2
+              ],
+              "dimension": 2275,
+              "by_fermions": {
+                "3": 1849,
+                "1": 426
+              }
+            },
+            {
+              "sector": [
+                4,
+                6,
+                6,
+                2
+              ],
+              "dimension": 2115,
+              "by_fermions": {
+                "4": 1334,
+                "2": 736,
+                "0": 45
+              }
+            },
+            {
+              "sector": [
+                5,
+                6,
+                6,
+                2
+              ],
+              "dimension": 1080,
+              "by_fermions": {
+                "5": 461,
+                "3": 544,
+                "1": 75
+              }
+            },
+            {
+              "sector": [
+                6,
+                6,
+                6,
+                2
+              ],
+              "dimension": 272,
+              "by_fermions": {
+                "6": 54,
+                "4": 172,
+                "2": 46
+              }
+            },
+            {
+              "sector": [
+                7,
+                6,
+                6,
+                2
+              ],
+              "dimension": 34,
+              "by_fermions": {
+                "5": 19,
+                "3": 15
+              }
+            },
+            {
+              "sector": [
+                8,
+                6,
+                6,
+                2
+              ],
+              "dimension": 2,
+              "by_fermions": {
+                "4": 2
+              }
+            },
+            {
+              "sector": [
+                9,
+                6,
+                6,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            6,
+            5,
+            3
+          ],
+          "euler_characteristic": 16,
+          "even_minus_odd_length_index": 16,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                6,
+                5,
+                3
+              ],
+              "dimension": 163,
+              "by_fermions": {
+                "0": 163
+              }
+            },
+            {
+              "sector": [
+                1,
+                6,
+                5,
+                3
+              ],
+              "dimension": 1292,
+              "by_fermions": {
+                "1": 1292
+              }
+            },
+            {
+              "sector": [
+                2,
+                6,
+                5,
+                3
+              ],
+              "dimension": 4063,
+              "by_fermions": {
+                "2": 3781,
+                "0": 282
+              }
+            },
+            {
+              "sector": [
+                3,
+                6,
+                5,
+                3
+              ],
+              "dimension": 6665,
+              "by_fermions": {
+                "3": 5260,
+                "1": 1405
+              }
+            },
+            {
+              "sector": [
+                4,
+                6,
+                5,
+                3
+              ],
+              "dimension": 6370,
+              "by_fermions": {
+                "4": 3678,
+                "2": 2570,
+                "0": 122
+              }
+            },
+            {
+              "sector": [
+                5,
+                6,
+                5,
+                3
+              ],
+              "dimension": 3655,
+              "by_fermions": {
+                "5": 1232,
+                "3": 2023,
+                "1": 400
+              }
+            },
+            {
+              "sector": [
+                6,
+                6,
+                5,
+                3
+              ],
+              "dimension": 1221,
+              "by_fermions": {
+                "6": 164,
+                "4": 642,
+                "2": 392,
+                "0": 23
+              }
+            },
+            {
+              "sector": [
+                7,
+                6,
+                5,
+                3
+              ],
+              "dimension": 196,
+              "by_fermions": {
+                "7": 4,
+                "5": 57,
+                "3": 111,
+                "1": 24
+              }
+            },
+            {
+              "sector": [
+                8,
+                6,
+                5,
+                3
+              ],
+              "dimension": 7,
+              "by_fermions": {
+                "4": 2,
+                "2": 5
+              }
+            },
+            {
+              "sector": [
+                9,
+                6,
+                5,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            6,
+            4,
+            4
+          ],
+          "euler_characteristic": 12,
+          "even_minus_odd_length_index": 12,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                6,
+                4,
+                4
+              ],
+              "dimension": 152,
+              "by_fermions": {
+                "0": 152
+              }
+            },
+            {
+              "sector": [
+                1,
+                6,
+                4,
+                4
+              ],
+              "dimension": 822,
+              "by_fermions": {
+                "1": 822
+              }
+            },
+            {
+              "sector": [
+                2,
+                6,
+                4,
+                4
+              ],
+              "dimension": 2372,
+              "by_fermions": {
+                "2": 2217,
+                "0": 155
+              }
+            },
+            {
+              "sector": [
+                3,
+                6,
+                4,
+                4
+              ],
+              "dimension": 4281,
+              "by_fermions": {
+                "3": 3331,
+                "1": 950
+              }
+            },
+            {
+              "sector": [
+                4,
+                6,
+                4,
+                4
+              ],
+              "dimension": 4622,
+              "by_fermions": {
+                "4": 2568,
+                "2": 1919,
+                "0": 135
+              }
+            },
+            {
+              "sector": [
+                5,
+                6,
+                4,
+                4
+              ],
+              "dimension": 2768,
+              "by_fermions": {
+                "5": 858,
+                "3": 1544,
+                "1": 366
+              }
+            },
+            {
+              "sector": [
+                6,
+                6,
+                4,
+                4
+              ],
+              "dimension": 865,
+              "by_fermions": {
+                "6": 81,
+                "4": 451,
+                "2": 316,
+                "0": 17
+              }
+            },
+            {
+              "sector": [
+                7,
+                6,
+                4,
+                4
+              ],
+              "dimension": 150,
+              "by_fermions": {
+                "5": 33,
+                "3": 83,
+                "1": 34
+              }
+            },
+            {
+              "sector": [
+                8,
+                6,
+                4,
+                4
+              ],
+              "dimension": 22,
+              "by_fermions": {
+                "4": 8,
+                "2": 9,
+                "0": 5
+              }
+            },
+            {
+              "sector": [
+                9,
+                6,
+                4,
+                4
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            5,
+            5,
+            4
+          ],
+          "euler_characteristic": 7,
+          "even_minus_odd_length_index": 7,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                5,
+                5,
+                4
+              ],
+              "dimension": 46,
+              "by_fermions": {
+                "0": 46
+              }
+            },
+            {
+              "sector": [
+                1,
+                5,
+                5,
+                4
+              ],
+              "dimension": 504,
+              "by_fermions": {
+                "1": 504
+              }
+            },
+            {
+              "sector": [
+                2,
+                5,
+                5,
+                4
+              ],
+              "dimension": 1802,
+              "by_fermions": {
+                "2": 1668,
+                "0": 134
+              }
+            },
+            {
+              "sector": [
+                3,
+                5,
+                5,
+                4
+              ],
+              "dimension": 3209,
+              "by_fermions": {
+                "3": 2508,
+                "1": 701
+              }
+            },
+            {
+              "sector": [
+                4,
+                5,
+                5,
+                4
+              ],
+              "dimension": 3348,
+              "by_fermions": {
+                "4": 1877,
+                "2": 1411,
+                "0": 60
+              }
+            },
+            {
+              "sector": [
+                5,
+                5,
+                5,
+                4
+              ],
+              "dimension": 2182,
+              "by_fermions": {
+                "5": 663,
+                "3": 1252,
+                "1": 267
+              }
+            },
+            {
+              "sector": [
+                6,
+                5,
+                5,
+                4
+              ],
+              "dimension": 888,
+              "by_fermions": {
+                "6": 92,
+                "4": 440,
+                "2": 334,
+                "0": 22
+              }
+            },
+            {
+              "sector": [
+                7,
+                5,
+                5,
+                4
+              ],
+              "dimension": 200,
+              "by_fermions": {
+                "7": 4,
+                "5": 40,
+                "3": 118,
+                "1": 38
+              }
+            },
+            {
+              "sector": [
+                8,
+                5,
+                5,
+                4
+              ],
+              "dimension": 18,
+              "by_fermions": {
+                "4": 4,
+                "2": 14
+              }
+            },
+            {
+              "sector": [
+                9,
+                5,
+                5,
+                4
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        }
+      ],
+      "forced_columns": []
+    },
+    {
+      "level": 30,
+      "columns": [
+        {
+          "weights": [
+            15,
+            0,
+            0
+          ],
+          "euler_characteristic": 0,
+          "even_minus_odd_length_index": 0,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                1,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                2,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                3,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                4,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                15,
+                0,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            14,
+            1,
+            0
+          ],
+          "euler_characteristic": -5,
+          "even_minus_odd_length_index": 5,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                1,
+                14,
+                1,
+                0
+              ],
+              "dimension": 5,
+              "by_fermions": {
+                "1": 5
+              }
+            },
+            {
+              "sector": [
+                2,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                3,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                4,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                14,
+                1,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            13,
+            2,
+            0
+          ],
+          "euler_characteristic": -4,
+          "even_minus_odd_length_index": 4,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                1,
+                13,
+                2,
+                0
+              ],
+              "dimension": 14,
+              "by_fermions": {
+                "1": 14
+              }
+            },
+            {
+              "sector": [
+                2,
+                13,
+                2,
+                0
+              ],
+              "dimension": 10,
+              "by_fermions": {
+                "2": 10
+              }
+            },
+            {
+              "sector": [
+                3,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                4,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                13,
+                2,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            13,
+            1,
+            1
+          ],
+          "euler_characteristic": -7,
+          "even_minus_odd_length_index": 7,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                13,
+                1,
+                1
+              ],
+              "dimension": 12,
+              "by_fermions": {
+                "0": 12
+              }
+            },
+            {
+              "sector": [
+                1,
+                13,
+                1,
+                1
+              ],
+              "dimension": 19,
+              "by_fermions": {
+                "1": 19
+              }
+            },
+            {
+              "sector": [
+                2,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                3,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                4,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                13,
+                1,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            12,
+            3,
+            0
+          ],
+          "euler_characteristic": -3,
+          "even_minus_odd_length_index": 3,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                12,
+                3,
+                0
+              ],
+              "dimension": 7,
+              "by_fermions": {
+                "0": 7
+              }
+            },
+            {
+              "sector": [
+                1,
+                12,
+                3,
+                0
+              ],
+              "dimension": 42,
+              "by_fermions": {
+                "1": 42
+              }
+            },
+            {
+              "sector": [
+                2,
+                12,
+                3,
+                0
+              ],
+              "dimension": 38,
+              "by_fermions": {
+                "2": 38
+              }
+            },
+            {
+              "sector": [
+                3,
+                12,
+                3,
+                0
+              ],
+              "dimension": 6,
+              "by_fermions": {
+                "3": 6
+              }
+            },
+            {
+              "sector": [
+                4,
+                12,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                12,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                12,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                12,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                12,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                12,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                12,
+                3,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            12,
+            2,
+            1
+          ],
+          "euler_characteristic": -13,
+          "even_minus_odd_length_index": 13,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                12,
+                2,
+                1
+              ],
+              "dimension": 20,
+              "by_fermions": {
+                "0": 20
+              }
+            },
+            {
+              "sector": [
+                1,
+                12,
+                2,
+                1
+              ],
+              "dimension": 82,
+              "by_fermions": {
+                "1": 82
+              }
+            },
+            {
+              "sector": [
+                2,
+                12,
+                2,
+                1
+              ],
+              "dimension": 88,
+              "by_fermions": {
+                "2": 78,
+                "0": 10
+              }
+            },
+            {
+              "sector": [
+                3,
+                12,
+                2,
+                1
+              ],
+              "dimension": 39,
+              "by_fermions": {
+                "3": 24,
+                "1": 15
+              }
+            },
+            {
+              "sector": [
+                4,
+                12,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                5,
+                12,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                12,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                12,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                12,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                12,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                12,
+                2,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            11,
+            4,
+            0
+          ],
+          "euler_characteristic": -3,
+          "even_minus_odd_length_index": 3,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                11,
+                4,
+                0
+              ],
+              "dimension": 9,
+              "by_fermions": {
+                "0": 9
+              }
+            },
+            {
+              "sector": [
+                1,
+                11,
+                4,
+                0
+              ],
+              "dimension": 83,
+              "by_fermions": {
+                "1": 83
+              }
+            },
+            {
+              "sector": [
+                2,
+                11,
+                4,
+                0
+              ],
+              "dimension": 116,
+              "by_fermions": {
+                "2": 116
+              }
+            },
+            {
+              "sector": [
+                3,
+                11,
+                4,
+                0
+              ],
+              "dimension": 57,
+              "by_fermions": {
+                "3": 57
+              }
+            },
+            {
+              "sector": [
+                4,
+                11,
+                4,
+                0
+              ],
+              "dimension": 12,
+              "by_fermions": {
+                "4": 12
+              }
+            },
+            {
+              "sector": [
+                5,
+                11,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                11,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                11,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                11,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                11,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                11,
+                4,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            11,
+            3,
+            1
+          ],
+          "euler_characteristic": -16,
+          "even_minus_odd_length_index": 16,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                11,
+                3,
+                1
+              ],
+              "dimension": 73,
+              "by_fermions": {
+                "0": 73
+              }
+            },
+            {
+              "sector": [
+                1,
+                11,
+                3,
+                1
+              ],
+              "dimension": 277,
+              "by_fermions": {
+                "1": 277
+              }
+            },
+            {
+              "sector": [
+                2,
+                11,
+                3,
+                1
+              ],
+              "dimension": 381,
+              "by_fermions": {
+                "2": 361,
+                "0": 20
+              }
+            },
+            {
+              "sector": [
+                3,
+                11,
+                3,
+                1
+              ],
+              "dimension": 283,
+              "by_fermions": {
+                "3": 222,
+                "1": 61
+              }
+            },
+            {
+              "sector": [
+                4,
+                11,
+                3,
+                1
+              ],
+              "dimension": 90,
+              "by_fermions": {
+                "4": 55,
+                "2": 35
+              }
+            },
+            {
+              "sector": [
+                5,
+                11,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                11,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                11,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                11,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                11,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                11,
+                3,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            11,
+            2,
+            2
+          ],
+          "euler_characteristic": -14,
+          "even_minus_odd_length_index": 14,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                11,
+                2,
+                2
+              ],
+              "dimension": 19,
+              "by_fermions": {
+                "0": 19
+              }
+            },
+            {
+              "sector": [
+                1,
+                11,
+                2,
+                2
+              ],
+              "dimension": 178,
+              "by_fermions": {
+                "1": 178
+              }
+            },
+            {
+              "sector": [
+                2,
+                11,
+                2,
+                2
+              ],
+              "dimension": 366,
+              "by_fermions": {
+                "2": 328,
+                "0": 38
+              }
+            },
+            {
+              "sector": [
+                3,
+                11,
+                2,
+                2
+              ],
+              "dimension": 257,
+              "by_fermions": {
+                "3": 181,
+                "1": 76
+              }
+            },
+            {
+              "sector": [
+                4,
+                11,
+                2,
+                2
+              ],
+              "dimension": 36,
+              "by_fermions": {
+                "4": 15,
+                "2": 21
+              }
+            },
+            {
+              "sector": [
+                5,
+                11,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                6,
+                11,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                11,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                11,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                11,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                11,
+                2,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            10,
+            5,
+            0
+          ],
+          "euler_characteristic": -2,
+          "even_minus_odd_length_index": 2,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                10,
+                5,
+                0
+              ],
+              "dimension": 21,
+              "by_fermions": {
+                "0": 21
+              }
+            },
+            {
+              "sector": [
+                1,
+                10,
+                5,
+                0
+              ],
+              "dimension": 134,
+              "by_fermions": {
+                "1": 134
+              }
+            },
+            {
+              "sector": [
+                2,
+                10,
+                5,
+                0
+              ],
+              "dimension": 210,
+              "by_fermions": {
+                "2": 210
+              }
+            },
+            {
+              "sector": [
+                3,
+                10,
+                5,
+                0
+              ],
+              "dimension": 150,
+              "by_fermions": {
+                "3": 150
+              }
+            },
+            {
+              "sector": [
+                4,
+                10,
+                5,
+                0
+              ],
+              "dimension": 68,
+              "by_fermions": {
+                "4": 68
+              }
+            },
+            {
+              "sector": [
+                5,
+                10,
+                5,
+                0
+              ],
+              "dimension": 17,
+              "by_fermions": {
+                "5": 17
+              }
+            },
+            {
+              "sector": [
+                6,
+                10,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                10,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                10,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                10,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                10,
+                5,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            10,
+            4,
+            1
+          ],
+          "euler_characteristic": -15,
+          "even_minus_odd_length_index": 15,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                10,
+                4,
+                1
+              ],
+              "dimension": 104,
+              "by_fermions": {
+                "0": 104
+              }
+            },
+            {
+              "sector": [
+                1,
+                10,
+                4,
+                1
+              ],
+              "dimension": 554,
+              "by_fermions": {
+                "1": 554
+              }
+            },
+            {
+              "sector": [
+                2,
+                10,
+                4,
+                1
+              ],
+              "dimension": 1075,
+              "by_fermions": {
+                "2": 1016,
+                "0": 59
+              }
+            },
+            {
+              "sector": [
+                3,
+                10,
+                4,
+                1
+              ],
+              "dimension": 1070,
+              "by_fermions": {
+                "3": 890,
+                "1": 180
+              }
+            },
+            {
+              "sector": [
+                4,
+                10,
+                4,
+                1
+              ],
+              "dimension": 509,
+              "by_fermions": {
+                "4": 357,
+                "2": 152
+              }
+            },
+            {
+              "sector": [
+                5,
+                10,
+                4,
+                1
+              ],
+              "dimension": 79,
+              "by_fermions": {
+                "5": 43,
+                "3": 36
+              }
+            },
+            {
+              "sector": [
+                6,
+                10,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                10,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                10,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                10,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                10,
+                4,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            10,
+            3,
+            2
+          ],
+          "euler_characteristic": -24,
+          "even_minus_odd_length_index": 24,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                10,
+                3,
+                2
+              ],
+              "dimension": 124,
+              "by_fermions": {
+                "0": 124
+              }
+            },
+            {
+              "sector": [
+                1,
+                10,
+                3,
+                2
+              ],
+              "dimension": 753,
+              "by_fermions": {
+                "1": 753
+              }
+            },
+            {
+              "sector": [
+                2,
+                10,
+                3,
+                2
+              ],
+              "dimension": 1623,
+              "by_fermions": {
+                "2": 1500,
+                "0": 123
+              }
+            },
+            {
+              "sector": [
+                3,
+                10,
+                3,
+                2
+              ],
+              "dimension": 1691,
+              "by_fermions": {
+                "3": 1289,
+                "1": 402
+              }
+            },
+            {
+              "sector": [
+                4,
+                10,
+                3,
+                2
+              ],
+              "dimension": 863,
+              "by_fermions": {
+                "4": 479,
+                "2": 363,
+                "0": 21
+              }
+            },
+            {
+              "sector": [
+                5,
+                10,
+                3,
+                2
+              ],
+              "dimension": 190,
+              "by_fermions": {
+                "5": 64,
+                "3": 94,
+                "1": 32
+              }
+            },
+            {
+              "sector": [
+                6,
+                10,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                7,
+                10,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                10,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                10,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                10,
+                3,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            9,
+            6,
+            0
+          ],
+          "euler_characteristic": -1,
+          "even_minus_odd_length_index": 1,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                9,
+                6,
+                0
+              ],
+              "dimension": 21,
+              "by_fermions": {
+                "0": 21
+              }
+            },
+            {
+              "sector": [
+                1,
+                9,
+                6,
+                0
+              ],
+              "dimension": 144,
+              "by_fermions": {
+                "1": 144
+              }
+            },
+            {
+              "sector": [
+                2,
+                9,
+                6,
+                0
+              ],
+              "dimension": 274,
+              "by_fermions": {
+                "2": 274
+              }
+            },
+            {
+              "sector": [
+                3,
+                9,
+                6,
+                0
+              ],
+              "dimension": 250,
+              "by_fermions": {
+                "3": 250
+              }
+            },
+            {
+              "sector": [
+                4,
+                9,
+                6,
+                0
+              ],
+              "dimension": 136,
+              "by_fermions": {
+                "4": 136
+              }
+            },
+            {
+              "sector": [
+                5,
+                9,
+                6,
+                0
+              ],
+              "dimension": 44,
+              "by_fermions": {
+                "5": 44
+              }
+            },
+            {
+              "sector": [
+                6,
+                9,
+                6,
+                0
+              ],
+              "dimension": 6,
+              "by_fermions": {
+                "6": 6
+              }
+            },
+            {
+              "sector": [
+                7,
+                9,
+                6,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                9,
+                6,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                9,
+                6,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                9,
+                6,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            9,
+            5,
+            1
+          ],
+          "euler_characteristic": -9,
+          "even_minus_odd_length_index": 9,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                9,
+                5,
+                1
+              ],
+              "dimension": 163,
+              "by_fermions": {
+                "0": 163
+              }
+            },
+            {
+              "sector": [
+                1,
+                9,
+                5,
+                1
+              ],
+              "dimension": 839,
+              "by_fermions": {
+                "1": 839
+              }
+            },
+            {
+              "sector": [
+                2,
+                9,
+                5,
+                1
+              ],
+              "dimension": 1779,
+              "by_fermions": {
+                "2": 1707,
+                "0": 72
+              }
+            },
+            {
+              "sector": [
+                3,
+                9,
+                5,
+                1
+              ],
+              "dimension": 2125,
+              "by_fermions": {
+                "3": 1835,
+                "1": 290
+              }
+            },
+            {
+              "sector": [
+                4,
+                9,
+                5,
+                1
+              ],
+              "dimension": 1418,
+              "by_fermions": {
+                "4": 1048,
+                "2": 370
+              }
+            },
+            {
+              "sector": [
+                5,
+                9,
+                5,
+                1
+              ],
+              "dimension": 456,
+              "by_fermions": {
+                "5": 268,
+                "3": 188
+              }
+            },
+            {
+              "sector": [
+                6,
+                9,
+                5,
+                1
+              ],
+              "dimension": 51,
+              "by_fermions": {
+                "6": 18,
+                "4": 33
+              }
+            },
+            {
+              "sector": [
+                7,
+                9,
+                5,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                9,
+                5,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                9,
+                5,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                9,
+                5,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            9,
+            4,
+            2
+          ],
+          "euler_characteristic": -25,
+          "even_minus_odd_length_index": 25,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                9,
+                4,
+                2
+              ],
+              "dimension": 224,
+              "by_fermions": {
+                "0": 224
+              }
+            },
+            {
+              "sector": [
+                1,
+                9,
+                4,
+                2
+              ],
+              "dimension": 1608,
+              "by_fermions": {
+                "1": 1608
+              }
+            },
+            {
+              "sector": [
+                2,
+                9,
+                4,
+                2
+              ],
+              "dimension": 4152,
+              "by_fermions": {
+                "2": 3878,
+                "0": 274
+              }
+            },
+            {
+              "sector": [
+                3,
+                9,
+                4,
+                2
+              ],
+              "dimension": 5353,
+              "by_fermions": {
+                "3": 4284,
+                "1": 1069
+              }
+            },
+            {
+              "sector": [
+                4,
+                9,
+                4,
+                2
+              ],
+              "dimension": 3701,
+              "by_fermions": {
+                "4": 2279,
+                "2": 1372,
+                "0": 50
+              }
+            },
+            {
+              "sector": [
+                5,
+                9,
+                4,
+                2
+              ],
+              "dimension": 1359,
+              "by_fermions": {
+                "5": 540,
+                "3": 700,
+                "1": 119
+              }
+            },
+            {
+              "sector": [
+                6,
+                9,
+                4,
+                2
+              ],
+              "dimension": 218,
+              "by_fermions": {
+                "6": 46,
+                "4": 116,
+                "2": 56
+              }
+            },
+            {
+              "sector": [
+                7,
+                9,
+                4,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                9,
+                4,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                9,
+                4,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                9,
+                4,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            9,
+            3,
+            3
+          ],
+          "euler_characteristic": -12,
+          "even_minus_odd_length_index": 12,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                9,
+                3,
+                3
+              ],
+              "dimension": 191,
+              "by_fermions": {
+                "0": 191
+              }
+            },
+            {
+              "sector": [
+                1,
+                9,
+                3,
+                3
+              ],
+              "dimension": 974,
+              "by_fermions": {
+                "1": 974
+              }
+            },
+            {
+              "sector": [
+                2,
+                9,
+                3,
+                3
+              ],
+              "dimension": 2355,
+              "by_fermions": {
+                "2": 2206,
+                "0": 149
+              }
+            },
+            {
+              "sector": [
+                3,
+                9,
+                3,
+                3
+              ],
+              "dimension": 3378,
+              "by_fermions": {
+                "3": 2618,
+                "1": 760
+              }
+            },
+            {
+              "sector": [
+                4,
+                9,
+                3,
+                3
+              ],
+              "dimension": 2714,
+              "by_fermions": {
+                "4": 1516,
+                "2": 1114,
+                "0": 84
+              }
+            },
+            {
+              "sector": [
+                5,
+                9,
+                3,
+                3
+              ],
+              "dimension": 1028,
+              "by_fermions": {
+                "5": 344,
+                "3": 533,
+                "1": 151
+              }
+            },
+            {
+              "sector": [
+                6,
+                9,
+                3,
+                3
+              ],
+              "dimension": 108,
+              "by_fermions": {
+                "6": 13,
+                "4": 58,
+                "2": 35,
+                "0": 2
+              }
+            },
+            {
+              "sector": [
+                7,
+                9,
+                3,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                9,
+                3,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                9,
+                3,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                9,
+                3,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            8,
+            7,
+            0
+          ],
+          "euler_characteristic": -1,
+          "even_minus_odd_length_index": 1,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                8,
+                7,
+                0
+              ],
+              "dimension": 13,
+              "by_fermions": {
+                "0": 13
+              }
+            },
+            {
+              "sector": [
+                1,
+                8,
+                7,
+                0
+              ],
+              "dimension": 104,
+              "by_fermions": {
+                "1": 104
+              }
+            },
+            {
+              "sector": [
+                2,
+                8,
+                7,
+                0
+              ],
+              "dimension": 198,
+              "by_fermions": {
+                "2": 198
+              }
+            },
+            {
+              "sector": [
+                3,
+                8,
+                7,
+                0
+              ],
+              "dimension": 196,
+              "by_fermions": {
+                "3": 196
+              }
+            },
+            {
+              "sector": [
+                4,
+                8,
+                7,
+                0
+              ],
+              "dimension": 135,
+              "by_fermions": {
+                "4": 135
+              }
+            },
+            {
+              "sector": [
+                5,
+                8,
+                7,
+                0
+              ],
+              "dimension": 55,
+              "by_fermions": {
+                "5": 55
+              }
+            },
+            {
+              "sector": [
+                6,
+                8,
+                7,
+                0
+              ],
+              "dimension": 8,
+              "by_fermions": {
+                "6": 8
+              }
+            },
+            {
+              "sector": [
+                7,
+                8,
+                7,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                8,
+                8,
+                7,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                8,
+                7,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                8,
+                7,
+                0
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            8,
+            6,
+            1
+          ],
+          "euler_characteristic": -6,
+          "even_minus_odd_length_index": 6,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                8,
+                6,
+                1
+              ],
+              "dimension": 119,
+              "by_fermions": {
+                "0": 119
+              }
+            },
+            {
+              "sector": [
+                1,
+                8,
+                6,
+                1
+              ],
+              "dimension": 777,
+              "by_fermions": {
+                "1": 777
+              }
+            },
+            {
+              "sector": [
+                2,
+                8,
+                6,
+                1
+              ],
+              "dimension": 1926,
+              "by_fermions": {
+                "2": 1839,
+                "0": 87
+              }
+            },
+            {
+              "sector": [
+                3,
+                8,
+                6,
+                1
+              ],
+              "dimension": 2568,
+              "by_fermions": {
+                "3": 2239,
+                "1": 329
+              }
+            },
+            {
+              "sector": [
+                4,
+                8,
+                6,
+                1
+              ],
+              "dimension": 1933,
+              "by_fermions": {
+                "4": 1489,
+                "2": 444
+              }
+            },
+            {
+              "sector": [
+                5,
+                8,
+                6,
+                1
+              ],
+              "dimension": 800,
+              "by_fermions": {
+                "5": 509,
+                "3": 291
+              }
+            },
+            {
+              "sector": [
+                6,
+                8,
+                6,
+                1
+              ],
+              "dimension": 180,
+              "by_fermions": {
+                "6": 78,
+                "4": 102
+              }
+            },
+            {
+              "sector": [
+                7,
+                8,
+                6,
+                1
+              ],
+              "dimension": 19,
+              "by_fermions": {
+                "7": 4,
+                "5": 15
+              }
+            },
+            {
+              "sector": [
+                8,
+                8,
+                6,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                8,
+                6,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                8,
+                6,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            8,
+            5,
+            2
+          ],
+          "euler_characteristic": -20,
+          "even_minus_odd_length_index": 20,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                8,
+                5,
+                2
+              ],
+              "dimension": 313,
+              "by_fermions": {
+                "0": 313
+              }
+            },
+            {
+              "sector": [
+                1,
+                8,
+                5,
+                2
+              ],
+              "dimension": 2194,
+              "by_fermions": {
+                "1": 2194
+              }
+            },
+            {
+              "sector": [
+                2,
+                8,
+                5,
+                2
+              ],
+              "dimension": 6091,
+              "by_fermions": {
+                "2": 5732,
+                "0": 359
+              }
+            },
+            {
+              "sector": [
+                3,
+                8,
+                5,
+                2
+              ],
+              "dimension": 9048,
+              "by_fermions": {
+                "3": 7411,
+                "1": 1637
+              }
+            },
+            {
+              "sector": [
+                4,
+                8,
+                5,
+                2
+              ],
+              "dimension": 7746,
+              "by_fermions": {
+                "4": 5039,
+                "2": 2619,
+                "0": 88
+              }
+            },
+            {
+              "sector": [
+                5,
+                8,
+                5,
+                2
+              ],
+              "dimension": 3810,
+              "by_fermions": {
+                "5": 1713,
+                "3": 1856,
+                "1": 241
+              }
+            },
+            {
+              "sector": [
+                6,
+                8,
+                5,
+                2
+              ],
+              "dimension": 963,
+              "by_fermions": {
+                "6": 238,
+                "4": 552,
+                "2": 173
+              }
+            },
+            {
+              "sector": [
+                7,
+                8,
+                5,
+                2
+              ],
+              "dimension": 81,
+              "by_fermions": {
+                "7": 6,
+                "5": 44,
+                "3": 31
+              }
+            },
+            {
+              "sector": [
+                8,
+                8,
+                5,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                8,
+                5,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                8,
+                5,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            8,
+            4,
+            3
+          ],
+          "euler_characteristic": -19,
+          "even_minus_odd_length_index": 19,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                8,
+                4,
+                3
+              ],
+              "dimension": 320,
+              "by_fermions": {
+                "0": 320
+              }
+            },
+            {
+              "sector": [
+                1,
+                8,
+                4,
+                3
+              ],
+              "dimension": 2390,
+              "by_fermions": {
+                "1": 2390
+              }
+            },
+            {
+              "sector": [
+                2,
+                8,
+                4,
+                3
+              ],
+              "dimension": 7139,
+              "by_fermions": {
+                "2": 6665,
+                "0": 474
+              }
+            },
+            {
+              "sector": [
+                3,
+                8,
+                4,
+                3
+              ],
+              "dimension": 11489,
+              "by_fermions": {
+                "3": 9124,
+                "1": 2365
+              }
+            },
+            {
+              "sector": [
+                4,
+                8,
+                4,
+                3
+              ],
+              "dimension": 10615,
+              "by_fermions": {
+                "4": 6326,
+                "2": 4089,
+                "0": 200
+              }
+            },
+            {
+              "sector": [
+                5,
+                8,
+                4,
+                3
+              ],
+              "dimension": 5532,
+              "by_fermions": {
+                "5": 2034,
+                "3": 2913,
+                "1": 585
+              }
+            },
+            {
+              "sector": [
+                6,
+                8,
+                4,
+                3
+              ],
+              "dimension": 1499,
+              "by_fermions": {
+                "6": 250,
+                "4": 793,
+                "2": 430,
+                "0": 26
+              }
+            },
+            {
+              "sector": [
+                7,
+                8,
+                4,
+                3
+              ],
+              "dimension": 181,
+              "by_fermions": {
+                "7": 10,
+                "5": 62,
+                "3": 81,
+                "1": 28
+              }
+            },
+            {
+              "sector": [
+                8,
+                8,
+                4,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                8,
+                4,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                8,
+                4,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            7,
+            7,
+            1
+          ],
+          "euler_characteristic": -3,
+          "even_minus_odd_length_index": 3,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                7,
+                7,
+                1
+              ],
+              "dimension": 74,
+              "by_fermions": {
+                "0": 74
+              }
+            },
+            {
+              "sector": [
+                1,
+                7,
+                7,
+                1
+              ],
+              "dimension": 358,
+              "by_fermions": {
+                "1": 358
+              }
+            },
+            {
+              "sector": [
+                2,
+                7,
+                7,
+                1
+              ],
+              "dimension": 807,
+              "by_fermions": {
+                "2": 786,
+                "0": 21
+              }
+            },
+            {
+              "sector": [
+                3,
+                7,
+                7,
+                1
+              ],
+              "dimension": 1149,
+              "by_fermions": {
+                "3": 1016,
+                "1": 133
+              }
+            },
+            {
+              "sector": [
+                4,
+                7,
+                7,
+                1
+              ],
+              "dimension": 992,
+              "by_fermions": {
+                "4": 761,
+                "2": 231
+              }
+            },
+            {
+              "sector": [
+                5,
+                7,
+                7,
+                1
+              ],
+              "dimension": 479,
+              "by_fermions": {
+                "5": 304,
+                "3": 175
+              }
+            },
+            {
+              "sector": [
+                6,
+                7,
+                7,
+                1
+              ],
+              "dimension": 124,
+              "by_fermions": {
+                "6": 59,
+                "4": 65
+              }
+            },
+            {
+              "sector": [
+                7,
+                7,
+                7,
+                1
+              ],
+              "dimension": 14,
+              "by_fermions": {
+                "7": 4,
+                "5": 10
+              }
+            },
+            {
+              "sector": [
+                8,
+                7,
+                7,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                9,
+                7,
+                7,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                7,
+                7,
+                1
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            7,
+            6,
+            2
+          ],
+          "euler_characteristic": -12,
+          "even_minus_odd_length_index": 12,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                7,
+                6,
+                2
+              ],
+              "dimension": 215,
+              "by_fermions": {
+                "0": 215
+              }
+            },
+            {
+              "sector": [
+                1,
+                7,
+                6,
+                2
+              ],
+              "dimension": 1650,
+              "by_fermions": {
+                "1": 1650
+              }
+            },
+            {
+              "sector": [
+                2,
+                7,
+                6,
+                2
+              ],
+              "dimension": 4901,
+              "by_fermions": {
+                "2": 4621,
+                "0": 280
+              }
+            },
+            {
+              "sector": [
+                3,
+                7,
+                6,
+                2
+              ],
+              "dimension": 7814,
+              "by_fermions": {
+                "3": 6472,
+                "1": 1342
+              }
+            },
+            {
+              "sector": [
+                4,
+                7,
+                6,
+                2
+              ],
+              "dimension": 7337,
+              "by_fermions": {
+                "4": 4901,
+                "2": 2368,
+                "0": 68
+              }
+            },
+            {
+              "sector": [
+                5,
+                7,
+                6,
+                2
+              ],
+              "dimension": 4159,
+              "by_fermions": {
+                "5": 1960,
+                "3": 1980,
+                "1": 219
+              }
+            },
+            {
+              "sector": [
+                6,
+                7,
+                6,
+                2
+              ],
+              "dimension": 1358,
+              "by_fermions": {
+                "6": 365,
+                "4": 783,
+                "2": 210
+              }
+            },
+            {
+              "sector": [
+                7,
+                7,
+                6,
+                2
+              ],
+              "dimension": 212,
+              "by_fermions": {
+                "7": 21,
+                "5": 117,
+                "3": 74
+              }
+            },
+            {
+              "sector": [
+                8,
+                7,
+                6,
+                2
+              ],
+              "dimension": 12,
+              "by_fermions": {
+                "6": 3,
+                "4": 9
+              }
+            },
+            {
+              "sector": [
+                9,
+                7,
+                6,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                7,
+                6,
+                2
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            7,
+            5,
+            3
+          ],
+          "euler_characteristic": -21,
+          "even_minus_odd_length_index": 21,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                7,
+                5,
+                3
+              ],
+              "dimension": 441,
+              "by_fermions": {
+                "0": 441
+              }
+            },
+            {
+              "sector": [
+                1,
+                7,
+                5,
+                3
+              ],
+              "dimension": 3010,
+              "by_fermions": {
+                "1": 3010
+              }
+            },
+            {
+              "sector": [
+                2,
+                7,
+                5,
+                3
+              ],
+              "dimension": 9294,
+              "by_fermions": {
+                "2": 8743,
+                "0": 551
+              }
+            },
+            {
+              "sector": [
+                3,
+                7,
+                5,
+                3
+              ],
+              "dimension": 16533,
+              "by_fermions": {
+                "3": 13316,
+                "1": 3217
+              }
+            },
+            {
+              "sector": [
+                4,
+                7,
+                5,
+                3
+              ],
+              "dimension": 17566,
+              "by_fermions": {
+                "4": 10763,
+                "2": 6491,
+                "0": 312
+              }
+            },
+            {
+              "sector": [
+                5,
+                7,
+                5,
+                3
+              ],
+              "dimension": 10955,
+              "by_fermions": {
+                "5": 4293,
+                "3": 5672,
+                "1": 990
+              }
+            },
+            {
+              "sector": [
+                6,
+                7,
+                5,
+                3
+              ],
+              "dimension": 3820,
+              "by_fermions": {
+                "6": 710,
+                "4": 2111,
+                "2": 968,
+                "0": 31
+              }
+            },
+            {
+              "sector": [
+                7,
+                7,
+                5,
+                3
+              ],
+              "dimension": 704,
+              "by_fermions": {
+                "7": 33,
+                "5": 271,
+                "3": 341,
+                "1": 59
+              }
+            },
+            {
+              "sector": [
+                8,
+                7,
+                5,
+                3
+              ],
+              "dimension": 60,
+              "by_fermions": {
+                "6": 7,
+                "4": 31,
+                "2": 22
+              }
+            },
+            {
+              "sector": [
+                9,
+                7,
+                5,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                7,
+                5,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            7,
+            4,
+            4
+          ],
+          "euler_characteristic": -13,
+          "even_minus_odd_length_index": 13,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                7,
+                4,
+                4
+              ],
+              "dimension": 166,
+              "by_fermions": {
+                "0": 166
+              }
+            },
+            {
+              "sector": [
+                1,
+                7,
+                4,
+                4
+              ],
+              "dimension": 1615,
+              "by_fermions": {
+                "1": 1615
+              }
+            },
+            {
+              "sector": [
+                2,
+                7,
+                4,
+                4
+              ],
+              "dimension": 5627,
+              "by_fermions": {
+                "2": 5243,
+                "0": 384
+              }
+            },
+            {
+              "sector": [
+                3,
+                7,
+                4,
+                4
+              ],
+              "dimension": 10141,
+              "by_fermions": {
+                "3": 8074,
+                "1": 2067
+              }
+            },
+            {
+              "sector": [
+                4,
+                7,
+                4,
+                4
+              ],
+              "dimension": 10775,
+              "by_fermions": {
+                "4": 6399,
+                "2": 4200,
+                "0": 176
+              }
+            },
+            {
+              "sector": [
+                5,
+                7,
+                4,
+                4
+              ],
+              "dimension": 7123,
+              "by_fermions": {
+                "5": 2534,
+                "3": 3834,
+                "1": 755
+              }
+            },
+            {
+              "sector": [
+                6,
+                7,
+                4,
+                4
+              ],
+              "dimension": 2853,
+              "by_fermions": {
+                "6": 447,
+                "4": 1470,
+                "2": 878,
+                "0": 58
+              }
+            },
+            {
+              "sector": [
+                7,
+                7,
+                4,
+                4
+              ],
+              "dimension": 579,
+              "by_fermions": {
+                "7": 25,
+                "5": 180,
+                "3": 287,
+                "1": 87
+              }
+            },
+            {
+              "sector": [
+                8,
+                7,
+                4,
+                4
+              ],
+              "dimension": 24,
+              "by_fermions": {
+                "4": 12,
+                "2": 12
+              }
+            },
+            {
+              "sector": [
+                9,
+                7,
+                4,
+                4
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            },
+            {
+              "sector": [
+                10,
+                7,
+                4,
+                4
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            6,
+            6,
+            3
+          ],
+          "euler_characteristic": -11,
+          "even_minus_odd_length_index": 11,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                6,
+                6,
+                3
+              ],
+              "dimension": 151,
+              "by_fermions": {
+                "0": 151
+              }
+            },
+            {
+              "sector": [
+                1,
+                6,
+                6,
+                3
+              ],
+              "dimension": 1354,
+              "by_fermions": {
+                "1": 1354
+              }
+            },
+            {
+              "sector": [
+                2,
+                6,
+                6,
+                3
+              ],
+              "dimension": 4670,
+              "by_fermions": {
+                "2": 4367,
+                "0": 303
+              }
+            },
+            {
+              "sector": [
+                3,
+                6,
+                6,
+                3
+              ],
+              "dimension": 8541,
+              "by_fermions": {
+                "3": 6910,
+                "1": 1631
+              }
+            },
+            {
+              "sector": [
+                4,
+                6,
+                6,
+                3
+              ],
+              "dimension": 9251,
+              "by_fermions": {
+                "4": 5788,
+                "2": 3336,
+                "0": 127
+              }
+            },
+            {
+              "sector": [
+                5,
+                6,
+                6,
+                3
+              ],
+              "dimension": 6205,
+              "by_fermions": {
+                "5": 2501,
+                "3": 3196,
+                "1": 508
+              }
+            },
+            {
+              "sector": [
+                6,
+                6,
+                6,
+                3
+              ],
+              "dimension": 2547,
+              "by_fermions": {
+                "6": 488,
+                "4": 1421,
+                "2": 607,
+                "0": 31
+              }
+            },
+            {
+              "sector": [
+                7,
+                6,
+                6,
+                3
+              ],
+              "dimension": 591,
+              "by_fermions": {
+                "7": 28,
+                "5": 242,
+                "3": 276,
+                "1": 45
+              }
+            },
+            {
+              "sector": [
+                8,
+                6,
+                6,
+                3
+              ],
+              "dimension": 62,
+              "by_fermions": {
+                "6": 6,
+                "4": 40,
+                "2": 16
+              }
+            },
+            {
+              "sector": [
+                9,
+                6,
+                6,
+                3
+              ],
+              "dimension": 1,
+              "by_fermions": {
+                "3": 1
+              }
+            },
+            {
+              "sector": [
+                10,
+                6,
+                6,
+                3
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            6,
+            5,
+            4
+          ],
+          "euler_characteristic": -15,
+          "even_minus_odd_length_index": 15,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                6,
+                5,
+                4
+              ],
+              "dimension": 230,
+              "by_fermions": {
+                "0": 230
+              }
+            },
+            {
+              "sector": [
+                1,
+                6,
+                5,
+                4
+              ],
+              "dimension": 1942,
+              "by_fermions": {
+                "1": 1942
+              }
+            },
+            {
+              "sector": [
+                2,
+                6,
+                5,
+                4
+              ],
+              "dimension": 6777,
+              "by_fermions": {
+                "2": 6339,
+                "0": 438
+              }
+            },
+            {
+              "sector": [
+                3,
+                6,
+                5,
+                4
+              ],
+              "dimension": 13186,
+              "by_fermions": {
+                "3": 10542,
+                "1": 2644
+              }
+            },
+            {
+              "sector": [
+                4,
+                6,
+                5,
+                4
+              ],
+              "dimension": 15608,
+              "by_fermions": {
+                "4": 9367,
+                "2": 5966,
+                "0": 275
+              }
+            },
+            {
+              "sector": [
+                5,
+                6,
+                5,
+                4
+              ],
+              "dimension": 11430,
+              "by_fermions": {
+                "5": 4192,
+                "3": 6098,
+                "1": 1140
+              }
+            },
+            {
+              "sector": [
+                6,
+                6,
+                5,
+                4
+              ],
+              "dimension": 5038,
+              "by_fermions": {
+                "6": 792,
+                "4": 2706,
+                "2": 1469,
+                "0": 71
+              }
+            },
+            {
+              "sector": [
+                7,
+                6,
+                5,
+                4
+              ],
+              "dimension": 1260,
+              "by_fermions": {
+                "7": 40,
+                "5": 412,
+                "3": 651,
+                "1": 157
+              }
+            },
+            {
+              "sector": [
+                8,
+                6,
+                5,
+                4
+              ],
+              "dimension": 159,
+              "by_fermions": {
+                "6": 10,
+                "4": 71,
+                "2": 72,
+                "0": 6
+              }
+            },
+            {
+              "sector": [
+                9,
+                6,
+                5,
+                4
+              ],
+              "dimension": 9,
+              "by_fermions": {
+                "3": 4,
+                "1": 5
+              }
+            },
+            {
+              "sector": [
+                10,
+                6,
+                5,
+                4
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        },
+        {
+          "weights": [
+            5,
+            5,
+            5
+          ],
+          "euler_characteristic": -4,
+          "even_minus_odd_length_index": 4,
+          "forced_odd_length_class_lower_bound": 0,
+          "sectors": [
+            {
+              "sector": [
+                0,
+                5,
+                5,
+                5
+              ],
+              "dimension": 85,
+              "by_fermions": {
+                "0": 85
+              }
+            },
+            {
+              "sector": [
+                1,
+                5,
+                5,
+                5
+              ],
+              "dimension": 416,
+              "by_fermions": {
+                "1": 416
+              }
+            },
+            {
+              "sector": [
+                2,
+                5,
+                5,
+                5
+              ],
+              "dimension": 1300,
+              "by_fermions": {
+                "2": 1234,
+                "0": 66
+              }
+            },
+            {
+              "sector": [
+                3,
+                5,
+                5,
+                5
+              ],
+              "dimension": 2843,
+              "by_fermions": {
+                "3": 2269,
+                "1": 574
+              }
+            },
+            {
+              "sector": [
+                4,
+                5,
+                5,
+                5
+              ],
+              "dimension": 3834,
+              "by_fermions": {
+                "4": 2257,
+                "2": 1483,
+                "0": 94
+              }
+            },
+            {
+              "sector": [
+                5,
+                5,
+                5,
+                5
+              ],
+              "dimension": 3030,
+              "by_fermions": {
+                "5": 1090,
+                "3": 1619,
+                "1": 321
+              }
+            },
+            {
+              "sector": [
+                6,
+                5,
+                5,
+                5
+              ],
+              "dimension": 1387,
+              "by_fermions": {
+                "6": 209,
+                "4": 749,
+                "2": 416,
+                "0": 13
+              }
+            },
+            {
+              "sector": [
+                7,
+                5,
+                5,
+                5
+              ],
+              "dimension": 393,
+              "by_fermions": {
+                "7": 8,
+                "5": 115,
+                "3": 217,
+                "1": 53
+              }
+            },
+            {
+              "sector": [
+                8,
+                5,
+                5,
+                5
+              ],
+              "dimension": 82,
+              "by_fermions": {
+                "6": 4,
+                "4": 28,
+                "2": 44,
+                "0": 6
+              }
+            },
+            {
+              "sector": [
+                9,
+                5,
+                5,
+                5
+              ],
+              "dimension": 10,
+              "by_fermions": {
+                "3": 5,
+                "1": 5
+              }
+            },
+            {
+              "sector": [
+                10,
+                5,
+                5,
+                5
+              ],
+              "dimension": 0,
+              "by_fermions": {}
+            }
+          ]
+        }
+      ],
+      "forced_columns": []
+    }
+  ],
+  "even_length_closed_generator_controls": [
+    {
+      "name": [
+        "u",
+        2,
+        [
+          0,
+          0
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "u",
+        2,
+        [
+          0,
+          1
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "u",
+        2,
+        [
+          0,
+          2
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "u",
+        2,
+        [
+          1,
+          1
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "u",
+        2,
+        [
+          1,
+          2
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "u",
+        2,
+        [
+          2,
+          2
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          0
+        ],
+        0
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          0
+        ],
+        1
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          0
+        ],
+        2
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          1
+        ],
+        0
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          1
+        ],
+        1
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          1
+        ],
+        2
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          2
+        ],
+        0
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          2
+        ],
+        1
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "v",
+        2,
+        [
+          2
+        ],
+        2
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "w",
+        2,
+        [
+          0
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "w",
+        2,
+        [
+          1
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "w",
+        2,
+        [
+          2
+        ]
+      ],
+      "length": 2
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          0,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          0,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        4,
+        [
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          0
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          0
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          0
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          1
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          1
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          1
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          2
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          2
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          0,
+          2
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          1,
+          1
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          1,
+          1
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          1,
+          1
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          1,
+          2
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          1,
+          2
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          1,
+          2
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          0,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          1,
+          1
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          1,
+          1
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          1,
+          1
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          1,
+          2
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          1,
+          2
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          1,
+          2
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          1,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          2,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          2,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "v",
+        4,
+        [
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "w",
+        4,
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 4
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "u",
+        6,
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          1,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          2,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          2,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          1,
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        0
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        1
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "v",
+        6,
+        [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          0,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          0,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    },
+    {
+      "name": [
+        "w",
+        6,
+        [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "length": 6
+    }
+  ],
+  "source_sha256": {
+    "g2_parity_index_gate_v1.py": "b500c75f2ed3d06b83f5933c1c387525a8096c7320196a50d207c7238cbee948",
+    "sp_census.py": "a2ff38bdde2da544e6abba227579570b40aa6107bfca16c163c2f63e551c53e1",
+    "lie_root_dimension_v1.py": "bd789815deb1ee119ac12684077bf522c43c07af78e82d7071b1bc3d61b2d5fd"
+  },
+  "seconds": 5.379847708623856,
+  "scope": "Negative parity index forces odd-length classical cohomology, outside products of the pinned even-length universal generators. It does not locate representatives, prove global generator minimality, or count d1, d2, d3, or nonperturbative lifts. Nonnegative index is not an exclusion."
+}

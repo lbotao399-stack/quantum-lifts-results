@@ -4,6 +4,8 @@ Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://gith
 
 **Running computations (updated daily): [STATUS.md](STATUS.md).**
 
+**November 17 BMN certificate release:** [direct highest-weight algorithms and reproducible Sp(3)/G2 rank evidence](algorithms/bmn_rank_certificates_20261117/README.md), with [j=30 index tables](data/N4_Sp3_G2_BMN_j30_direct_index_20261117.csv). The full replay reconstructs 121237 entries of 62 nonzero minors. This phase adds no quantum lift or fortuitous-generator family. The scoped undeformed N=4 campaign totals are 5 audited $d_1$ highest-weight pairings, 3 audited generator families, and 0 certified $d_2$, $d_3$, or nonperturbative lifts; these totals do not include deformed or N=2 theories in the historical table below.
+
 **Master report (updated in place): [Fortuity_Lift_Master.pdf](Fortuity_Lift_Master.pdf).** Per theory: twisted action and components, Lie-algebra realization, highest-weight algorithm (which weights), frontier in conserved charges, fortuitous generators and classes, quantum-lift status, per-level data.
 
 **Supplement (algorithm for the lifting tests): [supplement/Supplement_algorithm_for_the_lifting_tests.pdf](supplement/Supplement_algorithm_for_the_lifting_tests.pdf)**, with its LaTeX source. It is the supplementary material of the article "Holomorphic Feynman diagrams in four dimensions and the quantum BPS ring" (B. Li, K. Liu, C.-M. Chang): census algorithm, certification, and theory-by-theory tables and representatives (Sections S1–S8).

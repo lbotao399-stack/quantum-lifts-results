@@ -1,0 +1,8 @@
+{
+  "status": "passed_archived_dimension_arithmetic_and_direct_rank_bounds",
+  "source_hashes": 34,
+  "payload_hashes": 209,
+  "columns": 24,
+  "negative_upper_bounds": 0,
+  "scope": "Checks the archived exact dimensions and certified minor lower bounds; does not recompute character integrals."
+}
