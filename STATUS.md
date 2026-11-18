@@ -1,6 +1,14 @@
 # Running computations: daily status
 
-## Verified BMN phase, November 18, 2026
+## Method review and completed cluster calculation, November 18, 2026
+
+At prime 1,000,033, all 24 A8 map shards finished. The joint solve used 64 CPUs for 4,227 seconds. The production residual was zero in all 34,901 first-equation and 65,406 second-equation coordinates. A6 reached the same 50 ordered pivot lists at prime 1,000,003 and stopped at its application time limit before saving its joint solution. Rational certification and second-prime frame injectivity are open. [Saved coordinates and receipt verifier](algorithms/verify_su3_j30_solution_receipts.py).
+
+The $SO(7)$ test can use a target functional pairing to one with $SF$ and to zero with all 1,443 saved boundaries. The $SU(3)$ level-34 parity calculation and the rational $G_2$ partner replay are included with the review. [Method review and action plan](algorithms/N4_lift_method_review_20261118.md) · [Numerical data](data/N4_lift_method_review_20261118.json).
+
+This phase adds zero $d_1$ highest-weight pairings and zero fortuitous-generator families. The cumulative counts are 5 and 3. Verified $d_2$, $d_3$ and nonperturbative lifts in undeformed $\mathcal N=4$ are 0, 0 and 0.
+
+## Earlier BMN phase, November 18, 2026
 
 [Algorithm and complete replay bundle](algorithms/bmn_rank_certificates_20261117/README.md); [numerical table](data/N4_Sp3_G2_BMN_j30_direct_index_20261117.csv).
 

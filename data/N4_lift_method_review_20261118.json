@@ -1,0 +1,465 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "date_cst": "2026-11-18",
+  "order_convention": "supercharge obstructions",
+  "SU3_j30_C_odd": {
+    "source": "davidsd/fortuity-ai at 4256f207986029540060fb44dd494746828f65ce, data/su3/dmk_o330_hw.json",
+    "prime_1000033": {
+      "completed_tasks": 2197,
+      "completed_shards": 24,
+      "first_correction_variables": 28311,
+      "second_correction_variables": 49328,
+      "inherited_first_homogeneous_directions": 10308,
+      "evidence": "Original evaluation equations checked in production. Injectivity of every second-prime target frame and a rational chain remain open.",
+      "accounting": {
+        "preflight_allocated_core_seconds": 1376,
+        "map_shards_allocated_core_seconds": 634336,
+        "packed_solve_elapsed_seconds": 4227,
+        "packed_solve_allocated_cpus": 64,
+        "packed_solve_allocated_core_seconds": 270528
+      }
+    },
+    "prime_1000003": {
+      "completed_elimination_stages": [
+        13,
+        37
+      ],
+      "joint_rank": 50147,
+      "wrapper_stop_reason": "time_guard",
+      "joint_solution_saved": false,
+      "joint_residual_replay_finished": false
+    },
+    "local_receipt_verification": {
+      "matching_ordered_pivot_lists": 50,
+      "first_equation": {
+        "variables": 28311,
+        "rank": 18003,
+        "free_variables": 10308,
+        "coordinates_by_equation": {
+          "1": 34901
+        },
+        "nonzero_coordinates_reported": 0,
+        "particular_sha256": "7471532cfc2ba11e79f524435625876376d8b91290326d87567ce43bd2d2ff33",
+        "free_variables_sha256": "2c9abe719406b019aeac08869feeeb7b85529a671752ec71dbf81396489043e6"
+      },
+      "coupled_equations": {
+        "variables": 77639,
+        "rank": 50147,
+        "free_variables": 27492,
+        "coordinates_by_equation": {
+          "1": 34901,
+          "2": 65406
+        },
+        "nonzero_coordinates_reported": 0,
+        "particular_sha256": "a3f3ea9e9448299610f5313c7a4271184b099850b7696989c5bf8f5ea5dd6f39",
+        "free_variables_sha256": "a7421e462000b93c18376fbe5eda38c69e1cfa2b8642a7e5034e1824309b0e2d"
+      },
+      "correction_comparison": {
+        "first_correction_coordinates_changed": 28018,
+        "inherited_free_coordinates_changed": 10015,
+        "new_pivots_in_first_correction": 10015,
+        "new_pivots_in_second_correction": 22129
+      }
+    },
+    "solver_receipt_archive": "N4_SU3_j30_solution_receipts_20261118.zip",
+    "solver_receipt_archive_sha256": "b4b4e1df18bfa3666d5c0f9b09443d06e0087a41a78fcb742078f8e378a9557e",
+    "stage_archive_scope": "Includes both solution arrays, both free-coordinate arrays and ordered stage receipts for prime 1000033, and first-prime ordered pivot digests. Residual totals are scheduler-run solver outputs.",
+    "third_order_target_classical_dimension": 0
+  },
+  "SO7_j30_Cartan": {
+    "group": "SO(7)",
+    "level": 30,
+    "field": "Q",
+    "input_certificate_sha256": "47e2e191a863bef498c93bab77cc8a2b647849b331f81c58f4297418315b7459",
+    "polynomials": {
+      "S": {
+        "input_words": 1,
+        "coefficient_denominator": 1,
+        "nonzero_words_before_combination": 1,
+        "distinct_monomials_before_combination": 3,
+        "nonzero_monomials": 3
+      },
+      "F": {
+        "input_words": 2969,
+        "coefficient_denominator": 252,
+        "nonzero_words_before_combination": 101,
+        "distinct_monomials_before_combination": 375,
+        "nonzero_monomials": 153
+      },
+      "SF": {
+        "input_words": 2969,
+        "coefficient_denominator": 252,
+        "nonzero_words_before_combination": 24,
+        "distinct_monomials_before_combination": 21,
+        "nonzero_monomials": 0
+      }
+    },
+    "diagonal_weight_crosscheck": true,
+    "factorized_product_crosscheck": true,
+    "S_cubed_nonzero_on_Cartan": true,
+    "S_fourth_zero_on_Cartan": true
+  },
+  "stage_increments": {
+    "d1_highest_weight_pairings": 0,
+    "audited_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "campaign_totals": {
+    "d1_highest_weight_pairings": 5,
+    "audited_generator_families": 3,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "SO7_j30_incoming": {
+    "group": "SO(7)",
+    "level": 30,
+    "target_mu": [
+      4,
+      4,
+      1,
+      1,
+      1
+    ],
+    "target_length": 10,
+    "target_classical_neighbors": [
+      4752,
+      1739,
+      295
+    ],
+    "modular_target": {
+      "prime": 1000003,
+      "boundary_rows": 1443,
+      "frame_coordinates": 1870,
+      "boundary_entries_checked": 2698410,
+      "nonzero_boundary_pairings": 0,
+      "SF_pairing": 1
+    },
+    "incoming": [
+      {
+        "order": 1,
+        "mu": [
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "length": 10,
+        "classical_neighbors": [
+          70609,
+          42991,
+          14832
+        ]
+      },
+      {
+        "order": 2,
+        "mu": [
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        "length": 11,
+        "classical_neighbors": [
+          166174,
+          98233,
+          32458
+        ]
+      },
+      {
+        "order": 3,
+        "mu": [
+          1,
+          1,
+          4,
+          4,
+          4
+        ],
+        "length": 12,
+        "classical_neighbors": [
+          101564,
+          57881,
+          18894
+        ]
+      },
+      {
+        "order": 4,
+        "mu": [
+          0,
+          0,
+          5,
+          5,
+          5
+        ],
+        "length": 13,
+        "classical_neighbors": [
+          12070,
+          6650,
+          2323
+        ]
+      }
+    ],
+    "classical_target_over_Q": {
+      "incoming_Q0_rank": 1443,
+      "outgoing_Q0_rank": 295,
+      "cohomology_dimension": 1,
+      "restricted_joint_rank": 4308,
+      "restricted_joint_rank_after_adding_SF": 4309,
+      "full_incoming_d1_computed": false,
+      "phase_record_sha256": "5490291bbcc96a54f2cf29f42cc793fcc3b15c441ca518da243dfd1fb479705e"
+    }
+  },
+  "SU3_j34": {
+    "charge_conjugation_controls": {
+      "one_matrix_symmetric_degrees": 13,
+      "one_matrix_exterior_degrees": 13
+    },
+    "j34_source": {
+      "length": 11,
+      "C_even": 13331,
+      "C_odd": 13258,
+      "both": 26589
+    },
+    "public_column": {
+      "multiplets": 37,
+      "gravitons": 34,
+      "P_odd": 3,
+      "source_C": 1,
+      "scalar_restriction_kernel_dimension": 1,
+      "source": "davidsd/fortuity-ai@4256f207986029540060fb44dd494746828f65ce, summary/fortuity-summary.tex and data/su3/core_restrictions_j30_j34.json"
+    },
+    "j30_second_target_control": {
+      "length": 9,
+      "C_even": 63398,
+      "C_odd": 63983,
+      "both": 127381
+    },
+    "j34_targets": [
+      {
+        "order": 1,
+        "mu": [
+          1,
+          1,
+          7,
+          4,
+          3
+        ],
+        "classical_neighbors": [
+          {
+            "length": 10,
+            "C_even": 174011,
+            "C_odd": 173698,
+            "both": 347709
+          },
+          {
+            "length": 11,
+            "C_even": 253167,
+            "C_odd": 253088,
+            "both": 506255
+          },
+          {
+            "length": 12,
+            "C_even": 229557,
+            "C_odd": 229521,
+            "both": 459078
+          }
+        ],
+        "target_P": -1,
+        "dense_C_even_incoming_Q0_bytes_at_four_bytes_per_entry": 176215371348
+      },
+      {
+        "order": 2,
+        "mu": [
+          2,
+          2,
+          6,
+          3,
+          2
+        ],
+        "classical_neighbors": [
+          {
+            "length": 9,
+            "C_even": 421596,
+            "C_odd": 423062,
+            "both": 844658
+          },
+          {
+            "length": 10,
+            "C_even": 639219,
+            "C_odd": 637352,
+            "both": 1276571
+          },
+          {
+            "length": 11,
+            "C_even": 584431,
+            "C_odd": 585456,
+            "both": 1169887
+          }
+        ],
+        "target_P": 1,
+        "dense_C_even_incoming_Q0_bytes_at_four_bytes_per_entry": 1077968694096
+      },
+      {
+        "order": 3,
+        "mu": [
+          3,
+          3,
+          5,
+          2,
+          1
+        ],
+        "classical_neighbors": [
+          {
+            "length": 8,
+            "C_even": 242869,
+            "C_odd": 239628,
+            "both": 482497
+          },
+          {
+            "length": 9,
+            "C_even": 384988,
+            "C_odd": 385431,
+            "both": 770419
+          },
+          {
+            "length": 10,
+            "C_even": 363622,
+            "C_odd": 363726,
+            "both": 727348
+          }
+        ],
+        "target_P": -1,
+        "dense_C_even_incoming_Q0_bytes_at_four_bytes_per_entry": 374006602288
+      }
+    ]
+  },
+  "G2_nonperturbative_candidate": {
+    "target_sector": [
+      0,
+      0,
+      4,
+      4,
+      4
+    ],
+    "source_sector": [
+      1,
+      1,
+      4,
+      4,
+      4
+    ],
+    "target_cohomology_by_length": {
+      "4": 1,
+      "5": 0,
+      "6": 1
+    },
+    "source_cohomology_by_length": {
+      "3": 0,
+      "4": 1,
+      "5": 0
+    },
+    "target_representatives": [
+      "S^2",
+      "scalar Gram determinant"
+    ],
+    "source_representative_terms": 18,
+    "S2_frames": [
+      {
+        "seed": 2026111801,
+        "coordinates": 30,
+        "target_rank": 2,
+        "boundary_rank": 1,
+        "augmented_rank": 2
+      },
+      {
+        "seed": 2026111807,
+        "coordinates": 30,
+        "target_rank": 2,
+        "boundary_rank": 1,
+        "augmented_rank": 2
+      }
+    ],
+    "np_matrix_shape": [
+      2,
+      1
+    ],
+    "np_matrix_computed": false,
+    "payload_sha256": "90e19eee9e46dd9400947302c8dfb5948b4b2f570f3dd300c5f820a50d39c955",
+    "gram_payload_sha256": "7ad4015f5c02284403fbba6b601e1e070d08e2672cdf94b16f8ce7da890d079a",
+    "partner_payload_sha256": "a11ba952b59bd3ba9cbfd94657a23ca40f376537009aed7c343fb871ee0e58c8",
+    "current_factors": {
+      "six_product_reconstruction": true,
+      "physical_input": "Exact protected N=4 stress-multiplet components with these charges and their nonzero classical limits; exact binary cohomological OPE.",
+      "source_dictionary_fixed_by_this_driver": false,
+      "payload_sha256": "b47620ba6860610274a099b89bfbec1d880aa2a1760ddda4aca96b691c6802ce",
+      "bilinear_cohomology_dimensions": [
+        1,
+        1
+      ]
+    },
+    "portable_exact_replay": {
+      "source_cohomology_dimension": 1,
+      "independent_target_classes_checked": 2,
+      "first_correction_coefficient": "6",
+      "rational_residual_coordinates": 30,
+      "closed_bilinear_factor_occurrences": 12,
+      "reconstructed_trace_terms": 18,
+      "nonperturbative_matrix_computed": false
+    },
+    "portable_matrices_and_six_products": "N4_G2_np_partner_replay_20261118.json.gz"
+  },
+  "positive_controls_in_cubic_singlet_model": [
+    {
+      "order": 2,
+      "stage_monomials": [
+        867,
+        404
+      ],
+      "rational_pairing": 1
+    },
+    {
+      "order": 3,
+      "stage_monomials": [
+        4422,
+        12468,
+        5528
+      ],
+      "rational_pairing": 1
+    }
+  ],
+  "source_revisions": {
+    "kernel_manuscript": "lbotao399-stack/All-loop-holomorphic-kernels@dcab65c7d758aef018b61e0b71ce398dca20c4d4",
+    "supplement_and_solver": "lbotao399-stack/quantum-lifts-results@c28f7b67c0cfa533ee1039e909a5ee2a82404591",
+    "external_BMN_code_and_summary": "davidsd/fortuity-ai@4256f207986029540060fb44dd494746828f65ce"
+  },
+  "historical_controls": {
+    "Sp2_j30_third_equation": {
+      "prime": 1000003,
+      "classical_boundary_rank": 2638,
+      "rank_after_correction_columns": 2638,
+      "rank_after_source_columns": 2638,
+      "source_columns": 2,
+      "direct_Q3_quotient_directions": 2,
+      "source_witness_residual_coordinates": 30408,
+      "phase_record_sha256": "40eae961315febb1ad33643598d05c5b176aa58352bfe62157fb68084d77fe26"
+    },
+    "SO8_j22_reflection_odd": {
+      "prime": 1000003,
+      "sector": [
+        1,
+        4,
+        4,
+        3
+      ],
+      "source_dimension": 229,
+      "incoming_rank": 185,
+      "outgoing_rank": 41,
+      "boundary_plus_Pfaffian_product_rank": 188,
+      "phase_record_sha256": "a2138e5d4012072e7291fd131f57fae4eeaf4acea4b99050c1aeaf0b3246b80d"
+    }
+  }
+}
