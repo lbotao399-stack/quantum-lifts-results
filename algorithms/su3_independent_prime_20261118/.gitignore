@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.dylib
+*.so
+.venv/
+output/
+controls.json
+runtime/work/sp3-native.nosync/validate_*.json

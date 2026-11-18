@@ -1,0 +1,68 @@
+{
+  "status": "first_prime_maps_complete_all_elimination_stages_consistent_second_prime_running",
+  "at": "2026-11-18T00:09:54.172532+00:00",
+  "theory": "undeformed N=4 SYM",
+  "group": "SU(3)",
+  "level": 30,
+  "order_convention": "supercharge obstructions",
+  "counts": {
+    "d1": 5,
+    "new_fortuitous_generator_families": 3,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "phase_increments": {
+    "d1": 0,
+    "new_fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "first_prime": {
+    "prime": 1000003,
+    "Q0_chunks": 804,
+    "Q0_rows": 49328,
+    "Q1_chunks": 892,
+    "Q1_rows": 28311,
+    "second_elimination_profiles": 37,
+    "reported_joint_rank": 50147,
+    "joint_variables": 77639,
+    "reported_remaining_free_variables": 27492,
+    "elimination_stages_consistent": true,
+    "particular_solution_residual_replay_complete": false,
+    "rational_correction_certified": false,
+    "rational_obstruction_certified": false
+  },
+  "independent_prime": {
+    "prime": 1000033,
+    "shards": 24,
+    "allocated_cpus": 768,
+    "first_Q0_rows": 28311,
+    "second_Q0_rows": 49328,
+    "second_Q1_rows": 28311,
+    "preflight": {
+      "status": "passed_independent_prime_runtime_maps_coupled_controls_and_Q1_json_sign",
+      "prime": 1000033,
+      "first_rhs_dense_coordinates": 8940,
+      "seconds": 86.02145722601563,
+      "manifest_sha256": "403805880c02c426e3c61c84559a8a1c75d03dbee2d9886cf6e2c26746c799e5"
+    },
+    "finished_chunks_at_snapshot": 322,
+    "recorded_chunk_errors": 0
+  },
+  "algorithm_improvement": "Hash-verified lossless packing of each source-target matrix before elimination and residual replay.",
+  "compaction_controls": {
+    "primes": [
+      1000003,
+      1000033
+    ],
+    "assembled_coordinates_compared_per_prime": 126,
+    "input_blocks": 24,
+    "packed_blocks": 12,
+    "missing_rows_rejected": true,
+    "corrupted_payload_rejected": true
+  },
+  "scope": "First-prime elimination records and running second-prime calculations. No new rational lift certificate.",
+  "evidence": "algorithms/su3_independent_prime_20261118/"
+}

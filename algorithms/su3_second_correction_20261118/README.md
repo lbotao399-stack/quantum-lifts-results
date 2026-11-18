@@ -1,6 +1,6 @@
 # SU(3) second-correction algorithms, November 18, 2026
 
-This bundle records the ongoing nonabelian, charge-conjugation-odd `j=30` calculation in undeformed N=4 SYM. It contains the second-correction map drivers, their controls, the coupled solver, and the completed negative `Q2` source evaluations. The second coupled equation is not yet solved.
+This bundle records the ongoing nonabelian, charge-conjugation-odd `j=30` calculation in undeformed N=4 SYM. It contains the second-correction map drivers, their controls, the coupled solver, and the completed negative `Q2` source evaluations. All second-equation elimination stages are consistent modulo 1000003; particular-solution residual replay and rational certification remain pending.
 
 | Space or map | Profiles | Coordinates or couplings |
 |---|---:|---:|
@@ -27,7 +27,7 @@ The assembler checks source recipes, source-basis hashes, global row offsets, ev
 
 The production Q1 plan has 892 chunks of at most 32 rows. Its existing two-row checkpoints survive interrupted scheduler steps. The solver accepts `--threads` to configure FLINT's internal thread limit; this setting alone is not a measured parallel speedup.
 
-All 804 second-Q0 chunks are complete, covering 49328 source rows. At 2026-11-18 01:24:33 CST, Q1 production had 476 checkpointed rows. The actual saved first stages passed 36006 residual coordinates after moving the RHS column: one saved particular solution and one deterministic homogeneous vector were checked. The remaining free-variable count before imposing the second equation is `77639 - 18003 = 59636 = 49328 + 10308`; see `validation/actual_first_stage_compatibility.json`.
+All 804 second-Q0 chunks and all 892 second-Q1 chunks are complete, covering 49328 and 28311 source rows. All 37 second-equation elimination stages report consistency modulo 1000003, with joint rank 50147 and 77639 variables. Residual replay remains pending. The [independent-prime extension](../su3_independent_prime_20261118/README.md) provides the complete second-basis recipes, lossless map packing and the running prime-1000033 calculation. The actual saved first stages previously passed 36006 residual coordinates after RHS relocation on one particular and one homogeneous vector; see `validation/actual_first_stage_compatibility.json`.
 
 ## Reproduce the independent checks
 
@@ -63,4 +63,4 @@ Phase increments: `d1 = 0`, audited fortuitous-generator families `= 0`. Cumulat
 
 The vendored graded trace and matrix-evaluation modules originate from [davidsd/fortuity-ai](https://github.com/davidsd/fortuity-ai), retaining the imported headers and the prior upstream pin `4256f207986029540060fb44dd494746828f65ce`. This bundle adds the profile-resolved quantum maps, preservation of target frames, staged coupled assembly, and independent evidence replay. No new license is assigned to the imported snapshot.
 
-The Q1 production matrices and the coupled second-equation result remain pending. Cluster credentials and account-specific submission scripts are not included.
+The coupled particular-solution residual replay and rational certification remain pending. Cluster credentials and account-specific submission scripts are not included.

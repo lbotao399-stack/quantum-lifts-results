@@ -1,0 +1,57 @@
+{
+  "prime": 1000033,
+  "shards": 24,
+  "task_counts": [
+    91,
+    91,
+    91,
+    91,
+    92,
+    91,
+    91,
+    94,
+    92,
+    92,
+    91,
+    91,
+    91,
+    91,
+    93,
+    91,
+    91,
+    91,
+    91,
+    93,
+    91,
+    91,
+    92,
+    93
+  ],
+  "kinds": {
+    "first_Q0": 451,
+    "second_Q0": 804,
+    "second_Q1": 892,
+    "first_rhs": 13,
+    "second_rhs": 37
+  },
+  "rows": {
+    "first_Q0": 28311,
+    "second_Q0": 49328,
+    "second_Q1": 28311
+  },
+  "cost_model": "Q1 measured pilot; Q0 target widths used only for task balancing",
+  "source_recipe_dimensions": {
+    "sources": 49328,
+    "targets": 63983
+  },
+  "d1_increment": 0,
+  "new_generator_increment": 0,
+  "d2_increment": 0,
+  "d3_increment": 0,
+  "np_increment": 0,
+  "cpus_per_shard": 32,
+  "processes_per_shard": 4,
+  "native_threads_per_process": 8,
+  "maximum_wall_seconds_per_shard": 3600,
+  "uncompressed_map_payload_bytes": 6957312128
+}

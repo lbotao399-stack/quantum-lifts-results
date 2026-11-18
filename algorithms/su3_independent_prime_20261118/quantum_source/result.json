@@ -1,0 +1,145 @@
+{
+  "status": "exact_rational_images_complete",
+  "job_id": "7640680",
+  "node": "gc0213",
+  "source_sha256": "103c9e6ffec0fc8bb6a0da4e02594d58c5e701f552a8baf7f24fc5a155427472",
+  "files": {
+    "Q1.json.gz": "225ad611f6583a5fd8aea63b0af443f4af2f3dc9f63e0c767b9fccb3d866f94b",
+    "checks.json": "2377858cdfd45c3d7386aa54ee5a6fdb44b2d8fe369129e0e7f0483116f7c668",
+    "Q1.pkl": "16294915a4b5472a7d6b335f3d4dcfcb414f81a04ba1b711988ed8d4fcbb4241",
+    "progress.json": "99592db01c172402b84bbf3b9e27e0c6d4a9040368ad02618d895bc1b571cd8d",
+    "Q2.pkl": "054cf8335964f903aae2a4528e5dd4776a953cdfbd73d5cd466a4bc853faeee5",
+    "Q2.json.gz": "6f809d9990e3869c13faf0156f1a3ad8a337e4d67348ddc4789862b778c1f0d1",
+    "Q0.json.gz": "2306b1280d8899590f41155cb88afba9a28d0bc89f7c0f93dc82142f8d3965d5",
+    "Q0.pkl": "dc049903572b6cbfa7532db71ad4b8c8d8879dd239de38263fd39a169b1fde2b"
+  },
+  "image_terms": {
+    "source": 6139,
+    "Q0": 19990,
+    "Q1": 213104,
+    "Q2": 23055
+  },
+  "validation": {
+    "images": [
+      {
+        "name": "source",
+        "terms": 6139,
+        "fermion_degrees": [
+          5
+        ],
+        "common_denominator": 630,
+        "exact_raising_equations": 3,
+        "exact_C_odd": true,
+        "sectors": [
+          [
+            5,
+            5,
+            14,
+            8,
+            8
+          ]
+        ]
+      },
+      {
+        "name": "Q0",
+        "terms": 19990,
+        "fermion_degrees": [
+          4
+        ],
+        "common_denominator": 630,
+        "exact_raising_equations": 3,
+        "exact_C_odd": true,
+        "sectors": [
+          [
+            4,
+            4,
+            14,
+            8,
+            8
+          ]
+        ]
+      },
+      {
+        "name": "Q1",
+        "terms": 213104,
+        "fermion_degrees": [
+          4,
+          6
+        ],
+        "common_denominator": 630,
+        "exact_raising_equations": 3,
+        "exact_C_odd": true,
+        "sectors": [
+          [
+            4,
+            4,
+            14,
+            8,
+            8
+          ]
+        ]
+      },
+      {
+        "name": "Q2",
+        "terms": 23055,
+        "fermion_degrees": [
+          4
+        ],
+        "common_denominator": 45,
+        "exact_raising_equations": 3,
+        "exact_C_odd": true,
+        "sectors": [
+          [
+            4,
+            4,
+            14,
+            8,
+            8
+          ]
+        ]
+      }
+    ],
+    "Q0_source_evaluation_checks": [
+      {
+        "prime": 1000003,
+        "seed": 2026111711,
+        "functionals": 45,
+        "nonzero_values": 0,
+        "native_derivative_matches_explicit_image": true
+      },
+      {
+        "prime": 1000003,
+        "seed": 2026111717,
+        "functionals": 45,
+        "nonzero_values": 0,
+        "native_derivative_matches_explicit_image": true
+      },
+      {
+        "prime": 1000033,
+        "seed": 2026111711,
+        "functionals": 45,
+        "nonzero_values": 0,
+        "native_derivative_matches_explicit_image": true
+      },
+      {
+        "prime": 1000033,
+        "seed": 2026111717,
+        "functionals": 45,
+        "nonzero_values": 0,
+        "native_derivative_matches_explicit_image": true
+      }
+    ],
+    "finite_rank_Q0_closure_status": "zero_evaluations_only_no_polynomial_identity_certificate",
+    "first_correction_solved": false,
+    "d2_residual_constructed": false,
+    "seconds": 84.8496895749995
+  },
+  "driver_sha256": "be4a72369236ffaa0732d20856a0b25cfea78251de763a82b6f33e92dd4e2c5c",
+  "seconds": 123.53282593800031,
+  "d1_increment": 0,
+  "new_generator_increment": 0,
+  "d2_increment": 0,
+  "d3_increment": 0,
+  "np_increment": 0,
+  "scope": "Exact cochain images only. Q0 y=-Q1 x and the quotient by all homogeneous corrections remain unsolved."
+}

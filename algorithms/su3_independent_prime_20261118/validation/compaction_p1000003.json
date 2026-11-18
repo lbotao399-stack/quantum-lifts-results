@@ -1,0 +1,15 @@
+{
+  "status": "passed_lossless_compaction_full_assembly_and_input_rejection",
+  "prime": 1000003,
+  "matrix_coordinates_compared": 126,
+  "input_blocks": 24,
+  "output_blocks": 12,
+  "checks": [
+    "first_and_second_assembled_matrices_identical",
+    "source_order_and_global_columns_identical",
+    "missing_rows_rejected",
+    "corrupted_payload_rejected"
+  ],
+  "driver_sha256": "6b53e483b9a9313e38063f9d62c1145359a3c046a6a5db5ff8a27351cc09c4dc",
+  "seconds": 0.2790671670809388
+}

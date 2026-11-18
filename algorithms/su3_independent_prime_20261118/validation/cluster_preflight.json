@@ -1,0 +1,7 @@
+{
+  "status": "passed_independent_prime_runtime_maps_coupled_controls_and_Q1_json_sign",
+  "prime": 1000033,
+  "first_rhs_dense_coordinates": 8940,
+  "seconds": 86.02145722601563,
+  "manifest_sha256": "403805880c02c426e3c61c84559a8a1c75d03dbee2d9886cf6e2c26746c799e5"
+}

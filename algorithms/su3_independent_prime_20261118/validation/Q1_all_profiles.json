@@ -1,0 +1,1901 @@
+{
+  "status": "passed_all_Q1_profile_supports_rational_reductions_dense_matrices_and_global_rows",
+  "checks": [
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 3,
+      "prime": 1000003,
+      "quantum_terms": 952,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 7,
+      "prime": 1000003,
+      "quantum_terms": 336,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 10,
+      "prime": 1000003,
+      "quantum_terms": 2544,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 11,
+      "prime": 1000003,
+      "quantum_terms": 84,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 12,
+      "prime": 1000003,
+      "quantum_terms": 672,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 3,
+      "prime": 1000033,
+      "quantum_terms": 952,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 7,
+      "prime": 1000033,
+      "quantum_terms": 336,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 10,
+      "prime": 1000033,
+      "quantum_terms": 2544,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 11,
+      "prime": 1000033,
+      "quantum_terms": 84,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 0,
+      "source_row": 218,
+      "target": 12,
+      "prime": 1000033,
+      "quantum_terms": 672,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 3,
+      "prime": 1000003,
+      "quantum_terms": 2288,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 4,
+      "prime": 1000003,
+      "quantum_terms": 1056,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 8,
+      "prime": 1000003,
+      "quantum_terms": 2592,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 9,
+      "prime": 1000003,
+      "quantum_terms": 2592,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 11,
+      "prime": 1000003,
+      "quantum_terms": 4064,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 12,
+      "prime": 1000003,
+      "quantum_terms": 2192,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 13,
+      "prime": 1000003,
+      "quantum_terms": 720,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 18,
+      "prime": 1000003,
+      "quantum_terms": 216,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 3,
+      "prime": 1000033,
+      "quantum_terms": 2288,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 4,
+      "prime": 1000033,
+      "quantum_terms": 1056,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 8,
+      "prime": 1000033,
+      "quantum_terms": 2592,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 9,
+      "prime": 1000033,
+      "quantum_terms": 2592,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 11,
+      "prime": 1000033,
+      "quantum_terms": 4064,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 12,
+      "prime": 1000033,
+      "quantum_terms": 2192,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 13,
+      "prime": 1000033,
+      "quantum_terms": 720,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 1,
+      "source_row": 70,
+      "target": 18,
+      "prime": 1000033,
+      "quantum_terms": 216,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 0,
+      "prime": 1000003,
+      "quantum_terms": 57,
+      "coordinates": 2,
+      "nonzero": 2
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 3,
+      "prime": 1000003,
+      "quantum_terms": 144,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 5,
+      "prime": 1000003,
+      "quantum_terms": 2256,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 6,
+      "prime": 1000003,
+      "quantum_terms": 1200,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 7,
+      "prime": 1000003,
+      "quantum_terms": 100,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 10,
+      "prime": 1000003,
+      "quantum_terms": 84,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 14,
+      "prime": 1000003,
+      "quantum_terms": 400,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 0,
+      "prime": 1000033,
+      "quantum_terms": 57,
+      "coordinates": 2,
+      "nonzero": 2
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 3,
+      "prime": 1000033,
+      "quantum_terms": 144,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 5,
+      "prime": 1000033,
+      "quantum_terms": 2256,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 6,
+      "prime": 1000033,
+      "quantum_terms": 1200,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 7,
+      "prime": 1000033,
+      "quantum_terms": 100,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 10,
+      "prime": 1000033,
+      "quantum_terms": 84,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 2,
+      "source_row": 1073,
+      "target": 14,
+      "prime": 1000033,
+      "quantum_terms": 400,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 1,
+      "prime": 1000003,
+      "quantum_terms": 3616,
+      "coordinates": 2,
+      "nonzero": 2
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 4,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 6,
+      "prime": 1000003,
+      "quantum_terms": 53168,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 8,
+      "prime": 1000003,
+      "quantum_terms": 1808,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 11,
+      "prime": 1000003,
+      "quantum_terms": 864,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 14,
+      "prime": 1000003,
+      "quantum_terms": 50256,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 15,
+      "prime": 1000003,
+      "quantum_terms": 1808,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 16,
+      "prime": 1000003,
+      "quantum_terms": 5136,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 1,
+      "prime": 1000033,
+      "quantum_terms": 3616,
+      "coordinates": 2,
+      "nonzero": 2
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 4,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 6,
+      "prime": 1000033,
+      "quantum_terms": 53168,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 8,
+      "prime": 1000033,
+      "quantum_terms": 1808,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 11,
+      "prime": 1000033,
+      "quantum_terms": 864,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 14,
+      "prime": 1000033,
+      "quantum_terms": 50256,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 15,
+      "prime": 1000033,
+      "quantum_terms": 1808,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 3,
+      "source_row": 367,
+      "target": 16,
+      "prime": 1000033,
+      "quantum_terms": 5136,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 1,
+      "prime": 1000003,
+      "quantum_terms": 13200,
+      "coordinates": 2,
+      "nonzero": 2
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 3,
+      "prime": 1000003,
+      "quantum_terms": 256,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 7,
+      "prime": 1000003,
+      "quantum_terms": 37552,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 8,
+      "prime": 1000003,
+      "quantum_terms": 8736,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 9,
+      "prime": 1000003,
+      "quantum_terms": 8736,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 15,
+      "prime": 1000003,
+      "quantum_terms": 10656,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 18,
+      "prime": 1000003,
+      "quantum_terms": 54,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 1,
+      "prime": 1000033,
+      "quantum_terms": 13200,
+      "coordinates": 2,
+      "nonzero": 2
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 3,
+      "prime": 1000033,
+      "quantum_terms": 256,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 7,
+      "prime": 1000033,
+      "quantum_terms": 37552,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 8,
+      "prime": 1000033,
+      "quantum_terms": 8736,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 9,
+      "prime": 1000033,
+      "quantum_terms": 8736,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 15,
+      "prime": 1000033,
+      "quantum_terms": 10656,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 4,
+      "source_row": 367,
+      "target": 18,
+      "prime": 1000033,
+      "quantum_terms": 54,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 2,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 2,
+      "nonzero": 0
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 4,
+      "prime": 1000003,
+      "quantum_terms": 1056,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 9,
+      "prime": 1000003,
+      "quantum_terms": 15032,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 15,
+      "prime": 1000003,
+      "quantum_terms": 15032,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 17,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 2,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 2,
+      "nonzero": 0
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 4,
+      "prime": 1000033,
+      "quantum_terms": 1056,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 9,
+      "prime": 1000033,
+      "quantum_terms": 15032,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 15,
+      "prime": 1000033,
+      "quantum_terms": 15032,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 5,
+      "source_row": 53,
+      "target": 17,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 5,
+      "prime": 1000003,
+      "quantum_terms": 5832,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 10,
+      "prime": 1000003,
+      "quantum_terms": 816,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 19,
+      "prime": 1000003,
+      "quantum_terms": 2816,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 21,
+      "prime": 1000003,
+      "quantum_terms": 432,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 22,
+      "prime": 1000003,
+      "quantum_terms": 12942,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 23,
+      "prime": 1000003,
+      "quantum_terms": 5832,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 24,
+      "prime": 1000003,
+      "quantum_terms": 744,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 27,
+      "prime": 1000003,
+      "quantum_terms": 648,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 5,
+      "prime": 1000033,
+      "quantum_terms": 5832,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 10,
+      "prime": 1000033,
+      "quantum_terms": 816,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 19,
+      "prime": 1000033,
+      "quantum_terms": 2816,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 21,
+      "prime": 1000033,
+      "quantum_terms": 432,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 22,
+      "prime": 1000033,
+      "quantum_terms": 12942,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 23,
+      "prime": 1000033,
+      "quantum_terms": 5832,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 24,
+      "prime": 1000033,
+      "quantum_terms": 744,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 6,
+      "source_row": 2125,
+      "target": 27,
+      "prime": 1000033,
+      "quantum_terms": 648,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 3,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 6,
+      "prime": 1000003,
+      "quantum_terms": 3184,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 7,
+      "prime": 1000003,
+      "quantum_terms": 3888,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 12,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 20,
+      "prime": 1000003,
+      "quantum_terms": 5480,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 21,
+      "prime": 1000003,
+      "quantum_terms": 472,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 23,
+      "prime": 1000003,
+      "quantum_terms": 14520,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 25,
+      "prime": 1000003,
+      "quantum_terms": 1592,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 26,
+      "prime": 1000003,
+      "quantum_terms": 3564,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 29,
+      "prime": 1000003,
+      "quantum_terms": 432,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 3,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 6,
+      "prime": 1000033,
+      "quantum_terms": 3184,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 7,
+      "prime": 1000033,
+      "quantum_terms": 3888,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 12,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 20,
+      "prime": 1000033,
+      "quantum_terms": 5480,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 21,
+      "prime": 1000033,
+      "quantum_terms": 472,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 23,
+      "prime": 1000033,
+      "quantum_terms": 14520,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 25,
+      "prime": 1000033,
+      "quantum_terms": 1592,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 26,
+      "prime": 1000033,
+      "quantum_terms": 3564,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 7,
+      "source_row": 892,
+      "target": 29,
+      "prime": 1000033,
+      "quantum_terms": 432,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 6,
+      "prime": 1000003,
+      "quantum_terms": 15552,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 11,
+      "prime": 1000003,
+      "quantum_terms": 512,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 19,
+      "prime": 1000003,
+      "quantum_terms": 13392,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 20,
+      "prime": 1000003,
+      "quantum_terms": 7776,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 24,
+      "prime": 1000003,
+      "quantum_terms": 10868,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 25,
+      "prime": 1000003,
+      "quantum_terms": 6480,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 28,
+      "prime": 1000003,
+      "quantum_terms": 756,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 31,
+      "prime": 1000003,
+      "quantum_terms": 243,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 6,
+      "prime": 1000033,
+      "quantum_terms": 15552,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 11,
+      "prime": 1000033,
+      "quantum_terms": 512,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 19,
+      "prime": 1000033,
+      "quantum_terms": 13392,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 20,
+      "prime": 1000033,
+      "quantum_terms": 7776,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 24,
+      "prime": 1000033,
+      "quantum_terms": 10868,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 25,
+      "prime": 1000033,
+      "quantum_terms": 6480,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 28,
+      "prime": 1000033,
+      "quantum_terms": 756,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 8,
+      "source_row": 436,
+      "target": 31,
+      "prime": 1000033,
+      "quantum_terms": 243,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 10,
+      "prime": 1000003,
+      "quantum_terms": 612,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 21,
+      "prime": 1000003,
+      "quantum_terms": 1224,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 23,
+      "prime": 1000003,
+      "quantum_terms": 1296,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 27,
+      "prime": 1000003,
+      "quantum_terms": 2200,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 28,
+      "prime": 1000003,
+      "quantum_terms": 404,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 29,
+      "prime": 1000003,
+      "quantum_terms": 556,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 30,
+      "prime": 1000003,
+      "quantum_terms": 24,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 10,
+      "prime": 1000033,
+      "quantum_terms": 612,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 21,
+      "prime": 1000033,
+      "quantum_terms": 1224,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 23,
+      "prime": 1000033,
+      "quantum_terms": 1296,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 27,
+      "prime": 1000033,
+      "quantum_terms": 2200,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 28,
+      "prime": 1000033,
+      "quantum_terms": 404,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 29,
+      "prime": 1000033,
+      "quantum_terms": 556,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 9,
+      "source_row": 249,
+      "target": 30,
+      "prime": 1000033,
+      "quantum_terms": 24,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 10,
+      "source_row": 1902,
+      "target": 5,
+      "prime": 1000003,
+      "quantum_terms": 10256,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 10,
+      "source_row": 1902,
+      "target": 19,
+      "prime": 1000003,
+      "quantum_terms": 9720,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 10,
+      "source_row": 1902,
+      "target": 22,
+      "prime": 1000003,
+      "quantum_terms": 10404,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 10,
+      "source_row": 1902,
+      "target": 5,
+      "prime": 1000033,
+      "quantum_terms": 10256,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 10,
+      "source_row": 1902,
+      "target": 19,
+      "prime": 1000033,
+      "quantum_terms": 9720,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 10,
+      "source_row": 1902,
+      "target": 22,
+      "prime": 1000033,
+      "quantum_terms": 10404,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 6,
+      "prime": 1000003,
+      "quantum_terms": 9376,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 7,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 14,
+      "prime": 1000003,
+      "quantum_terms": 9376,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 19,
+      "prime": 1000003,
+      "quantum_terms": 3888,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 20,
+      "prime": 1000003,
+      "quantum_terms": 5832,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 23,
+      "prime": 1000003,
+      "quantum_terms": 11244,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 31,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 6,
+      "prime": 1000033,
+      "quantum_terms": 9376,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 7,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 14,
+      "prime": 1000033,
+      "quantum_terms": 9376,
+      "coordinates": 12,
+      "nonzero": 12
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 19,
+      "prime": 1000033,
+      "quantum_terms": 3888,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 20,
+      "prime": 1000033,
+      "quantum_terms": 5832,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 23,
+      "prime": 1000033,
+      "quantum_terms": 11244,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 11,
+      "source_row": 2377,
+      "target": 31,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 30,
+      "nonzero": 0
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 9,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 15,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 16,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 20,
+      "prime": 1000003,
+      "quantum_terms": 15684,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 26,
+      "prime": 1000003,
+      "quantum_terms": 4440,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 9,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 15,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 16,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 12,
+      "nonzero": 0
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 20,
+      "prime": 1000033,
+      "quantum_terms": 15684,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 12,
+      "source_row": 427,
+      "target": 26,
+      "prime": 1000033,
+      "quantum_terms": 4440,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 13,
+      "source_row": 1425,
+      "target": 22,
+      "prime": 1000003,
+      "quantum_terms": 9396,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 13,
+      "source_row": 1425,
+      "target": 32,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 56,
+      "nonzero": 0
+    },
+    {
+      "source": 13,
+      "source_row": 1425,
+      "target": 33,
+      "prime": 1000003,
+      "quantum_terms": 2248,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 13,
+      "source_row": 1425,
+      "target": 22,
+      "prime": 1000033,
+      "quantum_terms": 9396,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 13,
+      "source_row": 1425,
+      "target": 32,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 56,
+      "nonzero": 0
+    },
+    {
+      "source": 13,
+      "source_row": 1425,
+      "target": 33,
+      "prime": 1000033,
+      "quantum_terms": 2248,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 19,
+      "prime": 1000003,
+      "quantum_terms": 3672,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 23,
+      "prime": 1000003,
+      "quantum_terms": 3888,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 24,
+      "prime": 1000003,
+      "quantum_terms": 3672,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 32,
+      "prime": 1000003,
+      "quantum_terms": 0,
+      "coordinates": 56,
+      "nonzero": 0
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 34,
+      "prime": 1000003,
+      "quantum_terms": 1404,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 19,
+      "prime": 1000033,
+      "quantum_terms": 3672,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 23,
+      "prime": 1000033,
+      "quantum_terms": 3888,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 24,
+      "prime": 1000033,
+      "quantum_terms": 3672,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 32,
+      "prime": 1000033,
+      "quantum_terms": 0,
+      "coordinates": 56,
+      "nonzero": 0
+    },
+    {
+      "source": 14,
+      "source_row": 1482,
+      "target": 34,
+      "prime": 1000033,
+      "quantum_terms": 1404,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 22,
+      "prime": 1000003,
+      "quantum_terms": 1848,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 27,
+      "prime": 1000003,
+      "quantum_terms": 864,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 32,
+      "prime": 1000003,
+      "quantum_terms": 968,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 33,
+      "prime": 1000003,
+      "quantum_terms": 2380,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 34,
+      "prime": 1000003,
+      "quantum_terms": 1848,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 35,
+      "prime": 1000003,
+      "quantum_terms": 96,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 22,
+      "prime": 1000033,
+      "quantum_terms": 1848,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 27,
+      "prime": 1000033,
+      "quantum_terms": 864,
+      "coordinates": 30,
+      "nonzero": 30
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 32,
+      "prime": 1000033,
+      "quantum_terms": 968,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 33,
+      "prime": 1000033,
+      "quantum_terms": 2380,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 34,
+      "prime": 1000033,
+      "quantum_terms": 1848,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 15,
+      "source_row": 526,
+      "target": 35,
+      "prime": 1000033,
+      "quantum_terms": 96,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 16,
+      "source_row": 163,
+      "target": 33,
+      "prime": 1000003,
+      "quantum_terms": 4576,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 16,
+      "source_row": 163,
+      "target": 36,
+      "prime": 1000003,
+      "quantum_terms": 348,
+      "coordinates": 90,
+      "nonzero": 90
+    },
+    {
+      "source": 16,
+      "source_row": 163,
+      "target": 33,
+      "prime": 1000033,
+      "quantum_terms": 4576,
+      "coordinates": 56,
+      "nonzero": 56
+    },
+    {
+      "source": 16,
+      "source_row": 163,
+      "target": 36,
+      "prime": 1000033,
+      "quantum_terms": 348,
+      "coordinates": 90,
+      "nonzero": 90
+    }
+  ],
+  "reference_controls": [
+    {
+      "profile": 0,
+      "input_words": 3
+    },
+    {
+      "profile": 6,
+      "input_words": 3
+    },
+    {
+      "profile": 16,
+      "input_words": 3
+    }
+  ],
+  "structural_edges": 104,
+  "coordinates": 4732,
+  "source_profiles": 17,
+  "sources": {
+    "su3_second_quantum_profiles_v1.py": "01ff15593fcaefb3d2cb98c2d59ec78087434d5268e15436c07adbf3f26e8e43",
+    "su3_second_quantum_profiles_v1.json": "e0a9ee4181b3c12ae0f0b0bdb0367fd30c4d8d55c535ba588345692966adb462",
+    "su3_second_quantum_map_v1.py": "39e5b39bd63f80df5c47b0989fbaa9a18dae0fada58daf55c47101b56d042bc3",
+    "validate_su3_second_quantum_map_v1.py": "044633def02ad396348f562f79665da6eeefd5eabf5ad8172f70ebdaeb48a3f2"
+  },
+  "seconds": 34.172356041148305
+}

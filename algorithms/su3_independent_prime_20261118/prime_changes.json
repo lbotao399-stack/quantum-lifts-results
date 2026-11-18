@@ -1,0 +1,26 @@
+[
+  {
+    "file": "su3_correction_map_v2.py",
+    "change": "Pin independent production prime to 1000033",
+    "before_sha256": "16a777f41ee921caa49d47b5a61c8b91b61e3837320a7872ee14fb7e9a288d8d",
+    "after_sha256": "df26f5570816d5d7c419ccffc9cac8cd9825fbcb02ce752234baa08adf47bcf5"
+  },
+  {
+    "file": "su3_second_correction_map_v1.py",
+    "change": "Pin independent production prime to 1000033",
+    "before_sha256": "6baa9ba22e97a69b2e5804824794609bcc9c5b69fb5534ec5f5095f19af97c97",
+    "after_sha256": "4ae02802084ce5fe640c6f833b7440ffe2a240c4938af0c76967cae4a893c1de"
+  },
+  {
+    "file": "su3_coupled_solve_v1.py",
+    "change": "Pin independent production prime to 1000033",
+    "before_sha256": "bf59ccb048eb6721b777c1d4270656ec82bfea86a3098ce62323d355ece8baa6",
+    "after_sha256": "c4f617fd61a8e9c78f9fb2679cb751de5072bbbcbadf27486b3ef1d4cb39f296"
+  },
+  {
+    "file": "su3_correction_rhs_v1.py",
+    "change": "Read the archived rational Q1 JSON with its existing digest",
+    "before_sha256": "82a94b270bdc380c64366613bdd484ac9bca512983492deab416667fe6c84f58",
+    "after_sha256": "a44705cb2870290758f5226ba4bc0e30f25bec207305bcdf69c9d4523d2f9b01"
+  }
+]

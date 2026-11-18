@@ -1,0 +1,21 @@
+{
+  "status": "complete_rational_profile_basis_recipes",
+  "profile_index": 13,
+  "fermions": 2,
+  "dimension": 73,
+  "rank_lower_bound": 73,
+  "columns": 108,
+  "attempts": 129,
+  "peak_projected_terms": 144,
+  "timings": {
+    "projection": 0.1738038540352136,
+    "evaluation": 0.9063116221223027,
+    "row_reduction": 0.0108226272277534
+  },
+  "seconds": 1.5851604449562728,
+  "stopped_by": "dimension_saturated",
+  "seeds_sha256": "3eb35e5eccdcb264a977cbc8ef97ea66e1aea1e0780a39c40b5b4268cc9b493a",
+  "checkpoint_sha256": "f3b2b16fdbd9056a0f0a7858d0203adc3027a8e7d03f5ab5d839022acc2e3b8e",
+  "driver_sha256": "28bbb36cd20d56679f2249af05d565d66376b8bd6b8054ed0cb87424ca9017e9",
+  "scope": "Independent modular evaluations certify independent rational projected trace recipes. Completeness is asserted only when the exact character dimension is reached. No Q0 image or correction is computed here."
+}
