@@ -1,0 +1,20 @@
+{
+  "order": 3,
+  "prime": 1000003,
+  "sources": [
+    0
+  ],
+  "targets": [
+    0
+  ],
+  "plan_sha256": "01c76ff9e55e21971f17b2efcbba10039204062efabfc13c7f06d5523b1c7c98",
+  "frame_width": 4467,
+  "source_dimension": 412,
+  "target_dimension": 4459,
+  "batches": 72,
+  "rank_lower_bound": 412,
+  "rank_ceiling": 412,
+  "determinant": 45987,
+  "sha256": "519c93d1d4d399123989f985c53d0be3d94b95eb9230b98bdeabe2a41e7017bd",
+  "bytes": 3789
+}

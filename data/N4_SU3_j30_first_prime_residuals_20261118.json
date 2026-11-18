@@ -1,0 +1,414 @@
+{
+  "prime": 1000003,
+  "variables": 77639,
+  "rank": 50147,
+  "free": 27492,
+  "job": "7645686",
+  "solution_sha256": "bd3ad3e81016a35c36e784361822807d1b6d5fc27ff4bcfa5096131317177ce1",
+  "free_sha256": "a7421e462000b93c18376fbe5eda38c69e1cfa2b8642a7e5034e1824309b0e2d",
+  "residuals": [
+    {
+      "order": 1,
+      "target": 1,
+      "coordinates": 213,
+      "blocks": 106,
+      "nonzero": 0,
+      "stage_sha256": "c41613bb178fe31c575aa4cc204cf4cd3c9492823139e1ed88101177c8a7d64a"
+    },
+    {
+      "order": 1,
+      "target": 8,
+      "coordinates": 276,
+      "blocks": 121,
+      "nonzero": 0,
+      "stage_sha256": "f33422adcb9fd8e846db0e5213d0f5c66d2cf38e1e308b1a1efc31ebbd739d70"
+    },
+    {
+      "order": 1,
+      "target": 5,
+      "coordinates": 276,
+      "blocks": 136,
+      "nonzero": 0,
+      "stage_sha256": "df04a011f555fb86343a322cb0235edd29b00da798d0862002357ccf513fcd04"
+    },
+    {
+      "order": 1,
+      "target": 3,
+      "coordinates": 660,
+      "blocks": 233,
+      "nonzero": 0,
+      "stage_sha256": "2c297a2741d4a1f496318bf5998243845883a1fc15aa75c512e20fb4b48f1847"
+    },
+    {
+      "order": 1,
+      "target": 4,
+      "coordinates": 660,
+      "blocks": 348,
+      "nonzero": 0,
+      "stage_sha256": "de038cb3c5ca3a4a1302aedbbaa7b13c217f208b4f5efbb2e5a977a4f30d09f4"
+    },
+    {
+      "order": 1,
+      "target": 0,
+      "coordinates": 774,
+      "blocks": 361,
+      "nonzero": 0,
+      "stage_sha256": "33a56d710821a0846dfb7f97e8c675aa9c1d688c27188c7a0629d2630300d258"
+    },
+    {
+      "order": 1,
+      "target": 12,
+      "coordinates": 2240,
+      "blocks": 901,
+      "nonzero": 0,
+      "stage_sha256": "8422f0a5a5f2a3a0952df25a6e86c1b6ba5b19c31be455a6b8a1aaaca218d7eb"
+    },
+    {
+      "order": 1,
+      "target": 11,
+      "coordinates": 2700,
+      "blocks": 1060,
+      "nonzero": 0,
+      "stage_sha256": "f40ed9db60ba7eb83dcb33c88ecbbbd5a1c972dfda5ea472cf53d692ff281503"
+    },
+    {
+      "order": 1,
+      "target": 7,
+      "coordinates": 3468,
+      "blocks": 900,
+      "nonzero": 0,
+      "stage_sha256": "4a41b1166f58e1593ca62d9491d207ac285aa6f317e205ed12483da2d2472d29"
+    },
+    {
+      "order": 1,
+      "target": 2,
+      "coordinates": 4206,
+      "blocks": 1282,
+      "nonzero": 0,
+      "stage_sha256": "9be05f06f1162dc83cbf510816cebb073cda17149512b2967f5848488a2aa199"
+    },
+    {
+      "order": 1,
+      "target": 10,
+      "coordinates": 4740,
+      "blocks": 1406,
+      "nonzero": 0,
+      "stage_sha256": "30b6920d6d00b5aea724ba63b58b07a4e5b595b73f7908a39e674864576dbdfc"
+    },
+    {
+      "order": 1,
+      "target": 6,
+      "coordinates": 5748,
+      "blocks": 1432,
+      "nonzero": 0,
+      "stage_sha256": "855f2e0ea8b3912010772b2892c3f4a4234a1d67cd077f595275a6cb8c761e17"
+    },
+    {
+      "order": 1,
+      "target": 9,
+      "coordinates": 8940,
+      "blocks": 2440,
+      "nonzero": 0,
+      "stage_sha256": "927fa67f3a1dbca417006bbbbbd1e0af3f616183124d536f964e76b7780b12e2"
+    },
+    {
+      "order": 2,
+      "target": 13,
+      "coordinates": 108,
+      "blocks": 114,
+      "nonzero": 0,
+      "stage_sha256": "64fcb6388a0105ed8b704dc77da35a8ddd6f6d5286bd547bbe3c1887233bd652"
+    },
+    {
+      "order": 2,
+      "target": 18,
+      "coordinates": 108,
+      "blocks": 481,
+      "nonzero": 0,
+      "stage_sha256": "74b603a457da689db1977cad84be37b304a1b2c951f966a8bd09d9f816e61f6d"
+    },
+    {
+      "order": 2,
+      "target": 36,
+      "coordinates": 135,
+      "blocks": 204,
+      "nonzero": 0,
+      "stage_sha256": "e9313213255551f3bbb39844dc6fa146756a0eb8a585ccd4ed8f05e5021334cd"
+    },
+    {
+      "order": 2,
+      "target": 30,
+      "coordinates": 135,
+      "blocks": 295,
+      "nonzero": 0,
+      "stage_sha256": "fe40addcab5eef24d4d35ab8d2b4a9f0e22c2a4228862b8e639757c90dff9c88"
+    },
+    {
+      "order": 2,
+      "target": 17,
+      "coordinates": 138,
+      "blocks": 115,
+      "nonzero": 0,
+      "stage_sha256": "8a85b59a87f83fe4046a012270ebc1e510b9b265877e978ca8badc3b8bdfb90b"
+    },
+    {
+      "order": 2,
+      "target": 4,
+      "coordinates": 174,
+      "blocks": 575,
+      "nonzero": 0,
+      "stage_sha256": "fe0fc8b2f461c7cb6159a40ad4b72adc442e5e42a741c34c60ad4020c6551f63"
+    },
+    {
+      "order": 2,
+      "target": 2,
+      "coordinates": 178,
+      "blocks": 120,
+      "nonzero": 0,
+      "stage_sha256": "df3e5b8b0c935d4eb1dfa43b8869937715dde1e7689e7473cadf5d561591d32a"
+    },
+    {
+      "order": 2,
+      "target": 35,
+      "coordinates": 280,
+      "blocks": 652,
+      "nonzero": 0,
+      "stage_sha256": "1eeb70a6ed50ebecd2b4e478c878945bf18a6b3f926c456cd26448104855b0be"
+    },
+    {
+      "order": 2,
+      "target": 12,
+      "coordinates": 450,
+      "blocks": 1415,
+      "nonzero": 0,
+      "stage_sha256": "d01d64091b8ca3ec7468412aeafecf086d27d369a147d0a0613fda0e52af1d97"
+    },
+    {
+      "order": 2,
+      "target": 31,
+      "coordinates": 480,
+      "blocks": 2996,
+      "nonzero": 0,
+      "stage_sha256": "f718947e531ca15bdf6c2e2a8659d423678d6cd2e100d2bd0f8250a7fe56e400"
+    },
+    {
+      "order": 2,
+      "target": 28,
+      "coordinates": 630,
+      "blocks": 977,
+      "nonzero": 0,
+      "stage_sha256": "13e2a2816be68bbd818a64de96fc734ed704888e6e4dc908a13d605d326f194f"
+    },
+    {
+      "order": 2,
+      "target": 29,
+      "coordinates": 630,
+      "blocks": 1452,
+      "nonzero": 0,
+      "stage_sha256": "d632f8161263200463f569a2daa2e64b9bf7a24f53bfb805ea15bf85cabafdc3"
+    },
+    {
+      "order": 2,
+      "target": 8,
+      "coordinates": 768,
+      "blocks": 1127,
+      "nonzero": 0,
+      "stage_sha256": "ddda98c653730a7382e7e43cf8ceef4b0b68bc5ba9f792620d65ea80e1113662"
+    },
+    {
+      "order": 2,
+      "target": 9,
+      "coordinates": 768,
+      "blocks": 1290,
+      "nonzero": 0,
+      "stage_sha256": "58f57b4094da7ed3ff5539316cc482bfbe7a6fbac1aa215270a4bd9aa6605de5"
+    },
+    {
+      "order": 2,
+      "target": 15,
+      "coordinates": 768,
+      "blocks": 1555,
+      "nonzero": 0,
+      "stage_sha256": "e58c65e0601304b172cafe8e665655437aa59a300247d6ddd141d0af1903e6a0"
+    },
+    {
+      "order": 2,
+      "target": 16,
+      "coordinates": 768,
+      "blocks": 1026,
+      "nonzero": 0,
+      "stage_sha256": "f44d8e2b0a944ab61c7cf2ea7db7d9d00982f8b7acbf0be3865ec6e1f33ec5e4"
+    },
+    {
+      "order": 2,
+      "target": 3,
+      "coordinates": 882,
+      "blocks": 3024,
+      "nonzero": 0,
+      "stage_sha256": "725e96802aabbe21e22cad3ffdbc492c25ae20c2112804bf81ca1d7d36474df1"
+    },
+    {
+      "order": 2,
+      "target": 11,
+      "coordinates": 882,
+      "blocks": 1444,
+      "nonzero": 0,
+      "stage_sha256": "7709c53a28c9df7c1658ab6772e84382c9c35e9ee34174c71067cfb6056a1b73"
+    },
+    {
+      "order": 2,
+      "target": 21,
+      "coordinates": 885,
+      "blocks": 3684,
+      "nonzero": 0,
+      "stage_sha256": "cb433311f08c59a018066442eea602809193aa8abf9e24eb59bd96858d892f4b"
+    },
+    {
+      "order": 2,
+      "target": 25,
+      "coordinates": 885,
+      "blocks": 1713,
+      "nonzero": 0,
+      "stage_sha256": "9740dfd8ff924d6ef7eb107f12135ea0fcc063c8b974e4702e60e644634d9ae1"
+    },
+    {
+      "order": 2,
+      "target": 0,
+      "coordinates": 922,
+      "blocks": 1443,
+      "nonzero": 0,
+      "stage_sha256": "8b0e2252049da9a9545c23dc2cdeb1d65c8f422ecbc67bc04f7dc7fad69a374b"
+    },
+    {
+      "order": 2,
+      "target": 1,
+      "coordinates": 934,
+      "blocks": 1142,
+      "nonzero": 0,
+      "stage_sha256": "d54f4155cde70b8b7090f2abd1d6dcaebc1b3c3030b3266484b3affe38fd33fa"
+    },
+    {
+      "order": 2,
+      "target": 26,
+      "coordinates": 975,
+      "blocks": 1756,
+      "nonzero": 0,
+      "stage_sha256": "8a9a97f4657ba2edcd5bd820254c4cb9c49f7288f8b2188f8be813502e3c3139"
+    },
+    {
+      "order": 2,
+      "target": 32,
+      "coordinates": 1008,
+      "blocks": 3899,
+      "nonzero": 0,
+      "stage_sha256": "24aff3e78a07e17d814f4c9c6c218c76c040b02440e782787359820b6288b02c"
+    },
+    {
+      "order": 2,
+      "target": 20,
+      "coordinates": 1830,
+      "blocks": 4845,
+      "nonzero": 0,
+      "stage_sha256": "2d1b897253f09894b22cfe62a32b99c482db6b266fa4387b57a26856dcb1cbda"
+    },
+    {
+      "order": 2,
+      "target": 33,
+      "coordinates": 1988,
+      "blocks": 2934,
+      "nonzero": 0,
+      "stage_sha256": "8aa45b44c929235977c4c4638960c3dd995af25f6307d433bb89d49934386e31"
+    },
+    {
+      "order": 2,
+      "target": 34,
+      "coordinates": 2016,
+      "blocks": 2827,
+      "nonzero": 0,
+      "stage_sha256": "2699953a77df7b9d3fb0de8bbf74e2a42112a92abe68ee19115eb4e1ce6cd475"
+    },
+    {
+      "order": 2,
+      "target": 24,
+      "coordinates": 2100,
+      "blocks": 4951,
+      "nonzero": 0,
+      "stage_sha256": "3afb49bbc9f93cb5b9dcea7614486dfcb1e4e3f742b372fa309dbb75c4f24240"
+    },
+    {
+      "order": 2,
+      "target": 10,
+      "coordinates": 2154,
+      "blocks": 4441,
+      "nonzero": 0,
+      "stage_sha256": "07a1b344dca9c7bcf5ae50f260722179dc925389081c96d5c7c9476d0089043e"
+    },
+    {
+      "order": 2,
+      "target": 14,
+      "coordinates": 2184,
+      "blocks": 4610,
+      "nonzero": 0,
+      "stage_sha256": "14f944c18bf9b4d9dfa7052c13d964cfbe6d38d701f7d622c3913fa931076485"
+    },
+    {
+      "order": 2,
+      "target": 27,
+      "coordinates": 2295,
+      "blocks": 3782,
+      "nonzero": 0,
+      "stage_sha256": "8541cb863e54e04593ac5d3262a22a27195a7050d3c4fd6aa94f98ad857a88e8"
+    },
+    {
+      "order": 2,
+      "target": 19,
+      "coordinates": 4290,
+      "blocks": 9855,
+      "nonzero": 0,
+      "stage_sha256": "ca2f8c34b90c8740d2827d62c6f8f490c7addd218b7fe088252867ac6addc87f"
+    },
+    {
+      "order": 2,
+      "target": 6,
+      "coordinates": 4332,
+      "blocks": 6446,
+      "nonzero": 0,
+      "stage_sha256": "6834ffc470e7286a923b926f2d6deb76038f04078655f491a8ea6094d5b3f120"
+    },
+    {
+      "order": 2,
+      "target": 7,
+      "coordinates": 4332,
+      "blocks": 6354,
+      "nonzero": 0,
+      "stage_sha256": "214e001f1f59aebaf8d77aab3eb1348dc4fa9926b3d1180111961c8f1c359ecd"
+    },
+    {
+      "order": 2,
+      "target": 5,
+      "coordinates": 7014,
+      "blocks": 7222,
+      "nonzero": 0,
+      "stage_sha256": "c5621b602dd409a1c66f6a519db984715aaa74589ca07183212317846c70a3f3"
+    },
+    {
+      "order": 2,
+      "target": 22,
+      "coordinates": 8385,
+      "blocks": 8678,
+      "nonzero": 0,
+      "stage_sha256": "5a147db652fbde563938a766d552c374922f701870b783be5d2b088684e99302"
+    },
+    {
+      "order": 2,
+      "target": 23,
+      "coordinates": 8595,
+      "blocks": 9576,
+      "nonzero": 0,
+      "stage_sha256": "7fa80ffa08e02a722b2356031243805622a3a4b5ddbe90d1a0b7643332068d42"
+    }
+  ],
+  "group": "SU(3)",
+  "level": 30,
+  "coefficient_field": "finite field"
+}

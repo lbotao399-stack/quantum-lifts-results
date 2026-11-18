@@ -1,5 +1,15 @@
 # Running computations: daily status
 
+## SO(7) level-30 pairing and dual-group singlet comparison, November 18, 2026
+
+The new first differential onto the line of $SF$ adds one highest-weight pairing: the rank increases from 12,525 to 12,526. A8 job `5628225` reconstructed all 156,900,676 entries of the augmented minor and reproduced each of its 212 panel determinants. Its determinant is 942,245 modulo 1,000,003. The target is absent from the second and later pages. [Proof](algorithms/so7_cartan_target_20261118/README.md) · [Replay receipt](algorithms/so7_cartan_target_20261118/incoming_replay.json).
+
+At doubled charges (0,0,8,8,8) and derivative bidegree (4,4), exact rational computation finds one length-eight SO(7) class and none for USp(6). The SO(7) class is $S^4$, already hit at first order. [Complete classical matrices](algorithms/dual_singlets_20261118/README.md). The recorded $G_2$ incoming sources are exhausted by protected current products. [Current calculation](algorithms/G2_protected_incoming_currents_20261118.md).
+
+At SU(3) level 34 the first right-hand side contains 517,468 rational terms. In eight profiles of the third target the projected closed quotient vanishes: 1,263 minus 1,206 minus 57 equals zero. The four minors were independently replayed at two primes. No claim is made for the remaining profiles. At level 30 both finite-field solutions now have zero residual in all 100,307 coordinates; rational solvability remains open. [Level-34 calculation](algorithms/su3_j34_20261118/README.md) · [Level-30 receipts](algorithms/verify_su3_j30_solution_receipts.py).
+
+Increment: **1** first-order pairing, **0** generator families. Cumulative: **6** and **3**, respectively. Certified second-order, third-order and nonperturbative lifts: **0, 0, 0**. [Current ledger](data/N4_lift_campaign_counts_20261118.json).
+
 ## SU(3) level-34 direct action and level-30 matrix replay, November 18, 2026
 
 Both A8 jobs completed. Job `5622046` computed the level-34 direct $Q_2$ action on eight CPUs in 12 seconds. A local one-process replay reproduced all 140,526 rational coefficients and the zero Cartan polynomial. Job `5622107` used eight CPUs for 385 seconds to multiply the level-30 solution by all 378 saved matrices. Each of its 100,307 modular residuals vanished. [Level-34 computation](algorithms/su3_j34_20261118/README.md) · [Level-30 replay program](algorithms/replay_su3_j30_packed_residuals.py) · [Matrix hashes and residuals](data/N4_SU3_j30_independent_residuals_20261118.json)

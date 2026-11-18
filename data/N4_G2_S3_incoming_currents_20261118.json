@@ -1,0 +1,144 @@
+{
+  "source_doubled_charges": [
+    1,
+    1,
+    6,
+    6,
+    6
+  ],
+  "length": 6,
+  "Q0_letter_evaluations": 994,
+  "cartan_minor": [
+    [
+      -64,
+      0
+    ],
+    [
+      16,
+      576
+    ]
+  ],
+  "determinant": -36864,
+  "classical_maps": [
+    {
+      "prime": 1000003,
+      "weight": [
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      "length": 8,
+      "dimension": 15,
+      "incoming_rank_lower": 6,
+      "outgoing_rank_lower": 9,
+      "cohomology_upper": 0
+    },
+    {
+      "prime": 1000033,
+      "weight": [
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      "length": 8,
+      "dimension": 15,
+      "incoming_rank_lower": 6,
+      "outgoing_rank_lower": 9,
+      "cohomology_upper": 0
+    },
+    {
+      "prime": 1000003,
+      "weight": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "length": 7,
+      "dimension": 48,
+      "incoming_rank_lower": 28,
+      "outgoing_rank_lower": 20,
+      "cohomology_upper": 0
+    },
+    {
+      "prime": 1000033,
+      "weight": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "length": 7,
+      "dimension": 48,
+      "incoming_rank_lower": 28,
+      "outgoing_rank_lower": 20,
+      "cohomology_upper": 0
+    },
+    {
+      "prime": 1000003,
+      "weight": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "length": 6,
+      "dimension": 30,
+      "incoming_rank_lower": 17,
+      "outgoing_rank_lower": 11,
+      "cohomology_upper": 2
+    },
+    {
+      "prime": 1000033,
+      "weight": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "length": 6,
+      "dimension": 30,
+      "incoming_rank_lower": 17,
+      "outgoing_rank_lower": 11,
+      "cohomology_upper": 2
+    },
+    {
+      "prime": 1000003,
+      "weight": [
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "length": 5,
+      "dimension": 3,
+      "incoming_rank_lower": 0,
+      "outgoing_rank_lower": 3,
+      "cohomology_upper": 0
+    },
+    {
+      "prime": 1000033,
+      "weight": [
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "length": 5,
+      "dimension": 3,
+      "incoming_rank_lower": 0,
+      "outgoing_rank_lower": 3,
+      "cohomology_upper": 0
+    }
+  ]
+}

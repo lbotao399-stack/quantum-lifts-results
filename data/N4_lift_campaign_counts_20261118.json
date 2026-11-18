@@ -2,16 +2,16 @@
   "date": "2026-11-18",
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
-  "phase": "SU(3) j34 rational block witness and direct Q2 action; SU(3) j30 independent full matrix-product replay",
+  "phase": "SO(7) j30 incoming d1 onto SF; SU(3) j34 first-action and projected ranks; exact SO(7)/USp(6) pure-gaugino comparison",
   "increments": {
-    "d1": 0,
+    "d1": 1,
     "fortuitous_generator_families": 0,
     "d2": 0,
     "d3": 0,
     "nonperturbative": 0
   },
   "cumulative": {
-    "d1": 5,
+    "d1": 6,
     "fortuitous_generator_families": 3,
     "d2": 0,
     "d3": 0,
@@ -20,18 +20,29 @@
   "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
   "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet.",
   "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
-  "evidence": "data/N4_lift_method_review_20261118.json",
-  "evidence_scope": "The j34 mixed coefficient and its threshold multiple are exact over Q. Its direct Q2 cochain has zero Cartan restriction. The j30 joint solution passes full matrix replay modulo 1000033. The j34 correction equations, rational j30 chain, SO(7) incoming maps and G2 nonperturbative matrix remain open.",
+  "evidence": "algorithms/so7_cartan_target_20261118/README.md",
+  "evidence_scope": "The augmented SO(7) minor adds one to the full classical rank and exhausts the line of SF. All 156900676 entries were recomputed on A8; the source has not been classified modulo previously counted families. The pure-gaugino classical SO(7)/USp(6) mismatch is precisely the known first-order target S^4. The j34 first equation is not yet solved on all profiles.",
   "previous_phase": {
-    "phase": "Full-text method review, completed SU3 A8 solve, SO7 target functional and incoming dimensions, SU3 level-34 parity sizing, G2 partner replay",
+    "phase": "SU(3) j34 rational block witness and direct Q2 action; SU(3) j30 independent full matrix-product replay",
     "evidence": "data/N4_lift_method_review_20261118.json",
     "previous_phase": {
-      "phase": "SU3 first-prime elimination consistent; independent-prime production running; lossless map packing validated",
-      "evidence": "algorithms/su3_independent_prime_20261118/",
+      "phase": "Full-text method review, completed SU3 A8 solve, SO7 target functional and incoming dimensions, SU3 level-34 parity sizing, G2 partner replay",
+      "evidence": "data/N4_lift_method_review_20261118.json",
       "previous_phase": {
-        "phase": "G2 BMN j30 (5,5,5) complete classical cohomology and known-product quotient",
-        "evidence": "algorithms/bmn_rank_certificates_20261117/g2_merged_product_evidence/"
+        "phase": "SU3 first-prime elimination consistent; independent-prime production running; lossless map packing validated",
+        "evidence": "algorithms/su3_independent_prime_20261118/",
+        "previous_phase": {
+          "phase": "G2 BMN j30 (5,5,5) complete classical cohomology and known-product quotient",
+          "evidence": "algorithms/bmn_rank_certificates_20261117/g2_merged_product_evidence/"
+        }
       }
+    },
+    "cumulative": {
+      "d1": 5,
+      "fortuitous_generator_families": 3,
+      "d2": 0,
+      "d3": 0,
+      "nonperturbative": 0
     }
   }
 }

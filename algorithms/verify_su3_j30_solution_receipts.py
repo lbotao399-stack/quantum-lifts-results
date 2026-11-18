@@ -4,6 +4,7 @@ The residual counts in the solve records were computed on the cluster. This
 verifier needs NumPy and does not reconstruct the production map matrices.
 """
 import hashlib
+import gzip
 import io
 import json
 import struct
@@ -101,5 +102,28 @@ def verify(receipt_path):
 
 
 if __name__ == "__main__":
-    path = Path(__file__).resolve().parents[1] / "data/N4_SU3_j30_solution_receipts_20261118.zip"
-    print(json.dumps(verify(path), indent=2))
+    data = Path(__file__).resolve().parents[1] / "data"
+    path = data / "N4_SU3_j30_solution_receipts_20261118.zip"
+    summary = verify(path)
+    first = json.loads((data/"N4_SU3_j30_first_prime_residuals_20261118.json").read_text())
+    second = json.loads((data/"N4_SU3_j30_independent_residuals_20261118.json").read_text())
+    assert (first["prime"],second["prime"]) == (1000003,1000033)
+    raw = gzip.decompress((data/"N4_SU3_j30_first_prime_solution.npy.gz").read_bytes())
+    assert hashlib.sha256(raw).hexdigest() == first["solution_sha256"]
+    coordinates = np.load(io.BytesIO(raw), allow_pickle=False)
+    assert coordinates.dtype == np.uint32 and coordinates.shape == (77639,)
+    assert np.all(coordinates < first["prime"])
+    with ZipFile(path) as z:
+        free = z.read("second_solve_compact/free_variables.npy")
+        assert hashlib.sha256(free).hexdigest() == first["free_sha256"]
+        assert not np.any(coordinates[np.load(io.BytesIO(free), allow_pickle=False)])
+    left = {(r["order"],r["target"]): (r["coordinates"],r["nonzero"]) for r in first["residuals"]}
+    right = {(r["equation"],r["target"]): (r["coordinates"],r["joint_residual_nonzero"]) for r in second["targets"]}
+    assert left == right and len(left) == len(first["residuals"]) == len(second["targets"]) == 50
+    assert all(v[1] == 0 for v in left.values())
+    assert (first["variables"],first["rank"],first["free"]) == (77639,50147,27492)
+    summary["first_prime_replay"] = dict(prime=first["prime"],solution_sha256=first["solution_sha256"],
+        common_free_coordinates=first["free"],matching_target_receipts=len(left),
+        first_coordinates=sum(n for (k,j),(n,v) in left.items() if k==1),
+        second_coordinates=sum(n for (k,j),(n,v) in left.items() if k==2),nonzero_residuals=0)
+    print(json.dumps(summary, indent=2))

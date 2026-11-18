@@ -1,0 +1,11 @@
+{
+  "prime": 1000003,
+  "order": 12526,
+  "panels": 212,
+  "determinant": 942245,
+  "recomputed_entries": 156900676,
+  "recipes_sha256": "6fbdb485472d3e9c6385e15a8d8bfc2cf690642a00f15dfb5e96321f44a4ed20",
+  "matrix_sha256": "345d959bef25c57438b6125fe823682d6b49f55fd52c4d29c4635a250201f530",
+  "slurm_job": "5628225",
+  "completed_tasks": 12
+}

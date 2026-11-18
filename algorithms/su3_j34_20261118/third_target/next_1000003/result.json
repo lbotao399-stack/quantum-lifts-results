@@ -1,0 +1,22 @@
+{
+  "order": 3,
+  "prime": 1000003,
+  "sources": [
+    11,
+    56
+  ],
+  "targets": [
+    12
+  ],
+  "plan_sha256": "01c76ff9e55e21971f17b2efcbba10039204062efabfc13c7f06d5523b1c7c98",
+  "frame_width": 66,
+  "source_dimension": 337,
+  "target_dimension": 57,
+  "direction": "outgoing",
+  "batches": 16,
+  "rank_lower_bound": 57,
+  "rank_ceiling": 57,
+  "determinant": 179643,
+  "sha256": "1fe4cb98456f153ca96d16af405c095170151901689f7ce469b99ba99713012c",
+  "bytes": 868
+}
