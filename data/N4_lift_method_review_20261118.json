@@ -64,7 +64,24 @@
     "solver_receipt_archive": "N4_SU3_j30_solution_receipts_20261118.zip",
     "solver_receipt_archive_sha256": "b4b4e1df18bfa3666d5c0f9b09443d06e0087a41a78fcb742078f8e378a9557e",
     "stage_archive_scope": "Includes both solution arrays, both free-coordinate arrays and ordered stage receipts for prime 1000033, and first-prime ordered pivot digests. Residual totals are scheduler-run solver outputs.",
-    "third_order_target_classical_dimension": 0
+    "third_order_target_classical_dimension": 0,
+    "independent_packed_matrix_replay": {
+      "group": "SU(3)",
+      "level": 30,
+      "prime": 1000033,
+      "joint_coordinates": 100307,
+      "first_coordinates": 34901,
+      "second_coordinates": 65406,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 1739328032,
+      "packed_matrices": 378,
+      "job": "5622107",
+      "cpus": 8,
+      "elapsed_seconds": 385,
+      "receipt": "N4_SU3_j30_independent_residuals_20261118.json",
+      "receipt_sha256": "ebac8b013044e79a3b7bf246555b2c68d3207f2798a580a8f0059b4c0845beb9"
+    }
   },
   "SO7_j30_Cartan": {
     "group": "SO(7)",
@@ -335,7 +352,77 @@
         "target_P": -1,
         "dense_C_even_incoming_Q0_bytes_at_four_bytes_per_entry": 374006602288
       }
-    ]
+    ],
+    "rational_source": {
+      "literature": "Kim, Lee, Lee and Song, arXiv:2610.20340v2, sections 2.3 and 4.1",
+      "input_terms": 5815,
+      "C_even_terms": 6270,
+      "C_even_json_sha256": "673bbcbcf9bafba63b66dfab9a19c306178c5839269abe35da538505166b66c1",
+      "scalar_channel_trace_terms": [
+        0,
+        0
+      ],
+      "mixed_class": {
+        "source": "Kim, Lee, Lee and Song, arXiv:2610.20340v2, equation (3.6)",
+        "parity_predecessor_terms": 78,
+        "parity_predecessor_coefficient": "1/2",
+        "odd_source_terms": 910,
+        "formal_parity_residual_terms": 0,
+        "core_trace_terms": 33,
+        "core_monomials": 117,
+        "mixed_pairing": "120294720",
+        "core_pairing": "-20",
+        "mixed_class_over_core": "-6014736",
+        "difference_monomials": 705,
+        "primitive_trace_terms": 30,
+        "residual_monomials": 0
+      },
+      "mixed_boundary_rank": 47,
+      "mixed_predecessors": 197,
+      "description": "algorithms/su3_j34_20261118/README.md"
+    },
+    "direct_Q2": {
+      "source_sha256": "673bbcbcf9bafba63b66dfab9a19c306178c5839269abe35da538505166b66c1",
+      "source_terms": 6270,
+      "charge_conjugation": 1,
+      "group": "SU(3)",
+      "order": 2,
+      "coefficient_field": "Q",
+      "dictionary_letters_checked": 7,
+      "python_rule_controls": [
+        {
+          "source_index": 0,
+          "field_strength": false,
+          "terms": 87
+        },
+        {
+          "source_index": 7,
+          "field_strength": true,
+          "terms": 372
+        }
+      ],
+      "output_length": 10,
+      "doubled_charges": [
+        5,
+        5,
+        16,
+        10,
+        8
+      ],
+      "raw_trace_terms": 140526,
+      "common_denominator": 60,
+      "output_jsonl_sha256": "76e05195636520fe89c375ab11b3211ed342b6e1d341309ab41b4a5a1fb6b82e",
+      "cartan_trace_terms": 576,
+      "cartan_monomials": 0,
+      "cartan_json_sha256": "a996314cee09b66862d6cd6048f57becbf69c309cf85f02106fc657bc14ac6b0",
+      "first_correction_solved": false,
+      "second_obstruction_computed": false,
+      "job": "5622046",
+      "cpus": 8,
+      "elapsed_seconds": 12,
+      "independent_local_rerun_bitwise_equal": true,
+      "full_payload": "algorithms/su3_j34_20261118/Q2.jsonl.gz"
+    }
   },
   "G2_nonperturbative_candidate": {
     "target_sector": [

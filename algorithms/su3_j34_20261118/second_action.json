@@ -1,0 +1,37 @@
+{
+  "source_sha256": "673bbcbcf9bafba63b66dfab9a19c306178c5839269abe35da538505166b66c1",
+  "source_terms": 6270,
+  "charge_conjugation": 1,
+  "group": "SU(3)",
+  "order": 2,
+  "coefficient_field": "Q",
+  "dictionary_letters_checked": 7,
+  "python_rule_controls": [
+    {
+      "source_index": 0,
+      "field_strength": false,
+      "terms": 87
+    },
+    {
+      "source_index": 7,
+      "field_strength": true,
+      "terms": 372
+    }
+  ],
+  "output_length": 10,
+  "doubled_charges": [
+    5,
+    5,
+    16,
+    10,
+    8
+  ],
+  "raw_trace_terms": 140526,
+  "common_denominator": 60,
+  "output_jsonl_sha256": "76e05195636520fe89c375ab11b3211ed342b6e1d341309ab41b4a5a1fb6b82e",
+  "cartan_trace_terms": 576,
+  "cartan_monomials": 0,
+  "cartan_json_sha256": "a996314cee09b66862d6cd6048f57becbf69c309cf85f02106fc657bc14ac6b0",
+  "first_correction_solved": false,
+  "second_obstruction_computed": false
+}

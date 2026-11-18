@@ -31,7 +31,22 @@ $$
 
 The two returned solutions differ on **10,015 of the 10,308** free first-correction coordinates and on **28,018** first-correction coordinates overall. This comparison measures which coordinates the solver chose. Whether the original particular solution also admits some extension requires a separate fixed-solution rank test. In the $Sp(2)$ $j=30$ control, two directions detected by the direct $Q_3$ term disappear after adding both lower-correction terms. The three modular ranks are $2638,2638,2638$. Test the complete descent at both orders. [SU(3) solution arrays and ordered pivot check][receipt] · [Numerical record][numbers]
 
-The A8 array finished all 2,197 tasks in 24 shards. The packed solve used 64 CPUs for 4,227 seconds. A6 completed all 37 second-equation elimination stages modulo $1{,}000{,}003$ before the application time limit stopped it. Its joint solution and final residual replay were unsaved. All 50 ordered pivot lists match across primes. The local receipt replay verifies array hashes, ordering, free variables and the production residual counts. Independent replay of the complete joint matrix products, injectivity of every second-prime target frame and a rational joint chain remain open. The public third-order target for this particular source is empty already on $E_1$, by $131048-67869-63179=0$. [Public order-by-order result][fort] · [Packed solver][packed] · [Numerical record][numbers]
+At order three the simultaneous equations for the corrections are
+
+$$
+\begin{pmatrix}
+Q_0&0&0\\
+Q_1&Q_0&0\\
+Q_2&Q_1&Q_0
+\end{pmatrix}
+\begin{pmatrix}\mathcal O_1\\\mathcal O_2\\\mathcal O_3\end{pmatrix}
+=-
+\begin{pmatrix}Q_1\mathcal O_0\\Q_2\mathcal O_0\\Q_3\mathcal O_0\end{pmatrix}.
+$$
+
+Here $\mathcal O_3$ is the third correction. A certificate for a $d_3$ lift must give a nonzero class on $E_3$, a solution of the first two rows, and a functional that kills the full three-row correction matrix and pairs nontrivially with the right-hand side. The corresponding $d_2$ certificate uses its first two rows and verifies the source on $E_2$. If the source space has several classes, quotient the incoming differentials and retain all source combinations when computing the rank.
+
+The A8 array finished all 2,197 tasks in 24 shards. The packed solve used 64 CPUs for 4,227 seconds. A6 completed all 37 second-equation elimination stages modulo $1{,}000{,}003$ before the application time limit stopped it. Its joint solution and final residual replay were unsaved. All 50 ordered pivot lists match across primes. A separate A8 program read all 378 packed matrices and multiplied 1,739,328,032 stored entries by the published coordinates using integer arithmetic modulo $1{,}000{,}033$. All 34,901 first-equation and 65,406 second-equation residuals vanished. The standalone first solution passed its 34,901 equations as well. Injectivity of every target frame at this prime and a rational joint chain remain open. The public third-order target for this source is empty on $E_1$, by $131048-67869-63179=0$. [Independent matrix products][j30-matrices] · [Per-target receipts][j30-receipts] · [Public third target][fort]
 
 ## Ordered computations
 
@@ -68,7 +83,11 @@ At $j=34$, the public BMN sector $(2J;q_1,q_2,q_3)=(6;8,5,4)$ has two non-gravit
 | $d_2$ | 10 | 639,219 | $+1$ |
 | $d_3$ | 9 | 384,988 | $-1$ |
 
-The dense matrix into the second target alone would take $4(421596)(639219)=1{,}077{,}968{,}694{,}096$ bytes at four bytes per entry. Compute the adjacent classical ranks and the allowed lowest-weight cohomology of the symmetry algebra commuting with the supercharge first, in particular the $C$-even, $P$-odd third target. An empty target closes that order. For a surviving target, project the source onto the scalar-restriction kernel, seek a shorter trace-relation representative, solve $d_1$ and $d_2$ with all correction freedoms, and test $Q_3\mathcal O_0+Q_2\mathcal O_1+Q_1\mathcal O_2$ on $E_3$. The two BMN sources can also be tested together so that a surviving linear combination is retained. [Exact character calculation][su-size]
+The charge-conjugation-even part of Kim, Lee, Lee and Song's $\mathcal O_{34}^{(3)}$ supplies a 6,270-term rational representative. The difference from their original operator is $Q_0$ of half a 78-term primitive. Both scalar restrictions vanish identically. Extracting $(\hat\phi^1)^3\hat\psi_3$ gives $-6{,}014{,}736$ times the published $SU(2)$ threshold class in cohomology, with an exact 30-term primitive for the difference. A rational functional vanishes on all 197 predecessor images and evaluates to $120{,}294{,}720$ on the mixed coefficient. Reduction modulo $67{,}108{,}859$ gives a nonzero class in the published one-dimensional scalar kernel. This supplies the shorter source using a published class. [Classical restriction, threshold identity and replay][compact34]
+
+The A8 calculation gives 140,526 formal trace terms in $Q_2\mathcal O_0$, with common denominator 60. All 576 surviving diagonal trace terms cancel when expanded on the generic traceless $SU(3)$ Cartan. A local replay agrees on every rational coefficient. The first-correction equation and the nonabelian second-page class remain open. [Direct quantum action and Cartan verification][compact34]
+
+The dense matrix into the second target alone would take $4(421596)(639219)=1{,}077{,}968{,}694{,}096$ bytes at four bytes per entry. Compute the adjacent classical ranks and the allowed lowest-weight cohomology of the symmetry algebra commuting with the supercharge first, in particular the $C$-even, $P$-odd third target. An empty target closes that order. Use the compact source to solve the first equation on the 174,011-dimensional correction domain. For surviving classes, impose the coupled second equation and test $Q_3\mathcal O_0+Q_2\mathcal O_1+Q_1\mathcal O_2$ on $E_3$. Test both BMN sources together wherever a surviving linear combination is possible. [Exact character calculation][su-size]
 
 ### 3. Finish the $SU(3)$ $j=30$ control
 
@@ -87,6 +106,8 @@ python3 algorithms/verify_su3_j30_solution_receipts.py
 python3 algorithms/so7_cartan_target_20261118/replay.py
 python3 algorithms/so7_cartan_target_20261118/check_incoming.py
 python3 algorithms/size_su3_j34_targets.py
+python3 algorithms/su3_j34_20261118/verify.py
+python3 algorithms/su3_j34_20261118/match_threshold.py
 python3 algorithms/verify_g2_np_partner.py
 ```
 
@@ -121,3 +142,6 @@ python3 algorithms/verify_g2_np_partner.py
 [g2-products]: bmn_rank_certificates_20261117/README.md
 
 [g2-check]: verify_g2_np_partner.py
+[compact34]: su3_j34_20261118/README.md
+[j30-matrices]: replay_su3_j30_packed_residuals.py
+[j30-receipts]: ../data/N4_SU3_j30_independent_residuals_20261118.json

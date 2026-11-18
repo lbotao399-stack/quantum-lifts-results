@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
-  "phase": "Full-text method review, completed SU3 A8 solve, SO7 target functional and incoming dimensions, SU3 level-34 parity sizing, G2 partner replay",
+  "phase": "SU(3) j34 rational block witness and direct Q2 action; SU(3) j30 independent full matrix-product replay",
   "increments": {
     "d1": 0,
     "fortuitous_generator_families": 0,
@@ -21,13 +21,17 @@
   "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet.",
   "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
   "evidence": "data/N4_lift_method_review_20261118.json",
-  "evidence_scope": "The joint SU3 solution is modular. SO7 incoming maps, SU3 level-34 page ranks and the G2 nonperturbative map are open.",
+  "evidence_scope": "The j34 mixed coefficient and its threshold multiple are exact over Q. Its direct Q2 cochain has zero Cartan restriction. The j30 joint solution passes full matrix replay modulo 1000033. The j34 correction equations, rational j30 chain, SO(7) incoming maps and G2 nonperturbative matrix remain open.",
   "previous_phase": {
-    "phase": "SU3 first-prime elimination consistent; independent-prime production running; lossless map packing validated",
-    "evidence": "algorithms/su3_independent_prime_20261118/",
+    "phase": "Full-text method review, completed SU3 A8 solve, SO7 target functional and incoming dimensions, SU3 level-34 parity sizing, G2 partner replay",
+    "evidence": "data/N4_lift_method_review_20261118.json",
     "previous_phase": {
-      "phase": "G2 BMN j30 (5,5,5) complete classical cohomology and known-product quotient",
-      "evidence": "algorithms/bmn_rank_certificates_20261117/g2_merged_product_evidence/"
+      "phase": "SU3 first-prime elimination consistent; independent-prime production running; lossless map packing validated",
+      "evidence": "algorithms/su3_independent_prime_20261118/",
+      "previous_phase": {
+        "phase": "G2 BMN j30 (5,5,5) complete classical cohomology and known-product quotient",
+        "evidence": "algorithms/bmn_rank_certificates_20261117/g2_merged_product_evidence/"
+      }
     }
   }
 }

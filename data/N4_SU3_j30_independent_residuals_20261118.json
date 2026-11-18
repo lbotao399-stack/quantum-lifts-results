@@ -1,0 +1,3588 @@
+{
+  "group": "SU(3)",
+  "level": 30,
+  "prime": 1000033,
+  "joint_coordinates": 100307,
+  "first_coordinates": 34901,
+  "second_coordinates": 65406,
+  "joint_residual_nonzero": 0,
+  "standalone_first_residual_nonzero": 0,
+  "matrix_entries": 1739328032,
+  "packed_matrices": 378,
+  "targets": [
+    {
+      "equation": 1,
+      "target": 0,
+      "coordinates": 774,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 2229120,
+      "rhs_sha256": "7b2deb7d628441abc98c3dce4362ff77f3a712811319affeaa0540761c65edbb",
+      "matrices": [
+        [
+          "first",
+          2,
+          0,
+          2146,
+          774,
+          "3a574c1f75f84f70cd1f1118d0e0a6342b5ef898607c60011e9fbc19d8b34943"
+        ],
+        [
+          "first",
+          4,
+          0,
+          734,
+          774,
+          "ab1060fc8c18dc0680f507de4de6669b8d59cb288e09b55cb5dbc2ed1403076f"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 1,
+      "coordinates": 213,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 178920,
+      "rhs_sha256": "fe0f876813aab7a4fdc9a80a01481636885a0901e708bc881a3db9faf726dc9c",
+      "matrices": [
+        [
+          "first",
+          3,
+          1,
+          734,
+          213,
+          "c71afbab7597cbb251a30c2330a19f8a932e007f37b1a8d816eafc51a0344378"
+        ],
+        [
+          "first",
+          5,
+          1,
+          106,
+          213,
+          "3c26961d40ef06b563ae7985b1aade295f5f5f58a753ec5f0f7f9c673231d7e0"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 2,
+      "coordinates": 4206,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 43010556,
+      "rhs_sha256": "fa3dfc9ef90cf9e50419245d316a9d678cf5484189f370f9a1cb75dafe8c9f88",
+      "matrices": [
+        [
+          "first",
+          0,
+          2,
+          436,
+          4206,
+          "26f2eaceebc29312123398e20a452cbc224edb39a2d781900d6d91761bf32cbe"
+        ],
+        [
+          "first",
+          1,
+          2,
+          140,
+          4206,
+          "4184fcc7aeae2218ae871a92500c8041efad137941f9344a3acfe8be31c8c3a4"
+        ],
+        [
+          "first",
+          2,
+          2,
+          2146,
+          4206,
+          "2137a9edbe4d025780e4830e6af1d11dcd285e0873a9be7a6836e6744f011368"
+        ],
+        [
+          "first",
+          3,
+          2,
+          734,
+          4206,
+          "ea5ae6a3e581faf08fe238b7e32183af7a3b0490e42f14bb48556e5e2e299807"
+        ],
+        [
+          "first",
+          4,
+          2,
+          734,
+          4206,
+          "2bc49c7b7fd60876794fcd5db9f3f8ee6f0ae343da9744a9297a2b1713e92cb1"
+        ],
+        [
+          "first",
+          6,
+          2,
+          4251,
+          4206,
+          "d9b42ba2988a42be05b37b0f7a3d9a81eef9eecad9baf450ab96fec41ed8fb5f"
+        ],
+        [
+          "first",
+          7,
+          2,
+          1785,
+          4206,
+          "50964cd190501912f66be5c36173148545ee46d52a1b905f294c925a25175e33"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 3,
+      "coordinates": 660,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 1222320,
+      "rhs_sha256": "81333ce2e241bb6e82e465ff869e36696eace2c2a57b24202e184ff334a717f9",
+      "matrices": [
+        [
+          "first",
+          1,
+          3,
+          140,
+          660,
+          "907c415e1df7350e71fe7dfef132415eb57dcc260d3996b8f695011ec902a1d3"
+        ],
+        [
+          "first",
+          3,
+          3,
+          734,
+          660,
+          "9003f45d8c44dd06b02eb4be056fc7b88f12cf5a549a1e3404e50f260053196b"
+        ],
+        [
+          "first",
+          5,
+          3,
+          106,
+          660,
+          "a3b3dfaebce8d9f9341c4321e07af4c61bfe0051e0b5e34ae369c5bc0b4a5d66"
+        ],
+        [
+          "first",
+          8,
+          3,
+          872,
+          660,
+          "44261e66f348051c20a67f48a390dc3061c749defe63ed19413341b9d7b8bdd2"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 4,
+      "coordinates": 660,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 1824900,
+      "rhs_sha256": "81333ce2e241bb6e82e465ff869e36696eace2c2a57b24202e184ff334a717f9",
+      "matrices": [
+        [
+          "first",
+          1,
+          4,
+          140,
+          660,
+          "87cd61df65dc22d4559ce796096a20975a7927ae5cfdf686dc37abdae9d9b866"
+        ],
+        [
+          "first",
+          4,
+          4,
+          734,
+          660,
+          "13ec28c31d9a99ec2520fe47b332c860f6e12fd08de7f211ca5dcbc1fbca6c81"
+        ],
+        [
+          "first",
+          5,
+          4,
+          106,
+          660,
+          "2f4cd853b0f621daaaab1573e823b04b8c4989120a1a29673c82718feed0030f"
+        ],
+        [
+          "first",
+          7,
+          4,
+          1785,
+          660,
+          "dbd5dd157d83aba89f51a2d5516b2e9a55cb71acbb03c7a7eb3f9a10caa46a59"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 5,
+      "coordinates": 276,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 296700,
+      "rhs_sha256": "f1ddace7fd5619274df4d199db2c1bb2ab43f4e63c510d7f6971017e1c6b5b0e",
+      "matrices": [
+        [
+          "first",
+          0,
+          5,
+          436,
+          276,
+          "b70da841b5a4dc7647bdac809cc99a1b2ebf7244f404e57169c1a5536e46a49e"
+        ],
+        [
+          "first",
+          1,
+          5,
+          140,
+          276,
+          "7888dab91f63ede521077708a22c5bdcbcaa89ece2e7e0eeed67a988b1111424"
+        ],
+        [
+          "first",
+          9,
+          5,
+          499,
+          276,
+          "c695c2834c5110603bcc53f008782596dcae718b390849a5da95a58dad21fbb8"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 6,
+      "coordinates": 5748,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 65751372,
+      "rhs_sha256": "8736cba9e7e367e2b5623d04b7621d44d9a420dc53931071672ab9b5b43331c4",
+      "matrices": [
+        [
+          "first",
+          2,
+          6,
+          2146,
+          5748,
+          "38d72c11db2a2c25eca21c17c299cc9c6d0a2d4f3cc6ecf565ccb09e93d344fb"
+        ],
+        [
+          "first",
+          3,
+          6,
+          734,
+          5748,
+          "ce2d6aeb865f8d2af84ee76fd1986e27fabe0fb49a9495d6bcca5812dea6c7bd"
+        ],
+        [
+          "first",
+          10,
+          6,
+          3805,
+          5748,
+          "36ba6ecb74af9b83e2e3a6ff3249beae45fa625def1752cfa633adb0106cc3a5"
+        ],
+        [
+          "first",
+          11,
+          6,
+          4754,
+          5748,
+          "f046b98bf034070d37c579a3803886c5d5780cbefd268d80d7371af06e52cd35"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 7,
+      "coordinates": 3468,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 24910644,
+      "rhs_sha256": "b83e6b4e6439a9197c7a41c9e5c5f97be00fb0734dbf7cf1ad7b256f774057a8",
+      "matrices": [
+        [
+          "first",
+          3,
+          7,
+          734,
+          3468,
+          "e68d5069274e5ca8342496067602f5858536679b4f026c79c6401b7ba6e02f21"
+        ],
+        [
+          "first",
+          4,
+          7,
+          734,
+          3468,
+          "1dcc7b7d617cc117f31fef4102fbbf832d24bb6fc593ac3a6827ae62b894add6"
+        ],
+        [
+          "first",
+          5,
+          7,
+          106,
+          3468,
+          "6650e0430e26599bb8797b5b5c70d8a1c01757926449a74b1a7d1043cc7909a3"
+        ],
+        [
+          "first",
+          11,
+          7,
+          4754,
+          3468,
+          "ee493ceae86fef1124ca7fbbf88ec113dbcb3c50e325bb29fcb1cc4ac49ca865"
+        ],
+        [
+          "first",
+          12,
+          7,
+          855,
+          3468,
+          "d91a7e1f90c834dc302a53e4413a8ee3ef171e6b29e4d1e0b460225d6df1da54"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 8,
+      "coordinates": 276,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 265236,
+      "rhs_sha256": "f1ddace7fd5619274df4d199db2c1bb2ab43f4e63c510d7f6971017e1c6b5b0e",
+      "matrices": [
+        [
+          "first",
+          5,
+          8,
+          106,
+          276,
+          "f1dbe4ecc4eb21a4ae3eeb3779d825ce18e6d15c2f06bb6cd761427f747fcdd1"
+        ],
+        [
+          "first",
+          12,
+          8,
+          855,
+          276,
+          "fc813b924ba6f229937346db85e84187443bfbc3bacb3aa9577ef33db7c7e608"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 9,
+      "coordinates": 8940,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 174312120,
+      "rhs_sha256": "6fddbc96bb013c0b07fd36b72bb56b2611f0a2e45371037cc446e87dd6f41d30",
+      "matrices": [
+        [
+          "first",
+          6,
+          9,
+          4251,
+          8940,
+          "a61d6283218d2e13558eb3a81d64b05cb6a9649f209c2887ec66ab821cc046f4"
+        ],
+        [
+          "first",
+          8,
+          9,
+          872,
+          8940,
+          "a0cd96530fd2127d798157caef116b463541ddeeb0b15464eb4c0736b0b04896"
+        ],
+        [
+          "first",
+          10,
+          9,
+          3805,
+          8940,
+          "a4e0039ad28b3205cbed4268229d670ae5d2f6710be63b58d79125e27ffbcaba"
+        ],
+        [
+          "first",
+          11,
+          9,
+          4754,
+          8940,
+          "06fc919f6fd11b4d810c22d4b8dcee30aa47111f1a7d92767529f08e6d923bf8"
+        ],
+        [
+          "first",
+          13,
+          9,
+          2851,
+          8940,
+          "3b971ee126076d9e99ddc352f3c3001abf43b7d1218a116acbe1f5f255be308d"
+        ],
+        [
+          "first",
+          14,
+          9,
+          2965,
+          8940,
+          "26ffae3b981a8bb8e57b2ae47a9fd7907d5f986db2a7e8cb6c883d6df7532a75"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 10,
+      "coordinates": 4740,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 53234940,
+      "rhs_sha256": "ad8d35c1263c254c9d12a498157d9703de59eaf67a65f41625a5efec28fbda35",
+      "matrices": [
+        [
+          "first",
+          7,
+          10,
+          1785,
+          4740,
+          "69ad9096d34e87ddf9256ed7274934930b7c00ed28dd43a95e8c8f9591b93a86"
+        ],
+        [
+          "first",
+          8,
+          10,
+          872,
+          4740,
+          "4f516921660bf5b9d18d80bcbb722b904f466b0ae13c15c0d3e7d8319ef3e0bc"
+        ],
+        [
+          "first",
+          11,
+          10,
+          4754,
+          4740,
+          "191a40c893c47ad29da853a6746d1804b61b8d339041be057ef896708278c34e"
+        ],
+        [
+          "first",
+          12,
+          10,
+          855,
+          4740,
+          "168f5d0e638d11e8bf2aec0582dcd978c31cd9793e2861930d59e01c233cd336"
+        ],
+        [
+          "first",
+          14,
+          10,
+          2965,
+          4740,
+          "60784612a3a332b3002853170c36b0adbb49dee931a013fe411fbcdd4e67190a"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 11,
+      "coordinates": 2700,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 22839300,
+      "rhs_sha256": "ee98dce879061792bada60f3dedfdb060e6896528cbc7cc0ab9a9e799f0ae2af",
+      "matrices": [
+        [
+          "first",
+          6,
+          11,
+          4251,
+          2700,
+          "7075ac363ccdc1ecc6061039376b217957f9b7811f7e54277195742b2abd1457"
+        ],
+        [
+          "first",
+          7,
+          11,
+          1785,
+          2700,
+          "560dc3585e7ca85dc0bf552651047036c752579d573f6263b41bcc3fc2589c1b"
+        ],
+        [
+          "first",
+          8,
+          11,
+          872,
+          2700,
+          "346538c886b554be0c84c1112033ddbc12444d28688b3449a8548d2cef51befb"
+        ],
+        [
+          "first",
+          9,
+          11,
+          499,
+          2700,
+          "44b3b624c20eefe069cb013919ec69d6fbe770c04e6b4628cd7d7d695b436359"
+        ],
+        [
+          "first",
+          15,
+          11,
+          1052,
+          2700,
+          "a593a250614dfc69d17e479e268ea1ded3d9d57516450f87565444126f8dd334"
+        ]
+      ]
+    },
+    {
+      "equation": 1,
+      "target": 12,
+      "coordinates": 2240,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": 0,
+      "matrix_entries": 16114560,
+      "rhs_sha256": "b0435344f48dca175d60b25f77ab4265f36f49493cdf01aee0cfbc8d230c04c0",
+      "matrices": [
+        [
+          "first",
+          13,
+          12,
+          2851,
+          2240,
+          "c0e34513ea9e4fd89f49479259a30c23f5b99f220e81ab0f1fd2df46b09d75b7"
+        ],
+        [
+          "first",
+          14,
+          12,
+          2965,
+          2240,
+          "1be2fc491b80ee88277185dcaf82537cab632c1f0a675c7fb9df4717f2945403"
+        ],
+        [
+          "first",
+          15,
+          12,
+          1052,
+          2240,
+          "ce60809290dbb906193ed8c34622b0096f8fc9cdbf543167b09bec5c13a553d7"
+        ],
+        [
+          "first",
+          16,
+          12,
+          326,
+          2240,
+          "59b0c17b8a7dd2424925d86f2382901e611f176b808254402cf4244fb9ebbc9b"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 0,
+      "coordinates": 922,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 4699434,
+      "rhs_sha256": "c630d4bf0196a461e4763b65a877ef2cf4c17efb65b2e44a07a26be41f8129e0",
+      "matrices": [
+        [
+          "second_Q0",
+          9,
+          0,
+          1271,
+          922,
+          "5473c13961f3ace630b105e3aa972a02072d8c109d42f08a740e415451e7b58a"
+        ],
+        [
+          "second_Q0",
+          11,
+          0,
+          1281,
+          922,
+          "6bf2ba3a5e4b3562c862aa3cd12486bb4602e8c5702b1bf203d7fe7652315654"
+        ],
+        [
+          "second_Q0",
+          13,
+          0,
+          399,
+          922,
+          "2c49c5f8cebf2d9300f829e50663e58a85a883fc43389dbcc81e750d5441bc36"
+        ],
+        [
+          "second_Q1",
+          2,
+          0,
+          2146,
+          922,
+          "e99b34c4c89d2a56a1b574c58e6966ffc3aa80185437ebeeadbcc9c936fb3618"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 1,
+      "coordinates": 934,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 4412216,
+      "rhs_sha256": "08ec4c14d755605c477392804da3f698d258646be3e54fc3c9509baffc2bde1d",
+      "matrices": [
+        [
+          "second_Q0",
+          10,
+          1,
+          1936,
+          934,
+          "11b7efd53be91b2ea446c2df20ae8a2f0c119e31cd51dc7468d2c2c9f880426e"
+        ],
+        [
+          "second_Q0",
+          12,
+          1,
+          785,
+          934,
+          "73cbd14538053073229299a5dd4d8b2af481d12e954db9013c480f2118048d7f"
+        ],
+        [
+          "second_Q0",
+          13,
+          1,
+          399,
+          934,
+          "4f4fabee703adb53f3ad875090f7bddec2b2b40c9064886100b6574efa067449"
+        ],
+        [
+          "second_Q0",
+          15,
+          1,
+          136,
+          934,
+          "5c82d209cc9e794f2cb9553532c7a06310d69d4b317d12ad068ed984142f8344"
+        ],
+        [
+          "second_Q1",
+          3,
+          1,
+          734,
+          934,
+          "2863c50477f96b3c3b8b6d793d2437523b34dceb2370df3f29881028a3cf4d35"
+        ],
+        [
+          "second_Q1",
+          4,
+          1,
+          734,
+          934,
+          "efc847cfac66ed732cd7e8e40304a6bf0bdd4feb5e78a0be7e3869e96cb0c38c"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 2,
+      "coordinates": 178,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 114098,
+      "rhs_sha256": "6bb302f65b05006f840769aa65b039a8e16480155fec662c9895f121c14d5ac6",
+      "matrices": [
+        [
+          "second_Q0",
+          14,
+          2,
+          399,
+          178,
+          "846ca09f3228e65c6f652a2e192bf30b710da70900980ecc7fa67a7eea20323d"
+        ],
+        [
+          "second_Q0",
+          15,
+          2,
+          136,
+          178,
+          "963401cbdef57d0d0d433b6b26f8159cdb212c86e791d61227574b53b54360f4"
+        ],
+        [
+          "second_Q1",
+          5,
+          2,
+          106,
+          178,
+          "fc6cdda9567b49aa34b38f6c38278ad41d7b25c0a49c2fd169c2bd868fb0b48b"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 3,
+      "coordinates": 882,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 7449372,
+      "rhs_sha256": "8e7e494134c7d885117059231c833a5a315fe8871fa1866c9292970133cd6dcd",
+      "matrices": [
+        [
+          "second_Q0",
+          1,
+          3,
+          772,
+          882,
+          "11be5f64a36df8970fa52f46e55ae5b577ac671bac33a9f77675f470448e1ad8"
+        ],
+        [
+          "second_Q0",
+          3,
+          3,
+          160,
+          882,
+          "2391adba36c364ef31bea87fd059fb6c274c45595b176ab56c00d8eb3e3c70c6"
+        ],
+        [
+          "second_Q0",
+          5,
+          3,
+          395,
+          882,
+          "1e0624e7fbd62aef96e57997577a5094a66461d16bb852c083f039f4dc2dfb10"
+        ],
+        [
+          "second_Q0",
+          6,
+          3,
+          160,
+          882,
+          "b6a0be7479b9a7bf2c0024ea9db9be4a8a1dfc819e7e19fb212970650e7ecc5c"
+        ],
+        [
+          "second_Q0",
+          7,
+          3,
+          160,
+          882,
+          "e7d61c0e382168482ab98364edb991cad4f10f047f23074483ded4b0bde957ab"
+        ],
+        [
+          "second_Q0",
+          16,
+          3,
+          1237,
+          882,
+          "ff43ccad47b021348f283a8b2b23dff45312d3c91ed73e43ad8efa313f61dc6d"
+        ],
+        [
+          "second_Q0",
+          18,
+          3,
+          321,
+          882,
+          "45ad2e3453c2348391cd6efad0249a4157ef19fd3f43347c5afc89a3934d3afc"
+        ],
+        [
+          "second_Q1",
+          0,
+          3,
+          436,
+          882,
+          "1f668f3124c15e60e32e5f02e8e3eca0f728112f54df068bfd1ed716575f6fbd"
+        ],
+        [
+          "second_Q1",
+          1,
+          3,
+          140,
+          882,
+          "cfb75ef485ddb482074803562b9f3dfcdf823ede736c13fbd67f0dafd85fbbe8"
+        ],
+        [
+          "second_Q1",
+          2,
+          3,
+          2146,
+          882,
+          "8c92cbed0e7b696df4ff48294d0db9f160c7fc4087f340910f96f85915cd1b08"
+        ],
+        [
+          "second_Q1",
+          4,
+          3,
+          734,
+          882,
+          "ac2df61dc555a5eae89eb7a28162cc0782a87fa7c13a52fcd4878cb784a51b28"
+        ],
+        [
+          "second_Q1",
+          7,
+          3,
+          1785,
+          882,
+          "57523a5ab186c9491bbfb9ec2c77cf36ed83be4560a577fdff2355f6b43069a2"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 4,
+      "coordinates": 174,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 287274,
+      "rhs_sha256": "3390986b49f878932187fc4520cb3a49dedc6ff26d10a99cec68a769225187bd",
+      "matrices": [
+        [
+          "second_Q0",
+          4,
+          4,
+          160,
+          174,
+          "37cc6357a6af3498cb2de70cd3b88c8445adfb6b3fa5c6f749e23a58184603cd"
+        ],
+        [
+          "second_Q0",
+          6,
+          4,
+          160,
+          174,
+          "bbd4f71cc13b92fbd75ed00df18b6bbe88f97de91b97483c6bd07f898ed01e2b"
+        ],
+        [
+          "second_Q0",
+          8,
+          4,
+          30,
+          174,
+          "1c827e431eea2e57255acafe591b13ab363aa2b1e8f8c27d695dd5a29c1b4553"
+        ],
+        [
+          "second_Q0",
+          17,
+          4,
+          321,
+          174,
+          "9e2a5b1f2c54cfba51407f1c5582b4bd651f725ba7df8add795dbe16a96b0580"
+        ],
+        [
+          "second_Q1",
+          1,
+          4,
+          140,
+          174,
+          "014ed2e1318a35cb8ab9b17aaceed83eb773903f40db2b146a21ec64c53bcc80"
+        ],
+        [
+          "second_Q1",
+          3,
+          4,
+          734,
+          174,
+          "b410a345f52deaa2b98d683619feb608f955c116c55e494bfe524878c0f79c85"
+        ],
+        [
+          "second_Q1",
+          5,
+          4,
+          106,
+          174,
+          "ac329e6e92c9a0a73332e80e0f25234645fb4b83806e34977d8a78bacfae6f56"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 5,
+      "coordinates": 7014,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 190324890,
+      "rhs_sha256": "7ed23555a9fbbc17e5fb10d12d1087be3cfb6c1cb4b0cdea1892f4ee5525f57d",
+      "matrices": [
+        [
+          "second_Q0",
+          0,
+          5,
+          1009,
+          7014,
+          "c04ee080935d3d199f8d1e3a1157373c7188f58ee1fbc891144e292a0e4e63f8"
+        ],
+        [
+          "second_Q0",
+          2,
+          5,
+          772,
+          7014,
+          "7311f448985deb108772d46680723c87baca89b54dffb0b8db2280526b3bf163"
+        ],
+        [
+          "second_Q0",
+          9,
+          5,
+          1271,
+          7014,
+          "0c1c5bb17e0a96c5c17abb8d022f90e79ddd34daf3fe583247b98f2888441ce6"
+        ],
+        [
+          "second_Q0",
+          10,
+          5,
+          1936,
+          7014,
+          "6de9401e4ad0d21f61d513739b94b3e206c3255974296a271a9db1c18dc7898c"
+        ],
+        [
+          "second_Q0",
+          11,
+          5,
+          1281,
+          7014,
+          "601b71310d0b6b6b192660273486fb330350f0834a77aa9faaed7862d45e2ec5"
+        ],
+        [
+          "second_Q0",
+          19,
+          5,
+          3008,
+          7014,
+          "4e90e865aa3ddcb049fb07adf7499bb6a28128081fdaf565654bfbe27aa1c62a"
+        ],
+        [
+          "second_Q0",
+          21,
+          5,
+          6098,
+          7014,
+          "152324c466cf949c3245fe3aec1850d1522a632118ef35714bb71ef81ea0e84a"
+        ],
+        [
+          "second_Q0",
+          22,
+          5,
+          1558,
+          7014,
+          "98da774693ce310cdea1b20701443b7c51f95713a6bff4516956422b48a61f87"
+        ],
+        [
+          "second_Q1",
+          2,
+          5,
+          2146,
+          7014,
+          "62e776dabc7af5be25b646db02c8f624b79d4c69b4fcedbba784061ff2aa16b4"
+        ],
+        [
+          "second_Q1",
+          6,
+          5,
+          4251,
+          7014,
+          "b9f05babe5bfe26fece2c6369940d6714a885b84f7a106918d8ff549c795b702"
+        ],
+        [
+          "second_Q1",
+          10,
+          5,
+          3805,
+          7014,
+          "0806d3a8de24fe1abdd351555c04fcf5be10d6323ac90959e9f17de53f95caf5"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 6,
+      "coordinates": 4332,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 89559768,
+      "rhs_sha256": "b3379571c1cc260c2d49ff2ebda070aa7bc8bd6f348f1414fb22ac2e4c7dfaa2",
+      "matrices": [
+        [
+          "second_Q0",
+          1,
+          6,
+          772,
+          4332,
+          "1642b8f1455e011857a44d2514911156a762d6656691dd187e570c16c231d8f7"
+        ],
+        [
+          "second_Q0",
+          3,
+          6,
+          160,
+          4332,
+          "c25defa817c18b79d9b3fbdf125b489d39814ca0ceaf90af0ef8d43ab5137200"
+        ],
+        [
+          "second_Q0",
+          4,
+          6,
+          160,
+          4332,
+          "354da5cf5b413b050cb3be111793417feaa982a6ac6ab88b2a48cd3b559d7fca"
+        ],
+        [
+          "second_Q0",
+          10,
+          6,
+          1936,
+          4332,
+          "90d49040a0ff8b5c091ae33a9118f3d3e98525b91c9b605c03eb784e1afb9ba2"
+        ],
+        [
+          "second_Q0",
+          12,
+          6,
+          785,
+          4332,
+          "953c15f1f0d3517eb75434124c8e847bdbcc2854708bc4acd3f009c915e8f9f4"
+        ],
+        [
+          "second_Q0",
+          14,
+          6,
+          399,
+          4332,
+          "869661b882f86a6488570b10f2e576fc5d60c5a425c9ac2437208f697ba45a63"
+        ],
+        [
+          "second_Q0",
+          20,
+          6,
+          3055,
+          4332,
+          "7c8f7b6f1290e2c040c83d121dc3d6e0a11095fc9b716d3fa0034e070be8aaa6"
+        ],
+        [
+          "second_Q0",
+          22,
+          6,
+          1558,
+          4332,
+          "bfba5a0bbf2f740b9393fa50b61f716381e402e8458d53cc721de8e8011963bc"
+        ],
+        [
+          "second_Q0",
+          24,
+          6,
+          1558,
+          4332,
+          "8dcd2196230f460bda6401ec6884ad7c7d7e31b47ca2fff2e9eb59e6d7003105"
+        ],
+        [
+          "second_Q1",
+          2,
+          6,
+          2146,
+          4332,
+          "2b471957dfeb8eaf14381b2d74a237bc7cf90fbf1931ff84901463b704b67638"
+        ],
+        [
+          "second_Q1",
+          3,
+          6,
+          734,
+          4332,
+          "fc806df84bece283cc561261b864e28221540110599e6ebd5ee2bf30331d5013"
+        ],
+        [
+          "second_Q1",
+          7,
+          6,
+          1785,
+          4332,
+          "effcf24bad3526c1bc2f16ef83fc531e5869b261ae3ab2cab401c84c1304808f"
+        ],
+        [
+          "second_Q1",
+          8,
+          6,
+          872,
+          4332,
+          "60506172c8744b715595f3cdd5ba607247f22a05824c587063c0f159d9b69f42"
+        ],
+        [
+          "second_Q1",
+          11,
+          6,
+          4754,
+          4332,
+          "3b120b82bc341fa0f9484b50d723c4f38555bd03638e45ae943c7f9c412cefa6"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 7,
+      "coordinates": 4332,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 91964028,
+      "rhs_sha256": "b3379571c1cc260c2d49ff2ebda070aa7bc8bd6f348f1414fb22ac2e4c7dfaa2",
+      "matrices": [
+        [
+          "second_Q0",
+          2,
+          7,
+          772,
+          4332,
+          "e888bca956754fbbc1dbeeb57f6d183e117ba3c1be44bd686a564d7ff59615e4"
+        ],
+        [
+          "second_Q0",
+          3,
+          7,
+          160,
+          4332,
+          "7395a8f4739d5953ecbd8b42135c76b0225caf523de1df9ac0b8045c9b6d3c5e"
+        ],
+        [
+          "second_Q0",
+          11,
+          7,
+          1281,
+          4332,
+          "8c3d0ea34c2d2c499518a04b80cd4a25de4af601858fa64fb1ebd82884e6f46e"
+        ],
+        [
+          "second_Q0",
+          12,
+          7,
+          785,
+          4332,
+          "877746637bc98714ca05a57f78eb11a46bca2e6f28f53c4e675f3012414b4aa0"
+        ],
+        [
+          "second_Q0",
+          13,
+          7,
+          399,
+          4332,
+          "e9e17855bf6549e382da47507fa5377262bea57d874a2ded840d53b5745e6d05"
+        ],
+        [
+          "second_Q0",
+          21,
+          7,
+          6098,
+          4332,
+          "91cfc2010be4ddca69c35fe1bd8da4a83a5ff4224300c319e01e5f5b0c7abe6f"
+        ],
+        [
+          "second_Q0",
+          23,
+          7,
+          1558,
+          4332,
+          "5d095a508e7a392543fb13c72512f3b89a065d9025a55a7fb0c6aeab2dbe819e"
+        ],
+        [
+          "second_Q0",
+          25,
+          7,
+          321,
+          4332,
+          "b4fb6c84f02663bab36c9e9ec6879978ea51f97cc508262cb8b25c3720e2977e"
+        ],
+        [
+          "second_Q1",
+          0,
+          7,
+          436,
+          4332,
+          "fc3a8c31ce3de647c4b63d3cc61a701756775dfa5107b1c2e4f4328398153d45"
+        ],
+        [
+          "second_Q1",
+          2,
+          7,
+          2146,
+          4332,
+          "5b03719446ea1aa58e9e2394b9feb3a0ad86338152a4b910847cf2c8e7488a9a"
+        ],
+        [
+          "second_Q1",
+          4,
+          7,
+          734,
+          4332,
+          "b1dda5282574d412c1fe739318143b43496bccd50213138a78b23eb817c7f19a"
+        ],
+        [
+          "second_Q1",
+          7,
+          7,
+          1785,
+          4332,
+          "536e649d7a16f3c00de1c20fe21c1efb003ae759c631d82fac0f7a35bbab7455"
+        ],
+        [
+          "second_Q1",
+          11,
+          7,
+          4754,
+          4332,
+          "7dbd20be7ce5bf8d62627ddf495e536beeebd164b2ece45284a386ad26fa3c6a"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 8,
+      "coordinates": 768,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 3211776,
+      "rhs_sha256": "06d6f7a8b5dab308eb2a2d40e37470ad8b518eb49be69bb8a6f43b5f1347f956",
+      "matrices": [
+        [
+          "second_Q0",
+          3,
+          8,
+          160,
+          768,
+          "712b82769f388721d792b36fd23efd7b39a933e9fcb0bdeed5a7742a10935edd"
+        ],
+        [
+          "second_Q0",
+          13,
+          8,
+          399,
+          768,
+          "061e02cdbb9a8917ad5a9b7e7eeb018c616a866fd1f5d96da83686d683bb7e0a"
+        ],
+        [
+          "second_Q0",
+          15,
+          8,
+          136,
+          768,
+          "317a910f26bc5f7af4ca3d14edb521c8dca3b911f6a9ffeab40213a3f46c5e37"
+        ],
+        [
+          "second_Q0",
+          22,
+          8,
+          1558,
+          768,
+          "ad0d4f00188cf65d338ddc3ff3bbbb93904baec7210964a9ddb618b8141c56ac"
+        ],
+        [
+          "second_Q0",
+          25,
+          8,
+          321,
+          768,
+          "9c3b338237b30a514e7eb0bed76b6a6cbc7b46ebd9b365054a2d90a7d4fc3bdb"
+        ],
+        [
+          "second_Q1",
+          1,
+          8,
+          140,
+          768,
+          "a2fb04b99aed9881fee2975cffa48e52c4a3b3c2390b3d9bbb1c4d09c39ff542"
+        ],
+        [
+          "second_Q1",
+          3,
+          8,
+          734,
+          768,
+          "120f14162376b14369fa745dba2a80e472c3c009425544c6ac4a50f98acb8246"
+        ],
+        [
+          "second_Q1",
+          4,
+          8,
+          734,
+          768,
+          "e9e03b5e25dbab334b7f99de41590f29162786b91585fe07426ba1495acb64cf"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 9,
+      "coordinates": 768,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 3682560,
+      "rhs_sha256": "06d6f7a8b5dab308eb2a2d40e37470ad8b518eb49be69bb8a6f43b5f1347f956",
+      "matrices": [
+        [
+          "second_Q0",
+          4,
+          9,
+          160,
+          768,
+          "ee4f1a5d1ec79106d8c10c403563967595e3e04e9ebab387f7717e3e2046c4d9"
+        ],
+        [
+          "second_Q0",
+          12,
+          9,
+          785,
+          768,
+          "193da05528e7a85a1a490b410de67ef849b4f909333ff90f703219d6e8cb5f6f"
+        ],
+        [
+          "second_Q0",
+          15,
+          9,
+          136,
+          768,
+          "e715d992230f38858828e632b58826ca41fabfffe66f3dbbc71607d982c870ab"
+        ],
+        [
+          "second_Q0",
+          24,
+          9,
+          1558,
+          768,
+          "897a10051bd023f033da9f15145d45bc60ae879c0bfe5bd17e4c67ca392f056f"
+        ],
+        [
+          "second_Q0",
+          25,
+          9,
+          321,
+          768,
+          "862434d747eac91be437abc2572f0b8292e5424188fad2d072bbad6964dd5df3"
+        ],
+        [
+          "second_Q1",
+          1,
+          9,
+          140,
+          768,
+          "87268f1a49f7e9f4985440fae55728c480e59b4d0da337ac827960acb0582180"
+        ],
+        [
+          "second_Q1",
+          4,
+          9,
+          734,
+          768,
+          "4ecf15ede3884b3f137118dd57cb9e6b5f8cfe4efcc9caaddededc0c37f03ba0"
+        ],
+        [
+          "second_Q1",
+          5,
+          9,
+          106,
+          768,
+          "e1be85db9cf49479ca29e775fa59d7ab8d8e48551f3abe98f6fa18d4e448b4d2"
+        ],
+        [
+          "second_Q1",
+          12,
+          9,
+          855,
+          768,
+          "4e586ff1350cb625a963c9f4221d56df63fcc245a9417f3798c6baec91903512"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 10,
+      "coordinates": 2154,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 29068230,
+      "rhs_sha256": "933771618a03219b1b9f50fdafaf9087a513a4f3d3a5617ec5c2377a370f8124",
+      "matrices": [
+        [
+          "second_Q0",
+          0,
+          10,
+          1009,
+          2154,
+          "ee49212a269fc5006d6cc552f9df1af8df52ce9e3adc3a82820c9b9c6ef14d4e"
+        ],
+        [
+          "second_Q0",
+          1,
+          10,
+          772,
+          2154,
+          "02f72e75e4d3cf317919af32f454e9b418418992db76bef8e947ba35b4cbd04e"
+        ],
+        [
+          "second_Q0",
+          2,
+          10,
+          772,
+          2154,
+          "1beebbe0388f0951376a25ebb6f8d1f1d2818b6722836b9f1d796ea3a4484ea2"
+        ],
+        [
+          "second_Q0",
+          5,
+          10,
+          395,
+          2154,
+          "4a03c659e9aca8a0713a62d9ce68f034854418b3e1dc9c894556364241e6f025"
+        ],
+        [
+          "second_Q0",
+          27,
+          10,
+          1818,
+          2154,
+          "bed2bb41f4455470f4f9df12637130f5fba51d1f820b0f7e689382f9aaadf79f"
+        ],
+        [
+          "second_Q0",
+          29,
+          10,
+          1237,
+          2154,
+          "d242ac25b6d23fbbc988b3b2013ac332f83adf65e40cfe28ef7f0f1090121d77"
+        ],
+        [
+          "second_Q0",
+          33,
+          10,
+          160,
+          2154,
+          "6dc270f64d156c6cd2d354a812e3988c84575f20ff76187b6564bc42d60b6903"
+        ],
+        [
+          "second_Q1",
+          0,
+          10,
+          436,
+          2154,
+          "eaae6079f2dac952c9b6c99ec97db410745f571ec763902b3465d49001228017"
+        ],
+        [
+          "second_Q1",
+          2,
+          10,
+          2146,
+          2154,
+          "cc757473d3f391cdab06f8c550a47d814e3a5657275dce9735db5ad324b4580d"
+        ],
+        [
+          "second_Q1",
+          6,
+          10,
+          4251,
+          2154,
+          "8204257a6cc881a14302238dfc6a07629f17119a10ca50f10845ee03b4b6a8d3"
+        ],
+        [
+          "second_Q1",
+          9,
+          10,
+          499,
+          2154,
+          "4678410df540b09ed25f87203022ca095189e4fb644f9c9c78190593de8908ae"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 11,
+      "coordinates": 882,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 4402944,
+      "rhs_sha256": "8e7e494134c7d885117059231c833a5a315fe8871fa1866c9292970133cd6dcd",
+      "matrices": [
+        [
+          "second_Q0",
+          2,
+          11,
+          772,
+          882,
+          "ac6afdffb85d5ca8538a6440458a357ce8471a74bd98879d905905e903521736"
+        ],
+        [
+          "second_Q0",
+          3,
+          11,
+          160,
+          882,
+          "07b880bddfc55937d68dcd65b4d52f5a56d1769c6bd16a76b4b119782730a63b"
+        ],
+        [
+          "second_Q0",
+          4,
+          11,
+          160,
+          882,
+          "cc4f43c8f918c0daee9238caa9f25cc22dad9d167c0d5256299cb09c1c8af5ac"
+        ],
+        [
+          "second_Q0",
+          6,
+          11,
+          160,
+          882,
+          "eaf78171a3c43193fa44c6d0756749e1d0e8b0bab84cfff94dcb86760ac1dc6b"
+        ],
+        [
+          "second_Q0",
+          28,
+          11,
+          1237,
+          882,
+          "7bbfbff8e7c4b52b8c5d117c14c239970616caad3506e215a39a19091720ddf4"
+        ],
+        [
+          "second_Q0",
+          32,
+          11,
+          321,
+          882,
+          "7f2bc9cfcd849aeec98130427308df02dbba5e9b2bf6c6d41747628897c9b52a"
+        ],
+        [
+          "second_Q1",
+          0,
+          11,
+          436,
+          882,
+          "f2639fa129ab9aab44b15cf4b8ad16fee19ca1636f914a7db6217880ae3fe455"
+        ],
+        [
+          "second_Q1",
+          1,
+          11,
+          140,
+          882,
+          "e1b308b4674b65c2daa6d847c9e4fce846a3da9ca69e40add8afe9e853f0ff73"
+        ],
+        [
+          "second_Q1",
+          3,
+          11,
+          734,
+          882,
+          "cd60a6fab61286ebf8187a150872ed536a5bbfb8fbb0b3ebccd996c6c1734e1d"
+        ],
+        [
+          "second_Q1",
+          8,
+          11,
+          872,
+          882,
+          "a2ad1a66fa1b6bcaee3f62da5bb2aa8d3a7b7ba9c371c3891e216deb1de66d16"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 12,
+      "coordinates": 450,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 1900800,
+      "rhs_sha256": "1515c4c219740fa913f1b92f43c016fa056e4df6ff821299415dbc7e3f79ca70",
+      "matrices": [
+        [
+          "second_Q0",
+          1,
+          12,
+          772,
+          450,
+          "470e11d6cb9ba70b162ccd67d2bf068ff1570dcfb3458525887eac511dabe14b"
+        ],
+        [
+          "second_Q0",
+          4,
+          12,
+          160,
+          450,
+          "0ecccb740f39bce3150199a18ebd154754d658b0d75e5d103ccbd8a0821ad559"
+        ],
+        [
+          "second_Q0",
+          7,
+          12,
+          160,
+          450,
+          "176a982c413bfbcad1e5d21aecf5cefa496b9befffdfde0cb67c1f2dd6ca28af"
+        ],
+        [
+          "second_Q0",
+          30,
+          12,
+          611,
+          450,
+          "99787786c453c2d7f3efa2017abeaed0d07558196a15395116110eae40e3d07a"
+        ],
+        [
+          "second_Q0",
+          33,
+          12,
+          160,
+          450,
+          "d4345ada454ab9420b1e9a6dd43e9c20991c1ee5a78ff9716973f69037b1125b"
+        ],
+        [
+          "second_Q1",
+          0,
+          12,
+          436,
+          450,
+          "010837c296868f2d8a430b2e8f9d2ebf2ce88626b3edc62378d8ee3debccfe8b"
+        ],
+        [
+          "second_Q1",
+          1,
+          12,
+          140,
+          450,
+          "a0438611c1d74c943b9e2cdecf578e9f2adcc50364700d5ec7343485bb35773f"
+        ],
+        [
+          "second_Q1",
+          7,
+          12,
+          1785,
+          450,
+          "509bbc71161fd022806f0185096858e5b3685b423c843fb70e5e836dfc6b876a"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 13,
+      "coordinates": 108,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 52920,
+      "rhs_sha256": "7d2880f351f4091adabc9e70b1991b2e16a03e8015683d0143e39681581439bc",
+      "matrices": [
+        [
+          "second_Q0",
+          3,
+          13,
+          160,
+          108,
+          "fc8cfc38093b8f5793ecd793722c7e0f5c647d243d7918c92f35db1770777602"
+        ],
+        [
+          "second_Q0",
+          8,
+          13,
+          30,
+          108,
+          "1465e708abaa86bd0c44a8cff6900c78009b1e2b4b2b125e25b1a5a9058fdb69"
+        ],
+        [
+          "second_Q0",
+          31,
+          13,
+          160,
+          108,
+          "3d76a0f239ade5d3b7bdc21c17f4386d7f8d305145a577bee579be7751165c34"
+        ],
+        [
+          "second_Q1",
+          1,
+          13,
+          140,
+          108,
+          "e00143269b4604c9ad101a5ce8a3e95c73bff18e396494c3ec0a459d08656342"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 14,
+      "coordinates": 2184,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 30486456,
+      "rhs_sha256": "05d49d0b7ac2ebc9aa888fe73f7f7b79ded67b26745291329752920679c6867a",
+      "matrices": [
+        [
+          "second_Q0",
+          5,
+          14,
+          395,
+          2184,
+          "585fecbb91fe7eefb724eae83ba742919eb6bacaeaaf9cadd5eb9e39f86e4727"
+        ],
+        [
+          "second_Q0",
+          6,
+          14,
+          160,
+          2184,
+          "583ab6c0796a164b0c5ce7abe77c16da7fcab28437e4003588ebf69c34d10481"
+        ],
+        [
+          "second_Q0",
+          10,
+          14,
+          1936,
+          2184,
+          "dfa1f2af53db6649d595b787bc28a5f23d17d4eb6812f2e0725752a93bc85b30"
+        ],
+        [
+          "second_Q0",
+          13,
+          14,
+          399,
+          2184,
+          "c9e2194999cb02ffb57c63472bad0f32b09ae6ee3a3c8e71ff09f4bd81703fe5"
+        ],
+        [
+          "second_Q0",
+          36,
+          14,
+          1556,
+          2184,
+          "e6549019639161406e6808775de24984673aaf91b4a40845bdb8851251762a1c"
+        ],
+        [
+          "second_Q0",
+          37,
+          14,
+          1558,
+          2184,
+          "8fadfbeebc75334ab0ef086b25c6f89eb7577302a43ee7209c96ec67cc0e4e17"
+        ],
+        [
+          "second_Q0",
+          39,
+          14,
+          321,
+          2184,
+          "c2b0e7ed6244f283aad09a86b4795cab7a1fc39efaa7cef7ced6ae8d26481176"
+        ],
+        [
+          "second_Q1",
+          2,
+          14,
+          2146,
+          2184,
+          "0cdad51cdb1e389129f9610afca6e1beb31fc92986ed2d6990bd0c1a5d6ef52a"
+        ],
+        [
+          "second_Q1",
+          3,
+          14,
+          734,
+          2184,
+          "434c75c2e1417a7291899b3d47514a43397cb5cc0fe709364009a54fd0cb6ac6"
+        ],
+        [
+          "second_Q1",
+          11,
+          14,
+          4754,
+          2184,
+          "834d91468fe9c538d50f117c78b139f460e323536c177373cfb1e6c19f3a3086"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 15,
+      "coordinates": 768,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 3941376,
+      "rhs_sha256": "06d6f7a8b5dab308eb2a2d40e37470ad8b518eb49be69bb8a6f43b5f1347f956",
+      "matrices": [
+        [
+          "second_Q0",
+          6,
+          15,
+          160,
+          768,
+          "9ae59c29b0b304f63d3f0774f0add8da717261f6e689944bbcd1e29f330f5b77"
+        ],
+        [
+          "second_Q0",
+          8,
+          15,
+          30,
+          768,
+          "c807d489c4b647fca5658df4981582ad6f4b7054cdcf0c4a12e9fe102401cbc8"
+        ],
+        [
+          "second_Q0",
+          12,
+          15,
+          785,
+          768,
+          "0ade5377e5a206cc67df96cdc655191d090d0a8cb05c01ef7c724fa6456ea800"
+        ],
+        [
+          "second_Q0",
+          37,
+          15,
+          1558,
+          768,
+          "9bb87785dec4d73271d86156fb89151731111b0994a7c9676d3882d019f4a2e7"
+        ],
+        [
+          "second_Q0",
+          40,
+          15,
+          170,
+          768,
+          "7dd4763137cf3ade1e5887212ef52899be5710766add57509ec85e84c10e73ee"
+        ],
+        [
+          "second_Q1",
+          3,
+          15,
+          734,
+          768,
+          "641884ddda71a2b46d943232b9fcb8db43c43957d3452fd4fc14cc47b4ad5088"
+        ],
+        [
+          "second_Q1",
+          4,
+          15,
+          734,
+          768,
+          "cdc51c5b939db37b05e5083f74d6fcd925cfa0188b512b54be478ee2bfe04491"
+        ],
+        [
+          "second_Q1",
+          5,
+          15,
+          106,
+          768,
+          "39631bbbdc802f5e8ede3f6739ba5a6541321366b6f58780809ba9b92d125a4d"
+        ],
+        [
+          "second_Q1",
+          12,
+          15,
+          855,
+          768,
+          "2fe535eeb5cf5bcb7d9c871c593b96135e6d751a7760afcb4a008186827fffb6"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 16,
+      "coordinates": 768,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 2631168,
+      "rhs_sha256": "06d6f7a8b5dab308eb2a2d40e37470ad8b518eb49be69bb8a6f43b5f1347f956",
+      "matrices": [
+        [
+          "second_Q0",
+          7,
+          16,
+          160,
+          768,
+          "80080043e080bba52700041ebdbf37daa0ae1a57eaf6a95d0dbb2c4ef91c775c"
+        ],
+        [
+          "second_Q0",
+          8,
+          16,
+          30,
+          768,
+          "2b02eaad52f33dcb832bbb6a0c1b045dc4ea3c5ad289aafb95157424554b6509"
+        ],
+        [
+          "second_Q0",
+          14,
+          16,
+          399,
+          768,
+          "39b4d4e6fd164517e43f3ae412f77e6883bb816b37da353e6a50ce416eff7b6d"
+        ],
+        [
+          "second_Q0",
+          15,
+          16,
+          136,
+          768,
+          "841f67fedf70644589981a6a020ec37264e8b6010131c0038e2fe1dd713f0859"
+        ],
+        [
+          "second_Q0",
+          38,
+          16,
+          791,
+          768,
+          "e0bae4d2323345797a4d0cab8c768f52586f5a1a0886896165af3310d303d34f"
+        ],
+        [
+          "second_Q0",
+          39,
+          16,
+          321,
+          768,
+          "def3c946deb1b279479e0deb1564ad4790a041424f7eb3878ae047e30ed803e8"
+        ],
+        [
+          "second_Q1",
+          3,
+          16,
+          734,
+          768,
+          "2396da2a044fe8d5ea2c6596113f4d2d2b1b03d4b5b5cc5a46c495954f11d450"
+        ],
+        [
+          "second_Q1",
+          12,
+          16,
+          855,
+          768,
+          "ad647896c949e9ebab12f6d9ebf65f64cd70e962beb2b9940f36be85a715fd88"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 17,
+      "coordinates": 138,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 81834,
+      "rhs_sha256": "8e773a644960b9c1263976646fa670d5600a49635a01bfdc16ce38cfebad4f1d",
+      "matrices": [
+        [
+          "second_Q0",
+          8,
+          17,
+          30,
+          138,
+          "21dcad7f3c39997180ded664e6ebd6e950f4cc42f8b4035a865319f2e552a1b0"
+        ],
+        [
+          "second_Q0",
+          15,
+          17,
+          136,
+          138,
+          "e2d9ea090bc23d1997a715a62b2edffe8e8a93ad02e384728a25594ba758c268"
+        ],
+        [
+          "second_Q0",
+          39,
+          17,
+          321,
+          138,
+          "a78a35e7a97f2ee385ff8ab45c71d3af79b666ffc7f5377264ca601a773cbb5e"
+        ],
+        [
+          "second_Q1",
+          5,
+          17,
+          106,
+          138,
+          "3ff28fee0d635f2751b4b0b9033aaf5b82d9c05aae9ab4461fa73fdf83dd8a06"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 18,
+      "coordinates": 108,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 132192,
+      "rhs_sha256": "7d2880f351f4091adabc9e70b1991b2e16a03e8015683d0143e39681581439bc",
+      "matrices": [
+        [
+          "second_Q0",
+          7,
+          18,
+          160,
+          108,
+          "61d861296021d0726b8ed0871b724a88ba9aab22cc74c34ee9730b76d62f9a83"
+        ],
+        [
+          "second_Q0",
+          8,
+          18,
+          30,
+          108,
+          "c730b275aa7fdca68520921b2de36d97875f6028efe7ef06131de1cf4ef4e283"
+        ],
+        [
+          "second_Q0",
+          41,
+          18,
+          160,
+          108,
+          "6a18b58a94a14d41a403f9c99efd8ca14c0217f786dc3a1b0cb7cbc11ed0ff09"
+        ],
+        [
+          "second_Q1",
+          1,
+          18,
+          140,
+          108,
+          "cbc553157931055e17e8b0f0cfc9265f389d7e51ff056ab821cf40b6c5e2342c"
+        ],
+        [
+          "second_Q1",
+          4,
+          18,
+          734,
+          108,
+          "5d7949fe2ce4ecca673470cbde37b83b747d3ab0ce5dfad8e71d8c80d388bb22"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 19,
+      "coordinates": 4290,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 123809400,
+      "rhs_sha256": "ab7aa7ee75c3a9a7d25ce0bd5f3adae51c8b137a9dced75e53c6afa225a213ec",
+      "matrices": [
+        [
+          "second_Q0",
+          16,
+          19,
+          1237,
+          4290,
+          "57b917cee069e2b75ac93855c03a268b1305c7541d01298d86fba7a8e208110c"
+        ],
+        [
+          "second_Q0",
+          17,
+          19,
+          321,
+          4290,
+          "aded6d2245559dd3a8542a4c2644d7053d7edc64163e46a7d36fd25f3a77ab6a"
+        ],
+        [
+          "second_Q0",
+          20,
+          19,
+          3055,
+          4290,
+          "47e84ac950d9a0871b97f843998bc26ecdef9af762164f2b06ced8d647c96ac5"
+        ],
+        [
+          "second_Q0",
+          22,
+          19,
+          1558,
+          4290,
+          "a4fc4a1443816b115214ad68735bb008518f8b36cdf877db99f9a4b8decd9770"
+        ],
+        [
+          "second_Q0",
+          36,
+          19,
+          1556,
+          4290,
+          "38d8d13027df4ace97c68c7043b0000e0092ec354d4892d24e2c3aac84913c31"
+        ],
+        [
+          "second_Q0",
+          37,
+          19,
+          1558,
+          4290,
+          "9e774faff3eeab8088f579845c45d78ce119b1e717e56cc471294eb9d441290b"
+        ],
+        [
+          "second_Q0",
+          38,
+          19,
+          791,
+          4290,
+          "2c8578d307f9bb695443c4ab1187010e6fdec2128a3818abb89ebf561f11b96a"
+        ],
+        [
+          "second_Q0",
+          42,
+          19,
+          1060,
+          4290,
+          "374d51d8376c3811e22b50da4db9222ac3055d0038b18946d8f3715992d9045b"
+        ],
+        [
+          "second_Q0",
+          43,
+          19,
+          1077,
+          4290,
+          "1cb5f992ff190a71b76420b92553e5daf9737e19e61e91462f463da49875a742"
+        ],
+        [
+          "second_Q1",
+          6,
+          19,
+          4251,
+          4290,
+          "b7e48295c0e2e81659423eb8429f25effcc77d2e2b886adc5da31799da4367f7"
+        ],
+        [
+          "second_Q1",
+          8,
+          19,
+          872,
+          4290,
+          "093413a0e0c38f9616432fae07f7d8826243b0806667b04fab9eece77e26cc6a"
+        ],
+        [
+          "second_Q1",
+          10,
+          19,
+          3805,
+          4290,
+          "a91499fa9973e3dfe166a2936376606ed6d46b768307cf52268c7683f48b76dc"
+        ],
+        [
+          "second_Q1",
+          11,
+          19,
+          4754,
+          4290,
+          "4f0a83998d1df732f1105e9a27a9a0b2612afdb35d09a2203820319d1df9b578"
+        ],
+        [
+          "second_Q1",
+          14,
+          19,
+          2965,
+          4290,
+          "baa48bf7a999b867e82b55c270461cc185138840abadb791abd128c45415c6b7"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 20,
+      "coordinates": 1830,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 25460790,
+      "rhs_sha256": "6ebf67ff6d8d046fbbd3eddffb83510ffee9893b0ad781707a9408444bf97b61",
+      "matrices": [
+        [
+          "second_Q0",
+          17,
+          20,
+          321,
+          1830,
+          "1227da1c605ba014e858028a526a10d4f588823f261a4c80f1f8dc05830b87dd"
+        ],
+        [
+          "second_Q0",
+          18,
+          20,
+          321,
+          1830,
+          "ecbf4bbdb8a77a1a7e065d029dbef96034e1fee9077dadd8c483ec8db0aa31c4"
+        ],
+        [
+          "second_Q0",
+          24,
+          20,
+          1558,
+          1830,
+          "dd164aa238eef33ac29647243a9b0ae096ec32137e682778f1ddbb4af43e7d83"
+        ],
+        [
+          "second_Q0",
+          25,
+          20,
+          321,
+          1830,
+          "f516c8a104fa758173c3867431e8c74a05e5ee16dd8463c7a3d36b8b3ae5644b"
+        ],
+        [
+          "second_Q0",
+          37,
+          20,
+          1558,
+          1830,
+          "a4958faca8cf2cba65ea85c0f6c4a27a2bf088a840913945058140930e50c55e"
+        ],
+        [
+          "second_Q0",
+          39,
+          20,
+          321,
+          1830,
+          "bb7778ef5632f789d75e9ce88af4422f520733b132508dc21213922929c23697"
+        ],
+        [
+          "second_Q0",
+          40,
+          20,
+          170,
+          1830,
+          "8305dcced3303bcccd858e7929ab8ac7155f1755fcaeab101d93c08d3c1b3def"
+        ],
+        [
+          "second_Q0",
+          43,
+          20,
+          1077,
+          1830,
+          "7055bfa52c5b020cd3566e3d1f2077b18e50319478d9ad8202d5a34a428535cc"
+        ],
+        [
+          "second_Q1",
+          7,
+          20,
+          1785,
+          1830,
+          "fcf95c5357399a8bf1843ca42cba1d516a9ed9c0193aea3691f11706ba4ce81b"
+        ],
+        [
+          "second_Q1",
+          8,
+          20,
+          872,
+          1830,
+          "c3676e73b6e98a0b0b8bf93d3325feaffc1ad4ccfe90bc5801157aaa367c2afd"
+        ],
+        [
+          "second_Q1",
+          11,
+          20,
+          4754,
+          1830,
+          "90644a7c595554dcc616361780112eadf7bd7d70bc1bc117195020070c859dc4"
+        ],
+        [
+          "second_Q1",
+          12,
+          20,
+          855,
+          1830,
+          "eb7322cc7fdfb050b5cd36f1baeacd7d9d713d34a7d04e4190fb328fd614bc5b"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 21,
+      "coordinates": 885,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 8695125,
+      "rhs_sha256": "3f8b9edb211d770c4efa7582e8cc41fdd8006d3fdb425da5817e5029509a4d4c",
+      "matrices": [
+        [
+          "second_Q0",
+          16,
+          21,
+          1237,
+          885,
+          "c3a80514a7b4ab31c2780d145cfbc2bb5fdff045fb30a77a368c405659253b82"
+        ],
+        [
+          "second_Q0",
+          17,
+          21,
+          321,
+          885,
+          "93fe3eeb1ec1a417db747b09822a185ba96de8e7e7102fdbb41e44704c84fbd0"
+        ],
+        [
+          "second_Q0",
+          18,
+          21,
+          321,
+          885,
+          "4438b5458dae9e4abe008097a6ca10070945af7b15063514007c047f565b2fec"
+        ],
+        [
+          "second_Q0",
+          26,
+          21,
+          85,
+          885,
+          "db71b5984824f054eb34a28cef8c47e468a43a468ef6e4a6399a3b1450115d6e"
+        ],
+        [
+          "second_Q0",
+          30,
+          21,
+          611,
+          885,
+          "42e7060d32b1537be3c677e2d5083984733d574a0a9d55895b8d15c43d653e3b"
+        ],
+        [
+          "second_Q0",
+          31,
+          21,
+          160,
+          885,
+          "56834ab5cba0885ea9b81d8ee6ddf0195feb98f972bcce85109422d612500de0"
+        ],
+        [
+          "second_Q0",
+          33,
+          21,
+          160,
+          885,
+          "d1ed4017f5f12a0a46c5aa872e642409af96cdfb264d543d369b50f69b344176"
+        ],
+        [
+          "second_Q0",
+          41,
+          21,
+          160,
+          885,
+          "98c901eb108c32ef2af1c6db5cd8fa461ac5bc482743208b92d91e4617c291c7"
+        ],
+        [
+          "second_Q0",
+          44,
+          21,
+          235,
+          885,
+          "cf198f426d4b29f45acba955baeb66d5b020da36439870f3e2d49383731514aa"
+        ],
+        [
+          "second_Q1",
+          6,
+          21,
+          4251,
+          885,
+          "529d297407c5a0fc03224c6c6a00b2a6457acb8caea09eb34ad0935c362bbb68"
+        ],
+        [
+          "second_Q1",
+          7,
+          21,
+          1785,
+          885,
+          "52271d0dd77783c076f6fe853eec2a48ef2e1b376ad2dad915b21c1a2bf19273"
+        ],
+        [
+          "second_Q1",
+          9,
+          21,
+          499,
+          885,
+          "61988e7510101259bd6886aa4c44e7bcbe1cb57a52de177010d3cb6245c8de8e"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 22,
+      "coordinates": 8385,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 280939425,
+      "rhs_sha256": "f86b0b5cd9c2cdac839e649ea7f19497baa13b55bcea9358a28bd24a5b3643c6",
+      "matrices": [
+        [
+          "second_Q0",
+          19,
+          22,
+          3008,
+          8385,
+          "cdf8ca3e51a56fea602c55e703e9ea049d0d9c9157a0d8500850320e3decd4f8"
+        ],
+        [
+          "second_Q0",
+          20,
+          22,
+          3055,
+          8385,
+          "38b6acdad70e120c51331b013b3e1091294ea90fa6c462e6b4f518b207d36178"
+        ],
+        [
+          "second_Q0",
+          21,
+          22,
+          6098,
+          8385,
+          "c235917fb7e847995b2a14500c726cd67a57135e9348a633650f5ae50ecb7e96"
+        ],
+        [
+          "second_Q0",
+          27,
+          22,
+          1818,
+          8385,
+          "68db307d5834401131a76442a7ed39f31024f90c384f05e01dd05e60ab9a38fc"
+        ],
+        [
+          "second_Q0",
+          28,
+          22,
+          1237,
+          8385,
+          "4af571b26b0e5913752a2303eaca6487c8a8a1ebdf7805aab12b5f71e52cea61"
+        ],
+        [
+          "second_Q0",
+          36,
+          22,
+          1556,
+          8385,
+          "2a70046313ae03250f7df4677a9823427dc97a3beca0f9835634c1ee98649e21"
+        ],
+        [
+          "second_Q0",
+          45,
+          22,
+          1065,
+          8385,
+          "a4743964f37b113baf83ea39b18aff997d91bd2586395cd5a6d6d7497bf33752"
+        ],
+        [
+          "second_Q0",
+          46,
+          22,
+          3173,
+          8385,
+          "8673982446abe76bcd8389f33d6bf32bf75361d9b410bff113e0dd9874fdebfe"
+        ],
+        [
+          "second_Q0",
+          49,
+          22,
+          536,
+          8385,
+          "583dc29919336053df9f88090ab6e9f0bc003b485e43f3d7ad941ac9f34d0004"
+        ],
+        [
+          "second_Q1",
+          6,
+          22,
+          4251,
+          8385,
+          "c1f5b4a278c3485f22a1c6486b62e6d0f8cd87dda8b6dd9b73f14bfc47d43591"
+        ],
+        [
+          "second_Q1",
+          10,
+          22,
+          3805,
+          8385,
+          "16161cbd0f92c9f332dd29f54034b02c79e4cbb6d1d6fd0b7757064542bdc38a"
+        ],
+        [
+          "second_Q1",
+          13,
+          22,
+          2851,
+          8385,
+          "9b21292d23a9b55627b32b109adf2c0a830685c4cd91ab86578b7480f6c21991"
+        ],
+        [
+          "second_Q1",
+          15,
+          22,
+          1052,
+          8385,
+          "1f492a973c8a110f51013cc567b27a81280658089ace1ccd45e26eca69574153"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 23,
+      "coordinates": 8595,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 290493810,
+      "rhs_sha256": "b3f78e1e3987fa7e43f49c299578b706545f6c279c2ee2adbe16f621ea87f93c",
+      "matrices": [
+        [
+          "second_Q0",
+          21,
+          23,
+          6098,
+          8595,
+          "c78c625a0f0fb103395fe93e957971b6160fbaf519d55534d5e9ec80a4cbb8cf"
+        ],
+        [
+          "second_Q0",
+          22,
+          23,
+          1558,
+          8595,
+          "b707ddd1329eaf04bbd0558ee499987f70aa38e637f0cbc7fea54b3ccf6f1eac"
+        ],
+        [
+          "second_Q0",
+          23,
+          23,
+          1558,
+          8595,
+          "d6d298d7afcfb5d153cee4c0c3882993253311f4d1523dddb5ca976ada5266c0"
+        ],
+        [
+          "second_Q0",
+          24,
+          23,
+          1558,
+          8595,
+          "ae095868f430cac193577e528593d2f5e4a0e901b496f17e122b9014f34e5e47"
+        ],
+        [
+          "second_Q0",
+          28,
+          23,
+          1237,
+          8595,
+          "9811d3debec758ed5fda311fa5fa191be99e1e7691d57e37dc85d1ad7126af69"
+        ],
+        [
+          "second_Q0",
+          29,
+          23,
+          1237,
+          8595,
+          "9e71ecb5c0595d0d02be86126811e1be5ce1b151349c8e4110f7ba789f4fa53a"
+        ],
+        [
+          "second_Q0",
+          31,
+          23,
+          160,
+          8595,
+          "2e05567afd4b1d70e35d17196fa3efe434a847f1abc157940d8c5515c1f18421"
+        ],
+        [
+          "second_Q0",
+          32,
+          23,
+          321,
+          8595,
+          "5978a3fa9a5a68cffde81dc2c4f5a6b68586af444b0dd2512006e940abe07f4b"
+        ],
+        [
+          "second_Q0",
+          37,
+          23,
+          1558,
+          8595,
+          "47feec075b47f7b84e4355b135e7325115eb64bc3547beb92756bc8a6a2ebb68"
+        ],
+        [
+          "second_Q0",
+          46,
+          23,
+          3173,
+          8595,
+          "8420b1d3a1bde31aaec268219010cb319ec8f39717f6c6fb1698a5aae5116f84"
+        ],
+        [
+          "second_Q0",
+          48,
+          23,
+          1086,
+          8595,
+          "25641de45c0ba5ac68738ed842e7a043d269a98225da332b78b8900aa7e43307"
+        ],
+        [
+          "second_Q1",
+          6,
+          23,
+          4251,
+          8595,
+          "643cf4e4571b785db53cbbd3eee76666f58c740b2af641f5203ef73f2f862e31"
+        ],
+        [
+          "second_Q1",
+          7,
+          23,
+          1785,
+          8595,
+          "f3ad851cdd8768909234af83b9baf77a1d365faccd228818b3b83e4026c57e12"
+        ],
+        [
+          "second_Q1",
+          9,
+          23,
+          499,
+          8595,
+          "1f4c6c62ab5e08c1c352597134d180ab5abbd8691b83bbede66ae1ac44583ebe"
+        ],
+        [
+          "second_Q1",
+          11,
+          23,
+          4754,
+          8595,
+          "786878cb8950286c0383c2ceed1b4a8761bda5d593f00974ae11a12dd63075f2"
+        ],
+        [
+          "second_Q1",
+          14,
+          23,
+          2965,
+          8595,
+          "664bd3554663918bea27d59eec10ba4a083ff7f58298e040180523fc5e5780ff"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 24,
+      "coordinates": 2100,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 32182500,
+      "rhs_sha256": "57f11329fdfeade8b0deaf1848988932f24471820aedb5f8228bb116eb6f8548",
+      "matrices": [
+        [
+          "second_Q0",
+          20,
+          24,
+          3055,
+          2100,
+          "5db0874e0c5ca70760a7c5f9032efb8a09b60c255b0f0ad86e1679c6c58a7fd1"
+        ],
+        [
+          "second_Q0",
+          24,
+          24,
+          1558,
+          2100,
+          "cb1dc82b5ed6f6d68ca9ba442c066ad1b3487f5865b42e05fee90c17f92f2be3"
+        ],
+        [
+          "second_Q0",
+          30,
+          24,
+          611,
+          2100,
+          "eaa8a51e35ea286722c264b39911ed0f55d60680e3137f171dc0b49db51100d6"
+        ],
+        [
+          "second_Q0",
+          31,
+          24,
+          160,
+          2100,
+          "a6bbba83096e37cfee1cf8eb18b13337d0cfef723a79fd2fa161852c8b7a967e"
+        ],
+        [
+          "second_Q0",
+          38,
+          24,
+          791,
+          2100,
+          "aba54a910a7d05368918ec532e17155affd1d4ac32461f166c3fd8fec43daa98"
+        ],
+        [
+          "second_Q0",
+          47,
+          24,
+          526,
+          2100,
+          "a4d0b4b78904a47009dcfb6cedb275df887621e89b2bc05ef43ef9312478f699"
+        ],
+        [
+          "second_Q0",
+          49,
+          24,
+          536,
+          2100,
+          "b1a250b2db35435da4668f063abf3639eb6f151d847e09facc05efc8990a49bd"
+        ],
+        [
+          "second_Q1",
+          6,
+          24,
+          4251,
+          2100,
+          "e152ae6161c087acd6db863cb933c9cad0b3a181f2b81e434a604f4e0870af82"
+        ],
+        [
+          "second_Q1",
+          8,
+          24,
+          872,
+          2100,
+          "d716357d1ca2abf6bda692c3e7ac93861e5ca6df67f833f27e3b9a4326a73213"
+        ],
+        [
+          "second_Q1",
+          14,
+          24,
+          2965,
+          2100,
+          "3fa4c436493148b076dac789b56c239bd2cbf19aa4299307963a1e89399dbf24"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 25,
+      "coordinates": 885,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 5056005,
+      "rhs_sha256": "3f8b9edb211d770c4efa7582e8cc41fdd8006d3fdb425da5817e5029509a4d4c",
+      "matrices": [
+        [
+          "second_Q0",
+          22,
+          25,
+          1558,
+          885,
+          "ecc3d9077540a9857069adf90867e1991dfa29caa9a597b042a52f491d9055fb"
+        ],
+        [
+          "second_Q0",
+          25,
+          25,
+          321,
+          885,
+          "9efb76f4a5a84a66e033ea9ac262e1242dcc722fc26acdc69f9e5746f12da5c1"
+        ],
+        [
+          "second_Q0",
+          31,
+          25,
+          160,
+          885,
+          "0a8c179c0ee95ef08042cc0d6c57775983108fe38b1fa7dae88eb2d0c81d8f02"
+        ],
+        [
+          "second_Q0",
+          33,
+          25,
+          160,
+          885,
+          "023a93bb401ec4e050a4f8393637166e07bab9f5f5702af68d2c271385d6958c"
+        ],
+        [
+          "second_Q0",
+          39,
+          25,
+          321,
+          885,
+          "3df560229cc259cae87a413ee7b7e649b8ac8f15062a682f6bd8286d0862310f"
+        ],
+        [
+          "second_Q0",
+          49,
+          25,
+          536,
+          885,
+          "be96ed757009764cfb4d7ca31b113798662c6a49415703ee7bcb9e8ff7d32341"
+        ],
+        [
+          "second_Q1",
+          7,
+          25,
+          1785,
+          885,
+          "1cffe3837bd72d167919a345f10733dc97c1e9f585dd7ce196a73bbf4ec36e3e"
+        ],
+        [
+          "second_Q1",
+          8,
+          25,
+          872,
+          885,
+          "1a8034324f6911751dded73d2110340d49675baf3b871bb9d894f164cc281635"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 26,
+      "coordinates": 975,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 5943600,
+      "rhs_sha256": "3ba0bd296242f6125bbe71ecc1f56c37ae1f6e91a304a96ea48736953614173a",
+      "matrices": [
+        [
+          "second_Q0",
+          23,
+          26,
+          1558,
+          975,
+          "5f5c582f2ac3a4a7701bc28fedec0780663bd50a3cb8ebf707f4426c8b47714b"
+        ],
+        [
+          "second_Q0",
+          25,
+          26,
+          321,
+          975,
+          "97e526225603fc07c3010da7932e1db5396e6df59846eedbf33d4517742d737a"
+        ],
+        [
+          "second_Q0",
+          32,
+          26,
+          321,
+          975,
+          "22841d9e385c98c74ffd082343b14a19c522f7cb5e1e40aeda004cf13cced419"
+        ],
+        [
+          "second_Q0",
+          40,
+          26,
+          170,
+          975,
+          "76049a1bad03389d63d6b666e211fc82e25e1ae437cda1897dc976e23a82eb32"
+        ],
+        [
+          "second_Q0",
+          48,
+          26,
+          1086,
+          975,
+          "d870ebcc242dc5c95a916c6be604a4d2fa6d8f7cfc9341fbf99995ecfa4f3294"
+        ],
+        [
+          "second_Q1",
+          7,
+          26,
+          1785,
+          975,
+          "5b04e8f1ec764de4753745bdd20264d30fb4591a02b07b763937eba8002ddc98"
+        ],
+        [
+          "second_Q1",
+          12,
+          26,
+          855,
+          975,
+          "2d3739511f693e0436cca6ea830f85fae73827f96da85d1a534ade249a45b0f3"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 27,
+      "coordinates": 2295,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 29398950,
+      "rhs_sha256": "8e0d938e923a5a3c1323b4aebaf9976303da00a6a1d2477300aed298dfa1fddf",
+      "matrices": [
+        [
+          "second_Q0",
+          16,
+          27,
+          1237,
+          2295,
+          "1e34fe0f3415f1aedd69a90d20b4798714fb62289312ad9709cfc7783d685042"
+        ],
+        [
+          "second_Q0",
+          27,
+          27,
+          1818,
+          2295,
+          "893e869dce39041f170ae09b945ed69e1e3050bfc7340adee64e7eb52538cc95"
+        ],
+        [
+          "second_Q0",
+          28,
+          27,
+          1237,
+          2295,
+          "90467cc96efe381ade0d60d4f388dda5d702d8c7476af435e8c3656e017676e1"
+        ],
+        [
+          "second_Q0",
+          29,
+          27,
+          1237,
+          2295,
+          "06429a95d6500746730201f18053459e9453436be2356163c677aba771d0f678"
+        ],
+        [
+          "second_Q0",
+          30,
+          27,
+          611,
+          2295,
+          "bda1fcf09d2a5b3e279af04da3b47e5083f5db0ca8db0970306bdb9af869f050"
+        ],
+        [
+          "second_Q0",
+          34,
+          27,
+          154,
+          2295,
+          "4daf6fee5e8b42611f04161bbd07a6c273bfa4f13f2d577ad67c3cc9d1b29198"
+        ],
+        [
+          "second_Q0",
+          35,
+          27,
+          106,
+          2295,
+          "86339c5ad69395788a623c021897f996dc6edabffd1b2889b33f25d4d8004b20"
+        ],
+        [
+          "second_Q0",
+          50,
+          27,
+          304,
+          2295,
+          "2f61a77d4c8ad96a13d1b75c238297f5d55e7e95c3743b39acc33c7ff4964056"
+        ],
+        [
+          "second_Q0",
+          51,
+          27,
+          304,
+          2295,
+          "e657183a9230600dae6e1d9f88c9446ce00b1df0ec29b5eb7501e30dec42c72e"
+        ],
+        [
+          "second_Q1",
+          6,
+          27,
+          4251,
+          2295,
+          "77ef33b39b45b2f208cb42e39361b542c031ba0b87313dd8c2f6926df89d5a4a"
+        ],
+        [
+          "second_Q1",
+          9,
+          27,
+          499,
+          2295,
+          "2a8b5164827cab5b7d2d0757e37b22ef2238b03c377bc33977d07a6f21a977e3"
+        ],
+        [
+          "second_Q1",
+          15,
+          27,
+          1052,
+          2295,
+          "3c780c92388ef8780f2dee429d407c9da3d0b0a477a5bd0363b575aeee94900d"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 28,
+      "coordinates": 630,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 2312100,
+      "rhs_sha256": "7141ded8663a3fe82edede53b1750e8fd6a8e4c34c5b33541a8dfa1083887900",
+      "matrices": [
+        [
+          "second_Q0",
+          17,
+          28,
+          321,
+          630,
+          "7be019538f160356651d4ab93ad965d02badf59424a87b25af1a50f8d30e74f0"
+        ],
+        [
+          "second_Q0",
+          28,
+          28,
+          1237,
+          630,
+          "bf55ead13af28458336f72710020094791f525caa9849ff03b2ccf0cfb9eaf6c"
+        ],
+        [
+          "second_Q0",
+          31,
+          28,
+          160,
+          630,
+          "001a759f7054aefea814c5971372827fd475eab79dc6e287c7cca5383ff54866"
+        ],
+        [
+          "second_Q0",
+          32,
+          28,
+          321,
+          630,
+          "b896cdb37f684d5f21755c4574f91eb75987ab53fef04e771e81543ab57c56a8"
+        ],
+        [
+          "second_Q0",
+          35,
+          28,
+          106,
+          630,
+          "09c8fa1c760040c2ba87a3ef8548396303b5df69c57d28b39c9e1d03cbaffe93"
+        ],
+        [
+          "second_Q0",
+          52,
+          28,
+          154,
+          630,
+          "17b24ad3803b8a0a349b133538ddc50f440c9bf24a6846b448d725d196e509a0"
+        ],
+        [
+          "second_Q1",
+          8,
+          28,
+          872,
+          630,
+          "d74422a8444598c5e441909b7c65668a3850ed869d1c284d01baa2bdf69e8c99"
+        ],
+        [
+          "second_Q1",
+          9,
+          28,
+          499,
+          630,
+          "2b45bf852da4b4d8e9fa79e275c5f776d4b15098a4002b80aaad3fad370b1aa0"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 29,
+      "coordinates": 630,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 2981790,
+      "rhs_sha256": "7141ded8663a3fe82edede53b1750e8fd6a8e4c34c5b33541a8dfa1083887900",
+      "matrices": [
+        [
+          "second_Q0",
+          18,
+          29,
+          321,
+          630,
+          "a5aea46aa7b8fe85d16f4dc0a5a657affdc0270431b902618b462da1da19d62f"
+        ],
+        [
+          "second_Q0",
+          29,
+          29,
+          1237,
+          630,
+          "e1732b21f872d4a0b6af937964f0d399a28154992414406e15f338d42a2fae1b"
+        ],
+        [
+          "second_Q0",
+          32,
+          29,
+          321,
+          630,
+          "0e693de223a9837899599d6a3da62d2033b698c3787d2f5cff63d01f7d946238"
+        ],
+        [
+          "second_Q0",
+          33,
+          29,
+          160,
+          630,
+          "3474c358fc3935236e43179bd83cab3c405c8e4807f24db95ada565af6ebe883"
+        ],
+        [
+          "second_Q0",
+          35,
+          29,
+          106,
+          630,
+          "a255fc918e73e3cb4665687d0aa45d2587da7a808a4a6938a2c7414bf7eac88e"
+        ],
+        [
+          "second_Q0",
+          51,
+          29,
+          304,
+          630,
+          "bb0fa81ecc10890f81ba0aa6e0b09dd0b650b6f47acf3f1794244096693375d8"
+        ],
+        [
+          "second_Q1",
+          7,
+          29,
+          1785,
+          630,
+          "d0764f5ef085cd7b494cf5b7fd15a9c8140a0b285be5ffbe164f512cc4c5dc93"
+        ],
+        [
+          "second_Q1",
+          9,
+          29,
+          499,
+          630,
+          "c9284d0b23d0589b392fb863acaf8c564d9b2856fddd4e6c6b9053a7f3ca7709"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 30,
+      "coordinates": 135,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 113940,
+      "rhs_sha256": "b54abbabeb55f30118099ca1ec05cda60b5036a8f4d7ad7417822cbc714e5142",
+      "matrices": [
+        [
+          "second_Q0",
+          26,
+          30,
+          85,
+          135,
+          "b429ae5170c6fff2a194b42a6d774e9d654f80a7c12f160558b949793b595eba"
+        ],
+        [
+          "second_Q0",
+          34,
+          30,
+          154,
+          135,
+          "72ae0362ae5983d01249fc8e6d54622dd06b44d107e89b8aea097093acb7f0bd"
+        ],
+        [
+          "second_Q0",
+          35,
+          30,
+          106,
+          135,
+          "3395e64293f12ac36052f9aecfe283a0896da3babf6ccbd7dd5b1c1c25fa9385"
+        ],
+        [
+          "second_Q1",
+          9,
+          30,
+          499,
+          135,
+          "fb17476cfec388264ef5176a80b74f37eb7e7255dc0553c9117a0f027fff8a49"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 31,
+      "coordinates": 480,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 3398400,
+      "rhs_sha256": "e985a9ec71d67ff638401edb4106fe178af44fc0a4468ba927c7e14d80bc1086",
+      "matrices": [
+        [
+          "second_Q0",
+          38,
+          31,
+          791,
+          480,
+          "b3568d2c077ce5c29f41cda96bcb757921f76c7973f36cdd8fa38ed410b93302"
+        ],
+        [
+          "second_Q0",
+          39,
+          31,
+          321,
+          480,
+          "9fd5dac4fb041ef62d4a742d30355d5a2bbd04eb1097b0adacfa77956bd85c1f"
+        ],
+        [
+          "second_Q0",
+          41,
+          31,
+          160,
+          480,
+          "1c3ca4de2d1f4412054d3e80b8e2df353305cb0dfdc7709e4b9d3a57e949316f"
+        ],
+        [
+          "second_Q0",
+          53,
+          31,
+          182,
+          480,
+          "ba36af0215eb048455f63037051f9582759dc4dadf5fcc87da4ae90fb78b4030"
+        ],
+        [
+          "second_Q1",
+          8,
+          31,
+          872,
+          480,
+          "7e375c6cce9fecc642164528adcc00bb9743c5659e6dd6bb07fef8e6880ea700"
+        ],
+        [
+          "second_Q1",
+          11,
+          31,
+          4754,
+          480,
+          "8c936ff54e3fd85e9aa2c0d423ff24f3d5a4267f291352db371e0f9305fe6ee3"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 32,
+      "coordinates": 1008,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 10643472,
+      "rhs_sha256": "14d3310d47b89f7ca3e3627a46dc931d2a29432c9c5c92ef76ef68f965c9902f",
+      "matrices": [
+        [
+          "second_Q0",
+          42,
+          32,
+          1060,
+          1008,
+          "29e9d6c899f1408834541a702d05a071237d0f2d5222622e96c168127df7cdf7"
+        ],
+        [
+          "second_Q0",
+          43,
+          32,
+          1077,
+          1008,
+          "4161a071a696a1342a7518d621a4b691537fa094ac3f74dbf2f6b16fe89c0f7c"
+        ],
+        [
+          "second_Q0",
+          44,
+          32,
+          235,
+          1008,
+          "8236c34fc4f85d3febaa6d4c7178b995ac00388f9cb73654a39bb5bbb31d93fc"
+        ],
+        [
+          "second_Q0",
+          47,
+          32,
+          526,
+          1008,
+          "833e4bedfb7fadc6201f1182271e5c1561a556f3ebfaa6fd98b846810088b3e6"
+        ],
+        [
+          "second_Q0",
+          49,
+          32,
+          536,
+          1008,
+          "1bd62be108016f32d5818d03da689065f92c5b67dee8649d55b21b6c03343697"
+        ],
+        [
+          "second_Q0",
+          53,
+          32,
+          182,
+          1008,
+          "146c3cf835a6644325ea1cd15d4d1c8b79289166d5939ae3fbe9658314f2dccc"
+        ],
+        [
+          "second_Q0",
+          54,
+          32,
+          75,
+          1008,
+          "c712793264dc9f7fac2fa2c6d7732d3687675f8390e6d0b1544a1e4760ae4a64"
+        ],
+        [
+          "second_Q1",
+          13,
+          32,
+          2851,
+          1008,
+          "8f70b7a3d96d0519bbff4932f113c2c066ecd2c91c2d6fa166d607cb679f3c13"
+        ],
+        [
+          "second_Q1",
+          14,
+          32,
+          2965,
+          1008,
+          "470713553e701066f4eb5fbab254e698dfba79e3b506c000fe8b77f91202b7d8"
+        ],
+        [
+          "second_Q1",
+          15,
+          32,
+          1052,
+          1008,
+          "0f34f7021a0fcf2abaf5a7a35f8499757f9e186ad34bf101f2ca3e09badb4f57"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 33,
+      "coordinates": 1988,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 21384916,
+      "rhs_sha256": "843166a47730f84702176494cb74524569248c636b7f20449e7b05623e89929d",
+      "matrices": [
+        [
+          "second_Q0",
+          42,
+          33,
+          1060,
+          1988,
+          "8dba5eb104b76574f187b5c6ed407251243458a8b09e3616577b2cbd73086473"
+        ],
+        [
+          "second_Q0",
+          45,
+          33,
+          1065,
+          1988,
+          "16b503af4a4495c3bcac0561835a889e62f0dc79736b25d6161fbd65df302811"
+        ],
+        [
+          "second_Q0",
+          46,
+          33,
+          3173,
+          1988,
+          "8a5357be2cb2a03e90c18c009c02b8d8198a251e1c4cc39b5b9e61cceb736d46"
+        ],
+        [
+          "second_Q0",
+          47,
+          33,
+          526,
+          1988,
+          "275e50184f16eea9bb1cd38fa430d835304400e1753538805cdbafd43db6225f"
+        ],
+        [
+          "second_Q0",
+          50,
+          33,
+          304,
+          1988,
+          "834638228c8c02645aa9f160ae25d456cc1003ec706842255d357dbea01e3cc1"
+        ],
+        [
+          "second_Q0",
+          52,
+          33,
+          154,
+          1988,
+          "a36740f579d3436bffebbc2523687d79b3982113cb10e89428835b752e70eff5"
+        ],
+        [
+          "second_Q0",
+          55,
+          33,
+          198,
+          1988,
+          "6b27cb9cffd002049b81d3a2acc7331c2e5f21e4579826513fe82a06dee0d397"
+        ],
+        [
+          "second_Q0",
+          56,
+          33,
+          48,
+          1988,
+          "8e2761c568f3638b5d2f148ff9b0c69ea2549c6cd5c7ba426351a2d11b65a1cc"
+        ],
+        [
+          "second_Q1",
+          13,
+          33,
+          2851,
+          1988,
+          "2aaeba0d1e142b04e1f123f679695cdc669de54009ae581ea73a80c2001e3496"
+        ],
+        [
+          "second_Q1",
+          15,
+          33,
+          1052,
+          1988,
+          "80045ad6ffbed1ab2597f98af20fa46725c8ce0803a7b87b6749cfd14aafd1e8"
+        ],
+        [
+          "second_Q1",
+          16,
+          33,
+          326,
+          1988,
+          "aabcf3b3702e983c722702040790914d791854efb06706b9e74f839748d33b09"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 34,
+      "coordinates": 2016,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 21258720,
+      "rhs_sha256": "e2fa5c8f7019eb4b37b33bced71111edfe51e4c560952626b3917dc860784255",
+      "matrices": [
+        [
+          "second_Q0",
+          43,
+          34,
+          1077,
+          2016,
+          "91ff2668353a9a392a1e6ccc16130cd1b5b67b83a2767aff0e5a09fd194091c7"
+        ],
+        [
+          "second_Q0",
+          46,
+          34,
+          3173,
+          2016,
+          "52599a181cd76de904128d7df5d847fbaeda047cf3caa572c56da8f41a6a3a4e"
+        ],
+        [
+          "second_Q0",
+          48,
+          34,
+          1086,
+          2016,
+          "56823e99612a072bdf6ab8aa41758ea97c62d1581797331a37602043021441fe"
+        ],
+        [
+          "second_Q0",
+          49,
+          34,
+          536,
+          2016,
+          "a42fa1621a46b6b09ec6bcb0784ed6753ec33d3dada0f1dbd8a72d3d3eb1fabc"
+        ],
+        [
+          "second_Q0",
+          51,
+          34,
+          304,
+          2016,
+          "da133576c8e85cc468bbf8615c821331c6ca7beeee1f96dff7db2a707c8ad2a2"
+        ],
+        [
+          "second_Q0",
+          52,
+          34,
+          154,
+          2016,
+          "cf401531302f01d7b04cd42196dd8896fba96c148cc9ce20f8b43498e239ad2b"
+        ],
+        [
+          "second_Q0",
+          55,
+          34,
+          198,
+          2016,
+          "d65b767c3a7a616d6baa4546349e22c840471cbdb7878dd34decb3c8ba76cc15"
+        ],
+        [
+          "second_Q1",
+          14,
+          34,
+          2965,
+          2016,
+          "bd5ef300d6f96fd0cadd9f5945eb16ed531a1ea3b1b25034d69c3f522248bff5"
+        ],
+        [
+          "second_Q1",
+          15,
+          34,
+          1052,
+          2016,
+          "ebc423fe83c9a4a0cadf79445ade3c240d1ecaee561ae0f693a8290f0e4cfb26"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 35,
+      "coordinates": 280,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 573720,
+      "rhs_sha256": "9b203269955ed16dd3f8ad14a8f89745a3f9fb49c6e3691a70f5014491d43331",
+      "matrices": [
+        [
+          "second_Q0",
+          44,
+          35,
+          235,
+          280,
+          "93a722112fcf0553b324d4cda3814c98fc7ad95bdf6f211ac3cd9b1c47020e38"
+        ],
+        [
+          "second_Q0",
+          50,
+          35,
+          304,
+          280,
+          "aef93fe9e6cd22cf4e4655131db03caf8361adbafa938820b341d34c1e137607"
+        ],
+        [
+          "second_Q0",
+          51,
+          35,
+          304,
+          280,
+          "710b38c4e844ed8da9062c308f7a4fd808282d3cc3613afa3deae88f5289ff65"
+        ],
+        [
+          "second_Q0",
+          52,
+          35,
+          154,
+          280,
+          "6b7b3717f4827c7909418a7c29b625b79290c9be00e7286c694a9016baf6a8ab"
+        ],
+        [
+          "second_Q1",
+          15,
+          35,
+          1052,
+          280,
+          "cb29d6fbd9c91d56df970637f63e52953fd3d0438ce6dac776221aa436cef4b0"
+        ]
+      ]
+    },
+    {
+      "equation": 2,
+      "target": 36,
+      "coordinates": 135,
+      "joint_residual_nonzero": 0,
+      "standalone_first_residual_nonzero": null,
+      "matrix_entries": 87345,
+      "rhs_sha256": "b54abbabeb55f30118099ca1ec05cda60b5036a8f4d7ad7417822cbc714e5142",
+      "matrices": [
+        [
+          "second_Q0",
+          54,
+          36,
+          75,
+          135,
+          "9f6eeb9c2e4627ee2785f2ca52c5f3626edda08ade8dcc2d9342a0c07ff44006"
+        ],
+        [
+          "second_Q0",
+          55,
+          36,
+          198,
+          135,
+          "b1534d8f4dce9fba15d4be84264cde58b11cd3dec218d14f1555032639c90e44"
+        ],
+        [
+          "second_Q0",
+          56,
+          36,
+          48,
+          135,
+          "51c7976e2e1f06135b980e82489c2c7bafce6fabd93c9143de0e10bf2c7afc1a"
+        ],
+        [
+          "second_Q1",
+          16,
+          36,
+          326,
+          135,
+          "7692bed392c3a547009bb1dae092b8bd836e118ec099a048e4e43b5cefe9cf5f"
+        ]
+      ]
+    }
+  ]
+}

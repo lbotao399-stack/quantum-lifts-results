@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## SU(3) level-34 direct action and level-30 matrix replay, November 18, 2026
+
+Both A8 jobs completed. Job `5622046` computed the level-34 direct $Q_2$ action on eight CPUs in 12 seconds. A local one-process replay reproduced all 140,526 rational coefficients and the zero Cartan polynomial. Job `5622107` used eight CPUs for 385 seconds to multiply the level-30 solution by all 378 saved matrices. Each of its 100,307 modular residuals vanished. [Level-34 computation](algorithms/su3_j34_20261118/README.md) · [Level-30 replay program](algorithms/replay_su3_j30_packed_residuals.py) · [Matrix hashes and residuals](data/N4_SU3_j30_independent_residuals_20261118.json)
+
+This stage adds 0 $d_1$ pairings and 0 fortuitous-generator families. Campaign totals are 5 highest-weight $d_1$ pairings and 3 families modulo the audited products and descendants. Certified $d_2$, $d_3$ and nonperturbative lifts in undeformed $\mathcal N=4$ SYM remain 0, 0 and 0. [Counts and scope](data/N4_lift_campaign_counts_20261118.json)
+
 ## Method review and completed cluster calculation, November 18, 2026
 
 At prime 1,000,033, all 24 A8 map shards finished. The joint solve used 64 CPUs for 4,227 seconds. The production residual was zero in all 34,901 first-equation and 65,406 second-equation coordinates. A6 reached the same 50 ordered pivot lists at prime 1,000,003 and stopped at its application time limit before saving its joint solution. Rational certification and second-prime frame injectivity are open. [Saved coordinates and receipt verifier](algorithms/verify_su3_j30_solution_receipts.py).
