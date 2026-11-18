@@ -19,3 +19,22 @@ cmp /tmp/pure_gaugino_ranks.json algorithms/dual_singlets_20261118/pure_gaugino_
 ```
 
 [Exact rational matrices](pure_gaugino_ranks.json) · [Cochain dimensions for all five derivative bidegrees](charge_maps.json) · [Known incoming target and next SO(7) pairing](../so7_cartan_target_20261118/README.md).
+
+## Zero derivative degree
+
+At length 12 all letters are scalars. The square of the determinant of the three-by-three matrix of pairwise scalar traces is a flavour singlet of multidegree (4,4,4). Every classical boundary in this block evaluates to zero on three commuting scalar matrices: the only contributing letter replacement is a scalar commutator. On three independent Cartan generators the matrix of pairings is diagonal, with entries −2 for SO(7) and 2 for USp(6). The squared determinant is 64 in both cases. This gives a rational class independent of all boundaries. [Integer Cartan calculation](scalar_upper_bound.py)
+
+| Group | Length-10 image: minor order, determinant | Length-11 image: minor order, determinant | Length-11 cohomology | Length-12 cohomology |
+|---|---:|---:|---:|---:|
+| SO(7) | 189, 956309 | 87, 508222 | 276 − 189 − 87 = 0 | 88 − 87 = 1 |
+| USp(6) | 186, 910259 | 86, 455275 | 272 − 186 − 86 = 0 | 87 − 86 = 1 |
+
+The determinants are modulo 1000003. Since the entries come from integral trace evaluations, they bound the rational ranks from below. Consecutive images compose to zero, so the two lower bounds, whose sum is the entire length-11 cochain dimension, are exact. Derivative bidegrees (1,1), (2,2) and (3,3) are separate blocks.
+
+```sh
+python3 algorithms/dual_singlets_20261118/scalar_upper_bound.py
+python3 algorithms/dual_singlets_20261118/scalar_neighbors.py --replay algorithms/dual_singlets_20261118/scalar_minors.json.gz
+python3 algorithms/dual_singlets_20261118/replay_scalar_signs.py
+```
+
+[Four minors and trace recipes](scalar_minors.json.gz) · [Integral sign check on 278 distinct recipes](scalar_sign_replay.json).

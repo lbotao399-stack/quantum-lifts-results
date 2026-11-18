@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## SU(3) joint first correction and dual-group scalar singlets, November 18, 2026
+
+At level 34 the 7,211 profile-16 coefficients pass 7,272 production and 432 fresh coordinates in profile 16, but fail on all 84,462 tested coordinates on profiles 13–15. The source's first differential remains open. [Arrays and replay](algorithms/su3_j34_20261118/README.md#fixed-first-correction-across-profiles).
+
+At zero derivative degree, the length-11 and length-12 singlet cohomology dimensions are 0 and 1 for each of SO(7) and USp(6). The four independently replayed minors and the nonzero Cartan polynomial certify these statements over the rationals. [Ranks, integer signs and Cartan witness](algorithms/dual_singlets_20261118/README.md#zero-derivative-degree).
+
+Increment: **0** first-order pairings and **0** generator families; cumulative **6** and **3**. Certified second-order, third-order and nonperturbative lifts: **0, 0, 0**.
+
 ## SO(7) level-30 pairing and dual-group singlet comparison, November 18, 2026
 
 The new first differential onto the line of $SF$ adds one highest-weight pairing: the rank increases from 12,525 to 12,526. A8 job `5628225` reconstructed all 156,900,676 entries of the augmented minor and reproduced each of its 212 panel determinants. Its determinant is 942,245 modulo 1,000,003. The target is absent from the second and later pages. [Proof](algorithms/so7_cartan_target_20261118/README.md) · [Replay receipt](algorithms/so7_cartan_target_20261118/incoming_replay.json).

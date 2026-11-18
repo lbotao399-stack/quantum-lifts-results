@@ -1,0 +1,40 @@
+{
+  "prime": 1000003,
+  "entrywise_replay": {
+    "fresh_13": {
+      "coordinates": 252,
+      "nonzero_residuals": 252
+    },
+    "fresh_14": {
+      "coordinates": 252,
+      "nonzero_residuals": 252
+    },
+    "fresh_15": {
+      "coordinates": 252,
+      "nonzero_residuals": 252
+    },
+    "fresh_16": {
+      "coordinates": 432,
+      "nonzero_residuals": 0
+    },
+    "production_13": {
+      "coordinates": 40509,
+      "nonzero_residuals": 40509
+    },
+    "production_14": {
+      "coordinates": 29358,
+      "nonzero_residuals": 29358
+    },
+    "production_15": {
+      "coordinates": 13839,
+      "nonzero_residuals": 13839
+    }
+  },
+  "coordinates": 84894,
+  "nonzero_residuals": 84462,
+  "original_profile16_production_receipt": {
+    "coordinates": 7272,
+    "nonzero_residuals": 0
+  },
+  "scope": "Independent signed subtraction and hashes of downloaded arrays. Original profile-16 production result read from its separate solve receipt; the full joint image is not tested."
+}

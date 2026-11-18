@@ -1,0 +1,36 @@
+{
+  "target": 15,
+  "mode": "production",
+  "prime": 1000003,
+  "seed": 2026230586,
+  "noncommuting_points": 659,
+  "exterior_coordinates_per_point": 21,
+  "width": 13839,
+  "target_dimension": 13826,
+  "rhs_terms": 18924,
+  "source_recipes_used": 2171,
+  "recipes_by_source": {
+    "21": 2171
+  },
+  "solution_sha256": "cfeeb05b32766abf796d7fad1b7f08cf136a3b60746fda598d647c31c0305ca2",
+  "source_minor_sha256": "6db12024f5a86596a8c161628e0661097dc3b11b9cbee49019e9b9ce9542f199",
+  "plan_sha256": "1b7ac3dec77fcb50473d01176a8f309773e8411f0fd4e969f58299a026df6e8c",
+  "formal_rhs_stream_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+  "rhs_sha256": "cbabc035b5a8646e149852d84b5c1286ae729b21c5aef483d38df05c68ca67dd",
+  "lhs_sha256": "f5b6df07a6d7beaacebaba972074fccb8e0c57cf5acc323d07d791b9a4458629",
+  "residual_sha256": "bfae861b35baa0c3093721312f36362699078ccf37e841436dd143b938c1c7b3",
+  "rhs_nonzero": 13839,
+  "lhs_nonzero": 13838,
+  "residual_nonzero": 13839,
+  "first_nonzero": {
+    "index": 0,
+    "rhs": 601374,
+    "lhs": 602137,
+    "residual": 999240
+  },
+  "direct_controls": {
+    "rhs_words": 3,
+    "projected_source": 1
+  },
+  "vectors_sha256": "fe49ee54d2e85cc012bf923aae47468c620764ffcd038944c0bd706ead1f7aee"
+}

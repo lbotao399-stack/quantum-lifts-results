@@ -1,0 +1,29 @@
+{
+  "prime_used_for_sign_comparison": null,
+  "upstream_commit": "4256f207986029540060fb44dd494746828f65ce",
+  "upstream_words_sha256": "f74fba895060d3d5fb88922fff4ff38ff8d03546a8d56e7b25700fa19e93fe3e",
+  "minor_file_sha256": "d5eacf22b6f06f9eddd11108acd371e67804efd0ffc6470e1bbe1f4d070122c0",
+  "checksum_basis": "integral trace expressions before evaluation",
+  "distinct_recipes": 278,
+  "by_source_type": {
+    "f": 28,
+    "p": 88,
+    "two_fermions_separate": 68,
+    "two_fermions_together": 94
+  },
+  "minor_rows": {
+    "SO_odd:10": 189,
+    "SO_odd:11": 87,
+    "Sp:10": 186,
+    "Sp:11": 86
+  },
+  "graded_sign_controls": {
+    "field_strength": 6,
+    "two_fermions_in_one_trace": 4,
+    "two_odd_traces": 2,
+    "swapped_odd_traces": 2,
+    "repeated_odd_trace": 0
+  },
+  "pinned_Q0_squared_zero_on_controls": true,
+  "unequal_expressions": 0
+}

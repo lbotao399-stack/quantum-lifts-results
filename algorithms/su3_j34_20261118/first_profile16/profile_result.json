@@ -1,0 +1,23 @@
+{
+  "prime": 1000003,
+  "target_profile": 16,
+  "width": 7272,
+  "profile_dimension": 7254,
+  "initial_minor_order": 7211,
+  "initial_minor_determinant": 258962,
+  "initial_residual_nonzero": 0,
+  "extra_independent": 0,
+  "extra_tested": 0,
+  "augmented_rank_lower_bound": 7211,
+  "rhs_terms": 87234,
+  "rhs_sha256": "19186d93069a07ad04b3b29cf64664137d860d51e75e0bddefb159ef8f98c563",
+  "rhs_values_sha256": "14bcf62a5fa9edb53b0836dbfaeb3967a24d5e88210cc1a3bb3528e979de87fd",
+  "after_residual_nonzero": 0,
+  "projected_equation_solved": true,
+  "replayed_coordinates": 7272,
+  "residual_nonzero": 0,
+  "solution_sha256": "cfeeb05b32766abf796d7fad1b7f08cf136a3b60746fda598d647c31c0305ca2",
+  "solution_bytes": 24946,
+  "base_nonzero": 7211,
+  "extra_nonzero": 0
+}

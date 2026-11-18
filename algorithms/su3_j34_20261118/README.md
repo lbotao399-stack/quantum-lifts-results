@@ -48,3 +48,13 @@ The original source expansion is bound to our historical calculation at commit `
 The saved right-hand side of the first correction is $-Q_1\mathcal O_0$ and has 517,468 rational trace terms, distributed as 324,030, 31,720, 27,780, 87,234, 18,924 and 27,780 across six profiles (13, 6, 14, 16, 15, 10 respectively). The first target has 253,167 cochains, with 174,011 possible corrections. In profile 16 its dimension is 7,254 and the saved incoming minor has order 7,211. This leaves at most 43 conditions on this projection. [Rational action](negative_Q1.jsonl.gz) · [Profile and source incidence](classical_order1.json) · [Profile-16 minor](other_maps/task_3/result.json).
 
 For the third target, project onto profiles 11, 31, 48, 54, 55, 56, 85 and 87 (joint dimension 1,263). The outgoing projection onto profile 12 receives inputs only from 11 and 56. It is therefore a map on the selected profiles alone, and it has rank 57, the whole dimension of outgoing profile 12. Every projected closed cochain is in its kernel. The projected preceding differential has rank at least 1,206, and nilpotence bounds its rank by 1,263 minus 57. Equality proves that any closed obstruction can have all eight profile coordinates removed by a single boundary. This statement concerns the projection of a closed cochain, and does not establish the full third obstruction. The incoming/outgoing determinant pairs are (322658,179643) modulo 1000003 and (411246,615926) modulo 1000033. [Four independent replays](third_target) · [Complete incidence](classical_order3.json).
+
+## Fixed first correction across profiles
+
+At prime 1000003 the same 7,211 nonzero coefficients solve all 7,272 production coordinates of profile 16 and independently pass 432 fresh coordinates in that profile. They do not solve the joint first equation. On profiles 13, 14, 15 the residual $(-Q_1\mathcal O_0)-Q_0\mathcal O_1$ is nonzero on each of the 40,509, 29,358 and 13,839 production coordinates, and on all 252 fresh coordinates per profile. All seven downloaded arrays contain the right-hand side, left-hand side and signed residual. A nonzero residual excludes the stored correction only. It does not prove a nonzero first differential for the source.
+
+[Coefficients](first_profile16/solution.json.gz) · [Projection solve](first_profile16/profile_result.json) · [Three-row arrays](first_profile16/coupled) · [Independent arithmetic replay](first_profile16/arithmetic_replay.json) · [Trace evaluation program](coupled_first_replay.py).
+
+```sh
+python3 algorithms/su3_j34_20261118/verify_fixed_residuals.py
+```
