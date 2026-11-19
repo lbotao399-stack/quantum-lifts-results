@@ -1,0 +1,518 @@
+{
+  "prime": 1000033,
+  "seed": 2026111937,
+  "free": 32145,
+  "joint_rank": 31838,
+  "incoming_rank": 32144,
+  "parent_dimension": 63983,
+  "parent_nonzero": 63983,
+  "recipe_vector_sha256": "63b1f6abf6765cebdb3a27b8fc30d30274f2281272616b193079d943ad729438",
+  "evaluation_sha256": "3b025867a65bd4625c31d37e6b0479dd9923b024d7bb89a2de48f26feffc3503",
+  "evaluation_nonzero": 65406,
+  "evaluations": 65406,
+  "outgoing_and_Cartan": [
+    {
+      "key": "q03",
+      "coordinates": 213,
+      "chunks": 17,
+      "nonzero": 0
+    },
+    {
+      "key": "q12",
+      "coordinates": 310,
+      "chunks": 29,
+      "nonzero": 0
+    },
+    {
+      "key": "q10",
+      "coordinates": 330,
+      "chunks": 30,
+      "nonzero": 0
+    },
+    {
+      "key": "q13",
+      "coordinates": 330,
+      "chunks": 23,
+      "nonzero": 0
+    },
+    {
+      "key": "q06",
+      "coordinates": 420,
+      "chunks": 42,
+      "nonzero": 0
+    },
+    {
+      "key": "q05",
+      "coordinates": 660,
+      "chunks": 57,
+      "nonzero": 0
+    },
+    {
+      "key": "q02",
+      "coordinates": 741,
+      "chunks": 63,
+      "nonzero": 0
+    },
+    {
+      "key": "q17",
+      "coordinates": 861,
+      "chunks": 76,
+      "nonzero": 0
+    },
+    {
+      "key": "q18",
+      "coordinates": 972,
+      "chunks": 83,
+      "nonzero": 0
+    },
+    {
+      "key": "q01",
+      "coordinates": 1482,
+      "chunks": 110,
+      "nonzero": 0
+    },
+    {
+      "key": "q11",
+      "coordinates": 1640,
+      "chunks": 115,
+      "nonzero": 0
+    },
+    {
+      "key": "q09",
+      "coordinates": 2020,
+      "chunks": 148,
+      "nonzero": 0
+    },
+    {
+      "key": "q14",
+      "coordinates": 2415,
+      "chunks": 178,
+      "nonzero": 0
+    },
+    {
+      "key": "q00",
+      "coordinates": 3312,
+      "chunks": 219,
+      "nonzero": 0
+    },
+    {
+      "key": "q16",
+      "coordinates": 3381,
+      "chunks": 242,
+      "nonzero": 0
+    },
+    {
+      "key": "q04",
+      "coordinates": 4210,
+      "chunks": 250,
+      "nonzero": 0
+    },
+    {
+      "key": "q08",
+      "coordinates": 4210,
+      "chunks": 269,
+      "nonzero": 0
+    },
+    {
+      "key": "q15",
+      "coordinates": 8022,
+      "chunks": 473,
+      "nonzero": 0
+    },
+    {
+      "key": "q07",
+      "coordinates": 12060,
+      "chunks": 607,
+      "nonzero": 0
+    },
+    {
+      "key": "c02",
+      "coordinates": 34,
+      "chunks": 3,
+      "nonzero": 0
+    },
+    {
+      "key": "c12",
+      "coordinates": 36,
+      "chunks": 7,
+      "nonzero": 0
+    },
+    {
+      "key": "c21",
+      "coordinates": 45,
+      "chunks": 14,
+      "nonzero": 0
+    },
+    {
+      "key": "c25",
+      "coordinates": 45,
+      "chunks": 14,
+      "nonzero": 0
+    },
+    {
+      "key": "c28",
+      "coordinates": 45,
+      "chunks": 10,
+      "nonzero": 0
+    },
+    {
+      "key": "c29",
+      "coordinates": 45,
+      "chunks": 10,
+      "nonzero": 0
+    },
+    {
+      "key": "c30",
+      "coordinates": 45,
+      "chunks": 2,
+      "nonzero": 0
+    },
+    {
+      "key": "c31",
+      "coordinates": 45,
+      "chunks": 7,
+      "nonzero": 0
+    },
+    {
+      "key": "c01",
+      "coordinates": 46,
+      "chunks": 15,
+      "nonzero": 0
+    },
+    {
+      "key": "c03",
+      "coordinates": 48,
+      "chunks": 14,
+      "nonzero": 0
+    },
+    {
+      "key": "c08",
+      "coordinates": 48,
+      "chunks": 12,
+      "nonzero": 0
+    },
+    {
+      "key": "c09",
+      "coordinates": 48,
+      "chunks": 12,
+      "nonzero": 0
+    },
+    {
+      "key": "c11",
+      "coordinates": 48,
+      "chunks": 14,
+      "nonzero": 0
+    },
+    {
+      "key": "c15",
+      "coordinates": 48,
+      "chunks": 12,
+      "nonzero": 0
+    },
+    {
+      "key": "c16",
+      "coordinates": 48,
+      "chunks": 12,
+      "nonzero": 0
+    },
+    {
+      "key": "c00",
+      "coordinates": 49,
+      "chunks": 14,
+      "nonzero": 0
+    },
+    {
+      "key": "c32",
+      "coordinates": 56,
+      "chunks": 15,
+      "nonzero": 0
+    },
+    {
+      "key": "c33",
+      "coordinates": 56,
+      "chunks": 31,
+      "nonzero": 0
+    },
+    {
+      "key": "c34",
+      "coordinates": 56,
+      "chunks": 31,
+      "nonzero": 0
+    },
+    {
+      "key": "c35",
+      "coordinates": 56,
+      "chunks": 4,
+      "nonzero": 0
+    },
+    {
+      "key": "c24",
+      "coordinates": 60,
+      "chunks": 33,
+      "nonzero": 0
+    },
+    {
+      "key": "c26",
+      "coordinates": 60,
+      "chunks": 15,
+      "nonzero": 0
+    },
+    {
+      "key": "c27",
+      "coordinates": 60,
+      "chunks": 36,
+      "nonzero": 0
+    },
+    {
+      "key": "c10",
+      "coordinates": 66,
+      "chunks": 34,
+      "nonzero": 0
+    },
+    {
+      "key": "c14",
+      "coordinates": 66,
+      "chunks": 34,
+      "nonzero": 0
+    },
+    {
+      "key": "c20",
+      "coordinates": 75,
+      "chunks": 28,
+      "nonzero": 0
+    },
+    {
+      "key": "c06",
+      "coordinates": 102,
+      "chunks": 68,
+      "nonzero": 0
+    },
+    {
+      "key": "c07",
+      "coordinates": 102,
+      "chunks": 68,
+      "nonzero": 0
+    },
+    {
+      "key": "c19",
+      "coordinates": 105,
+      "chunks": 67,
+      "nonzero": 0
+    },
+    {
+      "key": "c05",
+      "coordinates": 132,
+      "chunks": 110,
+      "nonzero": 0
+    },
+    {
+      "key": "c22",
+      "coordinates": 135,
+      "chunks": 131,
+      "nonzero": 0
+    },
+    {
+      "key": "c23",
+      "coordinates": 195,
+      "chunks": 134,
+      "nonzero": 0
+    }
+  ],
+  "incoming_checks": [
+    {
+      "target": 13,
+      "old_increment": 73,
+      "augmented_increment": 73,
+      "inconsistent": false
+    },
+    {
+      "target": 18,
+      "old_increment": 73,
+      "augmented_increment": 73,
+      "inconsistent": false
+    },
+    {
+      "target": 36,
+      "old_increment": 77,
+      "augmented_increment": 77,
+      "inconsistent": false
+    },
+    {
+      "target": 30,
+      "old_increment": 90,
+      "augmented_increment": 90,
+      "inconsistent": false
+    },
+    {
+      "target": 17,
+      "old_increment": 106,
+      "augmented_increment": 106,
+      "inconsistent": false
+    },
+    {
+      "target": 4,
+      "old_increment": 140,
+      "augmented_increment": 140,
+      "inconsistent": false
+    },
+    {
+      "target": 2,
+      "old_increment": 144,
+      "augmented_increment": 144,
+      "inconsistent": false
+    },
+    {
+      "target": 35,
+      "old_increment": 232,
+      "augmented_increment": 232,
+      "inconsistent": false
+    },
+    {
+      "target": 12,
+      "old_increment": 411,
+      "augmented_increment": 411,
+      "inconsistent": false
+    },
+    {
+      "target": 31,
+      "old_increment": 429,
+      "augmented_increment": 429,
+      "inconsistent": false
+    },
+    {
+      "target": 28,
+      "old_increment": 583,
+      "augmented_increment": 583,
+      "inconsistent": false
+    },
+    {
+      "target": 29,
+      "old_increment": 578,
+      "augmented_increment": 578,
+      "inconsistent": false
+    },
+    {
+      "target": 8,
+      "old_increment": 723,
+      "augmented_increment": 723,
+      "inconsistent": false
+    },
+    {
+      "target": 9,
+      "old_increment": 719,
+      "augmented_increment": 719,
+      "inconsistent": false
+    },
+    {
+      "target": 15,
+      "old_increment": 722,
+      "augmented_increment": 722,
+      "inconsistent": false
+    },
+    {
+      "target": 16,
+      "old_increment": 309,
+      "augmented_increment": 309,
+      "inconsistent": false
+    },
+    {
+      "target": 3,
+      "old_increment": 837,
+      "augmented_increment": 837,
+      "inconsistent": false
+    },
+    {
+      "target": 11,
+      "old_increment": 563,
+      "augmented_increment": 563,
+      "inconsistent": false
+    },
+    {
+      "target": 21,
+      "old_increment": 453,
+      "augmented_increment": 453,
+      "inconsistent": false
+    },
+    {
+      "target": 25,
+      "old_increment": 546,
+      "augmented_increment": 546,
+      "inconsistent": false
+    },
+    {
+      "target": 0,
+      "old_increment": 868,
+      "augmented_increment": 868,
+      "inconsistent": false
+    },
+    {
+      "target": 1,
+      "old_increment": 871,
+      "augmented_increment": 871,
+      "inconsistent": false
+    },
+    {
+      "target": 26,
+      "old_increment": 888,
+      "augmented_increment": 888,
+      "inconsistent": false
+    },
+    {
+      "target": 32,
+      "old_increment": 941,
+      "augmented_increment": 941,
+      "inconsistent": false
+    },
+    {
+      "target": 20,
+      "old_increment": 1097,
+      "augmented_increment": 1097,
+      "inconsistent": false
+    },
+    {
+      "target": 33,
+      "old_increment": 1905,
+      "augmented_increment": 1905,
+      "inconsistent": false
+    },
+    {
+      "target": 34,
+      "old_increment": 1031,
+      "augmented_increment": 1031,
+      "inconsistent": false
+    },
+    {
+      "target": 24,
+      "old_increment": 1977,
+      "augmented_increment": 1977,
+      "inconsistent": false
+    },
+    {
+      "target": 10,
+      "old_increment": 1864,
+      "augmented_increment": 1864,
+      "inconsistent": false
+    },
+    {
+      "target": 14,
+      "old_increment": 1384,
+      "augmented_increment": 1384,
+      "inconsistent": false
+    },
+    {
+      "target": 27,
+      "old_increment": 423,
+      "augmented_increment": 423,
+      "inconsistent": false
+    },
+    {
+      "target": 19,
+      "old_increment": 1489,
+      "augmented_increment": 1490,
+      "inconsistent": true
+    }
+  ],
+  "nonboundary_mod_prime": true,
+  "augmented_rank": 32145,
+  "quantum_lifts": 0
+}

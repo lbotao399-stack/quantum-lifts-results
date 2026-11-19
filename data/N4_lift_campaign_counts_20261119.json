@@ -19,12 +19,14 @@
   "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet.",
   "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
   "date": "2026-11-19",
-  "phase": "SU(3) R-007 complete recorded chain comparison",
+  "phase": "SU(3) R-007 chain comparison and modular Cartan-invisible parent",
   "previous_ledger": "data/N4_lift_campaign_counts_20261118.json",
   "evidence": [
     "data/N4_SU3_j30_verified_chains_20261119.json",
     "data/N4_SU3_j30_joint_rank_20261119.json",
-    "data/N4_SU3_j30_three_prime_reconstruction_20261119.json"
+    "data/N4_SU3_j30_three_prime_reconstruction_20261119.json",
+    "data/SU3_j30_parent_p1000033/result.json",
+    "data/SU3_j30_parent_p1000033/receipt_hashes.json"
   ],
-  "evidence_scope": "The incoming first differential on the recorded source coordinates is zero modulo 1000033. The rational Cartan-invisible classical quotient has dimension at most one. Neither result decides the rational second differential."
+  "evidence_scope": "The incoming first differential on the recorded source coordinates is zero modulo 1000033. The rational Cartan-invisible classical quotient has dimension at most one. Neither result decides the rational second differential. The saved modular parent spans the Cartan-invisible quotient at this prime and has not been identified as an obstruction or a new primitive."
 }
