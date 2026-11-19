@@ -1,0 +1,30 @@
+{
+  "primes": [
+    1000003,
+    1000033
+  ],
+  "modulus": 1000036000099,
+  "equal_numerator_denominator_bound": 707119,
+  "free_coordinates_set_to_zero": 27492,
+  "ordered_pivots_in_agreement": 50,
+  "reconstructed": {
+    "first_correction": 17306,
+    "second_correction": 40924
+  },
+  "unreconstructed": {
+    "first_correction": 11005,
+    "second_correction": 8404
+  },
+  "first_failure": {
+    "index": 1,
+    "residues": [
+      611770,
+      543336
+    ],
+    "CRT_residue": 68950818620,
+    "minimum_absolute_numerator": 727793,
+    "denominator_attaining_minimum": 214755
+  },
+  "fractions_and_failure_markers_sha256": "e3aef2b4703444ac6ab8bd302a43ebdc4398e96e1f14de2093a1da20028b142a",
+  "rational_correction_excluded": false
+}

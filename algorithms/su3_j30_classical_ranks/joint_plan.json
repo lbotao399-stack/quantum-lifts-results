@@ -1,0 +1,2166 @@
+{
+  "prime": 1000033,
+  "mu": [
+    2,
+    2,
+    5,
+    2,
+    2
+  ],
+  "parity": -1,
+  "source_length": 9,
+  "target_length": 10,
+  "source_dimension": 63983,
+  "target_dimension": 46876,
+  "cartan_dimension": 937,
+  "source_manifest": "3cd48eea41430f6cd08449f651f729db8125417ce04b1d6b8dbd6f4b77867149",
+  "previous_plan_sha256": "b8c669fa244e851f38a25b91186c3091e98a939935242805b0f71a9f8c00d609",
+  "cartan_dimensions_sha256": "313a22f2b51fffbf5e99250561920a1431866f65fdff2a29e8a7da43fb23376c",
+  "sources": [
+    {
+      "index": 0,
+      "fermions": 0,
+      "dimension": 890,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          4
+        ]
+      ],
+      "targets": [
+        0
+      ],
+      "cartan_dimension": 17,
+      "recipe_sha256": "17af47caf25fc596870ec74976e043d6e529bc9c81f5db7b1fdad8ce88202cca"
+    },
+    {
+      "index": 1,
+      "fermions": 0,
+      "dimension": 902,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        0,
+        1,
+        2
+      ],
+      "cartan_dimension": 14,
+      "recipe_sha256": "3185d06936a24c25d130521e90f971d0aa3e9b6f3fef3bfe798c649fbb5ee7ca"
+    },
+    {
+      "index": 2,
+      "fermions": 0,
+      "dimension": 146,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          7
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          2
+        ]
+      ],
+      "targets": [
+        1,
+        3
+      ],
+      "cartan_dimension": 2,
+      "recipe_sha256": "167c9fa3e533c299cbaf69866ba032093d46b0f5772d7f5f2b5951878c103875"
+    },
+    {
+      "index": 3,
+      "fermions": 2,
+      "dimension": 850,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        4,
+        6,
+        11
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "d32a79d23e729bfa80c886cee075f5e4d3eadcaff8f7190ad51048506e1120a3"
+    },
+    {
+      "index": 4,
+      "fermions": 2,
+      "dimension": 140,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        4,
+        5,
+        6,
+        12
+      ],
+      "cartan_dimension": 0,
+      "recipe_sha256": "45846abddea17f9e791a3639ec5892d193a2b385224bc21e6acd4e04a3d0311e"
+    },
+    {
+      "index": 5,
+      "fermions": 2,
+      "dimension": 6980,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        0,
+        7
+      ],
+      "cartan_dimension": 100,
+      "recipe_sha256": "de8bdca6ec8fdb0e40f100d215074af4473049961603b6b84b8cb100cc883c99"
+    },
+    {
+      "index": 6,
+      "fermions": 2,
+      "dimension": 4296,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        1,
+        4,
+        7,
+        9
+      ],
+      "cartan_dimension": 70,
+      "recipe_sha256": "5c0f1bfa02df394a1e3c7f804a7824ae991ecaae858433c5ddd766ed0e5af60e"
+    },
+    {
+      "index": 7,
+      "fermions": 2,
+      "dimension": 4296,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        0,
+        7,
+        8
+      ],
+      "cartan_dimension": 70,
+      "recipe_sha256": "100922187a62317652a68a3f5b52c69d54608751bef3806e18fafaa27236061f"
+    },
+    {
+      "index": 8,
+      "fermions": 2,
+      "dimension": 734,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        0,
+        1,
+        4,
+        8,
+        10
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "a602665eed3def5afafcb665043187f1ea1e2e9a80d8d1464e350f788e40af57"
+    },
+    {
+      "index": 9,
+      "fermions": 2,
+      "dimension": 734,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        1,
+        5,
+        8,
+        9
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "ad488ae2038c6fd7c7a5ca090589174458735807b55ea19dd2a7da1be9ee5d4f"
+    },
+    {
+      "index": 10,
+      "fermions": 2,
+      "dimension": 2121,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        7,
+        11
+      ],
+      "cartan_dimension": 33,
+      "recipe_sha256": "c28caa6912677e3d512c10751f4a461616b04b7495d5b52b9dcf88718f73e17e"
+    },
+    {
+      "index": 11,
+      "fermions": 2,
+      "dimension": 850,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        7,
+        8,
+        11,
+        12
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "fcc15084cb9046e817fece106f77103fcc7ad01d3302d461ccb224d60b824eaf"
+    },
+    {
+      "index": 12,
+      "fermions": 2,
+      "dimension": 414,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        6,
+        9,
+        11
+      ],
+      "cartan_dimension": 3,
+      "recipe_sha256": "ded506f4ab4ac23d3ac69e994cbff22cdf7ef80df7a226ed6d7b0f82b4701722"
+    },
+    {
+      "index": 13,
+      "fermions": 2,
+      "dimension": 73,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "cartan_dimension": 0,
+      "recipe_sha256": "3eb35e5eccdcb264a977cbc8ef97ea66e1aea1e0780a39c40b5b4268cc9b493a"
+    },
+    {
+      "index": 14,
+      "fermions": 2,
+      "dimension": 2150,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        2,
+        4,
+        7
+      ],
+      "cartan_dimension": 31,
+      "recipe_sha256": "7e006471a9f83895c5a6f7b9f4300f3f22504e140dcadb9bccc9b02cbf37f5b0"
+    },
+    {
+      "index": 15,
+      "fermions": 2,
+      "dimension": 734,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "92e0b7a03383dbde0d6af7b817b2f81fc35966dcdb0f18ddaf2590cacd868d34"
+    },
+    {
+      "index": 16,
+      "fermions": 2,
+      "dimension": 734,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        3,
+        4,
+        9,
+        13
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "6409c1c3e014692dea7a1e01fc70fa896ab5ac7cefd6f1add9e7119d8461498e"
+    },
+    {
+      "index": 17,
+      "fermions": 2,
+      "dimension": 106,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          7
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        2,
+        3,
+        5,
+        10,
+        13
+      ],
+      "cartan_dimension": 0,
+      "recipe_sha256": "c3f4ca3726134603c6c5c8bd14bd81c1d1a17f3634e42d972eed06e6b73c5a5e"
+    },
+    {
+      "index": 18,
+      "fermions": 2,
+      "dimension": 73,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        6,
+        13
+      ],
+      "cartan_dimension": 0,
+      "recipe_sha256": "1fdaa05d94269ffd91411175c0a616df66b06fa0ceaa75662d0874734669039d"
+    },
+    {
+      "index": 19,
+      "fermions": 4,
+      "dimension": 4251,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "targets": [
+        4,
+        14,
+        15
+      ],
+      "cartan_dimension": 67,
+      "recipe_sha256": "8f1696cd2b82988a5d2c24db93c96d8656b5a79c834e31521f0674ed34605cd0"
+    },
+    {
+      "index": 20,
+      "fermions": 4,
+      "dimension": 1785,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        4,
+        5,
+        14,
+        16
+      ],
+      "cartan_dimension": 43,
+      "recipe_sha256": "a8f1ef232daf6b67a2c845abe7abfec8f20849089b46414542d3e276144ddcf4"
+    },
+    {
+      "index": 21,
+      "fermions": 4,
+      "dimension": 850,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        6,
+        14,
+        17
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "c47677f9b2a80779da84d03c46b97b40e200ed14f97ef27858f004a650480652"
+    },
+    {
+      "index": 22,
+      "fermions": 4,
+      "dimension": 8339,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "targets": [
+        7,
+        15
+      ],
+      "cartan_dimension": 100,
+      "recipe_sha256": "6c3dd7bbebfcdd9bd643f60df294b0bf6d379aaf050abd242ba0e5359263a782"
+    },
+    {
+      "index": 23,
+      "fermions": 4,
+      "dimension": 8562,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        7,
+        8,
+        15,
+        16
+      ],
+      "cartan_dimension": 150,
+      "recipe_sha256": "0ad324dadb8788127581911c2239972b0797b0ff192478e215555af896797709"
+    },
+    {
+      "index": 24,
+      "fermions": 4,
+      "dimension": 2058,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "targets": [
+        9,
+        14,
+        15
+      ],
+      "cartan_dimension": 17,
+      "recipe_sha256": "dc3786b425237445a13f8404b8a70c56e39b586652f57f4a378fdd1e3c531e56"
+    },
+    {
+      "index": 25,
+      "fermions": 4,
+      "dimension": 850,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        7,
+        9,
+        10,
+        14,
+        16
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "f35206e7ffa300c0b77b3a090f140d2c7e71732156a5a958043827a89c1fe359"
+    },
+    {
+      "index": 26,
+      "fermions": 4,
+      "dimension": 931,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          2
+        ]
+      ],
+      "targets": [
+        8,
+        16
+      ],
+      "cartan_dimension": 24,
+      "recipe_sha256": "6326fd2b2ef641fe19a76fed646ef32b7343b8be195cb902c51db51a42574428"
+    },
+    {
+      "index": 27,
+      "fermions": 4,
+      "dimension": 2255,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        11,
+        15,
+        17
+      ],
+      "cartan_dimension": 27,
+      "recipe_sha256": "ffe49e8c12cf76b7a93a7ff72ff4123ef8a68444f10d7c67f27df25d59e81e28"
+    },
+    {
+      "index": 28,
+      "fermions": 4,
+      "dimension": 594,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        12,
+        15,
+        16,
+        17
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "b4eb51145930161332f50ba67c78d6af84417715c8cc5a48d6073c56c82dd8a0"
+    },
+    {
+      "index": 29,
+      "fermions": 4,
+      "dimension": 594,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        11,
+        16,
+        17
+      ],
+      "cartan_dimension": 11,
+      "recipe_sha256": "c1cabead2a4d413e25a6111a88bb525745cd8750d55f57969f8015e99a92943c"
+    },
+    {
+      "index": 30,
+      "fermions": 4,
+      "dimension": 92,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          2
+        ]
+      ],
+      "targets": [
+        17
+      ],
+      "cartan_dimension": 2,
+      "recipe_sha256": "fec8ec19a8bec592adf34d235285991ee1d57b9a511dd79a09853827c7d7a2fa"
+    },
+    {
+      "index": 31,
+      "fermions": 4,
+      "dimension": 434,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "targets": [
+        13,
+        14
+      ],
+      "cartan_dimension": 4,
+      "recipe_sha256": "edb2557fe50f6fc6203fa20e64b3d15c287010faed33a8ae94bff434baadaae6"
+    },
+    {
+      "index": 32,
+      "fermions": 6,
+      "dimension": 950,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ]
+      ],
+      "targets": [
+        14,
+        18
+      ],
+      "cartan_dimension": 9,
+      "recipe_sha256": "6bf8227ee7503c41dae086beac61cc6e8d69d25546914ed981b1f1de8e690322"
+    },
+    {
+      "index": 33,
+      "fermions": 6,
+      "dimension": 1931,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ]
+      ],
+      "targets": [
+        15,
+        18
+      ],
+      "cartan_dimension": 17,
+      "recipe_sha256": "8af360f8606e35f3b70f5639c7b3caccc2f623f74e22ff1515d5a5d34466f95c"
+    },
+    {
+      "index": 34,
+      "fermions": 6,
+      "dimension": 1972,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        15,
+        16,
+        18
+      ],
+      "cartan_dimension": 24,
+      "recipe_sha256": "186468f21134eedf18860063b23ee09b7123bf5071629ddcf26091d60a97c596"
+    },
+    {
+      "index": 35,
+      "fermions": 6,
+      "dimension": 235,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "targets": [
+        17,
+        18
+      ],
+      "cartan_dimension": 3,
+      "recipe_sha256": "baf308bacac6502be625bd18c87c462f08874a7c1030ec983f6c1b919e38dabf"
+    },
+    {
+      "index": 36,
+      "fermions": 8,
+      "dimension": 77,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          4
+        ]
+      ],
+      "targets": [
+        18
+      ],
+      "cartan_dimension": 0,
+      "recipe_sha256": "16c3ed7d957d6a774695b3c26737aebe5a682d424c4e305e843cfbde8420054e"
+    }
+  ],
+  "targets": [
+    {
+      "index": 0,
+      "fermions": 1,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          3
+        ]
+      ],
+      "dimension": 3278
+    },
+    {
+      "index": 1,
+      "fermions": 1,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          7
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ]
+      ],
+      "dimension": 1449
+    },
+    {
+      "index": 2,
+      "fermions": 1,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          7
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ]
+      ],
+      "dimension": 707
+    },
+    {
+      "index": 3,
+      "fermions": 1,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          8
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ]
+      ],
+      "dimension": 181
+    },
+    {
+      "index": 4,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "dimension": 4170
+    },
+    {
+      "index": 5,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          7
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "dimension": 623
+    },
+    {
+      "index": 6,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "dimension": 386
+    },
+    {
+      "index": 7,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "dimension": 12025
+    },
+    {
+      "index": 8,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "dimension": 4170
+    },
+    {
+      "index": 9,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "dimension": 1986
+    },
+    {
+      "index": 10,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          7
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "dimension": 292
+    },
+    {
+      "index": 11,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "dimension": 1600
+    },
+    {
+      "index": 12,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "dimension": 276
+    },
+    {
+      "index": 13,
+      "fermions": 3,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          7
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "dimension": 292
+    },
+    {
+      "index": 14,
+      "fermions": 5,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "dimension": 2378
+    },
+    {
+      "index": 15,
+      "fermions": 5,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "dimension": 7982
+    },
+    {
+      "index": 16,
+      "fermions": 5,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "dimension": 3342
+    },
+    {
+      "index": 17,
+      "fermions": 5,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "dimension": 826
+    },
+    {
+      "index": 18,
+      "fermions": 7,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ]
+      ],
+      "dimension": 913
+    }
+  ]
+}

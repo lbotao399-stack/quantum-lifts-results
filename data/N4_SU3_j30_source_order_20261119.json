@@ -1,0 +1,2976 @@
+{
+  "primes": [
+    1000003,
+    1000033,
+    1000037
+  ],
+  "original_archives": [
+    "20ef1af3ba7b8d1cacc2bc66479b3bf25180df28630d439c41dca742b1cb7aeb",
+    "95d55d6045d0a52a3f6e3755ab40e61f873d3b0d0712fde6a5c67227262f22af"
+  ],
+  "production_manifests": [
+    "3cd48eea41430f6cd08449f651f729db8125417ce04b1d6b8dbd6f4b77867149",
+    "f155245a54cea2677007f73067865a39d8cc3be11df89e040420c2d71e786ada"
+  ],
+  "counts": [
+    17,
+    57
+  ],
+  "block_sizes": [
+    28311,
+    49328
+  ],
+  "variables": 77639,
+  "comparison": "Byte equality of seed lists, basis manifests and basis results; ordered global offsets in coupled solver convention, stop exclusive; does not compare target evaluations.",
+  "profiles": [
+    {
+      "equation": 1,
+      "index": 0,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          2
+        ]
+      ],
+      "length": 9,
+      "dimension": 436,
+      "start": 0,
+      "stop": 436,
+      "seeds_sha256": "88f1911346d39f6264f793ebf97068ae3b086ff1ac583c85485b1334026c7e35"
+    },
+    {
+      "equation": 1,
+      "index": 1,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 140,
+      "start": 436,
+      "stop": 576,
+      "seeds_sha256": "2556609d955a67b940a514458f9f92b466dce06a09761ee04a8229098e5bcdd6"
+    },
+    {
+      "equation": 1,
+      "index": 2,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 2146,
+      "start": 576,
+      "stop": 2722,
+      "seeds_sha256": "005f2b4ee51b08f2bf34c59a01784860d3c9d8394ff31f55b0650fa9bc12af38"
+    },
+    {
+      "equation": 1,
+      "index": 3,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 734,
+      "start": 2722,
+      "stop": 3456,
+      "seeds_sha256": "d329dccfe8d21a4afcfea719aca1dfdd05e7d2215c4a613ee61cfd143c2613e2"
+    },
+    {
+      "equation": 1,
+      "index": 4,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 734,
+      "start": 3456,
+      "stop": 4190,
+      "seeds_sha256": "46040a591793da466b271c3579bf58d36da32879ed9893a59af9c65496fea39a"
+    },
+    {
+      "equation": 1,
+      "index": 5,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          7
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 106,
+      "start": 4190,
+      "stop": 4296,
+      "seeds_sha256": "b071230a6c32e3263b4a08377630b9a8591f1a8cecae43b8fb56092eb5373170"
+    },
+    {
+      "equation": 1,
+      "index": 6,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 4251,
+      "start": 4296,
+      "stop": 8547,
+      "seeds_sha256": "2508216c1f23007bc355fca2a5f34ac17f0eee5302dad552a8676ab6de181317"
+    },
+    {
+      "equation": 1,
+      "index": 7,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 1785,
+      "start": 8547,
+      "stop": 10332,
+      "seeds_sha256": "3eb50bf67d75fa12db8554bc3783601f734a7ac275b69312448be4f0d67efc23"
+    },
+    {
+      "equation": 1,
+      "index": 8,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 872,
+      "start": 10332,
+      "stop": 11204,
+      "seeds_sha256": "bba037126b109898a824a18db6a737d136a3e5169e521e63df7e850036fc9439"
+    },
+    {
+      "equation": 1,
+      "index": 9,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          2
+        ]
+      ],
+      "length": 9,
+      "dimension": 499,
+      "start": 11204,
+      "stop": 11703,
+      "seeds_sha256": "f6d8c806c007b608e4aaceee366dcf3acfe4e3f438d1ee9be0b74eedec1fdce7"
+    },
+    {
+      "equation": 1,
+      "index": 10,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ]
+      ],
+      "length": 9,
+      "dimension": 3805,
+      "start": 11703,
+      "stop": 15508,
+      "seeds_sha256": "0db480d7e3be984673f003a7cce1c3958ce8b663c9bd2f203f1eb7f8aa964312"
+    },
+    {
+      "equation": 1,
+      "index": 11,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 4754,
+      "start": 15508,
+      "stop": 20262,
+      "seeds_sha256": "ec31bd6c7270b642de6632d5fbd2abcdf24f954421e711789f604f3d1f109557"
+    },
+    {
+      "equation": 1,
+      "index": 12,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          2
+        ]
+      ],
+      "length": 9,
+      "dimension": 855,
+      "start": 20262,
+      "stop": 21117,
+      "seeds_sha256": "8e01bb456d92f67cd4678b0cd7f943731f161bdaebdadd587d60905f443d7cca"
+    },
+    {
+      "equation": 1,
+      "index": 13,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          4
+        ]
+      ],
+      "length": 9,
+      "dimension": 2851,
+      "start": 21117,
+      "stop": 23968,
+      "seeds_sha256": "5b780564676135b13d37de8969f31158a229c5baca7cb281f0fd4bbd13131704"
+    },
+    {
+      "equation": 1,
+      "index": 14,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 2965,
+      "start": 23968,
+      "stop": 26933,
+      "seeds_sha256": "603b0abd96418cf9f06abee95aae80b409cc4998ff0480a623a144943a7aa093"
+    },
+    {
+      "equation": 1,
+      "index": 15,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 9,
+      "dimension": 1052,
+      "start": 26933,
+      "stop": 27985,
+      "seeds_sha256": "3a137e8bdeb4eeddb2ab77068b4b15f793808cbfe32f8eff428a7efb456b01c7"
+    },
+    {
+      "equation": 1,
+      "index": 16,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          5
+        ]
+      ],
+      "length": 9,
+      "dimension": 326,
+      "start": 27985,
+      "stop": 28311,
+      "seeds_sha256": "ddff9c75031d60e070e0bd18ca8313a437d0be7396eafddd6de668de369d3cff"
+    },
+    {
+      "equation": 2,
+      "index": 0,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1009,
+      "start": 28311,
+      "stop": 29320,
+      "seeds_sha256": "51982e5e8cba8adefd51c6ef63bdfd77acbaf59e60615d7b5d137d2999ba3fa5"
+    },
+    {
+      "equation": 2,
+      "index": 1,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 772,
+      "start": 29320,
+      "stop": 30092,
+      "seeds_sha256": "4d17fa956dfc801cb3a5be371e8b534276b7f4a0de2385675733b0cfb640bb67"
+    },
+    {
+      "equation": 2,
+      "index": 2,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 772,
+      "start": 30092,
+      "stop": 30864,
+      "seeds_sha256": "fa729968759f8dd5e7679fb6928a0bf8f9b80f8d7780013226a2d7f95016ac75"
+    },
+    {
+      "equation": 2,
+      "index": 3,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 160,
+      "start": 30864,
+      "stop": 31024,
+      "seeds_sha256": "d41157813ebd9294229f86e52b0cbeded3f7f2eee168ed3c77c752f86b904c0a"
+    },
+    {
+      "equation": 2,
+      "index": 4,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 160,
+      "start": 31024,
+      "stop": 31184,
+      "seeds_sha256": "e2f7076fcbdd40cdcb8338229ef68ac51ad2762f391388a3277478726d1160b8"
+    },
+    {
+      "equation": 2,
+      "index": 5,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 395,
+      "start": 31184,
+      "stop": 31579,
+      "seeds_sha256": "e058c32514f2baa28ea914ca325388d70deb7cc297ca0a8815fb91cbc8b7c0db"
+    },
+    {
+      "equation": 2,
+      "index": 6,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 160,
+      "start": 31579,
+      "stop": 31739,
+      "seeds_sha256": "707cb46b020986fd0d3c5733f47aef18e4cb0bf61765b5968d15f1cf72334c66"
+    },
+    {
+      "equation": 2,
+      "index": 7,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 160,
+      "start": 31739,
+      "stop": 31899,
+      "seeds_sha256": "481adc47118473a779429acd7e67398065a82464141ac7b5cc8a9ab76862f3a2"
+    },
+    {
+      "equation": 2,
+      "index": 8,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 30,
+      "start": 31899,
+      "stop": 31929,
+      "seeds_sha256": "fbe4d34bb0586bb755f310b832ec85d09694b1750f52de7b8a05a9598f47ba9f"
+    },
+    {
+      "equation": 2,
+      "index": 9,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1271,
+      "start": 31929,
+      "stop": 33200,
+      "seeds_sha256": "34654a560eed1b5783b067d10a5a80db91ecc8e660bf309edd2928001c99a54c"
+    },
+    {
+      "equation": 2,
+      "index": 10,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1936,
+      "start": 33200,
+      "stop": 35136,
+      "seeds_sha256": "c1d294d0d7dd3881c8867db9e418eaadab618ff4d4e2218e9e57d6e7b9c78480"
+    },
+    {
+      "equation": 2,
+      "index": 11,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1281,
+      "start": 35136,
+      "stop": 36417,
+      "seeds_sha256": "34eef5b19a0b40e476ed41f6ebae40adde3b187b322c7fb11424d31c99f2b6d7"
+    },
+    {
+      "equation": 2,
+      "index": 12,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 785,
+      "start": 36417,
+      "stop": 37202,
+      "seeds_sha256": "f98dd0df1c4b874ab9a8d89a7a2898f8b9d59d0a70d3c23c1c9d3f36385652e5"
+    },
+    {
+      "equation": 2,
+      "index": 13,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 399,
+      "start": 37202,
+      "stop": 37601,
+      "seeds_sha256": "266640dc7ecfd9667c5eacb293b6ec8dc82c1b421214221ee6172fd54594fcbc"
+    },
+    {
+      "equation": 2,
+      "index": 14,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 399,
+      "start": 37601,
+      "stop": 38000,
+      "seeds_sha256": "cf563bb0cbf5036e09d3b73a4aec71eafc6bdc71bc5850c0aff582e6d19c1fbb"
+    },
+    {
+      "equation": 2,
+      "index": 15,
+      "profile": [
+        [
+          [
+            1,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 136,
+      "start": 38000,
+      "stop": 38136,
+      "seeds_sha256": "3b5830b3853cb3e7a2acf2b528c6d1ed59b321d018fba09f4cc3519cd338977a"
+    },
+    {
+      "equation": 2,
+      "index": 16,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1237,
+      "start": 38136,
+      "stop": 39373,
+      "seeds_sha256": "77fa7a79fba0591ffed8f5506eeed712c7b583b73af85832500a01715426980c"
+    },
+    {
+      "equation": 2,
+      "index": 17,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 321,
+      "start": 39373,
+      "stop": 39694,
+      "seeds_sha256": "00d440455c079317bbb59666dcb5bd838646a85eabc3d4d2be23b815f57e7e59"
+    },
+    {
+      "equation": 2,
+      "index": 18,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 321,
+      "start": 39694,
+      "stop": 40015,
+      "seeds_sha256": "b4f458a14cc4494e02efe19708821d17b5e35a10c71fbe1072b093cd4cd7d3cb"
+    },
+    {
+      "equation": 2,
+      "index": 19,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 3008,
+      "start": 40015,
+      "stop": 43023,
+      "seeds_sha256": "479dcc1e39d5be9e4b82d6e1b8296a4f66327e67357b8d457f8a71e36ad409fa"
+    },
+    {
+      "equation": 2,
+      "index": 20,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 3055,
+      "start": 43023,
+      "stop": 46078,
+      "seeds_sha256": "5cd8d278e285d4d982ca790490d2ea68cff0d274fb9b771ca38e8c4e05407b07"
+    },
+    {
+      "equation": 2,
+      "index": 21,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 6098,
+      "start": 46078,
+      "stop": 52176,
+      "seeds_sha256": "79f06ad6c9a2d03ef1e58f32c11755c284737d1c107b37eff65662da3032dd8d"
+    },
+    {
+      "equation": 2,
+      "index": 22,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1558,
+      "start": 52176,
+      "stop": 53734,
+      "seeds_sha256": "514695e1f9b6596bc75868539722cc091bc06da739ebf533843bcd81984de307"
+    },
+    {
+      "equation": 2,
+      "index": 23,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 1558,
+      "start": 53734,
+      "stop": 55292,
+      "seeds_sha256": "4bac11f98ec6dc9174a15d257137022f09411af3b03c09d129b58c0487fb5ccb"
+    },
+    {
+      "equation": 2,
+      "index": 24,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1558,
+      "start": 55292,
+      "stop": 56850,
+      "seeds_sha256": "cf1df9bd596ffbf3013f8a0a3c6fcc5155a071189538b0af1778b88b1591f353"
+    },
+    {
+      "equation": 2,
+      "index": 25,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 321,
+      "start": 56850,
+      "stop": 57171,
+      "seeds_sha256": "74d050e570dd0ee8074b25195b30a098ebd5dc3f02d128ad5ec575e4e0b29f95"
+    },
+    {
+      "equation": 2,
+      "index": 26,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 85,
+      "start": 57171,
+      "stop": 57256,
+      "seeds_sha256": "c7053152eb270fe78a69719d85103dbb8ee755d7bed1e373ffdd7808a24b4b2e"
+    },
+    {
+      "equation": 2,
+      "index": 27,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1818,
+      "start": 57256,
+      "stop": 59074,
+      "seeds_sha256": "cf4993f7ed3c5a2a2dd92d75b30c3b90a28300b5dacb3d5f4265d9f95b6bc18d"
+    },
+    {
+      "equation": 2,
+      "index": 28,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1237,
+      "start": 59074,
+      "stop": 60311,
+      "seeds_sha256": "d558771165bf949211a11828939f37419309837162c9a33e159b1b9a092e9a9c"
+    },
+    {
+      "equation": 2,
+      "index": 29,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1237,
+      "start": 60311,
+      "stop": 61548,
+      "seeds_sha256": "0e30e829de1c86705de4264760ef9fd70c9875d293487ccbe520aecf53ef25f1"
+    },
+    {
+      "equation": 2,
+      "index": 30,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 611,
+      "start": 61548,
+      "stop": 62159,
+      "seeds_sha256": "184d289d24ba387696b72a5d4c1f87f86dfe11db877d2c84cab6115f7e9cea38"
+    },
+    {
+      "equation": 2,
+      "index": 31,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 160,
+      "start": 62159,
+      "stop": 62319,
+      "seeds_sha256": "3fbf372bcfd0279879cc7f22e98c5513a0378af30788d7cc92fcf604646d34ed"
+    },
+    {
+      "equation": 2,
+      "index": 32,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 321,
+      "start": 62319,
+      "stop": 62640,
+      "seeds_sha256": "abe5cc41f7f0f35f5a146d9ab779c82e76bce1aba787d40b357b2d083fd11536"
+    },
+    {
+      "equation": 2,
+      "index": 33,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 160,
+      "start": 62640,
+      "stop": 62800,
+      "seeds_sha256": "4611b2ffe560a7db530303efc72a292acab29a7982d8d21610a1c3294f9832a3"
+    },
+    {
+      "equation": 2,
+      "index": 34,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 154,
+      "start": 62800,
+      "stop": 62954,
+      "seeds_sha256": "e4b6b8b64122a3907773910d8bfc8be64768d068fcd00d1fa2e0fa691467e9c1"
+    },
+    {
+      "equation": 2,
+      "index": 35,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 106,
+      "start": 62954,
+      "stop": 63060,
+      "seeds_sha256": "d953d7bc5bcac13c6952d91caaf20918ea8958f391f8e93a86e186b3d2a6b3e3"
+    },
+    {
+      "equation": 2,
+      "index": 36,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 1556,
+      "start": 63060,
+      "stop": 64616,
+      "seeds_sha256": "9341f1963c44fb3c9ce243342061c1ade86666215087d5d6d3be996d24be88eb"
+    },
+    {
+      "equation": 2,
+      "index": 37,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1558,
+      "start": 64616,
+      "stop": 66174,
+      "seeds_sha256": "b29a5ea80b8ef0d8cdbd7f078080a1f2808b9809c3fc695576921b73e293b912"
+    },
+    {
+      "equation": 2,
+      "index": 38,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 791,
+      "start": 66174,
+      "stop": 66965,
+      "seeds_sha256": "67d84c1cee1d085a5f68a6fa540573706eb096316e26401d1d5da7571cd5ec8e"
+    },
+    {
+      "equation": 2,
+      "index": 39,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 321,
+      "start": 66965,
+      "stop": 67286,
+      "seeds_sha256": "33370e5a0410ebf9fb84d60da19a5704dc2e9bd1881d5563bc024f4afbcab26d"
+    },
+    {
+      "equation": 2,
+      "index": 40,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          5
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 170,
+      "start": 67286,
+      "stop": 67456,
+      "seeds_sha256": "1343f9b250d120992004d5afbc18fe3b9fcee6366a1b382963908dd31492ea5e"
+    },
+    {
+      "equation": 2,
+      "index": 41,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 160,
+      "start": 67456,
+      "stop": 67616,
+      "seeds_sha256": "fa5491f38c5ef849dc84d7f5a786078a7610552ec8823b28cc8cc0d8896a085e"
+    },
+    {
+      "equation": 2,
+      "index": 42,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ]
+      ],
+      "length": 8,
+      "dimension": 1060,
+      "start": 67616,
+      "stop": 68676,
+      "seeds_sha256": "7a2f9a9ceaad2fbd18f385ed380b5526d3bf4093c7aa5f49f1170f16247acf04"
+    },
+    {
+      "equation": 2,
+      "index": 43,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 1077,
+      "start": 68676,
+      "stop": 69753,
+      "seeds_sha256": "7eec669cdb5b68ef945cd72195ca9c9715fdaf223007b19b3917f3df50abb76b"
+    },
+    {
+      "equation": 2,
+      "index": 44,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 235,
+      "start": 69753,
+      "stop": 69988,
+      "seeds_sha256": "ed94559afc1b91e9871d59cef039a9c06b39072bf5396fc4802c922ef72b0120"
+    },
+    {
+      "equation": 2,
+      "index": 45,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ]
+      ],
+      "length": 8,
+      "dimension": 1065,
+      "start": 69988,
+      "stop": 71053,
+      "seeds_sha256": "f99bbc30fdf063c12475b5ff4a09774c6b63657bb6716f455ce7f052bc00d47b"
+    },
+    {
+      "equation": 2,
+      "index": 46,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 3173,
+      "start": 71053,
+      "stop": 74226,
+      "seeds_sha256": "e284a45c1ccbdff6668a8154eed4032f62d96ccfba4f667fbead09459d65a211"
+    },
+    {
+      "equation": 2,
+      "index": 47,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ]
+      ],
+      "length": 8,
+      "dimension": 526,
+      "start": 74226,
+      "stop": 74752,
+      "seeds_sha256": "63ecb30d7a83eeb7cb22033fdd7ff30a81858b5b3f3e52eeee194eff0ffbc2b8"
+    },
+    {
+      "equation": 2,
+      "index": 48,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          2
+        ]
+      ],
+      "length": 8,
+      "dimension": 1086,
+      "start": 74752,
+      "stop": 75838,
+      "seeds_sha256": "a38e8f37f46b9ee256909a4cf5b1ae09dd1cb84f4046740dc5b9a012d6cbc31e"
+    },
+    {
+      "equation": 2,
+      "index": 49,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            2
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 536,
+      "start": 75838,
+      "stop": 76374,
+      "seeds_sha256": "c446d50f7ac9de81fb23b0030a530241b775ade4c635699a6395e14260c6e7de"
+    },
+    {
+      "equation": 2,
+      "index": 50,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 304,
+      "start": 76374,
+      "stop": 76678,
+      "seeds_sha256": "3098a8ed6e0b7ccad247753c3248bbcf3dcd194487f6e510b9514e9b4e4ed223"
+    },
+    {
+      "equation": 2,
+      "index": 51,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 304,
+      "start": 76678,
+      "stop": 76982,
+      "seeds_sha256": "01bdf4c895ae874a114ab62e9fb897a0f226246a25ee2fa503ee3531087ca7e0"
+    },
+    {
+      "equation": 2,
+      "index": 52,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 154,
+      "start": 76982,
+      "stop": 77136,
+      "seeds_sha256": "77fb0620c4a248bdc78d5fbafaeda79b884a571924897117a504d2b530c4bd7b"
+    },
+    {
+      "equation": 2,
+      "index": 53,
+      "profile": [
+        [
+          [
+            0,
+            2
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ]
+      ],
+      "length": 8,
+      "dimension": 182,
+      "start": 77136,
+      "stop": 77318,
+      "seeds_sha256": "fe2dd31b4690ff618c1cf2a7c18c2012cbd968b723c7486f869d6ce0f6ee6f93"
+    },
+    {
+      "equation": 2,
+      "index": 54,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          4
+        ]
+      ],
+      "length": 8,
+      "dimension": 75,
+      "start": 77318,
+      "stop": 77393,
+      "seeds_sha256": "ecf5ea6a23e32376794e097f750379886123e9ec1306a23a9bdfe2cadd2a539e"
+    },
+    {
+      "equation": 2,
+      "index": 55,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          1
+        ]
+      ],
+      "length": 8,
+      "dimension": 198,
+      "start": 77393,
+      "stop": 77591,
+      "seeds_sha256": "2ce512f5c7e9fac0b3dcb4acce43acfecc4ca68a0f855177ccd4f1226bcd0194"
+    },
+    {
+      "equation": 2,
+      "index": 56,
+      "profile": [
+        [
+          [
+            0,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          4
+        ]
+      ],
+      "length": 8,
+      "dimension": 48,
+      "start": 77591,
+      "stop": 77639,
+      "seeds_sha256": "ba3f1e55fb0d84889ad87cd65e621af4f7dcc4df7f6ec69da8732f1d03be285f"
+    }
+  ]
+}

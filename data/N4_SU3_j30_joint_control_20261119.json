@@ -1,0 +1,130 @@
+{
+  "prime": 1000033,
+  "plan_sha256": "58a440c904dda13ed2f0a34ee3e26543edbd607049dd2774e8af6dadaef65ae6",
+  "inputs_sha256": "d261f2fc038af8fede3646c720b84d4d3e498cf6365b6c4990dd6e2b93fb26cc",
+  "driver_sha256": "1a5197ebe176b106ff2f5cc8fe1778377777fe9700561a9d6f7fb9b2b72a0d1f",
+  "control_sha256": "3969da457f78a51b140da1a07e0a2442fb6c65fbe86e0a426ece67cdef065b2c",
+  "rows": [
+    {
+      "source": 2,
+      "seed": 34,
+      "fermions": 0,
+      "seed_file_sha256": "167c9fa3e533c299cbaf69866ba032093d46b0f5772d7f5f2b5951878c103875",
+      "rational_projected_terms": 158,
+      "rational_Q0_terms": 1428,
+      "Q0_squared_terms": 0,
+      "targets": [
+        {
+          "target": 1,
+          "terms": 816,
+          "coordinates": 6,
+          "nonzero": 6,
+          "sha256": "897ffb1d8e1c86f0c4c7c102c11c32bdd93c211559a4975adcb55698be412ab4"
+        },
+        {
+          "target": 3,
+          "terms": 612,
+          "coordinates": 6,
+          "nonzero": 6,
+          "sha256": "0c8932eed73ca22abe696c812d83ec3182c2bccd78a246639cd70f0bd97849d5"
+        }
+      ],
+      "cartan_coordinates": 2,
+      "cartan_nonzero": 2,
+      "first_exact_diagonal": "-1319821006048828534869868755696327887723900286817630976/189",
+      "first_diagonal_residue": 141508,
+      "cartan_sha256": "984d5f6b7066422da87e48a34832225981cd33c870f7332aa5dc55c887789808"
+    },
+    {
+      "source": 3,
+      "seed": 29,
+      "fermions": 2,
+      "seed_file_sha256": "d32a79d23e729bfa80c886cee075f5e4d3eadcaff8f7190ad51048506e1120a3",
+      "rational_projected_terms": 48,
+      "rational_Q0_terms": 408,
+      "Q0_squared_terms": 0,
+      "targets": [
+        {
+          "target": 4,
+          "terms": 288,
+          "coordinates": 20,
+          "nonzero": 20,
+          "sha256": "637e4bbf1586b58a14dc2cfcb05c34eb9f1a4cf53870480b2c7bea4f6fafc205"
+        },
+        {
+          "target": 6,
+          "terms": 48,
+          "coordinates": 20,
+          "nonzero": 20,
+          "sha256": "cb859c9d310c97a068956f08566367541df81cc924e569fe5727e856bda65ade"
+        },
+        {
+          "target": 11,
+          "terms": 72,
+          "coordinates": 20,
+          "nonzero": 20,
+          "sha256": "d8acfb3982dca1ddbfb6070dc0f51bc36239f42e4738aab244c1f099cd6a057b"
+        }
+      ],
+      "cartan_coordinates": 12,
+      "cartan_nonzero": 12,
+      "first_exact_diagonal": "1876313538339438931551241124830679850319092244447639",
+      "first_diagonal_residue": 607168,
+      "cartan_sha256": "ec0c867d423ff7c36d5f89b76bfb4678c177d725b8473ac283d33396d7ef831f"
+    },
+    {
+      "source": 30,
+      "seed": 5,
+      "fermions": 4,
+      "seed_file_sha256": "fec8ec19a8bec592adf34d235285991ee1d57b9a511dd79a09853827c7d7a2fa",
+      "rational_projected_terms": 2,
+      "rational_Q0_terms": 24,
+      "Q0_squared_terms": 0,
+      "targets": [
+        {
+          "target": 17,
+          "terms": 24,
+          "coordinates": 42,
+          "nonzero": 42,
+          "sha256": "082f9d54c3eacce0f8ac92a14e450d689efc09e46ba770adfe8a4a9183effc80"
+        }
+      ],
+      "cartan_coordinates": 30,
+      "cartan_nonzero": 30,
+      "first_exact_diagonal": "4779482024279167432104832761273890295636954484788024000",
+      "first_diagonal_residue": 791147,
+      "cartan_sha256": "2fa3d21b7622a60221cbe9a9d60c1a4d6191fd0d3af7a7e18a135f2245b14d25"
+    },
+    {
+      "source": 35,
+      "seed": 3,
+      "fermions": 6,
+      "seed_file_sha256": "baf308bacac6502be625bd18c87c462f08874a7c1030ec983f6c1b919e38dabf",
+      "rational_projected_terms": 2,
+      "rational_Q0_terms": 12,
+      "Q0_squared_terms": 0,
+      "targets": [
+        {
+          "target": 17,
+          "terms": 4,
+          "coordinates": 42,
+          "nonzero": 42,
+          "sha256": "ba971aec0e997150b40c9d04157af84427a7557dfef4eda853fe4309d8fa025c"
+        },
+        {
+          "target": 18,
+          "terms": 8,
+          "coordinates": 72,
+          "nonzero": 72,
+          "sha256": "4ea5ab93215ad1c5f4c932cd571b541d49940dfa4b9128f8c8ea2e9f87da5a5a"
+        }
+      ],
+      "cartan_coordinates": 56,
+      "cartan_nonzero": 56,
+      "first_exact_diagonal": "2809578481037201918543603440194149579208569765715634560",
+      "first_diagonal_residue": 197619,
+      "cartan_sha256": "c11eaaf235d56c3ed66e65564159ff8f1beacee6fae596a7a2ca69fe79449ddd"
+    }
+  ],
+  "scope": "Rational trace projection and differentiation before reduction; exact integer diagonal Grassmann multiplication; both compared with the joint worker on two evaluation points per frame. This is a map implementation control, not an obstruction."
+}

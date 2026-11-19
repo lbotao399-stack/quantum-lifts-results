@@ -1,0 +1,286 @@
+{
+  "job_id": "5658201",
+  "allocation": {
+    "cpus": 64,
+    "elapsed_seconds": 768,
+    "exit_code": "0:0",
+    "state": "COMPLETED"
+  },
+  "prime": 1000033,
+  "input_plan_sha256": "b8c669fa244e851f38a25b91186c3091e98a939935242805b0f71a9f8c00d609",
+  "matrix_receipt_sha256": "ebac8b013044e79a3b7bf246555b2c68d3207f2798a580a8f0059b4c0845beb9",
+  "driver_sha256": "084711741800069afc6c8623af443f03a89a8b7ae03cae63a34df984ee44fd1c",
+  "control_increments": [
+    2,
+    1,
+    0,
+    1
+  ],
+  "source_dimension": 49328,
+  "middle_dimension": 63983,
+  "following_dimension": 46876,
+  "stages": [
+    {
+      "target": 13,
+      "coordinates": 108,
+      "matrices": 3,
+      "rank_increment": 73,
+      "stage_sha256": "7d8cfcf4957a0a20c2bdbd633dad37c18790f592eadd8d7edb202f7f6db77d35"
+    },
+    {
+      "target": 18,
+      "coordinates": 108,
+      "matrices": 3,
+      "rank_increment": 73,
+      "stage_sha256": "08b8ce9e461cf0aa99ab06afa6aa95d59f560fa6813c47b91efd1c9236afd15c"
+    },
+    {
+      "target": 36,
+      "coordinates": 135,
+      "matrices": 3,
+      "rank_increment": 77,
+      "stage_sha256": "ec7762b2cb08641fe82a620482c4c978f8aeb4b4fbad2ab72bdcafac8b306628"
+    },
+    {
+      "target": 30,
+      "coordinates": 135,
+      "matrices": 3,
+      "rank_increment": 90,
+      "stage_sha256": "e340b4b1c19cb61088061ef84cc2fea362ec3158460fb2f27e80cb114305a05a"
+    },
+    {
+      "target": 17,
+      "coordinates": 138,
+      "matrices": 3,
+      "rank_increment": 106,
+      "stage_sha256": "1a357c44ef8e871d72072bc03f241f4a9b2966b667f9bafaee18cffe88e37f0e"
+    },
+    {
+      "target": 4,
+      "coordinates": 174,
+      "matrices": 4,
+      "rank_increment": 140,
+      "stage_sha256": "782df47b5af9e743d61c86d5a55fdd701a77f941506ee4272461dfb483532d36"
+    },
+    {
+      "target": 2,
+      "coordinates": 178,
+      "matrices": 2,
+      "rank_increment": 144,
+      "stage_sha256": "363ff7b667a4b2db6c67ca34eaf3737b368052375ae22e6307210c7e592aadec"
+    },
+    {
+      "target": 35,
+      "coordinates": 280,
+      "matrices": 4,
+      "rank_increment": 232,
+      "stage_sha256": "f450caf1a275327ec1c6b50e9cad372daabee1603dfcbaa2dc062461ead73070"
+    },
+    {
+      "target": 12,
+      "coordinates": 450,
+      "matrices": 5,
+      "rank_increment": 411,
+      "stage_sha256": "183484b82a42c7fa2a28d38a812a80afb8ecbb06cdd9decce139f309faf0e7c4"
+    },
+    {
+      "target": 31,
+      "coordinates": 480,
+      "matrices": 4,
+      "rank_increment": 429,
+      "stage_sha256": "a01ddc7e9d8a88b0fe3ed7f53dd6fff50e5937eb21ec86aa895d16687bbb65ab"
+    },
+    {
+      "target": 28,
+      "coordinates": 630,
+      "matrices": 6,
+      "rank_increment": 583,
+      "stage_sha256": "345563c0ad8c72a2c3f9499ff4943ec1289d769662b50c5e1f78548112f8537d"
+    },
+    {
+      "target": 29,
+      "coordinates": 630,
+      "matrices": 6,
+      "rank_increment": 578,
+      "stage_sha256": "43fa0728fc1d581e51b124570bc5c7e708a8e49ea3b850bbb7ad4a80226dc2a6"
+    },
+    {
+      "target": 8,
+      "coordinates": 768,
+      "matrices": 5,
+      "rank_increment": 723,
+      "stage_sha256": "98bba278c240ad84c212f9597fcef70b713715a1c09c0c8b1856841000d3d86d"
+    },
+    {
+      "target": 9,
+      "coordinates": 768,
+      "matrices": 5,
+      "rank_increment": 719,
+      "stage_sha256": "96c57f9a08e70af61fa47989cb67ed6e7be71b89bac710fed920af55b1ce054b"
+    },
+    {
+      "target": 15,
+      "coordinates": 768,
+      "matrices": 5,
+      "rank_increment": 722,
+      "stage_sha256": "167cad2e13337cfb1454d9d51a73c714952d82e022a78d7897bc8ac597a86780"
+    },
+    {
+      "target": 16,
+      "coordinates": 768,
+      "matrices": 6,
+      "rank_increment": 309,
+      "stage_sha256": "dbfc42e740f77af106a0637c51593196b14074c9f52006ea924522bbbf428842"
+    },
+    {
+      "target": 3,
+      "coordinates": 882,
+      "matrices": 7,
+      "rank_increment": 837,
+      "stage_sha256": "601555bb25861ec5a049e536291bdeeffd849fe41e066c1145fc836b21f347db"
+    },
+    {
+      "target": 11,
+      "coordinates": 882,
+      "matrices": 6,
+      "rank_increment": 563,
+      "stage_sha256": "4e1ef71bc51fca163470a9f73df8c0c2dfdd5e5a687be6b10096e2b3687d021e"
+    },
+    {
+      "target": 21,
+      "coordinates": 885,
+      "matrices": 9,
+      "rank_increment": 453,
+      "stage_sha256": "b04a68e7a2a0472db9c999011c717b31ac16629db88efe38f48e844e09030c27"
+    },
+    {
+      "target": 25,
+      "coordinates": 885,
+      "matrices": 6,
+      "rank_increment": 546,
+      "stage_sha256": "77abbe4277e4114b6f848cd521cfc3629dbe2a702c79ef9aadbcc0e1fa8dd25f"
+    },
+    {
+      "target": 0,
+      "coordinates": 922,
+      "matrices": 3,
+      "rank_increment": 868,
+      "stage_sha256": "26e31d1f5cb6a8acc8374cb80c960914f90649fd02bcb4c272aeba6337160a72"
+    },
+    {
+      "target": 1,
+      "coordinates": 934,
+      "matrices": 4,
+      "rank_increment": 871,
+      "stage_sha256": "61ff23084b3c38fe5e2c13e90f19d9367dd359fbeb466512b927f364b84b0c63"
+    },
+    {
+      "target": 26,
+      "coordinates": 975,
+      "matrices": 5,
+      "rank_increment": 888,
+      "stage_sha256": "79a854057c9338907f00b30ff2b09eec02a4e2f99a859152360b35c5b3c429d8"
+    },
+    {
+      "target": 32,
+      "coordinates": 1008,
+      "matrices": 7,
+      "rank_increment": 941,
+      "stage_sha256": "4899b7c777477ae9224955772290678951e7107fb958de1b35d516e80e9e412c"
+    },
+    {
+      "target": 20,
+      "coordinates": 1830,
+      "matrices": 8,
+      "rank_increment": 1097,
+      "stage_sha256": "88383c3961cde1b338ea15b7a92098d147e31e265b4802da075f6bf441db66da"
+    },
+    {
+      "target": 33,
+      "coordinates": 1988,
+      "matrices": 8,
+      "rank_increment": 1905,
+      "stage_sha256": "c9c59dc2225da44a5b6bb594326d47ee4a088a625887bb891b2387cca6ba57d5"
+    },
+    {
+      "target": 34,
+      "coordinates": 2016,
+      "matrices": 7,
+      "rank_increment": 1031,
+      "stage_sha256": "76df34a090a0a4e6c808e8c7228ec191852d2cc0e87792f990f4bd8fdf19bc96"
+    },
+    {
+      "target": 24,
+      "coordinates": 2100,
+      "matrices": 7,
+      "rank_increment": 1977,
+      "stage_sha256": "22e897bfacf00798e4f8df5ff09da57aca496216cf5f934fa9eeb544d14a779b"
+    },
+    {
+      "target": 10,
+      "coordinates": 2154,
+      "matrices": 7,
+      "rank_increment": 1864,
+      "stage_sha256": "4033c65e88dd6428917cd9aa7d9d52705ab796a274cb9db0dace10d13bd403d0"
+    },
+    {
+      "target": 14,
+      "coordinates": 2184,
+      "matrices": 7,
+      "rank_increment": 1384,
+      "stage_sha256": "0d3d625903ba57ac8afabc73af2d2fd62d7e84c772a10c633c5b3526f3179d0d"
+    },
+    {
+      "target": 27,
+      "coordinates": 2295,
+      "matrices": 9,
+      "rank_increment": 423,
+      "stage_sha256": "ed5882361ebe1aaf19f5d5e178d232d18cb46ee1a2869d6e90c8bbc747e51617"
+    },
+    {
+      "target": 19,
+      "coordinates": 4290,
+      "matrices": 9,
+      "rank_increment": 1489,
+      "stage_sha256": "cebf0eb81c0023c9a9949c92e1d556ac0c7989ebf699a7067b4c7726b6c37914"
+    },
+    {
+      "target": 6,
+      "coordinates": 4332,
+      "matrices": 9,
+      "rank_increment": 135,
+      "stage_sha256": "d4783ad7ee1992ad60f81cab1d9f3145fee99547636bc1dd5af9450e9a16ec90"
+    },
+    {
+      "target": 7,
+      "coordinates": 4332,
+      "matrices": 8,
+      "rank_increment": 3888,
+      "stage_sha256": "cf8a0f4eedd775a6d33e9776f8755a18107c0121f8f8513248fae54cd8b6c038"
+    },
+    {
+      "target": 5,
+      "coordinates": 7014,
+      "matrices": 8,
+      "rank_increment": 3612,
+      "stage_sha256": "8834fd740558d6c67e8c20c088f009b1b341cd22df9f229dc6387b580c66c639"
+    },
+    {
+      "target": 22,
+      "coordinates": 8385,
+      "matrices": 9,
+      "rank_increment": 1963,
+      "stage_sha256": "6ae6f1a78cf2611d7950a1b17fd4741dcc3eb7b2c3600a7e84cb074dd11c3586"
+    },
+    {
+      "target": 23,
+      "coordinates": 8595,
+      "matrices": 11,
+      "rank_increment": 0,
+      "stage_sha256": "5c56a44bf8929ccd48eacc084cf253c2c148fc54880f3d354211fc4f4c2de9bb"
+    }
+  ],
+  "incoming_rank_over_prime": 32144,
+  "required_outgoing_plus_Cartan_rank_for_rational_exclusion": 31839,
+  "rational_incoming_rank_is_only_a_lower_bound": true
+}

@@ -1,0 +1,24 @@
+{
+  "primes": [
+    1000003,
+    1000033,
+    1000037
+  ],
+  "modulus": 1000073001431003663,
+  "bound": 707132590,
+  "verified_zero_free_coordinates": 27492,
+  "prior_two_prime_candidates": {
+    "disagrees": 30194,
+    "agrees": 28036
+  },
+  "first_correction": {
+    "unreconstructed": 10833,
+    "reconstructed": 17478
+  },
+  "second_correction": {
+    "reconstructed": 40890,
+    "unreconstructed": 8438
+  },
+  "fraction_marker_sha256": "1bd8b24e761fdb2caa5ae9bb6b95dd0241a8271963df1c168563ef37c6fe01d6",
+  "rational_residual_verified": false
+}

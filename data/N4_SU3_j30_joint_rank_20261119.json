@@ -1,0 +1,324 @@
+{
+  "prime": 1000033,
+  "plan": "58a440c904dda13ed2f0a34ee3e26543edbd607049dd2774e8af6dadaef65ae6",
+  "physical_inputs": "d261f2fc038af8fede3646c720b84d4d3e498cf6365b6c4990dd6e2b93fb26cc",
+  "source_dimension": 63983,
+  "incoming_modular_lower_bound": 32144,
+  "outgoing_measured_rank": 31230,
+  "joint_measured_rank": 31838,
+  "increment_from_Cartan": 608,
+  "rational_cohomology_upper_bound": 609,
+  "rational_Cartan_invisible_cohomology_upper_bound": 1,
+  "intervals": 1022,
+  "Q0_blocks": 112,
+  "Cartan_blocks": 32,
+  "stages": [
+    {
+      "stage": "q03",
+      "coordinates": 213,
+      "rank_increment": 181,
+      "stage_sha256": "aad9032bf01096483a415f71f355c03520a8566046f4a97632f8f55fba3cc5fc"
+    },
+    {
+      "stage": "q12",
+      "coordinates": 310,
+      "rank_increment": 276,
+      "stage_sha256": "99268e5266005888a5a921fbc2c0bee4540e51b7ec0a108df038a9ad782c835f"
+    },
+    {
+      "stage": "q10",
+      "coordinates": 330,
+      "rank_increment": 292,
+      "stage_sha256": "7e2d86e8b7e680407f140b33598150c2b201309fcf35f84f9ef6bd8f19c08685"
+    },
+    {
+      "stage": "q13",
+      "coordinates": 330,
+      "rank_increment": 235,
+      "stage_sha256": "3cfb5b8c610f81f4b092b08d856362c000686737e11b40597f610db7ff780bd0"
+    },
+    {
+      "stage": "q06",
+      "coordinates": 420,
+      "rank_increment": 386,
+      "stage_sha256": "e75535111eabe0efe635ef93409321e009d284cfdbb825fc5f7170c4c3323584"
+    },
+    {
+      "stage": "q05",
+      "coordinates": 660,
+      "rank_increment": 623,
+      "stage_sha256": "4a7be47db58d1dcf9814781cb0b65aef85b666f9189c620979144a3f85afe3ed"
+    },
+    {
+      "stage": "q02",
+      "coordinates": 741,
+      "rank_increment": 707,
+      "stage_sha256": "cc2d2b8bfd7ed00ff97d433d2f4d950ba142c63a668d96467528d1cb68aee881"
+    },
+    {
+      "stage": "q17",
+      "coordinates": 861,
+      "rank_increment": 826,
+      "stage_sha256": "3c2a728d760898a933539f393e7cce7248533fae03abf2d4d19e64678764a0fc"
+    },
+    {
+      "stage": "q18",
+      "coordinates": 972,
+      "rank_increment": 913,
+      "stage_sha256": "7433ae6fe8d414881df7b58d85515cf35500b10d1e3ba76e7ca4c59dc0aca1e2"
+    },
+    {
+      "stage": "q01",
+      "coordinates": 1482,
+      "rank_increment": 1449,
+      "stage_sha256": "c0a5351af94ef83a587b9dbe67c0a27da308fa4d9c5e9ce76a1c6b9484b94e8c"
+    },
+    {
+      "stage": "q11",
+      "coordinates": 1640,
+      "rank_increment": 1222,
+      "stage_sha256": "69fcac2ae3554a8814710be72069fa20fc61532aab076d89872ce8bb3254addb"
+    },
+    {
+      "stage": "q09",
+      "coordinates": 2020,
+      "rank_increment": 1465,
+      "stage_sha256": "84bf0e732d105abcb5866475aa29abbcb02a2a2fa05f5d845433c2d7064e9d99"
+    },
+    {
+      "stage": "q14",
+      "coordinates": 2415,
+      "rank_increment": 2372,
+      "stage_sha256": "c06314981576515ebe2fcf02db8838ecf347ba343f16b591a01afb8bcb538450"
+    },
+    {
+      "stage": "q00",
+      "coordinates": 3312,
+      "rank_increment": 3276,
+      "stage_sha256": "62768fd8c67f145e99619ba3a0c9fc997aa1301b72ee6235ecd01c8e6f832e4f"
+    },
+    {
+      "stage": "q16",
+      "coordinates": 3381,
+      "rank_increment": 3339,
+      "stage_sha256": "cb0cfc2ecd3a2e2b4568de607f4a6b626510a6c5c5cf86f1889809053e1b8f82"
+    },
+    {
+      "stage": "q04",
+      "coordinates": 4210,
+      "rank_increment": 1708,
+      "stage_sha256": "db759ab6e64a6e79fc7c508db22a2bc40b00bd491bdc16ae3e449f0792ec4b3f"
+    },
+    {
+      "stage": "q08",
+      "coordinates": 4210,
+      "rank_increment": 2921,
+      "stage_sha256": "cc80c062b79e2a19f029e3cf7c1431ee1ffd319f8516e867869cb2c486d3d17a"
+    },
+    {
+      "stage": "q15",
+      "coordinates": 8022,
+      "rank_increment": 5571,
+      "stage_sha256": "5f8bba8ab26f84d73ed171f9e75517c4b9ffff843acaf6f19a86cfc86acc8324"
+    },
+    {
+      "stage": "q07",
+      "coordinates": 12060,
+      "rank_increment": 3468,
+      "stage_sha256": "fe20bb99ca2f670a69e96c316e4e4dd8b549ebff768c5dde30e21804862489f1"
+    },
+    {
+      "stage": "c02",
+      "coordinates": 34,
+      "rank_increment": 2,
+      "stage_sha256": "f4599925489f25db3a6c2cccd258e6fe7ebc52372df728b8880443b4d92ca1cf"
+    },
+    {
+      "stage": "c12",
+      "coordinates": 36,
+      "rank_increment": 3,
+      "stage_sha256": "e5bf98af0c27949ecf1584af7957d5bb8ff67e8686a9c35d001cef073123b9f0"
+    },
+    {
+      "stage": "c21",
+      "coordinates": 45,
+      "rank_increment": 11,
+      "stage_sha256": "51a188bece1f7446fc5987ec18cadc0fb3494e88119cd5d3661a1ed3617497d7"
+    },
+    {
+      "stage": "c25",
+      "coordinates": 45,
+      "rank_increment": 11,
+      "stage_sha256": "0347eeb2094a4bd263bdf2b7056fe02b09f5b9a056ea09b89b6b5f90a29c6f75"
+    },
+    {
+      "stage": "c28",
+      "coordinates": 45,
+      "rank_increment": 11,
+      "stage_sha256": "0bcfb211b95fa789c415d4c18f7f054d06440cacd5bf614103f20e2a9f6ba96b"
+    },
+    {
+      "stage": "c29",
+      "coordinates": 45,
+      "rank_increment": 11,
+      "stage_sha256": "f9851d753ef82fef2807bcfe4d04e43ce7927ef8ab62ec1f149752ba062efe59"
+    },
+    {
+      "stage": "c30",
+      "coordinates": 45,
+      "rank_increment": 2,
+      "stage_sha256": "368df4b3d7144f2e28050db44a0ac3461779fa810609f7656fd090a87bd036b2"
+    },
+    {
+      "stage": "c31",
+      "coordinates": 45,
+      "rank_increment": 4,
+      "stage_sha256": "84d4d5542126c0292ca75c671e1c5f136900ebe128b67cfdb30fb5204aa9a661"
+    },
+    {
+      "stage": "c01",
+      "coordinates": 46,
+      "rank_increment": 14,
+      "stage_sha256": "714100c7c7b59e9568d6d252eaa48aa017e40e11b7801ccd0db648f4a623019c"
+    },
+    {
+      "stage": "c03",
+      "coordinates": 48,
+      "rank_increment": 10,
+      "stage_sha256": "7a7c49f7c3f47ad9e4cf4cd08b9bd3249202a8faf089593100bb7b8b1ef27696"
+    },
+    {
+      "stage": "c08",
+      "coordinates": 48,
+      "rank_increment": 10,
+      "stage_sha256": "12208c16110296c0815c53ddb41708cc41a9b9122a81ccdd4730e7e8cf6f5e74"
+    },
+    {
+      "stage": "c09",
+      "coordinates": 48,
+      "rank_increment": 11,
+      "stage_sha256": "b13c551a8b2eff78618f1654c4ef70a987b1e9fb159ee63e330fce298ed65926"
+    },
+    {
+      "stage": "c11",
+      "coordinates": 48,
+      "rank_increment": 9,
+      "stage_sha256": "98a534bb7970cf9f0c712ba18daf17acb00e0bf4ecd9e859702a09525f6b2e8c"
+    },
+    {
+      "stage": "c15",
+      "coordinates": 48,
+      "rank_increment": 10,
+      "stage_sha256": "02429eb48f675c471652bd5ff47ad486dbe346153b0b473fc98ffc22d54b0728"
+    },
+    {
+      "stage": "c16",
+      "coordinates": 48,
+      "rank_increment": 9,
+      "stage_sha256": "7b522fdb61e3a3ff7e8b1f0206e4d77b60738b4cb066b06f277b32c5f001a3ec"
+    },
+    {
+      "stage": "c00",
+      "coordinates": 49,
+      "rank_increment": 16,
+      "stage_sha256": "3f218c75fb45fa1184caf9fa932206dc356d477d745f41730d5a4cfb395ff213"
+    },
+    {
+      "stage": "c32",
+      "coordinates": 56,
+      "rank_increment": 8,
+      "stage_sha256": "b433fe9deba6ad4061838403d241184776768e2d0ce17a107907907d799ada58"
+    },
+    {
+      "stage": "c33",
+      "coordinates": 56,
+      "rank_increment": 17,
+      "stage_sha256": "3390e410c17a0598e91b39efe90c1ec976932970b5a9e8657a28fe7a3a0f65d9"
+    },
+    {
+      "stage": "c34",
+      "coordinates": 56,
+      "rank_increment": 23,
+      "stage_sha256": "a24d36a4a757da9111226b0bf7b29ea0c2c4f6f7b7a321d4419e2bc03f89e28e"
+    },
+    {
+      "stage": "c35",
+      "coordinates": 56,
+      "rank_increment": 3,
+      "stage_sha256": "6789726d55a00312a825e6c3b7ca688b6ee441e1545e185bf5fe932af97a7459"
+    },
+    {
+      "stage": "c24",
+      "coordinates": 60,
+      "rank_increment": 16,
+      "stage_sha256": "1aeccf79dc98b0faa34473c2a896d36edd2c0435b4228a4be9b2cc15e283db47"
+    },
+    {
+      "stage": "c26",
+      "coordinates": 60,
+      "rank_increment": 20,
+      "stage_sha256": "881ee20dca5ffc42d4056b6bc0f99ae3a195942d14608dbe4bc32738a7aa26bb"
+    },
+    {
+      "stage": "c27",
+      "coordinates": 60,
+      "rank_increment": 23,
+      "stage_sha256": "122fdd33779fd1699b27861ba10b645d73b0c5d815a08f51310d13b05828bd69"
+    },
+    {
+      "stage": "c10",
+      "coordinates": 66,
+      "rank_increment": 22,
+      "stage_sha256": "d4f20f9ad5437603d9346d55e77e02f20a8d10638a14e09649ef136db9fa389c"
+    },
+    {
+      "stage": "c14",
+      "coordinates": 66,
+      "rank_increment": 30,
+      "stage_sha256": "c8d1dd424a26b2f1da401cb3a0d35faab25c5bfef0d6795923bde345d2daf995"
+    },
+    {
+      "stage": "c20",
+      "coordinates": 75,
+      "rank_increment": 30,
+      "stage_sha256": "bcf07322b1b733299df415d60b7d6242d81726057587045665fc01d1757ac729"
+    },
+    {
+      "stage": "c06",
+      "coordinates": 102,
+      "rank_increment": 47,
+      "stage_sha256": "508bc66654ea21cd08001e87c5cd2146800385e6b28edcdf08840ee38db1d2bb"
+    },
+    {
+      "stage": "c07",
+      "coordinates": 102,
+      "rank_increment": 53,
+      "stage_sha256": "162c897aef7efd938919788b4367736cf1fa733e17102df60e2bfe3d90762acb"
+    },
+    {
+      "stage": "c19",
+      "coordinates": 105,
+      "rank_increment": 28,
+      "stage_sha256": "98e6e35f03096f9d1f38e169c12d1478c1410357aa2f23b863e28da6e203c2fb"
+    },
+    {
+      "stage": "c05",
+      "coordinates": 132,
+      "rank_increment": 72,
+      "stage_sha256": "04298d72d413ae4db5204aa1ed7a4fae0b96a0f7a85f29d9e45431b1a4054383"
+    },
+    {
+      "stage": "c22",
+      "coordinates": 135,
+      "rank_increment": 62,
+      "stage_sha256": "b8a0a817e3f2a749e607373a31505fb6ed8282f9b4f26be7194f3f8c08404b93"
+    },
+    {
+      "stage": "c23",
+      "coordinates": 195,
+      "rank_increment": 10,
+      "stage_sha256": "e595d632e6f5db22a85ba963e26c200443140526eaf7509274ad9b351c9a5db5"
+    }
+  ],
+  "quantum_lifts_certified_by_this_test": 0
+}

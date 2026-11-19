@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## SU(3) level-30 chain comparison, November 19, 2026
+
+All 138 original stage records, 74 source lists, 50 right-hand sides and 378 matrix hashes reconcile. The independent product tested 1,739,328,032 entries. The 50 target evaluation records have full rank for their declared dimensions. The rational classical target has dimension at most 609, with at most one dimension in the kernel of Cartan restriction. The three-prime particular solution has 10,833 and 8,438 unresolved coefficients in the first and second corrections. [Evidence and replay](algorithms/su3_j30_classical_ranks/README.md).
+
+New $d_1$ pairings: **0** (total **6**). New fortuitous-generator families: **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts: **0, 0, 0**. [Count ledger](data/N4_lift_campaign_counts_20261119.json).
+
 ## Four-source SU(3) test and G2 sign correction, November 18, 2026
 
 At SU(3) level 34 a 365-dimensional quotient is exhausted on the 7,000-coordinate frame. The resulting first correction fails on 120 of 120 fresh coordinates. On 64 noncommuting even jets, all 1,485 cubic coordinates vanish upon restriction to kernels annihilating the projected classical images. These tests leave the source’s first obstruction open. [Data, determinant and replay](algorithms/su3_j34_20261118/README.md#four-source-correction-and-closed-jets).

@@ -1,0 +1,35 @@
+{
+  "group": "SU(3)",
+  "source": "R-007",
+  "level": 30,
+  "prime": 1000033,
+  "original_stage_records": 138,
+  "matched_packed_matrices": {
+    "first": 53,
+    "second_Q0": 221,
+    "second_Q1": 104
+  },
+  "matrix_entries_in_independent_product": 1739328032,
+  "matched_right_hand_sides": 50,
+  "certified_frame_dimensions_by_equation": [
+    34430,
+    63983
+  ],
+  "evaluation_coordinates_by_equation": [
+    34901,
+    65406
+  ],
+  "source_lists_checked": 74,
+  "incoming_Q0_hashes_reconciled": 221,
+  "first_and_joint_equation_ranks": [
+    18003,
+    50147
+  ],
+  "incoming_Q0_rank": 32144,
+  "incoming_d1_rank_on_recorded_sources_mod_prime": 0,
+  "outgoing_Q0_lower_bound": 31230,
+  "outgoing_plus_Cartan_lower_bound": 31838,
+  "rational_classical_cohomology_upper_bound": 609,
+  "rational_Cartan_invisible_cohomology_upper_bound": 1,
+  "rational_d2_decided": false
+}

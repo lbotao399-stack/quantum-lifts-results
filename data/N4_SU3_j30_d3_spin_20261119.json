@@ -1,0 +1,76 @@
+{
+  "upstream_pin": "4256f207986029540060fb44dd494746828f65ce",
+  "source": "R-007",
+  "order": 3,
+  "length": 8,
+  "target_doubled_charges": [
+    4,
+    4,
+    14,
+    8,
+    8
+  ],
+  "derivative_and_flavour_degrees": [
+    3,
+    3,
+    4,
+    1,
+    1
+  ],
+  "fermion_degrees_are_cochain_statistics": true,
+  "components": [
+    {
+      "C": 1,
+      "spin_weight_zero": {
+        "2": 43618,
+        "4": 77722,
+        "6": 8953
+      },
+      "spin_weight_one": {
+        "2": 35327,
+        "4": 61818,
+        "6": 7058
+      },
+      "spin_singlet": {
+        "2": 8291,
+        "4": 15904,
+        "6": 1895
+      },
+      "singlet_total": 26090
+    },
+    {
+      "C": -1,
+      "spin_weight_zero": {
+        "2": 43801,
+        "4": 78061,
+        "6": 9186
+      },
+      "spin_weight_one": {
+        "2": 35352,
+        "4": 62133,
+        "6": 7163
+      },
+      "spin_singlet": {
+        "2": 8449,
+        "4": 15928,
+        "6": 2023
+      },
+      "singlet_total": 26400
+    }
+  ],
+  "checked_free_letter_spin_commutators": 446,
+  "upstream_metadata_and_rank_receipt_sha256": {
+    "r007_o3_in_codd_meta.json": "9b18ac5597b3d68b6a39d53afd1093f8d8f7c6b955c305a4015fd0c625bed324",
+    "r007_o3_in_codd_rank_gpu.json": "8a7c9569a9da9358fcbaa7217604d13d38820b4a714a393fa4324d76ecfd27f4",
+    "r007_o3_out_codd_meta.json": "268c9408d99dc60a79a5033f4215dd97f978da91ff282ac59fadf630055eb6be",
+    "r007_o3_out_codd_rank_gpu.json": "ff05d663ae3827be56c8f68b06ef58facc10b9962e7ddf42b58c11f3baed700c"
+  },
+  "upstream_rank_prime": 67108859,
+  "upstream_incoming_outgoing_lower_bounds": [
+    67869,
+    63179
+  ],
+  "independently_replayed_large_rank_matrices": false,
+  "odd_full_weight_cohomology_upper_bound": 0,
+  "odd_singlet_cohomology_dimension_using_upstream_ranks": 0
+}
