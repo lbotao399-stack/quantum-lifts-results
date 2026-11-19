@@ -1,0 +1,11 @@
+{
+  "four_contents_projected_residuals": 0,
+  "four_contents_rhs_terms": 296,
+  "four_contents_unrestricted_formal_residuals": 518668,
+  "projected_coordinates": 3073,
+  "projected_residuals": 0,
+  "rhs_nonzero_in_projection": 1048,
+  "rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+  "rhs_terms": 517468,
+  "unrestricted_formal_residuals": 530744
+}

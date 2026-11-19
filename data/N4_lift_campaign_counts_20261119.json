@@ -28,5 +28,24 @@
     "data/SU3_j30_parent_p1000033/result.json",
     "data/SU3_j30_parent_p1000033/receipt_hashes.json"
   ],
-  "evidence_scope": "The incoming first differential on the recorded source coordinates is zero modulo 1000033. The rational Cartan-invisible classical quotient has dimension at most one. Neither result decides the rational second differential. The saved modular parent spans the Cartan-invisible quotient at this prime and has not been identified as an obstruction or a new primitive."
+  "evidence_scope": "The incoming first differential on the recorded source coordinates is zero modulo 1000033. The rational Cartan-invisible classical quotient has dimension at most one. Neither result decides the rational second differential. The saved modular parent spans the Cartan-invisible quotient at this prime and has not been identified as an obstruction or a new primitive.",
+  "updates": [
+    {
+      "phase": "SU(3) level-34 three-colour correction",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "evidence": [
+        "algorithms/su3_j34_20261118/finite_colour/witness_correction.json.gz",
+        "algorithms/su3_j34_20261118/finite_colour/fixed_replay.json",
+        "algorithms/su3_j34_20261118/finite_colour/a8_six_contents.json",
+        "algorithms/su3_j34_20261118/finite_colour/three_contents_restricted.json.gz"
+      ],
+      "scope": "The 733 selected formal functionals do not descend as obstruction certificates. No full primitive or lift is established."
+    }
+  ]
 }

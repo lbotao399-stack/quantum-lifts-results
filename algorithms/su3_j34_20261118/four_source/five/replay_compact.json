@@ -1,0 +1,20 @@
+{
+  "side_fit": {
+    "rank": 312,
+    "augmented_rank": 312,
+    "minor_determinant": 18091,
+    "pairing": null
+  },
+  "fresh10_only": {
+    "rank": 394,
+    "augmented_rank": 395,
+    "minor_determinant": 628658,
+    "pairing": 713854
+  },
+  "all_five": {
+    "rank": 394,
+    "augmented_rank": 395,
+    "minor_determinant": 91914,
+    "pairing": 91100
+  }
+}

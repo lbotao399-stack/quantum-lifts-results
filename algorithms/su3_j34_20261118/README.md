@@ -91,3 +91,28 @@ A separate exact test uses all 27,780 terms of twice the profile-10 right-hand s
 python3 algorithms/su3_j34_20261118/replay_quotient.py minor
 python3 algorithms/su3_j34_20261118/replay_quotient.py fresh
 ```
+
+## Three-colour correction at level 34
+
+The first equation is $Q_0\mathcal O_1=-Q_1\mathcal O_0$. Before imposing three-colour identities, its right-hand side has 517,468 nonzero terms. The classical differential preserves the unordered multidegrees of the traces, giving 733 nonempty blocks. In each block the outgoing differential has a nonzero formal coordinate. A second implementation reversed the letter merges, found 3,175 possible right-hand-side words (1,054 present; 1,048 nonzero incidences), and recovered all 733 coefficients without reading the producer's lists of summands. [Formal witnesses](finite_colour/formal_blocks.json.gz) · [Reverse replay](finite_colour/replayed_733.json.gz).
+
+At three colours the antisymmetrizer on four colour slots vanishes. Grouping its terms by permutation cycles includes the sign from reordering odd entries. For each selected outgoing word one saved identity has nonzero coefficient there and zero coefficients on the other 732 selected words. For the first coordinate the coefficient is $-1{,}116{,}696$ and the identity pivot is $+1$. With four independent Grassmann generators and seed 714293, all 24 terms are nonzero at three colours and sum to zero; the evaluation at four colours is $1{,}170{,}315{,}384$. [Four-slot identities and integer controls](finite_colour/antisymmetrizer_733.json.gz).
+
+The 733 outgoing coefficient tests see 3,073 distinct coordinates of the **incoming equation**. On these 3,073 coordinates a *single* rational correction of 464 words solves the equation after subtracting 733 actual identities on the right-hand side (14,181 terms after collection). There are 1,048 nonzero input coordinates. The projected classical image has rank 2,296, every block is solved and the projected residual is zero. The same coefficients and identities leave 530,744 formal terms outside the projection, including 14,733 words absent from the original input. Four complete input letter contents separately admit a 265-word correction with no trace identities (rank and augmented rank both 578 on 672 formal coordinates). That different correction has 518,668 unrestricted formal residual terms. Neither list is a full physical primitive. [Coefficients and identity multipliers](finite_colour/witness_correction.json.gz) · [Four contents](finite_colour/four_contents_first.json.gz) · [Fixed-coefficient replay](finite_colour/fixed_replay.json).
+
+The physical outgoing differential vanishes identically in six complete letter contents. A8 job 5663334 expanded all 10,864 formal terms into integer matrix-entry polynomials and found zero nonzero coefficients among 150,388 collected monomials. These contents contain 91 of the selected outgoing coordinates. Letter `00` is an even scalar; it is diagonal with arbitrary eigenvalues $x,y,-x-y$, with all other matrices generic and traceless, and their odd components exterior. Every polynomial is invariant under simultaneous conjugation. Coefficientwise in the exterior algebra, polynomiality and density of regular semisimple traceless matrices extend this test to arbitrary values of `00`. Each input is pinned by SHA-256, each arithmetic bound is below the signed 64-bit limit, and the single-word controls have nonzero coefficients. This is closure on the six specified contents. [Job, contents, bounds and controls](finite_colour/a8_six_contents.json).
+
+On three other incoming-equation contents, 2,761 selected parents give ranks 2,077 and 2,078 after appending the right-hand side, both before and after reducing products to at most three traces. The restriction on parents and the remaining three-colour identities must both be addressed before interpreting this gap. [Saved partial correction and ranks](finite_colour/three_contents_restricted.json.gz).
+
+Independently, over the field of 1,000,003 elements, the 7,616 archived recipes fit 7,312 joint coordinates; their fixed fit fails on 800 of 800 held-out coordinates. Including the fresh coordinates, the five-profile rank and augmented rank are 7,394 and 7,395. The separator annihilates all 7,616 recipes and pairs to 91,100 with the right-hand side. This excludes only those recipes. [A8 job 5662886 and replay](four_source/five/).
+
+```sh
+cd algorithms/su3_j34_20261118
+python3 replay_formal_blocks.py --out /tmp/j34-replay.json.gz
+python3 finite_trace_identity.py --out /tmp/j34-identities.json.gz
+python3 witness_correction.py --out /tmp/j34-joint.json.gz
+python3 replay_witness_correction.py
+python3 replay_five.py
+```
+
+To reproduce the six colour polynomials, read the exact contents from the keys of `receipt.meta` and the odd letter codes from `receipt.odd_ids` in `finite_colour/a8_six_contents.json`. Run `python3 colour_outgoing.py --out /tmp/j34-contents --contents CONTENT ...`, compile `colour_polynomial.cpp` with `c++ -O3 -std=c++17`, and invoke the executable with `/tmp/j34-contents/CONTENT.txt ODD_CODES /tmp/CONTENT.json control` for each content.

@@ -1,0 +1,209 @@
+{
+  "job": "5663334",
+  "sacct": "5663334|n434col20|COMPLETED|12|6|0:0",
+  "receipt": {
+    "job": "5663334",
+    "meta": {
+      "000000000000010405050716": {
+        "common_denominator": 1,
+        "formal_terms": 1522,
+        "incident_rhs_terms": {
+          "000000000000010405051e": 0,
+          "0000000000000104050d16": 0,
+          "0000000000000105050715": 98,
+          "0000000000000105050c16": 98,
+          "0000000000000405050712": 0,
+          "0000000000000405050916": 0,
+          "0000000000010105050716": 896,
+          "0000000000010204050716": 720,
+          "0000000000010405050713": 346,
+          "0000000000010405050816": 346
+        },
+        "input_rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "input_rhs_terms": 517468,
+        "numerator_sum_abs": 353847384,
+        "polynomial_input_sha256": "19d565788217e66e79d95fc457be218fac66a1d839e30d3d1a21c456971155d0"
+      },
+      "000000000000010405050e0f": {
+        "common_denominator": 1,
+        "formal_terms": 1522,
+        "incident_rhs_terms": {
+          "000000000000010405051e": 0,
+          "0000000000000104050e15": 0,
+          "0000000000000105050d0f": 98,
+          "0000000000000105050e14": 98,
+          "0000000000000405050a0f": 0,
+          "0000000000000405050e11": 0,
+          "0000000000010105050e0f": 896,
+          "0000000000010204050e0f": 720,
+          "0000000000010405050b0f": 346,
+          "0000000000010405050e10": 346
+        },
+        "input_rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "input_rhs_terms": 517468,
+        "numerator_sum_abs": 353847384,
+        "polynomial_input_sha256": "55019a25c69cdd1343739524ca66a70557be8814ea883b04de659c0c5baa37ec"
+      },
+      "000000000000010505060714": {
+        "common_denominator": 2,
+        "formal_terms": 2460,
+        "incident_rhs_terms": {
+          "000000000000010505061c": 0,
+          "0000000000000105050715": 98,
+          "0000000000000105050e14": 98,
+          "0000000000000105060d14": 0,
+          "0000000000000205050714": 140,
+          "0000000000000505060914": 0,
+          "0000000000010205060714": 960,
+          "0000000000010305050714": 2086,
+          "0000000000010505060711": 562,
+          "0000000000010505060814": 562
+        },
+        "input_rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "input_rhs_terms": 517468,
+        "numerator_sum_abs": 977175600,
+        "polynomial_input_sha256": "7aa5dc77fecbf8c4aadac16aae8b7f6ea767e0cc062337c3b0f78b3f7f574296"
+      },
+      "000000000000010505060c0f": {
+        "common_denominator": 2,
+        "formal_terms": 2460,
+        "incident_rhs_terms": {
+          "000000000000010505061c": 0,
+          "0000000000000105050c16": 98,
+          "0000000000000105050d0f": 98,
+          "0000000000000105060c15": 0,
+          "0000000000000205050c0f": 140,
+          "0000000000000505060c11": 0,
+          "0000000000010205060c0f": 960,
+          "0000000000010305050c0f": 2086,
+          "000000000001050506090f": 562,
+          "0000000000010505060c10": 562
+        },
+        "input_rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "input_rhs_terms": 517468,
+        "numerator_sum_abs": 977175600,
+        "polynomial_input_sha256": "317d706d7ef83678a043db59e4b91b8781d7bddb97ae755a63d5b470de6f1040"
+      },
+      "000000000000030405050714": {
+        "common_denominator": 2,
+        "formal_terms": 2180,
+        "incident_rhs_terms": {
+          "0000000000000205050714": 140,
+          "000000000000030405051c": 0,
+          "0000000000000304050d14": 0,
+          "0000000000000305050c14": 0,
+          "0000000000000405050712": 0,
+          "0000000000000405050b14": 0,
+          "0000000000010305050714": 2086,
+          "0000000000020304050714": 684,
+          "0000000000030405050711": 460,
+          "0000000000030405050814": 460
+        },
+        "input_rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "input_rhs_terms": 517468,
+        "numerator_sum_abs": 748529472,
+        "polynomial_input_sha256": "99023d70db4c5b3971a7f500ba26be98f0812291990bc6abf0c1e171b697c273"
+      },
+      "000000000000040505050710": {
+        "common_denominator": 2,
+        "formal_terms": 720,
+        "incident_rhs_terms": {
+          "0000000000000405050518": 0,
+          "0000000000000405050712": 0,
+          "0000000000000405050d10": 0,
+          "0000000000000505050711": 74,
+          "0000000000000505050c10": 74,
+          "0000000000010505050710": 806,
+          "0000000000020405050710": 308,
+          "0000000000040505050810": 0
+        },
+        "input_rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "input_rhs_terms": 517468,
+        "numerator_sum_abs": 329012256,
+        "polynomial_input_sha256": "98f8147e650f0acac9462f4d55e1e5041b6ee912022fdcdf29b32762d82c3260"
+      }
+    },
+    "odd_ids": "01030507090b0d0f11131517191b1d",
+    "polynomials": {
+      "000000000000010405050716": {
+        "a_priori_int64_bound": 1070500274601984,
+        "accumulated_abs_contributions": 8319362183424,
+        "contributions": 9934976,
+        "distinct_collected_coordinates": 24152,
+        "first_residual": 0,
+        "first_residual_key": 0,
+        "first_word_control_nonzero_coordinates": 2068,
+        "formal_terms": 1522,
+        "maximum_abs_residual": 0,
+        "nonzero_coordinates": 0,
+        "numerator_abs_sum": 353847384
+      },
+      "000000000000010405050e0f": {
+        "a_priori_int64_bound": 1070500274601984,
+        "accumulated_abs_contributions": 8319362183424,
+        "contributions": 9934976,
+        "distinct_collected_coordinates": 24152,
+        "first_residual": 0,
+        "first_residual_key": 0,
+        "first_word_control_nonzero_coordinates": 2068,
+        "formal_terms": 1522,
+        "maximum_abs_residual": 0,
+        "nonzero_coordinates": 0,
+        "numerator_abs_sum": 353847384
+      },
+      "000000000000010505060714": {
+        "a_priori_int64_bound": 2945666001862656,
+        "accumulated_abs_contributions": 22157658361152,
+        "contributions": 15150928,
+        "distinct_collected_coordinates": 30952,
+        "first_residual": 0,
+        "first_residual_key": 0,
+        "first_word_control_nonzero_coordinates": 2052,
+        "formal_terms": 2460,
+        "maximum_abs_residual": 0,
+        "nonzero_coordinates": 0,
+        "numerator_abs_sum": 977175600
+      },
+      "000000000000010505060c0f": {
+        "a_priori_int64_bound": 2945666001862656,
+        "accumulated_abs_contributions": 22157658361152,
+        "contributions": 15150928,
+        "distinct_collected_coordinates": 30952,
+        "first_residual": 0,
+        "first_residual_key": 0,
+        "first_word_control_nonzero_coordinates": 2052,
+        "formal_terms": 2460,
+        "maximum_abs_residual": 0,
+        "nonzero_coordinates": 0,
+        "numerator_abs_sum": 977175600
+      },
+      "000000000000030405050714": {
+        "a_priori_int64_bound": 2235097026920448,
+        "accumulated_abs_contributions": 16508463566400,
+        "contributions": 12942416,
+        "distinct_collected_coordinates": 30912,
+        "first_residual": 0,
+        "first_residual_key": 0,
+        "first_word_control_nonzero_coordinates": 2846,
+        "formal_terms": 2180,
+        "maximum_abs_residual": 0,
+        "nonzero_coordinates": 0,
+        "numerator_abs_sum": 748529472
+      },
+      "000000000000040505050710": {
+        "a_priori_int64_bound": 982425332219904,
+        "accumulated_abs_contributions": 4416715694016,
+        "contributions": 2688576,
+        "distinct_collected_coordinates": 9268,
+        "first_residual": 0,
+        "first_residual_key": 0,
+        "first_word_control_nonzero_coordinates": 1648,
+        "formal_terms": 720,
+        "maximum_abs_residual": 0,
+        "nonzero_coordinates": 0,
+        "numerator_abs_sum": 329012256
+      }
+    }
+  },
+  "log": ""
+}

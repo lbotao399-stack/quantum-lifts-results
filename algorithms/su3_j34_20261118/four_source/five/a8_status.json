@@ -1,0 +1,33 @@
+{
+  "time": "2026-11-20T02:39:10.394996+08:00",
+  "accounting": "5662886|n434five20|COMPLETED|2026-11-20T02:36:40|2026-11-20T02:38:50|130|32|0:0",
+  "log": "gcc-13.2.0 loaded successful\nside frames and kernel checked f8a655b7c439f350cf522c4d1d0b24aad0846776f662643b508f8395c826e3f5\nside_fit 7312 7312 coefficients None\nfresh10_only 7394 7395 separator 713854\nall_five 7394 7395 separator 91100\n",
+  "files": {
+    "independent_rhs.npy": 3328,
+    "all_five.npy": 32576,
+    "side.npy": 9504896,
+    "independent10.npy": 24371328,
+    "fresh10_only.npy": 31328,
+    "result.json": 34097,
+    "side_fit.npy": 30592,
+    "schur_rhs.npy": 4576,
+    "schur.npy": 2740096
+  },
+  "ranks": {
+    "five_profiles": [
+      7312,
+      7312,
+      "coefficients"
+    ],
+    "fresh10_only": [
+      7394,
+      7395,
+      "separator"
+    ],
+    "all_five": [
+      7394,
+      7395,
+      "separator"
+    ]
+  }
+}

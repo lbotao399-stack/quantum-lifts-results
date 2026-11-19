@@ -1,0 +1,19 @@
+{
+  "modulus": 1000003,
+  "side_fit_verified_equations": 7312,
+  "side_fit_holdout_nonzero": 800,
+  "first_holdout": [
+    0,
+    867918,
+    153625,
+    714293
+  ],
+  "original_recipe_rows_annihilated_per_separator": [
+    7616,
+    7616
+  ],
+  "fresh_only_pairing": 713854,
+  "all_five_pairing": 91100,
+  "side_sha256": "f8a655b7c439f350cf522c4d1d0b24aad0846776f662643b508f8395c826e3f5",
+  "fresh_sha256": "f542989ff8522a457188e3f506aee91850dd026f69f4c9b1a502a7fb6c56547c"
+}
