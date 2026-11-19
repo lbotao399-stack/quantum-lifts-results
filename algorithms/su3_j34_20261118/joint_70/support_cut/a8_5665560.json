@@ -1,0 +1,137 @@
+{
+  "job": "5665560",
+  "sacct": "5665560|n434cut20|COMPLETED|182|32|0:0",
+  "receipt": {
+    "checks": {
+      "all_nonincident": {
+        "exact_zero": 14
+      },
+      "preserve_296": {
+        "exact_zero": 14
+      }
+    },
+    "files": {
+      "all_nonincident.audit.json": [
+        3227,
+        "802acc498db5aa365ae5c741b48cec11b8861fe406341f335bebac3e64083074"
+      ],
+      "all_nonincident.certificate.json.gz": [
+        841995,
+        "e3fa60bd9fd7e749128323d59081cbb1a10ef67fb074e1cbc8bc9ffea3938058"
+      ],
+      "all_nonincident.progress.json": [
+        508,
+        "3cf65e5ab777a731080dfb5c8caeab087fab26e51a17eb1ddfae79c7e0ec39d5"
+      ],
+      "all_nonincident.vector.json.gz": [
+        1465646,
+        "9e1ee39e88d79352eefbedb8030d6a76a05d19d1d0355ba52d51594b0f8e90e6"
+      ],
+      "preserve_296.audit.json": [
+        3245,
+        "a0135be967ef2467a17f81a4c121cda7c737b03b33e0f2a90d2516dc432a764a"
+      ],
+      "preserve_296.certificate.json.gz": [
+        269494,
+        "5575115c30f8266c796718ad3c79e76831bf044ba2c46d601fee5053205b7f87"
+      ],
+      "preserve_296.progress.json": [
+        508,
+        "fd99b8c26908570f9f6ae5d4f0b26ab16b75bbe1a261d117d10cd5c92f5c2d5f"
+      ],
+      "preserve_296.vector.json.gz": [
+        364434,
+        "a067389dde0489fb086771b397a50a8a210119432dd0ded40a60e53345e64108"
+      ],
+      "results.json": [
+        1536,
+        "a0b9191eda611137cc056d52e570e0cd9e580339bd5934d5ec4e6a00ff8f8442"
+      ],
+      "setup.json": [
+        1489,
+        "9ba4e9dde3d51b232cee7157e9eb27201d6b93f29b42078ce5efd687460ebc1d"
+      ]
+    },
+    "frame_job": "5664529",
+    "inputs": {
+      "a8_5664529.json": "436d2acf8b5659be6d4eb364d59b697430d13a605e7151d1b3b9c0906c70e7ae",
+      "census_2724.json": "88d88516fd8443e5bb04710c7caa0fb73aaa4e4c9d144dd2c4fb1179a2996377",
+      "negative_Q1.jsonl.gz": "44b8fe0ca30b7c1a226a7c279b4c570557883564e2f45518678e157945ca4540",
+      "vector_shared.json.gz": "bff751a9f4659b1162fce4180f35e6bd56a355d63689cfc98b18660fbc6d471f"
+    },
+    "job": "5665560",
+    "results": {
+      "all_nonincident": {
+        "augmented_rank_mod_prime": 4706,
+        "denominator": "2",
+        "digits": 256,
+        "image_rank_mod_prime": 4706,
+        "kind": "exact_solution",
+        "minor_determinant_mod_prime": 980863,
+        "prime": 1000003,
+        "source_contents": [
+          "0000000000000105051d",
+          "00000000000001050d15",
+          "0000000000000204051d",
+          "00000000000002040d15",
+          "0000000000000205051c",
+          "00000000000002050c15",
+          "00000000000002050d14",
+          "0000000000000405051a",
+          "00000000000004050a15",
+          "00000000000004050d12",
+          "00000000000005050519",
+          "00000000000005050915",
+          "00000000000005050a14",
+          "00000000000005050c12",
+          "00000000000005050d11",
+          "00000000000102050715",
+          "00000000000102050d0f",
+          "00000000000105050518",
+          "00000000000105050815",
+          "00000000000105050a0f",
+          "00000000000202040715",
+          "00000000000202040d0f",
+          "00000000000202050c0f",
+          "00000000000204050815",
+          "00000000000204050a0f",
+          "0000000000020505090f",
+          "00000000000205050c10",
+          "00000000000405050812",
+          "00000000000405050a10",
+          "00000000000505050910",
+          "00000000010205050710",
+          "00000000010505050810"
+        ],
+        "source_words": 9291,
+        "target_coordinates": 5475,
+        "vector_words": 7623
+      },
+      "preserve_296": {
+        "augmented_rank_mod_prime": 3393,
+        "denominator": "2",
+        "digits": 256,
+        "image_rank_mod_prime": 3393,
+        "kind": "exact_solution",
+        "minor_determinant_mod_prime": 410350,
+        "prime": 1000003,
+        "source_contents": [
+          "00000000000102050715",
+          "00000000000102050d0f",
+          "00000000000105050815",
+          "00000000000105050a0f",
+          "00000000000202050c0f",
+          "0000000000020505090f",
+          "00000000000205050c10",
+          "00000000000405050812",
+          "00000000000405050a10",
+          "00000000000505050910",
+          "00000000010205050710"
+        ],
+        "source_words": 5103,
+        "target_coordinates": 5475,
+        "vector_words": 7337
+      }
+    }
+  }
+}

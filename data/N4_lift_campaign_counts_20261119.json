@@ -146,6 +146,63 @@
         "algorithms/su3_j34_20261118/joint_70/centralizer_sweep.json.gz"
       ],
       "scope": "Separators exclude the indicated restricted source spaces only. Zero samples do not prove image membership."
+    },
+    {
+      "phase": "SU(3) level-34 exact homogeneous repairs and inhomogeneous comparison",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_jobs": [
+        "5665405",
+        "5665560"
+      ],
+      "ordered_variants": [
+        "original",
+        "preserve_296",
+        "all_nonincident"
+      ],
+      "words": [
+        2724,
+        7337,
+        7623
+      ],
+      "selected_passes_of_70": [
+        70,
+        70,
+        27
+      ],
+      "all_passes_of_500": [
+        308,
+        313,
+        260
+      ],
+      "formally_inhomogeneous_passes_of_174": [
+        11,
+        11,
+        6
+      ],
+      "homogeneous_passes_of_326": [
+        297,
+        302,
+        254
+      ],
+      "exact_nonzero_coefficients_after_sampled_zero": [
+        37840,
+        17008
+      ],
+      "evidence": [
+        "algorithms/su3_j34_20261118/joint_70/shared_witness/a8_5665405.json",
+        "algorithms/su3_j34_20261118/joint_70/shared_witness/independent.json",
+        "algorithms/su3_j34_20261118/joint_70/support_cut/a8_5665560.json",
+        "algorithms/su3_j34_20261118/joint_70/support_cut/rhs_comparison.json",
+        "algorithms/su3_j34_20261118/joint_70/support_cut/preserve_296.census.json",
+        "algorithms/su3_j34_20261118/joint_70/support_cut/all_nonincident.census.json"
+      ],
+      "scope": "The five additional successes of the confined vector are homogeneous; 187 equations still fail. No full first correction or new obstruction."
     }
   ]
 }

@@ -181,3 +181,21 @@ The three cost-two evaluations reduce to 203080, 249773, 998230 modulo 1000003. 
 ```sh
 python3 replay_centralizer_sweep.py --out /tmp/j34-centralizer-rational.json
 ```
+
+## Corrections on homogeneous and inhomogeneous contents
+
+Two sampled exterior coefficients used in A8 job `5665405` are exactly zero on the updated vector of 2,728 trace words. The five affected, previously solved contents remain polynomial identities. Full expansion of the two proposed repairs still has **37,840** and **17,008** nonzero monomials, respectively. [Coefficients and independent replay](joint_70/shared_witness/independent.json) · [A8 receipt](joint_70/shared_witness/a8_5665405.json) · [Verifier](replay_shared_success.py).
+
+A8 job `5665560` removed every parent of those two homogeneous equations, then solved the twelve selected equations using either 11 or 32 parent contents. Re-expanding the charged trace words verifies the 72 selected and held-out polynomials; the full 500-content classification combines exact identities, support, and nonzero evaluations. A content is *inhomogeneous* here if its right-hand side has a nonzero formal trace coefficient before imposing three-colour identities.
+
+| Correction | Trace words | Passed of selected 70 | Passed of 500 | Inhomogeneous passed of 174 | Homogeneous passed of 326 | Gained / lost versus original |
+|---|---:|---:|---:|---:|---:|---:|
+| Original | 2,724 | 70 | 308 | 11 | 297 | 0 / 0 |
+| 11 allowed parent contents | 7,337 | 70 | 313 | 11 | 302 | 5 / 0 |
+| 32 allowed parent contents | 7,623 | 27 | 260 | 6 | 254 | 5 / 53 |
+
+All five gains on each vector are homogeneous. The 7,337-word vector preserves all 308 original successes. No fixed vector has an unclassified content. A complete first correction for this source is still missing.
+
+[A8 receipt and hashes](joint_70/support_cut/a8_5665560.json) · [Support cut](cut_homogeneous_parents.py) · [Verifier](replay_support_cut.py) · [RHS counts and comparisons](joint_70/support_cut/rhs_comparison.json) · [Confined census](joint_70/support_cut/preserve_296.census.json) · [Expanded census](joint_70/support_cut/all_nonincident.census.json).
+
+With a three-colour column executable built from `colour_columns.cpp` (including `colour_polynomial.cpp`) and a seven-generator executable built from `exterior_content_probe.cpp`, run `replay_support_cut.py VARIANT --columns /absolute/path/to/columns --exterior /absolute/path/to/exterior --work /tmp/variant-work --out /tmp/variant-results` for `preserve_296` and `all_nonincident`. For the preceding calculation run `replay_shared_success.py --exe /absolute/path/to/columns --work /tmp/shared-work --out /tmp/shared.json`.
