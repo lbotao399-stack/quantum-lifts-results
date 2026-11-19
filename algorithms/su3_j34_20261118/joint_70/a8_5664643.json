@@ -1,0 +1,16 @@
+{
+  "job": "5664643",
+  "precision": [
+    {
+      "carry_bound": 1060,
+      "digits": 4096,
+      "verified": false
+    }
+  ],
+  "receipt": {
+    "job": "5664643",
+    "predecessor": "5664529",
+    "status": "precision exhausted; no conclusion"
+  },
+  "sacct": "5664643|n434exact20|COMPLETED|124|32|0:0"
+}

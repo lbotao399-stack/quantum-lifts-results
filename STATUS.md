@@ -1,5 +1,17 @@
 # Running computations: daily status
 
+## SU(3) level 34: all 500 first-correction equations, November 19, 2026
+
+A single 2,724-word rational correction passes 70/70 selected equations and 308/500 overall. All 192 failures have three-colour witnesses. Two other corrections pass 314/500 and 315/500, with fewer selected equations satisfied. Two exact commuting-matrix evaluations rule out repairing either of two failed equations using only parents whose splits avoid all 308 successes. No unrestricted obstruction follows. [Algorithms, A8 receipts and replay](algorithms/su3_j34_20261118/README.md#joint-correction-and-census-of-all-500-contents).
+
+New $d_1$ pairings: **0** (total **6**). New fortuitous-generator families: **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts: **0, 0, 0**.
+
+## SU(3) level 34: exact first equation in 67 contents, November 19, 2026
+
+One 978-word rational correction solves 67 of the 500 length-eleven contents simultaneously; all 12,640 collected three-colour polynomial coefficients vanish. It fails on 7,570 coefficients in the next content. A different 716-word correction solves three contents and fails a high-content holdout. A8 jobs `5663792` and `5663642` reproduced the respective coefficients. [Vectors, integer checks and restricted ranks](algorithms/su3_j34_20261118/README.md#one-rational-correction-on-67-complete-letter-contents).
+
+New $d_1$ pairings: **0** (total **6**). New fortuitous-generator families: **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts: **0, 0, 0**.
+
 ## SU(3) level 34: three-colour identities, November 19, 2026
 
 The 733 formal obstructions to the first correction disappear on their joint 3,073-coordinate projection: one 464-word rational correction and 733 three-colour identities give zero projected residual. The same decomposition leaves 530,744 unrestricted formal residual terms. A8 independently gives zero physical outgoing coefficients on six complete letter contents (150,388 collected coordinates). The first correction in the full complex remains open. [Data and replay](algorithms/su3_j34_20261118/README.md#three-colour-correction-at-level-34).

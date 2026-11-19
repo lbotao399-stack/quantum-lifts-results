@@ -1,0 +1,222 @@
+{
+  "job": "5664371",
+  "receipt": {
+    "combined": {
+      "enforced": 59,
+      "passed": 63,
+      "replay": "ad9ba33f08cc4960ee6e5f6a3df2854dc8a4f8ed4f623222990470fc8614e6e2",
+      "vector": "1e0465fd915f20a9078dc9bcdba173397048d2be20640469974add13af83ad61",
+      "words": 1676
+    },
+    "frames": {
+      "0000000000000105050715": {
+        "det": 974570,
+        "digest": "747555c61a92b67cf8deca93774dbf4a54a974533e4e7c3310f0313cbb274a77",
+        "dimension": 417
+      },
+      "0000000000000105050d0f": {
+        "det": 974570,
+        "digest": "41ad7e8688610586b0459fc640035c79c67410848b035185fe5b870b5b24be22",
+        "dimension": 417
+      },
+      "0000000000000204050715": {
+        "det": 814137,
+        "digest": "8a67ecacf60df1979f06a3c9c694c1611eadc57ca01d89d68421c4d37e8a90e4",
+        "dimension": 857
+      },
+      "0000000000000204050d0f": {
+        "det": 814137,
+        "digest": "b632a8b3b98bb321438c2f9b41f37c65d15191a9ab47641d377307bdbd85a9d0",
+        "dimension": 857
+      },
+      "0000000000000205050c0f": {
+        "det": 974570,
+        "digest": "c9b8376379769214f94bbc278f8523f93191cf43d6dde04d2bc6b257a8bbea2d",
+        "dimension": 417
+      },
+      "0000000000000405050712": {
+        "det": 974570,
+        "digest": "d9d4f36127fd6b28dc909c88955b85897f85e94647d263455d1f99e3a3ed7adf",
+        "dimension": 417
+      },
+      "0000000000000405050815": {
+        "det": 974570,
+        "digest": "a3b0b52a18d441758fe8264dd61dbb0977b9eecdb2057ea606dd63c251759236",
+        "dimension": 417
+      },
+      "0000000000000405050a0f": {
+        "det": 974570,
+        "digest": "2aa3791d4084495686c3cfad88e56a493580f328658c7aefb3814ad2b5458cbf",
+        "dimension": 417
+      },
+      "0000000000000405050d10": {
+        "det": 974570,
+        "digest": "b11ecd99729c58b1eeae001294ba33dc9c38a89347b37be5deed5310ebed7bcd",
+        "dimension": 417
+      },
+      "000000000000050505090f": {
+        "det": 890713,
+        "digest": "90ab73fff55a5d5201858411454a3375d725e0ebb00078821bfa69cf5b43b57e",
+        "dimension": 133
+      },
+      "0000000000000505050c10": {
+        "det": 890713,
+        "digest": "68244bb40d7eb99fcb519df1b7bcd85a268e6f063bdf58885818634fc1e06e9f",
+        "dimension": 133
+      },
+      "00000000000102050715": {
+        "det": 447139,
+        "digest": "e49d852c220a56008a3f64ec199fa755722da507d34348542770dd3f7facca7e",
+        "dimension": 691
+      },
+      "00000000000102050d0f": {
+        "det": 447139,
+        "digest": "5b8925feb931fe5d88730a3452e0f39e54f2e9e270b82ee310107201e2868be4",
+        "dimension": 691
+      },
+      "00000000000105050815": {
+        "det": 193896,
+        "digest": "1baa38f7544c27312256a4a1cf862ab591aeb3757d60109e63e1492a75426787",
+        "dimension": 319
+      },
+      "00000000000105050a0f": {
+        "det": 193896,
+        "digest": "350911a15d2a93956449160115669e68c67f9d26b9225dc0f52baf13056338b9",
+        "dimension": 319
+      },
+      "00000000000202040715": {
+        "det": 350830,
+        "digest": "778f66c5195425029b91caad65b39cf0d20d2371f1f83f9fdcb4e9d7a1a3f3ef",
+        "dimension": 372
+      },
+      "00000000000202040d0f": {
+        "det": 350830,
+        "digest": "faa9203125871cfd000b1ab126c073c539c9f22b68b6701d43ee7a4125524de0",
+        "dimension": 372
+      },
+      "00000000000202050c0f": {
+        "det": 649173,
+        "digest": "9cafe8be93fb28e01c270f87279a3e921fc70f34fe3fb8efd208c32e321b3e89",
+        "dimension": 372
+      },
+      "00000000000204050712": {
+        "det": 447139,
+        "digest": "7b4377ecc41b0501110304b0b7ea320683499b08fd533d9d9143ba8f4b9275f0",
+        "dimension": 691
+      },
+      "00000000000204050815": {
+        "det": 447139,
+        "digest": "e73272d83b312b1a4823938b30b2c92964a564d7b866fd9f3aa604891bdac7bf",
+        "dimension": 691
+      },
+      "00000000000204050a0f": {
+        "det": 447139,
+        "digest": "e7367a51024bcfdece9982c28e9a6e84b71a21ff6d4726e5df771c7d943d3009",
+        "dimension": 691
+      },
+      "00000000000204050d10": {
+        "det": 447139,
+        "digest": "9bd9e1ec0da8b29e38c173deb79360f7a45356e57411f793d0a901c7900316e9",
+        "dimension": 691
+      },
+      "0000000000020505090f": {
+        "det": 806107,
+        "digest": "b9474997df52fee0619a1f85cebf46b220abb3c16ff39eb2d584372f97afc37e",
+        "dimension": 319
+      },
+      "00000000000205050c10": {
+        "det": 806107,
+        "digest": "aabe69521577d10025dbba39544c4cf896f7fff60669b76715012ca889c98bb0",
+        "dimension": 319
+      },
+      "00000000000405050812": {
+        "det": 806107,
+        "digest": "b1cae55ef465230a4d3897f648a78248995215691380403e3fec209dfa33040d",
+        "dimension": 319
+      },
+      "00000000000405050a10": {
+        "det": 806107,
+        "digest": "64dae021cab7d87fd736261dea9dd2665feedde206260ac467dd84830cc04d8e",
+        "dimension": 319
+      }
+    },
+    "groups": {
+      "0": {
+        "augmented_rank_mod_prime": 1594,
+        "base_even_vector": "1e0465fd915f20a9078dc9bcdba173397048d2be20640469974add13af83ad61",
+        "component": 0,
+        "coordinates": 2108,
+        "parent_dimensions": {
+          "00000000000102050715": 691,
+          "00000000000105050815": 319,
+          "00000000000202040715": 372,
+          "00000000000204050712": 691,
+          "00000000000204050815": 691,
+          "00000000000405050812": 319
+        },
+        "prime": 1000003,
+        "rank_mod_prime": 1593,
+        "rhs_sha": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "scope": "All C-even spaces of the listed contents. Other contents and combinations with nonzero individual side images are not excluded.",
+        "source_columns": 3083,
+        "target_dimensions": {
+          "0000000000000105050715": 417,
+          "0000000000000204050715": 857,
+          "0000000000000405050712": 417,
+          "0000000000000405050815": 417
+        },
+        "trace_words": 18135
+      },
+      "2": {
+        "augmented_rank_mod_prime": 1594,
+        "base_even_vector": "1e0465fd915f20a9078dc9bcdba173397048d2be20640469974add13af83ad61",
+        "component": 2,
+        "coordinates": 2108,
+        "parent_dimensions": {
+          "00000000000102050d0f": 691,
+          "00000000000105050a0f": 319,
+          "00000000000202040d0f": 372,
+          "00000000000204050a0f": 691,
+          "00000000000204050d10": 691,
+          "00000000000405050a10": 319
+        },
+        "prime": 1000003,
+        "rank_mod_prime": 1593,
+        "rhs_sha": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "scope": "All C-even spaces of the listed contents. Other contents and combinations with nonzero individual side images are not excluded.",
+        "source_columns": 3083,
+        "target_dimensions": {
+          "0000000000000105050d0f": 417,
+          "0000000000000204050d0f": 857,
+          "0000000000000405050a0f": 417,
+          "0000000000000405050d10": 417
+        },
+        "trace_words": 18111
+      },
+      "5": {
+        "augmented_rank_mod_prime": 532,
+        "base_even_vector": "1e0465fd915f20a9078dc9bcdba173397048d2be20640469974add13af83ad61",
+        "component": 5,
+        "coordinates": 683,
+        "parent_dimensions": {
+          "00000000000202050c0f": 372,
+          "0000000000020505090f": 319,
+          "00000000000205050c10": 319
+        },
+        "prime": 1000003,
+        "rank_mod_prime": 531,
+        "rhs_sha": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "scope": "All C-even spaces of the listed contents. Other contents and combinations with nonzero individual side images are not excluded.",
+        "source_columns": 1010,
+        "target_dimensions": {
+          "0000000000000205050c0f": 417,
+          "000000000000050505090f": 133,
+          "0000000000000505050c10": 133
+        },
+        "trace_words": 5882
+      }
+    },
+    "job": "5664371"
+  },
+  "sacct": "5664371|n434side20|COMPLETED|38|24|0:0"
+}

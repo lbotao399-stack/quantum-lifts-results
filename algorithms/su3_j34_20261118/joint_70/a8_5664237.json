@@ -1,0 +1,187 @@
+{
+  "job": "5664237",
+  "receipt": {
+    "middle_witness": "48516d7087af949e72b50caf339c61a14686be071ed32f3587c2342d4417a01c",
+    "parent_frames": {
+      "00000000000105050712": {
+        "content": "00000000000105050712",
+        "determinant": 719841,
+        "formal_words": 6550,
+        "frame_digest": "490ea076f9dd1189fdf5a64065da0332ee66cc5a891b265a79f34bb848ece83c",
+        "rank": 647,
+        "tested": 1294
+      },
+      "00000000000105050d10": {
+        "content": "00000000000105050d10",
+        "determinant": 165602,
+        "formal_words": 6550,
+        "frame_digest": "69cf5c264b6d85f5aae4b2ea7a12adaca79526550b16307dd9aab28b23acb634",
+        "rank": 647,
+        "tested": 1294
+      }
+    },
+    "scopes": {
+      "both": {
+        "recipe_digest": "536a02de3c0c3622b0b26758b44d20615e6960e9bdc83b881a66bbc61529d866",
+        "restricted_gap": {
+          "coordinates": 40372,
+          "samples": [
+            {
+              "augmented_rank": 931,
+              "rank": 931,
+              "width": 1200
+            },
+            {
+              "augmented_rank": 1222,
+              "rank": 1222,
+              "width": 1607
+            },
+            {
+              "augmented_rank": 1493,
+              "rank": 1493,
+              "width": 2015
+            },
+            {
+              "augmented_rank": 1738,
+              "rank": 1738,
+              "width": 2422
+            },
+            {
+              "augmented_rank": 1856,
+              "rank": 1855,
+              "width": 2829
+            }
+          ],
+          "scope": "Only the selected parents at the indicated prime.",
+          "source_words": 2994
+        },
+        "selection": {
+          "contents": [
+            "0000000000000105050715",
+            "0000000000000105050d0f",
+            "0000000000000405050712",
+            "0000000000000405050d10",
+            "0000000000010505050710"
+          ],
+          "full_three_colour_parent_dimensions": {
+            "00000000000105050712": 647,
+            "00000000000105050d10": 647
+          },
+          "fully_enumerated_formal_words": {},
+          "groups": [
+            "00000000000105050712",
+            "00000000000105050d10"
+          ],
+          "selected": 2994,
+          "selected_by_content": {
+            "00000000000102050715": 152,
+            "00000000000102050d0f": 152,
+            "00000000000105050712": 647,
+            "00000000000105050815": 86,
+            "00000000000105050a0f": 86,
+            "00000000000105050d10": 645,
+            "00000000010205050710": 1226
+          },
+          "trace_words": 8175
+        }
+      },
+      "left": {
+        "recipe_digest": "4dd2e751ed89404f1643a1868ac444c5ee2d8ee754a109d624fcee4f70c10c08",
+        "restricted_gap": {
+          "coordinates": 25904,
+          "samples": [
+            {
+              "augmented_rank": 963,
+              "rank": 963,
+              "width": 1200
+            },
+            {
+              "augmented_rank": 1182,
+              "rank": 1182,
+              "width": 1608
+            },
+            {
+              "augmented_rank": 1264,
+              "rank": 1263,
+              "width": 2016
+            }
+          ],
+          "scope": "Only the selected parents at the indicated prime.",
+          "source_words": 2117
+        },
+        "selection": {
+          "contents": [
+            "0000000000000105050715",
+            "0000000000000405050712",
+            "0000000000010505050710"
+          ],
+          "full_three_colour_parent_dimensions": {
+            "00000000000105050712": 647
+          },
+          "fully_enumerated_formal_words": {},
+          "groups": [
+            "00000000000105050712"
+          ],
+          "selected": 2117,
+          "selected_by_content": {
+            "00000000000102050715": 152,
+            "00000000000105050712": 647,
+            "00000000000105050815": 86,
+            "00000000000105050d10": 6,
+            "00000000010205050710": 1226
+          },
+          "trace_words": 4787
+        }
+      },
+      "right": {
+        "recipe_digest": "b4dd33c45d44d75322db9345dc68f8703ef7c0d2aa829cd6dbd93a3edd867606",
+        "restricted_gap": {
+          "coordinates": 25904,
+          "samples": [
+            {
+              "augmented_rank": 963,
+              "rank": 963,
+              "width": 1200
+            },
+            {
+              "augmented_rank": 1178,
+              "rank": 1178,
+              "width": 1608
+            },
+            {
+              "augmented_rank": 1263,
+              "rank": 1262,
+              "width": 2016
+            }
+          ],
+          "scope": "Only the selected parents at the indicated prime.",
+          "source_words": 2115
+        },
+        "selection": {
+          "contents": [
+            "0000000000000105050d0f",
+            "0000000000000405050d10",
+            "0000000000010505050710"
+          ],
+          "full_three_colour_parent_dimensions": {
+            "00000000000105050d10": 647
+          },
+          "fully_enumerated_formal_words": {},
+          "groups": [
+            "00000000000105050d10"
+          ],
+          "selected": 2115,
+          "selected_by_content": {
+            "00000000000102050d0f": 152,
+            "00000000000105050712": 6,
+            "00000000000105050a0f": 86,
+            "00000000000105050d10": 645,
+            "00000000010205050710": 1226
+          },
+          "trace_words": 4780
+        }
+      }
+    }
+  },
+  "sacct": "5664237|n434pf20|COMPLETED|84|24|0:0"
+}

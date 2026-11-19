@@ -1,0 +1,54 @@
+{
+  "job": "5663642",
+  "sacct": "5663642|n434tr2a20|COMPLETED|15|8|0:0",
+  "receipt": {
+    "job": "5663642",
+    "type": "exact",
+    "result": {
+      "contents": [
+        "0000000000010405050618",
+        "0000000000010505050710",
+        "0000000001040505060810"
+      ],
+      "monomial_key_order_sha256": "2b98ca46ddd85cdfde3730ff9ef85d9472d7321fc7588dbc9295ab6d026de41d",
+      "nonzero_polynomial_residual": 0,
+      "recipe_sha256": "6859b60681bcfeda485b4f7c775c36692ae18825d8bb4b84a9e49f6367f06c2d",
+      "rhs_nonzero_coordinates": 4868,
+      "rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+      "sample_ranks": [
+        {
+          "augmented_rank": 479,
+          "rank": 479,
+          "width": 512
+        },
+        {
+          "augmented_rank": 700,
+          "rank": 700,
+          "width": 783
+        },
+        {
+          "augmented_rank": 727,
+          "rank": 727,
+          "width": 1055
+        }
+      ],
+      "scope": "Three specified complete contents only; both side components of these parents are formally zero.",
+      "selected_minor_determinant": 738584,
+      "selected_minor_modulus": 1000003,
+      "source_words": 1714,
+      "trace_words": 1432,
+      "verified_polynomial_coordinates": 9396,
+      "solution_terms": 716
+    },
+    "bytes": 19184,
+    "sha256": "a25e7a35daad95415c65b7168b6e5a2a5b6ccd40b9d35939990c4c55c50d136f"
+  },
+  "canonical_digests": {
+    "job": "5663642",
+    "recipe_json": "292237cb7d69fdb406a28aa479138808379e157a7475da35aa6580765019f01e",
+    "coefficients_json": "44f41abbd0480cc0490413061f6af2e13dd1cc87de164214e57f1fb5f0403480",
+    "monomial_keys": "2b98ca46ddd85cdfde3730ff9ef85d9472d7321fc7588dbc9295ab6d026de41d",
+    "sparse_minor": "afa37a5a7de553394dc32c290af4c1c1cbcef231360b5a4eccadf4d85fce2067"
+  },
+  "scope": "Separate A8 rebuild and exact solve using the same algorithm. Canonical recipe, all 716 ordered coefficients, monomial keys and pivot minor match local records."
+}

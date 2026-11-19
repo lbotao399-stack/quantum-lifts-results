@@ -1,0 +1,68 @@
+{
+  "aggregation_failure": "gzip.BadGzipFile: Not a gzipped file (b'{\"') while reading plain preparation.json; aggregation and full holdout replay completed locally.",
+  "components": {
+    "component-00": {
+      "coordinates": 19872,
+      "samples": [
+        {
+          "augmented_rank": 765,
+          "rank": 764,
+          "width": 896
+        }
+      ],
+      "scope": "Only the selected parents at the indicated prime.",
+      "source_words": 1218
+    },
+    "component-01": null,
+    "component-02": {
+      "coordinates": 19830,
+      "samples": [
+        {
+          "augmented_rank": 753,
+          "rank": 752,
+          "width": 896
+        }
+      ],
+      "scope": "Only the selected parents at the indicated prime.",
+      "source_words": 1184
+    },
+    "component-03": null,
+    "component-04": {
+      "contents": [
+        "0000000000000205050714",
+        "0000000000000505050711",
+        "0000000000000505050814"
+      ],
+      "determinant_mod_1000003": 633180,
+      "nonzero": 0,
+      "recipe": "05d06ed7127038c61c79f8b86f8aee794b1a6b51c3a691a786f7023189d6aa63",
+      "samples": [
+        {
+          "augmented_rank": 350,
+          "rank": 350,
+          "width": 896
+        }
+      ],
+      "source_words": 594,
+      "trace_words": 684,
+      "used": 313,
+      "vector": "8cdf6fcea2c44af4c1d3450ff8c3b2d3ab28f504731db12f421c77d0b5655e2c",
+      "verified_coordinates": 6320
+    },
+    "component-05": {
+      "coordinates": 6524,
+      "samples": [
+        {
+          "augmented_rank": 356,
+          "rank": 355,
+          "width": 896
+        }
+      ],
+      "scope": "Only the selected parents at the indicated prime.",
+      "source_words": 606
+    }
+  },
+  "job": "5663950",
+  "recovered_component_04_digest": "8cdf6fcea2c44af4c1d3450ff8c3b2d3ab28f504731db12f421c77d0b5655e2c",
+  "sacct": "5663950|n434ext20|FAILED|11|24|1:0"
+}

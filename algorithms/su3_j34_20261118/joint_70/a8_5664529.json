@@ -1,0 +1,390 @@
+{
+  "job": "5664529",
+  "receipt": {
+    "frames": {
+      "0000000000000105050715": {
+        "det": 974570,
+        "digest": "747555c61a92b67cf8deca93774dbf4a54a974533e4e7c3310f0313cbb274a77",
+        "dim": 417,
+        "previous": true
+      },
+      "0000000000000105050d0f": {
+        "det": 974570,
+        "digest": "41ad7e8688610586b0459fc640035c79c67410848b035185fe5b870b5b24be22",
+        "dim": 417,
+        "previous": true
+      },
+      "0000000000000105051d": {
+        "det": 344673,
+        "digest": "089036241f0755fd9daf44b47d130c7da62ebf80e4983703fc536406165db836",
+        "dim": 67,
+        "previous": false
+      },
+      "00000000000001050d15": {
+        "det": 987854,
+        "digest": "3e4eadff5a9743f87b5de4d297e268f26ec63b1d9dcc04310a83dd169040e5e5",
+        "dim": 156,
+        "previous": false
+      },
+      "0000000000000204050715": {
+        "det": 814137,
+        "digest": "8a67ecacf60df1979f06a3c9c694c1611eadc57ca01d89d68421c4d37e8a90e4",
+        "dim": 857,
+        "previous": true
+      },
+      "0000000000000204050d0f": {
+        "det": 814137,
+        "digest": "b632a8b3b98bb321438c2f9b41f37c65d15191a9ab47641d377307bdbd85a9d0",
+        "dim": 857,
+        "previous": true
+      },
+      "0000000000000204051d": {
+        "det": 12149,
+        "digest": "5c2fdd12cd3584095d09250e77e52321e1f49b1b251a5ba6335df87ea767ec75",
+        "dim": 156,
+        "previous": false
+      },
+      "00000000000002040d15": {
+        "det": 12149,
+        "digest": "5edd0cc6d6f8ad167cadc48634090c9698b7625c34e9ec25f333419f5b7a529e",
+        "dim": 156,
+        "previous": false
+      },
+      "0000000000000205050c0f": {
+        "det": 974570,
+        "digest": "c9b8376379769214f94bbc278f8523f93191cf43d6dde04d2bc6b257a8bbea2d",
+        "dim": 417,
+        "previous": true
+      },
+      "0000000000000205051c": {
+        "det": 344673,
+        "digest": "dd3c52d154ce5a76d3ae80005e96093a84fde5ff2ea8e0446683607ba23dc7f1",
+        "dim": 67,
+        "previous": false
+      },
+      "00000000000002050c15": {
+        "det": 987854,
+        "digest": "f654ed7931c7ba4b33ac04bd232e7a9e30220527d22798404d66a085755b0b32",
+        "dim": 156,
+        "previous": false
+      },
+      "00000000000002050d14": {
+        "det": 987854,
+        "digest": "60b960dfdee528ae6920dc3ec44d6847beb4789063418d25e70daa0aeb1a4da9",
+        "dim": 156,
+        "previous": false
+      },
+      "0000000000000405050712": {
+        "det": 974570,
+        "digest": "d9d4f36127fd6b28dc909c88955b85897f85e94647d263455d1f99e3a3ed7adf",
+        "dim": 417,
+        "previous": true
+      },
+      "0000000000000405050815": {
+        "det": 974570,
+        "digest": "a3b0b52a18d441758fe8264dd61dbb0977b9eecdb2057ea606dd63c251759236",
+        "dim": 417,
+        "previous": true
+      },
+      "0000000000000405050a0f": {
+        "det": 974570,
+        "digest": "2aa3791d4084495686c3cfad88e56a493580f328658c7aefb3814ad2b5458cbf",
+        "dim": 417,
+        "previous": true
+      },
+      "0000000000000405050d10": {
+        "det": 974570,
+        "digest": "b11ecd99729c58b1eeae001294ba33dc9c38a89347b37be5deed5310ebed7bcd",
+        "dim": 417,
+        "previous": true
+      },
+      "0000000000000405051a": {
+        "det": 344673,
+        "digest": "88b90b5f78d6508b0ade4aaa3a513eaffd3d1bcc0ed34878ff58a6da84df6713",
+        "dim": 67,
+        "previous": false
+      },
+      "00000000000004050a15": {
+        "det": 987854,
+        "digest": "3b4493dd69ca6ba2ea764f2776116dfb441e799ba9ccc94b878a46d5f6428314",
+        "dim": 156,
+        "previous": false
+      },
+      "00000000000004050d12": {
+        "det": 987854,
+        "digest": "fea47bcc6b6acf8ce78e6b038bdaeeb2c8259e9525acc2bf8bb8fb1bb9874464",
+        "dim": 156,
+        "previous": false
+      },
+      "000000000000050505090f": {
+        "det": 890713,
+        "digest": "90ab73fff55a5d5201858411454a3375d725e0ebb00078821bfa69cf5b43b57e",
+        "dim": 133,
+        "previous": true
+      },
+      "0000000000000505050c10": {
+        "det": 890713,
+        "digest": "68244bb40d7eb99fcb519df1b7bcd85a268e6f063bdf58885818634fc1e06e9f",
+        "dim": 133,
+        "previous": true
+      },
+      "00000000000005050519": {
+        "det": 504006,
+        "digest": "eb5c844cbd0754084ff6d5be2cf7fa24ad815af9f9af3f765696b431e118431e",
+        "dim": 15,
+        "previous": false
+      },
+      "00000000000005050915": {
+        "det": 569132,
+        "digest": "7002ff89e2b30ec2c932ee33ad904f7b0e79584edd5633382eefdc528f7407a8",
+        "dim": 67,
+        "previous": false
+      },
+      "00000000000005050a14": {
+        "det": 569132,
+        "digest": "983605917a2dbbb8219bf137b11043ed52f4255c80fa9b158d7b90f5a2ae6818",
+        "dim": 67,
+        "previous": false
+      },
+      "00000000000005050c12": {
+        "det": 569132,
+        "digest": "4a5d96b413f4f7df24b289fa50183ad9f75f891b12af7fa7957d0c0560aaf7ef",
+        "dim": 67,
+        "previous": false
+      },
+      "00000000000005050d11": {
+        "det": 569132,
+        "digest": "75b492e4aa3e1a826a66dfa2596d3379c4edf2da1e9c68faa76f400aeb9f7d31",
+        "dim": 67,
+        "previous": false
+      },
+      "00000000000102050715": {
+        "det": 447139,
+        "digest": "e49d852c220a56008a3f64ec199fa755722da507d34348542770dd3f7facca7e",
+        "dim": 691,
+        "previous": true
+      },
+      "00000000000102050d0f": {
+        "det": 447139,
+        "digest": "5b8925feb931fe5d88730a3452e0f39e54f2e9e270b82ee310107201e2868be4",
+        "dim": 691,
+        "previous": true
+      },
+      "0000000000010505050710": {
+        "det": 128259,
+        "digest": "710cd7e73637f508bdbd91ba07f5ab8fa0ac22903aee5fe45bc7184586f38ec4",
+        "dim": 576,
+        "previous": false
+      },
+      "00000000000105050518": {
+        "det": 815942,
+        "digest": "78584d847bd97825d12e0ea9069e0f806df554f1b4da99c2b77aa0bc0a606214",
+        "dim": 90,
+        "previous": false
+      },
+      "00000000000105050712": {
+        "det": 806107,
+        "digest": "c5592d6752d62d43789f33583e8ba0f0fa67a9c85b89eed76b580bc5cd03cb99",
+        "dim": 319,
+        "previous": false
+      },
+      "00000000000105050815": {
+        "det": 193896,
+        "digest": "1baa38f7544c27312256a4a1cf862ab591aeb3757d60109e63e1492a75426787",
+        "dim": 319,
+        "previous": true
+      },
+      "00000000000105050a0f": {
+        "det": 193896,
+        "digest": "350911a15d2a93956449160115669e68c67f9d26b9225dc0f52baf13056338b9",
+        "dim": 319,
+        "previous": true
+      },
+      "00000000000105050d10": {
+        "det": 806107,
+        "digest": "3cc65267c8b926f36edafa4160a085d3ee6cb89f45244315a561369dc753e4d6",
+        "dim": 319,
+        "previous": false
+      },
+      "00000000000202040715": {
+        "det": 350830,
+        "digest": "778f66c5195425029b91caad65b39cf0d20d2371f1f83f9fdcb4e9d7a1a3f3ef",
+        "dim": 372,
+        "previous": true
+      },
+      "00000000000202040d0f": {
+        "det": 350830,
+        "digest": "faa9203125871cfd000b1ab126c073c539c9f22b68b6701d43ee7a4125524de0",
+        "dim": 372,
+        "previous": true
+      },
+      "00000000000202050c0f": {
+        "det": 649173,
+        "digest": "9cafe8be93fb28e01c270f87279a3e921fc70f34fe3fb8efd208c32e321b3e89",
+        "dim": 372,
+        "previous": true
+      },
+      "00000000000204050712": {
+        "det": 447139,
+        "digest": "7b4377ecc41b0501110304b0b7ea320683499b08fd533d9d9143ba8f4b9275f0",
+        "dim": 691,
+        "previous": true
+      },
+      "00000000000204050815": {
+        "det": 447139,
+        "digest": "e73272d83b312b1a4823938b30b2c92964a564d7b866fd9f3aa604891bdac7bf",
+        "dim": 691,
+        "previous": true
+      },
+      "00000000000204050a0f": {
+        "det": 447139,
+        "digest": "e7367a51024bcfdece9982c28e9a6e84b71a21ff6d4726e5df771c7d943d3009",
+        "dim": 691,
+        "previous": true
+      },
+      "00000000000204050d10": {
+        "det": 447139,
+        "digest": "9bd9e1ec0da8b29e38c173deb79360f7a45356e57411f793d0a901c7900316e9",
+        "dim": 691,
+        "previous": true
+      },
+      "0000000000020505090f": {
+        "det": 806107,
+        "digest": "b9474997df52fee0619a1f85cebf46b220abb3c16ff39eb2d584372f97afc37e",
+        "dim": 319,
+        "previous": true
+      },
+      "00000000000205050c10": {
+        "det": 806107,
+        "digest": "aabe69521577d10025dbba39544c4cf896f7fff60669b76715012ca889c98bb0",
+        "dim": 319,
+        "previous": true
+      },
+      "00000000000405050812": {
+        "det": 806107,
+        "digest": "b1cae55ef465230a4d3897f648a78248995215691380403e3fec209dfa33040d",
+        "dim": 319,
+        "previous": true
+      },
+      "00000000000405050a10": {
+        "det": 806107,
+        "digest": "64dae021cab7d87fd736261dea9dd2665feedde206260ac467dd84830cc04d8e",
+        "dim": 319,
+        "previous": true
+      },
+      "00000000000505050910": {
+        "det": 689524,
+        "digest": "37c77333b61ed36c2c07a54947e8ae2dc9b9423ecc65b473823439a69e78a3f4",
+        "dim": 90,
+        "previous": false
+      },
+      "00000000010205050710": {
+        "det": 893863,
+        "digest": "c830bbabcaa49a2f095557dff392e74251435f02f99e64cb7af5f1d2a7c36509",
+        "dim": 1345,
+        "previous": false
+      },
+      "00000000010505050810": {
+        "det": 112094,
+        "digest": "c003fed331fe4849ab5b433fb7873cc74b4064d14eb00e49f04425da1ace14aa",
+        "dim": 396,
+        "previous": false
+      }
+    },
+    "graph": "940ee740942c69bf3cb18b6c5f32a4d53fd35839fb339fcfae84953270402773",
+    "job": "5664529",
+    "maps": {
+      "0000000000000105050715": {
+        "cols": 417,
+        "entries": 123141,
+        "trace_words": 4538
+      },
+      "0000000000000105050d0f": {
+        "cols": 417,
+        "entries": 122168,
+        "trace_words": 4603
+      },
+      "0000000000000204050715": {
+        "cols": 857,
+        "entries": 311252,
+        "trace_words": 9272
+      },
+      "0000000000000204050d0f": {
+        "cols": 857,
+        "entries": 312497,
+        "trace_words": 9344
+      },
+      "0000000000000205050c0f": {
+        "cols": 417,
+        "entries": 110077,
+        "trace_words": 4754
+      },
+      "0000000000000405050712": {
+        "cols": 417,
+        "entries": 124565,
+        "trace_words": 4513
+      },
+      "0000000000000405050815": {
+        "cols": 417,
+        "entries": 123397,
+        "trace_words": 4469
+      },
+      "0000000000000405050a0f": {
+        "cols": 417,
+        "entries": 122424,
+        "trace_words": 4476
+      },
+      "0000000000000405050d10": {
+        "cols": 417,
+        "entries": 123592,
+        "trace_words": 4513
+      },
+      "000000000000050505090f": {
+        "cols": 133,
+        "entries": 22671,
+        "trace_words": 1529
+      },
+      "0000000000000505050c10": {
+        "cols": 133,
+        "entries": 22646,
+        "trace_words": 1534
+      },
+      "0000000000010505050710": {
+        "cols": 576,
+        "entries": 349776,
+        "trace_words": 8354
+      }
+    },
+    "scopes": {
+      "all": {
+        "base": "0ceaa68e0e46e83bb8558d7e8a0a21e0dea6dfce260c43356dc81b2e5c788b0d",
+        "digit_cap": 48,
+        "exact_status": "no verified rational reconstruction at digit cap",
+        "parent_contents": 36,
+        "parents": 11311,
+        "prime": 1000003,
+        "projected_augmented_rank": 4800,
+        "projected_rank": 4800,
+        "residual_coordinates_mod_prime": 0,
+        "rhs_sha": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "scope": "all",
+        "target_coordinates": 5475
+      },
+      "internal": {
+        "base": "0ceaa68e0e46e83bb8558d7e8a0a21e0dea6dfce260c43356dc81b2e5c788b0d",
+        "digit_cap": 48,
+        "exact_status": "no verified rational reconstruction at digit cap",
+        "parent_contents": 19,
+        "parents": 9249,
+        "prime": 1000003,
+        "projected_augmented_rank": 4308,
+        "projected_rank": 4308,
+        "residual_coordinates_mod_prime": 0,
+        "rhs_sha": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+        "scope": "internal",
+        "target_coordinates": 5475
+      }
+    }
+  },
+  "sacct": "5664529|n434joint20|COMPLETED|232|32|0:0"
+}

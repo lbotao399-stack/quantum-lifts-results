@@ -1,0 +1,44 @@
+{
+  "job": "5664789",
+  "receipt": {
+    "audit_sha": "d97a498cd3097026c187179f95269279fad58b1b0112f132e4530dacc1ee0025",
+    "collected_monomials": 30796,
+    "controls": {
+      "controlled_nonzero_numerators": [
+        2,
+        -1
+      ],
+      "denominator": 7,
+      "mismatch_residue": 1,
+      "rectangular_mismatch_at_digit": 3
+    },
+    "exact": {
+      "base": "0ceaa68e0e46e83bb8558d7e8a0a21e0dea6dfce260c43356dc81b2e5c788b0d",
+      "coefficient_bound_bits": 27164,
+      "delta_words": 1404,
+      "denominator_bits": 563,
+      "determinant_mod_prime": 581837,
+      "digits": 64,
+      "guaranteed_digits": 2726,
+      "integer_residual_coordinates": 0,
+      "last_denominator_trials": 5,
+      "max_numerator_bits": 592,
+      "parents": 9249,
+      "pivot_order": 4308,
+      "pivot_sha256": "e26f8a866fe5349d11a87df3a2e78b0b2228ac13d368357fa3461a595d7a3c9d",
+      "prime": 1000003,
+      "rhs": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+      "status": "exact rectangular solution",
+      "target_coordinates": 5475,
+      "vector_denominator_bits": 564,
+      "vector_sha": "735b8e594357e189c6f72b1c973ffcf49593e873028e5c5dd83bac569c162e1c",
+      "vector_words": 2724
+    },
+    "formal_residual_terms": 4463,
+    "job": "5664789",
+    "predecessor": "5664643",
+    "status": "verified joint 70",
+    "verified_contents": 70
+  },
+  "sacct": "5664789|n434cert20|COMPLETED|81|32|0:0"
+}

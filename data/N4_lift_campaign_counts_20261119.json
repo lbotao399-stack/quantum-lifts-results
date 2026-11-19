@@ -46,6 +46,73 @@
         "algorithms/su3_j34_20261118/finite_colour/three_contents_restricted.json.gz"
       ],
       "scope": "The 733 selected formal functionals do not descend as obstruction certificates. No full primitive or lift is established."
+    },
+    {
+      "phase": "SU(3) level-34 exact scalar-content projections",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "evidence": [
+        "algorithms/su3_j34_20261118/scalar_layers/top_solve.json",
+        "algorithms/su3_j34_20261118/scalar_layers/top_replay.json",
+        "algorithms/su3_j34_20261118/scalar_layers/three_replay.json",
+        "algorithms/su3_j34_20261118/scalar_layers/coupled_gap.json",
+        "algorithms/su3_j34_20261118/scalar_layers/top_a8.json",
+        "algorithms/su3_j34_20261118/scalar_layers/three_a8.json"
+      ],
+      "scope": "Separate exact 67-content and three-content vectors with nonzero cross-holdouts. No full first correction or nonzero differential established."
+    },
+    {
+      "phase": "SU(3) level-34 census and exact commuting-parent exclusions",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "source_words": [
+        1330,
+        1676,
+        2724
+      ],
+      "selected_passes_of_70": [
+        69,
+        63,
+        70
+      ],
+      "all_passes_of_500": [
+        314,
+        315,
+        308
+      ],
+      "unresolved_fixed_vector_contents": [
+        0,
+        0,
+        0
+      ],
+      "a8_jobs": [
+        "5664237",
+        "5664371",
+        "5664529",
+        "5664643",
+        "5664789"
+      ],
+      "evidence": [
+        "algorithms/su3_j34_20261118/joint_70/exact.json",
+        "algorithms/su3_j34_20261118/joint_70/audit.json",
+        "algorithms/su3_j34_20261118/joint_70/census_1330.json",
+        "algorithms/su3_j34_20261118/joint_70/census_1676.json",
+        "algorithms/su3_j34_20261118/joint_70/census_2724.json",
+        "algorithms/su3_j34_20261118/joint_70/affine_1330_1676.json",
+        "algorithms/su3_j34_20261118/joint_70/parent_frontier.json",
+        "algorithms/su3_j34_20261118/joint_70/commuting_pair.json"
+      ],
+      "scope": "Two failed contents require updates outside the 117 parents whose splits avoid the 308 successful contents. Neither an unrestricted first correction nor an obstruction is established."
     }
   ]
 }

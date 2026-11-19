@@ -22,7 +22,9 @@ LETTER = {v: i for i, v in enumerate(ALPH)}
 INPUT = '9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14'
 
 def read(path):
-    with gzip.open(path, 'rb') as stream: return json.load(stream)
+    path = Path(path)
+    with (gzip.open(path, 'rb') if path.suffix == '.gz' else path.open('rb')) as stream:
+        return json.load(stream)
 
 def write(path, data):
     raw = (json.dumps(data, sort_keys=True, separators=(',', ':'))+'\n').encode()

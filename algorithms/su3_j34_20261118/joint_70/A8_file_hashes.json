@@ -1,0 +1,22 @@
+{
+  "exact.json": [
+    702,
+    "b31f243a4ff4eb0ebb5e01c42e3f27348a0c20ac45886538fcc9c1854754f344"
+  ],
+  "vector_shared.json.gz": [
+    153926,
+    "bff751a9f4659b1162fce4180f35e6bd56a355d63689cfc98b18660fbc6d471f"
+  ],
+  "audit.json": [
+    14415,
+    "9bd1b74319551ce29f054a55f520dea3916c9323d6bdda238d852f72210ba3c1"
+  ],
+  "minor_indices.json.gz": [
+    19565,
+    "b8a784ac0ca3d211ed4c24eccad29cb2d2367af025311171ee87c9afc523b52b"
+  ],
+  "rational_pivot_solution.json.gz": [
+    61977,
+    "6a7979409f10bf5b3eb113afc22454e89176b963f86dd5121b18c1576752f495"
+  ]
+}

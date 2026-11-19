@@ -116,3 +116,50 @@ python3 replay_five.py
 ```
 
 To reproduce the six colour polynomials, read the exact contents from the keys of `receipt.meta` and the odd letter codes from `receipt.odd_ids` in `finite_colour/a8_six_contents.json`. Run `python3 colour_outgoing.py --out /tmp/j34-contents --contents CONTENT ...`, compile `colour_polynomial.cpp` with `c++ -O3 -std=c++17`, and invoke the executable with `/tmp/j34-contents/CONTENT.txt ODD_CODES /tmp/CONTENT.json control` for each content.
+
+## One rational correction on 67 complete letter contents
+
+At length 11 the degree `(1,1,7,4,3)` has 500 allowed letter multisets (contents). With at least six copies of the scalar `00`, there are 67. Ten have a nonzero right-hand side, containing 968 of the 517,468 terms of $-Q_1\mathcal O_0$. One 978-word rational $\mathcal O_1$ satisfies $Q_0\mathcal O_1=-Q_1\mathcal O_0$ in all 67 contents. Direct replay reads all input terms, applies the original `Q_multi` to the parent words, and expands each residual at three colours. The 1,178 remaining formal terms give zero on every one of the 12,640 collected monomials. The next content, `0000000000010505050710`, has 7,570 nonzero coefficients for this same correction; its first residual is −257,040. A8 job `5663792` reproduced the ordered coefficients, replay hash, and holdout.
+
+A distinct 716-word rational correction solves three lower contents (806 RHS words). Its 1,247 residual trace words give zero on all 9,396 collected monomials. A8 job `5663642` reproduced the ordered solution, its monomial keys and pivot minor. It fails on 852 coefficients in high content `000000000000050505090f`. The two vectors cannot be combined by addition. Across their union, retaining the top vector and varying only 1,226 middle-only parents gives sampled ranks 576 and 577 before and after adjoining the RHS modulo 1,000,003. Allowing linear combinations of 5,185 parents whose images vanish as formal words on the 69 other contents gives 598 and 599. These tests restrict the source columns and do not decide the differential.
+
+[Top correction](scalar_layers/top_vector.json.gz) · [Six component solves](scalar_layers/top_solve.json) · [Direct replay](scalar_layers/top_replay.json) · [A8 verification](scalar_layers/top_a8.json) · [Three-content correction](scalar_layers/three_solution.json.gz) · [Three-content replay](scalar_layers/three_replay.json) · [A8 job](scalar_layers/three_a8.json) and [coefficient hashes](scalar_layers/three_a8_hashes.json) · [Formal side kernel](scalar_layers/coupled_preparation.json) · [Restricted ranks with fixed](scalar_layers/fixed_gap.json) and [variable](scalar_layers/coupled_gap.json) top coefficients.
+
+The column exporter permits four copies of scalar `00` and seven other letters. It packs seven one-byte entry IDs and a three-bit scalar exponent into an unsigned 64-bit integer; the zero-padded previous keys retain their values. [Independent integer checks](scalar_layers/seven_letter_controls.json) compare the seven-letter polynomials with direct products of traceless matrices and fully antisymmetrized odd factors. These checks include an identical odd trace squared on which the whole polynomial vanishes.
+
+```sh
+cd algorithms/su3_j34_20261118
+c++ -O3 -std=c++17 colour_columns.cpp -o /tmp/j34-columns
+python3 verify_seven_letters.py --exe /tmp/j34-columns --out /tmp/j34-seven.json
+python3 replay_scalar_layers.py --scope top --vector scalar_layers/top_vector.json.gz --exe /tmp/j34-columns --work /tmp/j34-replay --out /tmp/j34-top.json --holdouts 0000000000010505050710
+python3 replay_scalar_layers.py --scope three --vector scalar_layers/three_solution.json.gz --exe /tmp/j34-columns --work /tmp/j34-replay --out /tmp/j34-three.json --holdouts 000000000000050505090f
+```
+
+## Joint correction and census of all 500 contents
+
+Each column below evaluates the same rational correction on every indicated content. A content is an unordered multiset of letters. A pass is exact: either the formal word coefficients vanish or the three-colour polynomial vanishes identically. Each failure has an explicit nonzero exterior coefficient on traceless three-colour matrices modulo 1,000,003; no conclusion is drawn from a zero sample.
+
+| Trace words in the correction | Passes among the 70 selected contents | Passes among all 500 | Failures among all 500 |
+|---:|---:|---:|---:|
+| 1,330 | 69 | 314 | 186 |
+| 1,676 | 63 | 315 | 185 |
+| 2,724 | 70 | 308 | 192 |
+
+For the 978-word correction above, an [integer evaluation](scalar_layers/middle_integer_witness.json) gives RHS minus image $=0-(-2{,}056{,}320)=2{,}056{,}320$. Its vanishing on the restricted parents does not give a first differential. A8 checked the [parent frames](joint_70/a8_5664237.json) and [side equations](joint_70/a8_5664371.json). Adding 19 parent contents gives a $9{,}249$ by $5{,}475$ projected system of rank $4{,}308$ modulo $1{,}000{,}003$ ([job 5664529](joint_70/a8_5664529.json)). An earlier [precision-limited attempt](joint_70/a8_5664643.json), job 5664643, gave no conclusion. The [rectangular solve](joint_70/exact.json) gives zero integer residual on all 5,475 coordinates. Applying the original classical supercharge to the resulting 2,724 words gives 4,463 formal residual words on the 70 contents, with all 30,796 collected monomial coefficients zero. [A8 job 5664789](joint_70/a8_5664789.json) and local replay agree. The other 430 contents are included in the census.
+
+The [affine-line test](joint_70/affine_1330_1676.json) on the first two corrections gives 307 passes for every rational parameter outside the two endpoints. Seven pass only at the first endpoint and eight only at the second. Of the other 178 contents, 143 have an identically constant nonzero residual and 35 admit no rational parameter by nonzero two-by-two minors. For the 2,724-word correction, the [split/merge enumeration](joint_70/parent_frontier.json) verifies 3,985 incidences between 581 parent contents and 500 targets. The 117 parents whose splits touch none of the 308 successes can reach only 166 of the 192 failures by support. Compared to the 1,330-word vector, 283 passes and 137 failures outside the changed parent support remain fixed; one other content is gained and seven lost.
+
+For targets `0000000000010204060c16` and `0000000000010204060e14`, only one of the ten parents in each case belongs to those 117. It splits only as `00 04` minus `04 00` into the corresponding target. Setting `00` and `04` diagonal kills its entire image. The [integer matrix evaluations](joint_70/commuting_pair.json) of the residual $Q_0\mathcal O_1+Q_1\mathcal O_0$ give $-294{,}458{,}726{,}520$ and $+294{,}458{,}726{,}520$, respectively, and give $-19{,}841{,}431{,}680$ and $+19{,}841{,}431{,}680$ on a second assignment. Thus **no combination of the 117 parent contents** can repair either target. Parents touching existing successes can still cancel there. The unrestricted first correction and all higher lifts remain open.
+
+[Three censuses](joint_70/) · [Common-denominator solution](joint_70/vector_shared.json.gz) · [Independent polynomial audit](joint_70/audit.json) · [A8 file hashes](joint_70/A8_file_hashes.json). From this directory, with the Python dependencies in [the runtime](../su3_independent_prime_20261118/requirements.txt):
+
+```sh
+c++ -O3 -std=c++17 colour_columns.cpp -o /tmp/j34-columns
+c++ -O3 -std=c++17 exterior_content_probe.cpp -o /tmp/j34-probe
+python3 verify_joint_receipt.py --directory joint_70 --out-vector /tmp/j34-2724.json.gz --exe /tmp/j34-columns --work /tmp/j34-replay
+python3 full_content_probes.py --vector /tmp/j34-2724.json.gz --audit joint_70/audit.json --exe /tmp/j34-probe --work /tmp/j34-probes --out /tmp/j34-census.json
+python3 affine_correction_line.py --vectors joint_70/base_1330.json.gz joint_70/base_1676.json.gz --certificates joint_70/census_1330.json joint_70/census_1676.json --exe /tmp/j34-probe --work /tmp/j34-affine --out /tmp/j34-line.json
+python3 content_spill.py --graph joint_70/graph.json --probe joint_70/census_1330.json --out /tmp/j34-spill.json
+python3 parent_frontier.py --probe /tmp/j34-census.json --base-probe joint_70/census_1330.json --spill /tmp/j34-spill.json --out /tmp/j34-frontier.json
+python3 commuting_parent_test.py --frontier /tmp/j34-frontier.json --out /tmp/j34-commuting.json
+```
