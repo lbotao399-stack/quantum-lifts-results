@@ -1,0 +1,19 @@
+{
+  "target": 10,
+  "seed": 88307063,
+  "prime": 1000003,
+  "noncommuting_points": 12,
+  "exterior_coordinates_per_point": 10,
+  "width": 120,
+  "rhs_terms": 27780,
+  "residual_nonzero": 120,
+  "first_nonzero": {
+    "index": 0,
+    "value": 595434
+  },
+  "vectors_sha256": "36760a0f3211906983eb8131d4c2d79bd86a8c76be12f887ef117009e54847ee",
+  "residual_sha256": "067a06f7dc4646abb75344916c63320a3b7f5a6e89345439d32d06516f184b36",
+  "rhs_stream_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+  "old_correction_has_no_path": true,
+  "python_exterior_controls": 3
+}

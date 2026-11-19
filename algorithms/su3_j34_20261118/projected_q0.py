@@ -22,7 +22,7 @@ def pattern(row):
     return tuple((tuple(key), count) for key, count in row["profile"])
 
 
-def setup(runtime, plan, targets, sources, prime):
+def setup(runtime, plan, targets, sources, prime, narrow=False):
     global algebra, choices, charge, evaluate, frames, project, random_word, source_rows, target_rows, modulus
     sys.path.insert(0, str(runtime))
     import su_trace_adapter_v1 as algebra
@@ -49,7 +49,8 @@ def setup(runtime, plan, targets, sources, prime):
     for t in target_rows:
         degree = t["fermions"]
         generators = degree+2
-        points = math.ceil((t["dimension"]+8)/math.comb(generators, degree))
+        frame_dimension = min(sum(s["dimension"] for s in source_rows), t["dimension"]) if narrow else t["dimension"]
+        points = math.ceil((frame_dimension+8)/math.comb(generators, degree))
         frames.append(Frame(3, points, generators, [degree], alphabet,
                             seed=2026111801+7919*t["index"], p=prime))
 
@@ -104,6 +105,7 @@ def main():
     p.add_argument("--seconds", type=int, default=600)
     p.add_argument("--batches", type=int, default=20000)
     p.add_argument("--replay", type=Path)
+    p.add_argument("--narrow", action="store_true", help="Size a single target frame by the smaller cochain dimension.")
     args = p.parse_args()
     record = json.loads(args.plan.read_text())
     plan = record[args.direction]
@@ -111,7 +113,8 @@ def main():
     possible = [s["index"] for s in plan["sources"] if set(args.targets).intersection(s["targets"])]
     sources = possible if args.sources is None else args.sources
     assert len(set(sources)) == len(sources) and set(sources) <= set(possible)
-    init = (args.runtime.resolve(),plan,args.targets,sources,args.prime)
+    assert not args.narrow or len(args.targets) == 1
+    init = (args.runtime.resolve(),plan,args.targets,sources,args.prime,args.narrow)
     setup(*init)
     from su_modular_rowspace_v1 import RowSpace
     width = sum(f.ncols for f in frames)
@@ -120,6 +123,8 @@ def main():
     identity = dict(order=record["order"], prime=args.prime, sources=sources, targets=args.targets,
                     plan_sha256=hashlib.sha256(args.plan.read_bytes()).hexdigest(), frame_width=width,
                     source_dimension=source_dimension,target_dimension=target_dimension)
+    if args.narrow:
+        identity["frame_rule"] = "min(source_dimension,target_dimension)+8 before rounding to points"
     if args.direction == "outgoing":
         identity["direction"] = args.direction
     if args.replay:

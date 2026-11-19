@@ -1,0 +1,15 @@
+{
+  "task": 7,
+  "sources": [
+    18
+  ],
+  "targets": [
+    12
+  ],
+  "prime": 1000003,
+  "order": 3799,
+  "determinant": 918101,
+  "minor_sha256": "3bb461ff5d6b5cb4b0fb8f0e66c30f29ca545489825d14b81841690f2d894230",
+  "regenerated_entries": 14432401,
+  "entries_le_u4_rowmajor_sha256": "e04ff3b823e44530105e40a51213b6dafad711eb85c9713c6c4fe6386dd91cc6"
+}

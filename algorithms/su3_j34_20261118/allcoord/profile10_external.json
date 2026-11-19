@@ -1,0 +1,374 @@
+{
+  "prime": 1000003,
+  "certificate_sha256": "ae565ce3f91869bac4dfbb026dda9b185e23591490af4995970bbecd557814d1",
+  "frame_seed": 419870023,
+  "points": 280,
+  "coordinates": 2800,
+  "sampling_seed": 761590321,
+  "verified_by": "profile derivation and explicit differential with Python exterior evaluation on all coordinates",
+  "archived_rhs_pairing": 779716,
+  "cases": [
+    {
+      "source_profile": 7,
+      "source_dimension": 18100,
+      "attempt": 1,
+      "recipe": [
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            1,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              1
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              2
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0,
+              2
+            ]
+          ]
+        ]
+      ],
+      "projected_terms": 296,
+      "target_terms": 1480,
+      "evaluations_sha256": "143af5bd5f270a8c1fd4847437a750f7afce260beb6de4b62a857ff3ec8350c4",
+      "pairing": 685909
+    },
+    {
+      "source_profile": 9,
+      "source_dimension": 6413,
+      "attempt": 1,
+      "recipe": [
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              2
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            0,
+            1,
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        ]
+      ],
+      "projected_terms": 160,
+      "target_terms": 800,
+      "evaluations_sha256": "fd7481f94a945670fe2559c2a45652f2516a72af5b30f74defab96a5006ddbb3",
+      "pairing": 18185
+    },
+    {
+      "source_profile": 16,
+      "source_dimension": 16587,
+      "attempt": 1,
+      "recipe": [
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              2
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0,
+              2
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            1,
+            [
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0,
+              2
+            ]
+          ]
+        ]
+      ],
+      "projected_terms": 5648,
+      "target_terms": 30296,
+      "evaluations_sha256": "5e6bfa88442807156d0461c567edaaa78d6633f96ddb181b619f94aa70721afc",
+      "pairing": 802239
+    },
+    {
+      "source_profile": 17,
+      "source_dimension": 28557,
+      "attempt": 1,
+      "recipe": [
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            1,
+            [
+              0,
+              2
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              1,
+              2
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              1,
+              2
+            ]
+          ]
+        ]
+      ],
+      "projected_terms": 5648,
+      "target_terms": 22592,
+      "evaluations_sha256": "a9392c1f7317d221c118742b4eda047136050cad149cdc2b9e5a4c0a6b7c48ab",
+      "pairing": 534406
+    }
+  ]
+}

@@ -1,0 +1,834 @@
+{
+  "classical_letter_pairs": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "rank": 3,
+  "groups": [
+    "SO(7)",
+    "USp(6)"
+  ],
+  "blocks": [
+    {
+      "bidegree": [
+        0,
+        0
+      ],
+      "length": 12,
+      "cartan": 1,
+      "formal_trace_quotient": 4,
+      "character_terms": [
+        {
+          "weight": [
+            0,
+            0,
+            4,
+            4,
+            4
+          ],
+          "sign": 1,
+          "formal": 375,
+          "cartan": 151
+        },
+        {
+          "weight": [
+            0,
+            0,
+            4,
+            5,
+            3
+          ],
+          "sign": -1,
+          "formal": 332,
+          "cartan": 138
+        },
+        {
+          "weight": [
+            0,
+            0,
+            5,
+            3,
+            4
+          ],
+          "sign": -1,
+          "formal": 332,
+          "cartan": 138
+        },
+        {
+          "weight": [
+            0,
+            0,
+            5,
+            5,
+            2
+          ],
+          "sign": 1,
+          "formal": 269,
+          "cartan": 117
+        },
+        {
+          "weight": [
+            0,
+            0,
+            6,
+            3,
+            3
+          ],
+          "sign": 1,
+          "formal": 284,
+          "cartan": 123
+        },
+        {
+          "weight": [
+            0,
+            0,
+            6,
+            4,
+            2
+          ],
+          "sign": -1,
+          "formal": 260,
+          "cartan": 114
+        },
+        {
+          "weight": [
+            1,
+            -1,
+            4,
+            4,
+            4
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            -1,
+            4,
+            5,
+            3
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            -1,
+            5,
+            3,
+            4
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            -1,
+            5,
+            5,
+            2
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            -1,
+            6,
+            3,
+            3
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            -1,
+            6,
+            4,
+            2
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        }
+      ]
+    },
+    {
+      "bidegree": [
+        1,
+        1
+      ],
+      "length": 11,
+      "cartan": 0,
+      "formal_trace_quotient": 0,
+      "character_terms": [
+        {
+          "weight": [
+            1,
+            1,
+            3,
+            3,
+            3
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            1,
+            3,
+            4,
+            2
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            1,
+            4,
+            2,
+            3
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            1,
+            4,
+            4,
+            1
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            1,
+            5,
+            2,
+            2
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            1,
+            1,
+            5,
+            3,
+            1
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            2,
+            0,
+            3,
+            3,
+            3
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            2,
+            0,
+            3,
+            4,
+            2
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            2,
+            0,
+            4,
+            2,
+            3
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            2,
+            0,
+            4,
+            4,
+            1
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            2,
+            0,
+            5,
+            2,
+            2
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            2,
+            0,
+            5,
+            3,
+            1
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        }
+      ]
+    },
+    {
+      "bidegree": [
+        2,
+        2
+      ],
+      "length": 10,
+      "cartan": 1,
+      "formal_trace_quotient": 6,
+      "character_terms": [
+        {
+          "weight": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "sign": 1,
+          "formal": 224,
+          "cartan": 84
+        },
+        {
+          "weight": [
+            2,
+            2,
+            2,
+            3,
+            1
+          ],
+          "sign": -1,
+          "formal": 173,
+          "cartan": 69
+        },
+        {
+          "weight": [
+            2,
+            2,
+            3,
+            1,
+            2
+          ],
+          "sign": -1,
+          "formal": 173,
+          "cartan": 69
+        },
+        {
+          "weight": [
+            2,
+            2,
+            3,
+            3,
+            0
+          ],
+          "sign": 1,
+          "formal": 85,
+          "cartan": 39
+        },
+        {
+          "weight": [
+            2,
+            2,
+            4,
+            1,
+            1
+          ],
+          "sign": 1,
+          "formal": 120,
+          "cartan": 52
+        },
+        {
+          "weight": [
+            2,
+            2,
+            4,
+            2,
+            0
+          ],
+          "sign": -1,
+          "formal": 77,
+          "cartan": 36
+        },
+        {
+          "weight": [
+            3,
+            1,
+            2,
+            2,
+            2
+          ],
+          "sign": -1,
+          "formal": 73,
+          "cartan": 24
+        },
+        {
+          "weight": [
+            3,
+            1,
+            2,
+            3,
+            1
+          ],
+          "sign": 1,
+          "formal": 60,
+          "cartan": 21
+        },
+        {
+          "weight": [
+            3,
+            1,
+            3,
+            1,
+            2
+          ],
+          "sign": 1,
+          "formal": 60,
+          "cartan": 21
+        },
+        {
+          "weight": [
+            3,
+            1,
+            3,
+            3,
+            0
+          ],
+          "sign": -1,
+          "formal": 25,
+          "cartan": 11
+        },
+        {
+          "weight": [
+            3,
+            1,
+            4,
+            1,
+            1
+          ],
+          "sign": -1,
+          "formal": 42,
+          "cartan": 16
+        },
+        {
+          "weight": [
+            3,
+            1,
+            4,
+            2,
+            0
+          ],
+          "sign": 1,
+          "formal": 20,
+          "cartan": 9
+        }
+      ]
+    },
+    {
+      "bidegree": [
+        3,
+        3
+      ],
+      "length": 9,
+      "cartan": 0,
+      "formal_trace_quotient": 0,
+      "character_terms": [
+        {
+          "weight": [
+            3,
+            3,
+            1,
+            1,
+            1
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            3,
+            3,
+            1,
+            2,
+            0
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            3,
+            3,
+            2,
+            0,
+            1
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            3,
+            3,
+            2,
+            2,
+            -1
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            3,
+            3,
+            3,
+            0,
+            0
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            3,
+            3,
+            3,
+            1,
+            -1
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            2,
+            1,
+            1,
+            1
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            2,
+            1,
+            2,
+            0
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            2,
+            2,
+            0,
+            1
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            2,
+            2,
+            2,
+            -1
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            2,
+            3,
+            0,
+            0
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            2,
+            3,
+            1,
+            -1
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        }
+      ]
+    },
+    {
+      "bidegree": [
+        4,
+        4
+      ],
+      "length": 8,
+      "cartan": 0,
+      "formal_trace_quotient": 1,
+      "character_terms": [
+        {
+          "weight": [
+            4,
+            4,
+            0,
+            0,
+            0
+          ],
+          "sign": 1,
+          "formal": 1,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            4,
+            0,
+            1,
+            -1
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            4,
+            1,
+            -1,
+            0
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            4,
+            1,
+            1,
+            -2
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            4,
+            2,
+            -1,
+            -1
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            4,
+            4,
+            2,
+            0,
+            -2
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            5,
+            3,
+            0,
+            0,
+            0
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            5,
+            3,
+            0,
+            1,
+            -1
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            5,
+            3,
+            1,
+            -1,
+            0
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            5,
+            3,
+            1,
+            1,
+            -2
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            5,
+            3,
+            2,
+            -1,
+            -1
+          ],
+          "sign": -1,
+          "formal": 0,
+          "cartan": 0
+        },
+        {
+          "weight": [
+            5,
+            3,
+            2,
+            0,
+            -2
+          ],
+          "sign": 1,
+          "formal": 0,
+          "cartan": 0
+        }
+      ]
+    }
+  ]
+}

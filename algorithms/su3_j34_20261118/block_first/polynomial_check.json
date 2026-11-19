@@ -1,0 +1,41 @@
+{
+  "classical_rule_letters": 31,
+  "ordered_quadratic_coefficients": 180,
+  "channels": [
+    {
+      "name": "lambda_minus",
+      "degree": [
+        1,
+        0,
+        4,
+        4,
+        3
+      ],
+      "trace_terms": 18,
+      "matrix_monomials": 654,
+      "closure_residual": 0,
+      "predecessor_contents": 57,
+      "predecessor_words": 1505,
+      "signed_distinct_predecessor_words": 692
+    },
+    {
+      "name": "phi3",
+      "degree": [
+        1,
+        1,
+        4,
+        4,
+        2
+      ],
+      "trace_terms": 0,
+      "matrix_monomials": 0,
+      "closure_residual": 0,
+      "predecessor_contents": 222,
+      "predecessor_words": 6491,
+      "signed_distinct_predecessor_words": 3003,
+      "boundary": true,
+      "primitive": [],
+      "residual_monomials": 0
+    }
+  ]
+}

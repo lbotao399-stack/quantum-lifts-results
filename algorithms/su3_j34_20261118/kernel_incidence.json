@@ -1,0 +1,171 @@
+{
+  "strands": [
+    {
+      "predecessor": 17,
+      "source": 13,
+      "target": 7,
+      "dimensions": [
+        4978,
+        13698,
+        11522
+      ]
+    },
+    {
+      "predecessor": 18,
+      "source": 14,
+      "target": 8,
+      "dimensions": [
+        1230,
+        4506,
+        5720
+      ]
+    },
+    {
+      "predecessor": 19,
+      "source": 15,
+      "target": 9,
+      "dimensions": [
+        437,
+        2782,
+        3496
+      ]
+    },
+    {
+      "predecessor": 22,
+      "source": 18,
+      "target": 12,
+      "dimensions": [
+        4513,
+        7735,
+        4847
+      ]
+    }
+  ],
+  "families": {
+    "16": {
+      "predecessor_dimension": 3583,
+      "kept": [
+        12
+      ],
+      "complement": [
+        19,
+        21
+      ],
+      "shared_final_targets": [
+        13,
+        15
+      ],
+      "only_kept_reaches": [
+        6
+      ]
+    },
+    "17": {
+      "predecessor_dimension": 4978,
+      "kept": [
+        12,
+        13
+      ],
+      "complement": [
+        20,
+        21
+      ],
+      "shared_final_targets": [
+        13,
+        14,
+        15
+      ],
+      "only_kept_reaches": [
+        6,
+        7
+      ]
+    },
+    "18": {
+      "predecessor_dimension": 1230,
+      "kept": [
+        14
+      ],
+      "complement": [
+        19,
+        20,
+        21
+      ],
+      "shared_final_targets": [
+        13,
+        14,
+        15
+      ],
+      "only_kept_reaches": [
+        8
+      ]
+    },
+    "19": {
+      "predecessor_dimension": 437,
+      "kept": [
+        15
+      ],
+      "complement": [
+        21
+      ],
+      "shared_final_targets": [
+        15
+      ],
+      "only_kept_reaches": [
+        9
+      ]
+    },
+    "20": {
+      "predecessor_dimension": 2433,
+      "kept": [
+        16
+      ],
+      "complement": [
+        19
+      ],
+      "shared_final_targets": [
+        13
+      ],
+      "only_kept_reaches": [
+        10
+      ]
+    },
+    "21": {
+      "predecessor_dimension": 8566,
+      "kept": [
+        16,
+        17
+      ],
+      "complement": [
+        19,
+        20
+      ],
+      "shared_final_targets": [
+        13,
+        14
+      ],
+      "only_kept_reaches": [
+        10,
+        11
+      ]
+    },
+    "22": {
+      "predecessor_dimension": 4513,
+      "kept": [
+        17,
+        18
+      ],
+      "complement": [
+        20
+      ],
+      "shared_final_targets": [
+        13,
+        14
+      ],
+      "only_kept_reaches": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "restricted_source_dimension": 95313
+}

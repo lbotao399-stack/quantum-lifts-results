@@ -58,3 +58,25 @@ At prime 1000003 the same 7,211 nonzero coefficients solve all 7,272 production 
 ```sh
 python3 algorithms/su3_j34_20261118/verify_fixed_residuals.py
 ```
+
+## Coupled correction and the profile-10 separator
+
+The $SU(2)$ block restriction of the first right-hand side has 654 matrix monomials in the specified gaugino channel. Exact rational elimination gives a primitive in the rank-334 boundary space and zero residual. The other tested channel vanishes as a polynomial. [Restricted coefficients and primitive](block_first/reduction.json).
+
+All 4,271 archived directions obey the same coefficient convention across the 17 target profiles: 2,752 individual projected recipes and 1,519 carried homogeneous directions. Over the field of 1,000,003 elements the joint ranks on 2,244 coordinates are both 1,308 (original and augmented matrix); the 1,308-term fitted vector then fails on **30 of 30** fresh profile-10 coordinates. On 2,800 profile-10 coordinates the 2,752 recipes alone have rank 2,691, increasing to 2,692 after adjoining the right-hand side. The 1,519 other rows cannot reach this profile. The saved functional annihilates all 2,752 rows and evaluates to 779716 on the right-hand side; the two minor determinants are 33551 and 173036. This excludes the selected finite-field span only.
+
+| Source profile | Full dimension | Targets receiving the same coefficient | Evaluation of the separator on an additional recipe |
+|---|---:|---|---:|
+| 7 | 18100 | 2, 6, 10 | 685909 |
+| 9 | 6413 | 3, 6, 8, 10, 11 | 18185 |
+| 16 | 16587 | 10, 13 | 802239 |
+| 17 | 28557 | 10, 11, 13, 14 | 534406 |
+
+Thus all four sources can violate the separator. Their full cochain dimension is 69,657. Four right-hand sides in the table's target union vanish (2, 3, 8, 11); their equations still constrain the same coefficients. The parent first obstruction remains unresolved.
+
+[Joint fit and recipes](allcoord/) · [Independent-word test using two evaluations of the differential](profile10_external.py) · [Archived restricted null functional](allcoord/profile10_span.json) · [Schur and homogeneous-strand replay](full_strand.py). From the repository root:
+
+```sh
+python3 algorithms/su3_j34_20261118/profile10_span.py --work /tmp/j34-p10 --output /tmp/j34-span.json
+python3 algorithms/su3_j34_20261118/profile10_external.py --output /tmp/j34-external.json
+```

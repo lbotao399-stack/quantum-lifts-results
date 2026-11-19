@@ -1,0 +1,111 @@
+{
+  "prime": 1000003,
+  "files": {
+    "recipes.json.gz": "f426c15ae047a535ef7e8b5babf594ef12a68ff0333505f352cb74cc1c399118",
+    "matrix.npy": "3c9737c77e1c2e662c2cd183c1decc8aac6d1b2719ca710a7db83afd25640d83",
+    "solution.npz": "ed8b0c6b873acbb35444d0c137722f72eda36c2a9a038f32650cddf457e1b2e8"
+  },
+  "matrix_shape": [
+    704,
+    2244
+  ],
+  "all_residual_coordinates": 2244,
+  "all_nonzero": 604,
+  "training_coordinates": 704,
+  "training_nonzero": 0,
+  "withheld_coordinates": 352,
+  "withheld_nonzero": 352,
+  "selected_minor_order": 704,
+  "selected_minor_determinant": 804367,
+  "augmented_minor_order": 705,
+  "extra_column_zero_based": 96,
+  "extra_residual": 127003,
+  "augmented_minor_determinant": 715633,
+  "per_target": {
+    "0": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 0,
+      "coordinates": 36
+    },
+    "1": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 0,
+      "coordinates": 36
+    },
+    "2": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 12,
+      "coordinates": 36
+    },
+    "3": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 12,
+      "coordinates": 36
+    },
+    "4": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 0,
+      "coordinates": 36
+    },
+    "5": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 0,
+      "coordinates": 36
+    },
+    "6": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 40,
+      "coordinates": 120
+    },
+    "7": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 0,
+      "coordinates": 120
+    },
+    "8": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 40,
+      "coordinates": 120
+    },
+    "9": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 0,
+      "coordinates": 120
+    },
+    "10": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 40,
+      "coordinates": 120
+    },
+    "11": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 40,
+      "coordinates": 120
+    },
+    "12": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 0,
+      "coordinates": 120
+    },
+    "13": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 84,
+      "coordinates": 252
+    },
+    "14": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 84,
+      "coordinates": 252
+    },
+    "15": {
+      "training_nonzero": 168,
+      "withheld_nonzero": 84,
+      "coordinates": 252
+    },
+    "16": {
+      "training_nonzero": 0,
+      "withheld_nonzero": 0,
+      "coordinates": 432
+    }
+  }
+}

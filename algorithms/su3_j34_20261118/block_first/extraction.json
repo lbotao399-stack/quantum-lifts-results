@@ -1,0 +1,96 @@
+{
+  "parent_rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+  "parent_rows": 517468,
+  "abelian_colour_diagonal": [
+    1,
+    1,
+    -2
+  ],
+  "common_denominator": 120,
+  "channels": [
+    {
+      "name": "lambda_minus",
+      "abelian_letters": [
+        [
+          0,
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          0,
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          0,
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          0,
+          1,
+          []
+        ]
+      ],
+      "mu": [
+        1,
+        0,
+        4,
+        4,
+        3
+      ],
+      "length": 7,
+      "formal_terms": 18,
+      "trace_sha256": "5ab538c69e908cd7f0d21b6d953e901df7f4df7ac500d0d6baaab6319010c0d9"
+    },
+    {
+      "name": "phi3",
+      "abelian_letters": [
+        [
+          0,
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          0,
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          0,
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          0,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      "mu": [
+        1,
+        1,
+        4,
+        4,
+        2
+      ],
+      "length": 7,
+      "formal_terms": 0,
+      "trace_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

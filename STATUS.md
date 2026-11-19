@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## Mixed singlets and the SU(3) level-34 profile-10 span, November 18, 2026
+
+SO(7) and USp(6) have respectively 3 and 2 classical singlets at bidegree (3,3), length 8. The two formal classes survive in both groups. Appending the known first-order source $F$ completes the SO(7) basis. All five terminal singlet dimensions have also been fixed in both groups. [Rational rank argument and trace identities](algorithms/dual_singlets_20261118/README.md#terminal-singlets-and-the-mixed-length-eight-classes).
+
+For the SU(3) first correction, the four sources mapping to target profile 10 have total dimension 69,657. A functional separates the right-hand side from all 2,752 archived recipes on 2,800 coordinates, but fails on additional words from each of the four sources. [Ranks, explicit counterexamples and coupled target supports](algorithms/su3_j34_20261118/README.md#coupled-correction-and-the-profile-10-separator).
+
+New $d_1$ pairings: **0** (cumulative **6**). New fortuitous-generator families: **0** (cumulative **3**). Certified $d_2$, $d_3$ and nonperturbative lifts: **0, 0, 0**.
+
 ## SU(3) joint first correction and dual-group scalar singlets, November 18, 2026
 
 At level 34 the 7,211 profile-16 coefficients pass 7,272 production and 432 fresh coordinates in profile 16, but fail on all 84,462 tested coordinates on profiles 13–15. The source's first differential remains open. [Arrays and replay](algorithms/su3_j34_20261118/README.md#fixed-first-correction-across-profiles).

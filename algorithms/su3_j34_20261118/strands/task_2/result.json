@@ -1,0 +1,21 @@
+{
+  "order": 1,
+  "prime": 1000003,
+  "sources": [
+    19
+  ],
+  "targets": [
+    15
+  ],
+  "plan_sha256": "4ae07fb14fe8ecf897fbb68ed9ef8c78e1367a8960e6cc386842ac848ab56f64",
+  "frame_width": 450,
+  "source_dimension": 437,
+  "target_dimension": 2782,
+  "frame_rule": "min(source_dimension,target_dimension)+8 before rounding to points",
+  "batches": 80,
+  "rank_lower_bound": 437,
+  "rank_ceiling": 437,
+  "determinant": 156943,
+  "sha256": "45c7a7cd0e3d201a62742db3095762f0c34bf467b68b5c65ea5ff40b3981ff42",
+  "bytes": 4049
+}

@@ -38,3 +38,25 @@ python3 algorithms/dual_singlets_20261118/replay_scalar_signs.py
 ```
 
 [Four minors and trace recipes](scalar_minors.json.gz) · [Integral sign check on 278 distinct recipes](scalar_sign_replay.json).
+
+## Terminal singlets and the mixed length-eight classes
+
+For derivative bidegrees (0,0) through (4,4), the terminal lengths are 12, 11, 10, 9, 8. The five weight-one letters are closed. The 12 weight-two letter rules generate their allowed graded commutators; the predecessor contains exactly one weight-two letter. This was checked for all 40 feasible dominant and shifted weights in the character calculation. After imposing the commutators and before finite-colour trace identities, the singlet bounds are 4, 0, 6, 0, 1. At (2,2), five independent finite-colour relations reduce the upper bound to one: the integer minors are 8192 for SO(7) and −4 for USp(6). The Cartan witness evaluates to 64 and −64, respectively. Together with the separate results above the **terminal classical dimensions are (1,0,1,0,1) for SO(7) and (1,0,1,0,0) for USp(6)**.
+
+[Letter rules](terminal_letters.json) · [Commutator quotient](terminal_commutators.json) · [Orthogonal integer relations](orthogonal_replay.json) · [Symplectic Pfaffian relations](symplectic_relations.json) · [Cartan evaluation](mixed_cartan.py).
+
+At bidegree (3,3), one length **below** the terminal length, the exact formal incoming rank is 225. Its 335 integer dependencies, along with an integer minor, are checked directly. Formal outgoing rank is 85. The formal representatives contain 30 and 18 trace words. The zero terminal quotient gives the full outgoing rank in each finite group. Combining these ranks with the finite-colour minors gives:
+
+| Group | Classical cohomology at length 8 | Ranks: boundaries, two formal classes, then the known $F$ | Augmented minor mod 1000003 | Augmented minor mod 1000033 |
+|---|---:|---|---:|---:|
+| SO(7) | 309 − 81 − 225 = 3 | 225, 227, 228 | 392950 | 372431 |
+| USp(6) | 306 − 79 − 225 = 2 | 225, 227 | 447499 | 659562 |
+
+The nonzero modular minors are rational lower bounds because the evaluated rows are integral after clearing denominators. The preceding upper bounds make the dimensions exact. The third SO(7) line is accounted for by the previously counted $F$, whose first obstruction hits the fourth power of the gaugino bilinear. This identifies the source of the classical mismatch, without producing a new generator or a nonperturbative obstruction. The two common classes' higher differentials are not determined by this comparison.
+
+```sh
+python3 algorithms/dual_singlets_20261118/mixed33_exact.py
+python3 algorithms/dual_singlets_20261118/mixed33_classes.py --group SO_odd --prime 1000003 --output /tmp/so7-classes.json
+```
+
+For the other certificates set `--group Sp` or `--prime 1000033`. [Formal dependencies, finite-colour minors and seeds](mixed33/) · [Stored 560 source images](mixed33_incoming.json.gz) · [The independently certified first differential](../so7_cartan_target_20261118/README.md).
