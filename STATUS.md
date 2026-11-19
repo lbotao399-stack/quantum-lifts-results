@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## SU(3) level 34: limits of corrections with restricted parent support, November 19, 2026
+
+Among the 192 failures of the 2,724-word correction, 146 have a separator for parents touching no successes, 92 for parents touching at most one, and three for parents touching at most two. All three last evaluations replay over the rationals. None of the tested assignments separates the unrestricted parent space. [Data and replay](algorithms/su3_j34_20261118/README.md#parent-costs-and-exact-rational-witnesses).
+
+New $d_1$ pairings: **0** (total **6**). New fortuitous-generator families: **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts: **0, 0, 0**.
+
 ## SU(3) level 34: all 500 first-correction equations, November 19, 2026
 
 A single 2,724-word rational correction passes 70/70 selected equations and 308/500 overall. All 192 failures have three-colour witnesses. Two other corrections pass 314/500 and 315/500, with fewer selected equations satisfied. Two exact commuting-matrix evaluations rule out repairing either of two failed equations using only parents whose splits avoid all 308 successes. No unrestricted obstruction follows. [Algorithms, A8 receipts and replay](algorithms/su3_j34_20261118/README.md#joint-correction-and-census-of-all-500-contents).

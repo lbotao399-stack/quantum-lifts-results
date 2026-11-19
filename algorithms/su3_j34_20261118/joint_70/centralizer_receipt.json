@@ -1,0 +1,94 @@
+{
+  "job": "5665220",
+  "sha256": "b80e666339a3c3aedf4491190a81499832e68dbadbabe65648aa737397985a4c",
+  "size": 398776,
+  "status": "complete",
+  "summary": {
+    "0": {
+      "eligible_parents": 117,
+      "tried_without_witness": 46,
+      "unreachable": 26,
+      "witnesses": 146
+    },
+    "1": {
+      "eligible_parents": 172,
+      "tried_without_witness": 100,
+      "unreachable": 8,
+      "witnesses": 92
+    },
+    "10": {
+      "eligible_parents": 556,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "11": {
+      "eligible_parents": 575,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "16": {
+      "eligible_parents": 579,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "17": {
+      "eligible_parents": 581,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "2": {
+      "eligible_parents": 265,
+      "tried_without_witness": 189,
+      "unreachable": 0,
+      "witnesses": 3
+    },
+    "3": {
+      "eligible_parents": 332,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "4": {
+      "eligible_parents": 372,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "5": {
+      "eligible_parents": 445,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "6": {
+      "eligible_parents": 493,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "7": {
+      "eligible_parents": 530,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "8": {
+      "eligible_parents": 541,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    },
+    "9": {
+      "eligible_parents": 552,
+      "tried_without_witness": 192,
+      "unreachable": 0,
+      "witnesses": 0
+    }
+  },
+  "target_count": 192,
+  "scheduler_cst": "5665220|n434cen20|COMPLETED|2026-11-20T06:40:57|2026-11-20T06:41:23|26|32|0:0"
+}

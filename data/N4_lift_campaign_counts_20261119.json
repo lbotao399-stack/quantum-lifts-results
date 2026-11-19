@@ -113,6 +113,39 @@
         "algorithms/su3_j34_20261118/joint_70/commuting_pair.json"
       ],
       "scope": "Two failed contents require updates outside the 117 parents whose splits avoid the 308 successful contents. Neither an unrestricted first correction nor an obstruction is established."
+    },
+    {
+      "phase": "SU(3) level-34 parent cost sweep",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_jobs": [
+        "5665220"
+      ],
+      "eligible_parents_by_cost_0_1_2_3_17": [
+        117,
+        172,
+        265,
+        332,
+        581
+      ],
+      "target_separators": [
+        146,
+        92,
+        3,
+        0,
+        0
+      ],
+      "evidence": [
+        "algorithms/su3_j34_20261118/joint_70/centralizer_rational.json",
+        "algorithms/su3_j34_20261118/joint_70/centralizer_receipt.json",
+        "algorithms/su3_j34_20261118/joint_70/centralizer_sweep.json.gz"
+      ],
+      "scope": "Separators exclude the indicated restricted source spaces only. Zero samples do not prove image membership."
     }
   ]
 }

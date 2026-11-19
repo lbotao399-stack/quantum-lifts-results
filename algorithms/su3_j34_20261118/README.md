@@ -163,3 +163,21 @@ python3 content_spill.py --graph joint_70/graph.json --probe joint_70/census_133
 python3 parent_frontier.py --probe /tmp/j34-census.json --base-probe joint_70/census_1330.json --spill /tmp/j34-spill.json --out /tmp/j34-frontier.json
 python3 commuting_parent_test.py --frontier /tmp/j34-frontier.json --out /tmp/j34-commuting.json
 ```
+
+## Parent costs and exact rational witnesses
+
+Relative to the fixed 2,724-word correction, the cost of a parent content is the number of the 308 successful equations that its classical splits reach. A nonzero exterior coefficient evaluated on integral traceless matrices separates a failed target if the matrices commute on *every* allowed split into that target. This annihilates all words in the specified parent contents over the rationals.
+
+| Maximum cost | Eligible parent contents | Failed targets with separators (of 192) |
+|---:|---:|---:|
+| 0 | 117 | 146 |
+| 1 | 172 | 92 |
+| 2 | 265 | 3 |
+| 3 | 332 | 0 |
+| 17 (all) | 581 | 0 |
+
+The three cost-two evaluations reduce to 203080, 249773, 998230 modulo 1000003. Independent rational multiplication gives the third as $-8{,}470{,}011{,}493{,}527{,}252{,}480$. Repairing each of these three targets requires at least one parent touching three or more successes; cancellations on those successes remain possible. Failure to find a separator does not establish the existence of a correction. [A8 job 5665220](joint_70/centralizer_receipt.json) · [Sweep](joint_70/centralizer_sweep.json.gz) · [Rational coefficients and incident parents](joint_70/centralizer_rational.json) · [Two explicit cost-one tests](joint_70/centralizer_pair.json).
+
+```sh
+python3 replay_centralizer_sweep.py --out /tmp/j34-centralizer-rational.json
+```
