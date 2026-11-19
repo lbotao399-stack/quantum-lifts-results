@@ -1,10 +1,10 @@
 # Two incoming nonperturbative channels in `G2` SYM
 
-In the holomorphic twist, the bottom components of the stress-tensor currents $\mathbf L_{Ii}$ and $\mathbf G^I_j$ are closed under the physical supercharge. Here $I,J,K$ are the three flavour components, and $i,j,k,h$ are the two holomorphic spin components. The two-operator product at separated points is closed by the supersymmetry Ward identity. Its degree-zero cohomological OPE extends over coincidence in complex dimension two. The constant term therefore gives a closed local product with the ordinary product as its leading classical term. Holomorphic derivatives commute with the supercharge. These are the physical inputs to the following exclusions. [Semi-chiral ring, §2 and currents (4.81), (4.83)–(4.85)](https://arxiv.org/html/2509.16737#S4.SS3.SSS1)
+In the holomorphic twist, the bottom components of the stress-tensor currents $\mathbf L_{Ii}$ and $\mathbf G^I_j$ are closed under the physical supercharge. Here $I,J,K$ are the three flavour components, and $i,j,k,h$ are the two holomorphic spin components. The two-operator product at separated points is closed by the supersymmetry Ward identity. Its degree-zero cohomological OPE extends over coincidence in complex dimension two. The constant term therefore gives a closed local product with the ordinary product as its leading classical term. Holomorphic derivatives commute with the supercharge. These physical facts would exclude an outgoing lift if the archived polynomials are the classical limits of the indicated products. The component identification is tested below. [Semi-chiral ring, §2 and currents (4.81), (4.83)–(4.85)](https://arxiv.org/html/2509.16737#S4.SS3.SSS1)
 
 ## The Gram determinant and the square of the gaugino bilinear
 
-The doubled physical charges are ordered as $(2J_1,2J_2,2q_1,2q_2,2q_3)$. At incoming charge $(1,1,4,4,4)$ the only classical singlet cohomology line has dimension $5-1-3=1$. Its representative contains 18 trace terms. With the alternating tensor in the saved spin-component ordering, the physical product is
+The doubled physical charges are ordered as $(2J_1,2J_2,2q_1,2q_2,2q_3)$. At incoming charge $(1,1,4,4,4)$ the only classical singlet cohomology line has dimension $5-1-3=1$. Its representative contains 18 trace terms. With the alternating tensor in the saved spin-component ordering, the proposed physical product is
 
 $$
 \frac16\epsilon^{ij}\mathbf L_{Ii}\mathbf G^I_j .
@@ -16,7 +16,7 @@ $$
 \frac16(4\eta)(6)=4\eta .
 $$
 
-The saved representative evaluates to the same $4\eta$. All 217 classical letter variations at this weight evaluate to zero. This comparison uses the scalar term of (4.84) on the chosen jet, so the matter-fermion component sign drops out. Both closed representatives span the unique incoming line. Its exact current product rules out an outgoing instanton differential to either the scalar Gram determinant or $S^2$, where $S$ is the saved gaugino bilinear. [Source ranks and representative](verify_g2_np_partner.py) · [Direct physical-current evaluation](verify_g2_current_product.py)
+The saved representative evaluates to the same $4\eta$. All 217 classical letter variations at this weight evaluate to zero. This comparison uses the scalar term of (4.84) on the chosen jet, so the matter-fermion component sign drops out. This scalar-only evaluation does not test the relative sign of the matter term. On a second Cartan jet, with the plus gaugino, minus gaugino and first matter fermion in that exterior order, the archived coefficient is $-16/3$, whereas the direct substitution in (4.81) and (4.84) with both flavour orientations positive gives $+16/3$. The exact-current identification, and hence this proposed exclusion of an instanton differential, is unresolved. [Source ranks and representative](verify_g2_np_partner.py) · [Direct physical-current evaluation](verify_g2_current_product.py)
 
 ## The cube of the gaugino bilinear
 
@@ -29,7 +29,7 @@ At incoming charge $(1,1,6,6,6)$, equality of the two spin components forces equ
 | 2 | 6 | 30 | 17 | 11 | 2 |
 | 3 | 5 | 3 | 0 | 3 | 0 |
 
-At length six take the following two products of protected currents, using the alternating flavour and spin tensors of (4.83)–(4.85) and the saved normalization of $S$.
+At length six take the following two proposed classical limits of exact current products, using the alternating flavour and spin tensors of (4.83)–(4.85) and the saved normalization of $S$.
 
 $$
 \frac{S}{6}\epsilon^{ij}\mathbf L_{Ii}\mathbf G^I_j ,
@@ -38,10 +38,16 @@ $$
 \mathbf L_{Ii}\mathbf L_{Jj}\partial_k\mathbf L_{Kh}.
 $$
 
-Two diagonal jet evaluations in the seven-dimensional representation give the following submatrix, with a column per product. The first row selects the exterior coefficient with four gauginos and one matter fermion. The second selects a three-gaugino coefficient with one scalar derivative. All 994 tested classical letter variations vanish on these jets.
+Direct substitution of the printed components with the above orientations into two diagonal jets gives the following submatrix, with a column per product. The first row selects the exterior coefficient with four gauginos and one matter fermion. The second selects a three-gaugino coefficient with one scalar derivative. All 994 tested classical letter variations vanish on these jets.
 
 $$
 \det\begin{pmatrix}-64&0\\16&576\end{pmatrix}=-36{,}864 .
 $$
 
-The products give two independent classical classes over the rationals, attaining the upper bound $30-17-11=2$. Both have exact current-product completions, so every incoming perturbative class at this charge has a closed lift through the instanton expansion. This excludes an incoming nonperturbative lift of $S^3$ in this sector. The calculation uses the binary OPE and the Ward identity. It supplies no positive instanton matrix element. [Two-prime ranks and exact Cartan minor](../data/N4_G2_S3_incoming_currents_20261118.json) · [Replay with `--recompute-ranks`](verify_g2_s3_currents.py)
+The closed, archived superfield representatives instead give
+
+$$
+\det\begin{pmatrix}64&0\\16&576\end{pmatrix}=36{,}864 .
+$$
+
+This last test certifies two rational classical classes and saturates $30-17-11=2$. The relative sign on the matter row is unresolved as a physical dictionary; neither determinant computes an instanton differential or proves that all incoming sources have exact completions. [Independent superfield and component calculation](verify_g2_superfield_sign.py) · [Both signed matrices](../data/N4_G2_superfield_sign_20261118.json) · [Two-prime classical ranks](../data/N4_G2_S3_incoming_currents_20261118.json).

@@ -1,0 +1,14 @@
+{
+  "prime": 1000003,
+  "producer_slurm_job": "5650093",
+  "rows_multiplied": 7616,
+  "nonzero_coefficients": 7000,
+  "coordinates_checked": 7000,
+  "nonzero_residual": 0,
+  "matched_rhs_sha256": "83dad1add658c0d8f8fc7db17c75e03f2d32715d28e0f1278f8dd11043f00d29",
+  "coefficient_file_sha256": "381a1bf86bc55850b3ed6df64a3bfc47a0456de1cfa576ffd47ac3d2df8b4dfb",
+  "input_array_data_sha256": {
+    "matrix.npy": "c659eb5d76840c716e0fceb3dea93c92be8b890b13eb20877d6f814d3ac0c457",
+    "new_rows.npy": "57d950c079ca99eefcf9db094193af97309ad788c2b79771dd568073126da723"
+  }
+}

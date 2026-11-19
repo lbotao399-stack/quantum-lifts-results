@@ -1,0 +1,21 @@
+{
+  "prime": 1000003,
+  "rows_replayed": 6848,
+  "width": 7000,
+  "nonzero_row_pairings": 0,
+  "rhs_pairing": 923594,
+  "file_sha256": {
+    "matrix.npy": "735728c476c5801615512fb11abaf1eb5061459b4c5976b98f9b0854fa2b074e",
+    "rhs.npy": "bacbc193a010b0fb1de5663fe66051c64bd75180eeb084be5ad8330f45983c59",
+    "wide.json": "d39a6316ed21d22281a3b62b12526f93ee338ba4363762fe402aba9145aa0c56",
+    "separator.npy": "db15ae166ff3d7f4170f84998aa74a6bd3bc7a6c23b67b7a868eb6ceb4699807"
+  },
+  "data_sha256": {
+    "matrix": "c659eb5d76840c716e0fceb3dea93c92be8b890b13eb20877d6f814d3ac0c457",
+    "rhs": "83dad1add658c0d8f8fc7db17c75e03f2d32715d28e0f1278f8dd11043f00d29",
+    "row_pairings": "562b9bad7e8eaef6bc89aae1d9a403c15dbb1356cbf83aa13abbe91303076a03"
+  },
+  "feed": "original archived arrays; 37-row integer blocks; Python integer RHS",
+  "minor_check": "recorded panel determinant product and Schur identity only; no independent factorization here",
+  "producer_slurm_job": "5649548"
+}

@@ -1,0 +1,40 @@
+{
+  "archive_terms": 18,
+  "exterior_generator_order": [
+    "gaugino_plus",
+    "gaugino_minus",
+    "first_matter_fermion"
+  ],
+  "three_fermion_Q0_checks": 217,
+  "three_fermion_archive_coefficient": "-16/3",
+  "three_fermion_printed_both_flavour_orientations_positive": "16/3",
+  "superfield_bilinear_pairs_equal_to_archived": 6,
+  "closed_six_letter_expressions": [
+    18,
+    30
+  ],
+  "six_letter_Q0_checks": 994,
+  "superfield_six_letter_minor": [
+    [
+      64,
+      0
+    ],
+    [
+      16,
+      576
+    ]
+  ],
+  "superfield_determinant": 36864,
+  "printed_minor": [
+    [
+      -64,
+      0
+    ],
+    [
+      16,
+      576
+    ]
+  ],
+  "printed_determinant": -36864,
+  "instanton_matrix_element_computed": false
+}

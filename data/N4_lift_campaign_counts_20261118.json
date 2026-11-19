@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
-  "phase": "Identification of the mixed SO(7) classical class and SU(3) profile-10 separator",
+  "phase": "SU(3) level-34 four-source and closed-jet tests; G2 current-sign correction",
   "increments": {
     "d1": 0,
     "fortuitous_generator_families": 0,
@@ -21,17 +21,15 @@
   "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet.",
   "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
   "evidence": [
-    "algorithms/dual_singlets_20261118/mixed33/formal_certificate.json.gz",
-    "algorithms/dual_singlets_20261118/mixed33/classes_SO_odd_1000003.json",
-    "algorithms/dual_singlets_20261118/mixed33/classes_Sp_1000003.json",
-    "algorithms/dual_singlets_20261118/mixed33/classes_SO_odd_1000033.json",
-    "algorithms/dual_singlets_20261118/mixed33/classes_Sp_1000033.json",
-    "algorithms/su3_j34_20261118/allcoord/profile10_span.json",
-    "algorithms/su3_j34_20261118/allcoord/profile10_external.json"
+    "algorithms/su3_j34_20261118/four_source/quotient/independent_minor.json",
+    "algorithms/su3_j34_20261118/four_source/quotient/independent_training.json",
+    "algorithms/su3_j34_20261118/four_source/quotient/independent_fresh.json",
+    "algorithms/su3_j34_20261118/four_source/closed_jets.json.gz",
+    "data/N4_G2_superfield_sign_20261118.json"
   ],
-  "evidence_scope": "Third SO(7) class is already counted as F. The SU(3) right-hand side lies outside the selected finite-field span; the displayed functional does not separate the entire correction space.",
+  "evidence_scope": "The fixed SU(3) correction fails; all tested kernel restrictions vanish. Neither settles d1. The G2 classical ranks stand, but the literal physical-current identification is sign-sensitive and no instanton matrix element has been calculated.",
   "previous_phase": {
-    "phase": "Fixed SU(3) first-correction residuals and rational zero-jet dual-group singlet cohomology",
+    "phase": "Identification of the mixed SO(7) classical class and SU(3) profile-10 separator",
     "increments": {
       "d1": 0,
       "fortuitous_generator_families": 0,
@@ -47,16 +45,19 @@
       "nonperturbative": 0
     },
     "evidence": [
-      "algorithms/su3_j34_20261118/first_profile16/arithmetic_replay.json",
-      "algorithms/dual_singlets_20261118/scalar_minors.json.gz",
-      "algorithms/dual_singlets_20261118/scalar_sign_replay.json",
-      "algorithms/dual_singlets_20261118/scalar_upper_bound.py"
+      "algorithms/dual_singlets_20261118/mixed33/formal_certificate.json.gz",
+      "algorithms/dual_singlets_20261118/mixed33/classes_SO_odd_1000003.json",
+      "algorithms/dual_singlets_20261118/mixed33/classes_Sp_1000003.json",
+      "algorithms/dual_singlets_20261118/mixed33/classes_SO_odd_1000033.json",
+      "algorithms/dual_singlets_20261118/mixed33/classes_Sp_1000033.json",
+      "algorithms/su3_j34_20261118/allcoord/profile10_span.json",
+      "algorithms/su3_j34_20261118/allcoord/profile10_external.json"
     ],
-    "evidence_scope": "Only the fixed SU(3) coefficients are excluded. Exact scalar singlet dimensions apply at derivative bidegree (0,0).",
+    "evidence_scope": "Third SO(7) class is already counted as F. The SU(3) right-hand side lies outside the selected finite-field span; the displayed functional does not separate the entire correction space.",
     "previous_phase": {
-      "phase": "SO(7) j30 incoming d1 onto SF; SU(3) j34 first-action and projected ranks; exact SO(7)/USp(6) pure-gaugino comparison",
+      "phase": "Fixed SU(3) first-correction residuals and rational zero-jet dual-group singlet cohomology",
       "increments": {
-        "d1": 1,
+        "d1": 0,
         "fortuitous_generator_families": 0,
         "d2": 0,
         "d3": 0,
@@ -69,28 +70,52 @@
         "d3": 0,
         "nonperturbative": 0
       },
-      "evidence": "algorithms/so7_cartan_target_20261118/README.md",
+      "evidence": [
+        "algorithms/su3_j34_20261118/first_profile16/arithmetic_replay.json",
+        "algorithms/dual_singlets_20261118/scalar_minors.json.gz",
+        "algorithms/dual_singlets_20261118/scalar_sign_replay.json",
+        "algorithms/dual_singlets_20261118/scalar_upper_bound.py"
+      ],
+      "evidence_scope": "Only the fixed SU(3) coefficients are excluded. Exact scalar singlet dimensions apply at derivative bidegree (0,0).",
       "previous_phase": {
-        "phase": "SU(3) j34 rational block witness and direct Q2 action; SU(3) j30 independent full matrix-product replay",
-        "evidence": "data/N4_lift_method_review_20261118.json",
-        "previous_phase": {
-          "phase": "Full-text method review, completed SU3 A8 solve, SO7 target functional and incoming dimensions, SU3 level-34 parity sizing, G2 partner replay",
-          "evidence": "data/N4_lift_method_review_20261118.json",
-          "previous_phase": {
-            "phase": "SU3 first-prime elimination consistent; independent-prime production running; lossless map packing validated",
-            "evidence": "algorithms/su3_independent_prime_20261118/",
-            "previous_phase": {
-              "phase": "G2 BMN j30 (5,5,5) complete classical cohomology and known-product quotient",
-              "evidence": "algorithms/bmn_rank_certificates_20261117/g2_merged_product_evidence/"
-            }
-          }
+        "phase": "SO(7) j30 incoming d1 onto SF; SU(3) j34 first-action and projected ranks; exact SO(7)/USp(6) pure-gaugino comparison",
+        "increments": {
+          "d1": 1,
+          "fortuitous_generator_families": 0,
+          "d2": 0,
+          "d3": 0,
+          "nonperturbative": 0
         },
         "cumulative": {
-          "d1": 5,
+          "d1": 6,
           "fortuitous_generator_families": 3,
           "d2": 0,
           "d3": 0,
           "nonperturbative": 0
+        },
+        "evidence": "algorithms/so7_cartan_target_20261118/README.md",
+        "previous_phase": {
+          "phase": "SU(3) j34 rational block witness and direct Q2 action; SU(3) j30 independent full matrix-product replay",
+          "evidence": "data/N4_lift_method_review_20261118.json",
+          "previous_phase": {
+            "phase": "Full-text method review, completed SU3 A8 solve, SO7 target functional and incoming dimensions, SU3 level-34 parity sizing, G2 partner replay",
+            "evidence": "data/N4_lift_method_review_20261118.json",
+            "previous_phase": {
+              "phase": "SU3 first-prime elimination consistent; independent-prime production running; lossless map packing validated",
+              "evidence": "algorithms/su3_independent_prime_20261118/",
+              "previous_phase": {
+                "phase": "G2 BMN j30 (5,5,5) complete classical cohomology and known-product quotient",
+                "evidence": "algorithms/bmn_rank_certificates_20261117/g2_merged_product_evidence/"
+              }
+            }
+          },
+          "cumulative": {
+            "d1": 5,
+            "fortuitous_generator_families": 3,
+            "d2": 0,
+            "d3": 0,
+            "nonperturbative": 0
+          }
         }
       }
     }

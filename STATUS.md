@@ -1,5 +1,14 @@
 # Running computations: daily status
 
+## Four-source SU(3) test and G2 sign correction, November 18, 2026
+
+At SU(3) level 34 a 365-dimensional quotient is exhausted on the 7,000-coordinate frame. The resulting first correction fails on 120 of 120 fresh coordinates. On 64 noncommuting even jets, all 1,485 cubic coordinates vanish upon restriction to kernels annihilating the projected classical images. These tests leave the source’s first obstruction open. [Data, determinant and replay](algorithms/su3_j34_20261118/README.md#four-source-correction-and-closed-jets).
+
+For the $G_2$ incoming candidates the three-fermion coefficient is $-16/3$ in the archive, versus $+16/3$ in the literal printed identification with both flavour orientations positive. The previous conclusion of protection is withdrawn pending an independent physical-current identification. [Classical ranks and both tests](algorithms/G2_protected_incoming_currents_20261118.md).
+
+Increment: **0** first-order pairings and **0** fortuitous-generator families; totals: **6** and **3**. Certified second-order, third-order and nonperturbative lifts: **0, 0, 0**.
+
+
 ## Mixed singlets and the SU(3) level-34 profile-10 span, November 18, 2026
 
 SO(7) and USp(6) have respectively 3 and 2 classical singlets at bidegree (3,3), length 8. The two formal classes survive in both groups. Appending the known first-order source $F$ completes the SO(7) basis. All five terminal singlet dimensions have also been fixed in both groups. [Rational rank argument and trace identities](algorithms/dual_singlets_20261118/README.md#terminal-singlets-and-the-mixed-length-eight-classes).
@@ -20,7 +29,7 @@ Increment: **0** first-order pairings and **0** generator families; cumulative *
 
 The new first differential onto the line of $SF$ adds one highest-weight pairing: the rank increases from 12,525 to 12,526. A8 job `5628225` reconstructed all 156,900,676 entries of the augmented minor and reproduced each of its 212 panel determinants. Its determinant is 942,245 modulo 1,000,003. The target is absent from the second and later pages. [Proof](algorithms/so7_cartan_target_20261118/README.md) · [Replay receipt](algorithms/so7_cartan_target_20261118/incoming_replay.json).
 
-At doubled charges (0,0,8,8,8) and derivative bidegree (4,4), exact rational computation finds one length-eight SO(7) class and none for USp(6). The SO(7) class is $S^4$, already hit at first order. [Complete classical matrices](algorithms/dual_singlets_20261118/README.md). The recorded $G_2$ incoming sources are exhausted by protected current products. [Current calculation](algorithms/G2_protected_incoming_currents_20261118.md).
+At doubled charges (0,0,8,8,8) and derivative bidegree (4,4), exact rational computation finds one length-eight SO(7) class and none for USp(6). The SO(7) class is $S^4$, already hit at first order. [Complete classical matrices](algorithms/dual_singlets_20261118/README.md). The $G_2$ incoming classical dimensions are certified; their proposed exhaustion by physically protected current products requires a component identification. [Current calculation](algorithms/G2_protected_incoming_currents_20261118.md).
 
 At SU(3) level 34 the first right-hand side contains 517,468 rational terms. In eight profiles of the third target the projected closed quotient vanishes: 1,263 minus 1,206 minus 57 equals zero. The four minors were independently replayed at two primes. No claim is made for the remaining profiles. At level 30 both finite-field solutions now have zero residual in all 100,307 coordinates; rational solvability remains open. [Level-34 calculation](algorithms/su3_j34_20261118/README.md) · [Level-30 receipts](algorithms/verify_su3_j30_solution_receipts.py).
 

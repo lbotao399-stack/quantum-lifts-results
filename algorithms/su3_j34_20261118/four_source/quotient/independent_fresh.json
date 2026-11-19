@@ -1,0 +1,15 @@
+{
+  "prime": 1000003,
+  "seed": 635729813,
+  "coordinates_checked": 120,
+  "nonzero_residual": 120,
+  "trace_terms": 27780,
+  "active_coefficients": 7000,
+  "coefficients_file_sha256": "381a1bf86bc55850b3ed6df64a3bfc47a0456de1cfa576ffd47ac3d2df8b4dfb",
+  "lhs_sha256": "1b933ee088631aa708aa2c11a267040335ff039e5b772208a58b477fdd38ad32",
+  "rhs_sha256": "152dc5c62d8935335f8691aef562f0287303e4065ecb609d5fe6314e0246d7f7",
+  "residual_sha256": "01f4741ad84790f5a0020cdcd2fea0a50f9685684f7ccdb1aae9fa7a6d784624",
+  "first_rhs": 622254,
+  "first_lhs": 299667,
+  "first_residual": 322587
+}

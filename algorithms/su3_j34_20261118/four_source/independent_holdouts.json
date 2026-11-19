@@ -1,0 +1,28 @@
+[
+  {
+    "fit": "first",
+    "prime": 1000003,
+    "seed": 925173601,
+    "coordinates": 120,
+    "nonzero": 120,
+    "terms": 27780,
+    "nonzero_profile10_coefficients": 3232,
+    "coefficients_sha256": "48594e1248354af2a887fdf031ab6072e1300b7ed81c318f231338a30aa3bbe4",
+    "rhs_sha256": "a7e97dbf33a5840046164a196974595c989d1b4155bbeaa98fb85418a8579375",
+    "lhs_sha256": "fcbe69a73b2a918c1e44feabe5ccbca919880d23a4847527ff147d23c846ad16",
+    "residual_sha256": "f621861fa4148e683fc63cbf35c7af065201e091e37f342c67e59ad06a4f3c6f"
+  },
+  {
+    "fit": "second",
+    "prime": 1000003,
+    "seed": 713904227,
+    "coordinates": 120,
+    "nonzero": 120,
+    "terms": 27780,
+    "nonzero_profile10_coefficients": 3352,
+    "coefficients_sha256": "670c2b170da2d08f3f18188a310e5e180a930f9ce816c77577b405e9f0ffae1c",
+    "rhs_sha256": "3409d9f6499848b9929c1ed74a283333891368b7db6ac57cce594632556f1955",
+    "lhs_sha256": "722f7d55121e96b5d6b1b256b0c3bc6063c1474e7920edb93fc91b925ef58511",
+    "residual_sha256": "78585a3cdad84a9eea4cb5c16670d70d3152be1f6b7b67fe7d8fd71be277c84d"
+  }
+]

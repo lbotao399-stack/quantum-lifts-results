@@ -1,0 +1,16 @@
+{
+  "prime": 1000003,
+  "quotient_rank": 365,
+  "quotient_minor_determinant": 143392,
+  "ranks_by_profile": {
+    "7": 191,
+    "9": 184,
+    "16": 192,
+    "17": 192
+  },
+  "combined_minor_determinant_in_recorded_pivot_order": 102708,
+  "coordinates_checked": 365,
+  "nonzero_residual": 0,
+  "coefficients_file_sha256": "381a1bf86bc55850b3ed6df64a3bfc47a0456de1cfa576ffd47ac3d2df8b4dfb",
+  "matched_rhs_sha256": "9b7cd23b78fbd8eee6ed1384fac7cfbfe569f773e491decd5b59e07aaf76c334"
+}

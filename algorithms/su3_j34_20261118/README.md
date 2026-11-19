@@ -80,3 +80,14 @@ Thus all four sources can violate the separator. Their full cochain dimension is
 python3 algorithms/su3_j34_20261118/profile10_span.py --work /tmp/j34-p10 --output /tmp/j34-span.json
 python3 algorithms/su3_j34_20261118/profile10_external.py --output /tmp/j34-external.json
 ```
+
+## Four-source correction and closed jets
+
+On the original 7,000 profile-10 coordinates the 6,848 old rows have rank 6,635 modulo 1,000,003. Project 768 additional rows from source profiles 7, 9, 16 and 17 onto the remaining 365 coordinates. Their minor has determinant 143,392; the full 7,000-coordinate minor has determinant 102,708 in the recorded pivot order. The fixed combination has zero residual on all fitted coordinates. An independent direct trace evaluation at the precommitted seed 635729813 gives 120 nonzero residuals on 120 fresh coordinates, the first being $622254-299667=322587$. This excludes that combination only. [Pivot arrays and independent multiplication](four_source/quotient/) · [Earlier fits at two other held-out seeds](four_source/independent_holdouts.json).
+
+A separate exact test uses all 27,780 terms of twice the profile-10 right-hand side. Choose commuting scalar matrices and tangent scalar derivatives; the combined even assignments need not commute. At each assignment compute the rational kernel that annihilates the 12 projected classical letter variations, which comprise 48 ordered terms in total, and restrict the cubic form in the 24 matter-fermion coordinates to that kernel. Across 64 distinct even assignments, every one with a noncommuting pair, 4,198 unrestricted cubic coordinates are nonzero (on 30 assignments); on the kernels 0 of 1,485 are nonzero. These are exact values on the specified assignments, not an identity over the whole projected complex. They supply neither a first correction nor a separating functional. [Data for all kernels and coordinate hashes](four_source/closed_jets.json.gz) · [Exact evaluator](profile10_closed_jets.py).
+
+```sh
+python3 algorithms/su3_j34_20261118/replay_quotient.py minor
+python3 algorithms/su3_j34_20261118/replay_quotient.py fresh
+```
