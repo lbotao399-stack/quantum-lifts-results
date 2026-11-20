@@ -1,4 +1,4 @@
-"""Exhaust the order-ten orthogonal determinants at terminal weight (3,3,2,2,2)."""
+"""Orthogonal determinant relations at terminal weight (3,3,2,2,2) in eight or nine colours."""
 import argparse
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
@@ -25,22 +25,26 @@ def allowed_words(k):
             if all(v.count(i) <= 1 for i in (0,1))]
 
 
-def decorations():
-    """Two fixed metric edges give one triple, two doubles, or a closed double."""
-    for lengths, spectator in (((3,), False), ((2,2), False), ((2,), True)):
+def decorations(colours=9):
+    # A path of length k consumes k-1 fixed edges. A closed trace consumes k.
+    # Odd-length closed traces and repeated identical fermions in a path vanish.
+    patterns = {
+        9: [((3,), 0), ((2, 2), 0), ((), 2)],
+        8: [((4,), 0), ((3, 2), 0), ((2, 2, 2), 0), ((2,), 2)],
+    }
+    for lengths, closed_length in patterns[colours]:
         for grouped in product(*(allowed_words(k) for k in lengths)):
-            if tuple(sorted(grouped)) != grouped:
+            if any(u > v for u,v in zip(grouped,grouped[1:]) if len(u)==len(v)):
                 continue
-            used = Counter(i for word in grouped for i in word)
-            remaining = tuple(n-used[i] for i,n in enumerate(WEIGHT))
-            if min(remaining) < 0:
-                continue
-            paths = list((i,) for i,n in enumerate(remaining) for _ in range(n))
-            closed = grouped[0] if spectator else ()
-            if not spectator:
+            for closed in allowed_words(closed_length):
+                used = Counter(i for word in (*grouped,closed) for i in word)
+                remaining = tuple(n-used[i] for i,n in enumerate(WEIGHT))
+                if min(remaining) < 0:
+                    continue
+                paths = [(i,) for i,n in enumerate(remaining) for _ in range(n)]
                 paths.extend(grouped)
-            assert len(paths) == 10
-            yield tuple(sorted(Counter(paths).items())), closed
+                assert len(paths) == colours+1
+                yield tuple(sorted(Counter(paths).items())), closed
 
 
 def side_choices(word, multiplicity):
@@ -55,8 +59,8 @@ def side_choices(word, multiplicity):
             yield ll,lr,rr
 
 
-def cases():
-    for paths, closed in decorations():
+def cases(colours=9):
+    for paths, closed in decorations(colours):
         for sides in product(*(side_choices(word,n) for word,n in paths)):
             if sum(s[0]-s[2] for s in sides):
                 continue
@@ -77,11 +81,11 @@ def cases():
                 start = 2*len(species)
                 species.extend(closed)
                 fixed.extend((start+1,start+2,start+3,start))
-            assert len(left) == len(right) == 10 and sorted(left+right+fixed) == list(range(24))
+            assert len(left) == len(right) == colours+1 and sorted(left+right+fixed) == list(range(24))
             yield species, left+right+fixed
 
 
-def run(work, workers):
+def run(work, workers, colours=9):
     work = work.resolve()
     work.mkdir(parents=True, exist_ok=True)
     case = bounds(3)
@@ -93,13 +97,14 @@ def run(work, workers):
         for w in basis:
             print(len(w),*(pack(g) for g in w),file=f)
     exe = work/"brauer"
-    subprocess.run(["c++","-O3","-std=c++17",str(Path(__file__).with_name("rank_four_brauer.cpp")),
+    subprocess.run(["c++","-O3","-std=c++17",f"-DORTHOGONAL_DETERMINANT_ORDER={colours+1}",str(Path(__file__).with_name("rank_four_brauer.cpp")),
                     "-o",str(exe)],check=True)
-    all_cases = list(cases())
+    all_cases = list(cases(colours))
     print("determinant templates",len(all_cases),flush=True)
     vectors, witnesses = [], []
     digest = hashlib.sha256()
     nonzero = 0
+    examined = 0
     for offset in range(0,len(all_cases),workers*8):
         current = all_cases[offset:offset+workers*8]
         with ThreadPoolExecutor(workers) as pool:
@@ -116,21 +121,29 @@ def run(work, workers):
                     sp,slots = current[index]
                     witnesses.append(dict(index=offset+index,species=sp,slots=slots,
                                           raw=sorted(row.items()),singlet=projection))
-        print(offset+len(current),"of",len(all_cases),"rank",len(vectors),flush=True)
+        examined += len(current)
+        print(examined,"of",len(all_cases),"rank",len(vectors),flush=True)
+        if colours==8 and len(vectors)==case["formal"]-case["cartan"]:
+            break
     assert vectors and len(vectors)<=case["formal"]-case["cartan"]
     minor = next(dict(columns=cols,determinant=det)
                  for cols in combinations(range(cov.ncols()),len(vectors))
                  for det in [int(fmpz_mat([[v[i] for i in cols] for v in vectors]).det())] if det)
+    if colours == 8:
+        extra = dict(reflection="even", examined=examined, all_templates_checked=examined==len(all_cases))
+    else:
+        extra = {}
     m.write(work/"orthogonal_paths.json",
-            dict(weight=WEIGHT,group="SO(9)",level=30,field="Q",formal=case["formal"],cartan=case["cartan"],
-                 templates=len(all_cases),terms_per_template=math.factorial(10),nonzero_projections=nonzero,
+            dict(weight=WEIGHT,group=f"SO({colours})",level=30,field="Q",formal=case["formal"],cartan=case["cartan"],
+                 templates=len(all_cases),terms_per_template=math.factorial(colours+1),nonzero_projections=nonzero,
                  projection_sha256=digest.hexdigest(),relations=witnesses,rank=len(vectors),
-                 minor=minor,classical=case["formal"]-len(vectors)))
+                 minor=minor,classical=case["formal"]-len(vectors),**extra))
 
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--work",type=Path,required=True)
     p.add_argument("--workers",type=int,default=4)
+    p.add_argument("--colours",type=int,choices=(8,9),default=9)
     assert __debug__
     run(**vars(p.parse_args()))

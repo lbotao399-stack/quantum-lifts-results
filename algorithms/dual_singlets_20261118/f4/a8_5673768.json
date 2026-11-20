@@ -1,0 +1,15 @@
+{
+  "job": "5673768",
+  "utc": "2026-11-20T11:11:57.389875+00:00",
+  "accounting": "5673768|n4f4bmnz20|COMPLETED|147|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 0 4716 80 dimension 62\n11 15 13191 rank 59\n11 20 15673 rank 59\n11 15 11691 rank 59\n11 21 16626 rank 59\n11 21 16192 rank 59\n11 16 13083 rank 59\n11 12 10314 rank 59\n11 19 15413 rank 59\n11 16 12738 rank 59\n11 20 15160 rank 59\nprobes 1 16050 53 dimension 141\n10 17 14460 rank 79\n10 14 12862 rank 79\n10 11 9744 rank 79\n10 16 13293 rank 79\n10 12 10424 rank 79\n10 10 10132 rank 79\n10 10 8937 rank 79\n10 8 6483 rank 79\n10 16 13770 rank 79\n10 12 12109 rank 79\n",
+  "slurm_receipt": {
+    "job": "5673768",
+    "files": {
+      "double_jordan.json": [
+        "005a994472f0010def54899b146256c7ef028d1d7f74de340e0f80af916730ec",
+        3854
+      ]
+    }
+  }
+}

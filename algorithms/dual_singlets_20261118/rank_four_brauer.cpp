@@ -1,4 +1,4 @@
-// Integer order-ten Brauer contractions of adjoint letters at rank four.
+// Integer orthogonal determinants and symplectic Pfaffians for adjoint letters.
 #include <algorithm>
 #include <array>
 #include <cassert>
@@ -12,7 +12,12 @@
 #ifndef RANK_FOUR_LETTERS
 #define RANK_FOUR_LETTERS 12
 #endif
+#ifndef ORTHOGONAL_DETERMINANT_ORDER
+#define ORTHOGONAL_DETERMINANT_ORDER 10
+#endif
 constexpr int letters = RANK_FOUR_LETTERS;
+constexpr int determinant_order = ORTHOGONAL_DETERMINANT_ORDER;
+static_assert(determinant_order <= letters && determinant_order >= 2);
 using Slots = std::array<int,2*letters>;
 using Key = std::array<int,letters/2>;
 struct Block {
@@ -77,7 +82,7 @@ int main(int argc,char** argv) {
         for (auto& v:slots) std::cin>>v;
         Slots mate{},edge{};
         edge.fill(1);
-        for (int k=sp?10:20;k<2*letters;k+=2) {
+        for (int k=sp?10:2*determinant_order;k<2*letters;k+=2) {
             int a=slots[k],b=slots[k+1];
             mate[a]=b;
             mate[b]=a;
@@ -118,7 +123,7 @@ int main(int argc,char** argv) {
                 for (int j:b.odd) if (j>=0) odd[n++]=j;
             }
             assert(n==odd_count);
-            for (int j=0;j<6;++j) for (int i=0;i<j;++i) if (odd[i]>odd[j]) sign=-sign;
+            for (int j=0;j<odd_count;++j) for (int i=0;i<j;++i) if (odd[i]>odd[j]) sign=-sign;
             std::sort(key.begin(),key.end());
             raw[ids.at(key)]+=sign;
         };
@@ -132,20 +137,20 @@ int main(int argc,char** argv) {
             }
         } else {
             // Fix the diagonal, then use Heap transpositions. Each transposition reverses the sign.
-            std::array<int,10> perm{},counts{};
-            for (int i=0;i<10;++i) {
+            std::array<int,determinant_order> perm{},counts{};
+            for (int i=0;i<determinant_order;++i) {
                 perm[i]=i;
-                mate[slots[i]]=slots[i+10];
-                mate[slots[i+10]]=slots[i];
+                mate[slots[i]]=slots[i+determinant_order];
+                mate[slots[i+determinant_order]]=slots[i];
             }
             int sign=1, i=1;
             add(sign);
-            while (i<10) {
+            while (i<determinant_order) {
                 if (counts[i]==i) {counts[i]=0;++i;continue;}
                 int j=(i%2)?counts[i]:0;
                 std::swap(perm[i],perm[j]);
                 for (int k:{i,j}) {
-                    int a=slots[k],b=slots[10+perm[k]];
+                    int a=slots[k],b=slots[determinant_order+perm[k]];
                     mate[a]=b;
                     mate[b]=a;
                 }

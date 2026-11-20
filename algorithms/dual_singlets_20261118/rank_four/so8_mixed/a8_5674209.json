@@ -1,0 +1,27 @@
+{
+  "job": "5674209",
+  "utc": "2026-11-20T11:36:47.324965+00:00",
+  "accounting": "5674209|n48mixing20|COMPLETED|8|48|0:0",
+  "log": "8 of 13724 rank 5\n8832 of 13724 rank 6\n9216 of 13724 rank 6\n9600 of 13724 rank 6\n9984 of 13724 rank 7\nsource 11891 classical checks 102 projected diagrams 1463 direct controls (240, 24)\nfirst action [Fraction(-482400, 1), Fraction(-37800, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]\nsource 11891 classical checks 102 projected diagrams 1463 direct controls (240, 24)\nfirst action [Fraction(-36960, 1), Fraction(-1800, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]\neight colours {'group': 'SO(8)', 'parity': 'reflection-even', 'weight': [3, 3, 2, 2, 2], 'level': 30, 'classical_dimension': 3, 'cartan_rank': 3, 'extra_relations_on_nine_colour_duals': [['0', '0'], ['0', '0'], ['-32', '0'], ['192', '16'], ['-96', '-8'], ['-48', '-4'], ['24', '2']], 'surviving_duals': [], 'actions': {'gauginos': {'five_formal_coordinates': ['-482400', '-37800', '0', '0', '0'], 'eight_colour_coordinates': []}, 'scalars': {'five_formal_coordinates': ['-36960', '-1800', '0', '0', '0'], 'eight_colour_coordinates': []}}, 'first_differential_rank_on_tested_sources': 0, 'residual_cartan_kernel_upper': 0}\n",
+  "slurm_receipt": {
+    "job": "5674209",
+    "files": {
+      "gauginos.json": [
+        "d3ca7506dbfc82029f994daaccf64cf6778f7b0cba7752402df6c3abb4d970b5",
+        326
+      ],
+      "orthogonal_paths.json": [
+        "185fd9a91092dd12492ef6ccccddb016377fcfd93f8205257c8a89d96f81f36f",
+        3003
+      ],
+      "scalars.json": [
+        "86943655d3db1f5d680be25e4186a5039e4001fb3e36409554c320d0d8145ec6",
+        314
+      ],
+      "so8_mixed_pairing.json": [
+        "7250e7ad207a39224469f37011d20a508ac7acb903a3179ed0ad42f6579a0197",
+        553
+      ]
+    }
+  }
+}

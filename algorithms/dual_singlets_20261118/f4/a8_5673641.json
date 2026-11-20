@@ -1,0 +1,15 @@
+{
+  "job": "5673641",
+  "utc": "2026-11-20T11:00:34.798847+00:00",
+  "accounting": "5673641|n4f4bmnj20|COMPLETED|138|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 0 4716 80 dimension 62\n11 jordan True 5 59\n11 jordan True 5 59\n11 jordan True 9 59\n11 jordan True 6 59\n11 jordan True 6 59\n11 jordan True 10 59\n11 jordan True 5 59\n11 adjoint False 54 59\n11 adjoint False 52 59\n11 adjoint False 54 59\n11 adjoint False 53 59\n11 adjoint False 53 59\n11 adjoint False 54 59\n11 adjoint False 52 59\n11 adjoint True 41 59\n11 adjoint True 43 59\n11 adjoint True 47 59\n11 adjoint True 45 59\n11 adjoint True 41 59\n11 adjoint True 43 59\n11 adjoint True 35 59\nprobes 1 16050 53 dimension 141\n10 adjoint False 51 79\n10 adjoint False 55 79\n10 adjoint False 55 79\n10 adjoint False 53 79\n10 adjoint False 53 79\n10 adjoint False 53 79\n10 adjoint False 53 79\n10 adjoint True 42 79\n10 adjoint True 46 79\n10 adjoint True 37 79\n10 adjoint True 45 79\n10 adjoint True 39 79\n10 adjoint True 39 79\n10 adjoint True 35 79\n",
+  "slurm_receipt": {
+    "job": "5673641",
+    "files": {
+      "joined_images.json": [
+        "6904138b5c5eb9adb9e7912f294580c72d59e87e052c89d4a53dc2d5dc03fc82",
+        4542
+      ]
+    }
+  }
+}

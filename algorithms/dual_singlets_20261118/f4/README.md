@@ -150,3 +150,22 @@ python3 f4_subgroup_equation.py --group G2 --power 3 --plan mixed33/outgoing.jso
 python3 f4_a2_equation.py --out /tmp/a2-two.json
 python3 f4_cartan_sources.py --formal mixed11/classical.json.gz --out /tmp/f4-cartan.json
 ```
+
+## Two more classical boundaries at level 24
+
+Allow a spectator trace alongside two words contracted through traceless Jordan multiplication. At length eleven seeds 3712362 and 3712377 add two independent images. The outgoing minor of order 59 is 446538 modulo 1000003. The length-ten minor of order 79 is 579125 at the same prime. This bounds the rational second-order source dimension by $141-79-59=3$. Two Jordan projections in a trace, two adjoint bridges between traces, and cyclic products of three to five adjoint-projected Albert words reproduce these ranks in the tested families. [Both minors and recipes](joined_images.json) · [A8 job 5673641](a8_5673641.json) · [Two Jordan projections](double_jordan.json) · [Two adjoint bridges](adjoint_bridges.json) · [Adjoint-projected words](adjoint_compression.json) · [Projection algorithm](../f4_bmn_adjoint_compression.py)
+
+## The Cartan restriction of the level-30 third-order source
+
+The lowered sixth power has derivative-free incoming third-order weight $(0,0,5,5,5)$ and length 14. A Cartan cochain has one matter fermion $\psi_i$ and thirteen scalars. Its Weyl- and flavour-invariant space has dimension two. Write $h^i$ for the three Cartan scalars, $v$ for the oriented normal to their ordered triple in the four-dimensional Euclidean root realization, and $p_6(v)$ for the sum of $(u\cdot v)^6$ over the 24 short roots $u$. Two candidate coefficients of $\psi_i$ are $(v\cdot v)^2h^i$ and the Hessian of $p_6$ at $v$ applied to $h^i$. Both transform as the scalar flavour vector. Under a Weyl reflection $v$ transforms with an additional orientation sign, which cancels in these even fourth-degree expressions.
+
+At three Cartan elements on a root hyperplane, vary the scalars by $sH,sE,sF$ in its root $\mathfrak{sl}_2$, using the usual Cartan, raising and lowering matrices. The scalar commutators start at order $s^2$. For any invariant cochain linear in a matter fermion, the differential at order $s^3$ pairs each derivative of its fermion coefficient with the commutator of the other two variations. The projection of this derivative from the root $\mathfrak{sl}_2$ to itself is equivariant, hence scalar. Its scalar is determined by its derivative in the Cartan root direction. The three cyclic diagonal contractions all give $\operatorname{Tr}(H[E,F])=2$ and the six off-diagonal contractions vanish. A closed cochain therefore obeys one trace equation at each root hyperplane.
+
+Using normals $(0,0,0,1)$ and $(0,0,1,1)$ and multiplying each trace equation by its root norm squared gives the following two rows on the displayed polynomials,
+
+$$
+\begin{pmatrix}3&225/2\\24&-360\end{pmatrix},
+\qquad \det=-3780.
+$$
+
+The rows establish the independence of the two Cartan polynomials and the vanishing of the full classically closed Cartan image. A third-order source in this block must vanish on the Cartan. Its full cohomology dimension is open. [Rational calculations and root probes](root_restriction.json) · [Replay](../f4_bmn_root_restriction.py)

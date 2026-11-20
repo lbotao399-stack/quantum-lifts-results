@@ -718,6 +718,30 @@
         "algorithms/dual_singlets_20261118/so8_fifth_restriction.py"
       ],
       "scope": "The rational SO(9) source restricts classically; the first action recomputed in eight colours pairs to three times the fifth power. Independence of a new generator family is open."
+    },
+    {
+      "phase": "SO(8) mixed terminal relations, both parities and the F4 lowered sources",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 11,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "evidence": [
+        "algorithms/dual_singlets_20261118/rank_four/so8_mixed/so8_mixed_pairing.json",
+        "algorithms/dual_singlets_20261118/rank_four/so8_mixed/so8_terminal_parity.json",
+        "algorithms/dual_singlets_20261118/f4/joined_images.json",
+        "algorithms/dual_singlets_20261118/f4/root_restriction.json"
+      ],
+      "scope": "The mixed SO(8) terminal singlets restrict injectively to the Cartan. The only classical Cartan kernel in the full terminal table was previously paired. The F4 second-order source has classical dimension at most three, and any class in the level-30 third-order source restricts to zero on the Cartan."
     }
   ]
 }

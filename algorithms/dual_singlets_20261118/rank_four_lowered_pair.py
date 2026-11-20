@@ -1,4 +1,4 @@
-"""First quantum action after the six classical spin-to-flavour substitutions on the SO(9) source."""
+"""First quantum action after the six classical spin-to-flavour substitutions on the rational orthogonal source in eight or nine colours."""
 import argparse
 from collections import Counter
 from concurrent.futures import ProcessPoolExecutor
@@ -57,7 +57,7 @@ def check_classical(alphabet):
 
 
 @lru_cache(None)
-def routings(shape,i,j,least):
+def routings(shape,i,j,least,colours=9):
     offsets = [0,*accumulate(shape)]
     traces = [tuple(range(lo,hi)) for lo,hi in zip(offsets,offsets[1:])]
     p,q = [next(k for k,tr in enumerate(traces) if idx in tr) for idx in (i,j)]
@@ -75,13 +75,13 @@ def routings(shape,i,j,least):
             else:
                 lo,hi = sorted((u,v))
                 a,b,c = traces[p][:lo],traces[p][lo:hi],traces[p][hi:]
-                out.append((sign*9**(int(not b)+int(not (a+c))),
+                out.append((sign*colours**(int(not b)+int(not (a+c))),
                             rest+tuple(t for t in (b,a+c) if t)))
                 out.append((-sign*(-1)**len(b),rest+(a+b[::-1]+c,)))
     return [(c,route) for c,route in out if len(route)>=least and all(len(tr)%2==0 for tr in route)]
 
 
-def diagrams(word, least):
+def diagrams(word, least, colours=9):
     shape = tuple(map(len,word))
     letters = sum(word,())
     double, = [j for j,l in enumerate(letters) if sum(l[:2])+len(l[2])==2]
@@ -91,7 +91,7 @@ def diagrams(word, least):
             continue
         i,j = sorted((double,other))
         typ = [-2 if k==i else -1 if k==j else SIMPLE.index(l) for k,l in enumerate(letters)]
-        for c,route in routings(shape,i,j,least):
+        for c,route in routings(shape,i,j,least,colours):
             blocks = [tuple(sorted(tr,key=typ.__getitem__)) for tr in route]
             def labels(tr):
                 return tuple(typ[k] for k in tr)
@@ -173,9 +173,9 @@ def evaluate(task):
     return total
 
 
-def direct(word,lookup):
+def direct(word,lookup,colours=9):
     values = [0]*len(next(iter(lookup.values())))
-    for term,c in Q1d_multi(word,9,group="SO_odd").items():
+    for term,c in Q1d_multi(word,colours,group="SO_odd").items():
         if any(len(tr)%2 for tr in term):
             continue
         species = tuple(SIMPLE.index(l) for tr in term for l in tr)
@@ -187,7 +187,7 @@ def direct(word,lookup):
     return values
 
 
-def controls(lookup,least):
+def controls(lookup,least,colours=9):
     import random
     rng = random.Random(67119)
     tested = nonzero = 0
@@ -199,9 +199,9 @@ def controls(lookup,least):
         rng.shuffle(letters)
         off = [0,*accumulate(shape)]
         word = tuple(tuple(letters[a:b]) for a,b in zip(off,off[1:]))
-        expected = direct(word,lookup)
+        expected = direct(word,lookup,colours)
         value = [0]*len(next(iter(lookup.values())))
-        for key,n in diagrams(word,least).items():
+        for key,n in diagrams(word,least,colours).items():
             vv = evaluate((key,lookup,()))
             for j,c in enumerate(vv):
                 value[j] += n*c
@@ -219,7 +219,7 @@ MULTIPLIERS = {
 }
 
 
-def run(source, classes, out, workers, prepare=False, channel="gauginos", cartan=None):
+def run(source, classes, out, workers, prepare=False, channel="gauginos", cartan=None, colours=9):
     cert = read(classes)
     basis = [tuple(map(tuple,w)) for w in cert["formal_weight_basis"]]
     columns = cert["weight_functionals"]
@@ -244,7 +244,7 @@ def run(source, classes, out, workers, prepare=False, channel="gauginos", cartan
         for i,n in items:
             lookup.setdefault(basis[i],[0]*len(columns))[j] = Fraction(n)
     least = min(map(len,lookup))
-    ctrl = controls(lookup,least)
+    ctrl = controls(lookup,least,colours)
     bilinear, steps = MULTIPLIERS[channel]
     src = Counter()
     for w,n in unpack(source).items():
@@ -257,7 +257,7 @@ def run(source, classes, out, workers, prepare=False, channel="gauginos", cartan
     combined = Counter()
     for w,c in src.items():
         if len(w)+1 >= least:
-            for key,n in diagrams(w,least).items():
+            for key,n in diagrams(w,least,colours).items():
                 combined[key] += n*c
     keys = [(key,n) for key,n in combined.items() if n]
     print("source",len(src),"classical checks",checked,"projected diagrams",len(keys),
@@ -269,7 +269,7 @@ def run(source, classes, out, workers, prepare=False, channel="gauginos", cartan
         for (_,n),v in zip(keys,pool.map(evaluate,((key,lookup,steps) for key,_ in keys),chunksize=2)):
             for j,c in enumerate(v):
                 total[j] += n*c
-    m.write(out,dict(group="SO(9)",level=30,source="spin-to-flavour actions on a bilinear times F",
+    m.write(out,dict(group=f"SO({colours})",level=30,source="spin-to-flavour actions on a bilinear times F",
                      bilinear=bilinear,steps=steps,input_terms=len(src),projected_diagrams=len(keys),
                      classical_anticommutators=checked,direct_controls=ctrl,
                      projected_first_action=list(map(str,total))))
@@ -284,5 +284,6 @@ if __name__ == "__main__":
     p.add_argument("--prepare",action="store_true")
     p.add_argument("--channel",choices=MULTIPLIERS,default="gauginos")
     p.add_argument("--cartan",type=Path)
+    p.add_argument("--colours",type=int,choices=(8,9),default=9)
     assert __debug__
     run(**vars(p.parse_args()))

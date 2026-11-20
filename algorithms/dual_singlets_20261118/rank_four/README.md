@@ -127,3 +127,41 @@ Here $S=\operatorname{Tr}(\lambda_+\lambda_-)$ uses the defining trace for the i
 ```sh
 python3 algorithms/dual_singlets_20261118/so8_fifth_restriction.py --workers 4 --out /tmp/so8_fifth.json
 ```
+
+## Both reflection parities of the level-30 terminal singlets in eight colours
+
+At derivative bidegree $(t,t)$ the three flavour degrees are $5-t$. Reflection parity is the eigenvalue of conjugation by a defining-space reflection. In the even sector every invariant is a sum of metric contractions. At $t=3$ the stable quotient by the classical graded commutators has ten singlets. Antisymmetrizing nine defining indices gives seven independent eight-colour relations. Their minor is $134217728$. Independent expansion in the opposite trace traversal order reproduces every one of their 150 nonzero coefficients, using $9!$ permutations per relation. Three singlets restrict independently to the rank-four Cartan. The two functionals that detected the excess in nine colours evaluate on two of the eight-colour relations as
+
+$$
+\det\begin{pmatrix}-32&0\\192&16\end{pmatrix}=-512.
+$$
+
+Consequently neither excess direction survives the restriction. Recomputing the two first actions with the eight-colour completeness tensor also gives zero on each of the three Cartan coordinates. At $t=1$ the twelve independent nine-colour relations restrict to eight colours, where the same six Cartan singlets remain independent. The fifth gaugino power at $t=5$ is the previously certified incoming first differential. [Seven relations](so8_mixed/orthogonal_paths.json) · [Independent integer replay](so8_mixed/replay.json) · [First actions](so8_mixed/so8_mixed_pairing.json) · [A8 job 5674209](so8_mixed/a8_5674209.json)
+
+For the odd sector of $SO(2r)$ one orientation tensor suffices, since a pair reduces to metric contractions. Every contraction consists of $r$ open paths paired with this tensor and closed spectator traces. In terminal cohomology the matrices graded-commute. Attach an independent odd parameter to each occurrence of an odd matrix and extract their ordered coefficient at the end. This makes ordinary matrix transposition and the following polynomial identities valid over an even coefficient ring. An open word of length $k$ has transpose $(-1)^k$ times itself. Antisymmetry at its endpoints removes even open words. Odd closed words have zero trace.
+
+Write $P(A_1,\ldots,A_r)$ for the coefficient of $t_1\cdots t_r$ in the Pfaffian of $t_1A_1+\cdots+t_rA_r$. For an even-length closed word $B$, differentiate the identity for a Pfaffian under congruence with the matrix $1+sB$. The coefficient of $s$ gives
+
+$$
+\operatorname{Tr}(B)P(A_1,\ldots,A_r)
+=\sum_{\substack{i\in\{1,\ldots,r\}\\\mathrm{paths}}}
+ P(A_1,\ldots,BA_i+A_iB^{\mathsf T},\ldots,A_r).
+$$
+
+Each insertion equals $2BA_i$ after the commutator quotient. Iterating removes all closed traces. On torus block-diagonal matrices a surviving polarized Pfaffian assigns its $r$ odd-length words to the $r$ **distinct** Cartan slots. Different path multisets have disjoint monomial orbits. A repeated Grassmann-odd word gives zero by exchange. For every other multiset the coefficient of its ordered monomial is nonzero, since its stabilizer only permutes identical even words. These Pfaffians are independent after restriction. This proves injectivity on reflection-odd terminal cohomology. It applies to the terminal complex with the twelve classical letter relations specified in this calculation. [Classical letter rules](../terminal_commutators.py) · [Orthogonal invariant tensor theorem](https://arxiv.org/abs/1102.3221)
+
+| $t$ | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|---:|
+| Reflection-even classical dimension | 0 | 6 | 0 | 3 | 0 | 1 |
+| Reflection-odd classical dimension | 0 | 3 | 0 | 1 | 0 | 0 |
+| Dimension of the combined Cartan image | 0 | 9 | 0 | 4 | 0 | 0 |
+
+Counting admissible Pfaffian path multisets and averaging the sign-change character over all 384 signed permutations give identical odd multiplicities on all 72 shifted weights. The entire Cartan kernel in this table is the previously paired fifth power. The possible higher differentials into Cartan-visible classes require a separate calculation. [Both character computations and integer Pfaffian checks](so8_mixed/so8_terminal_parity.json) · [Parity algorithm](../so8_terminal_parity.py)
+
+From the algorithm directory, run
+
+```sh
+python3 so8_mixed_pairing.py --work /tmp/so8-mixed --workers 8
+python3 so8_mixed_relations_replay.py --out /tmp/so8-mixed-independent.json
+python3 so8_terminal_parity.py --out /tmp/so8-parities.json
+```

@@ -1,0 +1,15 @@
+{
+  "job": "5673906",
+  "utc": "2026-11-20T11:27:48.568910+00:00",
+  "accounting": "5673906|n4f4bmnb20|COMPLETED|636|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 0 4716 80 dimension 62\n11 30459 rank 59\n11 29841 rank 59\n11 30252 rank 59\n11 29091 rank 59\n11 30312 rank 59\n11 30066 rank 59\nprobes 1 16050 53 dimension 141\n10 30828 rank 79\n10 30876 rank 79\n10 30900 rank 79\n10 30708 rank 79\n10 30816 rank 79\n10 30732 rank 79\n",
+  "slurm_receipt": {
+    "job": "5673906",
+    "files": {
+      "adjoint_bridges.json": [
+        "2dea5ec29cf30557cbbc467f27bd2ca67f38ff63841a637ee96702ffae9ee441",
+        3770
+      ]
+    }
+  }
+}
