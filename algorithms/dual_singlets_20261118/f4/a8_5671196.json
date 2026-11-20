@@ -1,0 +1,19 @@
+{
+  "job": "5671196",
+  "utc": "2026-11-20T07:57:39.876357+00:00",
+  "accounting": "5671196|n4f4jord20|COMPLETED|215|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 8 4239 4 dimension 144\ngraph parents 409 graph monomials 25566 open words 5590\noutgoing rank 139 det 345573\nprobes 7 50094 19 dimension 666\nprobes 9 2514 2 dimension 79\nboundary evaluations 7 84000\nboundary evaluations 9 3174\njoint rank 957 new closed lower 599 quotient upper 7\n",
+  "slurm_receipt": {
+    "job": "5671196",
+    "files": {
+      "jordan_outgoing.json": [
+        "7963a56efb061d9c7acb3cc575fe40e7bd369a67eb61f365ba2c37a0da0291ac",
+        4635
+      ],
+      "jordan_incoming.json": [
+        "cda6c47d9eadd256cda69407e1bbe3a16e38071b8669906cde02260c7241239b",
+        18318
+      ]
+    }
+  }
+}

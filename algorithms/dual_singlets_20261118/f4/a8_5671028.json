@@ -1,0 +1,15 @@
+{
+  "job": "5671028",
+  "utc": "2026-11-20T07:44:36.704980+00:00",
+  "accounting": "5671028|n4f4inc20|COMPLETED|291|40|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 7 50094 19 dimension 666\nprobes 9 2514 2 dimension 79\nboundary evaluations 7 49800\nboundary evaluations 9 1542\njoint rank 948 new closed lower 590 quotient upper 21\n",
+  "slurm_receipt": {
+    "job": "5671028",
+    "files": {
+      "incoming.json": [
+        "60055ec7974b78523544c36465fef1f35e162ef8d05c87d6d1a63a0e28642351",
+        8954
+      ]
+    }
+  }
+}

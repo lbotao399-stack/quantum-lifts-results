@@ -2,7 +2,7 @@
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
   "increments": {
-    "d1": 1,
+    "d1": 0,
     "fortuitous_generator_families": 0,
     "d2": 0,
     "d3": 0,
@@ -580,6 +580,43 @@
         "algorithms/dual_singlets_20261118/f4/a8_5670599.json"
       ],
       "scope": "Upper bound on the kernel modulo universal trace cycles. No F4 quantum pairing or new generator."
+    },
+    {
+      "phase": "F4 rational fifth-power target and Jordan multiplication in its first-order source",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 8,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_jobs": [
+        "5670993",
+        "5671028",
+        "5671196"
+      ],
+      "ranks": [
+        139,
+        957
+      ],
+      "formal_image_rank": 358,
+      "closed_span_lower": 599,
+      "remaining_upper": 7,
+      "evidence": [
+        "algorithms/dual_singlets_20261118/f4/pure.json.gz",
+        "algorithms/dual_singlets_20261118/f4/pure_chain.json",
+        "algorithms/dual_singlets_20261118/f4/jordan_outgoing.json",
+        "algorithms/dual_singlets_20261118/f4/jordan_incoming.json",
+        "algorithms/dual_singlets_20261118/f4/a8_5671196.json"
+      ],
+      "scope": "The pure fifth power spans classical cohomology at length ten. The first quantum obstruction remains open."
     }
   ]
 }

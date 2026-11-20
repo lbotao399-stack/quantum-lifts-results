@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## $F_4$ fifth gaugino power, November 20, 2026
+
+At level 30, adjoining the fifth power to all pure-gaugino boundaries raises the rational rank from 11 to 12. The nine-letter pure-gaugino singlet vanishes by $20-9-11=0$. For the first-order source A8 job `5671196` detects five additional outgoing directions and nine additional boundaries using traceless Jordan multiplication. The remaining classical quotient has dimension at most $745-139-599=7$. [Table, determinants and algorithms](algorithms/dual_singlets_20261118/f4/README.md)
+
+New $d_1$ pairings **0** (total **8**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
 ## $SO(9)$ level 36 and the $F_4$ level-30 singlet, November 20, 2026
 
 A8 reconstructed the 11,891-term level-30 source and a three-term primitive over the rationals. Multiplying by the gaugino bilinear gives a second first-order pairing at level 36. In the length-twelve target the exact cochain, classical boundary and augmented ranks are 47, 46 and 47. In $F_4$ at level 30 the quotient of the possible first-order sources by universal classical trace cycles has dimension at most 21. [Rational sources and exact ranks](algorithms/dual_singlets_20261118/rank_four/README.md) · [Exceptional-group calculation](algorithms/dual_singlets_20261118/f4/README.md)

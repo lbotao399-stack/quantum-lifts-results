@@ -1,0 +1,16 @@
+{
+  "job": "5670993",
+  "utc": "2026-11-20T07:30:04.441430+00:00",
+  "accounting": "5670993|n4f4join20|COMPLETED|42|32|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 8 4239 4 dimension 144\ngraph parents 216 graph monomials 22050 open words 8384\noutgoing rank 134 det 519641\n",
+  "shapes": 0,
+  "slurm_receipt": {
+    "job": "5670993",
+    "files": {
+      "joined.json": [
+        "0c2e82a63faec6701d19c1e3802dbbb4b05e434db7a3d9056f271b02e307a852",
+        3210
+      ]
+    }
+  }
+}

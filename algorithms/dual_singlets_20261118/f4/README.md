@@ -23,3 +23,35 @@ From the repository root, using the formal source plan from the [$SO(9)$ calcula
 python3 algorithms/dual_singlets_20261118/f4_singlet_characters.py --out /tmp/f4-characters.json
 python3 algorithms/dual_singlets_20261118/f4_formal_cycles.py --plan /tmp/so9-s5/plan.json.gz --work /tmp/f4-singlets --workers 32
 ```
+
+## The classical target and its pure-gaugino predecessor
+
+Write $S=\operatorname{Tr}_{27}(\lambda_+\lambda_-)$ for the bilinear in the two gaugino components in the Albert representation. Its scalar identity line contributes zero. At derivative bidegree $(5,5)$, with all three flavour degrees zero, the singlet dimensions and classical ranks over the rationals are
+
+| Number of letters | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Cochains | 1 | 2 | 18 | 62 | 99 | 74 | 31 | 20 | 12 |
+| Incoming rank | 0 | 1 | 1 | 17 | 45 | 52 | 22 | 9 | 11 |
+| Classical cohomology | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 1 |
+
+Every differential meets a length at which its rank lower bound and that of the adjacent differential sum to the character dimension. The identity $Q_0^2=0$ forces equality at both maps. At length ten, integer evaluations of all 45 formal predecessor images have rank 11. Appending $S^5$ raises the rank to 12. The predecessor evaluations have full cochain rank 20. The saved rational functional vanishes on all 45 images and takes value one on $S^5$. The 96 target evaluations also agree with independent exterior Pfaffians. At length nine the entire classical singlet source has dimension $20-9-11=0$. [Integer target and functional](pure.json.gz) · [Character dimensions and minor certificates](pure_chain.json)
+
+## Exceptional colour contractions in the first-order source
+
+At derivative bidegree $(4,4)$ two open words in the 27-dimensional representation can be paired through either the 52 derivations or the 26 traceless Jordan multiplication operators. The latter span an invariant subspace because a derivation acts on multiplication by $x$ through multiplication by its action on $x$. For each subspace the contraction uses the inverse trace Gram matrix. Reversing an open word includes the transpose sign of its insertion, negative for a derivation and positive for Jordan multiplication. Each sampled parent is a spin and flavour singlet. Its classical variation was formed before evaluating any colours.
+
+| Insertions | Rank detected in the length-eleven image | Lower bound on formal cycles plus nine-letter boundaries | Upper bound on the remaining length-ten kernel |
+|---|---:|---:|---:|
+| 52 derivations | 134 | 590 | 21 |
+| 26 Jordan multiplications together with the ordinary trace rows | 139 | 599 | 7 |
+
+The outgoing determinant of order 139 is 345573 modulo 1000003. The determinant of order 957 for the source evaluation augmented by the formal differential is 118669 at the same prime. The formal differential has rational rank 358. Each new nine-letter boundary is entered with zero formal coordinate. The rational dimension of the resulting closed span is at least $957-358=599$. Hence its codimension in the complete classical kernel is at most $745-139-599=7$. Direct source evaluations attain rank 738 of 745. These bounds use classical maps. A quantum pairing requires evaluating the physical first differential on the surviving quotient. [Outgoing minor](jordan_outgoing.json) · [Incoming minor](jordan_incoming.json) · [A8 job 5671196](a8_5671196.json) · [Adjoint outgoing test](adjoint_outgoing.json) · [Adjoint incoming test](adjoint_incoming.json)
+
+From the repository root, using the source plan and ranks above, run
+
+```sh
+python3 algorithms/dual_singlets_20261118/f4_pure_target.py --out /tmp/f4-pure.json.gz --workers 4
+python3 algorithms/dual_singlets_20261118/f4_pure_chain.py --pure /tmp/f4-pure.json.gz --work /tmp/f4-pure-chain
+python3 algorithms/dual_singlets_20261118/f4_joined_boundaries.py --plan /tmp/so9-s5/plan.json.gz --previous /tmp/f4-singlets/ranks.json --work /tmp/f4-jordan --channel jordan --count 450 --workers 48
+python3 algorithms/dual_singlets_20261118/f4_joined_incoming.py --plan /tmp/so9-s5/plan.json.gz --previous /tmp/f4-singlets/ranks.json --outgoing /tmp/f4-jordan/jordan_outgoing.json --work /tmp/f4-jordan --channel jordan --count 480 --source-count 300 --workers 48
+```

@@ -22,7 +22,7 @@ def octonions():
 
 
 @lru_cache(None)
-def basis():
+def jordan_multiplication():
     table = octonions()
     pairs = ((0,1),(0,2),(1,2))
     labels = [(i,i,0) for i in range(3)]+[(i,j,u) for i,j in pairs for u in range(8)]
@@ -41,6 +41,12 @@ def basis():
             assert np.array_equal(matrix[:,:,0],matrix[:,:,0].T)
             assert np.array_equal(matrix[:,:,1:],-matrix[:,:,1:].swapaxes(0,1))
             left[i,:,j] = [matrix[label] for label in labels]
+    return left
+
+
+@lru_cache(None)
+def basis():
+    left = jordan_multiplication()
     generators = np.asarray([left[i]@left[j]-left[j]@left[i] for i,j in combinations(range(27),2)])
     flat = generators.reshape(-1,27*27)
     ids = m.pivotcols(nmod_mat(flat.T.tolist(),1000003))
@@ -54,6 +60,17 @@ def basis():
         # [D,L_x]=L_(Dx) checks the derivation identity on all pairs of basis elements.
         assert np.array_equal(d@left-left@d, np.einsum("hi,hkj->ikj",d,left))
     return mats,ids
+
+
+@lru_cache(None)
+def jordan_colours():
+    left = jordan_multiplication()
+    traceless = np.stack([left[0]-left[1], left[0]+left[1]-2*left[2], *left[3:]])
+    metric = np.diag([1,1,1]+[2]*24)
+    assert (traceless.swapaxes(-1,-2) @ metric == metric @ traceless).all()
+    gram = np.einsum("iab,jba->ij", traceless, traceless)
+    assert np.array_equal(gram, np.diag(np.diag(gram))) and (gram.diagonal()>0).all()
+    return traceless
 
 
 def frame(letters, points, k, degree, prime, seed):
