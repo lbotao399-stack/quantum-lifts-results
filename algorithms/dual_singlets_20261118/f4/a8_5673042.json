@@ -1,0 +1,27 @@
+{
+  "job": "5673042",
+  "utc": "2026-11-20T10:24:35.416144+00:00",
+  "accounting": "5673042|n4f4djo20|COMPLETED|108|48|0:0",
+  "log": "ing parents 132 rank 156 previous 145\n1 outgoing parents 187 rank 156 previous 145\n1 outgoing parents 227 rank 156 previous 145\n1 outgoing parents 271 rank 156 previous 145\n1 outgoing parents 317 rank 156 previous 145\n1 outgoing parents 357 rank 156 previous 145\nprobes 3 51774 41 dimension 384\nprobes 1 41940 71 dimension 195\nprobes 5 18189 13 dimension 241\n2 incoming parents 13 rank 466 previous 464\n2 incoming parents 21 rank 466 previous 464\n2 incoming parents 28 rank 466 previous 464\n2 incoming parents 42 rank 466 previous 464\n2 incoming parents 52 rank 466 previous 464\n2 incoming parents 60 rank 466 previous 464\n2 incoming parents 63 rank 466 previous 464\n2 incoming parents 65 rank 466 previous 464\nprobes 3 62964 46 dimension 438\n1 incoming parents 25 rank 465 previous 453\n1 incoming parents 58 rank 466 previous 453\n1 incoming parents 91 rank 466 previous 453\n1 incoming parents 132 rank 466 previous 453\n1 incoming parents 161 rank 466 previous 453\n1 incoming parents 187 rank 466 previous 453\n1 incoming parents 217 rank 466 previous 453\n1 incoming parents 247 rank 466 previous 453\n",
+  "slurm_receipt": {
+    "job": "5673042",
+    "files": {
+      "t1_incoming.json": [
+        "1d74c6246607234502cb6254ae7959401adc83d90ec64eb1a9ceb1476f4cb7a6",
+        7487
+      ],
+      "t1_outgoing.json": [
+        "e7e0f31aa94f8163a54ca41d2aaed892aad03f23c9d5346ba6c3b69a58872146",
+        4479
+      ],
+      "t2_incoming.json": [
+        "b3a3839e8ef28b5e06d595906f2299a1e8d27c8575d98e3ac4e60da0b32bbf71",
+        5311
+      ],
+      "t2_outgoing.json": [
+        "7dcb49f2ab771c9a75e8fc4220f391136719ec378ecaec21b0bede8af042ae80",
+        3447
+      ]
+    }
+  }
+}

@@ -1,5 +1,17 @@
 # Running computations: daily status
 
+## An $SO(8)$ first differential at level 30, November 20, 2026
+
+The rational source restricted from $SO(9)$ has first action $3[S^5]$ in $SO(8)$, where $S$ is the defining-trace gaugino bilinear. Subtracting the classical variation of four fifths of the restricted primitive gives the equality on trace polynomials. All 45 reflection-even singlet predecessor images have rational evaluation rank 19, rising to 20 with $S^5$. [Calculation and replay](algorithms/dual_singlets_20261118/rank_four/README.md#restriction-to-eight-colours-at-level-30)
+
+New $d_1$ pairings **1** (total **11**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
+## The lowered second- and third-order targets for the $F_4$ fifth gaugino power, November 20, 2026
+
+Six spin-to-flavour substitutions followed by their reverses return exactly $7200S^5$. For the lowered level-24 target, the only second-order source has no derivatives and has eleven letters. A8 job `5673281` bounds its entire classical source by $141-79-57=5$. A third-order source would have derivative bidegree $(-1,-1)$. Transferring this exclusion to the original power uses filtered superconformal equivariance at that order. At level 30 the base cohomologies for sources divisible by one gaugino bilinear also satisfy the bounds $625-466-156=3$ and $633-466-156=11$. [Charge identities, rational subgroup tests and A8 calculations](algorithms/dual_singlets_20261118/f4/README.md#sources-divisible-by-the-gaugino-bilinear)
+
+New $d_1$ pairings **0** (total **10**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
 ## Two first-order images in the $SO(9)$ mixed level-30 singlet, November 20, 2026
 
 Classical spin-to-flavour substitutions of two products of the known source give two closed inputs. On the two independent twelve-letter target functionals, their first-action rows are $(-151200,-12600)$ and $(-12000,-600)$. The rational determinant is $-60480000$. All three independent Cartan functionals vanish on both images, exhausting the two-dimensional Cartan kernel. The fourteen-letter singlet has dimension six in both dual groups. A8 jobs `5671956` and `5671971` agree using a contracted calculation and direct expansion of the trace words. [Pairing calculation and replay](algorithms/dual_singlets_20261118/rank_four/README.md#the-first-differential-on-the-two-mixed-singlets)

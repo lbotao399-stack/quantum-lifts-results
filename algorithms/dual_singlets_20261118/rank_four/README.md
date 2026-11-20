@@ -111,3 +111,19 @@ python3 rank_four_lowered_replay.py --source rank_four/source.json.gz --classes 
 A8 job 5672555 appended three independent Cartan functionals to the calculation. They span the annihilator of the seven symplectic Pfaffian rows in the ten-dimensional formal singlet. Each of the three first actions has Cartan coordinates $(0,0,0)$. The two independent images therefore span the entire two-dimensional kernel of Cartan restriction in the orthogonal classical target. This removes both candidates from the second page. [Five coordinates for the first row](full_gauginos.json) · [Five coordinates for the third row](full_scalars.json) · [Slurm receipt](a8_5672555.json)
 
 At $(t,t)=(1,1)$ there are fourteen terminal letters. Grouping the 6,702 weight words by the length and gaugino count of each trace gives the 18-dimensional formal singlet. Twelve orthogonal determinants have a minor of $17529450901606728990720$. The Cartan lower bound is six. The orthogonal classical dimension is therefore $18-12=6$, equal to the symplectic dimension. In the order $t=0,1,2,3,4,5$, the terminal classical dimensions are $(0,6,0,5,0,1)$ for $SO(9)$ and $(0,6,0,3,0,0)$ for $USp(8)$. All three excess orthogonal dimensions are hit by certified first differentials. [Integer relations](scalar_terminal.json) · [Replay](../rank_four_scalar_terminal.py)
+
+## Restriction to eight colours at level 30
+
+Let $F$ and $H$ denote the rational source and three-term primitive above. Embedding each eight-dimensional antisymmetric matrix as a nine-dimensional matrix with a zero last row and column preserves all their nonempty traces and the classical bracket. The nine-colour identity $Q_0 F=0$ therefore restricts to $SO(8)$. The first quantum action includes the matrix dimension through empty traces. Recomputing it in each defining representation gives
+
+$$
+Q_1^{SO(9)}F-Q_0H=S^5,
+\qquad
+Q_1^{SO(8)}(F|_{SO(8)})-\tfrac45 Q_0(H|_{SO(8)})=3S^5.
+$$
+
+Here $S=\operatorname{Tr}(\lambda_+\lambda_-)$ uses the defining trace for the indicated group. All 4,096 components of the eight-colour completeness numerator agree with the antisymmetric matrix basis. In the reflection-even sector the orthogonal invariant tensor theorem spans all cochains by trace words. Two orientation tensors reduce to metric contractions. Projection to the spin singlet preserves this span and commutes with $Q_0$. On 36 integral assignments the 45 spin-singlet predecessor images have rank 19. Appending $S^5$ gives rank 20. The archived rational functional vanishes on all 45 and evaluates to one on $S^5$. The 36 exterior evaluations of $S^5$ also agree with the independent Pfaffian formula. Thus the level-30 $SO(8)$ singlet is hit by $d_1$. [Integer matrices and functional](so8_fifth.json) · [Exact replay](../so8_fifth_restriction.py) · [Classical $SO(8)$ target and higher-rank prediction, Sections 4.5.2 and 5.3](https://arxiv.org/html/2610.22332v3#S4.SS5.SSS2)
+
+```sh
+python3 algorithms/dual_singlets_20261118/so8_fifth_restriction.py --workers 4 --out /tmp/so8_fifth.json
+```

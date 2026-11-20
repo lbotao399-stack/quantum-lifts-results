@@ -1,0 +1,15 @@
+{
+  "job": "5672818",
+  "utc": "2026-11-20T10:05:41.100266+00:00",
+  "accounting": "5672818|n4f4sub20|COMPLETED|12|24|0:0",
+  "log": "gcc-13.2.0 loaded successful\nG2 2 dimensions 21 11 ranks [21, 11, 10, 11]\nG2 3 dimensions 119 35 ranks [119, 35, 35, 35]\nSp3 2 dimensions 32 18 ranks [32, 18, 16, 17]\nSp3 3 dimensions 254 79 ranks [254, 79, 79, 79]\nSO7 2 dimensions 32 18 ranks [32, 18, 16, 17]\nSO7 3 dimensions 256 81 ranks [256, 81, 81, 81]\n",
+  "slurm_receipt": {
+    "job": "5672818",
+    "files": {
+      "subgroups.json": [
+        "648237ce004886146b3e4a02395020ad5d12a1d1742d7e91339215ecc2d2133f",
+        11766
+      ]
+    }
+  }
+}

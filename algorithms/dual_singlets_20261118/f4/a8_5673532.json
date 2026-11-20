@@ -1,0 +1,15 @@
+{
+  "job": "5673532",
+  "utc": "2026-11-20T10:53:08.796882+00:00",
+  "accounting": "5673532|n4f4bmny20|COMPLETED|163|48|0:0",
+  "log": " 53 dimension 141\nprobes 1 13083 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 13293 53 dimension 141\nprobes 1 13293 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 12867 53 dimension 141\nprobes 1 12867 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 12114 53 dimension 141\nprobes 1 12114 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 9891 53 dimension 141\nprobes 1 9891 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 12069 53 dimension 141\nprobes 1 12069 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 11835 53 dimension 141\nprobes 1 11835 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 13374 53 dimension 141\nprobes 1 13374 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 12855 53 dimension 141\nprobes 1 12855 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 10881 53 dimension 141\nprobes 1 10881 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 12201 53 dimension 141\nprobes 1 12201 53 dimension 141\nlength 10 rank 79 ceiling 84\nprobes 1 10686 53 dimension 141\nprobes 1 10686 53 dimension 141\nlength 10 rank 79 ceiling 84\n",
+  "slurm_receipt": {
+    "job": "5673532",
+    "files": {
+      "trace_images.json": [
+        "0d4d704358c0bfa69dcaf99aa8615d110b0d31789258dc75d365b6a55d5c8e69",
+        3844
+      ]
+    }
+  }
+}

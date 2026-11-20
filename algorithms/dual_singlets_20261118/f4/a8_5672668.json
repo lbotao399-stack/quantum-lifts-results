@@ -1,0 +1,15 @@
+{
+  "job": "5672668",
+  "utc": "2026-11-20T09:50:47.916451+00:00",
+  "accounting": "5672668|n4f4dress20|COMPLETED|187|48|0:0",
+  "log": "17\nprobes 3 1140 5 dimension 31\norder 2 S factors 2 cohomology upper 0 kernel modulo formal upper 0\nprobes 3 51774 41 dimension 384\nprobes 5 18189 13 dimension 241\nsource (2, 2, 2, 2, 2) 9 words 72837 shapes 493 largest 540\nformal singlets 1474 image words 15008\nprobes 4 15008 12 dimension 162\nprobes 3 52011 41 dimension 384\nprobes 5 18234 13 dimension 241\norder 2 S factors 1 cohomology upper 11 kernel modulo formal upper 11\nsource (0, 0, 3, 3, 3) 7 words 918 shapes 22 largest 120\nformal singlets 29 image words 768\nprobes 1 768 12 dimension 16\nsource (0, 0, 3, 3, 3) 8 words 936 shapes 11 largest 324\nformal singlets 34 image words 237\nprobes 0 237 29 dimension 11\nprobes 1 870 12 dimension 16\norder 3 S factors 2 cohomology upper 0 kernel modulo formal upper 0\nprobes 1 41940 71 dimension 195\nprobes 3 62964 46 dimension 438\nsource (1, 1, 3, 3, 3) 10 words 113208 shapes 277 largest 3360\nformal singlets 1597 image words 24165\nprobes 2 24165 31 dimension 163\nprobes 1 42060 71 dimension 195\nprobes 3 63294 46 dimension 438\norder 3 S factors 1 cohomology upper 35 kernel modulo formal upper 33\n",
+  "slurm_receipt": {
+    "job": "5672668",
+    "files": {
+      "dressed_sources.json": [
+        "a3248d81418bb1951d0fbf60ae6d815bd2c80363c2e594c9ae7b91d2ba35d40b",
+        27374
+      ]
+    }
+  }
+}

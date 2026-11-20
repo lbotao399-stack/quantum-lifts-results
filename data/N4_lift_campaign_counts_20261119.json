@@ -2,14 +2,14 @@
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
   "increments": {
-    "d1": 2,
+    "d1": 0,
     "fortuitous_generator_families": 0,
     "d2": 0,
     "d3": 0,
     "nonperturbative": 0
   },
   "cumulative": {
-    "d1": 10,
+    "d1": 11,
     "fortuitous_generator_families": 3,
     "d2": 0,
     "d3": 0,
@@ -673,6 +673,51 @@
         "algorithms/dual_singlets_20261118/rank_four/scalar_terminal.json"
       ],
       "scope": "The two linearly independent mixed spin and flavour singlet pairings use the known level-30 source through products and classical substitutions."
+    },
+    {
+      "phase": "F4 fifth-power primary at level 24",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "evidence": [
+        "algorithms/dual_singlets_20261118/f4/charges.json",
+        "algorithms/dual_singlets_20261118/f4/primary.json",
+        "algorithms/dual_singlets_20261118/f4/a8_5673281.json"
+      ],
+      "scope": "The complete derivative-free second-order source has rational classical cohomology dimension at most five. The lowered target has no third-order source by grading. Transfer to the fifth power uses the filtered superconformal Ward identity.",
+      "cumulative": {
+        "d1": 10,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      }
+    },
+    {
+      "phase": "SO(8) reflection-even fifth gaugino power at level 30",
+      "increments": {
+        "d1": 1,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 11,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "evidence": [
+        "algorithms/dual_singlets_20261118/rank_four/so8_fifth.json",
+        "algorithms/dual_singlets_20261118/so8_fifth_restriction.py"
+      ],
+      "scope": "The rational SO(9) source restricts classically; the first action recomputed in eight colours pairs to three times the fifth power. Independence of a new generator family is open."
     }
   ]
 }

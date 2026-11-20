@@ -66,12 +66,12 @@ def trace_value(tr, jet, group):
     return out
 
 
-def expression_value(expr, jet, group):
+def expression_value(expr, jet, group, trace=trace_value):
     row = Counter()
     for w,c in expr.items():
         term = c,0
         for tr in w:
-            term = wedge(term,trace_value(tr,jet,group))
+            term = wedge(term,trace(tr,jet,group))
         row[term[1]] += term[0]
     return {i:c for i,c in row.items() if c}
 
@@ -107,26 +107,26 @@ def factor(spec, flavours, spins):
     return expr
 
 
-def components(spec, spins, jet, group):
+def components(spec, spins, jet, group, trace=trace_value):
     n,h,d = spec
     assert h == len(spins)
     out = []
     for fl in product(range(3),repeat=n+d):
         expr = factor(spec,fl,spins)
-        v = expression_value(expr,jet,group)
+        v = expression_value(expr,jet,group,trace)
         # On these commuting Cartan elements the graded symmetrization can
         # also be evaluated in its original order, before differentiation.
         inside = tuple((0,0,(i,)) for i in fl[:n])+tuple((*AXES[j],()) for j in spins)
         control = Counter()
         for sg,tr in derivative(inside,fl[-1] if d else None):
-            c,mask = trace_value(tr,jet,group)
+            c,mask = trace(tr,jet,group)
             control[mask] += sg*c
         assert v == {a:b for a,b in control.items() if b}
         out.extend((fl,(c,mask)) for mask,c in v.items())
     return out
 
 
-def tensor(specs, probe, group):
+def tensor(specs, probe, group, trace=trace_value):
     jet,mask = fields(probe)
     values = Counter()
     for spins,sg in (((0,1),1),((1,0),-1)):
@@ -134,7 +134,7 @@ def tensor(specs, probe, group):
         rows = []
         for spec in specs:
             h = spec[1]
-            rows.append(components(spec,spins[p:p+h],jet,group))
+            rows.append(components(spec,spins[p:p+h],jet,group,trace))
             p += h
         assert p == 2
         for pieces in product(*rows):

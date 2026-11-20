@@ -1,0 +1,19 @@
+{
+  "job": "5672967",
+  "utc": "2026-11-20T10:41:16.118953+00:00",
+  "accounting": "5672967|n4f4cap20|COMPLETED|1201|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 8 7999 4 dimension 144\nimage parents 31 rank 138 augmented 139\nimage parents 62 rank 138 augmented 139\nimage parents 95 rank 138 augmented 139\nimage parents 126 rank 138 augmented 139\nimage parents 160 rank 138 augmented 139\nimage parents 190 rank 138 augmented 139\nimage parents 221 rank 138 augmented 139\nimage parents 227 rank 138 augmented 139\nprobes 7 50094 19 dimension 666\nsource parents 31 rank 659 augmented None\nsource parents 62 rank 659 augmented None\nsource parents 95 rank 659 augmented None\nsource parents 126 rank 659 augmented None\nsource parents 160 rank 659 augmented None\nsource parents 190 rank 659 augmented None\nsource parents 221 rank 659 augmented None\nsource parents 227 rank 659 augmented None\n",
+  "slurm_receipt": {
+    "job": "5672967",
+    "files": {
+      "source.json": [
+        "7a3ee0bc1538217a5fb2e9bb7237441c78e9d2efafbdb5c7bcfdc9bd88152764",
+        7303
+      ],
+      "image.json": [
+        "0b23acfe38d4dc7674ea8c01350018a22af7c370f7a6878a7fc3887f715f4fd6",
+        3953
+      ]
+    }
+  }
+}

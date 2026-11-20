@@ -1,0 +1,15 @@
+{
+  "job": "5673281",
+  "utc": "2026-11-20T10:34:34.177153+00:00",
+  "accounting": "5673281|n4f4bmnp20|COMPLETED|66|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 0 5255 80 dimension 62\n11 Jordan sources 32 rank 57 ordinary 51\n11 Jordan sources 69 rank 57 ordinary 51\n11 Jordan sources 107 rank 57 ordinary 51\n11 Jordan sources 150 rank 57 ordinary 51\n11 Jordan sources 190 rank 57 ordinary 51\n11 Jordan sources 231 rank 57 ordinary 51\n11 Jordan sources 277 rank 57 ordinary 51\n11 Jordan sources 323 rank 57 ordinary 51\n11 Jordan sources 359 rank 57 ordinary 51\n11 Jordan sources 395 rank 57 ordinary 51\nprobes 1 17964 53 dimension 141\n10 Jordan sources 28 rank 79 ordinary 74\n10 Jordan sources 60 rank 79 ordinary 74\n10 Jordan sources 90 rank 79 ordinary 74\n10 Jordan sources 120 rank 79 ordinary 74\n10 Jordan sources 147 rank 79 ordinary 74\n10 Jordan sources 171 rank 79 ordinary 74\n10 Jordan sources 202 rank 79 ordinary 74\n10 Jordan sources 226 rank 79 ordinary 74\n10 Jordan sources 257 rank 79 ordinary 74\n10 Jordan sources 284 rank 79 ordinary 74\n",
+  "slurm_receipt": {
+    "job": "5673281",
+    "files": {
+      "primary.json": [
+        "80ab978c59384c708b68ea63bdd528a60fd8d5306c752f166de496b4cc4814fa",
+        18680
+      ]
+    }
+  }
+}

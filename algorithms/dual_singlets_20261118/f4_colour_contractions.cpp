@@ -10,7 +10,7 @@ extern "C" int f4_open(int k, int points, int degree, int prime, int letters_cou
     const std::uint64_t* starts, const unsigned char* words, int entries,
     const int* generators, std::uint32_t* output) {
     try {
-        if (prime != modulus || matrix_size != 27 || degree > k) return 1;
+        if (prime != modulus || degree > k) return 1;
         Context ctx(k,points,degree,parity,offsets,letters);
         const std::size_t coords = std::size_t(points)*ctx.masks[degree].size();
         std::vector<Polynomial> stack;

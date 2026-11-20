@@ -68,7 +68,7 @@ def vary(expr, axis, channel):
 
 
 def parent(seed, deficit=1, channel="adjoint", source_only=False, spectator=False):
-    assert channel in ("adjoint","jordan")
+    assert channel in ("adjoint","jordan","adjoint_product")
     rng=random.Random(seed)
     slots=list(range(11))
     rng.shuffle(slots)
@@ -83,6 +83,8 @@ def parent(seed, deficit=1, channel="adjoint", source_only=False, spectator=Fals
         raise ValueError(deficit)
     rng.shuffle(pattern)
     cut=rng.choice((3,4,5) if channel=="adjoint" else (4,5))
+    if channel=="adjoint_product":
+        cut=rng.choice((2,3,4,5))
     result=Counter()
     for bits in product((0,1),repeat=4):
         spins=tuple(j for b in bits for j in (b,1-b))
@@ -112,12 +114,16 @@ def parent(seed, deficit=1, channel="adjoint", source_only=False, spectator=Fals
     return image
 
 
-def native(work,prime,channel="adjoint"):
+def native(work,prime,channel="adjoint",matrix_size=27,colour_count=None):
     source=Path(__file__).with_name("f4_colour_contractions.cpp")
     path=work/("open.so" if channel=="adjoint" else "open_jordan.so")
+    if colour_count is None:
+        colour_count=len(insertions(channel))
+    else:
+        path=work/f"open_{channel}_{matrix_size}_{colour_count}.so"
     subprocess.run(["c++","-O3","-std=c++17","-shared","-fPIC","-I",str(m.RT),
-                    "-DTRACE_FRAME_MATRIX_SIZE=27",f"-DTRACE_FRAME_PRIME={prime}",
-                    f"-DF4_COLOUR_COUNT={len(insertions(channel))}",
+                    f"-DTRACE_FRAME_MATRIX_SIZE={matrix_size}",f"-DTRACE_FRAME_PRIME={prime}",
+                    f"-DF4_COLOUR_COUNT={colour_count}",
                     str(source),"-o",str(path)],check=True)
     lib=ctypes.CDLL(str(path))
     i,p=ctypes.c_int,ctypes.c_void_p
@@ -135,17 +141,22 @@ def insertions(channel):
     return basis()[0]
 
 
-def colour_inputs(f, channel):
+def colour_inputs(f, channel, projection=None):
     alphabet=sorted(f.L)
     ids={l:i+1 for i,l in enumerate(alphabet)}
     parts=[np.ascontiguousarray(f.L[l][1],dtype=np.int64).ravel() for l in alphabet]
     off=np.asarray([0,0]+list(np.cumsum([len(a) for a in parts])[:-1]),np.uint64)
     parity=np.asarray([0]+[f.L[l][0] for l in alphabet],np.int32)
-    mats=insertions(channel)
-    gram=np.einsum("iab,jba->ij",mats,mats)
-    assert np.array_equal(gram,np.diag(np.diag(gram)))
-    terms=np.array([(int(i),int(b*27+a),int(mats[i,a,b])) for i,a,b in np.argwhere(mats)],np.int32)
-    inv=np.array([pow(int(x),-1,f.p) for x in np.diag(gram)],np.int64)
+    if projection is None:
+        mats=insertions(channel)
+        gram=np.einsum("iab,jba->ij",mats,mats)
+        assert np.array_equal(gram,np.diag(np.diag(gram)))
+        inv=np.array([pow(int(x),-1,f.p) for x in np.diag(gram)],np.int64)
+    else:
+        mats,inv=projection
+    size=mats.shape[1]
+    assert mats.shape[1:]==next(iter(f.L.values()))[1].shape[-2:]
+    terms=np.array([(int(i),int(b*size+a),int(mats[i,a,b])) for i,a,b in np.argwhere(mats)],np.int32)
     return ids,parity,off,np.concatenate(parts),terms,inv
 
 
@@ -173,20 +184,20 @@ def pair_values(pairs,dl,dr,left,right,f,lib):
     return out.reshape(len(pairs),-1)
 
 
-def explicit(w,f,channel):
+def explicit(w,f,channel,projection=None):
     d,mat=f.L[w[0]]
     for l in w[1:]:
         mat,d=f.mat_mul_letter(mat,d,l)
-    mats=insertions(channel)
+    mats=insertions(channel) if projection is None else projection[0]
     return np.einsum("iab,pxba->pxi",mats,mat)%f.p
 
 
-def evaluate(graphs,f,work,workers,lib=None,channel="adjoint"):
+def evaluate(graphs,f,work,workers,lib=None,channel="adjoint",projection=None):
     if not graphs:
         return np.zeros((0,f.ncols),np.int64)
     if lib is None:
         lib=native(work,f.p,channel)
-    inputs=colour_inputs(f,channel)
+    inputs=colour_inputs(f,channel,projection)
     words=sorted({w for g in graphs for w in g})
     lists=defaultdict(list)
     for w in words:
@@ -197,7 +208,7 @@ def evaluate(graphs,f,work,workers,lib=None,channel="adjoint"):
         chunks=np.array_split(np.arange(len(ws)),min(len(ws),workers))
         with ThreadPoolExecutor(workers) as pool:
             v=np.concatenate(list(pool.map(lambda js:open_values([ws[i] for i in js],degree,f,lib,inputs),chunks)))
-        np.testing.assert_array_equal(v[0],explicit(ws[0],f,channel))
+        np.testing.assert_array_equal(v[0],explicit(ws[0],f,channel,projection))
         records[degree]=v
     grouped=defaultdict(list)
     for idx,(a,b) in enumerate(graphs):

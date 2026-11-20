@@ -82,3 +82,71 @@ python3 f4_first_functional.py --plan /tmp/so9-s5/plan.json.gz --previous f4/ran
 ```
 
 A8 job 5671812 also evaluated the ordinary word recipes in the 52-dimensional adjoint representation at the same colour coordinates. Exact reconstruction verifies all $52^2$ brackets in the 27-dimensional representation. The new seven-fermion source, image and augmented ranks are again 659, 138 and 139 modulo 1000003. [Minors](adjoint_traces.json) · [Slurm receipt](a8_5671812.json) · [Replay](../f4_adjoint_traces.py)
+
+A8 job `5672967` also tested 227 seven-fermion parents formed by projecting two adjoint-representation words through the symmetrized Albert-matrix product. On the enlarged family the source rank is 659, the image rank is 138 and adjoining the prescribed image gives rank 139 modulo 1000003. Seven source dimensions remain outside the detected span. [Source minor](adjoint_product_source.json) · [Image and augmented minors](adjoint_product_image.json) · [A8 receipt](a8_5672967.json) · [Algorithm](../f4_adjoint_product.py)
+
+## Restricting the scalar correction to simple factors
+
+For a simple subalgebra, write the scalar trilinear as the invariant trace pairing of the first scalar with the commutator of the other two. The equation for a seven-fermion correction permits brackets of two gauginos and brackets of a gaugino with a scalar. Fix the power of the bilinear and restrict this classical map to the spin and flavour singlet with three scalar flavours. Each source evaluation spans its independently computed character dimension. Each terminal evaluation is injective by the same test. The last two columns test membership in the image over the rationals.
+
+| Group | Bilinear power | Source dimension | Terminal dimension | Image rank | Rank with trilinear times the bilinear power |
+|---|---:|---:|---:|---:|---:|
+| $G_2$ | 2 | 21 | 11 | 10 | 11 |
+| $G_2$ | 3 | 119 | 35 | 35 | 35 |
+| $USp(6)$ | 2 | 32 | 18 | 16 | 17 |
+| $USp(6)$ | 3 | 254 | 79 | 79 | 79 |
+| $SO(7)$ | 2 | 32 | 18 | 16 | 17 |
+| $SO(7)$ | 3 | 256 | 81 | 81 | 81 |
+| $SU(3)$ | 2 | 36 | 10 | 10 | 10 |
+
+The orthogonal, symplectic and exceptional calculations use the ordered trilinear trace. For orthogonal or symplectic generators it equals half the trilinear commutator trace. The $SU(3)$ calculation keeps both cyclic orientations and uses the commutator trace. The three strict increases have rational separating functionals. The four equalities have rational preimages in 25, 34, 80 and 10 source rows, respectively. A8 job `5672818` computed the first six rows. [Coefficients and bounds](subgroups.json) · [Slurm receipt](a8_5672818.json) · [Unitary coefficients](a2.json) · [Subgroup algorithm](../f4_subgroup_equation.py) · [Unitary algorithm](../f4_a2_equation.py)
+
+In a product of simple subalgebras the restricted trace pairing is a sum of the invariant forms of the factors. Mixed trilinear commutator traces vanish. In $G_2+A_1$ and $C_3+A_1$ the only potentially surviving distribution of four gaugino bilinears is $(3,1)$. In $A_2+A_2$ it is $(2,2)$. This follows from the classical nilpotence exponents $4,4,2,3$ in $G_2,C_3,A_1,A_2$. In $A_1$, imposing the gaugino–scalar commutators makes the antisymmetric colour tensor of each gaugino and each scalar vanish. Multiplying the alternating scalar triple by any gaugino component gives zero by exchanging that component with the first scalar and then antisymmetrizing the gaugino with the second scalar. The table thus supplies a classical preimage after restriction to each of these three subalgebras of $F_4$. The unrestricted seven-fermion equation still needs an independent calculation. [Classical chiral-ring theorem](../../../supplement/supplement.tex) · [Maximal subgroups and the Albert algebra](https://arxiv.org/abs/math/0105155)
+
+## Sources divisible by the gaugino bilinear
+
+Remove each displayed factor of $S$ before computing the classical cohomology of the remaining factor. At level 30 the possible second and third sources have bidegrees $(3,3)$ and $(2,2)$. A8 job `5672668` computes the ordinary trace images. Job `5673042` adds contractions of traceless Jordan multiplication operators in the two adjacent maps. A four-letter open word projected to the Jordan component can be graded-symmetrized. Interchanging two letters produces a Lie bracket. Its remaining cubic projection vanishes because the quadratic projection vanishes and transposition reverses the sign of a symmetrized cubic. The exact Albert-algebra checks cover $26\cdot52$ linear and $26\cdot52^2$ quadratic traces.
+
+| Incoming order | Factors of $S$ removed | Remaining weight | Cochains | Incoming rank at least | Outgoing rank at least | Rational cohomology dimension at most |
+|---:|---:|---|---:|---:|---:|---:|
+| 2 | 3 | $(0,0,2,2,2)$ | 3 | 0 | 3 | 0 |
+| 2 | 2 | $(1,1,2,2,2)$ | 48 | 28 | 20 | 0 |
+| 2 | 1 | $(2,2,2,2,2)$ | 625 | 466 | 156 | 3 |
+| 3 | 2 | $(0,0,3,3,3)$ | 16 | 6 | 10 | 0 |
+| 3 | 1 | $(1,1,3,3,3)$ | 633 | 466 | 156 | 11 |
+
+The three zeroes exclude all classical source classes in the corresponding product images. Before the additional contractions, the two positive upper bounds were 11 and 35. Both improvements follow from nonzero determinants modulo 1000003 and the consecutive classical maps having zero composite. [Ordinary trace calculations](dressed_sources.json) · [Second-order incoming](t2_incoming.json) · [Second-order outgoing](t2_outgoing.json) · [Third-order incoming](t1_incoming.json) · [Third-order outgoing](t1_outgoing.json) · [First A8 receipt](a8_5672668.json) · [Second A8 receipt](a8_5673042.json) · [Classical algorithm](../f4_dressed_jordan.py)
+
+In the last row the Weyl-invariant Cartan singlet has dimensions 1 and 5 at fermion degrees 1 and 3. On four commuting Albert-matrix assignments two products of stress-multiplet components give the minor
+
+$$
+\det\begin{pmatrix}0&31850496\\95551488&-47775744\end{pmatrix}
+=-3043362286338048.
+$$
+
+All 124 classical letter variations vanish on the four assignments. Under the exact current and primary-product input used for the rank-three groups, these two classes have closed completions. This leaves at most nine base directions after quotienting by their span. Multiplication by the protected bilinear gives closed completions of their products. At $(2,2,2,2,2)$ the Cartan source dimension is zero, as the central Weyl element acts by minus one on nine letters. [Cartan characters and evaluations](cartan.json) · [Replay](../f4_cartan_sources.py) · [Current and product input](https://arxiv.org/html/2509.16737#S4.SS3.SSS1)
+
+For the derivative-degree and flavour-degree order used above, an order-$r$ differential shifts the five degrees by $(r,r,-r,-r,-r)$ and the letter number by $1-r$. Acting in the order of the archived six spin-to-flavour substitutions takes $S^5$ from $(5,5,0,0,0)$ to $(2,2,2,2,2)$ at length 10. Applying the six reverse substitutions in reverse order gives exactly $7200S^5$ in formal trace polynomials. Each elementary charge has the sign of (167) and (169). The twelve minus signs multiply to one. For $S^6$ the corresponding integer is 25200. [All trace coefficients](charges.json) · [Forward and reverse word actions](../gaugino_primary_order.py) · [Physical charges, Appendix D](https://arxiv.org/html/2610.22332v3#A4)
+
+Consequently the lowered target for $S^5$ has its second-order source at $(0,0,4,4,4)$ and length 11, in the derivative-free BMN sector at $j=24$. A third-order source for this lowered target would have derivative bidegree $(-1,-1)$. For $S^6$ the third-order source of the lowered target is at $(0,0,5,5,5)$ and length 14, at $j=30$. The application to an incoming differential on the original gaugino power uses the perturbative Ward identity for a filtered superconformal action. Such an action induces its classical leading action on each page and commutes with the page differential with the graded sign. If a gaugino power survives to that page, the reverse polynomial identity forces its lowered class to survive there too. An incoming differential into the power would then give one into the lowered class. The kinematic exclusions for the lowered targets are independent of this higher-order Ward input. [Superconformal selection rule and its perturbative status](https://github.com/davidsd/fortuity-ai/blob/4256f207986029540060fb44dd494746828f65ce/summary/fortuity-summary.tex) · [One-loop Ward identity](https://arxiv.org/html/2512.07771#S3.SS4)
+
+For the lowered $j=24$ test, the complete character dimensions at lengths 10, 11 and 12 are 203, 141 and 62. Length ten splits into 11 scalar field-strength and 192 two-fermion singlets. The ordinary trace images give ranks 74 and 51. Albert-algebra contractions raise these to 79 and 57. Hence the complete rational BMN source cohomology satisfies
+
+$$
+0\leq \dim H(Q_0)_{(0,0,4,4,4),\,11}\leq 141-79-57=5.
+$$
+
+The terminal squared Gram determinant is nonzero on three independent Cartan scalars. This gives the complementary upper bound 61 on the outgoing rank. All seven derivative-free letter identifications intertwine the two saved classical actions. [Both minors, frame seeds and contraction recipes](primary.json) · [A8 job 5673281](a8_5673281.json) · [Replay](../f4_bmn_primary.py)
+
+A8 job `5673532` replayed both minors, then added 1,152 flavour contractions at each source length in both the 27-dimensional Albert and 52-dimensional adjoint traces. The enlarged image ranks are 79 and 57 at the recorded prime. [Determinants and rows](trace_images.json) · [A8 receipt](a8_5673532.json) · [Algorithm](../f4_bmn_trace_images.py)
+
+From the repository root, use the environment of the rank-four calculation.
+
+```sh
+cd algorithms/dual_singlets_20261118
+python3 gaugino_primary_order.py --out /tmp/charges.json
+python3 f4_bmn_primary.py --work /tmp/f4-bmn-primary --tasks 640 --workers 16
+python3 f4_subgroup_equation.py --group G2 --power 3 --plan mixed33/outgoing.json.gz --out /tmp/g2-three.json
+python3 f4_a2_equation.py --out /tmp/a2-two.json
+python3 f4_cartan_sources.py --formal mixed11/classical.json.gz --out /tmp/f4-cartan.json
+```
