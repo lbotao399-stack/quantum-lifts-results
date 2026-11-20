@@ -59,7 +59,7 @@ def polys(words,exe,folder):
     return out
 
 def make(g,exe,folder,seed=340819):
-    folder.mkdir(parents=True,exist_ok=True);dim,odd=parity_frame_dims(g);assert dim>0 and g.count(0)>=4
+    folder.mkdir(parents=True,exist_ok=True);dim,odd=parity_frame_dims(g);assert dim>0 and len(g) in (10,11) and len(g)-g.count(0)<=7
     words=base.content_parents.all_words(g);assert len(words)==base.control(g);ws=[]
     for w in words:
         sign,v=conjugate(w)

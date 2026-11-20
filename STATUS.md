@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## SU(3) level 34: two simultaneous inhomogeneous identities, November 19, 2026
+
+One 11,439-word rational correction solves **315/500** contents: **13/174** formally inhomogeneous and **302/326** homogeneous. Both new right-hand sides are nonzero at three colours. All 22 affected equations were rechecked and all 313 prior successes survive. The remaining 185 fail for this correction. [A8 job 5665806, both deltas and replay](algorithms/su3_j34_20261118/README.md#two-simultaneous-inhomogeneous-equations).
+
+New $d_1$ pairings **0** (total **6**); new fortuitous-generator families **0** (total **3**); certified $d_2$, $d_3$, nonperturbative lifts **0, 0, 0**.
+
 ## SU(3) level 34: two verified rational corrections, November 19, 2026
 
 The 7,337-word correction retains all 308 previously solved contents and solves five additional homogeneous ones. It satisfies 11/174 formally inhomogeneous equations, 302/326 homogeneous ones, and all 70 selected equations. The expanded 7,623-word correction satisfies 6/174, 254/326 and 27/70. Neither solves the global first equation. [A8 jobs 5665405 and 5665560, vectors and replays](algorithms/su3_j34_20261118/README.md#corrections-on-homogeneous-and-inhomogeneous-contents).

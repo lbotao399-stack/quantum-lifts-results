@@ -203,6 +203,32 @@
         "algorithms/su3_j34_20261118/joint_70/support_cut/all_nonincident.census.json"
       ],
       "scope": "The five additional successes of the confined vector are homogeneous; 187 equations still fail. No full first correction or new obstruction."
+    },
+    {
+      "phase": "Two simultaneous inhomogeneous level-34 corrections",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5665806",
+      "ordered_vector_sha256": "c3e5f3a0405b643b605a750d95811863c748c0a3442cffb82945d3e14f58c9fd",
+      "words": 11439,
+      "passed": 315,
+      "failed": 185,
+      "inhomogeneous_passed": 13,
+      "homogeneous_passed": 302,
+      "new": 2,
+      "lost": 0,
+      "affected": 22,
+      "evidence": [
+        "algorithms/su3_j34_20261118/joint_70/inhomogeneous/independent.json",
+        "algorithms/su3_j34_20261118/joint_70/inhomogeneous/a8_5665806.json",
+        "algorithms/su3_j34_20261118/joint_70/inhomogeneous/restricted_separators.json"
+      ],
+      "scope": "Fixed rational first correction; no global solution, new pairing or new generator."
     }
   ]
 }

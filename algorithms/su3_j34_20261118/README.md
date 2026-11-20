@@ -199,3 +199,22 @@ All five gains on each vector are homogeneous. The 7,337-word vector preserves a
 [A8 receipt and hashes](joint_70/support_cut/a8_5665560.json) · [Support cut](cut_homogeneous_parents.py) · [Verifier](replay_support_cut.py) · [RHS counts and comparisons](joint_70/support_cut/rhs_comparison.json) · [Confined census](joint_70/support_cut/preserve_296.census.json) · [Expanded census](joint_70/support_cut/all_nonincident.census.json).
 
 With a three-colour column executable built from `colour_columns.cpp` (including `colour_polynomial.cpp`) and a seven-generator executable built from `exterior_content_probe.cpp`, run `replay_support_cut.py VARIANT --columns /absolute/path/to/columns --exterior /absolute/path/to/exterior --work /tmp/variant-work --out /tmp/variant-results` for `preserve_296` and `all_nonincident`. For the preceding calculation run `replay_shared_success.py --exe /absolute/path/to/columns --work /tmp/shared-work --out /tmp/shared.json`.
+
+## Two simultaneous inhomogeneous equations
+
+For the published $SU(3)$ source $\mathcal O_0$ at $j=34$, an 11,439-word rational $\mathcal O_1$ solves 315 of the 500 letter contents of $Q_0\mathcal O_1=-Q_1\mathcal O_0$. It preserves the 313 previous identities. Here $Q_0$ and $Q_1$ are the classical and first quantum supercharge coefficients.
+
+| Target letter content (packed hexadecimal) | Nonzero three-colour RHS coefficients | Nonzero residual before | Nonzero residual after / collected |
+|---|---:|---:|---:|
+| `0000000000010105050716` | 6,476 | 8,056 | 0 / 18,984 |
+| `0000000001010106060d0f` | 15,128 | 15,128 | 0 / 35,190 |
+
+The 1,685-word and 2,417-word additions affect 13 and 10 contents. Independent reconstruction and graded differentiation reclassify their union of 22. On the shared content `000000000101020506070f`, the combined residual has coefficient 149184 at the archived exterior evaluation modulo 1000003. Exactly 13/174 formally inhomogeneous and 302/326 homogeneous equations hold; the other 185 fail on this same correction. Three rational functionals also exclude individual parent spaces on the preceding vector; the tests do not exclude a correction using other parents.
+
+[Cluster receipt and log](joint_70/inhomogeneous/a8_5665806.json) · [Independent coefficient replay](joint_70/inhomogeneous/independent.json) · [Correction terms and deltas](joint_70/inhomogeneous/) · [Three restricted functionals](joint_70/inhomogeneous/restricted_separators.json).
+
+With the two C++ executables compiled as above, run:
+
+```sh
+python3 replay_inhomogeneous_repairs.py --columns /tmp/j34-columns --exterior /tmp/j34-probe --work /tmp/j34-inhom-replay --out /tmp/j34-inhom.json
+```

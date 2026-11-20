@@ -1,0 +1,285 @@
+{
+  "job": "5665806",
+  "china_time": "2026-11-20T08:08:36.115644+08:00",
+  "sacct": "5665806|n434inh20|COMPLETED|79|32|0:0",
+  "receipt": {
+    "inputs": {
+      "negative_Q1.jsonl.gz": "44b8fe0ca30b7c1a226a7c279b4c570557883564e2f45518678e157945ca4540",
+      "preserve_296.census.json": "5eb0e7c01042d3105ea9eccaab27e4de47e92e88895789d9bf1cf4ef07852fa1",
+      "preserve_296.vector.json.gz": "a067389dde0489fb086771b397a50a8a210119432dd0ded40a60e53345e64108"
+    },
+    "job": "5665806",
+    "targets": {
+      "0000000000010105050716": {
+        "before": {
+          "Q0_O1_plus_Q1_O0": {
+            "collected_monomials": 10482,
+            "first_coefficient": "-85680",
+            "first_key": 70683372150168,
+            "formal_words": 918,
+            "nonzero_monomials": 8056
+          },
+          "negative_Q1": {
+            "collected_monomials": 10482,
+            "first_coefficient": "537285",
+            "first_key": 70683507410328,
+            "formal_words": 896,
+            "nonzero_monomials": 6476
+          }
+        },
+        "files": {
+          "delta.json.gz": [
+            169889,
+            "d1db93da85b41c87a81c9d8b8a2eff251f5d57f31fa1e60e49ad5316905caaf6"
+          ],
+          "frame_terms.json.gz": [
+            115247,
+            "6abaa05f175eddb2d033a4977ec01f5a7f9b5dd3ef97307e806e0262fdecff30"
+          ],
+          "graph.json": [
+            573,
+            "9350a5fc84ebac1967c10fbb197632c7b6dbfe848416e8c1d52f05b43e76a289"
+          ],
+          "new.vector.json.gz": [
+            567998,
+            "f3a893fc74c98ca458f64a10cffcb023468c49051468d5a4212b74788cdf5f64"
+          ],
+          "physical_before.json": [
+            295,
+            "8746eacc39a492f3c113a8069837631600de3470e8fafcd19913fb10769c288c"
+          ],
+          "progress.json": [
+            115,
+            "e1a467681004340ade91cdaa2a1877f5a6366aaeb2b8bf5474e217469bd2a6b6"
+          ],
+          "result.json": [
+            1423,
+            "b4a161159e5fc2a7571db3386d999131fd35619330aa11b1c377d08426f7670e"
+          ]
+        },
+        "frames": {
+          "0000000000010105050716": {
+            "det": 114533,
+            "dim": 894,
+            "sha256": "b19e2dd2c14b8044ba7ccac120e58004c5095eed4999614cf653a5c02c08a937"
+          },
+          "00000000010102050716": {
+            "det": 784705,
+            "dim": 1345,
+            "sha256": "105c71e2bf1e675e7fcc450632e7d12eda5c946f21461069203bbade4176b18d"
+          },
+          "00000000010105050713": {
+            "det": 704564,
+            "dim": 649,
+            "sha256": "acf081af03aff1999f38081deef1506b3d1e6142078988cba490aea427dd1b21"
+          },
+          "00000000010105050816": {
+            "det": 295439,
+            "dim": 649,
+            "sha256": "421e21deb5825e867d163f358a56c995eb4807fc6f5d9088cd8c469fea827f1c"
+          }
+        },
+        "groups": [
+          "00000000010102050716",
+          "00000000010105050713",
+          "00000000010105050816"
+        ],
+        "result": {
+          "affected_contents": [
+            "0000000000010105050716",
+            "0000000000010204050716",
+            "0000000000010405050713",
+            "0000000000010405050816",
+            "0000000001010105060716",
+            "0000000001010204060716",
+            "000000000101020506070f",
+            "0000000001010304050716",
+            "000000000101030505070f",
+            "0000000001010405060713",
+            "0000000001010405060816",
+            "0000000001010505060710",
+            "000000000101050506080f"
+          ],
+          "allowed": [
+            "00000000010102050716",
+            "00000000010105050713",
+            "00000000010105050816"
+          ],
+          "augmented_rank_mod_prime": 867,
+          "base": "ed3a3cf4a4dfe6d437851734f8b91ae54d3e6557f8c5cad6783068d8f7842049",
+          "changed_parents": [
+            "00000000010102050716",
+            "00000000010105050713",
+            "00000000010105050816"
+          ],
+          "delta_words": 1685,
+          "digits": 128,
+          "frame_terms": 860,
+          "image_rank_mod_prime": 867,
+          "kind": "exact_solution",
+          "minor_determinant_mod_prime": 369060,
+          "parent_dimension": 2643,
+          "physical_after": {
+            "collected_monomials": 18984,
+            "first_coefficient": null,
+            "first_key": null,
+            "formal_words": 3750,
+            "nonzero_monomials": 0
+          },
+          "physical_before": {
+            "Q0_O1_plus_Q1_O0": {
+              "collected_monomials": 10482,
+              "first_coefficient": "-85680",
+              "first_key": 70683372150168,
+              "formal_words": 918,
+              "nonzero_monomials": 8056
+            },
+            "negative_Q1": {
+              "collected_monomials": 10482,
+              "first_coefficient": "537285",
+              "first_key": 70683507410328,
+              "formal_words": 896,
+              "nonzero_monomials": 6476
+            }
+          },
+          "preserved_by_support": 313,
+          "prime": 1000003,
+          "rhs": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+          "target": "0000000000010105050716",
+          "target_dimension": 894,
+          "vector_words": 9022
+        }
+      },
+      "0000000001010106060d0f": {
+        "before": {
+          "Q0_O1_plus_Q1_O0": {
+            "collected_monomials": 18954,
+            "first_coefficient": "-92820",
+            "first_key": 18093913413469168,
+            "formal_words": 168,
+            "nonzero_monomials": 15128
+          },
+          "negative_Q1": {
+            "collected_monomials": 18954,
+            "first_coefficient": "92820",
+            "first_key": 18093913413469168,
+            "formal_words": 168,
+            "nonzero_monomials": 15128
+          }
+        },
+        "files": {
+          "delta.json.gz": [
+            376874,
+            "3054067873e77bee4a61809afa51e8a0b70c37be9a5bca046f0431d41cee33b5"
+          ],
+          "frame_terms.json.gz": [
+            230670,
+            "64229da1dd300e6620bb86cef1ae3d8a1358a9dfc03595f60d682f57f71a80b3"
+          ],
+          "graph.json": [
+            475,
+            "36bbbbc8686763cfaea84a164bf74e7d9948d839f024ed52486b41668c1be211"
+          ],
+          "new.vector.json.gz": [
+            785960,
+            "caf5e6f2a9088f833f138de274c29a09fda714fde903468e9eb4383d9ac99e1a"
+          ],
+          "physical_before.json": [
+            302,
+            "f639f668174a9d88634d4b34d735bc3c4a4db927b2327697d18b1b62b6b7ddee"
+          ],
+          "progress.json": [
+            117,
+            "94b00988b017cec813285b48398bc2269132700441aaeef231af665743d298fb"
+          ],
+          "result.json": [
+            1313,
+            "78ff410f3c3ca64026d3d83ab1411732789f9aa7291b6187d1c0e0dc1034b9b7"
+          ]
+        },
+        "frames": {
+          "0000000001010106060d0f": {
+            "det": 169020,
+            "dim": 1262,
+            "sha256": "0c48d2ae6de9eb9d21525c10cfef79a01d62791c5eed039eefe1aadde072e04b"
+          },
+          "00000000010102060d0f": {
+            "det": 784705,
+            "dim": 1345,
+            "sha256": "9f3f2ef6f6a131d9b359dee99777d5b77bdb0b5dbd58cf2a96778371c1fc2510"
+          },
+          "00000001010103060d0f": {
+            "det": 965858,
+            "dim": 1441,
+            "sha256": "fb74db7e96a52c7abe5db54fa2e5e84d183463f2168e8c69421feadc7c7065b5"
+          }
+        },
+        "groups": [
+          "00000000010102060d0f",
+          "00000001010103060d0f"
+        ],
+        "result": {
+          "affected_contents": [
+            "0000000000010105060d0f",
+            "0000000000010204060d0f",
+            "0000000001010106060d0f",
+            "0000000001010204060e0f",
+            "000000000101020506070f",
+            "0000000001010206060c0f",
+            "0000000001010304060d0f",
+            "0000000101010304060e0f",
+            "000000010101030506070f",
+            "0000000101010306060c0f"
+          ],
+          "allowed": [
+            "00000000010102060d0f",
+            "00000001010103060d0f"
+          ],
+          "augmented_rank_mod_prime": 1217,
+          "base": "ed3a3cf4a4dfe6d437851734f8b91ae54d3e6557f8c5cad6783068d8f7842049",
+          "changed_parents": [
+            "00000000010102060d0f",
+            "00000001010103060d0f"
+          ],
+          "delta_words": 2417,
+          "digits": 128,
+          "frame_terms": 1217,
+          "image_rank_mod_prime": 1217,
+          "kind": "exact_solution",
+          "minor_determinant_mod_prime": 276339,
+          "parent_dimension": 2786,
+          "physical_after": {
+            "collected_monomials": 35190,
+            "first_coefficient": null,
+            "first_key": null,
+            "formal_words": 4612,
+            "nonzero_monomials": 0
+          },
+          "physical_before": {
+            "Q0_O1_plus_Q1_O0": {
+              "collected_monomials": 18954,
+              "first_coefficient": "-92820",
+              "first_key": 18093913413469168,
+              "formal_words": 168,
+              "nonzero_monomials": 15128
+            },
+            "negative_Q1": {
+              "collected_monomials": 18954,
+              "first_coefficient": "92820",
+              "first_key": 18093913413469168,
+              "formal_words": 168,
+              "nonzero_monomials": 15128
+            }
+          },
+          "preserved_by_support": 313,
+          "prime": 1000003,
+          "rhs": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+          "target": "0000000001010106060d0f",
+          "target_dimension": 1262,
+          "vector_words": 9754
+        }
+      }
+    }
+  },
+  "log": "gcc-13.2.0 loaded successful\n0000000001010106060d0f setup\n0000000000010105050716 setup\n00000000010105050816 777 648 of 649\n00000000010105050713 777 648 of 649\n00000000010105050713 905 648 of 649\n00000000010105050816 905 648 of 649\n0000000000010105050716 1022 894 of 894\n00000000010105050713 1033 648 of 649\n00000000010105050816 1033 648 of 649\n00000000010105050816 1161 649 of 649\n00000000010105050713 1161 649 of 649\n00000000010102060d0f 1473 1345 of 1345\n00000000010102050716 1473 1345 of 1345\n114533\n295439\n704564\n0000000001010106060d0f 1390 1262 of 1262\n00000001010103060d0f 1569 1441 of 1441\n784705\n784705\n169020\nmatrix 0000000000010105050716 (2643, 894) 337815\n965858\n0000000000010105050716 {'prime': 1000003, 'image_rank_mod_prime': 867, 'augmented_rank_mod_prime': 867, 'minor_determinant_mod_prime': 369060}\n0000000000010105050716 exact_solution\nTARGET DONE 0000000000010105050716 exact_solution\nmatrix 0000000001010106060d0f (2786, 1262) 758190\n0000000001010106060d0f {'prime': 1000003, 'image_rank_mod_prime': 1217, 'augmented_rank_mod_prime': 1217, 'minor_determinant_mod_prime': 276339}\n0000000001010106060d0f exact_solution\nTARGET DONE 0000000001010106060d0f exact_solution\n"
+}
