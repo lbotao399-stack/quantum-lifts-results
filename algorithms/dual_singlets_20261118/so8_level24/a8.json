@@ -1,0 +1,28 @@
+{
+  "targets": {
+    "job": "5678254",
+    "accounting": "5678254|COMPLETED|1002|24|0:0",
+    "files": {
+      "1_1.json": "2bb7a005a2a33b4406bf9e24fd5b651d4b844d3723444f7afe50b24270762520",
+      "2_1.json": "51281d1cb2a4ad4f4400cf3b292ddd39985a376c5c8767de52ddc17e5da80296",
+      "generator.json": "68e41f4079694da37e82e47ece2e8e6e8e49bc5289ecd51b6a6e1bdb4e229fc3",
+      "3_1.json": "1591864e97a97917b57a0e857afffdc50a106e3172ccadb2b081e684e87505f3",
+      "0_2.json": "a26e7424f687bd51edccb35808dc1424dd87846c16f66825ecc76d81d6608ecc",
+      "4_1.json": "7db088dd6ecc96b5b89d6f0785b5b2d890f3959efa09e2498aa88c35f1d44ef4"
+    }
+  },
+  "chain": {
+    "job": "5678368",
+    "accounting": "5678368|COMPLETED|192|24|0:0",
+    "files": {
+      "chain.json": "01a21397cd59b9340ca79e83f6c58d9a51d2386f7c4df7101472e61509813bc4"
+    }
+  },
+  "replay": {
+    "job": "5678554",
+    "accounting": "5678554|COMPLETED|684|24|0:0",
+    "files": {
+      "replay.json": "7bdfaadda5f30c20099da931f5d0e82e57ebb8b10c298fe457986e2835e915d0"
+    }
+  }
+}

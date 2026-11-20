@@ -1,0 +1,52 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "phase": "Level-24 orthogonal first differentials and the SO(8) triality pair",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261119.json",
+  "increments": {
+    "d1": 3,
+    "fortuitous_generator_families": 1,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 13,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/level24_first/so8.json",
+    "algorithms/dual_singlets_20261118/level24_first/so9.json",
+    "algorithms/dual_singlets_20261118/so8_level24/generator.json",
+    "algorithms/dual_singlets_20261118/so8_level24/chain.json",
+    "algorithms/dual_singlets_20261118/so8_level24/replay.json",
+    "algorithms/dual_singlets_20261118/so8_level24/a8.json"
+  ],
+  "stages": [
+    {
+      "calculation": "SO(8) and SO(9) grade one to grade two, level 24",
+      "d1": 3,
+      "fortuitous_generator_families": 0
+    },
+    {
+      "calculation": "Reflection-odd partner of the established even BMN generator, SO(8), level 24",
+      "d1": 0,
+      "fortuitous_generator_families": 1
+    },
+    {
+      "calculation": "Independent perturbative completion replay",
+      "d1": 0,
+      "fortuitous_generator_families": 0,
+      "coordinates": 3687,
+      "nonzero": 0
+    }
+  ],
+  "scope": "The two parities form one triality doublet. Its instanton pairing remains open."
+}

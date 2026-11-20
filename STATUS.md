@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Level-24 orthogonal groups, November 21, 2026 (cluster date)
+
+The derivative-grade one to two map contributes three $d_1$ pairings, one in $SO(8)$ and two in $SO(9)$. The reflection-odd partner of the level-24 $SO(8)$ BMN class adds one parity-resolved generator. Rational corrections from A8 job `5678368` give perturbative survival for this triality doublet. Job `5678554` regenerated the variations from the trace words on fresh integer colour frames. The residual is zero in all 3,687 coordinates, including 325 for classical closure. [Proof and signed integer evaluations](algorithms/dual_singlets_20261118/so8_level24/README.md)
+
+The replay adds 0 $d_1$ pairings and 0 generators. Cumulative counts are 13 and 5. Certified $d_2$, $d_3$ and nonperturbative lifts remain 0, 0 and 0. [Ledger](data/N4_lift_campaign_counts_20261121.json)
+
 ## The two $SO(8)$ level-18 generator components, November 20, 2026
 
 On the even BMN class $O$ the triality average vanishes in classical cohomology. For the order-three triality rotation $\rho$, the odd partner obeys $(\rho-\rho^{-1})^2[O]=-3[O]$. Its two spinor traces differ by $-3{,}169{,}704$ at the saved integer probe. The full perturbative ranks are $77,93,90$, equal to the sums of the classical block ranks. Protected products and the twice-lowered scalar expectation $-4/3$ exclude the proposed nonperturbative pairing under the exact Ward identities. [Proof and replay](algorithms/dual_singlets_20261118/so8_level18/README.md)
