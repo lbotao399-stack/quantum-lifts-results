@@ -60,3 +60,24 @@ python3 algorithms/dual_singlets_20261118/mixed33_classes.py --group SO_odd --pr
 ```
 
 For the other certificates set `--group Sp` or `--prime 1000033`. [Formal dependencies, finite-colour minors and seeds](mixed33/) · [Stored 560 source images](mixed33_incoming.json.gz) · [The independently certified first differential](../so7_cartan_target_20261118/README.md).
+
+## The remaining mixed singlets at doubled charges $(1,1,8,8,8)$
+
+The spin-singlet source at derivative bidegree $(t,t)$ has length $11-t$. The classical differential raises that length by one. At $t=1,2$ the terminal cohomology dimensions are $0,1$, respectively, fixing the outgoing ranks. A8 job `5670267` evaluated the complete formal incoming singlet images in both groups. Each modular minor is a rational rank lower bound because the source recipes and signed trace evaluations lift to integers.
+
+| $t$ | Group | Middle dimension | Incoming minor order | Outgoing rank | Rational cohomology upper bound |
+|---:|---|---:|---:|---:|---:|
+| 1 | $SO(7)$ | 1,419 | 1,105 | 310 | 4 |
+| 1 | $USp(6)$ | 1,400 | 1,091 | 305 | 4 |
+| 2 | $SO(7)$ | 1,411 | 1,084 | 327 | 0 |
+| 2 | $USp(6)$ | 1,393 | 1,075 | 318 | 0 |
+
+The two input spaces comprise 3,153 and 2,889 formal singlets. The eight pivot lists, determinants, seeds and matrix hashes cover both primes. Run `mixed_middle.py --t 1 --work /tmp/dual-t1 --workers 16` and repeat with `--t 2` and a separate directory. [A8 rank records](mixed_middle/a8_5670267.json.gz) · [Exact singlet recipes and finite-colour rank algorithm](mixed_middle.py)
+
+At $t=3$, let $S$ be the gaugino bilinear and use the stress-multiplet currents of (4.83)–(4.85). Multiplication by $S$ takes the two six-letter products in the [current calculation](../G2_current_product_span_20261120.md) to this eight-letter sector. In the order of the two archived formal cycles, their superfield coefficients are $(0,-1/12)$ and $(-1,0)$. The equalities hold term by term in the 18- and 30-term polynomials. The physical current products, evaluated directly on two rank-three Cartan jets in each group, give
+
+$$
+\det\begin{pmatrix}-32/3&0\\8/3&48\end{pmatrix}=-512.
+$$
+
+Both evaluations annihilate every classical boundary. The two products are closed under the exact supercharge by the supersymmetric primary product. They span the two possible outgoing sources after the previously established first differential on the third $SO(7)$ line. Possible incoming boundaries can only reduce the surviving source dimension. [Source identifications and Cartan matrices](mixed33/current_products.json) · [Exact replay](mixed33_currents.py) · [Physical currents](https://arxiv.org/html/2509.16737#S4.SS3.SSS1)

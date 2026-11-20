@@ -1,0 +1,103 @@
+{
+  "sacct": "5669393|n434levi20|COMPLETED|2532|24|0:0",
+  "receipt": {
+    "files": {
+      "0-0.independent.check.json": [
+        67,
+        "8e93e17d32bf579f94c037a5bdf9b2b60020250312b81d2d59b65c5af636e889"
+      ],
+      "0-0.independent.json": [
+        39806,
+        "462ee1e9ff04344996a22af1e4e125b39d4e5fbc23576e873f98e9247deb6bc1"
+      ],
+      "0-0.joint.check.json": [
+        383,
+        "8f34e0ffecb757111a23ee587a653dd7661fb83e2a3c233f830d1dda6d65ad1e"
+      ],
+      "1-2.independent.check.json": [
+        67,
+        "8d673c50c48e78bed002a879e5cd6daa338417e862ed3255725e995569d18482"
+      ],
+      "1-2.independent.json": [
+        176806,
+        "2038abf0593f174c0ece0689e10ac8dac79e6bdfd30ab47dd47d2897682cc8df"
+      ],
+      "1-2.joint.check.json": [
+        379,
+        "a351638cceb2e3a2ed3188e468fb03d94e443701bee3979ca532be3d1cfa3d53"
+      ],
+      "1-4.independent.check.json": [
+        67,
+        "49809075abd2cf9d92b2c39e24d263088416c8ce2f406c3d4db7ee8fc3f5be3a"
+      ],
+      "1-4.independent.json": [
+        189,
+        "a29b0f7a91408ba806706d95e66d6aa6d7bc30996fac2cb0836605ae8ead7572"
+      ],
+      "1-4.joint.check.json": [
+        277,
+        "009afa5e77da6150635939373bd889e17d9ab2ddc31cbbcbafb5171f8eb77e5c"
+      ],
+      "1-6.independent.check.json": [
+        66,
+        "7aeb092b0674cd460a238894d199073dcc220b5ff4d780ad5e5852ff5b0627e6"
+      ],
+      "1-6.independent.json": [
+        186,
+        "accc1443eab0102887bdee2927ffe5eb88d2b2c852240dc11f52938501562761"
+      ],
+      "1-6.joint.check.json": [
+        96,
+        "b42035e916d86732a02ed4e78c0fd8925e64b5455ba02836919225c5e121a0fb"
+      ],
+      "2-2.independent.check.json": [
+        67,
+        "cefb939439e12e4120f08ea0e2cf5b41254f6c20c11472a6af00906c66266434"
+      ],
+      "2-2.independent.json": [
+        367,
+        "c24d6338594dea48b0307ca2d4cfd4e23cd90fac8e057c091f5915c11de37b78"
+      ],
+      "2-2.joint.check.json": [
+        97,
+        "e92e7af02810289c56ed69847bba0478bcf2099c021054cbcaf35a50616907c8"
+      ],
+      "2-4.independent.check.json": [
+        65,
+        "9313d2be8f98ef4f74538c0cab404ab7ddfa563e16003a639406546c8a7fe9ff"
+      ],
+      "2-4.independent.json": [
+        183,
+        "0ab47b7d25b6a2c16a715ca446985ed8907beae88e10a955b66b12f193039a99"
+      ],
+      "2-4.joint.check.json": [
+        95,
+        "6fe081e4e20c03d70b98028e14c048d4fa8345a1b7de21e8e96357f36b6b7fa2"
+      ],
+      "4-2.independent.check.json": [
+        67,
+        "3b7ba8b1ce87aed67fd691be9298308cb936f0e7f6401fb0628869777981ea78"
+      ],
+      "4-2.independent.json": [
+        188,
+        "1070e3761089537324d1c74475bacb14f7e7b65c2a2e93da2edf80f4a2edd3e4"
+      ],
+      "4-2.joint.check.json": [
+        97,
+        "03d75c1729a1b079c82ba9819ffcee5b5644edf58ca000b568703af818d1e437"
+      ],
+      "first/extraction.json": [
+        2392,
+        "92f05eb8df77530fe656da3b8512c056ed01f832062337c2f160801b3b321dd6"
+      ],
+      "joint.json": [
+        634,
+        "d99bf230b4f7d4202f4a24a1094b526f81a126afab6583a2771a90f5fda97a7b"
+      ]
+    },
+    "input": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+    "job": "5669393",
+    "joint": "separator"
+  },
+  "log": "gcc-13.2.0 loaded successful\nupper plus central 2 4 0 0\nupper plus central 1 6 28 196\nupper plus central 4 2 447 1144\nupper plus central 2 2 1723 3704\ncoupled solution 0 0\ncoupled solution 0 28\ncoupled solution 0 339\nupper plus central 1 4 3005 6401\ncoupled solution 4 1292\nupper plus central 1 2 15642 19110\ncoupled solution 0 2377\nupper plus central 0 0 26828 26425\ncoupled solution 881 13270\ncoupled solution 3870 9038\ncoupled separator 3 1\n"
+}

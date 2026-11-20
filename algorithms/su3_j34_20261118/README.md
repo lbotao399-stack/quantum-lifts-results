@@ -329,3 +329,11 @@ python3 collision_first.py --out /tmp/j34-collision
 python3 replay_collision.py --extraction /tmp/j34-collision --files collision --out /tmp/j34-collision-check.json
 python3 trace_factor_test.py --out /tmp/j34-three-colour-functional.json
 ```
+
+## A coupled scalar restriction and three highest-weight corrections
+
+Restrict the chosen scalar to a traceless upper two-colour matrix plus $x\,\mathrm{diag}(1,1,-2)$, with the remaining fields traceless in the upper block. The coefficients of $x$ of each degree constrain the same source. The seven separate systems at the three scalar choices have rational primitives on $26{,}425$, $19{,}110$, $6{,}401$, $196$, $3{,}704$, $0$ and $1{,}144$ selected equations. One system is empty. Expanding each solution on every polynomial coordinate of its own slice gives zero residual. The seven solutions have lengths $881,3870,0,0,4,0,0$ in the saved order. A common solution in the span of all 26,828 five-bilinear parent words is impossible. The three-term functional has pairing $1/120$ with $-Q_1\mathcal O_0$ and zero with each parent image. [A8 job 5669393](levi/a8_5669393.json) · [Primitives and per-slice checks](levi/solutions_and_checks.json.gz) · [Functional](levi/joint.json) · [Construction](levi_first.py)
+
+For the same three coefficients, direct multiplication of the original three-colour matrices on the 2,086 terms of the affected content gives $(0,-7{,}996{,}800,0)$. Two products of length-five traces and one length-ten trace supply three charge-even parents. Projecting each to the required spin and flavour highest weight, then taking its classical differential, gives a three-column minor of determinant $-5888/2205$. The stored rational combination has residual $(0,0,0)$. This rules out the functional as an obstruction on the complete source space. The other coefficients of the first equation still impose independent conditions. [Projected parents, coefficients and determinant](levi/highest_weight_test.json) · [Three-colour replay](levi_coordinates.py)
+
+With the runtime dependencies installed, run `python3 levi_coordinates.py --recipes levi/highest_weight_test.json --out /tmp/levi-replay.json` from this directory.

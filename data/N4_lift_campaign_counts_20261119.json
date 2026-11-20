@@ -391,6 +391,55 @@
         "algorithms/G2_current_product_span_20261120.md"
       ],
       "scope": "Using the exact stress multiplet and its primary cohomological product, the outgoing differential vanishes on these two source sectors. No instanton amplitude or new lift is counted."
+    },
+    {
+      "phase": "Coupled scalar powers and exact SU(3) highest weights",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5669393",
+      "bilinear_parent_words": 26828,
+      "restricted_pairing": "1/120",
+      "highest_weight_minor": "-5888/2205",
+      "evidence": [
+        "algorithms/su3_j34_20261118/levi/joint.json",
+        "algorithms/su3_j34_20261118/levi/highest_weight_test.json"
+      ],
+      "scope": "Three projected coefficients are soluble. The full first correction remains open."
+    },
+    {
+      "phase": "SO(7) and USp(6) mixed sources at doubled charges (1,1,8,8,8)",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5670267",
+      "classical_upper_by_group_and_t1_t2": {
+        "SO(7)": [
+          4,
+          0
+        ],
+        "USp(6)": [
+          4,
+          0
+        ]
+      },
+      "primary_product_minors_at_t3": [
+        -512,
+        -512
+      ],
+      "evidence": [
+        "algorithms/dual_singlets_20261118/mixed_middle/a8_5670267.json.gz",
+        "algorithms/dual_singlets_20261118/mixed33/current_products.json"
+      ],
+      "scope": "The t=2 source is empty. The exact stress-current products span the possible outgoing t=3 survivors. No instanton integral was evaluated."
     }
   ]
 }

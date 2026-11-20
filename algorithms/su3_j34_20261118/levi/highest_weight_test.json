@@ -1,0 +1,73 @@
+{
+  "rhs_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+  "target_content": "0000000000010305050714",
+  "central_powers": [
+    0,
+    2,
+    4
+  ],
+  "three_colour_rhs_terms": 2086,
+  "rhs": [
+    "0",
+    "-7996800",
+    "0"
+  ],
+  "paired_rhs": "1/120",
+  "incident_parent_contents": 8,
+  "highest_weight_doubled_charges": [
+    6,
+    6,
+    16,
+    10,
+    8
+  ],
+  "recipes": [
+    {
+      "word": [
+        "0000000205",
+        "0001071403"
+      ],
+      "projected_words": 576,
+      "coordinates": [
+        "-8/35",
+        "66/35",
+        "6/7"
+      ],
+      "coefficient": "-52479000/23",
+      "functional_pairing": "-1/419832000"
+    },
+    {
+      "word": [
+        "0000030d14",
+        "0000050001"
+      ],
+      "projected_words": 5648,
+      "coordinates": [
+        "-4/21",
+        "-8/7",
+        "4/3"
+      ],
+      "coefficient": "48355650/23",
+      "functional_pairing": "1/944622000"
+    },
+    {
+      "word": [
+        "0000030014010500000d"
+      ],
+      "projected_words": 5648,
+      "coordinates": [
+        "-2/7",
+        "-64/21",
+        "-2"
+      ],
+      "coefficient": "9746100/23",
+      "functional_pairing": "1/629748000"
+    }
+  ],
+  "determinant": "-5888/2205",
+  "residual": [
+    "0",
+    "0",
+    "0"
+  ]
+}

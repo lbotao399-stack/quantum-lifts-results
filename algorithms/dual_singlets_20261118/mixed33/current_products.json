@@ -1,0 +1,104 @@
+{
+  "mu": [
+    3,
+    3,
+    1,
+    1,
+    1
+  ],
+  "length": 8,
+  "doubled_charges": [
+    1,
+    1,
+    8,
+    8,
+    8
+  ],
+  "formal_class_trace_terms": [
+    30,
+    18
+  ],
+  "current_coordinates_in_formal_class_order": [
+    [
+      "0",
+      "-1/12"
+    ],
+    [
+      "-1",
+      "0"
+    ]
+  ],
+  "results": {
+    "SO(7)": {
+      "physical_matrix": [
+        [
+          "-32/3",
+          "0"
+        ],
+        [
+          "8/3",
+          "48"
+        ]
+      ],
+      "physical_determinant": "-512",
+      "superfield_matrix": [
+        [
+          "32/3",
+          "0"
+        ],
+        [
+          "8/3",
+          "48"
+        ]
+      ],
+      "exterior_masks": [
+        127,
+        61
+      ],
+      "Q0_letter_checks": [
+        127,
+        127
+      ],
+      "classical_dimension": 3,
+      "protected_rank": 2,
+      "previously_certified_outgoing_d1_rank": 1,
+      "remaining_unaccounted_outgoing_sources": 0
+    },
+    "USp(6)": {
+      "physical_matrix": [
+        [
+          "-32/3",
+          "0"
+        ],
+        [
+          "8/3",
+          "48"
+        ]
+      ],
+      "physical_determinant": "-512",
+      "superfield_matrix": [
+        [
+          "32/3",
+          "0"
+        ],
+        [
+          "8/3",
+          "48"
+        ]
+      ],
+      "exterior_masks": [
+        127,
+        61
+      ],
+      "Q0_letter_checks": [
+        127,
+        127
+      ],
+      "classical_dimension": 2,
+      "protected_rank": 2,
+      "previously_certified_outgoing_d1_rank": 0,
+      "remaining_unaccounted_outgoing_sources": 0
+    }
+  },
+  "instanton_amplitude_evaluated": false
+}
