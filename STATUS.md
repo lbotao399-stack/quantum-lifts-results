@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## The SO(7) level-24 descendant, November 21, 2026 (cluster date)
+
+At doubled charges $(2,2,12,6,6)$, the $SO(7)$ first differential has coefficient $-1$ on a six-term target. The rational boundary rank increases from 209 to 210 on both independent frames. The full filtered comparison gives 150 survivors for each of $SO(7)$ and $USp(6)$ modulo 1,000,003. [Integer evidence and replay](algorithms/dual_singlets_20261118/so7_level24_633/README.md)
+
+This calculation adds **1** first-order pairing and **0** fortuitous generators. Cumulative totals are **14** and **5**. Certified second-order, third-order and nonperturbative lifts are **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_633.json)
+
 ## Level-24 orthogonal groups, November 21, 2026 (cluster date)
 
 The derivative-grade one to two map contributes three $d_1$ pairings, one in $SO(8)$ and two in $SO(9)$. The reflection-odd partner of the level-24 $SO(8)$ BMN class adds one parity-resolved generator. Rational corrections from A8 job `5678368` give perturbative survival for this triality doublet. Job `5678554` regenerated the variations from the trace words on fresh integer colour frames. The residual is zero in all 3,687 coordinates, including 325 for classical closure. [Proof and signed integer evaluations](algorithms/dual_singlets_20261118/so8_level24/README.md)

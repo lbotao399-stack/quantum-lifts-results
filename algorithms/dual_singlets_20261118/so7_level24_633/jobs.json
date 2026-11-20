@@ -1,0 +1,25 @@
+{
+  "so1": {
+    "job": "5678675",
+    "band_sha256": "8e09bbd77969c2e16eebf6f9e35b389d2980399dd008cd300146c139e74b0806"
+  },
+  "so2": {
+    "job": "5678678",
+    "band_sha256": "18cdb6ab57cba99fdd3e9fdb79dd7a8d2bb335aefb6fc844d962bd8326b6513f"
+  },
+  "sp1": {
+    "job": "5678676",
+    "band_sha256": "ea174e262af7a8fbf7d3855dc412dd56575453fc7841b990fd2d3a868ccd2147"
+  },
+  "sp2": {
+    "job": "5678679",
+    "band_sha256": "8080721d839aacf42a2cc75af463ac91c4e39508adace4587c381abca7b6cc74"
+  },
+  "a8": {
+    "job": "5679131",
+    "files": {
+      "coordinates.json.gz": "d43824e9b8c001ae2c546df8712d7d89c307bbe1351bb2e02bc9ad7d19cdba7b",
+      "pairing.json": "d17f422367e5be03c1a9c52d928d23352007e40f1e48a1ab946499cffe19aae1"
+    }
+  }
+}

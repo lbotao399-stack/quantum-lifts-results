@@ -14,7 +14,6 @@ from functools import lru_cache
 from itertools import combinations, permutations, product
 from pathlib import Path
 
-from sympy import Matrix
 import mixed_incoming as m
 from mixed33_exact import key, read
 from fortuity.full.letters import Q_letter, is_ferm, letters_up_to
@@ -190,6 +189,7 @@ def cartan_differentials():
 
 
 def run(formal):
+    from sympy import Matrix
     z = read(formal)
     assert z["mu"] == [1,1,3,3,3] and z["length"] == 10
     cycles = []
