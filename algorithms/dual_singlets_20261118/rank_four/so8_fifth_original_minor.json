@@ -1,0 +1,19 @@
+{
+  "group": "SO(8)",
+  "power": 5,
+  "prime": 1000033,
+  "classical_boundary_rank_over_Q": 19,
+  "pure_gaugino_dimension_over_Q": 20,
+  "classical_cohomology_dimension_over_Q": 1,
+  "coupled_rank_over_Q": 367,
+  "nonzero_minor_determinant": 935943,
+  "statement": "The nonzero classical SO8 class [Tr(lambda+ lambda-)^5] is in the image of [Q1].",
+  "original_matrix_shape": [
+    367,
+    367
+  ],
+  "original_minor_npy_sha256": "c0c2c69163ddd7c46a3b749abf6e2f2d405d659bc1955b74629208922edf2893",
+  "later_certificate": "so8_fifth.json",
+  "original_scoped_id": "so8_gaugino_bilinear_power5",
+  "distinct_pairings": 1
+}

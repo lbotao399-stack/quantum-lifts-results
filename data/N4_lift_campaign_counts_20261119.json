@@ -9,14 +9,14 @@
     "nonperturbative": 0
   },
   "cumulative": {
-    "d1": 11,
-    "fortuitous_generator_families": 3,
+    "d1": 10,
+    "fortuitous_generator_families": 4,
     "d2": 0,
     "d3": 0,
     "nonperturbative": 0
   },
   "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
-  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
   "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
   "date": "2026-11-19",
   "phase": "SU(3) R-007 chain comparison and modular Cartan-invisible parent",
@@ -700,14 +700,14 @@
     {
       "phase": "SO(8) reflection-even fifth gaugino power at level 30",
       "increments": {
-        "d1": 1,
+        "d1": 0,
         "fortuitous_generator_families": 0,
         "d2": 0,
         "d3": 0,
         "nonperturbative": 0
       },
       "cumulative": {
-        "d1": 11,
+        "d1": 10,
         "fortuitous_generator_families": 3,
         "d2": 0,
         "d3": 0,
@@ -715,9 +715,10 @@
       },
       "evidence": [
         "algorithms/dual_singlets_20261118/rank_four/so8_fifth.json",
-        "algorithms/dual_singlets_20261118/so8_fifth_restriction.py"
+        "algorithms/dual_singlets_20261118/so8_fifth_restriction.py",
+        "algorithms/dual_singlets_20261118/rank_four/so8_fifth_original_minor.json"
       ],
-      "scope": "The rational SO(9) source restricts classically; the first action recomputed in eight colours pairs to three times the fifth power. Independence of a new generator family is open."
+      "scope": "The rational SO(9) source restricts classically; the first action recomputed in eight colours pairs to three times the fifth power. Independence of a new generator family is open. The original five-pair baseline already included this one-dimensional SO(8) target. The explicit rational representative gives a second certificate for the same pairing."
     },
     {
       "phase": "SO(8) mixed terminal relations, both parities and the F4 lowered sources",
@@ -729,7 +730,7 @@
         "nonperturbative": 0
       },
       "cumulative": {
-        "d1": 11,
+        "d1": 10,
         "fortuitous_generator_families": 3,
         "d2": 0,
         "d3": 0,
@@ -742,6 +743,30 @@
         "algorithms/dual_singlets_20261118/f4/root_restriction.json"
       ],
       "scope": "The mixed SO(8) terminal singlets restrict injectively to the Cartan. The only classical Cartan kernel in the full terminal table was previously paired. The F4 second-order source has classical dimension at most three, and any class in the level-30 third-order source restricts to zero on the Cartan."
+    },
+    {
+      "phase": "SO(8) level-18 reflection-odd BMN generator and the triality selection rule",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 1,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 10,
+        "fortuitous_generator_families": 4,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "evidence": [
+        "algorithms/dual_singlets_20261118/so8_level18/README.md",
+        "algorithms/dual_singlets_20261118/so8_level18/triality.json",
+        "algorithms/dual_singlets_20261118/so8_level18/protected_products.json",
+        "algorithms/dual_singlets_20261118/so8_level18/perturbative_complex.json.gz"
+      ],
+      "scope": "One new parity component of one triality doublet. Its protection test assumes the exact primary product, the superconformal Ward action and flat-space triality equivariance. No instanton coefficient was evaluated."
     }
   ]
 }

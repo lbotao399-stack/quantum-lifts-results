@@ -1,10 +1,18 @@
 # Running computations: daily status
 
+## The two $SO(8)$ level-18 generator components, November 20, 2026
+
+On the even BMN class $O$ the triality average vanishes in classical cohomology. For the order-three triality rotation $\rho$, the odd partner obeys $(\rho-\rho^{-1})^2[O]=-3[O]$. Its two spinor traces differ by $-3{,}169{,}704$ at the saved integer probe. The full perturbative ranks are $77,93,90$, equal to the sums of the classical block ranks. Protected products and the twice-lowered scalar expectation $-4/3$ exclude the proposed nonperturbative pairing under the exact Ward identities. [Proof and replay](algorithms/dual_singlets_20261118/so8_level18/README.md)
+
+New $d_1$ pairings **0** (total **10**). New parity-resolved fortuitous BMN generators **1** (total **4**). The even and odd generators at this level comprise **one** triality doublet. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
 ## An $SO(8)$ first differential at level 30, November 20, 2026
 
 The rational source restricted from $SO(9)$ has first action $3[S^5]$ in $SO(8)$, where $S$ is the defining-trace gaugino bilinear. Subtracting the classical variation of four fifths of the restricted primitive gives the equality on trace polynomials. All 45 reflection-even singlet predecessor images have rational evaluation rank 19, rising to 20 with $S^5$. [Calculation and replay](algorithms/dual_singlets_20261118/rank_four/README.md#restriction-to-eight-colours-at-level-30)
 
-New $d_1$ pairings **1** (total **11**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+The original rank-367 minor and the restricted source hit the same one-dimensional target. Its determinant is 935943 modulo 1000033. [Original minor record](algorithms/dual_singlets_20261118/rank_four/so8_fifth_original_minor.json)
+
+New $d_1$ pairings **0** (total **10**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
 
 ## The lowered second- and third-order targets for the $F_4$ fifth gaugino power, November 20, 2026
 
