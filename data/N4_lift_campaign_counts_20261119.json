@@ -2,14 +2,14 @@
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
   "increments": {
-    "d1": 0,
+    "d1": 1,
     "fortuitous_generator_families": 0,
     "d2": 0,
     "d3": 0,
     "nonperturbative": 0
   },
   "cumulative": {
-    "d1": 6,
+    "d1": 7,
     "fortuitous_generator_families": 3,
     "d2": 0,
     "d3": 0,
@@ -482,6 +482,43 @@
         "algorithms/dual_singlets_20261118/mixed11/a8_5670358.json"
       ],
       "scope": "Four explicit products saturate both finite-rank bounds. Outgoing-source exhaustion uses protected single gravitons and the supersymmetric primary product. No instanton matrix element was computed."
+    },
+    {
+      "phase": "SO(9) fifth gaugino power at level 30",
+      "increments": {
+        "d1": 1,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 7,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5670470",
+      "doubled_source_charges": [
+        1,
+        1,
+        10,
+        10,
+        10
+      ],
+      "classical_rank": 357,
+      "augmented_rank": 358,
+      "modular_minors": {
+        "1000003": 973909,
+        "1000033": 637559
+      },
+      "evidence": [
+        "algorithms/dual_singlets_20261118/rank_four/pure.json",
+        "algorithms/dual_singlets_20261118/rank_four/first.json",
+        "algorithms/dual_singlets_20261118/rank_four/a8_5670470.json"
+      ],
+      "scope": "One nonzero rational first differential. The source classification modulo products and descendants is open."
     }
   ]
 }

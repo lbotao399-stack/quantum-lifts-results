@@ -48,13 +48,16 @@ def solve_shape(task):
     return index
 
 
-def build(t, work, workers, length=None):
+def build(t, work, workers, length=None, power=4):
     if length is None:
-        length = 10 - t
-    mu = (t, t, 4-t, 4-t, 4-t)
-    assert m.sector(mu, 11-t) == (1, 1, 8, 8, 8)
+        length = 3*power - 2 - t
+    mu = (t, t) + (power-t,)*3
+    assert m.sector(mu, 3*power-1-t) == (1, 1) + (2*power,)*3
     plan = work / "plan.json.gz"
     if plan.exists():
+        with gzip.open(plan, "rt") as stream:
+            existing = json.load(stream)
+        assert tuple(existing["mu"]) == mu and existing["length"] == length
         return plan
     blocks = m.words_by_shape(length, mu)
     ordered = [v for k, v in sorted(blocks.items())]

@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## A first differential in $SO(9)$ at level 30, November 20, 2026
+
+A8 job `5670470` gives rank 357 on the complete classical image and rank 358 after adjoining the fifth-gaugino-power coefficient. The two augmented minors have determinants 973909 and 637559 modulo 1000003 and 1000033. Thus the rational first differential hits the fifth gaugino power. At the same charges the $USp(8)$ classical target has dimension zero. [Proof, projected coefficient and both minors](algorithms/dual_singlets_20261118/rank_four/README.md)
+
+New $d_1$ pairings **1** (total **7**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
 ## Spin and flavour singlets in $SO(7)$ and $USp(6)$, November 20, 2026
 
 A8 jobs `5670267` and `5670358` give classical source dimensions $(0,4,0,3,0)$ and $(0,4,0,2,0)$ at doubled charges $(1,1,8,8,8)$, in order of derivative bidegree $(t,t)$. Four ten-letter protected products give Cartan determinant $-75497472$ in both groups. Together with the two eight-letter products and the known $SO(7)$ first differential, this exhausts the possible outgoing singlet sources under the stated protection inputs. [Rank bounds, products and Slurm receipts](algorithms/dual_singlets_20261118/README.md#the-remaining-mixed-singlets-at-doubled-charges-11888)

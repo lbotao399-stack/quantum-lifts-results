@@ -1,0 +1,20 @@
+{
+  "job": "5670470",
+  "utc": "2026-11-20T06:48:04.074997+00:00",
+  "accounting": "5670470|n49s520|COMPLETED|20|24|0:0",
+  "log": "gcc-13.2.0 loaded successful\npure {'SO_odd': (20, 19, 20), 'Sp': (19, 19, 19)}\nsource (4, 4, 1, 1, 1) 10 words 56601 shapes 554 largest 420\nformal singlets 1904 image words 7999\nSO(9) 1000003 357 357 358 973909\nSO(9) 1000033 357 357 358 637559\n",
+  "shapes": 554,
+  "files": {
+    "pure.json": "33ca6250c983076773fb2c74dd545172c6250b27b81c72d996dc8285352ebd5b",
+    "first.json": "13745c3201ccc579a257ab95c71b5672b2a7f90f640cd35ff937f0091931a751",
+    "receipt.json": "f1d5787a5c95604aa187683c4aca5b4e8efeada89c8b203862b0eaf644fdb270"
+  },
+  "slurm_receipt": {
+    "job": "5670470",
+    "files": {
+      "pure.json": "33ca6250c983076773fb2c74dd545172c6250b27b81c72d996dc8285352ebd5b",
+      "first.json": "13745c3201ccc579a257ab95c71b5672b2a7f90f640cd35ff937f0091931a751",
+      "plan.json.gz": "28df1f8a26965112f109cbe291ae4b3303ad67539041bb8934a9461279c2dc34"
+    }
+  }
+}
