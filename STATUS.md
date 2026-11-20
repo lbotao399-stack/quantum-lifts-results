@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## SU(3) level 34: complete finite-colour classical closure, November 19, 2026
+
+All 25,299 formal terms of the classical differential cancel in the invariant polynomial of the published source: 1,241,172 distinct coefficients across 15 contents, none nonzero. Fifteen independent single-word coefficient extractions test the polynomial encoding. [A8 job 5666124, integer bounds and replay](algorithms/su3_j34_20261118/README.md#classical-closure-at-three-colours).
+
+New $d_1$ pairings **0** (total **6**); new fortuitous-generator families **0** (total **3**); certified $d_2$, $d_3$, nonperturbative lifts **0, 0, 0**.
+
 ## G₂: separate target tests for the instanton candidate, November 19, 2026
 
 For the one-source, two-target candidate, two independent rational evaluations give the same normalized target projectors: $(0,1)$ at length four and $(0,-1/6,0,0)$ at length six. The seven-dimensional squared trace bilinear has Cartan exterior coefficient $-96$; the scalar Gram determinant vanishes on the entire Cartan. Neither instanton amplitude has been evaluated. [Exact target data](data/N4_G2_np_target_functionals_20261119.json) · [Verifier](algorithms/verify_g2_target_functionals.py).

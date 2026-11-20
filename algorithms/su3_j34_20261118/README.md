@@ -2,6 +2,18 @@
 
 The highest component of Kim, Lee, Lee and Song's $\mathcal O_{34}^{(3)}$ has BMN charges $(2J;q_1,q_2,q_3)=(6;8,5,4)$. Our archived expansion of their trace relations has 5,815 terms in the paper's fields. The component even under charge conjugation $C$ has 6,270. Subtracting that component from the original gives exactly one half of $Q_0$ on the archived 78-term primitive. All 910 terms of the difference cancel. Here $Q_0$ is the classical supercharge. [Published construction, §4.1](https://arxiv.org/html/2610.20340v2#S4.SS1) · [Parity primitive](odd_parity_primitive.json.gz)
 
+## Classical closure at three colours
+
+Acting with the classical supercharge $Q_0$ on the 6,270-term even source gives 25,299 nonzero formal trace terms, in 15 letter contents. Expanding in traceless three-dimensional colour matrices with independent odd entries gives
+$$
+1{,}167{,}410{,}632 \text{ contributions},\qquad
+1{,}241{,}172 \text{ collected monomials},\qquad
+0 \text{ nonzero coefficients}.
+$$
+In each homogeneous content one even scalar is diagonalized and the remaining matrices are arbitrary. Invariant polynomials are determined by this restriction: the regular semisimple scalar locus is dense, coefficientwise in the odd variables. All integer accumulators satisfy the recorded absolute bounds. One nonzero monomial of a single trace product in each of the 15 contents was also extracted independently by enumerating all three colours at every trace position. This verifies classical closure and does not require a first quantum correction. The mixed restriction below certifies that the closed source is not a classical boundary.
+
+[A8 job 5666124](classical_source/a8_5666124.json) · [All 15 exact polynomial cancellations](classical_source/certificate.json) · [Independent control coefficients](classical_source/coefficient_checks.json). Build with `c++ -std=c++17 -O3 source_closure.cpp -o /tmp/j34-source`. Run `verify_source_closure.py --exe /tmp/j34-source --workers 4 --work /tmp/j34-source-work --out /tmp/j34-source.json` and `verify_source_coefficients.py --exe /tmp/j34-source --work /tmp/j34-control --out /tmp/j34-control.json`.
+
 ## Block restrictions over the rationals
 
 Restrict every colour matrix to $SU(2)\times U(1)$. An abelian field has colour matrix $\operatorname{diag}(1,1,-2)$ times its field coordinate. In the table, $\hat\phi^i$ and $\hat\psi_i$ are abelian scalar and fermion coordinates of flavour $i$. The extracted odd coordinate is placed on the left.

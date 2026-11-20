@@ -296,6 +296,27 @@
         "data/N4_G2_np_target_functionals_20261119.json"
       ],
       "scope": "Classical target tests only. Neither physical instanton coefficient computed."
+    },
+    {
+      "phase": "SU(3) level-34 finite-colour classical closure",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5666124",
+      "formal_terms": 25299,
+      "contents": 15,
+      "collected_monomials": 1241172,
+      "nonzero_monomials": 0,
+      "nonzero_single_word_controls": 15,
+      "evidence": [
+        "algorithms/su3_j34_20261118/classical_source/certificate.json",
+        "algorithms/su3_j34_20261118/classical_source/coefficient_checks.json"
+      ],
+      "scope": "Certifies classical closure of a published source, not a new generator, first correction or lift."
     }
   ]
 }

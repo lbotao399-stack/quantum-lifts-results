@@ -1,0 +1,391 @@
+{
+  "source_sha256": "673bbcbcf9bafba63b66dfab9a19c306178c5839269abe35da538505166b66c1",
+  "letter_table": [
+    [
+      0,
+      0,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        0,
+        2
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        1
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        2
+      ]
+    ]
+  ],
+  "formal_derivative_words": 25299,
+  "all_contents": 15,
+  "tested_contents": 15,
+  "tested_words": 25299,
+  "monomials": 1241172,
+  "nonzero_monomials": 0,
+  "complete": true,
+  "contents": {
+    "000000000000000105050505": {
+      "formal_words": 4,
+      "distinct_monomials": 112,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 4672,
+      "sum_abs_bounds": 341118812160,
+      "sum_abs_actual": 1809561600,
+      "denominator": "1",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 7,
+      "control_words_tried": 1,
+      "control_word": [
+        "00000005000505",
+        "000001",
+        "0005"
+      ],
+      "control_nonzero_monomials": 94,
+      "control_first_integer_coefficient": 85680
+    },
+    "000000010101010106060606": {
+      "formal_words": 77,
+      "distinct_monomials": 1710,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 660896,
+      "sum_abs_bounds": 282060467896320,
+      "sum_abs_actual": 141372436128,
+      "denominator": "4",
+      "diagonal_letter": 6,
+      "diagonal_multiplicity": 4,
+      "control_words_tried": 1,
+      "control_word": [
+        "000001",
+        "0001",
+        "01010601060606"
+      ],
+      "control_nonzero_monomials": 1204,
+      "control_first_integer_coefficient": 174930
+    },
+    "000000000000010105050506": {
+      "formal_words": 132,
+      "distinct_monomials": 2338,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 434176,
+      "sum_abs_bounds": 89387604836352,
+      "sum_abs_actual": 319308383520,
+      "denominator": "2",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 6,
+      "control_words_tried": 1,
+      "control_word": [
+        "00000001050506",
+        "000001",
+        "0005"
+      ],
+      "control_nonzero_monomials": 674,
+      "control_first_integer_coefficient": 394128
+    },
+    "000000000000010304050505": {
+      "formal_words": 184,
+      "distinct_monomials": 4280,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 858688,
+      "sum_abs_bounds": 124466120736768,
+      "sum_abs_actual": 646173750240,
+      "denominator": "2",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 6,
+      "control_words_tried": 1,
+      "control_word": [
+        "00000003050504",
+        "000001",
+        "0005"
+      ],
+      "control_nonzero_monomials": 952,
+      "control_first_integer_coefficient": 197064
+    },
+    "000000010303030304040404": {
+      "formal_words": 202,
+      "distinct_monomials": 13240,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 3942352,
+      "sum_abs_bounds": 12020957964288000,
+      "sum_abs_actual": 14443303739232,
+      "denominator": "20",
+      "diagonal_letter": 4,
+      "diagonal_multiplicity": 4,
+      "control_words_tried": 1,
+      "control_word": [
+        "000001",
+        "0003",
+        "03030403040404"
+      ],
+      "control_nonzero_monomials": 3916,
+      "control_first_integer_coefficient": 121380
+    },
+    "000000000101010105060606": {
+      "formal_words": 441,
+      "distinct_monomials": 12426,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 7543296,
+      "sum_abs_bounds": 17664061929062400,
+      "sum_abs_actual": 17276994720480,
+      "denominator": "24",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 4,
+      "control_words_tried": 1,
+      "control_word": [
+        "000000010106",
+        "0001",
+        "0106",
+        "0506"
+      ],
+      "control_nonzero_monomials": 4012,
+      "control_first_integer_coefficient": -346248
+    },
+    "000000000001010105050606": {
+      "formal_words": 509,
+      "distinct_monomials": 10432,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 4583264,
+      "sum_abs_bounds": 4460109155647488,
+      "sum_abs_actual": 9952532872608,
+      "denominator": "12",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 5,
+      "control_words_tried": 1,
+      "control_word": [
+        "000000010106",
+        "0001",
+        "0005",
+        "0506"
+      ],
+      "control_nonzero_monomials": 1660,
+      "control_first_integer_coefficient": -18450
+    },
+    "000000000001030304040505": {
+      "formal_words": 971,
+      "distinct_monomials": 34756,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 15802736,
+      "sum_abs_bounds": 61404668633235456,
+      "sum_abs_actual": 270145645695264,
+      "denominator": "60",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 5,
+      "control_words_tried": 1,
+      "control_word": [
+        "000000010304",
+        "0003",
+        "0005",
+        "0405"
+      ],
+      "control_nonzero_monomials": 3146,
+      "control_first_integer_coefficient": -6150
+    },
+    "000000000103030304040405": {
+      "formal_words": 1031,
+      "distinct_monomials": 64990,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 38636160,
+      "sum_abs_bounds": 385612157398155264,
+      "sum_abs_actual": 916177893211776,
+      "denominator": "120",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 4,
+      "control_words_tried": 1,
+      "control_word": [
+        "000000010304",
+        "0003",
+        "0304",
+        "0405"
+      ],
+      "control_nonzero_monomials": 8564,
+      "control_first_integer_coefficient": 246528
+    },
+    "000000010101010304060606": {
+      "formal_words": 1397,
+      "distinct_monomials": 81344,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 71486288,
+      "sum_abs_bounds": 975025429429911552,
+      "sum_abs_actual": 871221565836288,
+      "denominator": "120",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 3,
+      "control_words_tried": 1,
+      "control_word": [
+        "000001",
+        "0001",
+        "01010306040606"
+      ],
+      "control_nonzero_monomials": 4760,
+      "control_first_integer_coefficient": -104958
+    },
+    "000000010103030304040406": {
+      "formal_words": 2446,
+      "distinct_monomials": 206156,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 205662368,
+      "sum_abs_bounds": 2886970640908713984,
+      "sum_abs_actual": 4031241556942176,
+      "denominator": "120",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 3,
+      "control_words_tried": 1,
+      "control_word": [
+        "000001",
+        "0001",
+        "03030304040406"
+      ],
+      "control_nonzero_monomials": 3736,
+      "control_first_integer_coefficient": -419832
+    },
+    "000000000001010304050506": {
+      "formal_words": 2730,
+      "distinct_monomials": 63712,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 42240192,
+      "sum_abs_bounds": 173784817384980480,
+      "sum_abs_actual": 726380413633008,
+      "denominator": "60",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 5,
+      "control_words_tried": 1,
+      "control_word": [
+        "000000010104",
+        "0003",
+        "0005",
+        "0506"
+      ],
+      "control_nonzero_monomials": 2704,
+      "control_first_integer_coefficient": 55350
+    },
+    "000000010101030304040606": {
+      "formal_words": 3986,
+      "distinct_monomials": 288512,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 324559704,
+      "sum_abs_bounds": 4349677100636012544,
+      "sum_abs_actual": 6109106238260160,
+      "denominator": "120",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 3,
+      "control_words_tried": 1,
+      "control_word": [
+        "000001",
+        "0001",
+        "0103",
+        "0304060406"
+      ],
+      "control_nonzero_monomials": 6864,
+      "control_first_integer_coefficient": 1119552
+    },
+    "000000000101010304050606": {
+      "formal_words": 4703,
+      "distinct_monomials": 172304,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 161033024,
+      "sum_abs_bounds": 1557630289160699904,
+      "sum_abs_actual": 3507236689540992,
+      "denominator": "120",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 4,
+      "control_words_tried": 1,
+      "control_word": [
+        "000000010104",
+        "0001",
+        "0306",
+        "0506"
+      ],
+      "control_nonzero_monomials": 9024,
+      "control_first_integer_coefficient": -758448
+    },
+    "000000000101030304040506": {
+      "formal_words": 6486,
+      "distinct_monomials": 284860,
+      "nonzero_monomials": 0,
+      "first_key": 0,
+      "first_integer_coefficient": 0,
+      "contributions": 289962816,
+      "sum_abs_bounds": 2615272857870630912,
+      "sum_abs_actual": 7684620469475328,
+      "denominator": "120",
+      "diagonal_letter": 0,
+      "diagonal_multiplicity": 4,
+      "control_words_tried": 1,
+      "control_word": [
+        "000000010104",
+        "0003",
+        "0304",
+        "0506"
+      ],
+      "control_nonzero_monomials": 10080,
+      "control_first_integer_coefficient": 11772
+    }
+  }
+}
