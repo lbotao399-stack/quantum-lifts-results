@@ -229,6 +229,47 @@
         "algorithms/su3_j34_20261118/joint_70/inhomogeneous/restricted_separators.json"
       ],
       "scope": "Fixed rational first correction; no global solution, new pairing or new generator."
+    },
+    {
+      "phase": "SU(3) level 34: guarded first correction and direct third-order action",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_jobs": [
+        "5665888",
+        "5666003"
+      ],
+      "first_correction": {
+        "ordered_vector_sha256": "de945afbf56c55040f383fa62e971d7e68645979f486fc55499156a7d138d962",
+        "words": 18690,
+        "solved": 318,
+        "failed": 182,
+        "inhomogeneous": 16,
+        "homogeneous": 302,
+        "preserved": 315
+      },
+      "exchange_odd_dimensions": [
+        582029,
+        1063480
+      ],
+      "direct_third_action": {
+        "formal_words": 5740,
+        "contents_with_exact_nonzero_three_colour_evaluation": 6,
+        "Cartan_coefficients": 0,
+        "one_Q0_Q3_coefficient": "-922872018980940",
+        "checked_nilpotency_coefficient": "0"
+      },
+      "evidence": [
+        "algorithms/su3_j34_20261118/joint_70/guarded/verified.json",
+        "algorithms/su3_j34_20261118/joint_70/guarded/separator_replay.json",
+        "algorithms/su3_j34_20261118/direct_third/independent.json",
+        "algorithms/su3_j34_20261118/direct_third/consistency.json"
+      ],
+      "scope": "The direct Q3 image is not Q0-closed. The complete first equation, second equation and third obstruction remain open; no new generator or lift."
     }
   ]
 }

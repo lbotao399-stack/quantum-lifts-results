@@ -209,7 +209,7 @@ For the published $SU(3)$ source $\mathcal O_0$ at $j=34$, an 11,439-word ration
 | `0000000000010105050716` | 6,476 | 8,056 | 0 / 18,984 |
 | `0000000001010106060d0f` | 15,128 | 15,128 | 0 / 35,190 |
 
-The 1,685-word and 2,417-word additions affect 13 and 10 contents. Independent reconstruction and graded differentiation reclassify their union of 22. On the shared content `000000000101020506070f`, the combined residual has coefficient 149184 at the archived exterior evaluation modulo 1000003. Exactly 13/174 formally inhomogeneous and 302/326 homogeneous equations hold; the other 185 fail on this same correction. Three rational functionals also exclude individual parent spaces on the preceding vector; the tests do not exclude a correction using other parents.
+The 1,685-word and 2,417-word additions affect 13 and 10 contents. Independent reconstruction and graded differentiation reclassify their union of 22. On the shared content `000000000101020506070f`, the combined residual has coefficient 149184 at the archived exterior evaluation modulo 1000003. Exactly 13/174 formally inhomogeneous and 302/326 homogeneous equations hold; the other 185 fail on this same correction. On the preceding 313-success vector, the three functional values reduce to 0, 297666 and 215158 modulo 1000003. The first evaluation vanishes over the rationals and is inconclusive; the other two exclude the indicated parent spaces. Neither excludes a correction using additional parents.
 
 [Cluster receipt and log](joint_70/inhomogeneous/a8_5665806.json) · [Independent coefficient replay](joint_70/inhomogeneous/independent.json) · [Correction terms and deltas](joint_70/inhomogeneous/) · [Three restricted functionals](joint_70/inhomogeneous/restricted_separators.json).
 
@@ -217,4 +217,60 @@ With the two C++ executables compiled as above, run:
 
 ```sh
 python3 replay_inhomogeneous_repairs.py --columns /tmp/j34-columns --exterior /tmp/j34-probe --work /tmp/j34-inhom-replay --out /tmp/j34-inhom.json
+```
+
+## Three simultaneous repairs and four coupled equations
+
+For the same published even source, A8 job 5665888 used the 11,439-word base above. The three new targets have hexadecimal suffixes `0715`, `0c16`, and `0e14` after the common prefix `000000000101010606`. For each target, 2,786 parent coordinates feed 1,262 target coordinates. Each finite-field system has rank and augmented rank 1,217 modulo 1,000,003. Independent rational reconstruction, graded differentiation and expansion at three colours give 15,128 nonzero coefficients before each repair and zero on all 35,190 collected coefficients afterward. No addition changes either of the other two targets.
+
+| Correction added to the 315-success base | Words in the resulting correction | Gained | Lost | Inhomogeneous / 174 | Homogeneous / 326 | Total / 500 |
+|---|---:|---:|---:|---:|---:|---:|
+| Three separate targets | 18,690 | 3 | 0 | 16 | 302 | 318 |
+| Four coupled equations, all parents | 14,498 | 2 | 33 | 8 | 276 | 284 |
+| Both additions together | 21,749 | 5 | 33 | 11 | 276 | 287 |
+
+The four coupled equations include two failed equations and two already solved ones. Restrict parents to those avoiding all *other* previous successes. A rational functional annihilates all 4,307 such coordinates and pairs with the negative residual to 150,914 modulo 1,000,003. With all 8,597 incident parent coordinates the four equations have a rational solution. Its 33 losses were independently located. Thus the restricted functional does not give a class in the full cokernel.
+
+[A8 receipt](joint_70/guarded/a8_5665888.json) · [Frame numerators and parental bases](joint_70/guarded/) · [All changed contents](joint_70/guarded/verified.json) · [Independent separator replay](joint_70/guarded/separator_replay.json)
+
+## Derivative exchange in the first equation
+
+Exchanging the two derivative counts on every letter and restoring graded cyclic and trace-product order commutes with the classical supercharge on all 31 letters and all 180 signed split terms. It sends the 517,468 terms of the right-hand side to their negatives, with zero mismatches. Subtracting the exchanged correction from any rational solution and dividing by two therefore preserves the full first equation. The following counts refer to the fixed charge and even charge-conjugation parity **before** flavour highest-weight reduction.
+
+| Length and role | Original dimension | Exchange-odd dimension | Orbits of letter contents with a nonzero odd part |
+|---|---:|---:|---:|
+| 10, possible first corrections | 1,273,007 | 582,029 | 271 |
+| 11, equations | 2,290,423 | 1,063,480 | 237 |
+
+A pair of exchanged contents contributes the dimension of one member. In a fixed content with two exchanged letters the odd eigenspace selects the exterior colour square for bosons and symmetric colour square for fermions. A fixed content with one mixed derivative letter has no odd part. Projection of the 18,690-word *partial* correction gives a 34,862-word vector satisfying 314/500 (14 inhomogeneous, 300 homogeneous); it loses four identities. The reduced system is equivalent for global solvability, not for optimizing an incomplete correction.
+
+[Exchange and character counts](joint_70/guarded/exchange_dimensions.json) · [Projected-vector census](joint_70/guarded/projected.json)
+
+## Direct third-order action and its classical differential
+
+For the third supercharge coefficient $Q_3$, 419 of the 6,270 source words can supply the required Grassmann flavours; 414 have nonzero individual formal images. Combining all 90,584 terms before collection gives 5,740 trace terms in $Q_3\mathcal O_0$, with common denominator 3. A second computation includes both orientations of each contraction path on all 419 eligible words and reproduces the ordered rational coefficients. Charge conjugation is even and derivative exchange is odd. The generic Cartan restriction is zero. All six letter contents give a nonzero rational coefficient on the displayed noncommuting traceless matrices.
+
+For one four-generator exterior coefficient, the computed values in the third-order nilpotency identity are:
+
+| Term acting on the published source | Exact coefficient |
+|---|---:|
+| $Q_0Q_3$ | −922,872,018,980,940 |
+| $Q_1Q_2$ | 2,238,699,830,725,260 |
+| $Q_2Q_1$ | −1,315,827,811,744,320 |
+| $Q_3Q_0$ | 0 |
+| Sum | 0 |
+
+The last term vanishes here because this content has three letters carrying derivatives, whereas $Q_3$ acting on derivative-free words produces only two. The direct $Q_3\mathcal O_0$ is **not** $Q_0$-closed. The third obstruction requires $Q_3\mathcal O_0+Q_2\mathcal O_1+Q_1\mathcal O_2$ after solving the two preceding equations and quotienting the preceding images.
+
+[A8 job 5666003](direct_third/a8_5666003.json) · [Complete rational action](direct_third/Q3.jsonl.gz) · [All 419 independent path checks and integer matrix witnesses](direct_third/independent.json) · [Nilpotency coefficient](direct_third/consistency.json)
+
+Using the existing SU(3) runtime and the two C++ executables above, the following replay commands reproduce these records from this directory. The final command also uses the checked integer native operator built by `../su3_independent_prime_20261118/build_native.py`.
+
+```sh
+python3 replay_guarded.py --columns /tmp/j34-columns --exterior /tmp/j34-probe --work /tmp/j34-guard --out /tmp/j34-guarded.json
+python3 replay_guarded_separator.py --exe /tmp/j34-columns --work /tmp/j34-sep --out /tmp/j34-separator.json
+python3 derivative_exchange.py --work /tmp/j34-exchange --out /tmp/j34-exchange.json
+python3 project_derivative_exchange.py --columns /tmp/j34-columns --exterior /tmp/j34-probe --work /tmp/j34-projected --out /tmp/j34-projected.json
+python3 replay_third_action.py --workers 3 --out /tmp/j34-q3.json
+python3 third_consistency.py --out /tmp/j34-q3-nilpotency.json
 ```

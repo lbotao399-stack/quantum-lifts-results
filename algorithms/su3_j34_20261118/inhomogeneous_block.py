@@ -43,7 +43,7 @@ def read_equations(rhs,vector,census,targets):
         n+=1;t=front.content(w)
         if t in b:b[t][w]=Fraction(v)
     assert n==517468 and h.hexdigest()==s.INPUT and dict(nr)=={t:len(b[t]) for t in targets}
-    cc=s.read(census);ok=set(cc['exact_zero']);assert cc['vector_sha']==digest and len(ok)==313 and not cc['unresolved'];F,B=front.front.incidence(); groups={}
+    cc=s.read(census);ok=set(cc['exact_zero']);bad=set(cc['mathematically_nonzero']);F,B=front.front.incidence();assert cc['vector_sha']==digest and cc['rhs_sha']==s.INPUT and not cc['unresolved'] and not ok&bad and ok|bad=={k.hex() for k in B}; groups={}
     for t in targets:
         assert t in cc['mathematically_nonzero'];groups[t]=sorted(g.hex() for g in B[bytes.fromhex(t)] if ok.isdisjoint(k.hex() for k in F[g]));assert groups[t]
     return b,rr,groups,digest
@@ -83,7 +83,7 @@ def solve(target,rhs,vector,census,out,exe):
     from su_trace_adapter_v1 import parity_project
     z,A,y,pool,keys=j.assemble(out,'all',out/'frames');assert len(keys)==z['dimensions'][target] and len(pool)==sum(z['dimensions'][g] for g in z['internal']);D=int(z['denominator']);history=[]
     def progress(x):history.append(x);s.write(out/'progress.json',history);print(target,x,flush=True)
-    rec,vals=certify(A,y,progress);rec.update(target=target,target_dimension=len(keys),parent_dimension=len(pool),allowed=z['internal'],preserved_by_support=313,base=z['base'],rhs=z['rhs'],physical_before=s.read(out/'physical_before.json'));s.write(out/'result.json',rec)
+    rec,vals=certify(A,y,progress);rec.update(target=target,target_dimension=len(keys),parent_dimension=len(pool),allowed=z['internal'],preserved_by_support=len(s.read(census)['exact_zero']),base=z['base'],rhs=z['rhs'],physical_before=s.read(out/'physical_before.json'));s.write(out/'result.json',rec)
     if rec['kind']=='exact_separator':
         rec.update(functional=[[keys[k][1],str(v)] for k,v in sorted(vals.items())],pairing_with_negative_residual=str(Fraction(rec['integer_rhs_pairing'])/D));s.write(out/'result.json',rec);return rec
     if rec['kind']!='exact_solution':return rec
@@ -95,4 +95,4 @@ def solve(target,rhs,vector,census,out,exe):
     _,_,rr=front.residuals(rhs,out/'new.vector.json.gz',[target]);rec.update(changed_parents=sorted(changed),affected_contents=sorted(possible),delta_words=len(coeff),vector_words=len(base),frame_terms=len(frame_terms),physical_after=polynomials([rr[target]],exe,out)[0]);assert rec['physical_after']['nonzero_monomials']==0;s.write(out/'result.json',rec);return rec
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('step',choices=('setup','solve'));p.add_argument('--target',required=True,choices=TARGETS);p.add_argument('--rhs',type=Path,default=paths(s.HERE)[0]);p.add_argument('--vector',type=Path,default=paths(s.HERE)[1]);p.add_argument('--census',type=Path,default=paths(s.HERE)[2]);p.add_argument('--out',required=True,type=Path);p.add_argument('--exe',required=True,type=Path);a=p.parse_args();assert __debug__;fn={'setup':setup,'solve':solve}[a.step];result=fn(a.target,a.rhs,a.vector,a.census,a.out,a.exe);print(a.target,result.get('kind','setup'),flush=True)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('step',choices=('setup','solve'));p.add_argument('--target',required=True);p.add_argument('--rhs',type=Path,default=paths(s.HERE)[0]);p.add_argument('--vector',type=Path,default=paths(s.HERE)[1]);p.add_argument('--census',type=Path,default=paths(s.HERE)[2]);p.add_argument('--out',required=True,type=Path);p.add_argument('--exe',required=True,type=Path);a=p.parse_args();assert __debug__;fn={'setup':setup,'solve':solve}[a.step];result=fn(a.target,a.rhs,a.vector,a.census,a.out,a.exe);print(a.target,result.get('kind','setup'),flush=True)

@@ -1,0 +1,92 @@
+{
+  "bare_Q0_Q3": "-922872018980940",
+  "target": [
+    [
+      0,
+      0,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        1
+      ]
+    ],
+    [
+      0,
+      0,
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      0,
+      1,
+      []
+    ],
+    [
+      0,
+      2,
+      []
+    ],
+    [
+      3,
+      0,
+      []
+    ]
+  ],
+  "Q1_Q2": {
+    "input_sha256": "76e05195636520fe89c375ab11b3211ed342b6e1d341309ab41b4a5a1fb6b82e",
+    "input_words": 140526,
+    "content_count": 63,
+    "retained_content_count": 4,
+    "retained_words": 2468,
+    "selected_output_words": 3453,
+    "coefficient": "2238699830725260"
+  },
+  "Q2_Q1": {
+    "input_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+    "input_words": 517468,
+    "content_count": 174,
+    "retained_content_count": 6,
+    "retained_words": 2858,
+    "selected_output_words": 3653,
+    "coefficient": "-1315827811744320"
+  },
+  "seed": 346712,
+  "Q3_Q0": "0",
+  "exact_sum": "0",
+  "Q3_Q0_selection": "Underived input to Q3 has exactly two derivative-carrying output letters. This target has three."
+}

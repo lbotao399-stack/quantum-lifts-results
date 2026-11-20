@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## SU(3) level 34: direct third action and 318 simultaneous first equations, November 19, 2026
+
+The direct third-order action on the published source has 5,740 rational trace terms. All six letter contents survive an exact three-colour specialization; the Cartan restriction is zero. A nonzero coefficient of its classical differential is cancelled exactly by the two mixed terms of the third-order nilpotency identity. It does not establish a third obstruction. [A8 job 5666003 and coefficient replay](algorithms/su3_j34_20261118/README.md#direct-third-order-action-and-its-classical-differential).
+
+An 18,690-word first correction solves 318/500 equations, three more than the previous vector (16/174 inhomogeneous, 302/326 homogeneous). A separate four-equation solution breaks 33 earlier identities. Restricting the full fixed-charge equation to negative derivative exchange reduces the parent dimension to 582,029 and the equation dimension to 1,063,480. [A8 job 5665888, all rational corrections and the exchange calculation](algorithms/su3_j34_20261118/README.md#three-simultaneous-repairs-and-four-coupled-equations).
+
+New $d_1$ pairings **0** (total **6**); new fortuitous-generator families **0** (total **3**); certified $d_2$, $d_3$, nonperturbative lifts **0, 0, 0**.
+
 ## SU(3) level 34: two simultaneous inhomogeneous identities, November 19, 2026
 
 One 11,439-word rational correction solves **315/500** contents: **13/174** formally inhomogeneous and **302/326** homogeneous. Both new right-hand sides are nonzero at three colours. All 22 affected equations were rechecked and all 313 prior successes survive. The remaining 185 fail for this correction. [A8 job 5665806, both deltas and replay](algorithms/su3_j34_20261118/README.md#two-simultaneous-inhomogeneous-equations).

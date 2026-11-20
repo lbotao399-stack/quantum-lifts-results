@@ -1,0 +1,86 @@
+{
+  "job": "5666003",
+  "china_time": "2026-11-20T08:50:42.016085+08:00",
+  "sacct": "5666003|n434qd20|COMPLETED|2|32|0:0",
+  "receipt": {
+    "files": {
+      "Q3.jsonl.gz": [
+        36286,
+        "6b5609fc47e8221826041f10f14b7150a92bac53d43ae73ca2e226f09b5864fe"
+      ],
+      "Q3_Cartan.json": [
+        59,
+        "28539407ac3ddd0b5c113d4aaf5c0e96a303c7c4ccff4bc81a43c960c3d9654b"
+      ],
+      "direct.json": [
+        1801,
+        "f29316a1f3deb379b3fc17855168f0cba3b57cb3809668da634c3cbce0352088"
+      ]
+    },
+    "job": "5666003",
+    "summary": {
+      "annihilated_before_colour": 5851,
+      "charge_conjugation": 1,
+      "common_denominator": "3",
+      "derivative_exchange": -1,
+      "distinct_terms_before_weighted_sum": 90584,
+      "doubled_charges": [
+        5,
+        5,
+        16,
+        10,
+        8
+      ],
+      "eligibility": [
+        {
+          "active_paths": 0,
+          "eligible_quadruples": 0,
+          "source_words": 5347
+        },
+        {
+          "active_paths": 0,
+          "eligible_quadruples": 4,
+          "source_words": 504
+        },
+        {
+          "active_paths": 24,
+          "eligible_quadruples": 4,
+          "source_words": 419
+        }
+      ],
+      "eligible_zero_controls": 3,
+      "formal_terms_after_diagonal_ordering": 0,
+      "generic_Cartan_coefficients": 0,
+      "independent_both_orientation_checks": {
+        "1717": 302,
+        "1877": 164,
+        "2654": 238,
+        "3603": 264,
+        "4684": 168,
+        "5993": 200,
+        "6023": 162,
+        "659": 164,
+        "776": 282,
+        "9": 342
+      },
+      "indexing": "zero-based in sorted coloured trace-word order",
+      "length": 9,
+      "nonzero_individual_images": 414,
+      "output_uncompressed_sha256": "76e7de2126f00a6a35092096fc359cfeb1f36e0cdf19a9693398a93c374bafa4",
+      "rules": {
+        "q2d_sp_exact.py": "f2a4e7f8b3cdc7c3df6c95b6379007d015ae7d5c040d02d7271d1335460b4386",
+        "q3_jet_moments.py": "7c4883500acc3f8161f569f9192f5e9fc014fd9f763f762609f5d0180e6e291b",
+        "q3d_sp_exact.py": "47de29bbe1915393fe19ef53bc77d835cc7521a7fa285b482aff071731f11902",
+        "qn_sp_bmn_exact.py": "4eb4f2ccd507f6b29460ea0798a7c09f1b2e230e4344f1b735a10728935b4071"
+      },
+      "scope": "Direct Q3 O0 on this representative. The third obstruction requires the full lower descent.",
+      "source_letter_profiles": 20,
+      "source_sha256": "673bbcbcf9bafba63b66dfab9a19c306178c5839269abe35da538505166b66c1",
+      "source_words": 6270,
+      "surviving_theta_filter": 419,
+      "terms": 5740,
+      "total_path_hits": 10056
+    }
+  },
+  "log": "gcc-13.2.0 loaded successful\n{\"source_sha256\": \"673bbcbcf9bafba63b66dfab9a19c306178c5839269abe35da538505166b66c1\", \"source_words\": 6270, \"source_letter_profiles\": 20, \"indexing\": \"zero-based in sorted coloured trace-word order\", \"eligibility\": [{\"eligible_quadruples\": 0, \"active_paths\": 0, \"source_words\": 5347}, {\"eligible_quadruples\": 4, \"active_paths\": 0, \"source_words\": 504}, {\"eligible_quadruples\": 4, \"active_paths\": 24, \"source_words\": 419}], \"surviving_theta_filter\": 419, \"annihilated_before_colour\": 5851, \"nonzero_individual_images\": 414, \"distinct_terms_before_weighted_sum\": 90584, \"independent_both_orientation_checks\": {\"9\": 342, \"659\": 164, \"776\": 282, \"1717\": 302, \"1877\": 164, \"2654\": 238, \"3603\": 264, \"4684\": 168, \"5993\": 200, \"6023\": 162}, \"eligible_zero_controls\": 3, \"total_path_hits\": 10056, \"terms\": 5740, \"common_denominator\": \"3\", \"length\": 9, \"doubled_charges\": [5, 5, 16, 10, 8], \"charge_conjugation\": 1, \"derivative_exchange\": -1, \"formal_terms_after_diagonal_ordering\": 0, \"generic_Cartan_coefficients\": 0, \"output_uncompressed_sha256\": \"76e7de2126f00a6a35092096fc359cfeb1f36e0cdf19a9693398a93c374bafa4\", \"rules\": {\"q2d_sp_exact.py\": \"f2a4e7f8b3cdc7c3df6c95b6379007d015ae7d5c040d02d7271d1335460b4386\", \"q3_jet_moments.py\": \"7c4883500acc3f8161f569f9192f5e9fc014fd9f763f762609f5d0180e6e291b\", \"q3d_sp_exact.py\": \"47de29bbe1915393fe19ef53bc77d835cc7521a7fa285b482aff071731f11902\", \"qn_sp_bmn_exact.py\": \"4eb4f2ccd507f6b29460ea0798a7c09f1b2e230e4344f1b735a10728935b4071\"}, \"scope\": \"Direct Q3 O0 on this representative. The third obstruction requires the full lower descent.\"}\n"
+}
