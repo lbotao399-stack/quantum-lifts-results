@@ -296,3 +296,36 @@ python3 project_derivative_exchange.py --columns /tmp/j34-columns --exterior /tm
 python3 replay_third_action.py --workers 3 --out /tmp/j34-q3.json
 python3 third_consistency.py --out /tmp/j34-q3-nilpotency.json
 ```
+
+## A necessary trace structure for the first correction
+
+At three colours, take the following three traceless matrices in the defining representation. The matrix unit $E_{ij}$ has its only nonzero entry, one, in row $i$ and column $j$.
+
+$$
+U=\begin{pmatrix}-1&1&0\\-1&0&0\\0&0&1\end{pmatrix},
+\qquad V=E_{23},\qquad W=E_{31}.
+$$
+
+Every pairing $\operatorname{Tr}(AB)$ with $A,B$ among these matrices is zero. In the archived Taylor-letter ordering, the content `0000000000000505050814` contains six copies of `00`, three of the fermion `05`, and one each of `08` and `14`. Substitute $U$ for `00`, $V$ for `08`, $W$ for `14`, and $\eta_1U+\eta_2V+\eta_3W$ for `05`, with the three exterior generators in the indicated order. The coefficient of $\eta_1\eta_2\eta_3$ in $-Q_1\mathcal O_0$ is **771,120**. Two matrix-product calculations agree on all 74 trace words in this content.
+
+Applying $Q_0$ to a product with at least two bilinear traces leaves an unvaried bilinear factor in every term. For a product with a single bilinear factor, we checked the surviving terms explicitly. The four incident parent contents give 4,978 formal charge-even trace orbits after applying $1+C$. Graded cyclic-word counting gives the same unprojected sizes as direct enumeration. All 2,202 orbits with at least one bilinear trace give zero on this coefficient. Among the remaining orbits, 1,387 give a nonzero value. Charge conjugation preserves all trace lengths, and the right-hand side is even. Consequently every polynomial solution of the full first equation requires a contribution outside the span of parents containing a bilinear trace. The surviving trace lengths are $(10)$, $(3,7)$, $(4,6)$, $(5,5)$ and $(3,3,4)$. [Integer functional, all counts and example words](collision/three_colour_functional.json) · [Replay](trace_factor_test.py)
+
+## First equation at a repeated scalar eigenvalue
+
+For each of the three scalars in turn set its value to $x\operatorname{diag}(1,1,-2)$. Every other letter has a generic traceless upper two-by-two block and zero third row and column. The scalar commutes with that entire block. The two signed orders in every classical commutator containing it cancel. Thus the restriction commutes with $Q_0$, and coefficients of each power of $x$ can be compared separately. We applied the restriction to the full parent-theory $-Q_1\mathcal O_0$.
+
+| Central scalar | Power of $x$ | Restricted trace words | Nonzero right-hand-side monomials on the detecting slice | Terms in a rational primitive |
+|---|---:|---:|---:|---:|
+| $\phi_1$ | 2 | 708 | 140 | 60 |
+| $\phi_2$ | 0 | 26,714 | 142 | 79 |
+| $\phi_2$ | 2 | 1,092 | 24 | 27 |
+| $\phi_3$ | 0 | 42,652 | 558 | 652 |
+| $\phi_3$ | 2 | 223 | 0 | 0 |
+
+All other coefficients vanish already in signed two-colour trace words. In even degree, the two-colour adjoint is the vector representation of $SO(3)$. Polarized metric contractions span its invariants since a pair of alternating tensors reduces to a determinant of metric contractions. Consequently products of bilinear traces span each restricted parent space. Each row of the table uses the same parent coefficients throughout its letter contents. The three choices of central scalar were solved independently. Each rational primitive passes full polynomial multiplication on generic upper traceless matrices. The integer functional above excludes a bilinear-only completion in the parent gauge group. [A8 job 5669358](collision/a8_5669358.json) · [Rational primitives](collision/) · [Independent polynomial replay](replay_collision.py)
+
+```sh
+python3 collision_first.py --out /tmp/j34-collision
+python3 replay_collision.py --extraction /tmp/j34-collision --files collision --out /tmp/j34-collision-check.json
+python3 trace_factor_test.py --out /tmp/j34-three-colour-functional.json
+```

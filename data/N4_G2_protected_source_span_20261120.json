@@ -1,0 +1,188 @@
+{
+  "primes": [
+    1000003,
+    1000033
+  ],
+  "classical_blocks": [
+    {
+      "charge": [
+        1,
+        1,
+        4,
+        4,
+        4
+      ],
+      "weight": [
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "length": 5,
+      "dim": 3,
+      "incoming": 0,
+      "outgoing": 3,
+      "upper": 0
+    },
+    {
+      "charge": [
+        1,
+        1,
+        4,
+        4,
+        4
+      ],
+      "weight": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "length": 4,
+      "dim": 5,
+      "incoming": 1,
+      "outgoing": 3,
+      "upper": 1
+    },
+    {
+      "charge": [
+        1,
+        1,
+        4,
+        4,
+        4
+      ],
+      "weight": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "length": 3,
+      "dim": 1,
+      "incoming": 0,
+      "outgoing": 1,
+      "upper": 0
+    },
+    {
+      "charge": [
+        1,
+        1,
+        6,
+        6,
+        6
+      ],
+      "weight": [
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      "length": 8,
+      "dim": 15,
+      "incoming": 6,
+      "outgoing": 9,
+      "upper": 0
+    },
+    {
+      "charge": [
+        1,
+        1,
+        6,
+        6,
+        6
+      ],
+      "weight": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "length": 7,
+      "dim": 48,
+      "incoming": 28,
+      "outgoing": 20,
+      "upper": 0
+    },
+    {
+      "charge": [
+        1,
+        1,
+        6,
+        6,
+        6
+      ],
+      "weight": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "length": 6,
+      "dim": 30,
+      "incoming": 17,
+      "outgoing": 11,
+      "upper": 2
+    },
+    {
+      "charge": [
+        1,
+        1,
+        6,
+        6,
+        6
+      ],
+      "weight": [
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "length": 5,
+      "dim": 3,
+      "incoming": 0,
+      "outgoing": 3,
+      "upper": 0
+    }
+  ],
+  "source_dimension_upper": [
+    1,
+    2
+  ],
+  "physical_current_product_values": [
+    [
+      [
+        4
+      ]
+    ],
+    [
+      [
+        -64,
+        0
+      ],
+      [
+        16,
+        576
+      ]
+    ]
+  ],
+  "determinants": [
+    4,
+    -36864
+  ],
+  "matter_free_four_letter_jet": true,
+  "matter_term_only_in_first_row_of_six_letter_minor": true,
+  "dimension_after_quotient_by_current_products": [
+    0,
+    0
+  ],
+  "physical_input": "Exact stress-tensor-multiplet currents and a supersymmetric primary operator product with the usual classical limit.",
+  "instanton_integral_evaluated": false
+}

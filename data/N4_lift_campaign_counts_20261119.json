@@ -335,6 +335,62 @@
         "algorithms/su3_j34_20261118/direct_third/second_consistency.json"
       ],
       "scope": "Single coefficient in a supercharge identity, not a d2 pairing."
+    },
+    {
+      "phase": "Three scalar collision slices and a necessary three-colour trace structure",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5669358",
+      "separate_first_primitives": [
+        60,
+        79,
+        27,
+        652,
+        0
+      ],
+      "rhs_pairing": 771120,
+      "charge_even_formal_parent_orbits": 4978,
+      "with_a_bilinear_trace": 2202,
+      "nonzero_pairings_on_those": 0,
+      "nonzero_pairings_on_other_orbits": 1387,
+      "evidence": [
+        "algorithms/su3_j34_20261118/collision/three_colour_functional.json",
+        "algorithms/su3_j34_20261118/collision/a8_5669358.json",
+        "algorithms/su3_j34_20261118/collision/independent.json"
+      ],
+      "scope": "Necessary constraint on the full first equation. Each scalar collision has an exact primitive; the full SU(3) first correction remains open."
+    },
+    {
+      "phase": "G2 protected products span two proposed incoming singlet sectors",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "source_dimensions": [
+        1,
+        2
+      ],
+      "physical_product_determinants": [
+        4,
+        -36864
+      ],
+      "remaining_source_dimensions": [
+        0,
+        0
+      ],
+      "evidence": [
+        "data/N4_G2_protected_source_span_20261120.json",
+        "algorithms/G2_current_product_span_20261120.md"
+      ],
+      "scope": "Using the exact stress multiplet and its primary cohomological product, the outgoing differential vanishes on these two source sectors. No instanton amplitude or new lift is counted."
     }
   ]
 }

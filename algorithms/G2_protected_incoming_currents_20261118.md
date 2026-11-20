@@ -1,5 +1,7 @@
 # Two incoming nonperturbative channels in `G2` SYM
 
+The physical current products span both complete classical source sectors. The resulting selection rule uses the ranks of these products and the exact primary-product Ward identity. [November 20 calculation](G2_current_product_span_20261120.md)
+
 In the holomorphic twist, the bottom components of the stress-tensor currents $\mathbf L_{Ii}$ and $\mathbf G^I_j$ are closed under the physical supercharge. Here $I,J,K$ are the three flavour components, and $i,j,k,h$ are the two holomorphic spin components. The two-operator product at separated points is closed by the supersymmetry Ward identity. Its degree-zero cohomological OPE extends over coincidence in complex dimension two. The constant term therefore gives a closed local product with the ordinary product as its leading classical term. Holomorphic derivatives commute with the supercharge. These physical facts would exclude an outgoing lift if the archived polynomials are the classical limits of the indicated products. The component identification is tested below. [Semi-chiral ring, §2 and currents (4.81), (4.83)–(4.85)](https://arxiv.org/html/2509.16737#S4.SS3.SSS1)
 
 ## The Gram determinant and the square of the gaugino bilinear
