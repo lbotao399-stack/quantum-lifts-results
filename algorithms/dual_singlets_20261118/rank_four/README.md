@@ -31,3 +31,30 @@ python3 algorithms/dual_singlets_20261118/rank_four_s5.py --work /tmp/so9-s5 --w
 cmp /tmp/so9-s5/pure.json algorithms/dual_singlets_20261118/rank_four/pure.json
 cmp /tmp/so9-s5/first.json algorithms/dual_singlets_20261118/rank_four/first.json
 ```
+
+## Rational sources at levels 30 and 36
+
+A8 job `5670559` reconstructed the level-30 source $F$ with $[Q_1F]=[S^5]$. Its 11,891 coefficients have common denominator 12. Its first action contains just two trace monomials. With the three-term primitive $H$ the equality $Q_1F-Q_0H=S^5$ holds coefficient by coefficient before imposing finite-colour trace identities. [Source](source.json.gz) · [Primitive](primitive.json.gz) · [Coordinates on the 323 formal singlets used](reconstruction.json) · [Slurm receipt](a8_5670559.json)
+
+To check $Q_0F=0$ in nine colours, use one fixed frame of integral antisymmetric matrices with entries $0,1,-1$. It has 405 evaluation coordinates and detects the full classical image of rank 357. After clearing the reconstruction denominator, the sum of the absolute formal coefficients in the classical image is 1097880. Each length-eleven trace product has at most $8!\,9^{11}$ summands per exterior coefficient. The four primes in the certificate give zero in every coordinate, and
+
+$$
+1000112004278059472142857
+>2\cdot1097880\cdot8!\,9^{11}
+=2778260706025372108800.
+$$
+
+The integer evaluations therefore vanish. Injectivity on the classical image gives the claimed equality of finite-colour polynomials.
+
+The two gaugino letters in $S$ have no flavour derivative. Every letter in $F$ has at most two. The first-order pair rule needs all three flavours, so every contraction joining $S$ to $F$ vanishes. All 72 ordered pair checks pass. The gauginos are classically closed and $S$ is even. Hence
+
+$$
+Q_0(SF)=0,\qquad Q_1(SF)-Q_0(SH)=S^6 .
+$$
+
+At length twelve, 55 signed-partial-permutation evaluations give a faithful integer frame on the 47-dimensional pure $SO(9)$ singlet. The 146 predecessor rows have rational image rank 46. Adjoining $S^6$ gives rank 47. Its 55 coordinates also equal $6!$ times the Pfaffians of the corresponding skew trace-pairing matrices. Thus $d_1[SF]=[S^6]\ne0$ at level 36. The two results count distinct singlet pairings. The second source is an explicit product. [Integer matrices and both first actions](sixth.json.gz)
+
+```sh
+python3 algorithms/dual_singlets_20261118/rank_four_source.py --plan /tmp/so9-s5/plan.json.gz --first /tmp/so9-s5/first.json --work /tmp/so9-source --workers 24
+python3 algorithms/dual_singlets_20261118/rank_four_sixth.py --source /tmp/so9-source/source.json.gz --primitive /tmp/so9-source/primitive.json.gz --out /tmp/so9-sixth.json.gz --workers 4
+```

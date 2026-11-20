@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## $SO(9)$ level 36 and the $F_4$ level-30 singlet, November 20, 2026
+
+A8 reconstructed the 11,891-term level-30 source and a three-term primitive over the rationals. Multiplying by the gaugino bilinear gives a second first-order pairing at level 36. In the length-twelve target the exact cochain, classical boundary and augmented ranks are 47, 46 and 47. In $F_4$ at level 30 the quotient of the possible first-order sources by universal classical trace cycles has dimension at most 21. [Rational sources and exact ranks](algorithms/dual_singlets_20261118/rank_four/README.md) · [Exceptional-group calculation](algorithms/dual_singlets_20261118/f4/README.md)
+
+New $d_1$ pairings **1** (total **8**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
 ## A first differential in $SO(9)$ at level 30, November 20, 2026
 
 A8 job `5670470` gives rank 357 on the complete classical image and rank 358 after adjoining the fifth-gaugino-power coefficient. The two augmented minors have determinants 973909 and 637559 modulo 1000003 and 1000033. Thus the rational first differential hits the fifth gaugino power. At the same charges the $USp(8)$ classical target has dimension zero. [Proof, projected coefficient and both minors](algorithms/dual_singlets_20261118/rank_four/README.md)

@@ -1,0 +1,28 @@
+{
+  "job": "5670559",
+  "utc": "2026-11-20T07:00:26.353910+00:00",
+  "accounting": "5670559|n49ratb20|COMPLETED|12|24|0:0",
+  "log": "gcc-13.2.0 loaded successful\nCRT 1000003 digits 7 bound 1389130353012686054400\nCRT 1000033 digits 13 bound 1389130353012686054400\nCRT 1000037 digits 19 bound 1389130353012686054400\nCRT 1000039 digits 25 bound 1389130353012686054400\nsource 11891 action 2 primitive 3 paired 1\n",
+  "shapes": 0,
+  "files": {
+    "reconstruction.json": "0d980e8bd4388563edd813a921e5c15319385f6816ce4bc2650d2a93634c234c",
+    "receipt.json": "d09f2fd6f7610eed102609fda6f6905e3b4044d3ffe108468456b099842d18f6"
+  },
+  "slurm_receipt": {
+    "job": "5670559",
+    "files": {
+      "reconstruction.json": [
+        "0d980e8bd4388563edd813a921e5c15319385f6816ce4bc2650d2a93634c234c",
+        7773
+      ],
+      "source.json.gz": [
+        "6b07e3b02fa0c3afa0bcd0d28b31582d8a83b0243e89cca491cb85c7da34cdc8",
+        54679
+      ],
+      "primitive.json.gz": [
+        "ddad1e81da2962b8a02447a67cfcade6d4f80c6988ef7ba9f22d2dd9e9ae5dce",
+        116
+      ]
+    }
+  }
+}

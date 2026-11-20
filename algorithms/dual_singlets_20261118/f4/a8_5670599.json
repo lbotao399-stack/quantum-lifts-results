@@ -1,0 +1,16 @@
+{
+  "job": "5670599",
+  "utc": "2026-11-20T07:11:07.020203+00:00",
+  "accounting": "5670599|n4f4s520|COMPLETED|199|32|0:0",
+  "log": "gcc-13.2.0 loaded successful\nsource (4, 4, 1, 1, 1) 11 words 8861 shapes 131 largest 420\nformal singlets 358 image words 0\nprobes 8 7999 4 dimension 144\nclassical image 134 of 144\nprobes 7 50094 19 dimension 666\nprobes 9 2514 2 dimension 79\nsource 724 joint 948 classical kernel upper 611 universal lower 590 remaining upper 21\n",
+  "shapes": 0,
+  "slurm_receipt": {
+    "job": "5670599",
+    "files": {
+      "ranks.json": [
+        "b87cd7c942c779b55f2c7b8ba216959807c1a63f660cada12f3658cd51933f6a",
+        17638
+      ]
+    }
+  }
+}

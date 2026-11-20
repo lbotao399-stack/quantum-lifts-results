@@ -9,7 +9,7 @@
     "nonperturbative": 0
   },
   "cumulative": {
-    "d1": 7,
+    "d1": 8,
     "fortuitous_generator_families": 3,
     "d2": 0,
     "d3": 0,
@@ -519,6 +519,67 @@
         "algorithms/dual_singlets_20261118/rank_four/a8_5670470.json"
       ],
       "scope": "One nonzero rational first differential. The source classification modulo products and descendants is open."
+    },
+    {
+      "phase": "Explicit SO(9) fifth-power source and the level-36 product pairing",
+      "increments": {
+        "d1": 1,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 8,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5670559",
+      "local_sixth_power_rank": [
+        47,
+        46,
+        47
+      ],
+      "fifth_source_terms": 11891,
+      "first_action_words": 2,
+      "primitive_words": 3,
+      "evidence": [
+        "algorithms/dual_singlets_20261118/rank_four/reconstruction.json",
+        "algorithms/dual_singlets_20261118/rank_four/source.json.gz",
+        "algorithms/dual_singlets_20261118/rank_four/primitive.json.gz",
+        "algorithms/dual_singlets_20261118/rank_four/sixth.json.gz",
+        "algorithms/dual_singlets_20261118/rank_four/a8_5670559.json"
+      ],
+      "scope": "The two levels are distinct singlet pairings. The second source is the product of the fifth-power source with the gaugino bilinear."
+    },
+    {
+      "phase": "F4 fifth-power source: universal trace cycles",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 8,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5670599",
+      "kernel_upper": 611,
+      "formal_cycle_lower": 590,
+      "remaining_upper": 21,
+      "evidence": [
+        "algorithms/dual_singlets_20261118/f4/characters.json",
+        "algorithms/dual_singlets_20261118/f4/ranks.json",
+        "algorithms/dual_singlets_20261118/f4/a8_5670599.json"
+      ],
+      "scope": "Upper bound on the kernel modulo universal trace cycles. No F4 quantum pairing or new generator."
     }
   ]
 }
