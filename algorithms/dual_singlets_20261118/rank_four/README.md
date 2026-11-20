@@ -84,3 +84,30 @@ python3 rank_four_orthogonal_paths.py --work /tmp/rank-four-paths --workers 48
 python3 rank_four_scalar_substitution.py --symplectic rank_four/mixed_Sp.json --orthogonal rank_four/mixed_SO.json --output /tmp/substitution.json
 python3 rank_four_mixed_classes.py --sp rank_four/mixed_Sp.json --so /tmp/rank-four-paths/orthogonal_paths.json --functional /tmp/substitution.json --output /tmp/mixed-classes.json.gz
 ```
+
+## The first differential on the two mixed singlets
+
+Use the rational ten-letter $SO(9)$ source $F$ saved above. On a Taylor letter with positive spin-derivative exponent, replace one such derivative by flavour derivative $i$. If $i$ already occurs the result is zero. Otherwise the sign is $(-1)$ to the number of existing flavour labels larger than $i$. The Taylor factorial cancels the exponent of the chosen spin derivative. Extend this odd operation to a product by the graded Leibniz rule. Each operation anticommutes with $Q_0$, by the linear substitution of the odd coordinates in the classical superfield equation. The verifier also expands all 102 anticommutators on the 17 letters in the source. A linear substitution of the letter coefficients preserves the nine-colour polynomial identities.
+
+In the following table the replacements are performed in the stated order. First use the plus spin derivative for the listed flavours in increasing order, then the minus spin derivative for its listed flavours. The two columns evaluate $Q_1$ on the rational functionals dual to the 68- and 69-term classes. Since the functionals are singlets, these entries also hold after projecting the sources to their spin and flavour singlets.
+
+| Bilinear multiplying $F$ | Plus flavours | Minus flavours | First functional | Second functional |
+|---|---|---|---:|---:|
+| $S$ | $0,1,2$ | $0,1,2$ | $-151200$ | $-12600$ |
+| $\operatorname{Tr}(\lambda_+\phi_0)$ | $0,1,2$ | $1,2$ | $-25200$ | $-2100$ |
+| $\operatorname{Tr}(\phi_0^2)$ | $1,2$ | $1,2$ | $-12000$ | $-600$ |
+
+The first and third rows have determinant $-60480000$. A classical boundary has zero projected first action by $Q_1Q_0=-Q_0Q_1$. The two closed sources thus give independent first differentials. The second row is one sixth of the first. The sources are constructed from the previously certified $F$.
+
+The contracted calculation collects the colour reconnections before applying the replacements. The independent replay instead canonicalizes each whole trace word after every replacement, applies the original $SO(9)$ pair operator and reduces the terminal traces afterwards. Each functional vanishes on products of fewer than five traces. A pair action changes the trace count by at most one. A pair of odd-length traces also requires joining to remove their odd lengths, leaving at most four traces for a twelve-letter input. These filters leave 1,273 possible parents for each independent row. The rational results agree entry by entry. [First row](lowered_gauginos.json) · [Mixed bilinear](lowered_mixed.json) · [Third row](lowered_scalars.json) · [Independent calculation](lowered_replay.json) · [A8 job 5671956](a8_5671956.json) · [A8 job 5671971](a8_5671971.json)
+
+```sh
+cd algorithms/dual_singlets_20261118
+python3 rank_four_lowered_pair.py --channel gauginos --source rank_four/source.json.gz --classes rank_four/classes.json.gz --out /tmp/first-row.json
+python3 rank_four_lowered_pair.py --channel scalars --source rank_four/source.json.gz --classes rank_four/classes.json.gz --out /tmp/third-row.json
+python3 rank_four_lowered_replay.py --source rank_four/source.json.gz --classes rank_four/classes.json.gz --output /tmp/first-replay.json --workers 8
+```
+
+A8 job 5672555 appended three independent Cartan functionals to the calculation. They span the annihilator of the seven symplectic Pfaffian rows in the ten-dimensional formal singlet. Each of the three first actions has Cartan coordinates $(0,0,0)$. The two independent images therefore span the entire two-dimensional kernel of Cartan restriction in the orthogonal classical target. This removes both candidates from the second page. [Five coordinates for the first row](full_gauginos.json) · [Five coordinates for the third row](full_scalars.json) · [Slurm receipt](a8_5672555.json)
+
+At $(t,t)=(1,1)$ there are fourteen terminal letters. Grouping the 6,702 weight words by the length and gaugino count of each trace gives the 18-dimensional formal singlet. Twelve orthogonal determinants have a minor of $17529450901606728990720$. The Cartan lower bound is six. The orthogonal classical dimension is therefore $18-12=6$, equal to the symplectic dimension. In the order $t=0,1,2,3,4,5$, the terminal classical dimensions are $(0,6,0,5,0,1)$ for $SO(9)$ and $(0,6,0,3,0,0)$ for $USp(8)$. All three excess orthogonal dimensions are hit by certified first differentials. [Integer relations](scalar_terminal.json) · [Replay](../rank_four_scalar_terminal.py)

@@ -1,0 +1,1 @@
+{"group":"SO(9)","level":30,"source":"spin-to-flavour actions on a bilinear times F","bilinear":[[1,0,[]],[0,1,[]]],"steps":[[0,0],[0,1],[0,2],[1,0],[1,1],[1,2]],"input_terms":11891,"projected_diagrams":1259,"classical_anticommutators":102,"direct_controls":[240,24],"projected_first_action":["-151200","-12600"]}

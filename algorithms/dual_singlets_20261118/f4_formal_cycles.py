@@ -47,7 +47,7 @@ def formal_columns(rows, prime):
     return sorted(pivot)
 
 
-def probe(rows, words, dims, prime, lib, workers, salt):
+def probe(rows, words, dims, prime, lib, workers, salt, colour_frame=frame):
     co = coefficient_matrix(rows,len(words),prime)
     degrees = [m.nferm(w) for w in words]
     assert set(degrees) == set(dims)
@@ -62,7 +62,7 @@ def probe(rows, words, dims, prime, lib, workers, salt):
         for start in range(0,pts,4):
             count = min(4,pts-start)
             seed = salt+137*degree+start*187
-            f = frame(letters,count,k,degree,prime,seed)
+            f = colour_frame(letters,count,k,degree,prime,seed)
             chunks = np.array_split(np.arange(len(ws)),min(workers*2,len(ws)))
             with ThreadPoolExecutor(workers) as pool:
                 values = np.concatenate(list(pool.map(

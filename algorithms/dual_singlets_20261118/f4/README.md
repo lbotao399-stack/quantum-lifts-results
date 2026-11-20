@@ -80,3 +80,5 @@ python3 f4_pair_support.py --plan /tmp/so9-s5/plan.json.gz --previous f4/ranks.j
 python3 f4_scalar_correction.py --plan /tmp/so9-s5/plan.json.gz --previous f4/ranks.json --work /tmp/f4-correction --count 420
 python3 f4_first_functional.py --plan /tmp/so9-s5/plan.json.gz --previous f4/ranks.json --work /tmp/f4-first
 ```
+
+A8 job 5671812 also evaluated the ordinary word recipes in the 52-dimensional adjoint representation at the same colour coordinates. Exact reconstruction verifies all $52^2$ brackets in the 27-dimensional representation. The new seven-fermion source, image and augmented ranks are again 659, 138 and 139 modulo 1000003. [Minors](adjoint_traces.json) · [Slurm receipt](a8_5671812.json) · [Replay](../f4_adjoint_traces.py)

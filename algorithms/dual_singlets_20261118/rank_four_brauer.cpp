@@ -1,4 +1,4 @@
-// Integer Brauer contractions of twelve adjoint letters at weight (3,3,2,2,2).
+// Integer order-ten Brauer contractions of adjoint letters at rank four.
 #include <algorithm>
 #include <array>
 #include <cassert>
@@ -9,8 +9,12 @@
 #include <string>
 #include <vector>
 
-using Slots = std::array<int,24>;
-using Key = std::array<int,6>;
+#ifndef RANK_FOUR_LETTERS
+#define RANK_FOUR_LETTERS 12
+#endif
+constexpr int letters = RANK_FOUR_LETTERS;
+using Slots = std::array<int,2*letters>;
+using Key = std::array<int,letters/2>;
 struct Block {
     int length=0, code=0;
     std::array<int,2> odd{-1,-1};
@@ -52,12 +56,12 @@ int main(int argc,char** argv) {
     std::ifstream table(argv[1]);
     int width;
     table>>width;
-    assert(width==257);
+    assert(width>0);
     std::map<Key,int> ids;
     for (int i=0;i<width;++i) {
         int size;
         table>>size;
-        assert(size<=6);
+        assert(size<=letters/2);
         Key key{};
         for (int j=0;j<size;++j) table>>key[j];
         std::sort(key.begin(),key.end());
@@ -65,14 +69,15 @@ int main(int argc,char** argv) {
     }
     std::vector<Diagram> pf;
     if (sp) {match(pf,{},0,1);assert(pf.size()==945);}
-    std::array<int,12> species;
+    std::array<int,letters> species;
     Slots slots;
     while (std::cin>>species[0]) {
-        for (int i=1;i<12;++i) std::cin>>species[i];
+        for (int i=1;i<letters;++i) std::cin>>species[i];
+        const int odd_count=std::count_if(species.begin(),species.end(),[](int s){return s<2;});
         for (auto& v:slots) std::cin>>v;
         Slots mate{},edge{};
         edge.fill(1);
-        for (int k=sp?10:20;k<24;k+=2) {
+        for (int k=sp?10:20;k<2*letters;k+=2) {
             int a=slots[k],b=slots[k+1];
             mate[a]=b;
             mate[b]=a;
@@ -81,8 +86,8 @@ int main(int argc,char** argv) {
         std::vector<int> raw(width);
         auto add=[&](int sign) {
             int visited=0,blocks=0;
-            std::array<Block,6> terms;
-            for (int i=0;i<12;++i) if (!(visited&(1<<i))) {
+            std::array<Block,letters/2> terms;
+            for (int i=0;i<letters;++i) if (!(visited&(1<<i))) {
                 int current=2*i;
                 Block b;
                 do {
@@ -99,12 +104,12 @@ int main(int argc,char** argv) {
                     current=mate[current^1];
                 } while (current!=2*i);
                 if (b.length%2) return;
-                assert(blocks<6);
+                assert(blocks<letters/2);
                 terms[blocks++]=b;
             }
             std::sort(terms.begin(),terms.begin()+blocks,block_less);
             Key key{};
-            std::array<int,6> odd{};
+            std::array<int,letters> odd{};
             int n=0;
             for (int i=0;i<blocks;++i) {
                 const auto& b=terms[i];
@@ -112,7 +117,7 @@ int main(int argc,char** argv) {
                 key[i]=b.code;
                 for (int j:b.odd) if (j>=0) odd[n++]=j;
             }
-            assert(n==6);
+            assert(n==odd_count);
             for (int j=0;j<6;++j) for (int i=0;i<j;++i) if (odd[i]>odd[j]) sign=-sign;
             std::sort(key.begin(),key.end());
             raw[ids.at(key)]+=sign;

@@ -2,14 +2,14 @@
   "theory": "undeformed N=4 SYM",
   "order_convention": "supercharge obstructions",
   "increments": {
-    "d1": 0,
+    "d1": 2,
     "fortuitous_generator_families": 0,
     "d2": 0,
     "d3": 0,
     "nonperturbative": 0
   },
   "cumulative": {
-    "d1": 8,
+    "d1": 10,
     "fortuitous_generator_families": 3,
     "d2": 0,
     "d3": 0,
@@ -642,6 +642,37 @@
         "algorithms/dual_singlets_20261118/f4/scalar_correction.json"
       ],
       "scope": "Terminal classical dimensions at (3,3) are five and three. The F4 fifth-power first-order preimage is equivalent to the seven-fermion correction equation."
+    },
+    {
+      "phase": "Two SO(9) mixed terminal first-order images, j=30, derivative bidegree (3,3)",
+      "increments": {
+        "d1": 2,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 10,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "rank": 2,
+      "rational_minor": -60480000,
+      "evidence": [
+        "algorithms/dual_singlets_20261118/rank_four/classes.json.gz",
+        "algorithms/dual_singlets_20261118/rank_four/lowered_gauginos.json",
+        "algorithms/dual_singlets_20261118/rank_four/lowered_scalars.json",
+        "algorithms/dual_singlets_20261118/rank_four/lowered_replay.json",
+        "algorithms/dual_singlets_20261118/rank_four/a8_5671956.json",
+        "algorithms/dual_singlets_20261118/rank_four/a8_5671971.json",
+        "algorithms/dual_singlets_20261118/rank_four/full_gauginos.json",
+        "algorithms/dual_singlets_20261118/rank_four/full_scalars.json",
+        "algorithms/dual_singlets_20261118/rank_four/scalar_terminal.json"
+      ],
+      "scope": "The two linearly independent mixed spin and flavour singlet pairings use the known level-30 source through products and classical substitutions."
     }
   ]
 }

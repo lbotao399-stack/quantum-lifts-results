@@ -1,0 +1,15 @@
+{
+  "job": "5671812",
+  "utc": "2026-11-20T09:12:10.564593+00:00",
+  "accounting": "5671812|n4f4adt2x20|COMPLETED|874|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 8 7999 4 dimension 144\nprobes 8 7999 4 dimension 144\nimage 138 138 with RHS 139\nprobes 7 50094 19 dimension 666\nprobes 7 50094 19 dimension 666\nsource 659 659 with RHS 139\n",
+  "slurm_receipt": {
+    "job": "5671812",
+    "files": {
+      "adjoint_traces.json": [
+        "8b0fb611e3074cf81f311ea0da3b7527526f8b197dd7950a6d61b0a58df72911",
+        26352
+      ]
+    }
+  }
+}

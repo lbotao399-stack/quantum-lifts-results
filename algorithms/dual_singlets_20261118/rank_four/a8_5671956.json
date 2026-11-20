@@ -1,0 +1,23 @@
+{
+  "job": "5671956",
+  "utc": "2026-11-20T09:21:29.741256+00:00",
+  "accounting": "5671956|n4duallo2x20|COMPLETED|24|40|0:0",
+  "log": "gcc-13.2.0 loaded successful\nsource 11891 classical checks 102 projected diagrams 1259 direct controls (240, 24)\nfirst action [Fraction(-151200, 1), Fraction(-12600, 1)]\nsource 11392 classical checks 102 projected diagrams 1029 direct controls (240, 24)\nfirst action [Fraction(-25200, 1), Fraction(-2100, 1)]\nsource 11891 classical checks 102 projected diagrams 1259 direct controls (240, 24)\nfirst action [Fraction(-12000, 1), Fraction(-600, 1)]\n",
+  "slurm_receipt": {
+    "job": "5671956",
+    "files": {
+      "gauginos.json": [
+        "97908776e22727a7355d22404ab1e3b463f76718e6cab974cb930ac9fe5bb128",
+        314
+      ],
+      "mixed.json": [
+        "c23ceb573a4883c28837881ebdaebfba0c162d4e93141b26181d4400ba102b52",
+        307
+      ],
+      "scalars.json": [
+        "029cf1810a636166300ce30851ca9484b3c29b9e3a9a2feb9a2a3eba34e379b9",
+        301
+      ]
+    }
+  }
+}

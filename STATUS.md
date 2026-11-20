@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Two first-order images in the $SO(9)$ mixed level-30 singlet, November 20, 2026
+
+Classical spin-to-flavour substitutions of two products of the known source give two closed inputs. On the two independent twelve-letter target functionals, their first-action rows are $(-151200,-12600)$ and $(-12000,-600)$. The rational determinant is $-60480000$. All three independent Cartan functionals vanish on both images, exhausting the two-dimensional Cartan kernel. The fourteen-letter singlet has dimension six in both dual groups. A8 jobs `5671956` and `5671971` agree using a contracted calculation and direct expansion of the trace words. [Pairing calculation and replay](algorithms/dual_singlets_20261118/rank_four/README.md#the-first-differential-on-the-two-mixed-singlets)
+
+New $d_1$ pairings **2** (total **10**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
 ## Two additional classical singlets in $SO(9)$ and the first-order test in $F_4$, November 20, 2026
 
 At level 30 and derivative bidegree $(3,3)$, the twelve-letter terminal spin and flavour singlet has classical dimension 5 for $SO(9)$ and 3 for $USp(8)$. A8 job `5671813` exhausts all 3,198 orthogonal determinant templates. Two explicit Cartan-invisible orthogonal classes have 68 and 69 terms and independent rational projectors. [Integer relations, representatives and algorithms](algorithms/dual_singlets_20261118/rank_four/README.md#two-additional-orthogonal-classical-singlets-at-derivative-bidegree-33)

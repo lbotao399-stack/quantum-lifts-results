@@ -1,0 +1,15 @@
+{
+  "job": "5671971",
+  "utc": "2026-11-20T09:30:20.509676+00:00",
+  "accounting": "5671971|n4dualcheck20|COMPLETED|10|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\ngauginos 1273 ['-151200', '-12600']\nscalars 1273 ['-12000', '-600']\n",
+  "slurm_receipt": {
+    "job": "5671971",
+    "files": {
+      "replay.json": [
+        "66969c5c2caffb8e00e94d4a73030781276df2e20493e50758b7453f9fd5ce45",
+        195
+      ]
+    }
+  }
+}
