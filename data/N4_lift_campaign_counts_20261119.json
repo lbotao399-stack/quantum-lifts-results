@@ -270,6 +270,32 @@
         "algorithms/su3_j34_20261118/direct_third/consistency.json"
       ],
       "scope": "The direct Q3 image is not Q0-closed. The complete first equation, second equation and third obstruction remain open; no new generator or lift."
+    },
+    {
+      "phase": "G2 instanton candidate: exact normalized classical target projectors",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "classical_target_dimension": 2,
+      "Cartan_rank": 1,
+      "S2_target_dual": [
+        "0",
+        "1"
+      ],
+      "Gram_target_dual": [
+        "0",
+        "-1/6",
+        "0",
+        "0"
+      ],
+      "evidence": [
+        "data/N4_G2_np_target_functionals_20261119.json"
+      ],
+      "scope": "Classical target tests only. Neither physical instanton coefficient computed."
     }
   ]
 }

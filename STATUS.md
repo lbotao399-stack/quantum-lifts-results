@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## G₂: separate target tests for the instanton candidate, November 19, 2026
+
+For the one-source, two-target candidate, two independent rational evaluations give the same normalized target projectors: $(0,1)$ at length four and $(0,-1/6,0,0)$ at length six. The seven-dimensional squared trace bilinear has Cartan exterior coefficient $-96$; the scalar Gram determinant vanishes on the entire Cartan. Neither instanton amplitude has been evaluated. [Exact target data](data/N4_G2_np_target_functionals_20261119.json) · [Verifier](algorithms/verify_g2_target_functionals.py).
+
+New $d_1$ pairings **0** (total **6**); new fortuitous-generator families **0** (total **3**); certified $d_2$, $d_3$, nonperturbative lifts **0, 0, 0**.
+
 ## SU(3) level 34: direct third action and 318 simultaneous first equations, November 19, 2026
 
 The direct third-order action on the published source has 5,740 rational trace terms. All six letter contents survive an exact three-colour specialization; the Cartan restriction is zero. A nonzero coefficient of its classical differential is cancelled exactly by the two mixed terms of the third-order nilpotency identity. It does not establish a third obstruction. [A8 job 5666003 and coefficient replay](algorithms/su3_j34_20261118/README.md#direct-third-order-action-and-its-classical-differential).

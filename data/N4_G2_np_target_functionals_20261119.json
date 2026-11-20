@@ -1,0 +1,145 @@
+{
+  "input_sha256": "a3d95d83b6e8ea512a972730f1747dcfa172a47068ff0dbc4b11e086bb7d7e5a",
+  "targets": {
+    "S2_evaluations": {
+      "boundary_and_normalized_target_rows": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "two_independent_evaluations": [
+        {
+          "coordinate_indices": [
+            0,
+            1
+          ],
+          "coordinate_count": 30,
+          "determinant": "-112768",
+          "evaluation_weights": [
+            "-17/7048",
+            "5/3524"
+          ],
+          "basis_coordinate_weights": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "coordinate_indices": [
+            0,
+            1
+          ],
+          "coordinate_count": 30,
+          "determinant": "-132464",
+          "evaluation_weights": [
+            "19/66232",
+            "235/66232"
+          ],
+          "basis_coordinate_weights": [
+            "0",
+            "1"
+          ]
+        }
+      ]
+    },
+    "Gram_evaluations": {
+      "boundary_and_normalized_target_rows": [
+        [
+          "-3/4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "3/16",
+          "0",
+          "3/2",
+          "1/2"
+        ],
+        [
+          "-1/8",
+          "0",
+          "-2",
+          "-1/3"
+        ],
+        [
+          "0",
+          "-6",
+          "0",
+          "0"
+        ]
+      ],
+      "two_independent_evaluations": [
+        {
+          "coordinate_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "coordinate_count": 28,
+          "determinant": "-24840474560",
+          "evaluation_weights": [
+            "-1463137/1863035592",
+            "420837/1129112480",
+            "-476929/37260711840",
+            "-525647/12420237280"
+          ],
+          "basis_coordinate_weights": [
+            "0",
+            "-1/6",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "coordinate_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "coordinate_count": 28,
+          "determinant": "-192733212664",
+          "evaluation_weights": [
+            "25099239/385466425328",
+            "-2333325/48183303166",
+            "29779877/192733212664",
+            "-103472515/1156399275984"
+          ],
+          "basis_coordinate_weights": [
+            "0",
+            "-1/6",
+            "0",
+            "0"
+          ]
+        }
+      ]
+    }
+  },
+  "cartan_trace_metric": [
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      12
+    ]
+  ],
+  "exterior_masks_of_trace_bilinear": {
+    "5": 4,
+    "10": 12
+  },
+  "top_coefficient_of_squared_trace_bilinear": -96,
+  "scalar_Gram_Cartan_determinant": 0,
+  "target_dimension": 2,
+  "target_Cartan_rank": 1,
+  "target_Cartan_kernel_dimension": 1,
+  "scope": "Independent duals for the two archived classical lengths. The Cartan map uses trace_7(lambda1 lambda2) squared and the scalar Gram determinant. Neither target functional has been applied to an instanton insertion."
+}
