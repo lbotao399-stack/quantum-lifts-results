@@ -1,0 +1,19 @@
+{
+  "job": "5671626",
+  "utc": "2026-11-20T08:43:26.746722+00:00",
+  "accounting": "5671626|n4dualrel20|COMPLETED|31|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\nSp independent 1 at trial 2\nSp independent 2 at trial 13\nSp independent 3 at trial 151\nSp independent 4 at trial 191\nSp independent 5 at trial 241\nSp independent 6 at trial 1457\nSp independent 7 at trial 25738\nSp bounds 3 3\nSO independent 1 at trial 51\nSO independent 2 at trial 61\nSO independent 3 at trial 79\nSO independent 4 at trial 270\nSO independent 5 at trial 282\nSO bounds 3 5\n",
+  "slurm_receipt": {
+    "job": "5671626",
+    "files": {
+      "SO.json": [
+        "4fec3afe2c2cd9652220fa659f153d0461474ea68b551a7a7f1762814cc064f3",
+        4035
+      ],
+      "Sp.json": [
+        "1877ba5d93087cd110901c92828c9fbc3cbb95e7d2931bbed3eb76695e3e28ed",
+        2390
+      ]
+    }
+  }
+}

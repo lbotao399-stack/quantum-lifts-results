@@ -617,6 +617,31 @@
         "algorithms/dual_singlets_20261118/f4/a8_5671196.json"
       ],
       "scope": "The pure fifth power spans classical cohomology at length ten. The first quantum obstruction remains open."
+    },
+    {
+      "phase": "F4 first-action functional and rank-four mixed terminal singlets",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "cumulative": {
+        "d1": 8,
+        "fortuitous_generator_families": 3,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "evidence": [
+        "algorithms/dual_singlets_20261118/rank_four/orthogonal_paths.json",
+        "algorithms/dual_singlets_20261118/rank_four/pfaffian_reduction.json",
+        "algorithms/dual_singlets_20261118/rank_four/classes.json.gz",
+        "algorithms/dual_singlets_20261118/f4/first_functional.json",
+        "algorithms/dual_singlets_20261118/f4/scalar_correction.json"
+      ],
+      "scope": "Terminal classical dimensions at (3,3) are five and three. The F4 fifth-power first-order preimage is equivalent to the seven-fermion correction equation."
     }
   ]
 }

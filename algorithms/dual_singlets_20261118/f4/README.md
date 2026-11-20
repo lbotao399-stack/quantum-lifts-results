@@ -55,3 +55,28 @@ python3 algorithms/dual_singlets_20261118/f4_pure_chain.py --pure /tmp/f4-pure.j
 python3 algorithms/dual_singlets_20261118/f4_joined_boundaries.py --plan /tmp/so9-s5/plan.json.gz --previous /tmp/f4-singlets/ranks.json --work /tmp/f4-jordan --channel jordan --count 450 --workers 48
 python3 algorithms/dual_singlets_20261118/f4_joined_incoming.py --plan /tmp/so9-s5/plan.json.gz --previous /tmp/f4-singlets/ranks.json --outgoing /tmp/f4-jordan/jordan_outgoing.json --work /tmp/f4-jordan --channel jordan --count 480 --source-count 300 --workers 48
 ```
+
+## A necessary and sufficient classical equation for the first differential into $S^5$
+
+At derivative bidegree $(4,4)$ the 666 seven-fermion directions have three separate scalar flavours. The first-order pair rule requires all three flavours at two sites, hence vanishes. In the other 79 directions the two distinguished letters are a scalar and a matter fermion. The remaining eight letters are gauginos. Projecting formal cycles and nine-letter boundaries to this component gives rank at least $436-358=78$ over the rationals. The determinant of order 436 is 710453 modulo 1000003. The full nine-fermion evaluation reaches rank 79. [Projection](pair_support.json) · [A8 job 5671321](a8_5671321.json)
+
+To evaluate the coefficient of $[S^5]$ after acting on an ordinary trace word, insert a colour generator and its trace dual through the two commutators. In pure terminal cohomology the two gauginos anticommute, and each squares to zero. Cutting at the two insertions leaves at most two open strings of gauginos, each of length at most two. A nonvanishing term therefore has at least three spectator bilinears. After removing three, the four-letter classical singlet has dimension $2-1=1$. Two commuting colour generators give top exterior coefficient 4608 on $S^2$. Division by this value extracts the normalized coefficient. The pure fifth power is independently nonzero.
+
+Of the 1,904 ordinary trace singlets, only rows 717, 727 and 1348 have nonzero first-action coefficients, respectively $-18,1,-1/2$. On every row this coefficient equals three times formal classical image coordinate 11 plus one half of each of coordinates 47 and 236. All coordinates are zero-based. All 1,904 residuals vanish over $\mathbb Q$. The first action therefore vanishes on the restrictions of all formal cycles. It vanishes on classical boundaries in cohomology by $Q_1Q_0=-Q_0Q_1$. [Coefficients and rational row identity](first_functional.json) · [A8 job 5671727](a8_5671727.json)
+
+For the three-term cochain in the saved canonical trace order, $Q_1$ is $18 S^5$ and $Q_0$ is $6S^4\operatorname{Tr}_{27}(\phi_1\phi_2\phi_3)$. The first-action functional is consequently nonzero on the 79-dimensional component. The preceding 78-dimensional projected closed span is its entire kernel. Subtracting the corresponding closed representatives from any putative preimage and rescaling reduces existence of a first-order pairing to the single equation
+
+$$
+Q_0 X=-6S^4\operatorname{Tr}_{27}(\phi_1\phi_2\phi_3),
+\qquad X\text{ in the seven-fermion singlet of dimension }666 .
+$$
+
+Conversely a solution added to the saved cochain has zero classical action and first action $18[S^5]$. A8 job 5671407 reached seven-fermion source rank 659 and classical image rank 138. Adjoining the prescribed right-hand side gives rank 139 at the same prime. The unrestricted rational equation is open. [Cochain and integer actions](scalar_source.json) · [Minors](scalar_correction.json) · [Slurm receipt](a8_5671407.json)
+
+```sh
+cd algorithms/dual_singlets_20261118
+python3 f4_first_source.py --out /tmp/f4-scalar.json
+python3 f4_pair_support.py --plan /tmp/so9-s5/plan.json.gz --previous f4/ranks.json --jordan f4/jordan_incoming.json --out /tmp/f4-pair
+python3 f4_scalar_correction.py --plan /tmp/so9-s5/plan.json.gz --previous f4/ranks.json --work /tmp/f4-correction --count 420
+python3 f4_first_functional.py --plan /tmp/so9-s5/plan.json.gz --previous f4/ranks.json --work /tmp/f4-first
+```

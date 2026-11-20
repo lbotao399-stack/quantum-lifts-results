@@ -58,3 +58,29 @@ At length twelve, 55 signed-partial-permutation evaluations give a faithful inte
 python3 algorithms/dual_singlets_20261118/rank_four_source.py --plan /tmp/so9-s5/plan.json.gz --first /tmp/so9-s5/first.json --work /tmp/so9-source --workers 24
 python3 algorithms/dual_singlets_20261118/rank_four_sixth.py --source /tmp/so9-source/source.json.gz --primitive /tmp/so9-source/primitive.json.gz --out /tmp/so9-sixth.json.gz --workers 4
 ```
+
+## Two additional orthogonal classical singlets at derivative bidegree $(3,3)$
+
+At level 30 the twelve-letter terminal space contains six gauginos and six scalars with three flavour degrees $(2,2,2)$. Modulo the classical graded commutators, each trace is represented by its letter multiplicities. A nonzero trace has even length and contains each gaugino component at most once. The weight space contains 257 trace monomials. Quotienting by spin and flavour lowering gives a ten-dimensional formal singlet. Three independent singlets survive on a rank-four Cartan. In the Cartan restriction the term assigning distinct Cartan slots to the traces of a product is its orbit sum with nonzero coefficient. For at most four traces these orbit sums have distinct leading terms.
+
+For $USp(8)$ cut open five traces of any product with more than four traces. Leave one pair of free defining indices at the ends of each open trace. The Pfaffian on these ten free indices vanishes. Pairing the two ends of each original trace reproduces the input with coefficient $+1$ or $-1$. Every other pairing joins at least two of the original traces. Iteration reduces the product to at most four traces. These shorter products form a spin- and flavour-invariant subspace, and their Cartan orbit sums give the matching lower bound at every weight. In derivative bidegrees $(t,t)$ for $t=0,1,2,3,4,5$, the level-30 terminal classical singlet dimensions are therefore $(0,6,0,3,0,0)$. Direct integer contraction verifies every leading coefficient for the 2,878, 150 and one excess-trace words at $t=1,3,5$. For $t=3$ seven projected Pfaffians give determinant $-1024$. Independent A8 sampling gives determinant 4. [Triangular reduction](pfaffian_reduction.json) · [Sampled Pfaffians](mixed_Sp.json) · [A8 job 5671626](a8_5671626.json)
+
+For $SO(9)$ the action on adjoint matrices factors through $O(9)/\{I,-I\}$. The orthogonal second fundamental theorem generates every defining-index relation by antisymmetrizing ten slots against ten slots and pairing the rest. At twelve letters the remaining four slots give two fixed metric edges. Together with the two slots of each adjoint letter, these form ten paths and possibly a closed trace. The nonvanishing length patterns consist of one length-three path or two length-two paths among single letters, or ten single letters with a separate length-two trace. A closed single letter has zero trace.
+
+Within a path the classical relations put its labels in graded order. Repeated identical gauginos vanish. Transposition of a path of length $k$ acts by $(-1)^k$ after graded reordering. Thus an even path with both ends on the same side of the antisymmetrization vanishes. Two identical odd paths of the same endpoint type also vanish, since exchanging them permutes two pairs of slots evenly and exchanges two odd coefficients. Permutations within the left or right slot set change only the sign. Interchanging the sets transposes the determinant. Enumerating the resulting path multisets and endpoint types gives 3,198 templates. Of these, 1,791 have nonzero projection. All $10!$ contractions per template give total rank five over $\mathbb Q$, with minor 262144. This exhausts the finite-colour relations after the classical quotient. [All pivot relations and projection digest](orthogonal_paths.json) · [A8 job 5671813](a8_5671813.json) · [Orthogonal second fundamental theorem](https://arxiv.org/abs/1102.3221)
+
+$$
+\dim H_{Q_0}^{\rm terminal}(SO(9))=10-5=5,\qquad
+\dim H_{Q_0}^{\rm terminal}(USp(8))=10-7=3 .
+$$
+
+Two rational singlet representatives have 68 and 69 trace monomials. They come from symplectic identities, so both vanish on the common Cartan, and the two saved orthogonal functionals evaluate to the identity matrix on them. A second test replaces each scalar by a sum of the two gauginos with independent odd coefficients and extracts the product of all six auxiliary coefficients. The classical supercommutators still vanish. The two classes give $0$ and $-2[S^6]$, respectively, in the pure orthogonal quotient. Incoming quantum actions are required to compare the groups beyond the classical page. [Representatives and both projectors](classes.json.gz) · [Pure-gaugino substitution](scalar_substitution.json)
+
+```sh
+cd algorithms/dual_singlets_20261118
+python3 rank_four_pfaffian_reduction.py --out /tmp/pfaffians.json
+python3 rank_four_relations.py --work /tmp/rank-four-relations --workers 48 --orthogonal 2000 --symplectic 80000 --seed 1627924
+python3 rank_four_orthogonal_paths.py --work /tmp/rank-four-paths --workers 48
+python3 rank_four_scalar_substitution.py --symplectic rank_four/mixed_Sp.json --orthogonal rank_four/mixed_SO.json --output /tmp/substitution.json
+python3 rank_four_mixed_classes.py --sp rank_four/mixed_Sp.json --so /tmp/rank-four-paths/orthogonal_paths.json --functional /tmp/substitution.json --output /tmp/mixed-classes.json.gz
+```

@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## Two additional classical singlets in $SO(9)$ and the first-order test in $F_4$, November 20, 2026
+
+At level 30 and derivative bidegree $(3,3)$, the twelve-letter terminal spin and flavour singlet has classical dimension 5 for $SO(9)$ and 3 for $USp(8)$. A8 job `5671813` exhausts all 3,198 orthogonal determinant templates. Two explicit Cartan-invisible orthogonal classes have 68 and 69 terms and independent rational projectors. [Integer relations, representatives and algorithms](algorithms/dual_singlets_20261118/rank_four/README.md#two-additional-orthogonal-classical-singlets-at-derivative-bidegree-33)
+
+For $F_4$, all 1,904 ordinary trace singlets satisfy an exact three-coordinate identity for the first action. The 79-dimensional nine-fermion component has a 78-dimensional kernel for its fifth-power coefficient. A first-order pairing exists precisely if the explicit scalar classical image can be cancelled by a seven-fermion correction. [Rational identity and correction equation](algorithms/dual_singlets_20261118/f4/README.md#a-necessary-and-sufficient-classical-equation-for-the-first-differential-into-s5)
+
+New $d_1$ pairings **0** (total **8**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
 ## $F_4$ fifth gaugino power, November 20, 2026
 
 At level 30, adjoining the fifth power to all pure-gaugino boundaries raises the rational rank from 11 to 12. The nine-letter pure-gaugino singlet vanishes by $20-9-11=0$. For the first-order source A8 job `5671196` detects five additional outgoing directions and nine additional boundaries using traceless Jordan multiplication. The remaining classical quotient has dimension at most $745-139-599=7$. [Table, determinants and algorithms](algorithms/dual_singlets_20261118/f4/README.md)

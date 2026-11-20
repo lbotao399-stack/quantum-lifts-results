@@ -1,0 +1,15 @@
+{
+  "job": "5671813",
+  "utc": "2026-11-20T08:58:43.296331+00:00",
+  "accounting": "5671813|n4dualpath20|COMPLETED|6|48|0:0",
+  "log": "gcc-13.2.0 loaded successful\ndeterminant templates 3198\n384 of 3198 rank 2\n768 of 3198 rank 2\n1152 of 3198 rank 2\n1536 of 3198 rank 4\n1920 of 3198 rank 4\n2304 of 3198 rank 5\n2688 of 3198 rank 5\n3072 of 3198 rank 5\n3198 of 3198 rank 5\n",
+  "slurm_receipt": {
+    "job": "5671813",
+    "files": {
+      "orthogonal_paths.json": [
+        "1416b76aead2fd512ce709f4563b351f54ffec9490e3982a2b84900ed0bba480",
+        2906
+      ]
+    }
+  }
+}

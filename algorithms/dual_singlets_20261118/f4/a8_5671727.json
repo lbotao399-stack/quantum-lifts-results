@@ -1,0 +1,15 @@
+{
+  "job": "5671727",
+  "utc": "2026-11-20T08:45:59.213317+00:00",
+  "accounting": "5671727|n4f4row20|COMPLETED|9|24|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 4 1 2 dimension 2\nfour-letter rank 1 pure S2 4608 first-action rows 3 formal identities 1904\n",
+  "slurm_receipt": {
+    "job": "5671727",
+    "files": {
+      "first_functional.json": [
+        "88cea5171ce67174bf829668713315e73143c9b75067cfc43833ce05b8ecf403",
+        3632
+      ]
+    }
+  }
+}

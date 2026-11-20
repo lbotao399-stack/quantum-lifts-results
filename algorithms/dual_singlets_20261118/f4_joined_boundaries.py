@@ -32,6 +32,10 @@ def open_word(w, channel):
 
 
 def graph(pair, channel):
+    if len(pair)==3:
+        sign,open_pair=graph(pair[:2],channel)
+        trace_sign,trace=m.so_canon((pair[2],))
+        return (sign*trace_sign,open_pair+tuple(trace)) if sign and trace_sign else (0,pair)
     (s,a),(t,b) = (open_word(w,channel) for w in pair)
     n = sum(map(is_ferm,a))*sum(map(is_ferm,b))
     if a==b and n%2:
@@ -55,7 +59,7 @@ def vary(expr, axis, channel):
                     terms=[(1,((a,b,target),))] if axis in theta and axis-1 not in theta else []
                 for n,letters in terms:
                     new=w[:k]+letters+w[k+1:]
-                    sign,g=graph((new,pair[1]) if j==0 else (pair[0],new),channel)
+                    sign,g=graph(pair[:j]+(new,)+pair[j+1:],channel)
                     if sign:
                         out[g]+=c*n*sign
                 if is_ferm(l):
@@ -63,7 +67,7 @@ def vary(expr, axis, channel):
     return {g:c for g,c in out.items() if c}
 
 
-def parent(seed, deficit=1, channel="adjoint", source_only=False):
+def parent(seed, deficit=1, channel="adjoint", source_only=False, spectator=False):
     assert channel in ("adjoint","jordan")
     rng=random.Random(seed)
     slots=list(range(11))
@@ -91,7 +95,11 @@ def parent(seed, deficit=1, channel="adjoint", source_only=False):
                 a,b=dz.count(0),dz.count(1)
                 n*=math.factorial(a)*math.factorial(b)*(-1)**sum(i>j for p,i in enumerate(th) for j in th[p+1:])
                 word.append((a,b,tuple(sorted(th))))
-            s,g=graph((tuple(word[:cut]),tuple(word[cut:])),channel)
+            if spectator:
+                parts=(tuple(word[:4]),tuple(word[4:-2]),tuple(word[-2:]))
+            else:
+                parts=(tuple(word[:cut]),tuple(word[cut:]))
+            s,g=graph(parts,channel)
             if s:
                 result[g]+=s*n
     source={g:c for g,c in result.items() if c}

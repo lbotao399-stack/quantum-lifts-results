@@ -1,0 +1,15 @@
+{
+  "job": "5671321",
+  "utc": "2026-11-20T08:06:49.492136+00:00",
+  "accounting": "5671321|n4f4pair20|COMPLETED|20|24|0:0",
+  "log": "gcc-13.2.0 loaded successful\nprobes 9 2514 2 dimension 79\nnine-fermion projection 78 79 closed lower 78 remaining upper 1\n",
+  "slurm_receipt": {
+    "job": "5671321",
+    "files": {
+      "pair_support.json": [
+        "8932b1693bd4cfb78726737bcbedd2f9f636dab3f5023e134c514c73c7963185",
+        11079
+      ]
+    }
+  }
+}
