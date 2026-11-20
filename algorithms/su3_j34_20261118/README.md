@@ -258,6 +258,16 @@ A pair of exchanged contents contributes the dimension of one member. In a fixed
 
 [Exchange and character counts](joint_70/guarded/exchange_dimensions.json) · [Projected-vector census](joint_70/guarded/projected.json)
 
+## Direct second-order action is not classically closed
+
+For a noncommuting three-colour exterior coefficient of the published source, the order-two nilpotency identity has terms
+$$
+(Q_0Q_2,\ Q_1Q_1,\ Q_2Q_0)\mathcal O_0
+\quad\longmapsto\quad
+(-74{,}716{,}141{,}584{,}000,\ 74{,}716{,}141{,}584{,}000,\ 0).
+$$
+The selected content has three letters carrying derivatives; $Q_2$ on derivative-free inputs can produce only two. For the mixed term, the exact pair rule reduces the required input from 517,468 to 312 trace words. Thus the direct second action requires the first-correction term even to define a classical cohomology class. [Full rational coefficient and matrices](direct_third/second_consistency.json) · [Replay](second_consistency.py).
+
 ## Direct third-order action and its classical differential
 
 For the third supercharge coefficient $Q_3$, 419 of the 6,270 source words can supply the required Grassmann flavours; 414 have nonzero individual formal images. Combining all 90,584 terms before collection gives 5,740 trace terms in $Q_3\mathcal O_0$, with common denominator 3. A second computation includes both orientations of each contraction path on all 419 eligible words and reproduces the ordered rational coefficients. Charge conjugation is even and derivative exchange is odd. The generic Cartan restriction is zero. All six letter contents give a nonzero rational coefficient on the displayed noncommuting traceless matrices.

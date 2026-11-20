@@ -4,6 +4,8 @@
 
 All 25,299 formal terms of the classical differential cancel in the invariant polynomial of the published source: 1,241,172 distinct coefficients across 15 contents, none nonzero. Fifteen independent single-word coefficient extractions test the polynomial encoding. [A8 job 5666124, integer bounds and replay](algorithms/su3_j34_20261118/README.md#classical-closure-at-three-colours).
 
+The direct second-order term is also not classically closed. At one three-colour coefficient, $Q_0Q_2$ gives −74,716,141,584,000 and $Q_1Q_1$ gives +74,716,141,584,000; $Q_2Q_0$ has no term in that content. [Order-two computation and replay](algorithms/su3_j34_20261118/README.md#direct-second-order-action-is-not-classically-closed).
+
 New $d_1$ pairings **0** (total **6**); new fortuitous-generator families **0** (total **3**); certified $d_2$, $d_3$, nonperturbative lifts **0, 0, 0**.
 
 ## G₂: separate target tests for the instanton candidate, November 19, 2026
