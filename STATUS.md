@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Spin and flavour singlets in $SO(7)$ and $USp(6)$, November 20, 2026
+
+A8 jobs `5670267` and `5670358` give classical source dimensions $(0,4,0,3,0)$ and $(0,4,0,2,0)$ at doubled charges $(1,1,8,8,8)$, in order of derivative bidegree $(t,t)$. Four ten-letter protected products give Cartan determinant $-75497472$ in both groups. Together with the two eight-letter products and the known $SO(7)$ first differential, this exhausts the possible outgoing singlet sources under the stated protection inputs. [Rank bounds, products and Slurm receipts](algorithms/dual_singlets_20261118/README.md#the-remaining-mixed-singlets-at-doubled-charges-11888)
+
+New $d_1$ pairings **0** (total **6**). New fortuitous-generator families **0** (total **3**). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**.
+
 ## SU(3) level 34: complete finite-colour classical closure, November 19, 2026
 
 All 25,299 formal terms of the classical differential cancel in the invariant polynomial of the published source: 1,241,172 distinct coefficients across 15 contents, none nonzero. Fifteen independent single-word coefficient extractions test the polynomial encoding. [A8 job 5666124, integer bounds and replay](algorithms/su3_j34_20261118/README.md#classical-closure-at-three-colours).

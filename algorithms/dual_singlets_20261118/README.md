@@ -81,3 +81,18 @@ $$
 $$
 
 Both evaluations annihilate every classical boundary. The two products are closed under the exact supercharge by the supersymmetric primary product. They span the two possible outgoing sources after the previously established first differential on the third $SO(7)$ line. Possible incoming boundaries can only reduce the surviving source dimension. [Source identifications and Cartan matrices](mixed33/current_products.json) · [Exact replay](mixed33_currents.py) · [Physical currents](https://arxiv.org/html/2509.16737#S4.SS3.SSS1)
+
+At $t=1$ the ten-letter formal trace space gives $1597-1201-389=7$ classical singlets before finite-rank trace identities. A8 job `5670358` saved all seven rational representatives. Four Cartan evaluations on these classes give minor $3145728$ in each group. On the same jets four products of graded-symmetric single traces have determinant $-75497472$ in each group. All 124 evaluated classical letter variations vanish. The product minor attains the two finite-colour upper bounds above. [Representatives](mixed11/classical.json.gz) · [Products, contractions and probes](mixed11/current_product_test.json) · [Slurm receipt](mixed11/a8_5670358.json)
+
+| Group | $t=0$ | $t=1$ | $t=2$ | $t=3$ | $t=4$ |
+|---|---:|---:|---:|---:|---:|
+| $SO(7)$ classical source dimension | 0 | 4 | 0 | 3 | 0 |
+| $USp(6)$ classical source dimension | 0 | 4 | 0 | 2 | 0 |
+
+The four $t=1$ products use single-graviton representatives in protected multiplets. Assuming their exact completions and the supersymmetric primary product, these four classes admit closed completions. At $t=3$ two protected products span the possible outgoing survivors in each group. This exhausts the tested spin and flavour singlet sources at doubled charges $(1,1,8,8,8)$. The statement concerns outgoing lifts and uses no instanton integral. [Single-graviton construction](https://arxiv.org/abs/1305.6314) · [Primary product](https://arxiv.org/html/2509.16737#S2)
+
+```sh
+python3 algorithms/dual_singlets_20261118/mixed_formal.py --t 1 --first-plan /tmp/dual-t1/plan.json.gz --work /tmp/dual-t1-out --workers 16
+python3 algorithms/dual_singlets_20261118/mixed11_products.py --formal algorithms/dual_singlets_20261118/mixed11/classical.json.gz --out /tmp/products-t1.json
+cmp /tmp/products-t1.json algorithms/dual_singlets_20261118/mixed11/current_product_test.json
+```

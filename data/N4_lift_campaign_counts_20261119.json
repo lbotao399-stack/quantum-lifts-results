@@ -440,6 +440,48 @@
         "algorithms/dual_singlets_20261118/mixed33/current_products.json"
       ],
       "scope": "The t=2 source is empty. The exact stress-current products span the possible outgoing t=3 survivors. No instanton integral was evaluated."
+    },
+    {
+      "phase": "Complete ten-letter protected-product span at doubled charges (1,1,8,8,8)",
+      "increments": {
+        "d1": 0,
+        "fortuitous_generator_families": 0,
+        "d2": 0,
+        "d3": 0,
+        "nonperturbative": 0
+      },
+      "a8_job": "5670358",
+      "formal_ranks": [
+        1597,
+        1201,
+        389
+      ],
+      "cartan_product_determinants": [
+        -75497472,
+        -75497472
+      ],
+      "classical_dimensions_at_t_0_through_4": {
+        "SO(7)": [
+          0,
+          4,
+          0,
+          3,
+          0
+        ],
+        "USp(6)": [
+          0,
+          4,
+          0,
+          2,
+          0
+        ]
+      },
+      "evidence": [
+        "algorithms/dual_singlets_20261118/mixed11/classical.json.gz",
+        "algorithms/dual_singlets_20261118/mixed11/current_product_test.json",
+        "algorithms/dual_singlets_20261118/mixed11/a8_5670358.json"
+      ],
+      "scope": "Four explicit products saturate both finite-rank bounds. Outgoing-source exhaustion uses protected single gravitons and the supersymmetric primary product. No instanton matrix element was computed."
     }
   ]
 }
