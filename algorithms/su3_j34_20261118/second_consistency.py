@@ -18,8 +18,18 @@ def possible(g):
             if sum(bool(a or b) for a,b,ss in target)==3 and sum(map(is_ferm,target))<=5:found.add(target)
     return found
 
-def run(out):
-    d,digest=load(HERE/'Q2.jsonl.gz');assert digest==json.loads((HERE/'second_action.json').read_bytes())['output_jsonl_sha256'];counts=Counter(map(shape,d));forward={g:possible(g) for g in counts};cost=Counter()
+def run(out, level32=False):
+    if level32:
+        location = HERE.parent / "dual_singlets_20261118/taylor_hooks/su3_level32"
+        first_file, first_sign = location / "Q1.jsonl.gz", 1
+        first_sha, second_sha = (json.loads((location / f"order{i}.json").read_bytes())["output_sha256"]
+                                 for i in (1,2))
+    else:
+        location = HERE
+        first_file, first_sign = HERE / "negative_Q1.jsonl.gz", -1
+        first_sha = json.loads((HERE / "first_action.json").read_bytes())["rhs_uncompressed_sha256"]
+        second_sha = json.loads((HERE / "second_action.json").read_bytes())["output_jsonl_sha256"]
+    d,digest=load(location/'Q2.jsonl.gz');assert digest==second_sha;counts=Counter(map(shape,d));forward={g:possible(g) for g in counts};cost=Counter()
     for g,n in counts.items():
         for t in forward[g]:cost[t]+=n
     tested=[];found=None
@@ -34,9 +44,9 @@ def run(out):
     # No field in Q0 O0 carries a derivative. Q2 inserts a complementary
     # pair of derivative jets on its two outputs. No term can have three.
     assert sum(bool(a or b) for a,b,S in target)==3
-    other=calc(HERE/'negative_Q1.jsonl.gz',target,1,-1);assert other['input_sha256']==json.loads((HERE/'first_action.json').read_bytes())['rhs_uncompressed_sha256']
+    other=calc(first_file,target,1,first_sign);assert other['input_sha256']==first_sha
     assert val+Fraction(other['coefficient'])==0
     doc=dict(Q2_input_sha256=digest,target=target,number_of_targets_examined=len(tested),examined=tested,Q0_Q2_input_words=retained,Q0_Q2_formal_words=len(row),Q0_Q2=str(val),Q1_Q1=other,Q2_Q0='0',sum='0',specialization=ev,scope='One exact finite-colour coefficient. Direct Q2 O0 is not Q0-closed. This neither settles the first correction nor establishes a nonzero d2.')
     out.write_text(json.dumps(doc,indent=2)+'\n');print('Q0 Q2, Q1 Q1, Q2 Q0:',val,other['coefficient'],0,'candidates tested',len(tested),flush=True)
 if __name__=='__main__':
-    a=argparse.ArgumentParser(description=__doc__);a.add_argument('--out',type=Path,required=True);assert __debug__;run(a.parse_args().out)
+    a=argparse.ArgumentParser(description=__doc__);a.add_argument('--out',type=Path,required=True);a.add_argument('--level32',action='store_true');assert __debug__;args=a.parse_args();run(args.out,args.level32)

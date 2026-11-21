@@ -25,7 +25,34 @@ $$
 6639-4019-2620=0\quad(\text{odd})
 $$
 
-over the field of 2,147,483,647 elements. A8 job 5684039 evaluated five native weights. The source has even charge conjugation. The first equation over the full three-colour space is $Q_0\mathcal O_1=-Q_1\mathcal O_0$, where $\mathcal O_1$ is the first correction. On a solution the second obstruction is the class of $Q_2\mathcal O_0+Q_1\mathcal O_1$ after quotienting classical boundaries and first-differential images. [Five weights and Slurm receipt](second_target/) · [Taylor decomposition](../README.md)
+in both fields of 2,147,483,647 and 1,000,033 elements. A8 jobs 5684039 and 5684216 used different seeds. All five native weights give identical adjacent ranks at the two primes. The source has even charge conjugation. The first equation over the full three-colour space is $Q_0\mathcal O_1=-Q_1\mathcal O_0$, where $\mathcal O_1$ is the first correction. On a solution the second obstruction is the class of $Q_2\mathcal O_0+Q_1\mathcal O_1$ after quotienting classical boundaries and first-differential images. [First prime](second_target/) · [Independent prime](second_target_prime1000033/) · [Taylor decomposition](../README.md)
+
+## Three scalar restrictions of the first equation
+
+Set one scalar to $x\operatorname{diag}(1,1,-2)$ and put every other Taylor letter in the upper traceless two-by-two block. Here $x$ is its commuting scalar coordinate. The classical commutators with the chosen scalar vanish. The three choices of scalar give simultaneous necessary equations for the same $SU(3)$ correction. The sign of the archived $Q_1\mathcal O_0$ is reversed before solving.
+
+At length ten there are 14,088 distinct products of five quadratic traces at the required weight. An exact linear combination of 180 matrix coefficients pairs to $-1/3$ with $-Q_1\mathcal O_0$. It annihilates the classical variation of every one of these products. Exactly 8,086 of them have a restriction on the scalar loci and powers entering the functional. This excludes any first correction made entirely of products of quadratic traces. [Functional](first_correction/joint.json) · [Rational verification](first_correction/verified_pairs.json)
+
+For a scalar $S$ and an ordered active pair of letters $U,V$ containing a derivative, the needed additional polynomial can be chosen to contain
+
+$$
+-\frac12\operatorname{tr}(S^2UV)+\frac14\operatorname{tr}(S^2)\operatorname{tr}(UV).
+$$
+
+On the locus for $S$ it equals $x^2\operatorname{tr}(UV)$. On either other locus, $S$ is traceless in the upper block, where $S^2=\tfrac12\operatorname{tr}(S^2)\mathbf1_2$. At least one of $U,V$ is a derivative letter with zero lower entry. The polynomial therefore vanishes there. Multiplication by powers of $\operatorname{tr}(S^2)/6$ supplies higher even powers of $x$.
+
+Adding 2,399 such combinations gives a 1,602-term rational correction with 1,444 products of five quadratic traces and 158 products of one quartic and three quadratic traces. A fresh expansion on generic traceless two-by-two matrices gives zero residual in every coefficient on all three loci. On the archived noncommuting three-colour assignment the residual $Q_0\mathcal O_1+Q_1\mathcal O_0$ is $-5497700040000$. This particular correction requires additional terms in the full space. [Shared correction](first_correction/quartic.json) · [Independent matrix replay](first_correction/verified_quartic.json) · [Three-colour test](first_correction/three_colour.json) · [A8 component solves](first_correction/receipt.json)
+
+Exchanging the two derivative directions and exchanging the two equally weighted flavours both act by $-1$ on all 331,201 first-image terms. Each exchange commutes with all 180 classical letter splits. Taking the negative eigenspace of both exchanges gives a 2,612-term correction satisfying the same three scalar restrictions. Its variation cancels the previous residual content, which has only one derivative-carrying letter of bidegree $(1,1)$. A different full three-colour coefficient is $1077753600000$. [Projected coordinates and symmetry checks](first_correction/projected.json) · [Scalar restrictions](first_correction/verified_projected.json) · [Full three-colour coefficient](first_correction/projected_three_colour.json)
+
+At second order a separate three-colour evaluation on five Grassmann generators gives
+
+$$
+(Q_0Q_2,\ Q_1Q_1,\ Q_2Q_0)\mathcal O_0
+\longmapsto (-428558902632000,\ 428558902632000,\ 0).
+$$
+
+The bare $Q_2\mathcal O_0$ fails classical closure. The last entry is zero also by letter content. Three output letters in this evaluation carry derivatives, while $Q_2$ on underived inputs can place derivatives on only two output letters. [Integer evaluations and matrices](second_consistency.json)
 
 ## Replay
 
@@ -48,3 +75,17 @@ cmp /tmp/su3-level32-target/resolved.json "$p/second_target/resolved.json"
 ```
 
 To reconstruct the source from the published TeX, pass its v2 main file to `su3_level32_source.py --paper`, the pinned Fortuity repository's `code` directory to `--fortuity-code`, and an output gzip path to `--out`. The program checks the hashes of the TeX and the two imported upstream modules.
+
+The three scalar tests can be regenerated with the same dependencies. The first two verification commands below use the checked-in correction and functional, respectively.
+
+```sh
+python3 "$d/su3_level32_first.py" extract --work /tmp/su3-level32-walls
+python3 "$d/su3_level32_walls.py" verify --work /tmp/su3-level32-walls --certificate "$p/first_correction/quartic.json" --out /tmp/su3-level32-quartic.json
+python3 "$d/su3_level32_walls.py" verify-pairs --work /tmp/su3-level32-walls --certificate "$p/first_correction/joint.json" --out /tmp/su3-level32-pairs.json
+python3 "$d/su3_level32_walls.py" pairs --work /tmp/su3-level32-walls --certificate /tmp/su3-level32-functional.json
+python3 "$d/su3_level32_walls.py" quartic --work /tmp/su3-level32-walls --certificate /tmp/su3-level32-correction.json
+python3 "$d/su3_level32_residual.py" --certificate /tmp/su3-level32-correction.json --out /tmp/su3-level32-residual.json
+python3 "$d/su3_level32_symmetry.py" --certificate /tmp/su3-level32-correction.json --out /tmp/su3-level32-projected.json
+r=algorithms/su3_independent_prime_20261118/runtime/work
+PYTHONPATH="$r/sp3-native.nosync:$r/cluster-next-v2.nosync/work/so8-bmn/vendor" python3 algorithms/su3_j34_20261118/second_consistency.py --level32 --out /tmp/su3-level32-nilpotency.json
+```

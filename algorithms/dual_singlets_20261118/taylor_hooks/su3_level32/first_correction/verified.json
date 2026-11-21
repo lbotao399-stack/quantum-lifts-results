@@ -1,0 +1,41 @@
+{
+  "rhs": "f7810267d100f7cc9c9b4c93e045540ab2291df8b8bb35eeb4ad77feddd47a8a",
+  "generic_traceless_upper_block": true,
+  "cases": [
+    {
+      "scalar": 1,
+      "power": 4,
+      "primitive_terms": 116,
+      "raw_trace_terms_tested": 948,
+      "residual_monomials": 0
+    },
+    {
+      "scalar": 2,
+      "power": 0,
+      "primitive_terms": 511,
+      "raw_trace_terms_tested": 16065,
+      "residual_monomials": 0
+    },
+    {
+      "scalar": 2,
+      "power": 2,
+      "primitive_terms": 0,
+      "raw_trace_terms_tested": 1169,
+      "residual_monomials": 0
+    },
+    {
+      "scalar": 4,
+      "power": 0,
+      "primitive_terms": 477,
+      "raw_trace_terms_tested": 15851,
+      "residual_monomials": 0
+    },
+    {
+      "scalar": 4,
+      "power": 2,
+      "primitive_terms": 0,
+      "raw_trace_terms_tested": 1169,
+      "residual_monomials": 0
+    }
+  ]
+}

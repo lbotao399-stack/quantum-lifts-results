@@ -61,10 +61,10 @@ def extract_word(word,other):
             if n+a>3 or k+b>1 or (i==L-1 and (n+a,k+b)!=(3,1)):continue
             visit(i+1,n+a,k+b,par^ps[i],(-v if b and par and odd(other) else v)*c, factors+((t,) if t else ()))
     visit(0,0,0,0,1,());return outs.items()
-def encoded_stream(path):
+def encoded_stream(path, denominator=120):
     with gzip.open(path,'rb') as f:
         for line in f:
-            c,w=json.loads(line); frac=Fraction(c)*120; assert frac.denominator==1
+            c,w=json.loads(line); frac=Fraction(c)*denominator; assert frac.denominator==1
             yield line,int(frac),tuple(tuple(map(code,t)) for t in w)
 def dump_rows(path,rows):
     raw=b''.join((json.dumps([c,w],separators=(',',':'))+'\n').encode() for w,c in sorted(rows.items()) if c)

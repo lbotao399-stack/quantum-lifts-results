@@ -225,17 +225,18 @@ def eliminate(equations):
     return 'solution', solution, len(back)
 
 
-def solve(extraction, scalar, power, out):
+def solve(extraction, scalar, power, out, *, rhs_sha=wall.block.RHS_SHA, denominator=120,
+          mu=(1, 1, 7, 4, 3)):
     report = json.loads((extraction / 'extraction.json').read_bytes())
     rec, = [r for r in report['rows'] if (r['scalar'], r['power']) == (scalar, power)]
-    assert report['rhs_sha256'] == wall.block.RHS_SHA and report['denominator'] == 120
+    assert report['rhs_sha256'] == rhs_sha and report['denominator'] == denominator
     data = gzip.decompress((extraction / rec['file']).read_bytes())
     assert hashlib.sha256(data).hexdigest() == rec['trace_sha256']
     source = defaultdict(dict)
     for c, w in map(json.loads, data.splitlines()):
         word = tuple(map(tuple, w))
         source[content(word)][word] = c
-    domain, parts = wall.parent_words(scalar, power)
+    domain, parts = wall.parent_words(scalar, power, mu)
     images = defaultdict(lambda: defaultdict(dict))
     for i, word in enumerate(domain):
         for z, c in differential(word, scalar).items():
@@ -256,22 +257,22 @@ def solve(extraction, scalar, power, out):
                parent_contents=len(parts), parent_pair_words=len(domain), target_blocks=statistics,
                equations_used=len(equations), kind=mode)
     if mode == 'solution':
-        denominator = lcm(*(v.denominator for v in co.values()))
+        scale = lcm(*(v.denominator for v in co.values()))
         nonzero = checked = 0
         for t in targets:
-            row = Counter({w: -denominator * c for w, c in source[t].items()})
+            row = Counter({w: -scale * c for w, c in source[t].items()})
             for i, small in images[t].items():
                 if i in co:
-                    add(row, small, int(denominator * co[i]))
+                    add(row, small, int(scale * co[i]))
             remainder = {w: c for w, c in row.items() if c}
             residual = sum_poly(remainder, diagonal_for(t))
             nonzero += len(residual)
             checked += 1
         assert nonzero == 0
         doc.update(rank_of_selected_equations=value, checked_blocks=checked, nonzero_residual_monomials=0,
-                   primitive=[[domain[i], str(v / 120)] for i, v in sorted(co.items())])
+                   primitive=[[domain[i], str(v / denominator)] for i, v in sorted(co.items())])
     else:
-        doc.update(pairing_with_negative_Q1=str(value / 120),
+        doc.update(pairing_with_negative_Q1=str(value / denominator),
                    functional=[[labels[i], str(v)] for i, v in sorted(co.items())])
     out.write_text(json.dumps(doc, separators=(',', ':')) + '\n')
     print(scalar, power, mode, len(co), 'value', value, flush=True)

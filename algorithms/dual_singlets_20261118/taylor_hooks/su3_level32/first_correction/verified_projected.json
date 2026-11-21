@@ -1,0 +1,41 @@
+{
+  "correction_words": 2612,
+  "generic_traceless_upper_block": true,
+  "cases": [
+    {
+      "scalar": 1,
+      "power": 4,
+      "contents": 61,
+      "formal_residual_words": 1174,
+      "nonzero_polynomial_coordinates": 0
+    },
+    {
+      "scalar": 2,
+      "power": 0,
+      "contents": 65,
+      "formal_residual_words": 20782,
+      "nonzero_polynomial_coordinates": 0
+    },
+    {
+      "scalar": 2,
+      "power": 2,
+      "contents": 40,
+      "formal_residual_words": 1169,
+      "nonzero_polynomial_coordinates": 0
+    },
+    {
+      "scalar": 4,
+      "power": 0,
+      "contents": 65,
+      "formal_residual_words": 20739,
+      "nonzero_polynomial_coordinates": 0
+    },
+    {
+      "scalar": 4,
+      "power": 2,
+      "contents": 40,
+      "formal_residual_words": 1169,
+      "nonzero_polynomial_coordinates": 0
+    }
+  ]
+}

@@ -32,9 +32,9 @@ def derivative(w, scalar):
     return result
 
 
-def run(extraction, files):
+def run(extraction, files, *, rhs_sha=block.RHS_SHA, denominator=120):
     doc = json.loads((extraction/'extraction.json').read_bytes())
-    assert doc['rhs_sha256'] == block.RHS_SHA
+    assert doc['rhs_sha256'] == rhs_sha and doc['denominator'] == denominator
     results = []
     for case in doc['rows']:
         scalar, power = case['scalar'], case['power']
@@ -46,10 +46,10 @@ def run(extraction, files):
         assert hashlib.sha256(b).hexdigest() == case['trace_sha256']
         source = {tuple(map(tuple,w)): c for c,w in map(json.loads,b.splitlines())}
         sol = [(tuple(map(tuple,w)), Fraction(c)) for w,c in record['primitive']]
-        den = lcm(120, *(c.denominator for w,c in sol))
+        den = lcm(denominator, *(c.denominator for w,c in sol))
         rows = defaultdict(Counter)
         for w,c in source.items():
-            rows[tuple(sorted(sum(w, ())))][w] -= c * (den//120)
+            rows[tuple(sorted(sum(w, ())))][w] -= c * (den//denominator)
         for w,c in sol:
             for z,a in derivative(w, scalar).items():
                 rows[tuple(sorted(sum(z, ())))][z] += a * int(c*den)
@@ -60,7 +60,7 @@ def run(extraction, files):
             assert not physical.polynomial(remainder)
         results.append(dict(scalar=scalar, power=power, primitive_terms=len(sol),
                             raw_trace_terms_tested=words, residual_monomials=0))
-    return dict(rhs=block.RHS_SHA, generic_traceless_upper_block=True, cases=results)
+    return dict(rhs=rhs_sha, generic_traceless_upper_block=True, cases=results)
 
 
 if __name__ == '__main__':

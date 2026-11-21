@@ -1,0 +1,11 @@
+{
+  "job": "5684216",
+  "files": {
+    "sector_0.json": "64af62e566d32c335a5933d04f68cac30f01c379bcfafbd935bc69807b6c4b8b",
+    "sector_1.json": "678d53316ded4a80aade4a2ad0b4233afedfcf904d93524ff985f3c5e8411824",
+    "sector_2.json": "5150b916a33d06483aeca5730e089358870d746aabc089f3a100d612720df4c3",
+    "sector_3.json": "77d60025dae1e19fe281bfddbcd12ae93a4345486e376196bd263f508593ca6d",
+    "sector_4.json": "0482e4717fe16d6a133015be3dbafd520dcbf865858e5ae7fc1c105babb5cbbd",
+    "resolved.json": "0d437877f2b472a92fa25e7581e6f1da4458b600bc759f759c546bbf856deebb"
+  }
+}

@@ -4,6 +4,8 @@
 
 For the published eleven-letter BMN source at $(8,4,4)$, all 761,859 classical matrix coefficients vanish at three colours. Its first and second direct supercharge images have 331,201 and 31,347 formal trace terms. The possible even ten-letter second-order target has classical multiplicity 28 modulo 2,147,483,647. The full first-correction equation remains open. [Source, images, ranks and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md)
 
+A rational functional pairs to $-1/3$ with the negative first image and to zero with the variations of all 14,088 products of five quadratic traces. A 1,602-term correction using quartic traces satisfies all three scalar collision restrictions. Its full three-colour residual has a coefficient $-5497700040000$. A separate evaluation gives $(Q_0Q_2,Q_1^2)\mathcal O_0=(-428558902632000,428558902632000)$ on one exterior coefficient. [Corrections, exact functional and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md#three-scalar-restrictions-of-the-first-equation)
+
 New $d_1$ pairings **0**, cumulative **15**. New fortuitous generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_su3_level32.json)
 
 ## Four inherited $SU(3)$ classes at level 36, November 21, 2026

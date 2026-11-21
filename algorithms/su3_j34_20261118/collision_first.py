@@ -37,21 +37,24 @@ def restrict_word(word, scalar):
     return power, sign * coefficient, reduced
 
 
-def extract(rhs, out):
+def extract(rhs, out, *, rhs_sha=block.RHS_SHA, denominator=120, sign_of_input=1,
+            input_words=517468):
+    if sign_of_input not in (-1, 1):
+        raise ValueError("the input sign must be +1 or -1")
     out.mkdir(exist_ok=True, parents=True)
     digest = hashlib.sha256()
     scalars = [block.code((0, 0, (i,))) for i in range(3)]
     numerators = defaultdict(Counter)
     input_counts = Counter()
-    for line, coefficient, word in block.encoded_stream(rhs):
+    for line, coefficient, word in block.encoded_stream(rhs, denominator):
         digest.update(line)
         for scalar in scalars:
             power, sign, reduced = restrict_word(word, scalar)
             key = (scalar, power)
             input_counts[key] += 1
             if sign:
-                numerators[key][reduced] += coefficient * sign
-    assert digest.hexdigest() == block.RHS_SHA
+                numerators[key][reduced] += coefficient * sign_of_input * sign
+    assert digest.hexdigest() == rhs_sha
     records = []
     for (scalar, power), count in sorted(input_counts.items()):
         row = {w: c for w, c in numerators[scalar, power].items() if c}
@@ -61,8 +64,10 @@ def extract(rhs, out):
         sha = block.dump_rows(out / name, row)
         records.append(dict(scalar=scalar, power=power, input_words=count,
                             restricted_trace_words=len(row), file=name, trace_sha256=sha))
-    assert all(sum(r['input_words'] for r in records if r['scalar'] == k) == 517468 for k in scalars)
-    report = dict(rhs_sha256=digest.hexdigest(), denominator=120, rows=records)
+    assert all(sum(r['input_words'] for r in records if r['scalar'] == k) == input_words for k in scalars)
+    report = dict(rhs_sha256=digest.hexdigest(), denominator=denominator, rows=records)
+    if sign_of_input != 1:
+        report["sign_applied_to_input"] = sign_of_input
     (out / 'extraction.json').write_text(json.dumps(report, indent=2) + '\n')
     print([(r['scalar'],r['power'],r['restricted_trace_words']) for r in records], flush=True)
     return report
@@ -87,12 +92,12 @@ def pair_words(content):
     return tuple(sorted(words))
 
 
-def parent_words(scalar, power):
+def parent_words(scalar, power, mu=(1, 1, 7, 4, 3)):
     from g2_full_classical_screen_v1 import contents
     assert power % 2 == 0
     words = []
     parts = []
-    for raw in contents((1, 1, 7, 4, 3), 10):
+    for raw in contents(mu, 10):
         content = sorted(map(block.code, raw))
         if content.count(scalar) != power:
             continue

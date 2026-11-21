@@ -54,11 +54,29 @@
         "h": 0
       }
     },
-    "full_first_correction": "open"
+    "full_first_correction": "open",
+    "pure_pair_words_excluded": 14088,
+    "pure_pair_functional": "-1/3",
+    "joint_scalar_loci_corrected": 3,
+    "joint_scalar_correction_terms": 1602,
+    "joint_correction_generic_residual": "-5497700040000",
+    "Q0_Q2_and_Q1_Q1": [
+      -428558902632000,
+      428558902632000
+    ],
+    "second_target_independent_primes": [
+      2147483647,
+      1000033
+    ],
+    "projected_first_correction_terms": 2612
   },
   "evidence": [
     "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md",
     "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/classical.json",
-    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/second_target/receipt.json"
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/second_target/receipt.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/first_correction/verified_quartic.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/first_correction/verified_pairs.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/first_correction/three_colour.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/second_consistency.json"
   ]
 }
