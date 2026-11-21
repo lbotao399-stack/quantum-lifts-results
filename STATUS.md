@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## The complete level-32 scalar chart and level-30 Levi restrictions, November 21, 2026
+
+At $SU(3)$ level 32 a rational 208640-term primitive solves the complete first equation on the scalar chart. The possible support of this first obstruction is contained in the zero scalar triple. At $F_4$ level 30 every candidate third-order source restricts to a boundary on every proper Levi and on $C_3+A_1$. [SU(3) coefficients and support proof](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/complete/README.md#the-complete-first-equation-at-level-32) · [Exceptional subgroup restrictions](algorithms/dual_singlets_20261118/f4/levi/README.md#the-remaining-rank-three-blocks-at-level-30)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_full_chart_and_levis.json)
+
 ## Central restrictions and simultaneous scalar-chart equations, November 21, 2026
 
 At level 30 the candidate $F_4$ third-order source restricts to a boundary on every Levi of semisimple rank at most two. On the two rank-three simple Levis the seven positive even central summands have rational Cartan kernels $2226-1833-393=0$ and $2208-1814-394=0$. A Weyl reflection kills the eight odd central summands. [Ranks, branching and A8 records](algorithms/dual_singlets_20261118/f4/levi/README.md#the-centre-at-level-30)

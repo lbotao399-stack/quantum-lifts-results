@@ -1,0 +1,164 @@
+{
+  "level": 30,
+  "length": 14,
+  "prime": 2147483647,
+  "pure": {
+    "SO7": {
+      "adjacent_cochains": [
+        6650,
+        2323,
+        418
+      ],
+      "incoming": 1904,
+      "outgoing": 418,
+      "outgoing_and_Cartan": 419,
+      "classical_dimension": 1,
+      "Cartan_kernel": 0
+    },
+    "Sp3": {
+      "adjacent_cochains": [
+        6499,
+        2276,
+        415
+      ],
+      "incoming": 1860,
+      "outgoing": 415,
+      "outgoing_and_Cartan": 416,
+      "classical_dimension": 1,
+      "Cartan_kernel": 0
+    }
+  },
+  "C3_A1": {
+    "branches_with_zero_rank_one_cohomology": 103,
+    "other_branches": [
+      {
+        "symplectic_weight": [
+          4,
+          4,
+          0
+        ],
+        "symplectic_length": 8,
+        "symplectic_upper": 2,
+        "symplectic_kernel": 0,
+        "rank_one_weight": [
+          5,
+          1,
+          1
+        ],
+        "rank_one_length": 6,
+        "rank_one_upper": 1,
+        "multiplicity": 1
+      },
+      {
+        "symplectic_weight": [
+          4,
+          4,
+          2
+        ],
+        "symplectic_length": 10,
+        "symplectic_upper": 1,
+        "symplectic_kernel": 0,
+        "rank_one_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_length": 4,
+        "rank_one_upper": 1,
+        "multiplicity": 1
+      },
+      {
+        "symplectic_weight": [
+          5,
+          4,
+          1
+        ],
+        "symplectic_length": 10,
+        "symplectic_upper": 1,
+        "symplectic_kernel": 0,
+        "rank_one_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_length": 4,
+        "rank_one_upper": 1,
+        "multiplicity": 1
+      },
+      {
+        "symplectic_weight": [
+          5,
+          4,
+          3
+        ],
+        "symplectic_length": 12,
+        "symplectic_upper": 0,
+        "symplectic_kernel": 0,
+        "rank_one_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_length": 2,
+        "rank_one_upper": 1,
+        "multiplicity": 1
+      },
+      {
+        "symplectic_weight": [
+          5,
+          5,
+          1
+        ],
+        "symplectic_length": 10,
+        "symplectic_upper": 5,
+        "symplectic_kernel": 0,
+        "rank_one_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_length": 4,
+        "rank_one_upper": 1,
+        "multiplicity": 1
+      },
+      {
+        "symplectic_weight": [
+          5,
+          5,
+          3
+        ],
+        "symplectic_length": 12,
+        "symplectic_upper": 3,
+        "symplectic_kernel": 0,
+        "rank_one_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_length": 2,
+        "rank_one_upper": 1,
+        "multiplicity": 1
+      },
+      {
+        "symplectic_weight": [
+          5,
+          5,
+          5
+        ],
+        "symplectic_length": 14,
+        "symplectic_upper": 1,
+        "symplectic_kernel": 0,
+        "rank_one_weight": [
+          0,
+          0,
+          0
+        ],
+        "rank_one_length": 0,
+        "rank_one_upper": 1,
+        "multiplicity": 1
+      }
+    ],
+    "classical_upper": 13,
+    "Cartan_kernel_upper": 0
+  }
+}

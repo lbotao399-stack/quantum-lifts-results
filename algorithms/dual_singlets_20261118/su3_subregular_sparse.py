@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import subprocess
 
+from su3_chart_denominators import recover as recover_common_denominator
 from su3_subregular_correction import accumulate
 from su3_subregular_differential import ODD, qmonomial, variation
 from su3_subregular_image import write
@@ -128,6 +129,11 @@ def solve(engine, work, rhs, output, degree, depth, *, mixed_rules=None, image_o
             values={w:rational(n,modulus) for w,n in residues.items()}
             if all(v is not None for v in values.values()):
                 candidate=check_candidate(values,unit,rhs,degree,image_of)
+        if candidate is None and len(records) >= 2:
+            recovered = recover_common_denominator(residues, modulus, unit, rhs, degree, image_of)
+            if recovered is not None:
+                candidate, denominator, trials = recovered
+                records[-1].update(verified_common_denominator=denominator, exact_denominator_trials=trials)
         if candidate is not None:
             write(output,[[w.hex(),str(c)] for w,c in sorted(candidate.items())])
             return dict(input_monomials=len(rhs),rational_unit=str(unit),terms=len(candidate),residual=0,systems=records)

@@ -54,3 +54,32 @@ for j in 32 34; do
   cmp "/tmp/joined-$j.json" "$p/j${j}_joined.json" || exit 1
 done
 ```
+
+## The complete first equation at level 32
+
+The descending equations at counts three, two, one and zero of the odd entry $d$ require 378, 13792, 73170 and 121300 correction terms, respectively. Multiplication on all 124 Taylor generators gives the polynomial identity on the chart
+
+$$
+190080\bigl(Q_1\mathcal O_0+Q_0\mathcal O_1\bigr)=0 .
+$$
+
+The complete first image has 253788 matrix monomials and the rational primitive has $378+13792+73170+121300=208640$ terms. This replay uses off-diagonal ghost degrees zero through four and all polynomial degrees of the original 331201 trace terms. [Rational primitive](j32_full_first_primitive.json.gz) · [Integer replay](j32_full_first.json)
+
+The last system has 644395 equations, 417018 trial columns and modular rank 309245. The last 121300 coefficients were independently recovered from the two moduli 2147483647 and 1000000007. In the integer right-hand-side units of the native solve their common denominator is 4752. For each trial denominator the algorithm takes the centred residues of the scaled coordinates. Exact multiplication supplies rows that can discard subsequent denominators. Three full integer multiplications sufficed. Restoring the input unit $1/40$ gives $40\cdot4752=190080$. [Two-prime record](j32_denominator_replay.json) · [Reconstruction](../../../../su3_chart_denominators.py)
+
+To replay from the repository root with the standard library, run
+
+```sh
+d=algorithms/dual_singlets_20261118
+p="$d/taylor_hooks/su3_scalar_levi/subregular/complete"
+python3 "$d/su3_subregular_chart_replay.py" --image "$p/j32_image.json.gz" --primitive "$p/j32_full_first_primitive.json.gz" --roots 4 --through-d 0 --out /tmp/j32-full-first.json
+cmp /tmp/j32-full-first.json "$p/j32_full_first.json"
+```
+
+### Support in scalar space
+
+On the open set where the first scalar has invertible entry $B^2{}_1(0)$, the moving frame and its inverse are regular. The four positive-order frame series and their $Q_0$ variations are coordinate pairs. Contracting each pair by its degree-counting homotopy identifies the cohomology with that of the reduced eight-field chart tensored with functions of the constant frame. On the projection to these remaining variables the original matrix series is conjugated by a constant frame, which cancels in each trace. Thus the polynomial identity gives a primitive in the localized original matrix complex. [Frame, inverse and differential](../README.md#the-chart-at-a-nonzero-rank-one-scalar)
+
+Every infinitesimal flavour transformation commutes with $Q_0$ and extends to this localization by the quotient rule, even when it changes the inverted entry. Applying it to the primitive gives a primitive for the transformed first image on the same open set. The fixed-level polynomial representation is finite-dimensional. Its Lie algebra generates the linear span of the connected flavour-group orbit. Consequently every finite flavour translate of the first image is exact on this open set. Conjugation by a constant colour matrix preserves all trace expressions.
+
+If any scalar in a triple is nonzero, a flavour transformation makes it the first. A nonzero traceless matrix $B$ has a vector $v$ for which $v,Bv$ are independent. Otherwise every line is invariant and $B$ is scalar, hence zero. Choosing a colour frame beginning with $v,Bv$ gives $B^2{}_1(0)=1$. Transporting the localized primitive shows that the possible support of this particular first obstruction in the 24-dimensional space of scalar triples is contained in the origin. A global invariant polynomial primitive still requires a calculation there.

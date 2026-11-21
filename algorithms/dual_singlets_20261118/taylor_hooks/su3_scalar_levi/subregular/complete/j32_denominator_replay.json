@@ -1,0 +1,16 @@
+{
+  "level": 32,
+  "primes": [
+    2147483647,
+    1000000007
+  ],
+  "modulus": "2147483662032385529",
+  "equations": 644395,
+  "parents": 417018,
+  "modular_rank": 309245,
+  "support": 121300,
+  "native_rational_unit": "1/40",
+  "normalized_common_denominator": 4752,
+  "exact_denominator_trials": 3,
+  "matching_rational_coefficients": 121300
+}

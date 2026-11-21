@@ -88,3 +88,32 @@ for prime in 2147483647 1000033; do
   cmp "/tmp/spin9-$prime/minors.json" "$p/Spin9_${prime}_minors.json" || exit 1
 done
 ```
+
+## The remaining rank-three blocks at level 30
+
+For the pure flavour weight $(5,5,5)$ let the stacked map consist of the outgoing classical supercharge $Q_0$ and restriction to the Cartan. Boundaries are in its kernel. In both derived algebras the outgoing minor fills its codomain. The stacked minor gains one rank, and the independent incoming minor exhausts the remaining kernel. Thus the full rational classical cohomology is one-dimensional and the Cartan detects it.
+
+| Group | Cochains at lengths 13, 14, 15 | Incoming minor | Outgoing minor | Stacked minor | Cartan kernel dimension |
+|---|---|---:|---:|---:|---:|
+| $SO(7)$ | 6650, 2323, 418 | 1904 | 418 | 419 | $2323-1904-419=0$ |
+| $USp(6)$ | 6499, 2276, 415 | 1860 | 415 | 416 | $2276-1860-416=0$ |
+
+At the prime 2147483647 the three determinant residues are 1471201234, 1984488694, 413726119 in the orthogonal block and 786583585, 1816544542, 648149037 in the symplectic block. The characteristic-zero colour character independently gives all six cochain dimensions. [Orthogonal minors](SO7_level30_pure.json.gz) · [Symplectic minors](Sp3_level30_pure.json.gz) · [Dimensions and branches](level30_pure_bounds.json)
+
+The two root equations in $F_4$ annihilate its full Cartan restriction. Combining these pure blocks with the positive central degrees above shows that the level-30 source restricts to a boundary on every proper Levi. The transverse contraction in the fixed-scalar calculation therefore applies also at level 30 whenever the fixed scalar has a nonzero semisimple part. The unrestricted exceptional source and its third differential remain open.
+
+For the full-rank subgroup with Lie algebra $C_3+A_1$, the rectangular flavour representation branches with multiplicity one. Over the rationals the cohomology of each product is the tensor product of the two cohomologies. The $A_1$ factor has zero cohomology in 103 branches. Its other seven factors each have a Cartan-detected space of dimension at most one. The corresponding $C_3$ factors have Cartan-kernel dimension zero and classical dimensions bounded by $2,1,1,0,5,3,1$. Therefore the product has classical dimension at most 13 and Cartan-kernel dimension zero. Every restricted level-30 exceptional source is a boundary on this subgroup as well. [Factor calculation](../../f4_level30_pure.py)
+
+From the repository root, set up the Python path as for the rank-four calculations. The native records can be regenerated with the pinned headers.
+
+```sh
+d=algorithms/dual_singlets_20261118
+p="$d/f4/levi"
+python3 "$d/f4_level30_pure.py" --out /tmp/f4-level30-pure.json
+cmp /tmp/f4-level30-pure.json "$p/level30_pure_bounds.json"
+c++ -O3 -std=c++17 -pthread -I "$d/taylor_hooks/native" "$d/taylor_hooks/su2_cartan_kernel.cpp" -o /tmp/f4-levi-kernel
+for group in SO7 Sp3; do
+  PAR_THREADS=3 /tmp/f4-levi-kernel 5 5 5 0 0 14 2147483647 2527911005270 "$group" > "/tmp/$group-level30.json" || exit 1
+  python3 -c 'import gzip,json,sys; assert json.load(open(sys.argv[1])) == json.load(gzip.open(sys.argv[2]))' "/tmp/$group-level30.json" "$p/${group}_level30_pure.json.gz" || exit 1
+done
+```
