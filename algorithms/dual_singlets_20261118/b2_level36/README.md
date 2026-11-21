@@ -72,6 +72,17 @@ Every positive-level product of odd length contains an odd-length factor. Such a
 
 Each adjacent rank pair adds to the independent integer cochain dimension. The product subspace is zero over the rationals. At least two length-13 classes are indecomposable modulo products. A single BMN raising supercharge adds one flavour box at fixed length. The two possible immediate parents have partitions $(9,4,4)$ and $(10,4,3)$ at level 34. Every longer chain of raising actions factors through this last step. [Product and descendant selection](primitive_sources.py) · [A8 outputs](parents/) · [Verification](verify_primitive.py)
 
+## Two independent generators at level 36
+
+At thirteen letters the two immediate parents have the following rational cohomology dimensions.
+
+| Level-34 parent | Cochains | Incoming rank | Outgoing rank | Cohomology | A8 job |
+|---|---:|---:|---:|---:|---:|
+| $(9,4,4)$ | 25513 | 13207 | 12306 | 0 | 5682974 |
+| $(10,4,3)$ | 19757 | 9025 | 10732 | 0 | 5682987 |
+
+Both pairs of image ranks over the field of 2147483647 elements saturate the rational cochain dimension. Thus both rational raising images vanish. The seven product channels above also vanish. The lower bound of two on the thirteen-letter cohomology therefore proves the existence of at least two independent BMN generators at $(2J;q_1,q_2,q_3)=(5;10,4,4)$. The argument uses only the product minors, index and classical ranks. It gives a campaign lower bound of seven generators, including the five with standalone rational representatives. The published wall restriction detects one direction in this level-36 space. [Rank records and hashes](parents/jobs.json) · [All nine channels](parents/result.json)
+
 ## Selection of higher-order targets
 
 The index gives a generator-existence statement independent of the published $SU(4)$ restriction. The only previously counted $USp(4)$ core is the ten-letter level-30 singlet. The symplectic scalar invariants have degrees two and four. Products add letter lengths, and the BMN raising supersymmetries preserve length. These generators and their descendants therefore generate only even lengths. The odd cohomology lower bound of two forces at least one further BMN generator. The 297 exhausted odd-length blocks through level 28 bound the first such generator to $j\in\{30,32,34,36\}$. This argument does not determine its individual charges. [Rank-two census](odd_through_j28.json.gz) · [Exact product minor](rational_products.json)

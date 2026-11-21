@@ -126,7 +126,7 @@
       "level": 34,
       "length": 13,
       "multiplicity": 1,
-      "rational_parent_upper": null
+      "rational_parent_upper": 0
     },
     {
       "operation": "one BMN raising supercharge",
@@ -138,9 +138,11 @@
       "level": 34,
       "length": 13,
       "multiplicity": 1,
-      "rational_parent_upper": null
+      "rational_parent_upper": 0
     }
   ],
   "product_subspace_dimension": 0,
-  "indecomposable_modulo_products_lower": 2
+  "indecomposable_modulo_products_lower": 2,
+  "raising_image_upper": 0,
+  "modulo_products_and_BMN_raising_lower": 2
 }

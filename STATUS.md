@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Two independent level-36 BMN generators in $USp(4)$, November 21, 2026
+
+The last two level-34 parents have rational dimensions $25513-13207-12306=0$ and $19757-9025-10732=0$. All seven lower products vanish at thirteen letters. At least two independent generators occur at charges $(2J;q_1,q_2,q_3)=(5;10,4,4)$. The campaign generator lower bound rises from six to seven. [Proof and A8 rank records](algorithms/dual_singlets_20261118/b2_level36/README.md#two-independent-generators-at-level-36)
+
+New $d_1$ pairings **0**, total **15**. New generators with standalone rational representatives **0**, total **5**. Additional generators forced beyond those five **at least 2**. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_primitive.json)
+
 ## Two product-indecomposable classes in the level-36 symplectic BMN sector, November 21, 2026
 
 At $USp(4)$ highest weight $(10,4,4)$, the thirteen- and fourteen-letter cohomology dimensions are equal to $20369-\operatorname{rank}(Q_0|_{Y=13})\ge 2$. All seven lower product channels at thirteen letters have zero rational cohomology in one factor. The immediate raising sources have weights $(9,4,4)$ and $(10,4,3)$. [Dimensions, products and replay](algorithms/dual_singlets_20261118/b2_level36/README.md#length-and-lower-products-without-the-published-parent)
