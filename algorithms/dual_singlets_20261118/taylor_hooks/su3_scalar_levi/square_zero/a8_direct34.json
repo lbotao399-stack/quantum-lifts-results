@@ -1,0 +1,67 @@
+{
+  "level": 34,
+  "direct_image": "Q1",
+  "input_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+  "input_terms": 517468,
+  "surviving_cyclic_words_by_scalar_count": {
+    "4": 24756,
+    "5": 16294
+  },
+  "terms_by_scalar_count": {
+    "4": 31852,
+    "5": 9538
+  },
+  "nonzero_monomials": 41390,
+  "expanded_polynomial_sha256": "5368d34e77e1df736c338e5b6866230558074a4be2c8f95d2d1397a86ed100df",
+  "first_coefficient": {
+    "even": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "odd": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        15,
+        0
+      ]
+    ],
+    "coefficient": "-59509737/10"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "phase": "SU(3) first images after fixing every scalar triple",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_full_levi.json",
+  "levels": [
+    32,
+    34
+  ],
+  "first_obstruction_after_fixing_the_three_scalar_matrices": {
+    "32": "zero in component cohomology",
+    "34": "zero in component cohomology"
+  },
+  "unrestricted_first_obstructions": {
+    "32": "open",
+    "34": "open"
+  },
+  "unrestricted_level_34_second_obstruction": "open",
+  "level32": {
+    "remaining_trace_words": 2585,
+    "rational_correction_terms": 2447,
+    "terms_using_fixed_projector": 68,
+    "residual_terms": 0
+  },
+  "level34": {
+    "A8_job": 5686273,
+    "unrestricted_other_matrix_entries_on_common_image": 41390,
+    "rank_two_centralizer_remainder": 0,
+    "rank_one_centralizer_remainder": 5,
+    "field_strength_primitive_terms": 2,
+    "residual_terms": 0
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/README.md",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/cyclic.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/j32_replay.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/j34.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/j34_field_strength.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/a8.json"
+  ]
+}

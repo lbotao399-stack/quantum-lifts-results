@@ -1,0 +1,8 @@
+{
+  "colours": 3,
+  "letters_checked": 31,
+  "signed_splits_checked": 180,
+  "generic_companion_residual_entries": 0,
+  "jacobian_over_cyclic_determinant_squared": "1",
+  "principal_nilpotent_cyclic_determinant": 1
+}

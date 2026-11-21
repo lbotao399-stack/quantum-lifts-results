@@ -1,0 +1,11 @@
+{
+  "job": "5686273",
+  "accounting": "5686273|COMPLETED|28|8|0:0",
+  "receipt": {
+    "job": "5686273",
+    "files": {
+      "square_zero34.json": "353dff774fa39d6577f84242d931d00df1ecac43930914b78e39877ff4ea37e4"
+    }
+  },
+  "local_comparison": "all direct coefficients have the same SHA256 digest"
+}

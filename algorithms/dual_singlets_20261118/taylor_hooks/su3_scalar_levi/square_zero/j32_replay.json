@@ -1,0 +1,11 @@
+{
+  "level": 32,
+  "equation": "Q1 O0 + Q0 O1",
+  "full_first_image_terms": 331201,
+  "terms_without_adjacent_scalars": 2585,
+  "correction_trace_terms": 2447,
+  "correction_sha256": "4366b8591968fecc98706b6dd07415cf0e1b865ddaf2b3d7f49795e71ca87ded",
+  "correction_terms_with_projector": 68,
+  "Q0_terms_after_scalar_and_projector_relations": 2585,
+  "residual_terms": 0
+}

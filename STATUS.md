@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Fixed-scalar first corrections at $SU(3)$ levels 32 and 34, November 21, 2026
+
+The cyclic-scalar calculation includes the principal nilpotent scalar. On the remaining common-image and common-kernel triples, the level-32 first correction cancels all 2585 trace coefficients. Independently expanding the level-34 first image on A8 and locally gives 41390 nonzero matrix monomials. When the scalars span a plane the centralizer calculation gives zero. When they span a line the five remaining monomials cancel against two field-strength terms, each with coefficient $-5012280$. This establishes exactness after fixing each scalar triple. A global invariant polynomial solution remains open. [Equations, coefficients and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/README.md)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_scalar_fibres.json)
+
 ## First images on the full $SU(3)$ Levi and higher target bounds, November 21, 2026
 
 At level 32 the full two-colour block with abelian spectators has 10256 even first-target cochains and zero cohomology. At level 34 only two four-spectator directions can carry the first image. All three scalar coefficients cancel. Each of the two gaugino coefficients has 654 matrix monomials and a 16-term rational primitive. The entire first image is a classical boundary on the block in both cases. The earlier minus-component calculation agrees term by term after trace reversal. [Five rational replays](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/full_block/coefficient_replay.json)

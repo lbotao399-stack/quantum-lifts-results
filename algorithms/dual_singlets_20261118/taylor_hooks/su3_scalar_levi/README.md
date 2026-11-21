@@ -119,6 +119,8 @@ In the part $\delta$ of $Q_0$ that splits off one $S$, the off-block maps are le
 
 A traceless $3\times3$ matrix with no simple eigenvalue is nilpotent. Flavour changes commute with the colour restriction, and the vanishing on the full Levi extends to each flavour multiplet of the specified images. Consequently a remaining global first obstruction at either level can have support only where every linear combination of the three scalars is nilpotent. The same support bound holds for the level-34 second residual if its global first equation is soluble. A global polynomial primitive or a nonzero global obstruction still requires the calculation on this locus.
 
+The first equation now has a solution after fixing any three-colour scalar triple at either level. A cyclic chart treats the principal nilpotent scalar, and two finite polynomial calculations treat the remaining common-image and common-kernel components. [Fixed-scalar calculation](square_zero/README.md)
+
 From the repository root, set the Python paths in the [level-32 replay](../su3_level32/README.md#replay). The following verifies the two first targets and the five explicit cancellations.
 
 ```sh
