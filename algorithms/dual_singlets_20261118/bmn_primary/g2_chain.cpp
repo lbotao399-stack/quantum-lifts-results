@@ -68,9 +68,27 @@ static Mat g2_probe() {
 #include "levels.h"
 #undef random_gen
 
+// At the last length only the image of Q0 is used. Evaluations on the target
+// are linear functionals, whether or not they separate the whole target.
+static void terminal_evaluations(const Sector &sec, Lev &level, int length, size_t image_cap) {
+  level = Lev{};
+  level.Y = length;
+  if (length > sec.Ymax) return;
+  for (const auto &entry : hw_by_skel(sec, length)) {
+    Skel block = parse_skel(entry.first, length, entry.second);
+    level.exact += block.hw;
+    level.dim += block.hw;
+    block.K = static_cast<int>(std::min<size_t>(block.hw, image_cap) + MARGIN);
+    add_probes(block, block.pr, block.K, false);
+    for (int k = 0; k < block.K; ++k) block.piv.push_back(k);
+    level.sk.push_back(std::move(block));
+  }
+}
+
 int main(int argc, char **argv) {
-  if (argc != 9) {
-    fputs("usage: g2_chain w1 w2 w3 first_length last_length seed threads prime\n", stderr);
+  bool probe_last = argc == 10 && std::string(argv[9]) == "--probe-last";
+  if (argc != 9 && !probe_last) {
+    fputs("usage: g2_chain w1 w2 w3 first_length last_length seed threads prime [--probe-last]\n", stderr);
     return 1;
   }
   int w[5] = {std::stoi(argv[1]), std::stoi(argv[2]), std::stoi(argv[3]), 0, 0};
@@ -100,7 +118,8 @@ int main(int argc, char **argv) {
   size_t incoming = 0;
   std::vector<std::array<size_t,4>> blocks;
   for (int y = std::max(1,lo-1); y <= hi+1; ++y) {
-    build_lev(sec,curr,y);
+    if (probe_last && y == hi+1) terminal_evaluations(sec,curr,y,prev.dim-incoming);
+    else build_lev(sec,curr,y);
     size_t outgoing = prev.dim && curr.dim ? rank_of(q0_rows(sec,prev,curr),prev.dim) : 0;
     if (y > lo) {
       if (outgoing+incoming > prev.dim) throw std::logic_error("incompatible adjacent Q0 ranks");
@@ -110,7 +129,9 @@ int main(int argc, char **argv) {
     incoming = outgoing;
     prev = std::move(curr);
   }
-  printf("{\"weight\":[%d,%d,%d],\"prime\":%llu,\"seed\":%llu,\"blocks\":[",
+  if (probe_last) fputs("{\"terminal_probes_only\":true,", stdout);
+  else fputc('{', stdout);
+  printf("\"weight\":[%d,%d,%d],\"prime\":%llu,\"seed\":%llu,\"blocks\":[",
          w[0],w[1],w[2],(unsigned long long)P,(unsigned long long)seed);
   for (size_t k=0;k<blocks.size();++k) {
     const auto &b=blocks[k];

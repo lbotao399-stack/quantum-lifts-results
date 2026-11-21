@@ -1,6 +1,6 @@
 # Restrictions of the two exceptional BMN sources
 
-In the level-24 source for the second supercharge differential in $F_4$, every classical cocycle restricts to a boundary on every proper Levi subalgebra and on $\mathfrak{so}_9$. Its restriction is also exact after fixing any scalar linear combination with a nonzero semisimple part. The full $F_4$ source cohomology still has dimension between zero and three. [Source bound and supercharge selection](../README.md#two-more-classical-boundaries-at-level-24)
+In the level-24 source for the second supercharge differential in $F_4$, every classical cocycle restricts to a boundary on every proper Levi subalgebra and on $\mathfrak{so}_9$. Its restriction is also exact after fixing any scalar linear combination with a nonzero semisimple part. The full $F_4$ source cohomology now has dimension zero by the two Albert-cubic minors. [Full-group computation](../../bmn_primary/f4_scalar/README.md#application-at-level-24) [Source bound and supercharge selection](../README.md#two-more-classical-boundaries-at-level-24)
 
 The flavour highest weight is $(m,m,m)$, with $m=4,5$ at levels 24 and 30. The letter number is $3m-1$. Each cochain contains one matter fermion. At level 24 the central Weyl transformation $-1$ kills the restriction of every invariant to eleven Cartan letters. At level 30 the two root equations on the Cartan coefficients have determinant $-3780$, so every closed fourteen-letter source restricts to zero. [Root equations](../README.md#the-cartan-restriction-of-the-level-30-third-order-source)
 

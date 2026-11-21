@@ -1,0 +1,17 @@
+{
+  "weight": [
+    6,
+    6,
+    6
+  ],
+  "prime": 2147483647,
+  "seed": 183985,
+  "blocks": [
+    {
+      "length": 17,
+      "dimension": 1946,
+      "incoming": 1660,
+      "outgoing": 286
+    }
+  ]
+}

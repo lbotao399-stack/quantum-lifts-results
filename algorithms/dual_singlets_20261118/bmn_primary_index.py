@@ -65,6 +65,9 @@ def colour(cycles, group):
         return (colour_trace(cycles),)
     if group == "G2":
         return (g2_trace(cycles),)
+    if group in ("F4", "B4"):
+        from f4_singlet_characters import decomposition, ZERO
+        return (decomposition(group,cycles).get(ZERO,0),)
     from unitary_characters import adjoint_traces
     trace, twisted = adjoint_traces(tuple(reversed(cycles)), 3)
     if (trace-twisted) % 2:

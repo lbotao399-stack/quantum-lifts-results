@@ -1,0 +1,41 @@
+{
+  "group": "G2",
+  "baseline": [],
+  "trials": [
+    {
+      "core": [
+        6,
+        5,
+        4
+      ],
+      "first_failure": null
+    },
+    {
+      "core": [
+        6,
+        6,
+        4
+      ],
+      "first_failure": null
+    },
+    {
+      "core": [
+        6,
+        6,
+        6
+      ],
+      "first_failure": {
+        "target": [
+          8,
+          7,
+          7
+        ],
+        "level": 44,
+        "required": 2,
+        "upper_by_core": [
+          1
+        ]
+      }
+    }
+  ]
+}

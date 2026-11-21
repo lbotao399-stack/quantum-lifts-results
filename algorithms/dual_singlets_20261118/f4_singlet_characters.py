@@ -7,10 +7,6 @@ from itertools import permutations
 from math import factorial
 from pathlib import Path
 
-from charge_maps import content_patterns
-from exact_dims import cycle_data
-
-
 CARTAN = {
     "F4": ((2,-1,0,0),(-1,2,-2,0),(0,-1,2,-1),(0,0,-1,2)),
     "B4": ((2,-1,0,0),(-1,2,-1,0),(0,-1,2,-2),(0,0,-1,2)),
@@ -75,6 +71,8 @@ def decomposition(group, cycles):
 
 @lru_cache(None)
 def multiplicity(group, bosons, fermions):
+    from charge_maps import content_patterns  # Loads the native character runtime on this path.
+    from exact_dims import cycle_data
     den = 1
     cycles = {():1}
     for count, odd in [(n,False) for n in bosons]+[(n,True) for n in fermions]:
@@ -90,6 +88,7 @@ def multiplicity(group, bosons, fermions):
 
 
 def singlets(group, mu, length):
+    from charge_maps import content_patterns
     patterns = Counter()
     for ds, spin_sign in ((0,1),(1,-1)):
         for perm in permutations(range(3)):

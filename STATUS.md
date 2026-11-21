@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## An explicit exceptional scalar and the level-24 second-order source, November 21, 2026
+
+At $F_4$ level 18, the nine-scalar singlet has an explicit indecomposable rational representative. Two independently evaluated augmented determinants are 616044 and 118547 modulo 1000003 and 1000033. The only two possible incoming full-letter classes are spanned by exact current products. At level 24 the selected second-order source for the fifth gaugino power has rational cohomology $141-80-61=0$. [Scalar, minors and physical partners](algorithms/dual_singlets_20261118/bmn_primary/f4_scalar/README.md)
+
+At $USp(4)$ level 48, weight $(8,8,8)$, the primary index $878313-878315=-2$ forces a third odd BMN generator. New $d_1$ lifts **0** (15 total). New BMN generator families **2** since the previous GitHub ledger, including **1 with a new explicit representative** (at least 10 total, 6 explicit). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Symplectic index and cluster ranks](algorithms/dual_singlets_20261118/bmn_primary/README.md#a-third-odd-generator-in-usp4) · [Count ledger](data/N4_lift_campaign_counts_20261121_exceptional_scalar.json)
+
 ## An odd generator in $G_2$, November 21, 2026
 
 The primary index of the level-36 singlet is $1-3+7-11+11-9+3=-1$. All 293 odd-length blocks through level 28 have zero rational classical cohomology. Flavour multiplication confines an odd generator responsible for the signal to $(6,5,4)$ at level 30, $(6,6,4)$ at level 32 or $(6,6,6)$ at level 36. A8 jobs 5690901 and 5691072 give the primary index and Taylor target cochains. [Derivation and replay](algorithms/dual_singlets_20261118/bmn_primary/README.md)

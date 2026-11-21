@@ -1,0 +1,769 @@
+{
+  "group": "F4",
+  "prime": 1000033,
+  "lower_scalar_factors": [
+    {
+      "weight": [
+        1,
+        0,
+        0
+      ],
+      "degree": 1,
+      "dimension": 0,
+      "incoming": {
+        "rank": 0
+      }
+    },
+    {
+      "weight": [
+        1,
+        1,
+        1
+      ],
+      "degree": 3,
+      "dimension": 1,
+      "incoming": {
+        "rank": 1,
+        "rows": [
+          0
+        ],
+        "columns": [
+          0
+        ],
+        "determinant": 492447,
+        "minor_sha256": "2f6fab145bc0c98184ec6282e32254c8619123620cd8244a766f8705f88bebc1",
+        "frames": [
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 710111,
+            "words": 1
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 710859,
+            "words": 1
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 711607,
+            "words": 1
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 712355,
+            "words": 1
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 3,
+            "seed": 713103,
+            "words": 1
+          }
+        ]
+      }
+    },
+    {
+      "weight": [
+        2,
+        1,
+        0
+      ],
+      "degree": 3,
+      "dimension": 0,
+      "incoming": {
+        "rank": 0
+      }
+    },
+    {
+      "weight": [
+        2,
+        2,
+        1
+      ],
+      "degree": 5,
+      "dimension": 0,
+      "incoming": {
+        "rank": 0
+      }
+    },
+    {
+      "weight": [
+        3,
+        0,
+        0
+      ],
+      "degree": 3,
+      "dimension": 0,
+      "incoming": {
+        "rank": 0
+      }
+    },
+    {
+      "weight": [
+        3,
+        1,
+        1
+      ],
+      "degree": 5,
+      "dimension": 2,
+      "incoming": {
+        "rank": 2,
+        "rows": [
+          0,
+          2
+        ],
+        "columns": [
+          0,
+          1
+        ],
+        "determinant": 468386,
+        "minor_sha256": "78e4af9996aec697475a2645797ca6c6db4e49e8f3488c6d7cd596742e79e859",
+        "frames": [
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 710311,
+            "words": 3
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 711059,
+            "words": 3
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 711807,
+            "words": 3
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 712555,
+            "words": 3
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 713303,
+            "words": 3
+          }
+        ]
+      }
+    },
+    {
+      "weight": [
+        3,
+        2,
+        0
+      ],
+      "degree": 5,
+      "dimension": 0,
+      "incoming": {
+        "rank": 0
+      }
+    },
+    {
+      "weight": [
+        3,
+        2,
+        2
+      ],
+      "degree": 7,
+      "dimension": 0,
+      "incoming": {
+        "rank": 0
+      }
+    },
+    {
+      "weight": [
+        3,
+        3,
+        1
+      ],
+      "degree": 7,
+      "dimension": 4,
+      "incoming": {
+        "rank": 4,
+        "rows": [
+          0,
+          2,
+          5,
+          8
+        ],
+        "columns": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "determinant": 440012,
+        "minor_sha256": "b6fd13cd884652d3e08975e37f25825765458ce1e1bcb36d173ec44d0888dc1b",
+        "frames": [
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 710331,
+            "words": 20
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 711079,
+            "words": 20
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 711827,
+            "words": 20
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 712575,
+            "words": 20
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 713323,
+            "words": 20
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 2,
+            "seed": 714071,
+            "words": 20
+          }
+        ]
+      }
+    }
+  ],
+  "physical_incoming_doubled_charges": [
+    1,
+    1,
+    6,
+    6,
+    6
+  ],
+  "source_blocks": [
+    {
+      "weight": [
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      "length": 8,
+      "dimensions_by_fermions": {
+        "1": 16
+      },
+      "incoming": {
+        "rank": 6,
+        "rows": [
+          0,
+          1,
+          2,
+          8,
+          9,
+          10
+        ],
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "determinant": 257950,
+        "minor_sha256": "f37136475fb33625d56ca284f9aedbc1c26554a36c5ac91f878f08affcc14bc7",
+        "frames": [
+          {
+            "degree": 1,
+            "k": 3,
+            "points": 4,
+            "seed": 1046138,
+            "words": 768
+          },
+          {
+            "degree": 1,
+            "k": 3,
+            "points": 4,
+            "seed": 1046886,
+            "words": 768
+          },
+          {
+            "degree": 1,
+            "k": 3,
+            "points": 4,
+            "seed": 1047634,
+            "words": 768
+          }
+        ]
+      },
+      "outgoing": {
+        "rank": 10,
+        "rows": [
+          0,
+          1,
+          3,
+          6,
+          12,
+          13,
+          15,
+          22,
+          23,
+          25
+        ],
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "determinant": 236113,
+        "minor_sha256": "4a113b8d88fb1c77178394f0cf2802ca21fb1e9484b6d8dae1952e000907cf71",
+        "frames": [
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 2875900,
+            "words": 237
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 2876648,
+            "words": 237
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 2877396,
+            "words": 237
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 2878144,
+            "words": 237
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 2878892,
+            "words": 237
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 2879640,
+            "words": 237
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 4,
+            "seed": 2880388,
+            "words": 237
+          },
+          {
+            "degree": 0,
+            "k": 2,
+            "points": 1,
+            "seed": 2881136,
+            "words": 237
+          }
+        ]
+      },
+      "cohomology_upper": 0
+    },
+    {
+      "weight": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "length": 7,
+      "dimensions_by_fermions": {
+        "1": 17,
+        "3": 31
+      },
+      "incoming": {
+        "rank": 28,
+        "rows": [
+          0,
+          2,
+          3,
+          4,
+          8,
+          10,
+          11,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          22,
+          24,
+          25,
+          26,
+          28,
+          36,
+          38,
+          39,
+          40,
+          42,
+          47,
+          50,
+          51,
+          57
+        ],
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "determinant": 946151,
+        "minor_sha256": "5207ebd72f5b99d5f70164feec8cb559ba7a86f8b6b89d1c1c5b6d76050fd190",
+        "frames": [
+          {
+            "degree": 1,
+            "k": 3,
+            "points": 4,
+            "seed": 1046145,
+            "words": 1068
+          },
+          {
+            "degree": 1,
+            "k": 3,
+            "points": 4,
+            "seed": 1046893,
+            "words": 1068
+          },
+          {
+            "degree": 1,
+            "k": 3,
+            "points": 4,
+            "seed": 1047641,
+            "words": 1068
+          },
+          {
+            "degree": 3,
+            "k": 5,
+            "points": 4,
+            "seed": 1046419,
+            "words": 1095
+          },
+          {
+            "degree": 3,
+            "k": 5,
+            "points": 1,
+            "seed": 1047167,
+            "words": 1095
+          }
+        ]
+      },
+      "outgoing": {
+        "rank": 20,
+        "rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          14,
+          15,
+          16,
+          20,
+          21,
+          22,
+          24,
+          26,
+          28,
+          30,
+          31,
+          38,
+          39,
+          47
+        ],
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "determinant": 617648,
+        "minor_sha256": "ee729c6abed2fdbda398a540aee4774ce6547b0fdc9c429f9bc2bab424b8af9e",
+        "frames": [
+          {
+            "degree": 2,
+            "k": 4,
+            "points": 4,
+            "seed": 2876181,
+            "words": 816
+          },
+          {
+            "degree": 2,
+            "k": 4,
+            "points": 3,
+            "seed": 2876929,
+            "words": 816
+          }
+        ]
+      },
+      "cohomology_upper": 0
+    },
+    {
+      "weight": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "length": 6,
+      "dimensions_by_fermions": {
+        "3": 21,
+        "5": 9
+      },
+      "incoming": {
+        "rank": 17,
+        "rows": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          9,
+          11,
+          12,
+          14,
+          15,
+          16,
+          19,
+          20,
+          21,
+          24,
+          27,
+          31
+        ],
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "determinant": 261821,
+        "minor_sha256": "4b08fa87261de6bb5367dbf556a79fece8284c386bf0db68ab73b7a1f1d35ecd",
+        "frames": [
+          {
+            "degree": 3,
+            "k": 5,
+            "points": 4,
+            "seed": 1046426,
+            "words": 486
+          },
+          {
+            "degree": 5,
+            "k": 7,
+            "points": 2,
+            "seed": 1046700,
+            "words": 81
+          }
+        ]
+      },
+      "outgoing": {
+        "rank": 11,
+        "rows": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          7,
+          12,
+          17,
+          19,
+          22,
+          31
+        ],
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "determinant": 20967,
+        "minor_sha256": "1bc954f5087988b4bf5cf6cf63fc8b646e35a600d23d02ef12e98cc2e3dd2a60",
+        "frames": [
+          {
+            "degree": 4,
+            "k": 6,
+            "points": 2,
+            "seed": 2876462,
+            "words": 164
+          }
+        ]
+      },
+      "cohomology_upper": 2
+    },
+    {
+      "weight": [
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "length": 5,
+      "dimensions_by_fermions": {
+        "5": 3
+      },
+      "incoming": {
+        "rank": 0,
+        "frames": []
+      },
+      "outgoing": {
+        "rank": 3,
+        "rows": [
+          0,
+          1,
+          2
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "determinant": 370279,
+        "minor_sha256": "3083b8d4c9e9527b7b16c997575d20424aaf872ca25586cf703f8c9e7de98eed",
+        "frames": [
+          {
+            "degree": 6,
+            "k": 8,
+            "points": 1,
+            "seed": 2876743,
+            "words": 6
+          }
+        ]
+      },
+      "cohomology_upper": 0
+    }
+  ],
+  "exact_current_product_minor": {
+    "rows": [
+      [
+        -1728,
+        0
+      ],
+      [
+        432,
+        15552
+      ]
+    ],
+    "determinant": -26873856
+  }
+}
