@@ -18,11 +18,12 @@ from unitary_trace_weights import algebra
 
 
 @lru_cache(None)
-def factor(spec, ordinary_diagonal=False):
+def factor(spec, ordinary_diagonal=False, group="SU3"):
     traces = trace_factor(spec, unitary=True)
     length = sum(spec[:5])
-    if length not in (2, 3):
-        raise ValueError("expected a quadratic or cubic single graviton")
+    degrees = {"SU3": (2, 3), "G2": (2, 6)}
+    if group not in degrees or length not in degrees[group]:
+        raise ValueError("expected a primitive scalar degree for the specified group")
     differential = Counter()
     diagonal = Counter()
     for word, c in traces.items():
@@ -42,6 +43,9 @@ def factor(spec, ordinary_diagonal=False):
         for colours in product(range(2), repeat=length):
             coefficient = (int(not any(colours)) + int(all(colours)) + (-1)**length
                            if ordinary_diagonal else 3*int((length-2*sum(colours)) % 3 == 0))
+            # The G2 representation in dimension seven restricts to 3 + 3* + 1.
+            if group == "G2":
+                coefficient *= 1 + (-1)**length
             if not coefficient:
                 continue
             left = tuple(j for j,k in zip(word,colours) if k == 0)
@@ -53,12 +57,12 @@ def factor(spec, ordinary_diagonal=False):
 
 
 @lru_cache(maxsize=450)
-def labelled(factors, ordinary_diagonal=False):
+def labelled(factors, ordinary_diagonal=False, group="SU3"):
     if not factors:
         return {((), ()): 1}
     result = Counter()
-    for (left, right), old in labelled(factors[:-1],ordinary_diagonal).items():
-        for (a,b), n in factor(factors[-1],ordinary_diagonal).items():
+    for (left, right), old in labelled(factors[:-1],ordinary_diagonal,group).items():
+        for (a,b), n in factor(factors[-1],ordinary_diagonal,group).items():
             sl, lword = ordered(left+a, odd_jet)
             sr, rword = ordered(right+b, odd_jet)
             if sl and sr:
@@ -66,16 +70,23 @@ def labelled(factors, ordinary_diagonal=False):
     return clean(result)
 
 
-def products_at_length(weight, length, trials):
+def products_at_length(weight, length, trials, group="SU3"):
+    if group not in ("SU3", "G2"):
+        raise ValueError("unsupported colour group")
+    if group == "G2" and length % 2:
+        return dict(length=length, rational_product_rank=0, inputs=[], minor=None)
+    # At even length the central inversion in the G2 Weyl group acts trivially.
     maps, _, highest_dim = quotient(weight,length,colour_group="SU3")
     chosen, pivots = [], {}
     if highest_dim:
-        families = all_products(3,(0,0,*weight),length,include_odd_powers=True)
-        rows = [row for family in families.values() for row in family]
+        maximum = 6 if group == "G2" else 3
+        families = all_products(maximum,(0,0,*weight),length,include_odd_powers=group=="SU3")
+        rows = [row for family in families.values() for row in family
+                if group != "G2" or all(sum(g[:5]) in (2,6) and factor_polynomial(g) for g in row)]
         random.Random(871173+length).shuffle(rows)
         for row in rows[:trials]:
             image = Counter()
-            for two_slots,n in labelled(row).items():
+            for two_slots,n in labelled(row,group=group).items():
                 sign, folded = ordered(two_slots,odd_slot)
                 if sign:
                     for j,v in maps.get(folded, ()):
@@ -98,7 +109,7 @@ def products_at_length(weight, length, trials):
             if len(chosen) == highest_dim:
                 break
     # The modular search only chooses inputs. Each retained rank is certified in Q.
-    minor = witness([highest(labelled(row),weight) for row in chosen]) if chosen else None
+    minor = witness([highest(labelled(row,group=group),weight) for row in chosen]) if chosen else None
     return dict(length=length, rational_product_rank=len(chosen), inputs=chosen, minor=minor)
 
 

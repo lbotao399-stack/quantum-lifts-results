@@ -1,0 +1,117 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 4,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0,
+    "index_forced_BMN_generators": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 10,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 14,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 3,
+    "additional_G2_odd_BMN_generators": 1,
+    "candidate_G2_generators_for_level_36_singlet": [
+      {
+        "level": 32,
+        "weight": [
+          6,
+          6,
+          4
+        ]
+      },
+      {
+        "level": 36,
+        "weight": [
+          6,
+          6,
+          6
+        ]
+      }
+    ]
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_exceptional_scalar.json",
+  "phase": "Four Cartan-detected exceptional two-scalar cores, SO(8) triality and the level-30 G2 source",
+  "evidence": [
+    "algorithms/dual_singlets_20261118/bmn_primary/exceptional_scalar_pairs.md",
+    "algorithms/dual_singlets_20261118/bmn_primary/exceptional_pair_indices.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/exceptional_scalar_pairs_1000003.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/exceptional_scalar_pairs_1000033.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/exceptional_weyl_classes.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/5691423/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/5691483/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/7658707/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/verify_triality_and_sources.py"
+  ],
+  "literature_overlap": {
+    "SO8_level18_triality_multiplet": "Miao and Tang, arXiv:2611.23173v1, submitted November 17, 2026. Included in the campaign audit count. Public overlap for the classical pair and its perturbative protection.",
+    "exceptional_two_scalar_multiplicities": "Bonetti, Meneghelli and Rastelli, arXiv:1810.03612, equations (B.4e)-(B.4h) give all four degrees and spins. Hunziker, Classical invariant theory for finite reflection groups, section 5 gives an explicit F4 Cartan invariant at bidegree (4,4)."
+  },
+  "excluded_lifts": {
+    "F4_level18_scalar": "All perturbative orders by the Taylor grading. Both full-letter incoming source directions are spanned by exact current products, and the physical outgoing cochains vanish. The nonperturbative conclusion uses the exact-current and primary-product input.",
+    "F4_fifth_gaugino_power_d2": "The selected length-eleven BMN source at level 24 has rational Q0 cohomology 141-80-61=0. The physical conclusion uses the filtered superconformal selection rule.",
+    "exceptional_two_scalar_cores": "Nonzero functions on the exact reduced Higgs branch have protected completions.",
+    "G2_weight_654_odd": "All five nonempty odd-length classical cohomologies vanish over Q."
+  },
+  "explicit_new_representatives": [
+    {
+      "group": "F4",
+      "level": 16,
+      "flavour_partition": [
+        4,
+        4,
+        0
+      ],
+      "scalar_length": 8
+    },
+    {
+      "group": "E6",
+      "level": 16,
+      "flavour_partition": [
+        4,
+        4,
+        0
+      ],
+      "scalar_length": 8
+    },
+    {
+      "group": "E7",
+      "level": 20,
+      "flavour_partition": [
+        6,
+        4,
+        0
+      ],
+      "scalar_length": 10
+    },
+    {
+      "group": "E8",
+      "level": 24,
+      "flavour_partition": [
+        6,
+        6,
+        0
+      ],
+      "scalar_length": 12
+    }
+  ]
+}

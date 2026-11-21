@@ -101,3 +101,27 @@ For one axis with no second jet, its cohomology is the exterior algebra of the 1
 If an axis has weight four, at least one of its slots must belong to a letter of degree at least two. If it has weight five or greater, at least two slots must do so. Otherwise that axis has at least four pure first jets, no pure second jet, and zero cohomology in the tensor product. A letter of degree $k\ge2$ carries $k\le2(k-1)$ such slots. The weight $(6,5,4)$ occurs in the Schur diagram $(6,6,3)$ by dominance. It requires at least $2+2+1=5$ slots in higher jets, hence Taylor degree minus letter length at least three. At source length 15 the third target has Taylor degree 15 and length 13, with excess $15-13=2$. Its selected Schur component therefore vanishes in classical cohomology. Under filtered Taylor equivariance the remaining source lengths in the level-36 singlet are $11,13$ for $d_3$ and $11,13,15$ for $d_2$. The inference about the physical page uses the same Ward hypothesis as the target table above. [Schur character](../b2_schur_complex.py) · [Selected diagrams and bounds](g2_exterior_degree4.json.gz)
 
 The $F_4$ index at level 18 is realized explicitly. The scalar generator, full-letter partner calculation and level-24 exceptional source are given in the [Albert-algebra calculation](f4_scalar/README.md).
+
+## Two remaining G2 weights
+
+At weight $(6,5,4)$ the table now exhausts every odd letter length. The rank lower bounds add to the independent character dimension at each length. Nilpotence of the classical supercharge $Q_0$ gives equality over the rationals.
+
+| Length | Dimension | Incoming rank | Outgoing rank |
+|---:|---:|---:|---:|
+| 7 | 159 | 9 | 150 |
+| 9 | 5038 | 1109 | 3929 |
+| 11 | 15608 | 7487 | 8121 |
+| 13 | 6777 | 5065 | 1712 |
+| 15 | 230 | 230 | 0 |
+
+Thus the odd generator responsible for the primary index $-1$ at $(6,6,6)$ can originate at $(6,6,4)$ with length 11 or 13, or at $(6,6,6)$ with length 11, 13 or 15. In the former case the level-four quadratic dressing into the level-36 primary adds two letters. For the latter weight, length 15 already has zero third-order target under filtered Taylor equivariance. [Length eleven](5691483/chain_6_5_4_11_11.json) · [Length thirteen](5691423/chain_6_5_4_13_13.json) · [Receipt and character replay](verify_triality_and_sources.py)
+
+For $SO(8)$, A6 job 7658707 integrated the identity, transposition and three-cycle triality traces. Write these signed indices as $I_e,I_{(12)},I_{(123)}$ in this order. Multiplicities in the trivial, sign and two-dimensional representations of the permutation group $S_3$ are
+$$
+\frac{I_e+3I_{(12)}+2I_{(123)}}6,\qquad
+\frac{I_e-3I_{(12)}+2I_{(123)}}6,\qquad
+\frac{I_e-I_{(123)}}3.
+$$
+All three are nonnegative integers at all 3571 partitions of level at most 144 with first part at most 28 and third part at least two. At $(3,3,3)$ the traces $(2,0,-1)$ give $(0,0,1)$, the known triality doublet. Each full trace uses nine primes with integer reconstruction modulus greater than twice the absolute coefficient bound. An index of either sign permits cancellation between opposite letter lengths. [Integer traces](7658707/receipt.json) · [Folded torus integrand](torus_index.cpp) · [Triality doublet in Miao and Tang](https://arxiv.org/abs/2611.23173)
+
+The four two-scalar exceptional BMN cores, the two-variable index calculation and their relation to the previously published Higgs-branch multiplicities are given in the [exceptional scalar calculation](exceptional_scalar_pairs.md).

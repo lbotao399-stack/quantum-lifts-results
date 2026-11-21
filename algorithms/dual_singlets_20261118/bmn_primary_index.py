@@ -68,6 +68,14 @@ def colour(cycles, group):
     if group in ("F4", "B4"):
         from f4_singlet_characters import decomposition, ZERO
         return (decomposition(group,cycles).get(ZERO,0),)
+    if group == "E6":
+        from bmn_primary.exceptional_trace import e6_traces
+        return e6_traces(cycles)
+    if group in ("E7","E8"):
+        from bmn_primary.exceptional_trace import invariant_trace
+        return (invariant_trace(group,cycles),)
+    if group != "SU(3)":
+        raise ValueError(f"Unsupported gauge group {group}")
     from unitary_characters import adjoint_traces
     trace, twisted = adjoint_traces(tuple(reversed(cycles)), 3)
     if (trace-twisted) % 2:
@@ -103,7 +111,7 @@ def cochains(maximum, group):
     rows = {}
     for length in range(maximum+1):
         scale = factorial(length)
-        accumulators = [defaultdict(int) for _ in range(2 if group == "SU(3)" else 1)]
+        accumulators = [defaultdict(int) for _ in range(2 if group in ("SU(3)","E6") else 1)]
         for cycles in partitions(length):
             coefficients = colour(cycles,group)
             for acc, multiplicity in zip(accumulators,coefficients):
@@ -136,7 +144,7 @@ def cochains(maximum, group):
 
 def primary_indices(maximum, group):
     shapes, levels = cochains(maximum,group)
-    parities = 2 if group == "SU(3)" else 1
+    parities = 2 if group in ("SU(3)","E6") else 1
     rows = []
     for shape in shapes:
         a,b,c = shape
@@ -167,7 +175,7 @@ def primary_indices(maximum, group):
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--group",choices=("USp(4)","G2","SU(3)"),required=True)
+    p.add_argument("--group",choices=("USp(4)","G2","SU(3)","F4","B4","E6","E7","E8"),required=True)
     p.add_argument("--maximum-level",type=int,required=True)
     p.add_argument("--out",type=Path,required=True)
     args = p.parse_args()

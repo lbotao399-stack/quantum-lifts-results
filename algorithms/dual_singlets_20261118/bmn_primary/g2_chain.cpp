@@ -121,6 +121,10 @@ int main(int argc, char **argv) {
     if (probe_last && y == hi+1) terminal_evaluations(sec,curr,y,prev.dim-incoming);
     else build_lev(sec,curr,y);
     size_t outgoing = prev.dim && curr.dim ? rank_of(q0_rows(sec,prev,curr),prev.dim) : 0;
+    if (y == lo) {
+      fprintf(stderr,"Q0 %d -> %d: rank lower bound %zu at prime %llu, seed %llu\n",
+              y-1, y, outgoing, (unsigned long long)P, (unsigned long long)seed);
+    }
     if (y > lo) {
       if (outgoing+incoming > prev.dim) throw std::logic_error("incompatible adjacent Q0 ranks");
       blocks.push_back({size_t(y-1),prev.dim,incoming,outgoing});

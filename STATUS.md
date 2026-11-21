@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## Four exceptional scalar representatives and the level-30 vanishing, November 21, 2026
+
+The four exceptional two-scalar sectors give explicit indecomposable rational BMN representatives. The product ranks at their Cartan bidegrees are $7,7,13,11$ for $F_4,E_6,E_7,E_8$. Adding one adjoint-bracket polynomial gives ranks $8,8,14,12$. The four Higgs-branch multiplicities were published in equations (B.4e)–(B.4h) of Bonetti, Meneghelli and Rastelli. [Polynomials, determinants and prior work](algorithms/dual_singlets_20261118/bmn_primary/exceptional_scalar_pairs.md)
+
+At $G_2$ weight $(6,5,4)$ all five odd classical blocks vanish, including $15608-7487-8121=0$ at length eleven. The odd generator accounting for the level-36 index can originate at level 32 or 36. At $SO(8)$ the three signed triality components are nonnegative in 3571 partitions through level 144 with first part at most 28 and third part at least two. [Source ranks and triality characters](algorithms/dual_singlets_20261118/bmn_primary/README.md#two-remaining-g2-weights)
+
+New $d_1$ pairings **0** (15 total). New fortuitous BMN generators under the campaign definition **4 explicit** (at least 14 total, 10 explicit). Verified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_exceptional_pairs.json)
+
 ## An explicit exceptional scalar and the level-24 second-order source, November 21, 2026
 
 At $F_4$ level 18, the nine-scalar singlet has an explicit indecomposable rational representative. Two independently evaluated augmented determinants are 616044 and 118547 modulo 1000003 and 1000033. The only two possible incoming full-letter classes are spanned by exact current products. At level 24 the selected second-order source for the fifth gaugino power has rational cohomology $141-80-61=0$. [Scalar, minors and physical partners](algorithms/dual_singlets_20261118/bmn_primary/f4_scalar/README.md)

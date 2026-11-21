@@ -11,7 +11,8 @@ import subprocess
 # Lie algebra dimension, maximum root coordinate, sum of absolute positive root coordinates.
 ROOTS = {"A2": (8,2,4), "C2": (10,2,4), "G2": (14,2,6),
          "B3": (21,1,5), "C3": (21,2,6), "B4": (36,1,7),
-         "C4": (36,2,8), "D4": (28,1,6), "F4": (52,2,22)}
+         "C4": (36,2,8), "D4": (28,1,6), "F4": (52,2,22),
+         "D4_2": (28,2,6), "D4_3": (28,3,10), "E6_2": (78,2,22)}
 
 
 def prime_moduli(grid, bound):

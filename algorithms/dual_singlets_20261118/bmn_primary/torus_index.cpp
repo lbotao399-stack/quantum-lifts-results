@@ -33,9 +33,24 @@ struct RootSystem {
     std::vector<Weight> positive;
     int rank, weyl_order;
     bool signed_permutations;
+    std::vector<int> cycles;
+    std::vector<int> zero_cycles;
 };
 
 RootSystem roots(const std::string &name) {
+    if (name == "D4_2" || name == "E6_2") {
+        RootSystem group=roots(name=="D4_2" ? "C3" : "F4");
+        for (const Weight &r : group.positive) {
+            int active=0;
+            for (int n : r) active+=n!=0;
+            bool doubled=name=="D4_2" ? active==1 : active==2;
+            group.cycles.push_back(doubled ? 2 : 1);
+        }
+        group.zero_cycles=name=="D4_2" ? std::vector<int>{1,1,2} : std::vector<int>{1,1,2,2};
+        return group;
+    }
+    if (name == "D4_3")
+        return {{{3,0},{0,3},{3,3},{1,-1},{2,1},{1,2}},2,12,false,{3,3,3,1,1,1},{1,3}};
     if (name == "G2") return {{{1,0},{0,1},{1,1},{1,-1},{2,1},{1,2}}, 2,12,false};
     if (name == "A2") return {{{1,-1},{2,1},{1,2}}, 2,6,false};
     const std::map<std::string,int> orders{
@@ -66,13 +81,15 @@ std::map<std::vector<int>, Wide> torus(const RootSystem &group, int grid) {
     std::map<std::vector<int>, Wide> counts;
     auto contribute = [&](const Weight &point, int count) {
         std::vector<int> powers;
-        for (const auto &r : group.positive) {
+        for (size_t i=0;i<group.positive.size();++i) {
+            const auto &r=group.positive[i];
             int k=0;
             for (int i=0; i<group.rank; ++i) k+=r[i]*point[i];
             k = ((k % grid) + grid) % grid;
             if (k == 0) return; // The Weyl denominator vanishes.
-            powers.push_back(k);
-            powers.push_back(grid-k);
+            int marker=group.cycles.empty() ? 0 : grid*(group.cycles[i]-1);
+            powers.push_back(marker+k);
+            powers.push_back(marker+grid-k);
         }
         std::sort(powers.begin(), powers.end());
         counts[powers]+=count;
@@ -162,16 +179,21 @@ int main(int argc, char **argv) {
     const auto points = torus(group,grid);
     for (const auto &[exponents, count] : points) {
         Residue weyl = count % f.p;
-        std::vector<Residue> eigenvalues(group.rank,1);
-        for (int k : exponents) {
-            weyl = f.multiply(weyl, f.subtract(1,unity[k]));
-            eigenvalues.push_back(unity[k]);
-        }
         std::vector<Residue> exterior{1};
-        for (Residue v : eigenvalues) {
-            exterior.push_back(0);
-            for (int j = int(exterior.size())-1; j>0; --j)
-                exterior[j] = f.subtract(exterior[j], f.multiply(v,exterior[j-1]));
+        auto add_factor=[&](Residue v,int cycle) {
+            exterior.resize(exterior.size()+cycle,0);
+            for (int j=int(exterior.size())-1; j>=cycle; --j)
+                exterior[j]=f.subtract(exterior[j],f.multiply(v,exterior[j-cycle]));
+        };
+        if (group.zero_cycles.empty()) {
+            for (int i=0;i<group.rank;++i) add_factor(1,1);
+        } else {
+            for (int cycle : group.zero_cycles) add_factor(1,cycle);
+        }
+        for (int code : exponents) {
+            Residue v=unity[code%grid];
+            weyl = f.multiply(weyl, f.subtract(1,v));
+            add_factor(v,1+code/grid);
         }
         std::vector<Residue> symmetric(side), axis(side);
         symmetric[0] = axis[0] = 1;
