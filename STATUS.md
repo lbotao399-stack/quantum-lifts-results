@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## The fermionic $SU(3)$ tower, November 21, 2026
+
+The two fermionic $SU(3)$ BMN tower seeds at levels 30 and 32 survive every perturbative order under filtered Taylor equivariance. The published first-supercharge images are classical boundaries. The selected second-order targets have rational dimensions 18 and 28 and inject into Cartan polynomials. At order three the shifted flavour degrees end in $(-1,-1)$ for both seeds. The quantum product gives closed completions of their entire constructed $F_1$ tower. [First-order computation, §4.2](https://arxiv.org/html/2610.20340v2#S4.SS2) · [Rank certificates and tower argument](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md#perturbative-survival-of-the-two-fermionic-tower-seeds)
+
+New $d_1$ pairings **0** (15 total). New fortuitous BMN generators **0** (11 explicit families, at least 15 including index-forced families). Verified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_su3_F1.json)
+
 ## The full odd symplectic column and exceptional subgroup restrictions, November 21, 2026
 
 The $USp(4)$ BMN weight $(6,5,5)$ has zero classical cohomology at all five odd letter lengths. The last two equalities are $13616-6240-7376=0$ and $8431-5670-2761=0$. This excludes every outgoing order from those odd lengths. Of the five remaining single-additional-generator explanations of the symplectic index, three have a second-order Taylor partner and none has a third-order partner. [Rational ranks and target restrictions](algorithms/dual_singlets_20261118/bmn_primary/symplectic_655/README.md)

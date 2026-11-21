@@ -27,6 +27,20 @@ $$
 
 in both fields of 2,147,483,647 and 1,000,033 elements. A8 jobs 5684039 and 5684216 used different seeds. All five native weights give identical adjacent ranks at the two primes. The source has even charge conjugation. The first equation over the full three-colour space is $Q_0\mathcal O_1=-Q_1\mathcal O_0$, where $\mathcal O_1$ is the first correction. On a solution the second obstruction is the class of $Q_2\mathcal O_0+Q_1\mathcal O_1$ after quotienting classical boundaries and first-differential images. [First prime](second_target/) · [Independent prime](second_target_prime1000033/) · [Taylor decomposition](../README.md)
 
+## Perturbative survival of the two fermionic tower seeds
+
+Section 4.2 of arXiv:2610.20340v2 reports the unrestricted calculation for the two $SU(3)$ operators $\mathcal O_{30}^{(3)}$ and $\mathcal O_{32}^{(3)}$. For each, the image under the first correction $Q_1$ is a boundary for the classical supercharge $Q_0$. Thus their first supercharge obstruction $d_1$ vanishes. The same paper proves first-order protection for their scalar dressings. The level-32 operator here is the even projection of the published second seed. Charge conjugation commutes with both supercharges, so projecting a primitive gives a primitive for this representative. Our unrestricted polynomial reconstruction remains partial. [Published first-order computation, §4.2](https://arxiv.org/html/2610.20340v2#S4.SS2) · [Seed construction, §2](https://arxiv.org/html/2412.08695v2#S2)
+
+Under filtered Taylor equivariance, $d_2$ on the level-32 seed takes values in the even length-ten representation $(5,5,1,1,1,1)$. Its rational classical dimension and the rank of its restriction to commuting Cartan letters are
+
+$$
+6828-4185-2615=28,\qquad 155-270+221-97+19=28.
+$$
+
+Every perturbative differential has zero Cartan restriction by the discriminant argument. Injectivity therefore gives $d_2=0$. At level 30 the corresponding two counts are $3683-2174-1491=18$ and $110-198+163-72+15=18$. From order three onward a polynomial Taylor partner would require a negative flavour degree. At third order the three shifted degrees are $(3,-1,-1)$ at level 32 and $(2,-1,-1)$ at level 30. Each further order decreases all three entries by one. An incoming order at either seed would require a negative spacetime derivative degree. This proves perturbative survival of both seeds under the stated selection. [Cartan minors](../cartan_products/README.md) · [Discriminant argument and higher-order degrees](../../../perturbative_cartan_targets.md#three-second-order-target-components)
+
+The published $F_1$ tower consists of nonzero symmetric flavour projections of products of these seeds with $u_2$ and $u_3$, the quadratic and cubic scalar gravitons. Take closed formal completions of the seed and graviton factors, form the quantum product and project to the same flavour representation. The product theorem gives a closed completion with the published classical leading term. Every tower member has zero spacetime derivative degrees, so the same incoming-degree exclusion applies. This removes the constructed $F_1$ tower from the perturbative search under filtered Taylor equivariance. The separate level-34 source of flavour $(8,5,4)$ and the nonperturbative action are independent questions. [Tower construction](https://arxiv.org/html/2412.08695v2#S2) · [Quantum product](https://github.com/lbotao399-stack/All-loop-holomorphic-kernels/blob/dcab65c7d758aef018b61e0b71ce398dca20c4d4/main.tex#L3495)
+
 ## Three scalar restrictions of the first equation
 
 Set one scalar to $x\operatorname{diag}(1,1,-2)$ and put every other Taylor letter in the upper traceless two-by-two block. Here $x$ is its commuting scalar coordinate. The classical commutators with the chosen scalar vanish. The three choices of scalar give simultaneous necessary equations for the same $SU(3)$ correction. The sign of the archived $Q_1\mathcal O_0$ is reversed before solving.
