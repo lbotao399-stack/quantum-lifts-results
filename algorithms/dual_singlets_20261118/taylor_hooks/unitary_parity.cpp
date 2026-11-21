@@ -55,7 +55,7 @@ static void print_indices(const std::vector<size_t> &indices) {
 
 // The determinant refers to the selected rows in pivot order and columns in
 // increasing order. Row swaps affect this recorded order, hence no extra sign.
-static void print_minor(Mtx matrix, size_t width) {
+static void print_minor(Mtx matrix, size_t width, bool exploit_zeros = false) {
   std::vector<size_t> ids(matrix.size()), rows, cols;
   std::iota(ids.begin(), ids.end(), 0);
   u64 determinant = 1;
@@ -69,12 +69,20 @@ static void print_minor(Mtx matrix, size_t width) {
     cols.push_back(j);
     const u64 pivot = matrix[i][j], inverse = invm(pivot);
     determinant = mulm(determinant, pivot);
+    std::vector<size_t> nonzero;
+    if (exploit_zeros) {
+      for (size_t c = j; c < width; ++c) if (matrix[i][c]) nonzero.push_back(c);
+    }
+    const bool sparse = exploit_zeros && nonzero.size()*2 < width-j;
     par_for(matrix.size() - i - 1, [&](size_t offset) {
       auto &row = matrix[i+1+offset];
       if (!row[j]) return;
       const u64 scale = negm(mulm(row[j], inverse));
-      for (size_t c = j; c < width; ++c)
-        row[c] = static_cast<u32>(red(row[c] + scale * matrix[i][c]));
+      if (sparse) {
+        for (size_t c : nonzero) row[c] = static_cast<u32>(red(row[c] + scale * matrix[i][c]));
+      } else {
+        for (size_t c = j; c < width; ++c) row[c] = static_cast<u32>(red(row[c] + scale * matrix[i][c]));
+      }
     });
     std::vector<u32>().swap(matrix[i]);
   }
@@ -85,6 +93,7 @@ static void print_minor(Mtx matrix, size_t width) {
   std::cout << '}';
 }
 
+#ifndef N4_PARITY_HELPERS_ONLY
 int main(int argc, char **argv) {
   const bool image_only = argc == 11 && std::string(argv[10]) == "image";
   const bool complete_image = argc == 11 && std::string(argv[10]) == "complete-image";
@@ -149,3 +158,4 @@ int main(int argc, char **argv) {
             << "}\n";
   return 0;
 }
+#endif

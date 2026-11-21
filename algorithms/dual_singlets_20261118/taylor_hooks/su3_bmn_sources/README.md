@@ -44,6 +44,18 @@ These six classes exhaust the eleven-letter BMN cohomology of weight $(8,5,5)$. 
 
 Under filtered superconformal equivariance the third-order Taylor diagrams have rows $(6,6,1^3)$, $(6,6,1^4)$ and $(6,6,1^5)$ in increasing order of level. Here $1^k$ means $k$ rows of one box. Determining a nonzero third obstruction still requires a representative surviving the two lower orders and a nonzero pairing after quotienting both lower correction freedoms.
 
+## Third-order targets of the long level-36 sources
+
+The BMN flavour weight is $(8,5,5)$. Under filtered Taylor equivariance the third supercharge obstruction takes a source of length $Y$ into the component of length $Y-2$ with Young diagram $(6,6,1,1,1)$. The entries give the cochain dimension minus its incoming and outgoing classical ranks, in even and odd charge conjugation.
+
+| Source length | Target length | Even | Odd |
+|---:|---:|---:|---:|
+| 15 | 13 | $888-815-73=0$ | $805-733-72=0$ |
+| 16 | 14 | $74-73-1=0$ | $78-72-6=0$ |
+| 17 | 15 | $1-1-0=0$ | $6-6-0=0$ |
+
+The adjacent maps compose to zero. The 12 complete weight-space maps at prime $2147483647$ give zero cohomology in each indicated Schur and colour component. The Schur projections have denominators dividing $15!$, invertible at this prime, so each rational target also vanishes. A8 job 5685111 reused ten maps from 5683697 and completed the other two. [Rank records and provenance](third_target_long/receipt.json) · [Dimensions](third_target_long/resolved.json) · [Schur replay](../../su3_third_hook.py)
+
 From the repository root, the calculation at level 36 can be replayed with
 
 ```sh

@@ -1,0 +1,83 @@
+{
+  "group": "SU(3)",
+  "source_weight": [
+    8,
+    5,
+    5
+  ],
+  "order": 3,
+  "partition": [
+    6,
+    6,
+    1,
+    1,
+    1
+  ],
+  "prime": 2147483647,
+  "parities": [
+    "even",
+    "odd"
+  ],
+  "blocks": [
+    {
+      "target_length": 13,
+      "source_length": 15,
+      "cochains": [
+        888,
+        805
+      ],
+      "incoming": [
+        815,
+        733
+      ],
+      "outgoing": [
+        73,
+        72
+      ],
+      "cohomology_mod_prime": [
+        0,
+        0
+      ]
+    },
+    {
+      "target_length": 14,
+      "source_length": 16,
+      "cochains": [
+        74,
+        78
+      ],
+      "incoming": [
+        73,
+        72
+      ],
+      "outgoing": [
+        1,
+        6
+      ],
+      "cohomology_mod_prime": [
+        0,
+        0
+      ]
+    },
+    {
+      "target_length": 15,
+      "source_length": 17,
+      "cochains": [
+        1,
+        6
+      ],
+      "incoming": [
+        1,
+        6
+      ],
+      "outgoing": [
+        0,
+        0
+      ],
+      "cohomology_mod_prime": [
+        0,
+        0
+      ]
+    }
+  ]
+}

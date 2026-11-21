@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## Two scalar-wall primitives and six third-order targets, November 21, 2026
+
+At $SU(3)$ levels 32 and 34 the rational centralizer corrections contain 2552 and 11283 trace terms. All 293 and 500 polynomial residuals vanish there. The classical contraction of the 60 off-block entries extends both solutions to arbitrary remaining matrices for $S=x\operatorname{diag}(1,1,-2)$ with $x\ne0$. The two first-order targets on the pure two-colour subalgebra have dimensions $639-457-182=0$ and $2179-1381-798=0$. On unrestricted three-colour matrices both first obstructions remain open. [Corrections and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/README.md)
+
+At level 36 and weight $(8,5,5)$ both third-order target parities vanish at each source length 15, 16 and 17 under filtered Taylor equivariance. [Six dimension checks](algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/README.md#third-order-targets-of-the-long-level-36-sources)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_scalar_wall.json)
+
 ## All-orders Cartan restriction and the five-scalar equations, November 21, 2026
 
 Multiplying the page obstruction by the scalar discriminant and using the quantum product proves that its Cartan restriction is zero at every perturbative order. The proof covers the classical trace sectors and extends to orthogonal Pfaffians and the exceptional groups $G_2$ and $F_4$. Under filtered Taylor equivariance the incoming $d_2$ ranks for the three previously saturated targets are $18-18=0$, $28-28=0$ and $61-61=0$. [Proof, root determinants and scope](algorithms/perturbative_cartan_targets.md)

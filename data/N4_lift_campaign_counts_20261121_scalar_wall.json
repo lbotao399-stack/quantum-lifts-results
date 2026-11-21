@@ -1,0 +1,144 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "phase": "First equations on the semisimple scalar wall and third-order targets at long source lengths",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_discriminant.json",
+  "sources": {
+    "32": {
+      "centralizer_correction_terms": 2552,
+      "polynomial_contents": 293,
+      "nonzero_contents": 0,
+      "off_block_pairs": 60,
+      "pure_su2_cochains": 639,
+      "pure_su2_incoming": 457,
+      "pure_su2_outgoing": 182,
+      "global_first_obstruction": "open"
+    },
+    "34": {
+      "centralizer_correction_terms": 11283,
+      "polynomial_contents": 500,
+      "nonzero_contents": 0,
+      "off_block_pairs": 60,
+      "pure_su2_cochains": 2179,
+      "pure_su2_incoming": 1381,
+      "pure_su2_outgoing": 798,
+      "global_first_obstruction": "open"
+    }
+  },
+  "third_targets": {
+    "group": "SU(3)",
+    "source_weight": [
+      8,
+      5,
+      5
+    ],
+    "order": 3,
+    "partition": [
+      6,
+      6,
+      1,
+      1,
+      1
+    ],
+    "prime": 2147483647,
+    "parities": [
+      "even",
+      "odd"
+    ],
+    "blocks": [
+      {
+        "target_length": 13,
+        "source_length": 15,
+        "cochains": [
+          888,
+          805
+        ],
+        "incoming": [
+          815,
+          733
+        ],
+        "outgoing": [
+          73,
+          72
+        ],
+        "cohomology_mod_prime": [
+          0,
+          0
+        ]
+      },
+      {
+        "target_length": 14,
+        "source_length": 16,
+        "cochains": [
+          74,
+          78
+        ],
+        "incoming": [
+          73,
+          72
+        ],
+        "outgoing": [
+          1,
+          6
+        ],
+        "cohomology_mod_prime": [
+          0,
+          0
+        ]
+      },
+      {
+        "target_length": 15,
+        "source_length": 17,
+        "cochains": [
+          1,
+          6
+        ],
+        "incoming": [
+          1,
+          6
+        ],
+        "outgoing": [
+          0,
+          0
+        ],
+        "cohomology_mod_prime": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/README.md",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/pure_su2/receipt.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/third_target_long/receipt.json"
+  ]
+}

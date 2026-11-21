@@ -1,0 +1,46 @@
+{
+  "mode": "complete_colour_image",
+  "gauge": "SU3",
+  "sector": [
+    0,
+    0,
+    0,
+    9,
+    6
+  ],
+  "flavour": [
+    0,
+    0
+  ],
+  "spin2": 3,
+  "j": 45,
+  "prime": 2147483647,
+  "seed": 1019847,
+  "length": 13,
+  "cochains": 75,
+  "target_evaluations": 4,
+  "even": {
+    "rank": 2,
+    "det": 1308641353,
+    "rows": [
+      0,
+      1
+    ],
+    "columns": [
+      0,
+      1
+    ]
+  },
+  "odd": {
+    "rank": 2,
+    "det": 1831195088,
+    "rows": [
+      0,
+      1
+    ],
+    "columns": [
+      0,
+      1
+    ]
+  }
+}
