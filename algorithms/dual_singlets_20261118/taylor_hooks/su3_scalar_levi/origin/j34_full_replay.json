@@ -1,0 +1,18 @@
+{
+  "level": 34,
+  "input_by_scalar_degree": {
+    "4": 87234,
+    "5": 342954,
+    "6": 87280
+  },
+  "through_scalar_degree": 4,
+  "rational_primitive_terms": 108565,
+  "classical_relations": 142,
+  "four_slot_trace_identities": 150,
+  "identity_polynomial_terms": 1338,
+  "remaining_by_scalar_degree": {
+    "5": 664246,
+    "6": 308273
+  },
+  "retained_residual": 0
+}
