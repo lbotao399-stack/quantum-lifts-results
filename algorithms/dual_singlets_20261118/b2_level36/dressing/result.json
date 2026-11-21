@@ -1,0 +1,64 @@
+{
+  "prime": 1000003,
+  "adjacent_minors": [
+    {
+      "job": "5682484",
+      "rank_lower": 4896,
+      "minor_residue": 250836,
+      "target_dimension": 13639
+    },
+    {
+      "job": "5682486",
+      "rank_lower": 8743,
+      "minor_residue": 838073,
+      "target_dimension": 16802
+    }
+  ],
+  "dressing_candidates": [
+    {
+      "spectator_degree": 2,
+      "weight": [
+        8,
+        4,
+        4
+      ],
+      "level": 32,
+      "length": 11,
+      "cochains": 13639,
+      "incoming": 4896,
+      "outgoing": 8743,
+      "rational_cohomology": 0
+    },
+    {
+      "spectator_degree": 4,
+      "weight": [
+        6,
+        4,
+        4
+      ],
+      "level": 28,
+      "length": 9,
+      "cochains": 3131,
+      "incoming": 943,
+      "outgoing": 2188,
+      "rational_cohomology": 0
+    },
+    {
+      "spectator_degree": 6,
+      "weight": [
+        4,
+        4,
+        4
+      ],
+      "level": 24,
+      "length": 7,
+      "cochains": 188,
+      "incoming": 34,
+      "outgoing": 154,
+      "rational_cohomology": 0
+    }
+  ],
+  "wall_relative_to_published_mixed_coefficient": "-1/1728",
+  "published_input": "Nonzero SU(4) mixed restriction, arXiv:2610.20340v2 Eq. (4.15)",
+  "independent_rational_USp4_level36_cycle": false
+}

@@ -26,6 +26,20 @@ On the symplectic long-root block the spectator eigenvalues are $(z,-z)$ and the
 
 In the rank-one cohomology through level 24 the sole odd-length highest weight is $\mathcal O_{24}^{(2)}$. In a product contributing to its wall coefficient, one factor must already give that class. Every remaining factor must give the identity times a spectator scalar polynomial. The spectator Weyl reflection requires even powers of $z$. The public $SO(5)=USp(4)$ ranks exhaust all 297 nonempty odd-length highest-weight blocks through level 28. Thus the only possible positive-degree dressing is a quadratic scalar multiplying an eleven-letter class at $(5;8,4,4)$, level 32. The highest weight is $[4,0]$ because four identical spectator scalars multiply the flavour singlet. Within the BMN sector, the three raising supercharges commute with extraction of the pure spectator scalar component. They annihilate a constant spectator background after its fermions and field strength are set to zero. A descendant contribution would require an odd-length active class below level 24. [Rank-one census](https://github.com/davidsd/fortuity-ai/blob/4256f207986029540060fb44dd494746828f65ce/data/su2/bmn_hw_cohomology_j44.json) · [Rank-two predecessor audit](odd_through_j28.json.gz)
 
+### The level-32 dressing is absent
+
+A product with nonzero threshold coefficient must contain the seven active letters in a single odd cohomology factor. All other factors contribute pure spectator scalars. A nontrivial irreducible flavour representation has zero projection onto the active threshold singlet unless its spectator coefficient supplies the corresponding symmetric scalar power. Thus a dressing that supplies two, four or six of the six spectator scalars requires precisely the following lower highest weights. The table gives the complete ranks of the two adjacent classical maps over the rationals.
+
+| Spectator degree supplied by the other factors | Lower level | Lower weight | Letters | Cochains | Incoming rank | Outgoing rank | Cohomology |
+|---:|---:|---|---:|---:|---:|---:|---:|
+| 2 | 32 | $(8,4,4)$ | 11 | 13639 | 4896 | 8743 | 0 |
+| 4 | 28 | $(6,4,4)$ | 9 | 3131 | 943 | 2188 | 0 |
+| 6 | 24 | $(4,4,4)$ | 7 | 188 | 34 | 154 | 0 |
+
+A8 jobs 5682484 and 5682486 give nonzero minor residues 250836 and 838073 modulo 1000003 at level 32. Both ranks over the rationals are at least their minor orders. Since the two maps compose to zero, their ranks sum to at most the dimension of the intervening cochains. The independent colour characters both give 13639, equal to $4896+8743$. The two lower rows follow from the archived $SO(5)$ census by the same dimension argument. [Rank records and receipts](dressing/jobs.json) · [Three rational dimensions](dressing/result.json) · [Verification](verify_dressing.py)
+
+The long-root threshold functional therefore vanishes on all products of lower positive-level BMN classes and on their raising descendants in this channel. On the restriction of the level-36 parent it has the nonzero relative coefficient $-1/1728$ from equation (4.15). With that published input, the class at $(2J;q_1,q_2,q_3)=(5;10,4,4)$, $Y=13$, supplies an independent BMN generator. The independent index proof below establishes existence by level 36. A standalone rational trace cycle for the level-36 source is still missing. [Published mixed coefficient](https://arxiv.org/html/2610.20340v2#S4.SS3) · [Restriction coefficient](wall_restriction.json)
+
 ## Independent rank bounds
 
 At $(10,4,4)$ the integer character gives 67,720 even-length and 67,698 odd-length cochains. Independent closed products contribute at least $3+19+2=24$ even-length classes. The total odd cohomology has dimension at least $24-(67720-67698)=2$. The nonzero minors in consecutive lengths have orders 768, 4,329 and 12,989. Consequently the individual classical dimensions at lengths 10, 11 and 12 are $771-768=3$, $5097-768-4329=0$ and $17337-4329-12989=19$. This lower bound of two covers the entire odd column. [Product determinants](rational_products.json) · [Length 10](length10.json.gz) · [Length 11](length11.json.gz) · [Length 12](length12.json.gz)
@@ -50,6 +64,7 @@ From the repository root the two character and restriction calculations use the 
 
 ```sh
 d=algorithms/dual_singlets_20261118
+python3 "$d/b2_level36/verify_dressing.py" | cmp - "$d/b2_level36/dressing/result.json"
 python3 "$d/b2_level36/wall_restriction.py" > /tmp/b2-wall.json
 cmp /tmp/b2-wall.json "$d/b2_level36/wall_restriction.json"
 python3 "$d/b2_schur_complex.py" --out /tmp/b2-schur.json

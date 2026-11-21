@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## The long-root restriction at $USp(4)$ level 36, November 21, 2026
+
+The only remaining lower scalar dressing has classical dimension $13639-4896-8743=0$ at level 32. At levels 28 and 24 the corresponding dimensions are $3131-943-2188=0$ and $188-34-154=0$. The restriction of the published $SU(4)$ parent has coefficient $-1/1728$ relative to its nonzero mixed component. These results locate an odd-length BMN generator at $(2J;q_1,q_2,q_3)=(5;10,4,4)$ on that published input. [Proof and verification](algorithms/dual_singlets_20261118/b2_level36/README.md#the-level-32-dressing-is-absent)
+
+New $d_1$ pairings **0**, total **15**. New generators with standalone rational certificates **0**, total **5**. New locations using the published parent **1**, total including that input **6**. Independent generator existence bound **at least 6**. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_wall.json)
+
 ## SO(7) level 26 and the symplectic Ward tests, November 21, 2026
 
 For the ten-letter $SO(7)$ BMN source at $(2J;q_1,q_2,q_3)=(3;5,4,4)$, A8 jobs 5681838 and 5682281 give $25329-12400=12929$ as the rational classical boundary rank. Appending the first variation gives rank 12930. This certifies one new first differential. [Source, ranks and replay](algorithms/dual_singlets_20261118/so7_level26/README.md)
