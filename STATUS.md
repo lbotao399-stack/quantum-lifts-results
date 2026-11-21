@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## The level-32 SU(3) source and its two direct images, November 21, 2026
+
+For the published eleven-letter BMN source at $(8,4,4)$, all 761,859 classical matrix coefficients vanish at three colours. Its first and second direct supercharge images have 331,201 and 31,347 formal trace terms. The possible even ten-letter second-order target has classical multiplicity 28 modulo 2,147,483,647. The full first-correction equation remains open. [Source, images, ranks and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_su3_level32.json)
+
 ## Four inherited $SU(3)$ classes at level 36, November 21, 2026
 
 At BMN weight $(8,5,5)$ the ten-letter rational dimensions at even and odd charge conjugation are $4287-704-3582=1$ and $4537-849-3687=1$. The odd class is the triply raised level-30 core. Its product with the scalar–fermion bilinear supplies an odd twelve-letter class. At eleven letters two independent even classes descend from the level-32 and level-34 operators. On the published quartic-scalar restriction the two-functionals determinant is $-65{,}478{,}821{,}990{,}400{,}000$. These four inherited classes realize the entire parity-index lower bound at this weight. [Trace words, calculations and A8 receipts](algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/README.md)

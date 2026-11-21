@@ -1,0 +1,44 @@
+{
+  "source_terms": 8640,
+  "quartic_scalar_coordinates": 117,
+  "core_coefficient": -1020600,
+  "descendant_terms": 82088,
+  "descendant_weight": [
+    8,
+    5,
+    5
+  ],
+  "descendant_length": 11,
+  "quartic_descendant": {
+    "active_sector": [
+      7,
+      4,
+      5,
+      5
+    ],
+    "active_coordinates": 368,
+    "predecessor_trace_words": 47,
+    "rational_boundary_rank": 14,
+    "rational_class_nonzero": true,
+    "pairing": "-163296000",
+    "functional": [
+      [
+        0,
+        239,
+        "1"
+      ]
+    ]
+  },
+  "mixed_active_coordinates": 1110,
+  "pairings": [
+    [
+      "-163296000",
+      "0"
+    ],
+    [
+      "816480000",
+      "400982400"
+    ]
+  ],
+  "determinant": "-65478821990400000"
+}

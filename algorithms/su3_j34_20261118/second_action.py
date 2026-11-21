@@ -22,7 +22,7 @@ BMN_SIGNS = (1, 1, 1, 1, -1, 1, -1)
 SOURCE_SHA = "673bbcbcf9bafba63b66dfab9a19c306178c5839269abe35da538505166b66c1"
 
 
-def read_source(path):
+def read_source(path, *, source_sha=SOURCE_SHA, terms=6270, sector=(6, 6, 16, 10, 8)):
     import su_trace_adapter_v1 as algebra
     from fortuity.bmn.words import QLET
     from fortuity.full.letters import Q_letter
@@ -36,7 +36,7 @@ def read_source(path):
         assert left == right
 
     raw = gzip.decompress(path.read_bytes())
-    assert hashlib.sha256(raw).hexdigest() == SOURCE_SHA
+    assert hashlib.sha256(raw).hexdigest() == source_sha
     packet = json.loads(raw)
     source = defaultdict(Fraction)
     for c, traces in packet["terms"]:
@@ -47,9 +47,9 @@ def read_source(path):
         word = tuple(tuple(BMN_LETTERS[label] for label in trace) for trace in traces)
         source[word] += sign * Fraction(c)
     result = algebra.canonical(source)
-    assert len(result) == packet["n_terms"] == 6270
+    assert len(result) == packet["n_terms"] == terms
     assert algebra.conjugate(result) == result
-    assert {algebra.fw.sector_of(w) for w in result} == {(6, 6, 16, 10, 8)}
+    assert {algebra.fw.sector_of(w) for w in result} == {sector}
     return result
 
 

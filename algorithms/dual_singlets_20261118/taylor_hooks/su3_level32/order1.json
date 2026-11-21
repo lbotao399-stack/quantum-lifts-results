@@ -1,0 +1,27 @@
+{
+  "group": "SU(3)",
+  "level": 32,
+  "order": 1,
+  "source_sha256": "897fbf27bced5562684f9537ed1bd9e1b8a352f7149cc3b99ddb22c89b6c823e",
+  "source_terms": 8640,
+  "direct_terms": 331201,
+  "output_length": 11,
+  "doubled_output_charges": [
+    4,
+    4,
+    16,
+    8,
+    8
+  ],
+  "output_sha256": "f7810267d100f7cc9c9b4c93e045540ab2291df8b8bb35eeb4ad77feddd47a8a",
+  "input_controls": [
+    {
+      "index": 0,
+      "terms": 142
+    }
+  ],
+  "common_denominator": 3,
+  "diagonal_trace_terms": 0,
+  "Cartan_polynomial": [],
+  "diagonal_alphabet": []
+}
