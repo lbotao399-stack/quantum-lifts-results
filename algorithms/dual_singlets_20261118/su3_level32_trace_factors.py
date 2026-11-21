@@ -33,7 +33,7 @@ def linear(matrices,coefficients):
     return tuple(sum(c*m[k] for c,m in zip(coefficients,matrices,strict=True)) for k in range(9))
 
 
-def evaluator(t, basis, seed):
+def evaluator(t, basis, seed, fixed_even=None):
     rng = Random(seed)
     odd_counts = Counter(k for k in t if odd(k))
     matrices = {}
@@ -46,6 +46,9 @@ def evaluator(t, basis, seed):
             exterior[k] = indices
         for i in indices:
             matrices[k,i] = linear(basis,[rng.randrange(-3,4) for _ in basis])
+    for k, m in (fixed_even or {}).items():
+        assert (k,-1) in matrices and not odd(k) and trace(m) == 0
+        matrices[k,-1] = tuple(m)
 
     @lru_cache(30000)
     def tr(word,labels):

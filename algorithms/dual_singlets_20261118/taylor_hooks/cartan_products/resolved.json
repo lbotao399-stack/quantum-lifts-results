@@ -1,0 +1,262 @@
+{
+  "su30": {
+    "group": "SU3",
+    "partition": [
+      5,
+      5,
+      1,
+      1,
+      1
+    ],
+    "length": 9,
+    "native_weights": [
+      {
+        "native_sector": [
+          5,
+          0,
+          0,
+          4,
+          4
+        ],
+        "weight_image": 571,
+        "raised_weight_image": 461,
+        "spin_highest_product_rank": 110,
+        "classical_upper": 110
+      },
+      {
+        "native_sector": [
+          6,
+          0,
+          0,
+          4,
+          3
+        ],
+        "weight_image": 594,
+        "raised_weight_image": 396,
+        "spin_highest_product_rank": 198,
+        "classical_upper": 198
+      },
+      {
+        "native_sector": [
+          7,
+          0,
+          0,
+          4,
+          2
+        ],
+        "weight_image": 356,
+        "raised_weight_image": 193,
+        "spin_highest_product_rank": 163,
+        "classical_upper": 163
+      },
+      {
+        "native_sector": [
+          8,
+          0,
+          0,
+          4,
+          1
+        ],
+        "weight_image": 114,
+        "raised_weight_image": 42,
+        "spin_highest_product_rank": 72,
+        "classical_upper": 72
+      },
+      {
+        "native_sector": [
+          9,
+          0,
+          0,
+          4,
+          0
+        ],
+        "weight_image": 15,
+        "raised_weight_image": 0,
+        "spin_highest_product_rank": 15,
+        "classical_upper": 15
+      }
+    ],
+    "classical": {
+      "dim": 3683,
+      "in": 2174,
+      "out": 1491,
+      "h": 18
+    },
+    "Cartan_detected_products": 18
+  },
+  "su32": {
+    "group": "SU3",
+    "partition": [
+      5,
+      5,
+      1,
+      1,
+      1,
+      1
+    ],
+    "length": 10,
+    "native_weights": [
+      {
+        "native_sector": [
+          6,
+          0,
+          0,
+          4,
+          4
+        ],
+        "weight_image": 789,
+        "raised_weight_image": 634,
+        "spin_highest_product_rank": 155,
+        "classical_upper": 155
+      },
+      {
+        "native_sector": [
+          7,
+          0,
+          0,
+          4,
+          3
+        ],
+        "weight_image": 828,
+        "raised_weight_image": 558,
+        "spin_highest_product_rank": 270,
+        "classical_upper": 270
+      },
+      {
+        "native_sector": [
+          8,
+          0,
+          0,
+          4,
+          2
+        ],
+        "weight_image": 492,
+        "raised_weight_image": 271,
+        "spin_highest_product_rank": 221,
+        "classical_upper": 221
+      },
+      {
+        "native_sector": [
+          9,
+          0,
+          0,
+          4,
+          1
+        ],
+        "weight_image": 153,
+        "raised_weight_image": 56,
+        "spin_highest_product_rank": 97,
+        "classical_upper": 97
+      },
+      {
+        "native_sector": [
+          10,
+          0,
+          0,
+          4,
+          0
+        ],
+        "weight_image": 19,
+        "raised_weight_image": 0,
+        "spin_highest_product_rank": 19,
+        "classical_upper": 19
+      }
+    ],
+    "classical": {
+      "dim": 6828,
+      "in": 4185,
+      "out": 2615,
+      "h": 28
+    },
+    "Cartan_detected_products": 28
+  },
+  "sp36": {
+    "group": "Sp2",
+    "partition": [
+      5,
+      5,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "length": 12,
+    "native_weights": [
+      {
+        "native_sector": [
+          8,
+          0,
+          0,
+          4,
+          4
+        ],
+        "weight_image": 1622,
+        "raised_weight_image": 1305,
+        "spin_highest_product_rank": 317,
+        "classical_upper": 317
+      },
+      {
+        "native_sector": [
+          9,
+          0,
+          0,
+          4,
+          3
+        ],
+        "weight_image": 1590,
+        "raised_weight_image": 1064,
+        "spin_highest_product_rank": 526,
+        "classical_upper": 526
+      },
+      {
+        "native_sector": [
+          10,
+          0,
+          0,
+          4,
+          2
+        ],
+        "weight_image": 905,
+        "raised_weight_image": 495,
+        "spin_highest_product_rank": 410,
+        "classical_upper": 410
+      },
+      {
+        "native_sector": [
+          11,
+          0,
+          0,
+          4,
+          1
+        ],
+        "weight_image": 277,
+        "raised_weight_image": 102,
+        "spin_highest_product_rank": 175,
+        "classical_upper": 175
+      },
+      {
+        "native_sector": [
+          12,
+          0,
+          0,
+          4,
+          0
+        ],
+        "weight_image": 35,
+        "raised_weight_image": 0,
+        "spin_highest_product_rank": 35,
+        "classical_upper": 35
+      }
+    ],
+    "classical": {
+      "Y": 12,
+      "dim": 46860,
+      "rank_in": 28039,
+      "rank_out": 18760,
+      "h": 61
+    },
+    "Cartan_detected_products": 61
+  }
+}

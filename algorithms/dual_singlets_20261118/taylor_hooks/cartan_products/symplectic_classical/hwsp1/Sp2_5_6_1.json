@@ -1,0 +1,50 @@
+{
+  "mode": "chain",
+  "gauge": "Sp2",
+  "sector": [
+    9,
+    0,
+    0,
+    4,
+    3
+  ],
+  "flavour": [
+    9,
+    0
+  ],
+  "spin2": 1,
+  "j": 39,
+  "prime": 2147483647,
+  "seed": 877340,
+  "blocks": [
+    {
+      "Y": 12,
+      "F": 1,
+      "dim": 51963,
+      "rank_in": 23919,
+      "rank_out": 27518,
+      "h": 526
+    }
+  ],
+  "seconds": 4397.7,
+  "evals": 8282823816,
+  "maxrss_MB": 18551,
+  "row_length": 5,
+  "tail": 6,
+  "upper_flavour": true,
+  "sector_index": 1,
+  "engine_sha256": "27d23cfe7b128b8ac7f0876a5f7137cdd4acee46eba1113d1721832295d94b0d",
+  "arguments": [
+    "chain",
+    "Sp2",
+    "9",
+    "0",
+    "0",
+    "4",
+    "3",
+    "12",
+    "12",
+    "877340",
+    "2147483647"
+  ]
+}

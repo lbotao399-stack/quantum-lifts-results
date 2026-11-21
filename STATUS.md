@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Cartan targets and complete scalar restrictions, November 21, 2026
+
+All 95,750 products in 27 weight matrices give rational Cartan-detected target dimensions 18 and 28 at $SU(3)$ levels 30 and 32 and 61 at $USp(4)$ level 36. At $SU(3)$ level 32 a 13,400-term correction solves all 91 six- and seven-scalar equations at three colours and all 119 five-scalar equations on the full centralizer of a scalar with two equal eigenvalues. An unrestricted residual is $884535$ modulo $1000003$. A four-scalar primitive exists on the diagonal scalar slice with arbitrary other matrices. The conjugation-invariant extension is open. [Three target spans](algorithms/dual_singlets_20261118/taylor_hooks/cartan_products/README.md) · [First equation, proof and witness](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md#the-six--and-seven-scalar-equations-and-the-five-scalar-restriction)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_cartan_layers.json)
+
 ## Exact three-colour equations and the complete eleven-letter BMN space in SU(3), November 21, 2026
 
 A8 job 5684433 gives a rational first correction with 493 trace terms for two level-32 contents. All 4,060 residual coefficients vanish. A full three-colour functional also excludes every correction made entirely of products containing a quadratic trace. A8 job 5683898 fixes the rational eleven-letter dimensions at level 36 to two even and four odd for weight $(8,5,5)$. All six classes have known representatives. [First equation](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md#a-three-colour-functional-and-a-simultaneous-correction) · [Classical dimensions](algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/source_lengths.json)

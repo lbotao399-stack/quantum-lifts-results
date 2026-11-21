@@ -60,6 +60,22 @@ Choose the three traceless colour matrices in the saved functional. The trace of
 
 For this letter content and its derivative-exchanged partner, eight parent contents give 1,011 even finite-colour coordinates against 266 target coordinates. The classical image and the augmented matrix both have rank 264 modulo 1,000,003. A8 job 5684433 reconstructed a shared 493-term rational correction. Expanding its classical variation on arbitrary traceless three-colour matrices cancels $Q_1\mathcal O_0$ in all 2,030 monomials in each content. There are 293 allowed target contents in the full first equation. [Correction and exact polynomial checks](contents_pair/content_certificate.json.gz) · [Frame and receipt](contents_pair/receipt.json) · [Letter contents and incidence](contents_pair/graph.json)
 
+## The six- and seven-scalar equations and the five-scalar restriction
+
+Count occurrences of the undifferentiated first scalar $S=\phi^1$. A single rational first correction with 12,528 trace terms solves all 78 six-scalar and all 13 seven-scalar contents on arbitrary traceless three-colour matrices. Of these 91 residuals, 73 vanish as formal trace expressions. The remaining 18 vanish in all 153,356 collected polynomial coefficients after imposing the three-colour identities. There are 293 target contents in total. [Input corrections](scalar_layers/) · [Complete three-colour checks](scalar_layers/six_and_seven.json) · [Construction](../../su3_level32_layers.py)
+
+A further 880-term change has no formal six-scalar variation. The combined correction has 13,400 terms. It solves 55 five-scalar evaluations on $S=\operatorname{diag}(1,1,-2)$ using 51 independent variation directions. Keeping the original right-hand side, direct reconstruction of the integer matrix gives the saved nonzero determinant and zero in all 55 equations. [Trace recipes and rational coefficients](scalar_layers/levi_solved.json) · [Independent reconstruction](../../su3_level32_levi.py) · [Determinant](scalar_layers/levi_replay.json)
+
+This correction solves the entire five-scalar equation on the centralizer of $S$. In each of the other letters put an arbitrary $2\times2$ matrix $A$ in the upper block and $-\operatorname{tr}A$ in the lower block, with the parity of that letter. In a trace containing $m$ copies of $S$ and the ordered remaining matrices $A_1,\ldots,A_k$, the upper block gives $\operatorname{tr}(A_1\cdots A_k)$. The lower block gives $(-2)^m(-1)^k\operatorname{tr}(A_1)\cdots\operatorname{tr}(A_k)$. At $k=0$ their sum is $2+(-2)^m$. Keeping the order of odd entries, the 143,633 five-scalar residual terms reduce to 11,570 formal two-colour trace terms across the contents. Every coefficient vanishes on generic matrix entries in all 119 contents. Homogeneity restores every multiple of $S$. For unrestricted three-colour matrices one recorded coefficient has residue $884535$ modulo $1000003$. [Symbolic expansion and unrestricted witness](scalar_layers/centralizer_five.json) · [Four variables per matrix, with exterior signs](../../su3_level32_centralizer.py)
+
+### A polynomial primitive on the diagonal scalar slice
+
+Keep $S=\operatorname{diag}(x,y,-x-y)$ and restore **arbitrary** three-colour matrices for the other letters. Consider the part of $Q_0$ that splits off one copy of $S$. The 30 other letter species form 15 pairs. On one member of a pair this part is zero, and on the other it is the signed commutator of $S$ with the first. On the matrix entry $(i,j)$ the coefficient is the difference of the $i$th and $j$th diagonal entries of $S$. [Signed split table and pair construction](../../su3_level32_levi.py)
+
+The five-scalar residual is closed under this part of $Q_0$. Indeed, the six-scalar component of $Q_0(Q_1\mathcal O_0+Q_0\mathcal O_1)=0$ has only two terms, and the term obtained from the six-scalar residual vanishes by the complete calculation above. Now fix the total occupation of each pair of matrix entries, and fix the diagonal entries' individual occupations. Each occupied off-diagonal pair has one even and one odd variable. At fixed positive total occupation it has two possible monomials. The differential between them is the corresponding eigenvalue difference times a nonzero rational number. The full block is the tensor product of these two-term complexes over $\mathbb Q[x,y]$.
+
+An invertible rational change of basis in these Koszul factors retains just the independent linear forms, with zero differentials in the other factors. Two independent eigenvalue differences generate $(x,y)$, so the cohomology in positive scalar degree vanishes. For one independent difference the cohomology is detected by reducing modulo that difference. All occupied off-diagonal entries then belong to one $2\times2$ block. Its reduction vanishes by the full centralizer calculation above and permutation of the three colours. With no off-diagonal entries the residual vanishes on the full Cartan since $Q_1\mathcal O_0$ has zero Cartan restriction and $Q_0$ consists of commutators. Thus a four-scalar polynomial primitive exists on this diagonal slice, including the coincident-eigenvalue lines. Extending a primitive to a conjugation-invariant polynomial for arbitrary $S$ is a separate equation. [First-image Cartan calculation](order1.json) · [Five-scalar identity](scalar_layers/centralizer_five.json)
+
 ## Replay
 
 Run from the repository root with the dependencies of the archived SU(3) runtime. The two JSONL digests in the records refer to the uncompressed streams.
@@ -105,4 +121,16 @@ cmp /tmp/su3-trace-parents.json "$p/contents_pair/trace_parents.json"
 python3 "$d/su3_level32_content.py" prepare --work /tmp/su3-content-pair
 cp "$p/contents_pair/content_certificate.json.gz" /tmp/su3-content-pair/
 python3 "$d/su3_level32_content.py" verify --work /tmp/su3-content-pair --engine /tmp/su3-colour-columns
+```
+
+Replay the successive scalar calculations with the three-colour engine built above.
+
+```sh
+l="$p/scalar_layers"
+python3 "$d/su3_level32_layers.py" --pair "$l/component_pair/content_certificate.json.gz" --four "$l/component_four/content_certificate.json.gz" --engine /tmp/su3-colour-columns --work /tmp/su3-high-layers
+cmp /tmp/su3-high-layers/six_and_seven.json "$l/six_and_seven.json"
+python3 "$d/su3_level32_levi.py" --out /tmp/su3-five-scalar
+cmp /tmp/su3-five-scalar/levi_correction.json.gz "$l/levi_correction.json.gz"
+python3 "$d/su3_level32_centralizer.py" --correction /tmp/su3-five-scalar/levi_correction.json.gz --out /tmp/su3-five-scalar/centralizer.json
+cmp /tmp/su3-five-scalar/centralizer.json "$l/centralizer_five.json"
 ```

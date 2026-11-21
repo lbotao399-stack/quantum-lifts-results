@@ -1,0 +1,58 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "phase": "Rank-two Cartan target spans and the rational SU(3) level-32 scalar-layer correction",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_su3_contents.json",
+  "checks": {
+    "cartan_target_dimensions": {
+      "SU3_level30": 18,
+      "SU3_level32": 28,
+      "USp4_level36": 61
+    },
+    "complete_modular_Cartan_matrices": 27,
+    "products_across_weights": 95750,
+    "full_three_colour_contents_at_six_and_seven_scalars": 91,
+    "full_three_colour_coefficients_in_nonformal_checks": 153356,
+    "five_scalar_contents_on_full_gl2_centralizer": 119,
+    "combined_three_colour_parent_terms": 13400,
+    "five_scalar_unrestricted_residual_mod_1000003": 884535,
+    "full_first_equation": "open",
+    "four_scalar_primitive_on_diagonal_scalar_slice": "exists over Q[x,y] with arbitrary remaining matrices",
+    "conjugation_invariant_extension": "open"
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/cartan_products/resolved.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/cartan_products/jobs.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/scalar_layers/six_and_seven.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/scalar_layers/levi_replay.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/scalar_layers/centralizer_five.json"
+  ]
+}
