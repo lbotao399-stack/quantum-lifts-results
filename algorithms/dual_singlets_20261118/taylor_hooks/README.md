@@ -48,6 +48,8 @@ Under the second-order Taylor selection, the rational targets of dimensions 18, 
 
 Compile the archived classical engine and run the same sectors from the repository root. The engine's level label refers to the substituted Taylor weight. The physical level of the original operator is given above.
 
+At $USp(4)$ level 36 and BMN weight $(10,4,4)$, the second obstruction has Taylor diagram $(5,5,1^6)$. For source lengths 16 and 17 the length-15 and length-16 target cohomologies vanish over the rationals. The respective dimensions minus incoming and outgoing image ranks give $1379-1247-132=0$ and $132-132-0=0$ at prime 2147483647. The five weight-space maps at each length were reduced over this same field. At total Taylor degree 16 the symmetric-group projectors specialize at this prime, so the modular cohomology of the projected complex bounds its rational dimension. These exclusions assume filtered Taylor equivariance. [A8 minors and receipt](b2_second_level36/) · [Replay](../b2_level36_second.py)
+
 ```sh
 d=algorithms/dual_singlets_20261118
 c++ -O3 -std=c++17 -pthread "$d/taylor_hooks/native/engine.cpp" -o /tmp/n4-hook-engine

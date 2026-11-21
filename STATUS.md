@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## An invariant first correction on the square-zero scalar scheme, November 21, 2026
+
+At $SU(3)$ level 32 one 2487-term integer trace polynomial solves the first equation modulo the entries of all $S_iS_j$. Of the 68 terms previously treated with a projector, 44 admit a repeated-scalar trace identity and 24 require its polarization. All 2625 terms of the rewritten residual cancel. [Polynomial and proof](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/README.md#an-invariant-family-correction-at-level-32)
+
+At $SU(3)$ level 36 the third-target Cartan kernels on the full two-colour Levi have dimension at most 4, 7 and 3 from source lengths 10, 11 and 12. At $USp(4)$ level 36 the second targets from lengths 16 and 17 have dimension zero under filtered Taylor equivariance. [1398 Levi records](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/full_block/third_jobs.json) · [Symplectic ranks](algorithms/dual_singlets_20261118/taylor_hooks/b2_second_level36/tail_bounds.json)
+
+New $d_1$ lifts **0** and new fortuitous BMN generators **0**. Totals are **15** highest-weight $d_1$ pairings and **at least 7** generators, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_scalar_family.json)
+
 ## Fixed-scalar first corrections at $SU(3)$ levels 32 and 34, November 21, 2026
 
 The cyclic-scalar calculation includes the principal nilpotent scalar. On the remaining common-image and common-kernel triples, the level-32 first correction cancels all 2585 trace coefficients. Independently expanding the level-34 first image on A8 and locally gives 41390 nonzero matrix monomials. When the scalars span a plane the centralizer calculation gives zero. When they span a line the five remaining monomials cancel against two field-strength terms, each with coefficient $-5012280$. This establishes exactness after fixing each scalar triple. A global invariant polynomial solution remains open. [Equations, coefficients and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/README.md)

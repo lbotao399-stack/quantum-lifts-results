@@ -1,0 +1,22 @@
+{
+  "level": 32,
+  "relation": "all nine ordered matrix products of undifferentiated scalars vanish",
+  "first_image_words": 331201,
+  "words_without_adjacent_scalars": 2585,
+  "singleton_gap_inputs": 68,
+  "splices": {
+    "polarized_splices": 24,
+    "equal_scalar_splices": 68
+  },
+  "rewritten_words": 2625,
+  "trace_difference_terms": 180,
+  "independent_component_residuals": {
+    "common_image": 0,
+    "common_kernel": 0
+  },
+  "invariant_correction_terms": 2487,
+  "common_denominator": 1,
+  "correction_sha256": "de95438e093effc2b9697a7de7af273ae17321d4429efab02d67ff987ee80ed0",
+  "ordinary_trace_variation_terms": 2625,
+  "residual_after_trace_rewrite": 0
+}

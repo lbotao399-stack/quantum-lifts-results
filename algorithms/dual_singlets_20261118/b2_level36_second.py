@@ -51,19 +51,22 @@ def generate(engine,folder,tasks,threads):
         print(length,i,record["dimensions"],rank,flush=True)
 
 
-def resolve(folder):
+def resolve(folder, lengths=(13, 14, 15, 16)):
+    lengths = sorted(set(lengths))
+    required = {k for y in lengths for k in (y-1, y)}
     images = {}
     for i,w in enumerate(SECTORS):
-        file = next(PREVIOUS.glob(f"*/Sp2_5_6_{i}.json"))
-        prior = json.loads(file.read_bytes())
-        assert prior["sector"]==list(w) and prior["prime"]==PRIME and prior["blocks"][0]["Y"]==12
-        images[12,i]=prior["blocks"][0]["rank_out"]
-        for length in (13,14,15):
+        if 12 in required:
+            file = next(PREVIOUS.glob(f"*/Sp2_5_6_{i}.json"))
+            prior = json.loads(file.read_bytes())
+            assert prior["sector"]==list(w) and prior["prime"]==PRIME and prior["blocks"][0]["Y"]==12
+            images[12,i]=prior["blocks"][0]["rank_out"]
+        for length in sorted(required.intersection((13,14,15))):
             data=json.loads((folder/f"image_{length}_{i}.json").read_bytes())
             images[length,i]=validate(data,length,i)
         images[16,i]=0
     blocks=[]
-    for y in (13,14,15,16):
+    for y in lengths:
         cochains=multiplicity(SHAPE,y)
         assert sum((-1)**i*dim(w,y) for i,w in enumerate(SECTORS))==cochains
         ranks=[sum((-1)**i*images[k,i] for i in range(len(SECTORS))) for k in (y-1,y)]
@@ -81,11 +84,12 @@ if __name__ == "__main__":
     p.add_argument("--map",type=int,nargs=2,action="append",metavar=("LENGTH","INDEX"))
     p.add_argument("--threads",type=int,default=4)
     p.add_argument("--out",type=Path)
+    p.add_argument("--target-length",type=int,choices=(13,14,15,16),action="append")
     a=p.parse_args()
-    if not __debug__ or not (a.map or a.out) or bool(a.map)!=bool(a.engine):
+    if not __debug__ or not (a.map or a.out) or bool(a.map)!=bool(a.engine) or (a.target_length and not a.out):
         p.error("supply --map with --engine or --out with all certified maps")
     if a.map:
         assert all(y in (13,14,15) and i in range(len(SECTORS)) for y,i in a.map)
         generate(a.engine,a.folder,a.map,a.threads)
     if a.out:
-        saved(a.out,resolve(a.folder))
+        saved(a.out,resolve(a.folder,a.target_length or (13,14,15,16)))

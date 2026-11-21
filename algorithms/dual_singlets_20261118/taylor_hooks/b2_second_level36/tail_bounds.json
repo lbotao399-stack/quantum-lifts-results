@@ -1,0 +1,38 @@
+{
+  "group": "USp(4)",
+  "source_weight": [
+    10,
+    4,
+    4
+  ],
+  "order": 2,
+  "partition": [
+    5,
+    5,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "prime": 2147483647,
+  "blocks": [
+    {
+      "target_length": 15,
+      "source_length": 16,
+      "cochains": 1379,
+      "incoming": 1247,
+      "outgoing": 132,
+      "rational_cohomology_upper": 0
+    },
+    {
+      "target_length": 16,
+      "source_length": 17,
+      "cochains": 132,
+      "incoming": 132,
+      "outgoing": 0,
+      "rational_cohomology_upper": 0
+    }
+  ]
+}

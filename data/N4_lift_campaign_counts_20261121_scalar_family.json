@@ -1,0 +1,81 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_scalar_fibres.json",
+  "phase": "SU(3) invariant first correction on the square-zero scalar scheme and level-36 restricted targets",
+  "level32_polynomial": {
+    "terms": 2487,
+    "common_denominator": 1,
+    "rewritten_trace_terms": 2625,
+    "residual_terms": 0,
+    "base_ring": "quotient by all scalar matrix product entries",
+    "unrestricted_first_equation": "open"
+  },
+  "SU3_level36_third_Levi": {
+    "source_lengths": [
+      10,
+      11,
+      12
+    ],
+    "cochains": [
+      218819,
+      289772,
+      219752
+    ],
+    "kernel_upper": [
+      4,
+      7,
+      3
+    ],
+    "active_sector_records": 1398,
+    "A8_jobs": [
+      5685976,
+      5686642
+    ]
+  },
+  "USp4_level36_second": {
+    "source_lengths": [
+      16,
+      17
+    ],
+    "rational_target_dimensions": [
+      0,
+      0
+    ],
+    "assumption": "filtered Taylor equivariance for obstruction selection",
+    "A8_job": 5685870
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/j32_family.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/full_block/all_bounds.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/b2_second_level36/tail_bounds.json"
+  ]
+}

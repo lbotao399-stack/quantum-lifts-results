@@ -122,9 +122,12 @@ if __name__ == "__main__":
     parser.add_argument("--prime", type=int, choices=(1000003, 1000033, 2147483647), required=True)
     parser.add_argument("--case", action="append", choices=tuple(case[0] for case in CASES))
     parser.add_argument("--records", type=Path, required=True)
+    parser.add_argument("--additional-records", type=Path, action="append", default=[],
+                        help="merge disjoint or identical active-sector records before replay")
     parser.add_argument("--resolve", type=Path)
     args = parser.parse_args()
-    if not __debug__ or bool(args.raw) != bool(args.engine) or not (args.engine or args.resolve):
+    if (not __debug__ or bool(args.raw) != bool(args.engine) or not (args.engine or args.resolve)
+            or (args.additional_records and not args.resolve)):
         parser.error("use --engine with --raw or replay with --resolve")
     cases = {name: row for name, row in plan().items() if not args.case or name in args.case}
     if args.engine:
@@ -132,5 +135,10 @@ if __name__ == "__main__":
         gzip_json(args.records, records)
     if args.resolve:
         records = json.loads(gzip.decompress(args.records.read_bytes()))
+        for path in args.additional_records:
+            extra = json.loads(gzip.decompress(path.read_bytes()))
+            if any(records[k] != extra[k] for k in records.keys() & extra.keys()):
+                raise ValueError(f"conflicting active-sector records in {path}")
+            records.update(extra)
         result = resolve(cases, records, args.prime)
         args.resolve.write_text(json.dumps(result, indent=2) + "\n")

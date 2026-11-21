@@ -1,0 +1,20 @@
+{
+  "prime": 2147483647,
+  "existing_records": 1162,
+  "additional_records": 236,
+  "total": 1398,
+  "A8_jobs": [
+    5685976,
+    5686642
+  ],
+  "independent_last_sector": [
+    5,
+    2,
+    2,
+    3,
+    3,
+    9
+  ],
+  "A8_merged_sha256": "b465e8588b1a8dea003ba983b7f8d9f7eeeb85116c1e8d2ae5ea2b64df5aafb0",
+  "delta_sha256": "6e3c03117dda175c5459baf824e9587f8274b82e9fbd606c8f7a9ffc36c6b073"
+}

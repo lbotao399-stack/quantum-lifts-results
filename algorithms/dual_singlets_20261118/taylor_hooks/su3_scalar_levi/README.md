@@ -99,7 +99,11 @@ For each active flavour and dotted-spin highest weight, multiply its Weyl numera
 | $j=32$, first | 11 | even | 10256 | 0 | 0 |
 | $j=34$, first | 11 | even | 35792 | 2 | 2 |
 | $j=34$, second | 10 | even | 139139 | 11581 | 0 |
+| $j=36$, third, ten-letter source of weight $(8,5,5)$ | 8 | odd | 218819 | 4 | 4 |
+| $j=36$, third, eleven-letter source of weight $(8,5,5)$ | 9 | even | 289772 | 7 | 7 |
 | $j=36$, third, twelve-letter source of weight $(8,5,5)$ | 10 | odd | 219752 | 3 | 3 |
+
+All six character dimensions agree with the independent two-colour calculation. Jobs 5685976 and 5686642 furnish 1398 distinct active-sector records at prime 2147483647. The additional 236 records complete the two shorter third targets. The nonzero upper bounds allow a restricted obstruction only after both lower correction equations have been solved. [Additional minors](full_block/third_remaining_minors.json.gz) · [Six bounds and surviving weights](full_block/all_bounds.json) · [Cluster provenance](full_block/third_jobs.json)
 
 A8 used prime $2147483647$. A second computation at $1000003$ gives the same bounds in both first targets. The level-32 first image is a boundary on the full Levi. At level 34 any closed second residual from a global first correction has zero Cartan class by the perturbative restriction theorem. The zero kernel in the table makes its restriction a classical boundary on the full Levi. Existence of that global first correction remains open. [A8 minors](full_block/minors_2147483647.json.gz) · [A8 bounds and remaining weights](full_block/bounds_2147483647.json) · [Independent first-target minors](full_block/minors_1000003.json.gz) · [Cartan restriction theorem](../../../perturbative_cartan_targets.md)
 
@@ -128,6 +132,8 @@ d=algorithms/dual_singlets_20261118
 p="$d/taylor_hooks/su3_scalar_levi/full_block"
 python3 "$d/su3_levi_kernel.py" --case j32_first --case j34_first --prime 1000003 --records "$p/minors_1000003.json.gz" --resolve /tmp/su3-levi-first.json
 cmp /tmp/su3-levi-first.json "$p/first_1000003.json"
+python3 "$d/su3_levi_kernel.py" --prime 2147483647 --records "$p/minors_2147483647.json.gz" --additional-records "$p/third_remaining_minors.json.gz" --resolve /tmp/su3-levi-all.json
+cmp /tmp/su3-levi-all.json "$p/all_bounds.json"
 python3 "$d/su3_levi_four_spectators.py" --out /tmp/su3-levi-coefficients.json.gz
 python3 "$d/su3_levi_coefficient_replay.py" --folder "$p" --out /tmp/su3-levi-coefficient-replay.json
 cmp /tmp/su3-levi-coefficient-replay.json "$p/coefficient_replay.json"

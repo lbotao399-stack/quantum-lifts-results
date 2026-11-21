@@ -1,0 +1,261 @@
+{
+  "prime": 2147483647,
+  "sectors": {
+    "j32_first": {
+      "weight": [
+        7,
+        3,
+        3,
+        1,
+        1
+      ],
+      "length": 11,
+      "parity": 1,
+      "branches": 232,
+      "cochains": 10256,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "j34_first": {
+      "weight": [
+        7,
+        4,
+        3,
+        1,
+        1
+      ],
+      "length": 11,
+      "parity": 1,
+      "branches": 360,
+      "cochains": 35792,
+      "classical_dimension_upper": 2,
+      "cartan_kernel_upper": 2,
+      "remaining": [
+        {
+          "active_weight": [
+            4,
+            4,
+            2,
+            1,
+            1
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        },
+        {
+          "active_weight": [
+            4,
+            4,
+            3,
+            1,
+            0
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        }
+      ]
+    },
+    "j34_second": {
+      "weight": [
+        6,
+        3,
+        2,
+        2,
+        2
+      ],
+      "length": 10,
+      "parity": 1,
+      "branches": 470,
+      "cochains": 139139,
+      "classical_dimension_upper": 11581,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "j36_third_from10": {
+      "weight": [
+        5,
+        2,
+        2,
+        3,
+        3
+      ],
+      "length": 8,
+      "parity": -1,
+      "branches": 493,
+      "cochains": 218819,
+      "classical_dimension_upper": 4,
+      "cartan_kernel_upper": 4,
+      "remaining": [
+        {
+          "active_weight": [
+            4,
+            2,
+            2,
+            3,
+            2
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 2
+        },
+        {
+          "active_weight": [
+            4,
+            2,
+            2,
+            3,
+            3
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        },
+        {
+          "active_weight": [
+            5,
+            2,
+            2,
+            3,
+            2
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        }
+      ]
+    },
+    "j36_third_from11": {
+      "weight": [
+        5,
+        2,
+        2,
+        3,
+        3
+      ],
+      "length": 9,
+      "parity": 1,
+      "branches": 511,
+      "cochains": 289772,
+      "classical_dimension_upper": 7,
+      "cartan_kernel_upper": 7,
+      "remaining": [
+        {
+          "active_weight": [
+            3,
+            2,
+            2,
+            3,
+            2
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        },
+        {
+          "active_weight": [
+            3,
+            2,
+            2,
+            3,
+            3
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 2
+        },
+        {
+          "active_weight": [
+            4,
+            2,
+            2,
+            2,
+            2
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        },
+        {
+          "active_weight": [
+            4,
+            2,
+            2,
+            3,
+            2
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 2
+        },
+        {
+          "active_weight": [
+            5,
+            2,
+            2,
+            2,
+            2
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        }
+      ]
+    },
+    "j36_third_from12": {
+      "weight": [
+        5,
+        2,
+        2,
+        3,
+        3
+      ],
+      "length": 10,
+      "parity": -1,
+      "branches": 442,
+      "cochains": 219752,
+      "classical_dimension_upper": 3,
+      "cartan_kernel_upper": 3,
+      "remaining": [
+        {
+          "active_weight": [
+            2,
+            2,
+            2,
+            3,
+            3
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        },
+        {
+          "active_weight": [
+            3,
+            2,
+            2,
+            3,
+            2
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        },
+        {
+          "active_weight": [
+            4,
+            2,
+            2,
+            2,
+            2
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        }
+      ]
+    }
+  }
+}
