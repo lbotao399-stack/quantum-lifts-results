@@ -1,0 +1,69 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_quantum_relation.json",
+  "phase": "Cyclic scalar pairs and first corrections on the SU(3) subregular chart",
+  "possible_support_dimension": 6,
+  "ambient_scalar_dimension": 24,
+  "subregular_taylor_generators": 124,
+  "first_correction_through_polynomial_degree": 8,
+  "restricted_equations": {
+    "32": {
+      "level": 32,
+      "through_degree": 8,
+      "image_sha256": "2f187bd7c0267e1368aac7eef779bfde07809c80b22679f2c4f4135574e0b9bf",
+      "initial_sha256": null,
+      "primitive_sha256": "b4cc9312a4a778eab7307891f0d4301ac82bfaba5a8ad7d669a124dd883eee36",
+      "input_monomials": 397,
+      "additional_primitive_terms": 248,
+      "remaining_monomials": 0
+    },
+    "34": {
+      "level": 34,
+      "through_degree": 8,
+      "image_sha256": "4c931647fc9ed8537ee46677dc2021b4e7f4a53780fb8a6c0032c4d46dd31583",
+      "initial_sha256": null,
+      "primitive_sha256": "3699cc6bc6e155cea656f65826a0c1564300745aedd32ff01df71c9526eedfe3",
+      "input_monomials": 1255,
+      "additional_primitive_terms": 573,
+      "remaining_monomials": 0
+    }
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/README.md",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/charts.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/chain.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/a6.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/j32_through9.json.gz",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/j34_through9.json.gz",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/normal/transverse.json"
+  ]
+}

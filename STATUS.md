@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Scalar support and rank-one corrections at $SU(3)$, November 21, 2026
+
+The two-scalar chart removes both families of independent square-zero scalars from the possible support at levels 32 and 34. The remaining proportional rank-one triples and the origin have dimension six. On the rank-one chart 124 Taylor variables reproduce 279 classical matrix equations. The rational corrections at polynomial degree seven have 248 and 573 terms and cancel both first images through degree eight. A6 job 7657430 reproduced all 39985 and 125888 coefficients retained through degree nine. [Derivation, polynomials and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/README.md)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_scalar_charts.json)
+
 ## A nonzero quantum product relation in USp(6), November 21, 2026
 
 At $USp(6)$ the level-24 graviton relation has a nonzero first quantum coefficient. For the product coefficient $P_1$ and the classical primitive $Q_0K=P_0$, the rational equality is $[P_1-Q_1K]=-112[\omega_{\mathrm{low}}]$. This gives a perturbatively closed completion of the lowered nine-letter class. [Proof, trace coordinates and independent A6 minor](algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/README.md#the-first-quantum-product-relation-in-this-sector)

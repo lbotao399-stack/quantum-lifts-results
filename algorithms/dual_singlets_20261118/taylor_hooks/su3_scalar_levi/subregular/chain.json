@@ -1,0 +1,9 @@
+{
+  "chart_fields": "pquradfg",
+  "component_generators": 124,
+  "square_zero_generators": 124,
+  "source_letters": 31,
+  "source_ordered_splits": 180,
+  "matrix_entries_checked": 279,
+  "nonzero_entry_monomials": 3504
+}

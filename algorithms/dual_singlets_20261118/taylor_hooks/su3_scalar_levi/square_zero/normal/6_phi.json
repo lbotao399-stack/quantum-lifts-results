@@ -1,0 +1,47 @@
+{
+  "level": 32,
+  "minimum_first_flavour": 6,
+  "family_sha256": "de95438e093effc2b9697a7de7af273ae17321d4429efab02d67ff987ee80ed0",
+  "normal_correction_sha256": "ef51ae436d3ae68f7bf48aba4ff6261450a15d802878e7e9d737acb0fc4428fd",
+  "correction_terms": 240,
+  "contents": [
+    {
+      "content": "0000000000000105050716",
+      "before": 53,
+      "after": 0
+    },
+    {
+      "content": "0000000000000105050e0f",
+      "before": 53,
+      "after": 0
+    },
+    {
+      "content": "000000000000020505070f",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "content": "0000000000000305050714",
+      "before": 53,
+      "after": 0
+    },
+    {
+      "content": "0000000000000305050c0f",
+      "before": 53,
+      "after": 0
+    },
+    {
+      "content": "0000000000000505050710",
+      "before": 12,
+      "after": 0
+    },
+    {
+      "content": "000000000000050505080f",
+      "before": 12,
+      "after": 0
+    }
+  ],
+  "solved_initial_contents": 6,
+  "initial_terms": 236,
+  "remaining_terms": 0
+}

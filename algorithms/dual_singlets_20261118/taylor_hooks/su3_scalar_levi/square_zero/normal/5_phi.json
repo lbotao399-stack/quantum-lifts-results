@@ -1,0 +1,117 @@
+{
+  "level": 32,
+  "minimum_first_flavour": 5,
+  "family_sha256": "de95438e093effc2b9697a7de7af273ae17321d4429efab02d67ff987ee80ed0",
+  "normal_correction_sha256": "f257d84501234a63c35b0733b7e3e4d433ee0a2f772d86fc98198de5126545da",
+  "correction_terms": 4231,
+  "contents": [
+    {
+      "content": "0000000000000105050716",
+      "before": 53,
+      "after": 24
+    },
+    {
+      "content": "0000000000000105050e0f",
+      "before": 53,
+      "after": 24
+    },
+    {
+      "content": "000000000000020505070f",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "content": "0000000000000305050714",
+      "before": 53,
+      "after": 24
+    },
+    {
+      "content": "0000000000000305050c0f",
+      "before": 53,
+      "after": 24
+    },
+    {
+      "content": "0000000000000505050710",
+      "before": 12,
+      "after": 0
+    },
+    {
+      "content": "000000000000050505080f",
+      "before": 12,
+      "after": 0
+    },
+    {
+      "content": "0000000000010105060716",
+      "before": 268,
+      "after": 0
+    },
+    {
+      "content": "0000000000010105060e0f",
+      "before": 268,
+      "after": 0
+    },
+    {
+      "content": "000000000001020506070f",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "content": "0000000000010304050716",
+      "before": 522,
+      "after": 4
+    },
+    {
+      "content": "0000000000010304050e0f",
+      "before": 522,
+      "after": 4
+    },
+    {
+      "content": "0000000000010305060714",
+      "before": 518,
+      "after": 4
+    },
+    {
+      "content": "0000000000010305060c0f",
+      "before": 518,
+      "after": 4
+    },
+    {
+      "content": "0000000000010505060710",
+      "before": 240,
+      "after": 66
+    },
+    {
+      "content": "000000000001050506080f",
+      "before": 242,
+      "after": 68
+    },
+    {
+      "content": "000000000002030405070f",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "content": "0000000000030304050714",
+      "before": 272,
+      "after": 0
+    },
+    {
+      "content": "0000000000030304050c0f",
+      "before": 272,
+      "after": 0
+    },
+    {
+      "content": "0000000000030405050710",
+      "before": 244,
+      "after": 66
+    },
+    {
+      "content": "000000000003040505080f",
+      "before": 246,
+      "after": 68
+    }
+  ],
+  "solved_initial_contents": 6,
+  "initial_terms": 4368,
+  "remaining_terms": 380
+}

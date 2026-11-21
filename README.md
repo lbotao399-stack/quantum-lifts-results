@@ -4,6 +4,8 @@ Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://gith
 
 **Running computations (updated daily): [STATUS.md](STATUS.md).**
 
+At $SU(3)$ levels 32 and 34 the possible support of the first obstruction has dimension at most six in the 24-dimensional scalar space. On the rank-one chart, rational primitives cancel all 397 and 1255 degree-eight monomials respectively. A6 independently reproduced both complete expansions through polynomial degree nine. [Scalar charts, coefficients and cluster receipt](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/README.md)
+
 At $USp(6)$ the level-24 graviton relation has a nonzero first quantum coefficient. For the product coefficient $P_1$ and the classical primitive $Q_0K=P_0$, the rational equality is $[P_1-Q_1K]=-112[\omega_{\mathrm{low}}]$. This gives a perturbatively closed completion of the lowered nine-letter class. [Proof, trace coordinates and independent A6 minor](algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/README.md#the-first-quantum-product-relation-in-this-sector)
 
 At $SO(7)$ level 24 and BMN weight $(6,3,3)$ all 21 length-ten classical classes are spanned by graviton products. An explicit 1212-term product spans the one-dimensional Cartan kernel and becomes a classical boundary in $USp(6)$. [Polynomial, proof and replay](algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/README.md)
