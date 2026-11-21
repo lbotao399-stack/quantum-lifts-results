@@ -33,7 +33,9 @@ def assemble(folder, image):
     return [[w.hex(), str(c)] for w, c in sorted(terms.items())]
 
 
-def verify(image, recipe, roots, lowest_d, reference):
+def verify(image, recipe, roots, lowest_d, reference, *, also_through_roots=None, residual_path=None):
+    if also_through_roots is not None and roots != 4:
+        raise ValueError("Checking both filtrations requires the complete chart image")
     data = decode(image)
     level = data["level"]
     _, size, denominator, original_hash = ARCHIVES[level]
@@ -80,7 +82,8 @@ def verify(image, recipe, roots, lowest_d, reference):
         if (list(word) != sorted(word) or any(k >= 128 or (k >= 64 and k%16 == 0) for k in word)
                 or any(i == j and ODD[i] for i,j in zip(word,word[1:]))
                 or sum(k >= 64 for k in word) != 3
-                or root_degree(word) > roots or len(d_variables(word)) < lowest_d):
+                or root_degree(word) > roots or (len(d_variables(word)) < lowest_d and
+                    (also_through_roots is None or root_degree(word) > also_through_roots))):
             raise ValueError("Primitive outside the selected filtration")
         integer = coefficient.numerator*(scale//coefficient.denominator)
         for target, n in qmonomial(word).items():
@@ -92,11 +95,21 @@ def verify(image, recipe, roots, lowest_d, reference):
                     residual.pop(target, None)
     if any(len(d_variables(w)) >= lowest_d for w in residual):
         raise ValueError("The rational supercharge equation has a nonzero retained coefficient")
-    return dict(level=level, source_words=size, source_sha256=original_hash, sign_in_Q1=sign,
+    result = dict(level=level, source_words=size, source_sha256=original_hash, sign_in_Q1=sign,
                 full_chart_terms=len(rows), trace_groups=data["trace_groups"], degree_counts=dict(sorted(degrees.items())),
                 fg_degree_counts=dict(sorted(field_degrees.items())), retained_fg_degree=roots,
                 first_equation_input_terms=selected, primitive_terms=len(primitive), common_multiplier=scale,
                 through_d_count=lowest_d, residual_terms_below_d_count=len(residual), retained_residual=0)
+    if also_through_roots is not None:
+        counts = Counter((len(d_variables(w)), root_degree(w)) for w in residual)
+        if any(r <= also_through_roots for _, r in counts):
+            raise ValueError("A coefficient survives at low off-diagonal ghost degree")
+        result.update(also_through_fg_degree=also_through_roots,
+                      residual_by_d_and_fg=[dict(d_degree=d, fg_degree=r, terms=n)
+                                            for (d, r), n in sorted(counts.items())])
+    if residual_path is not None:
+        write(residual_path, dict(denominator=scale, coefficients=[[w.hex(), n] for w, n in sorted(residual.items())]))
+    return result
 
 
 if __name__ == "__main__":

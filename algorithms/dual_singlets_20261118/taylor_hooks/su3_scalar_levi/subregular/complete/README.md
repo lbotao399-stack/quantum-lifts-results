@@ -30,3 +30,27 @@ done
 ```
 
 To regenerate a complete image, run `su3_subregular_trace_expansion.py --level 34 --work /tmp/trace34 --workers 2 --out /tmp/full34.json.gz` from the algorithm directory. Adding `--roots 1` gives the image for `su3_subregular_root_coupled.py`. Run the latter with `--image`, `--work` and each of `--d-count 0` through `--d-count 3` to reconstruct the quotient correction.
+
+## A common correction for the two filtrations
+
+Count the Taylor coefficients of the odd field $d$ in each matrix monomial. Only $Q_0d=fg$ lowers this count. Each such term introduces two coefficients of $f,g$. All other variations preserve the number of $d$ coefficients and preserve or increase the total $f,g$ degree. In particular, modulo $(f,g)^2$ every monomial in the $d$ coefficients is a separate spectator.
+
+First solve in descending $d$ count with the full $f,g$ dependence. Leave all coefficients of this correction intact. From the previously verified correction modulo $(f,g)^2$, add the components with $d$ count below the lowest count already solved. The added terms have no effect on the solved high counts. At $f,g$ degree zero and one, the higher and lower components solve independent equations. The resulting single rational correction has the following integer replay in the untruncated chart.
+
+| Level | Lowest solved $d$ count | Terms in high-count correction | Terms in combined correction | Common multiplier | Support of the surviving residual | Terms |
+|---|---:|---:|---:|---:|---|---:|
+| 32 | 1 | 87340 | 93362 | 120 | zero $d$ count, $f,g$ degree 2 through 4 | 153527 |
+| 34 | 1 | 234227 | 252847 | 11520 | zero $d$ count, $f,g$ degree 2 through 4 | 499085 |
+
+The three surviving counts are 40184, 67248 and 46095 at level 32, and 134238, 217809 and 147038 at level 34. These residuals belong to the particular corrections displayed here. A nonzero obstruction would require testing their images in the full quotient by correction freedom. [Level 32](j32_joined.json) · [Level 34](j34_joined.json) · [Exact combination](../../../../su3_subregular_join_corrections.py)
+
+From the repository root, recreate each combined polynomial by passing `--primitive` with an output path. Add `--residual` with another output path to save its signed residual and common denominator.
+
+```sh
+d=algorithms/dual_singlets_20261118
+p="$d/taylor_hooks/su3_scalar_levi/subregular/complete"
+for j in 32 34; do
+  python3 "$d/su3_subregular_join_corrections.py" --image "$p/j${j}_image.json.gz" --high "$p/j${j}_high_d_primitive.json.gz" --linear "$p/j${j}_fg_linear_primitive.json.gz" --through-d 1 --out "/tmp/joined-$j.json"
+  cmp "/tmp/joined-$j.json" "$p/j${j}_joined.json" || exit 1
+done
+```

@@ -1,0 +1,46 @@
+{
+  "A8": {
+    "5688192": {
+      "state": "TIMEOUT",
+      "elapsed_seconds": 3666,
+      "allocated_cpus": 24,
+      "archive_sha256": "d6a7102fc28da5c49b71bbeec5127f62303e21f8c1e79e48cf5fe3f8142ea9bc",
+      "saved_blocks_used": {
+        "SO7": [
+          "4_4_0_0_0_8",
+          "4_4_2_0_0_10",
+          "4_4_4_0_0_12",
+          "5_4_1_0_0_10",
+          "5_4_3_0_0_12",
+          "5_5_1_0_0_10",
+          "5_5_3_0_0_12"
+        ],
+        "Sp3": [
+          "4_4_0_0_0_8",
+          "4_4_2_0_0_10"
+        ]
+      }
+    },
+    "5688957": {
+      "state": "TIMEOUT",
+      "elapsed_seconds": 551,
+      "allocated_cpus": 24,
+      "archive_sha256": "70c346b7f10f9f5f8a7e2dd84e822a5aab75852e3ac7576d1bf508f12b5a91ca",
+      "saved_blocks_used": {
+        "Sp3": [
+          "4_4_4_0_0_12",
+          "5_4_1_0_0_10",
+          "5_4_3_0_0_12",
+          "5_5_1_0_0_10"
+        ]
+      }
+    }
+  },
+  "local": {
+    "group": "Sp3",
+    "block": "5_5_3_0_0_12",
+    "prime": 2147483647,
+    "seed": 2527910995442
+  },
+  "uncompressed_minors_sha256": "38072791311ba0a011414b9e0b4051f8d36000c430d3bbf56bb06c04707a8718"
+}

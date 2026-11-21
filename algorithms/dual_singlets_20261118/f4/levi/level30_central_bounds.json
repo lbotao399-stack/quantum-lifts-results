@@ -1,0 +1,272 @@
+{
+  "physical_level": 30,
+  "source_length": 14,
+  "prime": 2147483647,
+  "odd_central_branches": 8,
+  "positive_even_central_branches": 7,
+  "pure_active_weight": [
+    5,
+    5,
+    5,
+    0,
+    0
+  ],
+  "groups": {
+    "SO7": {
+      "sectors": [
+        {
+          "central_letters": 2,
+          "active_weight": [
+            4,
+            4,
+            4
+          ],
+          "active_length": 12,
+          "cochains": 88,
+          "incoming": 87,
+          "outgoing": 0,
+          "stacked": 1,
+          "classical_upper": 1,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 2,
+          "active_weight": [
+            5,
+            4,
+            3
+          ],
+          "active_length": 12,
+          "cochains": 191,
+          "incoming": 191,
+          "outgoing": 0,
+          "stacked": 0,
+          "classical_upper": 0,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 2,
+          "active_weight": [
+            5,
+            5,
+            3
+          ],
+          "active_length": 12,
+          "cochains": 1668,
+          "incoming": 1337,
+          "outgoing": 328,
+          "stacked": 331,
+          "classical_upper": 3,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 4,
+          "active_weight": [
+            4,
+            4,
+            2
+          ],
+          "active_length": 10,
+          "cochains": 55,
+          "incoming": 54,
+          "outgoing": 0,
+          "stacked": 1,
+          "classical_upper": 1,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 4,
+          "active_weight": [
+            5,
+            4,
+            1
+          ],
+          "active_length": 10,
+          "cochains": 36,
+          "incoming": 35,
+          "outgoing": 0,
+          "stacked": 1,
+          "classical_upper": 1,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 4,
+          "active_weight": [
+            5,
+            5,
+            1
+          ],
+          "active_length": 10,
+          "cochains": 179,
+          "incoming": 122,
+          "outgoing": 52,
+          "stacked": 57,
+          "classical_upper": 5,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 6,
+          "active_weight": [
+            4,
+            4,
+            0
+          ],
+          "active_length": 8,
+          "cochains": 9,
+          "incoming": 7,
+          "outgoing": 0,
+          "stacked": 2,
+          "classical_upper": 2,
+          "cartan_kernel_upper": 0
+        }
+      ],
+      "totals": {
+        "cochains": 2226,
+        "incoming": 1833,
+        "outgoing": 380,
+        "stacked": 393,
+        "classical_upper": 13,
+        "cartan_kernel_upper": 0
+      }
+    },
+    "Sp3": {
+      "sectors": [
+        {
+          "central_letters": 2,
+          "active_weight": [
+            4,
+            4,
+            4
+          ],
+          "active_length": 12,
+          "cochains": 87,
+          "incoming": 86,
+          "outgoing": 0,
+          "stacked": 1,
+          "classical_upper": 1,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 2,
+          "active_weight": [
+            5,
+            4,
+            3
+          ],
+          "active_length": 12,
+          "cochains": 189,
+          "incoming": 189,
+          "outgoing": 0,
+          "stacked": 0,
+          "classical_upper": 0,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 2,
+          "active_weight": [
+            5,
+            5,
+            3
+          ],
+          "active_length": 12,
+          "cochains": 1653,
+          "incoming": 1322,
+          "outgoing": 328,
+          "stacked": 331,
+          "classical_upper": 3,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 4,
+          "active_weight": [
+            4,
+            4,
+            2
+          ],
+          "active_length": 10,
+          "cochains": 55,
+          "incoming": 54,
+          "outgoing": 0,
+          "stacked": 1,
+          "classical_upper": 1,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 4,
+          "active_weight": [
+            5,
+            4,
+            1
+          ],
+          "active_length": 10,
+          "cochains": 36,
+          "incoming": 35,
+          "outgoing": 0,
+          "stacked": 1,
+          "classical_upper": 1,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 4,
+          "active_weight": [
+            5,
+            5,
+            1
+          ],
+          "active_length": 10,
+          "cochains": 179,
+          "incoming": 121,
+          "outgoing": 53,
+          "stacked": 58,
+          "classical_upper": 5,
+          "cartan_kernel_upper": 0
+        },
+        {
+          "central_letters": 6,
+          "active_weight": [
+            4,
+            4,
+            0
+          ],
+          "active_length": 8,
+          "cochains": 9,
+          "incoming": 7,
+          "outgoing": 0,
+          "stacked": 2,
+          "classical_upper": 2,
+          "cartan_kernel_upper": 0
+        }
+      ],
+      "totals": {
+        "cochains": 2208,
+        "incoming": 1814,
+        "outgoing": 381,
+        "stacked": 394,
+        "classical_upper": 13,
+        "cartan_kernel_upper": 0
+      }
+    }
+  },
+  "semisimple_rank_at_most_two": {
+    "B2+T2": {
+      "cochains": 6528,
+      "classical_upper": 72,
+      "cartan_kernel_upper": 0
+    },
+    "A2+T2": {
+      "cochains": 5258,
+      "classical_upper": 91,
+      "cartan_kernel_upper": 0
+    },
+    "A1+A1+T2": {
+      "cochains": 2850,
+      "classical_upper": 130,
+      "cartan_kernel_upper": 0
+    },
+    "A1+T3": {
+      "cochains": 1708,
+      "classical_upper": 251,
+      "cartan_kernel_upper": 0
+    }
+  }
+}

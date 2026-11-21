@@ -48,6 +48,30 @@ At fixed $B$, the linear part of $Q_0$ pairs the two other scalars with the corr
 
 Extend a Levi primitive by projecting each remaining letter to the Levi. Its closed residual belongs to the transverse ideal. The quadratic part of $Q_0$ preserves the ideal and raises the number of unfixed letters by one. Cancel the lowest such degree by the linear contraction and iterate. Every unfixed BMN letter carries at least one of the two other flavour degrees, whose sum is $2m$, so the procedure terminates. This proves exactness at every specified $B$ at level 24. It bounds the possible support at commuting triples to those for which every scalar pencil is nilpotent. Exactness on the entire unreduced $F_4$ complex and a quantum supercharge pairing require further calculation. [Signed classical rules and transverse contraction](../../taylor_hooks/su3_scalar_levi/README.md#the-full-two-colour-block-and-the-nilpotent-scalar-locus)
 
+## The centre at level 30
+
+At flavour weight $(5,5,5)$ and length 14, restriction to either rank-three simple Levi factor with its one-dimensional centre splits into 16 summands. The number of central letters is 14 minus the active length. The eight summands with odd central degree vanish on any restricted $F_4$ invariant. In the Euclidean root realization the reflection normal to $(0,0,0,1)$ fixes the $B_3$ root subsystem pointwise. The reflection normal to $(0,0,1,1)$ fixes $C_3$ pointwise. Each sends the centre to its negative. On the derived Lie algebra its representative fixes the Cartan pointwise and scales each root vector. Multiplicativity on root brackets makes this an inner torus action, which fixes the invariant cochains.
+
+For the seven positive even summands the rational kernel of restriction to the Cartan has the following bounds. The stacked rank is a lower bound for the rank of the outgoing classical map together with Cartan evaluation.
+
+| Derived group | Cochains | Incoming rank at least | Outgoing rank at least | Stacked rank at least | Cartan kernel at most |
+|---|---:|---:|---:|---:|---:|
+| $SO(7)$ | 2226 | 1833 | 380 | 393 | $2226-1833-393=0$ |
+| $USp(6)$ | 2208 | 1814 | 381 | 394 | $2208-1814-394=0$ |
+
+The degree-zero summand is the pure $(5,5,5)$ block of length 14 in the derived algebra. Every positive-central-degree coefficient of a closed $F_4$ source is a boundary because its Cartan restriction vanishes by the two root equations. The largest positive even symplectic summand has $1653-1322-331=0$ Cartan kernel. A8 jobs 5688192 and 5688957 reached their time limits after saving thirteen of the fourteen sector records used here. The final symplectic record was computed locally. [Individual ranks](level30_central_bounds.json) · [Minor rows and columns](level30_central_minors.json.gz) · [Provenance](level30_central_receipt.json) · [Cartan equations](../root_restriction.json)
+
+For two or three central directions, Cauchy's formula gives the multiplicity of a central scalar partition as the dimension of that Schur representation of the central directions. One central matter fermion adds a vertical strip of two boxes, with one copy per central direction. Complementation in the $(5,5,5)$ rectangle gives the active weight. Successive branching over one central direction at a time reproduces every multiplicity. The simple factors have zero Cartan kernel in every participating summand. Tensoring their injections over the rationals gives the following bounds on the entire Levi source.
+
+| Semisimple part and centre | Cochains | Classical dimension at most | Cartan kernel |
+|---|---:|---:|---:|
+| $B_2+\mathfrak t^2$ | 6528 | 72 | 0 |
+| $A_2+\mathfrak t^2$ | 5258 | 91 | 0 |
+| $A_1+A_1+\mathfrak t^2$ | 2850 | 130 | 0 |
+| $A_1+\mathfrak t^3$ | 1708 | 251 | 0 |
+
+Thus the full level-30 source restricts to a boundary on every proper Levi with derived rank at most two. The central calculation uses only classical restrictions. [Branching and replay](../../f4_level30_central.py)
+
 ## Replay
 
 Use the Python environment for the [rank-four calculation](../../rank_four/README.md). From the repository root run
@@ -57,6 +81,8 @@ d=algorithms/dual_singlets_20261118
 p="$d/f4/levi"
 python3 "$d/f4_bmn_subgroups.py" --SU2 "$p/SU2.json.gz" --SU3 "$p/SU3.json.gz" --SO7 "$p/SO7.json.gz" --Sp3 "$p/Sp3.json.gz" --out /tmp/f4-subgroups.json
 cmp /tmp/f4-subgroups.json "$p/subgroup_bounds.json"
+python3 "$d/f4_level30_central.py" --out /tmp/f4-central-30.json
+cmp /tmp/f4-central-30.json "$p/level30_central_bounds.json"
 for prime in 2147483647 1000033; do
   python3 "$d/f4_spin9_kernel.py" --width 4 --prime "$prime" --work "/tmp/spin9-$prime"
   cmp "/tmp/spin9-$prime/minors.json" "$p/Spin9_${prime}_minors.json" || exit 1

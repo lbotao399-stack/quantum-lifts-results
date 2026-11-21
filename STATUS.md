@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## Central restrictions and simultaneous scalar-chart equations, November 21, 2026
+
+At level 30 the candidate $F_4$ third-order source restricts to a boundary on every Levi of semisimple rank at most two. On the two rank-three simple Levis the seven positive even central summands have rational Cartan kernels $2226-1833-393=0$ and $2208-1814-394=0$. A Weyl reflection kills the eight odd central summands. [Ranks, branching and A8 records](algorithms/dual_singlets_20261118/f4/levi/README.md#the-centre-at-level-30)
+
+At $SU(3)$ levels 32 and 34, individual rational corrections with 93362 and 252847 terms satisfy the first scalar-chart equation at $f,g$ degrees zero and one and at every positive $d$ count. The remaining 153527 and 499085 coefficients give explicit residuals for further descent. [Replay and coefficients](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/complete/README.md#a-common-correction-for-the-two-filtrations)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_central_and_chart.json)
+
 ## Both SU(3) first equations modulo the square of the off-diagonal ghost ideal, November 21, 2026
 
 At levels 32 and 34, the complete rank-one chart expansions contain 253788 and 880876 monomials. Rational corrections of 32343 and 94148 terms cancel every coefficient of ghost degree zero and one in $f,g$. The level-34 calculation agrees with all four homogeneous A8 coefficient streams through degree eleven. [Data and integer replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/complete/README.md)

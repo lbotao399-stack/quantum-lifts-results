@@ -1,0 +1,49 @@
+{
+  "level": 32,
+  "source_words": 331201,
+  "source_sha256": "f7810267d100f7cc9c9b4c93e045540ab2291df8b8bb35eeb4ad77feddd47a8a",
+  "sign_in_Q1": 1,
+  "full_chart_terms": 253788,
+  "trace_groups": 104825,
+  "degree_counts": {
+    "8": 397,
+    "9": 39588,
+    "10": 121088,
+    "11": 71210,
+    "12": 19140,
+    "13": 2296,
+    "14": 69
+  },
+  "fg_degree_counts": {
+    "0": 6119,
+    "1": 46034,
+    "2": 93953,
+    "3": 81967,
+    "4": 25715
+  },
+  "retained_fg_degree": 4,
+  "first_equation_input_terms": 253788,
+  "primitive_terms": 93362,
+  "common_multiplier": 120,
+  "through_d_count": 1,
+  "residual_terms_below_d_count": 153527,
+  "retained_residual": 0,
+  "also_through_fg_degree": 1,
+  "residual_by_d_and_fg": [
+    {
+      "d_degree": 0,
+      "fg_degree": 2,
+      "terms": 40184
+    },
+    {
+      "d_degree": 0,
+      "fg_degree": 3,
+      "terms": 67248
+    },
+    {
+      "d_degree": 0,
+      "fg_degree": 4,
+      "terms": 46095
+    }
+  ]
+}

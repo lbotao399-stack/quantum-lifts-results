@@ -25,7 +25,7 @@ def equation(source, degree, previous):
     return rhs
 
 
-def export(path, rhs):
+def export(path, rhs, mixed_rules=None):
     denominator=1
     for n in rhs.values():
         denominator=lcm(denominator,n.denominator)
@@ -33,7 +33,10 @@ def export(path, rhs):
     for n in rhs.values():
         common=gcd(common,int(n*denominator))
     unit=Fraction(common,denominator)
-    rules=[(k,*pair,n) for k in range(128) for pair,n in variation(k).items() if len(pair)==2]
+    if mixed_rules is None:
+        rules=[(k,*pair,n) for k in range(128) for pair,n in variation(k).items() if len(pair)==2]
+    else:
+        rules=[(k,len(term),*term,n) for k,term,n in mixed_rules]
     with path.open("w") as out:
         print(*map(int,ODD),file=out)
         print(len(rules),file=out)
@@ -80,24 +83,34 @@ def common_denominator_candidate(residues, modulus):
     return {w:Fraction((selected*n+half)%modulus-half,selected) for w,n in residues.items()}
 
 
-def check_candidate(values, unit, rhs, degree):
+def check_candidate(values, unit, rhs, degree, image_of=None):
     candidate={w:v*unit for w,v in values.items() if v}
     check=dict(rhs)
     for w,c in candidate.items():
-        accumulate(check,{v:n for v,n in qmonomial(w).items() if len(v)==degree},-c)
+        image = image_of(w) if image_of is not None else {v:n for v,n in qmonomial(w).items() if len(v)==degree}
+        accumulate(check,image,-c)
     return candidate if not check else None
 
 
-def solve(engine, work, rhs, output, degree, depth):
+def solve(engine, work, rhs, output, degree, depth, *, mixed_rules=None, image_of=None, minimum_roots=0):
+    if (mixed_rules is None) != (image_of is None):
+        raise ValueError("Mixed Taylor rules require their rational replay map")
+    if not 0 <= minimum_roots <= 3 or (minimum_roots and mixed_rules is None):
+        raise ValueError("Restricting off-diagonal ghost degree requires the mixed chart")
     work.mkdir(parents=True,exist_ok=True)
     matrix=work/"equation.txt"
-    unit=export(matrix,rhs)
+    unit=export(matrix,rhs,mixed_rules)
     residues={}
     modulus=1
     records=[]
     for prime in (2147483647,1000000007,1000000009,998244353,1000033,1000003):
         path=work/f"solution-{prime}.txt"
-        subprocess.run([str(engine.resolve()),str(matrix),str(path),str(prime),str(depth)],check=True)
+        command=[str(engine.resolve()),str(matrix),str(path),str(prime),str(depth)]
+        if mixed_rules is not None:
+            command.append("mixed")
+        if minimum_roots:
+            command.append(str(minimum_roots))
+        subprocess.run(command,check=True)
         with path.open() as stream:
             dimensions=list(map(int,next(stream).split()))
             new={bytes.fromhex(w):int(n) for w,n in (line.split() for line in stream)}
@@ -110,11 +123,11 @@ def solve(engine, work, rhs, output, degree, depth):
         records.append(dict(prime=prime,equations=dimensions[0],parents=dimensions[1],
                             peeled=dimensions[2],other_pivots=dimensions[3]))
         values=common_denominator_candidate(residues,modulus)
-        candidate=check_candidate(values,unit,rhs,degree) if values is not None else None
+        candidate=check_candidate(values,unit,rhs,degree,image_of) if values is not None else None
         if candidate is None:
             values={w:rational(n,modulus) for w,n in residues.items()}
             if all(v is not None for v in values.values()):
-                candidate=check_candidate(values,unit,rhs,degree)
+                candidate=check_candidate(values,unit,rhs,degree,image_of)
         if candidate is not None:
             write(output,[[w.hex(),str(c)] for w,c in sorted(candidate.items())])
             return dict(input_monomials=len(rhs),rational_unit=str(unit),terms=len(candidate),residual=0,systems=records)

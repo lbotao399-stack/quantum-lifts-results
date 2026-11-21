@@ -1,5 +1,7 @@
 # Fortuitous Q-cohomology and quantum lifting: computational results
 
+At $F_4$ level 30 the candidate third-order source restricts to zero in classical cohomology on every Levi of derived rank at most two. At $SU(3)$ levels 32 and 34, rational corrections confine the first-equation residual to at least two off-diagonal ghost coefficients and to zero $d$ count at both levels. [Exceptional branching](algorithms/dual_singlets_20261118/f4/levi/README.md#the-centre-at-level-30) · [Unitary corrections](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/complete/README.md#a-common-correction-for-the-two-filtrations)
+
 For the $SU(3)$ BMN sources at levels 32 and 34, explicit rational corrections solve the complete first equation on the rank-one scalar chart modulo $(f,g)^2$, the square of the ideal of the two off-diagonal ghost fields and their Taylor coefficients. The corrections have 32343 and 94148 terms. [Complete first images, coefficients and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/complete/README.md)
 
 For the $F_4$ level-24 BMN source, restriction to every proper Levi and to $\mathrm{Spin}(9)$ is a classical boundary. On $\mathrm{Spin}(9)$ the two rank certificates give $341-222-119=0$. [Exceptional subgroup computations and scalar support](algorithms/dual_singlets_20261118/f4/levi/README.md)
