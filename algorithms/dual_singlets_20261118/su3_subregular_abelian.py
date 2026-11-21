@@ -2,6 +2,7 @@
 import argparse
 from collections import Counter, defaultdict
 from fractions import Fraction
+from functools import partial
 import gzip
 import json
 from pathlib import Path
@@ -19,20 +20,20 @@ def projected_q(word, vanish):
     return {w:n for w,n in qmonomial(word).items() if survives(w, vanish)}
 
 
-def solve_group(rhs, inverse, vanish):
+def solve_group(rhs, inverse, differential):
     # Every term in a connected system has the same jets of the closed spectators.
     reached, parents = set(rhs), set()
     frontier=set(rhs)
     while frontier:
         incident={p for w in frontier for p in quadratic_parents(w,inverse)}-parents
         parents.update(incident)
-        incoming={w for p in incident for w in projected_q(p, vanish)}
+        incoming={w for p in incident for w in differential(p)}
         frontier=incoming-reached
         reached.update(frontier)
     pivots={}
     recipes=[]
     for p in sorted(parents):
-        image=projected_q(p, vanish)
+        image=differential(p)
         steps=reduce_row(image,pivots)
         if image:
             first=min(image)
@@ -82,8 +83,9 @@ def run(level, image, primitive, build, workers, vanish="dfg", input_archive=Non
         groups[frozen, len(w)][w]=n
     if build:
         solution={}
+        differential=partial(projected_q, vanish=vanish)
         for group in groups.values():
-            solution.update(solve_group(group,inverse,vanish))
+            solution.update(solve_group(group,inverse,differential))
         write(primitive,[[w.hex(),str(c)] for w,c in sorted(solution.items())])
     solution=json.loads(gzip.decompress(primitive.read_bytes()))
     for word,c in solution:

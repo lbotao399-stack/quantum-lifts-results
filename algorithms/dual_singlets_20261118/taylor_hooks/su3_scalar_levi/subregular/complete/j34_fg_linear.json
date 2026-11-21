@@ -1,0 +1,31 @@
+{
+  "level": 34,
+  "source_words": 517468,
+  "source_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+  "sign_in_Q1": -1,
+  "full_chart_terms": 880876,
+  "trace_groups": 229290,
+  "degree_counts": {
+    "8": 1255,
+    "9": 124633,
+    "10": 425428,
+    "11": 260558,
+    "12": 62916,
+    "13": 5975,
+    "14": 111
+  },
+  "fg_degree_counts": {
+    "0": 19523,
+    "1": 146845,
+    "2": 321913,
+    "3": 295676,
+    "4": 96919
+  },
+  "retained_fg_degree": 1,
+  "first_equation_input_terms": 166368,
+  "primitive_terms": 94148,
+  "common_multiplier": 120,
+  "through_d_count": 0,
+  "residual_terms_below_d_count": 0,
+  "retained_residual": 0
+}

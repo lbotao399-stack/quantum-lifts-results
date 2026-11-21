@@ -1,7 +1,7 @@
 """Expand the signed SU(3) first image on the subregular scalar chart over Q."""
 import argparse
 from collections import Counter, defaultdict
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import FIRST_COMPLETED, ProcessPoolExecutor, wait
 from fractions import Fraction
 from functools import lru_cache
 import gzip
@@ -18,17 +18,21 @@ ARCHIVES = {
          "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14"),
 }
 FIELDS = "pquradfg"
+ROOT_START = 16*FIELDS.index("f")
 THETA_DEGREE = (0, 1, 1, 2)
 ODD = tuple(bool((k // 16 >= 4) ^ (THETA_DEGREE[k % 4] % 2)) for k in range(128))
 UNIT = {b"": 1}
 INFINITY = 100
 
 
-def multiply(left, right, limit):
+def multiply(left, right, limit, linear_roots=False):
     result = Counter()
     for x, c in left.items():
         for y, d in right.items():
             if len(x) + len(y) > limit:
+                continue
+            # With f,g last in the alphabet, two positive-degree factors vanish modulo (f,g)^2.
+            if linear_roots and x and y and x[-1] >= ROOT_START and y[-1] >= ROOT_START:
                 continue
             phase, monomial = ordered(x, y)
             if phase:
@@ -117,7 +121,7 @@ def trace_bound(trace, vanish=""):
 
 
 @lru_cache(12000)
-def trace_polynomial(trace, limit, vanish=""):
+def trace_polynomial(trace, limit, vanish="", linear_roots=False):
     result = Counter()
     for first in range(3):
         suffix = [[0 if k == first else INFINITY for k in range(3)]]
@@ -135,7 +139,7 @@ def trace_polynomial(trace, limit, vanish=""):
                     entry = entries(letter, vanish)[3*k+j]
                     cap = limit - suffix[len(trace)-i-1][j]
                     if entry and cap >= costs(letter, vanish)[3*k+j]:
-                        following[j].update(multiply(poly, entry, cap))
+                        following[j].update(multiply(poly, entry, cap, linear_roots))
             paths = {j: poly for j, poly in following.items() if poly}
         result.update(paths.get(first, {}))
     return {m: n for m, n in result.items() if n}
@@ -172,7 +176,7 @@ def source(level, archive, limit, vanish=""):
                 selected=selected, **({"vanishing_fields":vanish} if vanish else {}))
 
 
-def expand_words(selected, limit, vanish=""):
+def expand_words(selected, limit, vanish="", linear_roots=False):
     total = Counter()
     for numerator, encoded in selected:
         word = [bytes.fromhex(t) for t in encoded]
@@ -181,8 +185,8 @@ def expand_words(selected, limit, vanish=""):
         polynomial = UNIT
         for t, bound in zip(word, bounds):
             remaining -= bound
-            tr = trace_polynomial(t, limit-lower+bound, vanish)
-            polynomial = multiply(polynomial, tr, limit-remaining)
+            tr = trace_polynomial(t, limit-lower+bound, vanish, linear_roots)
+            polynomial = multiply(polynomial, tr, limit-remaining, linear_roots)
             if not polynomial:
                 break
         for m, n in polynomial.items():
@@ -193,15 +197,26 @@ def expand_words(selected, limit, vanish=""):
 def expand(packet, workers=1):
     selected, limit = packet["selected"], packet["degree"]
     vanish = packet.get("vanishing_fields","")
+    linear_roots = packet.get("linear_roots",False)
     if workers == 1:
-        total = expand_words(selected, limit, vanish)
+        total = expand_words(selected, limit, vanish, linear_roots)
     else:
         total = Counter()
         size = 4000
+        offsets = iter(range(0, len(selected), size))
         with ProcessPoolExecutor(workers) as pool:
-            pieces = [pool.submit(expand_words, selected[i:i+size], limit, vanish) for i in range(0, len(selected), size)]
-            for piece in pieces:
-                total.update(piece.result())
+            pending = set()
+            while True:
+                while len(pending) < workers*2:
+                    i = next(offsets, None)
+                    if i is None:
+                        break
+                    pending.add(pool.submit(expand_words, selected[i:i+size], limit, vanish, linear_roots))
+                if not pending:
+                    break
+                completed, pending = wait(pending, return_when=FIRST_COMPLETED)
+                for piece in completed:
+                    total.update(piece.result())
     rows = [[m.hex(), n] for m, n in sorted(total.items()) if n]
     degrees = Counter(len(m)//2 for m, _ in rows)
     return {**{k: v for k, v in packet.items() if k != "selected"}, "selected_words":len(packet["selected"]),
