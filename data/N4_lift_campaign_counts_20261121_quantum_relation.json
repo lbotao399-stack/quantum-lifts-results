@@ -1,0 +1,47 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_orthogonal_product.json",
+  "phase": "A rational quantum correction to a USp(6) graviton product relation",
+  "classical_primitive_terms": 8361,
+  "formal_first_correction_terms": 6711,
+  "coefficient_relative_to_projected_lowered_omega": "-112",
+  "upper_full_integer_coordinates": 2689,
+  "A6_job": 7657390,
+  "independent_prime": 1000033,
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/primitive_verified.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/formal.json.gz",
+    "algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/relation.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/relative_verified.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/returned_a6_receipt.json"
+  ]
+}

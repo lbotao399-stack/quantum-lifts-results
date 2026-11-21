@@ -33,6 +33,30 @@ An independent signed-minor construction uses 665 classical equations and 20 Car
 
 For each of eleven lower $SO(7)$ sectors checked by A6 jobs 7657344 and 7657349, the incoming-rank lower bound plus the rank lower bound for the stacked outgoing and Cartan maps equals the full cochain dimension. Their rational Cartan kernels on cohomology vanish. [Sector ranks and file hashes](parents/receipts.json)
 
+## The first quantum product relation in this sector
+
+For $USp(6)$ let $K$ be the rational nine-letter primitive of $P_0$. Solving in the 1149 independent classical images gives 1135 nonzero source coordinates. The 8361 trace terms of $K$ have common denominator 170380800. The formal residual has 15704 terms. On the finite-colour integer frames of dimensions 179 and 1653 every coordinate vanishes, proving $Q_0K=P_0$. [Primitive](primitive.json.gz) · [Independent full-frame verification](primitive_verified.json)
+
+Let $P(\hbar)$ be the same linear combination of iterated quantum products, with first coefficient $P_1$. The formal trace complex retains graded cyclicity and symplectic trace reversal before imposing finite-rank identities. At Taylor weight $(1,1,5,2,2)$, with the two spacetime degrees first, each classical differential preserves the total spacetime and flavour degrees on each trace. On the 52 resulting blocks the incoming and outgoing minor ranks give
+
+$$
+\dim H^9_{\mathrm{formal}}(Q_0)=7760-4492-3268=0 .
+$$
+
+Here the superscript counts letters. The rank sums attain the dimension separately in every block. A 6711-term formal polynomial of denominator 135 solves $Q_0P_1=-Q_1P_0$ coefficient by coefficient, including all 6056 terms of $Q_1P_0$. The marked product obeys this equation in formal traces. Its colour contractions use the symplectic completeness identity, with a closed colour loop supplying the defining dimension. Equivalently, the identity holds at all sufficiently large symplectic ranks where these trace degrees are stable, and then specializes to defining dimension six. The zero formal cohomology makes the solution unique up to a formal boundary. Hence its evaluation determines the product class at six colours. [Formal maps and correction](formal.json.gz) · [Product Ward identity and marked contraction](https://github.com/lbotao399-stack/All-loop-holomorphic-kernels/blob/dcab65c7d758aef018b61e0b71ce398dca20c4d4/main.tex)
+
+Write $\omega_{\mathrm{low}}$ for the archived highest-weight projection of the fourfold lowered $USp(6)$ class. The finite-colour classical cohomology at that weight and length nine has dimension $7294-4336-2957=1$. Its saved functional takes the values $0$ on $P_1$, $672$ on $Q_1K$ and $6$ on $\omega_{\mathrm{low}}$ modulo 1000003. [Pairings](relation.json) · [Construction of the normalized lowered class](../../sp3_omega/README.md#lowering-to-the-known-nine-letter-class)
+
+Reverse the four classical substitutions and project to the highest weight $(3,3,5,0,0)$. This map commutes with $Q_0$ and is injective on the lower cohomology line. The returned reference raises the rational boundary rank 1607 to 1608, attaining the full cycle dimension $2689-1081=1608$. Solving at 1700 integer coordinates gives **$-112$** as the coefficient of the returned reference. A separate eight-letter primitive with 8428 terms certifies the equality on all 2689 coordinates of an independent integer frame. Thus, over $\mathbb Q$,
+
+$$
+[P_1-Q_1K]=-112[\omega_{\mathrm{low}}].
+$$
+
+A6 job 7657390 independently gives ranks $1607,1608,1607$ for the boundaries, the boundaries with the returned difference, and the boundaries with that difference plus 112 returned reference classes, respectively. The middle minor is 380448 modulo 1000033. The native engine takes ordinary spacetime derivatives. A Taylor letter with derivative counts $r,s$ carries the factor $1/(r!s!)$ when exported, in addition to the component sign. The conversion now checks the classical splitting identity for every exported letter. [Rational coefficients](relative.json.gz) · [Independent integer identity](relative_verified.json) · [A6 minor](returned_a6_v2.json) · [Receipt and input hashes](returned_a6_receipt.json)
+
+The ring theorem gives $\mathbf QP(\hbar)=0$. Hence $(P(\hbar)-\mathbf QK)/\hbar$ is a perturbatively closed representative with leading class $-112[\omega_{\mathrm{low}}]$. Its potential incoming $d_1$ source has dimension $1861-712-1149=0$, and an incoming $d_r$ with $r\ge2$ would require negative spacetime Taylor degree. This identifies a nonzero quantum correction to a classical product relation. The calculation uses perturbation theory.
+
 ## Replay
 
 From the repository root, use Python with NumPy, SciPy and python-flint, and a C++17 compiler.
@@ -50,4 +74,12 @@ PAR_THREADS=4 /tmp/bmn633-replay/image /tmp/bmn633-replay/product.txt 6 3 3 0 0 
 cmp /tmp/bmn633-replay/minor.json "$b/product_augmented.json"
 c++ -O3 -std=c++17 -pthread -I "$t/native" "$b/frozen_rows.cpp" -o /tmp/bmn633-replay/frozen
 python3 "$b/frozen_replay.py" --recipe "$b/rational.json.gz" --check "$b/cofactor.json" --engine /tmp/bmn633-replay/frozen --out /tmp/bmn633-replay/frozen.json
+python3 "$b/symplectic_primitive.py" --work /tmp/bmn633-replay/sp --out /tmp/bmn633-replay/K.json.gz
+python3 "$b/primitive_replay.py" --primitive /tmp/bmn633-replay/K.json.gz --work /tmp/bmn633-replay/sp --out /tmp/bmn633-replay/K-check.json --project-first
+python3 "$b/formal_product_correction.py" --primitive /tmp/bmn633-replay/K.json.gz --archive /tmp/bmn633-replay/formal.json.gz --work /tmp/bmn633-replay/sp --out /tmp/bmn633-replay/relation.json
+python3 "$b/omega_return.py" --primitive "$b/primitive.json.gz" --formal "$b/formal.json.gz" --work /tmp/bmn633-replay/return --out /tmp/bmn633-replay/relative.json.gz
+python3 "$b/omega_return.py" --primitive "$b/primitive.json.gz" --formal "$b/formal.json.gz" --work /tmp/bmn633-replay/return --check /tmp/bmn633-replay/relative.json.gz --out /tmp/bmn633-replay/relative-check.json
+c++ -std=c++17 -O3 -pthread -I "$t/native" "$b/returned_minor.cpp" -o /tmp/bmn633-replay/returned-minor
+PAR_THREADS=4 /tmp/bmn633-replay/returned-minor /tmp/bmn633-replay/return/returned.txt /tmp/bmn633-replay/return/sum112.txt > /tmp/bmn633-replay/A6.json
+cmp /tmp/bmn633-replay/A6.json "$b/returned_a6_v2.json"
 ```

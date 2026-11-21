@@ -19,7 +19,7 @@ from so7_hair_first import lower, product as trace_product
 from so8_level24_descendant import raising_images
 from sp3_omega_product_replay import odd_jet, odd_slot, trace_factor
 from sp3_omega_products import canonical, cartan
-from su2_levi_images import native
+from su2_levi_images import check_convention, native
 from su3_levi_branching import sign, spectators
 from trace_descent import dimensions, evaluate, settings
 
@@ -48,9 +48,11 @@ def diagonal(polynomial):
 
 
 def export_trace(polynomial, output):
-    nums, den = integral(polynomial)
-    alphabet = sorted({l for w in nums for tr in w for l in tr})
-    traces = sorted({tr for w in nums for tr in w})
+    traces = sorted({tr for w in polynomial for tr in w})
+    alphabet = sorted({l for tr in traces for l in tr})
+    check_convention(alphabet)
+    scalings = {tr:prod(native(l)[1] for l in tr) for tr in traces}
+    nums, den = integral({w:c*prod(scalings[tr] for tr in w) for w,c in polynomial.items()})
     identifiers = {tr:i for i,tr in enumerate(traces)}
     with output.open("w") as stream:
         print(len(alphabet),len(traces),len(nums),file=stream)
@@ -59,7 +61,9 @@ def export_trace(polynomial, output):
         for tr in traces:
             print(len(tr),*(alphabet.index(l) for l in tr),file=stream)
         for w,num in sorted(nums.items()):
-            print(num*prod(native(l)[1] for tr in w for l in tr),len(w),*(identifiers[tr] for tr in w),file=stream)
+            if abs(num) >= 2**63:
+                raise OverflowError("native trace coefficients must fit a signed 64-bit integer")
+            print(num,len(w),*(identifiers[tr] for tr in w),file=stream)
     return len(nums), den, hashlib.sha256(output.read_bytes()).hexdigest()
 
 

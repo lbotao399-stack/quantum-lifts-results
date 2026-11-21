@@ -1,0 +1,17 @@
+{
+  "primitive_sha256": "c9ffe12d2bc6452fbc38185f205055dddfe9c32872ab093a6239f3ac3fd2dc96",
+  "formal_correction_sha256": "930cc3db6fbbd0e4b548759d6096b57ce578886e5ccfad863971340cc5529e4e",
+  "lowered_page_sha256": "f14436b2f38a3bd7a05908947a743d1862fb207ea99b89698e9bf87381b57d24",
+  "formal_blocks": 52,
+  "formal_source": 7760,
+  "formal_incoming_rank": 4492,
+  "formal_outgoing_rank": 3268,
+  "formal_first_action_terms": 6056,
+  "formal_correction_terms": 6711,
+  "formal_residual_terms": 0,
+  "reduced_difference_terms": 67387,
+  "prime": 1000003,
+  "product_pairing": 0,
+  "primitive_first_pairing": 672,
+  "difference_pairing": 999331
+}

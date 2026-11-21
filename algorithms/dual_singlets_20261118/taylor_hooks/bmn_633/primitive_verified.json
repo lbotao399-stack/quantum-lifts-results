@@ -1,0 +1,24 @@
+{
+  "primitive_sha256": "c9ffe12d2bc6452fbc38185f205055dddfe9c32872ab093a6239f3ac3fd2dc96",
+  "seed": 1738401,
+  "primitive_terms": 8361,
+  "product_terms": 1212,
+  "formal_residual_terms": 15704,
+  "formal_residual_denominator": 85190400,
+  "full_frame": {
+    "0": {
+      "dimension": 179,
+      "minor_mod_1000003": 609983
+    },
+    "2": {
+      "dimension": 1653,
+      "minor_mod_1000003": 139358
+    }
+  },
+  "exact_zero_coordinates": 1832,
+  "lowered_page_sha256": "f14436b2f38a3bd7a05908947a743d1862fb207ea99b89698e9bf87381b57d24",
+  "first_action_terms": 66016,
+  "first_action_denominator": 170380800,
+  "prime": 1000003,
+  "first_action_pairing": 672
+}

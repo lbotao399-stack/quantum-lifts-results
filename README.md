@@ -4,6 +4,8 @@ Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://gith
 
 **Running computations (updated daily): [STATUS.md](STATUS.md).**
 
+At $USp(6)$ the level-24 graviton relation has a nonzero first quantum coefficient. For the product coefficient $P_1$ and the classical primitive $Q_0K=P_0$, the rational equality is $[P_1-Q_1K]=-112[\omega_{\mathrm{low}}]$. This gives a perturbatively closed completion of the lowered nine-letter class. [Proof, trace coordinates and independent A6 minor](algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/README.md#the-first-quantum-product-relation-in-this-sector)
+
 At $SO(7)$ level 24 and BMN weight $(6,3,3)$ all 21 length-ten classical classes are spanned by graviton products. An explicit 1212-term product spans the one-dimensional Cartan kernel and becomes a classical boundary in $USp(6)$. [Polynomial, proof and replay](algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/README.md)
 
 At $SU(3)$ level 32 a single invariant polynomial with 2487 integer trace coefficients solves the first equation over the ring defined by $S_iS_j=0$ for all three scalar flavours. At level 36 the three restricted third-target kernel bounds are 4, 7 and 3. Two second-order targets vanish at $USp(4)$ level 36 for sources of lengths 16 and 17. [Scalar polynomial and proof](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/README.md#an-invariant-family-correction-at-level-32) · [Three Levi bounds](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/full_block/all_bounds.json) · [Symplectic ranks](algorithms/dual_singlets_20261118/taylor_hooks/b2_second_level36/tail_bounds.json)

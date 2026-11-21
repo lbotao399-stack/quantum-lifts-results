@@ -6,7 +6,7 @@ import gzip
 import hashlib
 from io import StringIO
 import json
-from math import prod
+from math import comb, factorial, prod
 from pathlib import Path
 
 import formal_trace_blocks as formal
@@ -23,24 +23,27 @@ INPUTS = {
 
 def native(letter):
     r, s, flavours = letter
+    # The native Q0 uses the ordinary-derivative binomial Leibniz rule.
+    scale = Fraction(1, factorial(r)*factorial(s))
     if len(flavours) == 0:
-        return (3, 0, r, s), -1
+        return (3, 0, r, s), -scale
     if len(flavours) == 1:
-        return (0, flavours[0], r, s), 1
+        return (0, flavours[0], r, s), scale
     if len(flavours) == 2:
         missing = 3 - sum(flavours)
-        return (1, missing, r, s), -1 if missing == 1 else 1
-    return (2, 0, r, s), 1
+        return (1, missing, r, s), -scale if missing == 1 else scale
+    return (2, 0, r, s), scale
 
 
-def check_convention():
+def check_convention(letters=None):
     """Expand each native supercommutator and compare ordered products with every input split."""
-    for k, letter in enumerate(formal.ALPH):
+    from fortuity.full.letters import Q_letter
+    for letter in formal.ALPH if letters is None else letters:
         (kind, f, r, s), phase = native(letter)
         left = Counter()
-        for sign, (i, j) in formal.SPLITS[k]:
-            x, a = native(formal.ALPH[i])
-            y, b = native(formal.ALPH[j])
+        for sign, i, j in Q_letter(letter):
+            x, a = native(i)
+            y, b = native(j)
             left[x, y] += sign*a*b
         if kind == 3:
             brackets = [(3, 0, 3, 0, Fraction(-1, 2))]
@@ -57,8 +60,9 @@ def check_convention():
                     if (x == 3 and u+v == 0) or (y == 3 and r+s-u-v == 0):
                         continue
                     first, second = (x, i, u, v), (y, j, r-u, s-v)
-                    right[first, second] += phase*c
-                    right[second, first] += phase*c*(1 if x in (1,3) and y in (1,3) else -1)
+                    coefficient = phase*c*comb(r,u)*comb(s,v)
+                    right[first, second] += coefficient
+                    right[second, first] += coefficient*(1 if x in (1,3) and y in (1,3) else -1)
         assert left == right
 
 

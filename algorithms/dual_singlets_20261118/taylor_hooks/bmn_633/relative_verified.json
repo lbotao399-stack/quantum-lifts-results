@@ -1,0 +1,11 @@
+{
+  "coefficients_sha256": "97eb3c8b5abb9f763c08f9e53d97ec9cb713a11ffc1892622a008fd12472809e",
+  "relative_coefficient": "-112",
+  "upper_primitive_terms": 8428,
+  "upper_primitive_denominator": 441627033600,
+  "formal_residual_terms": 12355,
+  "formal_residual_denominator": 441627033600,
+  "seed": 2719409,
+  "exact_zero_coordinates": 2689,
+  "integer_frame_minor_mod_1000003": 603838
+}

@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## A nonzero quantum product relation in USp(6), November 21, 2026
+
+At $USp(6)$ the level-24 graviton relation has a nonzero first quantum coefficient. For the product coefficient $P_1$ and the classical primitive $Q_0K=P_0$, the rational equality is $[P_1-Q_1K]=-112[\omega_{\mathrm{low}}]$. This gives a perturbatively closed completion of the lowered nine-letter class. [Proof, trace coordinates and independent A6 minor](algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/README.md#the-first-quantum-product-relation-in-this-sector)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_quantum_relation.json)
+
 ## The level-24 orthogonal product relation, November 21, 2026
 
 At BMN weight $(6,3,3)$ and length ten, $SO(7)$ and $USp(6)$ have rational cohomology dimensions 21 and 20. Twenty independent products survive on the rank-three Cartan. A further product vanishes there and raises the orthogonal boundary rank from 1151 to 1152. Its augmented minor is 840083 modulo 1000033. Eleven lower orthogonal sectors have zero rational Cartan kernel. [Trace polynomial, rank certificates and A6 receipts](algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/README.md)

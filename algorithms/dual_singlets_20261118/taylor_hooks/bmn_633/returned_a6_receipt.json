@@ -1,0 +1,24 @@
+{
+  "job": 7657390,
+  "state": "COMPLETED",
+  "allocated_cores": 64,
+  "elapsed_seconds": 133,
+  "sha256": "602b45f133c8b35c5809a8af93a2588c077fdf813aea7b7262799a36c0e21098",
+  "native_inputs": {
+    "returned": {
+      "terms": 12552,
+      "denominator": 85190400,
+      "sha256": "8df14dee57862603d11071e6b4d58d82b9364d00f1cab12d5573840887c132c0"
+    },
+    "omega": {
+      "terms": 11606,
+      "denominator": 24192,
+      "sha256": "fd122866d39e4b29e7f49ad6e14fdd8c1474466b89dc160de0094579662fae28"
+    },
+    "sum112": {
+      "terms": 12552,
+      "denominator": 85190400,
+      "sha256": "97d145e93ca995ef7f2b284051fe262d8aa16984b501ca5ab805820283d911cd"
+    }
+  }
+}
