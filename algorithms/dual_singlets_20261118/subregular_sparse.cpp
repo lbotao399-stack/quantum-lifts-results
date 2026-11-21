@@ -119,12 +119,67 @@ public:
     }
 };
 
+// A basis of the alternating quotient for exchanging the two even Taylor directions.
+// At a fixed word the colour-coordinate exterior sign decides whether it survives.
+int alternating_representative(Word& w, const std::array<int,128>& odd) {
+    Word swapped = w;
+    int sign = 1;
+    for (size_t i=0; i<w.size(); ++i) {
+        const int v = w[i];
+        const char x = static_cast<char>((v & ~12) | ((v & 4)<<1) | ((v & 8)>>1));
+        size_t pos=i;
+        while (pos && swapped[pos-1] > x) {
+            if (odd[x] && odd[swapped[pos-1]]) sign=-sign;
+            swapped[pos]=swapped[pos-1];
+            --pos;
+        }
+        swapped[pos]=x;
+    }
+    if (swapped == w) return sign == -1 ? 1 : 0;
+    if (swapped > w) return 1;
+    w = std::move(swapped);
+    return -sign;
+}
+
 int main(int argc, char** argv) {
-    const bool mixed = (argc==6 || argc==7) && std::string(argv[5])=="mixed";
-    if (argc!=5 && !mixed) throw std::runtime_error("expected INPUT OUTPUT PRIME INCIDENCE_ROUNDS [mixed [MIN_ROOTS]]");
-    const int min_roots = argc==7 ? std::stoi(argv[6]) : 0;
-    if (min_roots<0 || min_roots>3) throw std::runtime_error("invalid minimum ghost degree for a parent");
+    const bool fixed_support = argc >= 7 && std::string(argv[argc-2]) == "--support";
+    std::vector<Word> supplied;
+    if (fixed_support) {
+        std::ifstream previous(argv[argc-1]);
+        int rows, columns, singles, rank;
+        if (!(previous >> rows >> columns >> singles >> rank) || rows < 1 || columns < 1)
+            throw std::runtime_error("invalid support header");
+        std::string hex;
+        int residue;
+        while (previous >> hex >> residue) {
+            if (hex.empty() || hex.size()%2 || !residue)
+                throw std::runtime_error("invalid support entry");
+            const Word w = decode(hex);
+            if (std::any_of(w.begin(), w.end(), [](unsigned char k) { return k >= 128; })
+                    || !std::is_sorted(w.begin(),w.end()))
+                throw std::runtime_error("unexpected Taylor generator in support");
+            supplied.push_back(w);
+        }
+        std::sort(supplied.begin(),supplied.end());
+        if (!previous.eof() || supplied.empty() || supplied.size() > static_cast<size_t>(columns)
+                || std::adjacent_find(supplied.begin(),supplied.end()) != supplied.end())
+            throw std::runtime_error("invalid previous solution");
+        argc -= 2;
+    }
+    const bool spin_odd = argc>5 && std::string(argv[argc-1])=="spin-odd";
+    if (spin_odd) --argc;
+    const bool mixed = argc>=6 && argc<=8 && std::string(argv[5])=="mixed";
+    if (argc!=5 && !mixed)
+        throw std::runtime_error("expected INPUT OUTPUT PRIME INCIDENCE_ROUNDS [mixed [MIN_ROOTS [MAX_ROOTS]]] [spin-odd] [--support PREVIOUS]");
+    const int min_roots = argc>=7 ? std::stoi(argv[6]) : 0;
+    const int max_roots = argc==8 ? std::stoi(argv[7]) : 4;
+    if (min_roots<0 || min_roots>3 || max_roots<min_roots || max_roots>4)
+        throw std::runtime_error("invalid range of off-diagonal ghost degrees");
+    // f and g occupy the last two groups of sixteen Taylor coefficients.
+    auto roots = [](const Word& w) { return w.end()-std::lower_bound(w.begin(),w.end(),6*16); };
     int prime=std::stoi(argv[3]), rounds=std::stoi(argv[4]);
+    if (fixed_support && rounds != 1)
+        throw std::runtime_error("a fixed support is supplied for one round");
     std::ifstream in(argv[1]);
     std::array<int,128> odd{};
     for (int& v : odd) in >> v;
@@ -163,7 +218,13 @@ int main(int argc, char** argv) {
     };
     for (int t=0; t<rhs_count; ++t) {
         std::string hex; std::int64_t n; in >> hex >> n;
-        int i=append(decode(hex)); rhs[i]=mod(n,prime);
+        Word w=decode(hex);
+        if (argc==8 && roots(w)>max_roots) throw std::runtime_error("right hand side outside quotient");
+        const int sign = spin_odd ? alternating_representative(w,odd) : 1;
+        if (sign) {
+            int i=append(w);
+            rhs[i]=mod(rhs[i]+sign*(n%prime),prime);
+        }
     }
     if (!in) throw std::runtime_error("incomplete input");
     std::vector<Word> parents;
@@ -172,8 +233,8 @@ int main(int argc, char** argv) {
     size_t first=0;
     for (int layer=0; layer<rounds && first<targets.size(); ++layer) {
         size_t stop=targets.size();
-        std::vector<Word> fresh;
-        for (size_t t=first; t<stop; ++t) {
+        std::vector<Word> fresh = std::move(supplied);
+        for (size_t t=first; !fixed_support && t<stop; ++t) {
             const Word& w=targets[t];
             auto contract = [&](const std::vector<int>& keys, size_t i, size_t j, size_t kpos) {
                 if (keys.empty()) return;
@@ -183,8 +244,8 @@ int main(int argc, char** argv) {
                 for (int k : keys) {
                     if (odd[k] && std::binary_search(rest.begin(),rest.end(),k)) continue;
                     Word p=rest; p.insert(std::lower_bound(p.begin(),p.end(),k),static_cast<char>(k));
-                    // f and g occupy the last two groups of sixteen Taylor coefficients.
-                    if (min_roots && p.end()-std::lower_bound(p.begin(),p.end(),6*16)<min_roots) continue;
+                    if (min_roots && roots(p)<min_roots) continue;
+                    if (spin_odd && !alternating_representative(p,odd)) continue;
                     if (seen.insert(p).second) fresh.push_back(std::move(p));
                 }
             };
@@ -200,11 +261,21 @@ int main(int argc, char** argv) {
         std::sort(fresh.begin(), fresh.end());
         for (const Word& p : fresh) {
             auto image=variation(p,rules,odd);
+            if (spin_odd) {
+                std::unordered_map<Word,int> projected;
+                for (const auto& term : image) {
+                    Word w=term.first;
+                    int sign=alternating_representative(w,odd);
+                    if (sign) projected[w]+=sign*term.second;
+                }
+                image=std::move(projected);
+            }
             std::vector<std::pair<Word,int>> ordered(image.begin(),image.end());
             std::sort(ordered.begin(),ordered.end());
             Row column;
             for (const auto& item : ordered)
-                if (item.second) column.emplace_back(append(item.first),item.second);
+                if (item.second && (argc!=8 || roots(item.first)<=max_roots))
+                    column.emplace_back(append(item.first),item.second);
             if (!column.empty()) { parents.push_back(p); columns.push_back(std::move(column)); }
         }
         first=stop;

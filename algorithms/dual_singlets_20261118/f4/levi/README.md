@@ -117,3 +117,29 @@ for group in SO7 Sp3; do
   python3 -c 'import gzip,json,sys; assert json.load(open(sys.argv[1])) == json.load(gzip.open(sys.argv[2]))' "/tmp/$group-level30.json" "$p/${group}_level30_pure.json.gz" || exit 1
 done
 ```
+
+## The $G_2+A_1$ restriction and parabolics
+
+Let $A_1$ denote a rank-one simple factor, with Lie algebra $\mathfrak{sl}_2$. In a commuting product with another Lie algebra $\mathfrak h$, replacing this factor by its Cartan $\mathfrak t_1$ gives a subalgebra of the centralizer of $\mathfrak t_1$ in $F_4$. This centralizer is a proper Levi. Both exceptional sources already become boundaries there.
+
+On the product the classical differential is the sum of the two differentials, with the exterior sign. Over the rationals its cohomology is the tensor product. In each complementary pair of flavour weights, restriction on this tensor product is the identity on the $\mathfrak h$ factor tensored with Cartan restriction on $A_1$. The rank-one minors give the following exact bounds, reproduced with primes 2147483647 and 1000033.
+
+| Level | Product branches | Rank-one branches with zero cohomology | Other rank-one branches | Maximum Cartan-kernel dimension on any branch | Cochains and cohomology for $A_1$ alone |
+|---:|---:|---:|---:|---:|---:|
+| 24 | 68 | 62 | 6 | 0 | 1, 0 |
+| 30 | 110 | 103 | 7 | 0 | 1, 0 |
+
+Thus restriction from the product to $\mathfrak h+\mathfrak t_1$ is injective on cohomology in these source sectors. Its composition with restriction from $F_4$ vanishes. Every source therefore restricts to a boundary on $G_2+A_1$ at both levels. The last column also covers every simple $A_1$ embedding. [Rank-one summands](rank_one_factor.json) · [Native rank and character replay](../../f4_rank_one_factor.py) · [Draper, Albert-algebra realization of the subgroup](https://agt2.cie.uma.es/~loos/jordan/archive/F4/F4.pdf)
+
+For a proper parabolic subgroup choose a cocharacter that acts trivially on its Levi and with positive weights on its nilradical. On a tuple of parabolic letters, conjugation by this cocharacter multiplies each nilradical entry by a positive power of its parameter. An $F_4$-invariant polynomial is constant under this conjugation. Its value at parameter zero is its restriction to the Levi pulled back by the parabolic projection. This projection preserves brackets, hence commutes with $Q_0$, and pulls back a Levi-invariant primitive to a parabolic-invariant primitive.
+
+In characteristic zero the reductive maximal connected subgroups of $F_4$ have types $B_4$, $A_1+C_3$, $A_2+A_2$, $A_1+G_2$ and $A_1$. The remaining maximal connected subgroups are parabolic. Combining the restrictions above proves that the level-24 source restricts to a classical boundary on every proper connected algebraic subgroup over $\mathbb C$. This leaves the unrestricted $F_4$ source dimension between zero and three. [Thomas, Theorem 3.1, $F_4$ table](https://arxiv.org/pdf/1501.04858)
+
+From the repository root, the second prime regenerates all 108 distinct positive-length rank-one sectors used in the two decompositions.
+
+```sh
+d=algorithms/dual_singlets_20261118
+c++ -O3 -std=c++17 -pthread -I "$d/taylor_hooks/native" "$d/taylor_hooks/su2_cartan_kernel.cpp" -o /tmp/f4-rank-one
+python3 "$d/f4_rank_one_factor.py" --engine /tmp/f4-rank-one --work /tmp/f4-rank-one-minors --out /tmp/f4-rank-one.json
+cmp /tmp/f4-rank-one.json "$d/f4/levi/rank_one_factor.json"
+```

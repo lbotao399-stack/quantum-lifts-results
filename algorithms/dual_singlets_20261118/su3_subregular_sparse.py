@@ -93,11 +93,14 @@ def check_candidate(values, unit, rhs, degree, image_of=None):
     return candidate if not check else None
 
 
-def solve(engine, work, rhs, output, degree, depth, *, mixed_rules=None, image_of=None, minimum_roots=0):
+def solve(engine, work, rhs, output, degree, depth, *, mixed_rules=None, image_of=None,
+          minimum_roots=0, maximum_roots=None):
     if (mixed_rules is None) != (image_of is None):
         raise ValueError("Mixed Taylor rules require their rational replay map")
     if not 0 <= minimum_roots <= 3 or (minimum_roots and mixed_rules is None):
         raise ValueError("Restricting off-diagonal ghost degree requires the mixed chart")
+    if maximum_roots is not None and (mixed_rules is None or not minimum_roots <= maximum_roots <= 4):
+        raise ValueError("Invalid off-diagonal ghost quotient")
     work.mkdir(parents=True,exist_ok=True)
     matrix=work/"equation.txt"
     unit=export(matrix,rhs,mixed_rules)
@@ -109,8 +112,10 @@ def solve(engine, work, rhs, output, degree, depth, *, mixed_rules=None, image_o
         command=[str(engine.resolve()),str(matrix),str(path),str(prime),str(depth)]
         if mixed_rules is not None:
             command.append("mixed")
-        if minimum_roots:
+        if minimum_roots or maximum_roots is not None:
             command.append(str(minimum_roots))
+        if maximum_roots is not None:
+            command.append(str(maximum_roots))
         subprocess.run(command,check=True)
         with path.open() as stream:
             dimensions=list(map(int,next(stream).split()))

@@ -1,0 +1,3078 @@
+{
+  "24": {
+    "branches": 68,
+    "empty": 62,
+    "sum_rank_one_dimensions": 48,
+    "rank_one_alone": {
+      "other_weight": [
+        0,
+        0,
+        0
+      ],
+      "rank_one_weight": [
+        4,
+        4,
+        4
+      ],
+      "rank_one_length": 11,
+      "multiplicity": 1,
+      "cochains": 1,
+      "cohomology_upper": 0,
+      "Cartan_kernel_upper": 0
+    },
+    "Cartan_kernel_bound": 0,
+    "summands": [
+      {
+        "other_weight": [
+          0,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          4
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          3
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          3
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          3
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          3
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          3
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          3
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          2
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          2
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          2
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          2
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          2
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          2
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          2
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          2
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          2
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          2
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          2
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          2
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          1
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          1
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          1
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          1
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          1
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          1
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          1
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          1
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          1
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          1,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          1,
+          1
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          1,
+          1
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          1,
+          1
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          1,
+          1,
+          1
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          1,
+          1,
+          1
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          0
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          0
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          0
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          0
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          0
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          0
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          1,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          1,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          1,
+          1,
+          0
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          1,
+          1,
+          0
+        ],
+        "rank_one_length": 1,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          0
+        ],
+        "rank_one_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          0,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          1
+        ],
+        "rank_one_weight": [
+          3,
+          0,
+          0
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          2
+        ],
+        "rank_one_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_length": 1,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          3
+        ],
+        "rank_one_weight": [
+          1,
+          0,
+          0
+        ],
+        "rank_one_length": 1,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          3
+        ],
+        "rank_one_weight": [
+          1,
+          0,
+          0
+        ],
+        "rank_one_length": 0,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          4
+        ],
+        "rank_one_weight": [
+          0,
+          0,
+          0
+        ],
+        "rank_one_length": 0,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      }
+    ]
+  },
+  "30": {
+    "branches": 110,
+    "empty": 103,
+    "sum_rank_one_dimensions": 82,
+    "rank_one_alone": {
+      "other_weight": [
+        0,
+        0,
+        0
+      ],
+      "rank_one_weight": [
+        5,
+        5,
+        5
+      ],
+      "rank_one_length": 14,
+      "multiplicity": 1,
+      "cochains": 1,
+      "cohomology_upper": 0,
+      "Cartan_kernel_upper": 0
+    },
+    "Cartan_kernel_bound": 0,
+    "summands": [
+      {
+        "other_weight": [
+          0,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          5
+        ],
+        "rank_one_length": 14,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          4
+        ],
+        "rank_one_length": 14,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          4
+        ],
+        "rank_one_length": 13,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          4
+        ],
+        "rank_one_length": 13,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          4
+        ],
+        "rank_one_length": 12,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          4
+        ],
+        "rank_one_length": 12,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          1,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          4
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          3
+        ],
+        "rank_one_length": 13,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          3
+        ],
+        "rank_one_length": 12,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          3
+        ],
+        "rank_one_length": 12,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          3
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          3
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          3
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          3,
+          3
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          3,
+          3
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          3
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          3
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          3
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          2,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          3
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          2
+        ],
+        "rank_one_length": 12,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          2
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          2
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          2
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          2
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          2
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          3,
+          2
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          3,
+          2
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          2
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          2
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          2
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          2
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          2,
+          2
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          2,
+          2
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          2
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          2
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          2
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          2
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          2
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          3,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          2
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          1
+        ],
+        "rank_one_length": 11,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          1
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          1
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          1
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          1
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          1
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          3,
+          1
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          3,
+          1
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 3,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          1
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          1
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          1
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          2,
+          1
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          2,
+          1
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          1
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          1
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          1
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          1
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          1,
+          1
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          1,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          1,
+          1
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          1,
+          1
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          1,
+          1
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 2,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          1,
+          1
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          1,
+          1
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          4
+        ],
+        "rank_one_weight": [
+          1,
+          1,
+          1
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          4,
+          4,
+          4
+        ],
+        "rank_one_weight": [
+          1,
+          1,
+          1
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          0
+        ],
+        "rank_one_length": 10,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          0,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          5,
+          0
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          0
+        ],
+        "rank_one_length": 9,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          1,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          4,
+          0
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          0
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          1,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          4,
+          0
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          3,
+          0
+        ],
+        "rank_one_length": 8,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          2,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          3,
+          0
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          0
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          2,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          3,
+          0
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          0
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          2,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          3,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          2,
+          0
+        ],
+        "rank_one_length": 7,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          3,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          2,
+          0
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          0
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          3,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          2,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          3,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          2,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          3,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          2,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          1,
+          0
+        ],
+        "rank_one_length": 6,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          1,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          1,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          1,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          1,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          1,
+          0
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          4
+        ],
+        "rank_one_weight": [
+          1,
+          1,
+          0
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          4,
+          4
+        ],
+        "rank_one_weight": [
+          1,
+          1,
+          0
+        ],
+        "rank_one_length": 1,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          0,
+          0
+        ],
+        "rank_one_length": 5,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          0
+        ],
+        "rank_one_weight": [
+          5,
+          0,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_length": 4,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          1
+        ],
+        "rank_one_weight": [
+          4,
+          0,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          0,
+          0
+        ],
+        "rank_one_length": 3,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          2
+        ],
+        "rank_one_weight": [
+          3,
+          0,
+          0
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_length": 2,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          3
+        ],
+        "rank_one_weight": [
+          2,
+          0,
+          0
+        ],
+        "rank_one_length": 1,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          4
+        ],
+        "rank_one_weight": [
+          1,
+          0,
+          0
+        ],
+        "rank_one_length": 1,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          4
+        ],
+        "rank_one_weight": [
+          1,
+          0,
+          0
+        ],
+        "rank_one_length": 0,
+        "multiplicity": 1,
+        "cochains": 0,
+        "cohomology_upper": 0,
+        "Cartan_kernel_upper": 0
+      },
+      {
+        "other_weight": [
+          5,
+          5,
+          5
+        ],
+        "rank_one_weight": [
+          0,
+          0,
+          0
+        ],
+        "rank_one_length": 0,
+        "multiplicity": 1,
+        "cochains": 1,
+        "cohomology_upper": 1,
+        "Cartan_kernel_upper": 0
+      }
+    ]
+  }
+}

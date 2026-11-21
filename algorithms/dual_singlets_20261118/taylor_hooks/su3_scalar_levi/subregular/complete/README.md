@@ -83,3 +83,36 @@ On the open set where the first scalar has invertible entry $B^2{}_1(0)$, the mo
 Every infinitesimal flavour transformation commutes with $Q_0$ and extends to this localization by the quotient rule, even when it changes the inverted entry. Applying it to the primitive gives a primitive for the transformed first image on the same open set. The fixed-level polynomial representation is finite-dimensional. Its Lie algebra generates the linear span of the connected flavour-group orbit. Consequently every finite flavour translate of the first image is exact on this open set. Conjugation by a constant colour matrix preserves all trace expressions.
 
 If any scalar in a triple is nonzero, a flavour transformation makes it the first. A nonzero traceless matrix $B$ has a vector $v$ for which $v,Bv$ are independent. Otherwise every line is invariant and $B$ is scalar, hence zero. Choosing a colour frame beginning with $v,Bv$ gives $B^2{}_1(0)=1$. Transporting the localized primitive shows that the possible support of this particular first obstruction in the 24-dimensional space of scalar triples is contained in the origin. A global invariant polynomial primitive still requires a calculation there.
+
+## The complete first equation at level 34
+
+The first image of the charge-conjugation-even level-34 operator changes sign when the two spacetime derivatives are exchanged. Exchanging the Taylor labels and reordering the odd factors verifies this identity on all 880876 coefficients. The exchange commutes with $Q_0$ on all 124 chart generators. Each two-element orbit therefore needs one coefficient. A fixed monomial survives precisely when reordering its odd factors supplies a minus sign. The projection gives 449696 independent orbit coordinates in the first image. [Exchange check](j34_spin_preparation.json)
+
+After the positive-$d$ equations are solved, the last system has 615674 equations and 345235 trial coefficients. At the prime 2147483647 its rank is 255247. Keeping the 145059 nonzero coefficients gives a matrix with 440837 rows of full column rank at five further primes. The other 174837 rows have zero right-hand side and no entry in these columns. Lifting these coefficients by the Chinese remainder theorem and undoing the exchange projection gives one rational polynomial with 514322 monomials. Multiplication in the original chart gives
+
+$$
+69120\bigl(Q_1\mathcal O_0+Q_0\mathcal O_1\bigr)=0 .
+$$
+
+All 880876 input coefficients and every additional monomial produced by $Q_0\mathcal O_1$ were included. The support argument above now applies at level 34 as well. At both levels, the only remaining scalar triple at which the first obstruction can be supported is the origin. A global polynomial primitive is needed before the second obstruction of the level-34 operator can be evaluated. [Rational polynomial](j34_full_first_primitive.json.gz) · [Integer identity](j34_full_first.json) · [Six modular systems](j34_spin_reconstruction.json)
+
+From the repository root, the first two commands replay the published polynomial with the Python standard library. The remaining commands regenerate it from the signed first image.
+
+```sh
+d=algorithms/dual_singlets_20261118
+p="$d/taylor_hooks/su3_scalar_levi/subregular/complete"
+python3 "$d/su3_subregular_chart_replay.py" --image "$p/j34_image.json.gz" --primitive "$p/j34_full_first_primitive.json.gz" --roots 4 --through-d 0 --out /tmp/j34-full-first.json
+cmp /tmp/j34-full-first.json "$p/j34_full_first.json"
+work=$(mktemp -d)
+python3 "$d/su3_chart_spin.py" --level 34 --prepare "$work"
+c++ -O3 -std=c++17 "$d/subregular_sparse.cpp" -o "$work/solve"
+first=2147483647
+"$work/solve" "$work/equation.txt" "$work/$first" "$first" 1 mixed spin-odd
+set -- --native "$first" "$work/$first"
+for prime in 1000000009 1004535809 469762049 167772161 754974721; do
+  "$work/solve" "$work/equation.txt" "$work/$prime" "$prime" 1 mixed spin-odd --support "$work/$first" || exit 1
+  set -- "$@" --native "$prime" "$work/$prime"
+done
+python3 "$d/su3_chart_spin.py" --level 34 --preparation "$work/spin.json" "$@" --out "$work/primitive.json.gz" --receipt "$work/reconstruction.json"
+cmp "$work/reconstruction.json" "$p/j34_spin_reconstruction.json"
+```

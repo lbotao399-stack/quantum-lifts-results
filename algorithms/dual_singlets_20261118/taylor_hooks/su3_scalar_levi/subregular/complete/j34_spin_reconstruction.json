@@ -1,0 +1,105 @@
+{
+  "level": 34,
+  "equation_unit": "1/11520",
+  "modulus": "128358764763738078852150744848704134538592212891284983",
+  "systems": [
+    {
+      "prime": 2147483647,
+      "header": [
+        615674,
+        345235,
+        0,
+        255247
+      ],
+      "nonzero": 145059,
+      "sha256": "3a60b3a1c49d2ee66846bfd97c7c1973f8b262fc3242fcdb7d94cce7f196783d"
+    },
+    {
+      "prime": 1000000009,
+      "header": [
+        440837,
+        145059,
+        0,
+        145059
+      ],
+      "nonzero": 145059,
+      "sha256": "362fc97d66794932bb200f50b6a87069a180be43cde41e04508788b65e1ea906"
+    },
+    {
+      "prime": 1004535809,
+      "header": [
+        440837,
+        145059,
+        0,
+        145059
+      ],
+      "nonzero": 145059,
+      "sha256": "59bebaa11e944b841e04a0db3d1295d5e9a879f3fb499f75d14cc05cf2a8ffc9"
+    },
+    {
+      "prime": 469762049,
+      "header": [
+        440837,
+        145059,
+        0,
+        145059
+      ],
+      "nonzero": 145059,
+      "sha256": "e898da67396ca5b7ce8edf852fb795da0a43f43b6572a6b51d2edff18aded5ed"
+    },
+    {
+      "prime": 167772161,
+      "header": [
+        440837,
+        145059,
+        0,
+        145059
+      ],
+      "nonzero": 145059,
+      "sha256": "85faf6687a1465b4075165edf34404b43648970386ac82058f9c9de688c6fd41"
+    },
+    {
+      "prime": 754974721,
+      "header": [
+        440837,
+        145059,
+        0,
+        145059
+      ],
+      "nonzero": 145059,
+      "sha256": "672bacbf5a67c5cc516759f29dd1cda2bc4fbc53c58ffa9dbe3bc966d7c60da3"
+    }
+  ],
+  "reconstructed_orbit_coefficients": 145059,
+  "replay": {
+    "level": 34,
+    "source_words": 517468,
+    "source_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+    "sign_in_Q1": -1,
+    "full_chart_terms": 880876,
+    "trace_groups": 229290,
+    "degree_counts": {
+      "8": 1255,
+      "9": 124633,
+      "10": 425428,
+      "11": 260558,
+      "12": 62916,
+      "13": 5975,
+      "14": 111
+    },
+    "fg_degree_counts": {
+      "0": 19523,
+      "1": 146845,
+      "2": 321913,
+      "3": 295676,
+      "4": 96919
+    },
+    "retained_fg_degree": 4,
+    "first_equation_input_terms": 880876,
+    "primitive_terms": 514322,
+    "common_multiplier": 69120,
+    "through_d_count": 0,
+    "residual_terms_below_d_count": 0,
+    "retained_residual": 0
+  }
+}
