@@ -1,0 +1,91 @@
+{
+  "30": {
+    "seed_length": 10,
+    "charge_conjugation": -1,
+    "BMN_product_dimensions": {
+      "incoming": 5,
+      "outgoing": 1
+    },
+    "grade_one_selected_C": {
+      "incoming_cochains": 5365,
+      "outgoing_cochains": 11043
+    },
+    "grade_two_incoming": {
+      "length": 7,
+      "partition": [
+        5,
+        5,
+        1,
+        1,
+        1
+      ],
+      "parities": {
+        "even": {
+          "dim": 2123,
+          "in": 589,
+          "out": 1534,
+          "h": 0
+        },
+        "odd": {
+          "dim": 2059,
+          "in": 467,
+          "out": 1569,
+          "h": 23
+        }
+      },
+      "protected_product_multiplicities": [
+        62,
+        54,
+        15,
+        0,
+        0
+      ],
+      "rational_product_rank": 23
+    }
+  },
+  "32": {
+    "seed_length": 11,
+    "charge_conjugation": 1,
+    "BMN_product_dimensions": {
+      "incoming": 7,
+      "outgoing": 1
+    },
+    "grade_one_selected_C": {
+      "incoming_cochains": 10783,
+      "outgoing_cochains": 18911
+    },
+    "grade_two_incoming": {
+      "length": 8,
+      "partition": [
+        5,
+        5,
+        1,
+        1,
+        1,
+        1
+      ],
+      "parities": {
+        "even": {
+          "dim": 4501,
+          "in": 1156,
+          "out": 3302,
+          "h": 43
+        },
+        "odd": {
+          "dim": 4592,
+          "in": 1365,
+          "out": 3227,
+          "h": 0
+        }
+      },
+      "protected_product_multiplicities": [
+        107,
+        88,
+        24,
+        0,
+        0
+      ],
+      "rational_product_rank": 43
+    }
+  }
+}

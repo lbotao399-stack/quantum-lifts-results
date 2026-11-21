@@ -1,0 +1,25 @@
+{
+  "mode": "charge_conjugation",
+  "gauge": "SU3",
+  "sector": [
+    8,
+    0,
+    0,
+    4,
+    1
+  ],
+  "flavour": [
+    8,
+    0
+  ],
+  "spin2": 3,
+  "j": 31,
+  "prime": 2147483647,
+  "seed": 616066,
+  "length": 7,
+  "cochains": 0,
+  "even_in": 0,
+  "odd_in": 0,
+  "even_out": 0,
+  "odd_out": 0
+}

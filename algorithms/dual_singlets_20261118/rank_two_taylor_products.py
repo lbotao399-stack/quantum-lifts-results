@@ -42,8 +42,10 @@ def matrix(rows, width, prime):
     return a
 
 
-def record(case,index,raised_spin=False):
-    group, tail, length = SECTORS[case]
+def record(case,index,raised_spin=False,*,length=None):
+    group, tail, outgoing_length = SECTORS[case]
+    if length is None:
+        length = outgoing_length
     sector = weights(5,tail,True)[index]
     if raised_spin:
         if not sector[4]:
