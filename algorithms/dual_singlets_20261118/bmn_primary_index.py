@@ -60,7 +60,20 @@ def g2_trace(cycles):
                for (a,b),sign in G2_WEYL.items())
 
 
+@lru_cache(None)
+def su2_colour_weight(cycles, weight):
+    """Adams character of the adjoint, in units of the SU(2) root."""
+    if not cycles:
+        return int(weight == 0)
+    if weight > sum(cycles):
+        return 0
+    k = cycles[-1]
+    return sum(su2_colour_weight(cycles[:-1], abs(weight-shift)) for shift in (-k, 0, k))
+
+
 def colour(cycles, group):
+    if group == "SU(2)":
+        return (su2_colour_weight(cycles, 0) - su2_colour_weight(cycles, 1),)
     if group == "USp(4)":
         return (colour_trace(cycles),)
     if group == "G2":
@@ -175,7 +188,7 @@ def primary_indices(maximum, group):
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--group",choices=("USp(4)","G2","SU(3)","F4","B4","E6","E7","E8"),required=True)
+    p.add_argument("--group",choices=("SU(2)","USp(4)","G2","SU(3)","F4","B4","E6","E7","E8"),required=True)
     p.add_argument("--maximum-level",type=int,required=True)
     p.add_argument("--out",type=Path,required=True)
     args = p.parse_args()

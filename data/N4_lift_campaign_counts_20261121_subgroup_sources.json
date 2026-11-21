@@ -1,0 +1,116 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0,
+    "index_forced_BMN_generators": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 15,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 3,
+    "additional_G2_odd_BMN_generators": 1,
+    "candidate_G2_generators_for_level_36_singlet": [
+      {
+        "level": 32,
+        "weight": [
+          6,
+          6,
+          4
+        ]
+      },
+      {
+        "level": 36,
+        "weight": [
+          6,
+          6,
+          6
+        ]
+      }
+    ],
+    "USp4_single_additional_core_alternatives_remaining": [
+      [
+        6,
+        5,
+        4
+      ],
+      [
+        7,
+        4,
+        4
+      ],
+      [
+        7,
+        5,
+        3
+      ],
+      [
+        7,
+        5,
+        4
+      ],
+      [
+        8,
+        5,
+        2
+      ]
+    ]
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_scalar_443.json",
+  "phase": "All odd USp(4) sources at (6,5,5) and the proper connected subgroup restrictions of two G2 generator candidates",
+  "evidence": [
+    "algorithms/dual_singlets_20261118/bmn_primary/7658772/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/symplectic_655/README.md",
+    "algorithms/dual_singlets_20261118/bmn_primary/7658782/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/subgroup_sources/README.md",
+    "algorithms/dual_singlets_20261118/bmn_primary/7658790/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/subgroup_sources/bounds.json"
+  ],
+  "explicit_new_representatives": [],
+  "excluded_lifts": {
+    "USp4_weight_655_odd": "All differential orders from odd lengths. The five rational classical dimensions at lengths 7,9,11,13,15 are zero."
+  },
+  "G2_restrictions": {
+    "all_proper_connected_compact_subgroups": {
+      "664": [
+        11,
+        13
+      ],
+      "666": [
+        15
+      ]
+    },
+    "both_rank_one_product_and_principal_SU2": {
+      "664": [
+        11,
+        13
+      ],
+      "666": [
+        11,
+        13,
+        15
+      ]
+    },
+    "full_G2_quantum_action": "open"
+  }
+}

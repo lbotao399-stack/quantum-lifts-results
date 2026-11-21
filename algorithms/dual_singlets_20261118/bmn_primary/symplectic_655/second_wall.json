@@ -1,0 +1,55 @@
+{
+  "group": "USp(4)",
+  "source_weight": [
+    6,
+    5,
+    5
+  ],
+  "source_length": 11,
+  "order": 2,
+  "target_diagram": [
+    5,
+    5,
+    3,
+    1
+  ],
+  "containing_weight": [
+    4,
+    3,
+    3,
+    2,
+    2
+  ],
+  "target_length": 10,
+  "prime": 2147483647,
+  "active_sectors": 529,
+  "previous_records": 464,
+  "new_records": 65,
+  "levi": {
+    "weight": [
+      4,
+      3,
+      3,
+      2,
+      2
+    ],
+    "length": 10,
+    "parity": 1,
+    "branches": 210,
+    "cochains": 24078,
+    "classical_dimension_upper": 726,
+    "cartan_kernel_upper": 0,
+    "remaining": []
+  },
+  "product": {
+    "unordered_blocks": 417,
+    "cochains": 137907,
+    "classical_dimension_upper": 694,
+    "cartan_kernel_upper": 0
+  },
+  "principal": {
+    "cochains": 1708,
+    "classical_dimension_upper": 0,
+    "cartan_kernel_upper": 0
+  }
+}

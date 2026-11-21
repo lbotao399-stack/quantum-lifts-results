@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## The full odd symplectic column and exceptional subgroup restrictions, November 21, 2026
+
+The $USp(4)$ BMN weight $(6,5,5)$ has zero classical cohomology at all five odd letter lengths. The last two equalities are $13616-6240-7376=0$ and $8431-5670-2761=0$. This excludes every outgoing order from those odd lengths. Of the five remaining single-additional-generator explanations of the symplectic index, three have a second-order Taylor partner and none has a third-order partner. [Rational ranks and target restrictions](algorithms/dual_singlets_20261118/bmn_primary/symplectic_655/README.md)
+
+In $G_2$ the candidate weight $(6,6,4)$ at lengths 11 and 13 and the singlet $(6,6,6)$ at length 15 restrict to classical boundaries on every proper connected compact subgroup. The even long-root $SU(3)$ singlet has $1918-1471-447=0$ classes at length 15. All five candidate sources become boundaries upon fixing any scalar to a value with nonzero semisimple part. [Proof, exact cochain dimensions and replay](algorithms/dual_singlets_20261118/bmn_primary/subgroup_sources/README.md)
+
+New $d_1$ pairings **0** (15 total). New fortuitous BMN generators **0** (11 explicit families, at least 15 including index-forced families). Verified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_subgroup_sources.json)
+
 ## The outer-odd $E_6$ scalar and the symplectic third-order target, November 21, 2026
 
 At level $j=22$ and flavour $(4,4,3)$ the outer-odd $E_6$ scalar cohomology is one-dimensional. Its representative takes the value $1/12$ on a commuting triple. Order-23 determinants on independent noncommuting triples are 117579 modulo 1000003 and 859270 modulo 1000033. All fifteen eligible lower odd factor shapes have zero Cartan multiplicity. The scalar survives every perturbative page and its vacuum expectation excludes an instanton image on this line. [Representative, ranks and vacuum argument](algorithms/dual_singlets_20261118/bmn_primary/scalar_443/README.md)

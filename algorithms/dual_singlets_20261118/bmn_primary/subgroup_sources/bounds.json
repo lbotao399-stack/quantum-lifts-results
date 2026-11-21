@@ -1,0 +1,206 @@
+{
+  "direct_sum": [
+    {
+      "weight": [
+        6,
+        6,
+        4
+      ],
+      "length": 7,
+      "two_factor_cochains": 92,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 8,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        4
+      ],
+      "length": 9,
+      "two_factor_cochains": 1756,
+      "two_factor_cohomology_upper": 2,
+      "principal_cochains": 34,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        4
+      ],
+      "length": 11,
+      "two_factor_cochains": 4348,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 39,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        4
+      ],
+      "length": 13,
+      "two_factor_cochains": 1706,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 9,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        4
+      ],
+      "length": 15,
+      "two_factor_cochains": 180,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 2,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        6
+      ],
+      "length": 7,
+      "two_factor_cochains": 6,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 1,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        6
+      ],
+      "length": 9,
+      "two_factor_cochains": 806,
+      "two_factor_cohomology_upper": 6,
+      "principal_cochains": 25,
+      "principal_cohomology_upper": 2
+    },
+    {
+      "weight": [
+        6,
+        6,
+        6
+      ],
+      "length": 11,
+      "two_factor_cochains": 2946,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 12,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        6
+      ],
+      "length": 13,
+      "two_factor_cochains": 3218,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 12,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        6
+      ],
+      "length": 15,
+      "two_factor_cochains": 752,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 3,
+      "principal_cohomology_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        6,
+        6
+      ],
+      "length": 17,
+      "two_factor_cochains": 84,
+      "two_factor_cohomology_upper": 0,
+      "principal_cochains": 1,
+      "principal_cohomology_upper": 0
+    }
+  ],
+  "long_root_664": [
+    {
+      "length": 11,
+      "total_cohomology_upper": 1,
+      "incoming": 5413,
+      "outgoing": 6235,
+      "cochains": 11649,
+      "odd_colour_product_rank": 1,
+      "even_cohomology_upper": 0
+    },
+    {
+      "length": 13,
+      "total_cohomology_upper": 0,
+      "incoming": 4434,
+      "outgoing": 1932,
+      "cochains": 6366,
+      "odd_colour_product_rank": 0,
+      "even_cohomology_upper": 0
+    }
+  ],
+  "long_root_666": {
+    "weight": [
+      6,
+      6,
+      6
+    ],
+    "length": 15,
+    "cochains": 1918,
+    "incoming": 1471,
+    "outgoing": 447,
+    "prime": 2147483647,
+    "determinants": [
+      1118222283,
+      776053499
+    ]
+  },
+  "controls": [
+    {
+      "weight": [
+        4,
+        4,
+        4
+      ],
+      "length": 9,
+      "cochains": 131,
+      "incoming": 93,
+      "outgoing": 38,
+      "prime": 1000003,
+      "determinants": [
+        603625,
+        519395
+      ]
+    },
+    {
+      "weight": [
+        4,
+        4,
+        4
+      ],
+      "length": 8,
+      "cochains": 181,
+      "incoming": 87,
+      "outgoing": 93,
+      "prime": 1000033,
+      "determinants": [
+        664682,
+        103265
+      ]
+    }
+  ]
+}
