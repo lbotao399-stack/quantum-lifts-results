@@ -1,0 +1,39 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "phase": "USp(6) protected incoming source and perturbative survival of omega at level 28",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_633.json",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 14,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/sp3_omega/README.md",
+    "algorithms/dual_singlets_20261118/sp3_omega/product_replay.json",
+    "algorithms/dual_singlets_20261118/sp3_omega/previous_product_replay.json",
+    "algorithms/dual_singlets_20261118/sp3_omega/third_source.json.gz",
+    "algorithms/dual_singlets_20261118/sp3_omega/jobs.json"
+  ],
+  "stages": [
+    {
+      "calculation": "Rational omega cycle and protection of all incoming perturbative sources",
+      "d1": 0,
+      "fortuitous_generator_families": 0
+    }
+  ],
+  "scope": "The previously reported USp(6) class survives perturbatively. The instanton exclusion is incoming only and uses the exact primary product."
+}

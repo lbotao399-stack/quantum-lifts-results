@@ -4,7 +4,9 @@ Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://gith
 
 **Running computations (updated daily): [STATUS.md](STATUS.md).**
 
-**Undeformed $\mathcal N=4$ SYM.** The campaign has certified 14 first-order highest-weight pairings and 5 parity-resolved fortuitous BMN generators. The counts of second-order, third-order and nonperturbative lifts are 0, 0 and 0. [Counting rules and evidence](data/N4_lift_campaign_counts_20261121_633.json)
+**Undeformed $\mathcal N=4$ SYM.** The campaign has certified 14 first-order highest-weight pairings and 5 parity-resolved fortuitous BMN generators. The counts of second-order, third-order and nonperturbative lifts are 0, 0 and 0. [Counting rules and evidence](data/N4_lift_campaign_counts_20261121_omega.json)
+
+At level 28 in $USp(6)$, the 454-dimensional source of a possible second-order differential into $\omega$ is spanned by protected products. The first- and third-order sources are empty. The known class $\omega$ survives perturbatively. [Source dimensions, integer determinants and replay](algorithms/dual_singlets_20261118/sp3_omega/README.md)
 
 At doubled charges $(2,2,12,6,6)$, the $SO(7)$ first differential has coefficient $-1$ on a six-term target. The rational boundary rank increases from 209 to 210 on both independent frames. The full filtered comparison gives 150 survivors for each of $SO(7)$ and $USp(6)$ modulo 1,000,003. [Integer evidence and replay](algorithms/dual_singlets_20261118/so7_level24_633/README.md)
 

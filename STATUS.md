@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Perturbative survival of the $USp(6)$ level-28 class, November 21, 2026
+
+The classical target has rational dimension $2689-1607-1081=1$. In its second-order predecessor the cohomology upper bound is $33630-14108-19068=454$. A8 job 5681944 rebuilt 612 closed trace factors and obtained a nonzero integer Cartan determinant of order 454. Every source therefore admits a closed perturbative completion. A8 job 5681942 gives third-order source dimension $7569-3227-4342=0$. The first-order source is empty as well. The remaining 61 physical predecessors at the same derivative degree also have independent protected product representatives. The exclusion of an incoming instanton differential uses the exact cohomological primary product. The outgoing instanton question is open. [Proof and data](algorithms/dual_singlets_20261118/sp3_omega/README.md)
+
+New $d_1$ pairings **0**, total **14**. New fortuitous-generator families **0**, total **5**. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_omega.json)
+
 ## The SO(7) level-24 descendant, November 21, 2026 (cluster date)
 
 At doubled charges $(2,2,12,6,6)$, the $SO(7)$ first differential has coefficient $-1$ on a six-term target. The rational boundary rank increases from 209 to 210 on both independent frames. The full filtered comparison gives 150 survivors for each of $SO(7)$ and $USp(6)$ modulo 1,000,003. [Integer evidence and replay](algorithms/dual_singlets_20261118/so7_level24_633/README.md)

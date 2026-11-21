@@ -1,0 +1,70 @@
+{
+  "files": {
+    "target.json.gz": {
+      "job": "5679345",
+      "sha256": "80b20df49c383866cc02aea6fbdccea73d960fded617f0ca0114ea148d0700a6",
+      "slurm": "5679345|COMPLETED|30|16|0:0"
+    },
+    "previous.json.gz": {
+      "job": "5679467",
+      "sha256": "165225abf1cb33c6bae73ef4b33cb62f4d6ea3fbc52b4e4d3fd092f2b8242dc5",
+      "slurm": "5679467|COMPLETED|38|16|0:0"
+    },
+    "lowered.json.gz": {
+      "job": "5679366",
+      "sha256": "f14436b2f38a3bd7a05908947a743d1862fb207ea99b89698e9bf87381b57d24",
+      "slurm": "5679366|COMPLETED|258|16|0:0"
+    },
+    "lowered_source.json.gz": {
+      "job": "5679349",
+      "sha256": "660a8183ce735a00df6a2919ffb6a2b22e390973dbd9addad0d7075a1566c8af",
+      "slurm": "5679349|COMPLETED|35|16|0:0"
+    },
+    "so7_target.json.gz": {
+      "job": "5679365",
+      "sha256": "932fa62c0c22f8b98634c341a9a4a5a0ae4d920ada53b1185aa309cdbbb32ab5",
+      "slurm": "5679365|COMPLETED|33|16|0:0"
+    },
+    "cycle.json.gz": {
+      "job": "5679460",
+      "sha256": "15588946219fdcfb9b4add0f6cfdaea1f0b2aaef015a1ce68aaee6543abebdd9",
+      "slurm": "5679460|COMPLETED|35|16|0:0"
+    },
+    "boundary_bounds.json.gz": {
+      "job": "5681842",
+      "sha256": "7397ba65eba132e2d21daa1db2f4682ab6625ff85aaaac078e708610e945c76b",
+      "slurm": "5681842|COMPLETED|24|12|0:0"
+    },
+    "direct1.json.gz": {
+      "job": "5679462",
+      "sha256": "161d1f8bc995a3c2974b2e524570c099bab0ee3456b7bb2e23ddf2336f02feae",
+      "slurm": "5679462|COMPLETED|230|24|0:0"
+    },
+    "direct2.json.gz": {
+      "job": "5679463",
+      "sha256": "17d0ff221b4c5a94732f0bc059281779c84a93286a4d5dcb0ca05659520a339d",
+      "slurm": "5679463|COMPLETED|175|24|0:0"
+    },
+    "target_only.json.gz": {
+      "job": "5681845",
+      "sha256": "9ba141fcaa859681c02a890c007c8cc001f2ebbecf4cb06ec875eb44f5fc4ebf",
+      "slurm": "5681845|COMPLETED|101|32|0:0"
+    },
+    "substitutions.json": {
+      "job": "5679070",
+      "sha256": "d6491909fab63156bb2b67777211b678cc06b74b40f6d5674f503e327409ab47",
+      "slurm": "5679070|COMPLETED|4|12|0:0"
+    },
+    "product_replay.json": {
+      "job": "5681944",
+      "sha256": "e444f7d96ed8dad8c2ce8ee1a81acbf5405a05c1c465750229472112c1d5448f",
+      "slurm": "5681944|COMPLETED|13|4|0:0"
+    },
+    "third_source.json.gz": {
+      "job": "5681942",
+      "sha256": "fe991f71a1bd549a5ff5ecd1783d3b651bae8098291474a0d0a456e553126057",
+      "slurm": "5681942|COMPLETED|454|24|0:0"
+    }
+  },
+  "local_and_A8_boundary_payload_sha256": "e38eac5b774de99814c3115c1b05d28a65256a4c19c14598a4a9d81208fa7742"
+}

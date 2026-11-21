@@ -1,0 +1,182 @@
+{
+  "chain_Sp3_833_00_Y8-14_s2_p2147483647.json": {
+    "sha256": "9d840b8fa317cc5f1f551a0cea2e7c5331ca72389bb79c1214bf0b3163b2d59d",
+    "record": {
+      "mode": "chain",
+      "gauge": "Sp3",
+      "sector": [
+        8,
+        3,
+        3,
+        0,
+        0
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483647,
+      "seed": 2,
+      "blocks": [
+        {
+          "Y": 8,
+          "F": 0,
+          "dim": 268,
+          "rank_in": 0,
+          "rank_out": 265,
+          "h": 3,
+          "rho": 3
+        },
+        {
+          "Y": 9,
+          "F": 1,
+          "dim": 1418,
+          "rank_in": 265,
+          "rank_out": 1153,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 10,
+          "F": 0,
+          "dim": 4411,
+          "rank_in": 1153,
+          "rank_out": 3227,
+          "h": 31,
+          "rho": 31
+        },
+        {
+          "Y": 11,
+          "F": 1,
+          "dim": 7569,
+          "rank_in": 3227,
+          "rank_out": 4342,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 12,
+          "F": 0,
+          "dim": 6690,
+          "rank_in": 4342,
+          "rank_out": 2307,
+          "h": 41,
+          "rho": 40
+        },
+        {
+          "Y": 13,
+          "F": 1,
+          "dim": 2695,
+          "rank_in": 2307,
+          "rank_out": 388,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 14,
+          "F": 0,
+          "dim": 388,
+          "rank_in": 388,
+          "rank_out": 0,
+          "h": 0,
+          "rho": 0
+        }
+      ],
+      "seconds": 2902.4,
+      "evals": 2135456600,
+      "maxrss_MB": 789
+    }
+  },
+  "chain_SO7_833_00_Y8-14_s1_p2147483647.json": {
+    "sha256": "dd52e124baa9d397add2861937422446d9f097eda63f448581b07e0c2bb9c10f",
+    "record": {
+      "mode": "chain",
+      "gauge": "SO7",
+      "sector": [
+        8,
+        3,
+        3,
+        0,
+        0
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483647,
+      "seed": 1,
+      "blocks": [
+        {
+          "Y": 8,
+          "F": 0,
+          "dim": 269,
+          "rank_in": 0,
+          "rank_out": 266,
+          "h": 3,
+          "rho": 3
+        },
+        {
+          "Y": 9,
+          "F": 1,
+          "dim": 1420,
+          "rank_in": 266,
+          "rank_out": 1154,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 10,
+          "F": 0,
+          "dim": 4416,
+          "rank_in": 1154,
+          "rank_out": 3231,
+          "h": 31,
+          "rho": 31
+        },
+        {
+          "Y": 11,
+          "F": 1,
+          "dim": 7583,
+          "rank_in": 3231,
+          "rank_out": 4352,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 12,
+          "F": 0,
+          "dim": 6704,
+          "rank_in": 4352,
+          "rank_out": 2311,
+          "h": 41,
+          "rho": 40
+        },
+        {
+          "Y": 13,
+          "F": 1,
+          "dim": 2700,
+          "rank_in": 2311,
+          "rank_out": 389,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 14,
+          "F": 0,
+          "dim": 389,
+          "rank_in": 389,
+          "rank_out": 0,
+          "h": 0,
+          "rho": 0
+        }
+      ],
+      "seconds": 6841.4,
+      "evals": 4189675968,
+      "maxrss_MB": 899
+    }
+  }
+}

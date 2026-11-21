@@ -1,0 +1,205 @@
+{
+  "chain_Sp3_611_22_Y6-12_s2_p2147483647.json": {
+    "sha256": "effbc85c236a8b4296e791d4dd205c1eba6d981bd484c3db268e9ad548e71fee",
+    "record": {
+      "mode": "chain",
+      "gauge": "Sp3",
+      "sector": [
+        6,
+        1,
+        1,
+        2,
+        2
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483647,
+      "seed": 2,
+      "blocks": [
+        {
+          "Y": 6,
+          "F": 0,
+          "dim": 505,
+          "rank_in": 0,
+          "rank_out": 494,
+          "h": 11,
+          "rho": 11
+        },
+        {
+          "Y": 7,
+          "F": 1,
+          "dim": 3513,
+          "rank_in": 494,
+          "rank_out": 3019,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 8,
+          "F": 0,
+          "dim": 13246,
+          "rank_in": 3019,
+          "rank_out": 9937,
+          "h": 290,
+          "rho": 290
+        },
+        {
+          "Y": 9,
+          "F": 1,
+          "dim": 23520,
+          "rank_in": 9937,
+          "rank_out": 13583,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 10,
+          "F": 0,
+          "dim": 22609,
+          "rank_in": 13583,
+          "rank_out": 8672,
+          "h": 354,
+          "rho": 354
+        },
+        {
+          "Y": 11,
+          "F": 1,
+          "dim": 10539,
+          "rank_in": 8672,
+          "rank_out": 1867,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 12,
+          "F": 0,
+          "dim": 1870,
+          "rank_in": 1867,
+          "rank_out": 0,
+          "h": 3,
+          "rho": 3
+        }
+      ],
+      "seconds": 6039.9,
+      "evals": 5100257936,
+      "maxrss_MB": 4903
+    }
+  },
+  "chain_Sp3_722_00_Y9-11_s1_p2147483647.json": {
+    "sha256": "93aee79e2b00485d7229d31ff7571588225572c99969e252aac4217dff1aee49",
+    "record": {
+      "mode": "chain",
+      "gauge": "Sp3",
+      "sector": [
+        7,
+        2,
+        2,
+        1,
+        1
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483647,
+      "seed": 1,
+      "blocks": [
+        {
+          "Y": 9,
+          "F": 0,
+          "dim": 19497,
+          "rank_in": 5389,
+          "rank_out": 14108,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 10,
+          "F": 1,
+          "dim": 33630,
+          "rank_in": 14108,
+          "rank_out": 19068,
+          "h": 454,
+          "rho": 454
+        },
+        {
+          "Y": 11,
+          "F": 0,
+          "dim": 30519,
+          "rank_in": 19068,
+          "rank_out": 11450,
+          "h": 1,
+          "rho": 0
+        }
+      ],
+      "seconds": 19196.7,
+      "evals": 10953251312,
+      "maxrss_MB": 9065
+    }
+  },
+  "d1beta_Sp3_722_11_Y10_s1_p2147483647.json": {
+    "sha256": "8d888fd4c1023ac306f5c9b67c2d99cf1baa616f95895e3dc86de82cdc320d5f",
+    "record": {
+      "mode": "d1beta",
+      "gauge": "Sp3",
+      "sector": [
+        7,
+        2,
+        2,
+        1,
+        1
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483647,
+      "seed": 1,
+      "target": [
+        6,
+        1,
+        1,
+        2,
+        2
+      ],
+      "Y": 10,
+      "src": {
+        "dim": 33630,
+        "rank_out": 19068,
+        "kernel": 14562,
+        "rank_in": 14108,
+        "h": 454
+      },
+      "tgt": {
+        "dim": 22609,
+        "rank_in": 13583,
+        "rank_out": 8672,
+        "h": 354,
+        "rho": 354
+      },
+      "src_used": {
+        "skeletons": 8,
+        "gens": 33630,
+        "cocycles": 14562,
+        "t": 1.4
+      },
+      "cartan": {
+        "witness": 354,
+        "res_Q1Z_rank": 0,
+        "t": 123.3
+      },
+      "route": "cartan_exact",
+      "d1_rank": 0,
+      "seconds": 12400.1,
+      "maxrss_MB": 16695
+    }
+  }
+}
