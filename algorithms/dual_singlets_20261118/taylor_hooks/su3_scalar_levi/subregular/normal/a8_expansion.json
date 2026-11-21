@@ -1,0 +1,63 @@
+{
+  "job": "5687798",
+  "accounting": "5687798|COMPLETED|304|48|0:0",
+  "receipt": {
+    "level": 34,
+    "sign": -1,
+    "denominator": 120,
+    "degree": 11,
+    "full_image_sha256": "9435489d5e21f083ac22cb9bfd92b0dd832192252ee8b0a3ac04f656f5c85f14",
+    "full_image_words": 517468,
+    "bounds": {
+      "10": 27112,
+      "8": 200409,
+      "9": 289947
+    },
+    "selected_words": 517468,
+    "parts": 345,
+    "homogeneous": {
+      "8": {
+        "terms": 1255,
+        "payload_sha256": "a466fe99a3d23c76447d12e0760a872be9455fecf01e4bf61a03ef9d15cf1ed3",
+        "file": "degree-8.json.gz"
+      },
+      "9": {
+        "terms": 124633,
+        "payload_sha256": "fc1ad5ed9a09b5334fbf78bf046c51275e73a367a0deb352bf528bd9c9b27b3e",
+        "file": "degree-9.json.gz"
+      },
+      "10": {
+        "terms": 425428,
+        "payload_sha256": "ed2c6910fdf6b9c24597ecc1b2c775bff55861a31c3ae8b891374e2ac685cad8",
+        "file": "degree-10.json.gz"
+      },
+      "11": {
+        "terms": 260558,
+        "payload_sha256": "47f6d1366e19d92cfbe8a15f8e5a0ee0d60e609932eb080733ab6b37bbcaea7a",
+        "file": "degree-11.json.gz"
+      }
+    }
+  },
+  "files": {
+    "verified.json": {
+      "bytes": 788,
+      "archive_sha256": "9a4d65635201e9551d68bc1d2a4a7b6ef61030ef3fa07b61ae24331db15738ba"
+    },
+    "degree-10.json.gz": {
+      "bytes": 2716134,
+      "archive_sha256": "209fee1e34489e491268bffb6a499ab844cc205f872a54d216686884e912c8f3"
+    },
+    "degree-11.json.gz": {
+      "bytes": 1700332,
+      "archive_sha256": "bc3c3d05879fb550c8b8b3fc27a89c4146fe8506a687cafb9d83a39b2a605c5d"
+    },
+    "degree-8.json.gz": {
+      "bytes": 6150,
+      "archive_sha256": "eac7318d95e16b34de7190373eaa3f7d89f0bd5d53de43d018070daa499438c9"
+    },
+    "degree-9.json.gz": {
+      "bytes": 741366,
+      "archive_sha256": "0e0993d97f13da9d16e4e55fdf4d7cd3dc4d2d9914cdf72521828e1974a8f2e9"
+    }
+  }
+}

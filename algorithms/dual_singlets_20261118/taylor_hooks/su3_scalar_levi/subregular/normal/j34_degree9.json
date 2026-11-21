@@ -1,0 +1,10 @@
+{
+  "level": 34,
+  "through_degree": 9,
+  "image_sha256": "4c931647fc9ed8537ee46677dc2021b4e7f4a53780fb8a6c0032c4d46dd31583",
+  "initial_sha256": "3699cc6bc6e155cea656f65826a0c1564300745aedd32ff01df71c9526eedfe3",
+  "primitive_sha256": "6e0773ebd3cf151f93313c27055f13686097df7f3d7d005378d67968861b9b8a",
+  "input_monomials": 126377,
+  "additional_primitive_terms": 86026,
+  "remaining_monomials": 0
+}

@@ -1,0 +1,75 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_scalar_charts.json",
+  "phase": "Rank-one scalar corrections and the level-36 third target on the two-colour Levi",
+  "first_correction_normal_degree": 9,
+  "first_equation": {
+    "32": {
+      "normal_degree_nine_residual": 0,
+      "full_chart_degree_eight_primitive_terms": 33413,
+      "two_ghosts_primitive_terms": 4828,
+      "two_ghosts_complete_image_monomials": 6119,
+      "two_ghosts_remaining": 0
+    },
+    "34": {
+      "normal_degree_nine_residual": 0,
+      "full_chart_degree_eight_primitive_terms": 86026,
+      "two_ghosts_primitive_terms": 12190,
+      "two_ghosts_complete_image_monomials": 19523,
+      "two_ghosts_remaining": 0
+    }
+  },
+  "third_levi": {
+    "10": {
+      "target_length": 8,
+      "colour_parity": -1,
+      "classical_upper": 0,
+      "cartan_kernel_upper": 0
+    },
+    "11": {
+      "target_length": 9,
+      "colour_parity": 1,
+      "classical_upper": 0,
+      "cartan_kernel_upper": 0
+    },
+    "12": {
+      "target_length": 10,
+      "colour_parity": -1,
+      "classical_upper": 0,
+      "cartan_kernel_upper": 0
+    }
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/normal/README.md",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/full_block/third_single_flavour.md"
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "prime": 2147483647,
+  "partition": [
+    6,
+    6,
+    1,
+    1,
+    1
+  ],
+  "sector_bounds": {
+    "3_8": {
+      "weight": [
+        3,
+        0,
+        0,
+        6,
+        6
+      ],
+      "length": 8,
+      "parity": -1,
+      "branches": 165,
+      "cochains": 32064,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "3_9": {
+      "weight": [
+        3,
+        0,
+        0,
+        6,
+        6
+      ],
+      "length": 9,
+      "parity": 1,
+      "branches": 151,
+      "cochains": 21825,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "3_10": {
+      "weight": [
+        3,
+        0,
+        0,
+        6,
+        6
+      ],
+      "length": 10,
+      "parity": -1,
+      "branches": 123,
+      "cochains": 7980,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "4_8": {
+      "weight": [
+        4,
+        0,
+        0,
+        6,
+        5
+      ],
+      "length": 8,
+      "parity": -1,
+      "branches": 210,
+      "cochains": 59470,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "4_9": {
+      "weight": [
+        4,
+        0,
+        0,
+        6,
+        5
+      ],
+      "length": 9,
+      "parity": 1,
+      "branches": 204,
+      "cochains": 51622,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "4_10": {
+      "weight": [
+        4,
+        0,
+        0,
+        6,
+        5
+      ],
+      "length": 10,
+      "parity": -1,
+      "branches": 174,
+      "cochains": 24583,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "5_8": {
+      "weight": [
+        5,
+        0,
+        0,
+        5,
+        5
+      ],
+      "length": 8,
+      "parity": -1,
+      "branches": 185,
+      "cochains": 20009,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "5_9": {
+      "weight": [
+        5,
+        0,
+        0,
+        5,
+        5
+      ],
+      "length": 9,
+      "parity": 1,
+      "branches": 182,
+      "cochains": 23972,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "5_10": {
+      "weight": [
+        5,
+        0,
+        0,
+        5,
+        5
+      ],
+      "length": 10,
+      "parity": -1,
+      "branches": 159,
+      "cochains": 15634,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    }
+  },
+  "bounds_by_source_length": {
+    "10": {
+      "target_length": 8,
+      "colour_parity": -1,
+      "classical_upper": 0,
+      "cartan_kernel_upper": 0
+    },
+    "11": {
+      "target_length": 9,
+      "colour_parity": 1,
+      "classical_upper": 0,
+      "cartan_kernel_upper": 0
+    },
+    "12": {
+      "target_length": 10,
+      "colour_parity": -1,
+      "classical_upper": 0,
+      "cartan_kernel_upper": 0
+    }
+  }
+}

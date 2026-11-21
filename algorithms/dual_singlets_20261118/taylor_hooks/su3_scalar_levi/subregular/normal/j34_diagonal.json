@@ -1,0 +1,21 @@
+{
+  "level": 34,
+  "full_image_words": 517468,
+  "monomials": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 264,
+    "9": 1681,
+    "10": 312,
+    "11": 0
+  },
+  "spectator_groups": 71,
+  "primitive_terms": 1446,
+  "remaining_terms": 0
+}

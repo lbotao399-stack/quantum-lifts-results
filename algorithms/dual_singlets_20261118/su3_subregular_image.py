@@ -86,12 +86,14 @@ A_ENTRIES = (((1, "a"),), ((1, "dp"), (1, "gu")), ((1, "du"), (-2, "fq")),
 
 
 @lru_cache(None)
-def entries(letter):
+def entries(letter, vanish=""):
     index = letter >> 1
     result = []
     for terms in B_ENTRIES if letter & 1 else A_ENTRIES:
         polynomial = Counter()
         for scale, factors in terms:
+            if any(field in vanish for field in factors):
+                continue
             for key, n in coefficient(factors, index).items():
                 polynomial[key] += scale*n
         result.append({m: n for m, n in polynomial.items() if n})
@@ -99,29 +101,29 @@ def entries(letter):
 
 
 @lru_cache(None)
-def costs(letter):
-    return [min(map(len, poly), default=INFINITY) for poly in entries(letter)]
+def costs(letter, vanish=""):
+    return [min(map(len, poly), default=INFINITY) for poly in entries(letter, vanish)]
 
 
 @lru_cache(100000)
-def trace_bound(trace):
+def trace_bound(trace, vanish=""):
     # A closed colour path is a summand of the trace. Cancellations can only raise its degree.
-    distances = list(costs(trace[0]))
+    distances = list(costs(trace[0], vanish))
     for letter in trace[1:]:
-        next_costs = costs(letter)
+        next_costs = costs(letter, vanish)
         distances = [min(distances[3*i+k] + next_costs[3*k+j] for k in range(3))
                      for i in range(3) for j in range(3)]
     return min(distances[0], distances[4], distances[8])
 
 
 @lru_cache(12000)
-def trace_polynomial(trace, limit):
+def trace_polynomial(trace, limit, vanish=""):
     result = Counter()
     for first in range(3):
         suffix = [[0 if k == first else INFINITY for k in range(3)]]
         for letter in reversed(trace):
             previous = suffix[-1]
-            cost = costs(letter)
+            cost = costs(letter, vanish)
             suffix.append([min(cost[3*k+j]+previous[j] for j in range(3)) for k in range(3)])
         if suffix[-1][first] > limit:
             continue
@@ -130,16 +132,16 @@ def trace_polynomial(trace, limit):
             following = defaultdict(Counter)
             for k, poly in paths.items():
                 for j in (range(3) if i+1 < len(trace) else (first,)):
-                    entry = entries(letter)[3*k+j]
+                    entry = entries(letter, vanish)[3*k+j]
                     cap = limit - suffix[len(trace)-i-1][j]
-                    if entry and cap >= costs(letter)[3*k+j]:
+                    if entry and cap >= costs(letter, vanish)[3*k+j]:
                         following[j].update(multiply(poly, entry, cap))
             paths = {j: poly for j, poly in following.items() if poly}
         result.update(paths.get(first, {}))
     return {m: n for m, n in result.items() if n}
 
 
-def source(level, archive, limit):
+def source(level, archive, limit, vanish=""):
     relative, size, denominator, sha = ARCHIVES[level]
     digest = hashlib.sha256()
     counts = Counter()
@@ -149,12 +151,13 @@ def source(level, archive, limit):
             digest.update(line)
             value, raw = json.loads(line)
             word = tuple(bytes((2*z+w)*8 + sum(1 << i for i in theta) for z, w, theta in tr) for tr in raw)
-            assert sum(map(len, word)) == 11
+            if sum(map(len, word)) != 11 or sum(k & 1 for trace in word for k in trace) != 7:
+                raise ValueError("expected seven B coefficients and four A coefficients")
             # Only the undifferentiated first scalar has a constant component.
             if 11 - sum(t.count(1) for t in word) > limit:
                 counts["scalar_exclusion"] += 1
                 continue
-            lower = sum(map(trace_bound, word))
+            lower = sum(trace_bound(t, vanish) for t in word)
             if lower > limit:
                 counts["colour_exclusion"] += 1
                 continue
@@ -166,19 +169,19 @@ def source(level, archive, limit):
         raise ValueError("first image does not match the archive")
     return dict(level=level, sign=1 if level==32 else -1, denominator=denominator, degree=limit,
                 full_image_sha256=sha, full_image_words=size, bounds=dict(sorted(counts.items())),
-                selected=selected)
+                selected=selected, **({"vanishing_fields":vanish} if vanish else {}))
 
 
-def expand_words(selected, limit):
+def expand_words(selected, limit, vanish=""):
     total = Counter()
     for numerator, encoded in selected:
         word = [bytes.fromhex(t) for t in encoded]
-        bounds = list(map(trace_bound, word))
+        bounds = [trace_bound(t, vanish) for t in word]
         lower = remaining = sum(bounds)
         polynomial = UNIT
         for t, bound in zip(word, bounds):
             remaining -= bound
-            tr = trace_polynomial(t, limit-lower+bound)
+            tr = trace_polynomial(t, limit-lower+bound, vanish)
             polynomial = multiply(polynomial, tr, limit-remaining)
             if not polynomial:
                 break
@@ -189,13 +192,14 @@ def expand_words(selected, limit):
 
 def expand(packet, workers=1):
     selected, limit = packet["selected"], packet["degree"]
+    vanish = packet.get("vanishing_fields","")
     if workers == 1:
-        total = expand_words(selected, limit)
+        total = expand_words(selected, limit, vanish)
     else:
         total = Counter()
         size = 4000
         with ProcessPoolExecutor(workers) as pool:
-            pieces = [pool.submit(expand_words, selected[i:i+size], limit) for i in range(0, len(selected), size)]
+            pieces = [pool.submit(expand_words, selected[i:i+size], limit, vanish) for i in range(0, len(selected), size)]
             for piece in pieces:
                 total.update(piece.result())
     rows = [[m.hex(), n] for m, n in sorted(total.items()) if n]

@@ -1,0 +1,22 @@
+{
+  "input_monomials": 40548,
+  "rational_unit": "2",
+  "terms": 33413,
+  "residual": 0,
+  "systems": [
+    {
+      "prime": 2147483647,
+      "equations": 177797,
+      "parents": 119418,
+      "peeled": 0,
+      "other_pivots": 86539
+    },
+    {
+      "prime": 1000000007,
+      "equations": 177797,
+      "parents": 119418,
+      "peeled": 0,
+      "other_pivots": 86539
+    }
+  ]
+}

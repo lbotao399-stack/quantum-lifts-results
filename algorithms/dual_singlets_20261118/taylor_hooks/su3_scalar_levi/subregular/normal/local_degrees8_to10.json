@@ -1,0 +1,14 @@
+{
+  "8": {
+    "terms": 1255,
+    "sha256": "a466fe99a3d23c76447d12e0760a872be9455fecf01e4bf61a03ef9d15cf1ed3"
+  },
+  "9": {
+    "terms": 124633,
+    "sha256": "fc1ad5ed9a09b5334fbf78bf046c51275e73a367a0deb352bf528bd9c9b27b3e"
+  },
+  "10": {
+    "terms": 425428,
+    "sha256": "ed2c6910fdf6b9c24597ecc1b2c775bff55861a31c3ae8b891374e2ac685cad8"
+  }
+}

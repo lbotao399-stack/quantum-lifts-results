@@ -1,0 +1,9 @@
+{
+  "job": "5687955",
+  "state": "COMPLETED",
+  "elapsed_seconds": 124,
+  "allocated_cpus": 24,
+  "exit_code": "0:0",
+  "new_records": 249,
+  "sha256": "bc37369d9b2d6a54242569db08a1c7b221aa0e556c477c8c721f93daba1e0aea"
+}
