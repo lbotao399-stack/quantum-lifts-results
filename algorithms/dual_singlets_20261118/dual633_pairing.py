@@ -24,8 +24,12 @@ from trace_descent import action, basis, dimensions, evaluate, highest_weights, 
 def descendant(row):
     for spin in (0, 1):
         row = substitute(row, spin, 0, False)
+    return outer_flavour(row, 0)
+
+
+def outer_flavour(row, flavour):
     singles = {tr for w in row for tr in w}
-    variations = {tr: outside({(tr,): 1}, 0, True) for tr in singles}
+    variations = {tr: outside({(tr,): 1}, flavour, True) for tr in singles}
     result = Counter()
     for w, coefficient in row.items():
         sign = 1

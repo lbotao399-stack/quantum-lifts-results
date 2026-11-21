@@ -1,0 +1,157 @@
+[
+  {
+    "job": 7657344,
+    "scheduler": "7657344|COMPLETED|104|64|0:0",
+    "sectors": [
+      {
+        "file": "parent_4_3_3_8.json",
+        "sha256": "26e8e770211edeff50ad604f6d04c4e7b0baf5a7a15187cf456233d6d099b34a",
+        "weight": [
+          4,
+          3,
+          3
+        ],
+        "length": 8,
+        "cochains": 256,
+        "incoming": 151,
+        "outgoing_and_Cartan": 105
+      },
+      {
+        "file": "parent_5_3_2_8.json",
+        "sha256": "d03cd5ae4c9e74f299134e799373d5db239e5db20ef34e39fbe45b6ea0a64126",
+        "weight": [
+          5,
+          3,
+          2
+        ],
+        "length": 8,
+        "cochains": 395,
+        "incoming": 208,
+        "outgoing_and_Cartan": 187
+      },
+      {
+        "file": "parent_5_3_3_10.json",
+        "sha256": "5be3ca16fa5b05cf81f1fe8f17f395883c8eda2df96a73553fc8e031d3a07a22",
+        "weight": [
+          5,
+          3,
+          3
+        ],
+        "length": 10,
+        "cochains": 388,
+        "incoming": 280,
+        "outgoing_and_Cartan": 108
+      },
+      {
+        "file": "parent_6_3_1_8.json",
+        "sha256": "970f6df38d76c6b51df22be65f7bb2924185ebae613d0b7db6edaeb9ca5bb3fc",
+        "weight": [
+          6,
+          3,
+          1
+        ],
+        "length": 8,
+        "cochains": 216,
+        "incoming": 90,
+        "outgoing_and_Cartan": 126
+      },
+      {
+        "file": "parent_6_3_2_10.json",
+        "sha256": "913007263414ab7f81b3ae79aefe830ec6ed7394533620a9fed120dfccebab31",
+        "weight": [
+          6,
+          3,
+          2
+        ],
+        "length": 10,
+        "cochains": 511,
+        "incoming": 400,
+        "outgoing_and_Cartan": 111
+      }
+    ]
+  },
+  {
+    "job": 7657349,
+    "scheduler": "7657349|COMPLETED|19|64|0:0",
+    "sectors": [
+      {
+        "file": "parent_4_2_2_8.json",
+        "sha256": "743849661f0b2e169535b89a3c4dd044e8622921d71acb86aabe2132cef6cd46",
+        "weight": [
+          4,
+          2,
+          2
+        ],
+        "length": 8,
+        "cochains": 20,
+        "incoming": 19,
+        "outgoing_and_Cartan": 1
+      },
+      {
+        "file": "parent_4_3_2_8.json",
+        "sha256": "e2ce744f2abb12c524659f0379f98b6290a5059826fc788739e2ce9c973861f5",
+        "weight": [
+          4,
+          3,
+          2
+        ],
+        "length": 8,
+        "cochains": 96,
+        "incoming": 73,
+        "outgoing_and_Cartan": 23
+      },
+      {
+        "file": "parent_5_2_1_8.json",
+        "sha256": "766e54002a3c8d40d36a4c8e4e7261ff212c9699543153524100ecb34a0c74a7",
+        "weight": [
+          5,
+          2,
+          1
+        ],
+        "length": 8,
+        "cochains": 10,
+        "incoming": 9,
+        "outgoing_and_Cartan": 1
+      },
+      {
+        "file": "parent_5_2_2_8.json",
+        "sha256": "f7a50d458ca1fc3d9efb7a7a694d710cb53fa3322ff5c25a71e9c1adc8c1958f",
+        "weight": [
+          5,
+          2,
+          2
+        ],
+        "length": 8,
+        "cochains": 58,
+        "incoming": 50,
+        "outgoing_and_Cartan": 8
+      },
+      {
+        "file": "parent_5_3_1_8.json",
+        "sha256": "84370b2228fabae25dc4de82a369c2faac9ee3dd28464c28c9b1d8747569e86a",
+        "weight": [
+          5,
+          3,
+          1
+        ],
+        "length": 8,
+        "cochains": 90,
+        "incoming": 51,
+        "outgoing_and_Cartan": 39
+      },
+      {
+        "file": "parent_6_2_1_8.json",
+        "sha256": "ee029e0484a829b7d661e2c48aceabbbfee2c91646e0e50f262e7158e4c5e35f",
+        "weight": [
+          6,
+          2,
+          1
+        ],
+        "length": 8,
+        "cochains": 51,
+        "incoming": 27,
+        "outgoing_and_Cartan": 24
+      }
+    ]
+  }
+]

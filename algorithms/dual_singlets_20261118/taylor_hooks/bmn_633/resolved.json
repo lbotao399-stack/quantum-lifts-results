@@ -1,0 +1,105 @@
+{
+  "classical": {
+    "SO7": {
+      "dimensions": {
+        "8": 929,
+        "9": 1863,
+        "10": 1837,
+        "11": 772,
+        "12": 107
+      },
+      "exact_ranks": {
+        "8": 712,
+        "9": 1151,
+        "10": 665,
+        "11": 107
+      },
+      "length_ten_cohomology": 21
+    },
+    "Sp3": {
+      "dimensions": {
+        "8": 929,
+        "9": 1861,
+        "10": 1832,
+        "11": 770,
+        "12": 107
+      },
+      "exact_ranks": {
+        "8": 712,
+        "9": 1149,
+        "10": 663,
+        "11": 107
+      },
+      "length_ten_cohomology": 20
+    }
+  },
+  "SO7_incoming": 1151,
+  "SO7_augmented_mod_2147483647": {
+    "candidate": 1152,
+    "residual": 1151
+  },
+  "common_products": 20,
+  "full_Cartan_character": {
+    "weights": [
+      {
+        "weight": [
+          6,
+          3,
+          3
+        ],
+        "sign": 1,
+        "dimension": 732
+      },
+      {
+        "weight": [
+          6,
+          4,
+          2
+        ],
+        "sign": -1,
+        "dimension": 583
+      },
+      {
+        "weight": [
+          7,
+          2,
+          3
+        ],
+        "sign": -1,
+        "dimension": 453
+      },
+      {
+        "weight": [
+          7,
+          4,
+          1
+        ],
+        "sign": 1,
+        "dimension": 230
+      },
+      {
+        "weight": [
+          8,
+          2,
+          2
+        ],
+        "sign": 1,
+        "dimension": 262
+      },
+      {
+        "weight": [
+          8,
+          3,
+          1
+        ],
+        "sign": -1,
+        "dimension": 168
+      }
+    ],
+    "highest_weight_dimension": 20
+  },
+  "rational_Cartan_kernel": {
+    "SO7": 1,
+    "Sp3": 0
+  }
+}

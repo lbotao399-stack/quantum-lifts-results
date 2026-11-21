@@ -1,4 +1,4 @@
-// Restrict an explicit SU(3) image to traceless 2 x 2 matrices and compare it with all classical boundaries.
+// Evaluate explicit trace words and compare with all classical boundaries in the selected gauge group.
 #define N4_PARITY_HELPERS_ONLY
 #include "unitary_parity.cpp"
 #include <fstream>
@@ -88,8 +88,9 @@ static u64 evaluate_image(const RestrictedImage &image, const Skel &s, int probe
   return value;
 }
 
+#ifndef N4_EXPLICIT_IMAGE_HELPERS_ONLY
 int main(int argc, char **argv) {
-  if (argc != 10 || !parse_gauge("SU2")) return 1;
+  if ((argc != 10 && argc != 11) || !parse_gauge(argc == 11 ? argv[10] : "SU2")) return 1;
   int weights[5];
   for (int i = 0; i < 5; ++i) weights[i] = std::stoi(argv[2+i]);
   int length = std::stoi(argv[7]);
@@ -130,7 +131,7 @@ int main(int argc, char **argv) {
     const auto point = probes[i];
     values[i] = static_cast<u32>(evaluate_image(input, target.L0.sk[point.first], point.second));
   });
-  print_head("SU3_image_on_SU2", weights, sector, seed);
+  print_head(argc == 11 ? "explicit_classical_image" : "SU3_image_on_SU2", weights, sector, seed);
   std::cout << ",\"length\":" << length << ",\"cochains\":[" << parent.dim << ',' << target.nc << ',' << next.dim << ']';
   std::cout << ",\"image_values_scaled\":[";
   for (size_t i = 0; i < values.size(); ++i) { if (i) std::cout << ','; std::cout << values[i]; }
@@ -141,3 +142,4 @@ int main(int argc, char **argv) {
   std::cout << ",\"augmented\":"; print_minor(std::move(incoming), parent.dim+1);
   std::cout << "}\n";
 }
+#endif

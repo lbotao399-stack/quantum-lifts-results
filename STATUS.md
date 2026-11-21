@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## The level-24 orthogonal product relation, November 21, 2026
+
+At BMN weight $(6,3,3)$ and length ten, $SO(7)$ and $USp(6)$ have rational cohomology dimensions 21 and 20. Twenty independent products survive on the rank-three Cartan. A further product vanishes there and raises the orthogonal boundary rank from 1151 to 1152. Its augmented minor is 840083 modulo 1000033. Eleven lower orthogonal sectors have zero rational Cartan kernel. [Trace polynomial, rank certificates and A6 receipts](algorithms/dual_singlets_20261118/taylor_hooks/bmn_633/README.md)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_orthogonal_product.json)
+
 ## An invariant first correction on the square-zero scalar scheme, November 21, 2026
 
 At $SU(3)$ level 32 one 2487-term integer trace polynomial solves the first equation modulo the entries of all $S_iS_j$. Of the 68 terms previously treated with a projector, 44 admit a repeated-scalar trace identity and 24 require its polarization. All 2625 terms of the rewritten residual cancel. [Polynomial and proof](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/square_zero/README.md#an-invariant-family-correction-at-level-32)

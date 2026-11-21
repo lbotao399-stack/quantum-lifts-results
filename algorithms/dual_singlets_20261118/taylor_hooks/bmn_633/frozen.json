@@ -1,0 +1,20 @@
+{
+  "exact_recipe_uncompressed_sha256": "b9b0944f785e1138ada3eeadfc23f150d9034bdb214edd8e88762ab66a98ad1c",
+  "ordered_integer_rows": {
+    "Q0": 665,
+    "Cartan": 20
+  },
+  "trace_generators": 686,
+  "primes": {
+    "2147483647": {
+      "determinant": 2052382176,
+      "nonzero_coefficients": 662,
+      "modular_coefficients_sha256": "56e600538e9bc3e1c08614cf52372f181135caa157a9c0e2edd63f977e32c30b"
+    },
+    "1000033": {
+      "determinant": 163439,
+      "nonzero_coefficients": 662,
+      "modular_coefficients_sha256": "fb440b1c4061dbab8d37202b647e25c56d3d5fe9e8e19592be7f634b4c4032c2"
+    }
+  }
+}

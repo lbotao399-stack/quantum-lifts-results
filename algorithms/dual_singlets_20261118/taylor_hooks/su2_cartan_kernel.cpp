@@ -1,9 +1,9 @@
-// Bound the classical cohomology killed by restriction to the SU(2) Cartan.
+// Bound the classical cohomology killed by restriction to the Cartan.
 #define N4_PARITY_HELPERS_ONLY
 #include "unitary_parity.cpp"
 
 int main(int argc, char **argv) {
-  if (argc != 9 || !parse_gauge("SU2")) return 1;
+  if ((argc != 9 && argc != 10) || !parse_gauge(argc == 10 ? argv[9] : "SU2")) return 1;
   int w[5];
   for (int i = 0; i < 5; ++i) w[i] = std::stoi(argv[i+1]);
   const int y = std::stoi(argv[6]);
@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
   target.Y = y;
   build_lev(sector, target.L0, y);
   target.c0 = col_offsets(target.L0, target.nc);
-  print_head("SU2_classical_Cartan_kernel", w, sector, seed);
+  print_head(argc == 10 ? "classical_Cartan_kernel" : "SU2_classical_Cartan_kernel", w, sector, seed);
   std::cout << ",\"length\":" << y << ",\"cochains\":" << target.nc;
   if (target.nc) {
     build_lev(sector, target.Lm, y-1);

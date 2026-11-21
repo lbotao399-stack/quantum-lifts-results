@@ -1,0 +1,69 @@
+{
+  "source_sha256": "eda182846ea9ac1f2ed989519f5b4a234e35ccf48f0ed6f120ce899b0ac37e20",
+  "parent_closure_coordinates": 81,
+  "lowered_parent_terms": 834,
+  "descendant_terms": 2570,
+  "common_denominator": 42,
+  "propagated_classical_variation_terms": 1072,
+  "Cartan_orbit_coefficients": 295,
+  "native_input_sha256": "4e9655077ee59d9fdcc9d1619654e4636d35da555627eb806afeaffd2ff81b61",
+  "product_archive_sha256": "a0f101ea554e16053ba4f2987ec2f8b0017bdfee11723aa834593fd78e577f1c",
+  "product_coefficients": [
+    [
+      0,
+      "-5/2"
+    ],
+    [
+      1,
+      "-5/2"
+    ],
+    [
+      3,
+      "15/2"
+    ],
+    [
+      5,
+      "-5/2"
+    ],
+    [
+      6,
+      "6"
+    ],
+    [
+      7,
+      "12"
+    ],
+    [
+      8,
+      "4"
+    ],
+    [
+      9,
+      "100/3"
+    ],
+    [
+      10,
+      "-4"
+    ],
+    [
+      11,
+      "80/3"
+    ],
+    [
+      13,
+      "3"
+    ],
+    [
+      17,
+      "30"
+    ],
+    [
+      18,
+      "30"
+    ]
+  ],
+  "residual_Cartan_orbit_coefficients": 0,
+  "residual_terms": 3030,
+  "residual_denominator": 42,
+  "residual_native_sha256": "6128e6be75968131fec8402409bf18abad3a753b00ac172fb40d795fcee75178"
+}
