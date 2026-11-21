@@ -1,0 +1,487 @@
+{
+  "source": "de Graaf, arXiv:math/0702193, Tables 3 and 8",
+  "zero_scalar_image": {
+    "24": 0,
+    "30": 0
+  },
+  "nonzero_nilpotent_orbits": [
+    {
+      "diagram": "1000",
+      "representative_root_indices": [
+        24
+      ],
+      "orbit_dimension": 16,
+      "centralizer_by_height": {
+        "0": 21,
+        "1": 14,
+        "2": 1
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": -4,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -6,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "0001",
+      "representative_root_indices": [
+        21
+      ],
+      "orbit_dimension": 22,
+      "centralizer_by_height": {
+        "0": 15,
+        "1": 8,
+        "2": 7
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": -4,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -6,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "0100",
+      "representative_root_indices": [
+        17,
+        22
+      ],
+      "orbit_dimension": 28,
+      "centralizer_by_height": {
+        "0": 6,
+        "1": 10,
+        "2": 6,
+        "3": 2
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": -3,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -5,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "2000",
+      "representative_root_indices": [
+        16,
+        18
+      ],
+      "orbit_dimension": 30,
+      "centralizer_by_height": {
+        "0": 8,
+        "2": 13,
+        "4": 1
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": -2,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -4,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "0002",
+      "representative_root_indices": [
+        11,
+        12
+      ],
+      "orbit_dimension": 30,
+      "centralizer_by_height": {
+        "0": 14,
+        "2": 1,
+        "4": 7
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": -2,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -4,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "0010",
+      "representative_root_indices": [
+        14,
+        15,
+        16
+      ],
+      "orbit_dimension": 34,
+      "centralizer_by_height": {
+        "0": 3,
+        "1": 4,
+        "2": 6,
+        "3": 2,
+        "4": 3
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": -2,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -4,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "2001",
+      "representative_root_indices": [
+        9,
+        15
+      ],
+      "orbit_dimension": 36,
+      "centralizer_by_height": {
+        "0": 6,
+        "2": 1,
+        "3": 4,
+        "4": 4,
+        "6": 1
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": 0,
+          "torus_invariants": 100,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -2,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "0101",
+      "representative_root_indices": [
+        8,
+        14,
+        16
+      ],
+      "orbit_dimension": 36,
+      "centralizer_by_height": {
+        "0": 3,
+        "1": 4,
+        "2": 2,
+        "3": 2,
+        "4": 3,
+        "5": 2
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": -1,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -3,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "1010",
+      "representative_root_indices": [
+        10,
+        11,
+        15
+      ],
+      "orbit_dimension": 38,
+      "centralizer_by_height": {
+        "0": 3,
+        "2": 3,
+        "3": 4,
+        "4": 1,
+        "5": 2,
+        "6": 1
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": 0,
+          "torus_invariants": 4,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -2,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "0200",
+      "representative_root_indices": [
+        8,
+        9,
+        10,
+        18
+      ],
+      "orbit_dimension": 40,
+      "centralizer_by_height": {
+        "2": 6,
+        "4": 4,
+        "6": 2
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": 0,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": -2,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "2200",
+      "representative_root_indices": [
+        8,
+        2,
+        10
+      ],
+      "orbit_dimension": 42,
+      "centralizer_by_height": {
+        "0": 3,
+        "2": 1,
+        "6": 5,
+        "10": 1
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": 4,
+          "torus_invariants": 25,
+          "reductive_invariants": 1,
+          "degree_zero_algebra": "sl2",
+          "lowest_positive_scalar_height": 2,
+          "required_height_after_commutator": 6,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": 2,
+          "torus_invariants": 9,
+          "reductive_invariants": 1,
+          "degree_zero_algebra": "sl2",
+          "lowest_positive_scalar_height": 2,
+          "required_height_after_commutator": 8,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "1012",
+      "representative_root_indices": [
+        10,
+        1,
+        9
+      ],
+      "orbit_dimension": 42,
+      "centralizer_by_height": {
+        "0": 3,
+        "2": 1,
+        "3": 2,
+        "6": 1,
+        "9": 2,
+        "10": 1
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": 4,
+          "torus_invariants": 37,
+          "reductive_invariants": 2,
+          "degree_zero_algebra": "sl2",
+          "lowest_positive_scalar_height": 2,
+          "required_height_after_commutator": 6,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": 2,
+          "torus_invariants": 9,
+          "reductive_invariants": 1,
+          "degree_zero_algebra": "sl2",
+          "lowest_positive_scalar_height": 2,
+          "required_height_after_commutator": 8,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "0202",
+      "representative_root_indices": [
+        6,
+        5,
+        7,
+        13
+      ],
+      "orbit_dimension": 44,
+      "centralizer_by_height": {
+        "2": 3,
+        "4": 1,
+        "6": 1,
+        "8": 1,
+        "10": 2
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": 4,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": 2,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "2202",
+      "representative_root_indices": [
+        5,
+        4,
+        2,
+        10
+      ],
+      "orbit_dimension": 46,
+      "centralizer_by_height": {
+        "2": 1,
+        "4": 1,
+        "6": 1,
+        "10": 2,
+        "14": 1
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": 8,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": 6,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    },
+    {
+      "diagram": "2222",
+      "representative_root_indices": [
+        1,
+        3,
+        4,
+        2
+      ],
+      "orbit_dimension": 48,
+      "centralizer_by_height": {
+        "2": 1,
+        "10": 1,
+        "14": 1,
+        "22": 1
+      },
+      "sources": {
+        "24": {
+          "width": 4,
+          "maximum_scalar_height": 16,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        },
+        "30": {
+          "width": 5,
+          "maximum_scalar_height": 14,
+          "torus_invariants": 0,
+          "reductive_invariants": 0,
+          "cohomology_image_upper": 0
+        }
+      }
+    }
+  ]
+}

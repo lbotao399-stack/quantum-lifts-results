@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## Exceptional sources at every fixed scalar, November 21, 2026
+
+At $F_4$ levels 24 and 30, every closed candidate source becomes a classical boundary after fixing any one scalar to any complex value. Of the 15 nonzero nilpotent orbits, 13 have no invariant coefficient at either level. On the two dimension-42 orbits the scalar commutator eliminates the remaining $1+2$ and $1+1$ coefficients. The unrestricted polynomial cohomology remains open. [Proof, exact characters and replay](algorithms/dual_singlets_20261118/f4/levi/fixed_scalar.md)
+
+Miao and Tang identify the level-18 triality pair and prove its perturbative protection. The reflection-even class is fortuitous in their trace covering. The odd class belongs to their generalized monotone Pfaffian family for every $N\geq4$ in $SO(2N)$. The campaign counts this pair once among the audited BMN cores. Its identification has public prior art. [Sections 6–8 of the November 17 preprint](https://arxiv.org/html/2611.23173v1#S6)
+
+New $d_1$ lifts **0** (15 total). New fortuitous BMN generators **0** (5 explicit in the campaign, at least 7 including the index bound). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_fixed_f4_scalars.json)
+
 ## The level-34 chart and exceptional subgroup restrictions, November 21, 2026
 
 At $SU(3)$ level 34 a rational correction with 514322 monomials solves the first supercharge equation on the nonzero scalar chart. Its possible obstruction is supported at the zero scalar triple. At $F_4$ level 24 every candidate second-order source restricts to a classical boundary on every proper connected algebraic subgroup over the complex numbers. At level 30 the rank-one test also excludes detection on $G_2+A_1$. [Level-34 polynomial and integer replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/complete/README.md#the-complete-first-equation-at-level-34) · [Exceptional subgroup proof](algorithms/dual_singlets_20261118/f4/levi/README.md)

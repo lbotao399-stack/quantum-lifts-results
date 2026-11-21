@@ -1,5 +1,7 @@
 # The two parity components of the $SO(8)$ level-18 BMN generator
 
+Miao and Tang identify the level-18 triality pair and prove its perturbative protection. The reflection-even class is fortuitous in their trace covering. The odd class belongs to their generalized monotone Pfaffian family for every $N\geq4$ in $SO(2N)$. The campaign counts this pair once among the audited BMN cores. Its identification has public prior art. [Sections 6–8 of the November 17 preprint](https://arxiv.org/html/2611.23173v1#S6)
+
 At doubled charges $(2J_1,2J_2,2q_1,2q_2,2q_3)=(n,n,6,6,6)$ the perturbative supercharge maps degree $n+1$ to $n$. The derivative grade $r$ is half the total dotted Taylor degree. There are $9-n-r$ letters. The table uses reflection-even spin and flavour singlets. Triality permutes the defining and two chiral spinor representations of the colour Lie algebra.
 
 | $n$ | Cochains | Incoming classical ranks in increasing $r$ | Full incoming rank | Perturbative cohomology | Triality-invariant part |

@@ -143,3 +143,5 @@ c++ -O3 -std=c++17 -pthread -I "$d/taylor_hooks/native" "$d/taylor_hooks/su2_car
 python3 "$d/f4_rank_one_factor.py" --engine /tmp/f4-rank-one --work /tmp/f4-rank-one-minors --out /tmp/f4-rank-one.json
 cmp /tmp/f4-rank-one.json "$d/f4/levi/rank_one_factor.json"
 ```
+
+The fixed-scalar calculation extends to all 15 nonzero nilpotent orbits and to the zero scalar at both levels. [Centralizer reduction and orbit characters](fixed_scalar.md)
