@@ -1,0 +1,962 @@
+{
+  "G2_columns": [
+    {
+      "weight": [
+        3,
+        2,
+        1
+      ],
+      "ranks": {
+        "3": {
+          "job": "5691136",
+          "dimension": 1,
+          "incoming": 0,
+          "outgoing": 1,
+          "rational_upper": 0
+        },
+        "5": {
+          "job": "5691136",
+          "dimension": 5,
+          "incoming": 4,
+          "outgoing": 1,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    },
+    {
+      "weight": [
+        6,
+        5,
+        4
+      ],
+      "ranks": {
+        "7": {
+          "job": "5691142",
+          "dimension": 159,
+          "incoming": 9,
+          "outgoing": 150,
+          "rational_upper": 0
+        },
+        "9": {
+          "job": "5691420",
+          "dimension": 5038,
+          "incoming": 1109,
+          "outgoing": 3929,
+          "rational_upper": 0
+        },
+        "11": {
+          "job": "5691483",
+          "dimension": 15608,
+          "incoming": 7487,
+          "outgoing": 8121,
+          "rational_upper": 0
+        },
+        "13": {
+          "job": "5691423",
+          "dimension": 6777,
+          "incoming": 5065,
+          "outgoing": 1712,
+          "rational_upper": 0
+        },
+        "15": {
+          "job": "5691142",
+          "dimension": 230,
+          "incoming": 230,
+          "outgoing": 0,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    },
+    {
+      "weight": [
+        6,
+        6,
+        4
+      ],
+      "ranks": {
+        "7": {
+          "job": "5691142",
+          "dimension": 66,
+          "incoming": 0,
+          "outgoing": 66,
+          "rational_upper": 0
+        },
+        "9": {
+          "job": "5691422",
+          "dimension": 3555,
+          "incoming": 622,
+          "outgoing": 2933,
+          "rational_upper": 0
+        },
+        "11": {
+          "job": "5691485",
+          "dimension": 21650,
+          "incoming": 8255,
+          "outgoing": 13395,
+          "rational_upper": 0
+        },
+        "13": {
+          "job": "5691572",
+          "dimension": 18935,
+          "incoming": 12339,
+          "outgoing": 6596,
+          "rational_upper": 0
+        },
+        "15": {
+          "job": "5691142",
+          "dimension": 2445,
+          "incoming": 2091,
+          "outgoing": 354,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    },
+    {
+      "weight": [
+        6,
+        6,
+        6
+      ],
+      "ranks": {
+        "7": {
+          "job": "5691136",
+          "dimension": 4,
+          "incoming": 2,
+          "outgoing": 2,
+          "rational_upper": 0
+        },
+        "9": {
+          "job": "5691136",
+          "dimension": 1271,
+          "incoming": 109,
+          "outgoing": 1162,
+          "rational_upper": 0
+        },
+        "17": {
+          "job": "5691136",
+          "dimension": 1946,
+          "incoming": 1660,
+          "outgoing": 286,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": [
+        11,
+        13,
+        15
+      ]
+    }
+  ],
+  "USp4_columns": [
+    {
+      "weight": [
+        6,
+        5,
+        4
+      ],
+      "ranks": {
+        "7": {
+          "job": "7658843",
+          "dimension": 226,
+          "incoming": 15,
+          "outgoing": 211,
+          "rational_upper": 0
+        },
+        "9": {
+          "job": "7658843",
+          "dimension": 5637,
+          "incoming": 1410,
+          "outgoing": 4227,
+          "rational_upper": 0
+        },
+        "11": {
+          "job": "7658843",
+          "dimension": 12711,
+          "incoming": 6652,
+          "outgoing": 6059,
+          "rational_upper": 0
+        },
+        "13": {
+          "job": "7658843",
+          "dimension": 4187,
+          "incoming": 3226,
+          "outgoing": 961,
+          "rational_upper": 0
+        },
+        "15": {
+          "job": "7658843",
+          "dimension": 116,
+          "incoming": 116,
+          "outgoing": 0,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    },
+    {
+      "weight": [
+        6,
+        5,
+        5
+      ],
+      "ranks": {
+        "7": {
+          "job": "7658772",
+          "dimension": 84,
+          "incoming": 10,
+          "outgoing": 74,
+          "rational_upper": 0
+        },
+        "9": {
+          "job": "7658772",
+          "dimension": 3805,
+          "incoming": 722,
+          "outgoing": 3083,
+          "rational_upper": 0
+        },
+        "11": {
+          "job": "7658772",
+          "dimension": 13616,
+          "incoming": 6240,
+          "outgoing": 7376,
+          "rational_upper": 0
+        },
+        "13": {
+          "job": "7658772",
+          "dimension": 8431,
+          "incoming": 5670,
+          "outgoing": 2761,
+          "rational_upper": 0
+        },
+        "15": {
+          "job": "7658772",
+          "dimension": 739,
+          "incoming": 687,
+          "outgoing": 52,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    },
+    {
+      "weight": [
+        7,
+        4,
+        4
+      ],
+      "ranks": {
+        "7": {
+          "job": "7658842",
+          "dimension": 38,
+          "incoming": 0,
+          "outgoing": 38,
+          "rational_upper": 0
+        },
+        "9": {
+          "job": "7658842",
+          "dimension": 3254,
+          "incoming": 719,
+          "outgoing": 2535,
+          "rational_upper": 0
+        },
+        "11": {
+          "job": "7658842",
+          "dimension": 9053,
+          "incoming": 4418,
+          "outgoing": 4635,
+          "rational_upper": 0
+        },
+        "13": {
+          "job": "7658842",
+          "dimension": 3638,
+          "incoming": 2797,
+          "outgoing": 841,
+          "rational_upper": 0
+        },
+        "15": {
+          "job": "7658842",
+          "dimension": 75,
+          "incoming": 75,
+          "outgoing": 0,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    },
+    {
+      "weight": [
+        7,
+        5,
+        3
+      ],
+      "ranks": {
+        "7": {
+          "job": "7658855",
+          "dimension": 83,
+          "incoming": 0,
+          "outgoing": 83,
+          "rational_upper": 0
+        },
+        "9": {
+          "job": "7658855",
+          "dimension": 4273,
+          "incoming": 809,
+          "outgoing": 3464,
+          "rational_upper": 0
+        },
+        "11": {
+          "job": "7658855",
+          "dimension": 14783,
+          "incoming": 7148,
+          "outgoing": 7635,
+          "rational_upper": 0
+        },
+        "13": {
+          "job": "7658855",
+          "dimension": 6037,
+          "incoming": 4493,
+          "outgoing": 1544,
+          "rational_upper": 0
+        },
+        "15": {
+          "job": "7658855",
+          "dimension": 248,
+          "incoming": 248,
+          "outgoing": 0,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    },
+    {
+      "weight": [
+        8,
+        5,
+        2
+      ],
+      "ranks": {
+        "9": {
+          "job": "7658854",
+          "dimension": 1063,
+          "incoming": 99,
+          "outgoing": 964,
+          "rational_upper": 0
+        },
+        "11": {
+          "job": "7658854",
+          "dimension": 6713,
+          "incoming": 2747,
+          "outgoing": 3966,
+          "rational_upper": 0
+        },
+        "13": {
+          "job": "7658854",
+          "dimension": 4299,
+          "incoming": 3059,
+          "outgoing": 1240,
+          "rational_upper": 0
+        },
+        "15": {
+          "job": "7658854",
+          "dimension": 181,
+          "incoming": 181,
+          "outgoing": 0,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    }
+  ],
+  "G2_required_level36_weight": [
+    6,
+    6,
+    6
+  ],
+  "G2_odd_generator_lower_bound": 2,
+  "G2_odd_generators_minimum_distinct_weights": 2,
+  "G2_two_generator_hypothesis": [
+    {
+      "weight": [
+        5,
+        5,
+        5
+      ],
+      "level": 30,
+      "level44_capacity": 2,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        6,
+        5,
+        5
+      ],
+      "level": 32,
+      "level44_capacity": 3,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        6,
+        6,
+        3
+      ],
+      "level": 30,
+      "level44_capacity": 4,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        6,
+        6,
+        5
+      ],
+      "level": 34,
+      "level44_capacity": 2,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        6,
+        6,
+        6
+      ],
+      "level": 36,
+      "level44_capacity": 1,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        7,
+        4,
+        4
+      ],
+      "level": 30,
+      "level44_capacity": 3,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        5,
+        3
+      ],
+      "level": 30,
+      "level44_capacity": 5,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        5,
+        4
+      ],
+      "level": 32,
+      "level44_capacity": 4,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        5,
+        5
+      ],
+      "level": 34,
+      "level44_capacity": 2,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        6,
+        2
+      ],
+      "level": 30,
+      "level44_capacity": 4,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        6,
+        3
+      ],
+      "level": 32,
+      "level44_capacity": 3,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        6,
+        4
+      ],
+      "level": 34,
+      "level44_capacity": 3,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        6,
+        5
+      ],
+      "level": 36,
+      "level44_capacity": 2,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        6,
+        6
+      ],
+      "level": 38,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        7,
+        7,
+        1
+      ],
+      "level": 30,
+      "level44_capacity": 2,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        7,
+        7,
+        2
+      ],
+      "level": 32,
+      "level44_capacity": 2,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        7,
+        7,
+        3
+      ],
+      "level": 34,
+      "level44_capacity": 1,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        7,
+        7,
+        4
+      ],
+      "level": 36,
+      "level44_capacity": 1,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        7,
+        7,
+        5
+      ],
+      "level": 38,
+      "level44_capacity": 1,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        7,
+        7,
+        6
+      ],
+      "level": 40,
+      "level44_capacity": 1,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        8,
+        4,
+        3
+      ],
+      "level": 30,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        4,
+        4
+      ],
+      "level": 32,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        5,
+        2
+      ],
+      "level": 30,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        5,
+        3
+      ],
+      "level": 32,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        5,
+        4
+      ],
+      "level": 34,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        5,
+        5
+      ],
+      "level": 36,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        6,
+        1
+      ],
+      "level": 30,
+      "level44_capacity": 2,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        6,
+        3
+      ],
+      "level": 34,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        6,
+        5
+      ],
+      "level": 38,
+      "level44_capacity": 1,
+      "first_failure": null
+    },
+    {
+      "weight": [
+        8,
+        7,
+        1
+      ],
+      "level": 32,
+      "level44_capacity": 2,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        8,
+        7,
+        3
+      ],
+      "level": 36,
+      "level44_capacity": 1,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        8,
+        7,
+        5
+      ],
+      "level": 40,
+      "level44_capacity": 1,
+      "first_failure": {
+        "target": [
+          19,
+          6,
+          6
+        ],
+        "level": 62,
+        "required": 1,
+        "upper_by_core": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "weight": [
+        8,
+        7,
+        7
+      ],
+      "level": 44,
+      "level44_capacity": 1,
+      "first_failure": {
+        "target": [
+          10,
+          8,
+          8
+        ],
+        "level": 52,
+        "required": 4,
+        "upper_by_core": [
+          2,
+          1
+        ]
+      }
+    }
+  ],
+  "G2_two_generator_alternatives": [
+    [
+      5,
+      5,
+      5
+    ],
+    [
+      6,
+      5,
+      5
+    ],
+    [
+      6,
+      6,
+      3
+    ],
+    [
+      6,
+      6,
+      5
+    ],
+    [
+      7,
+      4,
+      4
+    ],
+    [
+      7,
+      5,
+      3
+    ],
+    [
+      7,
+      5,
+      4
+    ],
+    [
+      7,
+      5,
+      5
+    ],
+    [
+      7,
+      6,
+      2
+    ],
+    [
+      7,
+      6,
+      3
+    ],
+    [
+      7,
+      6,
+      4
+    ],
+    [
+      7,
+      6,
+      5
+    ],
+    [
+      7,
+      6,
+      6
+    ],
+    [
+      8,
+      4,
+      3
+    ],
+    [
+      8,
+      4,
+      4
+    ],
+    [
+      8,
+      5,
+      2
+    ],
+    [
+      8,
+      5,
+      3
+    ],
+    [
+      8,
+      5,
+      4
+    ],
+    [
+      8,
+      5,
+      5
+    ],
+    [
+      8,
+      6,
+      1
+    ],
+    [
+      8,
+      6,
+      3
+    ],
+    [
+      8,
+      6,
+      5
+    ]
+  ],
+  "USp4_single_additional_generator_alternatives": [
+    [
+      7,
+      5,
+      4
+    ]
+  ]
+}

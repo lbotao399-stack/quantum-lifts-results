@@ -1,0 +1,19 @@
+{
+  "terminal_probes_only": true,
+  "group": "USp(4)",
+  "weight": [
+    7,
+    4,
+    4
+  ],
+  "prime": 2147483647,
+  "seed": 829150,
+  "blocks": [
+    {
+      "length": 13,
+      "dimension": 3638,
+      "incoming": 2797,
+      "outgoing": 841
+    }
+  ]
+}

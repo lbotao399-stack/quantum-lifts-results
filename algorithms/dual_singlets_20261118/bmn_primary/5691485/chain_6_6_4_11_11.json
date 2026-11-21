@@ -1,0 +1,18 @@
+{
+  "terminal_probes_only": true,
+  "weight": [
+    6,
+    6,
+    4
+  ],
+  "prime": 2147483647,
+  "seed": 177973,
+  "blocks": [
+    {
+      "length": 11,
+      "dimension": 21650,
+      "incoming": 8255,
+      "outgoing": 13395
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0,
+    "index_forced_BMN_generators": 1
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 16,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 3,
+    "additional_G2_odd_BMN_generators": 2,
+    "candidate_G2_generators_for_level_36_singlet": [
+      {
+        "level": 36,
+        "weight": [
+          6,
+          6,
+          6
+        ],
+        "allowed_odd_lengths": [
+          11,
+          13,
+          15
+        ]
+      }
+    ],
+    "USp4_single_additional_core_alternatives_remaining": [
+      [
+        7,
+        5,
+        4
+      ]
+    ],
+    "G2_minimum_by_level": {
+      "44": {
+        "odd_generators": 2
+      },
+      "62": {
+        "distinct_odd_generator_weights": 2
+      }
+    }
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_su3_F1.json",
+  "phase": "Two required G2 odd BMN generators and five vanishing symplectic columns",
+  "explicit_new_representatives": [],
+  "evidence": [
+    "algorithms/dual_singlets_20261118/bmn_primary/second_odd_generator.md",
+    "algorithms/dual_singlets_20261118/bmn_primary/rank_two_odd_generators.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/5691485/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/5691572/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/7658750/receipt.json"
+  ]
+}

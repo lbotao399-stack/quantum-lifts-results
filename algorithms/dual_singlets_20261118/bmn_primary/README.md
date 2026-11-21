@@ -1,5 +1,7 @@
 # An odd BMN generator in $G_2$
 
+The two remaining $(6,6,4)$ ranks vanish. The generator accounting for the level-36 primary has weight $(6,6,6)$, and a second odd generator is required by level 44. [New rank certificates and index inequalities](second_odd_generator.md)
+
 At level $j=36$ and flavour partition $(6,6,6)$ the classical BMN cohomology contains an odd-length primary. Here a primary is a class modulo the images of the three BMN raising supercharges $Q_+^i$, and length $Y$ counts letters. At least one odd generator contributing to this class has the following level and flavour partition.
 
 | $j$ | Flavour partition |
