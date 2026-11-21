@@ -76,6 +76,27 @@ The five-scalar residual is closed under this part of $Q_0$. Indeed, the six-sca
 
 An invertible rational change of basis in these Koszul factors retains just the independent linear forms, with zero differentials in the other factors. Two independent eigenvalue differences generate $(x,y)$, so the cohomology in positive scalar degree vanishes. For one independent difference the cohomology is detected by reducing modulo that difference. All occupied off-diagonal entries then belong to one $2\times2$ block. Its reduction vanishes by the full centralizer calculation above and permutation of the three colours. With no off-diagonal entries the residual vanishes on the full Cartan since $Q_1\mathcal O_0$ has zero Cartan restriction and $Q_0$ consists of commutators. Thus a four-scalar polynomial primitive exists on this diagonal slice, including the coincident-eigenvalue lines. Extending a primitive to a conjugation-invariant polynomial for arbitrary $S$ is a separate equation. [First-image Cartan calculation](order1.json) · [Five-scalar identity](scalar_layers/centralizer_five.json)
 
+## Five-scalar equations on unrestricted matrices
+
+A rational change with 238 trace terms and four copies of $S$ extends the 13,400-term first correction. The combined vector has 13,638 terms. Its maximum scalar count after applying $Q_0$ to the change is five, preserving all 91 higher-scalar equations.
+
+Group the 119 five-scalar contents by removing $S$ and identifying the two members of each scalar-split pair. Three families with $5+8+5=18$ contents already vanish formally. In four further families the residual has two spectator traces whose scalar splits vanish. Factoring them off reduces the complete three-colour coefficient equations to systems with 452 or 669 parent words. Their ranks modulo 1,000,003 are 172 and 259. The returned rational corrections have $112+110+8+8=238$ terms after restoring the spectators and their Grassmann signs. Each cofactor identity was verified over the rationals; after restoring the spectators all 30 contents vanish, ten by collecting 84,696 integer-polynomial coordinates and twenty formally. For these invariant polynomials it suffices to diagonalize $S$ with generic eigenvalues and leave every other matrix arbitrary, by density and conjugation invariance.
+
+The result on unrestricted matrices is $48/119$ at five scalars. The other 71 contents have nonzero evaluations for this particular vector, since the four families of added terms do not enter them. At six and seven scalars the result remains $91/91$. A8 job 5685041 independently tested all fourteen input families and reduced their formal traces. Its separate formal correction leaves 75 nonzero five-scalar residuals. A nonzero residual of a particular vector leaves the full $d_1$ equation open. [Rational change](scalar_layers/five_scalar_descent/delta.json.gz) · [Exact cofactor and polynomial checks](scalar_layers/five_scalar_descent/factored.json) · [A8 evaluations and payload hashes](scalar_layers/five_scalar_descent/a8_descent.json)
+
+Rebuilding $Q_1\mathcal O_0+Q_0\mathcal O_1$ from the full 331,201-term first image gives the following results for the same rational vector. Every nonzero entry has a nonzero rational matrix evaluation.
+
+| Copies of $S$ | Formal zeros | Further three-colour identities | Nonzero residuals |
+|---:|---:|---:|---:|
+| 3 | 3 | 0 | 11 |
+| 4 | 21 | 0 | 48 |
+| 5 | 38 | 10 | 71 |
+| 6 | 60 | 18 | 0 |
+| 7 | 13 | 0 | 0 |
+| **Total** | **135** | **28** | **130** |
+
+The vector satisfies $135+28=163$ of the 293 equations. [All 293 coefficient tests](scalar_layers/five_scalar_descent/all_contents.json) · [Full residual replay](../../su3_level32_full_residual.py)
+
 ## Replay
 
 Run from the repository root with the dependencies of the archived SU(3) runtime. The two JSONL digests in the records refer to the uncompressed streams.
@@ -133,4 +154,21 @@ python3 "$d/su3_level32_levi.py" --out /tmp/su3-five-scalar
 cmp /tmp/su3-five-scalar/levi_correction.json.gz "$l/levi_correction.json.gz"
 python3 "$d/su3_level32_centralizer.py" --correction /tmp/su3-five-scalar/levi_correction.json.gz --out /tmp/su3-five-scalar/centralizer.json
 cmp /tmp/su3-five-scalar/centralizer.json "$l/centralizer_five.json"
+```
+
+The unrestricted five-scalar calculation uses the same three-colour exporter. From the repository root, set the algorithm module paths as follows (NumPy, SciPy and python-flint must be installed).
+
+```sh
+d=algorithms/dual_singlets_20261118
+p="$d/taylor_hooks/su3_level32"
+r=algorithms/su3_independent_prime_20261118/runtime/work
+export PYTHONPATH="$d:algorithms/su3_j34_20261118:algorithms/so7_cartan_target_20261118/native:$r/sp3-native.nosync:$r/cluster-next-v2.nosync/work/so8-bmn/vendor${PYTHONPATH:+:$PYTHONPATH}"
+c++ -O3 -std=c++17 algorithms/su3_j34_20261118/colour_columns.cpp -o /tmp/su3-colour-columns
+python3 "$d/su3_level32_scalar_descent.py" prepare --correction "$p/scalar_layers/levi_correction.json.gz" --folder /tmp/su3-five-families
+cmp /tmp/su3-five-families/groups.json "$p/scalar_layers/five_scalar_descent/groups.json"
+python3 "$d/su3_level32_factored_descent.py" --folder /tmp/su3-five-families --engine /tmp/su3-colour-columns --work /tmp/su3-five-factored
+cmp /tmp/su3-five-factored/factored_delta.json.gz "$p/scalar_layers/five_scalar_descent/delta.json.gz"
+cmp /tmp/su3-five-factored/factored_descent.json "$p/scalar_layers/five_scalar_descent/factored.json"
+python3 "$d/su3_level32_full_residual.py" --delta "$p/scalar_layers/five_scalar_descent/delta.json.gz" --engine /tmp/su3-colour-columns --work /tmp/su3-all-contents
+cmp /tmp/su3-all-contents/all_contents.json "$p/scalar_layers/five_scalar_descent/all_contents.json"
 ```

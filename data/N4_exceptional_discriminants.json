@@ -1,0 +1,48 @@
+{
+  "G2": {
+    "representation_dimension": 7,
+    "degrees": [
+      2,
+      6
+    ],
+    "root_linear_factors": 6,
+    "jacobian_over_ordered_root_product": -48,
+    "jacobian_at_x1_y2": -5760
+  },
+  "F4": {
+    "representation_dimension": 26,
+    "degrees": [
+      2,
+      6,
+      8,
+      12
+    ],
+    "short_weights": 24,
+    "zero_weights": 2,
+    "positive_roots": 24,
+    "checks": [
+      {
+        "point": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "jacobian": "329986597248000000",
+        "root_product": "-5893965000",
+        "ratio": "-55987200"
+      },
+      {
+        "point": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "jacobian": "-2779807095217152000000",
+        "root_product": "49650761160000",
+        "ratio": "-55987200"
+      }
+    ]
+  }
+}

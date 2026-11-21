@@ -44,7 +44,7 @@ For the even $SU(3)$ level-34 BMN source of weight $(8,5,4)$ the order-two diagr
 
 At $USp(4)$ levels 40 and 42 the third-order diagrams for BMN weights $(10,5,5)$ and $(11,5,5)$ have rows $(6,6,1^5)$ and $(6,6,1^6)$. At the maximal target lengths 17 and 18, A8 job 5682624 gives $43-43-0=0$ and $124-124-0=0$ respectively in the field of 2147483647 elements. Every modular rank is taken on complete native weight spaces before extracting the Schur component. The corresponding rational target cohomologies vanish. Under filtered Taylor equivariance this excludes the transitions from source lengths 19 and 20. Shorter sources have different targets. [Twelve weight-space ranks, resolved blocks and receipt](b2_third_terminal/)
 
-Under the second-order Taylor selection, the rational targets of dimensions 18, 28 and 61 at $SU(3)$ levels 30 and 32 and $USp(4)$ level 36 are all detected by Cartan restriction. [Product spans, proof and replay](cartan_products/README.md)
+Under the second-order Taylor selection, the rational targets of dimensions 18, 28 and 61 at $SU(3)$ levels 30 and 32 and $USp(4)$ level 36 are all detected by Cartan restriction. Their incoming second differential has rank zero by the discriminant argument. [All-orders argument](../../perturbative_cartan_targets.md) · [Product spans and replay](cartan_products/README.md)
 
 Compile the archived classical engine and run the same sectors from the repository root. The engine's level label refers to the substituted Taylor weight. The physical level of the original operator is given above.
 

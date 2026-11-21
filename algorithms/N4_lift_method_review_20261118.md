@@ -2,6 +2,8 @@
 
 18 November 2026. The first test is the incoming differential into the one-dimensional $SO(7)$ class at level $j=30$, where $j=2(E+J_L)$, $E$ is the energy and $J_L$ the left spin. The strongest independent $SU(3)$ candidate for a third-order test is at $j=34$. The $G_2$ instanton candidate has a specific protected-current test that can settle whether it warrants integration.
 
+The November 21 discriminant calculation sharpens the target test. Intersect each perturbative target with the kernel of Cartan restriction on its page. A saturated Cartan rank excludes the entire component. The $SU(3)$ threshold at level 30 and the level-32 and level-36 second-order components now pass this exclusion under the filtered Ward selection. The $F_4$ fifth gaugino power vanishes on its rank-four Cartan and remains eligible for a direct calculation. [All-orders proof and coverage](perturbative_cartan_targets.md) · [Exceptional target](dual_singlets_20261118/f4/README.md)
+
 ## What to keep and what to change
 
 The manuscript supplies the operators $Q_n$, the order-$n$ terms of the perturbative supercharge, on letters with arbitrary holomorphic derivatives. The supplement already gives the coupled rank formula on successive pages $E_r$, where $E_1=H(Q_0)$ is classical cohomology and $d_r$ is the induced order-$r$ obstruction. Keep this formula and its normalization. The changes concern how to find representatives, choose target sectors and certify the action. Interpreting the quantized twist as the physical perturbative local-operator complex uses the comparison stated in Appendix B. [Manuscript §§6–9 and Appendix B][ms] · [Supplement, census algorithm][supp]

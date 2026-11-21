@@ -1,0 +1,101 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "phase": "Discriminant restriction of the perturbative page images and the complete level-32 SU(3) residual for a specified first correction",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_cartan_layers.json",
+  "checks": {
+    "order_two_Taylor_directions": [
+      18,
+      28,
+      61
+    ],
+    "incoming_ranks_under_filtered_Ward": [
+      0,
+      0,
+      0
+    ],
+    "Cartan_scope": [
+      "classical trace sector",
+      "SO(2n) reflection odd",
+      "G2",
+      "F4"
+    ],
+    "exceptional_trace_degrees": {
+      "G2": [
+        2,
+        6
+      ],
+      "F4": [
+        2,
+        6,
+        8,
+        12
+      ]
+    },
+    "local_full_matrix_replay": true,
+    "A8_scalar_descent_job": "5685041",
+    "A8_formal_solve_nonzero_residuals": 75,
+    "full_first_correction_terms": 13638,
+    "equations_solved": 163,
+    "nonzero_residuals": 130,
+    "counts_by_scalar_degree": {
+      "3": {
+        "formal_zero": 3,
+        "nonzero": 11
+      },
+      "4": {
+        "formal_zero": 21,
+        "nonzero": 48
+      },
+      "5": {
+        "formal_zero": 38,
+        "nonzero": 71,
+        "polynomial_zero": 10
+      },
+      "6": {
+        "formal_zero": 60,
+        "polynomial_zero": 18
+      },
+      "7": {
+        "formal_zero": 13
+      }
+    },
+    "first_obstruction_status": "open",
+    "nonperturbative_status": "open"
+  },
+  "evidence": [
+    "algorithms/perturbative_cartan_targets.md",
+    "data/N4_exceptional_discriminants.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/cartan_products/resolved.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/scalar_layers/five_scalar_descent/all_contents.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/scalar_layers/five_scalar_descent/a8_descent.json"
+  ]
+}

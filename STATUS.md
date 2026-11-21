@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## All-orders Cartan restriction and the five-scalar equations, November 21, 2026
+
+Multiplying the page obstruction by the scalar discriminant and using the quantum product proves that its Cartan restriction is zero at every perturbative order. The proof covers the classical trace sectors and extends to orthogonal Pfaffians and the exceptional groups $G_2$ and $F_4$. Under filtered Taylor equivariance the incoming $d_2$ ranks for the three previously saturated targets are $18-18=0$, $28-28=0$ and $61-61=0$. [Proof, root determinants and scope](algorithms/perturbative_cartan_targets.md)
+
+At $SU(3)$ level 32 the 238 new correction terms give unrestricted three-colour identities in four further families. The combined 13,638-term correction solves 48 of 119 five-scalar contents and 91 of 91 contents at six or seven scalars. Across all scalar degrees this vector satisfies 163 of 293 equations, with nonzero rational evaluations on the remaining 130. [A8 job 5685041 and rational replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md#five-scalar-equations-on-unrestricted-matrices)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_discriminant.json)
+
 ## Cartan targets and complete scalar restrictions, November 21, 2026
 
 All 95,750 products in 27 weight matrices give rational Cartan-detected target dimensions 18 and 28 at $SU(3)$ levels 30 and 32 and 61 at $USp(4)$ level 36. At $SU(3)$ level 32 a 13,400-term correction solves all 91 six- and seven-scalar equations at three colours and all 119 five-scalar equations on the full centralizer of a scalar with two equal eigenvalues. An unrestricted residual is $884535$ modulo $1000003$. A four-scalar primitive exists on the diagonal scalar slice with arbitrary other matrices. The conjugation-invariant extension is open. [Three target spans](algorithms/dual_singlets_20261118/taylor_hooks/cartan_products/README.md) · [First equation, proof and witness](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md#the-six--and-seven-scalar-equations-and-the-five-scalar-restriction)
