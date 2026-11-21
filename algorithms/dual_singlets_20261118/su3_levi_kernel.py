@@ -21,9 +21,10 @@ def seed_for(weight, length):
     return seed
 
 
-def check(data, weight, length, prime):
+def check(data, weight, length, prime, gauge=None):
+    mode = "classical_Cartan_kernel" if gauge else "SU2_classical_Cartan_kernel"
     if (data["gauge"], data["mode"], data["sector"], data["length"], data["prime"], data["seed"]) != (
-            "SU2", "SU2_classical_Cartan_kernel", list(weight), length, prime, seed_for(weight, length)):
+            gauge or "SU2", mode, list(weight), length, prime, seed_for(weight, length)):
         raise ValueError("sector, prime or seed disagrees")
     size = data["cochains"]
     if not size:
@@ -54,7 +55,7 @@ def gzip_json(path, data):
     tmp.replace(path)
 
 
-def compute(cases, engine, folder, workers, prime):
+def compute(cases, engine, folder, workers, prime, gauge=None):
     folder.mkdir(parents=True, exist_ok=True)
     jobs = {(tuple(row["weight"]), row["length"]) for case in cases.values() for row in case["active"]
             if row["length"]}
@@ -65,8 +66,10 @@ def compute(cases, engine, folder, workers, prime):
             record = json.loads(path.read_bytes())
         else:
             args = [str(engine.resolve()), *map(str, weight), str(length), str(prime), str(seed_for(weight, length))]
+            if gauge:
+                args.append(gauge)
             record = json.loads(subprocess.check_output(args, env=dict(os.environ, PAR_THREADS="1")))
-        check(record, weight, length, prime)
+        check(record, weight, length, prime, gauge)
         if not path.is_file():
             tmp = path.with_suffix(".part")
             tmp.write_text(json.dumps(record, separators=(",", ":")) + "\n")

@@ -1,0 +1,9 @@
+{
+  "job": "5688192",
+  "level": 24,
+  "records_per_factor": 66,
+  "sha256": {
+    "SO7.json.gz": "bcec065b5297427543749e4d07a6ee3ac9a06a3374f45096f368398b0639c954",
+    "Sp3.json.gz": "cb419a19e6f4d117aabd11ee7792e631396c3ad38d411b58a0d51bf40f7bf928"
+  }
+}

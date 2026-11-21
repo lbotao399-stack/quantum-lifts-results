@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Exceptional BMN sources on proper Levi subalgebras, November 21, 2026
+
+At level 24 the possible eleven-letter $F_4$ second-order source restricts to a classical boundary on every proper Levi and on $\mathrm{Spin}(9)$. The orthogonal dimension is $341-222-119=0$ over the rationals. Fixing any scalar with nonzero semisimple part also gives an exact restriction. At level 30 both $A_2+A_1+\mathfrak t^1$ and $A_2+A_2$ have zero Cartan kernel in the third-order source sector. [Ranks, finite contraction and replay](algorithms/dual_singlets_20261118/f4/levi/README.md)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous BMN generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_exceptional_levis.json)
+
 ## Rational corrections and the third-order Levi test, November 21, 2026
 
 At $SU(3)$ levels 32 and 34, rational corrections solve the first supercharge equation on the rank-one chart through polynomial degree nine. With $f=g=0$ the complete first equations have rational primitives with 4828 and 12190 terms. For level 36 the selected third targets of the three sources of lengths 10, 11 and 12 vanish on the full two-colour Levi. [Coefficient replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/subregular/normal/README.md) · [Third-target proof](algorithms/dual_singlets_20261118/taylor_hooks/su3_scalar_levi/full_block/third_single_flavour.md)

@@ -1,0 +1,50 @@
+--- a/core.h
++++ b/core.h
+@@ -16,0 +17,2 @@
++#include <fstream>
++#include <stdexcept>
+@@ -87 +89 @@
+-static const int MAXNF = 7;
++static const int MAXNF = 9;
+@@ -94,2 +96,2 @@
+-  if (t == "SU" && k >= 2 && k <= 7) { GT = G_SU; GR = k; NF = k; RANK = k - 1; DIMG = k * k - 1; }
+-  else if (t == "SO" && k % 2 == 1 && k >= 3 && k <= 7) { GT = G_SO; GR = (k - 1) / 2; NF = k; RANK = GR; DIMG = GR * (2 * GR + 1); }
++  if (t == "SU" && k >= 2 && k <= 4) { GT = G_SU; GR = k; NF = k; RANK = k - 1; DIMG = k * k - 1; }
++  else if (t == "SO" && k % 2 == 1 && k >= 3 && k <= 9) { GT = G_SO; GR = (k - 1) / 2; NF = k; RANK = GR; DIMG = GR * (2 * GR + 1); }
+@@ -129 +131 @@
+-    case 5: MMUL = mmulT<5>; MTRMUL = mtrmulT<5>; break; case 6: MMUL = mmulT<6>; MTRMUL = mtrmulT<6>; break; default: MMUL = mmulT<7>; MTRMUL = mtrmulT<7>; }
++    case 5: MMUL = mmulT<5>; MTRMUL = mtrmulT<5>; break; case 6: MMUL = mmulT<6>; MTRMUL = mtrmulT<6>; break; case 9: MMUL = mmulT<9>; MTRMUL = mtrmulT<9>; break; default: MMUL = mmulT<7>; MTRMUL = mtrmulT<7>; }
+@@ -257,0 +260,24 @@
++// Exact orthogonal multiplicities supplied by the independent partition character.
++using MultiplicityPattern = std::vector<std::pair<int, int>>;
++static std::map<MultiplicityPattern, i64> rank_four_dimensions;
++static void read_rank_four_dimensions() {
++  const char *path = std::getenv("N4_B4_PATTERNS");
++  if (!path) throw std::runtime_error("Missing SO9 character table");
++  std::ifstream input(path);
++  std::string gauge;
++  if (!(input >> gauge) || gauge != GNAME) throw std::runtime_error("Wrong character table");
++  int n;
++  while (input >> n) {
++    MultiplicityPattern pattern;
++    for (int i = 0; i < n; ++i) {
++      int count, odd;
++      if (!(input >> count >> odd) || count <= 0 || odd < 0 || odd > 1)
++        throw std::runtime_error("Invalid character pattern");
++      pattern.emplace_back(count, odd);
++    }
++    i64 dimension;
++    if (!(input >> dimension) || dimension < 0 || !rank_four_dimensions.emplace(pattern, dimension).second)
++      throw std::runtime_error("Invalid character dimension");
++  }
++  if (!input.eof()) throw std::runtime_error("Unreadable character table");
++}
+@@ -258,0 +285 @@
++  if (GNAME == "SO9") { read_rank_four_dimensions(); return; }
+@@ -292,0 +320 @@
++  if (GNAME == "SO9") return rank_four_dimensions.at(pat);
+--- a/batch.h
++++ b/batch.h
+@@ -52 +52 @@
+-    case 5: BMMUL = bmmulT<5>; BTRMUL = btrmulT<5>; break; case 6: BMMUL = bmmulT<6>; BTRMUL = btrmulT<6>; break; default: BMMUL = bmmulT<7>; BTRMUL = btrmulT<7>; }
++    case 5: BMMUL = bmmulT<5>; BTRMUL = btrmulT<5>; break; case 6: BMMUL = bmmulT<6>; BTRMUL = btrmulT<6>; break; case 9: BMMUL = bmmulT<9>; BTRMUL = btrmulT<9>; break; default: BMMUL = bmmulT<7>; BTRMUL = btrmulT<7>; }

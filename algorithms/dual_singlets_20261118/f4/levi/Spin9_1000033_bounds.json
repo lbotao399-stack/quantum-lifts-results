@@ -1,0 +1,21 @@
+{
+  "weight": [
+    4,
+    4,
+    4,
+    0,
+    0
+  ],
+  "length": 11,
+  "dimensions": [
+    559,
+    341,
+    121
+  ],
+  "prime": 1000033,
+  "incoming_at_least": 222,
+  "outgoing_at_least": 119,
+  "outgoing_and_Cartan_at_least": 119,
+  "classical_cohomology_at_most": 0,
+  "Cartan_kernel_at_most": 0
+}

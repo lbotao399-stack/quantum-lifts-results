@@ -1,5 +1,7 @@
 # Fortuitous Q-cohomology and quantum lifting: computational results
 
+For the $F_4$ level-24 BMN source, restriction to every proper Levi and to $\mathrm{Spin}(9)$ is a classical boundary. On $\mathrm{Spin}(9)$ the two rank certificates give $341-222-119=0$. [Exceptional subgroup computations and scalar support](algorithms/dual_singlets_20261118/f4/levi/README.md)
+
 Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://github.com/lbotao399-stack/All-loop-holomorphic-kernels) (the operators Q_n used below).
 
 **Running computations (updated daily): [STATUS.md](STATUS.md).**
