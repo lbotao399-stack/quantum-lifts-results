@@ -1,0 +1,77 @@
+{
+  "representation": "sl3 inside g2 in 3 + 3* + 1; rho(X)=diag(X,-X.T,0)",
+  "probe": "cyclic scalars E12,E21; gaugino eta*[E12,E21]; remaining fields zero",
+  "trace_commutator_squared": 4,
+  "invariant_three_form_component_checks": 105,
+  "six_components": [
+    {
+      "flavour": 1,
+      "dotted_spin": "+",
+      "physical_scalar_half_variation_over_i_eta": 4,
+      "physical_ordered_psi_lambda_variation_over_i_eta": -8,
+      "closed_matter_to_scalar_half_coefficient": "1/2",
+      "archive_scalar_variation_over_i_eta": -16,
+      "archive_matter_variation_over_i_eta": 16,
+      "archive_sum_over_i_eta": 0,
+      "opposite_relative_sign_over_i_eta": -32
+    },
+    {
+      "flavour": 1,
+      "dotted_spin": "-",
+      "physical_scalar_half_variation_over_i_eta": 4,
+      "physical_ordered_psi_lambda_variation_over_i_eta": -8,
+      "closed_matter_to_scalar_half_coefficient": "1/2",
+      "archive_scalar_variation_over_i_eta": -16,
+      "archive_matter_variation_over_i_eta": 16,
+      "archive_sum_over_i_eta": 0,
+      "opposite_relative_sign_over_i_eta": -32
+    },
+    {
+      "flavour": 2,
+      "dotted_spin": "+",
+      "physical_scalar_half_variation_over_i_eta": 4,
+      "physical_ordered_psi_lambda_variation_over_i_eta": -8,
+      "closed_matter_to_scalar_half_coefficient": "1/2",
+      "archive_scalar_variation_over_i_eta": -16,
+      "archive_matter_variation_over_i_eta": 16,
+      "archive_sum_over_i_eta": 0,
+      "opposite_relative_sign_over_i_eta": -32
+    },
+    {
+      "flavour": 2,
+      "dotted_spin": "-",
+      "physical_scalar_half_variation_over_i_eta": 4,
+      "physical_ordered_psi_lambda_variation_over_i_eta": -8,
+      "closed_matter_to_scalar_half_coefficient": "1/2",
+      "archive_scalar_variation_over_i_eta": -16,
+      "archive_matter_variation_over_i_eta": 16,
+      "archive_sum_over_i_eta": 0,
+      "opposite_relative_sign_over_i_eta": -32
+    },
+    {
+      "flavour": 3,
+      "dotted_spin": "+",
+      "physical_scalar_half_variation_over_i_eta": 4,
+      "physical_ordered_psi_lambda_variation_over_i_eta": -8,
+      "closed_matter_to_scalar_half_coefficient": "1/2",
+      "archive_scalar_variation_over_i_eta": -16,
+      "archive_matter_variation_over_i_eta": 16,
+      "archive_sum_over_i_eta": 0,
+      "opposite_relative_sign_over_i_eta": -32
+    },
+    {
+      "flavour": 3,
+      "dotted_spin": "-",
+      "physical_scalar_half_variation_over_i_eta": 4,
+      "physical_ordered_psi_lambda_variation_over_i_eta": -8,
+      "closed_matter_to_scalar_half_coefficient": "1/2",
+      "archive_scalar_variation_over_i_eta": -16,
+      "archive_matter_variation_over_i_eta": 16,
+      "archive_sum_over_i_eta": 0,
+      "opposite_relative_sign_over_i_eta": -32
+    }
+  ],
+  "field_order": "matter fermion before gaugino",
+  "scope": "Necessary and sufficient relative sign in the two-term physical ansatz with the Chang-Lin component transformations. The last column tests the opposite relative sign in the same Taylor dictionary, not the differential of the Bomans et al. current in its own conventions.",
+  "instanton_matrix_element": false
+}

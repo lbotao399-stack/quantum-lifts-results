@@ -1,0 +1,160 @@
+{
+  "published_input": "arXiv:2610.20340v2, Table 5 and Eqs. (2.15), (4.14), (4.15)",
+  "published_mixed_coefficient": "nonzero; absolute value not supplied",
+  "su3_spin_five": {
+    "24": {
+      "columns": 10,
+      "cohomology": 11,
+      "gravitons": 11,
+      "excess": []
+    },
+    "26": {
+      "columns": 12,
+      "cohomology": 31,
+      "gravitons": 31,
+      "excess": []
+    },
+    "28": {
+      "columns": 15,
+      "cohomology": 60,
+      "gravitons": 60,
+      "excess": []
+    },
+    "30": {
+      "columns": 18,
+      "cohomology": 98,
+      "gravitons": 97,
+      "excess": [
+        [
+          [
+            7,
+            4,
+            4
+          ],
+          1
+        ]
+      ]
+    }
+  },
+  "su2_odd_through_24": [
+    [
+      24,
+      7,
+      [
+        4,
+        4,
+        4
+      ],
+      1
+    ]
+  ],
+  "su2_parents_checked": 197,
+  "su2_core_pairing": -20,
+  "exchange_numerator": [
+    [
+      1,
+      -4,
+      16,
+      -64,
+      256,
+      -1024,
+      4096
+    ],
+    [
+      -12,
+      39,
+      -120,
+      336,
+      -768,
+      768,
+      6144
+    ],
+    [
+      60,
+      -150,
+      321,
+      -492,
+      96,
+      1920,
+      3840
+    ],
+    [
+      -160,
+      280,
+      -328,
+      7,
+      656,
+      1120,
+      1280
+    ],
+    [
+      240,
+      -240,
+      24,
+      246,
+      321,
+      300,
+      240
+    ],
+    [
+      -192,
+      48,
+      96,
+      84,
+      60,
+      39,
+      24
+    ],
+    [
+      64,
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ]
+  ],
+  "exchange_denominator": 729,
+  "constraint_rank": 6,
+  "homogeneous_line": [
+    0,
+    0,
+    0,
+    64,
+    48,
+    12,
+    1
+  ],
+  "long_wall_relative_to_mixed_coefficient": "-1/1728",
+  "restricted_class": {
+    "group": "USp(4)",
+    "j": 36,
+    "length": 13,
+    "weight": [
+      10,
+      4,
+      4
+    ],
+    "flavour_dynkin": [
+      6,
+      0
+    ],
+    "BMN_spin": 5
+  },
+  "possible_lower_scalar_dressing": {
+    "group": "USp(4)",
+    "j": 32,
+    "length": 11,
+    "weight": [
+      8,
+      4,
+      4
+    ],
+    "flavour_dynkin": [
+      4,
+      0
+    ]
+  },
+  "quantum_obstructions_evaluated": []
+}

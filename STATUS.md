@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## SO(7) level 26 and the symplectic Ward tests, November 21, 2026
+
+For the ten-letter $SO(7)$ BMN source at $(2J;q_1,q_2,q_3)=(3;5,4,4)$, A8 jobs 5681838 and 5682281 give $25329-12400=12929$ as the rational classical boundary rank. Appending the first variation gives rank 12930. This certifies one new first differential. [Source, ranks and replay](algorithms/dual_singlets_20261118/so7_level26/README.md)
+
+In $USp(4)$ the $(10,4,4)$ BMN column has at least $24-(67720-67698)=2$ odd-length classical classes, forcing at least one additional generator by level 36. In $USp(6)$ the level-28 class pairs to 16 under the returned Ward action. At derivative grade three the relevant ten-letter Taylor component has dimension $491-434-57=0$. The remaining grades also exclude an outgoing instanton image under exact Ward equivariance. [Index and wall restriction](algorithms/dual_singlets_20261118/b2_level36/README.md) · [Ward calculation](algorithms/dual_singlets_20261118/sp3_omega/README.md#the-outgoing-instanton-channel) · [Taylor representation ranks](algorithms/dual_singlets_20261118/taylor_hooks/README.md)
+
+New $d_1$ pairings **1**, total **15**. Newly located fortuitous generators **0**, total **5**. The rank-two index raises the existence lower bound to **6**. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_level26.json)
+
 ## Perturbative survival of the $USp(6)$ level-28 class, November 21, 2026
 
 The classical target has rational dimension $2689-1607-1081=1$. In its second-order predecessor the cohomology upper bound is $33630-14108-19068=454$. A8 job 5681944 rebuilt 612 closed trace factors and obtained a nonzero integer Cartan determinant of order 454. Every source therefore admits a closed perturbative completion. A8 job 5681942 gives third-order source dimension $7569-3227-4342=0$. The first-order source is empty as well. The remaining 61 physical predecessors at the same derivative degree also have independent protected product representatives. The exclusion of an incoming instanton differential uses the exact cohomological primary product. The outgoing instanton question is open. [Proof and data](algorithms/dual_singlets_20261118/sp3_omega/README.md)

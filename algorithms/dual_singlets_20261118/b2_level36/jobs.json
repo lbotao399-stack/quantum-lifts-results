@@ -1,0 +1,30 @@
+{
+  "b2index": {
+    "accounting": "5681998|COMPLETED|14|16|0:0",
+    "receipt": {
+      "job": "5681998",
+      "files": {
+        "index_columns.json.gz": "8b9d76158858b848431179559590f9fc689cc055670b22e336500c60c91263fd"
+      }
+    }
+  },
+  "b2min": {
+    "accounting": "5682139|COMPLETED|23|40|0:0",
+    "receipt": {
+      "job": "5682139",
+      "files": {
+        "0Ag2Ae.json": "3e56a0dcef6db6c500ea67937c2526a7cd028ff5995fb882283a425be4d7c992",
+        "all.json": "a03a58f3f3062c636f4aa479d42d7be1adf696759d847d05dc3902f16f27500b"
+      }
+    }
+  },
+  "b2eleven": {
+    "accounting": "5682145|COMPLETED|147|40|0:0",
+    "receipt": {
+      "job": "5682145",
+      "files": {
+        "image.json.gz": "4dbc0a7c344f94867010bdd61a77ae351e496dfc252df998cc22dc9a7e0bd7e3"
+      }
+    }
+  }
+}

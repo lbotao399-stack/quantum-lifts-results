@@ -4,7 +4,9 @@ Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://gith
 
 **Running computations (updated daily): [STATUS.md](STATUS.md).**
 
-**Undeformed $\mathcal N=4$ SYM.** The campaign has certified 14 first-order highest-weight pairings and 5 parity-resolved fortuitous BMN generators. The counts of second-order, third-order and nonperturbative lifts are 0, 0 and 0. [Counting rules and evidence](data/N4_lift_campaign_counts_20261121_omega.json)
+**Undeformed $\mathcal N=4$ SYM.** The campaign has certified 15 first-order highest-weight pairings and identified 5 parity-resolved fortuitous BMN generators. The $USp(4)$ index forces at least one additional odd-length generator by level 36. The counts of second-order, third-order and nonperturbative lifts are 0, 0 and 0. [Counting rules and evidence](data/N4_lift_campaign_counts_20261121_level26.json)
+
+The dressed $SO(7)$ level-26 BMN source gives rational ranks 12,929 and 12,930 before and after adjoining its first-supercharge image. The $USp(6)$ level-28 class has no outgoing instanton partner under the stated exact Ward hypothesis. [Level-26 proof and replay](algorithms/dual_singlets_20261118/so7_level26/README.md) · [Symplectic Ward test](algorithms/dual_singlets_20261118/sp3_omega/README.md#the-outgoing-instanton-channel) · [Rank-two generator bound](algorithms/dual_singlets_20261118/b2_level36/README.md)
 
 At level 28 in $USp(6)$, the 454-dimensional source of a possible second-order differential into $\omega$ is spanned by protected products. The first- and third-order sources are empty. The known class $\omega$ survives perturbatively. [Source dimensions, integer determinants and replay](algorithms/dual_singlets_20261118/sp3_omega/README.md)
 

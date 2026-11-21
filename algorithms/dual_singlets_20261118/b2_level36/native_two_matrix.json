@@ -1,0 +1,21 @@
+{
+  "weight": [
+    10,
+    4,
+    4
+  ],
+  "length": 10,
+  "skeleton": "0Ag2Ae",
+  "source_dimension": 32,
+  "image_probes": 35,
+  "rank_lower_bound": 32,
+  "prime": 2147483647,
+  "seed": 364157,
+  "source_blocks": [
+    [
+      "0Ag2Ae",
+      32,
+      329
+    ]
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "group": "Sp3",
+  "partition": [
+    4,
+    4,
+    1,
+    1,
+    1
+  ],
+  "prime": 2147483647,
+  "upper_flavour": true,
+  "blocks": [
+    {
+      "Y": 8,
+      "dim": 1316,
+      "rank_in": 538,
+      "rank_out": 763,
+      "h": 15
+    },
+    {
+      "Y": 9,
+      "dim": 1198,
+      "rank_in": 763,
+      "rank_out": 434,
+      "h": 1
+    },
+    {
+      "Y": 10,
+      "dim": 491,
+      "rank_in": 434,
+      "rank_out": 57,
+      "h": 0
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "operator_sha256": "08c88eaadb1936fd03a92a33b254e110b5e90aa81911d26a5d68290266354b93",
+  "bare_terms": 13449,
+  "canonical_terms": 13449,
+  "one_action_terms": [
+    26820,
+    5794,
+    5794,
+    5794
+  ],
+  "two_action_terms": {
+    "0,1": 5794,
+    "0,2": 5794,
+    "0,3": 5794,
+    "1,2": 392,
+    "1,3": 392,
+    "2,3": 392
+  },
+  "maximum_bare_dotted_modes": 2,
+  "three_action_terms": 0,
+  "channels": [
+    {
+      "left_extra": 0,
+      "right_extra": 0,
+      "action_quartic": 2,
+      "previous": 0,
+      "left_exact": []
+    },
+    {
+      "left_extra": 0,
+      "right_extra": 1,
+      "action_quartic": 1,
+      "previous": 4,
+      "left_exact": [
+        [
+          3,
+          2,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          3,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "left_extra": 0,
+      "right_extra": 2,
+      "action_quartic": 0,
+      "previous": 8,
+      "left_exact": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          3,
+          2
+        ],
+        [
+          3,
+          2,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          3,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "left_extra": 1,
+      "right_extra": 0,
+      "action_quartic": 1,
+      "previous": 0,
+      "left_exact": []
+    },
+    {
+      "left_extra": 1,
+      "right_extra": 1,
+      "action_quartic": 0,
+      "previous": 4,
+      "left_exact": [
+        [
+          3,
+          2,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          3,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "left_extra": 2,
+      "right_extra": 0,
+      "action_quartic": 0,
+      "previous": 0,
+      "left_exact": []
+    }
+  ]
+}

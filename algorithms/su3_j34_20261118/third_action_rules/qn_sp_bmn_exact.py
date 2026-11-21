@@ -44,11 +44,11 @@ def theta_rule(inputs):
     return tuple((c,SD,SE) for (SD,SE),c in out.items() if c)
 
 
-def Qn_bmn_multi(multi,N,n,group='SU',both_paths=False):
+def Qn_bmn_multi(multi,N,n,group='SU',both_paths=False,spectator_jets=False):
     assert n in (1,2,3)
     if group not in ('SU','SO_odd','Sp'):raise NotImplementedError(group)
     letters=[L for w in multi for L in w]
-    if any(L[0] or L[1] for L in letters):raise NotImplementedError('Input jets are not implemented')
+    if not spectator_jets and any(L[0] or L[1] for L in letters):raise NotImplementedError('Input jets are not implemented')
     count=len(letters);par=[int(is_ferm(L)) for L in letters]
     ids=[];offset=0
     for w in multi:ids.append(list(range(offset,offset+len(w))));offset+=len(w)
@@ -61,6 +61,8 @@ def Qn_bmn_multi(multi,N,n,group='SU',both_paths=False):
             if not both_paths and path>path[::-1]:continue
             rule=theta_rule(tuple(letters[i][2] for i in path))
             if not rule:continue
+            if any(letters[i][0] or letters[i][1] for i in chosen):
+                raise NotImplementedError('Contracted input jets require the displaced kernel')
             left,right=path[0],path[-1];front=_reorder_sign(list(range(count)),list(path)+rest,lambda i:par[i])
             tokens=['X%d'%i for i in range(n)];reference=[left,right]+rest
             for c0,SD,SE in rule:

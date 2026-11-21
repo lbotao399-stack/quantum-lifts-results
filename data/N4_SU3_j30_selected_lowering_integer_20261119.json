@@ -1,0 +1,38 @@
+{
+  "certificate_sha256": "51c056e4c186b08774b9633d569ac7b3b84a8bcaadce7f0d6bc42612ba67bbff",
+  "algorithm": "Direct FLINT ranks of complete rectangular matrices; bounded uint64 integer residuals.",
+  "results": {
+    "Tp21": {
+      "prime": 1000033,
+      "profiles": [
+        3,
+        5,
+        20
+      ],
+      "source_rows": 1625,
+      "coordinates": 476,
+      "rank": 366,
+      "augmented_rank": 366,
+      "minor_determinant": 289336,
+      "nonzero_residuals": 0,
+      "separator_pairing": null
+    },
+    "S20": {
+      "prime": 1000033,
+      "profiles": [
+        3,
+        6,
+        10,
+        12,
+        13
+      ],
+      "source_rows": 3645,
+      "coordinates": 1030,
+      "rank": 818,
+      "augmented_rank": 818,
+      "minor_determinant": 875574,
+      "nonzero_residuals": 0,
+      "separator_pairing": null
+    }
+  }
+}

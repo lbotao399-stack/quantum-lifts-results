@@ -1,0 +1,55 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "phase": "SO(7) level-26 first differential, USp(4) odd-generator bound and USp(6) outgoing Ward test",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_omega.json",
+  "increments": {
+    "d1": 1,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/so7_level26/README.md",
+    "algorithms/dual_singlets_20261118/so7_level26/first_action/first.json",
+    "algorithms/dual_singlets_20261118/so7_level26/predecessors/previous.json.gz",
+    "algorithms/dual_singlets_20261118/b2_level36/README.md",
+    "algorithms/dual_singlets_20261118/sp3_omega/README.md",
+    "algorithms/dual_singlets_20261118/taylor_hooks/README.md"
+  ],
+  "stages": [
+    {
+      "calculation": "SO(7) dressed BMN source at level 26",
+      "d1": 1,
+      "fortuitous_generator_families": 0
+    },
+    {
+      "calculation": "USp(4) odd-length index and USp(6) exact-Ward target exclusion",
+      "d1": 0,
+      "fortuitous_generator_families": 0
+    }
+  ],
+  "scope": "The cumulative generator count records individually located families. The USp(4) odd-length lower bound independently forces another generator. The nonperturbative exclusion for omega uses exact Ward actions and the protected product.",
+  "existence_lower_bounds": {
+    "additional_unlocated_USp4_odd_BMN_generators": 1,
+    "audited_and_forced_BMN_generators_at_least": 6,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ]
+  }
+}

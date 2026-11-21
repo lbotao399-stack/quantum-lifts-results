@@ -1,0 +1,110 @@
+{
+  "mode": "chain",
+  "gauge": "Sp3",
+  "sector": [
+    0,
+    0,
+    0,
+    5,
+    5
+  ],
+  "flavour": [
+    0,
+    0
+  ],
+  "spin2": 0,
+  "j": 30,
+  "prime": 2147483647,
+  "seed": 784477,
+  "blocks": [
+    {
+      "Y": 2,
+      "F": 0,
+      "dim": 1,
+      "rank_in": 0,
+      "rank_out": 1,
+      "h": 0
+    },
+    {
+      "Y": 3,
+      "F": 1,
+      "dim": 2,
+      "rank_in": 1,
+      "rank_out": 1,
+      "h": 0
+    },
+    {
+      "Y": 4,
+      "F": 0,
+      "dim": 20,
+      "rank_in": 1,
+      "rank_out": 19,
+      "h": 0
+    },
+    {
+      "Y": 5,
+      "F": 1,
+      "dim": 84,
+      "rank_in": 19,
+      "rank_out": 65,
+      "h": 0
+    },
+    {
+      "Y": 6,
+      "F": 0,
+      "dim": 151,
+      "rank_in": 65,
+      "rank_out": 84,
+      "h": 2
+    },
+    {
+      "Y": 7,
+      "F": 1,
+      "dim": 130,
+      "rank_in": 84,
+      "rank_out": 46,
+      "h": 0
+    },
+    {
+      "Y": 8,
+      "F": 0,
+      "dim": 72,
+      "rank_in": 46,
+      "rank_out": 26,
+      "h": 0
+    },
+    {
+      "Y": 9,
+      "F": 1,
+      "dim": 42,
+      "rank_in": 26,
+      "rank_out": 16,
+      "h": 0
+    },
+    {
+      "Y": 10,
+      "F": 0,
+      "dim": 16,
+      "rank_in": 16,
+      "rank_out": 0,
+      "h": 0
+    }
+  ],
+  "seconds": 10.5,
+  "evals": 217464,
+  "maxrss_MB": 767,
+  "engine_sha256": "27d23cfe7b128b8ac7f0876a5f7137cdd4acee46eba1113d1721832295d94b0d",
+  "arguments": [
+    "chain",
+    "Sp3",
+    "0",
+    "0",
+    "0",
+    "5",
+    "5",
+    "2",
+    "10",
+    "784477",
+    "2147483647"
+  ]
+}

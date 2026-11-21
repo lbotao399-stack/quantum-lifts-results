@@ -1,0 +1,245 @@
+{
+  "public_terminal_weights_checked": 146,
+  "rank_two": [
+    {
+      "weight": [
+        10,
+        4,
+        4
+      ],
+      "terminal_grades": [
+        {
+          "derivative_degree": 0,
+          "length": 18,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 1,
+          "length": 17,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 2,
+          "length": 16,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 3,
+          "length": 15,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 4,
+          "length": 14,
+          "highest_weight_dimension": 0
+        }
+      ]
+    },
+    {
+      "weight": [
+        11,
+        4,
+        4
+      ],
+      "terminal_grades": [
+        {
+          "derivative_degree": 0,
+          "length": 19,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 1,
+          "length": 18,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 2,
+          "length": 17,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 3,
+          "length": 16,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 4,
+          "length": 15,
+          "highest_weight_dimension": 0
+        }
+      ]
+    },
+    {
+      "weight": [
+        12,
+        4,
+        4
+      ],
+      "terminal_grades": [
+        {
+          "derivative_degree": 0,
+          "length": 20,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 1,
+          "length": 19,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 2,
+          "length": 18,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 3,
+          "length": 17,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 4,
+          "length": 16,
+          "highest_weight_dimension": 0
+        }
+      ]
+    },
+    {
+      "weight": [
+        10,
+        5,
+        5
+      ],
+      "terminal_grades": [
+        {
+          "derivative_degree": 0,
+          "length": 20,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 1,
+          "length": 19,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 2,
+          "length": 18,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 3,
+          "length": 17,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 4,
+          "length": 16,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 5,
+          "length": 15,
+          "highest_weight_dimension": 0
+        }
+      ]
+    },
+    {
+      "weight": [
+        13,
+        4,
+        4
+      ],
+      "terminal_grades": [
+        {
+          "derivative_degree": 0,
+          "length": 21,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 1,
+          "length": 20,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 2,
+          "length": 19,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 3,
+          "length": 18,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 4,
+          "length": 17,
+          "highest_weight_dimension": 0
+        }
+      ]
+    },
+    {
+      "weight": [
+        11,
+        5,
+        5
+      ],
+      "terminal_grades": [
+        {
+          "derivative_degree": 0,
+          "length": 21,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 1,
+          "length": 20,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 2,
+          "length": 19,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 3,
+          "length": 18,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 4,
+          "length": 17,
+          "highest_weight_dimension": 0
+        },
+        {
+          "derivative_degree": 5,
+          "length": 16,
+          "highest_weight_dimension": 0
+        }
+      ]
+    }
+  ],
+  "rank_three_omega": [
+    {
+      "derivative_degree": 0,
+      "length": 14,
+      "highest_weight_dimension": 0
+    },
+    {
+      "derivative_degree": 1,
+      "length": 13,
+      "highest_weight_dimension": 0
+    },
+    {
+      "derivative_degree": 2,
+      "length": 12,
+      "highest_weight_dimension": 3
+    },
+    {
+      "derivative_degree": 3,
+      "length": 11,
+      "highest_weight_dimension": 0
+    }
+  ],
+  "weyl_group_orders": {
+    "2": 8,
+    "3": 48
+  }
+}

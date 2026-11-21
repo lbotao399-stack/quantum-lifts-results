@@ -1,0 +1,9 @@
+{
+  "accounting": "5682287|COMPLETED|23|24|0:0",
+  "receipt": {
+    "job": "5682287",
+    "files": {
+      "index_columns.json.gz": "3e6e6f9d16d985981de32f2295dc7ae0072a6eb5d0c1e75e851a6a468f2bea57"
+    }
+  }
+}

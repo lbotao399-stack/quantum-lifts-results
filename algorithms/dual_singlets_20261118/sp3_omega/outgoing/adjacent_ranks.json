@@ -1,0 +1,290 @@
+{
+  "so7sp3/runs/act1/chain_Sp3_611_22_Y6-12_s2_p2147483647.json": {
+    "sha256": "effbc85c236a8b4296e791d4dd205c1eba6d981bd484c3db268e9ad548e71fee",
+    "data": {
+      "mode": "chain",
+      "gauge": "Sp3",
+      "sector": [
+        6,
+        1,
+        1,
+        2,
+        2
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483647,
+      "seed": 2,
+      "blocks": [
+        {
+          "Y": 6,
+          "F": 0,
+          "dim": 505,
+          "rank_in": 0,
+          "rank_out": 494,
+          "h": 11,
+          "rho": 11
+        },
+        {
+          "Y": 7,
+          "F": 1,
+          "dim": 3513,
+          "rank_in": 494,
+          "rank_out": 3019,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 8,
+          "F": 0,
+          "dim": 13246,
+          "rank_in": 3019,
+          "rank_out": 9937,
+          "h": 290,
+          "rho": 290
+        },
+        {
+          "Y": 9,
+          "F": 1,
+          "dim": 23520,
+          "rank_in": 9937,
+          "rank_out": 13583,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 10,
+          "F": 0,
+          "dim": 22609,
+          "rank_in": 13583,
+          "rank_out": 8672,
+          "h": 354,
+          "rho": 354
+        },
+        {
+          "Y": 11,
+          "F": 1,
+          "dim": 10539,
+          "rank_in": 8672,
+          "rank_out": 1867,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 12,
+          "F": 0,
+          "dim": 1870,
+          "rank_in": 1867,
+          "rank_out": 0,
+          "h": 3,
+          "rho": 3
+        }
+      ],
+      "seconds": 6039.9,
+      "evals": 5100257936,
+      "maxrss_MB": 4903
+    }
+  },
+  "so7sp3/runs/act3/chain_Sp3_833_00_Y8-14_s2_p2147483647.json": {
+    "sha256": "9d840b8fa317cc5f1f551a0cea2e7c5331ca72389bb79c1214bf0b3163b2d59d",
+    "data": {
+      "mode": "chain",
+      "gauge": "Sp3",
+      "sector": [
+        8,
+        3,
+        3,
+        0,
+        0
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483647,
+      "seed": 2,
+      "blocks": [
+        {
+          "Y": 8,
+          "F": 0,
+          "dim": 268,
+          "rank_in": 0,
+          "rank_out": 265,
+          "h": 3,
+          "rho": 3
+        },
+        {
+          "Y": 9,
+          "F": 1,
+          "dim": 1418,
+          "rank_in": 265,
+          "rank_out": 1153,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 10,
+          "F": 0,
+          "dim": 4411,
+          "rank_in": 1153,
+          "rank_out": 3227,
+          "h": 31,
+          "rho": 31
+        },
+        {
+          "Y": 11,
+          "F": 1,
+          "dim": 7569,
+          "rank_in": 3227,
+          "rank_out": 4342,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 12,
+          "F": 0,
+          "dim": 6690,
+          "rank_in": 4342,
+          "rank_out": 2307,
+          "h": 41,
+          "rho": 40
+        },
+        {
+          "Y": 13,
+          "F": 1,
+          "dim": 2695,
+          "rank_in": 2307,
+          "rank_out": 388,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 14,
+          "F": 0,
+          "dim": 388,
+          "rank_in": 388,
+          "rank_out": 0,
+          "h": 0,
+          "rho": 0
+        }
+      ],
+      "seconds": 2902.4,
+      "evals": 2135456600,
+      "maxrss_MB": 789
+    }
+  },
+  "so7sp3/runs/act4/chain_Sp3_722_00_Y9-11_s1_p2147483647.json": {
+    "sha256": "93aee79e2b00485d7229d31ff7571588225572c99969e252aac4217dff1aee49",
+    "data": {
+      "mode": "chain",
+      "gauge": "Sp3",
+      "sector": [
+        7,
+        2,
+        2,
+        1,
+        1
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483647,
+      "seed": 1,
+      "blocks": [
+        {
+          "Y": 9,
+          "F": 0,
+          "dim": 19497,
+          "rank_in": 5389,
+          "rank_out": 14108,
+          "h": 0,
+          "rho": 0
+        },
+        {
+          "Y": 10,
+          "F": 1,
+          "dim": 33630,
+          "rank_in": 14108,
+          "rank_out": 19068,
+          "h": 454,
+          "rho": 454
+        },
+        {
+          "Y": 11,
+          "F": 0,
+          "dim": 30519,
+          "rank_in": 19068,
+          "rank_out": 11450,
+          "h": 1,
+          "rho": 0
+        }
+      ],
+      "seconds": 19196.7,
+      "evals": 10953251312,
+      "maxrss_MB": 9065
+    }
+  },
+  "so7sp3/runs/gates/G2_chain_Sp3.json": {
+    "sha256": "d346b72a267a6b7050d60aacbc995db944e3736efad27a6f93565bbbad1e4e21",
+    "data": {
+      "mode": "chain",
+      "gauge": "Sp3",
+      "sector": [
+        5,
+        0,
+        0,
+        3,
+        3
+      ],
+      "flavour": [
+        5,
+        0
+      ],
+      "spin2": 0,
+      "j": 28,
+      "prime": 2147483587,
+      "seed": 51,
+      "blocks": [
+        {
+          "Y": 8,
+          "F": 1,
+          "dim": 2559,
+          "rank_in": 891,
+          "rank_out": 1607,
+          "h": 61,
+          "rho": 61
+        },
+        {
+          "Y": 9,
+          "F": 0,
+          "dim": 2689,
+          "rank_in": 1607,
+          "rank_out": 1081,
+          "h": 1,
+          "rho": 0
+        },
+        {
+          "Y": 10,
+          "F": 1,
+          "dim": 1281,
+          "rank_in": 1081,
+          "rank_out": 186,
+          "h": 14,
+          "rho": 14
+        }
+      ],
+      "seconds": 171.0,
+      "evals": 94204544,
+      "maxrss_MB": 213
+    }
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "operator_sha256": "08c88eaadb1936fd03a92a33b254e110b5e90aa81911d26a5d68290266354b93",
+  "terms": 13449,
+  "contents": [
+    [
+      [
+        2,
+        2,
+        4,
+        0,
+        0,
+        2
+      ],
+      675
+    ],
+    [
+      [
+        2,
+        3,
+        3,
+        0,
+        1,
+        1
+      ],
+      3808
+    ],
+    [
+      [
+        2,
+        4,
+        2,
+        0,
+        2,
+        0
+      ],
+      675
+    ],
+    [
+      [
+        3,
+        2,
+        3,
+        1,
+        0,
+        1
+      ],
+      3808
+    ],
+    [
+      [
+        3,
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      3808
+    ],
+    [
+      [
+        4,
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      675
+    ]
+  ],
+  "left_minimal": [
+    10,
+    4,
+    4,
+    4
+  ],
+  "right_minimal": [
+    0,
+    6,
+    6,
+    6
+  ],
+  "exact_modes_per_flavour": 4,
+  "lifted_modes_per_flavour": 8,
+  "left_exact_degrees_with_four_form": [
+    2,
+    3
+  ],
+  "standard_channels": [
+    {
+      "left_extra_quartets": 0,
+      "right_extra_quartets": 0,
+      "action_quartic_insertions": 2,
+      "assignments": []
+    },
+    {
+      "left_extra_quartets": 0,
+      "right_extra_quartets": 1,
+      "action_quartic_insertions": 1,
+      "assignments": [
+        {
+          "left_exact": [
+            3,
+            2,
+            2,
+            3
+          ],
+          "left_lifted": [
+            7,
+            2,
+            2,
+            1
+          ],
+          "right_lifted": [
+            0,
+            5,
+            5,
+            6
+          ],
+          "left_standard_multiplicity": 10,
+          "right_standard_multiplicity": 11
+        },
+        {
+          "left_exact": [
+            3,
+            2,
+            3,
+            2
+          ],
+          "left_lifted": [
+            7,
+            2,
+            1,
+            2
+          ],
+          "right_lifted": [
+            0,
+            5,
+            6,
+            5
+          ],
+          "left_standard_multiplicity": 10,
+          "right_standard_multiplicity": 11
+        },
+        {
+          "left_exact": [
+            3,
+            3,
+            2,
+            2
+          ],
+          "left_lifted": [
+            7,
+            1,
+            2,
+            2
+          ],
+          "right_lifted": [
+            0,
+            6,
+            5,
+            5
+          ],
+          "left_standard_multiplicity": 10,
+          "right_standard_multiplicity": 11
+        },
+        {
+          "left_exact": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "left_lifted": [
+            7,
+            1,
+            1,
+            1
+          ],
+          "right_lifted": [
+            0,
+            6,
+            6,
+            6
+          ],
+          "left_standard_multiplicity": 2,
+          "right_standard_multiplicity": 6
+        }
+      ]
+    },
+    {
+      "left_extra_quartets": 0,
+      "right_extra_quartets": 2,
+      "action_quartic_insertions": 0,
+      "assignments": [
+        {
+          "left_exact": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "left_lifted": [
+            8,
+            2,
+            2,
+            2
+          ],
+          "right_lifted": [
+            0,
+            6,
+            6,
+            6
+          ],
+          "left_standard_multiplicity": 6,
+          "right_standard_multiplicity": 6
+        },
+        {
+          "left_exact": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "left_lifted": [
+            8,
+            2,
+            1,
+            1
+          ],
+          "right_lifted": [
+            0,
+            6,
+            7,
+            7
+          ],
+          "left_standard_multiplicity": 1,
+          "right_standard_multiplicity": 1
+        },
+        {
+          "left_exact": [
+            2,
+            3,
+            2,
+            3
+          ],
+          "left_lifted": [
+            8,
+            1,
+            2,
+            1
+          ],
+          "right_lifted": [
+            0,
+            7,
+            6,
+            7
+          ],
+          "left_standard_multiplicity": 1,
+          "right_standard_multiplicity": 1
+        },
+        {
+          "left_exact": [
+            2,
+            3,
+            3,
+            2
+          ],
+          "left_lifted": [
+            8,
+            1,
+            1,
+            2
+          ],
+          "right_lifted": [
+            0,
+            7,
+            7,
+            6
+          ],
+          "left_standard_multiplicity": 1,
+          "right_standard_multiplicity": 1
+        },
+        {
+          "left_exact": [
+            3,
+            2,
+            2,
+            3
+          ],
+          "left_lifted": [
+            7,
+            2,
+            2,
+            1
+          ],
+          "right_lifted": [
+            1,
+            6,
+            6,
+            7
+          ],
+          "left_standard_multiplicity": 10,
+          "right_standard_multiplicity": 10
+        },
+        {
+          "left_exact": [
+            3,
+            2,
+            3,
+            2
+          ],
+          "left_lifted": [
+            7,
+            2,
+            1,
+            2
+          ],
+          "right_lifted": [
+            1,
+            6,
+            7,
+            6
+          ],
+          "left_standard_multiplicity": 10,
+          "right_standard_multiplicity": 10
+        },
+        {
+          "left_exact": [
+            3,
+            3,
+            2,
+            2
+          ],
+          "left_lifted": [
+            7,
+            1,
+            2,
+            2
+          ],
+          "right_lifted": [
+            1,
+            7,
+            6,
+            6
+          ],
+          "left_standard_multiplicity": 10,
+          "right_standard_multiplicity": 10
+        },
+        {
+          "left_exact": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "left_lifted": [
+            7,
+            1,
+            1,
+            1
+          ],
+          "right_lifted": [
+            1,
+            7,
+            7,
+            7
+          ],
+          "left_standard_multiplicity": 2,
+          "right_standard_multiplicity": 2
+        }
+      ]
+    },
+    {
+      "left_extra_quartets": 1,
+      "right_extra_quartets": 0,
+      "action_quartic_insertions": 1,
+      "assignments": []
+    },
+    {
+      "left_extra_quartets": 1,
+      "right_extra_quartets": 1,
+      "action_quartic_insertions": 0,
+      "assignments": [
+        {
+          "left_exact": [
+            3,
+            2,
+            2,
+            3
+          ],
+          "left_lifted": [
+            8,
+            3,
+            3,
+            2
+          ],
+          "right_lifted": [
+            0,
+            5,
+            5,
+            6
+          ],
+          "left_standard_multiplicity": 11,
+          "right_standard_multiplicity": 11
+        },
+        {
+          "left_exact": [
+            3,
+            2,
+            3,
+            2
+          ],
+          "left_lifted": [
+            8,
+            3,
+            2,
+            3
+          ],
+          "right_lifted": [
+            0,
+            5,
+            6,
+            5
+          ],
+          "left_standard_multiplicity": 11,
+          "right_standard_multiplicity": 11
+        },
+        {
+          "left_exact": [
+            3,
+            3,
+            2,
+            2
+          ],
+          "left_lifted": [
+            8,
+            2,
+            3,
+            3
+          ],
+          "right_lifted": [
+            0,
+            6,
+            5,
+            5
+          ],
+          "left_standard_multiplicity": 11,
+          "right_standard_multiplicity": 11
+        },
+        {
+          "left_exact": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "left_lifted": [
+            8,
+            2,
+            2,
+            2
+          ],
+          "right_lifted": [
+            0,
+            6,
+            6,
+            6
+          ],
+          "left_standard_multiplicity": 6,
+          "right_standard_multiplicity": 6
+        }
+      ]
+    },
+    {
+      "left_extra_quartets": 2,
+      "right_extra_quartets": 0,
+      "action_quartic_insertions": 0,
+      "assignments": []
+    }
+  ]
+}

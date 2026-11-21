@@ -1,0 +1,104 @@
+{
+  "field": "rationals with one exterior generator eta for the matrix probes",
+  "embedding_three_form_checks": 70,
+  "derivative_probes": [
+    {
+      "derivative": 0,
+      "current_spin": 0,
+      "scalar_derivative": 0,
+      "gaugino_derivative": 1,
+      "coefficient": 2
+    },
+    {
+      "derivative": 0,
+      "current_spin": 0,
+      "scalar_derivative": 1,
+      "gaugino_derivative": 0,
+      "coefficient": 2
+    },
+    {
+      "derivative": 0,
+      "current_spin": 0,
+      "scalar_derivative": 1,
+      "gaugino_derivative": 1,
+      "coefficient": 4
+    },
+    {
+      "derivative": 0,
+      "current_spin": 1,
+      "scalar_derivative": 0,
+      "gaugino_derivative": 1,
+      "coefficient": 2
+    },
+    {
+      "derivative": 0,
+      "current_spin": 1,
+      "scalar_derivative": 1,
+      "gaugino_derivative": 0,
+      "coefficient": 2
+    },
+    {
+      "derivative": 0,
+      "current_spin": 1,
+      "scalar_derivative": 1,
+      "gaugino_derivative": 1,
+      "coefficient": 4
+    },
+    {
+      "derivative": 1,
+      "current_spin": 0,
+      "scalar_derivative": 0,
+      "gaugino_derivative": 1,
+      "coefficient": 2
+    },
+    {
+      "derivative": 1,
+      "current_spin": 0,
+      "scalar_derivative": 1,
+      "gaugino_derivative": 0,
+      "coefficient": 2
+    },
+    {
+      "derivative": 1,
+      "current_spin": 0,
+      "scalar_derivative": 1,
+      "gaugino_derivative": 1,
+      "coefficient": 4
+    },
+    {
+      "derivative": 1,
+      "current_spin": 1,
+      "scalar_derivative": 0,
+      "gaugino_derivative": 1,
+      "coefficient": 2
+    },
+    {
+      "derivative": 1,
+      "current_spin": 1,
+      "scalar_derivative": 1,
+      "gaugino_derivative": 0,
+      "coefficient": 2
+    },
+    {
+      "derivative": 1,
+      "current_spin": 1,
+      "scalar_derivative": 1,
+      "gaugino_derivative": 1,
+      "coefficient": 4
+    }
+  ],
+  "same_spin_only_gaugino_coefficient": 2,
+  "archive_component_rows": [
+    [
+      64,
+      0
+    ],
+    [
+      16,
+      576
+    ]
+  ],
+  "determinant": 36864,
+  "classical_incoming_cohomology_dimension": 2,
+  "instanton_matrix_element_computed": false
+}

@@ -1,0 +1,21 @@
+{
+  "group": "SU3",
+  "partition": [
+    5,
+    5,
+    1,
+    1,
+    1
+  ],
+  "prime": 2147483647,
+  "upper_flavour": true,
+  "blocks": [
+    {
+      "Y": 9,
+      "dim": 7268,
+      "rank_in": 4267,
+      "rank_out": 2983,
+      "h": 18
+    }
+  ]
+}

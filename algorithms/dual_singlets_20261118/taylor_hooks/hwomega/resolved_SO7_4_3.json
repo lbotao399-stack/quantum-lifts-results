@@ -1,0 +1,35 @@
+{
+  "group": "SO7",
+  "partition": [
+    4,
+    4,
+    1,
+    1,
+    1
+  ],
+  "prime": 2147483647,
+  "upper_flavour": true,
+  "blocks": [
+    {
+      "Y": 8,
+      "dim": 1317,
+      "rank_in": 538,
+      "rank_out": 764,
+      "h": 15
+    },
+    {
+      "Y": 9,
+      "dim": 1201,
+      "rank_in": 764,
+      "rank_out": 437,
+      "h": 0
+    },
+    {
+      "Y": 10,
+      "dim": 495,
+      "rank_in": 437,
+      "rank_out": 58,
+      "h": 0
+    }
+  ]
+}

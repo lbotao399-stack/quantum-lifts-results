@@ -1,0 +1,41 @@
+{
+  "weight": [
+    10,
+    4,
+    4
+  ],
+  "length": 10,
+  "skeleton": "all",
+  "source_dimension": 771,
+  "image_probes": 2468,
+  "rank_lower_bound": 768,
+  "prime": 2147483647,
+  "seed": 364157,
+  "source_blocks": [
+    [
+      "0Ac1Ai",
+      35,
+      57
+    ],
+    [
+      "0Ad1Ag2Ab",
+      184,
+      327
+    ],
+    [
+      "0Ae1Ae2Ac",
+      344,
+      888
+    ],
+    [
+      "0Af1Ac2Ad",
+      176,
+      587
+    ],
+    [
+      "0Ag2Ae",
+      32,
+      182
+    ]
+  ]
+}
