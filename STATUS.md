@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## Two product-indecomposable classes in the level-36 symplectic BMN sector, November 21, 2026
+
+At $USp(4)$ highest weight $(10,4,4)$, the thirteen- and fourteen-letter cohomology dimensions are equal to $20369-\operatorname{rank}(Q_0|_{Y=13})\ge 2$. All seven lower product channels at thirteen letters have zero rational cohomology in one factor. The immediate raising sources have weights $(9,4,4)$ and $(10,4,3)$. [Dimensions, products and replay](algorithms/dual_singlets_20261118/b2_level36/README.md#length-and-lower-products-without-the-published-parent)
+
+For $SU(3)$ at level 30, all 18 remaining Taylor targets for the second obstruction have odd colour parity at both primes. At level 34 the even second-order Taylor block has 53,037 cochains. The third-order Taylor highest weight of this particular source has a negative degree under the filtered Ward hypothesis. The $SO(8)$ level-24 triality doublet has zero outgoing instanton partners under the stated exact Ward hypothesis. [Unitary calculation](algorithms/dual_singlets_20261118/taylor_hooks/README.md) · [Orthogonal Ward ranks](algorithms/dual_singlets_20261118/so8_level24/README.md#outgoing-instanton-test)
+
+New $d_1$ pairings **0**, total **15**. New generators with standalone rational representatives **0**, total **5**. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_products.json)
+
 ## The long-root restriction at $USp(4)$ level 36, November 21, 2026
 
 The only remaining lower scalar dressing has classical dimension $13639-4896-8743=0$ at level 32. At levels 28 and 24 the corresponding dimensions are $3131-943-2188=0$ and $188-34-154=0$. The restriction of the published $SU(4)$ parent has coefficient $-1/1728$ relative to its nonzero mixed component. These results locate an odd-length BMN generator at $(2J;q_1,q_2,q_3)=(5;10,4,4)$ on that published input. [Proof and verification](algorithms/dual_singlets_20261118/b2_level36/README.md#the-level-32-dressing-is-absent)

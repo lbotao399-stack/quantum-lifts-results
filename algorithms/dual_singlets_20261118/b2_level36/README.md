@@ -44,6 +44,34 @@ The long-root threshold functional therefore vanishes on all products of lower p
 
 At $(10,4,4)$ the integer character gives 67,720 even-length and 67,698 odd-length cochains. Independent closed products contribute at least $3+19+2=24$ even-length classes. The total odd cohomology has dimension at least $24-(67720-67698)=2$. The nonzero minors in consecutive lengths have orders 768, 4,329 and 12,989. Consequently the individual classical dimensions at lengths 10, 11 and 12 are $771-768=3$, $5097-768-4329=0$ and $17337-4329-12989=19$. This lower bound of two covers the entire odd column. [Product determinants](rational_products.json) · [Length 10](length10.json.gz) · [Length 11](length11.json.gz) · [Length 12](length12.json.gz)
 
+## Length and lower products without the published parent
+
+At lengths 15, 16 and 17 the rational classical dimensions are
+$26210-17475-8735=0$, $11340-8735-2605=0$ and $3033-2605-428=0$.
+The last rank exhausts all 428 cochains at length 18. Together with the lower-length minors above this fixes every length except 13 and 14. Writing $Q_0$ for the classical supercharge, the two remaining dimensions obey
+
+$$
+33358-12989-\operatorname{rank}(Q_0|_{Y=13})
+=37844-17475-\operatorname{rank}(Q_0|_{Y=13})
+=20369-\operatorname{rank}(Q_0|_{Y=13})\ge 2 .
+$$
+
+The last inequality uses the two independent protected products at length 14. [High-length chain and A8 receipt](high_lengths/) · [Integer product minors](rational_products.json)
+
+Every positive-level product of odd length contains an odd-length factor. Such a factor first occurs at level 30 or above by the rank-two census through 28. A product at level 36 therefore has room for a single additional factor of level 4 or 6. Their flavour partitions are $(2)$ and $(2,1)$, both with two letters. The odd factor must have eleven letters. Removing a horizontal strip of two boxes gives three candidates. The identity $s_{(2,1)}=s_{(2)}s_{(1)}-s_{(3)}$ for Schur characters gives four more. All seven multiplicities are one.
+
+| Level of odd factor | Flavour partition | Cochains | Incoming classical rank | Outgoing classical rank |
+|---:|---|---:|---:|---:|
+| 32 | $(8,4,4)$ | 13639 | 4896 | 8743 |
+| 32 | $(9,4,3)$ | 8979 | 2651 | 6328 |
+| 32 | $(10,4,2)$ | 2018 | 293 | 1725 |
+| 30 | $(8,4,3)$ | 9398 | 4083 | 5315 |
+| 30 | $(9,3,3)$ | 2587 | 983 | 1604 |
+| 30 | $(9,4,2)$ | 3431 | 1145 | 2286 |
+| 30 | $(10,3,2)$ | 869 | 210 | 659 |
+
+Each adjacent rank pair adds to the independent integer cochain dimension. The product subspace is zero over the rationals. At least two length-13 classes are indecomposable modulo products. A single BMN raising supercharge adds one flavour box at fixed length. The two possible immediate parents have partitions $(9,4,4)$ and $(10,4,3)$ at level 34. Every longer chain of raising actions factors through this last step. [Product and descendant selection](primitive_sources.py) · [A8 outputs](parents/) · [Verification](verify_primitive.py)
+
 ## Selection of higher-order targets
 
 The index gives a generator-existence statement independent of the published $SU(4)$ restriction. The only previously counted $USp(4)$ core is the ten-letter level-30 singlet. The symplectic scalar invariants have degrees two and four. Products add letter lengths, and the BMN raising supersymmetries preserve length. These generators and their descendants therefore generate only even lengths. The odd cohomology lower bound of two forces at least one further BMN generator. The 297 exhausted odd-length blocks through level 28 bound the first such generator to $j\in\{30,32,34,36\}$. This argument does not determine its individual charges. [Rank-two census](odd_through_j28.json.gz) · [Exact product minor](rational_products.json)

@@ -1,0 +1,146 @@
+{
+  "column": {
+    "weight": [
+      10,
+      4,
+      4
+    ],
+    "level": 36,
+    "cochains": {
+      "10": 771,
+      "11": 5097,
+      "12": 17337,
+      "13": 33358,
+      "14": 37844,
+      "15": 26210,
+      "16": 11340,
+      "17": 3033,
+      "18": 428
+    },
+    "fixed_rational_cohomology": {
+      "10": 3,
+      "11": 0,
+      "12": 19,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0
+    },
+    "length13_and_length14_common_offset_before_subtracting_rank13": 20369,
+    "length13_cohomology_lower": 2,
+    "length14_cohomology_lower": 2,
+    "length13_image_upper": 20367
+  },
+  "lower_channels": [
+    {
+      "operation": "degree-four product",
+      "weight": [
+        8,
+        4,
+        4
+      ],
+      "level": 32,
+      "length": 11,
+      "multiplicity": 1,
+      "rational_parent_upper": 0
+    },
+    {
+      "operation": "degree-four product",
+      "weight": [
+        9,
+        4,
+        3
+      ],
+      "level": 32,
+      "length": 11,
+      "multiplicity": 1,
+      "rational_parent_upper": 0
+    },
+    {
+      "operation": "degree-four product",
+      "weight": [
+        10,
+        4,
+        2
+      ],
+      "level": 32,
+      "length": 11,
+      "multiplicity": 1,
+      "rational_parent_upper": 0
+    },
+    {
+      "operation": "degree-six product",
+      "weight": [
+        8,
+        4,
+        3
+      ],
+      "level": 30,
+      "length": 11,
+      "multiplicity": 1,
+      "rational_parent_upper": 0
+    },
+    {
+      "operation": "degree-six product",
+      "weight": [
+        9,
+        3,
+        3
+      ],
+      "level": 30,
+      "length": 11,
+      "multiplicity": 1,
+      "rational_parent_upper": 0
+    },
+    {
+      "operation": "degree-six product",
+      "weight": [
+        9,
+        4,
+        2
+      ],
+      "level": 30,
+      "length": 11,
+      "multiplicity": 1,
+      "rational_parent_upper": 0
+    },
+    {
+      "operation": "degree-six product",
+      "weight": [
+        10,
+        3,
+        2
+      ],
+      "level": 30,
+      "length": 11,
+      "multiplicity": 1,
+      "rational_parent_upper": 0
+    },
+    {
+      "operation": "one BMN raising supercharge",
+      "weight": [
+        9,
+        4,
+        4
+      ],
+      "level": 34,
+      "length": 13,
+      "multiplicity": 1,
+      "rational_parent_upper": null
+    },
+    {
+      "operation": "one BMN raising supercharge",
+      "weight": [
+        10,
+        4,
+        3
+      ],
+      "level": 34,
+      "length": 13,
+      "multiplicity": 1,
+      "rational_parent_upper": null
+    }
+  ],
+  "product_subspace_dimension": 0,
+  "indecomposable_modulo_products_lower": 2
+}

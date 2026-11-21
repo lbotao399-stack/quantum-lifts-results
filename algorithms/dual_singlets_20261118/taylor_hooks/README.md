@@ -31,6 +31,17 @@ The second-order target of the $SU(3)$ level-30 BMN source gives $110-198+163-72
 
 At $USp(6)$ level 28 the nine-letter class lies in this diagram. Its ten-letter successor in the same diagram is empty. The multiplicity calculation is independent of applying the Ward generators to its 4,264-term representative. [Symplectic calculation](hwomega/resolved_Sp3_4_3.json) · [Orthogonal calculation](hwomega/resolved_SO7_4_3.json) · [Direct Ward test](../sp3_omega/outgoing/ward_source.json)
 
+For the $SU(3)$ level-30 source the eighteen potential $d_2$ targets are all odd under colour charge conjugation in both sampled fields. Splitting the classical map by the evaluation at a traceless matrix and at its negative transpose gives the following multiplicities.
+
+| Colour parity | Cochains | Incoming rank | Outgoing rank | Classical cohomology at both primes |
+|---|---:|---:|---:|---:|
+| Even | 3585 | 2093 | 1492 | 0 |
+| Odd | 3683 | 2174 | 1491 | 18 |
+
+The source is odd, so all eighteen remain possible at this stage. A8 jobs 5682907 and 5682908 used different seeds and primes 2147483647 and 1000033. [Parity-resolved sectors and receipts](colour_parity/) · [Native map](unitary_parity.cpp) · [Schur extraction](../unitary_hook_parity.py)
+
+For the even $SU(3)$ level-34 BMN source of weight $(8,5,4)$ the order-two diagram has rows $(5,5,2,1,1,1)$. Restriction to two even and two odd Taylor directions gives 53,037 even cochains and 52,919 odd cochains. Independent permutation characters give the same integers. The original even target has 639,219 cochains. At third order the shifted Taylor highest weight would be $(6,6;3,0,-1)$. Since the last degree is negative, the third-order target is absent under filtered superconformal equivariance. The first and second correction equations for this source remain open. [Two-flavour branching and colour characters](../two_flavour_hooks.py) · [Twenty signed character terms](su3_j34_second_character.json)
+
 Compile the archived classical engine and run the same sectors from the repository root. The engine's level label refers to the substituted Taylor weight. The physical level of the original operator is given above.
 
 ```sh

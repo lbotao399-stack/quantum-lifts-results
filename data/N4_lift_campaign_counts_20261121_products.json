@@ -1,0 +1,88 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "phase": "All lower BMN products at the USp(4) level-36 thirteen-letter weight",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_wall.json",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/b2_level36/parents/result.json",
+    "algorithms/dual_singlets_20261118/b2_level36/high_lengths/jobs.json",
+    "algorithms/dual_singlets_20261118/b2_level36/parents/jobs.json",
+    "algorithms/dual_singlets_20261118/b2_level36/verify_primitive.py",
+    "algorithms/dual_singlets_20261118/taylor_hooks/colour_parity/jobs.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_j34_second_character.json",
+    "algorithms/dual_singlets_20261118/so8_level24/ward_outgoing/jobs.json"
+  ],
+  "stages": [
+    {
+      "calculation": "Odd cohomology at length 13 modulo all lower BMN products",
+      "d1": 0,
+      "fortuitous_generator_families": 0,
+      "weight": [
+        10,
+        4,
+        4
+      ],
+      "length": 13,
+      "indecomposable_modulo_products_lower_bound": 2,
+      "remaining_BMN_raising_weights": [
+        [
+          9,
+          4,
+          4
+        ],
+        [
+          10,
+          4,
+          3
+        ]
+      ]
+    }
+  ],
+  "scope": "The independent rational generator count is five. At least six generators exist. The nonzero mixed coefficient reported for the SU(4) parent identifies a sixth at USp(4) level 36. The smallest level of any odd USp(4) generator could be lower.",
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 6,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 1
+  },
+  "location_using_published_input": {
+    "group": "USp(4)",
+    "level": 36,
+    "weight": [
+      10,
+      4,
+      4
+    ],
+    "two_J": 5,
+    "length": 13,
+    "flavour_dynkin": [
+      6,
+      0
+    ],
+    "parent": "arXiv:2610.20340v2 Eq. (4.15)",
+    "standalone_rational_cycle": false,
+    "located_including_published_input": 6
+  }
+}

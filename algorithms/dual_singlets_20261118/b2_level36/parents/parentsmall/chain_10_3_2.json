@@ -1,0 +1,16 @@
+{
+  "group": "USp(4)",
+  "weight": [
+    10,
+    3,
+    2
+  ],
+  "level": 30,
+  "length": 11,
+  "prime": 2147483647,
+  "seed": 631047,
+  "cochains": 869,
+  "incoming": 210,
+  "outgoing": 659,
+  "rational_cohomology_upper": 0
+}
