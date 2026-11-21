@@ -58,9 +58,12 @@ static Mat g2_probe() {
   return matrix;
 }
 
-// Only the classical trace evaluator is used. All its non-Cartan probes use
-// the stabilizer above. Cartan evaluation is unnecessary for the adjacent ranks.
-#define rand_alg g2_probe
+// G2 probes use the stabilizer above. The symplectic engine projects random
+// matrices into sp(4) with its defining symplectic form.
+static Mat colour_probe() {
+  return GNAME == "G2" ? g2_probe() : rand_alg();
+}
+#define rand_alg colour_probe
 #include "trace.h"
 #undef rand_alg
 #include "bmn_sampler.h"
@@ -86,9 +89,14 @@ static void terminal_evaluations(const Sector &sec, Lev &level, int length, size
 }
 
 int main(int argc, char **argv) {
+  bool symplectic = argc > 1 && std::string(argv[1]) == "USp4";
+  if (symplectic) {
+    --argc;
+    ++argv;
+  }
   bool probe_last = argc == 10 && std::string(argv[9]) == "--probe-last";
   if (argc != 9 && !probe_last) {
-    fputs("usage: g2_chain w1 w2 w3 first_length last_length seed threads prime [--probe-last]\n", stderr);
+    fputs("usage: g2_chain [USp4] w1 w2 w3 first_length last_length seed threads prime [--probe-last]\n", stderr);
     return 1;
   }
   int w[5] = {std::stoi(argv[1]), std::stoi(argv[2]), std::stoi(argv[3]), 0, 0};
@@ -100,14 +108,19 @@ int main(int argc, char **argv) {
       w[0] < w[1] || w[1] < w[2] || w[2] < 0 || lo < 1 || hi < lo) return 2;
   MERS = P == 2147483647;
   RS = seed;
-  NF = 7; NN = 49; RANK = 2; DIMG = 14; GNAME = "G2";
-  set_mm(); set_bmm(); set_g2_basis();
-  // In the torus x,y,-x-y the short roots are the six nonzero weights
-  // of the 7, and the six long roots are their A2 differences.
-  POSR = {{1,0,0},{0,1,0},{1,1,0},{1,-1,0},{2,1,0},{1,2,0}};
-  ADJW = {{0,0,0},{0,0,0}};
-  for (auto r : POSR) {
-    ADJW.push_back(r); ADJW.push_back({-r[0],-r[1],0});
+  if (symplectic) {
+    if (!parse_gauge("Sp2")) return 2;
+    set_mm(); set_bmm(); build_algebra();
+  } else {
+    NF = 7; NN = 49; RANK = 2; DIMG = 14; GNAME = "G2";
+    set_mm(); set_bmm(); set_g2_basis();
+    // In the torus x,y,-x-y the short roots are the six nonzero weights
+    // of the 7, and the six long roots are their A2 differences.
+    POSR = {{1,0,0},{0,1,0},{1,1,0},{1,-1,0},{2,1,0},{1,2,0}};
+    ADJW = {{0,0,0},{0,0,0}};
+    for (auto r : POSR) {
+      ADJW.push_back(r); ADJW.push_back({-r[0],-r[1],0});
+    }
   }
   Sector sec = make_sector(w);
   if (hi > sec.Ymax) return 2;
@@ -135,6 +148,7 @@ int main(int argc, char **argv) {
   }
   if (probe_last) fputs("{\"terminal_probes_only\":true,", stdout);
   else fputc('{', stdout);
+  if (symplectic) fputs("\"group\":\"USp(4)\",", stdout);
   printf("\"weight\":[%d,%d,%d],\"prime\":%llu,\"seed\":%llu,\"blocks\":[",
          w[0],w[1],w[2],(unsigned long long)P,(unsigned long long)seed);
   for (size_t k=0;k<blocks.size();++k) {

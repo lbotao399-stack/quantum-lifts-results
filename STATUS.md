@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## The outer-odd $E_6$ scalar and the symplectic third-order target, November 21, 2026
+
+At level $j=22$ and flavour $(4,4,3)$ the outer-odd $E_6$ scalar cohomology is one-dimensional. Its representative takes the value $1/12$ on a commuting triple. Order-23 determinants on independent noncommuting triples are 117579 modulo 1000003 and 859270 modulo 1000033. All fifteen eligible lower odd factor shapes have zero Cartan multiplicity. The scalar survives every perturbative page and its vacuum expectation excludes an instanton image on this line. [Representative, ranks and vacuum argument](algorithms/dual_singlets_20261118/bmn_primary/scalar_443/README.md)
+
+For $USp(4)$ weight $(6,5,5)$ the odd source cohomologies at lengths 7, 9 and 15 vanish. The third-order target at source length 13 has zero classical cohomology under the Taylor selection rule. At source length 11 the containing Taylor sector has $6741-4386-2355=0$ classes. This excludes the third-order transition at every odd source length under the same selection rule. [Symplectic ranks and target filtration](algorithms/dual_singlets_20261118/bmn_primary/symplectic_655/README.md)
+
+New $d_1$ pairings **0** (15 total). New explicit BMN generators under the campaign definition **1** (11 explicit, at least 15 total). Verified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_scalar_443.json)
+
 ## Four exceptional scalar representatives and the level-30 vanishing, November 21, 2026
 
 The four exceptional two-scalar sectors give explicit indecomposable rational BMN representatives. The product ranks at their Cartan bidegrees are $7,7,13,11$ for $F_4,E_6,E_7,E_8$. Adding one adjoint-bracket polynomial gives ranks $8,8,14,12$. The four Higgs-branch multiplicities were published in equations (B.4e)–(B.4h) of Bonetti, Meneghelli and Rastelli. [Polynomials, determinants and prior work](algorithms/dual_singlets_20261118/bmn_primary/exceptional_scalar_pairs.md)

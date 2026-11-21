@@ -1,0 +1,63 @@
+{
+  "group": "C2",
+  "baseline": [
+    [
+      [
+        10,
+        4,
+        4
+      ],
+      2
+    ]
+  ],
+  "trials": [
+    {
+      "core": [
+        6,
+        5,
+        4
+      ],
+      "first_failure": null
+    },
+    {
+      "core": [
+        6,
+        5,
+        5
+      ],
+      "first_failure": null
+    },
+    {
+      "core": [
+        7,
+        4,
+        4
+      ],
+      "first_failure": null
+    },
+    {
+      "core": [
+        7,
+        5,
+        3
+      ],
+      "first_failure": null
+    },
+    {
+      "core": [
+        7,
+        5,
+        4
+      ],
+      "first_failure": null
+    },
+    {
+      "core": [
+        8,
+        5,
+        2
+      ],
+      "first_failure": null
+    }
+  ]
+}

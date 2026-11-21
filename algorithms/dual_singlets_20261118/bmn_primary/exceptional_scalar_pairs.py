@@ -19,6 +19,20 @@ from f4_singlet_characters import CARTAN, reflect, roots
 TARGETS = {"F4": (4,4), "E6": (4,4), "E7": (6,4), "E8": (6,6)}
 
 
+def inverse_killing_form(adjoint):
+    """Invert the sum of root outer products in simple coroot coordinates."""
+    rank = len(adjoint[0])
+    form = [[Fraction(sum(w[i]*w[j] for w in adjoint)) for j in range(rank)]
+            + [Fraction(i==j) for j in range(rank)] for i in range(rank)]
+    for i in range(rank):
+        scale = form[i][i]
+        form[i] = [v/scale for v in form[i]]
+        for j,row in enumerate(form):
+            if j != i:
+                form[j] = [x-row[i]*y for x,y in zip(row,form[i])]
+    return [row[rank:] for row in form]
+
+
 @lru_cache(None)
 def colour_data(group):
     if group == "F4":
@@ -28,17 +42,8 @@ def colour_data(group):
         simple, adjoint = root_data(group)
         short = set()
     rank = len(simple)
-    # In coordinates dual to Dynkin labels, the Killing form is the sum
-    # of the root outer products. Solve for its inverse by row reduction.
-    form = [[Fraction(sum(w[i]*w[j] for w in adjoint)) for j in range(rank)]
-            + [Fraction(i==j) for j in range(rank)] for i in range(rank)]
-    for i in range(rank):
-        scale = form[i][i]
-        form[i] = [v/scale for v in form[i]]
-        for j,row in enumerate(form):
-            if j != i:
-                form[j] = [x-row[i]*y for x,y in zip(row,form[i])]
-    norm = {w:sum(w[i]*form[i][rank+j]*w[j] for i,j in product(range(rank),repeat=2))
+    form = inverse_killing_form(adjoint)
+    norm = {w:sum(w[i]*form[i][j]*w[j] for i,j in product(range(rank),repeat=2))
             for w in adjoint}
     assert len(set(norm.values())) == 1+bool(short)
     if short:

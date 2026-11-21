@@ -21,7 +21,7 @@ def build(native, sampler, output):
             marker = b"  build_weights();"
             if data.count(marker) != 1:
                 raise ValueError("The native character initialization has changed")
-            data = data.replace(marker, b"  // The G2 driver supplied ADJW and POSR.")
+            data = data.replace(marker, b'  if (GNAME != "G2") build_weights();')
         (output/name).write_bytes(data)
     shutil.copyfile(sampler, output/"bmn_sampler.h")
     shutil.copyfile(HERE/"g2_chain.cpp", output/"g2_chain.cpp")
