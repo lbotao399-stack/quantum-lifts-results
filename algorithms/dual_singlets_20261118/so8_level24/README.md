@@ -43,6 +43,20 @@ The three grades with possible standard triality cochains were tested with the s
 
 At each grade the coupled matrix imposes classical closure and membership of the returned vector in the classical boundaries. Its rank bounds the kernel on cohomology by the cochain dimension minus that rank. The three standard reflection-even bounds in grades zero, one and three are $199-199=0$, $959-959=0$ and $162-162=0$. The grade-two and grade-four classical bounds already vanish. Triality extends the result to both components. This condition excludes an outgoing instanton partner for the level-24 doublet in these physical charges. [A8 coupled ranks and receipt](ward_outgoing/) · [Returned actions and rank calculation](../so8_level24_ward_kernel.py)
 
+## Incoming instanton test
+
+At doubled charges $(2J_1,2J_2;2q_1,2q_2,2q_3)=(3,3;8,8,8)$, the derivative grade $r$ ranges from zero to four and the letter length is $9-r$. Triality requires the incoming image of the doublet to come from the standard representation. At each grade the reflection-even component of that representation gives the following rational upper bounds. The returned Ward operator first replaces a spin derivative by a flavour derivative and then reverses the substitution, summed over all six pairs.
+
+| Grade | Cochains | Incoming classical rank, lower bound | Outgoing classical rank, lower bound | Classical cohomology, upper bound | Kernel of returned Ward action, upper bound |
+|---:|---:|---:|---:|---:|---:|
+| 0 | 419 | 206 | 213 | 0 | 0 |
+| 1 | 2033 | 911 | 1108 | 14 | 0 |
+| 2 | 1560 | 662 | 898 | 0 | 0 |
+| 3 | 222 | 83 | 139 | 0 | 0 |
+| 4 | 4 | 2 | 2 | 0 | 0 |
+
+At grade one the simultaneous closure and Ward matrix has rank at least 2033 modulo 1000003. This makes the endomorphism on rational classical cohomology injective, hence invertible. The other four grades are empty. Invertibility descends to invariant subquotients of a finite-dimensional endomorphism and persists under a filtered extension. A polynomial annihilating the incoming operator can therefore be chosen with nonzero constant term. If a leading instanton differential intertwines the Ward actions, its images obey the same polynomial. On the derivative-free part of the target the returned action is zero, so the polynomial acts there by its nonzero constant term. An image with the level-24 class as leading component is excluded. Triality gives the same conclusion for its reflection-odd partner. Together with the outgoing calculation, this excludes both instanton directions under filtered Ward equivariance. The sector here is the local-operator sector on flat space with no defects. [A8 ranks, two independent grade-three and grade-four frames, and hashes](ward_incoming/) · [Returned action and coupled map](../so8_level24_ward_kernel.py)
+
 ## The adjacent first differential
 
 At doubled source charges $(1,1,8,8,8)$ and target charges $(0,0,8,8,8)$, restrict the coupled classical and first-order matrix to the transition from derivative grade one to two. Its rational rank minus its two diagonal ranks gives $725-365-359=1$ for $SO(8)$ and $750-384-364=2$ for $SO(9)$. These are three first-differential pairings in a different cochain degree from $O$. [Eight colours](../level24_first/so8.json) · [Nine colours](../level24_first/so9.json) · [Integer rank reconstruction](../level24_first_ranks.py)

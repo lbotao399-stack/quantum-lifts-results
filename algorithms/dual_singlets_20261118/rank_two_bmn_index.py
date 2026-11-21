@@ -12,7 +12,9 @@ from sp3_omega_products import all_products, canonical, cartan, letter_odd, slot
 from trace_descent import dimensions
 
 
-def colour_profiles(weight, length):
+def colour_profiles(weight, length, *, colour_group="Sp"):
+    if colour_group not in ("Sp", "SU3"):
+        raise ValueError("unsupported rank-two Cartan action")
     degree = sum(weight)-length
     profiles = set()
     for strengths in range(degree//2+1):
@@ -22,7 +24,11 @@ def colour_profiles(weight, length):
             for k in range(max(0,fermions-3),min(3,fermions)+1):
                 for f in range(strengths+1):
                     profile = (n,k,f), (scalars-n,fermions-k,strengths-f)
-                    if all(sum(p)%2 == 0 for p in profile):
+                    if colour_group == "SU3":
+                        allowed = (sum(profile[0]) - sum(profile[1])) % 3 == 0
+                    else:
+                        allowed = all(sum(p)%2 == 0 for p in profile)
+                    if allowed:
                         profiles.add(tuple(sorted(profile)))
     return sorted(profiles)
 
@@ -79,11 +85,11 @@ def multiplicity(weight, profiles):
     return value
 
 
-def quotient(weight,length):
+def quotient(weight,length, *, colour_group="Sp"):
     # V_weight / (F1 V_(weight+alpha1) + F2 V_(weight+alpha2)).
     # A character multiplicity fixes the rational denominator rank in every block.
     maps, seen, quotdim = {}, 0, 0
-    for profiles in colour_profiles(weight,length):
+    for profiles in colour_profiles(weight,length,colour_group=colour_group):
         words = monomials(weight,profiles)
         if not words:
             continue

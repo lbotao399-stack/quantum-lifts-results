@@ -1,0 +1,73 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "phase": "Level-36 SU(3) inherited classes, level-24 SO(8) instanton-source Ward test, and terminal symplectic third-order targets",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_primitive.json",
+  "checks": {
+    "su3_level36": {
+      "weight": [
+        8,
+        5,
+        5
+      ],
+      "opposite_parity_lower": [
+        2,
+        2
+      ],
+      "inherited_demonstrated": [
+        2,
+        2
+      ],
+      "length10_dimensions": [
+        1,
+        1
+      ],
+      "even_length11_pairing_determinant_using_published_quartic": -65478821990400000
+    },
+    "so8_level24_incoming_Ward_kernel_upper_by_grade": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "so8_np_assumption": "leading instanton action intertwines exact filtered Ward generators",
+    "usp4_terminal_third_target_dimensions": [
+      0,
+      0
+    ]
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/README.md",
+    "algorithms/dual_singlets_20261118/so8_level24/README.md",
+    "algorithms/dual_singlets_20261118/taylor_hooks/b2_third_terminal/jobs.json"
+  ]
+}

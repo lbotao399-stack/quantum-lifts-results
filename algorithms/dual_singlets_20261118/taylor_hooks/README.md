@@ -42,6 +42,8 @@ The source is odd, so all eighteen remain possible at this stage. A8 jobs 568290
 
 For the even $SU(3)$ level-34 BMN source of weight $(8,5,4)$ the order-two diagram has rows $(5,5,2,1,1,1)$. Restriction to two even and two odd Taylor directions gives 53,037 even cochains and 52,919 odd cochains. Independent permutation characters give the same integers. The original even target has 639,219 cochains. At third order the shifted Taylor highest weight would be $(6,6;3,0,-1)$. Since the last degree is negative, the third-order target is absent under filtered superconformal equivariance. The first and second correction equations for this source remain open. [Two-flavour branching and colour characters](../two_flavour_hooks.py) · [Twenty signed character terms](su3_j34_second_character.json)
 
+At $USp(4)$ levels 40 and 42 the third-order diagrams for BMN weights $(10,5,5)$ and $(11,5,5)$ have rows $(6,6,1^5)$ and $(6,6,1^6)$. At the maximal target lengths 17 and 18, A8 job 5682624 gives $43-43-0=0$ and $124-124-0=0$ respectively in the field of 2147483647 elements. Every modular rank is taken on complete native weight spaces before extracting the Schur component. The corresponding rational target cohomologies vanish. Under filtered Taylor equivariance this excludes the transitions from source lengths 19 and 20. Shorter sources have different targets. [Twelve weight-space ranks, resolved blocks and receipt](b2_third_terminal/)
+
 Compile the archived classical engine and run the same sectors from the repository root. The engine's level label refers to the substituted Taylor weight. The physical level of the original operator is given above.
 
 ```sh

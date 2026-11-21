@@ -1,0 +1,114 @@
+{
+  "level": 36,
+  "weight": [
+    8,
+    5,
+    5
+  ],
+  "C_odd_length10_triple_raising": {
+    "active_sector": [
+      8,
+      5,
+      5,
+      5
+    ],
+    "active_coordinates": 406,
+    "predecessor_trace_words": 27,
+    "rational_boundary_rank": 10,
+    "rational_class_nonzero": true,
+    "pairing": "20736",
+    "functional": [
+      [
+        68719476736,
+        238,
+        "1"
+      ]
+    ]
+  },
+  "C_odd_length12_bilinear_product": {
+    "active_sector": [
+      5,
+      4,
+      4,
+      4
+    ],
+    "active_coordinates": 117,
+    "predecessor_trace_words": 197,
+    "rational_boundary_rank": 47,
+    "rational_class_nonzero": true,
+    "pairing": "31104",
+    "functional": [
+      [
+        2,
+        79,
+        "1/2"
+      ],
+      [
+        2,
+        167,
+        "-1"
+      ],
+      [
+        4097,
+        93,
+        "-1"
+      ],
+      [
+        4097,
+        181,
+        "-3/2"
+      ],
+      [
+        4112,
+        110,
+        "1/2"
+      ],
+      [
+        4112,
+        117,
+        "-1/2"
+      ],
+      [
+        4112,
+        285,
+        "1/2"
+      ],
+      [
+        8192,
+        188,
+        "1"
+      ],
+      [
+        16777217,
+        205,
+        "1"
+      ],
+      [
+        16777217,
+        230,
+        "-3/2"
+      ],
+      [
+        16777232,
+        229,
+        "-3/2"
+      ],
+      [
+        16777232,
+        334,
+        "-2"
+      ],
+      [
+        16777232,
+        341,
+        "-1/2"
+      ],
+      [
+        16781312,
+        244,
+        "1"
+      ]
+    ],
+    "full_trace_terms": 24282
+  }
+}

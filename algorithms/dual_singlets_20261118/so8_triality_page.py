@@ -54,8 +54,10 @@ def rank(a):
     return nmod_mat(a.tolist(),m.P).rank() if a.size else 0
 
 
-def run(grade,deficit,seed):
-    w=(grade,grade)+(4-grade,)*3
+def run(grade,deficit,seed,*,taylor_weight=None):
+    w=(grade,grade)+(4-grade,)*3 if taylor_weight is None else tuple(taylor_weight)
+    if len(w) != 5 or min(w) < 0 or w[0] < w[1] or list(w[2:]) != sorted(w[2:],reverse=True):
+        raise ValueError("expected dominant spin and flavour degrees")
     y=sum(w)-deficit
     source=all_rows(w,y-1)
     target=all_rows(w,y)
@@ -87,9 +89,10 @@ if __name__=="__main__":
     p.add_argument("--grade",required=True,type=int,choices=range(5))
     p.add_argument("--deficit",type=int,required=True,choices=range(5))
     p.add_argument("--seed",type=int,default=241093)
+    p.add_argument("--taylor-weight",type=int,nargs=5,help="evaluate the specified Taylor weight at the same deficit")
     p.add_argument("--out",type=Path,required=True)
     a=p.parse_args()
     assert __debug__
-    result=run(a.grade,a.deficit,a.seed)
+    result=run(a.grade,a.deficit,a.seed,taylor_weight=a.taylor_weight)
     m.write(a.out,result)
     print(result["ranks"],flush=True)

@@ -41,7 +41,7 @@ def differentiate(trace, axis):
 
 
 @lru_cache(None)
-def trace_factor(spec):
+def trace_factor(spec, *, unitary=False):
     inside = tuple((0, 0, (i,)) for i, n in enumerate(spec[2:5]) for _ in range(n))
     plus, minus = (1, 0, ()), (0, 1, ())
     inside += (plus,)*spec[0] + (minus,)*spec[1]
@@ -57,7 +57,11 @@ def trace_factor(spec):
         terms = nonzero(result)
     result = Counter()
     for word, coefficient in terms.items():
-        sign, tr = m.so_canon((word,))
+        if unitary:
+            sign, oriented = m.fw.canon_word(word)
+            tr = (oriented,)
+        else:
+            sign, tr = m.so_canon((word,))
         if sign:
             result[tr] += Fraction(coefficient * sign, len(orders))
     return nonzero(result)

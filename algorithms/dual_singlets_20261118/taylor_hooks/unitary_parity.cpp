@@ -3,6 +3,7 @@
 #include "engine.cpp"
 #undef main
 #include <iostream>
+#include <numeric>
 
 static void conjugate_probes(Lev &level) {
   for (Skel &skeleton : level.sk) {
@@ -19,8 +20,8 @@ static void conjugate_probes(Lev &level) {
   }
 }
 
-static std::pair<size_t, size_t> image_ranks(const Sector &sector,
-                                            const Lev &source, Lev &target) {
+static std::pair<Mtx, Mtx> parity_images(const Sector &sector,
+                                         const Lev &source, Lev &target) {
   Mtx original = q0_rows(sector, source, target);
   conjugate_probes(target);
   Mtx conjugated = q0_rows(sector, source, target);
@@ -33,14 +34,62 @@ static std::pair<size_t, size_t> image_ranks(const Sector &sector,
       conjugated[i][j] = static_cast<u32>(subm(value, mirror));
     }
   });
-  size_t even = rank_of(std::move(original), source.dim);
-  size_t odd = rank_of(std::move(conjugated), source.dim);
-  return {even, odd};
+  return {std::move(original), std::move(conjugated)};
+}
+
+static std::pair<size_t, size_t> image_ranks(const Sector &sector,
+                                            const Lev &source, Lev &target) {
+  auto images = parity_images(sector, source, target);
+  return {rank_of(std::move(images.first), source.dim),
+          rank_of(std::move(images.second), source.dim)};
+}
+
+static void print_indices(const std::vector<size_t> &indices) {
+  std::cout << '[';
+  for (size_t i = 0; i < indices.size(); ++i) {
+    if (i) std::cout << ',';
+    std::cout << indices[i];
+  }
+  std::cout << ']';
+}
+
+// The determinant refers to the selected rows in pivot order and columns in
+// increasing order. Row swaps affect this recorded order, hence no extra sign.
+static void print_minor(Mtx matrix, size_t width) {
+  std::vector<size_t> ids(matrix.size()), rows, cols;
+  std::iota(ids.begin(), ids.end(), 0);
+  u64 determinant = 1;
+  for (size_t j = 0; j < width && rows.size() < matrix.size(); ++j) {
+    size_t i = rows.size(), k = i;
+    while (k < matrix.size() && !matrix[k][j]) ++k;
+    if (k == matrix.size()) continue;
+    std::swap(matrix[k], matrix[i]);
+    std::swap(ids[k], ids[i]);
+    rows.push_back(ids[i]);
+    cols.push_back(j);
+    const u64 pivot = matrix[i][j], inverse = invm(pivot);
+    determinant = mulm(determinant, pivot);
+    par_for(matrix.size() - i - 1, [&](size_t offset) {
+      auto &row = matrix[i+1+offset];
+      if (!row[j]) return;
+      const u64 scale = negm(mulm(row[j], inverse));
+      for (size_t c = j; c < width; ++c)
+        row[c] = static_cast<u32>(red(row[c] + scale * matrix[i][c]));
+    });
+    std::vector<u32>().swap(matrix[i]);
+  }
+  std::cout << "{\"rank\":" << rows.size() << ",\"det\":" << determinant << ",\"rows\":";
+  print_indices(rows);
+  std::cout << ",\"columns\":";
+  print_indices(cols);
+  std::cout << '}';
 }
 
 int main(int argc, char **argv) {
-  if (argc != 10) {
-    std::cerr << "usage: unitary_parity SU2|SU3 theta1 theta2 theta3 plus minus length seed prime\n";
+  const bool image_only = argc == 11 && std::string(argv[10]) == "image";
+  const bool complete_image = argc == 11 && std::string(argv[10]) == "complete-image";
+  if (argc != 10 && !image_only && !complete_image) {
+    std::cerr << "usage: unitary_parity SU2|SU3 theta1 theta2 theta3 plus minus length seed prime [image|complete-image]\n";
     return 1;
   }
   if (!parse_gauge(argv[1]) || GT != G_SU) return 1;
@@ -63,6 +112,31 @@ int main(int argc, char **argv) {
   if (length < 1 || length > sector.Ymax) return 1;
   init_all({sector});
   Lev previous, centre, following;
+  if (image_only || complete_image) {
+    build_lev(sector, centre, length);
+    following.Y = length + 1;
+    if (complete_image) {
+      build_lev(sector, following, length + 1);
+    } else if (length < sector.Ymax) {
+      for (const auto &entry : hw_by_skel(sector, following.Y)) {
+        auto skeleton = parse_skel(entry.first, following.Y, entry.second);
+        int count = static_cast<int>(std::min<i64>(entry.second, centre.dim)) + 3;
+        add_probes(skeleton, skeleton.pr, count, false);
+        skeleton.piv.resize(count);
+        std::iota(skeleton.piv.begin(), skeleton.piv.end(), 0);
+        following.sk.push_back(std::move(skeleton));
+      }
+    }
+    auto images = parity_images(sector, centre, following);
+    print_head(complete_image ? "complete_colour_image" : "colour_image", weights, sector, seed);
+    std::cout << ",\"length\":" << length << ",\"cochains\":" << centre.dim
+              << ",\"target_evaluations\":" << images.first.size() << ",\"even\":";
+    print_minor(std::move(images.first), centre.dim);
+    std::cout << ",\"odd\":";
+    print_minor(std::move(images.second), centre.dim);
+    std::cout << "}\n";
+    return 0;
+  }
   build_lev(sector, previous, length - 1);
   build_lev(sector, centre, length);
   build_lev(sector, following, length + 1);

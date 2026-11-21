@@ -1,11 +1,11 @@
-// Exact integer coefficients of a length-12 BMN invariant on three colours.
+// Exact integer coefficients of a BMN invariant of at most twelve letters on three colours.
 // One even scalar is diagonal. Up to nine other matrix entries are encoded
 // injectively by their exponent multiplicities (a sorted multiset), not a hash.
 #define J34_COLOUR_ENGINE_ONLY
 #include "colour_polynomial.cpp"
 #include <sstream>
 struct Wide {
-    Plan plan; int scalar, n; int64_t weight; int species[7]{}, val[9]{};
+    Plan plan; int scalar, n, length; int64_t weight; int species[7]{}, val[9]{};
     uint64_t choose[66][10]{}; vector<int> colour; unordered_map<uint64_t,int64_t> totals;
     unsigned long long visits=0; unsigned __int128 absolute=0;
     Wide(){ for(int i=0;i<66;i++){choose[i][0]=1;for(int j=1;j<=9&&j<=i;j++)choose[i][j]=i==0?0:choose[i-1][j-1]+choose[i-1][j];}}
@@ -38,20 +38,21 @@ struct Wide {
                 plan.edges.emplace_back(labs[i],ids[i],ids[j]);plan.order++;plan.powers.push_back(0);}
             for(int i=0;i<len;i++)if(labs[i]!=scalar){int j=(i+1)%len,z=0;while(labs[j]==scalar){j=(j+1)%len;z++;}plan.powers[ids[j]]+=z;}
         }
-        check(plan.diagonal+plan.order==12&&plan.order<=9&&plan.diagonal<=12&&int(plan.powers.size())==plan.vertices,"length/order");
+        check(plan.diagonal+plan.order==length&&plan.order<=9&&int(plan.powers.size())==plan.vertices,"length/order");
         n=plan.order;weight=t.coefficient;colour.resize(plan.vertices);vertices(0);
     }
 };
 int main(int argc,char**argv){try{
-    check(argc==3,"source_closure words.txt output.json");ifstream in(argv[1]);ofstream out(argv[2]);int scalar,count;string os;
+    check(argc==3||argc==4,"source_closure words.txt output.json [length]");ifstream in(argv[1]);ofstream out(argv[2]);int scalar,count;string os;
+    const int length=argc==4?stoi(argv[3]):12;check(length>=2&&length<=12,"expected 2 to 12 letters");
     check(bool(in>>scalar>>os>>count)&&count>0&&out.good(),"bad header");for(unsigned i=0;i<os.size();i+=2)odd.insert(code(os,i));check(!odd.count(scalar),"diagonal odd");
     vector<Term> words;unsigned __int128 mass=0;vector<int> content0;
     for(int j=0;j<count;j++){int nt;Term t;check(bool(in>>t.coefficient>>nt)&&nt>0&&t.coefficient!=0,"input");vector<int> c;
         for(int k=0;k<nt;k++){string s;check(bool(in>>s)&&s.size()>=4&&s.size()%2==0,"trace");for(unsigned i=0;i<s.size();i+=2)c.push_back(code(s,i));t.traces.push_back(s);}
-        sort(c.begin(),c.end());if(j==0)content0=c;check(c.size()==12&&c==content0,"inhomogeneous input");mass+=uint64_t(t.coefficient<0?-t.coefficient:t.coefficient);words.push_back(t);}
-    string extra;check(!(in>>extra),"trailing");Wide w;w.scalar=scalar;unsigned __int128 bound=0;int zeros=std::count(content0.begin(),content0.end(),scalar);
+        sort(c.begin(),c.end());if(j==0)content0=c;check(int(c.size())==length&&c==content0,"inhomogeneous input");mass+=uint64_t(t.coefficient<0?-t.coefficient:t.coefficient);words.push_back(t);}
+    string extra;check(!(in>>extra),"trailing");Wide w;w.scalar=scalar;w.length=length;unsigned __int128 bound=0;int zeros=std::count(content0.begin(),content0.end(),scalar);
     for(auto &t:words){int pure=0;for(auto &s:t.traces){bool all=true;for(unsigned i=0;i<s.size();i+=2)all&=code(s,i)==scalar;pure+=all;}
-        unsigned __int128 walk=1;for(int i=0;i<12-zeros+pure;i++)walk*=3;bound+=walk*4096*uint64_t(t.coefficient<0?-t.coefficient:t.coefficient);}
+        unsigned __int128 walk=1;for(int i=0;i<length-zeros+pure;i++)walk*=3;bound+=walk*(1u<<length)*uint64_t(t.coefficient<0?-t.coefficient:t.coefficient);}
     check(bound<uint64_t(INT64_MAX),"integer accumulator bound");for(auto &t:words)w.run(t);
     check(w.absolute<=bound,"realized sum above bound");size_t nz=0;uint64_t first=UINT64_MAX;for(auto [k,v]:w.totals)if(v){nz++;first=min(k,first);}
     out<<"{\"formal_words\":"<<count<<",\"distinct_monomials\":"<<w.totals.size()<<",\"nonzero_monomials\":"<<nz<<",\"first_key\":"<<(nz?first:0)<<",\"first_integer_coefficient\":"<<(nz?w.totals[first]:0)<<",\"contributions\":"<<w.visits<<",\"sum_abs_bounds\":"<<uint64_t(bound)<<",\"sum_abs_actual\":"<<uint64_t(w.absolute)<<"}\n";check(out.good(),"output");return 0;

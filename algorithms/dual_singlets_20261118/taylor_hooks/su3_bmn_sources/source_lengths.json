@@ -1,0 +1,131 @@
+{
+  "group": "SU(3)",
+  "level": 36,
+  "weight": [
+    8,
+    5,
+    5
+  ],
+  "parities": [
+    "even",
+    "odd"
+  ],
+  "prime": 2147483647,
+  "lengths": [
+    {
+      "length": 8,
+      "cochains": [
+        90,
+        39
+      ],
+      "incoming_lower": [
+        0,
+        0
+      ],
+      "outgoing_lower": [
+        90,
+        39
+      ],
+      "rational_lower": [
+        0,
+        0
+      ],
+      "rational_upper": [
+        0,
+        0
+      ]
+    },
+    {
+      "length": 9,
+      "cochains": [
+        794,
+        888
+      ],
+      "incoming_lower": [
+        90,
+        39
+      ],
+      "outgoing_lower": [
+        704,
+        849
+      ],
+      "rational_lower": [
+        0,
+        0
+      ],
+      "rational_upper": [
+        0,
+        0
+      ]
+    },
+    {
+      "length": 10,
+      "cochains": [
+        4287,
+        4537
+      ],
+      "incoming_lower": [
+        704,
+        849
+      ],
+      "outgoing_lower": [
+        3582,
+        3687
+      ],
+      "rational_lower": [
+        1,
+        1
+      ],
+      "rational_upper": [
+        1,
+        1
+      ]
+    },
+    {
+      "length": 17,
+      "cochains": [
+        657,
+        722
+      ],
+      "incoming_lower": [
+        615,
+        631
+      ],
+      "outgoing_lower": [
+        42,
+        91
+      ],
+      "rational_lower": [
+        0,
+        0
+      ],
+      "rational_upper": [
+        0,
+        0
+      ]
+    },
+    {
+      "length": 18,
+      "cochains": [
+        42,
+        91
+      ],
+      "incoming_lower": [
+        42,
+        91
+      ],
+      "outgoing_lower": [
+        0,
+        0
+      ],
+      "rational_lower": [
+        0,
+        0
+      ],
+      "rational_upper": [
+        0,
+        0
+      ]
+    }
+  ]
+}

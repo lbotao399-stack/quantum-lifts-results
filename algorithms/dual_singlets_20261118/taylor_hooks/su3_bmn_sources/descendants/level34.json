@@ -1,0 +1,44 @@
+{
+  "level": 36,
+  "weight": [
+    8,
+    5,
+    5
+  ],
+  "full_trace_terms": 48451,
+  "C_even_length11_raised": {
+    "active_sector": [
+      6,
+      4,
+      4,
+      5
+    ],
+    "active_coordinates": 1034,
+    "predecessor_trace_words": 99,
+    "rational_boundary_rank": 28,
+    "rational_class_nonzero": true,
+    "pairing": "400982400",
+    "functional": [
+      [
+        1,
+        175,
+        "3"
+      ],
+      [
+        4096,
+        189,
+        "-1"
+      ],
+      [
+        16777216,
+        238,
+        "4"
+      ],
+      [
+        16777216,
+        413,
+        "1"
+      ]
+    ]
+  }
+}

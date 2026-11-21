@@ -1,5 +1,13 @@
 # Running computations: daily status
 
+## Four inherited $SU(3)$ classes at level 36, November 21, 2026
+
+At BMN weight $(8,5,5)$ the ten-letter rational dimensions at even and odd charge conjugation are $4287-704-3582=1$ and $4537-849-3687=1$. The odd class is the triply raised level-30 core. Its product with the scalar–fermion bilinear supplies an odd twelve-letter class. At eleven letters two independent even classes descend from the level-32 and level-34 operators. On the published quartic-scalar restriction the two-functionals determinant is $-65{,}478{,}821{,}990{,}400{,}000$. These four inherited classes realize the entire parity-index lower bound at this weight. [Trace words, calculations and A8 receipts](algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/README.md)
+
+For the $SO(8)$ level-24 triality doublet, the five rational upper bounds on the incoming Ward kernel vanish. Both instanton directions are now excluded under filtered Ward equivariance. For $USp(4)$ at levels 40 and 42, the longest third-order Taylor targets have dimensions $43-43=0$ and $124-124=0$. [Orthogonal Ward calculation](algorithms/dual_singlets_20261118/so8_level24/README.md#incoming-instanton-test) · [Symplectic ranks](algorithms/dual_singlets_20261118/taylor_hooks/README.md)
+
+New $d_1$ pairings **0**, cumulative **15**. New fortuitous generators **0**, cumulative **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_su3_sources.json)
+
 ## Two independent level-36 BMN generators in $USp(4)$, November 21, 2026
 
 The last two level-34 parents have rational dimensions $25513-13207-12306=0$ and $19757-9025-10732=0$. All seven lower products vanish at thirteen letters. At least two independent generators occur at charges $(2J;q_1,q_2,q_3)=(5;10,4,4)$. The campaign generator lower bound rises from six to seven. [Proof and A8 rank records](algorithms/dual_singlets_20261118/b2_level36/README.md#two-independent-generators-at-level-36)

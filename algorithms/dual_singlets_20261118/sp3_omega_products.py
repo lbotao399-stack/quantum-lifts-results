@@ -38,9 +38,9 @@ def canonical(seq, odd):
     return (-1)**sum(x>y for i,x in enumerate(odd_items) for y in odd_items[i+1:]),tuple(sorted(seq))
 
 
-def all_products(max_power, target_weight=WEIGHT, length=LENGTH):
+def all_products(max_power, target_weight=WEIGHT, length=LENGTH, *, include_odd_powers=False):
     by_key=defaultdict(list)
-    for k in range(2,max_power+1,2):
+    for k in range(2,max_power+1,1 if include_odd_powers else 2):
         for hp,hm,sp,sm,mask in product(range(2),range(2),range(target_weight[0]+1),
                                         range(target_weight[1]+1),range(8)):
             for a in range(k-hp-hm+1):

@@ -1,0 +1,23 @@
+{
+  "group": "Sp2",
+  "partition": [
+    6,
+    6,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "prime": 2147483647,
+  "upper_flavour": true,
+  "blocks": [
+    {
+      "Y": 17,
+      "dim": 43,
+      "rank_in": 43,
+      "rank_out": 0,
+      "h": 0
+    }
+  ]
+}
