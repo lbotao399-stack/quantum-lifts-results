@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## An odd generator in $G_2$, November 21, 2026
+
+The primary index of the level-36 singlet is $1-3+7-11+11-9+3=-1$. All 293 odd-length blocks through level 28 have zero rational classical cohomology. Flavour multiplication confines an odd generator responsible for the signal to $(6,5,4)$ at level 30, $(6,6,4)$ at level 32 or $(6,6,6)$ at level 36. A8 jobs 5690901 and 5691072 give the primary index and Taylor target cochains. [Derivation and replay](algorithms/dual_singlets_20261118/bmn_primary/README.md)
+
+New $d_1$ lifts **0** (15 total). New fortuitous BMN generators **1 index-forced**, **0 with a new explicit representative** (at least 8 total, 5 explicit). Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_g2_primary.json)
+
 ## Exceptional sources at every fixed scalar, November 21, 2026
 
 At $F_4$ levels 24 and 30, every closed candidate source becomes a classical boundary after fixing any one scalar to any complex value. Of the 15 nonzero nilpotent orbits, 13 have no invariant coefficient at either level. On the two dimension-42 orbits the scalar commutator eliminates the remaining $1+2$ and $1+1$ coefficients. The unrestricted polynomial cohomology remains open. [Proof, exact characters and replay](algorithms/dual_singlets_20261118/f4/levi/fixed_scalar.md)

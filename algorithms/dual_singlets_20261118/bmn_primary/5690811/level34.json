@@ -1,0 +1,16 @@
+{
+  "parent_level": 34,
+  "checked_letter_brackets": 21,
+  "raising_axis": 3,
+  "original_terms": 48451,
+  "lowered_terms": 85930,
+  "returned_terms": 226128,
+  "original_pairings": [
+    "0",
+    "400982400"
+  ],
+  "returned_pairings": [
+    "-334152000",
+    "4176900000"
+  ]
+}

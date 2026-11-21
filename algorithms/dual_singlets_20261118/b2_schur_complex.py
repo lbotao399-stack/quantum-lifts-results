@@ -99,13 +99,13 @@ def jet_character(cycles, excess):
 
 
 @lru_cache(None)
-def multiplicity(shape, length):
+def multiplicity(shape, length, trace=colour_trace):
     excess = sum(shape)-length
     if excess < 0:
         return 0
     ans = Fraction(0)
     for cycles in partitions(length):
-        colour = colour_trace(cycles)
+        colour = trace(cycles)
         if not colour:
             continue
         pairing = sum(c*character(shape,jet_cycles)

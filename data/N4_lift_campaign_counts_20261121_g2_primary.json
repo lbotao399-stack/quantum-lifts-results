@@ -1,0 +1,71 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0,
+    "index_forced_BMN_generators": 1
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 8,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2,
+    "additional_G2_odd_BMN_generators": 1,
+    "candidate_G2_generators_for_level_36_singlet": [
+      {
+        "level": 30,
+        "weight": [
+          6,
+          5,
+          4
+        ]
+      },
+      {
+        "level": 32,
+        "weight": [
+          6,
+          6,
+          4
+        ]
+      },
+      {
+        "level": 36,
+        "weight": [
+          6,
+          6,
+          6
+        ]
+      }
+    ]
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_fixed_f4_scalars.json",
+  "phase": "G2 odd BMN primary and three possible generator weights",
+  "evidence": [
+    "algorithms/dual_singlets_20261118/bmn_primary/README.md",
+    "algorithms/dual_singlets_20261118/bmn_primary/5690901/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/5691072/receipt.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/odd_through_28.json"
+  ],
+  "literature_overlap": {
+    "SO8_level18_triality_multiplet": "Miao and Tang, arXiv:2611.23173v1, submitted November 17, 2026. Included in the campaign audit count. Public overlap for the classical pair and its perturbative protection."
+  }
+}
