@@ -45,6 +45,15 @@ def calculate(folder):
         lower[y][1] += 1
     assert even_descendant["rational_class_nonzero"] and int(even_descendant["pairing"])
     lower[11][0] = 1
+    if "image_11" in jobs:
+        descendants32 = read(folder.parent/"su3_level32/descendant.json")
+        assert descendants32["descendant_weight"] == list(weight) and descendants32["descendant_length"] == 11
+        (a,b),(c,d) = [[int(value) for value in row] for row in descendants32["pairings"]]
+        determinant = a*d-b*c
+        assert b == 0 and d == int(even_descendant["pairing"])
+        assert determinant == int(descendants32["determinant"]) == int(read(folder/"quartic.json")["determinant"])
+        assert determinant
+        lower[11][0] = 2
     image = {min(cochains)-1: [0, 0], max(cochains): [0, 0]}
     sources = [("classical_images", "image")]
     if "image_11" in jobs:

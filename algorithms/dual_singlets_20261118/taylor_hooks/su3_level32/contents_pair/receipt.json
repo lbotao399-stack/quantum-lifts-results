@@ -1,0 +1,19 @@
+{
+  "job": "5684433",
+  "files": {
+    "content_certificate.json.gz": "57217f1de9769411443048b8fd441b58f7840ae1c914c43943c2d94323ebdd6f",
+    "frames.json.gz": "fd0b04df13e39f097810e4a6fae9b9f522271fe299087576f95ec6cfd16005bb"
+  },
+  "rank": {
+    "prime": 1000003,
+    "image_rank_mod_prime": 264,
+    "augmented_rank_mod_prime": 264,
+    "minor_determinant_mod_prime": 784135,
+    "kind": "exact_solution",
+    "digits": 16
+  },
+  "targets": [
+    "0000000000000505050710",
+    "000000000000050505080f"
+  ]
+}

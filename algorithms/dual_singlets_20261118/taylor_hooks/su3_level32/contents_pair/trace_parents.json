@@ -1,0 +1,377 @@
+{
+  "Q1_source": "-9676800000",
+  "input_content_words": 118,
+  "independently_evaluated_words": 46,
+  "parent_contents": [
+    [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        6,
+        25
+      ],
+      401
+    ],
+    [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        8,
+        23
+      ],
+      1269
+    ],
+    [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        14,
+        17
+      ],
+      1269
+    ],
+    [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        7,
+        6,
+        6,
+        8,
+        17
+      ],
+      6550
+    ],
+    [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        6,
+        9,
+        17
+      ],
+      2108
+    ]
+  ],
+  "parents_by_trace_lengths": [
+    {
+      "lengths": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "even_orbits": 16,
+      "nonzero": 0,
+      "example": null
+    },
+    {
+      "lengths": [
+        2,
+        2,
+        2,
+        4
+      ],
+      "even_orbits": 145,
+      "nonzero": 0,
+      "example": null
+    },
+    {
+      "lengths": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "even_orbits": 162,
+      "nonzero": 0,
+      "example": null
+    },
+    {
+      "lengths": [
+        2,
+        2,
+        6
+      ],
+      "even_orbits": 395,
+      "nonzero": 0,
+      "example": null
+    },
+    {
+      "lengths": [
+        2,
+        3,
+        5
+      ],
+      "even_orbits": 571,
+      "nonzero": 0,
+      "example": null
+    },
+    {
+      "lengths": [
+        2,
+        4,
+        4
+      ],
+      "even_orbits": 256,
+      "nonzero": 0,
+      "example": null
+    },
+    {
+      "lengths": [
+        2,
+        8
+      ],
+      "even_orbits": 954,
+      "nonzero": 0,
+      "example": null
+    },
+    {
+      "lengths": [
+        3,
+        3,
+        4
+      ],
+      "even_orbits": 235,
+      "nonzero": 72,
+      "example": {
+        "word": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            6
+          ],
+          [
+            1,
+            6,
+            6,
+            25
+          ]
+        ],
+        "conjugate_word": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            6
+          ],
+          [
+            1,
+            25,
+            6,
+            6
+          ]
+        ],
+        "conjugate_sign": -1,
+        "variation": 11520
+      }
+    },
+    {
+      "lengths": [
+        3,
+        7
+      ],
+      "even_orbits": 737,
+      "nonzero": 445,
+      "example": {
+        "word": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            6,
+            1,
+            6,
+            6,
+            25
+          ]
+        ],
+        "conjugate_word": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            25,
+            6,
+            6,
+            1,
+            6
+          ]
+        ],
+        "conjugate_sign": -1,
+        "variation": 11520
+      }
+    },
+    {
+      "lengths": [
+        4,
+        6
+      ],
+      "even_orbits": 550,
+      "nonzero": 121,
+      "example": {
+        "word": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            6
+          ],
+          [
+            1,
+            6,
+            6,
+            25
+          ]
+        ],
+        "conjugate_word": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            6
+          ],
+          [
+            1,
+            25,
+            6,
+            6
+          ]
+        ],
+        "conjugate_sign": -1,
+        "variation": 3840
+      }
+    },
+    {
+      "lengths": [
+        5,
+        5
+      ],
+      "even_orbits": 272,
+      "nonzero": 43,
+      "example": {
+        "word": [
+          [
+            1,
+            1,
+            6,
+            1,
+            6
+          ],
+          [
+            1,
+            1,
+            8,
+            1,
+            23
+          ]
+        ],
+        "conjugate_word": [
+          [
+            1,
+            1,
+            6,
+            1,
+            6
+          ],
+          [
+            1,
+            1,
+            23,
+            1,
+            8
+          ]
+        ],
+        "conjugate_sign": -1,
+        "variation": -12800
+      }
+    },
+    {
+      "lengths": [
+        10
+      ],
+      "even_orbits": 1296,
+      "nonzero": 1093,
+      "example": {
+        "word": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            6,
+            1,
+            6,
+            6,
+            25
+          ]
+        ],
+        "conjugate_word": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            25,
+            6,
+            6,
+            1,
+            6
+          ]
+        ],
+        "conjugate_sign": -1,
+        "variation": 3840
+      }
+    }
+  ]
+}

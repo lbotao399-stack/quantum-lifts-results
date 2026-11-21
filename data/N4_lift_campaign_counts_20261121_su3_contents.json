@@ -1,0 +1,67 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 15,
+    "fortuitous_generator_families": 5,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 7,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 2
+  },
+  "phase": "SU(3) first correction in two complete colour contents and level-36 length-eleven classical dimensions",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_su3_level32.json",
+  "checks": {
+    "level32_full_first_correction": "open",
+    "allowed_target_contents": 293,
+    "simultaneously_solved_contents": 2,
+    "trace_terms": 493,
+    "nonzero_residuals": [
+      0,
+      0
+    ],
+    "monomials": [
+      2030,
+      2030
+    ],
+    "trace_functional_Q1": -9676800000,
+    "even_trace_orbits": 5589,
+    "orbits_with_quadratic_trace": 2499,
+    "level36_weight": [
+      8,
+      5,
+      5
+    ],
+    "length_eleven_rational_cohomology_even_odd": [
+      2,
+      4
+    ]
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/contents_pair/receipt.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/contents_pair/content_certificate.json.gz",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/contents_pair/trace_parents.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/length11_image/receipt.json",
+    "algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/source_lengths.json"
+  ]
+}

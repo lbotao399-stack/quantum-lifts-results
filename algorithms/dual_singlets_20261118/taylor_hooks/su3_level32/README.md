@@ -54,6 +54,12 @@ $$
 
 The bare $Q_2\mathcal O_0$ fails classical closure. The last entry is zero also by letter content. Three output letters in this evaluation carry derivatives, while $Q_2$ on underived inputs can place derivatives on only two output letters. [Integer evaluations and matrices](second_consistency.json)
 
+## A three-colour functional and a simultaneous correction
+
+Choose the three traceless colour matrices in the saved functional. The trace of every pair and all 27 traces of a commutator times a third matrix vanish. On the selected four-fermion coefficient the 46 surviving trace words in $Q_1\mathcal O_0$ give $-9676800000$. Direct evaluation of all 5,589 incident charge-conjugation-even parent trace orbits gives zero on the 2,499 orbits containing a quadratic trace. The 1,774 nonzero variations have trace lengths $(3,3,4),(3,7),(4,6),(5,5)$ or $(10)$. Thus a correction written as a sum of trace products requires at least one summand without any quadratic trace factor. [Matrices and exterior coefficient](contents_pair/trace_functional.json) · [Parent variations and examples](contents_pair/trace_parents.json) · [Complete enumeration](../../su3_level32_trace_parents.py)
+
+For this letter content and its derivative-exchanged partner, eight parent contents give 1,011 even finite-colour coordinates against 266 target coordinates. The classical image and the augmented matrix both have rank 264 modulo 1,000,003. A8 job 5684433 reconstructed a shared 493-term rational correction. Expanding its classical variation on arbitrary traceless three-colour matrices cancels $Q_1\mathcal O_0$ in all 2,030 monomials in each content. There are 293 allowed target contents in the full first equation. [Correction and exact polynomial checks](contents_pair/content_certificate.json.gz) · [Frame and receipt](contents_pair/receipt.json) · [Letter contents and incidence](contents_pair/graph.json)
+
 ## Replay
 
 Run from the repository root with the dependencies of the archived SU(3) runtime. The two JSONL digests in the records refer to the uncompressed streams.
@@ -88,4 +94,15 @@ python3 "$d/su3_level32_residual.py" --certificate /tmp/su3-level32-correction.j
 python3 "$d/su3_level32_symmetry.py" --certificate /tmp/su3-level32-correction.json --out /tmp/su3-level32-projected.json
 r=algorithms/su3_independent_prime_20261118/runtime/work
 PYTHONPATH="$r/sp3-native.nosync:$r/cluster-next-v2.nosync/work/so8-bmn/vendor" python3 algorithms/su3_j34_20261118/second_consistency.py --level32 --out /tmp/su3-level32-nilpotency.json
+```
+
+The two-content calculation can be checked in a fresh directory. The first command regenerates the right-hand sides from the archived full first variation. The colour exporter uses generic traceless matrices and integer Grassmann coefficients.
+
+```sh
+c++ -O3 -std=c++17 algorithms/su3_j34_20261118/colour_columns.cpp -o /tmp/su3-colour-columns
+python3 "$d/su3_level32_trace_parents.py" --certificate "$p/contents_pair/trace_functional.json" --out /tmp/su3-trace-parents.json
+cmp /tmp/su3-trace-parents.json "$p/contents_pair/trace_parents.json"
+python3 "$d/su3_level32_content.py" prepare --work /tmp/su3-content-pair
+cp "$p/contents_pair/content_certificate.json.gz" /tmp/su3-content-pair/
+python3 "$d/su3_level32_content.py" verify --work /tmp/su3-content-pair --engine /tmp/su3-colour-columns
 ```

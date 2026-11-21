@@ -34,6 +34,14 @@ $$
 
 for the determinant. The different lengths separate the two odd classes. The two even and the two odd classes account for the *lower bound* of four at this weight. A further primitive or any higher obstruction requires a separate calculation. [Level-34 calculation](descendants/level34.json) · [Quartic scalar replay](../../su3_level36_scalar_channel.py) · [Level-30 and level-34 replay](../../su3_bmn_descendants.py)
 
+A8 job 5683898 gives outgoing eleven-letter image minors of orders 8,977 and 8,520 at prime 2,147,483,647. The two independent even descendants and the four independent odd Cartan products attain the rational upper bounds
+
+$$
+12561-3582-8977=2,\qquad 12211-3687-8520=4.
+$$
+
+These six classes exhaust the eleven-letter BMN cohomology of weight $(8,5,5)$. [Image minor coordinates](length11_image/image_11.json) · [A8 receipt](length11_image/receipt.json) · [Rational bounds by length](source_lengths.json)
+
 Under filtered superconformal equivariance the third-order Taylor diagrams have rows $(6,6,1^3)$, $(6,6,1^4)$ and $(6,6,1^5)$ in increasing order of level. Here $1^k$ means $k$ rows of one box. Determining a nonzero third obstruction still requires a representative surviving the two lower orders and a nonzero pairing after quotienting both lower correction freedoms.
 
 From the repository root, the calculation at level 36 can be replayed with

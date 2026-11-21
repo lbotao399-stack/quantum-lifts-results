@@ -82,6 +82,29 @@
       ]
     },
     {
+      "length": 11,
+      "cochains": [
+        12561,
+        12211
+      ],
+      "incoming_lower": [
+        3582,
+        3687
+      ],
+      "outgoing_lower": [
+        8977,
+        8520
+      ],
+      "rational_lower": [
+        2,
+        4
+      ],
+      "rational_upper": [
+        2,
+        4
+      ]
+    },
+    {
       "length": 17,
       "cochains": [
         657,

@@ -1,5 +1,12 @@
 # Running computations: daily status
 
+## Exact three-colour equations and the complete eleven-letter BMN space in SU(3), November 21, 2026
+
+A8 job 5684433 gives a rational first correction with 493 trace terms for two level-32 contents. All 4,060 residual coefficients vanish. A full three-colour functional also excludes every correction made entirely of products containing a quadratic trace. A8 job 5683898 fixes the rational eleven-letter dimensions at level 36 to two even and four odd for weight $(8,5,5)$. All six classes have known representatives. [First equation](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md#a-three-colour-functional-and-a-simultaneous-correction) · [Classical dimensions](algorithms/dual_singlets_20261118/taylor_hooks/su3_bmn_sources/source_lengths.json)
+
+New $d_1$ lifts **0**, total **15**. New fortuitous generators **0**, total **at least 7**, including **5** with standalone rational representatives. Certified $d_2$, $d_3$ and nonperturbative lifts **0, 0, 0**. [Ledger](data/N4_lift_campaign_counts_20261121_su3_contents.json)
+
+
 ## The level-32 SU(3) source and its two direct images, November 21, 2026
 
 For the published eleven-letter BMN source at $(8,4,4)$, all 761,859 classical matrix coefficients vanish at three colours. Its first and second direct supercharge images have 331,201 and 31,347 formal trace terms. The possible even ten-letter second-order target has classical multiplicity 28 modulo 2,147,483,647. The full first-correction equation remains open. [Source, images, ranks and replay](algorithms/dual_singlets_20261118/taylor_hooks/su3_level32/README.md)
