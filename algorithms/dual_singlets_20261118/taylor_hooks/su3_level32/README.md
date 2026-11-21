@@ -162,7 +162,7 @@ The unrestricted five-scalar calculation uses the same three-colour exporter. Fr
 d=algorithms/dual_singlets_20261118
 p="$d/taylor_hooks/su3_level32"
 r=algorithms/su3_independent_prime_20261118/runtime/work
-export PYTHONPATH="$d:algorithms/su3_j34_20261118:algorithms/so7_cartan_target_20261118/native:$r/sp3-native.nosync:$r/cluster-next-v2.nosync/work/so8-bmn/vendor${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONPATH="${d}:algorithms/su3_j34_20261118:algorithms/so7_cartan_target_20261118/native:$r/sp3-native.nosync:$r/cluster-next-v2.nosync/work/so8-bmn/vendor${PYTHONPATH:+:$PYTHONPATH}"
 c++ -O3 -std=c++17 algorithms/su3_j34_20261118/colour_columns.cpp -o /tmp/su3-colour-columns
 python3 "$d/su3_level32_scalar_descent.py" prepare --correction "$p/scalar_layers/levi_correction.json.gz" --folder /tmp/su3-five-families
 cmp /tmp/su3-five-families/groups.json "$p/scalar_layers/five_scalar_descent/groups.json"

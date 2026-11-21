@@ -39,7 +39,7 @@ def adjoint_traces(cycles, size):
 
 
 @lru_cache(None)
-def parity_parts(bosons, fermions, size):
+def parity_parts(bosons, fermions, size, with_identity=False):
     terms = {(): 1}
     denominator = 1
     for counts, odd in ((bosons, False), (fermions, True)):
@@ -53,7 +53,11 @@ def parity_parts(bosons, fermions, size):
             terms = {cycle: weight for cycle,weight in following.items() if weight}
     ordinary = conjugated = 0
     for cycle, coefficient in terms.items():
-        full, twisted = adjoint_traces(cycle, size)
+        if with_identity:
+            full, transposed = endomorphism_traces(cycle, size)
+            twisted = (-1)**sum(cycle) * transposed
+        else:
+            full, twisted = adjoint_traces(cycle, size)
         ordinary += coefficient*full
         conjugated += coefficient*twisted
     both = (ordinary+conjugated, ordinary-conjugated)

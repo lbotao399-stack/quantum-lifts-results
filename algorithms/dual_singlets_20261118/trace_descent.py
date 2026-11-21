@@ -20,9 +20,9 @@ from terminal_interval_ranks import sample
 
 
 def dimensions(weight, length, size, group):
-    if group.startswith("SU"):
+    if group in ("SU+", "SU-", "U+", "U-"):
         from unitary_characters import parity_parts
-        assert size >= 2 and group in ("SU+","SU-")
+        assert size >= 2
     result = Counter()
     for ds, spin_sign in ((0, 1), (1, -1)):
         for perm in permutations(range(3)):
@@ -30,8 +30,8 @@ def dimensions(weight, length, size, group):
                 weight[2+j]+perm[j]-j for j in range(3))
             sign = spin_sign * (-1)**sum(i>j for k,i in enumerate(perm) for j in perm[k+1:])
             for bosons, fermions, count in content_patterns(shifted, length):
-                if group.startswith("SU"):
-                    multiplicity = parity_parts(bosons, fermions, size)[group=="SU-"]
+                if group in ("SU+", "SU-", "U+", "U-"):
+                    multiplicity = parity_parts(bosons, fermions, size, group.startswith("U"))[group.endswith("-")]
                 elif group=="SO":
                     multiplicity = _multiplicity(bosons, fermions, 0, size)
                 else:

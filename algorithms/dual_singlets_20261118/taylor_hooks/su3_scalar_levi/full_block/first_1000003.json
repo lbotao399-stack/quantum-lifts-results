@@ -1,0 +1,62 @@
+{
+  "prime": 1000003,
+  "sectors": {
+    "j32_first": {
+      "weight": [
+        7,
+        3,
+        3,
+        1,
+        1
+      ],
+      "length": 11,
+      "parity": 1,
+      "branches": 232,
+      "cochains": 10256,
+      "classical_dimension_upper": 0,
+      "cartan_kernel_upper": 0,
+      "remaining": []
+    },
+    "j34_first": {
+      "weight": [
+        7,
+        4,
+        3,
+        1,
+        1
+      ],
+      "length": 11,
+      "parity": 1,
+      "branches": 360,
+      "cochains": 35792,
+      "classical_dimension_upper": 2,
+      "cartan_kernel_upper": 2,
+      "remaining": [
+        {
+          "active_weight": [
+            4,
+            4,
+            2,
+            1,
+            1
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        },
+        {
+          "active_weight": [
+            4,
+            4,
+            3,
+            1,
+            0
+          ],
+          "active_length": 7,
+          "copies": 1,
+          "kernel_upper_per_copy": 1
+        }
+      ]
+    }
+  }
+}

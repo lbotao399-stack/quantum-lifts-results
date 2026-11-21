@@ -1,0 +1,34 @@
+{
+  "four_phi1": {
+    "input_terms": 0,
+    "input_monomials": 0,
+    "correction_terms": 0,
+    "nonzero_residual_monomials": 0
+  },
+  "three_phi1_phi2": {
+    "input_terms": 0,
+    "input_monomials": 0,
+    "correction_terms": 0,
+    "nonzero_residual_monomials": 0
+  },
+  "three_phi1_phi3": {
+    "input_terms": 0,
+    "input_monomials": 0,
+    "correction_terms": 0,
+    "nonzero_residual_monomials": 0,
+    "matching_previous_terms_after_reversal": 0
+  },
+  "three_phi1_minus": {
+    "input_terms": 36,
+    "input_monomials": 654,
+    "correction_terms": 16,
+    "nonzero_residual_monomials": 0,
+    "matching_previous_terms_after_reversal": 18
+  },
+  "three_phi1_plus": {
+    "input_terms": 36,
+    "input_monomials": 654,
+    "correction_terms": 16,
+    "nonzero_residual_monomials": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "job": "5685976",
+  "sectors": {
+    "j32_first": {
+      "records": 232,
+      "remote_bundle_sha256": "a299cc7acbf1d69656825e76e12f78b583a84fde3f876e34155295d4b36ddd17"
+    },
+    "j34_first": {
+      "records": 360,
+      "remote_bundle_sha256": "c4eb345358b85f653f7cfa9255053a4a329f66cc585d2cbdd03312fa4511bdb1"
+    },
+    "j34_second": {
+      "records": 469,
+      "remote_bundle_sha256": "1358e40fd8b85d4dc35a4e34db4ad3b4e4c3a82b0765c20cda73e0faed7f280e"
+    },
+    "j36_third_from12": {
+      "records": 442,
+      "remote_bundle_sha256": "afb53f460d6896b783a28251837bc92023660ab108bfdafe6b2037feb2258005"
+    }
+  },
+  "unique_records": 1162,
+  "merged_sha256": "cf295d0d850448d681237769bae4ae5837da1cbd90c0d624cdf819facb52b5c8"
+}

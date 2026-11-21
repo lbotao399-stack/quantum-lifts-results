@@ -87,3 +87,46 @@ done
 ```
 
 To reconstruct the coordinate solves, run `su3_levi_equation.py --level J --scalar-degree M --out FILE` for each scalar power in the table, then pass those files to `su3_levi_extension.py --blocks`. For the pure two-colour images, export each level with `su2_levi_images.py --level J --out INPUT` and compile `su2_levi_image.cpp` with the C++17 headers in `taylor_hooks/native`. Run the executable with `INPUT 7 3 3 1 1 11 PRIME SEED` for level 32 and `INPUT 7 4 3 1 1 11 PRIME SEED` for level 34. Each saved rank record gives its prime and seed.
+
+## The full two-colour block and the nilpotent scalar locus
+
+Allow every letter, including the first scalar, to vary freely in the complexified Lie algebra of $S(U(2)\times U(1))$. Write it as $\operatorname{diag}(B+a\mathbf1_2,-2a)$ with $\operatorname{tr}_2B=0$. The classical variation acts on $B$ by the two-colour commutators and kills each spectator $a$. Hence the classical complex is the tensor product of the two-colour complex and the free supercommutative algebra of spectator jets. Negative transposition is inner on the traceless two-colour matrices and sends every spectator to its negative. A coefficient of spectator length $n$ has colour parity $(-1)^n$.
+
+For each active flavour and dotted-spin highest weight, multiply its Weyl numerator by the spectator character and extract the coefficient at the shifted total highest weight. This gives the number of copies at each active length. A separate calculation with the full two-colour endomorphism representation, including the identity matrix, gives the same total cochain dimensions. On every active factor compute the incoming classical rank and the rank formed by stacking the outgoing differential and Cartan evaluation. Subtracting both ranks from its cochain dimension bounds the dimension of the rational cohomology kernel of Cartan restriction. Every nonzero minor modulo the indicated prime supplies a rational lower rank bound. [Branching](../../su3_levi_branching.py) · [Finite-colour character](../../unitary_characters.py) · [Rank replay](../../su3_levi_kernel.py)
+
+| $SU(3)$ source and order | Target length | Colour parity | Levi cochains | Classical dimension, upper bound | Cartan kernel, upper bound |
+|---|---:|:---:|---:|---:|---:|
+| $j=32$, first | 11 | even | 10256 | 0 | 0 |
+| $j=34$, first | 11 | even | 35792 | 2 | 2 |
+| $j=34$, second | 10 | even | 139139 | 11581 | 0 |
+| $j=36$, third, twelve-letter source of weight $(8,5,5)$ | 10 | odd | 219752 | 3 | 3 |
+
+A8 used prime $2147483647$. A second computation at $1000003$ gives the same bounds in both first targets. The level-32 first image is a boundary on the full Levi. At level 34 any closed second residual from a global first correction has zero Cartan class by the perturbative restriction theorem. The zero kernel in the table makes its restriction a classical boundary on the full Levi. Existence of that global first correction remains open. [A8 minors](full_block/minors_2147483647.json.gz) · [A8 bounds and remaining weights](full_block/bounds_2147483647.json) · [Independent first-target minors](full_block/minors_1000003.json.gz) · [Cartan restriction theorem](../../../perturbative_cartan_targets.md)
+
+### The level-34 first image
+
+The two possible first-target directions both have seven active letters. In flavour and dotted-spin degree order their highest weights are $(4,4,2;1,1)$ and $(4,4,3;1,0)$. The corresponding rational upper bounds per copy are $346-149-196=1$ and $126-62-63=1$. Each occurs once.
+
+The first flavour representation is the fourth determinant power times the dual of the symmetric square of the fundamental. Its weights subtract two units from $(4,4,4)$. At total flavour weight $(7,4,3)$ the four spectator scalars can therefore have multiplicities only $(4,0,0)$, $(3,1,0)$ or $(3,0,1)$. The second flavour representation is the fourth determinant power times the dual fundamental. Its four spectators comprise three first-flavour scalars and either component of the first gauge ghost derivative. These five coefficients exhaust the two possible representations at the total highest weight.
+
+Expand all 517468 terms of the archived first image, with the odd spectator on the left. The three purely scalar coefficients vanish as trace polynomials. The other two each contain 36 cyclic trace terms and 654 nonzero two-colour matrix monomials. Every classical parent is spanned by products of three pair traces: a pair of three-colour-slot alternating tensors reduces to a determinant of pairings in the three-dimensional adjoint of $SU(2)$. At each spin component the ranks of the 487 parents and of the augmented matrix on 1001 independent cochain coordinates are both 334 modulo $1000003$. Each rational correction has 16 terms. Multiplying each by the classical differential cancels all 654 monomials exactly. Thus the level-34 first image also vanishes in cohomology on the full Levi. The earlier negative-image calculation reproduced 18 terms after imposing the two-colour trace reversal on the minus component. [Five coefficients](full_block/coefficients.json.gz) · [Exact residuals and independent comparison](full_block/coefficient_replay.json) · [Earlier two-channel calculation](../../../su3_j34_20261118/block_first/reduction.json)
+
+### Arbitrary matrices above a scalar with a simple eigenvalue
+
+Let $S$ be a traceless three-colour scalar with a simple eigenvalue $s$. In its invariant splitting write $S=\operatorname{diag}(B,s)$, where $B-s\mathbf1_2$ is invertible. This includes a size-two Jordan block. Extend a polynomial Levi primitive to the other letters by applying the block-diagonal projection to each letter. The remaining closed residual vanishes when the off-block entries are set to zero.
+
+In the part $\delta$ of $Q_0$ that splits off one $S$, the off-block maps are left multiplication by $B-s\mathbf1_2$ and right multiplication by $s\mathbf1_2-B$, with the signs of the 15 classical pairs above. Their inverses define the contracting derivation. Its anticommutator with the on-block part of $\delta$ vanishes, and its anticommutator with the off-block part counts off-block entries. Division by that positive integer contracts the ideal. The rest of $Q_0$ preserves the ideal and raises the number of non-$S$ letters. Subtraction in successive degrees terminates at fixed Taylor weight. The inverse matrices and the two spectral projectors are regular on the chart with this simple eigenvalue, so the constructed primitive transforms by conjugation on that chart.
+
+A traceless $3\times3$ matrix with no simple eigenvalue is nilpotent. Flavour changes commute with the colour restriction, and the vanishing on the full Levi extends to each flavour multiplet of the specified images. Consequently a remaining global first obstruction at either level can have support only where every linear combination of the three scalars is nilpotent. The same support bound holds for the level-34 second residual if its global first equation is soluble. A global polynomial primitive or a nonzero global obstruction still requires the calculation on this locus.
+
+From the repository root, set the Python paths in the [level-32 replay](../su3_level32/README.md#replay). The following verifies the two first targets and the five explicit cancellations.
+
+```sh
+d=algorithms/dual_singlets_20261118
+p="$d/taylor_hooks/su3_scalar_levi/full_block"
+python3 "$d/su3_levi_kernel.py" --case j32_first --case j34_first --prime 1000003 --records "$p/minors_1000003.json.gz" --resolve /tmp/su3-levi-first.json
+cmp /tmp/su3-levi-first.json "$p/first_1000003.json"
+python3 "$d/su3_levi_four_spectators.py" --out /tmp/su3-levi-coefficients.json.gz
+python3 "$d/su3_levi_coefficient_replay.py" --folder "$p" --out /tmp/su3-levi-coefficient-replay.json
+cmp /tmp/su3-levi-coefficient-replay.json "$p/coefficient_replay.json"
+```
