@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "f7_y8_sector0.json": "1ec8d97f54473f94dbf39a8f31219c4c1ec2665daee83eea800a1dff5a7b6330",
+    "f7_y8_sector1.json": "729ee243aa42653d82a74221adbe27338184b8150d68dad58de85ca1a06ae052",
+    "f7_y8_sector2.json": "621f04f458aa90caf20cc21bd3ee77720f90414c704fea51bbcf67ef563f4629",
+    "f7_y8_sector3.json": "c1f1251b70d315e523f18834d470bf8d84593c8c93b377045cadfc0dd1201939",
+    "f7_y8_sector4.json": "a552998f309518f081ac60f758bb1d29afd66f196523552c675f6c37028e5696"
+  },
+  "accounting": "7659195|TIMEOUT|64|3555"
+}

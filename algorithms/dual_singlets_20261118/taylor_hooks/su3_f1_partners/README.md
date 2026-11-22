@@ -27,7 +27,11 @@ $$
 
 Every classical boundary evaluates to zero on these Cartan letters. The two lower bounds equal the classical upper bounds, so these are rational product spans. The earlier outgoing product calculations give 18 and 28. [A8 job 5692604](5692604/receipt.json) · [Outgoing ranks and projection proof](../cartan_products/README.md) · [Resolved ranks](resolved.json)
 
-If the graviton components and their cohomological primary products have exact closed completions, every incoming class at grades zero and two is represented by a closed product. Under the filtered Ward selection an incoming leading instanton source must then have a grade-one component outside the protected span. Its selected cochain dimensions are 5365 and 10783 at levels 30 and 32. The outgoing grade-one dimensions are 11043 and 18911. The grade-one cohomologies and the instanton matrix elements remain open. Closure of the outgoing product representatives alone allows a possible incoming differential into their span. [Exact currents and primary product](https://arxiv.org/html/2509.16737#S4.SS3.SSS1)
+If the graviton components and their cohomological primary products have exact closed completions, every selected incoming class at grades zero and two is represented by a closed product. The level-30 grade-one incoming cohomology now vanishes already in the containing odd colour-parity block at flavour $(6,3,3)$, dotted degrees $(1,1)$ and length eight. Its exact dimension bound is $12931-2855-10076=0$. The colour character gives the cochain dimension. Both modular ranks bound the rational ranks from below, and their sum saturates the dimension. The four auxiliary sectors also vanish. A6 job 7659195 wrote all five level-30 incoming records before its time limit. The verifier checks their digests and recomputes the colour dimensions. [Five rank records](7659195/receipt.json) · [Verification](grade_one.py)
+
+Under the stated filtered Ward selection for the instanton and exact completion of the products, this excludes an incoming leading instanton differential **into** the level-30 seed. Its outgoing matrix element, including the eight previously reported opposite-statistics lowest weights, remains open. The level-32 grade-one partner remains open in both directions. [Eight candidate partners](https://github.com/davidsd/fortuity-ai/blob/4256f207986029540060fb44dd494746828f65ce/summary/fortuity-summary.tex#L469-L477) · [Exact currents and primary product](https://arxiv.org/html/2509.16737#S4.SS3.SSS1)
+
+Two auxiliary sectors were also regenerated locally with fresh seeds at prime 1000003. Their odd cohomology bounds are $448-62-386=0$ and $644-148-496=0$. All eight incoming and outgoing ranks in the two colour parities match the A6 calculation. The central sector uses the recorded A6 prime 2147483647. [Independent-prime ranks](grade-one-second-prime.json)
 
 From the repository root, using NumPy, SciPy and python-flint, replay the ranks and determinants with
 
@@ -45,3 +49,16 @@ c++ -O3 -std=c++17 -pthread -I"$d/taylor_hooks/native" "$d/taylor_hooks/unitary_
 python3 "$d/su3_f1_incoming_ranks.py" /tmp/su3-parity /tmp/su3-f1-incoming --threads 8 --job 7658864
 diff -r "$p/7658864" /tmp/su3-f1-incoming
 ```
+
+For A6 job 7659195, the first command checks the five recorded rank pairs against their file hashes and independently computed colour dimensions. The second recomputes exactly those five matrices at the archived evaluation seeds.
+
+~~~sh
+python3 "$p/grade_one.py"
+python3 "$d/su3_f1_grade_one_ranks.py" /tmp/su3-parity /tmp/su3-grade-one --threads 8 --job 7659195 --level30-incoming-only
+for file in "$p"/7659195/f7_y8_sector*.json
+do
+  cmp "$file" "/tmp/su3-grade-one/$(basename "$file")"
+done
+PAR_THREADS=2 /tmp/su3-parity SU3 7 4 3 0 0 8 7310221 1000003
+PAR_THREADS=2 /tmp/su3-parity SU3 6 4 4 0 0 8 7310222 1000003
+~~~

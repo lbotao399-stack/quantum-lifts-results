@@ -1,0 +1,52 @@
+[
+  {
+    "mode": "charge_conjugation",
+    "gauge": "SU3",
+    "sector": [
+      7,
+      4,
+      3,
+      0,
+      0
+    ],
+    "flavour": [
+      3,
+      1
+    ],
+    "spin2": 0,
+    "j": 28,
+    "prime": 1000003,
+    "seed": 7310221,
+    "length": 8,
+    "cochains": 924,
+    "even_in": 49,
+    "odd_in": 62,
+    "even_out": 423,
+    "odd_out": 386
+  },
+  {
+    "mode": "charge_conjugation",
+    "gauge": "SU3",
+    "sector": [
+      6,
+      4,
+      4,
+      0,
+      0
+    ],
+    "flavour": [
+      2,
+      0
+    ],
+    "spin2": 0,
+    "j": 28,
+    "prime": 1000003,
+    "seed": 7310222,
+    "length": 8,
+    "cochains": 1216,
+    "even_in": 101,
+    "odd_in": 148,
+    "even_out": 470,
+    "odd_out": 496
+  }
+]
