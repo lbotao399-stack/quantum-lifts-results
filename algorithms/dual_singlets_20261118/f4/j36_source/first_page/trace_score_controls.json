@@ -1,0 +1,65 @@
+[
+  {
+    "traces_removed": 2,
+    "source": 147,
+    "raw_colour_query": [
+      9,
+      11,
+      12,
+      18,
+      42,
+      19,
+      29,
+      45,
+      46,
+      47,
+      0,
+      4,
+      51
+    ],
+    "forward_coefficient": "-564",
+    "transposed_coefficient": "-564"
+  },
+  {
+    "traces_removed": 3,
+    "source": 31,
+    "raw_colour_query": [
+      9,
+      11,
+      12,
+      18,
+      42,
+      19,
+      29,
+      45,
+      46,
+      47,
+      0,
+      4,
+      51
+    ],
+    "forward_coefficient": "-13608",
+    "transposed_coefficient": "-13608"
+  },
+  {
+    "traces_removed": 4,
+    "source": 0,
+    "raw_colour_query": [
+      9,
+      11,
+      12,
+      18,
+      42,
+      19,
+      29,
+      45,
+      46,
+      47,
+      0,
+      4,
+      51
+    ],
+    "forward_coefficient": "-1119744",
+    "transposed_coefficient": "-1119744"
+  }
+]

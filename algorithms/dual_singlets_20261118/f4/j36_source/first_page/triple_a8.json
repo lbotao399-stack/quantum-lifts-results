@@ -1,0 +1,20 @@
+{
+  "job": "5703854",
+  "archive_sha256": "4c72aedd6bfc6484dfb88fdc8761b09e9e02d0fe4adbccdabca70ba488376f46",
+  "script_sha256": "ebfe43d5d772f2350697714320ece252ba41be9b9286df49c7275bb5162fbc96",
+  "accounting": "5703854|COMPLETED|2026-11-23T06:49:37|2026-11-23T06:56:34|417|12|0:0",
+  "primes": [
+    {
+      "prime": 1009,
+      "rank": 542,
+      "determinant": 373,
+      "output_sha256": "786adafd8a193b8abebff1e61f18344a8d95f9e663ccfe7376cbf385842c5358"
+    },
+    {
+      "prime": 1013,
+      "rank": 542,
+      "determinant": 809,
+      "output_sha256": "55aaa05cfe7d7cc458554c9c9f2f346cdfe54ce1e8fd87724bad1d323fece304"
+    }
+  ]
+}

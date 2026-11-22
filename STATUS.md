@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## The corrected second row on exceptional trace sources
+
+At $F_4$ level 36, 19 trace singlets give a classical rank of five after quartic reduction. The corrected row vanishes on all 14 constructed classical cycles and has eight nonzero individual singlet scores. In the five terminal coordinates, $\eta Q_1$ has primitive row $(0,16,36,0,3)$. Additional finite-colour relations and colour networks remain to be tested. Three A8 runs give a classical rational rank bound of 542 in the complete selected diagram. At level 30 the separated one-instanton Ward integral with linear radial target vanishes for minimum-degree source and current profiles. New $d_1$ multiplets **0** (85 cumulative). New fortuitous generator families **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative lifts **0, 1, 0**. [Trace calculation](algorithms/dual_singlets_20261118/f4/j36_source/first_page/trace_obstruction.md) · [Instanton selection](algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md#exact-mode-selection-for-the-fifth-glueball) · [Ledger](data/N4_lift_campaign_counts_20261122_trace_ideal.json)
+
 ## The fifteen-letter $G_2$ branch has zero second target
 
 The last colour line gives an exact classical cross-bracket pairing $-405141750$. Its rational covector vanishes on all 230 possible high-pair predecessors. Thus $d_2$ vanishes on the fifteen-letter level-36 singlet under filtered Taylor equivariance. The index still allows lengths 11 and 13. New $d_1$ multiplets **0** (85 cumulative). New explicit fortuitous generators **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative counts **0, 1, 0**. [Calculation](algorithms/dual_singlets_20261118/bmn_primary/axis_blocks/determinant/cross_bracket.md) · [Counts](data/N4_lift_campaign_counts_20261122_cross_bracket.json)

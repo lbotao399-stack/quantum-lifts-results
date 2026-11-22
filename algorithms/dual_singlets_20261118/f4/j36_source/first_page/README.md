@@ -266,3 +266,26 @@ python3 intermediate_rank.py | diff -u intermediate_rank.json -
 python3 fifth_berezin.py | diff -u fifth_berezin.json -
 OPENBLAS_NUM_THREADS=1 python3 flag_boundaries.py --replay flag_135.json --check --out /tmp/f4-flag-replay.json
 ~~~
+
+## The corrected second row on trace sources
+
+At level 36 the 19 reduced trace singlets have a classical matrix of rank five after the polarized quartic identity. The corrected quantum row vanishes on its 14-dimensional kernel. Eight of the 19 individual scores are nonzero. A8 gives a rational lower bound of 542 for the classical rank in the full selected diagram. The remaining finite-colour test in the trace presentation has primitive row $(0,16,36,0,3)$. [Derivation, explicit cycles and replay](trace_obstruction.md)
+
+## Exact-mode selection for the fifth glueball
+
+Take the separated one-instanton Ward correlator with the radial conjugate of $S^5$, in the orientation where its ten gauginos have linear zero modes. The R-charges of the incoming source, supercurrent, and radial target are respectively $(9/2,9/2,9/2)$, $(1/2,1/2,1/2)$, and $(-5,-5,-5)$. Each of the first three zero-mode flavours has charge $(1/2,1/2,1/2)-e_I$ for its corresponding matter label $I$. Flavour four has charge $(-1/2,-1/2,-1/2)$. The minimum occupation vectors in this order are
+
+$$
+(9,9,9,0),\qquad(1,1,1,0),\qquad(0,0,0,10).
+$$
+
+Every higher occupation at the same charge adds a common nonnegative integer to all four entries. The source has $E=29/2$ and $J_L=1/2$. It contains exactly one chiral matter fermion or one covariant derivative. The charge dictionary gives fifteen flavour assignments in the former case and five in the latter. Each has the displayed source minimum from its constituent fields. [Charge dictionary](../../../../../supplement/supplement.tex) · [All 20 assignments and the complete occupation test](fifth_exact_selection.json)
+
+The one-instanton measure requires four exact and fourteen lifted coordinates per flavour. The four-fermion action uses one lifted coordinate of each flavour and carries zero exact modes. At a fixed insertion the linear radial term supplies two exact fourth-flavour modes or zero. The source and current must therefore supply at least two or four additional fourth-flavour modes, respectively. If their total common shift is $k$, the required number of quartic vertices is $18-10-k=8-k$. The two radial terms permit at most six or four vertices, respectively. At $k=0$ the fourth-flavour Berezin integral vanishes in both terms. This argument covers the linear radial field with separated classical profiles at zero scalar vev. Higher profiles, fluctuation contractions and current contact terms enter the physical Ward matrix element. [Exact-mode combinations, Eq. (2.5)](https://arxiv.org/abs/1605.06346) · [Four-fermion action, Eq. (19)](https://arxiv.org/pdf/hep-th/0009150#page=4) · [Selection verifier](fifth_exact_selection.py)
+
+The fourteen lifted colours form the primitive three-form representation of $Sp(3)$. Its symmetric fourth power contains one singlet. The quartic obtained by polarizing the native nested bracket restricts to $6x^2y^2$ on the embedded $SU(3)$ doublets. All 64 brackets and all 64 metric entries of that embedding agree with the three-dimensional defining matrices. For a test insertion consisting of the fifth power of the native doublet two-form in **each** flavour, the four-vertex exterior integral over all 56 lifted modes is $8135671362984345600000$. Wick contraction and direct exterior multiplication give the same integer. The physical normalization and the projected source–current insertion remain open. [Native tensor, Wick contractions and embedded group](fifth_quartic.py) · [Independent exterior implementation](fifth_quartic_direct.cpp) · [All coefficients](fifth_quartic.json)
+
+~~~sh
+python3 fifth_exact_selection.py | diff -u fifth_exact_selection.json -
+python3 fifth_quartic.py --direct | diff -u fifth_quartic.json -
+~~~

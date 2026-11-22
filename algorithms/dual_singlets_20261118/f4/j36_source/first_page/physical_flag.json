@@ -1,0 +1,45 @@
+{
+  "column_heights": [
+    4,
+    4,
+    3,
+    3
+  ],
+  "scalar_highest": [
+    4,
+    4,
+    4,
+    2
+  ],
+  "native_dotted": [
+    4,
+    4
+  ],
+  "native_flavour": [
+    2,
+    2,
+    2
+  ],
+  "exterior_order": [
+    "four alpha",
+    "four beta",
+    "four plus colours",
+    "four minus colours"
+  ],
+  "scalar_diagonal": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      3,
+      5
+    ]
+  ],
+  "coefficients": [
+    50400,
+    45360000
+  ]
+}

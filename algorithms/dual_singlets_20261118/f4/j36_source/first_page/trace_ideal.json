@@ -1,0 +1,512 @@
+[
+  {
+    "representation": 26,
+    "trace_ratio": "1/12",
+    "weights": [
+      {
+        "weight": [
+          4,
+          4,
+          2,
+          2,
+          2
+        ],
+        "formal": 340,
+        "quartic_rank": 258,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          17,
+          26,
+          26,
+          26
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          2,
+          3,
+          1
+        ],
+        "formal": 236,
+        "quartic_rank": 181,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          8,
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          3,
+          1,
+          2
+        ],
+        "formal": 236,
+        "quartic_rank": 181,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          8,
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          3,
+          3,
+          0
+        ],
+        "formal": 110,
+        "quartic_rank": 83,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          3,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          4,
+          1,
+          1
+        ],
+        "formal": 144,
+        "quartic_rank": 109,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          4,
+          2,
+          0
+        ],
+        "formal": 97,
+        "quartic_rank": 72,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          2,
+          2,
+          2
+        ],
+        "formal": 97,
+        "quartic_rank": 79,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          2,
+          3,
+          1
+        ],
+        "formal": 76,
+        "quartic_rank": 61,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          3,
+          1,
+          2
+        ],
+        "formal": 76,
+        "quartic_rank": 61,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          3,
+          3,
+          0
+        ],
+        "formal": 31,
+        "quartic_rank": 25,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          4,
+          1,
+          1
+        ],
+        "formal": 47,
+        "quartic_rank": 37,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          4,
+          2,
+          0
+        ],
+        "formal": 22,
+        "quartic_rank": 18,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "singlet_images_up_to_each_trace_count": [
+      0,
+      0,
+      0,
+      4,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "representation": 52,
+    "trace_ratio": "5/108",
+    "weights": [
+      {
+        "weight": [
+          4,
+          4,
+          2,
+          2,
+          2
+        ],
+        "formal": 340,
+        "quartic_rank": 258,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          17,
+          26,
+          26,
+          26
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          2,
+          3,
+          1
+        ],
+        "formal": 236,
+        "quartic_rank": 181,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          8,
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          3,
+          1,
+          2
+        ],
+        "formal": 236,
+        "quartic_rank": 181,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          8,
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          3,
+          3,
+          0
+        ],
+        "formal": 110,
+        "quartic_rank": 83,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          3,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          4,
+          1,
+          1
+        ],
+        "formal": 144,
+        "quartic_rank": 109,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "weight": [
+          4,
+          4,
+          4,
+          2,
+          0
+        ],
+        "formal": 97,
+        "quartic_rank": 72,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          2,
+          2,
+          2
+        ],
+        "formal": 97,
+        "quartic_rank": 79,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          2,
+          3,
+          1
+        ],
+        "formal": 76,
+        "quartic_rank": 61,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          3,
+          1,
+          2
+        ],
+        "formal": 76,
+        "quartic_rank": 61,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          3,
+          3,
+          0
+        ],
+        "formal": 31,
+        "quartic_rank": 25,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          4,
+          1,
+          1
+        ],
+        "formal": 47,
+        "quartic_rank": 37,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "weight": [
+          5,
+          3,
+          4,
+          2,
+          0
+        ],
+        "formal": 22,
+        "quartic_rank": 18,
+        "scalar_commutator_images_up_to_each_trace_count": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "singlet_images_up_to_each_trace_count": [
+      0,
+      0,
+      0,
+      4,
+      5,
+      5,
+      5
+    ]
+  }
+]

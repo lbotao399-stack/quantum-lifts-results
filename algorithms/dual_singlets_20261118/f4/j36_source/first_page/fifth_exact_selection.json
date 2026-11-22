@@ -1,0 +1,261 @@
+{
+  "exact_per_flavour": 4,
+  "lifted_per_flavour": 14,
+  "orientation": "linear radial gauginos",
+  "twice_R": [
+    9,
+    1,
+    -10
+  ],
+  "minimum_occupations": {
+    "source": [
+      9,
+      9,
+      9,
+      0
+    ],
+    "current": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "radial": [
+      0,
+      0,
+      0,
+      10
+    ]
+  },
+  "source_letter_profiles": [
+    {
+      "gauginos": 0,
+      "covariant_derivatives": 0,
+      "matter_flavour": 1,
+      "scalars": [
+        5,
+        4,
+        4
+      ]
+    },
+    {
+      "gauginos": 0,
+      "covariant_derivatives": 0,
+      "matter_flavour": 2,
+      "scalars": [
+        4,
+        5,
+        4
+      ]
+    },
+    {
+      "gauginos": 0,
+      "covariant_derivatives": 0,
+      "matter_flavour": 3,
+      "scalars": [
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "gauginos": 1,
+      "covariant_derivatives": 1,
+      "matter_flavour": null,
+      "scalars": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "gauginos": 2,
+      "covariant_derivatives": 0,
+      "matter_flavour": 1,
+      "scalars": [
+        4,
+        3,
+        3
+      ]
+    },
+    {
+      "gauginos": 2,
+      "covariant_derivatives": 0,
+      "matter_flavour": 2,
+      "scalars": [
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "gauginos": 2,
+      "covariant_derivatives": 0,
+      "matter_flavour": 3,
+      "scalars": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "gauginos": 3,
+      "covariant_derivatives": 1,
+      "matter_flavour": null,
+      "scalars": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "gauginos": 4,
+      "covariant_derivatives": 0,
+      "matter_flavour": 1,
+      "scalars": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "gauginos": 4,
+      "covariant_derivatives": 0,
+      "matter_flavour": 2,
+      "scalars": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "gauginos": 4,
+      "covariant_derivatives": 0,
+      "matter_flavour": 3,
+      "scalars": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "gauginos": 5,
+      "covariant_derivatives": 1,
+      "matter_flavour": null,
+      "scalars": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "gauginos": 6,
+      "covariant_derivatives": 0,
+      "matter_flavour": 1,
+      "scalars": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "gauginos": 6,
+      "covariant_derivatives": 0,
+      "matter_flavour": 2,
+      "scalars": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "gauginos": 6,
+      "covariant_derivatives": 0,
+      "matter_flavour": 3,
+      "scalars": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "gauginos": 7,
+      "covariant_derivatives": 1,
+      "matter_flavour": null,
+      "scalars": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "gauginos": 8,
+      "covariant_derivatives": 0,
+      "matter_flavour": 1,
+      "scalars": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "gauginos": 8,
+      "covariant_derivatives": 0,
+      "matter_flavour": 2,
+      "scalars": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "gauginos": 8,
+      "covariant_derivatives": 0,
+      "matter_flavour": 3,
+      "scalars": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "gauginos": 9,
+      "covariant_derivatives": 1,
+      "matter_flavour": null,
+      "scalars": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "linear_radial_tests": [
+    {
+      "radial_fourth_flavour_exact": 0,
+      "radial_fourth_flavour_lifted": 10,
+      "minimum_source_plus_current_common_shifts": 4,
+      "fourth_flavour_allowed_action_powers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "radial_fourth_flavour_exact": 2,
+      "radial_fourth_flavour_lifted": 8,
+      "minimum_source_plus_current_common_shifts": 2,
+      "fourth_flavour_allowed_action_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "physical_nonperturbative_lift": "open"
+}

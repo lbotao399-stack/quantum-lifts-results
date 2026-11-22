@@ -1,0 +1,606 @@
+{
+  "symmetry": {
+    "exterior_degrees_1_to_7": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "symmetric_degrees_1_to_6": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ]
+  },
+  "tensor_convention": "polarization of B(f,(ad v)^4 f), B=Tr26/6",
+  "symmetric_coefficients_tested": 2380,
+  "nonzero_native_components": [
+    [
+      19,
+      19,
+      50,
+      50,
+      "1"
+    ],
+    [
+      19,
+      20,
+      49,
+      50,
+      "1/2"
+    ],
+    [
+      19,
+      22,
+      48,
+      50,
+      "-1"
+    ],
+    [
+      19,
+      25,
+      47,
+      50,
+      "1/2"
+    ],
+    [
+      19,
+      27,
+      46,
+      50,
+      "-1/2"
+    ],
+    [
+      19,
+      27,
+      47,
+      49,
+      "1"
+    ],
+    [
+      19,
+      27,
+      48,
+      48,
+      "2"
+    ],
+    [
+      19,
+      29,
+      40,
+      50,
+      "1"
+    ],
+    [
+      19,
+      31,
+      36,
+      50,
+      "-1"
+    ],
+    [
+      19,
+      36,
+      36,
+      49,
+      "2"
+    ],
+    [
+      19,
+      36,
+      40,
+      48,
+      "-2"
+    ],
+    [
+      19,
+      40,
+      40,
+      47,
+      "-2"
+    ],
+    [
+      20,
+      20,
+      49,
+      49,
+      "1"
+    ],
+    [
+      20,
+      22,
+      48,
+      49,
+      "-1"
+    ],
+    [
+      20,
+      25,
+      46,
+      50,
+      "1"
+    ],
+    [
+      20,
+      25,
+      47,
+      49,
+      "-1/2"
+    ],
+    [
+      20,
+      25,
+      48,
+      48,
+      "-2"
+    ],
+    [
+      20,
+      27,
+      46,
+      49,
+      "1/2"
+    ],
+    [
+      20,
+      29,
+      40,
+      49,
+      "1"
+    ],
+    [
+      20,
+      31,
+      31,
+      50,
+      "-2"
+    ],
+    [
+      20,
+      31,
+      36,
+      49,
+      "1"
+    ],
+    [
+      20,
+      31,
+      40,
+      48,
+      "-2"
+    ],
+    [
+      20,
+      40,
+      40,
+      46,
+      "-2"
+    ],
+    [
+      22,
+      22,
+      46,
+      50,
+      "2"
+    ],
+    [
+      22,
+      22,
+      47,
+      49,
+      "-2"
+    ],
+    [
+      22,
+      25,
+      47,
+      48,
+      "-1"
+    ],
+    [
+      22,
+      27,
+      46,
+      48,
+      "-1"
+    ],
+    [
+      22,
+      29,
+      31,
+      50,
+      "2"
+    ],
+    [
+      22,
+      29,
+      36,
+      49,
+      "-2"
+    ],
+    [
+      22,
+      31,
+      40,
+      47,
+      "-2"
+    ],
+    [
+      22,
+      36,
+      40,
+      46,
+      "2"
+    ],
+    [
+      25,
+      25,
+      47,
+      47,
+      "1"
+    ],
+    [
+      25,
+      27,
+      46,
+      47,
+      "1/2"
+    ],
+    [
+      25,
+      29,
+      29,
+      50,
+      "2"
+    ],
+    [
+      25,
+      29,
+      36,
+      48,
+      "-2"
+    ],
+    [
+      25,
+      29,
+      40,
+      47,
+      "-1"
+    ],
+    [
+      25,
+      31,
+      36,
+      47,
+      "-1"
+    ],
+    [
+      25,
+      36,
+      36,
+      46,
+      "2"
+    ],
+    [
+      27,
+      27,
+      46,
+      46,
+      "1"
+    ],
+    [
+      27,
+      29,
+      29,
+      49,
+      "2"
+    ],
+    [
+      27,
+      29,
+      31,
+      48,
+      "-2"
+    ],
+    [
+      27,
+      29,
+      40,
+      46,
+      "-1"
+    ],
+    [
+      27,
+      31,
+      31,
+      47,
+      "-2"
+    ],
+    [
+      27,
+      31,
+      36,
+      46,
+      "1"
+    ]
+  ],
+  "ordered_nonzero": 840,
+  "pfaffian": -1024,
+  "restricted_coefficients": [
+    {
+      "sites_in_each_remaining_flavour": [
+        19,
+        20,
+        49,
+        50
+      ],
+      "vertices": 4,
+      "inverse_form_power": "45/4",
+      "direct_coefficient": "-691200"
+    },
+    {
+      "sites_in_each_remaining_flavour": [
+        29,
+        31,
+        36,
+        40
+      ],
+      "vertices": 4,
+      "inverse_form_power": "0",
+      "direct_coefficient": "0"
+    },
+    {
+      "sites_in_each_remaining_flavour": [
+        19,
+        20,
+        22,
+        48,
+        49,
+        50
+      ],
+      "vertices": 6,
+      "inverse_form_power": "-135",
+      "direct_coefficient": "-552960"
+    },
+    {
+      "sites_in_each_remaining_flavour": [
+        27,
+        29,
+        31,
+        36,
+        40,
+        46
+      ],
+      "vertices": 6,
+      "inverse_form_power": "-1728",
+      "direct_coefficient": "-7077888"
+    }
+  ],
+  "saturated_four_flavour_moments": [
+    {
+      "vertices": 2,
+      "doublet_form_power_in_each_flavour": 6,
+      "Wick_contractions": 1,
+      "grouped": [
+        {
+          "pairings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "signed_score": "105/4"
+        }
+      ],
+      "contracted_quartic": "105/4",
+      "top_coefficient": "3878190376617089433600000"
+    },
+    {
+      "vertices": 4,
+      "doublet_form_power_in_each_flavour": 5,
+      "Wick_contractions": 81,
+      "grouped": [
+        {
+          "pairings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "signed_score": "11025/16"
+        },
+        {
+          "pairings": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicity": 4,
+          "signed_score": "-1575/32"
+        },
+        {
+          "pairings": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "multiplicity": 4,
+          "signed_score": "-1575/32"
+        },
+        {
+          "pairings": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "multiplicity": 6,
+          "signed_score": "1365/64"
+        },
+        {
+          "pairings": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "multiplicity": 12,
+          "signed_score": "-735/64"
+        },
+        {
+          "pairings": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "multiplicity": 6,
+          "signed_score": "1365/64"
+        },
+        {
+          "pairings": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "multiplicity": 4,
+          "signed_score": "-1575/32"
+        },
+        {
+          "pairings": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "multiplicity": 12,
+          "signed_score": "-735/64"
+        },
+        {
+          "pairings": [
+            0,
+            1,
+            2,
+            2
+          ],
+          "multiplicity": 12,
+          "signed_score": "-735/64"
+        },
+        {
+          "pairings": [
+            0,
+            2,
+            2,
+            2
+          ],
+          "multiplicity": 4,
+          "signed_score": "-1575/32"
+        },
+        {
+          "pairings": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "multiplicity": 1,
+          "signed_score": "11025/16"
+        },
+        {
+          "pairings": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "multiplicity": 4,
+          "signed_score": "-1575/32"
+        },
+        {
+          "pairings": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "multiplicity": 6,
+          "signed_score": "1365/64"
+        },
+        {
+          "pairings": [
+            1,
+            2,
+            2,
+            2
+          ],
+          "multiplicity": 4,
+          "signed_score": "-1575/32"
+        },
+        {
+          "pairings": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "multiplicity": 1,
+          "signed_score": "11025/16"
+        }
+      ],
+      "contracted_quartic": "27405/32",
+      "top_coefficient": "8135671362984345600000"
+    }
+  ],
+  "embedded_SU3": {
+    "matrix_units": {
+      "E12": 19,
+      "E23": 50,
+      "E23_native_factor": "1",
+      "E13": 45,
+      "E31": 12,
+      "E31_native_factor": "-1"
+    },
+    "tested_brackets": 64,
+    "tested_metric_entries": 64,
+    "restricted_metric": "Tr3",
+    "native_diagonal_quartic": "6*x^2*y^2",
+    "ordered_tensor_entries": 6,
+    "SU3_ADHM_epsilon_coefficient_per_entry": 4
+  },
+  "physical_four_fermion_coefficient": "nonzero on embedded SU3; native collective-coordinate scale not matched",
+  "physical_instanton_supercharge_pairing": "open",
+  "direct_four_flavour_exterior": [
+    {
+      "vertices": 2,
+      "power": 6,
+      "colour_masks": 2401,
+      "nonzero": 304,
+      "top_coefficient": "3878190376617089433600000"
+    },
+    {
+      "vertices": 4,
+      "power": 5,
+      "colour_masks": 194481,
+      "nonzero": 26088,
+      "top_coefficient": "8135671362984345600000"
+    },
+    {
+      "vertices": 6,
+      "power": 4,
+      "colour_masks": 1500625,
+      "nonzero": 626924,
+      "top_coefficient": "20058638015633817600"
+    }
+  ]
+}

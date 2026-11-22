@@ -1,0 +1,73 @@
+{
+  "dotted_degrees": [
+    4,
+    4
+  ],
+  "flavour_degrees": [
+    2,
+    2,
+    2
+  ],
+  "letter_length": 14,
+  "by_trace_number": [
+    {
+      "traces": 1,
+      "ghost_relations": 0,
+      "all_relations": 0,
+      "remaining_scalar_commutator_dimension": 0
+    },
+    {
+      "traces": 2,
+      "ghost_relations": 0,
+      "all_relations": 0,
+      "remaining_scalar_commutator_dimension": 0
+    },
+    {
+      "traces": 3,
+      "ghost_relations": 0,
+      "all_relations": 0,
+      "remaining_scalar_commutator_dimension": 0
+    },
+    {
+      "traces": 4,
+      "ghost_relations": 5,
+      "all_relations": 1,
+      "remaining_scalar_commutator_dimension": 4
+    },
+    {
+      "traces": 5,
+      "ghost_relations": 9,
+      "all_relations": 2,
+      "remaining_scalar_commutator_dimension": 7
+    },
+    {
+      "traces": 6,
+      "ghost_relations": 6,
+      "all_relations": 3,
+      "remaining_scalar_commutator_dimension": 3
+    },
+    {
+      "traces": 7,
+      "ghost_relations": 4,
+      "all_relations": 4,
+      "remaining_scalar_commutator_dimension": 0
+    }
+  ],
+  "partial_dimension": 24,
+  "full_dimension": 10,
+  "scalar_commutator_dimension": 14,
+  "dimensions_divisible_by_glueball_power": [
+    14,
+    14,
+    14,
+    11,
+    4
+  ],
+  "dimensions_by_exact_glueball_power": [
+    0,
+    0,
+    3,
+    7,
+    4
+  ]
+}

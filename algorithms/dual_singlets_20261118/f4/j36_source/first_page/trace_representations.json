@@ -1,0 +1,252 @@
+{
+  "primitive_degrees_through_eight": [
+    2,
+    6,
+    8
+  ],
+  "representations": [
+    {
+      "dimension": 52,
+      "degrees": {
+        "2": {
+          "monomials": [
+            [
+              2
+            ]
+          ],
+          "coefficients": [
+            "3"
+          ],
+          "independent_cartan_monomials": [
+            [
+              0,
+              0,
+              0,
+              2
+            ]
+          ],
+          "minor": "12"
+        },
+        "4": {
+          "monomials": [
+            [
+              2,
+              2
+            ]
+          ],
+          "coefficients": [
+            "5/12"
+          ],
+          "independent_cartan_monomials": [
+            [
+              0,
+              0,
+              0,
+              4
+            ]
+          ],
+          "minor": "144"
+        },
+        "6": {
+          "monomials": [
+            [
+              6
+            ],
+            [
+              2,
+              2,
+              2
+            ]
+          ],
+          "coefficients": [
+            "-7",
+            "5/36"
+          ],
+          "independent_cartan_monomials": [
+            [
+              0,
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ],
+          "minor": "-31104"
+        },
+        "8": {
+          "monomials": [
+            [
+              8
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              2,
+              2,
+              2
+            ]
+          ],
+          "coefficients": [
+            "17",
+            "-28/3",
+            "35/432"
+          ],
+          "independent_cartan_monomials": [
+            [
+              0,
+              0,
+              0,
+              8
+            ],
+            [
+              0,
+              0,
+              2,
+              6
+            ],
+            [
+              0,
+              2,
+              2,
+              4
+            ]
+          ],
+          "minor": "-358318080"
+        }
+      }
+    },
+    {
+      "dimension": 273,
+      "degrees": {
+        "2": {
+          "monomials": [
+            [
+              2
+            ]
+          ],
+          "coefficients": [
+            "21"
+          ],
+          "independent_cartan_monomials": [
+            [
+              0,
+              0,
+              0,
+              2
+            ]
+          ],
+          "minor": "12"
+        },
+        "4": {
+          "monomials": [
+            [
+              2,
+              2
+            ]
+          ],
+          "coefficients": [
+            "49/12"
+          ],
+          "independent_cartan_monomials": [
+            [
+              0,
+              0,
+              0,
+              4
+            ]
+          ],
+          "minor": "144"
+        },
+        "6": {
+          "monomials": [
+            [
+              6
+            ],
+            [
+              2,
+              2,
+              2
+            ]
+          ],
+          "coefficients": [
+            "1",
+            "10/9"
+          ],
+          "independent_cartan_monomials": [
+            [
+              0,
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ],
+          "minor": "-31104"
+        },
+        "8": {
+          "monomials": [
+            [
+              8
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              2,
+              2,
+              2
+            ]
+          ],
+          "coefficients": [
+            "-119",
+            "112/3",
+            "35/216"
+          ],
+          "independent_cartan_monomials": [
+            [
+              0,
+              0,
+              0,
+              8
+            ],
+            [
+              0,
+              0,
+              2,
+              6
+            ],
+            [
+              0,
+              2,
+              2,
+              4
+            ]
+          ],
+          "minor": "-358318080"
+        }
+      }
+    }
+  ],
+  "native_two_variable_checks": 4,
+  "tested_degrees": [
+    2,
+    4,
+    6,
+    8
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "job": "5703665",
+    "archive_sha256": "8a410d48024f5cfc962880cbc71797cf0894aa2cd6548c085bf3f76746ebe5eb",
+    "script_sha256": "610ce73c4cad3ae45fabb6ce2b6fb9b956aacb6d458319ea62e2b392a3aab5e8",
+    "accounting": "5703665|COMPLETED|2026-11-23T06:27:16|2026-11-23T06:31:19|243|12|0:0",
+    "prime": 1009,
+    "rank": 532,
+    "determinant": 869,
+    "output_sha256": "5eced11729ac84125420f29d130219ed1c3638211ba2b2bf1100642a61e6c073"
+  },
+  {
+    "job": "5703764",
+    "archive_sha256": "9324ec1f27e2382bfbbf0a165fd3b25817af40af85f457938c8f3e930ab5cc2e",
+    "script_sha256": "d5c49ca701c77d6c96986d0071c7110eee9f196f6c75d3cd5e6f94c66ff15cba",
+    "accounting": "5703764|COMPLETED|2026-11-23T06:35:02|2026-11-23T06:37:47|165|12|0:0",
+    "prime": 1013,
+    "rank": 532,
+    "determinant": 671,
+    "output_sha256": "1279e91798ba30958871f3d24d75982d9ad4d4b54eabb3ee6c957e714381f708"
+  }
+]
