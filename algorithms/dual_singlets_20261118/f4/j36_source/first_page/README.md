@@ -54,6 +54,33 @@ Allow all three matter-fermion flavours and factor common scalar spectators out 
 
 Each proposed cycle was differentiated over the rationals. Modular lower bounds on the rank of the classical map and on the rank of those cycles sum to the exact domain dimension. Flavour permutations give the same result at permuted degrees. Cancellations involving differentiated scalar or ghost sources, and mixed-flavour cycles of higher residual scalar degree, require further tests. [Joint calculation](mixed_syzygies.py) · [Three scalar slots](mixed_111.json) · [Four scalar slots](mixed_211.json)
 
+## Five active Taylor slots of arbitrary parity
+
+At $j=36$ an incoming second-order source for $S^6$ has dotted degrees $(4,4)$, flavour degrees $(2,2,2)$ and thirteen letters. Its classical differential splits its one second jet. Call a slot active if it belongs to the factor in which the classical cancellation takes place. The remaining first jets can have arbitrary colours. Every source whose closure factors over at most five active slots is a sum of classical boundaries and products with a closed bilinear. This includes cancellations between matter fermions, differentiated scalars and second ghost jets.
+
+| Active slots after the classical split | Source columns | Classical image rank | Boundary rank | Additional cycles from the bilinear |
+|---|---:|---:|---:|---:|
+| Scalar degrees $(2,2,1)$ | 14,763,840 | 14,262,508 | 487,968 | 13,364 |
+| Four same-dot ghosts and one scalar | 4,734,704 | 4,325,125 | 408,305 | 1,274 |
+| Three same-dot ghosts and one scalar | 209,560 | 201,449 | 8,059 | 52 |
+| Two same-dot ghosts and one scalar | 5,408 | 5,355 | 52 | 1 |
+
+Each row meets the rank bound separately at every dominant colour weight. The integer kernel checks and the complementary modular ranks prove saturation over the rationals. The first two rows used 32 Weyl orbits each. In the dotted slice the additional cycles multiply $2B(\phi,c_2)+B(D\phi,c_1)$ by undifferentiated first ghosts, where $c_1,c_2$ are the divided first and second jets in that dotted direction. Both terms of its classical variation cancel. A8 job 5702371 completed both five-slot rows in 101 seconds on 16 allocated CPUs. The sparse solver pivots on the shortest available row or column. [A8 hashes and accounting](polarization_a8.json) · [Scalar case](mixed_221.json) · [Dotted case](dotted_41.json) · [Dotted differential](dotted_syzygies.py) · [Native solver](sparse_rank.cpp)
+
+To see why the two slices suffice, polarize $n$ distinct odd Taylor coordinates and quotient the one-second-jet cycles by classical boundaries and all degree-three bilinear cycles times first jets. Tree splitting is natural in the Taylor variables, so the permutation group of the $n$ labels acts on this quotient. Equal scalar labels select the trivial character of their permutation subgroup. Equal dotted labels select the sign character there. This last sign comes from changing the parity of the repeated coordinate. Equivalently, polarize an even coordinate as a sum of odd coordinates times distinct auxiliary odd parameters and take their top coefficient. Over the rationals the averaging projections are exact and commute with taking the quotient.
+
+At $n=5$ the scalar $(2,2,1)$ slice detects the partitions $(5),(4,1),(3,2),(3,1,1),(2,2,1)$. Inducing the sign of the four ghost slots with one scalar detects $(2,1,1,1)$ and $(1,1,1,1,1)$. At $n=4$ the $(2,1,1)$ slice and the three-ghost slice likewise cover every partition. At $n=3$ the all-distinct scalar slice is the full multilinear complex. At $n=2$ the colour cobracket is injective because the Lie bracket spans the simple algebra. Thus the quotient vanishes across the stated range. The signed bilinear is the degree-three mixed component. By exactness of polarization it lifts from the degree-three multilinear bilinear space. [Character calculation and rank checks](polarization.py)
+
+After the spectator colours are restored, gauge averaging moves onto the spectator coefficient of each invariant bilinear. The bilinear has fewer than three flavour slots unless all three are scalar flavours, in which case the already checked traceless combination has zero first image. An invariant formed entirely from first jets has too few flavour slots on the active inputs of every bare positive-order supercharge. The marked product thus supplies a perturbatively closed representative of each surviving product. A source outside this exclusion requires a cancellation across at least six active slots. The full source has fourteen slots after splitting.
+
+~~~sh
+c++ -O3 -std=c++17 sparse_rank.cpp -o /tmp/f4-colour-rank
+export N4_SPARSE_RANK=/tmp/f4-colour-rank
+python3 mixed_syzygies.py 221 | diff -u mixed_221.json -
+python3 dotted_syzygies.py 5 | diff -u dotted_41.json -
+python3 polarization.py
+~~~
+
 ## Replay
 
 Python 3.10 or later suffices for the native Ward calculation. Installing python-flint accelerates the rational arithmetic. The input file contains only native colour data, extremal seeds and coefficients. The optional extraction command recreates it from the original zip.

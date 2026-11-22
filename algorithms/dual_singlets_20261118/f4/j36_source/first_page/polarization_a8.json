@@ -1,0 +1,8 @@
+{
+  "accounting": "5702371|COMPLETED|2026-11-23T03:55:17|2026-11-23T03:56:58|101|16|0:0",
+  "archive_sha256": "6dce9910caec35253189bd70c90f534c1581995212fa75b7bd5c929fc280b90c",
+  "outputs": {
+    "mixed_221.json": "d4f87562aa390198e2c8ba5fc39570c5e7791c16954ed94f05131aed76634b1a",
+    "dotted_41.json": "bde9fe875ab50debed2929710034ca045eccd7e023634db4d9257db7d87da034"
+  }
+}

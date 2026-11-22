@@ -1,0 +1,43 @@
+{
+  "stages": [
+    {
+      "spin": 0,
+      "flavour": 1,
+      "letters_checked": 21,
+      "ordered_pairs": 1369,
+      "nonzero_output_actions": 43,
+      "source_terms": 1863,
+      "correction_terms": 21584
+    },
+    {
+      "spin": 0,
+      "flavour": 2,
+      "letters_checked": 27,
+      "ordered_pairs": 1369,
+      "nonzero_output_actions": 43,
+      "source_terms": 5756,
+      "correction_terms": 40615
+    },
+    {
+      "spin": 1,
+      "flavour": 1,
+      "letters_checked": 31,
+      "ordered_pairs": 1369,
+      "nonzero_output_actions": 43,
+      "source_terms": 16941,
+      "correction_terms": 71880
+    },
+    {
+      "spin": 1,
+      "flavour": 2,
+      "letters_checked": 35,
+      "ordered_pairs": 1369,
+      "nonzero_output_actions": 43,
+      "source_terms": 34492,
+      "correction_terms": 70141
+    }
+  ],
+  "source_numerator_sha256": "8fcd4b0ebe148e20370cf452d24155bd464ed3ad4ff6712276c71addd119f875",
+  "common_denominator": 180,
+  "correction_numerator_sha256": "62563243cb7a78faccc85c02a27b4efba8c71417fbe0d3c99bb8f221db274059"
+}

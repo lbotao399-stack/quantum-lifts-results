@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "scope": "Campaign-originated highest-weight first images, explicit generator families and independent higher obstructions.",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_f4_E2.json",
+  "f4_j36": {
+    "classical_quotient_after_boundaries_and_closed_bilinears_through_five_active_slots": 0,
+    "sixth_glueball_incoming_d2": "open",
+    "a8_job": 5702371,
+    "five_slots": {
+      "mixed_221.json": {
+        "columns": 14763840,
+        "classical_rank_lower": 14262508,
+        "boundary_rank_lower": 487968,
+        "known_cycle_rank_lower": 501332,
+        "unresolved_upper": 0
+      },
+      "dotted_41.json": {
+        "columns": 4734704,
+        "classical_rank_lower": 4325125,
+        "boundary_rank_lower": 408305,
+        "known_cycle_rank_lower": 409579,
+        "unresolved_upper": 0
+      }
+    }
+  },
+  "su3_j30": {
+    "BMN_terms": 477,
+    "BMN_first_correction_terms": 7762,
+    "BMN_first_image_terms_cancelled": 21176,
+    "Cartan_null_nine_letter_terms": 34492,
+    "raised_first_correction_terms": 70141,
+    "outgoing_perturbative_obstructions": "all zero by the marked product and the forward Taylor action in the fan scheme",
+    "incoming_d1_to_line_over_Q": "open",
+    "instanton_matrix_element": "open"
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md",
+    "algorithms/su3_j30_classical_ranks/bmn_return/README.md"
+  ]
+}

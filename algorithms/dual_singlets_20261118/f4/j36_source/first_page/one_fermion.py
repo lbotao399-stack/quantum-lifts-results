@@ -1,6 +1,6 @@
 """Classify the first syzygies of one F4 commutator with one scalar of each flavour."""
 from collections import Counter
-from itertools import combinations, product
+from itertools import combinations
 import json
 
 from colour import Q, add, compact, items
@@ -9,8 +9,15 @@ from second_test import Second
 def weights_sum(*weights):
     return tuple(map(sum,zip(*weights)))
 
-def orbits(colour):
-    multiplicities = Counter(weights_sum(*ws) for ws in product(colour.weights,repeat=3))
+def orbits(colour, slots=3):
+    adjoint = Counter(colour.weights)
+    multiplicities = {(0,0,0,0):1}
+    for _ in range(slots):
+        next_weights = Counter()
+        for old,n in multiplicities.items():
+            for w,k in adjoint.items():
+                next_weights[weights_sum(old,w)] += n*k
+        multiplicities = next_weights
     coroots = []
     for e,f in zip(colour.data['raising'],colour.data['lowering']):
         root = colour.weights[e]
