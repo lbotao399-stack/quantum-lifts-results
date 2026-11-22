@@ -1,0 +1,19 @@
+{
+  "cartan_coordinates": 120,
+  "distinguished_coefficients": [
+    "5184",
+    "-4128",
+    "2064",
+    "6528"
+  ],
+  "value_on_separator": "702/37",
+  "independent_five_scalar_component": "217728",
+  "mixed_basis_minor": "5902788722688",
+  "coefficients_reconstructing_radial_component": [
+    "62453/347490",
+    "8071/694980",
+    "-10213/463320",
+    "37/702"
+  ],
+  "coordinates_checked": 120
+}

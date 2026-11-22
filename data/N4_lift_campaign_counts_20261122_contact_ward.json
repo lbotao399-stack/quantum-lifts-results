@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_six_substitutions.json",
+  "phase": "SU(3) level-30 bare source contacts and exact boundary constraints",
+  "increments": {"d1": 0, "fortuitous_generator_families": 0, "d2": 0, "d3": 0, "nonperturbative": 0},
+  "cumulative": {"d1": 77, "fortuitous_generator_families": 11, "d2": 0, "d3": 1, "nonperturbative": 0},
+  "count_scope": "Campaign-originated multiplets and explicit families, with the counting and physical comparison conditions of the preceding ledger.",
+  "local_contact_test": {
+    "source_monomials_at_diagonal_scalars": 3986,
+    "off_diagonal_fermions_per_monomial": 2,
+    "source_fit_coordinates": 120,
+    "tested_colours": 87,
+    "tree_boundary_inputs": 4,
+    "matrix_rank": 7,
+    "augmented_rank": 8
+  },
+  "proof": "algorithms/su3_j30_classical_ranks/instanton_probe/local_contacts.md"
+}

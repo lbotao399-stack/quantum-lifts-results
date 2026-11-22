@@ -42,11 +42,27 @@ Both required current components consequently have zero flux on every enclosing 
 
 A finite-size Ward residue must have a current singularity at the enclosed insertion. The small-instanton boundary may also contribute when the cutoff is removed, as may the contact and operator-mixing terms in the matched physical matrix element. The calculation determines the complete colour sum for the specified three lines and five radial words. It does not evaluate any of those additional terms. [Earlier flavour bounds](flavour_modes.md)
 
+## A current leg at the source
+
+For the Poincaré supercharge in the R-007 channel, the bilinear Noether current carries the lower fourth $SU(4)_R$ index. Flavour and Lorentz covariance restrict its elementary fields to a field strength with $\bar\lambda_4$, or a derivative and $\bar\phi_{4I}\lambda^I$, with $I$ one of the three matter flavours. Improvements that place the derivative on the other field have the same flavour content. The source uses the three chiral matter fermions and the three scalars $\phi^{JK}$ with $J,K$ in the matter flavours. A free scalar line from the current to the bare source gives zero in all nine choices, since $\bar\phi_{4I}$ is also a scalar with both upper indices in the matter flavours and the propagator contains $\epsilon^{ABCD}$. The opposite-chirality fermion line has $\delta^I{}_4=0$ for all three choices. The massless nonzero-mode Dirac propagator is off diagonal in chirality in a purely bosonic instanton background. Consequently a same-chirality fermion pairing also vanishes. Spacetime derivatives on these propagators preserve the flavour zeros. Thus no direct Gaussian line from the bilinear current can produce the required source pole for this bare representative. [Field variations, equations (4.22)–(4.23)](https://arxiv.org/pdf/hep-th/0206063) · [Scalar propagator, equation (3.29)](https://arxiv.org/pdf/hep-th/0212332)
+
+The ordinary nonlinear Ward contact acts by the classical commutator on the three matter fermions. Give each replacement its own odd parameter and extract its term linear in that parameter. The sum of the three contact polynomials is $Q_0 O_0=0$ as a finite-colour polynomial by Dot's exact classical certificate. At two traceless three-colour assignments, with six independent exterior variables in the three matter fermions, the resolved columns have two-by-two minors
+
+$$
+\frac{399044772198862913}{54},\qquad
+\frac{107867028615585163}{162}.
+$$
+
+Each sample has 15 four-mode coordinates, and the three columns sum to zero on all of them. The minors and the exact polynomial identity prove that the three flavour-resolved polynomials span precisely two dimensions over the rationals. A common linear contraction applied *after* forming the classical contact still annihilates their sum. An instanton-induced contact in the matched operator product, or a graph with an interaction vertex, requires its own coefficient. [Dot's finite-colour identity](https://github.com/lbotao399-stack/quantum-lifts-results/blob/8ba864d4eb9413131922b75aa653ab119d10a04a/nonperturbative-lift/contributions/dot-r007-exact-input/README.md) · [Independent resolved-contact evaluation](source_contact.py) · [Coordinates](source_contact.json)
+
+There is an explicit primitive for each of the three resolved tree contacts. Let $N_i$ count occurrences of the $i$th matter fermion in a bare BMN word containing only scalars and matter fermions. On this algebra the commutator $[Q_0,N_i]$ replaces just that fermion by its classical scalar commutator. Since $Q_0O_0=0$, the resolved contact on $O_0$ equals $Q_0(N_iO_0)$ separately for every flavour. The two nonzero polynomial directions detected above are therefore classical boundaries. The [multi-letter Cartan test](local_contacts.md) begins with the actual field content of both endpoints and tests classical boundaries as independent inputs.
+
 ~~~sh
 python3 source_fluctuations.py --all-colours > /tmp/r007-fluctuations.json
 cmp /tmp/r007-fluctuations.json source_fluctuations.json
 python3 cubic_colours.py
 python3 current_flux.py
+python3 source_contact.py
 python3 background_exchange.py > /tmp/r007-background.json
 cmp /tmp/r007-background.json background_exchange.json
 ~~~

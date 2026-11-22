@@ -1,0 +1,135 @@
+{
+  "trace_products": 337,
+  "projected_trace_patterns": 86,
+  "polarizations": 288,
+  "colour_rank": 3,
+  "source_image_rank": 3,
+  "rank_with_radial_target": 4,
+  "target_coordinates": 80,
+  "independent_source_patterns": [
+    [
+      "UX",
+      "VXXYZ"
+    ],
+    [
+      "UX",
+      "VXXZY"
+    ],
+    [
+      "UXVXXYZ"
+    ]
+  ],
+  "target_normalized_separator": [
+    {
+      "scalar_powers": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fermion_cartan_slots": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weight": "-11/7104"
+    },
+    {
+      "scalar_powers": [
+        3,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "fermion_cartan_slots": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "weight": "-3/592"
+    },
+    {
+      "scalar_powers": [
+        3,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "fermion_cartan_slots": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "weight": "-3/592"
+    },
+    {
+      "scalar_powers": [
+        2,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "fermion_cartan_slots": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "weight": "3/1184"
+    }
+  ],
+  "distinguished_coefficients": [
+    [
+      "-2592",
+      "0",
+      "3456",
+      "-1344/5"
+    ],
+    [
+      "2400",
+      "912",
+      "-2016",
+      "1344/5"
+    ],
+    [
+      "-1872",
+      "-384",
+      "1664",
+      "-1344/5"
+    ],
+    [
+      "-528",
+      "1056",
+      "1408",
+      "1152/5"
+    ]
+  ],
+  "four_column_minor": "311115644928"
+}

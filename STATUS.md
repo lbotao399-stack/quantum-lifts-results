@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## Exact Ward test of a four-input SU(3) instanton ansatz
+
+At level 30 a four-input colour ansatz fits all 120 selected Cartan coordinates of Dot's outgoing state. Its value on an explicit classical boundary is $6032431/45714240$. Using four boundaries excludes the full 87-column ansatz under the condition that its projected output equal a nonzero multiple of the specified target component. The rational rank changes from 7 to 8. The physical instanton matrix element is open. New $d_1$ lifts **0** (77 cumulative). New fortuitous generator families **0** (11 explicit cumulative). The campaign counts for $d_2$, $d_3$ and nonperturbative lifts are **0, 1, 0**. [Proof and replays](algorithms/su3_j30_classical_ranks/instanton_probe/local_contacts.md) · [Counts](data/N4_lift_campaign_counts_20261122_contact_ward.json)
+
 ## Twenty first-differential multiplets in SO(19) and the SU(3) current contour
 
 For glueball powers 15 and 16 the sixfold substitutions give the ordered first pairings $48660480$ and $-123863040$. Applying complementary substitutions certifies two 64-dimensional images, ten highest-weight multiplets each. The campaign has 77 first pairings and 11 explicit fortuitous families. In the SU(3) R-007 channel the cubic response contains 85 terms. At one regular instanton configuration three background scalar propagators give 14 nonzero endpoint components in the selected radial projection. The integrated classical spectator current has zero flux at the minimum direct contraction order in both orientations. The physical instanton matrix element and the search for a second supercharge differential remain open. [SO(19) proof](algorithms/dual_singlets_20261118/orthogonal_glueballs/six_substitutions.md) · [SU(3) proof and replay](algorithms/su3_j30_classical_ranks/instanton_probe/background_exchange.md) · [Counts](data/N4_lift_campaign_counts_20261122_six_substitutions.json)

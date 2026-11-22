@@ -1,0 +1,95 @@
+{
+  "source_words": 6139,
+  "source_monomials_by_off_diagonal_fermion_degree": [
+    0,
+    0,
+    3986,
+    0,
+    0,
+    0
+  ],
+  "independent_colour_evaluation": [
+    [
+      0,
+      "0"
+    ],
+    [
+      1,
+      "-77559704/3"
+    ],
+    [
+      -2,
+      "-310238816/3"
+    ]
+  ],
+  "cubic_colour_cycles": [
+    [
+      [
+        1,
+        5,
+        6
+      ],
+      3
+    ],
+    [
+      [
+        2,
+        3,
+        7
+      ],
+      -3
+    ]
+  ],
+  "bare_contents": 10,
+  "target_words_by_minimum_changed_inputs": [
+    [
+      3,
+      69
+    ],
+    [
+      4,
+      2007
+    ],
+    [
+      5,
+      2877
+    ],
+    [
+      6,
+      126
+    ],
+    [
+      7,
+      1
+    ]
+  ],
+  "dotted_jet_pairs": [
+    [
+      [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      45
+    ],
+    [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      24
+    ]
+  ],
+  "selected_target_cartan_monomials": 240
+}
