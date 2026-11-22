@@ -1,0 +1,1072 @@
+{
+  "status": "COMPLETE_ALL16_FULL_Q0_REDUCTIONS",
+  "records": [
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        0
+      ],
+      "degree": 0,
+      "polynomial_terms": 19,
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            0,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "primitive_trace_coefficients": [],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "polynomial_terms": 144,
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            1,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "-1"
+        }
+      ],
+      "primitive_trace_coefficients": [],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        2
+      ],
+      "degree": 2,
+      "polynomial_terms": 599,
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            2,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "primitive_trace_coefficients": [],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        3
+      ],
+      "degree": 3,
+      "polynomial_terms": 2314,
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            4,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "primitive_trace_coefficients": [],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        1,
+        1
+      ],
+      "degree": 2,
+      "polynomial_terms": 583,
+      "difference_terms": 649,
+      "primitive_terms": 256,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            2,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            0,
+            1
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        1,
+        2
+      ],
+      "degree": 3,
+      "polynomial_terms": 2562,
+      "difference_terms": 2462,
+      "primitive_terms": 1034,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            4,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            0,
+            2
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        1,
+        3
+      ],
+      "degree": 4,
+      "polynomial_terms": 9126,
+      "difference_terms": 9765,
+      "primitive_terms": 3912,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            0,
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "1/4"
+        },
+        {
+          "descriptor": [
+            1,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "-1/3"
+        },
+        {
+          "descriptor": [
+            2,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            0,
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "-1/8"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            0,
+            3
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        2,
+        2
+      ],
+      "degree": 4,
+      "polynomial_terms": 6976,
+      "difference_terms": 7479,
+      "primitive_terms": 4964,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            0,
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "1/4"
+        },
+        {
+          "descriptor": [
+            1,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "-1/3"
+        },
+        {
+          "descriptor": [
+            2,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            0,
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "-1/8"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            1,
+            2
+          ],
+          "coefficient": "1"
+        },
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            0,
+            3
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        2,
+        3
+      ],
+      "degree": 5,
+      "polynomial_terms": 24796,
+      "difference_terms": 27776,
+      "primitive_terms": 17368,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            1,
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "-1/4"
+        },
+        {
+          "descriptor": [
+            2,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "1/3"
+        },
+        {
+          "descriptor": [
+            1,
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/8"
+        },
+        {
+          "descriptor": [
+            4,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/2"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            1,
+            0,
+            0,
+            "single",
+            0,
+            2
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            0,
+            1,
+            0,
+            "single",
+            0,
+            1
+          ],
+          "coefficient": "1/3"
+        },
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            1,
+            3
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        3,
+        3
+      ],
+      "degree": 6,
+      "polynomial_terms": 66216,
+      "difference_terms": 74272,
+      "primitive_terms": 58444,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            1,
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "-1/6"
+        },
+        {
+          "descriptor": [
+            2,
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "1/4"
+        },
+        {
+          "descriptor": [
+            0,
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "1/8"
+        },
+        {
+          "descriptor": [
+            2,
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/8"
+        },
+        {
+          "descriptor": [
+            4,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "1/3"
+        },
+        {
+          "descriptor": [
+            0,
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "-1/16"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            2,
+            3
+          ],
+          "coefficient": "1"
+        },
+        {
+          "descriptor": [
+            1,
+            0,
+            0,
+            "single",
+            0,
+            3
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            1,
+            0,
+            0,
+            "single",
+            1,
+            2
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            0,
+            1,
+            0,
+            "single",
+            0,
+            2
+          ],
+          "coefficient": "1/3"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        1,
+        1
+      ],
+      "degree": 2,
+      "polynomial_terms": 225,
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            3,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "primitive_trace_coefficients": [],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        1,
+        2
+      ],
+      "degree": 3,
+      "polynomial_terms": 1396,
+      "difference_terms": 2462,
+      "primitive_terms": 1034,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            0,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "-1/6"
+        },
+        {
+          "descriptor": [
+            1,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            4,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "2"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            0,
+            2
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        1,
+        3
+      ],
+      "degree": 4,
+      "polynomial_terms": 6379,
+      "difference_terms": 9353,
+      "primitive_terms": 5852,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            0,
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            1,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "-1/2"
+        },
+        {
+          "descriptor": [
+            2,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            3,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/4"
+        },
+        {
+          "descriptor": [
+            0,
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "-1/4"
+        },
+        {
+          "descriptor": [
+            5,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "-1/2"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            0,
+            3
+          ],
+          "coefficient": "3/2"
+        },
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            1,
+            2
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            1,
+            0,
+            0,
+            "single",
+            0,
+            1
+          ],
+          "coefficient": "-1/4"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        2,
+        2
+      ],
+      "degree": 4,
+      "polynomial_terms": 4625,
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            5,
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "primitive_trace_coefficients": [],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        2,
+        3
+      ],
+      "degree": 5,
+      "polynomial_terms": 20978,
+      "difference_terms": 28328,
+      "primitive_terms": 18200,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            1,
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "-1/2"
+        },
+        {
+          "descriptor": [
+            2,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            3,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "-1/6"
+        },
+        {
+          "descriptor": [
+            1,
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/4"
+        },
+        {
+          "descriptor": [
+            4,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/2"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            1,
+            0,
+            0,
+            "single",
+            0,
+            2
+          ],
+          "coefficient": "1/2"
+        },
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            1,
+            3
+          ],
+          "coefficient": "1"
+        },
+        {
+          "descriptor": [
+            0,
+            1,
+            0,
+            "single",
+            0,
+            1
+          ],
+          "coefficient": "1/2"
+        }
+      ],
+      "full_Q0_residual": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        3,
+        3
+      ],
+      "degree": 6,
+      "polynomial_terms": 55930,
+      "difference_terms": 78820,
+      "primitive_terms": 61312,
+      "module_coefficients": [
+        {
+          "descriptor": [
+            0,
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "coefficient": "1/9"
+        },
+        {
+          "descriptor": [
+            1,
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "-2/3"
+        },
+        {
+          "descriptor": [
+            2,
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "1"
+        },
+        {
+          "descriptor": [
+            3,
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "-1/4"
+        },
+        {
+          "descriptor": [
+            0,
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "coefficient": "1/4"
+        },
+        {
+          "descriptor": [
+            4,
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "coefficient": "-1/3"
+        },
+        {
+          "descriptor": [
+            5,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "-1/2"
+        },
+        {
+          "descriptor": [
+            0,
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "-1/8"
+        },
+        {
+          "descriptor": [
+            3,
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "coefficient": "1/8"
+        }
+      ],
+      "primitive_trace_coefficients": [
+        {
+          "descriptor": [
+            0,
+            0,
+            0,
+            "single",
+            2,
+            3
+          ],
+          "coefficient": "1"
+        },
+        {
+          "descriptor": [
+            0,
+            0,
+            1,
+            "single",
+            0,
+            1
+          ],
+          "coefficient": "1/4"
+        },
+        {
+          "descriptor": [
+            1,
+            0,
+            0,
+            "single",
+            0,
+            3
+          ],
+          "coefficient": "1"
+        },
+        {
+          "descriptor": [
+            0,
+            1,
+            0,
+            "single",
+            0,
+            2
+          ],
+          "coefficient": "1/3"
+        },
+        {
+          "descriptor": [
+            1,
+            0,
+            0,
+            "single",
+            1,
+            2
+          ],
+          "coefficient": "1"
+        },
+        {
+          "descriptor": [
+            2,
+            0,
+            0,
+            "single",
+            0,
+            1
+          ],
+          "coefficient": "-1/8"
+        }
+      ],
+      "full_Q0_residual": 0
+    }
+  ],
+  "seconds": 631.543998003006,
+  "global_argument": "FFT trace generation; CH gaps0..3;16 exact full-Q0 reductions; proven independent Cartan module with matching Molien series",
+  "scope": "all-degree leading rotation-scalar H(Q0) only; no full E2 survivor primitive here"
+}

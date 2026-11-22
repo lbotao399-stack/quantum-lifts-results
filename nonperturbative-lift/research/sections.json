@@ -1,0 +1,886 @@
+{
+  "source_sha256": "ad0483f072ce18ec2c56e2012fa855082acd06ba4c719ef482d33804817ec655",
+  "text_equivalence": "The historical revision-42 block export reproduced the pre-split source Markdown. The source digest is retained for provenance. The chapter digests below identify the current local edition, including the subsequent research calculations.",
+  "sections": [
+    {
+      "number": 0,
+      "file": "research/00-abstract.md",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Nonperturbative Lifting and Quantum Operator Algebras",
+          "id": "np-title"
+        },
+        {
+          "level": 3,
+          "title": "Abstract",
+          "id": "np-abstract"
+        }
+      ],
+      "equations": 0,
+      "proof_blocks": 0,
+      "tables": 0,
+      "sha256": "0eac15414920e7974f537bbc677b50eb46ecdaf8f8e064dca806a6772615a0f9"
+    },
+    {
+      "number": 1,
+      "file": "research/01-introduction.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "Introduction",
+          "id": "np-section-01"
+        }
+      ],
+      "equations": 0,
+      "proof_blocks": 0,
+      "tables": 0,
+      "sha256": "8ff3e51f6f2ab891fdd9d49e99459257546bfbfd69b24947d2c4c41932c981f8"
+    },
+    {
+      "number": 2,
+      "file": "research/02-results.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "2. Summary of Results",
+          "id": "np-summary-results"
+        },
+        {
+          "level": 3,
+          "title": "2.1. Operators, equivalence classes, and perturbative order",
+          "id": "np-summary-001"
+        },
+        {
+          "level": 3,
+          "title": "2.2. The $SU(2)$ product and its nilpotent class",
+          "id": "np-summary-028"
+        },
+        {
+          "level": 3,
+          "title": "2.3. Counting all leading two-ghost operators",
+          "id": "np-summary-034"
+        },
+        {
+          "level": 3,
+          "title": "2.4. Complete representatives and higher-loop survival",
+          "id": "np-summary-049"
+        },
+        {
+          "level": 3,
+          "title": "2.5. A single formula for the diagonal representatives",
+          "id": "np-summary-059"
+        },
+        {
+          "level": 3,
+          "title": "2.6. Computation and remaining conjectures",
+          "id": "np-summary-067"
+        },
+        {
+          "level": 3,
+          "title": "2.7. A conditional mechanism for removing perturbative classes",
+          "id": "np-summary-073"
+        },
+        {
+          "level": 3,
+          "title": "2.8. Finite homotopies and the formal loop parameter",
+          "id": "np-summary-085"
+        },
+        {
+          "level": 3,
+          "title": "2.9. Exact one-instanton integrals and color transport",
+          "id": "np-summary-093"
+        },
+        {
+          "level": 3,
+          "title": "2.10. Regular response and collective-coordinate Ward balance",
+          "id": "np-summary-104"
+        },
+        {
+          "level": 3,
+          "title": "2.11. The evaluated connection contribution and the remaining matching",
+          "id": "np-summary-112"
+        },
+        {
+          "level": 3,
+          "title": "2.12. Massive matter and the vacuum algebra",
+          "id": "np-summary-124"
+        },
+        {
+          "level": 3,
+          "title": "2.13. SQCD: a determinant removed by an instanton",
+          "id": "np-summary-139"
+        },
+        {
+          "level": 3,
+          "title": "2.14. The microscopic operator that can pair with the determinant",
+          "id": "np-summary-147"
+        },
+        {
+          "level": 3,
+          "title": "2.15. Vacuum constraints and nonpolynomial superpotentials",
+          "id": "np-summary-162"
+        },
+        {
+          "level": 3,
+          "title": "2.16. Fermionic interactions and monopole-class removal",
+          "id": "np-summary-183"
+        },
+        {
+          "level": 3,
+          "title": "2.17. A scalar invisible to vacuum values that survives every perturbative order",
+          "id": "np-summary-200"
+        },
+        {
+          "level": 3,
+          "title": "2.18. Extended supersymmetry: corrected geometry and protected scalars",
+          "id": "np-summary-209"
+        }
+      ],
+      "equations": 90,
+      "proof_blocks": 0,
+      "tables": 3,
+      "sha256": "528ee3597d3cacbe67ae7be2fe4b1a7b021df956d249fda3b5d192db0976cae0"
+    },
+    {
+      "number": 3,
+      "file": "research/03-review.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "3. Review: operator formalism and required background",
+          "id": "np-review"
+        },
+        {
+          "level": 3,
+          "title": "3.1. Field polynomials and the square-zero transformation",
+          "id": "np-review-003"
+        },
+        {
+          "level": 3,
+          "title": "3.2. From tree classes to successive loop equations",
+          "id": "np-review-015"
+        },
+        {
+          "level": 3,
+          "title": "3.3. Quantum products and secondary classes",
+          "id": "np-review-038"
+        },
+        {
+          "level": 3,
+          "title": "3.4. Trace invariants, finite-dimensional counting, and the Cartan test",
+          "id": "np-review-065"
+        },
+        {
+          "level": 3,
+          "title": "3.5. Effective interactions and scalar operator relations",
+          "id": "np-review-089"
+        },
+        {
+          "level": 3,
+          "title": "3.6. Duality and elimination of massive fields",
+          "id": "np-review-111"
+        },
+        {
+          "level": 3,
+          "title": "3.7. Instanton integration and local operator matching",
+          "id": "np-review-127"
+        }
+      ],
+      "equations": 41,
+      "proof_blocks": 10,
+      "tables": 0,
+      "sha256": "161519ad95fa362508b2b3b90b3dfa3855cc26fde6afd74f9d6e01e98c6291b0"
+    },
+    {
+      "number": 4,
+      "file": "research/04-complex-and-products.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "4. Pure SYM: perturbative complex and quantum product",
+          "id": "np-section-02"
+        },
+        {
+          "level": 3,
+          "title": "SU(2): hidden product and exact nilpotency",
+          "id": "np-5c85ee5e8a2c3293-1"
+        },
+        {
+          "level": 3,
+          "title": "SU(2): explicit partners and a higher leading sector",
+          "id": "np-9b603520cf852d74-1"
+        }
+      ],
+      "equations": 37,
+      "proof_blocks": 6,
+      "tables": 0,
+      "sha256": "2a3a9b8292d44809028af2f986c02d124fe5ab35037aab752b2709b5e8ce4390"
+    },
+    {
+      "number": 5,
+      "file": "research/05-leading-modules.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "5. Finite-rank leading classes: SU(2), SU(3), and SU(4)",
+          "id": "np-section-03"
+        },
+        {
+          "level": 3,
+          "title": "SU(2): first lifts in every degree",
+          "id": "np-6c4b9916fd1b9a28-1"
+        },
+        {
+          "level": 3,
+          "title": "SU(3): tree module and radial equations",
+          "id": "np-96250f1e20680d7c-1"
+        },
+        {
+          "level": 3,
+          "title": "SU(4): complete tree module and Cartan classification",
+          "id": "np-7d31a48e28a59909-1"
+        }
+      ],
+      "equations": 39,
+      "proof_blocks": 7,
+      "tables": 0,
+      "sha256": "b250d1f68f31760da0c204df0d221ca375815e1196b8da3d681e17ce80468529"
+    },
+    {
+      "number": 6,
+      "file": "research/06-su3-lifts.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "6. SU(3): first partner, products, and higher lifts",
+          "id": "np-section-04"
+        },
+        {
+          "level": 3,
+          "title": "The complete $C_1$ partner",
+          "id": "np-3e7812cbaa09bd65-1"
+        },
+        {
+          "level": 3,
+          "title": "$C_1^2$ and complete $C_3,C_4$ representatives",
+          "id": "np-e2537f1f2c55de35-1"
+        },
+        {
+          "level": 3,
+          "title": "The second lift at $k=6$",
+          "id": "np-0dbe41c29df07e6c-1"
+        }
+      ],
+      "equations": 29,
+      "proof_blocks": 2,
+      "tables": 0,
+      "sha256": "f3d8dd1c0ce0e63096eca3b6e13a0589a908a31f3648ac74311ed7a547b15cb7"
+    },
+    {
+      "number": 7,
+      "file": "research/07-twisted-periods.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "7. Characteristic residues and twisted periods",
+          "id": "np-section-05"
+        }
+      ],
+      "equations": 7,
+      "proof_blocks": 2,
+      "tables": 0,
+      "sha256": "9c240a6fa457d49e1059ea96911291e90172d1034d949d2c2740bb56681334b2"
+    },
+    {
+      "number": 8,
+      "file": "research/08-exact-arithmetic.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "8. Exact arithmetic and the scope of the results",
+          "id": "np-section-06"
+        },
+        {
+          "level": 3,
+          "title": "The finite-field census and higher product conjectures",
+          "id": "np-a84ccb2fe764f5cd-1"
+        }
+      ],
+      "equations": 3,
+      "proof_blocks": 1,
+      "tables": 2,
+      "sha256": "ff3c1178e64ce98f7fa281e72cd28adf4d8a20606d9e16a50e7676b3fe9116e9"
+    },
+    {
+      "number": 9,
+      "file": "research/09-secondary-pairing.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "9. From multiplicative extension to the nonperturbative differential",
+          "id": "np-section-07"
+        },
+        {
+          "level": 3,
+          "title": "The full iterated associator",
+          "id": "np-b082a68ee6a1c259-1"
+        },
+        {
+          "level": 3,
+          "title": "Secondary classes and instanton pairing",
+          "id": "np-90f763e6956a69ff-1"
+        },
+        {
+          "level": 3,
+          "title": "The formal loop parameter and matric secondary products",
+          "id": "np-6570a44df50d9296-1"
+        },
+        {
+          "level": 3,
+          "title": "Coherence and finite homotopies",
+          "id": "np-17abaa189a90b8dc-1"
+        },
+        {
+          "level": 3,
+          "title": "Finite ghost-contraction operators",
+          "id": "np-317a4949e0efe6ef-1"
+        }
+      ],
+      "equations": 40,
+      "proof_blocks": 7,
+      "tables": 1,
+      "sha256": "7a2d6ae9366d05f63388ca49db5e1f67bab3c192ca63084a196dcd0b5e397cc6"
+    },
+    {
+      "number": 10,
+      "file": "research/10-instanton-measure.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "10. One-instanton profiles and the regulated Ward identity",
+          "id": "np-section-08"
+        },
+        {
+          "level": 3,
+          "title": "Coincident and separated points",
+          "id": "np-bd7195b0c005f775-1"
+        },
+        {
+          "level": 3,
+          "title": "The collective vector, measure, and two size faces",
+          "id": "np-6d6750afea048494-1"
+        },
+        {
+          "level": 3,
+          "title": "The exact straight-Wilson-line contribution",
+          "id": "np-f863edf6248e0361-1"
+        }
+      ],
+      "equations": 31,
+      "proof_blocks": 4,
+      "tables": 0,
+      "sha256": "34c5e2b15f5834fad6d5d1458fadb5e7435e3ed707f8ca4cd88a8fa71d40d253"
+    },
+    {
+      "number": 11,
+      "file": "research/11-green-response.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "11. Background response and compatible collective coordinates",
+          "id": "np-section-09"
+        },
+        {
+          "level": 3,
+          "title": "Opposite-curvature connection",
+          "id": "np-cfc7bbb8238456aa-1"
+        },
+        {
+          "level": 3,
+          "title": "The regular Green response and its Grassmann-rank witness",
+          "id": "np-733664d1f7c344fe-1"
+        },
+        {
+          "level": 3,
+          "title": "External fermions, orthogonal projection, and even boundary variables",
+          "id": "np-835db4476c0bd4be-1"
+        }
+      ],
+      "equations": 21,
+      "proof_blocks": 2,
+      "tables": 1,
+      "sha256": "726de80f6535ac60091c92b541d446c75fd708f9d64b31a70926cb785f364357"
+    },
+    {
+      "number": 12,
+      "file": "research/12-finite-cutoff.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "12. The finite-cutoff normal connection and section transport",
+          "id": "np-section-10"
+        },
+        {
+          "level": 3,
+          "title": "Projection coefficients and boundary balance",
+          "id": "np-0b135cc734d7230a-1"
+        },
+        {
+          "level": 3,
+          "title": "Finite transport of the homogeneous section",
+          "id": "np-593328a6baa0c9e0-1"
+        }
+      ],
+      "equations": 16,
+      "proof_blocks": 1,
+      "tables": 0,
+      "sha256": "db4b6ca847f2bad6e312af14ac57da59cfcd82f53918034c38fab827cd4bafad"
+    },
+    {
+      "number": 13,
+      "file": "research/13-connection-matching.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "13. The complete connection contribution and the open physical coefficient",
+          "id": "np-section-11"
+        },
+        {
+          "level": 3,
+          "title": "Source symmetrization and the angular integral",
+          "id": "np-361905ea0e0c5763-1"
+        },
+        {
+          "level": 3,
+          "title": "The radial adjoint and finite boundary terms",
+          "id": "np-c209f4b75ff549bb-1"
+        },
+        {
+          "level": 3,
+          "title": "Equations for the full microscopic matching",
+          "id": "np-4c2ddf4548d3357c-1"
+        },
+        {
+          "level": 3,
+          "title": "References for Sections 9–13",
+          "id": "np-a894ecb45e143187-1"
+        }
+      ],
+      "equations": 17,
+      "proof_blocks": 1,
+      "tables": 0,
+      "sha256": "ee801ca7ddfa749a2e552726a50c487ae522bd320b006b6b18c5f4d66bf69602"
+    },
+    {
+      "number": 14,
+      "file": "research/14-massive-matter.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "14. Massive matter, the Konishi identity, and the vacuum algebra",
+          "id": "np-section-12"
+        },
+        {
+          "level": 3,
+          "title": "Exact bilinear identity",
+          "id": "np-27b3f0c412c228c5-1"
+        },
+        {
+          "level": 3,
+          "title": "Holomorphic scale matching and two vacua",
+          "id": "np-7f0897b11f690436-1"
+        },
+        {
+          "level": 3,
+          "title": "The massless limit and finite vacuum algebra",
+          "id": "np-2f6c6805ba565142-1"
+        }
+      ],
+      "equations": 16,
+      "proof_blocks": 3,
+      "tables": 0,
+      "sha256": "62f762af1011f19e1cebd14380fb832c3efa7516e91c3a0c1f65dc3d04d91ba3"
+    },
+    {
+      "number": 15,
+      "file": "research/15-electric-and-magnetic-rank.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "15. SQCD: electric rank identities and magnetic nonperturbative dynamics",
+          "id": "np-section-13"
+        },
+        {
+          "level": 3,
+          "title": "Rank patches and exact massive vacua",
+          "id": "np-a2081c7e96050b3d-1"
+        }
+      ],
+      "equations": 14,
+      "proof_blocks": 3,
+      "tables": 0,
+      "sha256": "bb816ff543834e1a28d632777dd9d3824ad2cdcae39d037f82d27c80fee3cb88"
+    },
+    {
+      "number": 16,
+      "file": "research/16-determinant-lift.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "16. Four-dimensional determinant lift and microscopic incoming class",
+          "id": "np-section-14"
+        },
+        {
+          "level": 3,
+          "title": "Completely Higgsed magnetic $SU(2)$",
+          "id": "np-69504578f9778a53-1"
+        },
+        {
+          "level": 3,
+          "title": "Every scalar class removed by the determinant interaction",
+          "id": "determinant-full-torsion"
+        },
+        {
+          "level": 3,
+          "title": "UV current, triangle coefficient, and polynomial completion",
+          "id": "np-f028df5dda216e10-1"
+        },
+        {
+          "level": 3,
+          "title": "Local source matching and the zero-mass fiber",
+          "id": "np-4f8eecadb9b2d576-1"
+        },
+        {
+          "level": 3,
+          "title": "The massless microscopic current survives every loop power",
+          "id": "massless-all-powers"
+        },
+        {
+          "level": 3,
+          "title": "A necessary mass pole in microscopic matching",
+          "id": "mass-pole-ward"
+        },
+        {
+          "level": 3,
+          "title": "Mass and loop order together",
+          "id": "mass-loop-base-change"
+        }
+      ],
+      "equations": 46,
+      "proof_blocks": 11,
+      "tables": 0,
+      "sha256": "446e0f3ac213f0506f047f8b72a96efd0451264db10f20999a42fc8fc7706fc5"
+    },
+    {
+      "number": 17,
+      "file": "research/17-nonpolynomial-superpotentials.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "17. Nonpolynomial superpotential: elimination, branches, and effective cohomology",
+          "id": "np-section-15"
+        },
+        {
+          "level": 3,
+          "title": "The ADS pole from eliminating massive fields",
+          "id": "np-acc5558e9ee1d6e4-1"
+        },
+        {
+          "level": 3,
+          "title": "Unit exactness and the coefficient ring",
+          "id": "np-d680ecc8328087d5-1"
+        },
+        {
+          "level": 3,
+          "title": "Quantum constraint and s-confining relation",
+          "id": "np-9330362f2f4aa9a8-1"
+        }
+      ],
+      "equations": 17,
+      "proof_blocks": 3,
+      "tables": 0,
+      "sha256": "988fef4cc1bf845d5cbdf63345c530a51459847f2e4d44415252c764b0eb7949"
+    },
+    {
+      "number": 18,
+      "file": "research/18-sp-and-so.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "18. Symplectic and orthogonal dualities",
+          "id": "np-section-16"
+        },
+        {
+          "level": 3,
+          "title": "$SP(N_c)$: Pfaffian, quantum constraint, and mass descent",
+          "id": "np-5d59db75cd44c428-1"
+        },
+        {
+          "level": 3,
+          "title": "The same confined theory with two different zero-weight limits",
+          "id": "pfaffian-full-torsion"
+        },
+        {
+          "level": 3,
+          "title": "$SO(N_c)$: cancellation between instantons and condensates",
+          "id": "np-7f93d3422761f50f-1"
+        }
+      ],
+      "equations": 29,
+      "proof_blocks": 4,
+      "tables": 0,
+      "sha256": "064091a9e1c94c8520782f4374fab748a884ba0cfb5a33a84dd0ffe9c3c498ba"
+    },
+    {
+      "number": 19,
+      "file": "research/19-higher-f-terms-and-monopoles.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "19. Higher F-terms and monopole-extended rings",
+          "id": "np-section-17"
+        },
+        {
+          "level": 3,
+          "title": "Instanton data beyond the ordinary superpotential",
+          "id": "np-b5341a21dac18f63-1"
+        },
+        {
+          "level": 3,
+          "title": "Explicit monopole lift on a finite circle",
+          "id": "np-4e3f9fd0ffa2c49b-1"
+        },
+        {
+          "level": 3,
+          "title": "Which page removes each scalar in a multiplier superpotential?",
+          "id": "multiplier-pages"
+        },
+        {
+          "level": 3,
+          "title": "Three-dimensional and worldsheet benchmarks",
+          "id": "np-aa0e649d863ebf40-1"
+        }
+      ],
+      "equations": 25,
+      "proof_blocks": 4,
+      "tables": 0,
+      "sha256": "aa78de3e997729173a70b64e94d89c5b12cd302fa982106a635f003041b8b39e"
+    },
+    {
+      "number": 20,
+      "file": "research/20-cubic-adjoint-su5.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "20. Cubic-adjoint $SU(5)$: perturbative survival of a nilpotent scalar",
+          "id": "np-section-18"
+        },
+        {
+          "level": 3,
+          "title": "The full classical invariant quotient",
+          "id": "np-0c6be64b76927f71-1"
+        },
+        {
+          "level": 3,
+          "title": "Detector in the full perturbative Ward complex",
+          "id": "np-aefc48ac470138dc-1"
+        },
+        {
+          "level": 3,
+          "title": "Kutasov trace-sector prediction and full-ring matching",
+          "id": "np-1073436cbe3d7b68-1"
+        },
+        {
+          "level": 3,
+          "title": "Scalar chiral-ring zero and one-supercharge cohomology",
+          "id": "np-9c273fbcbcc17570-1"
+        }
+      ],
+      "equations": 24,
+      "proof_blocks": 3,
+      "tables": 0,
+      "sha256": "ea8d88224d93bcdaf45aef2a87b5d45f1fe3f8c27d331cee2d68dcfb0cebb300"
+    },
+    {
+      "number": 21,
+      "file": "research/21-seiberg-witten.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "21. $\\mathcal N=2$ SQCD: exact periods, duality, and deformation-induced lifting",
+          "id": "np-section-19"
+        },
+        {
+          "level": 3,
+          "title": "Curves and singular loci",
+          "id": "np-6074772dd3c3803a-1"
+        },
+        {
+          "level": 3,
+          "title": "Exact instanton coefficients",
+          "id": "np-9fe85cd156b64d38-1"
+        },
+        {
+          "level": 3,
+          "title": "Monopole condensate induced by an adjoint mass",
+          "id": "np-641ee493e77f2a26-1"
+        },
+        {
+          "level": 3,
+          "title": "Conformal $N_f=4$ and Argyres–Seiberg duality",
+          "id": "np-79a202a95b44b405-1"
+        },
+        {
+          "level": 3,
+          "title": "Translation protects two infinite towers of bulk operators",
+          "id": "bulk-translation"
+        }
+      ],
+      "equations": 24,
+      "proof_blocks": 4,
+      "tables": 1,
+      "sha256": "2177e525bf47678911465a4023ddbcff40748ac21031eaf7c12c5d9369a12292"
+    },
+    {
+      "number": 22,
+      "file": "research/22-n4-sym.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "22. $\\mathcal N=4$ SYM: known instanton effects and proved protection",
+          "id": "np-section-20"
+        },
+        {
+          "level": 3,
+          "title": "Exact vacuum detector for the pure-scalar $SU(N)$ sector",
+          "id": "np-fc53eb8790b564e6-1"
+        },
+        {
+          "level": 3,
+          "title": "Perturbative nature of the known cohomology pairings",
+          "id": "np-87f770bad4f64cbb-1"
+        },
+        {
+          "level": 3,
+          "title": "Nonzero instanton coefficient in a long multiplet",
+          "id": "np-516d83e0f53cc864-1"
+        },
+        {
+          "level": 3,
+          "title": "Positivity constraint on leading Fourier sectors",
+          "id": "np-9487cf1fcea2eac8-1"
+        }
+      ],
+      "equations": 23,
+      "proof_blocks": 3,
+      "tables": 0,
+      "sha256": "e0b3fa934eb1d9824be8bfe3bba1c02305b28c5c618af6122d264a41884dbfe4"
+    },
+    {
+      "number": 23,
+      "file": "research/23-operator-data.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "23. Discussion: nonperturbative effects and operator data",
+          "id": "np-section-21"
+        },
+        {
+          "level": 3,
+          "title": "Complete tests when the operator differential is known",
+          "id": "complete-tests"
+        }
+      ],
+      "equations": 2,
+      "proof_blocks": 2,
+      "tables": 1,
+      "sha256": "6940cdc25ec26bd5d1617e0bc90b0c52e2b05184f805304f18e0398901c7e0de"
+    },
+    {
+      "number": 24,
+      "file": "research/24-product-kernels.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "24. Appendix: one-loop and two-loop product kernels",
+          "id": "np-section-22"
+        },
+        {
+          "level": 3,
+          "title": "One-loop triangle",
+          "id": "np-74b4ed7f5ce47c5f-1"
+        },
+        {
+          "level": 3,
+          "title": "Two-loop forests",
+          "id": "np-1f6cef9d03fcf705-1"
+        },
+        {
+          "level": 3,
+          "title": "The source hypothesis for the ring laws",
+          "id": "np-1f7d097fe2a68a47-1"
+        }
+      ],
+      "equations": 14,
+      "proof_blocks": 1,
+      "tables": 0,
+      "sha256": "01ae68fec0e2ef5d11077fa9a8b5f0c7219a64f39a5057bc82a953ee6c91f4f7"
+    },
+    {
+      "number": 25,
+      "file": "research/25-su3-trace-tables.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "25. Appendix: complete SU(3) $C_3,C_4$ trace coefficients",
+          "id": "np-section-23"
+        },
+        {
+          "level": 3,
+          "title": "$C_3$",
+          "id": "np-e765e17a03cb61f5-1"
+        },
+        {
+          "level": 4,
+          "title": "The $\\hbar^1$ coefficient of $C_3$",
+          "id": "np-38215bec67a517ea-1"
+        },
+        {
+          "level": 3,
+          "title": "$C_4$",
+          "id": "np-888905ed09a66c49-1"
+        },
+        {
+          "level": 4,
+          "title": "The $\\hbar^1$ coefficient of $C_4$",
+          "id": "np-ebaddb61599c619b-1"
+        },
+        {
+          "level": 4,
+          "title": "The $\\hbar^2$ coefficient of $C_4$",
+          "id": "np-2e8835f3562830ee-1"
+        }
+      ],
+      "equations": 9,
+      "proof_blocks": 0,
+      "tables": 3,
+      "sha256": "2aa9b275d5c2f917650f7ffb0037558cdd3e6b2cfa86fbb18e2188da5e585509"
+    },
+    {
+      "number": 26,
+      "file": "research/26-certificates.md",
+      "headings": [
+        {
+          "level": 2,
+          "title": "26. Appendix: electronic certificates",
+          "id": "np-section-24"
+        }
+      ],
+      "equations": 0,
+      "proof_blocks": 0,
+      "tables": 1,
+      "sha256": "f2c3c3df3d79edf5c0b42f10235fe4c20a9ac166f10ddb282fa9c8432055ce5f"
+    }
+  ]
+}

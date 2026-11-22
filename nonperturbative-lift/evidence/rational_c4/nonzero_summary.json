@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "seconds": 20.93060803413391,
+  "dimensions": {
+    "(3, 3, 6)": {
+      "weight_counts": [
+        2377,
+        2143,
+        1923,
+        1736
+      ],
+      "dimension": 47,
+      "Q0_rank": 19,
+      "kernel": 28
+    },
+    "(2, 3, 6)": {
+      "weight_counts": [
+        7596,
+        6649,
+        6706,
+        5872
+      ],
+      "dimension": 113,
+      "Q0_rank": 70,
+      "kernel": 43
+    },
+    "(4, 2, 6)": {
+      "weight_counts": [
+        462,
+        423,
+        353,
+        321
+      ],
+      "dimension": 7,
+      "Q0_rank": 3,
+      "kernel": 4
+    },
+    "(4, 3, 6)": {
+      "weight_counts": [
+        193,
+        178,
+        132,
+        122
+      ],
+      "dimension": 5,
+      "Q0_rank": 2,
+      "kernel": 3
+    },
+    "(5, 3, 6)": {
+      "weight_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimension": 0
+    },
+    "(6, 3, 6)": {
+      "weight_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimension": 0
+    }
+  },
+  "cartan_image_rank": 4,
+  "functional_terms": 2,
+  "value": 1,
+  "scope": "C0 star C4 is nonzero on E2; incoming higher differentials have zero E1 sources, so the full product cocycle is nonzero in H(Qpert)."
+}

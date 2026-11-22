@@ -1,0 +1,49 @@
+{
+  "status": "PROVED_OVER_Q_ALL_K",
+  "weight": "(k+1,k+1)",
+  "Nb": "k",
+  "Nc": 2,
+  "rotation_scalar": true,
+  "k_range": "all integers k>=0",
+  "leading_tree_dimension": "floor(k/2)+1",
+  "E2_dimension": "0 for k=2 mod3;1 otherwise",
+  "method": "nine-generator FFT/CH module reduction; eighteen-value radial Q1 map; exact recurrence; five-primitive universal full-Q0 transgression",
+  "incoming_d1": "absent by minimum weight2k+3>2k+2",
+  "full_E_infinity": "not inferred for uncompleted k",
+  "proof": "proofs.md: Theorems15-16; leading_module_and_radial_kernel.md",
+  "universal_first_lift_readback": {
+    "status": "PASS",
+    "five_primitive_identities_read_back": true,
+    "tests": [
+      {
+        "name": "k7",
+        "C0_coefficient": "-2*x**2*y",
+        "a1_coefficient": "x**3 + 8*y**2",
+        "leading_terms": 3054,
+        "Q1_terms": 114724,
+        "primitive_terms": 121438,
+        "nonexact_remainder_terms": 0,
+        "full_Q0_identity": true
+      },
+      {
+        "name": "off_kernel",
+        "C0_coefficient": "x**2",
+        "a1_coefficient": "x*y",
+        "leading_terms": 1960,
+        "Q1_terms": 64184,
+        "primitive_terms": 61584,
+        "nonexact_remainder_terms": 27100,
+        "full_Q0_identity": true
+      }
+    ],
+    "seconds": 123.70628523826599,
+    "scope": "universal full-Q0 first-lift identity; k7 is an E2 survivor, higher loop closure not claimed"
+  },
+  "external_evidence_sha256": {
+    "su3_transgression/casimir_brackets.pkl": "69eab34f6cc714653d37d7d4a86ccaedfef01f64c7651518b25edad86d7bdb8c",
+    "su3_transgression/casimir_brackets.json": "280b96f757e06a751b5e23e4e8825a3d73a78586edcd153ee6d43458f9033d18",
+    "su3_transgression/verify_universal_first_lift.py": "20b164486520903e235156257ce5e271866508e5afaaf35b3a9b5b0ba2ab0307",
+    "su3_transgression/verify_universal_first_lift.pkl": "3ce48e0ecb2700159c69037e2da134a1fd1e1f095e89b07ef59f475b48fa585f",
+    "su3_transgression/verify_universal_first_lift.json": "f92c0506c628fd3b5454c18c1afc59e0c7c697122f62661448553bc6866cf012"
+  }
+}

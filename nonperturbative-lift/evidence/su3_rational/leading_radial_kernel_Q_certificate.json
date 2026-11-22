@@ -1,0 +1,17 @@
+{
+  "coefficient_field": "Q",
+  "all_second_derivative_operators_zero": true,
+  "first_identity": "coefficient for d_(trb2)(a1) = (2/3) coefficient for d_(trb3)(C0)",
+  "second_identity": "coefficient for d_(trb3)(a1) = (trb2/4) coefficient for d_(trb2)(C0)",
+  "third_generator_elimination": "only its zeroth operator has a second-jet ghost; selected coefficient is6(b1+2b2), nonzero",
+  "remaining_operator_minor_determinant": "-216 b1",
+  "kernel_equations": [
+    "d_(trb2)f+(trb2/4)d_(trb3)g=0",
+    "d_(trb3)f+(2/3)d_(trb2)g=0"
+  ],
+  "compatibility": "d_(trb2)^2 g=(3trb2/8)d_(trb3)^2 g",
+  "recurrence": "r(r-1)a_(r,s)=(3/8)(s+2)(s+1)a_(r-3,s+2)",
+  "all_k_Cartan_kernel_dimension": "0 if k=2 mod3; 1 otherwise",
+  "all_k_E2_vanishing": "k=2 mod3",
+  "E2_survival_scope": "all Cartan-kernel directions are full E2 survivors by global_leading_E2_Q_certificate.json"
+}

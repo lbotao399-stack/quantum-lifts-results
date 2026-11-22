@@ -1,0 +1,376 @@
+{
+  "all_loop_git_commit": "3ef33773984a525d2520a4f1ffaf60f3b29ee04f",
+  "manuscript_source_sha256": "ad0483f072ce18ec2c56e2012fa855082acd06ba4c719ef482d33804817ec655",
+  "files": {
+    "sources/claude/ledger.tex": {
+      "source": "Claude snapshot: np_lift_ledger.tex",
+      "sha256": "382173f57ec77dcd48e949c08eb7efa5047214f8f8d9c5e070dff095a417cb2a",
+      "bytes": 39118
+    },
+    "sources/claude/article.tex": {
+      "source": "Claude snapshot: article/main.tex",
+      "sha256": "23f99a6ee1ca9e7876dd32532777074b1d773fafcaf9abbfce6ca22b2f3ef426",
+      "bytes": 68117
+    },
+    "sources/all-loop/main.tex": {
+      "source": "all-loop:main.tex",
+      "sha256": "6be4980a75ef4af7985f67a8663e4c1cfd008336175e4e156a8a0285d4c8f697",
+      "bytes": 355412
+    },
+    "sources/all-loop/product_kernels/README.md": {
+      "source": "all-loop:product_kernels/README.md",
+      "sha256": "a9e8aff78872ae50d7ca2a94684d47b4883da17d224008015df48b6d44a38fb6",
+      "bytes": 7260
+    },
+    "sources/all-loop/product_kernels/code/check.py": {
+      "source": "all-loop:product_kernels/code/check.py",
+      "sha256": "46ca5ab06a6e573bfb227f0f861735bb8c9e842967d92445033ff5f110740538",
+      "bytes": 4252
+    },
+    "sources/all-loop/product_kernels/code/gen_tables.py": {
+      "source": "all-loop:product_kernels/code/gen_tables.py",
+      "sha256": "88e208812a6025ac46ca12a7e83bf741f081c6bbd6a17e680057fe0959a886e1",
+      "bytes": 3013
+    },
+    "sources/all-loop/product_kernels/code/product_kernels.py": {
+      "source": "all-loop:product_kernels/code/product_kernels.py",
+      "sha256": "85c1d77ec3051a24bbac7c5f87fa24e9075b3dbb4b657584d923c718d4cb3fd1",
+      "bytes": 11122
+    },
+    "sources/all-loop/product_kernels/tables/product_kernels_n1.json.gz": {
+      "source": "all-loop:product_kernels/tables/product_kernels_n1.json.gz",
+      "sha256": "62c47b9d60768594553a07a6bcbe3bc4655eef4647aea539d64e8a92ebecbde0",
+      "bytes": 11031
+    },
+    "sources/all-loop/product_kernels/tables/product_kernels_n2.json.gz": {
+      "source": "all-loop:product_kernels/tables/product_kernels_n2.json.gz",
+      "sha256": "e3e6922dad75fdf3f53b5501b9bb7375ad4af56ea48ab3aff29442a173209d70",
+      "bytes": 274047
+    },
+    "sources/all-loop/product_kernels/tables/product_kernels_n3.json.gz": {
+      "source": "all-loop:product_kernels/tables/product_kernels_n3.json.gz",
+      "sha256": "f0e0cca29d1ee861fb100be60eed80e2d3d13c185e279b051dd193a8ab6440da",
+      "bytes": 2511978
+    },
+    "sources/all-loop/product_kernels/tables/product_kernels_n4.json.gz": {
+      "source": "all-loop:product_kernels/tables/product_kernels_n4.json.gz",
+      "sha256": "ad9d731bce92058fca6c0ee6ea1bf5d6463076aa9937a2dd18ddbdc026915299",
+      "bytes": 6034872
+    },
+    "sources/all-loop/product_kernels/tables/product_kernels_n5.json.gz": {
+      "source": "all-loop:product_kernels/tables/product_kernels_n5.json.gz",
+      "sha256": "974191ad146c2b2bd45c6298121f6c09e4e2ded109eb29890a9a035ad0460dde",
+      "bytes": 5088349
+    },
+    "sources/all-loop/product_kernels/tables/product_kernels_n6.json.gz": {
+      "source": "all-loop:product_kernels/tables/product_kernels_n6.json.gz",
+      "sha256": "c273021d92dc9dde416574961cbafab132d9e64fe1707af55e0c264d748fae43",
+      "bytes": 1367730
+    },
+    "sources/all-loop/product_kernels/tables/product_kernels_n7.json.gz": {
+      "source": "all-loop:product_kernels/tables/product_kernels_n7.json.gz",
+      "sha256": "73449aff31afd99078df09ffaea6e96c6bf5898be4989233d6c24b4af6e4b607",
+      "bytes": 13255152
+    },
+    "sources/all-loop/product_kernels/tables/tree_charts_m1.json": {
+      "source": "all-loop:product_kernels/tables/tree_charts_m1.json",
+      "sha256": "6b0ef09638d532523d7aa821bbbf121bbeb8752fa9ae5b56eb6808ee85058d0f",
+      "bytes": 797
+    },
+    "sources/all-loop/product_kernels/tables/tree_charts_m2.json": {
+      "source": "all-loop:product_kernels/tables/tree_charts_m2.json",
+      "sha256": "ff7708c4479471345e0e220e8d43d1f86a5ff4e62f0121690b35624f8d9e2b95",
+      "bytes": 1550
+    },
+    "sources/all-loop/product_kernels/tables/tree_charts_m3.json": {
+      "source": "all-loop:product_kernels/tables/tree_charts_m3.json",
+      "sha256": "7fbc7a73bfd2d6c0a24a6ae3b80e1fd7c78405c8ff18686c69f40920233d79c4",
+      "bytes": 5669
+    },
+    "sources/all-loop/product_kernels/tables/tree_charts_m4.json": {
+      "source": "all-loop:product_kernels/tables/tree_charts_m4.json",
+      "sha256": "bef8dfa8705227587d2ddb6dcdba6e3b787b90d6b570c4ed6efe616a8e7bc8ad",
+      "bytes": 25825
+    },
+    "sources/all-loop/product_kernels/tables/tree_charts_m5.json": {
+      "source": "all-loop:product_kernels/tables/tree_charts_m5.json",
+      "sha256": "f146d47a55be97831684f8265b211388043fe521a5bcdf97431bae69fde232a1",
+      "bytes": 139265
+    },
+    "sources/all-loop/product_kernels/tables/tree_charts_m6.json": {
+      "source": "all-loop:product_kernels/tables/tree_charts_m6.json",
+      "sha256": "96cd89c8a53ee0ee96da9669d86cb5ec3145fc63fae282f4140c99cfa9993b7c",
+      "bytes": 783230
+    },
+    "sources/all-loop/product_kernels/tables/tree_charts_m7.json": {
+      "source": "all-loop:product_kernels/tables/tree_charts_m7.json",
+      "sha256": "b3bfa50d1b41f3b069de7402955ac406e56718fe2814f46f5b6fb3f5446f42e7",
+      "bytes": 4949233
+    },
+    "sources/notes/claim_status.md": {
+      "source": "working note:claim_status.md",
+      "sha256": "dd4be74d3f1fd6fff5b996f37acc370f88ecffbeba3fb4b81706771f6268d109",
+      "bytes": 5752
+    },
+    "sources/notes/duality_nonpert/research_status.md": {
+      "source": "working note:duality_nonpert/research_status.md",
+      "sha256": "3cc13e8dd2734b616a8597aa52073894d1eebcbf54302333b054e22ca45be95c",
+      "bytes": 4115
+    },
+    "sources/notes/duality_nonpert/global_ads_effective_identity.md": {
+      "source": "working note:duality_nonpert/global_ads_effective_identity.md",
+      "sha256": "e020dab79f92f2bc6cf4cae38580cbb5b2ea3573acf57d9a2c271f64da2e3c72",
+      "bytes": 2628
+    },
+    "sources/notes/duality_nonpert/kutasov_review.md": {
+      "source": "working note:duality_nonpert/kutasov_review.md",
+      "sha256": "3a2a079e6fed3c6408fb3f6f4dfe07eab0b480234d70ac0b80cdf8c7e90c5d3e",
+      "bytes": 9018
+    },
+    "sources/notes/duality_nonpert/new_critical_source_audit.md": {
+      "source": "working note:duality_nonpert/new_critical_source_audit.md",
+      "sha256": "842c5c96882573beafb26574e12709808a9f3cd346745633b3f8622d7fb14f7b",
+      "bytes": 11415
+    },
+    "sources/notes/duality_nonpert/scalar_singleq_bridge.md": {
+      "source": "working note:duality_nonpert/scalar_singleq_bridge.md",
+      "sha256": "9bb61890a81c346a288c64209e89b0153185c293dccb0472d5f350409dbbaa23",
+      "bytes": 9252
+    },
+    "sources/notes/duality_nonpert/pure_gamma_all_loop_graph_proof.md": {
+      "source": "working note:duality_nonpert/pure_gamma_all_loop_graph_proof.md",
+      "sha256": "97c6c13e16506aa7a1b4d150ecd8a5251771c866ee2bf8644208836950f746b6",
+      "bytes": 8272
+    },
+    "sources/notes/duality_nonpert/n4_nonpert_constraints.md": {
+      "source": "working note:duality_nonpert/n4_nonpert_constraints.md",
+      "sha256": "01e37941059cf3ce7b9acecdab9fc30b42325b8903f06840cbc1bd452dee9d12",
+      "bytes": 13579
+    },
+    "sources/notes/duality_nonpert/su5_invariant_quotient.md": {
+      "source": "working note:duality_nonpert/su5_invariant_quotient.md",
+      "sha256": "1d71b9db63c809279c2ab0043adad397d8d7677987d77aef7a53155af5db2388",
+      "bytes": 5993
+    },
+    "sources/notes/sqcd_duality_survey/massless_secondary_class_audit.md": {
+      "source": "working note:sqcd_duality_survey/massless_secondary_class_audit.md",
+      "sha256": "e4791451b3581f36042842be93a692fba2beb1b167ce437bc745a233436ec7be",
+      "bytes": 11033
+    },
+    "sources/notes/sqcd_duality_survey/higher_fterms_audit.md": {
+      "source": "working note:sqcd_duality_survey/higher_fterms_audit.md",
+      "sha256": "0d0c9973a4eb64534a56370b233558764c0186e1fdf7ae08e6ed920a89d47a71",
+      "bytes": 11108
+    },
+    "sources/notes/sqcd_duality_survey/circle_lift_audit.md": {
+      "source": "working note:sqcd_duality_survey/circle_lift_audit.md",
+      "sha256": "ed1df22dff03050aa0b1d40380789e7e64817bfb68063153651cbe07144342bc",
+      "bytes": 5160
+    },
+    "sources/notes/homotopy/one_loop_coherence_audit.md": {
+      "source": "working note:homotopy/one_loop_coherence_audit.md",
+      "sha256": "ed8a14b8f53a11f343dc5836ce6226be3c0a6282d2ab4c516bb82d402446edec",
+      "bytes": 4825
+    },
+    "sources/notes/homotopy/su3_eta_comparison.md": {
+      "source": "working note:homotopy/su3_eta_comparison.md",
+      "sha256": "8832cc03ac210af1a47db9977fe881c0de7a547ee50f09404f2b8dee0cc9c5d2",
+      "bytes": 2884
+    },
+    "sources/notes/homotopy/constant_instanton_operator.md": {
+      "source": "working note:homotopy/constant_instanton_operator.md",
+      "sha256": "c851aef48c6889752a0fdabe5d8e9d794a1c757b379257a0774ae69a07743ae6",
+      "bytes": 6968
+    },
+    "checks/original/duality_nonpert/check_global_ads_identity.py": {
+      "source": "working script or required source note:duality_nonpert/check_global_ads_identity.py",
+      "sha256": "9dd19ed4c688577c74bee60e8915144eca12ea46b9f97236c34e25550484262d",
+      "bytes": 1258
+    },
+    "checks/original/duality_nonpert/check_su5_invariant_quotient.py": {
+      "source": "working script or required source note:duality_nonpert/check_su5_invariant_quotient.py",
+      "sha256": "0ec43f3f5b09f07f090046efacd235acf024316e6cb34a36cc674f5d04c26048",
+      "bytes": 2153
+    },
+    "checks/original/duality_nonpert/check_kutasov_branches.py": {
+      "source": "working script or required source note:duality_nonpert/check_kutasov_branches.py",
+      "sha256": "1079c7b67b8956e171aeead40f77e3364b36cc5e32ae191c7e1d858f64039c32",
+      "bytes": 2675
+    },
+    "checks/original/duality_nonpert/check_n1_duality.py": {
+      "source": "working script or required source note:duality_nonpert/check_n1_duality.py",
+      "sha256": "45d768948b1bcc23d7f8f7d2c9721d0dff457bcb659462e2778b4c82bf0295db",
+      "bytes": 1952
+    },
+    "checks/original/sqcd_duality_survey/check_fundamental_triangle.py": {
+      "source": "working script or required source note:sqcd_duality_survey/check_fundamental_triangle.py",
+      "sha256": "988b632b48d7b9dbd05780aa0bb2980ba1d484c836acc386b29e639e638b1bd3",
+      "bytes": 1941
+    },
+    "checks/original/sqcd_duality_survey/fundamental_triangle_coefficient_audit.md": {
+      "source": "working script or required source note:sqcd_duality_survey/fundamental_triangle_coefficient_audit.md",
+      "sha256": "cde200bedbad6c5197bdd0db19247d7e707cdd815ecf3e8b660e060e7a6021eb",
+      "bytes": 8701
+    },
+    "checks/original/sqcd_duality_survey/check_n2.py": {
+      "source": "working script or required source note:sqcd_duality_survey/check_n2.py",
+      "sha256": "429ebab7f863903940a9ded4f524684743799895a2a79a602eff70479174ba0b",
+      "bytes": 2203
+    },
+    "checks/original/instanton/check_moduli_integrals.py": {
+      "source": "working script or required source note:instanton/check_moduli_integrals.py",
+      "sha256": "acba14baf1e0e03276c607844627728e7e867fdd7f686844f5643c04e1ebce7f",
+      "bytes": 1353
+    },
+    "checks/original/homotopy/check_quotient_hypothesis.py": {
+      "source": "working script or required source note:homotopy/check_quotient_hypothesis.py",
+      "sha256": "9d3c37e8f10b94609b7054a8c6fa98a1b73fbd4b0502035e3f5b141bc44d81d9",
+      "bytes": 1454
+    },
+    "checks/original/instanton/contact_matching/check_wilson_closed_form.py": {
+      "source": "working script or required source note:instanton/contact_matching/check_wilson_closed_form.py",
+      "sha256": "d628c6e58efe7dca4d99ec3d1666993bb6e4259b546d2a1e13797de98e718a25",
+      "bytes": 3241
+    },
+    "checks/original/instanton/contact_matching/check_wilson_moments.py": {
+      "source": "working script or required source note:instanton/contact_matching/check_wilson_moments.py",
+      "sha256": "26ca482da681dc9a2d98ab3cab66ec525c0cc1641e746327910c38f9ab12146b",
+      "bytes": 3844
+    },
+    "sources/engines/qengine.py": {
+      "source": "Claude fortuitous-lift-claude:publish/quantum-lifts-results/certificates/qengine.py; shared jet/Wick and moment routines only",
+      "bytes": 18288,
+      "sha256": "dbc25782d3989415e779ae2ae2f865c39af0b009d3b50980c69fdde758fac1a1"
+    },
+    "sources/engines/exact_star.py": {
+      "source": "work/rational_c4/exact_star.py; original forest product with legacy imports",
+      "bytes": 8462,
+      "sha256": "7e47f4174779f857744284657f2526cb6210cfa92b7d45f7d5293864420d5108"
+    },
+    "sources/engines/originals/instanton/contact_matching/check_normal_connection_radial_readback.py": {
+      "source": "working script:instanton/contact_matching/check_normal_connection_radial_readback.py",
+      "bytes": 4402,
+      "sha256": "a6b3973b3f117af0d19cd38f45121949394b6b28ac63138be5736d54841db0cd"
+    },
+    "sources/engines/originals/sqcd_duality_survey/check_massless_heavy_cross.py": {
+      "source": "working script:sqcd_duality_survey/check_massless_heavy_cross.py",
+      "bytes": 1749,
+      "sha256": "8fdb64ae257300fb191174a0031688b44b06f175559c14508cc95b4b3521a7f0"
+    },
+    "sources/engines/originals/sqcd_duality_survey/check_microscopic_konishi.py": {
+      "source": "working script:sqcd_duality_survey/check_microscopic_konishi.py",
+      "bytes": 1792,
+      "sha256": "a2d8dde1ea20be833bafd1f90c5ad8ecc2d5ca55ef5dd2713d8c321394c7752d"
+    },
+    "sources/engines/originals/sqcd_duality_survey/check_su_rank_and_mass.py": {
+      "source": "working script:sqcd_duality_survey/check_su_rank_and_mass.py",
+      "bytes": 2861,
+      "sha256": "bebe2707b88db62e8a460d12d282dfbdd0f50bb0f10d4dfa42cc7d345780e758"
+    },
+    "sources/notes/universal_casimir/trace_bracket.md": {
+      "source": "research working tree: work/universal_casimir/trace_bracket.md",
+      "bytes": 3310,
+      "sha256": "edce339f5975025b012b8990d06c77f5c881762ec4131497363777482a5ed4f7"
+    },
+    "sources/notes/duality_nonpert/monopoles_worldsheet.md": {
+      "source": "research working tree: work/duality_nonpert/monopoles_worldsheet.md",
+      "bytes": 8793,
+      "sha256": "1a170b889aee0b206a2c245526d4f772d5c3897c2f97d0401530c834d002fc15"
+    },
+    "sources/notes/duality_nonpert/n1_duality.md": {
+      "source": "research working tree: work/duality_nonpert/n1_duality.md",
+      "bytes": 13429,
+      "sha256": "55f0b36b327b4d0a7bf299f94e11f25720eb15a35d2dd3e2571d3462e16b9856"
+    },
+    "sources/notes/duality_nonpert/n4.md": {
+      "source": "research working tree: work/duality_nonpert/n4.md",
+      "bytes": 8783,
+      "sha256": "5d35b743f842e1399d10c1bc3c05d5f37ba89b4dcd521c2af1abe020ba4f099c"
+    },
+    "sources/notes/duality_nonpert/zerojet_perturbative_audit.md": {
+      "source": "research working tree: work/duality_nonpert/zerojet_perturbative_audit.md",
+      "bytes": 10234,
+      "sha256": "ee613043bf0da5153815208767138d29e817167ed341f89d3d33def161f81d8f"
+    },
+    "sources/engines/originals/universal_casimir/verify_symbol.py": {
+      "source": "research working tree: work/universal_casimir/verify_symbol.py",
+      "bytes": 1177,
+      "sha256": "775860a7d9b1f3ef705fff206af9c9d1b82932278f5e5982e7c8f1c834a8f15e"
+    },
+    "sources/engines/originals/su4_cartan/lift_higher_first.py": {
+      "source": "research working tree: work/su4_cartan/lift_higher_first.py",
+      "bytes": 14412,
+      "sha256": "d75d0a0892b8cc42a7e8e63802eed14f69e0fa4f67aa9c6c79fd85dacab308b4"
+    },
+    "sources/engines/originals/su4_cartan/full_q0_stream.py": {
+      "source": "research working tree: work/su4_cartan/full_q0_stream.py",
+      "bytes": 3660,
+      "sha256": "7551212ea739c6b45ef005c72937b0ab520a8114280f5d3497f366f258cf7f9d"
+    },
+    "sources/engines/originals/su4_cartan/source_prefilter/verify_cache.py": {
+      "source": "research working tree: work/su4_cartan/source_prefilter/verify_cache.py",
+      "bytes": 2649,
+      "sha256": "c62c11d5492b26b3912b8396383acf50afd77c0176041fba3793b4fdf1eb9887"
+    },
+    "sources/engines/originals/rational_c4/m6_lift/advance_fourth.py": {
+      "source": "research working tree: work/rational_c4/m6_lift/advance_fourth.py",
+      "bytes": 2681,
+      "sha256": "9c3564373d1ced17300516c4f1036b599c10cff9bd21b0d3b4f0f3b279278ee6"
+    },
+    "sources/engines/originals/homotopy/strict_homotopy_order4.py": {
+      "source": "research working tree: work/homotopy/strict_homotopy_order4.py",
+      "bytes": 12216,
+      "sha256": "bf4f37fa481be8b7a67994c65b345aeddf93e6df531597e11c9dacea6399aa5e"
+    },
+    "sources/engines/originals/instanton/contact_matching/normal_connection_full_jets.py": {
+      "source": "research working tree: work/instanton/contact_matching/normal_connection_full_jets.py",
+      "bytes": 3440,
+      "sha256": "2e36dc868a254e9a7c056a72fc835f9391d1eece384208d6be964711b1e6de43"
+    },
+    "sources/engines/originals/instanton/contact_matching/normal_connection_source_polynomial.py": {
+      "source": "research working tree: work/instanton/contact_matching/normal_connection_source_polynomial.py",
+      "bytes": 3515,
+      "sha256": "a8df3a306177a8d8e96316fa7af3c14b7ab5ed099ea84eba9ba4366211e95375"
+    },
+    "sources/engines/originals/instanton/contact_matching/integrate_normal_connection.py": {
+      "source": "research working tree: work/instanton/contact_matching/integrate_normal_connection.py",
+      "bytes": 3733,
+      "sha256": "9ca6d54d0ce990c37b86aaa4c7cece300ab57b5ad0e1215e7f6fc2fde027e522"
+    },
+    "sources/engines/originals/instanton/contact_matching/check_ss_green_channels.py": {
+      "source": "research working tree: work/instanton/contact_matching/check_ss_green_channels.py",
+      "bytes": 4247,
+      "sha256": "c900accb357a1fac0bb5b30df2263b59afeed907b9ff799c0c41937240bf4e26"
+    },
+    "sources/engines/originals/instanton/contact_matching/check_h0_finite_flow.py": {
+      "source": "research working tree: work/instanton/contact_matching/check_h0_finite_flow.py",
+      "bytes": 4192,
+      "sha256": "10abaec6d9f6e92ca9336ee035f51e61006b2517fea22deb2709ced92b80add6"
+    },
+    "sources/engines/originals/rational_c4/certify_nonzero.py": {
+      "source": "work/rational_c4/certify_nonzero.py",
+      "sha256": "ea3bc9b175b2de53891f3f3c7e94e59b46c7c403f5c4455d233ca1708fbbecc7",
+      "bytes": 4402
+    },
+    "sources/engines/originals/rational_c4/certify_c4.py": {
+      "source": "work/rational_c4/certify_c4.py",
+      "sha256": "40c4ae3af05200705870099497facf2b0a052137bd58311e61be6d71ad435bfc",
+      "bytes": 7582
+    },
+    "sources/engines/originals/rational_c4/exact_product.py": {
+      "source": "work/rational_c4/exact_product.py",
+      "sha256": "f4d7a955f7c7c78bf45f0ec5e1bbeda7b50461a388f71991e678228e6da5eac3",
+      "bytes": 3032
+    },
+    "sources/engines/originals/rational_c4/complete_c4.py": {
+      "source": "work/rational_c4/complete_c4.py",
+      "sha256": "048f3766cff1434d03af6d2447cfed84a7d58396236e691f7967e9a0ed93cc8a",
+      "bytes": 3769
+    },
+    "sources/engines/originals/rational_c4/finish_c4.py": {
+      "source": "work/rational_c4/finish_c4.py",
+      "sha256": "4b4cc8ce0d161ee47ad6221cebe522dfe922f1ef90b448c2b1d6a8c374369139",
+      "bytes": 3398
+    }
+  }
+}

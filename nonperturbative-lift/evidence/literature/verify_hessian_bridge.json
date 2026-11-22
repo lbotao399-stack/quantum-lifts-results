@@ -1,0 +1,249 @@
+{
+  "status": "PASS",
+  "coordinates": "independent traceless eigenvalues; commuting markers label ordered first-ghost then second-ghost slots",
+  "exact_symbolic_degree_range": [
+    0,
+    16
+  ],
+  "records": [
+    {
+      "N": 3,
+      "k": 0,
+      "ordinary_Hessian_slots": 4,
+      "factor": "1/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 1,
+      "ordinary_Hessian_slots": 4,
+      "factor": "4/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 2,
+      "ordinary_Hessian_slots": 4,
+      "factor": "3",
+      "period_nonzero": false
+    },
+    {
+      "N": 3,
+      "k": 3,
+      "ordinary_Hessian_slots": 4,
+      "factor": "16/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 4,
+      "ordinary_Hessian_slots": 4,
+      "factor": "25/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 5,
+      "ordinary_Hessian_slots": 4,
+      "factor": "12",
+      "period_nonzero": false
+    },
+    {
+      "N": 3,
+      "k": 6,
+      "ordinary_Hessian_slots": 4,
+      "factor": "49/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 7,
+      "ordinary_Hessian_slots": 4,
+      "factor": "64/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 8,
+      "ordinary_Hessian_slots": 4,
+      "factor": "27",
+      "period_nonzero": false
+    },
+    {
+      "N": 3,
+      "k": 9,
+      "ordinary_Hessian_slots": 4,
+      "factor": "100/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 10,
+      "ordinary_Hessian_slots": 4,
+      "factor": "121/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 11,
+      "ordinary_Hessian_slots": 4,
+      "factor": "48",
+      "period_nonzero": false
+    },
+    {
+      "N": 3,
+      "k": 12,
+      "ordinary_Hessian_slots": 4,
+      "factor": "169/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 13,
+      "ordinary_Hessian_slots": 4,
+      "factor": "196/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 14,
+      "ordinary_Hessian_slots": 4,
+      "factor": "75",
+      "period_nonzero": false
+    },
+    {
+      "N": 3,
+      "k": 15,
+      "ordinary_Hessian_slots": 4,
+      "factor": "256/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 3,
+      "k": 16,
+      "ordinary_Hessian_slots": 4,
+      "factor": "289/3",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 0,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-1/4",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 1,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-1",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 2,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-9/4",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 3,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-4",
+      "period_nonzero": false
+    },
+    {
+      "N": 4,
+      "k": 4,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-25/4",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 5,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-9",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 6,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-49/4",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 7,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-16",
+      "period_nonzero": false
+    },
+    {
+      "N": 4,
+      "k": 8,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-81/4",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 9,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-25",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 10,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-121/4",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 11,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-36",
+      "period_nonzero": false
+    },
+    {
+      "N": 4,
+      "k": 12,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-169/4",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 13,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-49",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 14,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-225/4",
+      "period_nonzero": true
+    },
+    {
+      "N": 4,
+      "k": 15,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-64",
+      "period_nonzero": false
+    },
+    {
+      "N": 4,
+      "k": 16,
+      "ordinary_Hessian_slots": 9,
+      "factor": "-289/4",
+      "period_nonzero": true
+    }
+  ],
+  "seconds": 10.838558197021484
+}

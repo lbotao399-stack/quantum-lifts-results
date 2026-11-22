@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "seconds": 12.731392860412598,
+  "maxrss_bytes": 127287296,
+  "runtime_scope": "This assembler process only; saved Qn images were computed in earlier workers.",
+  "computation_logs": [
+    "complete.log",
+    "finish.log",
+    "precompute.log"
+  ],
+  "boundary_terms": [
+    76,
+    1549,
+    6194,
+    4482,
+    385
+  ],
+  "last_closed_correction_terms": 1413,
+  "relation": "C2 star C2 - 3 C0 star C4_source = Qpert boundary",
+  "article_normalization": "C4_article = -C4_source gives C2 star C2 + 3 C0 star C4_article = Qpert boundary",
+  "certificate_sha256": "2a4877c521f1bdba8288cd664af67afa0d82071e7b315a1c2453f21fd70c209a"
+}

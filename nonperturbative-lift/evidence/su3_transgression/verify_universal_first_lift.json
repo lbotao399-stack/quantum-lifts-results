@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "five_primitive_identities_read_back": true,
+  "tests": [
+    {
+      "name": "k7",
+      "C0_coefficient": "-2*x**2*y",
+      "a1_coefficient": "x**3 + 8*y**2",
+      "leading_terms": 3054,
+      "Q1_terms": 114724,
+      "primitive_terms": 121438,
+      "nonexact_remainder_terms": 0,
+      "full_Q0_identity": true
+    },
+    {
+      "name": "off_kernel",
+      "C0_coefficient": "x**2",
+      "a1_coefficient": "x*y",
+      "leading_terms": 1960,
+      "Q1_terms": 64184,
+      "primitive_terms": 61584,
+      "nonexact_remainder_terms": 27100,
+      "full_Q0_identity": true
+    }
+  ],
+  "seconds": 123.70628523826599,
+  "scope": "universal full-Q0 first-lift identity; k7 is an E2 survivor, higher loop closure not claimed"
+}

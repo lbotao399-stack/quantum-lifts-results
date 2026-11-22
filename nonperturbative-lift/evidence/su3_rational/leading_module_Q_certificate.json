@@ -1,0 +1,361 @@
+{
+  "coefficient_field": "Q",
+  "generator_names": [
+    "C0",
+    "a1",
+    "tr(b d1c)tr(b d2c)"
+  ],
+  "generator_degrees": [
+    0,
+    1,
+    2
+  ],
+  "coefficient_ring": "Q[tr(b^2),tr(b^3)]",
+  "reduced_trace_generators": [
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        0
+      ],
+      "degree": 0,
+      "module_coefficients": [
+        {
+          "generator": 0,
+          "tr_b2_power": 0,
+          "tr_b3_power": 0,
+          "coefficient": "1"
+        }
+      ],
+      "incoming_trace_coefficients": [],
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "full_Q0_residual_terms": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "module_coefficients": [
+        {
+          "generator": 1,
+          "tr_b2_power": 0,
+          "tr_b3_power": 0,
+          "coefficient": "-1"
+        }
+      ],
+      "incoming_trace_coefficients": [],
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "full_Q0_residual_terms": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        2
+      ],
+      "degree": 2,
+      "module_coefficients": [
+        {
+          "generator": 0,
+          "tr_b2_power": 1,
+          "tr_b3_power": 0,
+          "coefficient": "1/6"
+        },
+        {
+          "generator": 2,
+          "tr_b2_power": 0,
+          "tr_b3_power": 0,
+          "coefficient": "1/3"
+        }
+      ],
+      "incoming_trace_coefficients": [
+        {
+          "descriptor": {
+            "q2_power": 0,
+            "q3_power": 0,
+            "channel": "single",
+            "gaps": [
+              0,
+              1
+            ],
+            "incoming": true
+          },
+          "coefficient": "-1/3"
+        }
+      ],
+      "difference_terms": 142,
+      "primitive_terms": 88,
+      "full_Q0_residual_terms": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        1,
+        1
+      ],
+      "degree": 2,
+      "module_coefficients": [
+        {
+          "generator": 0,
+          "tr_b2_power": 1,
+          "tr_b3_power": 0,
+          "coefficient": "1/6"
+        },
+        {
+          "generator": 2,
+          "tr_b2_power": 0,
+          "tr_b3_power": 0,
+          "coefficient": "1/3"
+        }
+      ],
+      "incoming_trace_coefficients": [
+        {
+          "descriptor": {
+            "q2_power": 0,
+            "q3_power": 0,
+            "channel": "single",
+            "gaps": [
+              0,
+              1
+            ],
+            "incoming": true
+          },
+          "coefficient": "2/3"
+        }
+      ],
+      "difference_terms": 142,
+      "primitive_terms": 88,
+      "full_Q0_residual_terms": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        1,
+        2
+      ],
+      "degree": 3,
+      "module_coefficients": [
+        {
+          "generator": 0,
+          "tr_b2_power": 0,
+          "tr_b3_power": 1,
+          "coefficient": "1/3"
+        },
+        {
+          "generator": 1,
+          "tr_b2_power": 1,
+          "tr_b3_power": 0,
+          "coefficient": "-1/2"
+        }
+      ],
+      "incoming_trace_coefficients": [
+        {
+          "descriptor": {
+            "q2_power": 0,
+            "q3_power": 0,
+            "channel": "single",
+            "gaps": [
+              0,
+              2
+            ],
+            "incoming": true
+          },
+          "coefficient": "1"
+        }
+      ],
+      "difference_terms": 354,
+      "primitive_terms": 256,
+      "full_Q0_residual_terms": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        2,
+        2
+      ],
+      "degree": 4,
+      "module_coefficients": [
+        {
+          "generator": 0,
+          "tr_b2_power": 2,
+          "tr_b3_power": 0,
+          "coefficient": "1/12"
+        },
+        {
+          "generator": 1,
+          "tr_b2_power": 0,
+          "tr_b3_power": 1,
+          "coefficient": "-1/3"
+        },
+        {
+          "generator": 2,
+          "tr_b2_power": 1,
+          "tr_b3_power": 0,
+          "coefficient": "1/6"
+        }
+      ],
+      "incoming_trace_coefficients": [
+        {
+          "descriptor": {
+            "q2_power": 0,
+            "q3_power": 0,
+            "channel": "single",
+            "gaps": [
+              1,
+              2
+            ],
+            "incoming": true
+          },
+          "coefficient": "1"
+        },
+        {
+          "descriptor": {
+            "q2_power": 1,
+            "q3_power": 0,
+            "channel": "single",
+            "gaps": [
+              0,
+              1
+            ],
+            "incoming": true
+          },
+          "coefficient": "1/3"
+        }
+      ],
+      "difference_terms": 778,
+      "primitive_terms": 816,
+      "full_Q0_residual_terms": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        1,
+        1
+      ],
+      "degree": 2,
+      "module_coefficients": [
+        {
+          "generator": 2,
+          "tr_b2_power": 0,
+          "tr_b3_power": 0,
+          "coefficient": "1"
+        }
+      ],
+      "incoming_trace_coefficients": [],
+      "difference_terms": 0,
+      "primitive_terms": 0,
+      "full_Q0_residual_terms": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        1,
+        2
+      ],
+      "degree": 3,
+      "module_coefficients": [
+        {
+          "generator": 0,
+          "tr_b2_power": 0,
+          "tr_b3_power": 1,
+          "coefficient": "1/2"
+        },
+        {
+          "generator": 1,
+          "tr_b2_power": 1,
+          "tr_b3_power": 0,
+          "coefficient": "-1/2"
+        }
+      ],
+      "incoming_trace_coefficients": [
+        {
+          "descriptor": {
+            "q2_power": 0,
+            "q3_power": 0,
+            "channel": "single",
+            "gaps": [
+              0,
+              2
+            ],
+            "incoming": true
+          },
+          "coefficient": "1"
+        }
+      ],
+      "difference_terms": 354,
+      "primitive_terms": 256,
+      "full_Q0_residual_terms": 0
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        2,
+        2
+      ],
+      "degree": 4,
+      "module_coefficients": [
+        {
+          "generator": 0,
+          "tr_b2_power": 2,
+          "tr_b3_power": 0,
+          "coefficient": "1/6"
+        },
+        {
+          "generator": 1,
+          "tr_b2_power": 0,
+          "tr_b3_power": 1,
+          "coefficient": "-1"
+        },
+        {
+          "generator": 2,
+          "tr_b2_power": 1,
+          "tr_b3_power": 0,
+          "coefficient": "-1/6"
+        }
+      ],
+      "incoming_trace_coefficients": [
+        {
+          "descriptor": {
+            "q2_power": 0,
+            "q3_power": 0,
+            "channel": "single",
+            "gaps": [
+              1,
+              2
+            ],
+            "incoming": true
+          },
+          "coefficient": "1"
+        },
+        {
+          "descriptor": {
+            "q2_power": 1,
+            "q3_power": 0,
+            "channel": "single",
+            "gaps": [
+              0,
+              1
+            ],
+            "incoming": true
+          },
+          "coefficient": "2/3"
+        }
+      ],
+      "difference_terms": 902,
+      "primitive_terms": 812,
+      "full_Q0_residual_terms": 0
+    }
+  ],
+  "all_nine_full_Q0_identities": true,
+  "source_Cartan_determinant": "-3 b1 b2 (b1+b2)",
+  "determinant_nonzero": true,
+  "Molien_series": "(1+t+t^2)/((1-t^2)(1-t^3))=1/((1-t)(1-t^2))",
+  "dimension_degree_k": "floor(k/2)+1",
+  "global_argument": "FFT trace generation; CH gap reduction; nine exact primitive identities; multiplication by Q0-closed Casimirs; nonzero Cartan determinant",
+  "scope": "leading rotation-scalar tree cohomology at Nb=k,Nc=2,weight(k+1,k+1), all k>=0; no Q1 kernel or higher-survival claim yet"
+}

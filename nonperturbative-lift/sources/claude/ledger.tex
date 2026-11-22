@@ -1,0 +1,736 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=15mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{xcolor,booktabs,array}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\allowdisplaybreaks
+\newcommand{\tagbox}[1]{\fbox{\footnotesize #1}}
+\newcommand{\sred}[1]{{\setlength{\fboxrule}{1.1pt}\fcolorbox{red}{white}{$\displaystyle #1$}}}
+\newcommand{\ok}{\checkmark}
+\renewcommand{\arraystretch}{1.35}
+\begin{document}
+{\Large\bfseries Non-perturbative lifts: ledger, version 14}\par\smallskip
+{\small 2026-11-11;\quad \textcolor{red}{red: new here};\quad sources: [BGKWWY] arXiv:2306.01039, [BK] arXiv:2512.07771, reader (7.2), [LLC] Li--Liu--Chang, \emph{Holomorphic Feynman diagrams in four dimensions and the quantum BPS ring}}
+
+\section*{1\quad Two filtrations}
+\[
+Q=\underbrace{\sum_{n\ge0}Q_n}_{\text{loops},\ E_r^{\rm pert}}\ +\ \underbrace{\sum_{k\ge1}\Lambda^{k\,b_0}\,Q_{k\text{-inst}}}_{\text{instanton number }k,\ \text{[BGKWWY (8.6)]}},
+\qquad
+H(Q)\ \subseteq\ E_\infty^{\rm pert}
+\]
+\[
+\text{lifted non-perturbatively}:=E_\infty^{\rm pert}\ominus H(Q),\qquad \text{lifts come in pairs }(x,y):\ \ Q_{k\text{-inst}}\,x=\Lambda^{k b_0}\,y
+\]
+
+\section*{2\quad Selection rules}
+\tagbox{charges}\quad [BGKWWY Table 1], with matter $\gamma_i\in R_i$ of $R$-charge $r_i$:
+\[
+\begin{array}{l|ccccc}
+\toprule
+ & c & \partial_{\dot\alpha} & b & \gamma_i & \beta_i\\\midrule
+C_R=\mathrm{gh}-R & 1 & 0 & 0 & r_i & 1-r_i\\
+M_R=n_1+n_2 & 0 & 1 & 2 & r_i & 2-r_i\\
+C=C_R-M_R & 1 & -1 & -2 & 0 & -1\\
+F_i & 0 & 0 & 0 & 1 & -1\\\bottomrule
+\end{array}
+\]
+\tagbox{rules}
+\[
+\begin{array}{l|cccc}
+\toprule
+ & \Delta C & \Delta M_R & \Delta F_i & SU(2)\text{ spin}\\\midrule
+Q_n & +1 & 0 & 0 & 0\\
+Q_{k\text{-inst}} & +1 & -2k\Big[h^\vee-\sum_iT(R_i)(1-r_i)\Big] & -2k\,T(R_i) & 0\\\bottomrule
+\end{array}
+\]
+\[
+\underbrace{h^\vee-\sum_iT(R_i)(1-r_i)}_{\text{same bracket as in }Q_1S_{\dot\beta}\text{, reader (7.2)}}
+\qquad
+\begin{array}{ll}
+\text{pure }SU(N):& \Delta M_R=-2kN\ \ \text{[BGKWWY (8.6)]}\ \ \ok\\
+SU(2),\ 4\text{ doublets},\ r=0:& \operatorname{Pf}M\ \to\ \Lambda^4:\ \ \Delta M_R=0,\ \ \Delta\textstyle\sum_iF_i=-4\ \ \ok\\
+\mathcal N=4:& \Delta M_R=0,\ \text{no anomalous }F\ \Rightarrow\ \text{no rule}
+\end{array}
+\]
+
+\section*{3\quad Handles}
+\tagbox{A: exact infrared description}
+\[
+\begin{array}{llll}
+\toprule
+\text{theory} & b_0 & \text{infrared} & H(Q)\ \text{if UV}=\text{IR [BGKWWY Sec.\ 1]}\\\midrule
+SU(N)\ \text{pure} & 3N & N\ \text{gapped vacua},\ (\partial_{\dot\alpha}c_A\partial^{\dot\alpha}c_A)^N\propto\Lambda^{3N} & \mathbb C^N\\
+SU(2),\ 2\ \text{doublets} & 5 & W=\Lambda^5/\operatorname{Pf}M,\ \text{no vacuum} & 0\\
+SU(2),\ 4\ \text{doublets} & 4 & \operatorname{Pf}M=\Lambda^4 & \beta\gamma\ \text{on}\ \{\operatorname{Pf}M=\Lambda^4\}\subset\mathbb C^6\\
+SU(2),\ 6\ \text{doublets} & 3 & 15\ \text{chirals},\ W=-\operatorname{Pf}M/\Lambda^3 & \beta\gamma\ \text{with}\ W=\operatorname{Pf}\gamma\\
+SU(2),\ \mathcal N=1^* & & 3\ \text{gapped vacua} & \mathbb C^3\\
+SU(2)\ \text{pure}\ \mathcal N=2 & 4 & \text{Coulomb branch},\ \Delta F_\gamma=-4k & \supseteq\mathbb C[\gamma_A\gamma_A]\\\bottomrule
+\end{array}
+\]
+\tagbox{B: two perturbative frames of one theory}
+\[
+\begin{array}{lll}
+\toprule
+\text{pair} & \text{forced lifts}\ \ge\ \dim E_\infty^{\rm pert}(G)-\dim E_\infty^{\rm pert}(G^\vee) & \text{data}\\\midrule
+\mathcal N=4:\ SO(7)\leftrightarrow Sp(3) & 0\ \text{at every charge},\ j\le22\ \ (\text{after }d_1) & \text{ours}\\
+\mathcal N=4:\ SO(9)\leftrightarrow Sp(4) & 0\ \text{at every charge},\ j\le19 & \text{ours}\\
+\mathcal N=2:\ SU(2),\ N_f=4,\ SO(8)\ \text{triality} & \text{triality-odd part of the character of }E_\infty^{\rm pert} & \text{none}\\
+SU(2),\ 8\ \text{doublets}:\ 72\ \text{frames} & W(E_7)\text{-odd part} & \text{none}\\\bottomrule
+\end{array}
+\]
+\tagbox{C: exact subsectors (lower bounds on $H(Q)$)}\quad chiral ring;\ \ Schur operators and Coulomb-branch operators ($\mathcal N=2$);\ \ index
+
+\section*{4\quad Pure $SU(2)$}
+\tagbox{classes of $E_\infty^{\rm pert}$}\quad [BGKWWY (8.11), Table 3] and this ledger;\quad $N_c=C+M_R$
+\[
+\begin{array}{cclcl}
+\toprule
+(n_1,n_2) & C & \text{class} & \text{partner under }Q_{1\text{-inst}} & \text{status}\\\midrule
+(0,0) & 0 & 1 & \text{none} & \text{survives}\\
+(1,1) & 0 & \partial_{\dot\alpha}c_A\partial^{\dot\alpha}c_A & \text{none} & \text{survives}\\
+(3,3) & -4 & C_2 & \leftarrow\ (5,5),\ C=-5 & \sred{\text{partner}=\langle C_0,C_0,C_2\rangle\neq0\ \ (\text{Sec.\ 9})}\\
+(5,5) & -8 & C_4 & \leftarrow\ (7,7),\ C=-9 & \text{pair present}\\
+(6,6) & -8 & B_{1,2}\,\partial_1\partial_2B_{1,2}\,\partial_1^2C_0 & \leftarrow\ (8,8),\ C=-9 & \text{pair present}:\ (N_b,N_c)=(1,7)\\
+(8,8) & -12 & (N_b,N_c)=(4,4) & \leftarrow\ (10,10),\ C=-13 & \sred{=C_0C_6\ (\text{Sec.\ 11});\ \text{partner beyond computed range}}\\
+(7,7) & -12 & C_6 & \leftarrow\ (9,9),\ C=-13 & \text{pair present}:\ (N_b,N_c)=(5,5),\ E_2\\\bottomrule
+\end{array}
+\]
+\tagbox{$(8,8)$, complete sector}
+\[
+\sred{E_2=E_\infty^{\rm pert}=\{(N_b,N_c)=(4,4):1,\ \ (1,7):1\}}
+\]
+{\small\[
+\begin{array}{l|ccccccccccccc}
+(N_b,N_c) & (0,2) & (0,4) & (0,6) & (1,1) & (1,3) & (1,5) & (1,7) & (2,0) & (2,2) & (2,4) & (2,6) & (3,1) & (3,3)\\\hline
+\dim E_1 & 1 & 24 & 43 & 2 & 81 & 185 & 2 & 1 & 103 & 330 & 7 & 59 & 316\\
+\operatorname{rank}d_1\ \text{out} & 0 & 0 & 0 & 1 & 24 & 43 & 0 & 1 & 57 & 142 & 1 & 46 & 188
+\end{array}
+\]
+\[
+\begin{array}{l|cccccccccc}
+(N_b,N_c) & (3,5) & (4,0) & (4,2) & (4,4) & (5,1) & (5,3) & (6,0) & (6,2) & (7,1) & (8,0)\\\hline
+\dim E_1 & 17 & 13 & 175 & 25 & 55 & 20 & 8 & 9 & 3 & 1\\
+\operatorname{rank}d_1\ \text{out} & 6 & 13 & 128 & 11 & 47 & 13 & 8 & 7 & 2 & 1
+\end{array}
+\]}
+\[
+\underbrace{E_2^{(N_b,5)}=E_2^{(N_b,3)}=E_2^{(N_b,6)}=0}_{\text{no source or target for }d_{r\ge2}}\quad\Rightarrow\quad (4,4),\ (1,7)\in E_\infty^{\rm pert}
+\]
+\tagbox{$(9,9)$, $N_b\ge4$}
+\[
+\sred{E_2^{(N_b,5)}=\delta_{N_b,5}\ \ (N_b\ge4),\qquad E_2^{(N_b,N_c)}=0\ \ (N_b\ge4,\ N_c\ge6)}
+\]
+\tagbox{not computed}\quad $(9,9)$, $N_b\le3$:\ \ $(5,5)\in E_2$, and $(5,5)\in E_\infty^{\rm pert}$ needs $E_2^{(N_b\le3,\,6)}$
+
+\section*{5\quad Pure $SU(3)$}
+\tagbox{$E_2=E_\infty^{\rm pert}$, complete sectors}
+\[
+\sred{\begin{array}{c|l}
+(n_1,n_2) & (N_b,N_c)\ \text{of the classes}\\\hline
+(1,1) & (0,2)\\
+(2,2) & (1,2),\ (0,4)\\
+(3,3) & \text{none}\\
+(4,4) & (3,2),\ (2,4)\\
+(5,5) & (4,2),\ (3,4),\ (0,7)
+\end{array}}
+\]
+\[
+\begin{array}{cclcl}
+\toprule
+(n_1,n_2) & C & \text{class} & \text{partner under }Q_{1\text{-inst}} & \text{status}\\\midrule
+(0,0),\ (1,1),\ (2,2) & 0 & 1,\ C_0,\ C_0^2 & \text{none} & \text{survive}\\
+(2,2) & -2 & C_1 & \leftarrow\ (5,5),\ C=-3 & \sred{\text{partner}=\langle C_0^2,C_0,C_1\rangle\neq0\ \ (\text{Sec.\ 9})}\\
+(4,4) & -6 & (3,2):\ C_3 & \leftarrow\ (7,7),\ C=-7 & \text{partner beyond computed range}\\
+(4,4) & -4 & (2,4) & \leftarrow\ (7,7),\ C=-5 & \text{partner beyond computed range}\\
+(5,5) & -8 & (4,2):\ C_4 & \leftarrow\ (8,8),\ C=-9 & \text{partner beyond computed range}\\
+(5,5) & -6 & (3,4) & \leftarrow\ (8,8),\ C=-7 & \text{partner beyond computed range}\\\bottomrule
+\end{array}
+\]
+
+\section*{6\quad The operator $b_Ac_A$}
+\[
+\sred{Q_0(b_Ac_A)=-\tfrac12f_{ABC}\,b_Ac_Bc_C=-I,\qquad Q_1(b_Ac_A)=\tfrac{h^\vee}{2}\,\partial_{\dot\alpha}c_A\partial^{\dot\alpha}c_A}
+\]
+\[
+\underbrace{b_Ac_A}_{\text{undifferentiated }c;\ \ Q_0\neq0}\ \notin\ \ker Q_0\big|_V
+\qquad\Rightarrow\qquad
+\partial_{\dot\alpha}c_A\partial^{\dot\alpha}c_A\ \notin\ \operatorname{im}d_1,\qquad
+\underbrace{Q_1(\beta_A\gamma_A)=\tfrac{h^\vee}{2}\,\partial_{\dot\alpha}c_A\partial^{\dot\alpha}c_A,\ \ \beta_A\gamma_A\in\ker Q_0\big|_V}_{\text{with matter, }W=0:\ \ \partial_{\dot\alpha}c_A\partial^{\dot\alpha}c_A\in\operatorname{im}d_1}
+\]
+
+\section*{7\quad Method}
+\[
+\underbrace{\operatorname{rank}\big(Q\big|_{\rm invariants}\big)=\operatorname{rank}\big[\,\text{sketch}\circ Q\circ\textstyle\prod_{\lambda\neq0}\big(1-\tfrac{\text{Casimir}}{c_\lambda}\big)(\text{random})\big]}_{\text{samples}\ \ge\ \text{upper bound of the rank}\ +24;\ \ \text{prime }2^{31}-1}
+\qquad
+\underbrace{Q_0+Q_1\ \text{on}\ V_{N_b}\oplus V_{N_b-1}}_{\text{two-step complex}}
+\]
+\[
+\dim H^k\big(V_{N_b}\oplus V_{N_b-1}\big)=\dim E_1^{(N_b-1,k)}+\dim E_1^{(N_b,k)}-\operatorname{rank}d_1^{(N_b,k-1)}-\operatorname{rank}d_1^{(N_b,k)},\qquad d_1^{(N_b,k)}:E_1^{(N_b,k)}\to E_1^{(N_b-1,k+1)}
+\]
+
+\section*{8\quad Checks}
+{\small\[
+\begin{array}{ll}
+\toprule
+\sum(-1)^{N_c}\dim\ \text{at}\ (n,n),\ n\le9,\ SU(2) & 1,1,0,1,0,0,1,0,0,0=\sum_\ell(pq)^{\ell(\ell+1)/2}\ \text{[BGKWWY (7.6)]}\ \ok\\
+\text{the same},\ n=0,\dots,5,\ SU(3) & 1,1,2,0,2,1\ =\ \text{[BGKWWY (7.5)]}\ \ \ok\\
+E_1\ \text{at}\ (2,2),\ (3,3),\ SU(2) & \text{[BGKWWY Table 2]}\ \ \ok\\
+E_2\ \text{at}\ (n,n),\ n\le7,\ SU(2) & \text{[BGKWWY (8.8)]}\ \ \ok\\
+E_2\ \text{at}\ (n,n),\ n\le2,\ SU(3) & \text{[BGKWWY (8.9)]}\ \ \ok\\
+\sum(-1)^{N_c}\dim E_2=\sum(-1)^{N_c}\dim V & \text{holds for any ranks: no test}\\
+\text{weight-space alternating sums vs sampling},\ SU(2),\ n\le6 & \text{equal}\ \ \ok\\
+\text{second seed}:\ \text{three partner classes},\ SU(2)\ (8,8)\ (4,4) & \text{equal}\ \ \ok\\
+S^2\to\Lambda^6:\ \ (2,2),N_c=3\ \to\ (0,0),N_c=0 & \Delta M_R=-4,\ \Delta C=+1\ \ \ok\\
+\{Q_0,Q_1\}=0,\ \ Q_0Q_2+Q_1Q_1+Q_2Q_0=0 & \text{pure }SU(2),\ 19\text{ words, engine of Sec.\ 9}\ \ \ok\\
+{}[Q_0,\theta]+[Q_1,C_0\,\cdot\,]=0 & \text{all singlets},\ (N_b,N_c)=(2,2),(2,1),(1,2)\text{ at }(3,3)\ \ \ok\\
+ & \text{all singlets},\ (N_b,N_c)=(2,3),(1,3),(3,1)\text{ at }(4,4)\ \ \ok\\
+{}[Q_0,L^{(2)}]+[Q_1,\theta]+[Q_2,C_0\,\cdot\,]=0 & b_Ab_A;\ \text{all singlets},\ (2,2)\text{ at }(3,3)\ \ \ok\\
+Q_{\rm pert}(La)=0;\qquad Q_{\rm pert}(ha-Lw)=0 & N_b=2,1,0;\qquad N_b=2,1\ \ \ok\\
+\langle C_0,C_0,C_2\rangle:\ \text{three other choices of }a_1,\ w_2,\ w_1 & \text{same class}\ \ \ok\\
+\text{one-loop part in the reader normalisation (second engine)} & \text{not }Q_0\text{-exact}\ \ \ok\\
+SU(3):\ \ \{Q_0,Q_1\}=0,\ \ Q_0Q_2+Q_1Q_1+Q_2Q_0=0 & \text{singlets},\ (1,2)\text{ at }(2,2);\ (1,3),(2,2)\text{ at }(3,3)\ \ \ok\\
+SU(3):\ \ [Q_0,\theta]+[Q_1,C_0\,\cdot\,]=0 & \text{singlets},\ (1,2),(1,1)\text{ at }(2,2);\ (1,2),(1,3),(2,2)\text{ at }(3,3)\ \ \ok\\
+SU(3):\ \ Q_{\rm pert}(La)=0;\ \ Q_{\rm pert}(ha-L^2w)=0 & \text{mod }2^{31}-1\ \ \ok\\
+SU(3):\ \ w_1\to w_1+E_1^{(1,3)};\ \ \eta\to\eta+\ker Q_0 & \text{Cartan restriction unchanged}\ \ \ok\\
+C_0C_4:\ \ Q_{\rm pert}(LC_4)=0;\ \ Q_0r_2=0;\ \ Q_1r_2\in\operatorname{im}Q_0 & N_b=4,3,2\ \ \ok\\
+C_0C_4:\ \ a_2\to a_2+(d_1\text{-closed classes});\ \ \text{three samples} & \text{same result}\ \ \ok\\\bottomrule
+\end{array}
+\]}
+
+\section*{9\quad $Q_{1\text{-inst}}$ on $E_\infty^{\rm pert}$ from $C_0^N=\nu\,\Lambda^{3N}$}
+\tagbox{input}\quad $C_0:=\partial_{\dot\alpha}c_A\partial^{\dot\alpha}c_A$,\quad $\nu\neq0$: the constant of [BGKWWY Sec.\ 8]
+\[
+Q_0\,x_N=C_0^N,\quad Q_{n\ge1}x_N=0\ \ (N_b=0),\qquad Q\,x_N=C_0^N-\nu\Lambda^{3N}\ \Leftrightarrow\ Q_{1\text{-inst}}\,x_N=-\nu
+\]
+\[
+\sred{SU(2):\ \ x_2=-\tfrac23\,f_{ABC}\,\partial_{\dot\alpha}c_A\,\partial_{\dot\beta}c_B\,\partial^{\dot\alpha}\partial^{\dot\beta}c_C}
+\]
+\tagbox{assumed}\quad products at separated points:\ \ $Q\big(\mathcal O_1(z)\mathcal O_2(0)\big)=Q\mathcal O_1(z)\,\mathcal O_2(0)\pm\mathcal O_1(z)\,Q\mathcal O_2(0)$
+\[
+L=C_0\cdot{}+O(\hbar),\quad h=x_N\cdot{}+O(\hbar):\qquad [Q,L]=0,\qquad \{Q,h\}=L^N-\nu\Lambda^{3N}
+\]
+\tagbox{triple product}\quad $a\in E_\infty^{\rm pert}$,\ \ $C_0\,a=0$:
+\[
+Q_{\rm pert}\,w=L\,a,\qquad \langle C_0^{N-1},C_0,a\rangle:=\big[\,h\,a-L^{N-1}w\,\big]\in E_\infty^{\rm pert},\qquad
+\underbrace{\Delta(n_1,n_2)=(N,N),\ \ \Delta N_c=2N-1}_{=\ -(\text{selection rule of }Q_{1\text{-inst}})}
+\]
+\[
+Q\tilde a=\Lambda^{3N}e,\quad L\tilde a=Q\tilde w+\Lambda^{3N}u\ \ (\Rightarrow Q_{\rm pert}u=Le):\qquad
+Q\big(h\tilde a-L^{N-1}\tilde w\big)=-\nu\Lambda^{3N}\tilde a-\Lambda^{3N}\big(h\,e-L^{N-1}u\big)+O(\Lambda^{6N})
+\]
+\[
+\sred{Q_{1\text{-inst}}\langle C_0^{N-1},C_0,a\rangle+\langle C_0^{N-1},C_0,Q_{1\text{-inst}}a\rangle=-\nu\,a\qquad \text{on }\ker(C_0\cdot)\ \text{modulo}\ C_0\cdot E_\infty^{\rm pert}}
+\]
+\[
+\Rightarrow\quad
+\begin{array}{ll}
+\text{(i)} & Q_{1\text{-inst}}a=0,\ \ C_0a=0,\ \ a\notin C_0E_\infty^{\rm pert}:\qquad \langle C_0^{N-1},C_0,a\rangle\neq0,\qquad Q_{1\text{-inst}}\langle C_0^{N-1},C_0,a\rangle=-\nu\,a\\
+\text{(ii)} & H\big(\ker(C_0\cdot)/\operatorname{im}(C_0\cdot),\,Q_{1\text{-inst}}\big)=0\\
+\text{(iii)} & Q_{\rm pert}x_N\neq0:\ \ C_0^N=\nu\Lambda^{3N}\ \text{is a multiplicative extension},\ \text{not a value of }Q_{1\text{-inst}}\ \text{on }E_\infty^{\rm pert}
+\end{array}
+\]
+\tagbox{classes of Secs.\ 4, 5}
+\[
+\begin{array}{llll}
+\toprule
+a & C_0\cdot a\in & \text{forced partner }\langle C_0^{N-1},C_0,a\rangle\ \text{at} & \text{found}\\\midrule
+SU(2):\ C_2,\ (3,3) & (4,4),N_c=4:\ E_\infty=0 & (5,5),\ N_c=5 & (N_b,N_c)=(1,5)\ \ \ok\\
+SU(2):\ (6,6),\ (2,4) & (7,7),N_c=6:\ E_\infty=0 & \sred{a\in C_0E_\infty}:\ \text{not forced} & (8,8):\ (1,7)\\
+SU(3):\ C_1,\ (2,2) & (3,3),N_c=4:\ E_\infty=0 & (5,5),\ N_c=7 & (0,7)\ \ \ok\\
+SU(2):\ C_4,\ (5,5) & (6,6),N_c=4:\ E_\infty\neq0 & \sred{C_0C_4\neq0};\ \text{see Sec.\ 11} & (7,7):\ (3,5)\\
+SU(2):\ C_6,\ (7,7) & (8,8),N_c=4:\ E_\infty\neq0 & \text{open}:\ C_0C_6\overset{?}{\propto}(4,4)\text{ class} & (9,9):\ (5,5)\\\bottomrule
+\end{array}
+\]
+\tagbox{computed}\quad $SU(2)$,\ $a=C_2$,\ through two loops,\ exact over $\mathbb Q$
+\[
+L=C_0\cdot{}+\theta+L^{(2)},\qquad h=x_2\cdot{}+\eta,\qquad
+\begin{array}{l}
+{}[Q_0,\theta]=-[Q_1,C_0\,\cdot\,]\\
+\{Q_0,\eta\}=2C_0\,\theta-\{Q_1,x_2\,\cdot\,\}\\
+{}[Q_0,L^{(2)}]=-[Q_1,\theta]-[Q_2,C_0\,\cdot\,]
+\end{array}
+\]
+\[
+\begin{array}{lll}
+\toprule
+ & \text{class of operators} & \text{solution}\\\midrule
+\theta & \text{derivations }\partial^mb_A\mapsto\theta_A^{(m)},\ \text{rotation covariant} & \text{unique};\ \ \sred{\theta(b_A)=-\tfrac13f_{ABC}\,\partial_{\dot\alpha}\partial_{\dot\beta}c_B\,\partial^{\dot\alpha}\partial^{\dot\beta}c_C};\ \ [\partial_{\dot\alpha},\theta]\neq0\\
+\eta & \text{odd derivations }b_A\mapsto\eta_A & \text{unique}\\
+L^{(2)} & \text{second order: }b_Ab_B\mapsto\lambda_{AB} & \text{unique}\\\bottomrule
+\end{array}
+\]
+\[
+a=\underbrace{-\tfrac12\,b_Ab_A\,C_0}_{a_2}+a_1+a_0,\qquad w=w_2+w_1+w_0,\qquad
+h\,a-L\,w=\underbrace{x_2a_2-C_0w_2}_{N_b=2:\ \ =Q_0n_2}+\underbrace{x_2a_1+\eta(a_2)-C_0w_1-\theta(w_2)}_{N_b=1}+\dots
+\]
+\[
+\underbrace{w_1\ \text{modulo}\ E_1^{(1,3)}\text{ at }(4,4)\ (\dim2),\quad C_0\cdot E_1^{(1,3)}\neq0\ \text{in}\ E_1^{(1,5)}\text{ at }(5,5)}_{\text{fixed by the }N_b=0\text{ part of }Q_{\rm pert}w=La:\ \ Q_2\text{ and }L^{(2)}\text{ enter}}
+\]
+\[
+\sred{\langle C_0,C_0,C_2\rangle=\big[x_2a_1+\eta(a_2)-C_0w_1-\theta(w_2)-Q_1n_2\big]=-5\,g\neq0,\qquad E_\infty^{\rm pert}\big|_{(5,5),\,(N_b,N_c)=(1,5)}=\mathbb C\,g}
+\]
+\[
+\sred{Q_{1\text{-inst}}\,\langle C_0,C_0,C_2\rangle=-\nu\,C_2}
+\]
+
+\tagbox{computed}\quad $SU(3)$,\ $a=C_1$:\ \ $N_b\le1$,\ one loop suffices;\ \ coefficients mod $2^{31}-1$
+\[
+Q_0x_3=C_0^3,\qquad C_1=a_1,\ \ Q_1a_1=0,\qquad L^2=C_0^2\cdot{}+2C_0\,\theta,\qquad h=x_3\cdot{}+\eta,\quad \{Q_0,\eta\}=3C_0^2\,\theta-\{Q_1,x_3\,\cdot\,\}
+\]
+\[
+h\,a-L^2w=\underbrace{x_3a_1-C_0^2w_1}_{N_b=1:\ \ =Q_0n_1}+\underbrace{\eta(a_1)-C_0^2w_0-2C_0\,\theta(w_1)}_{N_b=0}
+\]
+\[
+\begin{array}{lll}
+\toprule
+ & \text{space} & \text{solution}\\\midrule
+\theta & \text{derivations }\partial^mb_A\mapsto\theta_A^{(m)},\ |m|\le1 & \text{unique}\\
+\eta & \text{odd derivations }b_A\mapsto\eta_A:\ \dim127,\ \ker Q_0:\ 54,\ \operatorname{im}Q_0:\ 53 & \text{unique modulo one closed class}\\
+w_1 & \text{modulo }E_1^{(1,3)}\text{ at }(3,3)\ (\dim2,\ d_1\text{-closed}) & \\\bottomrule
+\end{array}
+\]
+\tagbox{detector}\quad $\big|_{\mathfrak t}$:\ all letters restricted to the Cartan subalgebra;\quad $\big(Q_0\,u\big)\big|_{\mathfrak t}=0$
+\[
+\sred{\Big[\eta(a_1)-C_0^2w_0-2C_0\,\theta(w_1)-Q_1n_1\Big]_{\mathfrak t}
+=40\,\partial_1c_1\,\partial_2c_1\,\partial_1c_2\,\partial_2c_2\!\!\sum_{\substack{(i,j,k)\in\{1,2\}^3\\ \text{not all equal}}}\!\!\pm\,\partial_1^2c_i\,\partial_1\partial_2c_j\,\partial_2^2c_k\ \neq0}
+\]
+\[
+c_1,\ c_2:\ \text{the two Cartan components of }c
+\]
+\[
+\underbrace{\operatorname{rank}d_1\big(E_1^{(1,6)}\to E_1^{(0,7)}\big)=0}_{\text{Sec.\ 5}}\quad\Rightarrow\quad
+\sred{\langle C_0^2,C_0,C_1\rangle\neq0\ \in E_\infty^{\rm pert}\big|_{(5,5),\,(N_b,N_c)=(0,7)},\qquad Q_{1\text{-inst}}\langle C_0^2,C_0,C_1\rangle=-\nu\,C_1}
+\]
+\[
+SU(2):\qquad \sred{\langle C_0,C_0,C_2\rangle\big|_{\mathfrak t}\ \propto\ b\,\partial_1c\,\partial_2c\,\partial_1^2c\,\partial_1\partial_2c\,\partial_2^2c\ \neq0}\qquad (b,\ c:\ \text{Cartan components})
+\]
+
+\tagbox{computed}\quad $SU(2)$,\ $C_0\cdot C_4$;\ \ $Q_0,\dots,Q_3$,\ coefficients mod $2^{31}-1$
+\[
+C_4=a_4+a_3+a_2+\dots,\qquad Q_0a_3=-Q_1a_4,\qquad Q_0a_2=-Q_1a_3-Q_2a_4,\qquad
+\underbrace{Q_1a_2+Q_2a_3+Q_3a_4\in\operatorname{im}Q_0}_{\text{fixes }a_2\text{ modulo }d_1\text{-closed classes of }E_1^{(2,2)}\text{ at }(5,5)}
+\]
+\[
+L\,C_4=\underbrace{C_0a_4}_{=Q_0k_4}+\underbrace{C_0a_3+\theta(a_4)}_{-Q_1k_4\ =\ Q_0k_3}+\underbrace{C_0a_2+\theta(a_3)+L^{(2)}(a_4)}_{N_b=2}+\dots,
+\qquad
+r_2:=C_0a_2+\theta(a_3)+L^{(2)}(a_4)-Q_2k_4-Q_1k_3
+\]
+\[
+Q_0r_2=0,\qquad Q_1r_2\in\operatorname{im}Q_0,\qquad
+r_2\notin\underbrace{Q_0\big(V^{(2,3)}\big)}_{\operatorname{rank}70}+\underbrace{d_1\big(E_1^{(3,3)}\big)}_{\operatorname{rank}4},\qquad
+r_2\big|_{\mathfrak t}\notin d_1\big(E_1^{(3,3)}\big)\big|_{\mathfrak t}
+\]
+\[
+\sred{C_0\cdot C_4=\alpha\cdot\big[\text{class at }(6,6),\ (N_b,N_c)=(2,4)\big],\qquad \alpha\neq0}
+\]
+\[
+\Rightarrow\quad
+\begin{array}{ll}
+\text{(a)} & \{C_4,\ C_0C_4\}:\ \text{free module over }\mathbb C[C_0]/C_0^2;\qquad \ker(C_0\cdot)/\operatorname{im}(C_0\cdot)\ \not\ni\ C_4,\ C_0C_4\\
+\text{(b)} & Q_{1\text{-inst}}(C_0\,y)=C_0\,Q_{1\text{-inst}}(y):\qquad Q_{1\text{-inst}}D=\kappa\,C_4\ \Rightarrow\ Q_{1\text{-inst}}(C_0D)=\kappa\,C_0C_4\\
+ & D:\ (7,7),\ (N_b,N_c)=(3,5);\qquad \kappa\neq0\ \Rightarrow\ C_0D\neq0\ \text{at }(8,8),\ N_c=7\ \ (\text{predicted})\\
+\text{(c)} & \kappa:\ \text{not fixed by }\nu\text{ through }\langle C_0,C_0,\cdot\rangle\\
+\text{(d)} & \text{if }C_0C_4=\gamma\,C_2^2\ \ (C_2^2:\ \text{not computed}):\qquad Q_{\rm pert}w=LC_2,\quad Q_{\rm pert}v=C_0C_4-\gamma C_2^2,\\
+ & Q_{1\text{-inst}}\big[x_2C_4-\gamma\,w\,C_2-C_0v\big]=-\nu\,C_4
+\end{array}
+\]
+
+\tagbox{$C_2^2$: not computed}\quad multiplication by $C_2=a_2+a_1+a_0$,\ \ $a_2\propto b_Ab_A\,C_0$
+\[
+M=a\cdot{}+\pi_1+\dots,\qquad [Q_0,\pi_1]=-\{a_2,\,\cdot\,\}_1,\qquad \{a,X\}_1:=Q_1(aX)-(Q_1a)X
+\]
+\[
+\underbrace{Q_0\,\pi_1(X)+\{a_2,X\}_1=[\omega,X]}_{\pi_1\text{ a derivation},\ \ \omega:\ \text{gauge rotation}}:\qquad
+\sred{\begin{array}{l|cccc}
+X & \text{space of }\pi_1(X) & \operatorname{rank}Q_0 & \text{space of }\omega & \text{solvable}\\\hline
+\partial_1c_A & 21 & 8 & 5 & \text{no}\\
+b_A & 15 & 7 & 5 & \text{no}
+\end{array}}
+\]
+\[
+a=b_Ab_A:\ \text{no};\qquad \text{control}\ \ a=C_0,\ X=b_A:\ \text{yes}\ (\theta)
+\]
+\[
+\Rightarrow\quad \pi_1\ \text{is of order}\ \ge2\ \text{in the letters}\ \ (\text{one-loop product of two operators containing }b)
+\]
+
+\section*{10\quad One-loop product}
+\tagbox{definition}\quad $\mu=\mu_0+\mu_1+\dots$,\ \ $\mu_0(A,B)=AB$,\ \ $Q\,\mu(A,B)=\mu(QA,B)+(-1)^{|A|}\mu(A,QB)$
+\[
+Q_0\,\mu_1(A,B)-\mu_1(Q_0A,B)-(-1)^{|A|}\mu_1(A,Q_0B)=-\{A,B\}_1,\qquad \{A,B\}_1:=Q_1(AB)-Q_1(A)B-(-1)^{|A|}A\,Q_1(B)
+\]
+\tagbox{exchange diagram}\quad $X\in A\ \text{---}\ \tfrac12f\,bcc\ \text{---}\ Y\in B$,\ \ third leg $Z$:\qquad $(X,Y;Z)\in\{(b,c;c),\ (c,b;c),\ (b,b;b)\}$
+\[
+\int_uP(w-u)\wedge P(u-z)\,Z(u)\ \propto\ \frac{\epsilon^{\alpha\beta}(\bar w-\bar z)_\alpha}{|w-z|^2}\int_0^1\!ds\ \partial_\beta Z\big(z+s(w-z)\big)
+\qquad\Big(\bar\partial_w\ \text{of both sides}:\ P(w-z)\,[Z(w)-Z(z)]\Big)
+\]
+\[
+\mu_1:=\Big\langle\ \cdot\ \Big\rangle_{\text{directions of }w-z,\ \text{scaling degree }0,\ \text{base point }z}
+\]
+\[
+\sred{\mu_1\big(\partial^mX_A\,R,\ \partial^nY_B\,R'\big)=f_{ABC}\ m!\,n!\,\big[a^mb^n\big]\,\Phi(a,b;p,q)\Big|_{p\to\partial\text{ on }R,\ \ q\to\partial\text{ on }Z_C}\ R'}
+\]
+\[
+\sred{\Phi=\langle p,q\rangle\,e^{q\cdot b}\sum_{j\ge0}(-1)^j\sum_{i=1}^{j+1}\frac{i}{i!\,(j+1)(j+2)}\,(c\cdot p)^{i-1}(c\cdot q)^{j+1-i}\sum_{t\ge j+1-i}\binom{t}{j+1-i}\frac{(q\cdot c)^{t-(j+1-i)}}{(t+1)!}}
+\]
+\[
+c:=a-b,\qquad \langle p,q\rangle:=\epsilon^{\alpha\beta}p_\alpha q_\beta,\qquad
+\Phi=\Big\langle e^{p\cdot x}\,\epsilon^{\alpha\beta}\bar x_\alpha q_\beta\,e^{q\cdot b}\,\frac{e^{q\cdot y}-1}{(q\cdot y)(y\cdot\bar x)}\Big\rangle,\quad y=x+c
+\]
+\[
+m=n=0:\qquad \sred{\mu_1(X_AR,\ Y_BR')=\tfrac12\,f_{ABC}\ \partial_{\dot\alpha}R\ \partial^{\dot\alpha}Z_C\ R'}
+\]
+\[
+\text{signs}:\ X\text{ moved to the right end of }A,\ Y\text{ to the left end of }B
+\]
+\tagbox{checks}
+{\small\[
+\begin{array}{ll}
+\toprule
+\text{normalisation}:\ \text{the identity on undifferentiated single letters},\ (b,c),(c,b),(b,b) & \text{fixes the three constants}\\
+\text{identity on random words},\ \le3\text{ letters each},\ \text{derivatives}\le3,\ \text{undifferentiated }c\text{ included} & SU(2):\ 480\text{ pairs},\ 0\text{ failures}\ \ \ok\\
+ & SU(3):\ 480\text{ pairs},\ 0\text{ failures}\ \ \ok\\
+\mu_1(C_0,\ \partial^mb_A)=\theta(\partial^mb_A),\ \ |m|\le2\quad(\theta\text{ of Sec.\ 9}) & \text{equal, all six letters}\ \ \ok\\
+\mu_1(C_0,a_2)-\mu_1(a_2,C_0) & \in\operatorname{im}Q_0\ \ \ok\\\bottomrule
+\end{array}
+\]}
+\[
+\underbrace{\partial\ \text{on the rest of }A}_{\text{not a derivation of single letters}}\ \Rightarrow\ \text{the obstruction of Sec.\ 9};\qquad
+\mu_2:\ \text{not built}\ \ (\text{two exchanges}\ +\ \text{triangle with one leg})
+\]
+
+\section*{11\quad Two-loop product and $C_2^2$}
+\[
+Q_0\mu_2(A,B)-\mu_2(Q_0A,B)-(-1)^{|A|}\mu_2(A,Q_0B)+Q_1\mu_1(A,B)-\mu_1(Q_1A,B)-(-1)^{|A|}\mu_1(A,Q_1B)+\{A,B\}_2=0
+\]
+\[
+\mu_2=\underbrace{\mu_2^{D}}_{\text{two exchanges}}+\underbrace{\mu_2^{T}}_{\text{two letters of one operator, one of the other}\ \to\ \text{one letter}}
+\]
+\[
+\mu_2^{D}:\qquad \Phi^{(2)}=\Big\langle e^{p\cdot x}\prod_{i=1,2}\epsilon^{\alpha\beta}\bar x_\alpha q_{i\beta}\,e^{q_i\cdot b_i}\,\frac{e^{q_i\cdot y_i}-1}{(q_i\cdot y_i)(y_i\cdot\bar x)}\Big\rangle
+\]
+\[
+\text{undifferentiated letters}:\qquad
+\sred{\Phi^{(2)}=\tfrac16\langle p,q_1\rangle\langle p,q_2\rangle+\tfrac1{12}\langle q_1,q_2\rangle\big(\langle p,q_1\rangle-\langle p,q_2\rangle\big)-\tfrac1{24}\langle q_1,q_2\rangle^2}
+\]
+\[
+\mu_2^{T}:\qquad \langle p,q\rangle^2\times\big(\tau^{(0)}\ \ \text{or}\ \ \tau^{(p)}p_\gamma+\tau^{(q)}q_\gamma\ \ \text{for a letter }\partial_\gamma c\big),\qquad
+\text{letters }b,\ c,\ \partial c
+\]
+\[
+\sred{20\text{ constants, fixed uniquely by the identity}}
+\]
+{\small\[
+\begin{array}{l|cccc|cccc}
+ & \multicolumn{4}{c|}{X_1,X_2\in A,\ Y\in B} & \multicolumn{4}{c}{X\in A,\ Y_1,Y_2\in B}\\
+(X_1,Y,X_2)\ /\ (X,Y_1,Y_2) & bbc & bbb & bcb & cbb & bbc & bbb & bcb & cbb\\\hline
+\tau^{(0)} & \tfrac16 & -\tfrac16 & \tfrac16 & -\tfrac16 & -\tfrac16 & \tfrac16 & -\tfrac16 & \tfrac16\\
+\tau^{(p)} & -\tfrac1{36} & & \tfrac1{12} & \tfrac1{18} & -\tfrac1{36} & & -\tfrac1{18} & -\tfrac1{12}\\
+\tau^{(q)} & \tfrac1{18} & & \tfrac19 & 0 & -\tfrac1{12} & & -\tfrac1{18} & \tfrac1{36}
+\end{array}
+\]
+\[
+\text{first vertex}:\ (X_1,Y)\ \text{or}\ (X,Y_1);\qquad \text{second vertex}:\ X_2\ \text{or}\ Y_2;\qquad \text{normalisation of }Q_1,Q_2\text{ of the engine of Sec.\ 9}
+\]}
+\tagbox{checks}
+{\small\[
+\begin{array}{ll}
+\toprule
+\text{fit}:\ 170\text{ random pairs},\ SU(2) & \text{solution exists},\ \text{rank }20\text{ of }20\\
+\text{identity on fresh random words},\ \le4\text{ letters},\ SU(2);\ \ SU(3)\text{ with the same constants} & 428+428\text{ pairs},\ 0\text{ failures}\ \ \ok\\
+\mu_2\big(C_0,(b_Ap^A)^2\big)=L^{(2)}\big((b_Ap^A)^2\big)\quad(L^{(2)}\text{ of Sec.\ 9}) & \text{equal}\ \ \ok\\
+Q_{\rm pert}\big(\mu(C_2,C_2)\big)=0,\ \ N_b=4,3,2 & \ok\\\bottomrule
+\end{array}
+\]}
+\tagbox{$C_2^2$}\quad $SU(2)$,\ mod $2^{31}-1$;\quad $C_4$ normalised by $C_0\,a_4=a_2^2$
+\[
+\mu(C_2,C_2)=\underbrace{a_2^2}_{=Q_0k_4}+\underbrace{2a_1a_2+\mu_1(a_2,a_2)}_{-Q_1k_4\ =\ Q_0k_3}+\underbrace{2a_0a_2+a_1^2+\mu_1(a_2,a_1)+\mu_1(a_1,a_2)+\mu_2(a_2,a_2)}_{N_b=2}+\dots
+\]
+\[
+\sred{C_2^2=-3\ C_0\,C_4\ \neq0}\qquad\big(\text{exact identity between the }N_b=2\text{ representatives modulo }Q_0(V^{(2,3)})+d_1(E_1^{(3,3)})\big)
+\]
+\[
+L:=\mu(C_0,\cdot),\quad N:=\mu(C_2,\cdot),\qquad \{Q,h\}=L^2-\nu\Lambda^6,\qquad \{Q_{\rm pert},\kappa\}=LN-NL
+\]
+\[
+Q_{\rm pert}w=LC_2,\qquad Q_{\rm pert}v=LC_4+\tfrac13NC_2
+\]
+\[
+h=x_2\cdot{}+\eta+\dots,\qquad \kappa=e\cdot{}+\dots,\quad Q_{\rm pert}e=\mu(C_0,C_2)-\mu(C_2,C_0)
+\]
+\[
+\sred{M_4:=h\,C_4-L\,v+\tfrac13\big(N\,w+\kappa\,C_2\big),\qquad Q_{\rm pert}M_4=0,\qquad Q_{1\text{-inst}}M_4=-\nu\,C_4}
+\]
+\[
+\underbrace{x_2C_4+\tfrac13wC_2-C_0v\ \ \text{with}\ \mu\ \text{alone}:\ \ Q_{\rm pert}\neq0\ \text{at }N_b=3}_{\mu\text{ is associative and commutative only up to }Q_{\rm pert}\text{-exact terms}:\ \ \eta,\ \kappa}
+\]
+\tagbox{computed}\quad $M_4$ at $(7,7)$,\ $N_c=5$:\ \ components $N_b=4,3$
+\[
+(M_4)_{N_b=4}=x_2a_4-C_0v_4+\tfrac13a_2w_2=Q_0n_4,\qquad
+Q_1(M_4)_{N_b=4}+Q_0(M_4)_{N_b=3}=0\ \ \ok
+\]
+\[
+\sred{\Big[(M_4)_{N_b=3}-Q_1n_4\Big]_{\mathfrak t}\ \propto\ b^3\,\partial_1c\,\partial_2c\,\partial_1^2c\,\partial_1\partial_2c\,\partial_2^2c\ \neq0
+\quad\Rightarrow\quad M_4=\text{the class at }(7,7),\ (N_b,N_c)=(3,5)}
+\]
+\[
+\underbrace{E_1^{(4,5)}=0,\quad E_1^{(3,5)}=1,\quad \operatorname{rank}d_1\big(E_1^{(4,4)}\to E_1^{(3,5)}\big)=0}_{\text{at }(7,7),\ \text{Sec.\ 4 engine}}
+\]
+\tagbox{third pair}\quad $C_6$ at $(7,7)$, normalised by $C_0a_6=a_2a_4$;\ \ products at $(8,8)$, $N_c=4$, reduced to $N_b=4$
+\[
+\sred{C_0\,C_6\neq0,\qquad C_2\,C_4=-\tfrac53\,C_0\,C_6}\qquad
+\big(\text{modulo }\underbrace{Q_0(V^{(4,3)})}_{\operatorname{rank}191}+\underbrace{d_1(E_1^{(5,3)})}_{\operatorname{rank}4};\ \ \text{the class at }(8,8),\ (N_b,N_c)=(4,4)\big)
+\]
+\[
+N_4:=\mu(C_4,\cdot),\quad Q_{\rm pert}v=LC_6+\tfrac35\mu(C_2,C_4),\quad Q_{\rm pert}e_{04}=\mu(C_0,C_4)-\mu(C_4,C_0),\quad Q_{\rm pert}e_{24}=\mu(C_2,C_4)-\mu(C_4,C_2)
+\]
+\[
+\sred{M_6:=h\,C_6-L\,v+\tfrac35\big(N_4w+e_{04}C_2+L\,e_{24}\big),\qquad Q_{\rm pert}M_6=0\ \ (N_b=6,5)\ \ok,\qquad Q_{1\text{-inst}}M_6=-\nu\,C_6}
+\]
+\[
+\sred{\big[(M_6)_{N_b=5}\big]_{\mathfrak t}\ \propto\ b^5J\neq0\quad\Rightarrow\quad M_6=\text{the class at }(9,9),\ (N_b,N_c)=(5,5)}
+\]
+\tagbox{products}\quad $D_j:=(2j-1)\,C_{2j}$,\ \ $D_0:=-C_0$
+\[
+\sred{D_1D_1=D_0D_2,\qquad D_1D_2=D_0D_3}\qquad\big(C_2^2=-3\,C_0C_4,\ \ C_2C_4=-\tfrac53\,C_0C_6\big)
+\]
+\tagbox{Cartan restrictions}\quad one normalisation ($C_0=\operatorname{tr}\partial_1c\,\partial_2c$,\ $Q_n$ of the engine);\quad $J:=\partial_2c\,\partial_2^2c\,\partial_1c\,\partial_1\partial_2c\,\partial_1^2c$
+\[
+\sred{\begin{array}{l|cc|c}
+ & \text{partner}\big|_{\mathfrak t} & \text{class}\big|_{\mathfrak t} & \text{ratio of coefficients}\\\hline
+C_2 & -30\ b\,J & b^2\,\partial_2c\,\partial_1c & -30=-2\cdot3\cdot5\\
+C_4 & -35\ b^3J & \tfrac12\,b^4\,\partial_2c\,\partial_1c & -70=-2\cdot5\cdot7\\
+C_6 & -\tfrac{63}{2}\ b^5J & \tfrac14\,b^6\,\partial_2c\,\partial_1c & -126=-2\cdot7\cdot9
+\end{array}}
+\qquad
+-2(2j+1)(2j+3),\ \ j=1,2,3
+\]
+\[
+LQ_{\rm inst}=Q_{\rm inst}L\ \ \Rightarrow\ \ Q_{\rm inst}\big(C_0M_{2j}\big)=-\nu\,C_0C_{2j}\neq0\ \ \Rightarrow\ \ C_0M_4\neq0\ \text{at }(8,8),\quad C_0M_6\neq0\ \text{at }(10,10)
+\]
+\[
+[D_1]=0\ \Rightarrow\ [D_0][D_2]=[D_1]^2=0\ \Rightarrow\ [D_2]=0\ \Rightarrow\ [D_0][D_3]=[D_1][D_2]=0\ \Rightarrow\ [D_3]=0\qquad\big([D_0]^2=\nu\Lambda^6\neq0\big)
+\]
+\tagbox{not done}\quad $C_8$\qquad\big($\mu_2^T$ for all letters: Sec.\ 14\big)
+
+\section*{12\quad One-instanton input}
+\tagbox{letters}\quad $\partial_{\dot\alpha}c_a\ \leftrightarrow\ \bar\lambda_{\dot\alpha a}$;\qquad zero modes, $SU(2)$, $y=x-x_0$, $R\in SO(3)$:
+\[
+\bar\lambda^a_{\alpha}(y)=f(y)\,R^{ab}S^b_{\alpha\beta}\,\chi^\beta(y),\qquad S^a:=\sigma^a\epsilon,\qquad \chi^\beta(y)=\xi^\beta+y^{\beta\dot\gamma}\eta_{\dot\gamma},\qquad f(y)=\frac{\rho^2}{(y^2+\rho^2)^2}
+\]
+\tagbox{one point}
+\[
+\partial_\alpha c_a\,\partial_\beta c_b\Big|_{\rm zm}=\tfrac16\,\delta_{ab}\,\epsilon_{\alpha\beta}\,C_0+\tfrac12\,\epsilon_{abc}\,W^c_{\alpha\beta},\qquad
+W^c_{\alpha\beta}:=\epsilon_{cab}\,\partial_\alpha c_a\,\partial_\beta c_b=Q_0\big(\partial_\alpha\partial_\beta c_c\big)
+\]
+\[
+\sred{W^c_{\alpha\beta}\Big|_{\rm zm}=\tfrac{i}{3}\,C_0\,R^{cd}S^d_{\alpha\beta}}
+\]
+\[
+\chi^\alpha\chi^\beta\chi^\gamma=0\ \ \Rightarrow\ \ \text{at most two zero modes at one point}:\qquad
+C_0^2\Big|_{\rm zm}=0,\quad C_0\,W\Big|_{\rm zm}=0\qquad\big(\,C_0^2=Q_0x_2\,\big)
+\]
+\tagbox{two points}
+\[
+\int d^2\xi\,d^2\eta\ C_0(y_1)\,C_0(y_2)=36\,f(y_1)^2f(y_2)^2\,|x_1-x_2|^2,\qquad
+\int d^4x_0\,d\rho\ \rho\ \frac{\rho^8\,|x_1-x_2|^2}{(y_1^2+\rho^2)^4(y_2^2+\rho^2)^4}=\frac{\pi^2}{90}
+\]
+\[
+\sred{\big\langle C_0(x_1)\,C_0(x_2)\big\rangle_{1\text{-inst}}=\mathcal N\,\frac{2\pi^2}{5}\,\Lambda^6=:\nu\,\Lambda^6\quad(\text{independent of }x_1-x_2)}
+\]
+\[
+\big\langle W^c_{\alpha\beta}(x_1)W^d_{\gamma\delta}(x_2)\big\rangle=\frac{\nu\Lambda^6}{27}\,\delta^{cd}\big(\epsilon_{\alpha\gamma}\epsilon_{\beta\delta}+\epsilon_{\alpha\delta}\epsilon_{\beta\gamma}\big)
+\]
+\[
+\mathcal N:\ \text{normalisation of the collective-coordinate measure (not computed)}
+\]
+\tagbox{relation to Secs.\ 9, 11}
+\[
+\underbrace{4\text{ zero modes}=2+2\ \text{at two points}}_{\text{no leading-order effect on a single local operator}}
+\quad\Rightarrow\quad
+\mu(C_0,C_0)=\underbrace{C_0^2}_{=Q_0x_2}+\nu\Lambda^6
+\quad\Leftrightarrow\quad
+[C_0]^2=\nu\Lambda^6\quad\Leftrightarrow\quad \{Q,h\}=L^2-\nu\Lambda^6
+\]
+\[
+\text{every lift of Secs.\ 9, 11}:\ \text{one use of }[C_0]^2=\nu\Lambda^6;\qquad
+N_c(\text{partner})-N_c(\text{class})=3=N_c(x_2),\qquad \Delta(n_1,n_2)=(2,2)
+\]
+\tagbox{not computed}\quad instanton in a background $b$ (dependence of the contraction on the field strength);\ \ $\mathcal N$
+\section*{13\quad Massive matter}
+\tagbox{theories}\quad $SU(2)$;\quad $C_0=\epsilon^{\alpha\beta}\operatorname{tr}\partial_\alpha c\,\partial_\beta c$,\quad $Q_n$ of the engine
+\[
+\begin{array}{l|l|l|c|c}
+ & \text{matter }(\gamma,\beta) & W & b_0 & \Lambda_L^6\\\hline
+\text{(i)} & - & - & 6 & \Lambda^6\\
+\text{(ii)} & \gamma\in\mathbf 3,\ r=1 & m\,u,\quad u=\tfrac12\operatorname{tr}\gamma^2 & 4 & m^2\Lambda^4\\
+\text{(iii)} & q,t\in\mathbf 2,\ r=1 & m\,M,\quad M=\epsilon_{ab}\,q^at^b & 5 & m\,\Lambda^5
+\end{array}
+\qquad
+Q_0\,\beta_i=\frac{\partial W}{\partial\gamma_i}+c\cdot\beta_i
+\]
+\tagbox{pages}\quad blocks $(2N_b+N_\gamma+N_\beta;\ \#\partial_1,\#\partial_2;\ N_c-2N_b-N_\beta)$, gauge invariants, $p=2^{31}-1$
+\[
+\sred{\begin{array}{l|rrr|cccc|l}
+\text{block} & \dim\text{(i)} & \dim\text{(ii)} & \dim\text{(iii)} & E_1 & \operatorname{rk}d_1 & \operatorname{rk}d_2 & \text{survive} & \\\hline
+(0;1,1;2) & 1 & 1 & 1 & 1 & 0 & 0 & 1 & C_0\\
+(2;1,1;-1) & 3 & 10 & 28 & 2 & 1 & 0 & 1 & \\
+(4;1,1;-2) & 2 & 51 & 264 & 1 & 0 & 0 & 1 & C_2\\
+(6;1,1;-5) & 5 & 73 & 326 & 3 & 2 & 0 & 1 & \\
+(8;1,1;-6) & 2 & 179 & & 1 & 0 & 0 & 1 & C_4\\
+(2;4,4;3) & 132 & 2729 & & 1 & 0 & 0 & 1 & T(C_2)\\
+(2;4,4;1) & 288 & 2484 & & 21 & 7 & 0 & 14 & \\
+(4;3,3;-2) & 164 & 3265 & & 23 & 14 & 0 & 9 & \\
+(4;3,3;0) & 58 & 5786 & & 1 & 0 & 0 & 1 &
+\end{array}}
+\]
+\[
+\sred{\begin{array}{l}
+\big(E_1,\ \operatorname{rk}d_1,\ \operatorname{rk}d_2,\ \text{survivors}\big)_{\rm(ii)}=\big(\ldots\big)_{\rm(i)}\ \text{in all 31 blocks with }E_1\neq0;\quad
+\big(\ldots\big)_{\rm(iii)}=\big(\ldots\big)_{\rm(i)}\ \text{in all 10 blocks}\\[2pt]
+E_1=0\ \text{at odd }N_\gamma+N_\beta
+\end{array}}
+\]
+\[
+\sred{SU(3),\ \gamma\in\mathbf 8,\ W=\tfrac m2\operatorname{tr}\gamma^2:\ \ \big(E_1,\operatorname{rk}d_1,\operatorname{rk}d_2,\text{survivors}\big)=\big(\ldots\big)_{\text{pure }SU(3)}\ \text{in all 11 blocks},\ 2N_b+N_\gamma+N_\beta\le4}
+\]
+\tagbox{relation between the matter bilinear and $C_0$}
+\[
+\sred{\text{(ii)}:\ \ (Q_0+Q_1)\big(\beta_A\gamma_A\big)=2m\,u+4\,C_0,\quad Q_2\big(\beta_A\gamma_A\big)=0;\qquad
+\text{(iii)}:\ \ (Q_0+Q_1)\big(\beta_q q+\beta_t t\big)=2m\,M+2\,C_0}
+\]
+\[
+\Rightarrow\qquad [u]=-\frac{2}{m}\,[C_0],\qquad [M]=-\frac1m\,[C_0]
+\]
+\tagbox{non-perturbative relations}\quad $[C_0]^2=\nu\,\Lambda_L^6$
+\[
+\sred{\begin{array}{ll}
+\text{(ii)}: & [u]^2=\dfrac{4\nu\,\Lambda_L^6}{m^2}=4\nu\,\Lambda^4\quad(m\text{-independent})\\[8pt]
+\text{(iii)}: & [M]^2=\dfrac{\nu\,\Lambda_L^6}{m^2}=\dfrac{\nu\,\Lambda^5}{m}\quad\Leftrightarrow\quad \partial_M\Big(mM+\dfrac{\nu\Lambda^5}{M}\Big)=0
+\end{array}}
+\]
+\[
+\begin{array}{l}
+\text{(ii), charges of the parameters}:\quad M_R(m)=2-2r,\ \ F(m)=-2,\ \ M_R(\Lambda^4)=4r,\ \ F(\Lambda^4)=4\\[2pt]
+\Rightarrow\quad M_R(m^2\Lambda^4)=4=M_R(x_2),\ \ F(m^2\Lambda^4)=0
+\end{array}
+\]
+\[
+\text{(ii)}:\quad\{Q,h\}=L^2-\nu\,m^2\Lambda^4,\qquad T(a)=\big[h\,a-L\,w\big]\qquad\text{(Sec.\ 9 with }\Lambda^6\to m^2\Lambda^4)
+\]
+\tagbox{$m=0$, (ii)}
+\[
+Q_0\big(\beta_A\gamma_A\big)=0,\quad Q_1\big(\beta_A\gamma_A\big)=4\,C_0\ \ \Rightarrow\ \ [C_0]=0\ \text{in }E_2;\qquad
+u^k\in E_3\ (k\le3)
+\]
+\[
+\#\{\text{blocks},\ E_3\ne0\}=37\ \ \big(\dim 48\big)\quad\text{against }3\text{ for (i)}
+\]
+\[
+\big(\text{blocks with all incoming }d_1,d_2\text{ scanned};\quad 2N_b+N_\gamma+N_\beta\le6,\ \ \#\partial_{1},\#\partial_2\le1\big)
+\]
+\[
+(m\,u)^2\simeq4\,C_0^2\simeq4\nu\,m^2\Lambda^4:\qquad m\ne0\ \Rightarrow\ [u]^2=4\nu\Lambda^4;\qquad m=0\ \Rightarrow\ 0=0
+\]
+\tagbox{ultraviolet and infrared}
+\[
+H(Q)\ \supseteq\ \mathbb C[C_0]\big/\big(C_0^N-\nu\Lambda^{3N}\big)=\bigoplus_{k=0}^{N-1}\mathbb C\,e_k,\qquad
+e_k=\frac1N\sum_{j=0}^{N-1}\Big(\frac{C_0}{s_k}\Big)^{j}
+\]
+\[
+s_k=\nu^{1/N}\Lambda^3e^{2\pi ik/N},\qquad C_0\,e_k=s_k\,e_k,\qquad e_ke_l=\delta_{kl}e_k
+\]
+\[
+\text{on }\ \ker(C_0\cdot)\big/C_0\cdot E_\infty^{\rm pert}:\qquad
+Q_{\rm inst}\Big(-\frac{T}{\nu}\Big)+\Big(-\frac{T}{\nu}\Big)Q_{\rm inst}=1
+\quad\Rightarrow\quad H\Big(\ker(C_0\cdot)\big/C_0\cdot E_\infty^{\rm pert},\ Q_{\rm inst}\Big)=0
+\]
+\[
+\begin{array}{l|l|l}
+ & \text{ultraviolet (letters }b,c\text{)} & \text{infrared (}S,\ W_{\rm VY}\text{)}\\\hline
+\text{generator} & C_0 & S\\
+\text{superpotential} & - & W_{\rm VY}=NS-S\log\frac{S^N}{\nu\Lambda^{3N}}\\
+\text{relation} & \big(Q_0+\Lambda^{3N}Q_{\rm inst}\big)x_N=C_0^N-\nu\Lambda^{3N} & W_{\rm VY}'=-\log\frac{S^N}{\nu\Lambda^{3N}}=0\\
+\text{cohomology} & E_\infty^{\rm pert}\ \text{modulo pairs }(T(a),a) & \bigoplus_{k}\mathbb C\,e_k\ \ (N\text{ vacua})
+\end{array}
+\]
+\section*{14\quad The product from the product forests}
+\tagbox{definition}\quad $\mu_n=[\hbar^n](\,\cdot\star\cdot\,)$,\quad [LLC (6.11), (6.26), Sec.\ 7]
+\[
+[\hbar^n](A\star B)=\frac1{n!}\{\mathcal I^{\otimes n},A,B\}^{\gamma,0}
+=\frac{(-1)^n}{n!\,(8\pi^2)^n}\sum_{\Gamma}\Big[\mathcal I_\Gamma^{\rm raw\ cut}(\lambda;z)\prod_{(v,w)}^{\text{edge order}}\Delta_{vw}\big(\mathcal I_1\cdots\mathcal I_nA_{n+1}B_{n+2}\big)\Big]_{\rm jets}
+\]
+\tagbox{engine form}\quad $Q_n$ of the engine;\ \ $F$: forests of full binary trees, internal vertices $=\mathcal I$, leaves on $A$, $B$
+\[
+\sred{[\hbar^n](A\star B)=(-2)^n\sum_{F}\frac{1}{|\operatorname{Aut}F|}\sum_{\substack{\text{letters of }A,B\\ \mapsto\ \text{external edges}}}M_F(\text{jets};\lambda)\ \prod_{(v,w)}^{\text{edge order}}\Delta_{vw}\big(\mathcal I_1\cdots\mathcal I_n\,A\,B\big)}
+\]
+\[
+M_F(\text{jets};\lambda)=\prod_{e\ \text{external}}(-1)^{r_e+s_e}\,r_e!\,s_e!\ \big[z_e^{(r_e,s_e)}\big]\,\mathcal I_F^{\rm raw\ cut}(\lambda;z)
+\]
+\[
+\lambda_{\rm root}\to\partial\ \text{on the surviving letter},\qquad \lambda_A\to\partial\ \text{on the uncontracted letters of }A
+\]
+\[
+\begin{array}{l|ccccccc}
+n & 1&2&3&4&5&6&7\\\hline
+\#F\ (\text{connected}) & 1\ (1) & 3\ (2) & 8\ (5) & 23\ (12) & 65\ (32) & 194\ (86) & 576\ (243)
+\end{array}
+\]
+\tagbox{trees}\quad $F=\{\tau_1,\dots,\tau_R\}$,\ \ $\tau_r$: $m_r$ vertices, $\sum_rm_r=n$;\ \ $y_e$: current on the external edge $e$;\ \ $s_r$: series parameter of the root;\ \ $q_r$: fraction of $\tau_r$ in the terminal simplex
+\[
+M_F(\text{jets};\lambda)=\Big\langle\prod_{e}y_{e,1}^{\,r_e}\,y_{e,2}^{\,s_e}\Big\rangle,\qquad
+y_e=a_e\,\lambda_r+q_r\,\beta_e\,T\ \ (e\in\tau_r),\qquad T=\lambda_A+\sum_r(1-s_r)\lambda_r
+\]
+\[
+\sred{M_F=\int_0^1\prod_rds_r\int d\mu(q)\ \prod_r\Big[\langle\lambda_r,T\rangle^{m_r}\prod_{e\in\tau_r}y_{e,1}^{\,r_e}y_{e,2}^{\,s_e}\Big]_{\tau_r},\qquad
+\int d\mu(q)\prod_rq_r^{c_r}=\frac{\prod_r(m_r+c_r-1)!}{(n+\sum_rc_r+1)!}}
+\]
+\[
+[\,\cdot\,]_\tau=\int_{\text{simplices of }\tau}\iota_\tau\,(\,\cdot\,),\qquad a_e,\ \beta_e,\ \iota_\tau\in\mathbb Z[\text{parameters of }\tau],\qquad
+W_\tau(k,l)(s)=\Big[\prod_ea_e^{k_e}\beta_e^{l_e}\Big]_\tau\in\mathbb Q[s]
+\]
+\[
+n=1:\ \ M=\tfrac12\langle\lambda_1,\lambda_A\rangle
+\]
+\tagbox{$n=2$, undifferentiated inputs}\quad [LLC (6.30)]
+\[
+\begin{array}{ll}
+(A,(A,B)): & -\tfrac1{24}\langle\lambda_1,\lambda_A\rangle^2\\[2pt]
+(B,(A,B)): & +\tfrac1{24}\langle\lambda_1,\lambda_A\rangle^2\\[2pt]
+(A,B)\,(A,B): & \tfrac1{24}\big\langle\lambda_1,\lambda_2+2\lambda_A\big\rangle\big\langle\lambda_2,\lambda_1+2\lambda_A\big\rangle
+\end{array}
+\]
+\tagbox{checks}\quad $D_n(A,B):=[\hbar^n]\big(\mathbf Q(A\star B)-(\mathbf QA)\star B-(-1)^{|A|}A\star\mathbf QB\big)$ on random words, full letter algebra, mod $2^{31}-1$
+{\small\[
+\sred{\begin{array}{llll}
+\toprule
+n & \text{theory} & \text{words} & \text{result}\\\midrule
+1 & SU(2) & 170\text{ pairs},\ \text{jets}\le3 & =\mu_1\text{ of Sec.\ 10};\ \text{fixes }-2\\
+2 & SU(2) & 180\text{ pairs over }b,c,\partial c & =\mu_2\text{ of Sec.\ 11}\ (20\text{ constants derived})\\
+2 & SU(2) & 275\text{ pairs},\ \text{jets}\le1 & D_2=0\\
+2 & SU(3) & 190\text{ pairs},\ \text{jets}\le2 & D_2=0\\
+1 & \mathcal N=4\ SU(2)\ \ (b,c,\beta,\gamma) & 110\text{ pairs},\ \text{jets}\le2 & D_1=0\\
+2 & \mathcal N=4\ SU(2)\ \ (b,c,\beta,\gamma) & 140\text{ pairs} & D_2=0\\
+2 & SU(2) & 46\text{ pairs},\ \text{jets}\le2;\ 10\text{ pairs},\ \text{jets}\le3 & D_2=0\\
+3 & SU(2) & 126\text{ pairs},\ \text{jets }0;\ 46\text{ pairs},\ \text{jets}\le1 & D_3=0\\
+3 & SU(3) & 38\text{ pairs} & D_3=0\\
+4 & SU(2) & 68\text{ pairs},\ \le4+4\text{ letters} & D_4=0\\\midrule
+\le3 & - & 210,\ 915,\ 1852\text{ jet assignments} & \text{trees}=\text{whole-forest chart}\\
+4 & - & 23\text{ forests},\ \text{jets }0 & \text{trees}=\text{whole-forest chart}\\
+\le7 & - & 381\text{ trees} & \text{chart}=\text{Laplacian form}\\\bottomrule
+\end{array}}
+\]}
+\[
+\Rightarrow\quad \mu_2^T\ \text{of Sec.\ 11}=\text{the graphs }(A,(A,B)),\ (B,(A,B));\qquad \mu_n\ \text{for all jets and all letters}:\ \text{no fitted constant}
+\]
+\tagbox{tables}\quad \texttt{github.com/lbotao399-stack/All-loop-holomorphic-kernels/product\_kernels}\ (\texttt{2475547})
+\[
+\begin{array}{l|ccccccc}
+n & 1&2&3&4&5&6&7\\\hline
+\text{charts }(a_e,\beta_e,\iota_\tau):\ \#\tau & 1&2&5&12&32&86&243\\
+M_F\text{ tabulated, total jet order}\le & 6&4&3&2&1&0&0\\
+\text{monomials} & 3210 & 71317 & 531814 & 1237843 & 1043554 & 284385 & 2684774
+\end{array}
+\]
+\end{document}

@@ -1,0 +1,16 @@
+{
+  "status": "FULL_RATIONAL_FIRST_LIFT_PASS",
+  "k": 4,
+  "weight": [
+    5,
+    5
+  ],
+  "leading_terms": 7712,
+  "target_terms": 162588,
+  "primitive_terms": 81401,
+  "selected_Q0_images": 35,
+  "seconds": 229.80889892578125,
+  "full_Q0_primitive_equals_Q1_leading": true,
+  "scalar_E2_dimension": 1,
+  "higher_survival": "OPEN"
+}

@@ -1,0 +1,32 @@
+{
+  "coefficient_field": "Q",
+  "weight": [
+    5,
+    5
+  ],
+  "leading_Nb": 4,
+  "Nc": 2,
+  "component_terms": {
+    "4": 864,
+    "3": 10728,
+    "2": 14686,
+    "1": 0,
+    "0": 0
+  },
+  "correction_space_dimension": 124,
+  "correction_full_Q_rank_lower_Q": 95,
+  "selected_minor_determinant_Q": "-5929687942804404182578863814214444790213851360774847838326886741710994873915578011568983815402745262770008976681523068267529034067535752038561997696671252135853166594498986687737646738468475064131414270195512232884829099731/10643361341243210241965971398725063146593450418200227515593292488237175280170599092309125340523316228842141175545020276539392000000000000000000",
+  "full_column_residual_terms": 0,
+  "gauge_and_rotation_checks": true,
+  "closed_freedom": "all124 scalar correction coordinates included simultaneously",
+  "leading_scalar_E2_dimension_Q": 1,
+  "incoming_higher": "source Nb=4+r,Nc=1 requires minimum weight9+2r>10",
+  "leading_scalar_E_infinity_dimension_Q": 1,
+  "status": "EXACT_FULL_SCALAR_COCYCLE_AND_LEADING_SURVIVAL_READ_BACK",
+  "ambiguity": "unique modulo full Q in the complete rotation-scalar Nb+loop_order=4 block",
+  "seconds": 28.03951907157898,
+  "independent_readback": "independent_full_Q_readback.json",
+  "leading_literal_trace_formula": "tr(b^3) a1 -3/2 tr(b^2 d1c b^2 d2c) -3/2 tr(b^2 d1c)tr(b^2 d2c)",
+  "scalar_block_cohomology_dimension_Q": 1,
+  "scalar_block_certificate": "scalar_ambiguity_Q_certificate.json"
+}

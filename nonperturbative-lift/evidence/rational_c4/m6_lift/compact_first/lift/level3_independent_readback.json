@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "terms": 934381,
+  "sha256": "7af3a5300cdb9f679090e064e3a89cb3e36b3238c808b5a0d8b6b351268b8cee",
+  "target_sha256": "fccc388a396e5672809a2e565b954bdb4408a13ebf468efb530b6588cde57eeb",
+  "full_Q0_residual_terms": 0,
+  "grading": [
+    2,
+    5,
+    9,
+    9
+  ],
+  "all_monomial_gradings_checked": true,
+  "bounded_full_Q0_gate": {
+    "passed": true,
+    "buckets": 4,
+    "residual_terms": 0,
+    "seconds": 350.42749094963074
+  },
+  "seconds": 364.94229888916016
+}

@@ -1,0 +1,40 @@
+{
+  "coefficient_field": "Q",
+  "weight": [
+    4,
+    4
+  ],
+  "ghost_number": 4,
+  "coefficient_Nb": [
+    2,
+    1,
+    0
+  ],
+  "terms": [
+    822,
+    8704,
+    5216
+  ],
+  "timings_seconds": [
+    0.006285905838012695,
+    0.5325102806091309,
+    8.82365894317627
+  ],
+  "full_Q_closure_residuals": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "higher_orders": "zero: Q_r consumes r b-letters; total b+loop order is 2",
+  "product_source": "exact_star.py product-forest kernel, checked against mu1.py and mu2.py",
+  "normalization": "original engine parameter and a1=-1/2 tr(b d1c d2c-b d2c d1c)",
+  "leading_class": "nonzero, unique H(Q0) class by C1_square_Q_certificate.json",
+  "incoming_differentials": "absent: source Nb=2+r,Nc=3 requires total weight >=7+2r>8",
+  "E_infinity_class_nonzero": true,
+  "Cartan_terms": [
+    3,
+    0,
+    166
+  ]
+}

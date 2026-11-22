@@ -1,0 +1,266 @@
+{
+  "coefficient_field": "Q",
+  "weight": [
+    5,
+    5
+  ],
+  "Nb": 0,
+  "Nc": 7,
+  "m1_terms": 20228,
+  "n1_terms": 104210,
+  "m0_terms": 95176,
+  "Q1n1_terms": 98586,
+  "partner_terms": 98592,
+  "Q0_partner_terms": 0,
+  "chain_residual_terms": 0,
+  "Q1n1_Cartan_terms": 0,
+  "Cartan_terms": 6,
+  "Cartan": [
+    {
+      "word": [
+        [
+          "ch1",
+          0,
+          1
+        ],
+        [
+          "ch1",
+          0,
+          2
+        ],
+        [
+          "ch1",
+          1,
+          0
+        ],
+        [
+          "ch1",
+          1,
+          1
+        ],
+        [
+          "ch2",
+          0,
+          1
+        ],
+        [
+          "ch2",
+          1,
+          0
+        ],
+        [
+          "ch2",
+          2,
+          0
+        ]
+      ],
+      "coefficient_Q": "40"
+    },
+    {
+      "word": [
+        [
+          "ch1",
+          0,
+          1
+        ],
+        [
+          "ch1",
+          0,
+          2
+        ],
+        [
+          "ch1",
+          1,
+          0
+        ],
+        [
+          "ch1",
+          2,
+          0
+        ],
+        [
+          "ch2",
+          0,
+          1
+        ],
+        [
+          "ch2",
+          1,
+          0
+        ],
+        [
+          "ch2",
+          1,
+          1
+        ]
+      ],
+      "coefficient_Q": "-40"
+    },
+    {
+      "word": [
+        [
+          "ch1",
+          0,
+          1
+        ],
+        [
+          "ch1",
+          0,
+          2
+        ],
+        [
+          "ch1",
+          1,
+          0
+        ],
+        [
+          "ch2",
+          0,
+          1
+        ],
+        [
+          "ch2",
+          1,
+          0
+        ],
+        [
+          "ch2",
+          1,
+          1
+        ],
+        [
+          "ch2",
+          2,
+          0
+        ]
+      ],
+      "coefficient_Q": "-40"
+    },
+    {
+      "word": [
+        [
+          "ch1",
+          0,
+          1
+        ],
+        [
+          "ch1",
+          1,
+          0
+        ],
+        [
+          "ch1",
+          1,
+          1
+        ],
+        [
+          "ch1",
+          2,
+          0
+        ],
+        [
+          "ch2",
+          0,
+          1
+        ],
+        [
+          "ch2",
+          0,
+          2
+        ],
+        [
+          "ch2",
+          1,
+          0
+        ]
+      ],
+      "coefficient_Q": "40"
+    },
+    {
+      "word": [
+        [
+          "ch1",
+          0,
+          1
+        ],
+        [
+          "ch1",
+          1,
+          0
+        ],
+        [
+          "ch1",
+          1,
+          1
+        ],
+        [
+          "ch2",
+          0,
+          1
+        ],
+        [
+          "ch2",
+          0,
+          2
+        ],
+        [
+          "ch2",
+          1,
+          0
+        ],
+        [
+          "ch2",
+          2,
+          0
+        ]
+      ],
+      "coefficient_Q": "40"
+    },
+    {
+      "word": [
+        [
+          "ch1",
+          0,
+          1
+        ],
+        [
+          "ch1",
+          1,
+          0
+        ],
+        [
+          "ch1",
+          2,
+          0
+        ],
+        [
+          "ch2",
+          0,
+          1
+        ],
+        [
+          "ch2",
+          0,
+          2
+        ],
+        [
+          "ch2",
+          1,
+          0
+        ],
+        [
+          "ch2",
+          1,
+          1
+        ]
+      ],
+      "coefficient_Q": "-40"
+    }
+  ],
+  "verified_gauge_invariance": true,
+  "verified_rotation_scalar": true,
+  "outgoing_higher_Qn": "zero by absence of b letters",
+  "Q0_nonexact": "nonzero Cartan restriction; every Q0 boundary restricts to zero",
+  "full_nonexactness_status": "see incoming_d1_Q_certificate.json and proofs.md Theorem 6",
+  "seconds": 105.59388494491577
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "k": 4,
+  "source_trace_descriptors_rebuilt": 27,
+  "leading_and_primitive_rebuilt_exactly": true,
+  "Q1_recomputed": true,
+  "original_Wick_evaluator": true,
+  "full_Q0_including_bare_ghosts": [
+    {
+      "channel": 0,
+      "peak_accumulator_terms": 65950,
+      "residual_terms": 0
+    },
+    {
+      "channel": 1,
+      "peak_accumulator_terms": 91626,
+      "residual_terms": 0
+    },
+    {
+      "channel": 2,
+      "peak_accumulator_terms": 91614,
+      "residual_terms": 0
+    },
+    {
+      "channel": 3,
+      "peak_accumulator_terms": 65948,
+      "residual_terms": 0
+    },
+    {
+      "channel": 4,
+      "peak_accumulator_terms": 182709,
+      "residual_terms": 0
+    }
+  ],
+  "rotation_scalar": true,
+  "seconds": 45.68856382369995
+}

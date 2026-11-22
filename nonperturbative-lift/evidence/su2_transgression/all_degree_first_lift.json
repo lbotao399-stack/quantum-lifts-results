@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "module_reductions": [
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        0
+      ],
+      "coefficient": "1",
+      "primitive_seed_coefficient": "0",
+      "primitive_terms": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        0,
+        1
+      ],
+      "coefficient": "0",
+      "primitive_seed_coefficient": "0",
+      "primitive_terms": 0
+    },
+    {
+      "channel": "single",
+      "gaps": [
+        1,
+        1
+      ],
+      "coefficient": "1/2",
+      "primitive_seed_coefficient": "1",
+      "primitive_terms": 12
+    },
+    {
+      "channel": "double",
+      "gaps": [
+        1,
+        1
+      ],
+      "coefficient": "1",
+      "primitive_seed_coefficient": "1",
+      "primitive_terms": 12
+    }
+  ],
+  "C2_leading_ratio": "-1",
+  "first_primitive_terms": 33,
+  "bracket_primitive_terms": 6,
+  "bracket_primitive_scalar_trace_coefficient": "16",
+  "tests": [
+    {
+      "A2_power": 1,
+      "leading_terms": 6,
+      "primitive_terms": 33,
+      "full_Q0_Q1_identity": true
+    },
+    {
+      "A2_power": 2,
+      "leading_terms": 9,
+      "primitive_terms": 84,
+      "full_Q0_Q1_identity": true
+    },
+    {
+      "A2_power": 3,
+      "leading_terms": 12,
+      "primitive_terms": 135,
+      "full_Q0_Q1_identity": true
+    },
+    {
+      "A2_power": 4,
+      "leading_terms": 15,
+      "primitive_terms": 186,
+      "full_Q0_Q1_identity": true
+    },
+    {
+      "A2_power": 6,
+      "leading_terms": 21,
+      "primitive_terms": 288,
+      "full_Q0_Q1_identity": true
+    }
+  ],
+  "scope": "all-k scalar leading E2 dimension1 for even k,0 for odd k; no all-loop survival claim"
+}

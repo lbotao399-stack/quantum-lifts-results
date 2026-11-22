@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checks": "Source and chapter digests, certificate records, claim references, local links, and published polynomial bytes. With release files supplied, the calculation archive and every indexed member are also checked.",
+  "archive_sha256": "2d94d52cbd29e7f498630158ad92b5464992cc7878002860fee68791f478b066",
+  "counts": {
+    "pinned_sources": 74,
+    "archive_payloads": 78,
+    "expanded_evidence": 50,
+    "witnesses_outside_certificate_zip": 4,
+    "published_polynomials_checked": 4,
+    "historical_files_indexed": 1146,
+    "historical_files_checked": 1146,
+    "numbered_sections": 26,
+    "display_equations": 614,
+    "proof_or_example_blocks": 84,
+    "tables": 13,
+    "claims": 70,
+    "claims_by_status": {
+      "conditional": 4,
+      "conjecture": 1,
+      "finite-evidence": 1,
+      "literature-input": 11,
+      "open": 5,
+      "proved": 48
+    },
+    "registered_replays": 17,
+    "authored_documents": 35,
+    "checked_local_markdown_links": 290
+  }
+}

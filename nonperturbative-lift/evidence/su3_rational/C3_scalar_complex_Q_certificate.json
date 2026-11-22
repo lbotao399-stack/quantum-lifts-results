@@ -1,0 +1,23 @@
+{
+  "coefficient_field": "Q",
+  "weight": [
+    4,
+    4
+  ],
+  "Nc": 2,
+  "scalar_chain_dimensions": {
+    "0": 0,
+    "1": 8,
+    "2": 15,
+    "3": 3
+  },
+  "scalar_chain_total": 26,
+  "outgoing_full_Q_rank_Q": 18,
+  "incoming_full_Q_rank_Q": 7,
+  "scalar_full_Q_cohomology_dimension_Q": 1,
+  "grading_scope": "homogeneous lift block Nb+loop_order=3, coefficients at Nb3/2/1/0 carry hbar0/1/2/3",
+  "all_six_lift_differences_full_Q_readback": true,
+  "non_scalar_lower_filtrations": "not classified",
+  "other_hbar_blocks_or_hbar_torsion": "not classified by this finite block rank",
+  "seconds": 199.4198968410492
+}

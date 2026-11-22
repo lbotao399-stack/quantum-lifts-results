@@ -1,0 +1,14 @@
+{
+  "weight": [
+    6,
+    6
+  ],
+  "Nb": 0,
+  "Nc": 9,
+  "coefficient_field": "Q",
+  "polynomial_terms": 278026,
+  "Cartan_terms": 0,
+  "Q0_terms": 0,
+  "higher_Qn": "zero by Nb=0",
+  "seconds": 15.418010950088501
+}

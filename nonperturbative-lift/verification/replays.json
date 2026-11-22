@@ -1,0 +1,183 @@
+{
+  "timestamp_utc": "2026-11-22T04:56:49.161088+00:00",
+  "python": "3.13.2",
+  "implementation": "CPython",
+  "assertions_enabled_in_children": true,
+  "archive_sha256": "2d94d52cbd29e7f498630158ad92b5464992cc7878002860fee68791f478b066",
+  "results": [
+    {
+      "id": "su2-boundary",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "All three nonzero-order slots of C0 star C2 = Qpert w, including bare ghosts, both rotations and field/jet counts; terms above order two vanish by b-degree.",
+      "script_sha256": "9b1144250f3943ca35959caf2bfd1938b5c427989243a13e9b8eb8171389d724",
+      "seconds": 0.382,
+      "stdout": "{\n  \"witness_sha256\": \"7c57131cd88155e3fc3e9019332dc5bac9f440d6ebf6af26f586db3907811ca6\",\n  \"product_terms\": [\n    6,\n    75,\n    135\n  ],\n  \"primitive_terms\": [\n    24,\n    221,\n    105\n  ],\n  \"full_boundary_residual_terms\": [\n    0,\n    0,\n    0\n  ],\n  \"rotation_residuals\": 0,\n  \"bare_ghosts_retained\": true,\n  \"higher_orders\": \"zero by b-degree\",\n  \"scope\": \"C0 star C2 only; does not test hidden square, its nonzero witness, or an instanton matrix element\"\n}",
+      "stderr": ""
+    },
+    {
+      "id": "product-kernels",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "The one-loop and all three two-loop closed forest moments with zero external jet orders; does not regenerate the seven-loop tables.",
+      "script_sha256": "46ca5ab06a6e573bfb227f0f861735bb8c9e842967d92445033ff5f110740538",
+      "seconds": 0.033,
+      "stdout": "closed forms at one and two loops: ok",
+      "stderr": ""
+    },
+    {
+      "id": "hessian-bridge",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Every ordered traceless-Cartan Hessian entry at N=3,4 and 0 <= k <= 16. The all-degree proof is analytic.",
+      "script_sha256": "43b01ed1397313a4c2805c9c656b9f2d6b6bf031c8fde9cb2bb8449f17f4cad6",
+      "seconds": 11.686,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"coordinates\": \"independent traceless eigenvalues; commuting markers label ordered first-ghost then second-ghost slots\",\n  \"exact_symbolic_degree_range\": [\n    0,\n    16\n  ],\n  \"seconds\": 11.302542924880981\n}",
+      "stderr": ""
+    },
+    {
+      "id": "effective-ideals",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Magnetic 3-by-3 determinant Euler relation and perturbative evaluation; finite-circle Euler identity at Nc=2,3. Superpotentials are inputs.",
+      "script_sha256": "8e91e1d94d3a21f20186afeb904b22fa1d1a43d508c05ff616bfe916fbea2caa",
+      "seconds": 0.275,
+      "stdout": "{\n  \"determinant_size\": 3,\n  \"Euler_residual\": 0,\n  \"perturbatively_flat_evaluation_det\": 1,\n  \"circle_sizes\": [\n    2,\n    3\n  ],\n  \"circle_Euler_residuals\": [\n    0,\n    0\n  ],\n  \"circle_Y_free_at_eta_zero\": true,\n  \"scope\": \"effective polynomial identities in these matrix sizes; the physical superpotential is input; no microscopic instanton insertion\"\n}",
+      "stderr": ""
+    },
+    {
+      "id": "global-ads",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Global polynomial Jacobian identity and zero-scale critical-point test in the constrained effective model.",
+      "script_sha256": "9dd19ed4c688577c74bee60e8915144eca12ea46b9f97236c34e25550484262d",
+      "seconds": 0.185,
+      "stdout": "{\"jacobian_identity_residual\": \"0\", \"constant_in_jacobian_ideal\": \"m2 * Lambda^4\", \"zero_scale_critical_point_residuals\": [\"0\", \"0\", \"0\", \"0\", \"0\", \"0\", \"0\"], \"scope\": \"global constrained effective Koszul model; no inverse meson\", \"status\": \"PASS\"}",
+      "stderr": ""
+    },
+    {
+      "id": "sqcd-f-terms",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "All 15 six-by-six Pfaffian derivatives, origin, heavy-field elimination, ADS differential and localized unit primitive.",
+      "script_sha256": "45d768948b1bcc23d7f8f7d2c9721d0dff457bcb659462e2778b4c82bf0295db",
+      "seconds": 0.255,
+      "stdout": "{\n  \"all_15_six_by_six_Pfaffian_derivatives\": true,\n  \"displayed_V12_F_term\": true,\n  \"cubic_origin_gradient_and_Hessian_zero\": true,\n  \"all_heavy_F_terms_after_exact_elimination\": true,\n  \"ADS_superpotential_and_remaining_light_F_term\": true,\n  \"source_sign_Koszul_differential\": true,\n  \"unit_primitive_after_scale_localization\": true,\n  \"scope\": \"small effective SQCD F-term/Koszul calculation; no claim of full electric/magnetic jet-complex equivalence\"\n}",
+      "stderr": ""
+    },
+    {
+      "id": "fundamental-triangle",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Both Wick signs, both triangle factors and the source-normalized anomaly/Higgs cancellation; no instanton amplitude.",
+      "script_sha256": "988b632b48d7b9dbd05780aa0bb2980ba1d484c836acc386b29e639e638b1bd3",
+      "seconds": 0.184,
+      "stdout": "{\n  \"checks\": {\n    \"cycle_left_derivative_signs\": true,\n    \"prefactor_without_g2_pi2\": true,\n    \"frame_determinant\": true,\n    \"polynomial_hK_formula\": true,\n    \"completion_coefficient_sign\": true\n  },\n  \"cycle_signs\": [\n    1,\n    1\n  ],\n  \"prefactor\": \"1/64\",\n  \"note_sha256\": \"cde200bedbad6c5197bdd0db19247d7e707cdd815ecf3e8b660e060e7a6021eb\"\n}",
+      "stderr": ""
+    },
+    {
+      "id": "su5-invariants",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Classical adjoint trace quotient, its Groebner basis, square and cube; does not prove quantum full-ring matching.",
+      "script_sha256": "0ec43f3f5b09f07f090046efacd235acf024316e6cb34a36cc674f5d04c26048",
+      "seconds": 0.18,
+      "stdout": "{\n  \"coefficient_domain\": \"QQ\",\n  \"variable_dictionary\": {\n    \"s2\": \"Tr(X^2)\",\n    \"s3\": \"Tr(X^3)\",\n    \"s4\": \"Tr(X^4)\",\n    \"s5\": \"Tr(X^5)\"\n  },\n  \"elementary_symmetric_polynomials\": {\n    \"0\": \"1\",\n    \"1\": \"0\",\n    \"2\": \"-s2/2\",\n    \"3\": \"s3/3\",\n    \"4\": \"s2**2/8 - s4/4\",\n    \"5\": \"-s2*s3/6 + s5/5\"\n  },\n  \"Tr_X6\": \"-s2**3/8 + 3*s2*s4/4 + s3**2/3\",\n  \"trace_F_generators_j_1_to_4\": [\n    \"s3\",\n    \"-s2**2/5 + s4\",\n    \"-s2*s3/5 + s5\",\n    \"-s2**3/8 + 11*s2*s4/20 + s3**2/3\"\n  ],\n  \"lex_order\": [\n    \"s5\",\n    \"s4\",\n    \"s3\",\n    \"s2\"\n  ],\n  \"reduced_groebner_basis\": [\n    \"s5\",\n    \"-s2**2/5 + s4\",\n    \"s3\",\n    \"s2**3\"\n  ],\n  \"square_normal_form\": \"s2**2\",\n  \"cube_normal_form\": \"0\",\n  \"cubic_generator_combination\": \"-3*s2**3/200\",\n  \"conclusion\": \"C[Tr(X^2)] / ((Tr(X^2))^3); square nonzero\",\n  \"scope\": \"Completeness of trace generators requires the Reynolds/covariant proof in su5_invariant_quotient.md.\"\n}",
+      "stderr": ""
+    },
+    {
+      "id": "kutasov-branches",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Deformed trace polynomials, branch multiplicities and electric/magnetic trace map in the specified presentation.",
+      "script_sha256": "1079c7b67b8956e171aeead40f77e3364b36cc5e32ae191c7e1d858f64039c32",
+      "seconds": 0.259,
+      "stdout": "{\n  \"passed\": true,\n  \"source\": \"hep-th/9510222 sec6.1 eqs6.1,6.5,6.8,6.10,6.12,6.14\",\n  \"Nc\": 5,\n  \"Nf\": 4,\n  \"magnetic_Nc\": 3,\n  \"trace_values\": {\n    \"5,0\": \"0\",\n    \"4,1\": \"20*s1**2/(9*s0**2)\",\n    \"3,2\": \"30*s1**2/s0**2\"\n  },\n  \"trace_map\": \"5*tr_y2/3 + 20*s1**2/(9*s0**2)\",\n  \"classical_polynomial\": \"tr_x2*(s0**2*tr_x2 - 30*s1**2)*(9*s0**2*tr_x2 - 20*s1**2)/(9*s0**4)\",\n  \"duality_quantum_polynomial\": \"(s0**2*tr_x2 - 30*s1**2)*(9*s0**2*tr_x2 - 20*s1**2)/(9*s0**4)\",\n  \"removed_branch_value_of_quantum_polynomial\": \"200*s1**4/(3*s0**4)\",\n  \"scope\": \"Exact specialization of the source duality relation. Adjoint-eigenvalue branches have SQCD moduli; they are not isolated vacua. At s1=0 the nonreduced operator relation uses the source duality map, not a deduction from vacuum values alone. Full electric perturbative survival and a nonperturbative Q primitive are separate gates.\"\n}",
+      "stderr": ""
+    },
+    {
+      "id": "quotient-hypothesis",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Four-dimensional matrix counterexample to strengthening the homotopy identity to automatic contraction on ker L / im L; not a gauge theory.",
+      "script_sha256": "9d3c37e8f10b94609b7054a8c6fa98a1b73fbd4b0502035e3f5b141bc44d81d9",
+      "seconds": 0.221,
+      "stdout": "{\"Qinst\": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0], \"L\": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], \"h\": [0, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0], \"kernel_quotient_dimension\": 2, \"induced_Qinst_rank\": 0, \"total_Qinst_cohomology_dimension\": 0, \"assumption_scope\": \"linear operator identities, no product compatibility asserted\"}",
+      "stderr": ""
+    },
+    {
+      "id": "moduli-integrals",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "The separated position/size integral pi^2/90 and named auxiliary moments. The script's factor 36 is not the physical-profile factor 9 in section 10.",
+      "script_sha256": "acba14baf1e0e03276c607844627728e7e867fdd7f686844f5643c04e1ebce7f",
+      "seconds": 0.397,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"moduli_mass\": \"pi**2/90\",\n  \"with_grassmann_factor_36\": \"2*pi**2/5\",\n  \"rho_cutoff_tail\": \"(-eps**10/(A + eps**2)**5 + 1)/(10*A)\",\n  \"rho2_moment_log_R_coefficient_divided_by_r2\": \"pi**2/42\",\n  \"integral_f_cubed\": \"pi**2/(20*rho**2)\"\n}",
+      "stderr": ""
+    },
+    {
+      "id": "wilson-moments",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Normalized straight-line angular measure, character moments and rational lower bound on the Wilson insertion.",
+      "script_sha256": "26ca482da681dc9a2d98ab3cab66ec525c0cc1641e746327910c38f9ab12146b",
+      "seconds": 5.028,
+      "stdout": "Beta normalization and independence moment: PASS\n14-dimensional convolution constants and E[cos Delta]=36/49: PASS\nWilson/scalar >= 7/36 - 8*pi^2/441 > 1319/86436 > 0: PASS\nAngular density integral = 77*pi/1024\nUnnormalized angular density = (-120*delta*cos(delta)**5 - 600*delta*cos(delta)**3 - 225*delta*cos(delta) + 274*sin(delta)**5 + 1155*sin(delta)*cos(delta)**2 - 210*sin(delta) + 120*pi*cos(delta)**5 + 600*pi*cos(delta)**3 + 225*pi*cos(delta))*sin(delta)/3840\nE[Delta^2] = -91/108 + 100*pi**2/693\nE[Delta^4] = -350*pi**2/297 + 4979/1296 + 20*pi**4/231\nE[Delta^6] = -175*pi**4/99 - 953615/24192 + 100*pi**6/1617 + 36875*pi**2/2376\nElementary angle moments and rational Beta coefficients for exact series: PASS",
+      "stderr": ""
+    },
+    {
+      "id": "wilson-closed",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Closed angular expression and the strengthened positive lower bound for the straight Wilson line alone.",
+      "script_sha256": "d628c6e58efe7dca4d99ec3d1666993bb6e4259b546d2a1e13797de98e718a25",
+      "seconds": 1.106,
+      "stdout": "Angular characteristic function rational partial fractions: PASS\nSi/Ci primitive differentiation and exact finite expression: PASS\nE tr U = -23963/4 + 6480*Ci(4*pi) + 10935*Ci(2*pi)/8 - 10935*Ci(6*pi)/8 - 6480*Ci(8*pi) + 2916*(-Si(8*pi) - Si(2*pi) + Si(4*pi) + Si(6*pi))/pi + 10935*log(3)/8 + 6480*log(2)\nStronger Wilson/scalar bound > 5470949/47675628 > 0: PASS",
+      "stderr": ""
+    },
+    {
+      "id": "sw-geometry",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Curve discriminants, inverse period through the second coefficient and E6 coordinate change; geometry, not microscopic Q-cohomology.",
+      "script_sha256": "429ebab7f863903940a9ded4f524684743799895a2a79a602eff70479174ba0b",
+      "seconds": 0.341,
+      "stdout": "{\n  \"massless_discriminants\": {\n    \"0\": \"L**8*(-L**2 + u)*(L**2 + u)/16\",\n    \"1\": \"-L**6*(27*L**6 + 256*u**3)/4096\",\n    \"2\": \"L**4*(-L**2 + 8*u)**2*(L**2 + 8*u)**2/65536\",\n    \"3\": \"-L**2*u**4*(-L**2 + 256*u)/4096\"\n  },\n  \"period_coefficients\": [\n    \"1\",\n    \"-1/16\",\n    \"-15/1024\",\n    \"-105/16384\"\n  ],\n  \"inverse_period_coefficients\": {\n    \"c1\": \"1/4\",\n    \"c2\": \"5/64\"\n  },\n  \"prepotential_F1\": \"-I/(8*pi)\",\n  \"prepotential_F2\": \"-5*I/(256*pi)\",\n  \"Nf3_physical_singularities_in_SW_scale_squared\": [\n    \"-1/432\",\n    \"11/6912\"\n  ],\n  \"Nf4_PV_two_instanton_c2\": \"-7/15552\",\n  \"Argyres_Seiberg_transform\": \"passed\",\n  \"Nf4_massive_discriminant\": \"passed\",\n  \"E6_beta_function\": 0,\n  \"Higgs_complex_dimensions\": [\n    20,\n    20\n  ]\n}",
+      "stderr": ""
+    },
+    {
+      "id": "massless-source",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "The complete 142-by-39 rational tree matrix, four paired color evaluations, restricted triangle rank, massive-family F-equations, pole residue, and both signed cancellations in the two-parameter specialization differential. The single-instanton amplitude remains uncomputed.",
+      "script_sha256": "b30adc0fae5ed6390779d47e515990acf3d13c1f24a30a5bacc0bbb593cf7bbf",
+      "seconds": 0.371,
+      "stdout": "39 invariant sources, 142 output monomials, tree rank 38, augmented rank 38.\nAll four flavor-resolved row identities hold on every column.\nAll 32 tree F-equations vanish on the mass-polynomial family; determinant residue checked.\nThe two-parameter Koszul variation cancels both intermediate rows with the source signs.",
+      "stderr": ""
+    },
+    {
+      "id": "scalar-saturation",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Full determinant and circle ideal saturations at sizes two and three, all 15 Pfaffian minors and exterior-degree pivots, scale substitution, and the length-two local quotient with its explicit primitive.",
+      "script_sha256": "a396e7131fcdb9366c9d8dcf17f7acbdadb17c2d6aede6514cf8d848697edc14",
+      "seconds": 0.39,
+      "stdout": "Square size 2: saturation equality, 9 reduced basis elements.\nCircle size 2: saturated quotient has ideal (Y, constraint).\nSquare size 3: saturation equality, 22 reduced basis elements.\nCircle size 3: saturated quotient has ideal (Y, constraint).\nInterleaved six-flavor Pfaffian, all 15 signed derivatives and scale substitution agree.\nDistinct exterior pivots in all 15 degrees, including 105 first fermionic targets.\nLocal multiplication by F has dimension 16, rank 1, square rank 0.",
+      "stderr": ""
+    },
+    {
+      "id": "translation-jets",
+      "status": "passed",
+      "returncode": 0,
+      "scope": "Full SU(2) ghost-number-two basic jet matrices at spins 2 through 16, their translation generators, and the nonzero closed cubic jets. The all-spin simple-algebra recurrence is analytic. Also checks N=4 two-point descendant coefficients for p=2,3,4 and k=0 through 6.",
+      "script_sha256": "b957e2faa76b983ac412765ebba0c3e1a1230e795f0791dd160c72a5c24f0743",
+      "seconds": 1.072,
+      "stdout": "Full relative SU(2) bilinear kernels have dimension one at spins 2 through 16.\nEach is the derivative of X. The pure-b derivatives of Y are closed and nonzero.\nN=4 two-point derivative coefficients verified at scalar degrees 2,3,4 and orders 0 to 6.",
+      "stderr": ""
+    }
+  ],
+  "sympy": "1.14.0",
+  "numpy": "2.2.6",
+  "passed": 17,
+  "total": 17
+}

@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "sha256": "f37f2bafe5f6a7ec9d2824be214f6c14ff2c961dd5f442afc3f48b134e04511f",
+  "component_terms": [
+    282,
+    23796,
+    45021,
+    16253
+  ],
+  "gradings": [
+    [
+      3,
+      5,
+      7,
+      7
+    ],
+    [
+      2,
+      5,
+      7,
+      7
+    ],
+    [
+      1,
+      5,
+      7,
+      7
+    ],
+    [
+      0,
+      5,
+      7,
+      7
+    ]
+  ],
+  "closure_residual_terms": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "saved_partial_assembly": true,
+  "full_Q0_closed_correction": true,
+  "cached_high_Q_images": "Qn_componenti were previously computed from the unchanged saved components; Q1 of the changed component was recomputed",
+  "higher_equations": "zero because Qn lowers Nb by n",
+  "seconds": 58.15492510795593
+}

@@ -1,0 +1,17 @@
+{
+  "coefficient_field": "Q",
+  "reconstructed_all_nonzero_trace_coefficients": true,
+  "full_polynomial_residuals": {
+    "6": 0,
+    "5": 0,
+    "4": 0
+  },
+  "full_Q0_includes_bare_ghosts": true,
+  "gauge_and_both_rotation_checks": true,
+  "leading_E3_dimension_Q": 1,
+  "leading_Cartan_formula_verified": true,
+  "leading_tree_class_formula": "3 tr(b^2) tr(b^3) a1 - (tr(b^2)^3/4 + tr(b^3)^2) C0",
+  "leading_tree_class_argument": "equal Cartan restrictions and the independently proved injectivity of the complete leading tree module",
+  "scope": "leading k6 scalar class survives through the second-loop equation; no E_infinity or full-lift uniqueness claim",
+  "seconds": 1021.1953721046448
+}

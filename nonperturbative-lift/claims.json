@@ -1,0 +1,1451 @@
+{
+  "schema_version": 1,
+  "scope": "A claim is the statement with its stated hypotheses, sector and coefficient ring. IDs are stable; all local paths resolve from the project root. Replays may verify a named ingredient only. Inputs from other manuscripts are explicitly attributed. When present, continuation links to the exact next calculation.",
+  "statuses": {
+    "proved": "A proof or an exact certificate establishes the stated result in the indicated theory, sector and ring. The evidence field gives the warrant; a fresh numerical or symbolic replay is a separate attribute.",
+    "conditional": "The implication is proved; a named physical identification or operator identity is still needed for the conclusion in the proposed theory.",
+    "literature-input": "A result imported from the cited primary source; any local calculation checks the stated use of that input.",
+    "finite-evidence": "A concrete observation in a bounded range or finite field; no rational or all-degree conclusion beyond the stated scope.",
+    "conjecture": "A proposed positive pattern or identification; the available examples do not prove it.",
+    "open": "A specified question still lacks a decisive calculation or proof. The record states the missing test."
+  },
+  "claims": [
+    {
+      "id": "perturbative-product",
+      "title": "Anomaly cancellation and multiplication on perturbative classes",
+      "theory": "4d N=1 pure SU(N) SYM and the stated matter extension",
+      "sector": "Cohomology of the local operator differential",
+      "coefficient_ring": "Source formal loop ring",
+      "hypotheses": "Gauge-invariant superpotential and vanishing symmetric cubic matter trace, as in the source quantum master equation.",
+      "statement": "The perturbative supercharge squares to zero. Its product is associative, graded commutative and unital on cohomology; the associator on representatives is a homotopy.",
+      "status": "literature-input",
+      "derivation": "sources/all-loop/theorems.md#b-00513",
+      "evidence": [
+        "sources/all-loop/main.tex",
+        "sources/all-loop/theorems.md#b-00465"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The external theorem is perturbative. It supplies no instanton homotopy or physical coefficient."
+    },
+    {
+      "id": "forest-normalization",
+      "title": "Exact product kernels and source loop normalization",
+      "theory": "4d N=1 pure SU(N) SYM",
+      "sector": "One-loop displacements and zero-input-jet two-loop product forests",
+      "coefficient_ring": "Q[hbar], hence Q[[hbar]]; hbar counts loops and is not inverted",
+      "hypotheses": "Use the source component metric, interaction vertices, orientation and ordering.",
+      "statement": "For loop order r, Q_r(physical)=(64π²)^(-r) Q_r(stored). The one-loop simplex moments and the three zero-input-jet two-loop forest kernels are explicit in §24.",
+      "status": "proved",
+      "derivation": "research/24-product-kernels.md#np-1f6cef9d03fcf705-1",
+      "evidence": [
+        "sources/all-loop/product_kernels/code/product_kernels.py",
+        "sources/all-loop/product_kernels/tables/product_kernels_n2.json.gz",
+        "sources/notes/claim_status.md"
+      ],
+      "replays": [
+        "product-kernels"
+      ],
+      "depends_on": [],
+      "limits": "The bundled tables extend to seven loops; the replay tests the stated closed forms and does not regenerate all seven tables."
+    },
+    {
+      "id": "su2-boundary",
+      "title": "The full primitive of C0 star C2",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "Polynomial local operators; quantum product",
+      "coefficient_ring": "Q[hbar], hence Q[[hbar]]; hbar counts loops and is not inverted",
+      "hypotheses": "Use the closed C2 representative and quantum product in the stored rational normalization.",
+      "statement": "C0 star C2 = Qpert(w2 + hbar w1 + hbar² w0). The three product coefficients have 6, 75, 135 terms; the primitive has 24, 221, 105. All three coefficient residuals vanish.",
+      "status": "proved",
+      "derivation": "research/04-complex-and-products.md#np-5c85ee5e8a2c3293-1",
+      "evidence": [
+        "archive:rational_c4/C0_C2_boundary_exact.pkl",
+        "evidence/rational_c4/C0_C2_boundary_readback.json",
+        "checks/su2_boundary.py"
+      ],
+      "replays": [
+        "su2-boundary"
+      ],
+      "depends_on": [
+        "perturbative-product"
+      ],
+      "limits": "This replay proves the boundary without dividing by hbar. It is neither the hidden square nor a physical one-instanton computation."
+    },
+    {
+      "id": "su2-hidden-product",
+      "title": "The full hidden square of C2",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "C2 star C2 and C0 star C4",
+      "coefficient_ring": "Q[hbar], hence Q[[hbar]]; hbar counts loops and is not inverted",
+      "hypotheses": "Use article C4 = −C4(source); keep both quantum product corrections and the full primitive.",
+      "statement": "[C2]² = −3[C0][C4]. The sum of the corresponding products has a saved full perturbative primitive.",
+      "status": "proved",
+      "derivation": "research/04-complex-and-products.md#np-5c85ee5e8a2c3293-1",
+      "evidence": [
+        "archive:rational_c4/full_hidden_product_exact.pkl",
+        "evidence/rational_c4/full_completion_summary.json",
+        "sources/engines/originals/rational_c4/finish_c4.py"
+      ],
+      "replays": [],
+      "depends_on": [
+        "perturbative-product"
+      ],
+      "limits": "This is a relation in the formal perturbative ring; the separate nonzero detector is required to infer that the square is nonzero."
+    },
+    {
+      "id": "su2-product-detector",
+      "title": "A boundary-annihilating functional detects C0 star C4",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "Incoming maps at weight (6,6) and the product class",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Use the certified rational image, all incoming source dimensions, and the archived sign of the tested representative.",
+      "statement": "The stored two-term functional is zero on the required image and evaluates to 1 on the tested product. The higher incoming sources vanish; [C0][C4] is nonzero.",
+      "status": "proved",
+      "derivation": "research/04-complex-and-products.md#np-5c85ee5e8a2c3293-1",
+      "evidence": [
+        "archive:rational_c4/C0C4_nonzero_exact.pkl",
+        "evidence/rational_c4/nonzero_summary.json",
+        "sources/engines/originals/rational_c4/certify_nonzero.py"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The detector value is in the stored convention; nonvanishing is independent of the article sign. Its archived certificate is distinct from the C0 star C2 replay."
+    },
+    {
+      "id": "su2-nilpotency",
+      "title": "C2 has exact nilpotency index three",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "Formal perturbative cohomology ring",
+      "coefficient_ring": "Q[hbar], hence Q[[hbar]]; hbar counts loops and is not inverted",
+      "hypotheses": "Use associativity on cohomology, the two full product relations, and independent nonvanishing.",
+      "statement": "[C2]² = −3[C0][C4] ≠ 0; [C2]³ = −3([C0][C2])[C4] = 0. No inverse power of hbar enters.",
+      "status": "proved",
+      "derivation": "research/04-complex-and-products.md#np-5c85ee5e8a2c3293-1",
+      "evidence": [
+        "evidence/rational_c4/full_completion_summary.json",
+        "evidence/rational_c4/nonzero_summary.json",
+        "evidence/rational_c4/C0_C2_boundary_readback.json"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su2-boundary",
+        "su2-hidden-product",
+        "su2-product-detector"
+      ],
+      "limits": "An exact perturbative ring theorem, not a microscopic nonperturbative lifting result."
+    },
+    {
+      "id": "su2-partners",
+      "title": "Complete partners at weights (5,5) and (7,7)",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "Leading (Nb,Nc)=(1,5) and (3,5), respectively",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Restrict uniqueness to the scalar blocks and leading data specified in §4.",
+      "statement": "Each specified block has one nonzero partner class; both complete cocycles are known.",
+      "status": "proved",
+      "derivation": "research/04-complex-and-products.md#np-9b603520cf852d74-1",
+      "evidence": [
+        "evidence/rational_c4/C2_complete_exact.json",
+        "archive:rational_c4/m4_lift/M4_full_exact.pkl",
+        "evidence/rational_c4/m4_lift/uniqueness.md",
+        "evidence/rational_c4/m4_lift/readback.json"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The homotopy representing the secondary operation carries explicit hbar powers. Uniqueness does not cover unrelated blocks."
+    },
+    {
+      "id": "su2-weight-nine",
+      "title": "Stable class at weight (9,9) and a partial explicit representative",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "Leading (Nb,Nc)=(5,5) scalar block only",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "The target and incoming-map bounds in the certificate apply to this leading block.",
+      "statement": "The block has dimension one on E∞. The first three corrections have been constructed; the third correction has 934381 terms and a historical independent full-Q0 readback.",
+      "status": "proved",
+      "derivation": "research/04-complex-and-products.md#np-9b603520cf852d74-1",
+      "evidence": [
+        "evidence/c6_survival/proofs.md",
+        "evidence/c6_survival/cartan_target_certificate.json",
+        "evidence/rational_c4/m6_lift/compact_first/lift/level3_independent_readback.json",
+        "verification/README.md#external-witnesses"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The fourth and fifth explicit corrections remain unsolved. The expanded third polynomial is distributed with the versioned release. This is not a theorem about a C6 generator.",
+      "continuation": "OPEN_PROBLEMS.md#su2-weight-nine"
+    },
+    {
+      "id": "su2-leading-e2",
+      "title": "All-degree leading scalar E2 for SU(2)",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "Leading rotation scalars, k undifferentiated b fields and two ghost derivatives at weight (k+1,k+1)",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "k≥0; impose the tree quotient and both incoming and outgoing first-loop tests.",
+      "statement": "The tree module is Q[tr(b²)]·[C0]. Its leading E2 dimension is 1 in every even degree k and 0 in every odd degree.",
+      "status": "proved",
+      "derivation": "research/05-leading-modules.md#np-6c4b9916fd1b9a28-1",
+      "evidence": [
+        "evidence/su2_transgression/all_degree_first_lift.md",
+        "archive:su2_transgression/all_degree_first_lift.pkl"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The first transgression in every even degree is not an all-loop construction of the tower."
+    },
+    {
+      "id": "su3-leading-e2",
+      "title": "All-degree leading scalar E2 for SU(3)",
+      "theory": "4d N=1 pure SU(3) SYM",
+      "sector": "Leading rotation scalars, k undifferentiated b fields and two ghost derivatives at weight (k+1,k+1)",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Use the three-generator tree module, the radial test, genuine nonabelian primitives and the incoming-map analysis.",
+      "statement": "The tree generators have b-degrees 0,1,2. The leading E2 dimension is 0 for k ≡ 2 mod 3 and 1 otherwise.",
+      "status": "proved",
+      "derivation": "research/05-leading-modules.md#np-96250f1e20680d7c-1",
+      "evidence": [
+        "evidence/su3_rational/leading_module_and_radial_kernel.md",
+        "evidence/su3_rational/global_leading_E2_Q_certificate.json",
+        "evidence/su3_transgression/verify_universal_first_lift.json"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "This is an all-degree E2 statement, not E∞ for every degree."
+    },
+    {
+      "id": "su3-partner",
+      "title": "The first SU(3) partner survives all perturbative orders",
+      "theory": "4d N=1 pure SU(3) SYM",
+      "sector": "Weight (5,5), leading (Nb,Nc)=(0,7)",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Use the full rational cocycle, complete incoming d1 test and higher-source bounds for this block.",
+      "statement": "The partner of C1 is nonzero and the indicated E∞ space is one-dimensional.",
+      "status": "proved",
+      "derivation": "research/06-su3-lifts.md#np-3e7812cbaa09bd65-1",
+      "evidence": [
+        "archive:su3_rational/partner_Q.pkl",
+        "evidence/su3_rational/partner_Q_certificate.json",
+        "evidence/su3_rational/incoming_d1_Q_certificate.json"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "This supplies a perturbative incoming candidate, not its first-instanton image."
+    },
+    {
+      "id": "su3-annihilation",
+      "title": "C0 annihilation and the zero C0² ambiguity",
+      "theory": "4d N=1 pure SU(3) SYM",
+      "sector": "The C1 partner, its product, and its specified ambiguity space",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Use the complete source and target sectors of the product and ambiguity tests, as specified in §6.",
+      "statement": "Multiplication by C0 annihilates the first partner class and the C0² ambiguity image is zero in the specified sector. The source also constructs the C0 star C1 boundary used to define the partner.",
+      "status": "proved",
+      "derivation": "research/06-su3-lifts.md#np-3e7812cbaa09bd65-1",
+      "evidence": [
+        "evidence/su3_rational/proofs.md",
+        "evidence/su3_rational/c0_product_Q_certificate.json",
+        "evidence/su3_rational/C0_squared_image_certificate.json",
+        "archive:su3_rational/C1_star_Q.pkl",
+        "artifacts/witnesses/su3-c0-product.pkl.gz"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su3-partner"
+      ],
+      "limits": "The expanded partner product with C0 is external; its compact product record and proof are bundled. No analogous statement for arbitrary classes is implied."
+    },
+    {
+      "id": "su3-c1-square",
+      "title": "The SU(3) square of C1 is nonzero",
+      "theory": "4d N=1 pure SU(3) SYM",
+      "sector": "Product of the complete C1 cocycle with itself",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Use the rational Cartan detector with its incoming-map and degree bounds.",
+      "statement": "[C1]² ≠ 0 in perturbative cohomology.",
+      "status": "proved",
+      "derivation": "research/06-su3-lifts.md#np-e2537f1f2c55de35-1",
+      "evidence": [
+        "archive:su3_rational/C1_square_Q.pkl",
+        "evidence/su3_rational/C1_square_Q_certificate.json"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The relation and sign used for SU(2) C2 are not being transferred to SU(3)."
+    },
+    {
+      "id": "su3-c3-c4",
+      "title": "Complete C3 and C4 with trace coordinates and block uniqueness",
+      "theory": "4d N=1 pure SU(3) SYM",
+      "sector": "Homogeneous rotation scalars with Nb+loop order equal to 3 or 4",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Fix the source leading representative and the stated homogeneous scalar complex in each degree.",
+      "statement": "Both operators are full perturbative cocycles; each specified stable scalar block is one-dimensional. §25 tabulates all 11, 42, and 49 coefficients of the indicated trace corrections.",
+      "status": "proved",
+      "derivation": "research/06-su3-lifts.md#np-e2537f1f2c55de35-1",
+      "evidence": [
+        "archive:su3_rational/C3_Q.pkl",
+        "archive:su3_rational/k4_full/C4_Q.pkl",
+        "evidence/su3_rational/C3_scalar_complex_Q_certificate.json",
+        "evidence/su3_rational/k4_full/independent_full_Q_readback.json",
+        "research/25-su3-trace-tables.md#np-section-23"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su3-leading-e2"
+      ],
+      "limits": "The finite list of complete cocycles does not extend the all-degree E2 classification to E∞."
+    },
+    {
+      "id": "su3-k6-e3",
+      "title": "The second correction at k=6",
+      "theory": "4d N=1 pure SU(3) SYM",
+      "sector": "Weight (7,7), leading (6,2) scalar block",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Use the joint rational two-loop equations and their independent readback.",
+      "statement": "Both first and second correction equations have zero residual, and the leading E3 space has dimension one.",
+      "status": "proved",
+      "derivation": "research/06-su3-lifts.md#np-0dbe41c29df07e6c-1",
+      "evidence": [
+        "archive:su3_rational/k6_two_loop/joint_two_loop_Q.pkl",
+        "evidence/su3_rational/k6_two_loop/independent_joint_two_loop_readback.json"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su3-leading-e2"
+      ],
+      "limits": "The next obstruction has not been settled; no E∞ claim.",
+      "continuation": "OPEN_PROBLEMS.md#su3-k6-e3"
+    },
+    {
+      "id": "su4-cartan",
+      "title": "Rank-six tree module and all-degree Cartan test",
+      "theory": "4d N=1 pure SU(4) SYM",
+      "sector": "Leading rotation scalars, k undifferentiated b fields and two ghost derivatives at weight (k+1,k+1)",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Restrict Q1 to diagonal field values after forming the full leading tree quotient.",
+      "statement": "The free module has generator degrees 0,1,2,2,3,4. The Cartan kernel dimension is 0 for k ≡ 3 mod 4 and 1 otherwise. Thus full E2 is zero in the former case and has dimension at most one in the latter.",
+      "status": "proved",
+      "derivation": "research/05-leading-modules.md#np-7d31a48e28a59909-1",
+      "evidence": [
+        "evidence/su4_cartan/tree_module_and_radial_kernel.md",
+        "evidence/su4_cartan/leading_tree_module.json",
+        "evidence/su4_cartan/kernel_recurrence.json"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "A zero diagonal obstruction by itself does not give a nonabelian first primitive."
+    },
+    {
+      "id": "su4-known-lifts",
+      "title": "Full k=2 cocycle and first corrections at k=4,5",
+      "theory": "4d N=1 pure SU(4) SYM",
+      "sector": "Leading rotation scalars, k undifferentiated b fields and two ghost derivatives at weight (k+1,k+1)",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Use the unprojected nonabelian differential and the respective readbacks.",
+      "statement": "Degree 2 has a full cocycle. Degrees 4 and 5 have rational first corrections with vanishing full first-equation residual.",
+      "status": "proved",
+      "derivation": "research/05-leading-modules.md#np-7d31a48e28a59909-1",
+      "evidence": [
+        "archive:su4_cartan/k2_full.pkl",
+        "evidence/su4_cartan/k2_independent_readback.json",
+        "evidence/su4_cartan/k4_first/independent_readback.json",
+        "evidence/su4_cartan/k5_first/independent_readback.json",
+        "artifacts/witnesses/su4-k4-first-lift.pkl.gz",
+        "artifacts/witnesses/su4-k5-first-lift.pkl.gz"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su4-cartan"
+      ],
+      "limits": "The expanded first corrections at degrees 4 and 5 are supplied in full. Later corrections at these degrees are not certified here."
+    },
+    {
+      "id": "su4-k6-primitive",
+      "title": "Missing nonabelian primitive at k=6",
+      "theory": "4d N=1 pure SU(4) SYM",
+      "sector": "Weight (7,7), degree-six leading scalar",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "The specified Cartan generator passes the diagonal test; the all-degree extension uses the first-lift chain rule.",
+      "statement": "Solve Q0 u = −Q1 a6 in the full scalar jet complex. The bounded search examined 169 independent directions and retained 133 image columns without obtaining a full primitive.",
+      "status": "open",
+      "derivation": "research/05-leading-modules.md#np-7d31a48e28a59909-1",
+      "evidence": [
+        "evidence/su4_cartan/k6_first/bounded_status.json",
+        "evidence/su4_cartan/first_lift_bridge.md",
+        "evidence/su4_cartan/verify_first_lift_chain_rule.json",
+        "sources/engines/originals/su4_cartan/lift_higher_first.py"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su4-cartan",
+        "su4-known-lifts"
+      ],
+      "limits": "A failed bounded search is not a rank obstruction. All-degree full E2 is still conditional on the missing base primitive.",
+      "continuation": "OPEN_PROBLEMS.md#su4-k6-primitive"
+    },
+    {
+      "id": "casimir-bracket",
+      "title": "The one-loop cross term between trace Casimirs is a tree boundary",
+      "theory": "4d N=1 pure SU(N) SYM",
+      "sector": "Traces of two powers of the undifferentiated matrix b",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "m,n≥2, traceless matrices and the stored two-input symbol; ∂ acts on the entire matrix power.",
+      "statement": "The cross term of Q1 on tr(b^m)tr(b^n) equals 4mn Q0 applied to the rotation-scalar projection of tr((∂1 b^(m−1)) b (∂2 b^(n−1))). The proof is a trace identity independent of a finite-rank Cayley–Hamilton reduction.",
+      "status": "proved",
+      "derivation": "sources/README.md#casimir-bracket",
+      "evidence": [
+        "sources/notes/universal_casimir/trace_bracket.md",
+        "sources/engines/originals/universal_casimir/verify_symbol.py"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "This controls the two-trace symbol, not every first-lift primitive or higher-loop term."
+    },
+    {
+      "id": "period-hessian",
+      "title": "Characteristic residue Hessians and the SU(3)/SU(4) representatives",
+      "theory": "4d N=1 pure SU(N) SYM",
+      "sector": "Ordered Hessian on the traceless diagonal (Cartan) subspace",
+      "coefficient_ring": "Characteristic-zero polynomials; Laurent expansion at infinity",
+      "hypotheses": "k≥0; preserve the order of the two ghost insertions. Use the invariant-period family classified by Feigin–Silantyev.",
+      "statement": "For N=3,4 the ordinary Hessian of [z⁻¹]det(z1−b)^((k+1)/N) equals the generating Cartan representative times +(k+1)²/3 and −(k+1)²/4 respectively. For all N≥2 the residue and its Hessian vanish exactly for k ≡ N−1 mod N.",
+      "status": "proved",
+      "derivation": "research/07-twisted-periods.md#np-section-05",
+      "evidence": [
+        "evidence/literature/twisted_period_bridge.md",
+        "evidence/literature/verify_hessian_bridge.json",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [
+        "hessian-bridge"
+      ],
+      "depends_on": [],
+      "limits": "The replay covers all ordered slots at N=3,4, k=0,…,16. The proof supplies all degrees; the arbitrary-N statement concerns residues, not the full quantum complex."
+    },
+    {
+      "id": "finite-field-census",
+      "title": "Modular census and the rank-upgrade criterion",
+      "theory": "4d N=1 pure SU(N) SYM",
+      "sector": "Weight-block dimensions for SU(2), SU(3)",
+      "coefficient_ring": "Finite field F_p with p=2147483647; rational comparison only with exact bounds",
+      "hypotheses": "Denominators of the tested minors are units modulo p. The table records its actual tested degree range.",
+      "statement": "The SU(2) census is complete at weight (8,8) and partial at (9,9), Nb≥4. SU(3) entries are recorded through (5,5). A nonzero modular minor bounds rational rank from below.",
+      "status": "finite-evidence",
+      "derivation": "research/08-exact-arithmetic.md#np-a84ccb2fe764f5cd-1",
+      "evidence": [
+        "sources/claude/ledger.tex",
+        "research/08-exact-arithmetic.md#np-section-06"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "Do not infer an unqualified rational dimension without an upper bound or rational certificate for that block."
+    },
+    {
+      "id": "su2-tower",
+      "title": "Proposed product tower and Cartan partner ratios",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "Higher even-degree products and associated partners",
+      "coefficient_ring": "Conjectured rational perturbative ring; finite observations at the source prime",
+      "hypotheses": "D0=−C0, Dj=(2j−1)C2j in the stated leading normalization, for j≥1.",
+      "statement": "The proposed identities are Di Dj = D0 D(i+j) and the partner ratio −2(2j+1)(2j+3). The first three recorded ratios are −30, −70, −126; the i=j=1 product has a full rational proof.",
+      "status": "conjecture",
+      "derivation": "research/08-exact-arithmetic.md#np-a84ccb2fe764f5cd-1",
+      "evidence": [
+        "sources/claude/ledger.tex",
+        "research/04-complex-and-products.md#np-5c85ee5e8a2c3293-1"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su2-hidden-product",
+        "finite-field-census"
+      ],
+      "limits": "Higher product identities and a universal partner formula are not proved by the modular ratios."
+    },
+    {
+      "id": "secondary-class",
+      "title": "A secondary class with a specified ambiguity",
+      "theory": "4d N=1 pure SU(N) SYM",
+      "sector": "Stable perturbative classes annihilated by the gaugino bilinear",
+      "coefficient_ring": "Q[hbar], hence Q[[hbar]]; hbar counts loops and is not inverted",
+      "hypotheses": "L is quantum left multiplication by C0; a is closed; Qpert w = La. Use the perturbative multiplication homotopy h from the full associator sum.",
+      "statement": "{Qpert,h}=L^N. The difference ha−L^(N−1)w is closed; its class is well-defined modulo C0^(N−1) E∞pert when changing a or w by the allowed representatives.",
+      "status": "proved",
+      "derivation": "research/09-secondary-pairing.md#np-90f763e6956a69ff-1",
+      "evidence": [
+        "research/09-secondary-pairing.md#np-b082a68ee6a1c259-1",
+        "sources/notes/homotopy/su3_eta_comparison.md"
+      ],
+      "replays": [],
+      "depends_on": [
+        "perturbative-product"
+      ],
+      "limits": "Dropping an iterated associator can change the cochain. This construction on its own is perturbative."
+    },
+    {
+      "id": "secondary-instanton",
+      "title": "Conditional first-instanton differential of the secondary class",
+      "theory": "4d N=1 pure SU(N) SYM",
+      "sector": "First instanton filtration differential on the secondary quotient",
+      "coefficient_ring": "Formal instanton filtration over the source loop coefficients",
+      "hypotheses": "The exact local operators obey [Q,L]=0 and {Q,h}=L^N−νΛ^(3N)1; ν≠0. For the single-image statement also require Q1-inst a=0 and ν[a] nonzero modulo C0^(N−1) E∞pert.",
+      "statement": "In the quotient, the first instanton image of the secondary class plus the secondary class of Q1-inst a equals −ν[a]. Under the extra hypotheses the first term alone equals −ν[a].",
+      "status": "conditional",
+      "derivation": "research/09-secondary-pairing.md#np-93111f11b210145b-1",
+      "evidence": [
+        "research/09-secondary-pairing.md#np-section-07",
+        "sources/claude/ledger.tex"
+      ],
+      "replays": [],
+      "depends_on": [
+        "secondary-class"
+      ],
+      "limits": "The exact coincident-product and homotopy hypotheses are not proved by a vacuum condensate. The coefficient in the physical SU(2) normalization remains open."
+    },
+    {
+      "id": "matric-c4",
+      "title": "Loop factors and the matric C4 secondary representative",
+      "theory": "4d N=1 pure SU(2) SYM and SU(3)",
+      "sector": "Perturbative secondary representatives",
+      "coefficient_ring": "Q[hbar], hence Q[[hbar]]; hbar counts loops and is not inverted",
+      "hypotheses": "For SU(2), set N=C2 star (as an operator here), Qpert v=L C4+N C2/3 and {Qpert,κ}=LN−NL; use the specified perturbative h.",
+      "statement": "The SU(2) first secondary representative is hbar M1+hbar² M0, and the SU(3) first representative also carries hbar. For SU(2), h C4−L v+(N w+κ C2)/3 is closed although [C0][C4]≠0.",
+      "status": "proved",
+      "derivation": "research/09-secondary-pairing.md#np-6570a44df50d9296-1",
+      "evidence": [
+        "research/04-complex-and-products.md#np-9b603520cf852d74-1",
+        "evidence/rational_c4/m4_lift/uniqueness.md",
+        "sources/notes/homotopy/su3_eta_comparison.md"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su2-hidden-product",
+        "su2-boundary",
+        "secondary-class"
+      ],
+      "limits": "The coefficient-by-coefficient identification with the archived weight-seven cocycle, and its proposed instanton image, require additional matching. Do not divide by hbar over Q[[hbar]]."
+    },
+    {
+      "id": "finite-homotopies",
+      "title": "Finite multiplication homotopies through loop four",
+      "theory": "4d N=1 pure SU(2) SYM",
+      "sector": "b-differential homotopy with ghost coefficients; jets bounded at each loop",
+      "coefficient_ring": "Q, graded by loop order in the hbar filtration",
+      "hypotheses": "Use the source finite ansatz and its disclosed total input b-jet ceilings.",
+      "statement": "For loop orders 1,2,3,4 the solved jet ceilings are 6,4,2,0 and the nonzero coefficient counts are 84,324,163,11. The undifferentiated-b construction covers arbitrary ghost factors in its stated domain.",
+      "status": "proved",
+      "derivation": "research/09-secondary-pairing.md#np-17abaa189a90b8dc-1",
+      "evidence": [
+        "sources/notes/homotopy/one_loop_coherence_audit.md",
+        "sources/engines/originals/homotopy/strict_homotopy_order4.py",
+        "research/02-results.md#np-summary-085"
+      ],
+      "replays": [],
+      "depends_on": [
+        "secondary-class"
+      ],
+      "limits": "No all-jet or all-loop strict commutation [L,h]=0 or h²=0 follows. The reported finite identities do not imply these conditions."
+    },
+    {
+      "id": "homotopy-counterexample",
+      "title": "The exact homotopy identity does not force automatic contraction",
+      "theory": "4d N=1 pure SU(N) SYM; independent finite-dimensional test",
+      "sector": "Four-dimensional graded complex, quotient ker L / im L",
+      "coefficient_ring": "Exact rational matrices; source instanton parameter factors out",
+      "hypotheses": "Only the linear homotopy identity and [Q,L]=0 are imposed; full product compatibility is not assumed.",
+      "statement": "With L²=0 and {Qinst,h}=−1, the induced differential on the two-dimensional ker L/im L can still have rank zero: h fails to descend. This disproves the stronger automatic-contraction inference.",
+      "status": "proved",
+      "derivation": "research/09-secondary-pairing.md#np-17abaa189a90b8dc-1",
+      "evidence": [
+        "checks/original/homotopy/check_quotient_hypothesis.py",
+        "sources/notes/homotopy/one_loop_coherence_audit.md"
+      ],
+      "replays": [
+        "quotient-hypothesis"
+      ],
+      "depends_on": [],
+      "limits": "This is a counterexample in linear algebra, not to the conditional secondary-pairing theorem or to a gauge theory."
+    },
+    {
+      "id": "ghost-contraction",
+      "title": "Finite-support restriction on commuting ghost-jet derivatives",
+      "theory": "4d N=1 pure SU(N) SYM",
+      "sector": "Finite differential operators on ghost jets in the full traceless-matrix jet algebra",
+      "coefficient_ring": "Characteristic-zero polynomial jet algebra",
+      "hypotheses": "The operator differentiates only ghost jets, uses finitely many jet coordinates, has finite polynomial ghost-jet coefficients, and graded-commutes with Q0.",
+      "statement": "Its positive differential-order part vanishes, leaving multiplication by a Q0-closed polynomial. The separate reduced positive-jet assertion in the source concerns constant coefficients.",
+      "status": "proved",
+      "derivation": "research/09-secondary-pairing.md#np-317a4949e0efe6ef-1",
+      "evidence": [
+        "sources/notes/homotopy/constant_instanton_operator.md"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "No claim for general nonlocal kernels, infinite support, reduced polynomial coefficients, or an inhomogeneous equation for h."
+    },
+    {
+      "id": "su2-separated-integral",
+      "title": "Separated one-instanton integral and physical fermion normalization",
+      "theory": "4d N=1 pure SU(2) SYM, one instanton",
+      "sector": "Two separated C0 insertions",
+      "coefficient_ring": "Real moduli integral in the fixed source profile",
+      "hypotheses": "Physical profile and collective measure of §10; the group orientation and Grassmann order are fixed there. The separation is nonzero.",
+      "statement": "The position–size integral in §10 equals π²/90. Physical fermion integration multiplies it by 9, giving the separated two-point coefficient 𝒩π²Λ⁶/10 in terms of the remaining measure normalization 𝒩.",
+      "status": "proved",
+      "derivation": "research/10-instanton-measure.md#np-bd7195b0c005f775-1",
+      "evidence": [
+        "checks/original/instanton/check_moduli_integrals.py",
+        "research/02-results.md#np-summary-093"
+      ],
+      "replays": [
+        "moduli-integrals"
+      ],
+      "depends_on": [],
+      "limits": "The older auxiliary Grassmann convention uses 36, not the physical 9. A separated integral does not fix a coincident local coefficient."
+    },
+    {
+      "id": "su2-wilson-bound",
+      "title": "Nonzero straight Wilson-line insertion and the two size faces",
+      "theory": "4d N=1 pure SU(2) SYM, one instanton",
+      "sector": "Color transport between separated insertions in the regulated Ward identity",
+      "coefficient_ring": "Normalized real moduli integral",
+      "hypotheses": "Physical profile and collective measure of §10; the group orientation and Grassmann order are fixed there. Use the straight path and retain the lower and upper instanton-size boundaries.",
+      "statement": "Wilson insertion divided by the separated two-point function equals −1/4+(4/27)E[tr U] and is strictly greater than 5470949/47675628. The size-boundary balance is given in §10.",
+      "status": "proved",
+      "derivation": "research/10-instanton-measure.md#np-f863edf6248e0361-1",
+      "evidence": [
+        "checks/original/instanton/contact_matching/check_wilson_closed_form.py",
+        "research/10-instanton-measure.md#np-6d6750afea048494-1"
+      ],
+      "replays": [
+        "wilson-moments",
+        "wilson-closed"
+      ],
+      "depends_on": [
+        "su2-separated-integral"
+      ],
+      "limits": "A positive Wilson contribution is not a sign or a lower bound for the complete local instanton image."
+    },
+    {
+      "id": "su2-green-transport",
+      "title": "Regular Green response and finite-cutoff section transport",
+      "theory": "4d N=1 pure SU(2) SYM, one instanton",
+      "sector": "Opposite-curvature response and projected collective-coordinate family",
+      "coefficient_ring": "Regular radial functions and finite Grassmann algebra in the cutoff scheme",
+      "hypotheses": "Impose regularity at the origin, source boundary conditions, and finite-cutoff orthogonal projection; transport the same section and cycle.",
+      "statement": "The radial response has channels (l,c)=(1,2),(3,5),(2,4); an explicit coefficient detects six independent odd directions. The completed collective vector squares to zero, and finite homogeneous-section transports obey the composition law.",
+      "status": "proved",
+      "derivation": "research/11-green-response.md#np-733664d1f7c344fe-1",
+      "evidence": [
+        "research/12-finite-cutoff.md#np-593328a6baa0c9e0-1",
+        "sources/engines/originals/instanton/contact_matching/check_ss_green_channels.py",
+        "sources/engines/originals/instanton/contact_matching/check_h0_finite_flow.py"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "This is a statement for the constructed background/collective family, not a replacement for the normal Ward insertion and contact terms."
+    },
+    {
+      "id": "su2-connection",
+      "title": "Exact logarithm and finite part of the connection contribution",
+      "theory": "4d N=1 pure SU(2) SYM, one instanton",
+      "sector": "Connection part of M1 in the b_H² ξ1 ξ2 η¹ η² e1 e2 component",
+      "coefficient_ring": "Source profile at ρ>0 and real spatial cutoff L",
+      "hypotheses": "Use source symmetrization, the component ordering and the finite boundary subtraction of §13.",
+      "statement": "After normalization by ρ²/(π²g²), the coefficient of log(L²/ρ²) is −841/41580. Subtracting that logarithm leaves 197929π²g²/(9313920ρ²).",
+      "status": "proved",
+      "derivation": "research/13-connection-matching.md#np-c209f4b75ff549bb-1",
+      "evidence": [
+        "research/13-connection-matching.md#np-361905ea0e0c5763-1",
+        "sources/engines/originals/instanton/contact_matching/check_normal_connection_radial_readback.py",
+        "sources/engines/originals/instanton/contact_matching/integrate_normal_connection.py"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su2-green-transport"
+      ],
+      "limits": "Connection contribution only. The full secondary insertion retains its hbar factor; neither number is ν_prod−ν_Q."
+    },
+    {
+      "id": "su2-ward-matching",
+      "title": "The physical coefficient of the SU(2) instanton differential",
+      "theory": "4d N=1 pure SU(2) SYM, one instanton",
+      "sector": "Renormalized microscopic Ward identity for the first secondary partner",
+      "coefficient_ring": "One-instanton coefficient in the same source normalization and composite subtraction",
+      "hypotheses": "A common regulator, insertion map and boundary/contact prescription must be used for product and supercharge.",
+      "statement": "Determine ν_prod−ν_Q by combining the even two-fermion normal gaugino insertion, BV terms, the M0 response, the action, measure and boundary/contact terms with the calculated connection block.",
+      "status": "open",
+      "derivation": "research/13-connection-matching.md#np-4c2ddf4548d3357c-1",
+      "evidence": [
+        "research/13-connection-matching.md#np-b0509e2b7b2fc17a-1",
+        "research/10-instanton-measure.md#np-6d6750afea048494-1",
+        "sources/engines/originals/instanton/contact_matching/normal_connection_full_jets.py"
+      ],
+      "replays": [],
+      "depends_on": [
+        "secondary-instanton",
+        "su2-connection",
+        "su2-wilson-bound"
+      ],
+      "limits": "Neither the value nor its nonvanishing has been certified. Keep both size faces, the spatial face, and the external-potential derivatives.",
+      "continuation": "OPEN_PROBLEMS.md#su2-ward-matching"
+    },
+    {
+      "id": "matter-konishi",
+      "title": "Massive bilinear Konishi identities and the zero-mass specialization",
+      "theory": "4d N=1 SQCD, SU(2) adjoint or one vectorlike flavor",
+      "sector": "Perturbative gauge-invariant matter bilinears",
+      "coefficient_ring": "C[[hbar]], nonnegative loop powers; invert m only in the massive calculation",
+      "hypotheses": "Use the source bilinears u (adjoint) and M (one flavor), and its component normalization.",
+      "statement": "The bilinear variations give 2m u+hbar C0 and 2m M+hbar C0/2. For m≠0 this gives [u]=−hbar[C0]/(2m), [M]=−hbar[C0]/(4m). At zero adjoint mass the un-divided identity gives hbar[C0]=0.",
+      "status": "proved",
+      "derivation": "research/14-massive-matter.md#np-27b3f0c412c228c5-1",
+      "evidence": [
+        "research/14-massive-matter.md#np-2f6c6805ba565142-1",
+        "sources/claude/article.tex"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "Do not specialize the divided massive identities to m=0. Condensate relations need separate exact low-energy input."
+    },
+    {
+      "id": "gaugino-vacua",
+      "title": "Conditional condensate relations and vacuum idempotents",
+      "theory": "4d N=1 pure SU(N) SYM and its massive SU(2) thresholds",
+      "sector": "Vacuum gaugino subalgebra",
+      "coefficient_ring": "Complex coefficients with νΛ^(3N) fixed nonzero",
+      "hypotheses": "Assume the low-energy gaugino relation [C0]^N=νΛ^(3N); for the matter identities also use the source threshold matching.",
+      "statement": "The gaugino polynomial algebra decomposes into N one-dimensional factors at the N roots; §14 gives the Lagrange idempotents. Squaring the massive bilinear identities gives the corresponding u² and M² formulas.",
+      "status": "conditional",
+      "derivation": "research/14-massive-matter.md#np-2f6c6805ba565142-1",
+      "evidence": [
+        "research/14-massive-matter.md#np-7f0897b11f690436-1",
+        "sources/claude/article.tex"
+      ],
+      "replays": [],
+      "depends_on": [
+        "matter-konishi"
+      ],
+      "limits": "The decomposition of the vacuum subalgebra does not prove that the entire jet cohomology is this algebra or fix a microscopic instanton image."
+    },
+    {
+      "id": "magnetic-instanton-w",
+      "title": "Seiberg determinant superpotential on the magnetic Higgs patch",
+      "theory": "4d N=1 SQCD, electric SU(2), Nf=4, one mass; magnetic SU(2)",
+      "sector": "Effective holomorphic superpotential after eliminating the heavy flavor",
+      "coefficient_ring": "Fixed nonzero matching scale μ and mass m; magnetic instanton weight Λ̃²",
+      "hypotheses": "The fourth flavor is massive; q4 q̃4=−μm completely Higgses the magnetic gauge group. Λ²Λ̃²=μ⁴.",
+      "statement": "In the three-light-flavor variables W_eff=M̂ q̂ q̃̂/μ−Λ̃² det M̂/(μ⁴m) in the source contraction. Seiberg supplies the nonperturbative superpotential.",
+      "status": "literature-input",
+      "derivation": "research/16-determinant-lift.md#np-69504578f9778a53-1",
+      "evidence": [
+        "sources/LITERATURE.md",
+        "sources/notes/duality_nonpert/n1_duality.md"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "This effective interaction is a literature input. It cannot be specialized through m=0 without a new calculation."
+    },
+    {
+      "id": "sqcd-effective-determinant",
+      "title": "Effective determinant: nonzero at zero weight, torsion formally, exact at fixed nonzero weight",
+      "theory": "4d N=1 SQCD, electric SU(2), Nf=4, one mass; magnetic SU(2)",
+      "sector": "Zero-derivative scalar F-term algebra and its odd Koszul partners",
+      "coefficient_ring": "C[[conjugate Λ̃²]] at fixed μ,m≠0; separately the fixed nonzero-weight model",
+      "hypotheses": "Use the Higgsed magnetic effective superpotential. At zero weight the quarks may vanish with M̂ invertible, detecting the determinant.",
+      "statement": "M̂·∂_M̂ W−q̂·∂_q̂ W=−3Λ̃² det M̂/(μ⁴m). The conjugate determinant has a polynomial-in-fields primitive after dividing by the nonzero instanton coefficient. Over nonnegative formal powers its class is nonzero but annihilated by that parameter.",
+      "status": "proved",
+      "derivation": "research/16-determinant-lift.md#np-a3c60c764266802e-1",
+      "evidence": [
+        "checks/effective_ideals.py",
+        "research/16-determinant-lift.md#np-69504578f9778a53-1"
+      ],
+      "replays": [
+        "effective-ideals"
+      ],
+      "depends_on": [
+        "magnetic-instanton-w"
+      ],
+      "limits": "This is a proved lift in the effective theory. It does not establish the microscopic one-supercharge matrix element."
+    },
+    {
+      "id": "sqcd-uv-cycle",
+      "title": "Polynomial microscopic incoming class and its triangle coefficient",
+      "theory": "4d N=1 SQCD, electric SU(2), Nf=4, one mass; magnetic SU(2)",
+      "sector": "Full specified perturbative gauge, matter, and derivative complex",
+      "coefficient_ring": "C[[hbar]], nonnegative loop powers; fixed μ,g,m≠0",
+      "hypotheses": "Use the three-light-row current A (all four meson columns), the heavy invariant h=q4 q̃4, and the polynomial numerator h̄K of §16.",
+      "statement": "The source triangle coefficient is g²/(64π²). The polynomial h̄A+3i hbar g h̄K/(64π²) is closed to all perturbative orders and represents a nonzero class at m≠0.",
+      "status": "proved",
+      "derivation": "research/16-determinant-lift.md#np-f028df5dda216e10-1",
+      "evidence": [
+        "checks/original/sqcd_duality_survey/fundamental_triangle_coefficient_audit.md",
+        "sources/engines/originals/sqcd_duality_survey/check_microscopic_konishi.py",
+        "research/16-determinant-lift.md#np-f028df5dda216e10-1"
+      ],
+      "replays": [
+        "fundamental-triangle"
+      ],
+      "depends_on": [],
+      "limits": "The replay checks the coefficient and anomaly cancellation. All-order closure and nonexactness use the graph bound and tree detector in the derivation."
+    },
+    {
+      "id": "sqcd-microscopic-image",
+      "title": "First-instanton image of the polynomial SQCD operator",
+      "theory": "4d N=1 SQCD, electric SU(2), Nf=4, one mass; magnetic SU(2)",
+      "sector": "Renormalized microscopic local-operator differential",
+      "coefficient_ring": "First instanton order at fixed μ,g,m≠0; source antichiral convention",
+      "hypotheses": "Identify the renormalized polynomial incoming class and the effective composite in one scheme, including possible contact contributions.",
+      "statement": "The proposed one-instanton image is −3 conjugate(Λ̃)² det(conjugate M̂)/conjugate(μ)³. No direct microscopic equality or nonzero matrix element is certified.",
+      "status": "open",
+      "derivation": "research/16-determinant-lift.md#np-4f8eecadb9b2d576-1",
+      "evidence": [
+        "research/16-determinant-lift.md#np-f028df5dda216e10-1",
+        "research/16-determinant-lift.md#np-a3c60c764266802e-1",
+        "research/16-determinant-lift.md#mass-pole-ward"
+      ],
+      "replays": [],
+      "depends_on": [
+        "sqcd-effective-determinant",
+        "sqcd-uv-cycle"
+      ],
+      "limits": "The effective interaction fixes a Wilsonian coefficient. With nonnegative loop powers a proposed microscopic match must pass the singular source-residue test of Proposition 16.4.",
+      "continuation": "OPEN_PROBLEMS.md#sqcd-microscopic-image"
+    },
+    {
+      "id": "sqcd-massless-class",
+      "title": "A nonzero class on the zero-mass fiber",
+      "theory": "4d N=1 SQCD, electric SU(2), Nf=4, one mass; magnetic SU(2)",
+      "sector": "Specialization m=0 of the polynomial microscopic current",
+      "coefficient_ring": "C[[hbar]], nonnegative loop powers; μ,g≠0",
+      "hypotheses": "Work with the undivided current and the closed operator C defined in §16, including the heavy-meson beta and the gauge-ghost trace.",
+      "statement": "[C]≠0 over nonnegative hbar powers. The specialization of the massive incoming expression is exactly 3 hbar g²[C]/(64π²).",
+      "status": "proved",
+      "derivation": "research/16-determinant-lift.md#np-4f8eecadb9b2d576-1",
+      "evidence": [
+        "sources/notes/sqcd_duality_survey/massless_secondary_class_audit.md",
+        "sources/engines/originals/sqcd_duality_survey/check_massless_heavy_cross.py"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "This entry records the tree detector and exact class relation. The complete positive-power obstruction is indexed under sqcd-massless-torsion."
+    },
+    {
+      "id": "sqcd-massless-torsion",
+      "title": "All loop powers of sixteen massless microscopic currents survive",
+      "theory": "4d massless four-flavor SQCD, magnetic SU(2)",
+      "sector": "Full relative polynomial jet complex at the specified flavor weights",
+      "coefficient_ring": "C[[hbar]] at fixed nonzero g,μ",
+      "hypotheses": "Use the massless cubic source, constant-gauge relativity, nonnegative jet orders and the source triangle and homogeneity.",
+      "statement": "For every k≥0, hbar^k[C]≠0. All sixteen independent flavor components span a free formal submodule; the massless polynomial incoming class is nonzero.",
+      "status": "proved",
+      "derivation": "research/16-determinant-lift.md#massless-all-powers",
+      "evidence": [
+        "checks/massless_source.py",
+        "sources/notes/sqcd_duality_survey/massless_secondary_class_audit.md",
+        "sources/all-loop/main.tex"
+      ],
+      "replays": [
+        "massless-source"
+      ],
+      "depends_on": [
+        "sqcd-massless-class"
+      ],
+      "limits": "Perturbative survival in the full stated jet complex. The physical instanton image is a separate local insertion problem.",
+      "continuation": "OPEN_PROBLEMS.md#sqcd-massless-torsion"
+    },
+    {
+      "id": "sqcd-rank-vacua",
+      "title": "Magnetic rank exclusion and the Nc massive vacua",
+      "theory": "4d N=1 SQCD, electric SU(Nc), magnetic SU(Nf−Nc)",
+      "sector": "Meson rank patches and isolated stationary vacua",
+      "coefficient_ring": "Holomorphic rank patches; invert the nonzero mass determinant only in the massive case",
+      "hypotheses": "Use the matched thresholds and all condensate sheets in §15. Distinguish the massless theory from the mass-deformed theory.",
+      "statement": "In the massless theory excess-rank magnetic stationary vacua are excluded, so rank⟨M⟩≤Nc. For invertible m, S^Nc=Λ^(3Nc−Nf)det m, ⟨M⟩=S m⁻¹ and W_vac=Nc S give Nc vacua.",
+      "status": "literature-input",
+      "derivation": "research/15-electric-and-magnetic-rank.md#np-a2081c7e96050b3d-1",
+      "evidence": [
+        "sources/engines/originals/sqcd_duality_survey/check_su_rank_and_mass.py",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "Vacuum rank constraints are not a local operator differential; the massive meson values need not obey the massless vacuum rank bound."
+    },
+    {
+      "id": "ads-elimination",
+      "title": "An ADS pole, saturation and the condensate sheets",
+      "theory": "4d N=1 SQCD, Nf<Nc; explicit SU(2) decoupling",
+      "sector": "Effective scalar functions after eliminating massive fields",
+      "coefficient_ring": "Meson algebra localized at det M≠0; choose a condensate sheet only after solving the polynomial relation",
+      "hypotheses": "Use the source mass thresholds and eliminate only on the open set where the elimination equations can be solved.",
+      "statement": "S^(Nc−Nf) det M=Λ^(3Nc−Nf), W_eff=(Nc−Nf)S. The SU(2) one-flavor answer is Λ_L⁵/M, with Λ_L⁵=m₂Λ⁴; adding m₁M gives M²=Λ_L⁵/m₁. The contracted ideal on the patch is obtained by saturation.",
+      "status": "proved",
+      "derivation": "research/17-nonpolynomial-superpotentials.md#np-acc5558e9ee1d6e4-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/n1_duality.md",
+        "research/17-nonpolynomial-superpotentials.md#np-d680ecc8328087d5-1"
+      ],
+      "replays": [
+        "sqcd-f-terms"
+      ],
+      "depends_on": [],
+      "limits": "A pole marks an elimination domain; clearing denominators cannot add M=0 as a solution. Different roots are different branches."
+    },
+    {
+      "id": "ads-global-unit",
+      "title": "Global effective Jacobian identity without inverting a meson",
+      "theory": "4d N=1 SQCD, SU(2), two-flavor constrained model with one mass",
+      "sector": "Constrained effective polynomial algebra and its ADS patch",
+      "coefficient_ring": "Global polynomial Jacobian quotient; formal scale versus fixed m₂Λ⁴≠0",
+      "hypotheses": "Keep the constrained fields, baryons and Lagrange multiplier when taking derivatives.",
+      "statement": "An explicit polynomial combination of all relevant F-equations equals m₂Λ⁴ globally. At fixed m₂Λ⁴≠0 the unit is exact throughout the constrained model. On the ADS patch Q(M̄²β)=conjugate(Λ_L⁵); before inverting that parameter this gives torsion.",
+      "status": "proved",
+      "derivation": "research/17-nonpolynomial-superpotentials.md#np-d680ecc8328087d5-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/global_ads_effective_identity.md",
+        "checks/original/duality_nonpert/check_global_ads_identity.py"
+      ],
+      "replays": [
+        "global-ads",
+        "sqcd-f-terms"
+      ],
+      "depends_on": [
+        "ads-elimination"
+      ],
+      "limits": "An exact unit in this effective Koszul complex is not evidence for exactness in the full four-dimensional electric jet complex without a chain map."
+    },
+    {
+      "id": "su-quantum-constraints",
+      "title": "Quantum-modified moduli space versus s-confining equations",
+      "theory": "4d N=1 SQCD, SU(2), two and three flavors",
+      "sector": "Antisymmetric meson V and its exact low-energy scalar relations",
+      "coefficient_ring": "Complex scalar algebra, fixed nonzero dynamical scale",
+      "hypotheses": "Use the source Pfaffian ordering; the two flavor counts are different theories.",
+      "statement": "At Nf=2, Pf V=Λ⁴ is a smooth five-dimensional vacuum variety. At Nf=3, W=−Pf V/Λ³ imposes rank V≤2; all 15 mesons are massless at the origin.",
+      "status": "literature-input",
+      "derivation": "research/17-nonpolynomial-superpotentials.md#np-9330362f2f4aa9a8-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/n1_duality.md",
+        "checks/original/duality_nonpert/check_n1_duality.py"
+      ],
+      "replays": [
+        "sqcd-f-terms"
+      ],
+      "depends_on": [],
+      "limits": "Deforming a scalar constraint and enforcing the classical composite rank are different effects; neither example supplies a microscopic jet primitive here."
+    },
+    {
+      "id": "sp-mass-descent",
+      "title": "Symplectic Pfaffian mass descent",
+      "theory": "4d N=1 SQCD, SP(2) in the Intriligator–Pouliot rank convention",
+      "sector": "Confining superpotential, quantum constraint and ADS daughter",
+      "coefficient_ring": "Source holomorphic scales; invert the remaining Pfaffian only on the ADS patch",
+      "hypotheses": "The fundamental of SP(Nc) has complex dimension 2Nc; follow the source mass thresholds.",
+      "statement": "At Nf=4 the superpotential is −Pf M/(2Λ_(2,4)^5); at Nf=3 the constraint is Pf M=2Λ_(2,3)^6; at Nf=2 the superpotential is 2Λ_(2,2)^7/Pf M.",
+      "status": "literature-input",
+      "derivation": "research/18-sp-and-so.md#np-5d59db75cd44c428-1",
+      "evidence": [
+        "sources/LITERATURE.md",
+        "research/18-sp-and-so.md#np-section-16"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The numerical factors are tied to the SP source normalization. These are low-energy relations, not new microscopic instanton amplitudes."
+    },
+    {
+      "id": "so-instanton-branches",
+      "title": "Orthogonal determinant coefficient and flat-branch cancellation",
+      "theory": "4d N=1 SQCD, SO(Nc), Nf=Nc−1",
+      "sector": "Effective instanton and gaugino-condensate contributions",
+      "coefficient_ring": "Fixed nonzero source scales; keep both condensate signs",
+      "hypotheses": "Use the Intriligator–Seiberg scale matching, the stated group and the low-rank convention.",
+      "statement": "W_inst=−det M/(64Λ^(2Nc−5)), W_cond=ε det M/(64Λ^(2Nc−5)), ε=±1. The ε=+1 branch has exact cancellation; retaining only the instanton term would delete this flat branch.",
+      "status": "literature-input",
+      "derivation": "research/18-sp-and-so.md#np-7f93d3422761f50f-1",
+      "evidence": [
+        "sources/LITERATURE.md",
+        "research/18-sp-and-so.md#np-7f93d3422761f50f-1"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "Branches, low-rank global forms and line operators have to be tracked; no universal lift across orthogonal dualities is inferred."
+    },
+    {
+      "id": "higher-f-term",
+      "title": "Higher fermionic F-terms and their mass descent",
+      "theory": "4d N=1 SQCD, SU(2), four flavors and its mass descendants",
+      "sector": "Effective interaction class over the regular Higgs branch",
+      "coefficient_ring": "Regular global sections satisfying the physical admissibility conditions",
+      "hypotheses": "Use the Beasley–Witten zero-mode measure and the global constraints on admissible primitives.",
+      "statement": "Two universal and six matter zero modes produce an eight-fermion interaction. Its radial integral equals 360(g²/(4π²|v|²))⁷. Local primitives do not glue to an admissible global one; successive masses descend to the lower-flavor interactions.",
+      "status": "literature-input",
+      "derivation": "research/19-higher-f-terms-and-monopoles.md#np-b5341a21dac18f63-1",
+      "evidence": [
+        "sources/notes/sqcd_duality_survey/higher_fterms_audit.md",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "This is not an ordinary scalar superpotential. The absolute coefficient and a four-dimensional scalar jet differential are not determined by the radial integral."
+    },
+    {
+      "id": "circle-monopole",
+      "title": "Monopole torsion on a finite circle",
+      "theory": "4d N=1 SQCD, SU(Nc), Nf=Nc on a circle",
+      "sector": "Three-dimensional scalar algebra extended by the monopole disorder operator Y",
+      "coefficient_ring": "Formal circle parameter η, or specified fixed η≠0",
+      "hypotheses": "Use W=Y(B B̃−det M+η) in the order and sign of §19; treat Y as a disorder coordinate of this effective theory.",
+      "statement": "The F-equations imply η[Y]=0. Y is detected at η=0. At fixed nonzero η its explicit odd primitive gives [Y]=0 and the quotient is C[M,B,B̃]/(det M−B B̃−η).",
+      "status": "proved",
+      "derivation": "research/19-higher-f-terms-and-monopoles.md#np-4e3f9fd0ffa2c49b-1",
+      "evidence": [
+        "sources/notes/sqcd_duality_survey/circle_lift_audit.md",
+        "checks/effective_ideals.py"
+      ],
+      "replays": [
+        "effective-ideals"
+      ],
+      "depends_on": [],
+      "limits": "The symbolic replay checks the Euler identity at Nc=2,3; the derivative proof is general. Y is not a four-dimensional polynomial jet operator."
+    },
+    {
+      "id": "aharony-and-worldsheet",
+      "title": "Benchmarks: monopole removal, exact unit, and quantum ring deformation",
+      "theory": "3d N=2 Aharony duality; 2d (0,2) and (2,2) sigma models",
+      "sector": "Monopole disorder classes, a chiral algebra, and a twisted chiral ring, respectively",
+      "coefficient_ring": "Use each source ring; for the (0,2) model distinguish formal weight and fixed nonzero weight",
+      "hypotheses": "Elementary singlet differentiation in the magnetic theory; minimal (0,2) CP¹ without left movers; (2,2) CP^(N−1) mirror conventions.",
+      "statement": "Aharony singlet F-equations remove the two magnetic monopoles. In minimal (0,2) CP¹ the unit becomes exact at fixed nonzero instanton weight. For (2,2) CP^(N−1), σ^N=Λ^N instead gives N vacua.",
+      "status": "literature-input",
+      "derivation": "research/19-higher-f-terms-and-monopoles.md#np-aa0e649d863ebf40-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/monopoles_worldsheet.md",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "These are mechanisms in different operator spaces and spacetime dimensions; do not infer four-dimensional class removal from the analogy."
+    },
+    {
+      "id": "su5-trace-quotient",
+      "title": "The cubic adjoint trace has exact classical nilpotency index three",
+      "theory": "4d N=1 SQCD, SU(5), four flavors and a cubic adjoint",
+      "sector": "Adjoint trace quotient inside the full classical invariant F-term algebra",
+      "coefficient_ring": "C, polynomial gauge invariants with their ideal (not its radical)",
+      "hypotheses": "Keep the traceless adjoint and its full matrix F-equation; work at zero quadratic adjoint deformation.",
+      "statement": "The trace subalgebra for u=Tr X² is C[u]/(u³): u³=0 while u²≠0. The determinant/Cayley–Hamilton calculation and nonreduced detector retain the nilpotent.",
+      "status": "proved",
+      "derivation": "research/20-cubic-adjoint-su5.md#np-0c6be64b76927f71-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/su5_invariant_quotient.md",
+        "checks/original/duality_nonpert/check_su5_invariant_quotient.py"
+      ],
+      "replays": [
+        "su5-invariants"
+      ],
+      "depends_on": [],
+      "limits": "A nilpotent cannot be detected solely by its values on ordinary complex vacua."
+    },
+    {
+      "id": "su5-ward-survival",
+      "title": "The nonzero SU(5) trace square survives the perturbative Ward complex",
+      "theory": "4d N=1 SQCD, SU(5), four flavors and a cubic adjoint",
+      "sector": "Pure scalar, zero derivative order, tested against the full specified Ward kernels",
+      "coefficient_ring": "C[[hbar]], nonnegative loop powers",
+      "hypotheses": "The stated anomaly-free source complex, gauge generators, matter interaction and graph rules; use the scalar-extraction map on all allowed primitives.",
+      "statement": "The square of Tr X² (in the source conjugate representative) is closed and nonexact. No nonzero power of hbar annihilates its class in the specified formal complex.",
+      "status": "proved",
+      "derivation": "research/20-cubic-adjoint-su5.md#np-aefc48ac470138dc-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/pure_gamma_all_loop_graph_proof.md",
+        "sources/notes/duality_nonpert/zerojet_perturbative_audit.md",
+        "sources/notes/duality_nonpert/su5_invariant_quotient.md"
+      ],
+      "replays": [],
+      "depends_on": [
+        "su5-trace-quotient",
+        "perturbative-product"
+      ],
+      "limits": "The perturbative detector does not impose the stronger square-zero relation in the exact quantum chiral ring."
+    },
+    {
+      "id": "su5-kss-matching",
+      "title": "Does the magnetic trace square vanish with dynamical mesons?",
+      "theory": "4d N=1 SQCD, SU(5), four flavors and a cubic adjoint; magnetic SU(3)",
+      "sector": "Full renormalized quantum scalar operator ring",
+      "coefficient_ring": "Fixed source couplings at zero quadratic deformation; include meson operators",
+      "hypotheses": "Kutasov–Schwimmer–Seiberg obtain the stronger trace prediction at the mesonic origin. Promote the operator map, singlet equations and characteristic relation to a common scheme only after deriving them.",
+      "statement": "The magnetic trace presentation predicts (Tr X²)²=0 at the mesonic origin. A relation with dynamical mesons in the full electric ring, and a microscopic instanton primitive for that class, remain unproved.",
+      "status": "open",
+      "derivation": "research/20-cubic-adjoint-su5.md#np-1073436cbe3d7b68-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/new_critical_source_audit.md",
+        "sources/notes/duality_nonpert/kutasov_review.md",
+        "sources/notes/duality_nonpert/scalar_singleq_bridge.md"
+      ],
+      "replays": [
+        "kutasov-branches"
+      ],
+      "depends_on": [
+        "su5-ward-survival"
+      ],
+      "limits": "The replay checks the deformed trace and branch calculations only. Matching ordinary vacua cannot settle a nilpotent operator identity.",
+      "continuation": "OPEN_PROBLEMS.md#su5-kss-matching"
+    },
+    {
+      "id": "two-adjoint-duality",
+      "title": "Two-adjoint D-even and E7 truncations are not established lift certificates",
+      "theory": "4d N=1 SQCD with two adjoints",
+      "sector": "Proposed quantum truncation of the scalar chiral ring",
+      "coefficient_ring": "As in the named ADE gauge theories; no project operator complex or normalization assumed",
+      "hypotheses": "Distinguish an assumed magnetic spectrum from a demonstrated electric operator identity; account for nilpotent flat directions.",
+      "statement": "Intriligator–Nardoni discuss counterevidence to proposed D-even and E7 truncations. Bryan–Rajaraman–Shirman separately report a failure of the proposed D_(k+2) duality on nilpotent directions. Neither supplies a positive microscopic instanton lift here.",
+      "status": "literature-input",
+      "derivation": "sources/README.md#two-adjoint",
+      "evidence": [
+        "sources/README.md#two-adjoint"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The D-series test does not establish a corresponding E7 failure. No local certificate or spectrum calculation for these theories is included."
+    },
+    {
+      "id": "n2-periods",
+      "title": "Seiberg–Witten periods, singular curves and mass-induced condensation",
+      "theory": "4d N=2 SU(2) and SU(3) SQCD",
+      "sector": "Coulomb geometry, periods, prepotential and mass-selected vacua",
+      "coefficient_ring": "Pure SU(2) strong scale one for period coefficients; restored scale and magnetic frame for the condensate",
+      "hypotheses": "Fix the source curve and electric/magnetic cycles. The monopole condensate additionally needs the adjoint mass deformation.",
+      "statement": "For pure SU(2), F1=1/(8πi), F2=5/(256πi). At adjoint mass m the vacua have u=±Λ² and W=±mΛ², with M M̃=i√2 mΛ in the specified monopole frame. §21 includes flavor-dependent discriminants and the SU(3), Nf=6 Argyres–Seiberg curve.",
+      "status": "literature-input",
+      "derivation": "research/21-seiberg-witten.md#np-9fe85cd156b64d38-1",
+      "evidence": [
+        "research/21-seiberg-witten.md#np-641ee493e77f2a26-1",
+        "research/21-seiberg-witten.md#np-79a202a95b44b405-1",
+        "checks/original/sqcd_duality_survey/check_n2.py"
+      ],
+      "replays": [
+        "sw-geometry"
+      ],
+      "depends_on": [],
+      "limits": "These are exact examples of geometry and vacuum data, not a computed nonscalar microscopic supercharge differential."
+    },
+    {
+      "id": "n4-scalar-detector",
+      "title": "Exact diagonal vacua detect every nonzero pure-scalar class",
+      "theory": "4d N=4 SYM, SU(N)",
+      "sector": "Gauge-invariant pure-scalar quotient of three commuting traceless matrices",
+      "coefficient_ring": "Complex scalar invariants in characteristic zero",
+      "hypotheses": "Use the reduced invariant quotient (Vaccarino), survival of the exact diagonal vacua, and vanishing of exact operator insertions in supersymmetric vacua.",
+      "statement": "A nonzero invariant scalar is nonzero on a simultaneous diagonal vacuum. Its exact expectation value rules out its becoming Q-exact by an instanton.",
+      "status": "proved",
+      "derivation": "research/22-n4-sym.md#np-fc53eb8790b564e6-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/n4_nonpert_constraints.md",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The reduced invariant quotient is not the unreduced commuting scheme. No claim for operators with derivatives, fermions or invisible nilpotents in unrelated theories."
+    },
+    {
+      "id": "n4-konishi",
+      "title": "One-loop class pairing versus the long Konishi instanton correction",
+      "theory": "4d N=4 SYM, SO(7)/USp(6) and SU(N)",
+      "sector": "Specified tree classes in the dual pair; a distinct long-multiplet anomalous dimension",
+      "coefficient_ring": "First perturbative order, and one-instanton plus anti-instanton sector in the cited SU(N) convention",
+      "hypotheses": "Use the stated generalized Konishi differential for the dual pair and the Alday–Korchemsky normalization for the separate long-operator calculation.",
+      "statement": "The known SO(7)/USp(6) pairing is perturbative. In SU(N) the long Konishi anomalous dimension has a nonzero instanton Fourier coefficient; in SU(2) the multiplier of (g²/(4π²))²(exp(2πiτ)+exp(−2πi conjugate τ)) is −9/5.",
+      "status": "literature-input",
+      "derivation": "research/22-n4-sym.md#np-516d83e0f53cc864-1",
+      "evidence": [
+        "research/22-n4-sym.md#np-87f770bad4f64cbb-1",
+        "sources/notes/duality_nonpert/n4_nonpert_constraints.md",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "Neither observed effect is a microscopic instanton removal of a class surviving all perturbative orders."
+    },
+    {
+      "id": "n4-fourier-positivity",
+      "title": "Positivity restricts a proposed leading instanton energy matrix",
+      "theory": "4d N=4 SYM",
+      "sector": "Effective energy on a finite-dimensional space of perturbative survivors",
+      "coefficient_ring": "Real vacuum angle θ and positive weak-coupling weight; Hermitian inner product",
+      "hypotheses": "Use a positive BPS Hamiltonian at every θ, the uniform leading expansion and the controlled projection stated in §22.",
+      "statement": "A positive leading matrix with zero angular mean is identically zero. This excludes an energy shift built solely of nonzero Fourier modes at that order; a first-instanton supercharge coefficient d can give a neutral positive term {d,d†}.",
+      "status": "conditional",
+      "derivation": "research/22-n4-sym.md#np-9487cf1fcea2eac8-1",
+      "evidence": [
+        "sources/notes/duality_nonpert/n4_nonpert_constraints.md"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "The hypotheses do not prove the absence of nonscalar instanton pairings; the quadratic, neutral energy term is compatible with positivity."
+    },
+    {
+      "id": "n4-nonscalar-image",
+      "title": "A microscopic instanton image on a nonscalar perturbative survivor",
+      "theory": "4d N=4 SYM",
+      "sector": "One-supercharge cohomology with fermions or derivatives",
+      "coefficient_ring": "Instanton filtration after perturbative cohomology",
+      "hypotheses": "Identify an actual all-perturbative survivor, the charge-matched target and all trivial images in that sector.",
+      "statement": "No such nonzero microscopic instanton matrix element is certified in this collection.",
+      "status": "open",
+      "derivation": "research/22-n4-sym.md#np-9487cf1fcea2eac8-1",
+      "evidence": [
+        "research/22-n4-sym.md#np-87f770bad4f64cbb-1",
+        "sources/notes/duality_nonpert/n4_nonpert_constraints.md",
+        "research/22-n4-sym.md#n4-descendant-detector"
+      ],
+      "replays": [],
+      "depends_on": [
+        "n4-scalar-detector",
+        "n4-konishi",
+        "n4-fourier-positivity"
+      ],
+      "limits": "Zero-mode counting without the full insertions, long-operator correlators, and a classical duality mismatch are not sufficient tests. The total-translation subspace of one-scalar half-BPS primaries is excluded by the exact two-point detector.",
+      "continuation": "OPEN_PROBLEMS.md#n4-nonscalar-image"
+    },
+    {
+      "id": "sqcd-all-scalar-torsion",
+      "title": "Full magnetic determinant torsion ideal",
+      "theory": "4d N=1 SQCD, electric Nf=Nc+2 with one mass, magnetic SU(2) Higgs patch",
+      "sector": "All scalar polynomial degrees of the light effective F-term quotient",
+      "coefficient_ring": "C[magnetic weight], or its parameter-adic completion; fixed nonzero μ,m",
+      "hypotheses": "Use the light magnetic quarks as regular coordinates, the full cofactor F-equations, and independent formal instanton weight.",
+      "statement": "The localization kernel is det(M̂)·C[M̂]. The annihilator of its generator is the weight and all light quark and antiquark entries. Every scalar target in this ideal is on the first instanton page.",
+      "status": "proved",
+      "derivation": "research/16-determinant-lift.md#determinant-full-torsion",
+      "evidence": [
+        "checks/scalar_saturation.py",
+        "research/16-determinant-lift.md#np-69504578f9778a53-1"
+      ],
+      "replays": [
+        "scalar-saturation"
+      ],
+      "depends_on": [
+        "sqcd-effective-determinant"
+      ],
+      "limits": "Proof covers the full specified scalar family. Independent eliminations are for matrix sizes two and three. A microscopic action requires the local Ward comparison."
+    },
+    {
+      "id": "sqcd-mass-pole-obstruction",
+      "title": "Necessary residue and obstruction to mass-regular microscopic matching",
+      "theory": "4d N=1 SQCD, four-flavor magnetic SU(2)",
+      "sector": "Tree-loop coefficient of a putative one-instanton local action on the light-row current",
+      "coefficient_ring": "Parameter-linear prescription regular in hbar; fixed nonzero μ,g and variable mass",
+      "hypotheses": "Assume nilpotency through first instanton order, nonnegative loop powers also for perturbative boundary comparisons, and the determinant projection claimed on the punctured mass family.",
+      "statement": "On the explicit F-flat evaluation the proposed matching requires ev_m(DA)=3 det(conjugate M̂)/(conjugate μ^4 conjugate m) with the weight stripped. A mass-regular polynomial DA cannot have this value.",
+      "status": "proved",
+      "derivation": "research/16-determinant-lift.md#mass-pole-ward",
+      "evidence": [
+        "checks/massless_source.py",
+        "research/16-determinant-lift.md#np-4f8eecadb9b2d576-1"
+      ],
+      "replays": [
+        "massless-source"
+      ],
+      "depends_on": [
+        "sqcd-uv-cycle"
+      ],
+      "limits": "A necessary test on one scalar projection. It leaves the physical amplitude on the punctured Higgs patch open, and uses a specified loop filtration."
+    },
+    {
+      "id": "confined-dual-torsion",
+      "title": "Different complete torsion ideals for two presentations of the same confined theory",
+      "theory": "4d N=1 SQCD, completely broken magnetic SP(1); electric SP(1)=SU(2) comparison at six light meson flavors",
+      "sector": "Effective scalar F-terms in regular light coordinates of each presentation",
+      "coefficient_ring": "Separate formal magnetic weights; fixed nonzero masses and matching scales; fixed common nonzero electric scale for the fiber comparison",
+      "hypotheses": "Use the Intriligator–Pouliot Pfaffian potential, then compare the six-index Pfaffian in interleaved flavor order with Seiberg's magnetic quark coordinates.",
+      "statement": "The complete symplectic scalar kernel is the ideal of submaximal Pfaffians modulo the weight times that ideal. At six flavors it has 15 quadratic generators. The SU presentation has one cubic determinant generator; the zero-weight fibers have dimensions 15 and 9. Their generic superpotentials agree after baryon rescaling.",
+      "status": "proved",
+      "derivation": "research/18-sp-and-so.md#pfaffian-full-torsion",
+      "evidence": [
+        "checks/scalar_saturation.py",
+        "research/18-sp-and-so.md#np-5d59db75cd44c428-1"
+      ],
+      "replays": [
+        "scalar-saturation"
+      ],
+      "depends_on": [
+        "sqcd-all-scalar-torsion",
+        "sp-mass-descent"
+      ],
+      "limits": "The nonzero-weight identification uses a square root after choosing a fixed fiber or adjoining the root. The two choices of regular fields define different formal families."
+    },
+    {
+      "id": "pfaffian-jet-images",
+      "title": "All effective Pfaffian jet torsion and the first 105 fermionic targets",
+      "theory": "4d holomorphic effective meson theory obtained on the broken SP(1) magnetic branch",
+      "sector": "Full polynomial scalar/odd jet complex of the ungauged Pfaffian model; explicit zero-derivative target counts",
+      "coefficient_ring": "Nonnegative powers of the magnetic weight with other matching coefficients fixed and invertible",
+      "hypotheses": "Use the retained Pfaffian interaction and ordinary polynomial jets. Its vertices contain only scalar letters.",
+      "statement": "All parameter torsion is the constant-coefficient image of the weight-stripped Koszul operation and has exponent one. At six flavor slots the target with two scalar letters and p−1 odd partners has rank binomial(15,p) for 1≤p≤15, including 105 in the first fermionic sector.",
+      "status": "proved",
+      "derivation": "research/18-sp-and-so.md#pfaffian-jet-images",
+      "evidence": [
+        "checks/scalar_saturation.py",
+        "sources/all-loop/main.tex",
+        "research/23-operator-data.md#index-pairs"
+      ],
+      "replays": [
+        "scalar-saturation"
+      ],
+      "depends_on": [
+        "confined-dual-torsion"
+      ],
+      "limits": "The fermionic and higher-jet claims refer to the specified holomorphic effective model. Matching these local representatives to microscopic operators or additional higher interactions is a distinct calculation."
+    },
+    {
+      "id": "multiplier-kernel",
+      "title": "All positive-degree monopole torsion and the multiplier criterion",
+      "theory": "Compactified SU(Nc) SQCD with Nf=Nc and the algebraic family W=Y(F+η)",
+      "sector": "Scalar F-terms at all Y degrees",
+      "coefficient_ring": "Polynomial parameter or parameter-adic completion; a stated localization of the scalar domain is allowed",
+      "hypotheses": "F is nonzero in the scalar domain, Y is an independent multiplier. For the circle use F=B B̃−det M in the source normalization.",
+      "statement": "At Y-degree j≥1 the parameter acts by −F on the Jacobian algebra of F. For the circle the entire torsion is (Y), with coefficients C[M] modulo all (Nc−1)-minors, supported at zero baryons and rank at most Nc−2.",
+      "status": "proved",
+      "derivation": "research/19-higher-f-terms-and-monopoles.md#multiplier-pages",
+      "evidence": [
+        "research/19-higher-f-terms-and-monopoles.md#np-66ee4aae6c4219a5-1",
+        "checks/scalar_saturation.py"
+      ],
+      "replays": [
+        "scalar-saturation"
+      ],
+      "depends_on": [
+        "circle-monopole"
+      ],
+      "limits": "Circle compactification supplies a three-dimensional disorder operator and a known finite-circle term. The general multiplier statement concerns the given effective scalar algebra."
+    },
+    {
+      "id": "multiplier-page-two",
+      "title": "A linear superpotential deformation with a genuine second-page scalar target",
+      "theory": "Local polynomial multiplier model W=Y(x^5+y^5+x^3y^3+η)",
+      "sector": "Every positive Y-degree, localized at x=y=0",
+      "coefficient_ring": "C[x,y] localized at the origin with formal η, or the corresponding completion",
+      "hypotheses": "The local polynomial 25−9xy is a unit at the chosen point.",
+      "statement": "Multiplication by F on the 16-dimensional local Jacobian algebra has rank one and square zero. Each positive Y-degree has fourteen length-one blocks and one length-two block. η[Y^j]≠0 and η²[Y^j]=0 with an explicit local odd primitive.",
+      "status": "proved",
+      "derivation": "research/19-higher-f-terms-and-monopoles.md#multiplier-pages",
+      "evidence": [
+        "checks/scalar_saturation.py"
+      ],
+      "replays": [
+        "scalar-saturation"
+      ],
+      "depends_on": [
+        "multiplier-kernel"
+      ],
+      "limits": "This is an exact algebraic superpotential example. No gauge-instanton origin of its tunable parameter is assumed."
+    },
+    {
+      "id": "ht-translation-towers",
+      "title": "Complete ghost-number-two sector and two protected bulk derivative towers",
+      "theory": "4d pure N=2 Yang–Mills, complex simple gauge algebra",
+      "sector": "Relative holomorphic-topological basic jet complex; all spins",
+      "coefficient_ring": "Characteristic zero with a complete formal deformation of neutral spin and ghost grading",
+      "hypotheses": "Start with Khan's relative tree complex. The deformed differential preserves spin, raises ghost number by one, and commutes with holomorphic translation on filtered cohomology; no extra sectors in the initial page.",
+      "statement": "Ghost-number-two cohomology is one-dimensional at each spin s≥2 and generated by derivatives of the mixed invariant. Its tower and the pure-b invariant cubic tower admit neither incoming nor outgoing differentials, at every order. The ∂X→Y pairing is excluded in this bulk setting.",
+      "status": "proved",
+      "derivation": "research/21-seiberg-witten.md#bulk-translation",
+      "evidence": [
+        "checks/translation_jets.py",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [
+        "translation-jets"
+      ],
+      "depends_on": [],
+      "limits": "The proof uses the specified simple-algebra bulk complex and Ward identity. The replay tests SU(2) through spin 16; the mode recurrence proves every spin. Defect sectors and other twists have other hypotheses."
+    },
+    {
+      "id": "ht-presentation-obstruction",
+      "title": "Conditional collapse if the two-generator bulk presentation is complete",
+      "theory": "4d pure N=2 SU(2), Khan's holomorphic-topological algebra A",
+      "sector": "All operators in the proposed differential supercommutative algebra",
+      "coefficient_ring": "One formal parameter of spin and ghost number zero",
+      "hypotheses": "Identify the entire perturbative algebra, product and translation with Khan's A, and use a multiplicative filtered bulk differential compatible with translation.",
+      "statement": "Every product derivation of spin zero and ghost number one commuting with translation vanishes on A. Hence under the identification all induced instanton differentials vanish. The proposed algebraic map sends ∂X to the nonzero Y.",
+      "status": "conditional",
+      "derivation": "research/21-seiberg-witten.md#khan-presentation-test",
+      "evidence": [
+        "research/21-seiberg-witten.md#bulk-translation",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [],
+      "depends_on": [
+        "ht-translation-towers"
+      ],
+      "limits": "Full identification with A is conjectural in the cited source. The separate protection of the two towers uses the complete bilinear calculation without this identification."
+    },
+    {
+      "id": "complete-parameter-tests",
+      "title": "Saturation and finite-sector invariant factors",
+      "theory": "Scalar effective presentations and finite free operator complexes",
+      "sector": "Scalar quotients, or a fixed outgoing kernel and its incoming map",
+      "coefficient_ring": "A polynomial weight for saturation; a single discrete valuation ring C[[η]] for Smith form",
+      "hypotheses": "Supply the actual differential, choose the regular operators and a flat finite free chain sector in the matrix calculation.",
+      "statement": "For scalar equations I the localization kernel is (I:η^∞)/I. In the finite free case the successive minimum valuations of the nonzero minors determine all exponents of incoming torsion pairs and their first nonzero pages.",
+      "status": "proved",
+      "derivation": "research/23-operator-data.md#complete-tests",
+      "evidence": [
+        "research/16-determinant-lift.md#determinant-full-torsion",
+        "research/19-higher-f-terms-and-monopoles.md#multiplier-pages"
+      ],
+      "replays": [],
+      "depends_on": [],
+      "limits": "These are standard algebraic tools applied to the indicated operator data. A differential cannot be reconstructed from a vacuum count or an unspecified matrix."
+    },
+    {
+      "id": "n4-total-descendants",
+      "title": "Exact dimension of the translated one-scalar half-BPS subspace",
+      "theory": "Unitary four-dimensional N=4 SU(N) SYM in flat-space radial quantization",
+      "sector": "Total holomorphic derivatives of one-complex-scalar half-BPS primaries of degree p≥2",
+      "coefficient_ring": "Physical unitary coupling with positive radial inner product",
+      "hypotheses": "Use the exact half-BPS primaries, traceless SU(N) scalar invariant ring, two holomorphic translations, and the superconformal bound in the Chang–Yin normalization.",
+      "statement": "At derivative order k the protected subspace has dimension (k+1) times the coefficient of t^p in the product of (1−t^j)⁻¹ over j=2,…,N. Its exact two-point derivative polynomials distinguish every component.",
+      "status": "proved",
+      "derivation": "research/22-n4-sym.md#n4-descendant-detector",
+      "evidence": [
+        "research/22-n4-sym.md#np-fc53eb8790b564e6-1",
+        "checks/translation_jets.py",
+        "sources/LITERATURE.md"
+      ],
+      "replays": [
+        "translation-jets"
+      ],
+      "depends_on": [
+        "n4-scalar-detector"
+      ],
+      "limits": "A consequence of half-BPS representation theory and unitary conformal symmetry. The count is for total translation descendants, not the multiplicity of every spinful primary or independently distributed jet."
+    },
+    {
+      "id": "sqcd-joint-specialization",
+      "title": "A microscopic two-parameter base-change kernel and its secondary differential",
+      "theory": "4d N=1 magnetic SU(2) with four flavors and variable mass for the fourth pair",
+      "sector": "Relative polynomial Ward jets over the joint mass and loop family",
+      "coefficient_ring": "C[[conjugate m,hbar]], fixed nonzero g,μ",
+      "hypotheses": "Use the polynomial current, the two source-normalized primitive equations for the Cartan ghost trace, independent parameters, and the complete three-letter source obstruction.",
+      "statement": "The quadratic ghost trace has scalar annihilator (conjugate m,hbar). The polynomial incoming current has zero scalar annihilator. Its class is nonzero in cohomology modulo the maximal ideal yet becomes a boundary in the jointly specialized complex. The two-generator Koszul resolution has an explicit nonzero second differential onto its reduction up to the coefficient of Theorem 16.5.",
+      "status": "proved",
+      "derivation": "research/16-determinant-lift.md#mass-loop-base-change",
+      "evidence": [
+        "checks/massless_source.py",
+        "research/16-determinant-lift.md#massless-all-powers",
+        "sources/notes/sqcd_duality_survey/massless_secondary_class_audit.md"
+      ],
+      "replays": [
+        "massless-source"
+      ],
+      "depends_on": [
+        "sqcd-massless-torsion",
+        "sqcd-uv-cycle"
+      ],
+      "limits": "This nonzero second differential concerns joint specialization of microscopic perturbative cohomology. Its order is the degree of the parameter resolution, not an instanton number."
+    }
+  ]
+}

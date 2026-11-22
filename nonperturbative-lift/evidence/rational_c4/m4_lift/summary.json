@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "component_terms": [
+    282,
+    23796,
+    45021,
+    16253
+  ],
+  "final_closed_correction_terms": 44868,
+  "scope": "Full perturbative lift of the source M4 leading class; complete higher secondary-operation identification separate",
+  "certificate_sha256": "f37f2bafe5f6a7ec9d2824be214f6c14ff2c961dd5f442afc3f48b134e04511f",
+  "saved_file_readback": true
+}

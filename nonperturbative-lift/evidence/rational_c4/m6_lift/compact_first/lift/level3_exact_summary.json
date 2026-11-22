@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "terms": 934381,
+  "rank": 3532,
+  "full_Q0_residual_terms": 0,
+  "full_Q0_accumulator": "bounded_q0; original full ordered field differential and disjoint output buckets",
+  "full_Q0_gate": {
+    "passed": true,
+    "buckets": 8,
+    "residual_terms": 0,
+    "seconds": 661.0563111305237
+  },
+  "seconds": 676.504873752594,
+  "peak_rss_bytes": 1550745600,
+  "sha256": "7af3a5300cdb9f679090e064e3a89cb3e36b3238c808b5a0d8b6b351268b8cee",
+  "reused_saved_exact_coefficients": true
+}

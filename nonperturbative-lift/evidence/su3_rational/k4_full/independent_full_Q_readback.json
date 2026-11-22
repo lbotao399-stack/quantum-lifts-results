@@ -1,0 +1,17 @@
+{
+  "coefficient_field": "Q",
+  "full_Q_residuals_by_target_Nb": {
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 0
+  },
+  "full_Q0_includes_undifferentiated_ghosts": true,
+  "reconstructed_from_original_trace_descriptors": true,
+  "gauge_and_both_rotation_checks": true,
+  "leading_literal_trace_reconstructed": true,
+  "leading_Cartan_terms": 20,
+  "higher_equations": "zero by b-degree",
+  "seconds": 214.9400577545166
+}

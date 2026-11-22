@@ -1,0 +1,52 @@
+{
+  "coefficient_field": "Q",
+  "weight": [
+    4,
+    4
+  ],
+  "Nc": 2,
+  "leading_Nb": 3,
+  "components_Nb_descending": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "component_terms": [
+    434,
+    2434,
+    96,
+    0
+  ],
+  "full_Q_residuals": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "gauge_invariant": true,
+  "rotation_invariant": true,
+  "higher_Q_equations": "zero by b-degree",
+  "leading_Cartan_terms": 16,
+  "leading_literal_trace_formula": "-111/112 tr(b^2) a1 +57/56 tr(b^3) C0 +15/14 [tr(b^2 d2c)tr(b d1c)-tr(b^2 d1c)tr(b d2c)]",
+  "leading_class_in_HQ0": "9/112 [tr(b^2) a1] -3/56 [tr(b^3) C0]",
+  "hbar2_literal_trace_formula": "1/4 tr{b[(d2^3c)(d1^3c)-3(d1d2^2c)(d1^2d2c)+3(d1^2d2c)(d1d2^2c)-(d1^3c)(d2^3c)]}",
+  "full_E1_dimension_Q": 3,
+  "full_d1_rank_Q": 2,
+  "full_E2_dimension_Q": 1,
+  "full_E_infinity_dimension_Q": 1,
+  "dimension_argument": "rational chain dimension6; rational Q0-image rank3; rational Cartan-of-Q1 rank2; explicit surviving class supplies the matching lower bound",
+  "incoming_higher": "source Nb=3+r,Nc=1 has minimum total weight7+2r>8",
+  "source_normalization": "C0,a1 match stageA_Q.pkl; trace-dual b and Chevalley c; source hbar unchanged",
+  "representative_scope": "C3 is specified by the displayed exact trace coefficients; no preexisting Claude C3 normalization is assumed",
+  "independent_readback": "reconstructed from source trace descriptors; full Q0 includes undifferentiated ghosts; Q1-Q3 recomputed with gated leaf-first and active-output adapters",
+  "seconds": 117.42863774299622,
+  "grading_scope": "associated-graded leading (Nb,Nc)=(3,2), weight(4,4); full means gauge invariants rather than rotation scalars",
+  "uniqueness_of_full_lift": "unique modulo full Q in the complete rotation-scalar Nb+loop_order=3 block; all6 saved lifts proportional modulo exact primitives; non-scalar sectors and other hbar blocks not classified",
+  "adapter_sources_sha256": {
+    "work/su3_rational/fast_wick.py": "c6f4e431b2ede1a4f0d75fd1394fab4827faad00fc1ca3230e5318132dae991d",
+    "work/rational_c4/m6_lift/fast_selected.py": "bfc438765751fe7e5a6d4d8acb3c6033d8a1ca867aa0123150cc5a0c508e70f5"
+  },
+  "scalar_block_certificate": "C3_scalar_complex_Q_certificate.json",
+  "difference_certificate": "C3_lift_differences_Q_certificate.json"
+}

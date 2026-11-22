@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_descriptors_rebuilt": 5,
+  "unmodified_Wick_evaluator": true,
+  "exact_fan_field_count_zero_prefilter": true,
+  "all_full_Qpert_equations": true,
+  "negative_control_residual_terms": 2016,
+  "seconds": 349.23324489593506
+}

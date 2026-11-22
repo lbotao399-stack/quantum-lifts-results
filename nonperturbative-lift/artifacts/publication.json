@@ -1,0 +1,48 @@
+{
+  "release_tag": "nonperturbative-lift-v1",
+  "release_url": "https://github.com/lbotao399-stack/quantum-lifts-results/releases/tag/nonperturbative-lift-v1",
+  "witnesses": [
+    {
+      "path": "rational_c4/m6_lift/compact_first/lift/component3_exact.pkl",
+      "bytes": 686635425,
+      "sha256": "7af3a5300cdb9f679090e064e3a89cb3e36b3238c808b5a0d8b6b351268b8cee",
+      "gzip_bytes": 437764371,
+      "gzip_sha256": "1df246c52f1f5f6525c68d4b0d36fe580d63c98f7b06025a5299f3b1a247c085",
+      "release_asset": "su2-third-correction.pkl.gz",
+      "download_url": "https://github.com/lbotao399-stack/quantum-lifts-results/releases/download/nonperturbative-lift-v1/su2-third-correction.pkl.gz"
+    },
+    {
+      "path": "su4_cartan/k4_first/first_lift.pkl",
+      "bytes": 12005798,
+      "sha256": "d60c8c8119573225d630f937d69dc8335de46f15a81ecb398cd6bd566a29fa72",
+      "gzip_bytes": 2280241,
+      "gzip_sha256": "e1945f02a995194656b503f52e3d8a62224491d7e7ef1312e1e47dc8103a64ae",
+      "file": "artifacts/witnesses/su4-k4-first-lift.pkl.gz"
+    },
+    {
+      "path": "su4_cartan/k5_first/first_lift.pkl",
+      "bytes": 59680646,
+      "sha256": "c271c5667a459279a897cd1a9d16b4b49a6c85870dbb9ae5bb10da42162c870c",
+      "gzip_bytes": 11297494,
+      "gzip_sha256": "911ca4793f7b62be70ac6e1cb01d03bf6dea888ad4819233c6526fed318660ae",
+      "file": "artifacts/witnesses/su4-k5-first-lift.pkl.gz"
+    },
+    {
+      "path": "su3_rational/c0_product_Q.pkl",
+      "bytes": 21971105,
+      "sha256": "90f05d4072deb5dccf0f4e41f892ea1403c9bcab14a0e2203bf4ba54934f01d5",
+      "gzip_bytes": 6966952,
+      "gzip_sha256": "5c20ebd3dcc111d6947f96b7d25660ad22090a9c931b587cf19a7193520003c6",
+      "file": "artifacts/witnesses/su3-c0-product.pkl.gz"
+    }
+  ],
+  "historical_calculations": {
+    "index": "artifacts/historical-files.json",
+    "release_asset": "historical-calculations.zip",
+    "download_url": "https://github.com/lbotao399-stack/quantum-lifts-results/releases/download/nonperturbative-lift-v1/historical-calculations.zip",
+    "members": 1146,
+    "expanded_member_bytes": 565988603,
+    "bytes": 180804235,
+    "sha256": "3bafde16340c5f4d41709c14fb964b07ff8b4af6e0d7da0c37fcf907dd2dee0f"
+  }
+}

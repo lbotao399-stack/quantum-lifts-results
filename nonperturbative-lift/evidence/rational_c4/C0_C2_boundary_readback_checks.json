@@ -1,0 +1,74 @@
+[
+  {
+    "name": "fresh full product coefficient order 0",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.02605295181274414
+  },
+  {
+    "name": "full C0 star C2 boundary equation order 0",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.028810977935791016
+  },
+  {
+    "name": "fresh full product coefficient order 1",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.02903604507446289
+  },
+  {
+    "name": "full C0 star C2 boundary equation order 1",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.07959103584289551
+  },
+  {
+    "name": "fresh full product coefficient order 2",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.08003401756286621
+  },
+  {
+    "name": "full C0 star C2 boundary equation order 2",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.3183000087738037
+  },
+  {
+    "name": "boundary rotation raising order 0",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.31867504119873047
+  },
+  {
+    "name": "boundary rotation lowering order 0",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.31891798973083496
+  },
+  {
+    "name": "boundary rotation raising order 1",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.32051801681518555
+  },
+  {
+    "name": "boundary rotation lowering order 1",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.3219411373138428
+  },
+  {
+    "name": "boundary rotation raising order 2",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.3227260112762451
+  },
+  {
+    "name": "boundary rotation lowering order 2",
+    "residual_terms": 0,
+    "passed": true,
+    "seconds": 0.3234219551086426
+  }
+]

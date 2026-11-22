@@ -1,0 +1,241 @@
+{
+  "status": "BOUNDED_CARTAN_MAP_COMPLETE",
+  "N": 4,
+  "generator_degrees": [
+    0,
+    1,
+    2,
+    2,
+    3,
+    4
+  ],
+  "map_evaluations": [
+    {
+      "generator": 0,
+      "casimir": -1,
+      "input_terms": 19,
+      "Cartan_Q1_terms": 0
+    },
+    {
+      "generator": 0,
+      "casimir": 0,
+      "input_terms": 228,
+      "Cartan_Q1_terms": 28
+    },
+    {
+      "generator": 0,
+      "casimir": 1,
+      "input_terms": 532,
+      "Cartan_Q1_terms": 104
+    },
+    {
+      "generator": 0,
+      "casimir": 2,
+      "input_terms": 1805,
+      "Cartan_Q1_terms": 264
+    },
+    {
+      "generator": 1,
+      "casimir": -1,
+      "input_terms": 144,
+      "Cartan_Q1_terms": 0
+    },
+    {
+      "generator": 1,
+      "casimir": 0,
+      "input_terms": 1616,
+      "Cartan_Q1_terms": 80
+    },
+    {
+      "generator": 1,
+      "casimir": 1,
+      "input_terms": 3681,
+      "Cartan_Q1_terms": 236
+    },
+    {
+      "generator": 1,
+      "casimir": 2,
+      "input_terms": 12430,
+      "Cartan_Q1_terms": 436
+    },
+    {
+      "generator": 2,
+      "casimir": -1,
+      "input_terms": 599,
+      "Cartan_Q1_terms": 84
+    },
+    {
+      "generator": 2,
+      "casimir": 0,
+      "input_terms": 5744,
+      "Cartan_Q1_terms": 440
+    },
+    {
+      "generator": 2,
+      "casimir": 1,
+      "input_terms": 13036,
+      "Cartan_Q1_terms": 706
+    },
+    {
+      "generator": 2,
+      "casimir": 2,
+      "input_terms": 41939,
+      "Cartan_Q1_terms": 1340
+    },
+    {
+      "generator": 3,
+      "casimir": -1,
+      "input_terms": 225,
+      "Cartan_Q1_terms": 56
+    },
+    {
+      "generator": 3,
+      "casimir": 0,
+      "input_terms": 2700,
+      "Cartan_Q1_terms": 308
+    },
+    {
+      "generator": 3,
+      "casimir": 1,
+      "input_terms": 6300,
+      "Cartan_Q1_terms": 398
+    },
+    {
+      "generator": 3,
+      "casimir": 2,
+      "input_terms": 21375,
+      "Cartan_Q1_terms": 824
+    },
+    {
+      "generator": 4,
+      "casimir": -1,
+      "input_terms": 2314,
+      "Cartan_Q1_terms": 248
+    },
+    {
+      "generator": 4,
+      "casimir": 0,
+      "input_terms": 18654,
+      "Cartan_Q1_terms": 810
+    },
+    {
+      "generator": 4,
+      "casimir": 1,
+      "input_terms": 40803,
+      "Cartan_Q1_terms": 1152
+    },
+    {
+      "generator": 4,
+      "casimir": 2,
+      "input_terms": 113866,
+      "Cartan_Q1_terms": 1888
+    },
+    {
+      "generator": 5,
+      "casimir": -1,
+      "input_terms": 4625,
+      "Cartan_Q1_terms": 396
+    },
+    {
+      "generator": 5,
+      "casimir": 0,
+      "input_terms": 39786,
+      "Cartan_Q1_terms": 1212
+    },
+    {
+      "generator": 5,
+      "casimir": 1,
+      "input_terms": 86718,
+      "Cartan_Q1_terms": 1334
+    },
+    {
+      "generator": 5,
+      "casimir": 2,
+      "input_terms": 266281,
+      "Cartan_Q1_terms": 2376
+    }
+  ],
+  "kernel_census": [
+    {
+      "k": 0,
+      "Cartan_module_dimension": 1,
+      "Cartan_Q1_rank": 0,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 1,
+      "Cartan_module_dimension": 1,
+      "Cartan_Q1_rank": 0,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 2,
+      "Cartan_module_dimension": 3,
+      "Cartan_Q1_rank": 2,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 3,
+      "Cartan_module_dimension": 3,
+      "Cartan_Q1_rank": 3,
+      "kernel_dimension": 0
+    },
+    {
+      "k": 4,
+      "Cartan_module_dimension": 6,
+      "Cartan_Q1_rank": 5,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 5,
+      "Cartan_module_dimension": 6,
+      "Cartan_Q1_rank": 5,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 6,
+      "Cartan_module_dimension": 10,
+      "Cartan_Q1_rank": 9,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 7,
+      "Cartan_module_dimension": 10,
+      "Cartan_Q1_rank": 10,
+      "kernel_dimension": 0
+    },
+    {
+      "k": 8,
+      "Cartan_module_dimension": 15,
+      "Cartan_Q1_rank": 14,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 9,
+      "Cartan_module_dimension": 15,
+      "Cartan_Q1_rank": 14,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 10,
+      "Cartan_module_dimension": 21,
+      "Cartan_Q1_rank": 20,
+      "kernel_dimension": 1
+    },
+    {
+      "k": 11,
+      "Cartan_module_dimension": 21,
+      "Cartan_Q1_rank": 21,
+      "kernel_dimension": 0
+    },
+    {
+      "k": 12,
+      "Cartan_module_dimension": 28,
+      "Cartan_Q1_rank": 27,
+      "kernel_dimension": 1
+    }
+  ],
+  "seconds": 109.64085984230042,
+  "scope": "chosen Weyl-covariant Cartan module; global module proof and full Q0 primitives not asserted; not an E2 survival certificate",
+  "second_coordinate_terms": "vanish on Cartan by the universal Q0-exact Casimir bracket identity and Q0-closed generators"
+}

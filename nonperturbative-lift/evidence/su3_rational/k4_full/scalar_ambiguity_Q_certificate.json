@@ -1,0 +1,20 @@
+{
+  "coefficient_field": "Q",
+  "weight": [
+    5,
+    5
+  ],
+  "Nc": 2,
+  "scalar_chain_dimension": 129,
+  "correction_rank_lower_Q": 95,
+  "additional_leading_image_rank_Q": 2,
+  "incoming_rank_lower_Q": 31,
+  "cohomology_dimension_upper": 1,
+  "explicit_nonzero_class": true,
+  "grading_scope": "Nb+loop_order=4 scalar lift block",
+  "saturated": true,
+  "outgoing_full_Q_rank_Q": 97,
+  "incoming_full_Q_rank_Q": 31,
+  "cohomology_dimension_Q": 1,
+  "status": "EXACT_UNIQUE_SCALAR_LIFT_CLASS"
+}

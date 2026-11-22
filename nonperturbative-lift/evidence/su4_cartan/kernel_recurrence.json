@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "all_six_compatibilities_equivalent_to_three_PDEs": true,
+  "all_degree_proof": "first PDE fixes each fixed-v chain in u^2/w; third links adjacent allowed v exponents differing by2; second kills d=1mod4 via coefficient u^0 v^0 w^t (d=1 has no monomial); fractional-period coefficients give the nonzero remaining sectors",
+  "Cartan_kernel_dimension": "0 for k=3 mod4;1 otherwise (all k>=0)",
+  "scope": "Cartan kernel theorem and hence E2 upper bound; full d1 primitives remain separate",
+  "finite_identity_readbacks": [
+    {
+      "weight_of_R_coefficient": 0,
+      "nonzero": true,
+      "terms": 1
+    },
+    {
+      "weight_of_R_coefficient": 1,
+      "nonzero": false,
+      "terms": 0
+    },
+    {
+      "weight_of_R_coefficient": 2,
+      "nonzero": true,
+      "terms": 1
+    },
+    {
+      "weight_of_R_coefficient": 3,
+      "nonzero": true,
+      "terms": 1
+    },
+    {
+      "weight_of_R_coefficient": 4,
+      "nonzero": true,
+      "terms": 2
+    },
+    {
+      "weight_of_R_coefficient": 5,
+      "nonzero": false,
+      "terms": 0
+    },
+    {
+      "weight_of_R_coefficient": 6,
+      "nonzero": true,
+      "terms": 3
+    },
+    {
+      "weight_of_R_coefficient": 7,
+      "nonzero": true,
+      "terms": 2
+    },
+    {
+      "weight_of_R_coefficient": 8,
+      "nonzero": true,
+      "terms": 4
+    },
+    {
+      "weight_of_R_coefficient": 9,
+      "nonzero": false,
+      "terms": 0
+    },
+    {
+      "weight_of_R_coefficient": 10,
+      "nonzero": true,
+      "terms": 5
+    },
+    {
+      "weight_of_R_coefficient": 11,
+      "nonzero": true,
+      "terms": 4
+    },
+    {
+      "weight_of_R_coefficient": 12,
+      "nonzero": true,
+      "terms": 7
+    },
+    {
+      "weight_of_R_coefficient": 13,
+      "nonzero": false,
+      "terms": 0
+    },
+    {
+      "weight_of_R_coefficient": 14,
+      "nonzero": true,
+      "terms": 8
+    },
+    {
+      "weight_of_R_coefficient": 15,
+      "nonzero": true,
+      "terms": 7
+    },
+    {
+      "weight_of_R_coefficient": 16,
+      "nonzero": true,
+      "terms": 10
+    },
+    {
+      "weight_of_R_coefficient": 17,
+      "nonzero": false,
+      "terms": 0
+    },
+    {
+      "weight_of_R_coefficient": 18,
+      "nonzero": true,
+      "terms": 12
+    },
+    {
+      "weight_of_R_coefficient": 19,
+      "nonzero": true,
+      "terms": 10
+    },
+    {
+      "weight_of_R_coefficient": 20,
+      "nonzero": true,
+      "terms": 14
+    },
+    {
+      "weight_of_R_coefficient": 21,
+      "nonzero": false,
+      "terms": 0
+    },
+    {
+      "weight_of_R_coefficient": 22,
+      "nonzero": true,
+      "terms": 16
+    },
+    {
+      "weight_of_R_coefficient": 23,
+      "nonzero": true,
+      "terms": 14
+    },
+    {
+      "weight_of_R_coefficient": 24,
+      "nonzero": true,
+      "terms": 19
+    },
+    {
+      "weight_of_R_coefficient": 25,
+      "nonzero": false,
+      "terms": 0
+    },
+    {
+      "weight_of_R_coefficient": 26,
+      "nonzero": true,
+      "terms": 21
+    },
+    {
+      "weight_of_R_coefficient": 27,
+      "nonzero": true,
+      "terms": 19
+    },
+    {
+      "weight_of_R_coefficient": 28,
+      "nonzero": true,
+      "terms": 24
+    },
+    {
+      "weight_of_R_coefficient": 29,
+      "nonzero": false,
+      "terms": 0
+    },
+    {
+      "weight_of_R_coefficient": 30,
+      "nonzero": true,
+      "terms": 27
+    },
+    {
+      "weight_of_R_coefficient": 31,
+      "nonzero": true,
+      "terms": 24
+    },
+    {
+      "weight_of_R_coefficient": 32,
+      "nonzero": true,
+      "terms": 30
+    }
+  ]
+}
