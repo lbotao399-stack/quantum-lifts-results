@@ -1,0 +1,267 @@
+{
+  "extremal_colour_checks": {
+    "O9_S5": {
+      "1": [
+        0,
+        1
+      ]
+    },
+    "O10_S6": {
+      "1": [
+        1,
+        2
+      ]
+    },
+    "O13_S7": {
+      "2": [
+        1,
+        2
+      ]
+    },
+    "O17_S9": {
+      "3": [
+        2,
+        3
+      ]
+    },
+    "O18_S10": {
+      "3": [
+        4,
+        5
+      ]
+    }
+  },
+  "intermediate_targets": {
+    "O17_S9": [
+      {
+        "grade": 0,
+        "diagram": [
+          9,
+          9
+        ],
+        "stable_classical_dimension": 1,
+        "Cartan_rank": 0,
+        "restriction_kernel": 1,
+        "trace_products": [
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": false
+          }
+        ]
+      },
+      {
+        "grade": 1,
+        "diagram": [
+          8,
+          8,
+          3
+        ],
+        "stable_classical_dimension": 0,
+        "Cartan_rank": 0,
+        "restriction_kernel": 0,
+        "trace_products": []
+      },
+      {
+        "grade": 2,
+        "diagram": [
+          7,
+          7,
+          3,
+          3
+        ],
+        "stable_classical_dimension": 4,
+        "Cartan_rank": 2,
+        "restriction_kernel": 2,
+        "trace_products": [
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": false
+          },
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": false
+          },
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": true
+          },
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": true
+          }
+        ]
+      }
+    ],
+    "O18_S10": [
+      {
+        "grade": 0,
+        "diagram": [
+          10,
+          10
+        ],
+        "stable_classical_dimension": 1,
+        "Cartan_rank": 0,
+        "restriction_kernel": 1,
+        "trace_products": [
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": false
+          }
+        ]
+      },
+      {
+        "grade": 1,
+        "diagram": [
+          9,
+          9,
+          3
+        ],
+        "stable_classical_dimension": 0,
+        "Cartan_rank": 0,
+        "restriction_kernel": 0,
+        "trace_products": []
+      },
+      {
+        "grade": 2,
+        "diagram": [
+          8,
+          8,
+          3,
+          3
+        ],
+        "stable_classical_dimension": 4,
+        "Cartan_rank": 2,
+        "restriction_kernel": 2,
+        "trace_products": [
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": false
+          },
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": false
+          },
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": true
+          },
+          {
+            "lengths": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4
+            ],
+            "multiplicity": 1,
+            "independent_on_Cartan": true
+          }
+        ]
+      }
+    ]
+  }
+}

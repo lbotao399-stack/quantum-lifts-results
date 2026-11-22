@@ -1,0 +1,204 @@
+{
+  "colours": 9,
+  "power": 5,
+  "order": 1,
+  "target": [
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "input_letters": [
+    "phi1",
+    "phi2",
+    "phi3",
+    "plus",
+    "minus"
+  ],
+  "coefficient": "3",
+  "terms": [
+    {
+      "outputs": 1,
+      "active": [
+        0,
+        1,
+        2
+      ],
+      "relation": "3",
+      "quantum": "-14",
+      "contribution": "-42"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        1,
+        2,
+        4,
+        3
+      ],
+      "relation": "-21/2",
+      "quantum": "-1",
+      "contribution": "21/2"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "relation": "21/2",
+      "quantum": "1",
+      "contribution": "21/2"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        1,
+        4,
+        2,
+        3
+      ],
+      "relation": "3",
+      "quantum": "-1",
+      "contribution": "-3"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        1,
+        4,
+        3,
+        2
+      ],
+      "relation": "-21/2",
+      "quantum": "-1",
+      "contribution": "21/2"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      "relation": "-3",
+      "quantum": "1",
+      "contribution": "-3"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ],
+      "relation": "21/2",
+      "quantum": "1",
+      "contribution": "21/2"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        2,
+        1,
+        4,
+        3
+      ],
+      "relation": "21/2",
+      "quantum": "1",
+      "contribution": "21/2"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        2,
+        1,
+        3,
+        4
+      ],
+      "relation": "-21/2",
+      "quantum": "-1",
+      "contribution": "21/2"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        2,
+        4,
+        1,
+        3
+      ],
+      "relation": "-3",
+      "quantum": "1",
+      "contribution": "-3"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "relation": "3",
+      "quantum": "-1",
+      "contribution": "-3"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        4,
+        1,
+        2,
+        3
+      ],
+      "relation": "3",
+      "quantum": "-1",
+      "contribution": "-3"
+    },
+    {
+      "outputs": 2,
+      "active": [
+        0,
+        4,
+        2,
+        1,
+        3
+      ],
+      "relation": "-3",
+      "quantum": "1",
+      "contribution": "-3"
+    }
+  ]
+}

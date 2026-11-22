@@ -1,0 +1,435 @@
+{
+  "job": "5692946",
+  "pairs": [
+    {
+      "colours": 9,
+      "power": 5,
+      "order": 1,
+      "pfaffian_cycles": 14,
+      "direct_adjoint_coordinates": 13,
+      "coefficient": "3"
+    },
+    {
+      "colours": 10,
+      "power": 6,
+      "order": 1,
+      "pfaffian_cycles": 14,
+      "direct_adjoint_coordinates": 13,
+      "coefficient": "-6"
+    },
+    {
+      "colours": 17,
+      "power": 9,
+      "order": 3,
+      "pfaffian_cycles": 23,
+      "direct_adjoint_coordinates": 19,
+      "coefficient": "90"
+    },
+    {
+      "colours": 18,
+      "power": 10,
+      "order": 3,
+      "pfaffian_cycles": 23,
+      "direct_adjoint_coordinates": 19,
+      "coefficient": "-60"
+    }
+  ],
+  "frontier": [
+    {
+      "colours": 10,
+      "power": 6,
+      "order": 0,
+      "terminal": 0,
+      "predecessor": null,
+      "stable_Cartan": {
+        "stable": 1,
+        "Cartan": 0,
+        "kernel": 1,
+        "by_sites": {
+          "6": 1
+        }
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 10,
+      "power": 6,
+      "order": 1,
+      "terminal": 2,
+      "predecessor": {
+        "D2c": 1,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 0,
+        "Cartan": 0,
+        "kernel": 0,
+        "by_sites": {}
+      },
+      "selected": [
+        1,
+        2
+      ]
+    },
+    {
+      "colours": 10,
+      "power": 6,
+      "order": 2,
+      "terminal": 166,
+      "predecessor": {
+        "D2c": 146,
+        "Dphi": 182,
+        "psi": 54
+      },
+      "stable_Cartan": {
+        "stable": 10,
+        "Cartan": 3,
+        "kernel": 7,
+        "by_sites": {
+          "4": 1,
+          "5": 2,
+          "6": 3,
+          "7": 4
+        }
+      },
+      "selected": [
+        47,
+        28
+      ]
+    },
+    {
+      "colours": 11,
+      "power": 6,
+      "order": 0,
+      "terminal": 0,
+      "predecessor": null,
+      "stable_Cartan": {
+        "stable": 1,
+        "Cartan": 0,
+        "kernel": 1,
+        "by_sites": {
+          "6": 1
+        }
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 11,
+      "power": 6,
+      "order": 1,
+      "terminal": 0,
+      "predecessor": {
+        "D2c": 0,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 0,
+        "Cartan": 0,
+        "kernel": 0,
+        "by_sites": {}
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 11,
+      "power": 6,
+      "order": 2,
+      "terminal": 15,
+      "predecessor": {
+        "D2c": 7,
+        "Dphi": 7,
+        "psi": 1
+      },
+      "stable_Cartan": {
+        "stable": 10,
+        "Cartan": 3,
+        "kernel": 7,
+        "by_sites": {
+          "4": 1,
+          "5": 2,
+          "6": 3,
+          "7": 4
+        }
+      },
+      "selected": [
+        4,
+        6
+      ]
+    },
+    {
+      "colours": 12,
+      "power": 7,
+      "order": 0,
+      "terminal": 0,
+      "predecessor": null,
+      "stable_Cartan": {
+        "stable": 1,
+        "Cartan": 0,
+        "kernel": 1,
+        "by_sites": {
+          "7": 1
+        }
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 12,
+      "power": 7,
+      "order": 1,
+      "terminal": 0,
+      "predecessor": {
+        "D2c": 0,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 0,
+        "Cartan": 0,
+        "kernel": 0,
+        "by_sites": {}
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 12,
+      "power": 7,
+      "order": 2,
+      "terminal": 37,
+      "predecessor": {
+        "D2c": 43,
+        "Dphi": 22,
+        "psi": 3
+      },
+      "stable_Cartan": {
+        "stable": 10,
+        "Cartan": 3,
+        "kernel": 7,
+        "by_sites": {
+          "5": 1,
+          "6": 2,
+          "7": 3,
+          "8": 4
+        }
+      },
+      "selected": [
+        27,
+        17
+      ]
+    },
+    {
+      "colours": 13,
+      "power": 7,
+      "order": 0,
+      "terminal": 0,
+      "predecessor": null,
+      "stable_Cartan": {
+        "stable": 1,
+        "Cartan": 0,
+        "kernel": 1,
+        "by_sites": {
+          "7": 1
+        }
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 13,
+      "power": 7,
+      "order": 1,
+      "terminal": 0,
+      "predecessor": {
+        "D2c": 0,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 0,
+        "Cartan": 0,
+        "kernel": 0,
+        "by_sites": {}
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 13,
+      "power": 7,
+      "order": 2,
+      "terminal": 2,
+      "predecessor": {
+        "D2c": 1,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 10,
+        "Cartan": 3,
+        "kernel": 7,
+        "by_sites": {
+          "5": 1,
+          "6": 2,
+          "7": 3,
+          "8": 4
+        }
+      },
+      "selected": [
+        1,
+        2
+      ]
+    },
+    {
+      "colours": 17,
+      "power": 9,
+      "order": 0,
+      "terminal": 0,
+      "predecessor": null,
+      "stable_Cartan": {
+        "stable": 1,
+        "Cartan": 0,
+        "kernel": 1,
+        "by_sites": {
+          "9": 1
+        }
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 17,
+      "power": 9,
+      "order": 1,
+      "terminal": 0,
+      "predecessor": {
+        "D2c": 0,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 0,
+        "Cartan": 0,
+        "kernel": 0,
+        "by_sites": {}
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 17,
+      "power": 9,
+      "order": 2,
+      "terminal": 0,
+      "predecessor": {
+        "D2c": 0,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 10,
+        "Cartan": 3,
+        "kernel": 7,
+        "by_sites": {
+          "7": 1,
+          "8": 2,
+          "9": 3,
+          "10": 4
+        }
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 18,
+      "power": 10,
+      "order": 0,
+      "terminal": 0,
+      "predecessor": null,
+      "stable_Cartan": {
+        "stable": 1,
+        "Cartan": 0,
+        "kernel": 1,
+        "by_sites": {
+          "10": 1
+        }
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 18,
+      "power": 10,
+      "order": 1,
+      "terminal": 0,
+      "predecessor": {
+        "D2c": 0,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 0,
+        "Cartan": 0,
+        "kernel": 0,
+        "by_sites": {}
+      },
+      "selected": [
+        0,
+        0
+      ]
+    },
+    {
+      "colours": 18,
+      "power": 10,
+      "order": 2,
+      "terminal": 0,
+      "predecessor": {
+        "D2c": 0,
+        "Dphi": 0,
+        "psi": 0
+      },
+      "stable_Cartan": {
+        "stable": 10,
+        "Cartan": 3,
+        "kernel": 7,
+        "by_sites": {
+          "8": 1,
+          "9": 2,
+          "10": 3,
+          "11": 4
+        }
+      },
+      "selected": [
+        0,
+        0
+      ]
+    }
+  ]
+}

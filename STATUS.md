@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## First differentials in three orthogonal groups, November 21, 2026
+
+The full relative jet complex gives three new rational first differentials. The level-36 $SO(10)$ image is $-6[S^6]$ in the specified source convention. The level-54 $SO(17)$ and level-60 $SO(18)$ sources have nonzero first-image coefficients $-90$ and $-60$ along the stated mixed trace monomials. Both proposed third-order sources are consumed on the first page. [Determinant sources, exact coefficients and replay](algorithms/dual_singlets_20261118/orthogonal_glueballs/README.md)
+
+New $d_1$ pairings **3** (18 total). New BMN fortuitous generator families **0** (11 explicit, at least 16 including index-forced families). The three verified sources are full-jet classes. [Count ledger](data/N4_lift_campaign_counts_20261121_orthogonal_glueballs.json)
+
 ## Two odd generators in $G_2$, November 21, 2026
 
 The $G_2$ primary index forces an odd BMN generator at level 36, flavour $(6,6,6)$, and a second odd generator by level 44. At $(6,6,4)$ the last two classical dimensions are $21650-8255-13395=0$ and $18935-12339-6596=0$. At $(8,7,7)$ one singlet generator supplies at most one of two required primaries. The index at $(19,6,6)$ also forces a different generator weight by level 62. Among the six single-additional-generator explanations for $USp(4)$, four more complete odd columns vanish and $(7,5,4)$ remains. [Ranks, index and product bounds](algorithms/dual_singlets_20261118/bmn_primary/second_odd_generator.md)

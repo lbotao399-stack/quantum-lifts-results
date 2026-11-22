@@ -1,0 +1,262 @@
+{
+  "O9_S5": {
+    "colours": 9,
+    "power": 5,
+    "page_tested": 1,
+    "physical_level": 30,
+    "Taylor_diagram": [
+      4,
+      4,
+      3
+    ],
+    "source_length": 10,
+    "relation_length": 11,
+    "physical_source_relations": {
+      "D2c": 0,
+      "Dphi": 0,
+      "psi": 0
+    },
+    "physical_terminal_relations": 1,
+    "monomial_order": [
+      "scalar_double_path",
+      "quadratic",
+      "determinant",
+      "quartic"
+    ],
+    "tree_images": [],
+    "relation_tree_rank": 0,
+    "connecting_image_dimension": 1,
+    "surviving_relation_monomial": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "O10_S6": {
+    "colours": 10,
+    "power": 6,
+    "page_tested": 1,
+    "physical_level": 36,
+    "Taylor_diagram": [
+      5,
+      5,
+      3
+    ],
+    "source_length": 12,
+    "relation_length": 13,
+    "physical_source_relations": {
+      "D2c": 1,
+      "Dphi": 0,
+      "psi": 0
+    },
+    "physical_terminal_relations": 2,
+    "monomial_order": [
+      "scalar_double_path",
+      "quadratic",
+      "determinant",
+      "quartic"
+    ],
+    "tree_images": [
+      {
+        "monomial": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "Euler_multiplier": 2
+      }
+    ],
+    "relation_tree_rank": 1,
+    "connecting_image_dimension": 1,
+    "surviving_relation_monomial": [
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  "O17_S9": {
+    "colours": 17,
+    "power": 9,
+    "page_tested": 3,
+    "physical_level": 54,
+    "Taylor_diagram": [
+      6,
+      6,
+      3,
+      3,
+      3
+    ],
+    "source_length": 20,
+    "relation_length": 21,
+    "physical_source_relations": {
+      "D2c": 2,
+      "Dphi": 0,
+      "psi": 0
+    },
+    "physical_terminal_relations": 3,
+    "monomial_order": [
+      "scalar_double_path",
+      "quadratic",
+      "determinant",
+      "quartic"
+    ],
+    "tree_images": [
+      {
+        "monomial": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "Euler_multiplier": 2
+      },
+      {
+        "monomial": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "Euler_multiplier": 3
+      }
+    ],
+    "relation_tree_rank": 2,
+    "connecting_image_dimension": 1,
+    "surviving_relation_monomial": [
+      3,
+      0,
+      0,
+      0
+    ],
+    "full_terminal_singlets": {
+      "0": {
+        "stable": 1,
+        "Cartan": 0,
+        "kernel": 1,
+        "by_sites": {
+          "9": 1
+        }
+      },
+      "1": {
+        "stable": 0,
+        "Cartan": 0,
+        "kernel": 0,
+        "by_sites": {}
+      },
+      "2": {
+        "stable": 10,
+        "Cartan": 3,
+        "kernel": 7,
+        "by_sites": {
+          "7": 1,
+          "8": 2,
+          "9": 3,
+          "10": 4
+        }
+      }
+    }
+  },
+  "O18_S10": {
+    "colours": 18,
+    "power": 10,
+    "page_tested": 3,
+    "physical_level": 60,
+    "Taylor_diagram": [
+      7,
+      7,
+      3,
+      3,
+      3
+    ],
+    "source_length": 22,
+    "relation_length": 23,
+    "physical_source_relations": {
+      "D2c": 4,
+      "Dphi": 0,
+      "psi": 0
+    },
+    "physical_terminal_relations": 5,
+    "monomial_order": [
+      "scalar_double_path",
+      "quadratic",
+      "determinant",
+      "quartic"
+    ],
+    "tree_images": [
+      {
+        "monomial": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "Euler_multiplier": 2
+      },
+      {
+        "monomial": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "Euler_multiplier": 4
+      },
+      {
+        "monomial": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "Euler_multiplier": 3
+      },
+      {
+        "monomial": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "Euler_multiplier": 4
+      }
+    ],
+    "relation_tree_rank": 4,
+    "connecting_image_dimension": 1,
+    "surviving_relation_monomial": [
+      4,
+      0,
+      0,
+      0
+    ],
+    "full_terminal_singlets": {
+      "0": {
+        "stable": 1,
+        "Cartan": 0,
+        "kernel": 1,
+        "by_sites": {
+          "10": 1
+        }
+      },
+      "1": {
+        "stable": 0,
+        "Cartan": 0,
+        "kernel": 0,
+        "by_sites": {}
+      },
+      "2": {
+        "stable": 10,
+        "Cartan": 3,
+        "kernel": 7,
+        "by_sites": {
+          "8": 1,
+          "9": 2,
+          "10": 3,
+          "11": 4
+        }
+      }
+    }
+  }
+}
