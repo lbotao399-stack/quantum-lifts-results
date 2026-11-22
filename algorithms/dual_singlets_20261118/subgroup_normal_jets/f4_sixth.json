@@ -1,0 +1,11 @@
+{
+  "group": "F4",
+  "level": 36,
+  "spin9_colour_pairs_checked": 666,
+  "rational_boundary_rank": 46,
+  "boundary_rows_tested": 146,
+  "probes": 55,
+  "integer_image_gcd": 720,
+  "pairing_on_F4_S6": 720,
+  "pairing_on_SO9_S6": 46080
+}

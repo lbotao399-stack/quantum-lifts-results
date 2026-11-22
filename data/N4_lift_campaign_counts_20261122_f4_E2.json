@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "scope": "Campaign-originated highest-weight first images, explicit generator families and independent higher obstructions.",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_cross_bracket.json",
+  "f4_j36": {
+    "target": "S^6",
+    "survives_E2": true,
+    "all_incoming_d1_rank": 0,
+    "certified_d2_source": false,
+    "scalar_pairs": 2704,
+    "differentiated_scalar_components": 763,
+    "mixed_second_ghost_components": 6920,
+    "one_fermion_kernel": 1430,
+    "one_fermion_boundaries": 1326,
+    "one_fermion_bilinear_multiples": 104
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md"
+  ]
+}

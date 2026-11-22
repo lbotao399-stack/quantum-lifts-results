@@ -1,0 +1,92 @@
+[
+  {
+    "first_flavour_colours": [
+      0,
+      0
+    ],
+    "residual_weight": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_columns": 1456,
+    "classical_output_coordinates": 10584,
+    "classical_rank": 1418,
+    "rational_kernel": 38,
+    "nonzero_raw_scores": 1212,
+    "nonzero_on_kernel": []
+  },
+  {
+    "first_flavour_colours": [
+      0,
+      1
+    ],
+    "residual_weight": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_columns": 1456,
+    "classical_output_coordinates": 10584,
+    "classical_rank": 1418,
+    "rational_kernel": 38,
+    "nonzero_raw_scores": 1296,
+    "nonzero_on_kernel": []
+  },
+  {
+    "first_flavour_colours": [
+      7,
+      13
+    ],
+    "residual_weight": [
+      1,
+      1,
+      -1,
+      1
+    ],
+    "source_columns": 378,
+    "classical_output_coordinates": 3976,
+    "classical_rank": 374,
+    "rational_kernel": 4,
+    "nonzero_raw_scores": 376,
+    "nonzero_on_kernel": []
+  },
+  {
+    "first_flavour_colours": [
+      19,
+      29
+    ],
+    "residual_weight": [
+      -4,
+      1,
+      1,
+      0
+    ],
+    "source_columns": 156,
+    "classical_output_coordinates": 1976,
+    "classical_rank": 155,
+    "rational_kernel": 1,
+    "nonzero_raw_scores": 148,
+    "nonzero_on_kernel": []
+  },
+  {
+    "first_flavour_colours": [
+      19,
+      12
+    ],
+    "residual_weight": [
+      0,
+      0,
+      1,
+      -1
+    ],
+    "source_columns": 663,
+    "classical_output_coordinates": 5812,
+    "classical_rank": 650,
+    "rational_kernel": 13,
+    "nonzero_raw_scores": 640,
+    "nonzero_on_kernel": []
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "flavour_degrees": [
+    1,
+    1,
+    1
+  ],
+  "prime": 1000003,
+  "blocks": [
+    {
+      "weight": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "orbit": 1,
+      "columns": 192,
+      "classical_rank_lower": 186,
+      "boundary_rank_lower": 4,
+      "known_cycle_rank_lower": 6,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        2,
+        -1,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 84,
+      "classical_rank_lower": 83,
+      "boundary_rank_lower": 1,
+      "known_cycle_rank_lower": 1,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        2,
+        0,
+        0,
+        -1
+      ],
+      "orbit": 24,
+      "columns": 66,
+      "classical_rank_lower": 65,
+      "boundary_rank_lower": 1,
+      "known_cycle_rank_lower": 1,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        3,
+        0,
+        -1,
+        0
+      ],
+      "orbit": 96,
+      "columns": 24,
+      "classical_rank_lower": 24,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        4,
+        -2,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 21,
+      "classical_rank_lower": 21,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        4,
+        -1,
+        0,
+        -1
+      ],
+      "orbit": 144,
+      "columns": 6,
+      "classical_rank_lower": 6,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        4,
+        0,
+        -1,
+        0
+      ],
+      "orbit": 96,
+      "columns": 6,
+      "classical_rank_lower": 6,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        4,
+        0,
+        0,
+        -2
+      ],
+      "orbit": 24,
+      "columns": 3,
+      "classical_rank_lower": 3,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    }
+  ],
+  "total": {
+    "columns": 8112,
+    "classical_rank_lower": 8058,
+    "boundary_rank_lower": 52,
+    "known_cycle_rank_lower": 54,
+    "unresolved_upper": 0
+  }
+}

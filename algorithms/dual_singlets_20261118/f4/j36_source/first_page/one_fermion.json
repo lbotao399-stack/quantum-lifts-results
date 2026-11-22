@@ -1,0 +1,266 @@
+{
+  "weyl_orbits": [
+    {
+      "weight": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "orbit": 1,
+      "columns": 1456,
+      "output_rows": 10584,
+      "kernel": 38,
+      "koszul": 30,
+      "bilinear_products": 8,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        2,
+        -1,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 879,
+      "output_rows": 7500,
+      "kernel": 16,
+      "koszul": 14,
+      "bilinear_products": 2,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        2,
+        0,
+        0,
+        -1
+      ],
+      "orbit": 24,
+      "columns": 663,
+      "output_rows": 5804,
+      "kernel": 13,
+      "koszul": 11,
+      "bilinear_products": 2,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        3,
+        0,
+        -1,
+        0
+      ],
+      "orbit": 96,
+      "columns": 378,
+      "output_rows": 3942,
+      "kernel": 4,
+      "koszul": 4,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        4,
+        -2,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 288,
+      "output_rows": 3033,
+      "kernel": 3,
+      "koszul": 3,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        4,
+        -1,
+        0,
+        -1
+      ],
+      "orbit": 144,
+      "columns": 156,
+      "output_rows": 1992,
+      "kernel": 1,
+      "koszul": 1,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        4,
+        0,
+        -1,
+        0
+      ],
+      "orbit": 96,
+      "columns": 123,
+      "output_rows": 1532,
+      "kernel": 1,
+      "koszul": 1,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        4,
+        0,
+        0,
+        -2
+      ],
+      "orbit": 24,
+      "columns": 54,
+      "output_rows": 690,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        5,
+        -1,
+        -1,
+        0
+      ],
+      "orbit": 192,
+      "columns": 57,
+      "output_rows": 942,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        5,
+        0,
+        -1,
+        -1
+      ],
+      "orbit": 288,
+      "columns": 21,
+      "output_rows": 376,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        6,
+        -3,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 19,
+      "output_rows": 340,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        6,
+        -2,
+        0,
+        -1
+      ],
+      "orbit": 144,
+      "columns": 18,
+      "output_rows": 296,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        6,
+        -1,
+        -1,
+        0
+      ],
+      "orbit": 288,
+      "columns": 6,
+      "output_rows": 118,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        6,
+        -1,
+        0,
+        -2
+      ],
+      "orbit": 144,
+      "columns": 3,
+      "output_rows": 60,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        6,
+        0,
+        -2,
+        0
+      ],
+      "orbit": 96,
+      "columns": 6,
+      "output_rows": 108,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        6,
+        0,
+        -1,
+        -1
+      ],
+      "orbit": 192,
+      "columns": 3,
+      "output_rows": 56,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    },
+    {
+      "weight": [
+        6,
+        0,
+        0,
+        -3
+      ],
+      "orbit": 24,
+      "columns": 1,
+      "output_rows": 20,
+      "kernel": 0,
+      "koszul": 0,
+      "bilinear_products": 0,
+      "unexplained": 0
+    }
+  ],
+  "total": {
+    "columns": 140608,
+    "kernel": 1430,
+    "koszul": 1326,
+    "bilinear_products": 104,
+    "unexplained": 0
+  }
+}

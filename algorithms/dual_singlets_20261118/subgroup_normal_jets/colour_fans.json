@@ -1,0 +1,103 @@
+[
+  {
+    "embedding": "A2 in G2",
+    "trace_divisor": 2,
+    "graded_dimensions": [
+      8,
+      3,
+      3
+    ],
+    "external_B": "2",
+    "one_loop_colour": [
+      {
+        "normal_occupations": [
+          0,
+          0
+        ],
+        "coefficient": "6"
+      },
+      {
+        "normal_occupations": [
+          1,
+          1
+        ],
+        "coefficient": "2"
+      }
+    ],
+    "two_loop_ordered_colour": [
+      {
+        "normal_occupations": [
+          0,
+          0
+        ],
+        "coefficient": "18"
+      },
+      {
+        "normal_occupations": [
+          0,
+          3
+        ],
+        "coefficient": "4/3"
+      },
+      {
+        "normal_occupations": [
+          1,
+          1
+        ],
+        "coefficient": "34/3"
+      },
+      {
+        "normal_occupations": [
+          3,
+          0
+        ],
+        "coefficient": "4/3"
+      }
+    ],
+    "colour_sums": [
+      "8",
+      "32"
+    ]
+  },
+  {
+    "embedding": "B4 in F4",
+    "trace_divisor": 6,
+    "graded_dimensions": [
+      36,
+      16
+    ],
+    "external_B": "-4",
+    "one_loop_colour": [
+      {
+        "normal_occupations": [
+          0
+        ],
+        "coefficient": "14"
+      },
+      {
+        "normal_occupations": [
+          2
+        ],
+        "coefficient": "4"
+      }
+    ],
+    "two_loop_ordered_colour": [
+      {
+        "normal_occupations": [
+          0
+        ],
+        "coefficient": "98"
+      },
+      {
+        "normal_occupations": [
+          2
+        ],
+        "coefficient": "64"
+      }
+    ],
+    "colour_sums": [
+      "18",
+      "162"
+    ]
+  }
+]

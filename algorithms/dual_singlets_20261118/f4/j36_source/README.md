@@ -6,7 +6,7 @@ $$
 Q_0 X=O_0,\qquad d_2[O_0]=0.
 $$
 
-This determines the differential on the supplied source. Whether a different source hits the sixth glueball power $[S^6]$ remains open. [Native preimage](tree_preimage.json.gz) · [Full coefficient replay](verify.py)
+This determines the differential on the supplied source. The sixth glueball power survives every incoming $d_1$. Whether a different source hits it at $d_2$ remains open. [Complete first-page test](first_page/README.md) [Native preimage](tree_preimage.json.gz) · [Full coefficient replay](verify.py)
 
 The four-dressing calculation extends this conclusion to all 19 closed combinations among 80 candidates. At degree eight one polarized Albert tensor accounts for all 14 multilinear directions missing from the defining traces. At level 36 its quartic pair with a separate invariant factor supplies four independent classical images and zero additional classical cohomology classes. [Classical boundaries in the 80-parameter family](quartic_sources.md) · [Colour tensors and the level-36 source](mixed_colours.md)
 
@@ -58,7 +58,7 @@ $$
 
 The first replay evaluates the commutator and the three glueball factors directly. The second differentiates the trace by the native jet rules, producing 36 canonical trace words and 144 ordered colour assignments. The two evaluations agree on all 2,981 archived component requests. The 7,276 unfolded queries for $\eta_0$ reproduce the first residue. The 40-coordinate and 477-query evaluations of $\eta_K$ agree at both primes. Substituting the archive's own input reproduces its endpoint scores. [Exact values and component digest](ward-boundary.json) · [Endpoint evaluation](ward_boundary.py) · [Independent trace calculation](ward_boundary_words.py)
 
-Both nonzero residues disprove the indicated adjoint identity for the endpoint tables as applied to physical cochains. This test uses the local flavour rule and the tree action. A different $F_4$ source, or a proof that $[S^6]$ survives the incoming $d_1$ using a corrected dual, requires a separate calculation.
+Both nonzero residues disprove the indicated adjoint identity for the endpoint tables as applied to physical cochains. This test uses the local flavour rule and the tree action. The corrected dual subsequently established survival of $[S^6]$ at $d_1$. The search for a different incoming $d_2$ source remains open. [Full dual calculation](first_page/README.md)
 
 ## The two missing metric factors
 

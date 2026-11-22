@@ -7,7 +7,7 @@ from flint import fmpq_mat, fmpz_mat
 
 
 @cache
-def structure():
+def basis():
     from bmn_primary_index import G2_ROOTS
 
     weights = ((1, 0), (-1, 1), (2, -1), (0, 0), (-2, 1), (1, -1), (-1, 0))
@@ -55,12 +55,18 @@ def structure():
     assert set(root_vectors) == set(G2_ROOTS)
     roots = [(0, 0), (0, 0), *G2_ROOTS]
     matrices = cartan + [root_vectors[r] for r in G2_ROOTS]
+    return roots, matrices
+
+
+@cache
+def structure():
+    roots, matrices = basis()
     coordinates = fmpq_mat([m.entries() for m in matrices]).transpose()
     left = (coordinates.transpose() * coordinates).inv() * coordinates.transpose()
     constants = {}
     for i, a in enumerate(matrices):
         for j, b in enumerate(matrices):
-            column = fmpq_mat(49, 1, bracket(a, b).entries())
+            column = fmpq_mat(49, 1, (a * b - b * a).entries())
             coefficients = left * column
             assert coordinates * coefficients == column
             terms = []
