@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "count_scope": "Campaign-originated highest-weight first-image multiplets, explicit BMN generator families and independent higher-obstruction sources.",
+  "cumulative": {
+    "d1": 80,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_discriminant_ward.json",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "su2": {
+    "one_second_jet_taylor_degrees": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "cartan_and_cohomology_ranks": [
+      2,
+      0,
+      10,
+      21
+    ],
+    "excluded_target_twice_left_spins_all_orders": [
+      0,
+      1
+    ],
+    "bmn_second_dotted_singlets_at_twice_left_spin_two": 53,
+    "highest_tested_level": 30,
+    "positive_obstructions": 0
+  }
+}

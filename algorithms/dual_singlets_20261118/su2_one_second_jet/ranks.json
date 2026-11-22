@@ -1,0 +1,42 @@
+[
+  {
+    "degree": 3,
+    "middle": 3,
+    "parent_columns": 0,
+    "incoming_rank": 0,
+    "outgoing_rank": 1,
+    "cohomology": 2,
+    "cartan_rank_of_cubic_cycles_and_products": 2,
+    "cartan_kernel_upper_bound": 0
+  },
+  {
+    "degree": 4,
+    "middle": 6,
+    "parent_columns": 7,
+    "incoming_rank": 4,
+    "outgoing_rank": 2,
+    "cohomology": 0,
+    "cartan_rank_of_cubic_cycles_and_products": 0,
+    "cartan_kernel_upper_bound": 0
+  },
+  {
+    "degree": 5,
+    "middle": 30,
+    "parent_columns": 25,
+    "incoming_rank": 14,
+    "outgoing_rank": 6,
+    "cohomology": 10,
+    "cartan_rank_of_cubic_cycles_and_products": 10,
+    "cartan_kernel_upper_bound": 0
+  },
+  {
+    "degree": 7,
+    "middle": 315,
+    "parent_columns": 1400,
+    "incoming_rank": 258,
+    "outgoing_rank": 36,
+    "cohomology": 21,
+    "cartan_rank_of_cubic_cycles_and_products": 21,
+    "cartan_kernel_upper_bound": 0
+  }
+]
