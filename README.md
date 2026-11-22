@@ -1,5 +1,7 @@
 # Fortuitous Q-cohomology and quantum lifting: computational results
 
+At least one class survives to all orders in the formal perturbative complex at every level of the bosonic $SU(3)$ $B_1$ tower. Both seeds use the same repaired level-20 relation. At level 30 the full incoming $d_2$ into the nine-letter block has rank zero over $\mathbb Q$. [Bosonic tower proof](algorithms/su3_j34_20261118/local_relations/README.md) · [Level-30 source and target](algorithms/su3_j30_classical_ranks/bmn_return/README.md)
+
 The two extremal exterior metrics in the $F_4$ level-36 target are $-4$ and $2$. Restoring them in the endpoint contraction on Dot’s proposed source gives $283511008535040000/7-283511008535040000/7=0$ exactly. Four colour components canceled from the original tables and enter the corrected sum. Two native trace calculations agree on all four. [Calculation and replay](algorithms/dual_singlets_20261118/f4/j36_source/README.md#the-two-missing-metric-factors)
 
 New $d_1$ lifts **0** (18 total). New fortuitous BMN generator families **0** (11 explicit, at least 16 including index-forced families). Campaign $d_2$, $d_3$ and nonperturbative counts **0, 1, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_f4_metric.json)

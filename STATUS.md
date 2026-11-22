@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## Two formally surviving bosonic SU(3) seeds
+
+The $j=34$ and $j=36$ graviton relations give closed perturbative representatives for the charge-conjugation-even and odd seeds respectively. The second local Cartan multiplication map has rational rank 53 on 53 dimensions. The mixed $SU(2)$ threshold pairings are $120294720$ and $19780588800$. The first instanton matrix element for each remains open. New $d_1$ lifts **0** (18 total). New fortuitous generator families **0** (11 explicit). [Exact proofs and replay](algorithms/su3_j34_20261118/local_relations/README.md)
+
 ## The degree-eight exceptional invariant and the $F_4$ level-36 source
 
 For eight labelled adjoint inputs the defining traces span 2877 of 2891 invariant tensors. One Albert-algebra tensor of permutation type $(4,4)$ supplies the remaining 14 by polarization. At level 36 all four projected sources formed from the contracted quartic pair and a separate invariant factor have linearly independent classical images modulo the prior 61. The source kernel in these four directions is zero. A different incoming $d_2$ on the sixth glueball power remains open. New $d_1$ lifts **0**. New fortuitous generators **0**. [Proof, exact ranks and replays](algorithms/dual_singlets_20261118/f4/j36_source/mixed_colours.md)

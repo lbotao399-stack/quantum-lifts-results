@@ -1,5 +1,7 @@
 # The SU(3) level-34 source and its direct second-order action
 
+The 6270-term even class admits a rational all-order closed lift in the formal relative complex. Its defining relation also gives a local primitive used by the distinct level-36 seed. The calculations below archive individual supercharge coefficients and partial corrections. [Formal proof and replays](local_relations/README.md)
+
 The highest component of Kim, Lee, Lee and Song's $\mathcal O_{34}^{(3)}$ has BMN charges $(2J;q_1,q_2,q_3)=(6;8,5,4)$. Our archived expansion of their trace relations has 5,815 terms in the paper's fields. The component even under charge conjugation $C$ has 6,270. Subtracting that component from the original gives exactly one half of $Q_0$ on the archived 78-term primitive. All 910 terms of the difference cancel. Here $Q_0$ is the classical supercharge. [Published construction, §4.1](https://arxiv.org/html/2610.20340v2#S4.SS1) · [Parity primitive](odd_parity_primitive.json.gz)
 
 ## Classical closure at three colours

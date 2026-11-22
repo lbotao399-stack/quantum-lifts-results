@@ -1,5 +1,7 @@
 # SU(3), level 30: the nine-letter target of R-007
 
+The rational Cartan kernel in this block is one-dimensional. Its explicit class has a fourfold Taylor return to a nonzero nine-letter BMN product. The incoming $d_2$ has rank zero on its full source over $\mathbb Q$, by four independent marked graviton products and Dot's all-order R-007 class. The modular results below record the earlier coordinate calculation. [Rational proof and replay](bmn_return/README.md)
+
 From the repository root run `python3 algorithms/su3_j30_classical_ranks/verify_chains.py` (standard library; assertions enabled). The result must equal [`N4_SU3_j30_verified_chains_20261119.json`](../../data/N4_SU3_j30_verified_chains_20261119.json). This verifies the records and their common ordered coordinates. It does not regenerate the large eliminations or multiply the packed matrices again.
 
 The verifier reads the following committed inputs:
