@@ -1,0 +1,62 @@
+{
+  "classical_source_dimensions": {
+    "8": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    "9": [
+      2,
+      1,
+      1,
+      58,
+      0,
+      6,
+      0
+    ]
+  },
+  "first_image_rank_in_KKLP_source": 1,
+  "product_minors": [
+    {
+      "first_length": 8,
+      "t": 4,
+      "products": 3,
+      "determinant": "-764411904"
+    },
+    {
+      "first_length": 9,
+      "t": 1,
+      "products": 1,
+      "determinant": "-192"
+    },
+    {
+      "first_length": 9,
+      "t": 3,
+      "products": 58,
+      "determinant": "-14957922705182807008599544741904085543536784298001232318637553059904124797795813730848353042602328077891537236001816576"
+    },
+    {
+      "first_length": 9,
+      "t": 5,
+      "products": 6,
+      "determinant": "-233730223590762086400000"
+    }
+  ],
+  "returned_threshold": {
+    "raw_words": 24,
+    "one_word_returns": [
+      -691200,
+      1382400
+    ],
+    "total_return": 24883200,
+    "single_jet_bracket_tests": 77175
+  },
+  "closed_source_dimensions_after_first": [
+    3,
+    67
+  ]
+}
