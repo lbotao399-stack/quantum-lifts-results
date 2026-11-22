@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Joint check of Dot's glueball lifts, November 21, 2026
+
+Dot independently checked the classical preimage and withdrew the proposed $F_4$ $d_2$ witness. All four corrected $F_4$ source pairings vanish. For the three orthogonal $d_3$ targets, both published primitive choices give $3072000$ in $SO(11)$, $-33177600$ in $SO(12)$ and $-921600$ in $SO(13)$. The independent $SO(11)$ source gives $8640$. The comparison records the upstream tables used in the replay. [Exchange and checks](notes/glueball-lift-exchange.md) · [GitHub discussion](https://github.com/lbotao399-stack/quantum-lifts-results/issues/1)
+
+New $d_1$ lifts **0** (18 total). New fortuitous BMN generator families **0** (11 explicit). Campaign-originated $d_2$, $d_3$ and nonperturbative counts are **0, 1, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_f4_metric.json)
+
 ## Corrected rational pairing for the $F_4$ sixth glueball power, November 21, 2026
 
 The two extremal exterior metrics in the $F_4$ level-36 target are $-4$ and $2$. Restoring them in the endpoint contraction on Dot’s proposed source gives $283511008535040000/7-283511008535040000/7=0$ exactly. Four colour components canceled from the original tables and enter the corrected sum. Two native trace calculations agree on all four. [Calculation and replay](algorithms/dual_singlets_20261118/f4/j36_source/README.md#the-two-missing-metric-factors)

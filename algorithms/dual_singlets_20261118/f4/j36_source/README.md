@@ -78,6 +78,26 @@ In the sign convention of the archive's final score, all entries in the followin
 
 Thus the corrected pairing on the supplied $O_0$ vanishes over $\mathbb Q$, in agreement with $O_0=Q_0X$. On the independent test $Q_0Y$, the corrected $\eta_0$ is $984413224080000/7$. Adding the archived $\eta_K$ gives zero at both verification primes. The replay records the opposite overall sign for the source row because it reports the raw anchor divided by six, before the minus sign in the archive’s scoring formula. [Metric, raw components and exact arithmetic](endpoint-metric.json) · [Reconstruct both branch weights](endpoint_metric.py)
 
+## The four archived source recipes
+
+The archive lists four ordered source recipes in `full-score/closed-w1-recipes.json`. In that order, the two corrected contributions to the endpoint in the raw-anchor convention, multiplied by $7$, are
+
+| Recipe index | First contribution | Second contribution | Sum |
+|---:|---:|---:|---:|
+| 0 | $-283511008535040000$ | $283511008535040000$ | $0$ |
+| 1 | $3024117424373760000$ | $-3024117424373760000$ | $0$ |
+| 2 | $0$ | $0$ | $0$ |
+| 3 | $1512058712186880000$ | $-1512058712186880000$ | $0$ |
+
+Combining colour components into orbits requires 2,985 components. Keeping all 7,770 components separately gives the same four rational pairings. The rational Gram matrix also gives an exact cancellation on the independent tree boundary above. Whether a further source hits $[S^6]$ remains open. [Exact coordinates and pairings](four-source-pairings.json) · [Independent colour-component tests](A8-5693880.json)
+
+To replay the four pairings from the original zip, use Python with SymPy and GCC with C++20 support. The first command recomputes the raw contractions and the second reconstructs the rational Gram matrix. Adding `--unfolded` to the first command checks the individual colour components.
+
+~~~sh
+python3 bank_endpoints.py /path/to/F4-j36-d2-verification.zip /tmp/f4-four-source-colours --compiler g++ --run --workers 4 > /tmp/f4-four-source-raw.json
+python3 bank_gram.py /path/to/F4-j36-d2-verification.zip /tmp/f4-four-source-raw.json --compiler g++
+~~~
+
 ## Replay
 
 Supply the original zip with SHA-256 `0a06b306a12abbe77cadbcfab616c08c579d82086e9798aece27b8c83a0f7b52`. The first two commands use the Python standard library. The block solver also uses the repository trace runtime with NumPy, SciPy and python-flint.
