@@ -1,0 +1,20 @@
+{
+  "source_terms": 6139,
+  "degree_eleven_nonzero": 0,
+  "cubic_ratios": {
+    "0x7be": "-25477120",
+    "0x7eb": "-5914624",
+    "0xb7e": "-25477120",
+    "0xbe7": "-5914624",
+    "0xe7b": "-5914624",
+    "0xeb7": "-5914624"
+  },
+  "ratio_of_components": "1555/361",
+  "radial_coefficient": "384/5",
+  "three_scalar_Wick_colour_ratios": {
+    "0x7be": "-11739856896",
+    "0x7eb": "-13627293696/5"
+  },
+  "colour_pairs_tested": 36,
+  "colour_triples_tested": 120
+}

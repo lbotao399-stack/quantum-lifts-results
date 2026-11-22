@@ -1,0 +1,52 @@
+# Three scalar contractions on the SU(3) one-instanton background
+
+At the level-30 R-007 source, the response to three quantum fluctuations of $\phi^1$ has 85 nonzero rational coefficients. Contracting every colour term against the three-jet component of Dot's radial target gives 14 nonzero exterior coefficients at the first polarization below. The term has zero shrinking-sphere flux at fixed positive instanton size when the supercurrent is evaluated independently on the classical background. The physical projected Ward coefficient remains open. [Source and five radial traces](README.md) · [Background fields and scalar Green function, §§3.2–3.3 and Appendix C](https://arxiv.org/abs/hep-th/0212332)
+
+## Colour tensor of the source
+
+Use the two-dimensional instanton colour plane followed by the transverse colour. In an orthonormal local ADHM frame the lowest chiral gaugino and scalar depend on two local exact modes and the two lifted modes per flavour. Use their order in the pinned code. In each of the 6,139 source words replace precisely three occurrences of $\phi^1$ with the same arbitrary traceless colour matrix. The remaining two scalar fields and five fermions give mode degree nine. The trace-free ADHM scalar contains both the antisymmetric projected dyad and the scalar correction on the instanton colour plane. Taking the trace fixes their relative coefficient. The recorded field coefficients use the same projected-dyad ratios as the preceding source probe. [ADHM source evaluation and calibration](source_fluctuations.py) · [Checked coefficients](source_fluctuations.json)
+
+A homogeneous cubic in eight coordinates has 120 coefficients. Take its values on all sums of three basis elements with repetition. The basis consists of the row-major matrix units with the last diagonal omitted and the first two diagonal units made traceless by subtracting the last one. For each pair of coordinates subtract the two pure cubes. The remaining two measurements are related to the two mixed coefficients by the matrix with rows $(4,2),(2,4)$, of determinant 12. Subtracting pure and mixed terms then determines each distinct triple. The 120 evaluations give 22 colour monomials, 46 Grassmann monomials and 85 nonzero joint coefficients. Two further dense matrices give exact equality with an independent, slot-by-slot replacement of three scalar fields. [Cubic coefficients](cubic_colours.json) · [Interpolation and independent checks](cubic_colours.py)
+
+## Propagator and radial contraction
+
+Use unit instanton size, the radial insertion at its centre, and the source displaced by $3/4$ along the real quaternion axis in the regular ADHM gauge. Let $X$ be a traceless colour matrix at the source and write $\Pi_0$ for subtraction of one third of the defining trace times the identity. In the scalar propagator of Green and Kovacs remove its common factor $g_{\rm YM}^2\epsilon^{ABCD}/(2\pi^2 |x-y|^2)$ when evaluating colour ratios. The two terms of their equation (3.29) give the following transport of $X$. The overlap of the two ADHM frames is $M=\operatorname{diag}(4/5,4/5,1)$. The projection of the constant ADHM matrix $b\bar b$ on the two frames is $H_x=\operatorname{diag}(16/25,16/25,0)$ and $H_y=\operatorname{diag}(1,1,0)$.
+
+$$
+\Pi_0(MXM)+\frac{9}{32}\operatorname{Tr}(XH_x)\Pi_0(H_y).
+$$
+
+The embedded traceless two-by-two block acquires the factor $16/25$, the two off-diagonal doublets acquire $4/5$, and $\operatorname{diag}(1,1,-2)$ is fixed. The program checks this decomposition on the complete trace-dual basis. In particular the separable term of the $SU(3)$ propagator contributes to the singlet. On the source, the two local exact coordinates are $(4\eta_\alpha-3\bar\xi^{\dot\alpha})/5$, with spin frames identified by the real displacement. At the radial centre the corresponding local coordinates are $\eta_\alpha$. The first derivatives of the bosonic radial profiles and the regular-gauge connection vanish there. For a polarized scalar derivative only the differentiation of the exact spinor combination contributes, by $\partial_{\alpha\dot\alpha}\zeta_\beta$ in the chosen bispinor directions. [Green function and ADHM formulae](https://arxiv.org/pdf/hep-th/0212332) · [Native field and colour replay](background_exchange.py)
+
+Use the five trace terms of the previously verified radial polynomial in $A,B,C$. Here the fields are conjugated to the source, so their flavours are $14,24,34$. Differentiate $B,C$ in the two independent dotted directions, using one common undotted polarization. Insert the three propagators in the five undifferentiated $A$ slots. Direct enumeration of all $5\cdot4\cdot3=60$ labelled placements in each trace product agrees with differentiating the cubic trace times its quadratic bracket, on all 22 colour monomials. All six uncontracted radial fields contribute one mode of flavour four. Multiplication with the source gives the four occupations $(5,5,5,6)$.
+
+| Common undotted polarization | Nonzero radial colour monomials | Nonzero colour terms after multiplying the source | Distinct exterior coefficients after summation |
+|---|---:|---:|---:|
+| $(1,0)$ | 21 | 15 | 14 |
+| $(0,1)$ | 0 | 0 | 0 |
+| $(1,1)$ | 21 | 21 | 18 |
+
+For each flavour, the mode positions are the two $\eta$, the two $\bar\xi$, then $\nu,\bar\nu$. Use the exterior order of the verifier. For polarization $(1,0)$ the component missing $(\nu^1,\bar\nu^2,\eta^3_2)$ divided by the component missing $(\nu^1,\bar\xi^{\dot2\,2},\bar\nu^3)$ is $-3/4$. This ratio is independent of all common elementary-field and propagator factors. [All component values](background_exchange.json)
+
+## Local Ward residue
+
+At fixed smooth instanton moduli the graphs just calculated have three propagators between the source and the radial insertion. Their factor multiplying the classical Poincaré supercurrent is independent of the current position $z$. On a sphere of radius $\epsilon$ about the source, disjoint from the radial insertion, the current profile is smooth for positive instanton size. For each Grassmann coefficient the absolute flux is bounded by $2\pi^2\epsilon^3$ times a finite uniform bound on the current times the absolute endpoint coefficient. Its limit at fixed moduli is zero. The same argument passes through a compact moduli cutoff with instanton size bounded below. No use of pointwise conservation on lifted supermoduli is required.
+
+There is a stronger statement at the minimum number of direct lines. In the chiral orientation three free pairs reduce the total minimum occupations to $(6,6,6,6)$. The classical current must then contribute its term of degree three, with one mode of each matter flavour. In the opposite orientation five pairs give the same saturation and require the degree-one current. At fixed collective coordinates the endpoint factor is again independent of the position of this current. [Exact counts on the two endpoints](flavour_modes.md)
+
+For the cubic current use the projected anti-gaugino of Dorey, Hollowood, Khoze and Mattis, equations (4.61)–(4.62). The gauge equation has its first possible residual in fermion degree four. The chiral Dirac equation in degree one and the scalar equation in degree two are solved. The cubic residual of the anti-chiral Dirac equation is a chiral Dirac zero mode. Its inner products with the basis of zero modes are the derivatives of the quartic collective-coordinate action. To see this, vary that action along a fermionic zero mode after substituting the scalar solution. The scalar-variation term vanishes by its equation of motion. The term with the variation of the projected anti-gaugino vanishes by the linear chiral equation. Integration by parts leaves precisely the pairing of the cubic residual with the chosen zero mode. The quartic action in Green and Kovacs (3.5)–(3.6) depends only on $\nu,\bar\nu$. All 16 derivatives along exact modes vanish. [Dirac residual, inner product and reduced action, equations (4.37), (4.61)–(4.62) and (5.18)–(5.26)](https://arxiv.org/pdf/hep-th/0206063) · [Quartic action](https://arxiv.org/pdf/hep-th/0212332)
+
+The exact zero modes are in the embedded $\mathfrak{sl}_2$ colour block. The two lifted zero modes per flavour are off diagonal between that block and the transverse colour. These spaces are orthogonal under the defining trace, and the integrated zero-mode pairing on the exact subspace is nondegenerate. Hence the cubic residual lies pointwise in the off-diagonal colour space. In the Noether identity the only term left in degree three pairs this residual with the degree-zero supersymmetry variation of the chiral gaugino. That variation is the embedded field strength contracted with a constant supersymmetry parameter. Its defining trace against any off-diagonal matrix vanishes pointwise. Improvements of the conserved current have identically zero divergence. In the opposite orientation the degree-one current uses only the bosonic equations and the linearized fermion equations, all of which are solved. [Elementary transformations (4.22)–(4.23) and the sixteen exact modes](https://arxiv.org/pdf/hep-th/0206063) · [Explicit one-instanton zero modes, Appendix C](https://arxiv.org/pdf/hep-th/0212332)
+
+Both required current components consequently have zero flux on every enclosing sphere at every smooth instanton size. This excludes the whole minimum direct-contraction contribution with a classical spectator current in either orientation. It applies to all radial words and polarizations and does not require cancellation among the selected 14 endpoint components. The replay expands the quartic action, checks all 24 derivatives and verifies the twelve pointwise embedded/off-diagonal trace pairings. [Algebraic check](current_flux.py) · [Values](current_flux.json)
+
+A finite-size Ward residue must have a current singularity at the enclosed insertion. The small-instanton boundary may also contribute when the cutoff is removed, as may the contact and operator-mixing terms in the matched physical matrix element. The calculation determines the complete colour sum for the specified three lines and five radial words. It does not evaluate any of those additional terms. [Earlier flavour bounds](flavour_modes.md)
+
+~~~sh
+python3 source_fluctuations.py --all-colours > /tmp/r007-fluctuations.json
+cmp /tmp/r007-fluctuations.json source_fluctuations.json
+python3 cubic_colours.py
+python3 current_flux.py
+python3 background_exchange.py > /tmp/r007-background.json
+cmp /tmp/r007-background.json background_exchange.json
+~~~

@@ -1,0 +1,109 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 16,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 3,
+    "additional_G2_odd_BMN_generators": 2,
+    "candidate_G2_generators_for_level_36_singlet": [
+      {
+        "level": 36,
+        "weight": [
+          6,
+          6,
+          6
+        ],
+        "allowed_odd_lengths": [
+          11,
+          13,
+          15
+        ]
+      }
+    ],
+    "USp4_single_additional_core_alternatives_remaining": [
+      [
+        7,
+        5,
+        4
+      ]
+    ],
+    "G2_minimum_by_level": {
+      "44": {
+        "odd_generators": 2
+      },
+      "62": {
+        "distinct_odd_generator_weights": 2
+      }
+    }
+  },
+  "count_scope": "Campaign-originated results. External reproductions are credited separately.",
+  "date": "2026-11-22",
+  "phase": "Six-substitution SO(19) first images and the SU(3) minimum spectator-current Ward flux",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_quadratic.json",
+  "increments": {
+    "d1": 20,
+    "fortuitous_generator_families": 0,
+    "index_forced_BMN_generators": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 77,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "counted": [
+    {
+      "group": "SO(19)",
+      "power": 15,
+      "terminal_length": 30,
+      "highest_weights_by_substitution_degree": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "level_range": [
+        84,
+        90
+      ]
+    },
+    {
+      "group": "SO(19)",
+      "power": 16,
+      "terminal_length": 32,
+      "highest_weights_by_substitution_degree": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "level_range": [
+        90,
+        96
+      ]
+    }
+  ],
+  "references": [
+    "algorithms/dual_singlets_20261118/orthogonal_glueballs/six_substitutions.md",
+    "algorithms/su3_j30_classical_ranks/instanton_probe/background_exchange.md"
+  ]
+}

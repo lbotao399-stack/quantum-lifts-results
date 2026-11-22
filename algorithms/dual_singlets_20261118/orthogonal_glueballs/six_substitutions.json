@@ -1,0 +1,142 @@
+{
+  "letters": 17,
+  "ordered_pairs": 145,
+  "cases": [
+    {
+      "colours": 7,
+      "power": 4,
+      "top": "-4320",
+      "checked_columns": 105,
+      "ordered_terms": 29,
+      "direct_word_comparison": true
+    },
+    {
+      "colours": 9,
+      "power": 5,
+      "top": "4320",
+      "checked_columns": 1092,
+      "ordered_terms": 317,
+      "direct_word_comparison": true
+    },
+    {
+      "colours": 10,
+      "power": 6,
+      "top": "-17280",
+      "checked_columns": 2268,
+      "ordered_terms": 704,
+      "direct_word_comparison": true
+    },
+    {
+      "colours": 19,
+      "power": 15,
+      "top": "48660480",
+      "checked_columns": 2661,
+      "ordered_terms": 849,
+      "direct_word_comparison": false
+    },
+    {
+      "colours": 19,
+      "power": 16,
+      "top": "-123863040",
+      "checked_columns": 2661,
+      "ordered_terms": 849,
+      "direct_word_comparison": false
+    }
+  ],
+  "highest_weights_by_degree": [
+    [
+      {
+        "twice_dotted_spin": 0,
+        "flavour_Dynkin": [
+          0,
+          0
+        ],
+        "dimension": 1
+      }
+    ],
+    [
+      {
+        "twice_dotted_spin": 1,
+        "flavour_Dynkin": [
+          0,
+          1
+        ],
+        "dimension": 6
+      }
+    ],
+    [
+      {
+        "twice_dotted_spin": 0,
+        "flavour_Dynkin": [
+          0,
+          2
+        ],
+        "dimension": 6
+      },
+      {
+        "twice_dotted_spin": 2,
+        "flavour_Dynkin": [
+          1,
+          0
+        ],
+        "dimension": 9
+      }
+    ],
+    [
+      {
+        "twice_dotted_spin": 1,
+        "flavour_Dynkin": [
+          1,
+          1
+        ],
+        "dimension": 16
+      },
+      {
+        "twice_dotted_spin": 3,
+        "flavour_Dynkin": [
+          0,
+          0
+        ],
+        "dimension": 4
+      }
+    ],
+    [
+      {
+        "twice_dotted_spin": 0,
+        "flavour_Dynkin": [
+          2,
+          0
+        ],
+        "dimension": 6
+      },
+      {
+        "twice_dotted_spin": 2,
+        "flavour_Dynkin": [
+          0,
+          1
+        ],
+        "dimension": 9
+      }
+    ],
+    [
+      {
+        "twice_dotted_spin": 1,
+        "flavour_Dynkin": [
+          1,
+          0
+        ],
+        "dimension": 6
+      }
+    ],
+    [
+      {
+        "twice_dotted_spin": 0,
+        "flavour_Dynkin": [
+          0,
+          0
+        ],
+        "dimension": 1
+      }
+    ]
+  ]
+}

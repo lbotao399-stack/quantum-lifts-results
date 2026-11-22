@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## Twenty first-differential multiplets in SO(19) and the SU(3) current contour
+
+For glueball powers 15 and 16 the sixfold substitutions give the ordered first pairings $48660480$ and $-123863040$. Applying complementary substitutions certifies two 64-dimensional images, ten highest-weight multiplets each. The campaign has 77 first pairings and 11 explicit fortuitous families. In the SU(3) R-007 channel the cubic response contains 85 terms. At one regular instanton configuration three background scalar propagators give 14 nonzero endpoint components in the selected radial projection. The integrated classical spectator current has zero flux at the minimum direct contraction order in both orientations. The physical instanton matrix element and the search for a second supercharge differential remain open. [SO(19) proof](algorithms/dual_singlets_20261118/orthogonal_glueballs/six_substitutions.md) · [SU(3) proof and replay](algorithms/su3_j30_classical_ranks/instanton_probe/background_exchange.md) · [Counts](data/N4_lift_campaign_counts_20261122_six_substitutions.json)
+
 ## SO(13) second-page rank and SU(3) instanton weights
 
 The incoming $d_2$ at $(7,7;2,0,0)$ has rank zero. The auxiliary $SL(2)$ raising matrices reduce 1,848 zero-weight polarizations to 208 representatives of 46 determinant types. The second score is an explicit rational functional of 20 commuting-plane coordinates. Two first-differential families have 30 nonzero native coefficients, including two earlier $SO(7)$ controls. This phase adds 28 $d_1$ multiplets and zero fortuitous generators. The $SU(3)$ instanton flavour bound excludes both separated classical endpoints of the proposed R-007 channel. [Algorithms](algorithms/dual_singlets_20261118/orthogonal_glueballs/quadratic_so13/README.md) · [Flavour bound](algorithms/su3_j30_classical_ranks/instanton_probe/flavour_modes.md) · [Counts](data/N4_lift_campaign_counts_20261122_quadratic.json)

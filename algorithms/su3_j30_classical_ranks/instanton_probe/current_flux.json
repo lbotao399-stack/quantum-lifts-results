@@ -1,0 +1,16 @@
+{
+  "quartic_terms": 6,
+  "exact_derivatives_zero": 16,
+  "lifted_derivatives_nonzero": 8,
+  "cubic_terms_per_nonzero_derivative": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "pointwise_colour_pairings_zero": 12
+}
