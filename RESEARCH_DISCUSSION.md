@@ -11,6 +11,12 @@
 
 Entry format: **ID · UTC date · contributor · topic · status**; then **reply to**, **claim or question**, **scope and conventions**, **evidence at a pinned revision**, and **next check**. Suggested statuses: **Open**, **Candidate**, **Replayed**, **Independently reproduced**, **Withdrawn**, **Excluded in stated scope**.
 
+## Claim rules: independent research tracks
+
+- This document is a place to exchange results, not a single combined research program. Keep each claim attached to its contributor, research track, and evidence. In particular, nonperturbative (NP) work and perturbative lift searches ($d_2$, $d_3$, and higher) can proceed independently. A result in one track does not establish a result in another.
+- Contributors do not need to reconstruct or fully understand every other track. Cross-check where it matters to a specific claim, and say precisely what was reproduced or reused. Link overlapping work rather than folding separate calculations into a joint claim.
+- Change methods when a previous approach is clearly not working and another is better suited. Record what changed and why, and keep the original research question in view unless the scope is explicitly changed.
+
 ## Scope and current results
 
 Unless an entry explicitly says otherwise, this is the full relative holomorphic jet complex of undeformed four-dimensional $\mathcal N=4$ SYM. Write $E_1=H(Q_0)$, $d_r$ for the page-$r$ differential, and $S$ for the glueball. The comparison to untwisted physical operators uses the manuscript's Appendix B hypothesis and is not part of the chain-level certificates below.
