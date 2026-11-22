@@ -1,0 +1,539 @@
+{
+  "first_and_second_shear_tests": [
+    {
+      "spin": 0,
+      "flavour": 0,
+      "first_equations": 2381,
+      "first_pivots": 184,
+      "first_expanded_equations": 10719,
+      "forward_pairs": 1899,
+      "forward_separate_components": 1952,
+      "triple_patterns": [
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        }
+      ]
+    },
+    {
+      "spin": 0,
+      "flavour": 1,
+      "first_equations": 2381,
+      "first_pivots": 184,
+      "first_expanded_equations": 10719,
+      "forward_pairs": 1899,
+      "forward_separate_components": 1952,
+      "triple_patterns": [
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        }
+      ]
+    },
+    {
+      "spin": 0,
+      "flavour": 2,
+      "first_equations": 2381,
+      "first_pivots": 184,
+      "first_expanded_equations": 10719,
+      "forward_pairs": 1899,
+      "forward_separate_components": 1952,
+      "triple_patterns": [
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        }
+      ]
+    },
+    {
+      "spin": 1,
+      "flavour": 0,
+      "first_equations": 2381,
+      "first_pivots": 184,
+      "first_expanded_equations": 10719,
+      "forward_pairs": 1899,
+      "forward_separate_components": 1952,
+      "triple_patterns": [
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        }
+      ]
+    },
+    {
+      "spin": 1,
+      "flavour": 1,
+      "first_equations": 2381,
+      "first_pivots": 184,
+      "first_expanded_equations": 10719,
+      "forward_pairs": 1899,
+      "forward_separate_components": 1952,
+      "triple_patterns": [
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        }
+      ]
+    },
+    {
+      "spin": 1,
+      "flavour": 2,
+      "first_equations": 2381,
+      "first_pivots": 184,
+      "first_expanded_equations": 10719,
+      "forward_pairs": 1899,
+      "forward_separate_components": 1952,
+      "triple_patterns": [
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        },
+        {
+          "letters": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "tests": 12,
+          "separate_nonzero_components": 304
+        }
+      ]
+    }
+  ],
+  "admissible_source_shapes": {
+    "12": [
+      [
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "13": [
+      [
+        4,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        3,
+        3,
+        3,
+        1
+      ]
+    ],
+    "14": [
+      [
+        5,
+        3,
+        3,
+        3
+      ],
+      [
+        4,
+        4,
+        3,
+        3
+      ],
+      [
+        4,
+        3,
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        3,
+        3,
+        3,
+        1,
+        1
+      ]
+    ]
+  }
+}
