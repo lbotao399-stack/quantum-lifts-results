@@ -131,13 +131,39 @@ class PfaffianCoefficient:
         return -Fraction(value,multiplicity)
 
 
-def orientations(letters):
+def multiset_orders(letters):
+    counts=Counter(letters)
+    keys=sorted(counts)
+    path=[]
+    def build():
+        if len(path)==len(letters):
+            yield tuple(path)
+            return
+        for key in keys:
+            if counts[key]:
+                counts[key]-=1
+                path.append(key)
+                yield from build()
+                path.pop()
+                counts[key]+=1
+    yield from build()
+
+
+@lru_cache(None)
+def _orientations(letters):
     out = set()
-    for w in set(permutations(letters)):
+    for tail in multiset_orders(letters[1:]):
+        w=(letters[0],)+tail
+        if any(word[i:]+word[:i]<w for word in (w,w[::-1]) for i,c in enumerate(word) if c==w[0]):
+            continue
         s, raw = traces.so_canon((w,))
         if s:
             out.add(raw[0])
-    return sorted(out)
+    return tuple(sorted(out))
+
+
+def orientations(letters):
+    return _orientations(tuple(sorted(letters)))
 
 
 def remove_once(word, subset):

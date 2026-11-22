@@ -1,4 +1,4 @@
-"""Invert the tree charge term by term on orthogonal first-jet words of odd total length."""
+"""Invert the tree charge on orthogonal first-jet words containing an odd trace."""
 from collections import Counter
 from fractions import Fraction
 from itertools import product
@@ -8,8 +8,8 @@ from fortuity.full.letters import Q_letter, is_ferm
 
 
 def primitive(word):
-    if sum(map(len,word)) % 2 == 0:
-        raise ValueError('An odd total length is required')
+    if not any(len(trace)%2 for trace in word):
+        raise ValueError('An odd-length trace is required')
     if any(i+j+len(theta)!=1 for trace in word for i,j,theta in trace):
         raise ValueError('Every factor must be a first jet')
     index = next(i for i, trace in enumerate(word) if len(trace)%2)

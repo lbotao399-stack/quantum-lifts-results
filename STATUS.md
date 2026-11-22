@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Third differential in the full relative $SO(11)$ complex, November 21, 2026
+
+At $j=36$, the classical glueball $S^6$ survives $d_1$ and $d_2$. The corrected second dual annihilates a complete basis of 29 finite-colour relations in the relevant flavour singlet. For the degree-15 polarized Pfaffian source, the third pairing gives $-17280+25920=8640$. The bare terms $Q_2O_0$, $Q_2O_1$ and $Q_3O_0$ vanish by flavour degree. The comparison to physical quantum local operators uses the hypothesis in Appendix B of the all-loop manuscript. [Cochains, adjoint identities and A8 replays](algorithms/dual_singlets_20261118/orthogonal_glueballs/so11_j36/README.md)
+
+New $d_1$ pairings **0** (18 cumulative). New fortuitous BMN generator families **0** (11 explicit, at least 16 including index-forced families). New campaign $d_3$ lifts **1**. [Count ledger](data/N4_lift_campaign_counts_20261121_so11_d3.json)
+
 ## First differentials in three orthogonal groups, November 21, 2026
 
 The full relative jet complex gives three new rational first differentials. The level-36 $SO(10)$ image is $-6[S^6]$ in the specified source convention. The level-54 $SO(17)$ and level-60 $SO(18)$ sources have nonzero first-image coefficients $-90$ and $-60$ along the stated mixed trace monomials. Both proposed third-order sources are consumed on the first page. [Determinant sources, exact coefficients and replay](algorithms/dual_singlets_20261118/orthogonal_glueballs/README.md)
