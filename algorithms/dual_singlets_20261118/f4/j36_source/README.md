@@ -8,6 +8,8 @@ $$
 
 This determines the differential on the supplied source. Whether a different source hits the sixth glueball power $[S^6]$ remains open. [Native preimage](tree_preimage.json.gz) · [Full coefficient replay](verify.py)
 
+The four-dressing calculation extends this conclusion to all 19 closed combinations among 80 candidates. At degree eight one polarized Albert tensor accounts for all 14 multilinear directions missing from the defining traces. At level 36 its quartic pair with a separate invariant factor supplies four independent classical images and zero additional classical cohomology classes. [Classical boundaries in the 80-parameter family](quartic_sources.md) · [Colour tensors and the level-36 source](mixed_colours.md)
+
 ## Trace identity and primitive
 
 The archive contains 6,861 rational terms, with two-, three- and five-letter colour traces. On its four Cartan generators all 35 quartic coefficients of $12\operatorname{Tr}_{26}(X^4)-(\operatorname{Tr}_{26}X^2)^2$ vanish. Here $X$ in the trace identity ranges over colour matrices. Density of regular semisimple elements extends the identity to $\mathfrak f_4$.

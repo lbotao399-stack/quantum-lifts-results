@@ -1,0 +1,144 @@
+{
+  "archive_sha256": "0a06b306a12abbe77cadbcfab616c08c579d82086e9798aece27b8c83a0f7b52",
+  "source": {
+    "seeds": 20,
+    "dressings": 4,
+    "largest_trace_in_slots": 8,
+    "projected_rank": 61,
+    "parameter_kernel_dimension": 19,
+    "zero_before_quartic_reduction": 3,
+    "nonempty_quartic_reductions": 16
+  },
+  "top_exterior_coefficient": 50400,
+  "tree_transfer_anticommutators": 102,
+  "stable_trace_ranks": [
+    {
+      "slots": 1,
+      "dimensions": [
+        0,
+        0,
+        0
+      ],
+      "ranks_mod_3": [
+        0,
+        0
+      ],
+      "upper_bounds": [
+        0,
+        0
+      ]
+    },
+    {
+      "slots": 2,
+      "dimensions": [
+        0,
+        0,
+        1
+      ],
+      "ranks_mod_3": [
+        0,
+        0
+      ],
+      "upper_bounds": [
+        0,
+        1
+      ]
+    },
+    {
+      "slots": 3,
+      "dimensions": [
+        0,
+        3,
+        1
+      ],
+      "ranks_mod_3": [
+        0,
+        1
+      ],
+      "upper_bounds": [
+        2,
+        0
+      ]
+    },
+    {
+      "slots": 4,
+      "dimensions": [
+        7,
+        6,
+        3
+      ],
+      "ranks_mod_3": [
+        4,
+        2
+      ],
+      "upper_bounds": [
+        0,
+        1
+      ]
+    },
+    {
+      "slots": 5,
+      "dimensions": [
+        25,
+        30,
+        12
+      ],
+      "ranks_mod_3": [
+        14,
+        12
+      ],
+      "upper_bounds": [
+        4,
+        0
+      ]
+    },
+    {
+      "slots": 6,
+      "dimensions": [
+        195,
+        180,
+        60
+      ],
+      "ranks_mod_3": [
+        121,
+        59
+      ],
+      "upper_bounds": [
+        0,
+        1
+      ]
+    },
+    {
+      "slots": 7,
+      "dimensions": [
+        1680,
+        1260,
+        360
+      ],
+      "ranks_mod_3": [
+        894,
+        360
+      ],
+      "upper_bounds": [
+        6,
+        0
+      ]
+    },
+    {
+      "slots": 8,
+      "dimensions": [
+        15960,
+        10080,
+        2520
+      ],
+      "ranks_mod_3": [
+        7561,
+        2519
+      ],
+      "upper_bounds": [
+        0,
+        1
+      ]
+    }
+  ]
+}

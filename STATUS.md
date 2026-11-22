@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## The degree-eight exceptional invariant and the $F_4$ level-36 source
+
+For eight labelled adjoint inputs the defining traces span 2877 of 2891 invariant tensors. One Albert-algebra tensor of permutation type $(4,4)$ supplies the remaining 14 by polarization. At level 36 all four projected sources formed from the contracted quartic pair and a separate invariant factor have linearly independent classical images modulo the prior 61. The source kernel in these four directions is zero. A different incoming $d_2$ on the sixth glueball power remains open. New $d_1$ lifts **0**. New fortuitous generators **0**. [Proof, exact ranks and replays](algorithms/dual_singlets_20261118/f4/j36_source/mixed_colours.md)
+
 ## Two one-scalar targets survive to the third page
 
 With $S$ the defining-trace glueball, $S^5\operatorname{Tr}_{11}(\bar\lambda_{\dot+}\phi^1)$ in $SO(11)$ at $j=35$ and $S^6\operatorname{Tr}_{13}(\bar\lambda_{\dot+}\phi^1)$ in $SO(13)$ at $j=41$ both survive the first two supercharge differentials. The two finite-colour relation bases have ranks 123 and 17. The corrected second pairing vanishes on every basis element. Later incoming differentials remain open. [Proof, finite Pfaffians and replay](algorithms/dual_singlets_20261118/orthogonal_glueballs/one_scalar/README.md)
