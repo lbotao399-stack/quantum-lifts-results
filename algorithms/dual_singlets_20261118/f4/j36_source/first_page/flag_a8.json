@@ -1,0 +1,20 @@
+{
+  "job": "5703179",
+  "archive_sha256": "f07e902b0032f55148b21abdecab4ff0ca316b35a3037c11927548677797a1f5",
+  "script_sha256": "942414c3e794c61d10fc43fc15486a07f2a29bc1dcb84982268bf9e8c41394e2",
+  "account": "A8",
+  "accounting": "5703179|COMPLETED|2026-11-23T05:31:28|2026-11-23T05:31:43|15|12|0:0",
+  "recipes_tested": 6656,
+  "output_sha256": "c519fbb802927c9947d02e493fe40524477304a9b1cce5093c61e870070d731a",
+  "second_prime": {
+    "prime": 1013,
+    "points": 135,
+    "rank": 135,
+    "determinant": 142,
+    "direct_integer_control": {
+      "recipe": 0,
+      "point": 0,
+      "value": 266
+    }
+  }
+}

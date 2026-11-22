@@ -1,0 +1,39 @@
+{
+  "doublet_order": [
+    19,
+    20,
+    22,
+    25,
+    27,
+    29,
+    31,
+    36,
+    40,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "pfaffian": -1024,
+  "top_coefficient": -5160960,
+  "tests": [
+    {
+      "remainder_degree": 4,
+      "basis_monomials": 1001,
+      "nonzero_pairings": 21,
+      "contraction_coefficient": -61440
+    },
+    {
+      "remainder_degree": 6,
+      "basis_monomials": 3003,
+      "nonzero_pairings": 35,
+      "contraction_coefficient": -4096
+    }
+  ],
+  "with_fifth_power_binomial": [
+    -61440,
+    -20480
+  ],
+  "physical_instanton_supercharge_pairing": "open"
+}

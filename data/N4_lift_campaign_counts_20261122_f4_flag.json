@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "scope": "Campaign-originated highest-weight first images, explicit generator families and independent higher obstructions.",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_reverse_ward.json",
+  "f4_j36": {
+    "source_diagram": [
+      4,
+      4,
+      3,
+      3
+    ],
+    "source": 3720,
+    "terminal": 704,
+    "intermediate_classical_codomain": 633,
+    "intermediate_classical_cokernel": 0,
+    "all_sources_admit_first_correction": true,
+    "source_split_rational_rank_range": [
+      135,
+      703
+    ],
+    "second_pairing_on_positive_degree_page_products": 0,
+    "incoming_d2": "open"
+  },
+  "f4_j30": {
+    "glueball_power": 5,
+    "perturbative_E_infinity_dimension_on_line": 1,
+    "native_charge_one_doublet_modes_integrated": 14,
+    "target_profile": "linear gauginos at fixed bosonic moduli",
+    "physical_instanton_supercharge_pairing": "open"
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/intermediate_rank.json",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/flag_a8.json",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/fifth_berezin.json"
+  ]
+}

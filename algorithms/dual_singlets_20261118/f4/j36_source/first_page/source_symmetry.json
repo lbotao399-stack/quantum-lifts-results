@@ -216,6 +216,87 @@
     56,
     25
   ],
+  "pure_glueball_incoming_orders": [
+    {
+      "power": 5,
+      "allowed": [
+        {
+          "order": 1,
+          "shape": [
+            4,
+            4,
+            3
+          ],
+          "dimensions": [
+            317,
+            138,
+            36
+          ]
+        },
+        {
+          "order": 2,
+          "shape": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "dimensions": [
+            203,
+            141,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "power": 6,
+      "allowed": [
+        {
+          "order": 1,
+          "shape": [
+            5,
+            5,
+            3
+          ],
+          "dimensions": [
+            3341,
+            1134,
+            209
+          ]
+        },
+        {
+          "order": 2,
+          "shape": [
+            4,
+            4,
+            3,
+            3
+          ],
+          "dimensions": [
+            10007,
+            3720,
+            704
+          ]
+        },
+        {
+          "order": 3,
+          "shape": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "dimensions": [
+            4295,
+            1862,
+            428
+          ]
+        }
+      ]
+    }
+  ],
   "native": [
     {
       "spin": 0,

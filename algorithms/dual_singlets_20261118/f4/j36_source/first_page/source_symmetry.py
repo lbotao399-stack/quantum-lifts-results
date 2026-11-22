@@ -1,5 +1,4 @@
 """Taylor types and colour characters of the full incoming F4 second differential."""
-from collections import Counter
 from fractions import Fraction
 from functools import cache
 import json
@@ -10,7 +9,7 @@ HERE = Path(__file__).resolve().parent
 DUAL = HERE.parents[2]
 RETURN = DUAL.parent / "su3_j30_classical_ranks/bmn_return"
 sys.path[:0] = [str(DUAL), str(RETURN)]
-from b2_schur_complex import centralizer, character, multiplicity, partitions, transpose
+from b2_schur_complex import centralizer, character, multiplicity, partitions
 from f4_singlet_characters import decomposition
 from colour import Colour
 from reverse_ward import Brackets, Ward, decode, examples, solve, system
@@ -68,6 +67,25 @@ def native_checks():
     return out
 
 
+def incoming_powers():
+    # Twisting back from (p,p | 0,0,0) gives (p-r,p-r | r,r,r).
+    # A positive third odd label requires the second even row to have length >=3.
+    out = []
+    for p in (5,6):
+        allowed = []
+        for r in range(1,p+1):
+            if p-r < 3:
+                continue
+            s = (p-r,p-r)+(3,)*r
+            n = sum(s)
+            assert n == 2*p+r
+            allowed.append(dict(order=r, shape=s,
+                                dimensions=[multiplicity(s,k,singlet_trace) for k in (n-2,n-1,n)]))
+        out.append(dict(power=p, allowed=allowed))
+    assert out[0]["allowed"][1]["dimensions"] == [203,141,62]
+    return out
+
+
 if __name__ == "__main__":
     if not __debug__:
         raise SystemExit("enable assertions")
@@ -76,4 +94,5 @@ if __name__ == "__main__":
                           total_length_13=sum(r["by_length_12_13_14"][1] for r in rows),
                           target_shape=[6,6],
                           target_lengths_10_11_12=[multiplicity((6,6), n, singlet_trace) for n in (10,11,12)],
+                          pure_glueball_incoming_orders=incoming_powers(),
                           native=native_checks()), indent=2))

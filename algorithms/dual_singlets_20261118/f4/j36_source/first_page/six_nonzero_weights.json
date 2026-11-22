@@ -1,0 +1,821 @@
+{
+  "blocks": [
+    {
+      "weight": [
+        10,
+        -1,
+        -1,
+        -2
+      ],
+      "orbit": 576,
+      "columns": 1,
+      "classical_rank_lower": 1,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -1,
+        -2,
+        -1
+      ],
+      "orbit": 576,
+      "columns": 6,
+      "classical_rank_lower": 6,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -1,
+        -2,
+        0
+      ],
+      "orbit": 288,
+      "columns": 2,
+      "classical_rank_lower": 2,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -1,
+        0,
+        -4
+      ],
+      "orbit": 144,
+      "columns": 0,
+      "classical_rank_lower": 0,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -2,
+        -1,
+        -1
+      ],
+      "orbit": 576,
+      "columns": 11,
+      "classical_rank_lower": 11,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -2,
+        -2,
+        0
+      ],
+      "orbit": 192,
+      "columns": 24,
+      "classical_rank_lower": 24,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -2,
+        0,
+        -3
+      ],
+      "orbit": 144,
+      "columns": 2,
+      "classical_rank_lower": 2,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -3,
+        -1,
+        0
+      ],
+      "orbit": 288,
+      "columns": 28,
+      "classical_rank_lower": 28,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -3,
+        0,
+        -2
+      ],
+      "orbit": 144,
+      "columns": 13,
+      "classical_rank_lower": 13,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -4,
+        0,
+        -1
+      ],
+      "orbit": 144,
+      "columns": 45,
+      "classical_rank_lower": 45,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        -5,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 54,
+      "classical_rank_lower": 54,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        0,
+        -1,
+        -3
+      ],
+      "orbit": 192,
+      "columns": 0,
+      "classical_rank_lower": 0,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        0,
+        -2,
+        -1
+      ],
+      "orbit": 192,
+      "columns": 0,
+      "classical_rank_lower": 0,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        0,
+        -2,
+        -2
+      ],
+      "orbit": 288,
+      "columns": 1,
+      "classical_rank_lower": 1,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        0,
+        -3,
+        0
+      ],
+      "orbit": 288,
+      "columns": 2,
+      "classical_rank_lower": 2,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        10,
+        0,
+        0,
+        -5
+      ],
+      "orbit": 24,
+      "columns": 0,
+      "classical_rank_lower": 0,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        2,
+        -1,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 134628,
+      "classical_rank_lower": 115476,
+      "boundary_rank_lower": 18887,
+      "known_cycle_rank_lower": 19152,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        2,
+        0,
+        0,
+        -1
+      ],
+      "orbit": 24,
+      "columns": 105117,
+      "classical_rank_lower": 90553,
+      "boundary_rank_lower": 14365,
+      "known_cycle_rank_lower": 14564,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        3,
+        0,
+        -1,
+        0
+      ],
+      "orbit": 96,
+      "columns": 79418,
+      "classical_rank_lower": 69304,
+      "boundary_rank_lower": 9996,
+      "known_cycle_rank_lower": 10114,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        4,
+        -1,
+        0,
+        -1
+      ],
+      "orbit": 144,
+      "columns": 46286,
+      "classical_rank_lower": 41061,
+      "boundary_rank_lower": 5175,
+      "known_cycle_rank_lower": 5225,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        4,
+        -2,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 61780,
+      "classical_rank_lower": 54121,
+      "boundary_rank_lower": 7570,
+      "known_cycle_rank_lower": 7659,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        4,
+        0,
+        -1,
+        0
+      ],
+      "orbit": 96,
+      "columns": 35885,
+      "classical_rank_lower": 31916,
+      "boundary_rank_lower": 3930,
+      "known_cycle_rank_lower": 3969,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        4,
+        0,
+        0,
+        -2
+      ],
+      "orbit": 24,
+      "columns": 20638,
+      "classical_rank_lower": 18620,
+      "boundary_rank_lower": 2001,
+      "known_cycle_rank_lower": 2018,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        5,
+        -1,
+        -1,
+        0
+      ],
+      "orbit": 192,
+      "columns": 26571,
+      "classical_rank_lower": 23961,
+      "boundary_rank_lower": 2591,
+      "known_cycle_rank_lower": 2610,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        5,
+        0,
+        -1,
+        -1
+      ],
+      "orbit": 288,
+      "columns": 15092,
+      "classical_rank_lower": 13808,
+      "boundary_rank_lower": 1277,
+      "known_cycle_rank_lower": 1284,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        -1,
+        -1,
+        0
+      ],
+      "orbit": 288,
+      "columns": 8401,
+      "classical_rank_lower": 7801,
+      "boundary_rank_lower": 598,
+      "known_cycle_rank_lower": 600,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        -1,
+        0,
+        -2
+      ],
+      "orbit": 144,
+      "columns": 4662,
+      "classical_rank_lower": 4373,
+      "boundary_rank_lower": 288,
+      "known_cycle_rank_lower": 289,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        -2,
+        0,
+        -1
+      ],
+      "orbit": 144,
+      "columns": 11582,
+      "classical_rank_lower": 10609,
+      "boundary_rank_lower": 967,
+      "known_cycle_rank_lower": 973,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        -3,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 14989,
+      "classical_rank_lower": 13734,
+      "boundary_rank_lower": 1249,
+      "known_cycle_rank_lower": 1255,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        0,
+        -1,
+        -1
+      ],
+      "orbit": 192,
+      "columns": 3561,
+      "classical_rank_lower": 3336,
+      "boundary_rank_lower": 224,
+      "known_cycle_rank_lower": 225,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        0,
+        -2,
+        0
+      ],
+      "orbit": 96,
+      "columns": 6454,
+      "classical_rank_lower": 5994,
+      "boundary_rank_lower": 458,
+      "known_cycle_rank_lower": 460,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        6,
+        0,
+        0,
+        -3
+      ],
+      "orbit": 24,
+      "columns": 1048,
+      "classical_rank_lower": 993,
+      "boundary_rank_lower": 55,
+      "known_cycle_rank_lower": 55,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        7,
+        -1,
+        -1,
+        -1
+      ],
+      "orbit": 576,
+      "columns": 2473,
+      "classical_rank_lower": 2358,
+      "boundary_rank_lower": 115,
+      "known_cycle_rank_lower": 115,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        7,
+        -2,
+        -1,
+        0
+      ],
+      "orbit": 192,
+      "columns": 4536,
+      "classical_rank_lower": 4284,
+      "boundary_rank_lower": 252,
+      "known_cycle_rank_lower": 252,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        7,
+        0,
+        -1,
+        -2
+      ],
+      "orbit": 288,
+      "columns": 696,
+      "classical_rank_lower": 673,
+      "boundary_rank_lower": 23,
+      "known_cycle_rank_lower": 23,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        7,
+        0,
+        -2,
+        0
+      ],
+      "orbit": 288,
+      "columns": 1302,
+      "classical_rank_lower": 1256,
+      "boundary_rank_lower": 46,
+      "known_cycle_rank_lower": 46,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        -1,
+        -1,
+        -1
+      ],
+      "orbit": 576,
+      "columns": 342,
+      "classical_rank_lower": 335,
+      "boundary_rank_lower": 7,
+      "known_cycle_rank_lower": 7,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        -1,
+        -2,
+        0
+      ],
+      "orbit": 192,
+      "columns": 660,
+      "classical_rank_lower": 644,
+      "boundary_rank_lower": 16,
+      "known_cycle_rank_lower": 16,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        -1,
+        0,
+        -3
+      ],
+      "orbit": 144,
+      "columns": 87,
+      "classical_rank_lower": 85,
+      "boundary_rank_lower": 2,
+      "known_cycle_rank_lower": 2,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        -2,
+        -1,
+        0
+      ],
+      "orbit": 288,
+      "columns": 975,
+      "classical_rank_lower": 938,
+      "boundary_rank_lower": 37,
+      "known_cycle_rank_lower": 37,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        -2,
+        0,
+        -2
+      ],
+      "orbit": 144,
+      "columns": 524,
+      "classical_rank_lower": 506,
+      "boundary_rank_lower": 18,
+      "known_cycle_rank_lower": 18,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        -3,
+        0,
+        -1
+      ],
+      "orbit": 144,
+      "columns": 1264,
+      "classical_rank_lower": 1223,
+      "boundary_rank_lower": 41,
+      "known_cycle_rank_lower": 41,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        -4,
+        0,
+        0
+      ],
+      "orbit": 24,
+      "columns": 1810,
+      "classical_rank_lower": 1735,
+      "boundary_rank_lower": 75,
+      "known_cycle_rank_lower": 75,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        0,
+        -1,
+        -2
+      ],
+      "orbit": 192,
+      "columns": 66,
+      "classical_rank_lower": 64,
+      "boundary_rank_lower": 2,
+      "known_cycle_rank_lower": 2,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        0,
+        -2,
+        -1
+      ],
+      "orbit": 288,
+      "columns": 260,
+      "classical_rank_lower": 253,
+      "boundary_rank_lower": 7,
+      "known_cycle_rank_lower": 7,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        0,
+        -2,
+        0
+      ],
+      "orbit": 96,
+      "columns": 130,
+      "classical_rank_lower": 128,
+      "boundary_rank_lower": 2,
+      "known_cycle_rank_lower": 2,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        8,
+        0,
+        0,
+        -4
+      ],
+      "orbit": 24,
+      "columns": 7,
+      "classical_rank_lower": 7,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        9,
+        -1,
+        -1,
+        -2
+      ],
+      "orbit": 576,
+      "columns": 36,
+      "classical_rank_lower": 36,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        9,
+        -1,
+        -2,
+        0
+      ],
+      "orbit": 576,
+      "columns": 74,
+      "classical_rank_lower": 74,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        9,
+        -2,
+        -1,
+        -1
+      ],
+      "orbit": 576,
+      "columns": 151,
+      "classical_rank_lower": 151,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        9,
+        -3,
+        -1,
+        0
+      ],
+      "orbit": 192,
+      "columns": 294,
+      "classical_rank_lower": 294,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        9,
+        0,
+        -1,
+        -3
+      ],
+      "orbit": 288,
+      "columns": 3,
+      "classical_rank_lower": 3,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        9,
+        0,
+        -2,
+        -1
+      ],
+      "orbit": 576,
+      "columns": 15,
+      "classical_rank_lower": 15,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    },
+    {
+      "weight": [
+        9,
+        0,
+        -3,
+        0
+      ],
+      "orbit": 96,
+      "columns": 33,
+      "classical_rank_lower": 33,
+      "boundary_rank_lower": 0,
+      "known_cycle_rank_lower": 0,
+      "unresolved_upper": 0
+    }
+  ],
+  "sha256": {
+    "weight-10,-1,-1,-2.json": "4a4d4b413cea22469dc6331df416d0dadb8f0f0ca4723d087bfbceb19baae068",
+    "weight-10,-1,-2,-1.json": "5927bf7e85b6dd72c620e2b3e76cd90120e1fc5e8deaa96f157c50c0ecd620c6",
+    "weight-10,-1,-2,0.json": "9299f16ca3101aa5ff4c8f363c75d5e09e5c2cb3a162861e8e0e00df35ccb658",
+    "weight-10,-1,0,-4.json": "169c5a720987cbd69df391bca9e50cc7aa6d78d64545c6bb8bf869b58e72a4e6",
+    "weight-10,-2,-1,-1.json": "569dff869a484c6fa4eaca1d202ce605bb89e310828152e631b50032ec087ee2",
+    "weight-10,-2,-2,0.json": "bed47318ee8c254a3210df48c25cb970d56c09b4d035b2b6818fe01a25751121",
+    "weight-10,-2,0,-3.json": "6bfc44497f3c13ab47dca4aa35e2a68a1d7cdc0bf381e36427251d4bfe2ee205",
+    "weight-10,-3,-1,0.json": "d2044da660ea0d20db0dcb07754b3e7be0c6c1cc67a858eb0416ae66cea0508d",
+    "weight-10,-3,0,-2.json": "f92dd100e0a27c5331973bf3d6792fb536b667b89feb8fedc9a3a7916e200b65",
+    "weight-10,-4,0,-1.json": "054db31e5958b5fdd5f93cca387aafe5c94ceda05f73207065fd98f69802f69d",
+    "weight-10,-5,0,0.json": "b095aeafadd4e3edb10b6f503f591b2166f73d6cbb13d3fe81cbe8ee2397c1b2",
+    "weight-10,0,-1,-3.json": "77b0f264172f58b4ee14febea17f0c30f95c34b987f91700c1f04150c3cc6a2b",
+    "weight-10,0,-2,-1.json": "e16051959f2579e30f552adb4947b466e1d406e6bb7b9d4a57d46baa930f4eff",
+    "weight-10,0,-2,-2.json": "ef4a33a4dd3477280ef457b558f83d4db79a79d56becdb8d8fc9bf5b94d81ab0",
+    "weight-10,0,-3,0.json": "dcbe1f05d39a22503b8d9a1fe9e8f43293eb7977a08c9ede87d99671e35d0eb3",
+    "weight-10,0,0,-5.json": "f22c6a757320936af3414bb304bbba66333e750f04352f32dda2eb6018b50465",
+    "weight-2,-1,0,0.json": "2ee14e15f36efc2ce0e4de04ccc42ad1afaa1fe7eba5170f90228c79c893d25f",
+    "weight-2,0,0,-1.json": "64acfc1ed6cb4a4c1bcade49fc672443cfdfebfb889f23276700d5401e188679",
+    "weight-3,0,-1,0.json": "1b59a07cf6aa0f3e291cdfc9f0691824798d09041da31480f5214c4641301dfb",
+    "weight-4,-1,0,-1.json": "63be6a02cb401b1eca461fd0fda6f61ea91c27359d53f56c0a5f0aea218718ec",
+    "weight-4,-2,0,0.json": "2af25da5393e52df578feb65bb164286a40890ef32dea744a5fb9945d3a90f9a",
+    "weight-4,0,-1,0.json": "5c6bf3b5cfe478df651dda93667100282c49868009b35fad83def587fa1e28fd",
+    "weight-4,0,0,-2.json": "26e7a7d50d6d87c448952f9523db4536de3ee5ccba9b6bc4d9ef68d8f409dde2",
+    "weight-5,-1,-1,0.json": "4d3af1afe0116514f8063acba45d57c9df440d90efb4366021969694de8d6142",
+    "weight-5,0,-1,-1.json": "2b8b011980af824beb167d9204b8556f0225dd6ff7a8241abf544b7da99d4c0e",
+    "weight-6,-1,-1,0.json": "011dffe532f7545ddd76b55f92229772142cb35406e4f3711ba10ba90680be40",
+    "weight-6,-1,0,-2.json": "7b73fa045892c42708c10a3a0f8035e0e20b6c47cdda238499a9b7ad1dada1ec",
+    "weight-6,-2,0,-1.json": "e4205eced0734b3c2ffcffc6dd35cdd8dbb8f953018edd817ea1324e3870f596",
+    "weight-6,-3,0,0.json": "c1620cf1d4b022fce63fde0fa51819cf7a76dbdc5d494e2e1915bd939469aa95",
+    "weight-6,0,-1,-1.json": "24178249d3ce9442dc24d8fccad1875966ca515ba00abe9411349fcea6b5b71b",
+    "weight-6,0,-2,0.json": "bcf34d9bc9c45d12d40236aa86981b4f6938dee6db8f54de341c5881ed39c139",
+    "weight-6,0,0,-3.json": "f6ffd6704a3dcffc338f464a025e922ab2fbaf643fb2accdc8a854cec8950d31",
+    "weight-7,-1,-1,-1.json": "868427b939e279a58c8070a6aa09a84df70f67c27a88c952b7de33d4924ebd5d",
+    "weight-7,-2,-1,0.json": "822d18057f92da77e8712259f115192dfb55f32cd17379043b858b409aabb1a8",
+    "weight-7,0,-1,-2.json": "3373df18c02a855b1af938d8054cef737ec18bb023ebd9206a9ac64fff28dd8a",
+    "weight-7,0,-2,0.json": "45403ffe90ffe06da70696e241e249a7f0c589d9a9bd764cb145dcc9540b602c",
+    "weight-8,-1,-1,-1.json": "33a1827d7e4ae6fc7f74492cdeb86f29da07084d84b60c26adea65d8e2ffb1de",
+    "weight-8,-1,-2,0.json": "d215db54ee143892116b8774d7b69c5652fa28d54e2cdfa0cbdd230778e9cdd9",
+    "weight-8,-1,0,-3.json": "1f7e652578609df842c602c815b1448721eed455837d16604594bfc192fa05d9",
+    "weight-8,-2,-1,0.json": "24f2b76eff5b0b2b90ed9d67d28010614d0dcd4f0985f3e78f08422f403b208a",
+    "weight-8,-2,0,-2.json": "4ca703ced4947d260885dfd5cb65cc0c1cbe27497b843ee7c49f13f8ea40bac7",
+    "weight-8,-3,0,-1.json": "582b5dcbceaa898bc0bc11d2439db5f795c9faac70bfa6abee0aca5cead972b5",
+    "weight-8,-4,0,0.json": "99f331c367c9fb63001459611758b55041f572154dfb66e39a1105c296e1cf2b",
+    "weight-8,0,-1,-2.json": "28673c36330819e0cd178a3e4424faa71beed8319a8b95f9174dd370d2a4a659",
+    "weight-8,0,-2,-1.json": "f2498d656c1af3fd19ec321b7e1fed853c82ef210d0317005b9ffbea57c23794",
+    "weight-8,0,-2,0.json": "9f4a830d0fd8209e71f4f0af43d2807b8985bf26aeba256036fe22379d9a8f71",
+    "weight-8,0,0,-4.json": "89af3fe9dacea5557051b4a0451cc26478d159df5aa358c22e3276551f615c00",
+    "weight-9,-1,-1,-2.json": "3d2e90d9d988f6f9e4db43d6a551768871d4ce4e87422c570b36b18d9769c49f",
+    "weight-9,-1,-2,0.json": "b17a7a560e97d55c0d7bfdc8de382c9f376982789b84fb7500002c14c003c21d",
+    "weight-9,-2,-1,-1.json": "226189cd4ca6d581f6874569e9c0917fa73835547c113192e55e92c75b0d1dba",
+    "weight-9,-3,-1,0.json": "7fb39717f08e825fe64b936a9890e17191944621944fd57d98da2253ffae823b",
+    "weight-9,0,-1,-3.json": "cd9d83de772c34c2f6e1533ec58c5797a3e26e7e6a6e436720d6c307a6b8ac89",
+    "weight-9,0,-2,-1.json": "a3b2a0b5b9a4fa162ab82108622d88b443912d96090f36036f909d243619ebab",
+    "weight-9,0,-3,0.json": "0e22390d66de1a00d57c19e43899b936ba0bc33e01ee25e61d30915fa1e64880"
+  },
+  "job": "5702426",
+  "archive_sha256": "4d3659282296987795ca1b0b5db0030ac482825d4d3e4dc922b113ff2548698a",
+  "script_sha256": "1a08ece15590aec712739f044492741d5e1435492bd56c89ea4225bc84aa50b5",
+  "partial_snapshot_accounting": "5702426|RUNNING|2026-11-23T04:02:45|Unknown|2736|32|0:0",
+  "final_accounting": "5702426|TIMEOUT|2026-11-23T04:02:45|2026-11-23T04:57:55|3310|32|0:0"
+}

@@ -113,3 +113,156 @@ Independently, the even subgroup permits ten diagrams, each with multiplicity on
 ~~~sh
 python3 source_symmetry.py | diff -u source_symmetry.json -
 ~~~
+
+## The six-scalar singlet and the dotted colour filtration
+
+Keep the eight first-ghost spectators and require the six-scalar factor to close separately. At flavour $(2,2,2)$ take the $SL(3)$ singlet. The one-fermion source consists of a fermion colour and a scalar tableau of shape $(2,1,1)$. The dimension before imposing gauge invariance or adding the spectators is
+
+$$
+52\left(52\cdot53\cdot51\cdot50/8\right)=45{,}680{,}700.
+$$
+
+At every nonzero dominant colour weight the classical kernel is spanned by checked boundaries and products with the closed bilinear. A8 job 5702426 returned all 54 of those weight files. With Weyl orbit multiplicities they cover 45,503,928 columns. The classical rank lower bound is 40,848,456 and the verified cycle-span lower bound is 4,655,472. Their sum is the full dimension there. The job reached its wall-time limit during the remaining 176,772-column zero-weight block. [Rank and closure calculation](six_scalar.py) · [Completed weight files, hashes and final accounting](six_nonzero_weights.json)
+
+The quotient by the known cycles is an $F_4$ representation over the rationals. If only weight zero occurs, all root operators act as zero and the representation is trivial. Since invariant projection is exact, it remains to test invariant source cochains. Their number is three. The invariant cochain dimensions at lengths four, five and six are $(0,3,4)$ by the Weyl character in Taylor shape $(3,3)$. Write the fermion with complementary scalar index and take the invariant flavour contraction with three alternating scalars. For three independent choices of colour tensor, the values of the classical split on three explicit scalar triples are
+
+$$
+\det\begin{pmatrix}
+72&-12744&5064\\
+30258&-34260&6776\\
+0&10968&-3608
+\end{pmatrix}=292863838464 .
+$$
+
+Thus the invariant source has zero classical kernel. This proves saturation of the full rational colour module without the missing numerical zero-weight rank. Restoring the spectator colours and averaging over $F_4$ leaves boundaries and marked products as in the five-slot argument. Hence this entire separately closed scalar-singlet family has zero incoming $d_2$ on the sixth glueball. [Three rational colour tensors, native test points and matrix](six_invariants.json) · [Independent invariant replay](six_invariants.py)
+
+For a second reduction, take one scalar and $n-1$ equal dotted slots. Filter the tree differential by the number of dotted derivatives on the scalar. At excess one this is zero or one. The associated graded differentiates only the pure ghost factors. At scalar order zero the ghost cochain is the adjoint times exterior degree $n-3$ of the adjoint, of dotted degree $n-1$. At scalar order one it is exterior degree $n-2$ and dotted degree $n-2$. In both cases tensor the pure-ghost cohomology with the scalar adjoint. Garland's positive-current Laplacian retains exactly the finite-colour components whose quadratic Casimir equals 18 times the dotted degree in the long-root-square-two convention. Newton's exterior-power identities and Weyl reflection then bound the colour types on every later filtration page. [Garland's formula, Theorem 3.7](https://arxiv.org/pdf/math/0309232#page=22)
+
+Every surviving irreducible contains its indicated test weight. The certificate gives explicit simple-root lowering paths. At each step the current coroot label is positive, so the next weight occurs. Testing full weight spaces thus avoids constructing highest-weight bases. The integer closure checks and modular rank lower bounds exhaust every tested column.
+
+| Active slots | Columns over all colours | Tested columns | Classical rank | Rank of boundaries and products |
+|---:|---:|---:|---:|---:|
+| 6 | 73,836,100 | 13,461 | 11,999 | 1,462 |
+| 7 | 867,186,320 | 39,842 | 33,775 | 6,067 |
+| 7 | same sector | 39,813 | 33,873 | 5,940 |
+
+The six-slot test detects 17 possible colour highest weights and the two seven-slot tests detect 23. Both separately closed dotted families have zero quotient by boundaries and products. For this glueball the selected scalar-polarized diagram is $(4,4,4,2)$, of height four. It already excludes any alternation over five dotted labels; the two dotted calculations also apply to other target diagrams. [Proof and replay](dotted_filtration.py) · [All lowering paths and local ranks](dotted_filtration.json)
+
+## Products inside the remaining diagram
+
+Polarize the selected classical diagram with four ordinary scalar variables. Its highest weight is $(4,4,4,2)$ in this convention. Every classically closed linear combination of products in which each factor is itself a gauge-invariant highest-weight cochain is a classical boundary. Products projected from other weight components require a separate test.
+
+For two highest weights adding to $(4,4,4,2)$, each factor has shape $(a,a,a,b)$, with $0\le b\le a$. The possible proper complementary pairs, recorded by $(a,b)$, are $(1,0)+(3,2)$, $(1,1)+(3,1)$, $(2,0)+(2,2)$, and $(2,1)+(2,1)$. At excess one only one factor can contain a second jet. For $(2,1)$ the terminal invariant cochain space is zero, so the last pair supplies no source. For $(1,1)$ the terminal space and one-excess cohomology are both zero. This follows from the pure-current calculation at dotted degree four. Both of these statements are independent of any quantum kernel.
+
+For $(2,0)$ the consecutive cochain dimensions are $(0,3,4)$. The integer three-by-three minor above proves injectivity at the middle term. For $(2,2)$ the dimensions are $(6,7,6)$. Two explicit predecessors give a minor $-294982331904$. Five independent images into the six terminal cochains leave one Cartan-visible direction. Thus $7-2-5=0$ at the middle term. To construct the two predecessors, use a third jet and five scalars, alternate separately in both four-slot columns, and contract either two invariant cubic forms or two nested brackets. The replay differentiates the third jet by the three Jacobi terms before evaluating the probe. [The two rational predecessors](plane_predecessors.py) · [Minor](plane_predecessors.json)
+
+For the terminal evaluation, take the exterior product of the first three or four colour vectors. On each pair of exterior slots apply the colour bracket followed by its metric transpose, with one common integer clearing of denominators, and sum over pairs. Pair successive powers of this operator with the original exterior vector. The zeroth power gives its Gram determinant. Each positive power has an explicit classical primitive since the first application contains a scalar commutator. The powers produce respectively four and six independent highest-weight terminal polynomials. All 24 pair products are independent; an integer evaluation minor reduces to $955$ modulo $1009$. Exactly 23 of the products are boundaries. The two Gram determinants give $32$ on the specified four Cartan vectors. The rational tensor-product formula together with injectivity on the terminal product then kills every separately closed source in this product channel. [Exterior calculation](plane_products.py) · [Both evaluation minors and all factor characters](plane_products.json)
+
+To test cancellations between channels, put $\omega=B(X_1,[X_2,X_3])$, the only terminal cochain for $(1,0)$. It has a primitive obtained by replacing the commutator with its matter fermion and alternating the three flavours. The one-excess and terminal spaces of this factor both have dimension one, so this two-term factor is acyclic. Multiplication by its nonzero scalar polynomial is injective. The terminal space in the $(3,2)$ factor has dimension 36.
+
+The 24-product space meets the 36-dimensional space of these multiples of $\omega$ in exactly six dimensions. On the rational divisor $\omega=0$, an 18-by-18 minor of the 24 products reduces to $644$ modulo $1009$. The probes solve one linear equation for a coordinate of $X_3$ with denominator invertible at $1009$. The six products of $\omega^2$ with the six quartic-plane terminal cochains are independent and lie in the intersection, proving equality. Each of these six has the same primitive in both product channels: replace one factor of $\omega$ by its primitive. For any cancellation subtract this common primitive from one source and add it to the other. Each source now closes separately and has a primitive by the factor calculations. This excludes the entire stated source family. The joint terminal span has dimension $24+36-6=54$, including $23+36-6=53$ independent classical boundaries.
+
+## The fifth glueball survives to perturbative infinity
+
+Let $S$ be the native glueball and $p$ its exponent. Every incoming perturbative differential to its terminal class starts at excess one. In these two excesses the full fan supercharge is exactly $Q_0+uQ_1$. Indeed $Q_k$ for $k\ge2$ requires $3k$ flavour slots on $k+1$ letters, which together have at most $k+2$. Both supercharges vanish at the terminal excess. Every correction to a source retains excess one. The reverse shear $\bar P_0+u\bar P_1$ therefore anticommutes with the entire differential here. Its coefficient at order two is $\{Q_1,\bar P_1\}=0$ by the five-slot test above. All its higher coefficients vanish. The order-one Ward check needs pairs of at most three Taylor slots, independently of $p$.
+
+For the incoming image one may use the two-term complex of excesses one and zero. A terminal class has an incoming image at order $r$ precisely when an excess-one cochain with corrections solves the descent through order $r-1$ and has that residual modulo earlier terminal images. These equations use only the indicated two terms. Classical boundaries further back change the representatives of the sources and preserve these terminal image spaces. The shears induce their leading Taylor actions on the graded pages of this two-term complex. The even weight shift at order $r$ is $(r,r\mid-r,-r,-r)$. Thus a nonzero incoming $d_r$ to the $(p,p)$ target requires source highest weight $(p-r,p-r\mid r,r,r)$. A polynomial Taylor diagram with a positive third odd label must have at least three boxes in its second even row. Hence
+
+$$
+1\le r\le p-3,\qquad
+\lambda=(p-r,p-r,\underbrace{3,\ldots,3}_{r\ \mathrm{rows}}).
+$$
+
+This bound uses the relative fan complex and the gauge Ward identity. It imposes no instanton selection rule.
+
+At $F_4$, $p=5$, the product derivation on the first page and the survival of $S^6$ exclude an incoming $d_1$ on $S^5$. If $d_1[X]=[S^5]$, then $d_1([X][S])=[S^6]$, since $d_1[S]=0$. The only possible incoming $d_2$ has shape $(3,3,3,3)$, whose transpose is the scalar-flavour weight $(4,4,4)$ of the BMN calculation. The adjacent classical ranks give
+
+$$
+\dim H(Q_0)_{\text{eleven-letter source}}=141-80-61=0 .
+$$
+
+The Taylor highest-weight component here lies entirely in the three physical scalar directions after transposition. Exactness of the covariant Schur decomposition identifies its classical multiplicity complex with that BMN complex. The bound excludes every $r\ge3$. The zero-flavour target itself is strictly closed. Therefore $[S^5]\ne0$ on perturbative $E_\infty$ at $j=30$. Its Cartan restriction vanishes since the fifth exterior power of the rank-four Cartan is zero. This supplies a perturbative target for a physical nonperturbative test. [Classical source proof, minors and replay](../../../bmn_primary/f4_scalar/README.md) · [Allowed orders and characters](source_symmetry.json)
+
+For $S^6$ the only orders still possible are two and three. The respective source cochain dimensions are 3,720 in $(4,4,3,3)$ and 1,862 in $(3,3,3,3,3)$. The corrected pairings on these diagrams remain open.
+
+## A nonzero charge-one endpoint for the fifth power
+
+Embed the charge-one instanton along the highest long root of $F_4$ and choose the orientation supporting the barred Weyl zero modes. In the native colour file the raising generator has index 45 and its $\mathfrak{sl}_2$ lowering partner is minus generator 12. The Cartan element of this triple has adjoint weight multiplicities $1,14,22,14,1$ at weights $-2,-1,0,1,2$. This gives one triplet, fourteen doublets and twenty-one singlets. Each doublet contributes one Weyl zero mode of the chosen R-flavour. In a doublet the fundamental BPST solution has an invertible two-by-two spin–colour matrix away from the centre. Denote this matrix, in the zero-mode convention used for the moduli, by $M(x)$. The opposite instanton orientation exchanges chiralities. [Fundamental Dirac zero mode, Eqs. (5.35)–(5.36)](https://arxiv.org/pdf/0802.1862#page=43)
+
+Take the fourteen weight-one basis vectors $v_i$ and the corresponding lower vectors $[f,v_i]$. The colour form on the doublet moduli $\nu^i$ is $B(v_i,[f,v_j])$ with the original $B=\mathrm{Tr}_{26}/6$. It is alternating and has seven disjoint upper-triangular entries
+
+$$
+(19,50;-1),\ (20,49;-1),\ (22,48;2),\ (25,47;-1),\
+(27,46;-1),\ (29,40;-2),\ (31,36;2).
+$$
+
+On the linear doublet zero modes the glueball is $\det M(x)$ times the contraction of this two-form with $\nu^i\nu^j$. In its fifth power the coefficient of the ordered moduli with indices $(19,20,22,25,27,46,47,48,49,50)$ is
+
+$$
+2^5\,5!\,(-1)(-1)(2)(-1)(-1)\,(\det M(x))^5
+=7680\,(\det M(x))^5 .
+$$
+
+Direct exterior multiplication and the five-pair minors agree on all 21 nonzero coefficients. This verifies a bare target insertion at a fixed charge-one background. The physical supercharge matrix element still requires a perturbative source, the supercurrent, the remaining fermionic and bosonic moduli integrals, and operator matching. [Native colour and exterior replay](fifth_instanton.py) · [All 21 coefficients](fifth_instanton.json)
+
+## One row decides the second differential
+
+Every classical cycle in the selected 3,720-dimensional source admits a first correction. Dot obtained this surjectivity in the original $F_4$ package. The following independent calculation starts with the native colour brackets and Dot's extremal tensor seeds. The intermediate terminal cochains at degree $(5,5\mid1,1,1)$ have dimension $150+238+209+36=633$ in the spin and flavour singlet. A covector annihilating their classical boundaries must kill the brackets within each five-ghost leg and within the three alternating scalar colours. The separate exterior quotients in degree five have highest weights $(0,1,0,3)$ and $(0,0,3,0)$. In degree three the highest weight is $(0,0,2,0)$. Interchanging the two ghost legs in a spin singlet gives positive sign. The Weyl character formula gives the following multiplicities of the scalar module in the product of the ghost modules.
+
+| Ghost modules in the displayed order | Ordered multiplicity | Exchange trace | Allowed multiplicity |
+|---|---:|---:|---:|
+| First with first | 23 | 13 | 18 |
+| First with second | 13 | | 13 |
+| Second with second | 10 | 8 | 9 |
+
+This bounds the possible annihilator by $18+13+9=40$. On Dot's forty extremal tensors the classical split of a differentiated scalar has a minor of order forty. The same raw colour probes give determinants $194027$ modulo $1000003$ and $30888$ modulo $1000033$. The program computes every entry by Lie-algebra lowering from the seeds. The tensors are independent, exhaust the character bound, and have zero common annihilator on these probes. Hence the full classical map onto the intermediate 633 cochains is surjective over the rationals. [Independent characters, modular Ward evaluator and probes](intermediate_rank.py) · [Both minors](intermediate_rank.json)
+
+Write $C$ for the selected source and identify its spin/flavour singlet copy in the physical cochains as above. Its classical split $Q_0|_C$ has 704 rows. For $X\in\ker(Q_0|_C)$ choose a first correction $X_1$ with $Q_0 X_1=-Q_1 X$, possible by surjectivity. The established target identity $\lambda Q_1=\eta Q_0$, the vanishing of the bare $Q_2$ on this source, and the one-dimensional nonzero target on $E_2$ give
+
+$$
+\lambda(d_2[X])=-\eta Q_1 X,\qquad
+S^6\in\operatorname{im}d_2
+\quad\Longleftrightarrow\quad
+\operatorname{rank}_{\mathbb Q}
+\begin{pmatrix}Q_0|_C\\-\eta Q_1|_C\end{pmatrix}
+=\operatorname{rank}_{\mathbb Q}(Q_0|_C)+1.
+$$
+
+Earlier incoming boundaries have zero obstruction on $E_2$. Thus this test needs neither a basis of the length-twelve predecessors nor separate first-correction solves. A rational row identity certifies vanishing. A nonzero augmented minor certifies a lift once its size exceeds a proved rational upper bound on the classical rank. The augmented rank remains open.
+
+Every product of two positive-degree $E_2$ classes has zero pairing with this target, including products projected from arbitrary weights. Indeed the derivation rule acts on one homogeneous factor at a time. For its output to have zero excess and zero flavour, the spectator must already have zero excess and zero flavour. The invariant two-gaugino ring makes any such surviving positive-degree spectator a multiple of $S^k$ with $k\ge1$. The acted-on factor would have to map to $S^{6-k}$. For $1\le k\le6$, multiplying this equation by $S^{k-1}$ would make $S^5$ a second boundary. Its perturbative survival excludes this. Linear combinations and weight projections preserve the conclusion. This leaves cycles whose constituents do not separately define products on $E_2$.
+
+For the classical split, polarize the four columns of heights $(4,4,3,3)$ on four ordinary scalar colours. Alternate all columns in a product of adjoint traces with one marked scalar commutator. Replacing this commutator by the corresponding second jet gives the classical primitive, including when the factors are away from highest weight. A8 job 5703179 evaluated 6,656 such recipes. An order-135 minor is $76$ modulo $1009$ and $142$ modulo $1013$ with the same rows and columns. The rank lower bound applies over the rationals. On the four-dimensional Cartan, the scalar Taylor module of shape $(4,4,4,2)$ is the fourth determinant power times the dual symmetric square. The Weyl reflection representation has one invariant quadratic form. The earlier product of the two Gram determinants attains this Cartan direction. It follows that
+
+$$
+135\le\operatorname{rank}_{\mathbb Q}(Q_0|_C)\le 704-1=703.
+$$
+
+The 135 rows and the earlier 53 can overlap. [Flag evaluation and integer control](flag_boundaries.py) · [Selected recipes and points](flag_135.json) · [A8 accounting and second prime](flag_a8.json)
+
+## Integrating one flavour of lifted instanton modes
+
+At fixed charge-one bosonic moduli, take the linear gaugino profiles in the orientation above. The embedded triplet is orthogonal to the doublets. Its exact supersymmetric and superconformal modes of the glueball flavour enter through a two-component spinor at the insertion point. The triplet contribution to $S$, denoted $S_{\rm trip}$, is quadratic in these two odd components and squares to zero. Write $\omega$ for the doublet quadratic polynomial in the native fourteen modes, so that the doublet contribution is $\det M(x)\,\omega$. Then the profile obtained from these linear fields is
+
+$$
+S^5=(\det M(x))^5\omega^5+
+5 S_{\rm trip}(\det M(x))^4\omega^4 .
+$$
+
+Here the nilpotence statement is pointwise. The exact modes at separated insertions involve different linear combinations. [Adjoint zero modes and fundamental doublets, §5](https://arxiv.org/abs/0802.1862) · [Exact-mode combination, Eq. (2.5)](https://arxiv.org/abs/1605.06346)
+
+Use the ascending fourteen-colour order given above for Berezin integration, meaning extraction of the coefficient of the ordered product. For each listed pair $(i,j;b)$, the corresponding term in $\omega$ is $2b\nu^i\nu^j$. Let $\Lambda$ contract the pairs by applying the left derivatives $\partial_{\nu^j}\partial_{\nu^i}/(2b)$ and adding the seven results. The Pfaffian in this order is $-1024$ and the coefficient of $\omega^7$ is $7!(-1024)=-5160960$. If $P_m$ is the part of the remaining integrand of degree $m$ in these fourteen modes, integration of the displayed target insertion gives
+
+$$
+-61440\,(\det M(x))^5\Lambda^2 P_4
+-20480\,S_{\rm trip}(\det M(x))^4\Lambda^3 P_6 .
+$$
+
+Indeed the coefficient for $\omega^{7-k}P_{2k}$ is $(7-k)!(-1024)\Lambda^k P_{2k}/k!$. Direct multiplication checks all $1001+3003=4004$ exterior basis monomials at $k=2,3$. This integrates fourteen modes for arbitrary remaining insertions at this order in the target fields. The physical source, supercurrent, other modes and matched operator contributions remain to be evaluated. [All-monomial verifier](fifth_berezin.py) · [Coefficients](fifth_berezin.json)
+
+~~~sh
+python3 verify_six_family.py
+python3 intermediate_rank.py | diff -u intermediate_rank.json -
+python3 fifth_berezin.py | diff -u fifth_berezin.json -
+OPENBLAS_NUM_THREADS=1 python3 flag_boundaries.py --replay flag_135.json --check --out /tmp/f4-flag-replay.json
+~~~
