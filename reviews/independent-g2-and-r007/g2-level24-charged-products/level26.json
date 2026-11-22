@@ -1,0 +1,162 @@
+{
+  "5-4-4-0-0-Y9": {
+    "terminal_probes_only": true,
+    "weight": [
+      5,
+      4,
+      4,
+      0,
+      0
+    ],
+    "prime": 2147483647,
+    "seed": 932775,
+    "blocks": [
+      {
+        "length": 9,
+        "dimension": 1309,
+        "incoming": 514,
+        "outgoing": 795
+      }
+    ]
+  },
+  "5-5-3-0-0-Y9": {
+    "terminal_probes_only": true,
+    "weight": [
+      5,
+      5,
+      3,
+      0,
+      0
+    ],
+    "prime": 2147483647,
+    "seed": 933977,
+    "blocks": [
+      {
+        "length": 9,
+        "dimension": 1594,
+        "incoming": 634,
+        "outgoing": 960
+      }
+    ]
+  },
+  "6-4-3-0-0-Y9": {
+    "terminal_probes_only": true,
+    "weight": [
+      6,
+      4,
+      3,
+      0,
+      0
+    ],
+    "prime": 2147483647,
+    "seed": 934578,
+    "blocks": [
+      {
+        "length": 9,
+        "dimension": 2419,
+        "incoming": 859,
+        "outgoing": 1560
+      }
+    ]
+  },
+  "6-5-2-0-0-Y9": {
+    "terminal_probes_only": true,
+    "weight": [
+      6,
+      5,
+      2,
+      0,
+      0
+    ],
+    "prime": 2147483647,
+    "seed": 933376,
+    "blocks": [
+      {
+        "length": 9,
+        "dimension": 1474,
+        "incoming": 494,
+        "outgoing": 980
+      }
+    ]
+  },
+  "7-3-3-0-0-Y9": {
+    "terminal_probes_only": true,
+    "weight": [
+      7,
+      3,
+      3,
+      0,
+      0
+    ],
+    "prime": 2147483647,
+    "seed": 931573,
+    "blocks": [
+      {
+        "length": 9,
+        "dimension": 984,
+        "incoming": 313,
+        "outgoing": 671
+      }
+    ]
+  },
+  "7-4-2-0-0-Y9": {
+    "terminal_probes_only": true,
+    "weight": [
+      7,
+      4,
+      2,
+      0,
+      0
+    ],
+    "prime": 2147483647,
+    "seed": 932174,
+    "blocks": [
+      {
+        "length": 9,
+        "dimension": 1231,
+        "incoming": 342,
+        "outgoing": 889
+      }
+    ]
+  },
+  "8-3-2-0-0-Y9": {
+    "terminal_probes_only": true,
+    "weight": [
+      8,
+      3,
+      2,
+      0,
+      0
+    ],
+    "prime": 2147483647,
+    "seed": 930972,
+    "blocks": [
+      {
+        "length": 9,
+        "dimension": 403,
+        "incoming": 82,
+        "outgoing": 321
+      }
+    ]
+  },
+  "9-2-2-0-0-Y9": {
+    "terminal_probes_only": true,
+    "weight": [
+      9,
+      2,
+      2,
+      0,
+      0
+    ],
+    "prime": 2147483647,
+    "seed": 930371,
+    "blocks": [
+      {
+        "length": 9,
+        "dimension": 20,
+        "incoming": 0,
+        "outgoing": 20
+      }
+    ]
+  }
+}
