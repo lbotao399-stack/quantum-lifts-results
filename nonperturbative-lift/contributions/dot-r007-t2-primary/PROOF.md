@@ -1,0 +1,24 @@
+# A literal nonabelian classical primary candidate for the SU(3) j=30 outgoing channel
+
+**Result.** In the classical holomorphic Taylor complex for finite SU(3), the outgoing slot adjacent to R-007 at charges `(E;R1,R2,R3;JL,JR) = (13;5,2,2;2,0)` contains a nonzero C-odd class annihilated by the classical Taylor highest-weight and lowering operators. This is a statement about the classical complex, not a claim that the state is a physical primary at nonzero coupling or has a nonzero instanton matrix element.
+
+## Certificate
+
+- The input is a rational combination of 47 products of marked quadratic/cubic trace factors from the [pinned selected-product basis](https://github.com/lbotao399-stack/quantum-lifts-results/tree/9361ca1bef07dbb79ea43e5afb2c2beff9640e5f/algorithms/dual_singlets_20261118/taylor_hooks/cartan_products/weights). The vendored input is the original `su30_0.json.gz`; `R007_recipe.json` indexes its `selected_recipes` with zero-based indices. These weights in the archive are auxiliary source weights, not the charges of the final output.
+- In rational graded cyclic traces, the source has 348 terms. Applying (T_{+,1},T_{-,1},T_{+,2},T_{-,2}) in that order gives 1059, 1864, 4561 and 5080 terms, respectively. The indices 0, 1, 2 in the code are zero-based. The output has ((n_+,n_-;\theta_0,\theta_1,\theta_2)=(2,2;5,2,2)), length (Y=9), and is even. The initial factors are graded-symmetrized traces of length two or three and their outer Taylor derivatives; charge conjugation acts as ((-1)^Y), and the quartet commutes with color.
+- On the 5080-term **nonabelian** trace expression, (Q_0), both flavor raising operators, dotted spin raising, all six (T)'s, all three (S)'s, and both (K)'s vanish literally after graded cyclic canonicalization, without using finite-rank trace reductions or (Q_0) primitives. The vanishing is stronger than checking only the diagonal polynomial. Neither a modular quotient nor numerical sampling is used.
+- Restricting each letter to (operatorname{diag}(x,y,-x-y)) gives exactly the recorded 34,104 rational terms (canonical SHA-256 `89575f063dd2a39d7f45f3d7cd7a93dc1d2284141361aba79c29767e3b4e8ccd`), with lexicographically first coefficient (432/5). Because the classical (Q_0) vanishes on the Cartan complex, this proves non-exactness at finite SU(3).
+- As a negative control, substituting a single raw product for the rational combination fails one or more of the 14 equations.
+
+Run `python3 replay.py` with the Python standard library. No network or numerical dependencies are needed.
+
+## The same class survives the formal perturbative complex
+
+Let (D_z) and (D_{eta_j}) be the outer even and odd Taylor derivative operators on the coefficients, with the signs used for `D` in the replay. In the convention of this certificate the odd letter operator is (T_{zj}=D_{eta_j} B_z), where (B_z) lowers the (z)-Taylor index by one with coefficient one and kills index zero. The formula holds on the whole auxiliary jet set (and restricts to the admissible letters). Directly from the factorial normalization of (D_z),
+([T_{zj},D_w]=\delta_{zw}D_{eta_j}) for an even (D_w), while ({T_{zj},D_{eta_k}}=0). These extend through traces by the derivation rule. On the inside degree-one letters, (T_{zj}) replaces the (z) derivative of the superfield by its (eta_j) derivative and kills the other degree-one letters. It therefore preserves the span of graded-symmetrized products of fixed length and their outer derivatives. In particular, the four (T)'s in the construction express the candidate as a rational polynomial in components of the length-two and length-three single-graviton generating traces. This argument uses **classical** (T), not a full quantum lowering operator.
+
+Replace the products in this expansion by a fixed-bracket marked product. [Li–Liu–Chang, Theorem 9.1](https://arxiv.org/pdf/2611.24160v1#page=86) gives a finitely completed (Q(u))-closed vector with the same leading term. The [all-page Cartan restriction theorem](../dot-cartan-image/PROOF.md) excludes formal (u)-torsion: a finite bounding equation for a power of (u) would make the nonzero Cartan leading class an incoming boundary at a finite page. This proves formal survival, not formal primarity under any proposed quantum (T,S,K).
+
+## Boundaries
+
+The (T,S,K) used here are specified explicitly on Taylor coefficients in the replay. The nonzero class is therefore a concrete vector for classical comparison, not merely a dimension count. A matching at the perturbative physical cusp must identify these actions and the state after perturbative dressing. This certificate computes neither the physical Gram projection nor (p,delta Q_{mathrm{inst}},i). It does not certify that all classical classes with these charges are graviton products, and it does not say that Cartan restriction commutes with nonperturbative (Q).
