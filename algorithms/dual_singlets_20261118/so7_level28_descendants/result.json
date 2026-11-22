@@ -1,0 +1,135 @@
+{
+  "parent_rank_pair": [
+    12929,
+    12930
+  ],
+  "operators": {
+    "tree_checks": 186,
+    "ordered_first_pair_checks_per_operator": 147
+  },
+  "traces": {
+    "parent_terms": 1668,
+    "highest_weight_terms": [
+      5111,
+      10110
+    ],
+    "return_on_D_of_image": [
+      -8,
+      -10
+    ],
+    "return_on_Q1_of_descendants": [
+      8,
+      10
+    ]
+  },
+  "lower_targets": {
+    "classical_blocks": [
+      [
+        502,
+        313,
+        189,
+        0
+      ],
+      [
+        2432,
+        1546,
+        873,
+        13
+      ]
+    ],
+    "product_determinant": "-7409643204723800691383785960243200",
+    "product_residues": [
+      135801,
+      742567
+    ]
+  },
+  "returns": [
+    {
+      "degree": 0,
+      "dimension": 3,
+      "determinant": "1",
+      "characteristic_coefficients": [
+        -1,
+        3,
+        -3,
+        1
+      ]
+    },
+    {
+      "degree": 1,
+      "dimension": 9,
+      "determinant": "-262144000",
+      "characteristic_coefficients": [
+        262144000,
+        275251200,
+        128286720,
+        34832384,
+        6071808,
+        704640,
+        54440,
+        2700,
+        78,
+        1
+      ]
+    },
+    {
+      "degree": 2,
+      "dimension": 9,
+      "determinant": "184549376000000000",
+      "characteristic_coefficients": [
+        -184549376000000000,
+        20132659200000000,
+        -975175680000000,
+        27525120000000,
+        -498892800000,
+        6021120000,
+        -48384000,
+        249600,
+        -750,
+        1
+      ]
+    },
+    {
+      "degree": 3,
+      "dimension": 3,
+      "determinant": "-681472000",
+      "characteristic_coefficients": [
+        681472000,
+        2323200,
+        2640,
+        1
+      ]
+    }
+  ],
+  "full_bmn_level28": {
+    "nonempty_blocks": 145,
+    "defects": [
+      [
+        [
+          5,
+          5,
+          4
+        ],
+        10,
+        10217,
+        4057,
+        15,
+        6144,
+        1
+      ],
+      [
+        [
+          6,
+          4,
+          4
+        ],
+        10,
+        13755,
+        5412,
+        37,
+        8305,
+        1
+      ]
+    ]
+  }
+}

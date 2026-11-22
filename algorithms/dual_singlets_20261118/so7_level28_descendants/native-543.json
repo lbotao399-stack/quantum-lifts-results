@@ -1,0 +1,33 @@
+{
+  "mode": "chain",
+  "gauge": "SO7",
+  "sector": [
+    5,
+    4,
+    3,
+    0,
+    0
+  ],
+  "flavour": [
+    1,
+    1
+  ],
+  "spin2": 0,
+  "j": 24,
+  "prime": 1000003,
+  "seed": 772801,
+  "blocks": [
+    {
+      "Y": 10,
+      "F": 0,
+      "dim": 2432,
+      "rank_in": 1546,
+      "rank_out": 873,
+      "h": 13,
+      "rho": 13
+    }
+  ],
+  "seconds": 439.1,
+  "evals": 41402090,
+  "maxrss_MB": 217
+}

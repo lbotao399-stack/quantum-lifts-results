@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "count_scope": "Campaign-originated highest-weight first-image multiplets, explicit BMN generator families and independent higher-obstruction sources.",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_su2_jets.json",
+  "increments": {
+    "d1": 5,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "so7": {
+    "source_letter_length": 10,
+    "parent_level": 26,
+    "new_bmn_source_flavour_by_level": {
+      "28": [
+        [
+          6,
+          4,
+          4
+        ],
+        [
+          5,
+          5,
+          4
+        ]
+      ],
+      "30": [
+        [
+          6,
+          5,
+          4
+        ],
+        [
+          5,
+          5,
+          5
+        ]
+      ],
+      "32": [
+        [
+          6,
+          5,
+          5
+        ]
+      ]
+    },
+    "exterior_image_dimensions": [
+      3,
+      9,
+      9,
+      3
+    ],
+    "new_highest_weight_multiplets": 5,
+    "first_variations_after_lowering_at_level_28": [
+      8,
+      10
+    ],
+    "nonempty_level_28_bmn_blocks_checked": 145,
+    "second_rank_from_all_level_28_bmn_sources": 0
+  },
+  "su3": {
+    "probe": "completed R-007",
+    "max_classical_reductions": 5,
+    "possible_graviton_subtractions_at_orders": [
+      1,
+      3
+    ],
+    "first_clearing_exponent": 6,
+    "total_clearing_exponent": "finite, not computed",
+    "matched_instanton_derivation_and_graviton_survival": "physical hypotheses",
+    "physical_instanton_matrix_element_computed": false
+  }
+}
