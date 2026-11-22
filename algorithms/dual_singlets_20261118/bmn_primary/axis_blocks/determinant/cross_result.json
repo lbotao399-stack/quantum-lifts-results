@@ -1,0 +1,66 @@
+{
+  "highest_cycle_terms": 6573,
+  "mixed_colour": [
+    0,
+    -1
+  ],
+  "low_removed_colour": [
+    -1,
+    0
+  ],
+  "terms": [
+    [
+      2,
+      12,
+      [
+        0,
+        0
+      ],
+      "3/56"
+    ],
+    [
+      5,
+      9,
+      [
+        0
+      ],
+      "-3/4"
+    ],
+    [
+      7,
+      1,
+      [
+        0,
+        1,
+        0
+      ],
+      "3/16"
+    ],
+    [
+      7,
+      1,
+      [
+        0,
+        0,
+        1
+      ],
+      "-27/224"
+    ],
+    [
+      9,
+      5,
+      [],
+      "3"
+    ]
+  ],
+  "residual_terms": 312,
+  "residual_dimensions": [
+    83,
+    314,
+    230
+  ],
+  "dual_terms": 123,
+  "predecessors_tested": 230,
+  "exact_pairing": "-405141750",
+  "physical_classical_target_upper": 0
+}

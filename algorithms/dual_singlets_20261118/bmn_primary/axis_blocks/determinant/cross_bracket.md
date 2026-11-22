@@ -1,0 +1,24 @@
+# Vanishing of the second target for the fifteen-letter G₂ singlet
+
+In the relative polynomial Taylor complex, the rational colour-singlet classical cohomology has multiplicity zero in Taylor diagram $(5,5,3,3)$ at length fourteen. Under filtered Taylor equivariance, the level-36 BMN flavour singlet $(6,6,6)$ therefore has zero outgoing $d_2$ at source length fifteen. The previously excluded orders three and four and the absence of higher polynomial targets leave only $d_1$ at that length. Lengths eleven and thirteen remain possible in the index. [Selection rule and earlier orders](../README.md) · [Rational witness](cross_witness.json.gz)
+
+Separate the four ordinary Taylor axes into a high and a transverse pair. Assign cost zero to currents supported on a single pair and the square of the Taylor degree to every current meeting both pairs. Within each pair the cost-preserving classical boundary is the full current-algebra boundary. From the pure-axis occupations, at total length fourteen the only surviving distribution in the required restriction has lengths eight and six, Taylor types $\det^5$ and $\det^3$, and no mixed jet. The exact multiplicity calculation leaves one colour-singlet line. It pairs two copies of colour $(8,0)$; both occur once. The first possible increase of cost is four. It comes from bracketing a linear jet in each pair. A nonzero map out of this one line exhausts the restricted component on the next filtration page. [Filtration and colour ranks](README.md)
+
+## The extremal component
+
+In the high pair, reconstruct the eight-letter chain from the 1,076 supplied determinant-quotient coefficients. The projector to the actual middle-weight determinant is the sum of $(-1)^k(y\partial_x)^k(x\partial_y)^k/(k!(k+1)!)$ for $0\le k\le5$; the $SL(2)$ commutator verifies this formula on each middle-weight string. Clearing denominators and dividing by the common coefficient gcd gives 6,573 terms. The replay checks the classical boundary, both Taylor generators and both simple colour raising operators on the actual chain. Its colour highest weight is $(8,0)$. In the transverse pair put one copy of each root $(-3,1),(-1,0),(0,-1)$ on each axis. These three colours commute pairwise. The resulting six-letter cycle has colour lowest weight $(-8,0)$ and Taylor type $\det^3$. [Colour conventions](../g2_colours.py) · [Complete chain checks](cross_bracket.py)
+
+The invariant tensor in the two colour modules is fixed by sending the functional extracting this transverse lowest-weight word to the high highest-weight cycle. It defines an intertwiner from the dual transverse module into the high chains. Therefore a simple colour lowering word acting on that functional gives the same lowering word acting on the high cycle. This constructs the necessary invariant components without expanding the entire colour singlet.
+
+Retain the mixed jet along the second axis of each pair, of colour $(0,-1)$. Evaluate the residual transverse factor on the five-letter word obtained by removing colour $(-1,0)$ on its second axis from the displayed lowest-weight word. For each possible colour refilling this missing letter, expand its coefficient functional on the transverse module in lowering words. The verifier evaluates the functionals on **all** simple raising words of the required degree applied to the lowest-weight vector. These span each required weight space. The Lie bracket and the exterior sign give five coefficients. In the order printed by the verifier they are $3/56,-3/4,3/16,-27/224,3$. The direct contraction first lowers the full high chain and then removes the required first jet. A second implementation commuted the removal through each lowering word and obtained the same nonzero component. The overall sign of the bracket is fixed here by the ordering of the two exterior removals. [Five words and coefficients](cross_result.json)
+
+The remaining high pair has Taylor weight $(5,4)$, colour $(7,1)$ and length seven. Its chain dimensions at lengths six, seven and eight are $83,314,230$. The mixed component is a 312-term cycle. The supplied 123-term covector evaluates to zero on the boundaries of **all 230** eight-letter words. Its value on the mixed component is
+$$
+-405141750 .
+$$
+The transverse residual already has maximal length five at total Taylor degree five. There is no six-letter transverse predecessor. At cost four the only mixed factor is a single quadratic jet, so its degree cannot change under the cost-preserving boundary. The covector consequently detects the class in the entire cost-four target of this first bracket. This proves the classical vanishing over the rationals. The nonzero number is a pairing for the classical filtration differential. [Exact replay output](cross_result.json)
+
+From this directory the replay uses the Python standard library.
+~~~sh
+python3 cross_bracket.py | diff -u cross_result.json -
+~~~

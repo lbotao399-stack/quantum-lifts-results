@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_determinant.json",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "scope": "Campaign-originated highest-weight first images, explicit generator families and independent higher obstructions.",
+  "g2_level36_length15": {
+    "classical_target_upper_bounds": {
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "high_pair_colour_multiplicities": {
+      "4,2": 0,
+      "6,0": 0,
+      "8,0": 1
+    },
+    "source_length_certified": false,
+    "mixed_classical_pairing": -405141750
+  },
+  "usp4_weight754": {
+    "odd_lengths": [
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "rational_classical_dimensions": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "usp4_index_bound": {
+    "group_specific_previous": 3,
+    "group_specific_current": 4,
+    "by_level": 48,
+    "explicit_increment": 0
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/bmn_primary/axis_blocks/determinant/cross_result.json",
+    "algorithms/dual_singlets_20261118/bmn_primary/axis_blocks/determinant/5701203/receipt.json"
+  ]
+}

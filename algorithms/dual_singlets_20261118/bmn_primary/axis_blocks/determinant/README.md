@@ -1,5 +1,7 @@
 # One possible second target in the fifteen-letter G₂ singlet sector
 
+The classical bracket between the two pairs kills the remaining line. Its exact pairing is $-405141750$, giving final target dimension zero. [Mixed-bracket proof and replay](cross_bracket.md)
+
 For the level-36 flavour singlet of $G_2$, a fifteen-letter source can have at most **one** classical target for the second supercharge obstruction under filtered Taylor equivariance. The target Taylor diagram is $(5,5,3,3)$ at length fourteen. The high pair of axes must carry $\det^5$ and the transverse pair $\det^3$. The latter contains one copy each of the colour singlet and $(4,2),(6,0),(8,0)$ in short-root-first Dynkin labels. The high pair has zero singlets. At this total length the earlier pure-axis filtration excludes every occupation with a jet connecting the two pairs. Keeping both axes of each pair together gives a filtration invariant under both changes of Taylor coordinates. The selected restriction of $(5,5,3,3)$ occurs once. [Occupations and transverse cycles](../README.md)
 
 | High-pair colour | Chain multiplicities at lengths 7, 8, 9 | Rank from 8 to 7, lower bound | Rank from 9 to 8, lower bound | Rational homology at length 8 |

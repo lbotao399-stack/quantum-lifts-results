@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## The fifteen-letter $G_2$ branch has zero second target
+
+The last colour line gives an exact classical cross-bracket pairing $-405141750$. Its rational covector vanishes on all 230 possible high-pair predecessors. Thus $d_2$ vanishes on the fifteen-letter level-36 singlet under filtered Taylor equivariance. The index still allows lengths 11 and 13. New $d_1$ multiplets **0** (85 cumulative). New explicit fortuitous generators **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative counts **0, 1, 0**. [Calculation](algorithms/dual_singlets_20261118/bmn_primary/axis_blocks/determinant/cross_bracket.md) · [Counts](data/N4_lift_campaign_counts_20261122_cross_bracket.json)
+
 ## One possible $G_2$ second target and four odd $USp(4)$ generators
 
 The two simple colour lowering maps and the Taylor determinant reduce the second target of the fifteen-letter $G_2$ branch to at most one direction, with colour $(8,0)$ in the high pair. A8 job 5701203 gives the two adjacent rank bounds at both primes. The $USp(4)$ ranks from A8 jobs 5700336 and 5700337 close the last of six possible sources for a single remaining odd generator. Two primary-index inequalities force at least four odd multiplets by level 48. New $d_1$ multiplets **0** (85 cumulative). New explicit fortuitous generators **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative counts **0, 1, 0**. [Classical target](algorithms/dual_singlets_20261118/bmn_primary/axis_blocks/determinant/README.md) · [Index bound](algorithms/dual_singlets_20261118/bmn_primary/second_odd_generator.md#four-odd-generators-in-usp4-by-level-48) · [Counts](data/N4_lift_campaign_counts_20261122_determinant.json)
