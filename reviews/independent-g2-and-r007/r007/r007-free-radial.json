@@ -1,0 +1,11 @@
+{
+  "source_terms": 5080,
+  "tested_letters": 161,
+  "operations": 19,
+  "singleton_equations": 3059,
+  "target_lowering_equations": 14,
+  "Q0_closed": true,
+  "orthogonal_Cartan_terms": 21577,
+  "orthogonal_Cartan_sha256": "17819ddd88aaad4b62b03186572e4d5f355e71273cbe402ba40fcca4f0b29b5b",
+  "Cartan_Gram_defining_trace_unit_singleton": "7987200"
+}

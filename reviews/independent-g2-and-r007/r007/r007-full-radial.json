@@ -1,0 +1,15 @@
+{
+  "trace_terms": 5080,
+  "singleton_profiles": 705,
+  "nonzero_norm_profiles": 705,
+  "topology_coefficients": {
+    "0": "-4073472/5",
+    "1": "-9649152/5",
+    "2": "7133184/5",
+    "3": "1368576"
+  },
+  "defining_trace_SU3_symmetric_cubic_norm": "20/3",
+  "Cartan_symmetric_cubic_norm": "2/3",
+  "full_SU3_free_norm": "5171748864",
+  "Cartan_free_norm": "7987200"
+}

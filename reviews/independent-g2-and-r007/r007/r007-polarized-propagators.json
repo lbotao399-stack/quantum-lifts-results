@@ -1,0 +1,73 @@
+{
+  "flavour_order": [
+    4,
+    1,
+    2,
+    3
+  ],
+  "source_words": 6139,
+  "target_words": 5080,
+  "distinct_target_jets": 33,
+  "target_occurrences_by_flavour_derivative_count": {
+    "1": 33057,
+    "2": 5856,
+    "0": 6490,
+    "3": 317
+  },
+  "source_species_contents": 10,
+  "target_species_contents": 16,
+  "three_propagators": {
+    "species_matched_pairings": 7929439422,
+    "also_pass_undifferentiated_source_local_bound": 7097115018
+  },
+  "self_dual_after_three": [
+    6,
+    6,
+    6,
+    6
+  ],
+  "right_flavour_four_required": 6,
+  "right_flavour_four_available": 5,
+  "exterior_check": {
+    "subalgebra_dimensions": [
+      1,
+      5,
+      10,
+      10,
+      5,
+      1,
+      0
+    ],
+    "complementary_dotted_control": 2
+  },
+  "improved_current_doubled_spins": [
+    2,
+    1
+  ],
+  "anti_degree_one_doubled_spins": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "anti_current_flavour_lower_bound": [
+    2,
+    1,
+    1,
+    1
+  ],
+  "anti_before_contractions": [
+    12,
+    12,
+    12,
+    12
+  ],
+  "direct_propagator_lower_bounds": [
+    4,
+    6
+  ]
+}
