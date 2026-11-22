@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## SO(13) second-page rank and SU(3) instanton weights
+
+The incoming $d_2$ at $(7,7;2,0,0)$ has rank zero. The auxiliary $SL(2)$ raising matrices reduce 1,848 zero-weight polarizations to 208 representatives of 46 determinant types. The second score is an explicit rational functional of 20 commuting-plane coordinates. Two first-differential families have 30 nonzero native coefficients, including two earlier $SO(7)$ controls. This phase adds 28 $d_1$ multiplets and zero fortuitous generators. The $SU(3)$ instanton flavour bound excludes both separated classical endpoints of the proposed R-007 channel. [Algorithms](algorithms/dual_singlets_20261118/orthogonal_glueballs/quadratic_so13/README.md) · [Flavour bound](algorithms/su3_j30_classical_ranks/instanton_probe/flavour_modes.md) · [Counts](data/N4_lift_campaign_counts_20261122_quadratic.json)
+
 ## Two formally surviving bosonic SU(3) seeds
 
 The $j=34$ and $j=36$ graviton relations give closed perturbative representatives for the charge-conjugation-even and odd seeds respectively. The second local Cartan multiplication map has rational rank 53 on 53 dimensions. The mixed $SU(2)$ threshold pairings are $120294720$ and $19780588800$. The first instanton matrix element for each remains open. New $d_1$ lifts **0** (18 total). New fortuitous generator families **0** (11 explicit). [Exact proofs and replay](algorithms/su3_j34_20261118/local_relations/README.md)

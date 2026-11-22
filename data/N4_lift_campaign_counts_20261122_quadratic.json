@@ -1,0 +1,344 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 16,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 3,
+    "additional_G2_odd_BMN_generators": 2,
+    "candidate_G2_generators_for_level_36_singlet": [
+      {
+        "level": 36,
+        "weight": [
+          6,
+          6,
+          6
+        ],
+        "allowed_odd_lengths": [
+          11,
+          13,
+          15
+        ]
+      }
+    ],
+    "USp4_single_additional_core_alternatives_remaining": [
+      [
+        7,
+        5,
+        4
+      ]
+    ],
+    "G2_minimum_by_level": {
+      "44": {
+        "odd_generators": 2
+      },
+      "62": {
+        "distinct_odd_generator_weights": 2
+      }
+    }
+  },
+  "count_scope": "Campaign-originated results. External reproductions are credited separately.",
+  "date": "2026-11-22",
+  "phase": "Complete SO(13) level-46 second page, two first-image families and SU(3) one-instanton flavour support",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_scalar_multipliers.json",
+  "increments": {
+    "d1": 28,
+    "fortuitous_generator_families": 0,
+    "index_forced_BMN_generators": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 57,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "first_image_count_scope": "Only finite native evaluations enter the ledger. The two SO(7) cases lie inside the historical full census through level 22. The two zero SO(8) coefficients are omitted. The infinite family is stated separately.",
+  "first_images": [
+    {
+      "group": "SO(7)",
+      "phi_flavours": 2,
+      "power": 2,
+      "level": 22,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "12",
+      "counting": "previous census"
+    },
+    {
+      "group": "SO(8)",
+      "phi_flavours": 2,
+      "power": 3,
+      "level": 28,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "-36",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(9)",
+      "phi_flavours": 2,
+      "power": 3,
+      "level": 28,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "-12",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(9)",
+      "phi_flavours": 2,
+      "power": 4,
+      "level": 34,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "96",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(10)",
+      "phi_flavours": 2,
+      "power": 4,
+      "level": 34,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "48",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(10)",
+      "phi_flavours": 2,
+      "power": 5,
+      "level": 40,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "-240",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(11)",
+      "phi_flavours": 2,
+      "power": 5,
+      "level": 40,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "-144",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(11)",
+      "phi_flavours": 2,
+      "power": 6,
+      "level": 46,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "576",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(12)",
+      "phi_flavours": 2,
+      "power": 6,
+      "level": 46,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "384",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(12)",
+      "phi_flavours": 2,
+      "power": 7,
+      "level": 52,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "-1344",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(13)",
+      "phi_flavours": 2,
+      "power": 7,
+      "level": 52,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "-960",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(13)",
+      "phi_flavours": 2,
+      "power": 8,
+      "level": 58,
+      "dotted_highest_spin_twice": 2,
+      "ordered_coefficient": "3072",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(7)",
+      "phi_flavours": 3,
+      "power": 1,
+      "level": 21,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-72",
+      "counting": "previous census"
+    },
+    {
+      "group": "SO(8)",
+      "phi_flavours": 3,
+      "power": 2,
+      "level": 27,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "216",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(9)",
+      "phi_flavours": 3,
+      "power": 2,
+      "level": 27,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "72",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(9)",
+      "phi_flavours": 3,
+      "power": 3,
+      "level": 33,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-576",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(10)",
+      "phi_flavours": 3,
+      "power": 3,
+      "level": 33,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-288",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(10)",
+      "phi_flavours": 3,
+      "power": 4,
+      "level": 39,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "1440",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(11)",
+      "phi_flavours": 3,
+      "power": 4,
+      "level": 39,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "864",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(11)",
+      "phi_flavours": 3,
+      "power": 5,
+      "level": 45,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-3456",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(12)",
+      "phi_flavours": 3,
+      "power": 5,
+      "level": 45,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-2304",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(12)",
+      "phi_flavours": 3,
+      "power": 6,
+      "level": 51,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "8064",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(13)",
+      "phi_flavours": 3,
+      "power": 6,
+      "level": 51,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "5760",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(13)",
+      "phi_flavours": 3,
+      "power": 7,
+      "level": 57,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-18432",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(14)",
+      "phi_flavours": 3,
+      "power": 7,
+      "level": 57,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-13824",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(14)",
+      "phi_flavours": 3,
+      "power": 8,
+      "level": 63,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "41472",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(15)",
+      "phi_flavours": 3,
+      "power": 8,
+      "level": 63,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "32256",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(15)",
+      "phi_flavours": 3,
+      "power": 9,
+      "level": 69,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-92160",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(16)",
+      "phi_flavours": 3,
+      "power": 9,
+      "level": 69,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "-73728",
+      "counting": "campaign addition"
+    },
+    {
+      "group": "SO(16)",
+      "phi_flavours": 3,
+      "power": 10,
+      "level": 75,
+      "dotted_highest_spin_twice": 3,
+      "ordered_coefficient": "202752",
+      "counting": "campaign addition"
+    }
+  ],
+  "references": [
+    "algorithms/dual_singlets_20261118/orthogonal_glueballs/quadratic_so13/README.md",
+    "algorithms/su3_j30_classical_ranks/instanton_probe/flavour_modes.md"
+  ]
+}
