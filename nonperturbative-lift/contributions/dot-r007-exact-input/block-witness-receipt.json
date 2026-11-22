@@ -1,0 +1,19 @@
+{
+  "source_sha256": "8bee15e4f741312ca2c05e711b6aec8afcd69fe47dddf78e7671a05f5bab9f34",
+  "classical_dual_sha256": "78c4eab761234f9c136a42c1481a3c92cc03887e8345545c0e6810995e019eda",
+  "shift": "diag(X + h I_2, -2h) on phi1 only, coefficients of h^3",
+  "generator": "unscaled Pauli matrices",
+  "real_imag_support": [
+    0,
+    117
+  ],
+  "real_imag_pairing": [
+    "0",
+    "31104"
+  ],
+  "literal_multiple_of_saved_O0": [
+    "0",
+    "-5184/5"
+  ],
+  "literal_O0_pairing": "-30"
+}
