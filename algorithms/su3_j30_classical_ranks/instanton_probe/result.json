@@ -1,0 +1,97 @@
+{
+  "target_terms": 5080,
+  "collinear_coefficients": 566,
+  "nonzero_collinear": 0,
+  "profile_counts": [
+    [
+      [
+        0,
+        9,
+        0,
+        0
+      ],
+      579
+    ],
+    [
+      [
+        1,
+        7,
+        1,
+        0
+      ],
+      2634
+    ],
+    [
+      [
+        2,
+        5,
+        2,
+        0
+      ],
+      1521
+    ],
+    [
+      [
+        2,
+        6,
+        0,
+        1
+      ],
+      225
+    ],
+    [
+      [
+        3,
+        3,
+        3,
+        0
+      ],
+      30
+    ],
+    [
+      [
+        3,
+        4,
+        1,
+        1
+      ],
+      90
+    ],
+    [
+      [
+        4,
+        3,
+        0,
+        2
+      ],
+      1
+    ]
+  ],
+  "three_jet_traces": [
+    [
+      "AA AAA BB CC",
+      "8/5"
+    ],
+    [
+      "AA AAA BC BC",
+      "-8/5"
+    ],
+    [
+      "AAA AB AB CC",
+      "32/15"
+    ],
+    [
+      "AAA AB AC BC",
+      "-64/15"
+    ],
+    [
+      "AAA AC AC BB",
+      "32/15"
+    ]
+  ],
+  "cartan_pairing": "-2016/5",
+  "minimum_target_mode_degree": 10,
+  "source_terms": 6139,
+  "minimum_source_mode_degree": 15,
+  "one_instanton_modes": 24
+}
