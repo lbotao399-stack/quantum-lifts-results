@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## Nine possible second-target directions for the fifteen-letter $G_2$ branch
+
+For the level-36 singlet, the rational classical target bounds at orders two, three and four are $9,0,0$ under filtered Taylor equivariance. The second bound is $5+2+2$ in three nontrivial colour representations of the two high Taylor axes. At $USp(4)$ level 32 the analogous bound drops from 1,128 to 98 for the thirteen-letter source. New $d_1$ multiplets **0** (85 cumulative). New explicit fortuitous generators **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative counts **0, 1, 0**. [Exact calculation](algorithms/dual_singlets_20261118/bmn_primary/axis_blocks/README.md) · [Counts](data/N4_lift_campaign_counts_20261122_axis_blocks.json)
+
 ## Five first-image multiplets from the SO(7) level-26 triplet
 
 Both ten-letter BMN candidates at $j=28$ reach the known nonzero first image at $j=26$ under lowering, with coefficients $8$ and $10$ for the first variations of the descendant sources. All 145 nonempty level-28 BMN blocks are accounted for. The next two raising degrees supply three more first-image multiplets. At $SU(3)$ level 30, at most five classical discriminant reductions put the completed R-007 class in the localized graviton algebra. A matched instanton derivation annihilating these gravitons can only give a Cartan-invisible leading image. The physical matrix element remains open. New $d_1$ multiplets **5** (85 cumulative). New fortuitous generator families **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative counts **0, 1, 0**. [Exact $SO(7)$ returns](algorithms/dual_singlets_20261118/so7_level28_descendants/README.md) · [Completed-source proof](algorithms/su3_j30_classical_ranks/instanton_probe/completed_discriminant.md) · [Counts](data/N4_lift_campaign_counts_20261122_so7_bmn_returns.json)
