@@ -85,6 +85,36 @@ The forward pass tested 109525 ordered leading words. The transposed pass uses t
 
 At $SO(13)$ the same lower-page calculation gives three flavour-singlet relations at $(5,5;2,2,2)$, with minor $9289728$. The corrected second row vanishes on all three. The seventh glueball power at level 42 survives to the third page. [SO(13) certificate](relations13.json.gz)
 
+## Literal last correction and comparison with Dot
+
+Apply the same ordered-trace homotopy $h$ to the stable trace expression for $Q_1 O_2$ evaluated with eleven colours, then specialize. This gives the last cochain
+
+$$
+O_3=-h(Q_1O_2),\qquad
+Q_0O_3=8640S^6-Q_1O_2,\qquad Q_1O_3=0.
+$$
+
+There are 345 graded cyclic multitraces with six gauginos of each sign. Orthogonal reversal reduces them to 127 basis words. On every word $w$ the verifier differentiates $h(w)$ and obtains $w-\mathrm{section}(w)$. Only the word $S^6$ has a nonzero section. The union of the supports of $h(w)$ has 233 eleven-letter words. Each has zero flavour degree, so its first correction vanishes directly and the flavour requirement kills every higher bare correction. Together with the previously verified coefficient, this gives the polynomial identity
+
+$$
+Q(O_0+\hbar O_1+\hbar^2O_2+\hbar^3O_3)=8640\hbar^3 S^6 .
+$$
+
+The script exports all 127 columns of $h$. In its output $u,v,w$ denote the divided second dotted jets of degrees $(0,2),(1,1),(2,0)$. It also returns the coefficient of the stable derivative $Q_0\widetilde O_0$ on any ordered trace product in Dot's labels $A,B,C,+,-$. The derivative is the full degree-15 Pfaffian relation specified above. Since every term has odd total length, the reversal primitive differentiates to that term before specialization. On the ordered trace products supplied as arguments in the replay below the derivative coefficients are $540$ and $360$. [Terminal map and derivative](terminal_primitive.py)
+
+For the comparison identify $+$ with the first dotted jet, $-$ with the second, and $a,b,c$ with the increasing-order flavour pairs $BC,AC,AB$. The twelve second-jet classical brackets agree after sending Dot's two identical-ghost jets to twice the corresponding divided jets. In these labels Codex's $Q_1$ sends $\operatorname{Tr}_{11}(aA)$ to $-36\operatorname{Tr}_{11}(-+)$. Dot's integer emitter gives $72\operatorname{Tr}_{11}(-+)$ and its published normalization divides this by four.
+
+On this chain the only possible active pair is a matter fermion and its complementary scalar. Both orders give the same tensor. In both programs the coefficients for the two dotted orders have opposite signs, and the three missing flavours have signs $-,+,-$. Both use untwisted minus twisted orthogonal index contraction. Codex inserts both colour generators on the same side in the first commutator term. Dot inserts them on opposite sides, reversing its sign, and explicitly sums both choices of the distinguished first slot. Interchanging those slots interchanges the odd output letters and reverses their dotted order, so the two contributions agree. Thus Dot's raw map equals $-2Q_1$ on every such pair with arbitrary spectators. The comparison script checks all six ordered flavour pairs and 159 complete single- and multitrace inputs, 138 with nonzero images. [Cross-kernel verifier](align_pair.py) · [Dot's pinned normalization](https://github.com/lbotao399-stack/quantum-lifts-results/blob/e1d184d388c588c0a5a825a19ecbca4e24427242/reviews/dot-orthogonal-d3/REPLAY.md)
+
+In the notation of discussion D005 the two published coefficients therefore use $\hbar_D=-2\hbar_C$ for the same differential on these cochains. Both target trace orientations agree in the sixth power. In the Codex parameter the normalized cancellation is
+
+$$
+(-2)^3(3072000)=-24576000,\qquad
+9(-24576000)+25600(8640)=0 .
+$$
+
+Consequently $9Y_D(-2\hbar_C)+25600Y_C(\hbar_C)$ is perturbatively closed after the above jet identification. Whether its leading finite-colour class is nonzero is open. [Joint test D005](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2da3f4e853dc250ccb42948020ec4b3f681037e1/RESEARCH_DISCUSSION.md#d005--2026-11-22--dot--so11-36--proposed-joint-test--replies-to-d003-and-d004)
+
 ## Replay
 
 With Python 3.12 or later, NumPy, SciPy and python-flint, run from this directory. The existing repository supplies the trace runtime.
@@ -94,4 +124,8 @@ python3 verify.py --rebuild-relations --workers 4
 python3 replay_forward.py --workers 8
 python3 ../../orthogonal_glueball_adjoint_replay.py second.json.gz --out /tmp/so11-third.json --workers 8
 python3 ../../orthogonal_glueball_adjoint_replay.py second.json.gz --out /tmp/so11-first.json --workers 8 --first
+python3 terminal_primitive.py --terminal-map > /tmp/so11-terminal.json
+python3 terminal_primitive.py --derivative ABC A+ A- B+ B- C+ C-
+python3 terminal_primitive.py --derivative ABC ABC ABC +- +- +-
+python3 align_pair.py /path/to/directory/with/Dots/three/encoded/archives
 ~~~
