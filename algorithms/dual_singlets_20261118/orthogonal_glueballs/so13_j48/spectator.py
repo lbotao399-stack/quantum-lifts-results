@@ -68,7 +68,7 @@ def main(archives):
     print(json.dumps(dict(earlier_finite_relations=lower, first_dual_words=len(first),
                           first_dual_columns=columns, second_balanced_relations=balanced,
                           second_spin_singlet_relations=singlet, **check_spectator(),
-                          source_coefficients=list(map(str, coefficients)), possible_orders=[2,3])))
+                          source_coefficients=list(map(str, coefficients)), orders_from_product_and_d1=[2,3])))
 
 
 if __name__ == '__main__':
