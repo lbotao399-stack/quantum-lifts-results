@@ -40,8 +40,8 @@ def canonical(raw, shape):
     return sign, (tuple(atoms), *groups, tuple(sorted(extra)))
 
 
-def directions(index, weight):
-    shape, np, nm, _ = SHAPES[index]
+def directions(index, weight, shapes=SHAPES, extra_axes=2):
+    shape, np, nm, _ = shapes[index]
     choices = []
     for closed, v in shape:
         axes = (3,) if closed or len(v) % 2 == 0 else range(3)
@@ -62,7 +62,7 @@ def directions(index, weight):
             combinations(range(3), np), combinations(range(3), nm)
         ):
             h = q + sum(WEIGHT[k] for k in plus + minus)
-            for x in combinations_with_replacement(range(3), 2):
+            for x in combinations_with_replacement(range(3), extra_axes):
                 if h + sum(WEIGHT[k] for k in x) != weight:
                     continue
                 raw = atoms, plus, minus, x
@@ -101,10 +101,10 @@ def raised(raw, shape):
 
 
 @lru_cache(None)
-def quotient(i):
-    shape = SHAPES[i][0]
-    zero = list(directions(i, 0))
-    lower = list(directions(i, -1))
+def quotient(i, shapes=SHAPES, extra_axes=2):
+    shape = shapes[i][0]
+    zero = list(directions(i, 0, shapes, extra_axes))
+    lower = list(directions(i, -1, shapes, extra_axes))
     assert len(zero) == len(set(zero)) and len(lower) == len(set(lower))
     positions = {v: j for j, v in enumerate(zero)}
     m = fmpq_mat(len(lower), len(zero))

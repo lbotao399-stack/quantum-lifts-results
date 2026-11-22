@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## Six cubic scalar coordinates survive the second supercharge differential
+
+At $SO(14)$ level 39 and $SO(15)$ level 51, the full incoming second pairing vanishes in the respective reflection-even, one-flavour cubic target blocks. Each contains three classical trace coordinates and has zero incoming first image. In fifteen colours three uncorrected scores are nonzero on 35, 36 and 34 finite determinant rows. Adjoining all three columns to the commuting-coordinate matrix leaves its rank at seven. The native verifier regenerated all 39 independent rows across the two groups. New $d_1$ lifts **0** (77 cumulative). New fortuitous generator families **0** (11 explicit cumulative). [Derivation and replay](algorithms/dual_singlets_20261118/orthogonal_glueballs/quadratic_so13/cubic_second.md)
+
 ## Exact Ward test of a four-input SU(3) instanton ansatz
 
 At level 30 a four-input colour ansatz fits all 120 selected Cartan coordinates of Dot's outgoing state. Its value on an explicit classical boundary is $6032431/45714240$. Using four boundaries excludes the full 87-column ansatz under the condition that its projected output equal a nonzero multiple of the specified target component. The rational rank changes from 7 to 8. The physical instanton matrix element is open. New $d_1$ lifts **0** (77 cumulative). New fortuitous generator families **0** (11 explicit cumulative). The campaign counts for $d_2$, $d_3$ and nonperturbative lifts are **0, 1, 0**. [Proof and replays](algorithms/su3_j30_classical_ranks/instanton_probe/local_contacts.md) · [Counts](data/N4_lift_campaign_counts_20261122_contact_ward.json)

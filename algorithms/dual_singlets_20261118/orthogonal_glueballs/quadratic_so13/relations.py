@@ -57,9 +57,49 @@ def strip_sites(sites, closed):
     return {s: c for s, c in out.items() if c}
 
 
-def determinant_evaluation(k, point, native=False):
-    shape = SHAPES[k][0]
-    atoms, p, m, x = quotient(k)[1][point]
+def merge_double_paths(relation, indices):
+    """Extract a factorial times one commuting power for identical even paths."""
+    count = len(indices)
+    if count < 2:
+        return
+    mask = sum(1 << i for i in indices)
+    first = 1 << indices[0]
+    assert relation.used & mask == mask
+    project = relation.project
+    stride = 1 << (max(project.divisors).bit_length() + 1)
+    for block, choices in relation.catalog.items():
+        representative = {(b, m, x, c) for b, m, x, t, c in choices if t == first}
+        for i in indices[1:]:
+            assert representative == {
+                (b, m, x, c) for b, m, x, t, c in choices if t == (1 << i)
+            }
+        assert all(m == 0 for b, m, x, c in representative)
+        relation.catalog[block] = [v for v in choices if not (v[3] & mask)]
+        relation.catalog[block].extend(
+            (b, m, x + stride, 0, c) for b, m, x, c in representative
+        )
+    relation.used ^= mask
+    project.weights = {
+        x + count * stride: factorial(count) * c for x, c in project.weights.items()
+    }
+    project.divisors = {
+        x + j * stride for x in project.divisors for j in range(count + 1)
+    }
+
+
+def determinant_evaluation(
+    k,
+    point,
+    native=False,
+    *,
+    shapes=SHAPES,
+    length=18,
+    colours=13,
+    compress_pairs=False,
+    extra_axes=2,
+):
+    shape = shapes[k][0]
+    atoms, p, m, x = quotient(k, shapes, extra_axes)[1][point]
     inside = [
         (v, b, axes) for (closed, v), (b, axes) in zip(shape, atoms) if not closed
     ]
@@ -72,9 +112,13 @@ def determinant_evaluation(k, point, native=False):
     )
     r = determinant(6, spec)
     r.project = scalar_projector(2, x)
-    r.letters = 18 - sum(len(v) for v, axes in external)
+    r.letters = length - sum(len(v) for v, axes in external)
     r.pf_degree = r.letters - sum(len(v) - 1 for v, b, axes in inside)
-    assert r.pf_degree > 13
+    assert r.pf_degree > colours
+    if compress_pairs:
+        merge_double_paths(
+            r, [i for i, (v, b, _) in enumerate(inside) if v == "mp" and b == 3]
+        )
     if not native:
         attach_rooted(r)
     counts = Counter()

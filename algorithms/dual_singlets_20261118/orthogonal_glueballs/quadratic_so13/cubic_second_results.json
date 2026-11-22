@@ -1,0 +1,130 @@
+[
+  {
+    "colours": 14,
+    "level": 39,
+    "finite_shapes": 2,
+    "zero_weight_components": 12,
+    "independent_components": 2,
+    "first_native_columns": [
+      60,
+      345,
+      74
+    ],
+    "second_native_columns": [
+      2392,
+      19868,
+      3567
+    ],
+    "second_dual_lengths": [
+      429,
+      3400,
+      677
+    ],
+    "plane_rank": 1,
+    "augmented_rank": 1,
+    "nonzero_uncorrected_scores": [
+      0,
+      0,
+      0
+    ],
+    "sites": [
+      0
+    ],
+    "pivot_rows": [
+      0
+    ],
+    "minor": "-2688",
+    "fitted": [
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ]
+  },
+  {
+    "colours": 15,
+    "level": 51,
+    "finite_shapes": 16,
+    "zero_weight_components": 416,
+    "independent_components": 37,
+    "first_native_columns": [
+      60,
+      345,
+      74
+    ],
+    "second_native_columns": [
+      2392,
+      19868,
+      3567
+    ],
+    "second_dual_lengths": [
+      429,
+      3400,
+      677
+    ],
+    "plane_rank": 7,
+    "augmented_rank": 7,
+    "nonzero_uncorrected_scores": [
+      35,
+      36,
+      34
+    ],
+    "sites": [
+      0,
+      1,
+      2,
+      10,
+      11,
+      13,
+      14
+    ],
+    "pivot_rows": [
+      0,
+      1,
+      7,
+      8,
+      9,
+      21,
+      24
+    ],
+    "minor": "-8491923761101058238068343296522541072384000",
+    "fitted": [
+      [
+        "-9/5120",
+        "63/2560",
+        "9/2560"
+      ],
+      [
+        "1/24",
+        "-451/768",
+        "-1/12"
+      ],
+      [
+        "1/80",
+        "-7/40",
+        "-33/1280"
+      ],
+      [
+        "7/384",
+        "-389/1536",
+        "-7/192"
+      ],
+      [
+        "3/640",
+        "-21/320",
+        "-23/2560"
+      ],
+      [
+        "-9/512",
+        "63/256",
+        "9/256"
+      ],
+      [
+        "1/32",
+        "-7/16",
+        "-1/16"
+      ]
+    ]
+  }
+]
