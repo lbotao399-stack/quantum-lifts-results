@@ -1,0 +1,31 @@
+{
+  "scope": "public N=4 Konishi normalization control, not j24 Ward image",
+  "K4_polynomial": {},
+  "K8_over_f_cubed": "-576",
+  "K8_over_rho6_denominator6": -294912,
+  "single_flavor_top": "a*d - a*h - b*c + b*g + c*f - d*e + e*h - f*g",
+  "sixteen_mode_test": 2401,
+  "measure_reordering_crossings": 24,
+  "two_point_prefactor_g4_pi_minus10": "81/16",
+  "bosonic_pole_pi2": "-1/20",
+  "normalized_pole_g4_pi_minus4": "-9/80",
+  "source_equations": [
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.10",
+    "1.3"
+  ],
+  "comparison_equations": [
+    "2.16",
+    "2.17",
+    "2.23",
+    "2.24",
+    "2.26",
+    "2.27"
+  ],
+  "profile_input_not_rederived": "phi2 and phi6 are public source solutions, not independently solved field equations",
+  "runtime_s": 0.09603258300012385,
+  "peak_rss_KiB": 47300
+}
