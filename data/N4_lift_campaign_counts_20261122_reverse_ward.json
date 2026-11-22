@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "scope": "Campaign-originated highest-weight first images, explicit generator families and independent higher obstructions.",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_polarization.json",
+  "f4_j36": {
+    "spin_and_flavour_singlet_source_cochains": 70238,
+    "reachable_taylor_shape": [
+      4,
+      4,
+      3,
+      3
+    ],
+    "reachable_source_cochains": 3720,
+    "incoming_d2": "open"
+  },
+  "su3_j30": {
+    "candidate": "R-007 to the nine-letter Cartan-kernel class",
+    "target_page": "perturbative E_infinity",
+    "incoming_d1_rank_on_line": 0,
+    "incoming_d2_rank": 0,
+    "outgoing_all_orders": "zero",
+    "full_sl3_rational_equations": 7144616,
+    "physical_instanton_matrix_element": "open"
+  },
+  "evidence": [
+    "algorithms/su3_j30_classical_ranks/bmn_return/README.md",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md"
+  ]
+}

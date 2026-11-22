@@ -46,7 +46,7 @@ def streamed_digest(polynomial):
     return result.hexdigest()
 
 
-def verify():
+def transport():
     source,correction,record = construct()
     source,den = product.integral(source)
     assert den==record["correction_denominator"]==180
@@ -72,8 +72,13 @@ def verify():
     assert source_hash==data["raised_numerator_sha256"]
     assert [s["source_terms"] for s in stages]==data["terms_after_substitutions"][:4]
     assert product.charge(correction)==((3,3,4,1,1),8)
-    return dict(stages=stages,source_numerator_sha256=source_hash,common_denominator=den,
-                correction_numerator_sha256=streamed_digest(correction))
+    receipt = dict(stages=stages,source_numerator_sha256=source_hash,common_denominator=den,
+                   correction_numerator_sha256=streamed_digest(correction))
+    return source,correction,receipt
+
+
+def verify():
+    return transport()[2]
 
 
 if __name__=="__main__":

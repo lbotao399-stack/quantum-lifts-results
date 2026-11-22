@@ -1,6 +1,6 @@
 # The rational target line and its incoming differential at level 30
 
-In the $SU(3)$ relative polynomial Taylor complex, the nine-letter highest-weight block with dotted degrees $(2,2)$ and flavour degrees $(5,2,2)$ has exactly one classical class restricting to zero on the Cartan. The incoming $d_2$ has rank zero over $\mathbb Q$ on the entire source block.
+In the $SU(3)$ relative polynomial Taylor complex, the nine-letter highest-weight block with dotted degrees $(2,2)$ and flavour degrees $(5,2,2)$ has exactly one classical class restricting to zero on the Cartan. The incoming $d_2$ has rank zero over $\mathbb Q$ on the entire source block. The first-order reverse Taylor identity below also excludes incoming $d_1$. The Cartan-kernel line survives to perturbative $E_\infty$.
 
 At dotted degree zero, start with flavour $(5,4,4)$ and nine letters. Separate the cochains by charge conjugation $C$, which commutes with the classical differential $Q_0$. Independent integer characters give the cochain dimensions. Nonzero modular minors of the incoming and outgoing evaluations give rational lower bounds on their ranks. The resulting upper bounds on cohomology are two at even length eight for $C=+1$, one at odd length nine for $C=-1$, and zero at every other length. The two Euler characteristics, with length sign, are $2$ and $-1$. Both upper bounds are attained. In particular the odd cohomology at length nine has dimension $708-356-351=1$. Its Cartan highest-weight dimension is zero. [Character and rank checks](verify.py)
 
@@ -41,10 +41,33 @@ The forward Taylor substitution $P$ removes a specified flavour from a letter an
 
 For each of the four forward substitutions we checked this identity on the ordered two-input $Q_1$ kernel for every pair of the 37 possible letters through total Taylor degree three. In each run 43 ordered pairs have a nonzero output action which cancels the input action. We also checked $Q_0P+PQ_0=0$ on all letters of the source and correction at each step. The four substitutions give a 34,492-term $T_0$ with the original hash and a **70,141-term** $T_1$ with common denominator $180$. Both orders use the existing source scale. [Operator replay](raised_first.py)
 
-For all-order existence, the only factor with three letters has five flavour slots. A bare $Q_2$ requires six, and $Q_n$ for $n\ge3$ needs at least four letters. Thus the four factors are strictly closed. Apply the marked product, the equivariant highest-weight projection, and the four forward substitutions. The leading term is $T_0$. Its flavour degrees are $(5,2,2)$, so the homogeneous completion stops after its second correction. This existence argument allows the choice of first correction to vary by a tree cycle. It establishes outgoing perturbative closure. A rational exclusion of every incoming $d_1$ to this line and its physical instanton coefficient are separate open tests. [Marked-product theorem](https://arxiv.org/pdf/2611.24160v1#page=86)
+For all-order existence, the only factor with three letters has five flavour slots. A bare $Q_2$ requires six, and $Q_n$ for $n\ge3$ needs at least four letters. Thus the four factors are strictly closed. Apply the marked product, the equivariant highest-weight projection, and the four forward substitutions. The leading term is $T_0$. Its flavour degrees are $(5,2,2)$, so the homogeneous completion stops after its second correction. This existence argument allows the choice of first correction to vary by a tree cycle. It establishes outgoing perturbative closure. The reverse Taylor identity below settles the incoming first differential. The physical instanton coefficient remains open. [Marked-product theorem](https://arxiv.org/pdf/2611.24160v1#page=86)
 
 ~~~sh
 cd algorithms/su3_j30_classical_ranks/bmn_return
 python3 first_correction.py --check first_correction.json
 python3 raised_first.py --check raised_first.json
+~~~
+
+## The nine-letter target survives every perturbative page
+
+Let $\bar P_0$ lower one specified dotted derivative and restore the specified scalar flavour on its letter, with the divided-jet exterior sign of the reverse operation in [the product replay](product.py). For each of the four reverse operations in that replay we construct an odd two-input, one-output correction $\bar P_1$. On gauge-invariant polynomials the exact identity is
+
+$$
+\{Q_0,\bar P_0\}=0,\qquad
+\{Q_1,\bar P_0\}+\{Q_0,\bar P_1\}=0.
+$$
+
+The second identity holds here on words for which every letter and every pair of distinct letter positions has total Taylor degree at most seven. Nine letters with fourteen slots satisfy this bound because the other seven letters of a pair each use at least one slot. All four reverse operations preserve the total and the length. The gauge contraction for $\bar P_1$ is the invariant colour bracket with both inputs raised by the native trace metric. For the shear adding flavour $i$ and lowering dotted direction $\alpha$, the correction consumes one copy of each of the other two flavours and adds one derivative in the other dotted direction.
+
+In unrestricted colour coordinates the sum of anticommutators is a sum of compositions whose rightmost operation is a simultaneous infinitesimal gauge rotation. The remaining first-order operator changes the jet of one letter and rotates its colour. This term vanishes on every invariant polynomial. The sum of anticommutators has differential order at most two and annihilates constants. Values on individual coordinates and on their pair products therefore determine it on the full sector by the graded Leibniz rule for its bilinear symbol. Each output on each of these inputs is compared as a polynomial, with its exterior signs.
+
+For each shear, 24,736 nonzero rational linear equations determine 846 pivot coefficients in the bracket and gauge terms. A8 job 5702721 used the ordinary defining-trace metric on the six matrix units and two traceless diagonals of $\mathfrak{sl}_3$. It substituted the supplied coefficients into every single-colour input and all 64 ordered two-colour choices, including equal and nonorthogonal colours. Each shear passes 1,786,154 component equations, giving 7,144,616 checks. A separate direct trace expansion, A8 job 5702502, cancels all 119,334 nonzero coefficients in $Q_1T_0+Q_0T_1$. [Rational coefficients](reverse_ward.json) · [Operator replay](reverse_ward.py) · [A8 outputs and hashes](reverse_ward_a8.json)
+
+Suppose $d_1[X]=[T_0]$, where $d_1$ is induced by $Q_1$ on classical cohomology. The nine-letter input $X$ has dotted degrees $(1,1)$ and flavour degrees $(6,3,3)$. The second Ward identity lets each reverse operation pass through $d_1$ with a minus sign. Lowering twice in each dotted direction annihilates $X$. On $T_0$ the same ordered operations give 240 times the nonzero 477-term BMN class. Its two augmented determinants are 563838 and 242547, and Euler saturation fixes the rational boundary rank. This contradiction excludes every incoming $d_1$ to the line. The entire incoming $d_2$ was excluded above. An incoming order $r\ge3$ would require dotted degrees $(2-r,2-r)$. Together with the marked-product completion this proves $[T_0]\ne0$ on $E_\infty$ of the perturbative supercharge. The one-instanton supercurrent matrix element from R-007 to this line remains undetermined.
+
+~~~sh
+python3 reverse_ward.py solve /tmp/reverse-ward.json
+cmp /tmp/reverse-ward.json reverse_ward.json
+python3 reverse_ward.py full-sl3 reverse_ward.json --workers 8
 ~~~

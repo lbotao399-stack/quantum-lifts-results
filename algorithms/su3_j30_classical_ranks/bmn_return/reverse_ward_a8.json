@@ -1,0 +1,93 @@
+[
+  {
+    "job": "5702721",
+    "archive_sha256": "6887f81d95fd113fd2ef692bb415bed8de716b5b8ae25522fc15ac8c6dc93314",
+    "script_sha256": "7a1f7e90a2066ca71b41b22dd2cb3a3cf840ee2f8e84516f147c34c459e02e4e",
+    "accounting": "5702721|COMPLETED|2026-11-23T04:37:51|2026-11-23T04:38:17|26|16|0:0",
+    "output_file": "result-ward.json",
+    "output_sha256": "0466e820d80699d7a0b82bc9c3967852e16a3296a0350d921d888246601cd5ed",
+    "result": [
+      {
+        "spin": 0,
+        "flavour": 1,
+        "tested": "full-sl3",
+        "equations": 1786154,
+        "by_input_colour": [
+          217533,
+          244612,
+          217533,
+          217533,
+          244612,
+          217533,
+          213399,
+          213399
+        ]
+      },
+      {
+        "spin": 0,
+        "flavour": 2,
+        "tested": "full-sl3",
+        "equations": 1786154,
+        "by_input_colour": [
+          217533,
+          244612,
+          217533,
+          217533,
+          244612,
+          217533,
+          213399,
+          213399
+        ]
+      },
+      {
+        "spin": 1,
+        "flavour": 1,
+        "tested": "full-sl3",
+        "equations": 1786154,
+        "by_input_colour": [
+          217533,
+          244612,
+          217533,
+          217533,
+          244612,
+          217533,
+          213399,
+          213399
+        ]
+      },
+      {
+        "spin": 1,
+        "flavour": 2,
+        "tested": "full-sl3",
+        "equations": 1786154,
+        "by_input_colour": [
+          217533,
+          244612,
+          217533,
+          217533,
+          244612,
+          217533,
+          213399,
+          213399
+        ]
+      }
+    ],
+    "coefficient_packet_sha256": "ff431705ec277a116c03a3e8ff069e5d886bab38c6176028b121543726c6618f"
+  },
+  {
+    "job": "5702502",
+    "archive_sha256": "1b25e173247393573ac0ae1f3865f98c75943ac10ad9d285ae3c94d2e5ab9740",
+    "script_sha256": "c28a56befa8395159549d408ffa62b7a4090a910e6af408401d308b7fb8ecc6e",
+    "accounting": "5702502|COMPLETED|2026-11-23T04:11:30|2026-11-23T04:11:34|4|16|0:0",
+    "output_file": "result-direct.json",
+    "output_sha256": "df26c5bff5a3a6f971c400d2a5414684d122c276088fba65b1a7c77d1faf0f89",
+    "result": {
+      "input_uncompressed_sha256": "0a1e36ba17e4df23746a4064ce8a4383d09b70efd3c168ee999021824647b991",
+      "source_terms": 34492,
+      "first_correction_terms": 70141,
+      "nonzero_terms_on_each_side": 119334,
+      "residual_terms": 0,
+      "Q1_source_sha256": "99ba4ee7c17aff54423c4a0cd88c6f304b7c4adc376caeb55499924c0d77b108"
+    }
+  }
+]
