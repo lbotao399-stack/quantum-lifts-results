@@ -1,0 +1,98 @@
+[
+  {
+    "level": 48,
+    "flavour": [
+      8,
+      8,
+      8
+    ],
+    "length": 11,
+    "classical": [
+      28,
+      6,
+      20,
+      2
+    ],
+    "singlet_predecessors": 1035,
+    "dual_terms": [
+      481,
+      29
+    ],
+    "first_matrix": [
+      [
+        "115392000",
+        "2077056000"
+      ],
+      [
+        "-40320",
+        "-483840"
+      ]
+    ],
+    "determinant": "27915632640000",
+    "second_page_dimension": 0
+  },
+  {
+    "level": 60,
+    "flavour": [
+      10,
+      10,
+      10
+    ],
+    "length": 13,
+    "classical": [
+      28,
+      6,
+      20,
+      2
+    ],
+    "singlet_predecessors": 1195,
+    "dual_terms": [
+      222,
+      67
+    ],
+    "first_matrix": [
+      [
+        "79920933120",
+        "1278734929920"
+      ],
+      [
+        "30964076640",
+        "503391859200"
+      ]
+    ],
+    "determinant": "636700739987747635200",
+    "second_page_dimension": 0
+  },
+  {
+    "level": 72,
+    "flavour": [
+      12,
+      12,
+      12
+    ],
+    "length": 15,
+    "classical": [
+      28,
+      6,
+      20,
+      2
+    ],
+    "singlet_predecessors": 1210,
+    "dual_terms": [
+      214,
+      18
+    ],
+    "first_matrix": [
+      [
+        "1321463185920",
+        "19821947788800"
+      ],
+      [
+        "-829440",
+        "-14976000"
+      ]
+    ],
+    "determinant": "-3349116298395648000",
+    "second_page_dimension": 0
+  }
+]
