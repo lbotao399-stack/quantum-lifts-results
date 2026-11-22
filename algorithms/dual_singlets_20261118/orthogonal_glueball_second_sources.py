@@ -85,7 +85,7 @@ class Relation:
         n,y,t=b
         if m&n or z&t or x+y not in self.project.divisors:
             return None
-        return (m|n,x+y,z|t),(-1)**sum((m>>(j+1)).bit_count() for j in range(8) if n&(1<<j))
+        return (m|n,x+y,z|t),(-1)**sum((m>>(j+1)).bit_count() for j in range(n.bit_length()) if n&(1<<j))
 
     def mul(self,a,b):
         out=Counter()
@@ -111,10 +111,9 @@ class Relation:
         """Trace-log coefficient of an ordered, uncanonicalized word."""
         states=defaultdict(Counter)
         states[0].update({(0,0,0,0,0,0):1,(1,1,0,0,0,0):1})
+        max_path=max(map(len,self.catalog))
         for offset in range(len(word)):
-            for size in (1,2,3):
-                if size>len(word)-offset:
-                    continue
+            for size in range(1,min(max_path,len(word)-offset)+1):
                 for b,n,y,t,c in self.catalog.get(word[offset:offset+size],()):
                     for (start,end,m,x,z,count),v in states[offset].items():
                         if not v:
@@ -156,7 +155,8 @@ class Relation:
         # Convert every ordered colour path to a graded-commuting Cartan
         # coefficient with a single standard 2-by-2 colour rotation.
         out=Counter()
-        for raw in set(permutations(word)):
+        from orthogonal_glueball_first_pair import multiset_orders
+        for raw in multiset_orders(tuple(sorted(word))):
             s=odd_swaps([j for j in raw if j>=3])
             for b,m,x,z,c in self.catalog.get(raw,()):
                 out[b,m,x,z]+=s*c*(-1)**(len(word)//2)
@@ -170,8 +170,9 @@ class Relation:
         for (b,m,x,z),c in self.block(word).items():
             if b==3:
                 out[m,x,z]+=2*c
+        max_path=max(map(len,self.catalog))
         for size in range(1,len(word)):
-            if size>3 or len(word)-size>3:
+            if size>max_path or len(word)-size>max_path:
                 continue
             for left in set(combinations(word,size)):
                 right=list(word)

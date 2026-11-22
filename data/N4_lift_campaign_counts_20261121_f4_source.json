@@ -1,0 +1,132 @@
+{
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "d1_counting": "Count one nonzero pairing per highest-weight multiplet, including distinct descendant multiplets; count neither individual R-symmetry components nor the two ends separately.",
+  "family_counting": "Rational BMN highest-weight cores requiring generators beyond the audited universal-trace/Pfaffian families and descendants/dressings of previously recorded cores. One core per highest-weight multiplet. Count independent colour-reflection parities separately. The level-18 pair is one multiplet under the full colour triality group.",
+  "family_scope": "Not established: no claim of exhaustive full-letter primitiveness or absolute literature novelty.",
+  "date": "2026-11-21",
+  "existence_lower_bounds": {
+    "audited_and_forced_BMN_generators_at_least": 16,
+    "level_of_first_odd_USp4_generator": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "additional_USp4_odd_BMN_generators": 3,
+    "additional_G2_odd_BMN_generators": 2,
+    "candidate_G2_generators_for_level_36_singlet": [
+      {
+        "level": 36,
+        "weight": [
+          6,
+          6,
+          6
+        ],
+        "allowed_odd_lengths": [
+          11,
+          13,
+          15
+        ]
+      }
+    ],
+    "USp4_single_additional_core_alternatives_remaining": [
+      [
+        7,
+        5,
+        4
+      ]
+    ],
+    "G2_minimum_by_level": {
+      "44": {
+        "odd_generators": 2
+      },
+      "62": {
+        "distinct_odd_generator_weights": 2
+      }
+    }
+  },
+  "previous_ledger": "data/N4_lift_campaign_counts_20261121_so11_d3.json",
+  "phase": "Native tree preimage of the F4 source and complete SO(12), SO(14) second-page exclusions",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "index_forced_BMN_generators": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 18,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "count_scope": "Campaign-originated results. External reproductions are credited separately.",
+  "evidence": [
+    "algorithms/dual_singlets_20261118/f4/j36_source/README.md",
+    "algorithms/dual_singlets_20261118/orthogonal_glueballs/even_second/README.md"
+  ],
+  "third_differential": {
+    "group": "SO(11)",
+    "complex": "full relative holomorphic jets",
+    "level": 36,
+    "source_length": 14,
+    "target": "S^6",
+    "defining_trace": 11,
+    "coefficient": "8640",
+    "commuting_coordinates": 257,
+    "finite_colour_relations": 29,
+    "A8_jobs": [
+      "5693010",
+      "5693064",
+      "5693152",
+      "5693222",
+      "5693264"
+    ]
+  },
+  "external_F4_j36": {
+    "source": "P^6(Na)",
+    "source_class_on_E1": "zero",
+    "tree_preimage_terms": 6417,
+    "canonical_words": 10401,
+    "residual_words": 0,
+    "native_components": [
+      2232,
+      -24,
+      5382
+    ],
+    "distinct_one_loop_components": 2981,
+    "archive_score": "142560/49",
+    "d2_on_this_source": 0,
+    "d1_increment": 0,
+    "other_sources": "open",
+    "cluster_jobs": [
+      "5692711",
+      "5693514"
+    ]
+  },
+  "orthogonal_second_page": [
+    {
+      "group": "SO(12)",
+      "target": "S^7",
+      "level": 42,
+      "balanced_flavour_singlet_relations": 114,
+      "cartan_and_augmented_ranks": [
+        3,
+        3
+      ]
+    },
+    {
+      "group": "SO(14)",
+      "target": "S^8",
+      "level": 48,
+      "balanced_flavour_singlet_relations": 4,
+      "cartan_and_augmented_ranks": [
+        1,
+        1
+      ]
+    }
+  ]
+}

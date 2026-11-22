@@ -1,0 +1,37 @@
+{
+  "colour": {
+    "native_bracket_pairs": 1378,
+    "signed_matrix_commutator": -1,
+    "cartan_quartic_coefficients": 35
+  },
+  "five_letter_identity": {
+    "identities": 10,
+    "rank": 6,
+    "coordinates": 22,
+    "multipliers": [
+      "-1/576",
+      "-1/576",
+      "-1/576",
+      "0",
+      "-1/576",
+      "-1/576",
+      "0",
+      "-1/576",
+      "0",
+      "0"
+    ]
+  },
+  "supplied_terms": 6861,
+  "tree_preimage_terms": 6417,
+  "canonical_source_words": 10401,
+  "residual_words": 0,
+  "maximum_flavour_slots_on_three_inputs_X_O0": [
+    5,
+    4
+  ],
+  "native_components": {
+    "Psi-2232": "2232",
+    "Dphi": "-24",
+    "D2c": "5382"
+  }
+}

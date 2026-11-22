@@ -1,0 +1,12 @@
+{
+  "family_sizes": [
+    490,
+    2491
+  ],
+  "distinct_keys": 2981,
+  "nonzero": 2865,
+  "ratio_to_archived_anchor_over_six": "-1",
+  "value_sha256": "5dd3c6f2b12d297388e015454d13fa9cd9b844af873147444e681c8351b91860",
+  "discrepancies": [],
+  "job": "5693514"
+}
