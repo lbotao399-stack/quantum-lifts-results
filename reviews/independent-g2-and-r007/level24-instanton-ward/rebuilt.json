@@ -1,0 +1,124 @@
+{
+  "source_blocks": [
+    {
+      "weight": [
+        5,
+        2,
+        1,
+        2,
+        0
+      ],
+      "length": 8,
+      "dimension": 1206,
+      "incoming": 668,
+      "outgoing": 504,
+      "joined": 702,
+      "products_added": 34,
+      "minors": [
+        {
+          "prime": 2147483647,
+          "boundary_determinant": 1039984777,
+          "joined_determinant": 108906289,
+          "joined_minor_sha256": "8cd48b2e0ce58157ff7d79757055d7fc3c099163c11bfabec8a1d5ba029219f2"
+        },
+        {
+          "prime": 1000033,
+          "boundary_determinant": 375807,
+          "joined_determinant": 404804,
+          "joined_minor_sha256": "b56bc2e2e84737377ff7c6fd1819556c00a4b6460bc4a1614ce078a55a3614a9"
+        }
+      ]
+    },
+    {
+      "weight": [
+        4,
+        2,
+        2,
+        2,
+        0
+      ],
+      "length": 8,
+      "dimension": 1397,
+      "incoming": 888,
+      "outgoing": 486,
+      "joined": 911,
+      "products_added": 23,
+      "minors": [
+        {
+          "prime": 2147483647,
+          "boundary_determinant": 1365049410,
+          "joined_determinant": 1697885282,
+          "joined_minor_sha256": "9124c203c9cec6c4a0d5ae8c3e51609831be8895afc6e90e7cfd24268aa11da6"
+        },
+        {
+          "prime": 1000033,
+          "boundary_determinant": 515139,
+          "joined_determinant": 474707,
+          "joined_minor_sha256": "d18ba9b224d5f182e64ca71559d1f1e26d6630f2ea1cfcee171bb8539e678b75"
+        }
+      ]
+    },
+    {
+      "weight": [
+        4,
+        1,
+        0,
+        3,
+        1
+      ],
+      "length": 7,
+      "dimension": 674,
+      "incoming": 388,
+      "outgoing": 286,
+      "joined": 388,
+      "products_added": 0,
+      "minors": []
+    },
+    {
+      "weight": [
+        3,
+        1,
+        1,
+        3,
+        1
+      ],
+      "length": 7,
+      "dimension": 1431,
+      "incoming": 895,
+      "outgoing": 536,
+      "joined": 895,
+      "products_added": 0,
+      "minors": []
+    },
+    {
+      "weight": [
+        2,
+        0,
+        0,
+        4,
+        2
+      ],
+      "length": 6,
+      "dimension": 183,
+      "incoming": 98,
+      "outgoing": 73,
+      "joined": 110,
+      "products_added": 12,
+      "minors": [
+        {
+          "prime": 2147483647,
+          "boundary_determinant": 1339242287,
+          "joined_determinant": 2036117621,
+          "joined_minor_sha256": "ea424aa84583cc2f1df92b700d477c3d5fedd61733eeb953c02ab2b44ebe0b58"
+        },
+        {
+          "prime": 1000033,
+          "boundary_determinant": 513842,
+          "joined_determinant": 657764,
+          "joined_minor_sha256": "78bea1346d6f68ce9eb14ea388e07be210f2913bcb1bb4c1b507c71decfbf871"
+        }
+      ]
+    }
+  ],
+  "return_coefficient": 6
+}
