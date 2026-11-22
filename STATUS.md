@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## First adjoint test on a full-jet $F_4$ boundary, November 21, 2026
+
+A gauge-invariant $F_4$ test cochain $Y$ at level 36 has $Q_1Y=0$. The supplied endpoint functional evaluated on $Q_0Y$ gives residues $152271$ and $218985$ modulo $1000003$ and $1000033$. Two rational colour expansions agree on all 2981 requested components. The archived numerical pairing therefore fails its first adjoint identity on this explicit boundary. [Test cochain and both replays](algorithms/dual_singlets_20261118/f4/j36_source/README.md#a-boundary-that-tests-the-endpoint-functional-directly)
+
+New $d_1$ lifts **0** (18 total). New fortuitous BMN generators **0** (11 explicit, at least 16 including index-forced families). Campaign $d_2$, $d_3$ and nonperturbative lifts **0, 1, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_f4_adjoint.json)
+
 ## Third differential in the full relative $SO(11)$ complex, November 21, 2026
 
 At $j=36$, the classical glueball $S^6$ survives $d_1$ and $d_2$. The corrected second dual annihilates a complete basis of 29 finite-colour relations in the relevant flavour singlet. For the degree-15 polarized Pfaffian source, the third pairing gives $-17280+25920=8640$. The bare terms $Q_2O_0$, $Q_2O_1$ and $Q_3O_0$ vanish by flavour degree. The comparison to physical quantum local operators uses the hypothesis in Appendix B of the all-loop manuscript. [Cochains, adjoint identities and A8 replays](algorithms/dual_singlets_20261118/orthogonal_glueballs/so11_j36/README.md)

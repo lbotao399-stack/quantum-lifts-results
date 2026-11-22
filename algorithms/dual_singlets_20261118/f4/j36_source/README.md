@@ -29,7 +29,34 @@ $$
 
 For any other first correction satisfying the same descent equation, $O_1-Q_1X$ is tree closed. Its first image accounts for the entire possible change in the second residual. The residual therefore represents zero on the second page.
 
-A8 job `5693514` applies the native two-input $Q_1$ directly to the 684 matter-fermion terms of the collected $O_0$. It contracts both adjoint brackets, the inverse metric and the exterior spectators. The other two source profiles have fewer than three flavour slots on any two inputs. The two archived component sets contain 490 and 2,491 distinct entries, with 2,865 nonzero entries in their union. All 2,981 match the archived anchor divided by six with a single overall minus sign in the stated plus-first, positive local-kernel orientation. The archived scalar calculation gives $142560/49$. Its nonzero value on this tree boundary prevents its use as a functional on the second page. The precise failing step in the archived dual construction or its transport is unresolved. [Direct contraction](first_action.py) · [A8 result](a8-first-action.json)
+A8 job `5693514` applies the native two-input $Q_1$ directly to the 684 matter-fermion terms of the collected $O_0$. It contracts both adjoint brackets, the inverse metric and the exterior spectators. The other two source profiles have fewer than three flavour slots on any two inputs. The two archived component sets contain 490 and 2,491 distinct entries, with 2,865 nonzero entries in their union. All 2,981 match the archived anchor divided by six with a single overall minus sign in the stated plus-first, positive local-kernel orientation. The archived scalar calculation gives $142560/49$. Its nonzero value on this tree boundary prevents its use as a functional on the second page. The test below isolates a discrepancy in the archived endpoint functional on a tree image. [Direct contraction](first_action.py) · [A8 result](a8-first-action.json)
+
+## A boundary that tests the endpoint functional directly
+
+Use the archive's $S$, its divided first ghost jets $\lambda_{\dot\alpha}$ and its first differentiated scalar $D_{\dot\alpha}\phi^I$. The dotted alternating tensor has $\epsilon^{+-}=1$, and the flavour tensor has $\epsilon_{123}=1$. In this basis take the gauge-invariant cochain
+
+$$
+Y=S^3\epsilon_{IJK}\epsilon^{\dot\alpha\dot\beta}\epsilon^{\dot\gamma\dot\delta}
+\operatorname{Tr}_{26}\!\left((D_{\dot\alpha}\phi^I)\phi^J\lambda_{\dot\beta}
+\phi^K\lambda_{\dot\gamma}\lambda_{\dot\delta}\right).
+$$
+
+Each of its twelve letters carries at most one flavour slot. The two inputs of $Q_1$ require three in total, so $Q_1Y=0$ as a cochain. Write $\lambda_6$ for the archive's classical target functional and $\eta_0,\eta_K$ for its two numerical endpoint tables. The asserted first adjoint identity $\lambda_6 Q_1=(\eta_0+\eta_K)Q_0$ would give zero on $Y$.
+
+Only the differentiated scalar contributes to $Q_0Y$. With the archived transposed generators its ordered tree split inserts $\phi^I\lambda_{\dot\alpha}-\lambda_{\dot\alpha}\phi^I$. Applying the two endpoint tables to the plus-first coefficients of this tree image gives
+
+$$
+\eta_0(Q_0Y)=-\frac{98441322408000}{7}.
+$$
+
+| Prime | $\eta_0(Q_0Y)$ | $\eta_K(Q_0Y)$ | $(\eta_0+\eta_K)(Q_0Y)$ |
+|---:|---:|---:|---:|
+| $1000003$ | $559299$ | $592975$ | $152271$ |
+| $1000033$ | $292644$ | $926374$ | $218985$ |
+
+The first replay evaluates the commutator and the three glueball factors directly. The second differentiates the trace by the native jet rules, producing 36 canonical trace words and 144 ordered colour assignments. The two evaluations agree on all 2,981 archived component requests. The 7,276 unfolded queries for $\eta_0$ reproduce the first residue. The 40-coordinate and 477-query evaluations of $\eta_K$ agree at both primes. Substituting the archive's own input reproduces its endpoint scores. [Exact values and component digest](ward-boundary.json) · [Endpoint evaluation](ward_boundary.py) · [Independent trace calculation](ward_boundary_words.py)
+
+Both nonzero residues disprove the indicated adjoint identity for the endpoint tables as applied to physical cochains. This test uses the local flavour rule and the tree action. A different $F_4$ source, or a proof that $[S^6]$ survives the incoming $d_1$ using a corrected dual, requires a separate calculation.
 
 ## Replay
 
@@ -37,6 +64,8 @@ Supply the original zip with SHA-256 `0a06b306a12abbe77cadbcfab616c08c579d82086e
 
 ~~~sh
 python3 verify.py /path/to/F4-j36-d2-verification.zip
+python3 ward_boundary.py /path/to/F4-j36-d2-verification.zip
+python3 ward_boundary_words.py /path/to/F4-j36-d2-verification.zip
 python3 first_action.py /path/to/F4-j36-d2-verification.zip --workers 4
 python3 construct.py /path/to/F4-j36-d2-verification.zip
 ~~~

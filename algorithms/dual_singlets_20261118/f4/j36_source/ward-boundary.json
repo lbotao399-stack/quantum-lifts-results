@@ -1,0 +1,31 @@
+{
+  "archive_sha256": "0a06b306a12abbe77cadbcfab616c08c579d82086e9798aece27b8c83a0f7b52",
+  "archived_source_score": "142560/49",
+  "archived_component_count": 2981,
+  "nonzero_archived_components": 2780,
+  "archived_components_sha256": "bd35f8393b86358cc4f329b3ee9a9b3f51b3267b620be85a31000a0c3cc96fbd",
+  "eta0": "-98441322408000/7",
+  "distinct_queries": 7766,
+  "eta0_unfolded_rows_at_first_prime": 7276,
+  "etaK_raw_rows": 477,
+  "prime_tests": [
+    {
+      "prime": 1000003,
+      "eta0": 559299,
+      "etaK": 592975,
+      "sum": 152271
+    },
+    {
+      "prime": 1000033,
+      "eta0": 292644,
+      "etaK": 926374,
+      "sum": 218985
+    }
+  ],
+  "independent_tree_evaluation": {
+    "canonical_tree_words": 36,
+    "ordered_colour_layouts": 144,
+    "components": 2981,
+    "sha256": "bd35f8393b86358cc4f329b3ee9a9b3f51b3267b620be85a31000a0c3cc96fbd"
+  }
+}

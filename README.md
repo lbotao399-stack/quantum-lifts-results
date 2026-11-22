@@ -1,5 +1,9 @@
 # Fortuitous Q-cohomology and quantum lifting: computational results
 
+A gauge-invariant $F_4$ test cochain $Y$ at level 36 has $Q_1Y=0$. The supplied endpoint functional evaluated on $Q_0Y$ gives residues $152271$ and $218985$ modulo $1000003$ and $1000033$. Two rational colour expansions agree on all 2981 requested components. The archived numerical pairing therefore fails its first adjoint identity on this explicit boundary. [Test cochain and both replays](algorithms/dual_singlets_20261118/f4/j36_source/README.md#a-boundary-that-tests-the-endpoint-functional-directly)
+
+New $d_1$ lifts **0** (18 total). New fortuitous BMN generators **0** (11 explicit, at least 16 including index-forced families). Campaign $d_2$, $d_3$ and nonperturbative lifts **0, 1, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_f4_adjoint.json)
+
 The supplied $F_4$ level-36 source $O_0=P^6(Na)$ has a gauge-invariant rational tree preimage with 6,417 terms. Direct differentiation matches all 10,401 canonical words, and native component evaluation gives $2232,-24,5382$. Thus $d_2[O_0]=0$. A8 independently evaluated all 2,981 components used in the archived first-action pairing. For $SO(12)$ at level 42 and $SO(14)$ at level 48, complete bases of 114 and four finite-colour relations establish that $S^7$ and $S^8$ respectively survive the second differential. [F₄ preimage and replay](algorithms/dual_singlets_20261118/f4/j36_source/README.md) · [Orthogonal lower-page proofs](algorithms/dual_singlets_20261118/orthogonal_glueballs/even_second/README.md)
 
 New $d_1$ lifts **0** (18 total). New fortuitous BMN generators **0** (11 explicit, at least 16 including index-forced generators). Campaign-originated $d_2$, $d_3$ and nonperturbative lifts **0, 1, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_f4_source.json)
