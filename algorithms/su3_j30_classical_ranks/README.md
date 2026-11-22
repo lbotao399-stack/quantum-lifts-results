@@ -15,6 +15,20 @@ The nine-letter cochain dimension is 63,983. The outgoing classical rank is at l
 
 [Independent product replay](../replay_su3_j30_packed_residuals.py) · [source order checks](../su3_j30_source_audit/compare.py) · [target-frame minors](../su3_j30_frame_audit/reproject.py) · [three-prime congruences](../../data/N4_SU3_j30_three_prime_reconstruction_20261119.json).
 
+## Matching Dot's R-007 representative to the modular corrections
+
+Dot's 6139-term public input reconstructs byte for byte the native source used for the stored first and second corrections. The source has 253229 bytes and SHA-256 `103c9e6ffec0fc8bb6a0da4e02594d58c5e701f552a8baf7f24fc5a155427472`. The sign on the middle public matter fermion is negative. Canonicalizing each graded cyclic trace and then the product gives the original production serialization. The compressed first image in Dot's packet is identical to the 1333831-byte production input with SHA-256 `225ad611f6583a5fd8aea63b0af443f4af2f3dc9f63e0c767b9fccb3d866f94b`. This fixes the representative and the normalization of all 213104 first-image coefficients. [Dot's pinned packet](https://github.com/lbotao399-stack/quantum-lifts-results/tree/60282a6b37e16fddf80990d6d7eb97a908082067/nonperturbative-lift/contributions/dot-r007-exact-input) · [Exact comparison](compare_dot_input.py)
+
+The file `first_solve_compact/particular.npy` in the correction archive gives the 28311 first-correction coordinates at prime 1000033. The corresponding first-coordinate prefix of the coupled solution incorporates its homogeneous freedom. The coupled solution gives zero residuals in the 34901 first-equation and 65406 second-equation evaluations. At prime 1000003 the independently stored coupled vector gives zero on the same numbers of evaluations. The characteristic-zero second differential for this representative remains open. [Correction archive](../../data/N4_SU3_j30_solution_receipts_20261118.zip) · [First-prime coupled vector](../../data/N4_SU3_j30_first_prime_solution.npy.gz) · [Rational reconstruction status](../../data/N4_SU3_j30_three_prime_reconstruction_20261119.json)
+
+From the repository root with the dependencies of the archived SU(3) runtime, run
+
+~~~sh
+python3 algorithms/su3_j30_classical_ranks/compare_dot_input.py /path/to/phase34-public-q0-q1-replay.zip
+python3 algorithms/verify_su3_j30_solution_receipts.py
+python3 algorithms/su3_j30_classical_ranks/verify_chains.py
+~~~
+
 ## A representative of the Cartan kernel at prime 1,000,033
 
 Run `python3 algorithms/su3_j30_classical_ranks/verify_parent.py` from the root. The [bundle](../../data/SU3_j30_parent_p1000033) contains the parent in the 63,983 ordered recipe coordinates, its 65,406 evaluations in the original incoming frames, the A8 residual and rank records, and the two archives of minor witnesses. The verifier checks the SHA-256 pins, dimensions, selected indices, determinant products and the rank jump. It does not regenerate the original matrices. The independent predecessor `p08` determinant replay gives 122,908; the remaining individual determinants have not been independently recomputed locally.
