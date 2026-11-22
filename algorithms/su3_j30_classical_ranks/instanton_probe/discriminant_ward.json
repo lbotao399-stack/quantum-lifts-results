@@ -1,0 +1,134 @@
+{
+  "source_words_by_nonbackground_degree": {
+    "5": 49,
+    "6": 866,
+    "7": 3096,
+    "8": 2128
+  },
+  "diagonal_scalar_terms_by_off_diagonal_fermion_count": [
+    0,
+    0,
+    3986,
+    0,
+    0,
+    0
+  ],
+  "degree_inverse_gaps_projector_plus_gap_bound": [
+    [
+      5,
+      1,
+      6
+    ],
+    [
+      6,
+      2,
+      8
+    ],
+    [
+      7,
+      3,
+      10
+    ],
+    [
+      8,
+      4,
+      12
+    ]
+  ],
+  "sufficient_discriminant_power": 6,
+  "regular_cartan_discriminant": 400,
+  "regular_target_value": "-14112/5",
+  "ward_weights_at_orders_zero_through_four": [
+    [
+      1
+    ],
+    [
+      7,
+      -6
+    ],
+    [
+      28,
+      -48,
+      21
+    ],
+    [
+      84,
+      -216,
+      189,
+      -56
+    ],
+    [
+      210,
+      -720,
+      945,
+      -560,
+      126
+    ]
+  ],
+  "block_checks": [
+    {
+      "eigenvalues": [
+        1,
+        2,
+        -3
+      ],
+      "nonzero_source_coefficients": 97,
+      "nonzero_primitive_coefficients": 80,
+      "degree_residual_primitive": [
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          6,
+          28,
+          28
+        ],
+        [
+          7,
+          92,
+          50
+        ],
+        [
+          8,
+          0,
+          0
+        ]
+      ],
+      "final_residual": 0
+    },
+    {
+      "eigenvalues": [
+        1,
+        -3,
+        2
+      ],
+      "nonzero_source_coefficients": 97,
+      "nonzero_primitive_coefficients": 80,
+      "degree_residual_primitive": [
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          6,
+          28,
+          28
+        ],
+        [
+          7,
+          92,
+          50
+        ],
+        [
+          8,
+          0,
+          0
+        ]
+      ],
+      "final_residual": 0
+    }
+  ]
+}

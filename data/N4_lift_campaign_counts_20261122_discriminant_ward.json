@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_contact_ward.json",
+  "increments": {"d1": 3, "fortuitous_generator_families": 0, "d2": 0, "d3": 0, "nonperturbative": 0},
+  "cumulative": {"d1": 80, "fortuitous_generator_families": 11, "d2": 0, "d3": 1, "nonperturbative": 0},
+  "count_scope": "Campaign-originated highest-weight first-image multiplets, explicit BMN generator families and independent higher-obstruction sources.",
+  "d1_new_targets": [
+    {"group": "SO(14)", "level": 52, "weight": [8,8,2,0,0], "rank": 1},
+    {"group": "SO(15)", "level": 58, "weight": [9,9,2,0,0], "rank": 1},
+    {"group": "SO(16)", "level": 64, "weight": [10,10,2,0,0], "rank": 1}
+  ],
+  "incoming_second_ranks_on_quadratic_targets": [0,0,0],
+  "su3_r007": {
+    "sufficient_classical_discriminant_power": 6,
+    "finite_order_ward_hypotheses": "Same operator on all dressings, bounded commutator order with discriminant multiplication, Cartan projection kills all tree boundaries",
+    "fixed_charge_contact_columns": 89,
+    "fixed_charge_boundary_inputs": 6,
+    "fixed_charge_ranks": [9,10],
+    "physical_instanton_matrix_computed": false
+  }
+}
