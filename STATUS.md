@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Corrected rational pairing for the $F_4$ sixth glueball power, November 21, 2026
+
+The two extremal exterior metrics in the $F_4$ level-36 target are $-4$ and $2$. Restoring them in the endpoint contraction on Dot’s proposed source gives $283511008535040000/7-283511008535040000/7=0$ exactly. Four colour components canceled from the original tables and enter the corrected sum. Two native trace calculations agree on all four. [Calculation and replay](algorithms/dual_singlets_20261118/f4/j36_source/README.md#the-two-missing-metric-factors)
+
+New $d_1$ lifts **0** (18 total). New fortuitous BMN generator families **0** (11 explicit, at least 16 including index-forced families). Campaign $d_2$, $d_3$ and nonperturbative counts **0, 1, 0**. [Count ledger](data/N4_lift_campaign_counts_20261121_f4_metric.json)
+
 ## First adjoint test on a full-jet $F_4$ boundary, November 21, 2026
 
 A gauge-invariant $F_4$ test cochain $Y$ at level 36 has $Q_1Y=0$. The supplied endpoint functional evaluated on $Q_0Y$ gives residues $152271$ and $218985$ modulo $1000003$ and $1000033$. Two rational colour expansions agree on all 2981 requested components. The archived numerical pairing therefore fails its first adjoint identity on this explicit boundary. [Test cochain and both replays](algorithms/dual_singlets_20261118/f4/j36_source/README.md#a-boundary-that-tests-the-endpoint-functional-directly)

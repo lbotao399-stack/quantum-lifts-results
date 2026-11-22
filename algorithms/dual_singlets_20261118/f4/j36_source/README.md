@@ -58,6 +58,26 @@ The first replay evaluates the commutator and the three glueball factors directl
 
 Both nonzero residues disprove the indicated adjoint identity for the endpoint tables as applied to physical cochains. This test uses the local flavour rule and the tree action. A different $F_4$ source, or a proof that $[S^6]$ survives the incoming $d_1$ using a corrected dual, requires a separate calculation.
 
+## The two missing metric factors
+
+The classical target routine in the archive evaluates each harmonic branch at its highest exterior vector $H$ and opposite vector $L$ with the induced exterior metric. In the root order used by that routine the six metric entries multiply to $-4$ for the branch of dimension $7113106$ and to $2$ for the branch of dimension $1850212$. The exporter `export_eta0.py` multiplies by the branch dimension, harmonic coefficient and ordering sign. It omits this exterior metric in both branches.
+
+For example, the archive's classical mixed-boundary row has entries $-836/1365$ and $736/1155$. Its pairing with the classical target coefficients $(2392,2299)$ vanishes. Replacing the two extremal values by the values used in the exporter changes those coefficients to $(-598,2299/2)$, and the same row gives $38456/35$.
+
+We reconstructed both rational contributions of the scalar lift from the $52$-colour brackets and $B=\operatorname{Tr}_{26}/6$. With the factors omitted, the two contributions reproduce all $7276$ unfolded weights at the first prime and all $2491$ folded weights over the rationals. Four additional raw components enter when the metric factors are restored. The native ordered one-loop action and the archive's literal trace contraction give the same four values in the positive raw-anchor convention,
+
+$$
+(-51840,\ 51840,\ 38880,\ -38880).
+$$
+
+In the sign convention of the archive's final score, all entries in the following row are to be divided by $7$.
+
+| First branch before its metric factor | Second branch before its metric factor | Corrected $\eta_0$ | Archived $\eta_K$ | Sum |
+|---:|---:|---:|---:|---:|
+| $-56702201707008000$ | $28351100853504000$ | $283511008535040000$ | $-283511008535040000$ | $0$ |
+
+Thus the corrected pairing on the supplied $O_0$ vanishes over $\mathbb Q$, in agreement with $O_0=Q_0X$. On the independent test $Q_0Y$, the corrected $\eta_0$ is $984413224080000/7$. Adding the archived $\eta_K$ gives zero at both verification primes. The replay records the opposite overall sign for the source row because it reports the raw anchor divided by six, before the minus sign in the archive’s scoring formula. [Metric, raw components and exact arithmetic](endpoint-metric.json) · [Reconstruct both branch weights](endpoint_metric.py)
+
 ## Replay
 
 Supply the original zip with SHA-256 `0a06b306a12abbe77cadbcfab616c08c579d82086e9798aece27b8c83a0f7b52`. The first two commands use the Python standard library. The block solver also uses the repository trace runtime with NumPy, SciPy and python-flint.
@@ -66,6 +86,7 @@ Supply the original zip with SHA-256 `0a06b306a12abbe77cadbcfab616c08c579d82086e
 python3 verify.py /path/to/F4-j36-d2-verification.zip
 python3 ward_boundary.py /path/to/F4-j36-d2-verification.zip
 python3 ward_boundary_words.py /path/to/F4-j36-d2-verification.zip
+python3 endpoint_metric.py /path/to/F4-j36-d2-verification.zip
 python3 first_action.py /path/to/F4-j36-d2-verification.zip --workers 4
 python3 construct.py /path/to/F4-j36-d2-verification.zip
 ~~~
