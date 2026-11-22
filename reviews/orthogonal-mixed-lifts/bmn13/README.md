@@ -43,7 +43,7 @@ $$
 358475625\,[O_0^{(0)}]-832\,[O_0^{(1)}]\in\ker d_1 .
 $$
 
-The class is nonzero by the 42-row minor. There is no incoming positive-order map into its zero-derivative grading. Its second target has length fifteen and consists entirely of first jets. Every formal trace monomial has an odd trace and vanishes modulo the classical graded commutators. Hence the displayed class survives to $E_3$. The third target has dotted degrees $(3,3)$ and flavour $(4,2,2)$. A determination of its third differential requires the corrected third pairing.
+The class is nonzero by the 42-row minor. There is no incoming positive-order map into its zero-derivative grading. Its second target has length fifteen and consists entirely of first jets. Every formal trace monomial has an odd trace and vanishes modulo the classical graded commutators. Hence the displayed class survives to $E_3$. The third target has dotted degrees $(3,3)$ and flavour $(4,2,2)$. The corrected third pairing on its six-substitution descendant is $-50677394964480000$. [Exact third pairing and replay](THIRD.md)
 
 ## Cartan-visible targets at all perturbative orders
 

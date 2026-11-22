@@ -1,0 +1,16 @@
+{
+  "first_jets": 5,
+  "second_jets": 12,
+  "classical_anticommutators": 102,
+  "substitution_anticommutators": 612,
+  "ordered_pairs": 145,
+  "active_ordered_pairs": 6,
+  "ordered_pair_substitutions": 870,
+  "native_multitraces": 295,
+  "native_trace_equations": 1770,
+  "twice_lowered_S7": [
+    7,
+    42,
+    0
+  ]
+}

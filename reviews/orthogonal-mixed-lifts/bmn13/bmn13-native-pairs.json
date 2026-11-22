@@ -1,0 +1,23 @@
+{
+  "parents": 42298,
+  "primes": [
+    1000003,
+    1000033
+  ],
+  "dual_words": 9053,
+  "nonzero": [
+    34966,
+    34966
+  ],
+  "source_pairings": [
+    [
+      26873,
+      854353
+    ],
+    [
+      22323,
+      402272
+    ]
+  ],
+  "parent_keys_sha256": "54c62aa74b71ef96b31bf691581da55ac7aaecbc277865f587c7879868de5b19"
+}

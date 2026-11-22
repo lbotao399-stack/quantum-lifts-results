@@ -1,0 +1,18 @@
+{
+  "parents": 42298,
+  "contributing": 34966,
+  "dual_denominator": 3,
+  "active_traces": 11994,
+  "dual_words": 9053,
+  "corrected_second_on_first": [
+    "455081984/3",
+    "4448563200000"
+  ],
+  "corrected_second_on_combination": "50677394964480000",
+  "third_pairing": "-50677394964480000",
+  "third_pairing_residues": [
+    248799,
+    367978
+  ],
+  "ordered_parent_keys_sha256": "54c62aa74b71ef96b31bf691581da55ac7aaecbc277865f587c7879868de5b19"
+}
