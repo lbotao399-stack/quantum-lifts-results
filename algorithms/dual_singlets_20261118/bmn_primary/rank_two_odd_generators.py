@@ -1,6 +1,7 @@
 """Resolve rank-two odd BMN source weights by classical ranks and the primary index."""
 import argparse
 from collections import Counter
+import gzip
 import json
 from pathlib import Path
 
@@ -9,7 +10,7 @@ from verify import HERE, cochains, read, receipt
 
 
 G2_JOBS = ("5691136", "5691142", "5691420", "5691422", "5691423", "5691483", "5691485", "5691572")
-USP4_JOBS = ("7658772", "7658842", "7658843", "7658854", "7658855")
+USP4_JOBS = ("7658772", "7658842", "7658843", "7658854", "7658855", "7658856", "5700336", "5700337")
 
 
 def columns(group, jobs, maximum):
@@ -40,6 +41,48 @@ def columns(group, jobs, maximum):
         possible = [y for y in odd if y not in entries or entries[y]["rational_upper"] > 0]
         result.append(dict(weight=weight, ranks=dict(sorted(entries.items())), possible_lengths=possible))
     return result
+
+
+def symplectic_fourth(columns):
+    """Find all third generators that could meet both deficits by level 48."""
+    indices = HERE / "rank_two_indices"
+    ordinary = table(read(indices / "C2_ordinary_exact.json"))
+    primary = table(read(indices / "C2_primary_exact.json"))
+    small = json.loads(gzip.decompress((HERE.parent / "b2_level36/odd_through_j28.json.gz").read_bytes()))
+    ranks = small["nonempty_blocks"]
+    assert len(ranks) == 297
+    assert all(y % 2 and sum(w) <= 14 and d == i + o for w, y, d, i, o in ranks)
+    targets = ((12,5,5), (8,8,8))
+    assert [primary[w] for w in targets] == [-3, -2]
+
+    def capacity(target, weight):
+        terms = dressings(target, weight)
+        assert all(sum(d) <= 9 for d in terms)
+        return sum(n * ordinary[d] for d,n in terms.items())
+
+    old = (10,4,4)
+    previous = [2 * capacity(t, old) for t in targets]
+    needed = [-primary[t]-n for t,n in zip(targets, previous)]
+    assert previous == [2,0] and needed == [1,2]
+    possible = []
+    for a in range(9):
+        for b in range(a+1):
+            for c in range(b+1):
+                weight = (a,b,c)
+                if sum(weight) < 15:
+                    continue
+                values = [capacity(t, weight) for t in targets]
+                if all(x >= n for x,n in zip(values, needed)):
+                    possible.append(dict(weight=weight, capacity=values))
+    excluded = {r["weight"] for r in columns if not r["possible_lengths"]}
+    assert len(possible) == 6 and {r["weight"] for r in possible} == excluded
+    # This weight passes every earlier tabulated negative-index inequality.
+    last = first_failure({old:2,(8,5,3):1}, ordinary, primary)
+    assert last == dict(target=targets[1], level=48, required=2, upper_by_core=[0,1])
+    return dict(targets=targets, primary_index=[-3,-2], capacity_of_known_pair=previous,
+                required_from_third_generator=needed, excluded_candidates=possible,
+                first_forcing_level_in_this_test=48, earlier_index_control=last,
+                earlier_index_control_weight=(8,5,3), odd_generator_lower_bound=4)
 
 
 def compute():
@@ -81,11 +124,13 @@ def compute():
     previous = read(HERE/"C2_level192_bounds.json")
     excluded = {r["weight"] for r in symplectic}
     possible_usp = [t["core"] for t in previous["trials"] if t["first_failure"] is None and tuple(t["core"]) not in excluded]
-    assert possible_usp == [[7,5,4]]
+    fourth = symplectic_fourth(symplectic)
+    assert not possible_usp
     return dict(G2_columns=g2, USp4_columns=symplectic, G2_required_level36_weight=first,
                 G2_odd_generator_lower_bound=2, G2_odd_generators_minimum_distinct_weights=2,
                 G2_two_generator_hypothesis=candidates, G2_two_generator_alternatives=remaining,
-                USp4_single_additional_generator_alternatives=possible_usp)
+                USp4_single_additional_generator_alternatives=possible_usp,
+                USp4_fourth_generator=fourth)
 
 
 if __name__ == "__main__":

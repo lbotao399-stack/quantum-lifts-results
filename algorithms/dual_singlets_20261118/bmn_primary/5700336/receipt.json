@@ -1,0 +1,18 @@
+{
+  "job": "5700336",
+  "files": {
+    "length-11.json": "ca8ddc2e3bc2504ab9688dfdd823de626500614569c005016e6481e9c71a84f0"
+  },
+  "account": "A8",
+  "slurm_accounting": [
+    "5700336",
+    "n4usp7541123",
+    "COMPLETED",
+    "2026-11-23T00:29:21",
+    "2026-11-23T01:21:27",
+    "3126",
+    "60",
+    "0:0"
+  ],
+  "archive_sha256": "69e927adc85ab8435025ad88f930b4d7477008472bdac8359a92d2ef6ba718fd"
+}

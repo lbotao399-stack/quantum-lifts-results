@@ -1,0 +1,12 @@
+{
+  "job": "5701203",
+  "archive_sha256": "3825191348f9135f8b9de3db475b07f5eace6067b70c21b279b73526dfcb2b61",
+  "script_sha256": "6c3bff8b31b94ec82944f299fdcbdc8cefeb9fd046987bfe72ed42a0c9deedc3",
+  "files": {
+    "result-42.json": "0bcd19e35fafbc73b77bb374560359979f5efdd7a867ac31aeb225c10c8da65c",
+    "result-60.json": "9c02dc0798e2bf5673c1c489116ef6a20e03171212acf33e0a6aace716b8ad2c",
+    "result-80.json": "ee7533fdb30c36a6f8452c78d3f55392f006b5895ad6e183cf1b92656e51adf1"
+  },
+  "slurm_accounting": "5701203|COMPLETED|2026-11-23T01:57:42|2026-11-23T01:59:22|100|32|0:0",
+  "account": "A8"
+}

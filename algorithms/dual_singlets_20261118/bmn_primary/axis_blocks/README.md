@@ -1,5 +1,7 @@
 # Classical targets for the $G_2$ level-36 singlet and the $USp(4)$ weight $(7,5,4)$
 
+Resolving the entire high-axis pair, including its Taylor determinant and both colour lowering maps, improves the rational second-target bound from nine to **one**. Only the $(8,0)$ colour can contribute. [Determinant projection and certificates](determinant/README.md)
+
 For the $G_2$ flavour singlet $(6,6,6)$, consider a possible 15-letter classical source. Under filtered Taylor equivariance its higher supercharge targets have the following rational bounds. The index places a generator at one or more of lengths 11, 13 and 15. Its precise length and the physical second differential remain open. [Source index and exclusions](../second_odd_generator.md) · [Supercharge selection rule](../../../perturbative_cartan_targets.md)
 
 | Supercharge order | Taylor diagram | Target letters | Cochains | Upper bound on classical cohomology |

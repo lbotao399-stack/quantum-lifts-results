@@ -1,0 +1,201 @@
+{
+  "colour": [
+    8,
+    0
+  ],
+  "weight_spaces": [
+    {
+      "weight": [
+        8,
+        0
+      ],
+      "dimensions": [
+        812,
+        1263,
+        634
+      ],
+      "ranks": [
+        533,
+        667
+      ],
+      "homology": 63
+    },
+    {
+      "weight": [
+        7,
+        1
+      ],
+      "dimensions": [
+        291,
+        499,
+        247
+      ],
+      "ranks": [
+        211,
+        253
+      ],
+      "homology": 35
+    },
+    {
+      "weight": [
+        5,
+        2
+      ],
+      "dimensions": [
+        567,
+        912,
+        457
+      ],
+      "ranks": [
+        386,
+        477
+      ],
+      "homology": 49
+    },
+    {
+      "weight": [
+        7,
+        2
+      ],
+      "dimensions": [
+        5,
+        13,
+        5
+      ],
+      "ranks": [
+        5,
+        5
+      ],
+      "homology": 3
+    },
+    {
+      "weight": [
+        4,
+        4
+      ],
+      "dimensions": [
+        1,
+        2,
+        1
+      ],
+      "ranks": [
+        1,
+        1
+      ],
+      "homology": 0
+    },
+    {
+      "weight": [
+        11,
+        1
+      ],
+      "dimensions": [
+        0,
+        0,
+        0
+      ],
+      "ranks": [
+        0,
+        0
+      ],
+      "homology": 0
+    },
+    {
+      "weight": [
+        8,
+        3
+      ],
+      "dimensions": [
+        0,
+        0,
+        0
+      ],
+      "ranks": [
+        0,
+        0
+      ],
+      "homology": 0
+    },
+    {
+      "weight": [
+        10,
+        2
+      ],
+      "dimensions": [
+        0,
+        0,
+        0
+      ],
+      "ranks": [
+        0,
+        0
+      ],
+      "homology": 0
+    },
+    {
+      "weight": [
+        13,
+        0
+      ],
+      "dimensions": [
+        0,
+        0,
+        0
+      ],
+      "ranks": [
+        0,
+        0
+      ],
+      "homology": 0
+    },
+    {
+      "weight": [
+        5,
+        4
+      ],
+      "dimensions": [
+        0,
+        0,
+        0
+      ],
+      "ranks": [
+        0,
+        0
+      ],
+      "homology": 0
+    },
+    {
+      "weight": [
+        8,
+        2
+      ],
+      "dimensions": [
+        0,
+        0,
+        0
+      ],
+      "ranks": [
+        0,
+        0
+      ],
+      "homology": 0
+    },
+    {
+      "weight": [
+        4,
+        3
+      ],
+      "dimensions": [
+        133,
+        240,
+        120
+      ],
+      "ranks": [
+        102,
+        119
+      ],
+      "homology": 19
+    }
+  ],
+  "multiplicity": 1
+}

@@ -1,0 +1,53 @@
+{
+  "weight": [
+    4,
+    2
+  ],
+  "primes": [
+    127,
+    131
+  ],
+  "chain_dimensions": [
+    [
+      2940,
+      396
+    ],
+    [
+      4020,
+      411
+    ],
+    [
+      1988,
+      194
+    ]
+  ],
+  "maps": {
+    "7": {
+      "column_counts": [
+        4020,
+        1769,
+        1091
+      ],
+      "relation_dimension": 2544,
+      "augmented_ranks": [
+        2797,
+        2797
+      ],
+      "rank_lower": 253
+    },
+    "8": {
+      "column_counts": [
+        1988,
+        2531,
+        1626
+      ],
+      "relation_dimension": 3609,
+      "augmented_ranks": [
+        3767,
+        3767
+      ],
+      "rank_lower": 158
+    }
+  },
+  "rational_homology_upper": 0
+}

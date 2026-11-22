@@ -333,6 +333,51 @@
     },
     {
       "weight": [
+        7,
+        5,
+        4
+      ],
+      "ranks": {
+        "7": {
+          "job": "7658856",
+          "dimension": 52,
+          "incoming": 0,
+          "outgoing": 52,
+          "rational_upper": 0
+        },
+        "9": {
+          "job": "7658856",
+          "dimension": 5732,
+          "incoming": 934,
+          "outgoing": 4798,
+          "rational_upper": 0
+        },
+        "11": {
+          "job": "5700336",
+          "dimension": 29157,
+          "incoming": 12070,
+          "outgoing": 17087,
+          "rational_upper": 0
+        },
+        "13": {
+          "job": "5700337",
+          "dimension": 21748,
+          "incoming": 14416,
+          "outgoing": 7332,
+          "rational_upper": 0
+        },
+        "15": {
+          "job": "7658856",
+          "dimension": 2256,
+          "incoming": 2024,
+          "outgoing": 232,
+          "rational_upper": 0
+        }
+      },
+      "possible_lengths": []
+    },
+    {
+      "weight": [
         8,
         5,
         2
@@ -952,11 +997,119 @@
       5
     ]
   ],
-  "USp4_single_additional_generator_alternatives": [
-    [
-      7,
+  "USp4_single_additional_generator_alternatives": [],
+  "USp4_fourth_generator": {
+    "targets": [
+      [
+        12,
+        5,
+        5
+      ],
+      [
+        8,
+        8,
+        8
+      ]
+    ],
+    "primary_index": [
+      -3,
+      -2
+    ],
+    "capacity_of_known_pair": [
+      2,
+      0
+    ],
+    "required_from_third_generator": [
+      1,
+      2
+    ],
+    "excluded_candidates": [
+      {
+        "weight": [
+          6,
+          5,
+          4
+        ],
+        "capacity": [
+          3,
+          5
+        ]
+      },
+      {
+        "weight": [
+          6,
+          5,
+          5
+        ],
+        "capacity": [
+          2,
+          2
+        ]
+      },
+      {
+        "weight": [
+          7,
+          4,
+          4
+        ],
+        "capacity": [
+          6,
+          3
+        ]
+      },
+      {
+        "weight": [
+          7,
+          5,
+          3
+        ],
+        "capacity": [
+          5,
+          7
+        ]
+      },
+      {
+        "weight": [
+          7,
+          5,
+          4
+        ],
+        "capacity": [
+          3,
+          5
+        ]
+      },
+      {
+        "weight": [
+          8,
+          5,
+          2
+        ],
+        "capacity": [
+          6,
+          2
+        ]
+      }
+    ],
+    "first_forcing_level_in_this_test": 48,
+    "earlier_index_control": {
+      "target": [
+        8,
+        8,
+        8
+      ],
+      "level": 48,
+      "required": 2,
+      "upper_by_core": [
+        0,
+        1
+      ]
+    },
+    "earlier_index_control_weight": [
+      8,
       5,
-      4
-    ]
-  ]
+      3
+    ],
+    "odd_generator_lower_bound": 4
+  }
 }

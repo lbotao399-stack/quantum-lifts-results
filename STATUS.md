@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## One possible $G_2$ second target and four odd $USp(4)$ generators
+
+The two simple colour lowering maps and the Taylor determinant reduce the second target of the fifteen-letter $G_2$ branch to at most one direction, with colour $(8,0)$ in the high pair. A8 job 5701203 gives the two adjacent rank bounds at both primes. The $USp(4)$ ranks from A8 jobs 5700336 and 5700337 close the last of six possible sources for a single remaining odd generator. Two primary-index inequalities force at least four odd multiplets by level 48. New $d_1$ multiplets **0** (85 cumulative). New explicit fortuitous generators **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative counts **0, 1, 0**. [Classical target](algorithms/dual_singlets_20261118/bmn_primary/axis_blocks/determinant/README.md) · [Index bound](algorithms/dual_singlets_20261118/bmn_primary/second_odd_generator.md#four-odd-generators-in-usp4-by-level-48) · [Counts](data/N4_lift_campaign_counts_20261122_determinant.json)
+
 ## Nine possible second-target directions for the fifteen-letter $G_2$ branch
 
 For the level-36 singlet, the rational classical target bounds at orders two, three and four are $9,0,0$ under filtered Taylor equivariance. The second bound is $5+2+2$ in three nontrivial colour representations of the two high Taylor axes. At $USp(4)$ level 32 the analogous bound drops from 1,128 to 98 for the thirteen-letter source. New $d_1$ multiplets **0** (85 cumulative). New explicit fortuitous generators **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative counts **0, 1, 0**. [Exact calculation](algorithms/dual_singlets_20261118/bmn_primary/axis_blocks/README.md) · [Counts](data/N4_lift_campaign_counts_20261122_axis_blocks.json)
