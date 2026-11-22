@@ -1,0 +1,18 @@
+{
+  "group": "SO(13)",
+  "power": 8,
+  "graph_counts": {
+    "raw": 76,
+    "discarded": 66
+  },
+  "reduced_types": 8,
+  "flavour_projection": {
+    "balanced_words": 90,
+    "rank": 5,
+    "square_multiplier": 144
+  },
+  "reconstructed_trace_rows": 56,
+  "planes_per_row": 257,
+  "uncompressed_rows": 280,
+  "nonzero_uncompressed_scores": 9
+}
