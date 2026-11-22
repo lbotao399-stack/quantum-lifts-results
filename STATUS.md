@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Two one-scalar targets survive to the third page
+
+With $S$ the defining-trace glueball, $S^5\operatorname{Tr}_{11}(\bar\lambda_{\dot+}\phi^1)$ in $SO(11)$ at $j=35$ and $S^6\operatorname{Tr}_{13}(\bar\lambda_{\dot+}\phi^1)$ in $SO(13)$ at $j=41$ both survive the first two supercharge differentials. The two finite-colour relation bases have ranks 123 and 17. The corrected second pairing vanishes on every basis element. Later incoming differentials remain open. [Proof, finite Pfaffians and replay](algorithms/dual_singlets_20261118/orthogonal_glueballs/one_scalar/README.md)
+
+This calculation adds 0 first-differential lifts and 0 fortuitous generator families.
+
 ## Joint check of Dot's glueball lifts, November 21, 2026
 
 Dot independently checked the classical preimage and withdrew the proposed $F_4$ $d_2$ witness. All four corrected $F_4$ source pairings vanish. For the three orthogonal $d_3$ targets, both published primitive choices give $3072000$ in $SO(11)$, $-33177600$ in $SO(12)$ and $-921600$ in $SO(13)$. The independent $SO(11)$ source gives $8640$. The comparison records the upstream tables used in the replay. [Exchange and checks](notes/glueball-lift-exchange.md) · [GitHub discussion](https://github.com/lbotao399-stack/quantum-lifts-results/issues/1)
