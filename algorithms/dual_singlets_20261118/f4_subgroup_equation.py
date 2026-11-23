@@ -51,11 +51,12 @@ def dimension(group, weight, length, degree):
     return classical_dimensions("Sp" if group == "Sp3" else "SO_odd", weight, length).get(degree, 0)
 
 
-def integral_rows(rows, group, degree, dim, seed, workers):
+def integral_rows(rows, group, degree, dim, seed, workers, basis=None, sample_terms=4):
     words = sorted({w for row in rows for w in row})
     assert all(m.nferm(w) == degree for w in words)
     alphabet = sorted({l for w in words for tr in w for l in tr})
-    basis = generators(group)
+    if basis is None:
+        basis = generators(group)
     size = basis.shape[1]
     k = degree+2
     points = math.ceil((dim+35)/math.comb(k,degree))
@@ -67,13 +68,25 @@ def integral_rows(rows, group, degree, dim, seed, workers):
         count = points*(k if parity else 1)
         elements = []
         for _ in range(count):
-            ids = rng.choice(len(basis), size=4, replace=False)
-            signs = rng.choice([-1,1], size=4)
+            ids = rng.choice(len(basis), size=sample_terms, replace=False)
+            signs = rng.choice([-1,1], size=sample_terms)
             elements.append(np.einsum("i,ijk->jk",signs,basis[ids]))
         matrices = np.asarray(elements).reshape(sample.shape)
         norm = max(norm, int(abs(matrices).sum(axis=-1).max()))
         frame.L[letter] = parity, matrices
     bound = max(math.factorial(degree)*size**len(w)*norm**sum(map(len,w)) for w in words)
+    if bound >= 2**63:
+        necklaces = {t for w in words for t in w}
+        assert all(math.factorial(degree)*size*norm**len(t) < 2**63 for t in necklaces)
+        limits = {t:(int(abs(v).max()), d) for t,(v,d) in frame.necklace_values(necklaces).items()}
+        bound = 0
+        for word in words:
+            prefix, odd = 1, 0
+            for t in word:
+                maximum, d = limits[t]
+                prefix *= math.comb(odd+d,d)*maximum
+                odd += d
+                bound = max(bound,prefix)
     assert bound < 2**63
     chunks = np.array_split(np.arange(len(words)), min(len(words),workers*2))
     with ThreadPoolExecutor(workers) as pool:

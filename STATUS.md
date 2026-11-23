@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## Native finite-colour tests on the sixth glueball
+
+Two common glueball factors leave 370 stable traces. All 217 vectors in the integer-evaluation kernel reduce to zero. With one common factor and traces of length at most six the corresponding result is 361 out of 361. A8 jobs 5704264 and 5704343 reproduced the six- and seven-colour ranks and the alternating two-ghost test. This stage adds 0 first-differential multiplets and 0 fortuitous generator families. The totals are 85 and 11. The independent second-, third- and nonperturbative-lift counts are 0, 1 and 0. [Calculation and replay](algorithms/dual_singlets_20261118/f4/j36_source/first_page/scalar_colour_tests.md) · [Campaign ledger](data/N4_lift_campaign_counts_20261122_scalar_colour.json)
+
 ## The corrected second row on exceptional trace sources
 
 At $F_4$ level 36, 19 trace singlets give a classical rank of five after quartic reduction. The corrected row vanishes on all 14 constructed classical cycles and has eight nonzero individual singlet scores. In the five terminal coordinates, $\eta Q_1$ has primitive row $(0,16,36,0,3)$. Additional finite-colour relations and colour networks remain to be tested. Three A8 runs give a classical rational rank bound of 542 in the complete selected diagram. At level 30 the separated one-instanton Ward integral with linear radial target vanishes for minimum-degree source and current profiles. New $d_1$ multiplets **0** (85 cumulative). New fortuitous generator families **0** (11 cumulative). Campaign $d_2,d_3$ and nonperturbative lifts **0, 1, 0**. [Trace calculation](algorithms/dual_singlets_20261118/f4/j36_source/first_page/trace_obstruction.md) · [Instanton selection](algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md#exact-mode-selection-for-the-fifth-glueball) · [Ledger](data/N4_lift_campaign_counts_20261122_trace_ideal.json)

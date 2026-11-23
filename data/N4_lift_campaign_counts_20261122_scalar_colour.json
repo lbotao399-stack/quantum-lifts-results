@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "scope": "Campaign-originated highest-weight first images, explicit generator families and independent higher obstructions.",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_trace_ideal.json",
+  "f4_j36": {
+    "incoming_d2": "open",
+    "scope": "Raw defining-trace identities with at least two common glueballs, or one common glueball and individual trace length at most six.",
+    "nonzero_reduced_identities_in_scope": 0
+  },
+  "cluster": {
+    "date_cst": "2026-11-23",
+    "daily_cap_cny": "500.00",
+    "combined_reserved_cny": "485.69",
+    "unreserved_cny": "14.31",
+    "actual_charge_cny": null,
+    "jobs": [
+      {
+        "job": "5704264",
+        "archive_sha256": "da34057cffe24ac2ce905ab0d01a6ef29e478d5aad814714494f355398a9da3b",
+        "script_sha256": "abb42db416b1da6898c92e4d752739ddbd7150ff0964f93973ccd5eca76756e6",
+        "account": "A8",
+        "maximum_cny": "5.34",
+        "slurm_accounting": "5704264|COMPLETED|11|12|0:0",
+        "output_sha256": {
+          "six.json": {
+            "sha256": "252fff39a6c0a515373db88e99833f2e421d7e1aa7647b95dbbf1e4e6668e28a",
+            "rank": 9100
+          },
+          "seven.json": {
+            "sha256": "7db7ba6f268f9f395e53da27c06931de216323b6e02a9880c30f860816f9dadd",
+            "rank": 25220
+          }
+        }
+      },
+      {
+        "job": "5704343",
+        "archive_sha256": "a27a697182d75a403d381e70f676d2da70999c77163bcd598bc7916e2a55460c",
+        "script_sha256": "69ee445c67340e986b2528a6319567c7bd4108a4e3cc6920fc1e698f4e402cc3",
+        "account": "A8",
+        "maximum_cny": "2.78",
+        "slurm_accounting": "5704343|COMPLETED|26|12|0:0",
+        "output_sha256": {
+          "exterior.json": "78498caf4b4a090cf0ccdc6d2c4147fc3231245422486d3a9e798e3ebc452fdc"
+        }
+      }
+    ]
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/scalar_colour_tests.md",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/scalar_colour_certificates.json"
+  ]
+}
