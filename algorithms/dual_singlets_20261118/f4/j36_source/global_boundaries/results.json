@@ -35,5 +35,21 @@
     },
     "seconds": 615,
     "cpus": 56
+  },
+  "mixed_26_52": {
+    "prime": 1009,
+    "rank": 3002,
+    "determinant": 833,
+    "complement_minor": 325,
+    "same_minor_replay": {
+      "prime": 1013,
+      "size": 3002,
+      "base_minor": 100,
+      "complement_minor": 462,
+      "determinant": 615
+    },
+    "seconds": 1009,
+    "cpus": 56,
+    "classical_upper_bound": 15
   }
 }

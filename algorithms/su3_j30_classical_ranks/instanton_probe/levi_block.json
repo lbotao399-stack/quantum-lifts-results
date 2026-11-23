@@ -1,0 +1,21 @@
+{
+  "source_words": 6139,
+  "nonzero_Levi_coefficients": 16,
+  "raw_monomials": 8790,
+  "exact_coefficients": 15,
+  "primitive_orbits": 1012,
+  "cubic_coefficient_real": 0,
+  "cubic_coefficient_imaginary": "-5184/5",
+  "frozen_operator_terms": 117,
+  "square_dressing_terms": 351,
+  "square_primitive_orbits": 57,
+  "flavour_shear_residuals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "nonperturbative_current_matrix_element": "open"
+}

@@ -1,14 +1,15 @@
 # Classical boundaries in the source of the sixth F₄ glueball
 
-In the relative holomorphic jet complex, the length-thirteen source of the incoming second differential to $S^6$ at $j=36$ has **at most 138 classical cohomology directions** in Taylor diagram $(4,4,3,3)$. The source cochain dimension is 3,720. The classical differential out of it has rational rank 703. The certificates below bound the incoming classical rank from below. [Outgoing rank and character](https://github.com/lbotao399-stack/quantum-lifts-results/tree/3b30b8ff242977debd90581c12f4a767d7875c6c/reviews/independent-f4/sixth-glueball-classical-rank) · [Reduction to the corrected quantum row](../first_page/README.md#one-row-decides-the-second-differential)
+In the relative holomorphic jet complex, the length-thirteen source of the incoming second differential to $S^6$ at $j=36$ has **at most 15 classical cohomology directions** in Taylor diagram $(4,4,3,3)$. The source cochain dimension is 3,720. The classical differential out of it has rational rank 703. The certificates below bound the incoming classical rank from below. [Outgoing rank and character](https://github.com/lbotao399-stack/quantum-lifts-results/tree/3b30b8ff242977debd90581c12f4a767d7875c6c/reviews/independent-f4/sixth-glueball-classical-rank) · [Reduction to the corrected quantum row](../first_page/README.md#one-row-decides-the-second-differential)
 
 | Actual length-twelve predecessors included | Certified incoming rank | Ordered minor modulo 1009 | Upper bound on classical source |
 |---|---:|---:|---:|
 | One second jet on each side of a colour contraction | 2398 | 676 | 619 |
 | Add a third jet or both second jets inside one word, and further split pairs | 2748 | 873 | 269 |
 | Add projected subwords and all five endomorphism channels | 2879 | 431 | 138 |
+| Connect two words by a defining Jordan leg and an adjoint leg | 3002 | 833 | 15 |
 
-A separate row-pivoting elimination on the same ordered minors gives determinants 174 and 100 modulo 1013 for orders 2748 and 2879 respectively. Each nonzero modular minor already proves the indicated lower bound over the rationals. All reductions use the same rational maps, rational colour representation and integer points. Multiplicities, chosen row and column numbers, and determinants are in the three certificates. The leading classical kernel has dimension $3720-703=3017$.
+A separate row-pivoting elimination on the same ordered minors gives determinants 174 and 100 modulo 1013 for orders 2748 and 2879 respectively. Each nonzero modular minor already proves the indicated lower bound over the rationals. All reductions use the same rational maps, rational colour representation and integer points. Multiplicities, chosen row and column numbers, and determinants are in the three certificates. The order-3002 minor has determinant 615 modulo 1013. The leading classical kernel has dimension $3720-703=3017$.
 
 ## Construction
 
@@ -44,3 +45,15 @@ python3 -B colour_channel_search.py replay --prime 1013 --certificate channels-3
 ~~~
 
 The last two commands rebuild the minor from the native colours. An uncompressed list of colour points is unnecessary because each recorded row deterministically specifies its integer assignment. The corrected quantum functional on the residual classical quotient remains to be determined. [Ranks and replays](results.json)
+
+
+## Two virtual colour representations
+
+Leave a 26-dimensional Albert multiplication operator $L$ and a 52-dimensional generator $T$ open in a gauge-invariant colour trace $\operatorname{Tr}_{26}(LAT)$, where $A$ is a matrix word. Append a physical colour $X$ by sending the adjoint argument to $[X,T]$ or the defining argument to its native $X$ action. Pair two such tensors through the inverse trace forms of both representations. The replay verifies the bracket representation on every native generator and the intertwining relation between the defining action and the Albert multiplication operators. It then applies the same third-jet and two-second-jet differentials as above. A separate calculation evaluates nonzero open entries by literal Taylor permutations, fresh native brackets and a single defining-representation trace. [Mixed colour maps](mixed_colour_edges.py) · [Literal entry controls](literal-mixed.json)
+
+Use the previously certified 2879 evaluation rows and columns as an invertible square block. Write $A$ for that matrix, $C$ for the old columns on new points, and $B,D$ for the new columns at old and new points respectively. Solve $W A=C$ at the current prime and verify every entry. The new rank is measured on $D-WB$. A minor with the old rows and columns first has determinant $\det(A)\det((D-WB)_{I,J})$ for the selected extra rows $I$ and columns $J$. This preserves a single rational source evaluation throughout. On 168 new points, 123 extra boundary columns are certified independently of the first 2879. The determinant products are $431\cdot325=833\pmod{1009}$ and $100\cdot462=615\pmod{1013}$. In particular, the residual bound $3017-3002=15$ is over the rationals. The 168 evaluation rows in the complement permit a strict upper bound only from the previously known classical kernel dimension. [Selected extra columns and rows](mixed-minor.json)
+
+~~~sh
+python3 -B literal_mixed_edges.py | diff -u literal-mixed.json -
+python3 -B mixed_source_search.py replay --workers 48 --prime 1013
+~~~
