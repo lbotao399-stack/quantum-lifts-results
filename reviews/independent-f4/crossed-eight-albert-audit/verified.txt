@@ -1,0 +1,7 @@
+left  tree-order score -11362589638943400/49  graph-order score -299015516814300/49  tree-order change on swapping graph 0 7774403437171800/49
+right  tree-order score -11362589638943400/49  graph-order score -299015516814300/49  tree-order change on swapping graph 0 7774403437171800/49
+six-cubic pivots 700, 701, 702: -598031033628600/7 0 0
+1009 left  classical 1005  tree 663  ordered 44  section 44  minors [551, 0]
+1009 right  classical 1005  tree 663  ordered 44  section 44  minors [551, 0]
+1013 left  classical 734  tree 457  ordered 92  section 92  minors [478, 0]
+1013 right  classical 734  tree 457  ordered 92  section 92  minors [478, 0]
