@@ -1,0 +1,281 @@
+{
+  "baseline_commit": "0b2e1a6724361fb2666089bfbe0c1a36a23d48a1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "timings_are_observations": true,
+  "scope": "exact trace enumeration and source recipe replay",
+  "compiler_command": "c++ -O3 -std=c++17 -shared -fPIC dihedral_catalogue.cpp -o dihedral.so",
+  "labelled_benchmarks": [
+    {
+      "degree": 6,
+      "baseline": {
+        "method": "baseline",
+        "degree": 6,
+        "coordinates": 130,
+        "seconds": 0.005463856999995187,
+        "pre_enumeration_peak_rss_kib": 56052,
+        "peak_rss_kib": 56052,
+        "output_sha256": "7b1471f4115fdffb0322f7d2028657b9c170510d4c005a4b03b029e799b40e3c",
+        "original_permutation_visits": 2880
+      },
+      "optimized": {
+        "method": "optimized",
+        "degree": 6,
+        "coordinates": 130,
+        "seconds": 0.0004159520000257544,
+        "pre_enumeration_peak_rss_kib": 55992,
+        "peak_rss_kib": 55992,
+        "output_sha256": "7b1471f4115fdffb0322f7d2028657b9c170510d4c005a4b03b029e799b40e3c",
+        "original_permutation_visits": 2880
+      },
+      "speed_ratio": 13.135787301556148
+    },
+    {
+      "degree": 7,
+      "baseline": {
+        "method": "baseline",
+        "degree": 7,
+        "coordinates": 822,
+        "seconds": 0.05369108499996855,
+        "pre_enumeration_peak_rss_kib": 55996,
+        "peak_rss_kib": 56496,
+        "output_sha256": "be24fd8cf660830223ea2548dd6078d19a6a824d78ded88ae314eeef6553bda8",
+        "original_permutation_visits": 20160
+      },
+      "optimized": {
+        "method": "optimized",
+        "degree": 7,
+        "coordinates": 822,
+        "seconds": 0.0024481539999214874,
+        "pre_enumeration_peak_rss_kib": 55992,
+        "peak_rss_kib": 55992,
+        "output_sha256": "be24fd8cf660830223ea2548dd6078d19a6a824d78ded88ae314eeef6553bda8",
+        "original_permutation_visits": 20160
+      },
+      "speed_ratio": 21.931253099964476
+    },
+    {
+      "degree": 8,
+      "baseline": {
+        "method": "baseline",
+        "degree": 8,
+        "coordinates": 6202,
+        "seconds": 0.5403879990000178,
+        "pre_enumeration_peak_rss_kib": 55992,
+        "peak_rss_kib": 78156,
+        "output_sha256": "4e680e8103616ad889b290088a1c14a16370fe5fc2dacfd89e84800293c03f5b",
+        "original_permutation_visits": 282240
+      },
+      "optimized": {
+        "method": "optimized",
+        "degree": 8,
+        "coordinates": 6202,
+        "seconds": 0.012962569000023905,
+        "pre_enumeration_peak_rss_kib": 56132,
+        "peak_rss_kib": 56132,
+        "output_sha256": "4e680e8103616ad889b290088a1c14a16370fe5fc2dacfd89e84800293c03f5b",
+        "original_permutation_visits": 282240
+      },
+      "speed_ratio": 41.68834117673906
+    },
+    {
+      "degree": 9,
+      "baseline": {
+        "method": "baseline",
+        "degree": 9,
+        "coordinates": 52552,
+        "seconds": 5.842376918000014,
+        "pre_enumeration_peak_rss_kib": 56100,
+        "peak_rss_kib": 272444,
+        "output_sha256": "10fb2630935a5525cc6b9af1a996f6f85eb3665427105e05936aa3b276c33ef2",
+        "original_permutation_visits": 2903040
+      },
+      "optimized": {
+        "method": "optimized",
+        "degree": 9,
+        "coordinates": 52552,
+        "seconds": 0.12026659200000722,
+        "pre_enumeration_peak_rss_kib": 56048,
+        "peak_rss_kib": 64136,
+        "output_sha256": "10fb2630935a5525cc6b9af1a996f6f85eb3665427105e05936aa3b276c33ef2",
+        "original_permutation_visits": 2903040
+      },
+      "speed_ratio": 48.57855220508504
+    }
+  ],
+  "degree_ten_new_only": {
+    "method": "optimized",
+    "degree": 10,
+    "coordinates": 499194,
+    "seconds": 1.343708242000048,
+    "pre_enumeration_peak_rss_kib": 56060,
+    "peak_rss_kib": 159328,
+    "output_sha256": "54c8121bff9ec3a72e3c07128529943b6cebfac032cddbca3857843162b5d9d2",
+    "original_permutation_visits": 43545600
+  },
+  "signed_action_checks": [
+    {
+      "degree": 6,
+      "checked_coordinates": 650
+    },
+    {
+      "degree": 7,
+      "checked_coordinates": 4932
+    },
+    {
+      "degree": 8,
+      "checked_coordinates": 43414
+    }
+  ],
+  "native_F4_evaluation_checks": [
+    {
+      "degree": 6,
+      "prime": 1000003,
+      "coordinates": 130,
+      "sha256": "7a0d2b5e74fe3deeac1870a3c6797125314593333b593eac0d8346ae8881c377"
+    },
+    {
+      "degree": 6,
+      "prime": 1000033,
+      "coordinates": 130,
+      "sha256": "013b0c944bdf66acf39ba960d99f63e360d1c601de4dcb764255e6bdbb4aea53"
+    },
+    {
+      "degree": 7,
+      "prime": 1000003,
+      "coordinates": 822,
+      "sha256": "85fab5e27f1aa32b47c28c980afed162d4b31b313288a584c4cb70edf702f900"
+    },
+    {
+      "degree": 7,
+      "prime": 1000033,
+      "coordinates": 822,
+      "sha256": "79e8cabe3069698bc7254651b54bf68c53dd31dfdcf2b0b936ad2f93a779a02e"
+    },
+    {
+      "degree": 8,
+      "prime": 1000003,
+      "coordinates": 6202,
+      "sha256": "66ae6445e3709fbaec59d9df3bdb03650415489245134df1cd45bdeaa3092564"
+    },
+    {
+      "degree": 8,
+      "prime": 1000033,
+      "coordinates": 6202,
+      "sha256": "a43dc7c8b1b11fcdd7e0aba1d574083aa7a61d9a14a80af473b2938789a35295"
+    }
+  ],
+  "native_library_setup_seconds": 0.0008102010000357041,
+  "F4_degree_fourteen_catalogue": {
+    "input_content": [
+      4,
+      4,
+      4,
+      2
+    ],
+    "original_word_visits": 3153150,
+    "exact_dihedral_coordinates": 112950,
+    "sha256": "6ec2848f03e3e286ed03d3dc9beb8b5c44e932c2f3b184950c6de5ad4762896f",
+    "timings": [
+      {
+        "repetition": 0,
+        "baseline_seconds": 0.20694824200006678,
+        "optimized_seconds": 0.014226233000044886,
+        "speed_ratio": 14.546945913188251
+      },
+      {
+        "repetition": 1,
+        "baseline_seconds": 0.28629601099999036,
+        "optimized_seconds": 0.01429315799998676,
+        "speed_ratio": 20.03028379034609
+      },
+      {
+        "repetition": 2,
+        "baseline_seconds": 0.17717605799998637,
+        "optimized_seconds": 0.013185485000008157,
+        "speed_ratio": 13.437204471422687
+      }
+    ]
+  },
+  "all_archived_F4_source_rows": {
+    "recipes": 474,
+    "exact_sparse_coordinates": 8283801,
+    "sha256": "989c84c720109367d26bb211c80423eac8be59bfbe8cde21029b67a72a5c7d62",
+    "timings": [
+      {
+        "repetition": 0,
+        "baseline_seconds": 1.273951229999966,
+        "optimized_seconds": 1.108387988000004,
+        "speed_ratio": 1.1493730027683784
+      },
+      {
+        "repetition": 1,
+        "baseline_seconds": 1.2628551609999477,
+        "optimized_seconds": 0.9870093800000177,
+        "speed_ratio": 1.279476352088898
+      },
+      {
+        "repetition": 2,
+        "baseline_seconds": 1.155651454000008,
+        "optimized_seconds": 1.1899098940000385,
+        "speed_ratio": 0.9712092149390688
+      }
+    ],
+    "includes": "source.single(seed) with catalogue and canonicalization; warm catalogue caches",
+    "excludes": "later elimination, finite-colour rank jobs, and differential construction"
+  },
+  "repeated_content_front_end": [
+    {
+      "content": [
+        5,
+        3
+      ],
+      "coordinates": 23,
+      "baseline_specialization_seconds": 0.013332942999909392,
+      "direct_seconds": 0.0005489259999649221,
+      "speed_ratio": 24.289144621973463,
+      "excludes_baseline_labelled_enumeration": true
+    },
+    {
+      "content": [
+        4,
+        4
+      ],
+      "coordinates": 33,
+      "baseline_specialization_seconds": 0.01079795999999078,
+      "direct_seconds": 0.0007008580000729125,
+      "speed_ratio": 15.406772839672849,
+      "excludes_baseline_labelled_enumeration": true
+    },
+    {
+      "content": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "coordinates": 485,
+      "baseline_specialization_seconds": 0.013446830000020782,
+      "direct_seconds": 0.04012258000000202,
+      "speed_ratio": 0.33514370212533956,
+      "excludes_baseline_labelled_enumeration": true
+    }
+  ],
+  "source_sha256": {
+    "benchmark.py": "3128ffed55c882c83fc8aa2fcfcb5b51a6b8bd86f527df7918116943619ee0a8",
+    "dihedral_traces.py": "72cb7f751f5a32be1e108336a9ad0f12412889f0ddab51d9e8f513c5ab5bbf34",
+    "native_catalogue.py": "372f76f16a67e2b5acac43790e08a803ab6c4b0e128156977e55f94105cde047",
+    "dihedral_catalogue.cpp": "bea89651c56066d42b7c4bfb747f23e4f412f47fc9c80ee386ec434a880655f8",
+    "mixed_colour_relations.py": "ee53849c375294c062293803e837b71a97eea5254440984c4ccfc570acf6d0e5",
+    "single_trace_flag.py": "2658a9f4c5b6b9c2acee731bd0c52b3de4bcd2c7d0e2024f9df0feb5a5a4e7c7",
+    "single_trace_formal.json": "d7851dc6832f428f741d936a530acbf294c3f2a24c966d36dad20a491dcb919d"
+  },
+  "claims": {
+    "new_physical_lifts": 0,
+    "new_fortuitous_generators": 0,
+    "omitted_coordinates": 0,
+    "changed_trace_orientations": 0,
+    "degree_ten_baseline_not_run": true,
+    "no_claim_of_whole_solver_speedup": true
+  }
+}

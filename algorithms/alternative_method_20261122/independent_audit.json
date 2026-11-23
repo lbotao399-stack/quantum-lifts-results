@@ -1,0 +1,72 @@
+{
+  "baseline_repository": "https://github.com/lbotao399-stack/quantum-lifts-results",
+  "baseline_commit": "0b2e1a6724361fb2666089bfbe0c1a36a23d48a1",
+  "baseline_directory": "algorithms/dual_singlets_20261118/f4/j36_source/first_page",
+  "baseline_sha256": {
+    "nilpotent_tangent.py": "c0357a728c9087286ba2990421d1c08f5e9a68fa85ff8ae9824b940fde4943f8",
+    "nilpotent_quadratic.py": "0d146798d0011a2028cd07a1ecc6693c3683836e806d72ffb8289a1025527040",
+    "nilpotent_cubic.py": "5b3d8b65ee1f08bf38c2bd85da3767aa2c9a88afae7248b9d1d1e8340c05619d",
+    "nilpotent_arcs.py": "7fc7dc2425b495c7780482e61ffe2962f4e6c1694dc6f93583b590727bf7e9c2",
+    "nilpotent_curved_arcs.py": "9747a9c3693e3b8906f798b663d89e5fcea944a280222c363c0a5809624b0e37",
+    "nilpotent_source_bounds.json.gz": "0b21a36647b31681c995eb34d9f0ba4368fb96d474c42124b2bbdb522eece087"
+  },
+  "scope": "Four fixed native scalar curves; supplied leading frames; mark degree at most three. No global cohomology or quantum-lift claim.",
+  "shared_inputs": "Pinned Lie structure constants, leading frames and scalar curves; python-flint rank backend.",
+  "independent_operations": "Python Fraction exterior Lie bracket, every polynomial coefficient, complete native matrix assembly, full-versus-higher rank count.",
+  "curves": [
+    {
+      "root_colours": [8, 19, 25, 46],
+      "curve_index": 0,
+      "native_equation_rows": 612,
+      "leading_frame_dimension": 70,
+      "higher_unknowns": 936,
+      "independent_full_rank": 495,
+      "independent_higher_rank": 473,
+      "allowed_leading_dimension": 48,
+      "independent_fraction_mark_checks": 48,
+      "all_scalar_coefficients_zero": true,
+      "all_mark_coefficients_zero": true
+    },
+    {
+      "root_colours": [8, 19, 25, 46],
+      "curve_index": 1,
+      "native_equation_rows": 662,
+      "leading_frame_dimension": 70,
+      "higher_unknowns": 936,
+      "independent_full_rank": 495,
+      "independent_higher_rank": 473,
+      "allowed_leading_dimension": 48,
+      "independent_fraction_mark_checks": 48,
+      "all_scalar_coefficients_zero": true,
+      "all_mark_coefficients_zero": true
+    },
+    {
+      "root_colours": [8, 19, 27, 47],
+      "curve_index": 0,
+      "native_equation_rows": 933,
+      "leading_frame_dimension": 66,
+      "higher_unknowns": 936,
+      "independent_full_rank": 587,
+      "independent_higher_rank": 566,
+      "allowed_leading_dimension": 45,
+      "independent_fraction_mark_checks": 45,
+      "all_scalar_coefficients_zero": true,
+      "all_mark_coefficients_zero": true
+    },
+    {
+      "root_colours": [8, 19, 27, 47],
+      "curve_index": 1,
+      "native_equation_rows": 953,
+      "leading_frame_dimension": 66,
+      "higher_unknowns": 936,
+      "independent_full_rank": 579,
+      "independent_higher_rank": 558,
+      "allowed_leading_dimension": 45,
+      "independent_fraction_mark_checks": 45,
+      "all_scalar_coefficients_zero": true,
+      "all_mark_coefficients_zero": true
+    }
+  ],
+  "total_scalar_curves_verified": 4,
+  "total_mark_completions_verified": 186
+}

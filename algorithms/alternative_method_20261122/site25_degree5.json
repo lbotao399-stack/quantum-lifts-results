@@ -1,0 +1,106 @@
+{
+  "baseline_commit": "0b2e1a6724361fb2666089bfbe0c1a36a23d48a1",
+  "test": "native polynomial commuting and Bianchi equations",
+  "previous_polynomial_bound": 1,
+  "previous_finite_invariant_bound": 1,
+  "elapsed_seconds": 4.555434219000006,
+  "result": {
+    "root_colours": [
+      8,
+      19,
+      25,
+      46
+    ],
+    "short_axis": 1,
+    "order": 7,
+    "prior_bound": 1,
+    "max_polynomial_degree": 5,
+    "samples": 12,
+    "additional_evaluations": [],
+    "global_source_symbol_upper_bound": 1
+  },
+  "finite_invariants": {
+    "bound": 1,
+    "selected_vectors": 3,
+    "invariant_boundaries": 2,
+    "stabilizers": [
+      {
+        "word": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "order_on_colour": 4,
+        "axis_permutation": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "axis_scalings": [
+          "-1",
+          "-1",
+          "-1",
+          "-1"
+        ],
+        "character": "1"
+      },
+      {
+        "word": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1,
+          0
+        ],
+        "order_on_colour": 2,
+        "axis_permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "axis_scalings": [
+          "-1",
+          "-1",
+          "-1",
+          "-1"
+        ],
+        "character": "1"
+      },
+      {
+        "word": [
+          0,
+          1,
+          0,
+          3,
+          2,
+          1,
+          0,
+          2,
+          1,
+          3
+        ],
+        "order_on_colour": 4,
+        "axis_permutation": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "axis_scalings": [
+          "-1",
+          "1",
+          "1",
+          "1"
+        ],
+        "character": "1"
+      }
+    ]
+  },
+  "scope": "local degree-seven symbols only; no global quantum lift claim"
+}

@@ -1,0 +1,230 @@
+{
+  "source_sha256": "bea89651c56066d42b7c4bfb747f23e4f412f47fc9c80ee386ec434a880655f8",
+  "python_wrapper_sha256": "372f76f16a67e2b5acac43790e08a803ab6c4b0e128156977e55f94105cde047",
+  "canonical_shape_dtype_cases": [
+    {
+      "dtype": "int32",
+      "shape": [
+        100
+      ],
+      "elements": 100
+    },
+    {
+      "dtype": "int32",
+      "shape": [
+        10,
+        10
+      ],
+      "elements": 100
+    },
+    {
+      "dtype": "int32",
+      "shape": [
+        34
+      ],
+      "elements": 34
+    },
+    {
+      "dtype": "int32",
+      "shape": [
+        0
+      ],
+      "elements": 0
+    },
+    {
+      "dtype": "int32",
+      "shape": [],
+      "elements": 1
+    },
+    {
+      "dtype": "int64",
+      "shape": [
+        100
+      ],
+      "elements": 100
+    },
+    {
+      "dtype": "int64",
+      "shape": [
+        10,
+        10
+      ],
+      "elements": 100
+    },
+    {
+      "dtype": "int64",
+      "shape": [
+        34
+      ],
+      "elements": 34
+    },
+    {
+      "dtype": "int64",
+      "shape": [
+        0
+      ],
+      "elements": 0
+    },
+    {
+      "dtype": "int64",
+      "shape": [],
+      "elements": 1
+    },
+    {
+      "dtype": "uint32",
+      "shape": [
+        100
+      ],
+      "elements": 100
+    },
+    {
+      "dtype": "uint32",
+      "shape": [
+        10,
+        10
+      ],
+      "elements": 100
+    },
+    {
+      "dtype": "uint32",
+      "shape": [
+        34
+      ],
+      "elements": 34
+    },
+    {
+      "dtype": "uint32",
+      "shape": [
+        0
+      ],
+      "elements": 0
+    },
+    {
+      "dtype": "uint32",
+      "shape": [],
+      "elements": 1
+    },
+    {
+      "dtype": "uint64",
+      "shape": [
+        100
+      ],
+      "elements": 100
+    },
+    {
+      "dtype": "uint64",
+      "shape": [
+        10,
+        10
+      ],
+      "elements": 100
+    },
+    {
+      "dtype": "uint64",
+      "shape": [
+        34
+      ],
+      "elements": 34
+    },
+    {
+      "dtype": "uint64",
+      "shape": [
+        0
+      ],
+      "elements": 0
+    },
+    {
+      "dtype": "uint64",
+      "shape": [],
+      "elements": 1
+    }
+  ],
+  "fixed_content_edge_cases": [
+    {
+      "content": [
+        2
+      ],
+      "count": 1
+    },
+    {
+      "content": [
+        3
+      ],
+      "count": 0
+    },
+    {
+      "content": [
+        30
+      ],
+      "count": 1
+    },
+    {
+      "content": [
+        31
+      ],
+      "count": 0
+    },
+    {
+      "content": [
+        0,
+        2
+      ],
+      "count": 1
+    },
+    {
+      "content": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "count": 1
+    },
+    {
+      "content": [
+        1,
+        1,
+        1
+      ],
+      "count": 1
+    },
+    {
+      "content": [
+        2,
+        2
+      ],
+      "count": 2
+    },
+    {
+      "content": [
+        3,
+        2,
+        1
+      ],
+      "count": 6
+    },
+    {
+      "content": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "count": 2
+    },
+    {
+      "content": [
+        29,
+        1,
+        1
+      ],
+      "count": 15
+    }
+  ],
+  "invalid_python_input_cases": 3,
+  "ubsan_invalid_native_content_cases": 4,
+  "ubsan_valid_content_cases": 5,
+  "ubsan_canonical_cases": 10000,
+  "undefined_behavior_sanitizer_passed": true,
+  "scope": "edge contracts and bit arithmetic; full degree14 coordinate equality audited separately"
+}

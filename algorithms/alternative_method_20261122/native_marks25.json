@@ -1,0 +1,174 @@
+{
+  "root_colours": [
+    8,
+    19,
+    25,
+    46
+  ],
+  "records": [
+    {
+      "tangent": [
+        [
+          12,
+          1
+        ]
+      ],
+      "scalar_degree": 1,
+      "mark_degree_bound": 3,
+      "fixed_leading_dimension": 48,
+      "native_leading_dimension": 48,
+      "fixed_seconds": 0.0014198410000290096,
+      "native_seconds": 0.5319259799999827,
+      "receipt": {
+        "native_equation_rows": 612,
+        "unknown_higher_mark_coefficients": 936,
+        "leading_mark_coefficients": 70,
+        "rank": 495,
+        "allowed_leading_marks": 48,
+        "all_native_coefficients_verified": true,
+        "all_scalar_commutator_coefficients_verified": true
+      }
+    },
+    {
+      "tangent": [
+        [
+          9,
+          1
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "scalar_degree": 1,
+      "mark_degree_bound": 3,
+      "fixed_leading_dimension": 44,
+      "native_leading_dimension": 48,
+      "fixed_seconds": 0.0022318200000199795,
+      "native_seconds": 0.433319324000081,
+      "receipt": {
+        "native_equation_rows": 662,
+        "unknown_higher_mark_coefficients": 936,
+        "leading_mark_coefficients": 70,
+        "rank": 495,
+        "allowed_leading_marks": 48,
+        "all_native_coefficients_verified": true,
+        "all_scalar_commutator_coefficients_verified": true
+      }
+    },
+    {
+      "tangent": [
+        [
+          12,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "scalar_degree": 1,
+      "mark_degree_bound": 3,
+      "fixed_leading_dimension": 44,
+      "native_leading_dimension": 48,
+      "fixed_seconds": 0.0023852130000250327,
+      "native_seconds": 0.4391808419999279,
+      "receipt": {
+        "native_equation_rows": 662,
+        "unknown_higher_mark_coefficients": 936,
+        "leading_mark_coefficients": 70,
+        "rank": 495,
+        "allowed_leading_marks": 48,
+        "all_native_coefficients_verified": true,
+        "all_scalar_commutator_coefficients_verified": true
+      }
+    }
+  ],
+  "previous_polynomial_bound": 1,
+  "previous_invariant_bound": 1,
+  "polynomial_bound": 1,
+  "finite_invariants": {
+    "bound": 1,
+    "selected_vectors": 3,
+    "invariant_boundaries": 2,
+    "stabilizers": [
+      {
+        "word": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "order_on_colour": 4,
+        "axis_permutation": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "axis_scalings": [
+          "-1",
+          "-1",
+          "-1",
+          "-1"
+        ],
+        "character": "1"
+      },
+      {
+        "word": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1,
+          0
+        ],
+        "order_on_colour": 2,
+        "axis_permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "axis_scalings": [
+          "-1",
+          "-1",
+          "-1",
+          "-1"
+        ],
+        "character": "1"
+      },
+      {
+        "word": [
+          0,
+          1,
+          0,
+          3,
+          2,
+          1,
+          0,
+          2,
+          1,
+          3
+        ],
+        "order_on_colour": 4,
+        "axis_permutation": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "axis_scalings": [
+          "-1",
+          "1",
+          "1",
+          "1"
+        ],
+        "character": "1"
+      }
+    ]
+  },
+  "new_native_evaluations": []
+}
