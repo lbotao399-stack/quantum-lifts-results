@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "prime": 1000003,
+  "formal_source_dimension": 2870,
+  "finite_source_dimension": 2689,
+  "evaluation_shape": [
+    2870,
+    2689
+  ],
+  "all_boundary_rows": 2624,
+  "boundary_pairings_nonzero": 0,
+  "omega_pairing": 1,
+  "outgoing_shape": [
+    2689,
+    1281
+  ],
+  "outgoing_minor_rank": 1081,
+  "outgoing_minor_determinant": 110010,
+  "incoming_minor_rank": 1607,
+  "incoming_minor_determinant": 624328,
+  "finite_evaluation_determinant": 23258,
+  "independent_dense_python_coordinates": 480,
+  "seconds": 49.9000604769999
+}

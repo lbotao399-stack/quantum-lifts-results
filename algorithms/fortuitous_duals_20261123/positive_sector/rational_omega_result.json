@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "basis_coefficients": 819,
+  "cochain_terms": 4264,
+  "formal_derivative_terms": 4502,
+  "intermediate_common_denominator": 13824,
+  "checks": [
+    {
+      "label": "original",
+      "exact_integer_coordinates": 1281,
+      "nonzero": 0,
+      "frame_dimensions": {
+        "5": 1281
+      },
+      "frame_minor_determinants_mod_prime": {
+        "5": 878791
+      }
+    },
+    {
+      "label": "independent",
+      "exact_integer_coordinates": 1281,
+      "nonzero": 0,
+      "frame_dimensions": {
+        "5": 1281
+      },
+      "frame_minor_determinants_mod_prime": {
+        "5": 784798
+      }
+    }
+  ],
+  "omega_json_sha256": "29e263d3b26194da061772e4b820e4245d661187f85b2897ee5df7db4dd5e63b",
+  "input_cycle_sha256": "15588946219fdcfb9b4add0f6cfdaea1f0b2aaef015a1ce68aaee6543abebdd9",
+  "seconds": 56.34352881800078,
+  "scope": "Exact integer evaluation of the rational cycle variation on both complete archived frames; completeness uses their pinned rational character dimension and nonzero minor certificates.",
+  "omega_json_sha256_scope": "decompressed UTF-8 JSON bytes",
+  "omega_gzip_sha256": "530830e6ff0080c1530819eb7e0245048ad3eff904f1393980dc2c784c60aa89"
+}

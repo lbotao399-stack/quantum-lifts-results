@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "relocated_script_count": 5,
+  "imports_stdout_empty": true,
+  "imports_created_no_json": true,
+  "native_generation_repeated": false,
+  "omega_pickle_required": false,
+  "original_cycle_terms": 4264,
+  "stable_derivative_terms": 4502,
+  "exact_control_records_reproduced": 8,
+  "omega_json_sha256": "29e263d3b26194da061772e4b820e4245d661187f85b2897ee5df7db4dd5e63b",
+  "omega_gzip_sha256": "530830e6ff0080c1530819eb7e0245048ad3eff904f1393980dc2c784c60aa89",
+  "script_sha256": {
+    "rank_runtime.py": "3c288c8fd6e8593720227d3dfa7236cf515f258c0bb198cdadad1ba424212abf",
+    "dimensions.py": "95da969e01a3593c9b141a93d770d9602b24f081b6f15c0e6519a159e6ed56d9",
+    "lower_rank_scan.py": "2383af5657bd818f4a9fc59d2dc4a2a208e047b975e1cc33e6fc55ae33a220c0",
+    "sp4_outgoing_rank.py": "9241bfcd7e106615324f834c5d884fa7d973798b83c37e5964e082c9ba582180",
+    "exact_rank_control.py": "a0368675f32fa4e6172615e8be090f211bd0cf20df0473a64773674d2bf1350c"
+  },
+  "exact_control_seconds": 2.929094616999464,
+  "seconds": 3.996528888999819,
+  "scope": "Relocated imports and exact integer/Fraction evaluation only; uses the companion pinned input pipeline without editing it."
+}

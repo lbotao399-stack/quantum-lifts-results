@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "colours": 11,
+  "scalar_weight": [
+    5,
+    5,
+    5
+  ],
+  "terminal_scalar_Schur_shape": [
+    5,
+    5,
+    5
+  ],
+  "predecessor_scalar_Schur_shape": [
+    5,
+    4,
+    4
+  ],
+  "predecessor_distinguished_adjoint_letters": 1,
+  "direct_flavour_relation_dimensions": {
+    "source": 21,
+    "terminal": 17
+  },
+  "Taylor_relation_dimensions": {
+    "12": 3,
+    "13": 7,
+    "14": 21,
+    "15": 17
+  },
+  "stable_cochain_dimensions": {
+    "14": 4529,
+    "15": 962
+  },
+  "finite_cochain_dimensions": {
+    "14": 4508,
+    "15": 945
+  },
+  "input_sha256": {
+    "b2_schur_complex.py": "24adfafd5d6d3354aa278ec82e23be19e680bc271439be17a24ad279da64343c",
+    "orthogonal_glueball_sources.py": "f9c8ab38ee328c4ac9b52eda7ec9024bc5fd63378aa7378e6818dde14adf1996"
+  },
+  "seconds": 9.190171747000022,
+  "scope": "Direct GL3flavour branching and full Taylor-character routes agree; both use the same pinned orthogonal invariant-tensor character. This is not an independent derivation of the orthogonal second fundamental theorem."
+}

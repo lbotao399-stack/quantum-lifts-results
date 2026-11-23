@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "field": "Q",
+  "inverse_splitting_candidates": 187,
+  "target_support": 40,
+  "source_support": 186,
+  "source_terms_present_in_omega": 106,
+  "input_omega_terms": 4264,
+  "full_Q0_omega_terms": 4502,
+  "formal_source_basis_equations": 2870,
+  "formal_boundary_equations": 2624,
+  "rational_identity_equations": 181,
+  "omega_pairing": "1",
+  "coefficients_are_integers": true,
+  "max_abs_source_coefficient": 522,
+  "paired_warm_cache_timings_seconds": [
+    {
+      "full_image": 0.043788609999865,
+      "transpose": 0.00042428000051586423,
+      "ratio": 103.20686798016469
+    },
+    {
+      "transpose": 0.00041496399990137434,
+      "full_image": 0.04901579299985315,
+      "ratio": 118.1205912115337
+    },
+    {
+      "full_image": 0.05070571899977949,
+      "transpose": 0.00040679700032342225,
+      "ratio": 124.64624606244914
+    },
+    {
+      "transpose": 0.0003712110001288238,
+      "full_image": 0.042053324000335124,
+      "ratio": 113.28684760349526
+    },
+    {
+      "full_image": 0.04707096400034061,
+      "transpose": 0.0006300759996520355,
+      "ratio": 74.70680366548785
+    },
+    {
+      "transpose": 0.00040792100026010303,
+      "full_image": 0.03808014600053866,
+      "ratio": 93.35176658288636
+    },
+    {
+      "full_image": 0.042428257999745256,
+      "transpose": 0.00040243300009024097,
+      "ratio": 105.42937082751963
+    }
+  ],
+  "explicit_warmup_both_methods": true,
+  "median_pair_ratio": 105.42937082751963,
+  "source_dual_sha256": "5ec828693cb0453c920540d323c3d51b8e816427596c918b999cfb0d6ec70e69",
+  "rational_relation_basis_sha256": "1485c1d4b1125a1e12ea8889da0f4d7f08a2c75c2759fdd9ccfb13ca15341899",
+  "seconds": 2.6333699960005106,
+  "scope": "The functional descends and detects the full fortuitous quotient only in the complete fixed highest-weight sector certified above. The inverse-splitting transpose is exact on all raw cochains of this weight, but finite-colour descent outside the selected highest-weight sector has not been certified. Timing measures only repeated candidate scoring after the fixed detector is built, not end-to-end census speed."
+}

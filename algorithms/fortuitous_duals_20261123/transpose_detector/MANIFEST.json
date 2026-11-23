@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2557,
+      "sha256": "83ea5dbb59e87454d006919824e01cd05cda5e189d3dd8accd328ab1f2446683"
+    },
+    {
+      "path": "build_transpose.py",
+      "bytes": 5760,
+      "sha256": "ff04d67aa85edbf7688abd781f5ae63728ec90ee5868b3a81b32583b5c2985a1"
+    },
+    {
+      "path": "score_candidate.py",
+      "bytes": 2583,
+      "sha256": "606f3a26b8843ca616f5a0d5b026d6575bd9568c847e941de491ebaee2647b86"
+    },
+    {
+      "path": "omega_source_dual.json",
+      "bytes": 23300,
+      "sha256": "5ec828693cb0453c920540d323c3d51b8e816427596c918b999cfb0d6ec70e69"
+    },
+    {
+      "path": "transpose_result.json",
+      "bytes": 2135,
+      "sha256": "0b76e66fcf2ec8e8e2f5da9336507ca7263f93efd7d33f696d50c8a1910d762b"
+    }
+  ]
+}

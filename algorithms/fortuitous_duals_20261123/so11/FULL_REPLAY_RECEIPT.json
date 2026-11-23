@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "fresh_predecessor_circuits": 21,
+  "fresh_terminal_circuits": 3,
+  "all21_source_Q0_projection_comparisons": true,
+  "source_relation_dimension": 21,
+  "terminal_relation_dimension": 17,
+  "rational_Q0_rank": 16,
+  "fortuitous_quotient_dimension": 1,
+  "dual_support": 6,
+  "Dot_scalar_combination_pairing": "1/6",
+  "Codex_scalar_ancestor_pairing": "-189/128",
+  "combined_scalar_preimage_found": true,
+  "combined_scalar_predecessor_terms": 16,
+  "input_files": [
+    {
+      "commit": "e1d184d388c588c0a5a825a19ecbca4e24427242",
+      "path": "reviews/dot-orthogonal-d3/so11-j36-replay.tar.gz.b64",
+      "git_blob": "9d9b1017abfc0cf9588b958e3143f7be0db21866",
+      "sha256": "dbd5532a5fbde0f2effca040389dc0212451066e21035e721e40691fc61a0cda",
+      "bytes": 102097
+    },
+    {
+      "commit": "9a554a6dbf1792b4f3d552cd24bf1fc6aaaee6e9",
+      "path": "algorithms/dual_singlets_20261118/b2_schur_complex.py",
+      "git_blob": "ee1ebacf2e4f2dd7242e52b9db3e18ee97bb214f",
+      "sha256": "24adfafd5d6d3354aa278ec82e23be19e680bc271439be17a24ad279da64343c",
+      "bytes": 5611
+    },
+    {
+      "commit": "9a554a6dbf1792b4f3d552cd24bf1fc6aaaee6e9",
+      "path": "algorithms/dual_singlets_20261118/orthogonal_glueball_sources.py",
+      "git_blob": "9ec48a2529e997b04beb210ffae96eb485d7b882",
+      "sha256": "f9c8ab38ee328c4ac9b52eda7ec9024bc5fd63378aa7378e6818dde14adf1996",
+      "bytes": 5077
+    },
+    {
+      "commit": "9a554a6dbf1792b4f3d552cd24bf1fc6aaaee6e9",
+      "path": "algorithms/dual_singlets_20261118/orthogonal_glueball_first_pair.py",
+      "git_blob": "91a304b05c69b9b2d328a9af12dfae5504d3e4f0",
+      "sha256": "eeb6d6d3acb94df435bbac3424c695abcd82156c569e2c9aa37be5676f553033",
+      "bytes": 9116
+    },
+    {
+      "commit": "ac8bdb18447d32cbdd0a67806a87fdd3d9c1df1d",
+      "path": "algorithms/so11_source_comparison_20261123/so11_derivative_review.py",
+      "git_blob": "10e54323784b066d7d9a14f4815fcf4cc3ea9aa3",
+      "sha256": "d5a6ca32cd0c2fe5374a445b42d2854e2e862ae86f5947aceae3e70391837303",
+      "bytes": 5162
+    }
+  ],
+  "seconds": 136.29279202199996
+}

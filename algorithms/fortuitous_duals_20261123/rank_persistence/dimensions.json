@@ -1,0 +1,221 @@
+{
+  "records": [
+    {
+      "group": "Sp",
+      "defining_dimension": 6,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 8,
+      "fermion_degrees": {
+        "3": 2559
+      },
+      "dimension": 2559,
+      "sector": [
+        3,
+        3,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.025428367000131402
+    },
+    {
+      "group": "Sp",
+      "defining_dimension": 6,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 9,
+      "fermion_degrees": {
+        "4": 2689
+      },
+      "dimension": 2689,
+      "sector": [
+        2,
+        2,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.04717015700043703
+    },
+    {
+      "group": "Sp",
+      "defining_dimension": 6,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 10,
+      "fermion_degrees": {
+        "5": 1281
+      },
+      "dimension": 1281,
+      "sector": [
+        1,
+        1,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.05175483400034864
+    },
+    {
+      "group": "Sp",
+      "defining_dimension": 8,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 8,
+      "fermion_degrees": {
+        "3": 2624
+      },
+      "dimension": 2624,
+      "sector": [
+        3,
+        3,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.012449445000129344
+    },
+    {
+      "group": "Sp",
+      "defining_dimension": 8,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 9,
+      "fermion_degrees": {
+        "4": 2870
+      },
+      "dimension": 2870,
+      "sector": [
+        2,
+        2,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.01636618799966527
+    },
+    {
+      "group": "Sp",
+      "defining_dimension": 8,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 10,
+      "fermion_degrees": {
+        "5": 1451
+      },
+      "dimension": 1451,
+      "sector": [
+        1,
+        1,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.03350563599997258
+    },
+    {
+      "group": "Sp",
+      "defining_dimension": 10,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 8,
+      "fermion_degrees": {
+        "3": 2624
+      },
+      "dimension": 2624,
+      "sector": [
+        3,
+        3,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.006462600000304519
+    },
+    {
+      "group": "Sp",
+      "defining_dimension": 10,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 9,
+      "fermion_degrees": {
+        "4": 2870
+      },
+      "dimension": 2870,
+      "sector": [
+        2,
+        2,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.014077347999773338
+    },
+    {
+      "group": "Sp",
+      "defining_dimension": 10,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 10,
+      "fermion_degrees": {
+        "5": 1455
+      },
+      "dimension": 1455,
+      "sector": [
+        1,
+        1,
+        16,
+        6,
+        6
+      ],
+      "seconds": 0.026421929999742133
+    }
+  ],
+  "seconds": 0.2368042839998452
+}

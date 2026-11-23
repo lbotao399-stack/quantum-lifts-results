@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "prime": 1000003,
+  "stable_dimension": 2870,
+  "finite_dimension": 2689,
+  "complete_relation_dimension": 181,
+  "relation_kernel_residual_nonzero": 0,
+  "relation_image_rank": 116,
+  "relation_image_minor_determinant": 932721,
+  "stable_Q0_rank": 1198,
+  "finite_Q0_rank": 1081,
+  "fortuitous_dimension": 1,
+  "seconds": 9.622741084000154,
+  "scope": "All181 finite-field identities and all6020 formal output coordinates. Rational dimension follows separately from exact stable acyclicity and the archived rational finite class; finite-field relation coefficients are not asserted to be rational lifts."
+}

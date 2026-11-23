@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "source_commit": "9a554a6dbf1792b4f3d552cd24bf1fc6aaaee6e9",
+  "weight": [
+    3,
+    3,
+    5,
+    0,
+    0
+  ],
+  "cycle_trace_terms": 4264,
+  "stable_derivative_terms": 4502,
+  "alphabet": [
+    [
+      0,
+      0,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      1,
+      []
+    ],
+    [
+      0,
+      1,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      2,
+      []
+    ],
+    [
+      1,
+      0,
+      []
+    ],
+    [
+      1,
+      0,
+      [
+        0
+      ]
+    ],
+    [
+      1,
+      1,
+      []
+    ],
+    [
+      2,
+      0,
+      []
+    ]
+  ],
+  "records": [
+    {
+      "defining_dimension": 2,
+      "points": 1,
+      "seed": 159771,
+      "exact_derivative_coordinates": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "defining_dimension": 4,
+      "points": 1,
+      "seed": 159771,
+      "exact_derivative_coordinates": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "defining_dimension": 6,
+      "points": 1,
+      "seed": 159771,
+      "exact_derivative_coordinates": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "defining_dimension": 8,
+      "points": 1,
+      "seed": 159771,
+      "exact_derivative_coordinates": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "defining_dimension": 2,
+      "points": 1,
+      "seed": 159772,
+      "exact_derivative_coordinates": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "defining_dimension": 4,
+      "points": 1,
+      "seed": 159772,
+      "exact_derivative_coordinates": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "defining_dimension": 6,
+      "points": 1,
+      "seed": 159772,
+      "exact_derivative_coordinates": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "defining_dimension": 8,
+      "points": 1,
+      "seed": 159772,
+      "exact_derivative_coordinates": [
+        "561727/864",
+        "7235557/864",
+        "-70747/216",
+        "1017713/288",
+        "-1877243/864",
+        "428041/144"
+      ]
+    }
+  ],
+  "integer_frame": "Pinned terminal_interval_ranks.sample; each matrix has integer entries and row L1 norm at most2; all final sums use Fraction.",
+  "scope": "These are exact sample values and a nonzero chosen-lift witness at Sp4. Completeness of rank disappearance is supplied separately by the full1198-minor certificate, not by these samples.",
+  "seconds": 1.7532318989997293
+}

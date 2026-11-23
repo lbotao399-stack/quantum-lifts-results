@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "weight": [
+    3,
+    3,
+    5,
+    0,
+    0
+  ],
+  "length": 9,
+  "highest_weight_only": true,
+  "prime": 1000003,
+  "minor_checks": [
+    {
+      "rank_N": 1,
+      "map": "incoming",
+      "size": 22,
+      "determinant": 592760
+    },
+    {
+      "rank_N": 1,
+      "map": "outgoing",
+      "size": 3,
+      "determinant": 363806
+    },
+    {
+      "rank_N": 1,
+      "map": "augmented",
+      "size": 22,
+      "determinant": 592760
+    },
+    {
+      "rank_N": 2,
+      "map": "incoming",
+      "size": 850,
+      "determinant": 827918
+    },
+    {
+      "rank_N": 2,
+      "map": "outgoing",
+      "size": 405,
+      "determinant": 155065
+    },
+    {
+      "rank_N": 2,
+      "map": "augmented",
+      "size": 850,
+      "determinant": 827918
+    },
+    {
+      "rank_N": 4,
+      "map": "outgoing",
+      "size": 1198,
+      "determinant": 435941
+    }
+  ],
+  "dimension_and_rank_table": [
+    {
+      "rank_N": 1,
+      "dimensions_C8_C9_C10": [
+        64,
+        25,
+        3
+      ],
+      "incoming_rank": 22,
+      "outgoing_rank": 3,
+      "H9_dimension": 0
+    },
+    {
+      "rank_N": 2,
+      "dimensions_C8_C9_C10": [
+        1527,
+        1255,
+        448
+      ],
+      "incoming_rank": 850,
+      "outgoing_rank": 405,
+      "H9_dimension": 0
+    },
+    {
+      "rank_N": 3,
+      "dimensions_C8_C9_C10": [
+        2559,
+        2689,
+        1281
+      ],
+      "incoming_rank": 1607,
+      "outgoing_rank": 1081,
+      "H9_dimension": 1,
+      "positive_sector_receipts_checked": true
+    },
+    {
+      "rank_N": 4,
+      "dimensions_C8_C9_C10": [
+        2624,
+        2870,
+        1451
+      ],
+      "incoming_rank": 1672,
+      "outgoing_rank": 1198,
+      "H9_dimension": 0
+    },
+    {
+      "rank_N": 5,
+      "dimensions_C8_C9_C10": [
+        2624,
+        2870,
+        1455
+      ],
+      "incoming_rank": 1672,
+      "outgoing_rank": 1198,
+      "H9_dimension": 0
+    }
+  ],
+  "Sp3_rational_rank_proof": {
+    "stable_incoming_image_equals_stable_cycle_space": true,
+    "incoming_image_intersect_relation_dimension": "181 - 116 = 65",
+    "finite_incoming_rank": "1672 - 65 = 1607",
+    "omega_nonboundary": "the modular functional kills every boundary and pairs 1 with omega; the boundary rank is already exact over Q",
+    "finite_outgoing_rank": "at least 1081 by the minor, at most 2689 - 1607 - 1 = 1081 by exact closure and non-exactness",
+    "H9_dimension": "2689 - 1607 - 1081 = 1",
+    "companion_receipts_checked": true
+  },
+  "all_N_at_least_4_inference": {
+    "source_trace_injectivity_at_N4": "stable C9 dimension = finite C9 dimension = 2870; specialization is onto",
+    "nested_kernel_argument": "symplectic block restriction gives I_N subset I_4 for N>=4; hence I_N at C9 is zero",
+    "incoming_rank": 1672,
+    "outgoing_rank": 1198,
+    "H9_dimension": 0,
+    "outgoing_minor_embedding": "the Sp4 evaluations embed into Sp(N) by a symplectic direct sum with zero matrices",
+    "target_degree_injectivity_assumed": false
+  },
+  "input_sha256": {
+    "lower_rank_scan.json": "64029ec13a0b5e189837c34cd70741f2c475cf1622ae4383eac4733408f4ae0d",
+    "sp4_outgoing_rank.json": "a13019cd164ba2ba3570eb7c13acdce34af2d35ea3f20dbed86be94d02cd2afd",
+    "dimensions.json": "8d2de3e40314a55e9016330b7b70fa358dab0abcfc0e3b64a95cda40bd0c2c3e",
+    "exact_rank_control.json": "e0b2d4f5a932b87449315bb3d2114758cc73e640f0f568407e5bfaa42c9d5a01",
+    "sp1_rank_minors.npz": "11bbd7593f264f4ecc88d65f2c581347851f85a8c3db92c22cc2325f45c23733",
+    "sp2_rank_minors.npz": "8b9f9ceeb43b8ec1b21547591cc2d8a16d430f22271dccec396d03ab34a9d039",
+    "sp4_outgoing_minor.npz": "d61cd8bd115b268bcc33034241dd595544c3964d4b82f13a7e7f20df97e6430f"
+  },
+  "companion_receipt_sha256": {
+    "stable_rank_result.json": "a0177a38c60d9946ba38fcad1e853b6a7e090f9e5c8d9b4058e9daee0903a2f1",
+    "native_frames_result.json": "a5cd0748a0bf9df5d240eeba500b2abff1570dc23313ea93d5bdd6de977139a8",
+    "rational_omega_result.json": "10b17d88750742a5d1cb41e6d70c237c72dd381e665f3c01f5b26c665e5b5417",
+    "rational_relations_result.json": "214e014cd76bb238523e4bbcae9c41c4e70ed6d75166e08a1e3b00dadda84730",
+    "exact_relation_image_result.json": "33a503990bd38af268a920572424d3fec91a8408d9bc237bef30051fb6dec344"
+  },
+  "seconds": 1.4901520799994614,
+  "scope": "Saved-minor arithmetic and rank-saturation proof only. Original native generation is recorded separately. The all-N conclusion uses defining-trace generation and symplectic block restriction, and applies only to this fixed classical highest-weight degree. It is not a statement about other grades or quantum corrections."
+}

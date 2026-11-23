@@ -1,0 +1,118 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7248,
+      "sha256": "ba016ff4f794699879b5355c652fe0856483392eefb38fb8dd69c6f26d7c5d83"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 176,
+      "sha256": "3854ddd4729ac8eeed659fedb832be345dde2371cd6702c93304e7e8c02f909f"
+    },
+    {
+      "path": "rank_runtime.py",
+      "bytes": 1404,
+      "sha256": "3c288c8fd6e8593720227d3dfa7236cf515f258c0bb198cdadad1ba424212abf"
+    },
+    {
+      "path": "dimensions.py",
+      "bytes": 1319,
+      "sha256": "95da969e01a3593c9b141a93d770d9602b24f081b6f15c0e6519a159e6ed56d9"
+    },
+    {
+      "path": "dimensions.json",
+      "bytes": 3333,
+      "sha256": "8d2de3e40314a55e9016330b7b70fa358dab0abcfc0e3b64a95cda40bd0c2c3e"
+    },
+    {
+      "path": "lower_rank_scan.py",
+      "bytes": 3398,
+      "sha256": "2383af5657bd818f4a9fc59d2dc4a2a208e047b975e1cc33e6fc55ae33a220c0"
+    },
+    {
+      "path": "lower_rank_scan.json",
+      "bytes": 101568,
+      "sha256": "64029ec13a0b5e189837c34cd70741f2c475cf1622ae4383eac4733408f4ae0d"
+    },
+    {
+      "path": "sp4_outgoing_rank.py",
+      "bytes": 4090,
+      "sha256": "9241bfcd7e106615324f834c5d884fa7d973798b83c37e5964e082c9ba582180"
+    },
+    {
+      "path": "sp4_outgoing_rank.json",
+      "bytes": 28815,
+      "sha256": "a13019cd164ba2ba3570eb7c13acdce34af2d35ea3f20dbed86be94d02cd2afd"
+    },
+    {
+      "path": "exact_rank_control.py",
+      "bytes": 2108,
+      "sha256": "a0368675f32fa4e6172615e8be090f211bd0cf20df0473a64773674d2bf1350c"
+    },
+    {
+      "path": "exact_rank_control.json",
+      "bytes": 2731,
+      "sha256": "e0b2d4f5a932b87449315bb3d2114758cc73e640f0f568407e5bfaa42c9d5a01"
+    },
+    {
+      "path": "verify_rank_certificates.py",
+      "bytes": 8314,
+      "sha256": "01cc31a89723f7ebc1562a879001ef4d68cbeba10392d3db7875aca4361b659b"
+    },
+    {
+      "path": "rank_certificate_replay.json",
+      "bytes": 4630,
+      "sha256": "1f228fd190feed772edcd14964afaea7fe7cd60149c4f61f70a1aeaeb7ff1c3d"
+    },
+    {
+      "path": "portable_smoke.py",
+      "bytes": 3881,
+      "sha256": "df65527a94aa23b64d3412dcf6f3264476236aa04ea3232b7e3e336da9af0c8f"
+    },
+    {
+      "path": "portable_smoke.json",
+      "bytes": 1189,
+      "sha256": "bd9616db7b63b71bf4531a7aeb044f2d997c6eb5497136f198aecee63f7572fe"
+    },
+    {
+      "path": "sp1_rank_minors.npz",
+      "bytes": 4224,
+      "sha256": "11bbd7593f264f4ecc88d65f2c581347851f85a8c3db92c22cc2325f45c23733"
+    },
+    {
+      "path": "sp2_rank_minors.npz",
+      "bytes": 5086925,
+      "sha256": "8b9f9ceeb43b8ec1b21547591cc2d8a16d430f22271dccec396d03ab34a9d039"
+    },
+    {
+      "path": "sp4_outgoing_minor.npz",
+      "bytes": 4536845,
+      "sha256": "d61cd8bd115b268bcc33034241dd595544c3964d4b82f13a7e7f20df97e6430f"
+    }
+  ],
+  "selected_file_count": 18,
+  "selected_bytes": 9802198,
+  "manifest_self_hash_omitted": true,
+  "source_pins": {
+    "dual_singlets_and_omega": "9a554a6dbf1792b4f3d552cd24bf1fc6aaaee6e9",
+    "shared_runtime": "082be7070d207e2cdecfd0a91b03d5e014fd303d"
+  },
+  "companion_runtime": "../positive_sector/probe_stable.py",
+  "companion_inputs": "../positive_sector/inputs/INPUT_MANIFEST.json",
+  "excluded": [
+    "*.log",
+    "*.so",
+    "*.pkl",
+    "__pycache__",
+    "_portable_smoke_*"
+  ],
+  "validation": {
+    "saved_minor_replay_passed": true,
+    "saved_minors": 7,
+    "relocated_imports_passed": true,
+    "exact_rational_control_records_reproduced": 8,
+    "native_generation_repeated": false
+  },
+  "scope": "Exact classical highest-weight block at native weight (3,3,5,0,0), length9, j28. The all-N>=4 result uses source-degree trace injectivity and nested symplectic embeddings, not target-degree stabilization. No assertion about other grades or quantum corrections."
+}

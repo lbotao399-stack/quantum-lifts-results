@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "source_basis_dimension": 2870,
+  "finite_character_dimension": 2689,
+  "rational_relation_dimension": 181,
+  "reconstructed_nonzero_coefficients": 29192,
+  "distinct_reconstructed_coefficients": 207,
+  "denominators": [
+    2,
+    4,
+    6,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48
+  ],
+  "total_integer_polynomial_terms": 126900,
+  "maximum_integer_polynomial_coefficient_l1": 216596,
+  "per_word_absolute_bound": 123834728448,
+  "integer_evaluation_absolute_bound": 26822106842923008,
+  "crt_modulus": 1000073001431003663,
+  "full_finite_frame_minor_determinant": 162437,
+  "full_finite_frame_minor_prime": 1000003,
+  "checks": [
+    {
+      "prime": 1000003,
+      "zero_coordinates": 486709,
+      "independent_integer_controls": 480
+    },
+    {
+      "prime": 1000033,
+      "zero_coordinates": 486709,
+      "independent_integer_controls": 480
+    },
+    {
+      "prime": 1000037,
+      "zero_coordinates": 486709,
+      "independent_integer_controls": 480
+    }
+  ],
+  "rational_basis_sha256": "1485c1d4b1125a1e12ea8889da0f4d7f08a2c75c2759fdd9ccfb13ca15341899",
+  "seconds": 90.98515151099946,
+  "scope": "All181 rational finite-colour trace identities certified exactly on a character-saturated2689-coordinate frame. Bounded CRT uses identical integer Sp3 matrix points at allthree primes, including all cleared denominators and full highest-weight coefficients."
+}

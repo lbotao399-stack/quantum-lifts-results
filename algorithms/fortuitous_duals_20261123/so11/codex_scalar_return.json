@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "scalar_pfaffian_order": 5,
+  "scalar_dual_pairing": "-189/128",
+  "scalar_probe_coefficients": {
+    "AA.AA.ABBBBBC.CC.CC": "37800",
+    "AA.AA.ABBBBCB.CC.CC": "-37800",
+    "AA.AA.ABBBC.BB.CC.CC": "-18900",
+    "AA.AA.ABBBCBB.CC.CC": "37800",
+    "AA.AA.ABBCB.BB.CC.CC": "18900",
+    "AA.AA.ABBCB.BB.CCCC": "-37800"
+  },
+  "return_checks": [
+    {
+      "ordered_query": [
+        "ABC",
+        "A+",
+        "A-",
+        "B+",
+        "B-",
+        "C+",
+        "C-"
+      ],
+      "scalar_ancestor_P6": "13608000",
+      "codex": "540",
+      "ratio": "25200",
+      "transpose_supports": [
+        1,
+        3,
+        9,
+        18,
+        33,
+        27,
+        15
+      ]
+    },
+    {
+      "ordered_query": [
+        "ABC",
+        "ABC",
+        "ABC",
+        "+-",
+        "+-",
+        "+-"
+      ],
+      "scalar_ancestor_P6": "9072000",
+      "codex": "360",
+      "ratio": "25200",
+      "transpose_supports": [
+        1,
+        1,
+        2,
+        3,
+        6,
+        6,
+        5
+      ]
+    }
+  ],
+  "seconds": 0.5087659959999655
+}

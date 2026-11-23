@@ -1,0 +1,310 @@
+{
+  "passed": true,
+  "terminal_probe_words": [
+    "AA.AA.ABBBBBC.CC.CC",
+    "AA.AA.ABBBBCB.CC.CC",
+    "AA.AA.ABBBC.BB.CC.CC",
+    "AA.AA.ABBBC.BBCC.CC",
+    "AA.AA.ABBBCBB.CC.CC",
+    "AA.AA.ABBBCCC.BB.CC",
+    "AA.AA.ABBCB.BB.CC.CC",
+    "AA.AA.ABBCB.BB.CCCC",
+    "AA.AA.ABBCB.BBCC.CC",
+    "AA.AA.ABBCBCC.BB.CC",
+    "AA.AA.ABBCCBC.BB.CC",
+    "AA.AA.ABC.BB.BB.CC.CC",
+    "AA.AA.ABC.BB.BCBCCC",
+    "AA.AA.ABC.BBCC.BBCC",
+    "AA.AAABC.BB.BBCC.CC",
+    "AA.AABAC.BB.BBCC.CC",
+    "AA.AABB.ABC.BBCC.CC"
+  ],
+  "Dot_seed_probe_coefficients": {
+    "cycle": [
+      "40960/3",
+      "-38912/3",
+      "-25600/3",
+      "30720",
+      "38912/3",
+      "81920/3",
+      "7680",
+      "-26624/3",
+      "-28672",
+      "-63488/3",
+      "56320/3",
+      "2560",
+      "-40960",
+      "20480",
+      "51200",
+      "-120832/3",
+      "40960"
+    ],
+    "path3": [
+      "1024",
+      "-512",
+      "0",
+      "4096/3",
+      "0",
+      "512/3",
+      "0",
+      "-2048",
+      "-4096/3",
+      "512/3",
+      "1024/3",
+      "0",
+      "-4096/3",
+      "8192/3",
+      "8192/3",
+      "-8192/3",
+      "32768/3"
+    ],
+    "path3-alt": [
+      "1024/25",
+      "-1536/25",
+      "0",
+      "5632/25",
+      "256/5",
+      "256/25",
+      "128/5",
+      "-3328/25",
+      "-10752/25",
+      "-2304/25",
+      "3328/25",
+      "0",
+      "-8192/25",
+      "11264/25",
+      "11264/25",
+      "-21504/25",
+      "45056/25"
+    ]
+  },
+  "relations": [
+    {
+      "name": "path3_plus_half_cycle",
+      "terminal_linear_combination": {
+        "path3": "1",
+        "cycle": "1/2"
+      },
+      "predecessor_linear_combination": [
+        {
+          "source_Gram_index": 1,
+          "coefficient": "1080"
+        },
+        {
+          "source_Gram_index": 3,
+          "coefficient": "-252600/61"
+        },
+        {
+          "source_Gram_index": 5,
+          "coefficient": "-480"
+        },
+        {
+          "source_Gram_index": 7,
+          "coefficient": "-35700/61"
+        },
+        {
+          "source_Gram_index": 11,
+          "coefficient": "24795/61"
+        },
+        {
+          "source_Gram_index": 14,
+          "coefficient": "214740/61"
+        },
+        {
+          "source_Gram_index": 17,
+          "coefficient": "-165080/61"
+        },
+        {
+          "source_Gram_index": 18,
+          "coefficient": "106560/61"
+        },
+        {
+          "source_Gram_index": 19,
+          "coefficient": "-480"
+        },
+        {
+          "source_Gram_index": 22,
+          "coefficient": "-1320/61"
+        },
+        {
+          "source_Gram_index": 25,
+          "coefficient": "-720"
+        },
+        {
+          "source_Gram_index": 26,
+          "coefficient": "7560"
+        },
+        {
+          "source_Gram_index": 28,
+          "coefficient": "387900/61"
+        },
+        {
+          "source_Gram_index": 29,
+          "coefficient": "65220/61"
+        },
+        {
+          "source_Gram_index": 30,
+          "coefficient": "-67070/61"
+        },
+        {
+          "source_Gram_index": 35,
+          "coefficient": "-11400/61"
+        }
+      ],
+      "recorded_high_factor_coordinates_checked": 1861,
+      "full_identity_reason": "Both sides lie in the complete17dimensional scalar relation space; the certified17coordinate restriction is injective."
+    },
+    {
+      "name": "alt_plus_one_fiftieth_cycle",
+      "terminal_linear_combination": {
+        "path3-alt": "1",
+        "cycle": "1/50"
+      },
+      "predecessor_linear_combination": [
+        {
+          "source_Gram_index": 1,
+          "coefficient": "216/5"
+        },
+        {
+          "source_Gram_index": 3,
+          "coefficient": "-3636/61"
+        },
+        {
+          "source_Gram_index": 5,
+          "coefficient": "-96/5"
+        },
+        {
+          "source_Gram_index": 7,
+          "coefficient": "-1458/61"
+        },
+        {
+          "source_Gram_index": 11,
+          "coefficient": "-3837/610"
+        },
+        {
+          "source_Gram_index": 14,
+          "coefficient": "54738/305"
+        },
+        {
+          "source_Gram_index": 17,
+          "coefficient": "-40476/305"
+        },
+        {
+          "source_Gram_index": 18,
+          "coefficient": "47472/305"
+        },
+        {
+          "source_Gram_index": 19,
+          "coefficient": "-96/5"
+        },
+        {
+          "source_Gram_index": 22,
+          "coefficient": "-7974/305"
+        },
+        {
+          "source_Gram_index": 25,
+          "coefficient": "-144/5"
+        },
+        {
+          "source_Gram_index": 26,
+          "coefficient": "1512/5"
+        },
+        {
+          "source_Gram_index": 28,
+          "coefficient": "8442/61"
+        },
+        {
+          "source_Gram_index": 29,
+          "coefficient": "8274/305"
+        },
+        {
+          "source_Gram_index": 30,
+          "coefficient": "-15249/305"
+        },
+        {
+          "source_Gram_index": 35,
+          "coefficient": "-2028/61"
+        }
+      ],
+      "recorded_high_factor_coordinates_checked": 1885,
+      "full_identity_reason": "Both sides lie in the complete17dimensional scalar relation space; the certified17coordinate restriction is injective."
+    },
+    {
+      "name": "Dot_combination_minus_one_sixth_cycle",
+      "terminal_linear_combination": {
+        "cycle": "5/6",
+        "path3": "-5",
+        "path3-alt": "500/3"
+      },
+      "predecessor_linear_combination": [
+        {
+          "source_Gram_index": 1,
+          "coefficient": "1800"
+        },
+        {
+          "source_Gram_index": 3,
+          "coefficient": "657000/61"
+        },
+        {
+          "source_Gram_index": 5,
+          "coefficient": "-800"
+        },
+        {
+          "source_Gram_index": 7,
+          "coefficient": "-64500/61"
+        },
+        {
+          "source_Gram_index": 11,
+          "coefficient": "-187925/61"
+        },
+        {
+          "source_Gram_index": 14,
+          "coefficient": "750900/61"
+        },
+        {
+          "source_Gram_index": 17,
+          "coefficient": "-523800/61"
+        },
+        {
+          "source_Gram_index": 18,
+          "coefficient": "1049600/61"
+        },
+        {
+          "source_Gram_index": 19,
+          "coefficient": "-800"
+        },
+        {
+          "source_Gram_index": 22,
+          "coefficient": "-259200/61"
+        },
+        {
+          "source_Gram_index": 25,
+          "coefficient": "-1200"
+        },
+        {
+          "source_Gram_index": 26,
+          "coefficient": "12600"
+        },
+        {
+          "source_Gram_index": 28,
+          "coefficient": "-532500/61"
+        },
+        {
+          "source_Gram_index": 29,
+          "coefficient": "-50300/61"
+        },
+        {
+          "source_Gram_index": 30,
+          "coefficient": "-172950/61"
+        },
+        {
+          "source_Gram_index": 35,
+          "coefficient": "-281000/61"
+        }
+      ],
+      "recorded_high_factor_coordinates_checked": 1891,
+      "full_identity_reason": "Both sides lie in the complete17dimensional scalar relation space; the certified17coordinate restriction is injective."
+    }
+  ],
+  "scope": "Exact full scalar relation-ideal preimages. These identities transport under the declared six odd returns. No identification with the separately specified Codex source is used."
+}

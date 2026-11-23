@@ -1,0 +1,42 @@
+{
+  "source_repository": "lbotao399-stack/quantum-lifts-results",
+  "source_commit": "9a554a6dbf1792b4f3d552cd24bf1fc6aaaee6e9",
+  "source_path": "algorithms/dual_singlets_20261118/orthogonal_glueball_first_pair.py",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 11241,
+      "sha256": "67c5c3ca7470f120179e1fe1794dc5a80af6ce11cbc7b2c83b74652fd75d30f7"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 14,
+      "sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+    },
+    {
+      "path": "global_return_audit.py",
+      "bytes": 8867,
+      "sha256": "6256dda76fceaa5c2d3817a8e956bf6509d04ebdac1bad6add466296419edae2"
+    },
+    {
+      "path": "global_return_audit.json",
+      "bytes": 1914,
+      "sha256": "60cbdebdd0d7b13d549a45c6144509b2c24adca3ebe58b67e5eb8337672944ef"
+    },
+    {
+      "path": "all_marker_functional_checks.json",
+      "bytes": 101644,
+      "sha256": "4b17601b362e4a365fa0d5049aabc3f212211bc69f8e29f9e2e2db4e0df53586"
+    },
+    {
+      "path": "portable_replay_result.json",
+      "bytes": 341,
+      "sha256": "446c6d62b9738c2127dd88ae8cda86ede5ad15cb5c79d14288b62e6e11463f17"
+    },
+    {
+      "path": "inputs/orthogonal_glueball_first_pair.py",
+      "bytes": 9116,
+      "sha256": "eeb6d6d3acb94df435bbac3424c695abcd82156c569e2c9aa37be5676f553033"
+    }
+  ]
+}

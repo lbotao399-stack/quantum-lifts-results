@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10850,
+      "sha256": "681b4aaa41e5b37fbfbaa96c8d434b84ba25fea297d2f00cf1c5441effa7607c"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 44,
+      "sha256": "bdb5937cb5786491ae4d4420279bf665b06fc6f92f8076c01316ec4b4f57dd1d"
+    },
+    {
+      "path": "sp3_dual_factorization.py",
+      "bytes": 6737,
+      "sha256": "6567c747f0daa14ce5226180f87dffd2b010bbced61903835f17201e41273bbd"
+    },
+    {
+      "path": "sp3_dual_factorization.json",
+      "bytes": 138844,
+      "sha256": "bd309582f6bb0b5a5ffec8656cca80159e6722f3e35d770d25a22dbafde391d8"
+    },
+    {
+      "path": "sp3_intrinsic_dual.py",
+      "bytes": 9768,
+      "sha256": "407f4fa5feaa8528b31ecbab958d65e1b48e972c6ca9073d86ca485b6486f908"
+    },
+    {
+      "path": "sp3_intrinsic_dual.json",
+      "bytes": 45736,
+      "sha256": "2341e602fc63e0207efa2ed09a06e6340adcb1640d88371a7ac280094d4e0f05"
+    },
+    {
+      "path": "streaming_profile_duals.py",
+      "bytes": 5730,
+      "sha256": "a6ab94a61dec690e17fcc04e5e5062e5504dfefa23f9aec1636f25bdd365611f"
+    },
+    {
+      "path": "streaming_profile_duals.json",
+      "bytes": 72486,
+      "sha256": "8a3ca934556b40d7ec48f62efb70c9cb17edec816d6fba11bad3a8202e56e7b5"
+    }
+  ],
+  "source_pins": [
+    "9a554a6dbf1792b4f3d552cd24bf1fc6aaaee6e9",
+    "082be7070d207e2cdecfd0a91b03d5e014fd303d"
+  ],
+  "scope": "Final deliverables only; exploratory searches and the superseded pending receipt are excluded."
+}

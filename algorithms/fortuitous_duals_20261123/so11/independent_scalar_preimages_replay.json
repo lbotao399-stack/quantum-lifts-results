@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "implementation": "Python standard-library Fraction; matrix-times-witness checks, no solver used",
+  "Dot_preimage_identities": 3,
+  "Codex_Dot_scalar_preimage_identities": 1,
+  "exact_coordinate_equalities": 68,
+  "Dot_pairing": "1/6",
+  "Codex_scalar_pairing": "-189/128",
+  "combined_pairing": "0",
+  "scope": "Full scalar identities follow from certified injectivity of the17-coordinate relation frame. Post-return claims additionally require the global return identity audit.",
+  "seconds": 0.009539808000226913
+}

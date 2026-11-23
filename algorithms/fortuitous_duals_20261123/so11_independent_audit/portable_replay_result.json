@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "isolated_python": true,
+  "fresh_temporary_directory": true,
+  "bundled_source_used": true,
+  "runtime_or_sibling_checkout_required": false,
+  "coefficient_checks_sha256": "4b17601b362e4a365fa0d5049aabc3f212211bc69f8e29f9e2e2db4e0df53586",
+  "all_marker_components": 1000,
+  "source_coefficient_method_checks": 2376
+}

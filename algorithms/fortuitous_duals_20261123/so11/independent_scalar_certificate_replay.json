@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "implementation": "independent Python standard-library Fraction elimination",
+  "source_basis_rank": 21,
+  "terminal_basis_rank": 17,
+  "Q0_relation_rank": 16,
+  "relation_quotient_dimension": 1,
+  "dual_support": 6,
+  "zero_Q0_pairings": 21,
+  "Dot_scalar_Gram_combination_pairing": "1/6",
+  "seconds": 0.015608179999617278,
+  "scope": "Checks every entry of the compact rational matrices, all21annihilation identities, and the6coordinate dual. Character completeness and membership as genuine Gram identities are separate structural inputs reconstructed by the full driver."
+}

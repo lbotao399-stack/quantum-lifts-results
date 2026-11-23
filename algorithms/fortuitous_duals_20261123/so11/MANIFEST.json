@@ -1,0 +1,133 @@
+{
+  "package": "SO11 complete scalar relation quotient and constructive Codex-Dot comparison",
+  "files": [
+    {
+      "path": "FULL_REPLAY_RECEIPT.json",
+      "bytes": 2118,
+      "sha256": "ce2cf18598303547b9556f0d81346c50c12ef642e637a1798354ca612d9539da"
+    },
+    {
+      "path": "README.md",
+      "bytes": 13476,
+      "sha256": "6d219c1f8cbd489b377e4393d1168f76df16a1d4d1014adec7ce9ac1a0cfafe1"
+    },
+    {
+      "path": "certify_relation_quotient.py",
+      "bytes": 5037,
+      "sha256": "4786eaefc58069126e053c70d13910fc827399b088b4aa271226474a3e97de79"
+    },
+    {
+      "path": "character_completeness.json",
+      "bytes": 1056,
+      "sha256": "5102fc35b25f527ef3e8752751805d770a4313701b53c9590d1f090fcad92686"
+    },
+    {
+      "path": "check_relation_characters.py",
+      "bytes": 2246,
+      "sha256": "2979b3db04c75a2dda1223097e8f0446b1cc96fb558c967d66c80704f9105655"
+    },
+    {
+      "path": "codex_scalar_preimage.json",
+      "bytes": 3804,
+      "sha256": "42c7a5e26507b411d8aa8f0405b2e3e57fb1e9845fb5320735138035402a4522"
+    },
+    {
+      "path": "codex_scalar_return.json",
+      "bytes": 1085,
+      "sha256": "fc40e423381ca167ee6a05aeb3fdf3870693ce9d487a6bb8302e193d0010d47e"
+    },
+    {
+      "path": "codex_scalar_return.py",
+      "bytes": 2256,
+      "sha256": "d4bb393601f267a230652d1a34996ad95a38930cb3a17abfe46b889aa67a6b0a"
+    },
+    {
+      "path": "complete_scalar_relation_quotient.json",
+      "bytes": 39805,
+      "sha256": "9376132e8d7f5eaeeb4adc5293f9714a001fa175cd125a36d93fdd63d07b9c7e"
+    },
+    {
+      "path": "independent_scalar_certificate_replay.json",
+      "bytes": 601,
+      "sha256": "e33a475753848bba43c29a80ecc010e771fe29b2d6b6da270d99ca6a2aa70a7a"
+    },
+    {
+      "path": "independent_scalar_preimages_replay.json",
+      "bytes": 541,
+      "sha256": "f5187317f7271507b84029355e51b14f05236c1cdfec86e2c318d8072f6ce0d9"
+    },
+    {
+      "path": "independent_trace_ops.py",
+      "bytes": 489,
+      "sha256": "a54b74599b34f71a7d2cb4958b44e74d7237ca79b2391a3c17bb9cee37a4bd79"
+    },
+    {
+      "path": "pfaffian_adapter.py",
+      "bytes": 3646,
+      "sha256": "3a434003068b0e96cabf29c24cb75f9786e4a1e8965080433c934d7ff175d9a4"
+    },
+    {
+      "path": "probe_q0_relations.py",
+      "bytes": 3091,
+      "sha256": "5cbd77e8e8a1da246daab7bd5ac3ad1f770a843a8c1f6d893371ee83742400e3"
+    },
+    {
+      "path": "project_gram_pair.js",
+      "bytes": 750,
+      "sha256": "5a88e7daf0964ef4b7b0b7ab8f1645cca8294fdbad6dec3805370b8d075c2f5d"
+    },
+    {
+      "path": "project_gram_source.js",
+      "bytes": 2270,
+      "sha256": "65f7b5be7c71822fa88cb95cd5fd4e6ef183b83aa96fd2c668f8faee364ee54e"
+    },
+    {
+      "path": "reproduce.py",
+      "bytes": 7707,
+      "sha256": "720c23f4163130fa097e09f6ec13cdec7bd6ff01ee12dc007bee5b0edb4b4487"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 20,
+      "sha256": "4cef508304e84c21f73cf412712165dc26e40978cb784bc08a876948b559d90d"
+    },
+    {
+      "path": "scalar_preimages.json",
+      "bytes": 7297,
+      "sha256": "174c348963a628ef3fb15d977a154f2d42b3e6f82ad3325056afe3829c3ad252"
+    },
+    {
+      "path": "solve_codex_preimage.py",
+      "bytes": 3274,
+      "sha256": "414e26425edaee1033db0b4602bdce2ae9becd51890da83041331fd2cb242764"
+    },
+    {
+      "path": "solve_scalar_preimages.py",
+      "bytes": 2806,
+      "sha256": "10640ca0972ebaff5e2d9f3fff35f2b15326a8ee822ef2c6f527979a711707f8"
+    },
+    {
+      "path": "verified_q0_relation_probes.json",
+      "bytes": 3702,
+      "sha256": "64a6517c9c40ee3f95d32fd0d4aa673e9000f5eb821d6668cc70ad2d9eafb842"
+    },
+    {
+      "path": "verify_q0_relation_probes.py",
+      "bytes": 3146,
+      "sha256": "64d4edd68b1f1e02a3ff655ef75ff967464199f6b036b4b50ce823fcbb1b48c3"
+    },
+    {
+      "path": "verify_scalar_certificate.py",
+      "bytes": 2316,
+      "sha256": "68e096b39d5bb1a353fad001b641d03c3cfbc6c84628266f0d6d19a1f3a87075"
+    },
+    {
+      "path": "verify_scalar_preimages.py",
+      "bytes": 2876,
+      "sha256": "a113b7edf96274862f788a6263e09b2965069991a17ed630c33b5ac76a6079c6"
+    }
+  ],
+  "total_bytes": 115415,
+  "global_return_audit": "../so11_independent_audit",
+  "full_fresh_replay_receipt": "FULL_REPLAY_RECEIPT.json"
+}

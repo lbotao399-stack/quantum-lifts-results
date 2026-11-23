@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "source": {
+        "index": 1,
+        "species": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "B",
+          "B",
+          "B",
+          "B",
+          "C",
+          "C",
+          "C",
+          "C",
+          "x"
+        ],
+        "endpoints": [
+          21,
+          2,
+          14,
+          25,
+          11,
+          15,
+          18,
+          26,
+          16,
+          8,
+          27,
+          17,
+          4,
+          10,
+          19,
+          12,
+          1,
+          7,
+          3,
+          22,
+          13,
+          6,
+          0,
+          20,
+          24,
+          5,
+          23,
+          9
+        ],
+        "matter_jet": "x has Q0(x)=BC-CB",
+        "determinant_size": 12
+      },
+      "query_values": [
+        "4096",
+        "0"
+      ],
+      "canonical_raw_terms": [
+        2,
+        0
+      ],
+      "matching_counters": [
+        26976,
+        26976
+      ],
+      "raw_sha256": [
+        "bc61174b39b617b99fc1b6545f53e580c15b511191a29c9348e5653ee95ee25d",
+        "7cac7ef3eaa0efc283b92141ac3578bf35b21c7ab6af3d47734fc119b330e3da"
+      ],
+      "source_canonical_terms": 64,
+      "derivative_canonical_terms": 39,
+      "all_retained_Q0_coordinates_match": true,
+      "source_raw_sha256": "76a687bf4929c306353c31441f341474dce7d4ee1101d4afec9e56c5c068d450",
+      "source_input": "6 0\n0 0 0 0 0 1 1 1 1 2 2 2 2 3\n0 0 0 0 0 0 0 0 0 0 0 0 0 1\n21 2 14 25 11 15 18 26 16 8 27 17 4 10 19 12 1 7 3 22 13 6 0 20 24 5 23 9\n"
+    },
+    {
+      "source": {
+        "index": 5,
+        "species": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "B",
+          "B",
+          "B",
+          "B",
+          "C",
+          "C",
+          "C",
+          "C",
+          "x"
+        ],
+        "endpoints": [
+          24,
+          3,
+          10,
+          13,
+          6,
+          18,
+          4,
+          25,
+          5,
+          17,
+          15,
+          19,
+          8,
+          20,
+          1,
+          27,
+          11,
+          26,
+          9,
+          0,
+          14,
+          23,
+          16,
+          2,
+          21,
+          12,
+          22,
+          7
+        ],
+        "matter_jet": "x has Q0(x)=BC-CB",
+        "determinant_size": 12
+      },
+      "query_values": [
+        "4608",
+        "-1152"
+      ],
+      "canonical_raw_terms": [
+        1,
+        1
+      ],
+      "matching_counters": [
+        26976,
+        26976
+      ],
+      "raw_sha256": [
+        "c58d29f4937ae8eaabd26c54626dbfc190b26fbc4b5b9b059c732969f9bddfeb",
+        "29208bd8c4608ab992b9ad33f373843a739ea009a965c063b34d3277f935b438"
+      ],
+      "source_canonical_terms": 52,
+      "derivative_canonical_terms": 29,
+      "all_retained_Q0_coordinates_match": true,
+      "source_raw_sha256": "73b63ec2a3868580cb2b4ddf278ec4f57287eecb540bb0a165ce5417115bcf7f",
+      "source_input": "6 0\n0 0 0 0 0 1 1 1 1 2 2 2 2 3\n0 0 0 0 0 0 0 0 0 0 0 0 0 1\n24 3 10 13 6 18 4 25 5 17 15 19 8 20 1 27 11 26 9 0 14 23 16 2 21 12 22 7\n"
+    }
+  ],
+  "two_probe_image_rank": 2,
+  "minor_determinant": "-4718592",
+  "closed_combination_probe_preimage": [
+    28575,
+    -8000
+  ],
+  "matched_closed_combination_probes": [
+    80179200,
+    9216000
+  ],
+  "scope": "Actual full Gram identities define predecessors in I. All retained high-factor coordinates of their Q0 images are independently replayed. The two chosen coordinate functionals have no nonzero linear combination annihilating full Q0(I). The two-probe preimage is not a preimage of the full closed-combination derivative.",
+  "seconds": 0.7020695599994724
+}

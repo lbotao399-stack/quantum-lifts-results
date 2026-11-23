@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "method": "Independent SymPy determinant expansion and complete Fischer-functional transfer, not a selected-trace probe test",
+  "complete_scalar_marker_monomials": 1000,
+  "nonzero_monomials": 54,
+  "admissible_plus_minus_marker_assignments": 36,
+  "physical_return_order": [
+    "A-",
+    "A+",
+    "B-",
+    "B+",
+    "C-",
+    "C+"
+  ],
+  "marker_order": [
+    "+0",
+    "+1",
+    "+2",
+    "-0",
+    "-1",
+    "-2"
+  ],
+  "base_removal_order": [
+    3,
+    0,
+    4,
+    1,
+    5,
+    2
+  ],
+  "base_removal_sign": 1,
+  "physical_fischer_factor": 25200,
+  "left_marker_insertion_factor": -25200,
+  "marker_colour_koszul_sign": -1,
+  "trace_factorizations_checked": 32,
+  "source_factorial_weights": [
+    {
+      "power": 3,
+      "all_weight_coefficients": 54,
+      "matched": true
+    },
+    {
+      "power": 5,
+      "all_weight_coefficients": 222,
+      "matched": true
+    }
+  ],
+  "source_coefficient_method_checks": 2376,
+  "all_trace_multiplicity_patterns_up_to_seven_factors": 44,
+  "unwanted_masks_or_double_grade_rejected": 64,
+  "universal_total_letter_degree": 15,
+  "scalar_ancestor_flavour_degrees": [
+    5,
+    5,
+    5
+  ],
+  "returned_scalar_flavour_degrees": [
+    3,
+    3,
+    3
+  ],
+  "returned_ghost_degrees": [
+    3,
+    3
+  ],
+  "conclusion": "P6 G_C = 25200 R_C globally in the formal graded trace algebra for PfaffianCoefficient(3,0) and the unchanged scalar order5 ancestor",
+  "coefficient_checks_sha256": "4b17601b362e4a365fa0d5049aabc3f212211bc69f8e29f9e2e2db4e0df53586",
+  "source_commit": "9a554a6dbf1792b4f3d552cd24bf1fc6aaaee6e9",
+  "source_path": "algorithms/dual_singlets_20261118/orthogonal_glueball_first_pair.py",
+  "upstream_file_sha256": "eeb6d6d3acb94df435bbac3424c695abcd82156c569e2c9aa37be5676f553033",
+  "source_definitions_loaded_unchanged_via_ast": [
+    "scalar_code",
+    "PfaffianCoefficient"
+  ],
+  "seconds": 0.36822611699972185
+}
