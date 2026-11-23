@@ -6,7 +6,7 @@ In the four-scalar polarization of the $F_4$ source at $j=36$, consider two sepa
 
 The second jet with scalar labels $i,j$ has classical variation $[X_i,X_j]$. All first scalar jets $X_i$ are closed. The Albert covariant projects an ordered word onto the traceless Jordan multiplication operators using the trace form. It kills words of length at most three, and adjacent exchanges therefore leave its four-input value unchanged. Call this symmetric value $J$. At thirteen letters the only possible four lengths are $2,2,4,5$. Metric transposition sends the projected five-input word to the negative of its reversal. Reversing by adjacent exchanges gives twice the five-input word as the sum over its ten ordered pairs, replacing each pair by its Lie bracket in $J$ and retaining the other three inputs. These are ordinary colour identities before super-polarization. [Quartic symmetry and native tensors](https://github.com/lbotao399-stack/quantum-lifts-results/blob/e834b91eb860bd52c209201fd1e17a0ced5072dd/algorithms/dual_singlets_20261118/f4/j36_source/mixed_colours.md)
 
-If the marked jet occurs inside the bracket with a scalar, invariance moves the scalar adjoint action onto the six other ordinary inputs of the paired quartics. They belong to the same or opposite quartic relative to the mark. This eliminates the nested case already on source cochains. The spectator traces multiply that identity.
+If the marked jet occurs inside the bracket with a scalar, invariance moves the scalar adjoint action onto the seven other inputs of the paired quartics, three on the quartic containing the mark and four on the opposite quartic. This eliminates the nested case already on source cochains. The spectator traces multiply that identity.
 
 ## Kernel and primitives
 

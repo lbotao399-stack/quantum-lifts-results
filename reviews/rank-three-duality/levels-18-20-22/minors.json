@@ -1,0 +1,695 @@
+{
+  "levels": [
+    {
+      "level": 18,
+      "orthogonal": 985,
+      "symplectic": 983,
+      "all_nonempty_sector_lengths": [
+        119,
+        118
+      ],
+      "differing_sector_lengths": 2,
+      "component_pairs": 1,
+      "multiplet_pairs": 1,
+      "central_weights": 11
+    },
+    {
+      "level": 20,
+      "orthogonal": 2588,
+      "symplectic": 2578,
+      "all_nonempty_sector_lengths": [
+        151,
+        151
+      ],
+      "differing_sector_lengths": 9,
+      "component_pairs": 18,
+      "multiplet_pairs": 5,
+      "central_weights": 13
+    },
+    {
+      "level": 22,
+      "orthogonal": 6747,
+      "symplectic": 6713,
+      "all_nonempty_sector_lengths": [
+        229,
+        226
+      ],
+      "differing_sector_lengths": 19,
+      "component_pairs": 75,
+      "multiplet_pairs": 17,
+      "central_weights": 14
+    }
+  ],
+  "primes": [
+    1009,
+    1013
+  ],
+  "minors": [
+    {
+      "level": 18,
+      "length": 2,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "order": 4,
+      "determinants": [
+        206,
+        891
+      ]
+    },
+    {
+      "level": 18,
+      "length": 2,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "order": 1,
+      "determinants": [
+        865,
+        869
+      ]
+    },
+    {
+      "level": 18,
+      "length": 4,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "order": 54,
+      "determinants": [
+        991,
+        546
+      ]
+    },
+    {
+      "level": 18,
+      "length": 4,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "order": 94,
+      "determinants": [
+        105,
+        665
+      ]
+    },
+    {
+      "level": 18,
+      "length": 4,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "order": 2,
+      "determinants": [
+        723,
+        735
+      ]
+    },
+    {
+      "level": 18,
+      "length": 6,
+      "dotted": 0,
+      "weight": [
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      "order": 40,
+      "determinants": [
+        615,
+        756
+      ]
+    },
+    {
+      "level": 18,
+      "length": 6,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "order": 400,
+      "determinants": [
+        809,
+        244
+      ]
+    },
+    {
+      "level": 18,
+      "length": 6,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "order": 62,
+      "determinants": [
+        807,
+        713
+      ]
+    },
+    {
+      "level": 18,
+      "length": 6,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "order": 1,
+      "determinants": [
+        961,
+        965
+      ]
+    },
+    {
+      "level": 18,
+      "length": 8,
+      "dotted": 0,
+      "weight": [
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      "order": 123,
+      "determinants": [
+        346,
+        979
+      ]
+    },
+    {
+      "level": 18,
+      "length": 8,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "order": 84,
+      "determinants": [
+        253,
+        664
+      ]
+    },
+    {
+      "level": 20,
+      "length": 10,
+      "dotted": 0,
+      "weight": [
+        0,
+        0,
+        4,
+        3,
+        3
+      ],
+      "order": 67,
+      "determinants": [
+        766,
+        132
+      ]
+    },
+    {
+      "level": 20,
+      "length": 2,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "order": 1,
+      "determinants": [
+        985,
+        989
+      ]
+    },
+    {
+      "level": 20,
+      "length": 2,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        1,
+        0,
+        0
+      ],
+      "order": 2,
+      "determinants": [
+        139,
+        119
+      ]
+    },
+    {
+      "level": 20,
+      "length": 4,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        3,
+        2,
+        2
+      ],
+      "order": 20,
+      "determinants": [
+        604,
+        269
+      ]
+    },
+    {
+      "level": 20,
+      "length": 4,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "order": 140,
+      "determinants": [
+        989,
+        279
+      ]
+    },
+    {
+      "level": 20,
+      "length": 4,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        1,
+        0,
+        0
+      ],
+      "order": 12,
+      "determinants": [
+        486,
+        99
+      ]
+    },
+    {
+      "level": 20,
+      "length": 6,
+      "dotted": 0,
+      "weight": [
+        0,
+        0,
+        4,
+        3,
+        3
+      ],
+      "order": 17,
+      "determinants": [
+        861,
+        593
+      ]
+    },
+    {
+      "level": 20,
+      "length": 6,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        3,
+        2,
+        2
+      ],
+      "order": 580,
+      "determinants": [
+        448,
+        427
+      ]
+    },
+    {
+      "level": 20,
+      "length": 6,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "order": 312,
+      "determinants": [
+        580,
+        299
+      ]
+    },
+    {
+      "level": 20,
+      "length": 6,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        1,
+        0,
+        0
+      ],
+      "order": 4,
+      "determinants": [
+        942,
+        717
+      ]
+    },
+    {
+      "level": 20,
+      "length": 8,
+      "dotted": 0,
+      "weight": [
+        0,
+        0,
+        4,
+        3,
+        3
+      ],
+      "order": 213,
+      "determinants": [
+        274,
+        185
+      ]
+    },
+    {
+      "level": 20,
+      "length": 8,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        3,
+        2,
+        2
+      ],
+      "order": 620,
+      "determinants": [
+        50,
+        911
+      ]
+    },
+    {
+      "level": 20,
+      "length": 8,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "order": 21,
+      "determinants": [
+        196,
+        678
+      ]
+    },
+    {
+      "level": 22,
+      "length": 10,
+      "dotted": 0,
+      "weight": [
+        0,
+        0,
+        4,
+        4,
+        3
+      ],
+      "order": 327,
+      "determinants": [
+        431,
+        930
+      ]
+    },
+    {
+      "level": 22,
+      "length": 10,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "order": 228,
+      "determinants": [
+        252,
+        136
+      ]
+    },
+    {
+      "level": 22,
+      "length": 2,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        1,
+        1,
+        0
+      ],
+      "order": 3,
+      "determinants": [
+        246,
+        634
+      ]
+    },
+    {
+      "level": 22,
+      "length": 4,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "order": 4,
+      "determinants": [
+        906,
+        61
+      ]
+    },
+    {
+      "level": 22,
+      "length": 4,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "order": 156,
+      "determinants": [
+        501,
+        179
+      ]
+    },
+    {
+      "level": 22,
+      "length": 4,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        1,
+        1,
+        0
+      ],
+      "order": 56,
+      "determinants": [
+        847,
+        651
+      ]
+    },
+    {
+      "level": 22,
+      "length": 6,
+      "dotted": 0,
+      "weight": [
+        0,
+        0,
+        4,
+        4,
+        3
+      ],
+      "order": 6,
+      "determinants": [
+        144,
+        292
+      ]
+    },
+    {
+      "level": 22,
+      "length": 6,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "order": 589,
+      "determinants": [
+        731,
+        314
+      ]
+    },
+    {
+      "level": 22,
+      "length": 6,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "order": 1018,
+      "determinants": [
+        979,
+        715
+      ]
+    },
+    {
+      "level": 22,
+      "length": 6,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        1,
+        1,
+        0
+      ],
+      "order": 43,
+      "determinants": [
+        867,
+        707
+      ]
+    },
+    {
+      "level": 22,
+      "length": 8,
+      "dotted": 0,
+      "weight": [
+        0,
+        0,
+        4,
+        4,
+        3
+      ],
+      "order": 219,
+      "determinants": [
+        937,
+        168
+      ]
+    },
+    {
+      "level": 22,
+      "length": 8,
+      "dotted": 2,
+      "weight": [
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "order": 2064,
+      "determinants": [
+        628,
+        923
+      ]
+    },
+    {
+      "level": 22,
+      "length": 8,
+      "dotted": 4,
+      "weight": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "order": 377,
+      "determinants": [
+        42,
+        196
+      ]
+    },
+    {
+      "level": 22,
+      "length": 8,
+      "dotted": 6,
+      "weight": [
+        3,
+        3,
+        1,
+        1,
+        0
+      ],
+      "order": 1,
+      "determinants": [
+        961,
+        965
+      ]
+    }
+  ]
+}

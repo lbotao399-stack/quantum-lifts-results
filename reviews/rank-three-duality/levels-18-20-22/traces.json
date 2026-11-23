@@ -1,0 +1,18 @@
+{
+  "primary_trace_terms": 23,
+  "sixfold_return": 1440,
+  "levels": [
+    {
+      "level": 18,
+      "exact_word_pairings": 1
+    },
+    {
+      "level": 20,
+      "exact_word_pairings": 24
+    },
+    {
+      "level": 22,
+      "exact_word_pairings": 249
+    }
+  ]
+}
