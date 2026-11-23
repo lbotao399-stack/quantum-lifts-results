@@ -1,0 +1,87 @@
+{
+  "group": "Sp(6)",
+  "native_weight": [
+    3,
+    3,
+    11,
+    0,
+    0
+  ],
+  "paper_sector": [
+    11,
+    0,
+    0,
+    3,
+    3
+  ],
+  "length": 15,
+  "j": 40,
+  "operator_terms": 152833,
+  "least_trace_coefficient_denominator": 3,
+  "defect_terms": 98882,
+  "all_three_native_highest_weight_checks": true,
+  "exact_native_Q0_identity": true,
+  "exact_Q0_squared_zero": true,
+  "exact_finite_rank_closure_via_Pfaffian_identities": true,
+  "exact_rational_dual_support_size": 111,
+  "dual_supported_only_on_single_traces": true,
+  "dual_source_boundaries_checked": 188,
+  "all_dual_boundary_pairings": "0",
+  "dual_defect_pairing": "1",
+  "source_relation_dimension": 188,
+  "source_relation_Q0_rank": 121,
+  "target_relation_dimension": 183,
+  "target_Q0_rank": 45,
+  "stable_abelianization_rank": 24,
+  "combined_Q0_abelianization_rank": 61,
+  "combined_exact_minor_determinant": "-530402920655289278038592494731808336773120000000",
+  "determinant_sign": -1,
+  "determinant_small_prime_factors": [
+    [
+      2,
+      109
+    ],
+    [
+      3,
+      21
+    ],
+    [
+      5,
+      7
+    ]
+  ],
+  "determinant_remaining_factor": "1",
+  "fortuitous_dimension_exact": 1,
+  "full_finite_cohomology_dimension_NOT_claimed": true,
+  "exact_characters": [
+    {
+      "length": 14,
+      "stable": 107126,
+      "finite": 107059,
+      "identities": 67
+    },
+    {
+      "length": 15,
+      "stable": 100776,
+      "finite": 100588,
+      "identities": 188
+    },
+    {
+      "length": 16,
+      "stable": 47346,
+      "finite": 47163,
+      "identities": 183
+    }
+  ],
+  "universal_inverse_blocks": 1961,
+  "independent_new_family_NOT_claimed": true,
+  "classical_Q0_only": true,
+  "loop_corrections_NOT_computed": true,
+  "operator_sha256": "7b1c026ab478dea9f20e51c3f3c14086df52ab547049200015a62dcef9c6a7a5",
+  "defect_sha256": "7b6d37f3a1f37ed13a6bc4f47879568c7b598bc2fa21f735d9cc759f206c7e07",
+  "small_complex_certificate_sha256": "89069c21077b21f8e1698fde5ddbd8fe431dc82381b6323c97b3e746576d341b",
+  "support_solver_result_sha256": "d6a5bad2b60d4973f93b8c10334d14bed5229517c85a9c60c090c91b1d3feb7b",
+  "elapsed_seconds": 273.0065543679998,
+  "no_lift_to_next_symplectic_rank_under_trace_covering": true,
+  "no_lift_reason": "At Sp(r+1), length 2r+3 is in the universally stable first-layer exclusion range."
+}

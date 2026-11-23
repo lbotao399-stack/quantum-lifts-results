@@ -1,0 +1,60 @@
+{
+  "records": [
+    {
+      "max_trace_factors": 1,
+      "boundary_rank": 121,
+      "augmented_rank": 122,
+      "detects_class": true,
+      "prime": 1000003,
+      "seconds": 24.79939089200002
+    },
+    {
+      "max_trace_factors": 2,
+      "boundary_rank": 121,
+      "augmented_rank": 122,
+      "detects_class": true,
+      "prime": 1000003,
+      "seconds": 27.664560573000017
+    },
+    {
+      "max_trace_factors": 3,
+      "boundary_rank": 121,
+      "augmented_rank": 122,
+      "detects_class": true,
+      "prime": 1000003,
+      "seconds": 31.37623664900002
+    },
+    {
+      "max_trace_factors": 4,
+      "boundary_rank": 121,
+      "augmented_rank": 122,
+      "detects_class": true,
+      "prime": 1000003,
+      "seconds": 35.32922150000013
+    },
+    {
+      "max_trace_factors": 5,
+      "boundary_rank": 121,
+      "augmented_rank": 122,
+      "detects_class": true,
+      "prime": 1000003,
+      "seconds": 39.27265458000011
+    },
+    {
+      "max_trace_factors": 6,
+      "boundary_rank": 121,
+      "augmented_rank": 122,
+      "detects_class": true,
+      "prime": 1000003,
+      "seconds": 42.81988723800009
+    },
+    {
+      "max_trace_factors": 7,
+      "boundary_rank": 121,
+      "augmented_rank": 122,
+      "detects_class": true,
+      "prime": 1000003,
+      "seconds": 46.27411796399997
+    }
+  ]
+}

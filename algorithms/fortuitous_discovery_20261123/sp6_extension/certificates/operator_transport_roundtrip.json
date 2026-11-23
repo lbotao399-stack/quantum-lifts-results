@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "byte_for_byte_identical_to_mathematically_verified_gzip": true,
+  "original_gzip_sha256": "7b1c026ab478dea9f20e51c3f3c14086df52ab547049200015a62dcef9c6a7a5",
+  "decompressed_json_sha256": "5813a8eba9f4f72622d325621cd72f49b0634f855c9bdbca69c16c7b1b5feb43",
+  "operator_terms": 152833,
+  "parts": [
+    {
+      "file": "sp6_fortuitous_operator.json.gz.part-000",
+      "bytes": 535134,
+      "sha256": "b15f4ecb4261c498a1c90223a3dbfb3ff1898738043ec30cc000a3257eca9aa5"
+    },
+    {
+      "file": "sp6_fortuitous_operator.json.gz.part-001",
+      "bytes": 535134,
+      "sha256": "4a54d0de511eaf0207753c7d362e8b5ff8ff2042fceeede716c40138588d7a13"
+    }
+  ],
+  "reason": "A single 1427024-character base64 GitHub create_blob request hung without an API error or approval rejection; smaller official uploads had succeeded."
+}

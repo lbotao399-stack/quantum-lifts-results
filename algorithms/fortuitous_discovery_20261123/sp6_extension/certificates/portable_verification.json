@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "group": "Sp(6)",
+  "native_weight": [
+    3,
+    3,
+    11,
+    0,
+    0
+  ],
+  "length": 15,
+  "j": 40,
+  "operator_terms": 152833,
+  "defect_terms": 98882,
+  "exact_operator_Q0_defect_identity": true,
+  "exact_Pfaffian_closure": true,
+  "exact_dual_source_images_checked": 188,
+  "dual_defect_pairing": "1",
+  "source_relation_Q0_rank_over_Q": 121,
+  "target_relation_dimension": 183,
+  "combined_integer_minor_dimension": 61,
+  "combined_integer_minor_determinant": "-530402920655289278038592494731808336773120000000",
+  "exact_fortuitous_dimension": 1,
+  "field": "Q",
+  "classical_Q0_only": true,
+  "full_finite_sector_dimension_NOT_claimed": true,
+  "exact_characters": [
+    {
+      "length": 14,
+      "stable": 107126,
+      "finite": 107059,
+      "identities": 67
+    },
+    {
+      "length": 15,
+      "stable": 100776,
+      "finite": 100588,
+      "identities": 188
+    },
+    {
+      "length": 16,
+      "stable": 47346,
+      "finite": 47163,
+      "identities": 183
+    }
+  ],
+  "native_source_relative_path": "upstream/algorithms/dual_singlets_20261118/mixed_incoming.py",
+  "elapsed_seconds": 382.8723496419998
+}

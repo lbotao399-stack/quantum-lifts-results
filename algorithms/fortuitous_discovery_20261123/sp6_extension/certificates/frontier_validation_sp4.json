@@ -1,0 +1,385 @@
+{
+  "rank": 4,
+  "exact_comparisons": 47,
+  "all_integer_coefficients_equal": true,
+  "endpoint_seconds": 2.6933427739996887,
+  "cycle_seconds": 2.698499841000512,
+  "records": [
+    {
+      "length": 10,
+      "index": 0,
+      "kind": "raw",
+      "terms": 130,
+      "endpoint_seconds": 0.0703921189999619,
+      "cycle_seconds": 0.04377860600004624
+    },
+    {
+      "length": 10,
+      "index": 1,
+      "kind": "raw",
+      "terms": 144,
+      "endpoint_seconds": 0.0346722750000481,
+      "cycle_seconds": 0.04394420599999194
+    },
+    {
+      "length": 10,
+      "index": 2,
+      "kind": "raw",
+      "terms": 431,
+      "endpoint_seconds": 0.10508796099998108,
+      "cycle_seconds": 0.08358103099999425
+    },
+    {
+      "length": 10,
+      "index": 3,
+      "kind": "raw",
+      "terms": 499,
+      "endpoint_seconds": 0.041613441999970746,
+      "cycle_seconds": 0.0874233560000448
+    },
+    {
+      "length": 10,
+      "index": 4,
+      "kind": "raw",
+      "terms": 42,
+      "endpoint_seconds": 0.03678164200005085,
+      "cycle_seconds": 0.010620713999969666
+    },
+    {
+      "length": 10,
+      "index": 5,
+      "kind": "raw",
+      "terms": 42,
+      "endpoint_seconds": 0.06122871299999133,
+      "cycle_seconds": 0.022522994000041763
+    },
+    {
+      "length": 10,
+      "index": 6,
+      "kind": "raw",
+      "terms": 144,
+      "endpoint_seconds": 0.03837252899995747,
+      "cycle_seconds": 0.041413672999965456
+    },
+    {
+      "length": 10,
+      "index": 7,
+      "kind": "raw",
+      "terms": 442,
+      "endpoint_seconds": 0.031661576000033165,
+      "cycle_seconds": 0.07901391199993668
+    },
+    {
+      "length": 10,
+      "index": 8,
+      "kind": "raw",
+      "terms": 473,
+      "endpoint_seconds": 0.030176289999985784,
+      "cycle_seconds": 0.08063252600004489
+    },
+    {
+      "length": 10,
+      "index": 9,
+      "kind": "raw",
+      "terms": 144,
+      "endpoint_seconds": 0.03914360499993563,
+      "cycle_seconds": 0.02969490600003155
+    },
+    {
+      "length": 10,
+      "index": 10,
+      "kind": "raw",
+      "terms": 161,
+      "endpoint_seconds": 0.04045006599994849,
+      "cycle_seconds": 0.046970447000035165
+    },
+    {
+      "length": 10,
+      "index": 11,
+      "kind": "raw",
+      "terms": 471,
+      "endpoint_seconds": 0.04315401500002736,
+      "cycle_seconds": 0.06751803899999231
+    },
+    {
+      "length": 10,
+      "index": 63,
+      "kind": "paths",
+      "terms": 165,
+      "endpoint_seconds": 0.0443398890000708,
+      "cycle_seconds": 0.03688071099998069
+    },
+    {
+      "length": 10,
+      "index": 64,
+      "kind": "paths",
+      "terms": 99,
+      "endpoint_seconds": 0.039332243999979255,
+      "cycle_seconds": 0.020359113000040452
+    },
+    {
+      "length": 10,
+      "index": 65,
+      "kind": "paths",
+      "terms": 159,
+      "endpoint_seconds": 0.03468052200003058,
+      "cycle_seconds": 0.02703028999997059
+    },
+    {
+      "length": 10,
+      "index": 66,
+      "kind": "paths",
+      "terms": 95,
+      "endpoint_seconds": 0.032596287000046686,
+      "cycle_seconds": 0.0170256920000611
+    },
+    {
+      "length": 11,
+      "index": 0,
+      "kind": "raw",
+      "terms": 161,
+      "endpoint_seconds": 0.05299324999998589,
+      "cycle_seconds": 0.04599977299994862
+    },
+    {
+      "length": 11,
+      "index": 1,
+      "kind": "raw",
+      "terms": 161,
+      "endpoint_seconds": 0.3704731550000133,
+      "cycle_seconds": 0.0504690479999681
+    },
+    {
+      "length": 11,
+      "index": 2,
+      "kind": "raw",
+      "terms": 99,
+      "endpoint_seconds": 0.04380630799994378,
+      "cycle_seconds": 0.02556880200006617
+    },
+    {
+      "length": 11,
+      "index": 3,
+      "kind": "raw",
+      "terms": 300,
+      "endpoint_seconds": 0.05535705500005861,
+      "cycle_seconds": 0.0810743370000182
+    },
+    {
+      "length": 11,
+      "index": 4,
+      "kind": "raw",
+      "terms": 354,
+      "endpoint_seconds": 0.04759153299994523,
+      "cycle_seconds": 0.3334688150000602
+    },
+    {
+      "length": 11,
+      "index": 5,
+      "kind": "raw",
+      "terms": 151,
+      "endpoint_seconds": 0.04230611599996337,
+      "cycle_seconds": 0.04210807599997679
+    },
+    {
+      "length": 11,
+      "index": 6,
+      "kind": "raw",
+      "terms": 508,
+      "endpoint_seconds": 0.03844915899992429,
+      "cycle_seconds": 0.08254468400002679
+    },
+    {
+      "length": 11,
+      "index": 7,
+      "kind": "raw",
+      "terms": 154,
+      "endpoint_seconds": 0.03959637000002658,
+      "cycle_seconds": 0.041824913000027664
+    },
+    {
+      "length": 11,
+      "index": 8,
+      "kind": "raw",
+      "terms": 154,
+      "endpoint_seconds": 0.04110317300001043,
+      "cycle_seconds": 0.04815530500002296
+    },
+    {
+      "length": 11,
+      "index": 9,
+      "kind": "raw",
+      "terms": 508,
+      "endpoint_seconds": 0.0375936330000286,
+      "cycle_seconds": 0.08719965199998114
+    },
+    {
+      "length": 11,
+      "index": 10,
+      "kind": "raw",
+      "terms": 477,
+      "endpoint_seconds": 0.03732552500002839,
+      "cycle_seconds": 0.08423541100000875
+    },
+    {
+      "length": 11,
+      "index": 11,
+      "kind": "raw",
+      "terms": 161,
+      "endpoint_seconds": 0.03992094399995949,
+      "cycle_seconds": 0.042089626999995744
+    },
+    {
+      "length": 11,
+      "index": 181,
+      "kind": "paths",
+      "terms": 42,
+      "endpoint_seconds": 0.037436040999978104,
+      "cycle_seconds": 0.011033007000037287
+    },
+    {
+      "length": 11,
+      "index": 182,
+      "kind": "paths",
+      "terms": 42,
+      "endpoint_seconds": 0.038692449999985,
+      "cycle_seconds": 0.010657463000029566
+    },
+    {
+      "length": 11,
+      "index": 183,
+      "kind": "paths",
+      "terms": 158,
+      "endpoint_seconds": 0.03842754499999046,
+      "cycle_seconds": 0.034955651000018406
+    },
+    {
+      "length": 11,
+      "index": 184,
+      "kind": "paths",
+      "terms": 89,
+      "endpoint_seconds": 0.03802804899999046,
+      "cycle_seconds": 0.01685438399999839
+    },
+    {
+      "length": 11,
+      "index": 185,
+      "kind": "paths",
+      "terms": 89,
+      "endpoint_seconds": 0.032923173999961364,
+      "cycle_seconds": 0.016618239000081303
+    },
+    {
+      "length": 11,
+      "index": 186,
+      "kind": "paths",
+      "terms": 161,
+      "endpoint_seconds": 0.03674359199999344,
+      "cycle_seconds": 0.034801669000103175
+    },
+    {
+      "length": 11,
+      "index": 187,
+      "kind": "paths",
+      "terms": 487,
+      "endpoint_seconds": 0.036645326999973804,
+      "cycle_seconds": 0.061360587999956806
+    },
+    {
+      "length": 12,
+      "index": 0,
+      "kind": "raw",
+      "terms": 255,
+      "endpoint_seconds": 0.04180508000001737,
+      "cycle_seconds": 0.07519289799995477
+    },
+    {
+      "length": 12,
+      "index": 1,
+      "kind": "raw",
+      "terms": 99,
+      "endpoint_seconds": 0.22935533199995461,
+      "cycle_seconds": 0.029602963999991516
+    },
+    {
+      "length": 12,
+      "index": 2,
+      "kind": "raw",
+      "terms": 84,
+      "endpoint_seconds": 0.042423554999913904,
+      "cycle_seconds": 0.04371174000004885
+    },
+    {
+      "length": 12,
+      "index": 3,
+      "kind": "raw",
+      "terms": 296,
+      "endpoint_seconds": 0.04826408899998569,
+      "cycle_seconds": 0.08417831700000988
+    },
+    {
+      "length": 12,
+      "index": 4,
+      "kind": "raw",
+      "terms": 242,
+      "endpoint_seconds": 0.041004960000009305,
+      "cycle_seconds": 0.07613653700002487
+    },
+    {
+      "length": 12,
+      "index": 5,
+      "kind": "raw",
+      "terms": 279,
+      "endpoint_seconds": 0.20531244300002527,
+      "cycle_seconds": 0.08061925100003009
+    },
+    {
+      "length": 12,
+      "index": 6,
+      "kind": "raw",
+      "terms": 158,
+      "endpoint_seconds": 0.041872571999988395,
+      "cycle_seconds": 0.04692647000001671
+    },
+    {
+      "length": 12,
+      "index": 7,
+      "kind": "raw",
+      "terms": 314,
+      "endpoint_seconds": 0.04154947300003187,
+      "cycle_seconds": 0.08400100199992266
+    },
+    {
+      "length": 12,
+      "index": 8,
+      "kind": "raw",
+      "terms": 314,
+      "endpoint_seconds": 0.04160555299995394,
+      "cycle_seconds": 0.07872037200002069
+    },
+    {
+      "length": 12,
+      "index": 9,
+      "kind": "raw",
+      "terms": 420,
+      "endpoint_seconds": 0.04316612700006317,
+      "cycle_seconds": 0.08553448600002866
+    },
+    {
+      "length": 12,
+      "index": 10,
+      "kind": "raw",
+      "terms": 151,
+      "endpoint_seconds": 0.04353245699996933,
+      "cycle_seconds": 0.045496695999986514
+    },
+    {
+      "length": 12,
+      "index": 11,
+      "kind": "raw",
+      "terms": 309,
+      "endpoint_seconds": 0.04435555899999599,
+      "cycle_seconds": 0.07894944800000303
+    }
+  ]
+}

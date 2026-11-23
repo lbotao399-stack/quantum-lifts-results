@@ -1,9 +1,26 @@
-# Four classical fortuitous certificates and a closed scalar dual
+# Classical fortuitous certificates and exact enumeration
 
 Independent research track, 2026-11-23. Native repository field,
 divided-power Taylor, and Q0 conventions are unchanged.
 
 ## Updated results and publication status
+
+The [Sp(6) addendum](sp6_extension/README.md) supplies a further exact
+classical result in paper sector `(11,0,0;3,3), Y=15`, at `j=40`:
+fortuitous multiplicity `(183 - 61) - 121 = 1`, a 152833-term
+highest-weight operator, its 98882-term defect, and a rational
+111-probe single-trace dual. Its frozen operator and exact certificate
+have passed the packaged portable verifier. The full finite-sector
+cohomology dimension is not inferred.
+
+The addendum includes the cycle-based Pfaffian implementation,
+defect-specific inverse solver, complete 1961-block verification,
+scalar-spectator reuse comparison, and first-identity-layer exclusion
+argument. At the same native weight and operator length, the adjacent
+Sp(7) sector has fortuitous dimension zero. This is a new certified
+rank member relative to the preceding calculation; ten independent
+new families have not been established. No loop-corrected survival
+claim is made.
 
 The two symplectic multiplicities are now **exactly one**, over Q, in
 the displayed sectors. [The enumeration addendum](extension/README.md)
@@ -13,12 +30,14 @@ upper certificates using Q0 and stable abelianization.
 proves dimension67 for the first relation degree at every symplectic rank
 at least4. This does not assert an all-rank fortuitous family.
 
-This complete172-file release includes the research source, data, exact
+The initial 172-file release was published at commit
+`2dc1dec8eee723c44e9da10ac71b7648d5c20fe1`. It includes the research source, data, exact
 certificates, pinned dependencies, included upstream source, enumeration
 addendum and stability proof. The user explicitly authorized public
 publication to [`research/fortuitous-dual-discovery-20261123`](https://github.com/lbotao399-stack/quantum-lifts-results/tree/research/fortuitous-dual-discovery-20261123/algorithms/fortuitous_discovery_20261123)
 in `lbotao399-stack/quantum-lifts-results`. `PUBLICATION_STATUS.json`
-records the release scope. The final Git commit and branch verification
+records the release scope and current file count, including the Sp(6)
+addendum. The final Git commit and branch verification
 receipt is recorded separately from this immutable payload.
 
 The original sections below retain the construction and audit of the

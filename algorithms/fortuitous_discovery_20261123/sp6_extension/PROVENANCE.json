@@ -1,0 +1,10 @@
+{
+  "base_repository": "https://github.com/lbotao399-stack/quantum-lifts-results",
+  "base_commit": "2dc1dec8eee723c44e9da10ac71b7648d5c20fe1",
+  "base_package": "algorithms/fortuitous_discovery_20261123",
+  "native_conventions": "Pinned base-package Taylor letters, cyclic/reversal and Grassmann signs, and Q0; no field rescaling.",
+  "helper_source_sha256": "e71a740c3e29f5d935028ef9c471b4f69b2a16533814055651327883998a35f1",
+  "helper_adaptation": "abelian_obstruction.py imports the same pinned pfaffian module through fast_paths instead of a discovery-workspace path; its mathematical functions are unchanged.",
+  "historical_frame_pickle_hashes": "Construction receipts record discovery-cache bytes; portable verification checks exact polynomials and Q0 equations rather than relying on pickle object-sharing layout.",
+  "operator_transport": "After successful exact mathematical replay, the unchanged original gzip was split into two byte segments. The portable verifier concatenates and validates all segment and whole-file SHA256 hashes. See certificates/operator_transport_roundtrip.json."
+}

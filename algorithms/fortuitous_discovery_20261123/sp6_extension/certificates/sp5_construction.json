@@ -1,0 +1,40 @@
+{
+  "group": "Sp(5)",
+  "native_weight": [
+    3,
+    3,
+    9,
+    0,
+    0
+  ],
+  "frames": [
+    {
+      "length": 12,
+      "dimension": 67,
+      "independent_modulo": 1000003,
+      "total_terms": 226915,
+      "sha256": "4d73fcb1f3299aa170553e6e72b1dd2087c92f2fcad181eb136db5402f612129",
+      "exact_highest_weight": true
+    },
+    {
+      "length": 13,
+      "dimension": 188,
+      "independent_modulo": 1000003,
+      "total_terms": 895048,
+      "sha256": "e498cf49ab44e4a57a7dff53da746ff7ff59dbe83f07e5b3c4123ec789a82327",
+      "exact_highest_weight": true
+    },
+    {
+      "length": 14,
+      "dimension": 183,
+      "independent_modulo": 1000003,
+      "total_terms": 902686,
+      "sha256": "d51af29a5f29308993eceb2e7af0c84b241edfd5efe2d44f7dc20054690bc5d3",
+      "exact_highest_weight": true
+    }
+  ],
+  "genuine_pfaffian_recipes": true,
+  "cohomology_not_yet_determined": true,
+  "baseline_exact_replay": true,
+  "seconds": 61.151470277000044
+}

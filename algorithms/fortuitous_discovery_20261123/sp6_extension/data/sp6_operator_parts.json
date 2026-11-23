@@ -1,0 +1,18 @@
+{
+  "original_file": "sp6_fortuitous_operator.json.gz",
+  "original_bytes": 1070268,
+  "original_sha256": "7b1c026ab478dea9f20e51c3f3c14086df52ab547049200015a62dcef9c6a7a5",
+  "parts": [
+    {
+      "file": "sp6_fortuitous_operator.json.gz.part-000",
+      "bytes": 535134,
+      "sha256": "b15f4ecb4261c498a1c90223a3dbfb3ff1898738043ec30cc000a3257eca9aa5"
+    },
+    {
+      "file": "sp6_fortuitous_operator.json.gz.part-001",
+      "bytes": 535134,
+      "sha256": "4a54d0de511eaf0207753c7d362e8b5ff8ff2042fceeede716c40138588d7a13"
+    }
+  ],
+  "method": "Byte concatenation in the recorded order; gzip and mathematical contents are unchanged."
+}

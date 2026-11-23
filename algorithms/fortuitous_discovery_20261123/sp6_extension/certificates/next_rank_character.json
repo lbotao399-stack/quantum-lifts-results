@@ -1,0 +1,31 @@
+{
+  "records": [
+    {
+      "rank": 7,
+      "native_weight": [
+        3,
+        3,
+        11,
+        0,
+        0
+      ],
+      "length": 16,
+      "dimension": 47342,
+      "seconds": 16.437853999000254
+    },
+    {
+      "rank": 17,
+      "native_weight": [
+        3,
+        3,
+        11,
+        0,
+        0
+      ],
+      "length": 16,
+      "dimension": 47346,
+      "seconds": 21.351678959999845
+    }
+  ],
+  "next_rank_identity_dimension": 4
+}
