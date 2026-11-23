@@ -1,13 +1,14 @@
 """Exact finite-colour relation sizes in each ordinary rank-three Levi diagram."""
 
 from collections import Counter
+from fractions import Fraction
 from functools import cache, partial
 from itertools import product
 import json
 from math import comb, factorial
 from pathlib import Path
 
-from source_symmetry import character, multiplicity, partitions
+from source_symmetry import centralizer, character, multiplicity, partitions
 from b2_schur_complex import transpose
 from levi_source_minors import branches
 from levi_polarizations import components
@@ -52,6 +53,42 @@ def colour_trace(group, cycles):
     return result
 
 
+def outer_product(first, second):
+    terms = Counter()
+    for left, a in first.items():
+        for right, b in second.items():
+            terms[tuple(sorted(left + right))] += a * b
+    return terms
+
+
+@cache
+def equal_trace_factors(degree, number):
+    # Frobenius expansion of Sym^number(Sym^degree of the scalar-label space).
+    result = Counter()
+    for cycles in partitions(number):
+        terms = {(): Fraction(1, centralizer(cycles))}
+        for length in cycles:
+            powers = {tuple(length * i for i in part): Fraction(1, centralizer(part))
+                      for part in partitions(degree)}
+            terms = outer_product(terms, powers)
+        result.update(terms)
+    return result
+
+
+def commuting_counts(shape):
+    counts = Counter()
+    for lengths in partitions(sum(shape)):
+        if any(n % 2 for n in lengths):
+            continue
+        terms = {(): Fraction(1)}
+        for degree, number in Counter(lengths).items():
+            terms = outer_product(terms, equal_trace_factors(degree, number))
+        mult = sum(value * character(shape, cycles) for cycles, value in terms.items())
+        assert mult >= 0 and mult.denominator == 1
+        counts[len(lengths)] += int(mult)
+    return sum(counts.values()), sum(n for length, n in counts.items() if length <= 3)
+
+
 def calculate():
     rows = {}
     for group in ("stable", "SO7", "Sp3"):
@@ -70,6 +107,17 @@ def calculate():
             finite["finite_relations"] = [s - f for s, f in zip(stable["parent_source_terminal"],
                                                                   finite["parent_source_terminal"])]
             assert all(r >= 0 for r in finite["finite_relations"])
+            shape = tuple(finite["shape"])
+            stable_h0, cartan = commuting_counts(shape)
+            assert len(shape) <= 3 or cartan == 0
+            finite["stable_terminal_classes"] = stable_h0
+            finite["rank_three_Cartan_terminal"] = cartan
+            if group == "Sp3":
+                # Terminal restriction for Sp(6) is an isomorphism.
+                image = stable_h0 - cartan
+                assert 0 <= image <= finite["finite_relations"][2]
+                finite["stable_commuting_image_of_terminal_relations"] = image
+                finite["relative_terminal_kernel_before_marked_boundaries"] = finite["finite_relations"][2] - image
         # Reconstruct the complete physical dimensions of the two outstanding
         # diagrams' smallest polarizations from the individual Schur summands.
         cost = json.loads(Path(__file__).with_name("levi_polarizations.json").read_bytes())[group]

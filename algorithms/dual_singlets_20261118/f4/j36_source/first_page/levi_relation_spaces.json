@@ -131,7 +131,9 @@
         2,
         10,
         10
-      ]
+      ],
+      "stable_terminal_classes": 3,
+      "rank_three_Cartan_terminal": 1
     },
     {
       "shape": [
@@ -149,7 +151,9 @@
         93,
         96,
         30
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0
     },
     {
       "shape": [
@@ -166,7 +170,9 @@
         32,
         32,
         7
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0
     },
     {
       "shape": [
@@ -185,6 +191,8 @@
         360,
         126
       ],
+      "stable_terminal_classes": 3,
+      "rank_three_Cartan_terminal": 0,
       "independent_physical_control": {
         "weight": [
           4,
@@ -216,7 +224,9 @@
         525,
         388,
         102
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0
     },
     {
       "shape": [
@@ -233,7 +243,9 @@
         57,
         69,
         39
-      ]
+      ],
+      "stable_terminal_classes": 4,
+      "rank_three_Cartan_terminal": 1
     },
     {
       "shape": [
@@ -251,7 +263,9 @@
         3197,
         1798,
         376
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0
     },
     {
       "shape": [
@@ -269,7 +283,9 @@
         1220,
         707,
         143
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0
     },
     {
       "shape": [
@@ -288,6 +304,8 @@
         3658,
         820
       ],
+      "stable_terminal_classes": 4,
+      "rank_three_Cartan_terminal": 0,
       "independent_physical_control": {
         "weight": [
           4,
@@ -320,7 +338,11 @@
         2,
         10,
         10
-      ]
+      ],
+      "stable_terminal_classes": 3,
+      "rank_three_Cartan_terminal": 1,
+      "stable_commuting_image_of_terminal_relations": 2,
+      "relative_terminal_kernel_before_marked_boundaries": 8
     },
     {
       "shape": [
@@ -338,7 +360,11 @@
         105,
         103,
         31
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0,
+      "stable_commuting_image_of_terminal_relations": 0,
+      "relative_terminal_kernel_before_marked_boundaries": 31
     },
     {
       "shape": [
@@ -355,7 +381,11 @@
         34,
         34,
         8
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0,
+      "stable_commuting_image_of_terminal_relations": 0,
+      "relative_terminal_kernel_before_marked_boundaries": 8
     },
     {
       "shape": [
@@ -374,6 +404,10 @@
         390,
         135
       ],
+      "stable_terminal_classes": 3,
+      "rank_three_Cartan_terminal": 0,
+      "stable_commuting_image_of_terminal_relations": 3,
+      "relative_terminal_kernel_before_marked_boundaries": 132,
       "independent_physical_control": {
         "weight": [
           4,
@@ -405,7 +439,11 @@
         581,
         418,
         107
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0,
+      "stable_commuting_image_of_terminal_relations": 0,
+      "relative_terminal_kernel_before_marked_boundaries": 107
     },
     {
       "shape": [
@@ -422,7 +460,11 @@
         62,
         73,
         40
-      ]
+      ],
+      "stable_terminal_classes": 4,
+      "rank_three_Cartan_terminal": 1,
+      "stable_commuting_image_of_terminal_relations": 3,
+      "relative_terminal_kernel_before_marked_boundaries": 37
     },
     {
       "shape": [
@@ -440,7 +482,11 @@
         3499,
         1927,
         398
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0,
+      "stable_commuting_image_of_terminal_relations": 0,
+      "relative_terminal_kernel_before_marked_boundaries": 398
     },
     {
       "shape": [
@@ -458,7 +504,11 @@
         1324,
         751,
         150
-      ]
+      ],
+      "stable_terminal_classes": 0,
+      "rank_three_Cartan_terminal": 0,
+      "stable_commuting_image_of_terminal_relations": 0,
+      "relative_terminal_kernel_before_marked_boundaries": 150
     },
     {
       "shape": [
@@ -477,6 +527,10 @@
         3853,
         854
       ],
+      "stable_terminal_classes": 4,
+      "rank_three_Cartan_terminal": 0,
+      "stable_commuting_image_of_terminal_relations": 4,
+      "relative_terminal_kernel_before_marked_boundaries": 850,
       "independent_physical_control": {
         "weight": [
           4,

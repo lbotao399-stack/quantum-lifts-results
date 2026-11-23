@@ -33,8 +33,8 @@ def taylor_weight(shape):
     return scalars + dotted
 
 
-def validate(entry, group, shape, prime):
-    weight = taylor_weight(shape)
+def validate(entry, group, shape, prime, weight=None):
+    weight = taylor_weight(shape) if weight is None else tuple(weight)
     assert entry["gauge"] == group and tuple(entry["sector"]) == weight
     assert entry["length"] == sum(shape) - 1 and entry["seed"] == PRIME_SEEDS[prime]
     assert entry["prime"] == prime and entry["mode"] == "classical_Cartan_kernel"

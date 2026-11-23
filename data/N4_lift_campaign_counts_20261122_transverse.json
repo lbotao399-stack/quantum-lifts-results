@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-22",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_regular_source.json",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "scope": "Campaign-originated highest-weight first images, explicit generator families and independent higher obstructions.",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "f4_sixth_glueball": {
+    "global_d2": "open",
+    "weyl_orbits": 30,
+    "short_axis_choices": 120,
+    "degree_six_global_symbol_bound": 0,
+    "degree_seven_local_bounds": [
+      {
+        "root_colours": [
+          8,
+          19,
+          25,
+          46
+        ],
+        "short_colour": 19,
+        "upper_bound": 1
+      },
+      {
+        "root_colours": [
+          8,
+          19,
+          27,
+          47
+        ],
+        "short_colour": 19,
+        "upper_bound": 2
+      }
+    ],
+    "subgroup_diagram": [
+      4,
+      4,
+      2,
+      2
+    ],
+    "subgroup_rational_classical_dimension": {
+      "SO7": 0,
+      "USp6": 0
+    }
+  },
+  "f4_fifth_glueball": {
+    "radial_sextic_coordinates": 9058,
+    "single_flavour_flattening_rank": 91,
+    "direct_exterior_control_count": 12,
+    "physical_instanton_matrix_element": "open"
+  },
+  "cluster": {
+    "account": "A8",
+    "date_cst": "2026-11-23",
+    "completed_minors": [
+      {
+        "slurm_id": "5706542",
+        "state": "COMPLETED",
+        "elapsed_seconds": 690,
+        "allocated_cpus": 56,
+        "exit_code": "0:0",
+        "job": "5706542",
+        "archive_sha256": "44e89651242bea08972eb8fb4940d24177edf4fa1f3dc70f26866b2fe45ce1fa",
+        "script_sha256": "5481158af46d186889c1afcdcc53e25d44406a137cec8f0c0e39407b999c311c"
+      },
+      {
+        "slurm_id": "5707146",
+        "state": "COMPLETED",
+        "elapsed_seconds": 622,
+        "allocated_cpus": 56,
+        "exit_code": "0:0",
+        "job": "5707146",
+        "archive_sha256": "44e89651242bea08972eb8fb4940d24177edf4fa1f3dc70f26866b2fe45ce1fa",
+        "script_sha256": "da164c478f4307118d27552c7172b89b97dda83ab9230a2ac57edfaaa65f6540"
+      },
+      {
+        "slurm_id": "5707154",
+        "state": "COMPLETED",
+        "elapsed_seconds": 692,
+        "allocated_cpus": 56,
+        "exit_code": "0:0",
+        "job": "5707154",
+        "archive_sha256": "44e89651242bea08972eb8fb4940d24177edf4fa1f3dc70f26866b2fe45ce1fa",
+        "script_sha256": "950816515f6c295ddaad6a8a2b865e7be4c75fd4d82e21b70b1abb0d03770307"
+      },
+      {
+        "slurm_id": "5707188",
+        "state": "COMPLETED",
+        "elapsed_seconds": 740,
+        "allocated_cpus": 56,
+        "exit_code": "0:0",
+        "job": "5707188",
+        "archive_sha256": "44e89651242bea08972eb8fb4940d24177edf4fa1f3dc70f26866b2fe45ce1fa",
+        "script_sha256": "23c435edd4b591a3a974ea6926daf58788fee6c9bf307f0f8c8c8d326ada8c88"
+      }
+    ],
+    "running_at_snapshot": [
+      {
+        "job": "5707196",
+        "archive_sha256": "44e89651242bea08972eb8fb4940d24177edf4fa1f3dc70f26866b2fe45ce1fa",
+        "script_sha256": "96494237aef3d9fe6859251d702ca0b19aca10d337c8ce92177364b930da76bc",
+        "state": "RUNNING",
+        "elapsed_seconds": 1431,
+        "allocated_cpus": 56
+      },
+      {
+        "job": "5707203",
+        "archive_sha256": "44e89651242bea08972eb8fb4940d24177edf4fa1f3dc70f26866b2fe45ce1fa",
+        "script_sha256": "0a8733da2ee557fcebb8fe61c54b075ddf533ba18e9366c4878f6453803a5cef",
+        "state": "RUNNING",
+        "elapsed_seconds": 1413,
+        "allocated_cpus": 56
+      }
+    ],
+    "checkpoint_time_cst": "2026-11-23T11:52:35+08:00",
+    "combined_reservations_cny_at_last_submission": "375.12",
+    "daily_cap_cny": "500.00",
+    "actual_billed_cny": null
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/nilpotent_source_bounds.md",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/levi_alternate_minors.py",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/fifth_radial_kernel.md"
+  ]
+}
