@@ -57,3 +57,12 @@ Use the previously certified 2879 evaluation rows and columns as an invertible s
 python3 -B literal_mixed_edges.py | diff -u literal-mixed.json -
 python3 -B mixed_source_search.py replay --workers 48 --prime 1013
 ~~~
+
+## Final A8 test with two adjoint edges
+
+Both open colour arguments can be taken in the adjoint representation. The two starting tensors are the defining trace with two marked generators and the adjoint matrix word paired with the defining-trace metric. Further insertions act on either open argument by the adjoint action. The native classical boundary controls pass modulo 1009 and 1013. A8 job 5710208 reproduced the order-3002 determinant 833 modulo 1009. Slurm reached the time limit after 5127 seconds on 56 CPUs, before the program wrote a complementary minor. The certified rational upper bound at pause is **15**. [Submitted algorithm](adjoint_edge_search.py) · [Column selections](adjoint_screen.json) · [Terminal receipt](adjoint_attempt.json)
+
+~~~sh
+python3 -B adjoint_edge_search.py controls --prime 1009
+python3 -B adjoint_edge_search.py controls --prime 1013
+~~~

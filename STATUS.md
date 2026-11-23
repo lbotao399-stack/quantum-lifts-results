@@ -2,6 +2,8 @@
 
 ## Campaign checkpoint
 
+The search is paused. The last A8 job, 5710208, reached its time limit after reproducing the known order-3002 minor. The exceptional source bound is 15. The A6 and A8 campaign queues are empty. [Slurm receipt and tested algorithm](algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md#final-a8-test-with-two-adjoint-edges)
+
 The independent $SO(11)$ third differential into $S^6$ has coefficient $8640$ in the defining-trace normalization. Both primitive choices from Dot's tables give $3072000$, $-33177600$, and $-921600$ for Dot's $SO(11),SO(12),SO(13)$ sources respectively. The proposed $F_4$ second source is classically exact. A different source for $S^6$ and a physical instanton pairing remain open. [Third-page certificate](algorithms/dual_singlets_20261118/orthogonal_glueballs/so11_j36/README.md) · [Cross-check with Dot](notes/glueball-lift-exchange.md) · [Exceptional second-source bounds](algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md)
 
 New $d_1$ lifts **0**, cumulative **85** highest-weight multiplets. New fortuitous ring generators **1** in a full-jet $SU(3)$ grading. The previous **11** explicit BMN generator families use a family count. The new quotient has dimension $1896-825-1037-33=1$ at level 30. Its primary identification is open. [Exact product quotient and two zero outgoing channels](algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md) · [Counts](data/N4_lift_campaign_counts_20261122_pause.json)

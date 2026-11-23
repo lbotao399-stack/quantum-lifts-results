@@ -1,0 +1,17 @@
+{
+  "slurm_id": "5710208",
+  "state": "TIMEOUT",
+  "elapsed_seconds": 5127,
+  "allocated_cpus": 56,
+  "exit_code": "0:0",
+  "archive_sha256": "1252e218d6371d68d5849e77e81424510216e43feb1d6d794285d41c04650be6",
+  "script_sha256": "b6ed15aaf1e8b1632fc74df5c399704fd945706b93452983d0a07d6a7347f3c4",
+  "retained_rank": 3002,
+  "retained_determinant_mod_1009": 833,
+  "native_boundary_controls_primes": [
+    1009,
+    1013
+  ],
+  "returned_files": {},
+  "classical_upper_bound": 15
+}

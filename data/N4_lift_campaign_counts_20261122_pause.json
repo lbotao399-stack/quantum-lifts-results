@@ -39,6 +39,24 @@
     {"job": "5708370", "state": "COMPLETED", "allocated_cpus": 56, "elapsed_seconds": 1232},
     {"job": "5710346", "state": "COMPLETED", "allocated_cpus": 56, "elapsed_seconds": 465}
   ],
+  "F4_sixth_glueball_at_pause": {
+    "j": 36,
+    "survives_d1": true,
+    "proposed_source_classically_exact": true,
+    "remaining_classical_source_upper_bound": 15,
+    "corrected_d2_on_remaining_quotient": "open",
+    "last_attempt_receipt": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/adjoint_attempt.json"
+  },
+  "cluster_at_pause": {
+    "A6_queue_read_utc": "2026-11-23T07:49:48.987990+00:00",
+    "A8_queue_read_utc": "2026-11-23T07:51:06.997680+00:00",
+    "active_campaign_jobs_A6": 0,
+    "active_campaign_jobs_A8": 0,
+    "budget_date_in_China": "2026-11-23",
+    "combined_reservations_cny": "403.03",
+    "daily_cap_cny": "500.00",
+    "actual_billed_cny": null
+  },
   "evidence": [
     "algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md",
     "algorithms/dual_singlets_20261118/orthogonal_glueballs/so11_j36/README.md",
