@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "independent_implementation": "Python Fraction with its own graded cyclic/reversal and multitrace canonicalization; imports neither JS engine nor repository trace implementation",
+  "dot_source_derivative": "P^6 Pi G, because Q0 h_B(G)=G. No extra 1/2 factor.",
+  "archived": {
+    "input_sha256": {
+      "cycle.raw": "4303f883599ec4df1d5c5d7cb59021e031f0c8e3ee9796e3d216487c99f5d9e7",
+      "path3.raw": "ff5134ca19d65fde241d2825c85e7942b8bd617d99dc0b10b45c43e1cca2810f",
+      "path3-alt.raw": "dc30072088a12d1bcc815a7eeca245bc5530c1e556c2d046f758c3c07e4f32b3"
+    },
+    "queries": [
+      {
+        "query": [
+          "ABC",
+          "A+",
+          "A-",
+          "B+",
+          "B-",
+          "C+",
+          "C-"
+        ],
+        "coefficient": "7372800"
+      },
+      {
+        "query": [
+          "ABC",
+          "ABC",
+          "ABC",
+          "+-",
+          "+-",
+          "+-"
+        ],
+        "coefficient": "0"
+      }
+    ]
+  },
+  "fresh_enumeration": {
+    "input_sha256": {
+      "cycle.raw": "cb019cfd665635056093b5730b2865543d6b261e4639461d4250e3e7c04ac793",
+      "path3.raw": "85e29f634720f279dde1d22933a1f335d8755e4051d582cfbde3ad584e888be5",
+      "path3-alt.raw": "d00374156af2fc6f6db5221e3bc7f55edd17de96ebb02cd6b1282be5a10d55f5"
+    },
+    "queries": [
+      {
+        "query": [
+          "ABC",
+          "A+",
+          "A-",
+          "B+",
+          "B-",
+          "C+",
+          "C-"
+        ],
+        "coefficient": "7372800"
+      },
+      {
+        "query": [
+          "ABC",
+          "ABC",
+          "ABC",
+          "+-",
+          "+-",
+          "+-"
+        ],
+        "coefficient": "0"
+      }
+    ]
+  },
+  "seconds": 0.07133426400014287,
+  "scope": "Two ordered stable-derivative coefficients only. No classical or quantum cohomology independence or full Q0(I) annihilation claimed."
+}
