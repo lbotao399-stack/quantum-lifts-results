@@ -1,0 +1,22 @@
+{
+  "native_generators": 52,
+  "ordered_jordan_trace_tests": 70304,
+  "two_slot_matrix_order": 676,
+  "symmetric_trace_coefficient": 240,
+  "exchange_recipes": 43,
+  "left_and_right_recipes": 86,
+  "independent_cochain_identities": 4,
+  "outgoing_rank": 39,
+  "formal_cycle_dimension": 47,
+  "quotient_by_classical_boundaries_dimension": 0,
+  "fixed_minors": [
+    {
+      "prime": 1009,
+      "ordered_minor": 721
+    },
+    {
+      "prime": 1013,
+      "ordered_minor": 842
+    }
+  ]
+}

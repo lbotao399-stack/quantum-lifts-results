@@ -39,7 +39,7 @@ $$
 d_2([X][S])=[S^7]\ne0\quad\text{on }E_2.
 $$
 
-Thus an incoming $d_2$ on the seventh power independent of the sixth must be sought outside the span of positive-degree classical products. The full incoming maps for the two powers remain undetermined. [Fifth-power survival](../first_page/README.md#the-fifth-glueball-survives-to-perturbative-infinity) · [Corrected crossed-source pairing](rational_section/README.md)
+Thus an incoming $d_2$ on the seventh power independent of the sixth must be sought outside the span of positive-degree classical products. The [completed sixth-power calculation](sixth_survival.md) excludes $d_2$ on $S^6$ and hence excludes the entire classical product span for the seventh power. The independent level-42 source remains open. [Fifth-power survival](../first_page/README.md#the-fifth-glueball-survives-to-perturbative-infinity) · [Corrected crossed-source pairing](rational_section/README.md)
 
 ~~~sh
 python3 -B seventh_products.py | diff -u seventh-products.json -
