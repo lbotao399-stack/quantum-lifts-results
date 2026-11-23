@@ -1,0 +1,20 @@
+{
+  "prime": 1009,
+  "dimensions": [
+    317,
+    138,
+    36
+  ],
+  "minors": {
+    "in": {
+      "order": 102,
+      "determinant": 313,
+      "entries_sha256": "3b7d4018518c7028c50f9d129fd7c03ece24ff0aa2e6df7fe6aa85f664c3d7a6"
+    },
+    "out": {
+      "order": 36,
+      "determinant": 987,
+      "entries_sha256": "55d6bbc097c8d8b8915bf37ff517b76bff0408f84a3fc6e95bafaf3bc3796342"
+    }
+  }
+}

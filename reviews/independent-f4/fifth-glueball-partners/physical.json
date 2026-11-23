@@ -1,0 +1,38 @@
+{
+  "polarization_coefficients": [
+    14400,
+    432000
+  ],
+  "physical_partner_diagrams": [
+    {
+      "dotted_each": 3,
+      "flavour_each": 2,
+      "letters": 11,
+      "diagram": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "dotted_each": 4,
+      "flavour_each": 1,
+      "letters": 10,
+      "diagram": [
+        4,
+        4,
+        3
+      ]
+    },
+    {
+      "dotted_each": 5,
+      "flavour_each": 0,
+      "letters": 9,
+      "diagram": [
+        5,
+        5
+      ]
+    }
+  ]
+}
