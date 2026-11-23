@@ -1,0 +1,78 @@
+{
+  "allocations": [
+    "5719653|COMPLETED|584|56|0:0",
+    "5719705|COMPLETED|101|56|0:0",
+    "5720010|FAILED|0|56|1:0",
+    "5720035|COMPLETED|24|56|0:0"
+  ],
+  "native_sixth": {
+    "prime": 1013,
+    "previous_rank": 3002,
+    "previous_minor": 615,
+    "new_points": [
+      7000,
+      7001,
+      7002,
+      7003,
+      7004,
+      7005,
+      7006,
+      7007,
+      7008,
+      7009,
+      7010,
+      7011,
+      7012,
+      7013,
+      7014
+    ],
+    "new_columns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      12,
+      13,
+      17,
+      19,
+      22,
+      23,
+      24,
+      25,
+      49
+    ],
+    "complementary_minor": 346,
+    "rank": 3017,
+    "determinant": 60
+  },
+  "seventh": {
+    "zero_weight_dimension": 5512,
+    "cubic_rows": 2,
+    "parametrising_columns": 5510,
+    "independent_identities": 68,
+    "exchange_words": 259,
+    "marked_recipes": 518,
+    "outgoing_minors": {
+      "1009": 663,
+      "1013": 49
+    },
+    "rational_outgoing_rank": 191,
+    "formal_kernel": 327,
+    "quotient_by_boundaries": 0
+  },
+  "allocation_fields": [
+    "Slurm job",
+    "state",
+    "elapsed seconds",
+    "allocated CPUs",
+    "exit code"
+  ],
+  "stages": {
+    "5719653": "Full native sixth-power fixed-minor replay modulo 1013",
+    "5719705": "Native level-42 source and free-mark evaluations at both primes",
+    "5720010": "Scientific calculation did not start. The job environment lacked the path to the installed SciPy library.",
+    "5720035": "Complete rational level-42 operator identities on the corrected job environment"
+  }
+}

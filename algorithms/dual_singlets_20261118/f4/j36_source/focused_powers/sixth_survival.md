@@ -21,6 +21,8 @@ The two full residues are $833\cdot737\bmod1009=449$ and $615\cdot346\bmod1013=6
 
 The native Ward covector takes the value $-15313094596800$ on $S^6$ and proves first-page survival. At order three the unique source has classical cohomology of dimension $1862-1434-428=0$. The Taylor bound $r\le 6-3$ exhausts incoming orders. The pure target is strictly closed. These facts prove the proposition. [Ward covector](../first_page/README.md) · [Order-three certificates and Taylor selection](README.md#incoming-differential-at-the-sixth-power)
 
+A8 job 5719653 independently regenerated the fixed order-3017 minor modulo 1013 from the native evaluation points. The exact rank and determinant agree with the saved certificate. [Independent rebuild and scheduler readback](triple_exchange/accounting.json)
+
 ## Seventh power
 
 Both $[S^6]$ and $[S^7]$ are nonzero on $E_2$. The [seventh-power product theorem](seventh_products.md) now excludes the entire subspace of positive-degree classical products from the incoming $d_2$ at level 42. On each later page a product of positive-degree classes on that page also gives zero at the pure target. A contributing pure spectator would be $S^k$ with $k\ge1$, and multiplying an incoming image $S^{7-k}$ by $S^{k-1}$ would kill the permanent $[S^6]$. A seventh-power hit, if present, first occurs at order two, three or four. The independent primitive source spaces at level 42 still require a test. [Independent classical test at level 42](seventh_exchange_kernel.md)

@@ -1,0 +1,26 @@
+{
+  "scope": "F4 pure glueball powers S6 and S7 in the perturbative relative holomorphic jet complex",
+  "stage_counts": {
+    "new_d1_lifts": 0,
+    "new_fortuitous_generators": 0,
+    "new_d2_lifts": 0,
+    "new_d3_lifts": 0
+  },
+  "targets": {
+    "S6": {
+      "j": 36,
+      "survival": "perturbative E_infinity",
+      "incoming_d2_rank": 0,
+      "third_source_classical_cohomology_dimension": 0
+    },
+    "S7": {
+      "j": 42,
+      "survival": "nonzero on E2",
+      "possible_first_incoming_orders": [2, 3, 4],
+      "d2_source_requirement": "matter-fermion and differentiated-scalar terms with a cancellation under Q0",
+      "three_exchange_family_d2_rank": 0,
+      "global_d2_rank": null
+    }
+  },
+  "evidence": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/README.md"
+}

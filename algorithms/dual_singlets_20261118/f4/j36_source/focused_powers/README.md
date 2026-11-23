@@ -4,6 +4,8 @@ The sixth power of the glueball $S$ is a perturbative permanent cycle of the rel
 
 ## Source ranks
 
+At level 42 a second-order hit requires a source combining matter-fermion and differentiated-scalar terms. In the complete family of 518 marked Albert words with at most three exchanges the classical split has rank 191 and all 327 closed combinations give zero classes. The global mixed Ward equation remains open. [Reduction on the full source](seventh_ward.md) · [Native rational kernel](triple_exchange/README.md)
+
 For each potentially incoming order $r\ge2$, the Taylor diagram is $(p-r,p-r,3^r)$ at target $S^p$. Let $n$ be the size of the diagram. The cochains in the table have $n-2,n-1,n$ letters, respectively. The putative source is in the middle. [Selection and grading](../first_page/README.md#the-fifth-glueball-survives-to-perturbative-infinity) · [Exact rational character calculation](source_sizes.py)
 
 | Power | Order | Predecessors | Source cochains | Classical target cochains | Upper bound on classical source cohomology |
