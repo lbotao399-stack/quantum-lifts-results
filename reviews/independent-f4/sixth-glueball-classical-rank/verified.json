@@ -1,0 +1,24 @@
+{
+  "dimensions": [
+    10007,
+    3720,
+    704
+  ],
+  "cartan_gram_determinants": [
+    1728,
+    5184
+  ],
+  "cartan_value": 8957952,
+  "rows_by_family": {
+    "reference": 542,
+    "four": 158,
+    "nested": 3
+  },
+  "minor_determinants": {
+    "1009": 1005,
+    "1013": 734
+  },
+  "classical_rank": 703,
+  "classical_kernel_dimension": 3017,
+  "terminal_cokernel_dimension": 1
+}
