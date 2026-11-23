@@ -1,0 +1,29 @@
+{
+  "stage": 3,
+  "order": 1,
+  "prime": 1009,
+  "previous_rank": 419,
+  "rank": 426,
+  "base_determinant": 200,
+  "complement_determinant": 56,
+  "determinant": 101,
+  "new_rows": [
+    7300,
+    7301,
+    7302,
+    7303,
+    7304,
+    7305,
+    7306
+  ],
+  "new_columns": [
+    0,
+    1,
+    2,
+    455,
+    472,
+    1127,
+    1133
+  ],
+  "last_family": 11
+}
