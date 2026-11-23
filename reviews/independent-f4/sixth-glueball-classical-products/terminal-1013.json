@@ -1,0 +1,11 @@
+{
+  "prime": 1013,
+  "evaluated_rows": [
+    51,
+    2,
+    2
+  ],
+  "dimension": 55,
+  "determinant_residue": 474,
+  "ordered_le_u16_sha256": "d79a744afc5741ca0b897a02fc3812ac257152b554ca3f57abb2ae0375120e75"
+}

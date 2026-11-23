@@ -1,0 +1,91 @@
+{
+  "taylor_products": [
+    {
+      "source": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "source_dimensions": [
+        203,
+        141,
+        62
+      ],
+      "first_target": [
+        4,
+        4,
+        3
+      ],
+      "first_target_dimension": 36
+    },
+    {
+      "source": [
+        4,
+        3,
+        3,
+        2
+      ],
+      "source_dimensions": [
+        1935,
+        791,
+        136
+      ],
+      "first_target": [
+        5,
+        4,
+        2
+      ],
+      "first_target_dimension": 55
+    },
+    {
+      "source": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "source_dimensions": [
+        1697,
+        750,
+        181
+      ],
+      "first_target": null,
+      "first_target_dimension": null
+    }
+  ],
+  "small_colour": [
+    {
+      "prime": 1009,
+      "invariants": [
+        0,
+        1,
+        1,
+        5,
+        16
+      ],
+      "ordered_determinants": [
+        2,
+        926,
+        193,
+        62
+      ]
+    },
+    {
+      "prime": 1013,
+      "invariants": [
+        0,
+        1,
+        1,
+        5,
+        16
+      ],
+      "ordered_determinants": [
+        2,
+        930,
+        355,
+        540
+      ]
+    }
+  ]
+}
