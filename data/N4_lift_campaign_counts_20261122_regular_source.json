@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-22",
+  "theory": "undeformed N=4 SYM",
+  "order_convention": "supercharge obstructions",
+  "increments": {
+    "d1": 0,
+    "fortuitous_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "cumulative": {
+    "d1": 85,
+    "fortuitous_generator_families": 11,
+    "d2": 0,
+    "d3": 1,
+    "nonperturbative": 0
+  },
+  "scope": "Campaign-originated highest-weight first images, explicit generator families and independent higher obstructions.",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_scalar_colour.json",
+  "f4_sixth_glueball": {
+    "order": 2,
+    "global_corrected_pairing": "open",
+    "regular_chart_powers": [
+      10,
+      10,
+      10,
+      12
+    ],
+    "proper_Levi_factors_remaining": [
+      "B3",
+      "C3"
+    ],
+    "two_prime_subgroup_blocks": 62,
+    "Cartan_kernel_on_tested_blocks": 0
+  },
+  "f4_fifth_glueball": {
+    "target_Cartan_by_dotted_pairs": [
+      0,
+      3,
+      0,
+      2,
+      0,
+      0
+    ],
+    "nonperturbative_matrix_element": "open"
+  },
+  "cluster": {
+    "date_cst": "2026-11-23",
+    "daily_cap_cny": "500.00",
+    "combined_reserved_cny_at_submission": "499.80",
+    "unreserved_cny_at_submission": "0.20",
+    "actual_billed_cny": null,
+    "completed": [
+      {
+        "job": "5705974",
+        "archive_sha256": "9f306e1965fa8c29241e1fdeff6e64bfad683248331183313a399e8875bfab04",
+        "script_sha256": "81f35175e9abf3f4b65b1f073d01e3f998e677c6d71af7c895b33a1883355742",
+        "account": "A8",
+        "slurm_accounting": "5705974|COMPLETED|64|48|0:0",
+        "prime_runs": 84
+      },
+      {
+        "job": "5706051",
+        "archive_sha256": "9da9d9855971b613645f5e0b3b670226be78465db2b219c9be799f8fbf98f9a8",
+        "script_sha256": "7c4300b30a38d9f5427a109f9e734063d5a10d66f028e405164415271eb928a5",
+        "account": "A8",
+        "slurm_accounting": "5706051|COMPLETED|705|56|0:0",
+        "prime_runs": 36
+      },
+      {
+        "job": "5706421",
+        "archive_sha256": "44e89651242bea08972eb8fb4940d24177edf4fa1f3dc70f26866b2fe45ce1fa",
+        "script_sha256": "b0e2020e9b8511b683847b0cdedf39df609f152fd5ced14e8baf66e6593af5e1",
+        "account": "A8",
+        "slurm_accounting": "5706421|COMPLETED|419|56|0:0",
+        "prime_runs": 4
+      }
+    ],
+    "next_test": {
+      "job": "5706542",
+      "archive_sha256": "44e89651242bea08972eb8fb4940d24177edf4fa1f3dc70f26866b2fe45ce1fa",
+      "script_sha256": "5481158af46d186889c1afcdcc53e25d44406a137cec8f0c0e39407b999c311c"
+    }
+  },
+  "evidence": [
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/regular_source.md",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/fifth_cartan_mixing.md",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/glueball_factors.md",
+    "algorithms/dual_singlets_20261118/f4/j36_source/first_page/colour_trees.md"
+  ]
+}

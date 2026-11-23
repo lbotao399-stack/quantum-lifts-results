@@ -7,7 +7,6 @@ import json
 from pathlib import Path
 
 from flint import fmpq_mat, fmpz_mat
-from sympy import Matrix
 
 from flag_boundaries import HERE
 from scalar_orthogonal_walls import native, reduce_native
@@ -53,6 +52,8 @@ def obstruction_basis(basis, index):
 
 
 def calculate(q, workers, maximum=None, sample_terms=4, seed=850775):
+    from sympy import Matrix
+
     weight = (q, q, 2, 2, 2)
     if maximum is None:
         shapes = native.words_by_shape(sum(weight), weight)

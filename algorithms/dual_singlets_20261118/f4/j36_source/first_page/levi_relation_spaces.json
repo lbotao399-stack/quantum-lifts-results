@@ -1,0 +1,496 @@
+{
+  "stable": [
+    {
+      "shape": [
+        4,
+        4,
+        2
+      ],
+      "parent_source_terminal": [
+        208,
+        161,
+        65
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "parent_source_terminal": [
+        1835,
+        867,
+        158
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3
+      ],
+      "parent_source_terminal": [
+        585,
+        274,
+        40
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "parent_source_terminal": [
+        4374,
+        1928,
+        431
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "parent_source_terminal": [
+        4861,
+        2047,
+        358
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "parent_source_terminal": [
+        559,
+        345,
+        127
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3,
+        2
+      ],
+      "parent_source_terminal": [
+        17293,
+        6343,
+        962
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4,
+        1
+      ],
+      "parent_source_terminal": [
+        6481,
+        2478,
+        366
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4,
+        2
+      ],
+      "parent_source_terminal": [
+        26145,
+        9378,
+        1663
+      ]
+    }
+  ],
+  "SO7": [
+    {
+      "shape": [
+        4,
+        4,
+        2
+      ],
+      "parent_source_terminal": [
+        206,
+        151,
+        55
+      ],
+      "finite_relations": [
+        2,
+        10,
+        10
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "parent_source_terminal": [
+        1742,
+        771,
+        128
+      ],
+      "finite_relations": [
+        93,
+        96,
+        30
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3
+      ],
+      "parent_source_terminal": [
+        553,
+        242,
+        33
+      ],
+      "finite_relations": [
+        32,
+        32,
+        7
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "parent_source_terminal": [
+        3930,
+        1568,
+        305
+      ],
+      "finite_relations": [
+        444,
+        360,
+        126
+      ],
+      "independent_physical_control": {
+        "weight": [
+          4,
+          4,
+          0,
+          2,
+          2
+        ],
+        "reconstructed": [
+          16347,
+          7266,
+          1435
+        ]
+      }
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "parent_source_terminal": [
+        4336,
+        1659,
+        256
+      ],
+      "finite_relations": [
+        525,
+        388,
+        102
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "parent_source_terminal": [
+        502,
+        276,
+        88
+      ],
+      "finite_relations": [
+        57,
+        69,
+        39
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3,
+        2
+      ],
+      "parent_source_terminal": [
+        14096,
+        4545,
+        586
+      ],
+      "finite_relations": [
+        3197,
+        1798,
+        376
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4,
+        1
+      ],
+      "parent_source_terminal": [
+        5261,
+        1771,
+        223
+      ],
+      "finite_relations": [
+        1220,
+        707,
+        143
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4,
+        2
+      ],
+      "parent_source_terminal": [
+        18780,
+        5720,
+        843
+      ],
+      "finite_relations": [
+        7365,
+        3658,
+        820
+      ],
+      "independent_physical_control": {
+        "weight": [
+          4,
+          4,
+          4,
+          1,
+          1
+        ],
+        "reconstructed": [
+          57881,
+          18894,
+          2861
+        ]
+      }
+    }
+  ],
+  "Sp3": [
+    {
+      "shape": [
+        4,
+        4,
+        2
+      ],
+      "parent_source_terminal": [
+        206,
+        151,
+        55
+      ],
+      "finite_relations": [
+        2,
+        10,
+        10
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "parent_source_terminal": [
+        1730,
+        764,
+        127
+      ],
+      "finite_relations": [
+        105,
+        103,
+        31
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3
+      ],
+      "parent_source_terminal": [
+        551,
+        240,
+        32
+      ],
+      "finite_relations": [
+        34,
+        34,
+        8
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "parent_source_terminal": [
+        3878,
+        1538,
+        296
+      ],
+      "finite_relations": [
+        496,
+        390,
+        135
+      ],
+      "independent_physical_control": {
+        "weight": [
+          4,
+          4,
+          0,
+          2,
+          2
+        ],
+        "reconstructed": [
+          16227,
+          7206,
+          1422
+        ]
+      }
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "parent_source_terminal": [
+        4280,
+        1629,
+        251
+      ],
+      "finite_relations": [
+        581,
+        418,
+        107
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "parent_source_terminal": [
+        497,
+        272,
+        87
+      ],
+      "finite_relations": [
+        62,
+        73,
+        40
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        3,
+        2
+      ],
+      "parent_source_terminal": [
+        13794,
+        4416,
+        564
+      ],
+      "finite_relations": [
+        3499,
+        1927,
+        398
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4,
+        1
+      ],
+      "parent_source_terminal": [
+        5157,
+        1727,
+        216
+      ],
+      "finite_relations": [
+        1324,
+        751,
+        150
+      ]
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4,
+        2
+      ],
+      "parent_source_terminal": [
+        18251,
+        5525,
+        809
+      ],
+      "finite_relations": [
+        7894,
+        3853,
+        854
+      ],
+      "independent_physical_control": {
+        "weight": [
+          4,
+          4,
+          4,
+          1,
+          1
+        ],
+        "reconstructed": [
+          56633,
+          18425,
+          2785
+        ]
+      }
+    }
+  ]
+}

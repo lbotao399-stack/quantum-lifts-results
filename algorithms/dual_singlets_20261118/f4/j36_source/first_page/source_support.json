@@ -1,0 +1,724 @@
+{
+  "ordinary_shape": [
+    4,
+    4,
+    4,
+    2
+  ],
+  "scalar_coefficients": [
+    [
+      4,
+      4,
+      3,
+      1
+    ],
+    [
+      4,
+      3,
+      3,
+      2
+    ]
+  ],
+  "native_automorphism_checks": 1378,
+  "strata": [
+    {
+      "nodes": [],
+      "centre": 4,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        0,
+        0
+      ],
+      "maximum_positive_root_height": 0,
+      "complementary_dimension": 48,
+      "complementary_determinant": "582820744123750809600000000",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": true
+    },
+    {
+      "nodes": [
+        0
+      ],
+      "centre": 3,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        1,
+        2
+      ],
+      "maximum_positive_root_height": 1,
+      "complementary_dimension": 46,
+      "complementary_determinant": "-716607054252343296000000",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": true
+    },
+    {
+      "nodes": [
+        1
+      ],
+      "centre": 3,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        1,
+        2
+      ],
+      "maximum_positive_root_height": 1,
+      "complementary_dimension": 46,
+      "complementary_determinant": "-594654366007296000000",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": true
+    },
+    {
+      "nodes": [
+        2
+      ],
+      "centre": 3,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        1,
+        2
+      ],
+      "maximum_positive_root_height": 1,
+      "complementary_dimension": 46,
+      "complementary_determinant": "-758487711744000000",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": true
+    },
+    {
+      "nodes": [
+        3
+      ],
+      "centre": 3,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        1,
+        2
+      ],
+      "maximum_positive_root_height": 1,
+      "complementary_dimension": 46,
+      "complementary_determinant": "-79623006028038144000000",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": true
+    },
+    {
+      "nodes": [
+        0,
+        1
+      ],
+      "centre": 2,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        4,
+        5
+      ],
+      "maximum_positive_root_height": 2,
+      "complementary_dimension": 42,
+      "complementary_determinant": "-228252171475353600",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": false
+    },
+    {
+      "nodes": [
+        0,
+        2
+      ],
+      "centre": 2,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        4,
+        5
+      ],
+      "maximum_positive_root_height": 1,
+      "complementary_dimension": 44,
+      "complementary_determinant": "17199267840000",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": true
+    },
+    {
+      "nodes": [
+        0,
+        3
+      ],
+      "centre": 2,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        4,
+        5
+      ],
+      "maximum_positive_root_height": 1,
+      "complementary_dimension": 44,
+      "complementary_determinant": "30104377279119360000",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": true
+    },
+    {
+      "nodes": [
+        1,
+        2
+      ],
+      "centre": 2,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        4,
+        5
+      ],
+      "maximum_positive_root_height": 3,
+      "complementary_dimension": 40,
+      "complementary_determinant": "967458816",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": false
+    },
+    {
+      "nodes": [
+        1,
+        3
+      ],
+      "centre": 2,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        4,
+        5
+      ],
+      "maximum_positive_root_height": 1,
+      "complementary_dimension": 44,
+      "complementary_determinant": "3134566563840000",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": true
+    },
+    {
+      "nodes": [
+        2,
+        3
+      ],
+      "centre": 2,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        4,
+        5
+      ],
+      "maximum_positive_root_height": 2,
+      "complementary_dimension": 42,
+      "complementary_determinant": "-870712934400",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": false
+    },
+    {
+      "nodes": [
+        0,
+        1,
+        2
+      ],
+      "centre": 1,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        8,
+        8
+      ],
+      "maximum_positive_root_height": 5,
+      "complementary_dimension": 30,
+      "complementary_determinant": "-16384",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": false
+    },
+    {
+      "nodes": [
+        0,
+        1,
+        3
+      ],
+      "centre": 1,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        8,
+        8
+      ],
+      "maximum_positive_root_height": 2,
+      "complementary_dimension": 40,
+      "complementary_determinant": "86973087744",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": false
+    },
+    {
+      "nodes": [
+        0,
+        2,
+        3
+      ],
+      "centre": 1,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        8,
+        8
+      ],
+      "maximum_positive_root_height": 2,
+      "complementary_dimension": 40,
+      "complementary_determinant": "331776",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": false
+    },
+    {
+      "nodes": [
+        1,
+        2,
+        3
+      ],
+      "centre": 1,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        8,
+        8
+      ],
+      "maximum_positive_root_height": 5,
+      "complementary_dimension": 30,
+      "complementary_determinant": "-4",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": false
+    },
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "centre": 0,
+      "scalar_shapes": [
+        [
+          4,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          2
+        ]
+      ],
+      "minimum_nilpotent_slots": [
+        12,
+        12
+      ],
+      "maximum_positive_root_height": 11,
+      "complementary_dimension": 0,
+      "complementary_determinant": "1",
+      "centralizer_dimension": 4,
+      "centralizer_abelian": true,
+      "torus_or_product_of_rank_one_factors": false
+    }
+  ],
+  "semisimple_shapes_by_centre_dimension": {
+    "1": [
+      [
+        4,
+        4,
+        2
+      ],
+      [
+        4,
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        4,
+        4,
+        2,
+        2
+      ],
+      [
+        4,
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        3,
+        2
+      ],
+      [
+        4,
+        4,
+        4,
+        1
+      ],
+      [
+        4,
+        4,
+        4,
+        2
+      ]
+    ],
+    "2": [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        2,
+        1,
+        1
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        2,
+        2,
+        1
+      ],
+      [
+        4,
+        3,
+        1,
+        1
+      ],
+      [
+        4,
+        3,
+        2
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        4,
+        2,
+        2,
+        2
+      ],
+      [
+        4,
+        3,
+        2,
+        1
+      ],
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        4,
+        4,
+        1,
+        1
+      ],
+      [
+        4,
+        4,
+        2
+      ],
+      [
+        4,
+        3,
+        2,
+        2
+      ],
+      [
+        4,
+        3,
+        3,
+        1
+      ],
+      [
+        4,
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        4,
+        3,
+        3,
+        2
+      ],
+      [
+        4,
+        4,
+        2,
+        2
+      ],
+      [
+        4,
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        3,
+        2
+      ],
+      [
+        4,
+        4,
+        4,
+        1
+      ],
+      [
+        4,
+        4,
+        4,
+        2
+      ]
+    ]
+  }
+}

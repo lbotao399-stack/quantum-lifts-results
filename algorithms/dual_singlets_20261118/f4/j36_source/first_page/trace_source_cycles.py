@@ -6,7 +6,6 @@ from itertools import combinations, product
 import json
 from math import lcm
 
-from sympy import Matrix, zeros
 
 from ghost_trace_quotient import rotate, sign
 from trace_ideal import difference, echelon, monomials, relations, order, trace
@@ -101,6 +100,8 @@ def derivative(m,raising=None):
 
 
 def column_matrix(columns):
+    from sympy import Matrix
+
     keys = sorted(set().union(*(v.keys() for v in columns)))
     return Matrix(len(keys),len(columns),lambda i,j:columns[j].get(keys[i],0))
 
@@ -135,6 +136,8 @@ def reduce_tree(m,basis,index):
 
 
 def coordinates():
+    from sympy import Matrix, zeros
+
     candidates = sources()
     ward = [column_matrix([derivative(m,op) for m in candidates]) for op in ((3,4),(0,1),(1,2))]
     invariant = Matrix.hstack(*Matrix.vstack(*ward).nullspace())

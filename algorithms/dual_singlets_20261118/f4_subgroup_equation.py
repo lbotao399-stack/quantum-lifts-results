@@ -51,7 +51,8 @@ def dimension(group, weight, length, degree):
     return classical_dimensions("Sp" if group == "Sp3" else "SO_odd", weight, length).get(degree, 0)
 
 
-def integral_rows(rows, group, degree, dim, seed, workers, basis=None, sample_terms=4):
+def integral_rows(rows, group, degree, dim, seed, workers, basis=None, sample_terms=4,
+                  return_frame=False):
     words = sorted({w for row in rows for w in row})
     assert all(m.nferm(w) == degree for w in words)
     alphabet = sorted({l for w in words for tr in w for l in tr})
@@ -105,8 +106,11 @@ def integral_rows(rows, group, degree, dim, seed, workers, basis=None, sample_te
     ref.L = {l:(d,a%ref.p) for l,(d,a) in frame.L.items()}
     tests = np.unique(np.linspace(0,len(words)-1,min(8,len(words)),dtype=int))
     np.testing.assert_array_equal(values[tests]%ref.p, ref.eval_words([words[i] for i in tests],dtype=np.int64))
-    return evaluated, dict(seed=seed, points=points, degree=degree, exterior_generators=k,
-                           words=len(words), row_norm=norm, word_bound=str(bound), control_words=tests.tolist())
+    record = dict(seed=seed, points=points, degree=degree, exterior_generators=k,
+                  words=len(words), row_norm=norm, word_bound=str(bound), control_words=tests.tolist())
+    if return_frame:
+        return evaluated, record, frame
+    return evaluated, record
 
 
 def run(group, power, plan, workers):

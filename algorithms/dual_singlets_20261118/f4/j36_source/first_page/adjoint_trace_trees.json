@@ -1,0 +1,47 @@
+{
+  "native_metric_convention": "B=Tr26/6",
+  "inverse_metric_edge_factor": 6,
+  "projection_test_components": {
+    "1": 104,
+    "2": 208,
+    "3": 624,
+    "4": 2496
+  },
+  "nonzero_ordered_probes": {
+    "1": 2,
+    "2": 4,
+    "3": 12,
+    "4": 48
+  },
+  "quartic_polarization": "1/36",
+  "flavour_S6_character_identity_transposition_three_cycle": [
+    5,
+    -1,
+    -1
+  ],
+  "invariant_dimension_for_one_symmetric_triple": 0,
+  "cartan_probe": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "linear_and_quintic_cartan_pairings": [
+    [
+      12,
+      10932
+    ],
+    [
+      -12,
+      -10932
+    ],
+    [
+      -18,
+      -8718
+    ],
+    [
+      54,
+      32634
+    ]
+  ]
+}

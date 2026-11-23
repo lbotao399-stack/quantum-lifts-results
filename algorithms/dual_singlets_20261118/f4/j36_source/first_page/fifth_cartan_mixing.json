@@ -1,0 +1,359 @@
+{
+  "weyl_order": 1152,
+  "target_twice_energy": 30,
+  "target_twice_R": [
+    10,
+    10,
+    10
+  ],
+  "source_twice_energy": 29,
+  "source_twice_R": [
+    9,
+    9,
+    9
+  ],
+  "cartan_dimensions": [
+    {
+      "dotted_pairs": 0,
+      "scalars_per_flavour": 5,
+      "target": 0,
+      "source_by_second_jet": [
+        2,
+        0,
+        0
+      ],
+      "source_total": 2
+    },
+    {
+      "dotted_pairs": 1,
+      "scalars_per_flavour": 4,
+      "target": 3,
+      "source_by_second_jet": [
+        0,
+        0,
+        0
+      ],
+      "source_total": 0
+    },
+    {
+      "dotted_pairs": 2,
+      "scalars_per_flavour": 3,
+      "target": 0,
+      "source_by_second_jet": [
+        7,
+        6,
+        1
+      ],
+      "source_total": 14
+    },
+    {
+      "dotted_pairs": 3,
+      "scalars_per_flavour": 2,
+      "target": 2,
+      "source_by_second_jet": [
+        0,
+        0,
+        0
+      ],
+      "source_total": 0
+    },
+    {
+      "dotted_pairs": 4,
+      "scalars_per_flavour": 1,
+      "target": 0,
+      "source_by_second_jet": [
+        1,
+        1,
+        1
+      ],
+      "source_total": 3
+    },
+    {
+      "dotted_pairs": 5,
+      "scalars_per_flavour": 0,
+      "target": 0,
+      "source_by_second_jet": [
+        0,
+        0,
+        0
+      ],
+      "source_total": 0
+    }
+  ],
+  "native": {
+    "evaluations": [
+      {
+        "scalars": [
+          [
+            -2,
+            2,
+            0,
+            2
+          ],
+          [
+            1,
+            -2,
+            -2,
+            -2
+          ],
+          [
+            -2,
+            0,
+            -1,
+            2
+          ]
+        ],
+        "dotted_test_vectors": [
+          [
+            0,
+            2,
+            1,
+            2
+          ],
+          [
+            -2,
+            1,
+            2,
+            0
+          ],
+          [
+            -2,
+            1,
+            1,
+            2
+          ]
+        ],
+        "one_dotted_pair": [
+          2240000,
+          2009600,
+          9372544
+        ],
+        "three_dotted_pairs": [
+          384000,
+          215296
+        ]
+      },
+      {
+        "scalars": [
+          [
+            1,
+            -2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            -1,
+            1,
+            0,
+            2
+          ]
+        ],
+        "dotted_test_vectors": [
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            -2,
+            -1,
+            0,
+            1
+          ],
+          [
+            0,
+            -2,
+            1,
+            -2
+          ]
+        ],
+        "one_dotted_pair": [
+          6071296,
+          4809728,
+          23349504
+        ],
+        "three_dotted_pairs": [
+          4928,
+          1024
+        ]
+      },
+      {
+        "scalars": [
+          [
+            2,
+            -1,
+            2,
+            -1
+          ],
+          [
+            2,
+            -1,
+            1,
+            2
+          ],
+          [
+            2,
+            -1,
+            0,
+            0
+          ]
+        ],
+        "dotted_test_vectors": [
+          [
+            -1,
+            -2,
+            2,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            -2
+          ],
+          [
+            -2,
+            -2,
+            2,
+            1
+          ]
+        ],
+        "one_dotted_pair": [
+          129960000,
+          125210000,
+          541330000
+        ],
+        "three_dotted_pairs": [
+          10153600,
+          9486400
+        ]
+      },
+      {
+        "scalars": [
+          [
+            -1,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            -2,
+            1,
+            -2
+          ],
+          [
+            2,
+            1,
+            -2,
+            0
+          ]
+        ],
+        "dotted_test_vectors": [
+          [
+            1,
+            -2,
+            -1,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            1
+          ],
+          [
+            -1,
+            -2,
+            1,
+            1
+          ]
+        ],
+        "one_dotted_pair": [
+          8792961408,
+          8760974208,
+          39172970816
+        ],
+        "three_dotted_pairs": [
+          31667328,
+          31539456
+        ]
+      },
+      {
+        "scalars": [
+          [
+            -2,
+            0,
+            -1,
+            2
+          ],
+          [
+            -2,
+            0,
+            2,
+            -2
+          ],
+          [
+            2,
+            2,
+            -1,
+            2
+          ]
+        ],
+        "dotted_test_vectors": [
+          [
+            -1,
+            -1,
+            -1,
+            2
+          ],
+          [
+            -2,
+            -2,
+            -2,
+            -1
+          ],
+          [
+            1,
+            -2,
+            2,
+            1
+          ]
+        ],
+        "one_dotted_pair": [
+          924901376,
+          920219648,
+          3935254528
+        ],
+        "three_dotted_pairs": [
+          30073600,
+          25000000
+        ]
+      }
+    ],
+    "witnesses": [
+      {
+        "rows": [
+          0,
+          1,
+          2
+        ],
+        "determinant": "43133924351672320000"
+      },
+      {
+        "rows": [
+          0,
+          1
+        ],
+        "determinant": "-667762688"
+      }
+    ]
+  }
+}

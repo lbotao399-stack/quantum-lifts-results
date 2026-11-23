@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## A classical primitive on the regular locus of the exceptional source
+
+For $F_4$ at level 36 the principal nilpotent chart has a nonzero minor of order 48 with determinant 1152. The homotopy gives a classical primitive there, and on every regular chart. A8 jobs 5705974, 5706051 and 5706421 checked 62 subgroup blocks at two primes. Each Cartan kernel bound is zero. The global corrected row on $S^6$ remains open. At the fifth glueball charges the Cartan target has dimension five and the full four-dotted-pair terminal block has zero classical cohomology. New $d_1$ lifts **0** (85 cumulative). New explicit fortuitous generator families **0** (11 cumulative). Verified campaign $d_2$, $d_3$ and nonperturbative lifts **0, 1, 0**. [Source and subgroup proofs](algorithms/dual_singlets_20261118/f4/j36_source/first_page/regular_source.md) · [Fifth-glueball targets](algorithms/dual_singlets_20261118/f4/j36_source/first_page/fifth_cartan_mixing.md) · [Native product exclusion](algorithms/dual_singlets_20261118/f4/j36_source/first_page/glueball_factors.md) · [Counts](data/N4_lift_campaign_counts_20261122_regular_source.json)
+
 ## Native finite-colour tests on the sixth glueball
 
 Two common glueball factors leave 370 stable traces. All 217 vectors in the integer-evaluation kernel reduce to zero. With one common factor and traces of length at most six the corresponding result is 361 out of 361. A8 jobs 5704264 and 5704343 reproduced the six- and seven-colour ranks and the alternating two-ghost test. This stage adds 0 first-differential multiplets and 0 fortuitous generator families. The totals are 85 and 11. The independent second-, third- and nonperturbative-lift counts are 0, 1 and 0. [Calculation and replay](algorithms/dual_singlets_20261118/f4/j36_source/first_page/scalar_colour_tests.md) · [Campaign ledger](data/N4_lift_campaign_counts_20261122_scalar_colour.json)

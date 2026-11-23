@@ -1,0 +1,1951 @@
+{
+  "weight_order": "native simple roots",
+  "scalar_occupations": [
+    [
+      1,
+      3,
+      4,
+      4
+    ],
+    [
+      1,
+      4,
+      3,
+      4
+    ],
+    [
+      1,
+      4,
+      4,
+      3
+    ],
+    [
+      2,
+      3,
+      3,
+      4
+    ],
+    [
+      2,
+      3,
+      4,
+      3
+    ],
+    [
+      2,
+      4,
+      3,
+      3
+    ],
+    [
+      3,
+      1,
+      4,
+      4
+    ],
+    [
+      3,
+      2,
+      3,
+      4
+    ],
+    [
+      3,
+      2,
+      4,
+      3
+    ],
+    [
+      3,
+      3,
+      2,
+      4
+    ],
+    [
+      3,
+      3,
+      4,
+      2
+    ],
+    [
+      3,
+      4,
+      1,
+      4
+    ],
+    [
+      3,
+      4,
+      2,
+      3
+    ],
+    [
+      3,
+      4,
+      3,
+      2
+    ],
+    [
+      3,
+      4,
+      4,
+      1
+    ],
+    [
+      4,
+      1,
+      3,
+      4
+    ],
+    [
+      4,
+      1,
+      4,
+      3
+    ],
+    [
+      4,
+      2,
+      3,
+      3
+    ],
+    [
+      4,
+      3,
+      1,
+      4
+    ],
+    [
+      4,
+      3,
+      2,
+      3
+    ],
+    [
+      4,
+      3,
+      3,
+      2
+    ],
+    [
+      4,
+      3,
+      4,
+      1
+    ],
+    [
+      4,
+      4,
+      1,
+      3
+    ],
+    [
+      4,
+      4,
+      3,
+      1
+    ]
+  ],
+  "orbit_count": 30,
+  "counts_by_first_allowed_order": {
+    "4": {
+      "Weyl_orbits": 12,
+      "positive_quartets": 814,
+      "all_quartets": 6288
+    },
+    "5": {
+      "Weyl_orbits": 14,
+      "positive_quartets": 1282,
+      "all_quartets": 7200
+    },
+    "6": {
+      "Weyl_orbits": 4,
+      "positive_quartets": 168,
+      "all_quartets": 840
+    }
+  },
+  "orbits": [
+    {
+      "root_colours": [
+        8,
+        10,
+        19,
+        20
+      ],
+      "weyl_orbit_size": 1152,
+      "positive_quartets": 245,
+      "first_allowed_order": 5,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        19,
+        22
+      ],
+      "weyl_orbit_size": 192,
+      "positive_quartets": 45,
+      "first_allowed_order": 5,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        19,
+        27
+      ],
+      "weyl_orbit_size": 576,
+      "positive_quartets": 84,
+      "first_allowed_order": 4,
+      "degree": [
+        2,
+        4,
+        3,
+        3
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        3,
+        1
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        19,
+        45
+      ],
+      "weyl_orbit_size": 576,
+      "positive_quartets": 95,
+      "first_allowed_order": 4,
+      "degree": [
+        2,
+        4,
+        3,
+        3
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        3,
+        1
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        20,
+        21
+      ],
+      "weyl_orbit_size": 576,
+      "positive_quartets": 95,
+      "first_allowed_order": 5,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        20,
+        22
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 60,
+      "first_allowed_order": 5,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        20,
+        23
+      ],
+      "weyl_orbit_size": 576,
+      "positive_quartets": 93,
+      "first_allowed_order": 4,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        3,
+        1
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        20,
+        25
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 48,
+      "first_allowed_order": 5,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        20,
+        27
+      ],
+      "weyl_orbit_size": 1152,
+      "positive_quartets": 169,
+      "first_allowed_order": 4,
+      "degree": [
+        2,
+        4,
+        3,
+        3
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        20,
+        46
+      ],
+      "weyl_orbit_size": 1152,
+      "positive_quartets": 132,
+      "first_allowed_order": 4,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          0,
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        22,
+        46
+      ],
+      "weyl_orbit_size": 192,
+      "positive_quartets": 24,
+      "first_allowed_order": 4,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        27,
+        45
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 32,
+      "first_allowed_order": 4,
+      "degree": [
+        2,
+        4,
+        3,
+        3
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        10,
+        45,
+        46
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 32,
+      "first_allowed_order": 4,
+      "degree": [
+        1,
+        4,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -3,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        20,
+        21
+      ],
+      "weyl_orbit_size": 192,
+      "positive_quartets": 45,
+      "first_allowed_order": 6,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          2,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        20,
+        22
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 73,
+      "first_allowed_order": 5,
+      "degree": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        3,
+        2
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        20,
+        25
+      ],
+      "weyl_orbit_size": 1152,
+      "positive_quartets": 201,
+      "first_allowed_order": 5,
+      "degree": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        20,
+        45
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 60,
+      "first_allowed_order": 5,
+      "degree": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        22,
+        27
+      ],
+      "weyl_orbit_size": 576,
+      "positive_quartets": 108,
+      "first_allowed_order": 5,
+      "degree": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        25,
+        26
+      ],
+      "weyl_orbit_size": 576,
+      "positive_quartets": 93,
+      "first_allowed_order": 5,
+      "degree": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        25,
+        27
+      ],
+      "weyl_orbit_size": 1152,
+      "positive_quartets": 171,
+      "first_allowed_order": 5,
+      "degree": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        25,
+        46
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 36,
+      "first_allowed_order": 4,
+      "degree": [
+        3,
+        1,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -3,
+          -1
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        19,
+        27,
+        47
+      ],
+      "weyl_orbit_size": 576,
+      "positive_quartets": 54,
+      "first_allowed_order": 4,
+      "degree": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        25,
+        26,
+        45
+      ],
+      "weyl_orbit_size": 576,
+      "positive_quartets": 60,
+      "first_allowed_order": 4,
+      "degree": [
+        3,
+        1,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -3,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        8,
+        25,
+        27,
+        45
+      ],
+      "weyl_orbit_size": 192,
+      "positive_quartets": 24,
+      "first_allowed_order": 5,
+      "degree": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        1,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        19,
+        20,
+        21,
+        45
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 51,
+      "first_allowed_order": 6,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          1,
+          2,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        19,
+        20,
+        22,
+        25
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 60,
+      "first_allowed_order": 6,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        19,
+        20,
+        25,
+        27
+      ],
+      "weyl_orbit_size": 72,
+      "positive_quartets": 12,
+      "first_allowed_order": 6,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        4
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        19,
+        20,
+        25,
+        46
+      ],
+      "weyl_orbit_size": 192,
+      "positive_quartets": 23,
+      "first_allowed_order": 5,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        19,
+        22,
+        27,
+        47
+      ],
+      "weyl_orbit_size": 288,
+      "positive_quartets": 36,
+      "first_allowed_order": 5,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "root_colours": [
+        19,
+        27,
+        47,
+        49
+      ],
+      "weyl_orbit_size": 48,
+      "positive_quartets": 3,
+      "first_allowed_order": 4,
+      "degree": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "marked_replacements": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "compensating_adjoint_weights": [
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -2,
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ]
+}
