@@ -46,3 +46,22 @@ python3 -B classical_score.py --poles reverse-poles.json --packet /path/to/f4-j3
 python3 -B other_crossing.py columns --workers 4 --output /tmp/reverse-columns.json
 python3 -B other_crossing.py poles --packet /path/to/f4-j36-eight-Albert-certificate.zip --workers 4 --output /tmp/reverse-poles.json
 ~~~
+
+## Varying the exchanges and scalar insertions
+
+Choose an ordered pair of the six pairs of tensor slots in the four defining-representation lines. For the original three scalar insertions, nine of the 36 exchange choices have vanishing ordinary scalar remainder for both first marks in the graph reduction. For all nine, the two native ordered graph scores and the rational classical section are equal. For example, exchanging $(0,1)$ and then $(0,2)$ gives $-1196062067257200/49$ for all three quantities. The other 27 choices in this calculation have residual scalar terms. [All 36 source banks](exchange_data/unreduced.json.gz) · [Exact comparisons](exchange_data/checked.json)
+
+Keep the exchanges $(0,1)$ and $(0,3)$ and vary the three middle scalar insertions over the twenty weakly increasing choices of tensor slots. For both first marks together the 120 ordinary scalar coordinates have rank one over the rationals. Every vector in the stored nineteen-column kernel has zero scalar remainder. On each such vector both graph scores equal its section. For kernel column 16 these values are $8970465504429000/343$. The section uses the same 703 rational pivot equations as the original crossed source. The original middle triple is $(0,1,3)$. Its column in the new evaluation agrees with the corresponding original exchange column at every one of the 720 integer points. [Kernel and graph entries](exchange_data/middle02.json.gz) · [Rational graph poles and Slurm accounting](exchange_data/a8.json)
+
+The replay reads all 312 and 670 distinct pairs of pole values, respectively. It checks both marks, both reference columns, the 720-point overlap and all 703 equations of the classical functional. An A8 job reached its file quota after saving part of the first contraction. Job 5718442 resumed those entries on node-local storage and completed the first family. Jobs 5718443, 5718444 and 5718476 returned the middle-scalar columns and both pole batches.
+
+~~~sh
+python3 -B check_exchanges.py | diff -u exchange_data/checked.json -
+python3 -B exchange_bank.py /path/to/f4-j36-eight-Albert-certificate.zip /tmp/f4-exchanges.gz --workers 4
+python3 -B middle_variations.py /path/to/f4-j36-eight-Albert-certificate.zip /tmp/f4-middle.gz --indices 0 2 --workers 4
+python3 -B exchange_scores.py columns --workers 4 --output /tmp/f4-columns.gz
+python3 -B middle_columns.py --indices 0 2 --workers 4 --output /tmp/f4-middle-columns.gz
+python3 -B exchange_scores.py poles --packet /path/to/f4-j36-eight-Albert-certificate.zip --banks /tmp/f4-middle.gz --workers 4 --shard 0 --shards 2 --output /tmp/f4-middle-poles-0.json
+~~~
+
+For the second pole file use shard 1. For the original scalar insertions use the exchange bank in place of the middle bank. Exact reconstruction uses NumPy, SciPy, python-flint and Node.js.

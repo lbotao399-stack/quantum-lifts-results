@@ -52,7 +52,7 @@ def canonical(traces):
     return phase*sign(odd_factors),tuple(sorted(packed))
 
 
-def sources():
+def sources(weight=WEIGHT):
     out = set()
     for i,pair in enumerate(PAIRS):
         for n in range(5):
@@ -63,14 +63,14 @@ def sources():
                     if not s:
                         continue
                     wt = (ghosts.count(3),ghosts.count(4),*(scalar.count(k)+int(k in pair) for k in range(3)))
-                    rest = difference(WEIGHT,wt)
+                    rest = difference(weight,wt)
                     if min(rest)<0:
                         continue
                     for tail in monomials(rest):
                         phase,word = canonical((f,*tail))
                         if phase:
                             out.add(word)
-    assert all(w.count(GLUE)>=2 for w in out)
+    assert all(w.count(GLUE)>=min(weight[:2])-2 for w in out)
     return sorted(out)
 
 
@@ -106,12 +106,12 @@ def column_matrix(columns):
     return Matrix(len(keys),len(columns),lambda i,j:columns[j].get(keys[i],0))
 
 
-def quartic_pivots():
-    all_terms = monomials(WEIGHT)
+def quartic_pivots(weight=WEIGHT):
+    all_terms = monomials(weight)
     index = {w:i for i,w in enumerate(all_terms)}
     basis = {}
     for wt,rels in relations(Fraction(1,12)).items():
-        rest = difference(WEIGHT,wt)
+        rest = difference(weight,wt)
         if min(rest)<0:
             continue
         for tail in monomials(rest):
@@ -135,14 +135,14 @@ def reduce_tree(m,basis,index):
     return {k:v for k,v in row.items() if v}
 
 
-def coordinates():
+def coordinates(weight=WEIGHT):
     from sympy import Matrix, zeros
 
-    candidates = sources()
+    candidates = sources(weight)
     ward = [column_matrix([derivative(m,op) for m in candidates]) for op in ((3,4),(0,1),(1,2))]
     invariant = Matrix.hstack(*Matrix.vstack(*ward).nullspace())
     assert Matrix.vstack(*ward)*invariant == zeros(sum(m.rows for m in ward),invariant.cols)
-    piv,index = quartic_pivots()
+    piv,index = quartic_pivots(weight)
     tree = column_matrix([reduce_tree(m,piv,index) for m in candidates])*invariant
     before = column_matrix([derivative(m) for m in candidates])*invariant
     null = Matrix.hstack(*tree.nullspace())
@@ -154,7 +154,7 @@ def coordinates():
             den = lcm(*(int(x.q) for x in m[:,j]))
             out.append([[i,int(den*x)] for i,x in enumerate(m[:,j]) if x])
         return out
-    return dict(weight=WEIGHT,ghost_quotient_monomials=len(candidates),
+    return dict(weight=weight,ghost_quotient_monomials=len(candidates),
                 trace_power_distribution=dict(sorted(Counter(w.count(GLUE) for w in candidates).items())),
                 singlets=invariant.cols,tree_rank_before_quartic=before.rank(),tree_rank_after_quartic=tree.rank(),
                 tree_cycles=cycles.cols,monomials=candidates,singlet_columns=pack(invariant),

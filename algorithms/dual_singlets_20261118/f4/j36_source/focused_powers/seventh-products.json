@@ -1,0 +1,126 @@
+{
+  "labelled_colour_invariants": 80,
+  "bracket_insertions": 240,
+  "independent_bracket_insertions": 64,
+  "metric_products": 15,
+  "polarized_sextics": 1,
+  "cartan_rank": 16,
+  "boundary_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    51,
+    52,
+    53,
+    55,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    84,
+    85,
+    86,
+    100,
+    101,
+    102,
+    116,
+    117,
+    148,
+    164
+  ],
+  "ordered_minors": [
+    {
+      "prime": 1009,
+      "full_minor": 86,
+      "cartan_minor": 413
+    },
+    {
+      "prime": 1013,
+      "full_minor": 1000,
+      "cartan_minor": 278
+    }
+  ],
+  "bilinear_complements": [
+    {
+      "source": [
+        4,
+        4,
+        3,
+        3
+      ],
+      "first_target": [
+        5,
+        5,
+        3
+      ],
+      "terminal_dimension": 209
+    },
+    {
+      "source": [
+        5,
+        4,
+        3,
+        2
+      ],
+      "first_target": [
+        6,
+        5,
+        2
+      ],
+      "terminal_dimension": 238
+    },
+    {
+      "source": [
+        5,
+        5,
+        2,
+        2
+      ],
+      "first_target": null,
+      "terminal_dimension": null
+    }
+  ]
+}

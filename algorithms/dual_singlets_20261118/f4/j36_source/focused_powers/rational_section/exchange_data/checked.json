@@ -1,0 +1,344 @@
+{
+  "exact_classical_points": 720,
+  "fixed_middle_distinct_pole_pairs": 312,
+  "fixed_middle": [
+    {
+      "indices": [
+        0,
+        0
+      ],
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "classical_section": "-1196062067257200/49",
+      "left": "-1196062067257200/49",
+      "right": "-1196062067257200/49",
+      "corrected": "0"
+    },
+    {
+      "indices": [
+        0,
+        3
+      ],
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "indices": [
+        1,
+        0
+      ],
+      "classical_section": "3289170684957300/49",
+      "left": "3289170684957300/49",
+      "right": "3289170684957300/49",
+      "corrected": "0"
+    },
+    {
+      "indices": [
+        1,
+        1
+      ],
+      "classical_section": "7475387920357500/49",
+      "left": "7475387920357500/49",
+      "right": "7475387920357500/49",
+      "corrected": "0"
+    },
+    {
+      "indices": [
+        1,
+        3
+      ],
+      "classical_section": "-2990155168143000/49",
+      "left": "-2990155168143000/49",
+      "right": "-2990155168143000/49",
+      "corrected": "0"
+    },
+    {
+      "indices": [
+        3,
+        0
+      ],
+      "classical_section": "-299015516814300/49",
+      "left": "-299015516814300/49",
+      "right": "-299015516814300/49",
+      "corrected": "0"
+    },
+    {
+      "indices": [
+        3,
+        1
+      ],
+      "classical_section": "5083263785843100/49",
+      "left": "5083263785843100/49",
+      "right": "5083263785843100/49",
+      "corrected": "0"
+    },
+    {
+      "indices": [
+        3,
+        3
+      ],
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    }
+  ],
+  "fixed_middle_with_unreduced_scalar_terms": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "varied_middle_distinct_pole_pairs": 670,
+  "ordinary_scalar_coordinates": 120,
+  "ordinary_scalar_rank": 1,
+  "varied_middle": [
+    {
+      "kernel_column": 0,
+      "classical_section": "-11960620672572000/343",
+      "left": "-11960620672572000/343",
+      "right": "-11960620672572000/343",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 1,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 2,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 3,
+      "classical_section": "11960620672572000/343",
+      "left": "11960620672572000/343",
+      "right": "11960620672572000/343",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 4,
+      "classical_section": "-2990155168143000/49",
+      "left": "-2990155168143000/49",
+      "right": "-2990155168143000/49",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 5,
+      "classical_section": "6727849128321750/49",
+      "left": "6727849128321750/49",
+      "right": "6727849128321750/49",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 6,
+      "classical_section": "-8970465504429000/343",
+      "left": "-8970465504429000/343",
+      "right": "-8970465504429000/343",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 7,
+      "classical_section": "-2242616376107250/343",
+      "left": "-2242616376107250/343",
+      "right": "-2242616376107250/343",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 8,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 9,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 10,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 11,
+      "classical_section": "2990155168143000/49",
+      "left": "2990155168143000/49",
+      "right": "2990155168143000/49",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 12,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 13,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 14,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 15,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 16,
+      "classical_section": "8970465504429000/343",
+      "left": "8970465504429000/343",
+      "right": "8970465504429000/343",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 17,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    },
+    {
+      "kernel_column": 18,
+      "classical_section": "0",
+      "left": "0",
+      "right": "0",
+      "corrected": "0"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "5718305": {
+    "archive_sha256": "a85b96a66468b46ad0a8c10be0290b7882c8fc5fcfc9fa069f48f2317e1f8e0b",
+    "scheduler": "5718305|COMPLETED|14|56|0:0",
+    "files": {
+      "sweep-columns.json.gz": [
+        163488,
+        "43bb6eb1b574ab3207311a707b3368066e65d7a0c3356c17251f113e73c2e0be"
+      ]
+    }
+  },
+  "5718306": {
+    "archive_sha256": "6b9cb128ee11426791b64f6dc6334c66cc8e3bb990ea4d6a296cfa03c2d7a22f",
+    "scheduler": "5718306|FAILED|249|56|1:0",
+    "files": {
+      "sweep-poles-0.json": [
+        1324,
+        "24a9756e0d7c197d30f059b754ac49a37c1f95f601c8e9f67a99ea2f9dbe7782"
+      ],
+      "sweep-poles-0.part": [
+        0,
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ]
+    }
+  },
+  "5718442": {
+    "archive_sha256": "d0589caf914c999464fb3bab624336ff55eca198928f9bdfb2c83c1cb5b1b34d",
+    "scheduler": "5718442|COMPLETED|247|56|0:0",
+    "files": {
+      "sweep-poles-0.json": [
+        3884,
+        "01e0f5d585178b3fdf84ef76a308549aa33b01fcc1c39c4ce70be79529a2492d"
+      ]
+    }
+  },
+  "5718312": {
+    "archive_sha256": "a2c1e2209a49a7ed9b0e82d20a52acd89bc8dc9a236e122d087295330965a62b",
+    "scheduler": "5718312|COMPLETED|227|56|0:0",
+    "files": {
+      "sweep-poles-1.json": [
+        3905,
+        "33db8cb20cec1919ed3617895f882cf2c9c723a04cd437bb241ad230adf8e8bb"
+      ]
+    }
+  },
+  "5718443": {
+    "archive_sha256": "d5f6c510601002f0c886049c0fbbedd8548c76819b69d5923f3a5021310ba733",
+    "scheduler": "5718443|COMPLETED|33|56|0:0",
+    "files": {
+      "middle-columns.json.gz": [
+        95538,
+        "257ffdd476c808695626d8777f80ea7f2f950385f0fb7bbd74b448bfd9a3443c"
+      ]
+    }
+  },
+  "5718444": {
+    "archive_sha256": "cc87e3445300c9dd2617e540f1517c5dfbc974034653f776648ace508abc187f",
+    "scheduler": "5718444|COMPLETED|464|56|0:0",
+    "files": {
+      "middle-poles-0.json": [
+        8567,
+        "0773a0e3123a520175217c15130a809f473c2d6a6807c607bd63a8d98bfe18bd"
+      ]
+    }
+  },
+  "5718476": {
+    "archive_sha256": "864c1d87dda22e9be8b74b66249731bf989d5539198221ddbd323b988dfa2cf3",
+    "scheduler": "5718476|COMPLETED|410|56|0:0",
+    "files": {
+      "middle-poles-1.json": [
+        8630,
+        "aafa104287afae96ebf61cc3cdf81db4ea6f8fea35a91c0f80ce937f8f001642"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "dotted_flavour_weight": [
+    5,
+    5,
+    2,
+    2,
+    2
+  ],
+  "reduced_trace_monomials": 162,
+  "monomials_by_number_of_glueball_traces": {
+    "3": 33,
+    "4": 99,
+    "5": 30
+  },
+  "classical_split_rank_before_quartic": 14,
+  "classical_split_rank_after_quartic": 5,
+  "ranks_product_direct_combined": {
+    "singlet_columns": [
+      19,
+      19,
+      19
+    ],
+    "cycle_columns": [
+      14,
+      14,
+      14
+    ]
+  },
+  "level_36_kernel_pairings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "scope": "Reduced one-matter-fermion trace presentation with polarized quartic relations"
+}
