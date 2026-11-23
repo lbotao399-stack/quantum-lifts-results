@@ -1,0 +1,518 @@
+[
+  {
+    "entries": [
+      [
+        "left",
+        4
+      ],
+      [
+        "right",
+        4
+      ]
+    ],
+    "ordered_poles": [
+      "45/2",
+      "16380"
+    ],
+    "weight": 2016
+  },
+  {
+    "entries": [
+      [
+        "left",
+        2
+      ],
+      [
+        "right",
+        2
+      ]
+    ],
+    "ordered_poles": [
+      "-4500",
+      "-63000"
+    ],
+    "weight": -2016
+  },
+  {
+    "entries": [
+      [
+        "left",
+        1
+      ],
+      [
+        "right",
+        1
+      ]
+    ],
+    "ordered_poles": [
+      "-14290",
+      "-98120"
+    ],
+    "weight": 2016
+  },
+  {
+    "entries": [
+      [
+        "left",
+        0
+      ],
+      [
+        "right",
+        0
+      ]
+    ],
+    "ordered_poles": [
+      "26395/2",
+      "62380"
+    ],
+    "weight": 2016
+  },
+  {
+    "entries": [
+      [
+        "left",
+        3
+      ],
+      [
+        "right",
+        3
+      ]
+    ],
+    "ordered_poles": [
+      "-15555/2",
+      "-105420"
+    ],
+    "weight": 2016
+  },
+  {
+    "entries": [
+      [
+        "left",
+        5
+      ],
+      [
+        "right",
+        5
+      ]
+    ],
+    "ordered_poles": [
+      "-10950",
+      "-114600"
+    ],
+    "weight": -2016
+  },
+  {
+    "entries": [
+      [
+        "left",
+        8
+      ],
+      [
+        "right",
+        8
+      ]
+    ],
+    "ordered_poles": [
+      "16605/2",
+      "39420"
+    ],
+    "weight": -1008
+  },
+  {
+    "entries": [
+      [
+        "left",
+        11
+      ],
+      [
+        "right",
+        11
+      ]
+    ],
+    "ordered_poles": [
+      "25905/2",
+      "76620"
+    ],
+    "weight": -1008
+  },
+  {
+    "entries": [
+      [
+        "left",
+        10
+      ],
+      [
+        "right",
+        10
+      ]
+    ],
+    "ordered_poles": [
+      "-5580",
+      "-44640"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "left",
+        9
+      ],
+      [
+        "right",
+        9
+      ]
+    ],
+    "ordered_poles": [
+      "27705/2",
+      "83820"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "left",
+        6
+      ],
+      [
+        "right",
+        6
+      ]
+    ],
+    "ordered_poles": [
+      "20045/2",
+      "53180"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "left",
+        14
+      ]
+    ],
+    "ordered_poles": [
+      "945",
+      "7560"
+    ],
+    "weight": -504
+  },
+  {
+    "entries": [
+      [
+        "left",
+        16
+      ]
+    ],
+    "ordered_poles": [
+      "3825/2",
+      "31500"
+    ],
+    "weight": 504
+  },
+  {
+    "entries": [
+      [
+        "left",
+        7
+      ],
+      [
+        "right",
+        7
+      ]
+    ],
+    "ordered_poles": [
+      "280",
+      "2240"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "left",
+        12
+      ]
+    ],
+    "ordered_poles": [
+      "-13565/2",
+      "-70460"
+    ],
+    "weight": 504
+  },
+  {
+    "entries": [
+      [
+        "left",
+        13
+      ]
+    ],
+    "ordered_poles": [
+      "14935/2",
+      "75940"
+    ],
+    "weight": 504
+  },
+  {
+    "entries": [
+      [
+        "right",
+        18
+      ]
+    ],
+    "ordered_poles": [
+      "26475",
+      "373800"
+    ],
+    "weight": -1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        19
+      ]
+    ],
+    "ordered_poles": [
+      "-18885",
+      "10920"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "left",
+        17
+      ]
+    ],
+    "ordered_poles": [
+      "-9955/2",
+      "-39820"
+    ],
+    "weight": -504
+  },
+  {
+    "entries": [
+      [
+        "right",
+        20
+      ]
+    ],
+    "ordered_poles": [
+      "-16085",
+      "-225880"
+    ],
+    "weight": -1008
+  },
+  {
+    "entries": [
+      [
+        "left",
+        15
+      ]
+    ],
+    "ordered_poles": [
+      "-12085/2",
+      "-64540"
+    ],
+    "weight": 504
+  },
+  {
+    "entries": [
+      [
+        "right",
+        22
+      ]
+    ],
+    "ordered_poles": [
+      "-14985",
+      "-55080"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        24
+      ]
+    ],
+    "ordered_poles": [
+      "-14025",
+      "49800"
+    ],
+    "weight": -1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        21
+      ]
+    ],
+    "ordered_poles": [
+      "21220",
+      "72560"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        25
+      ]
+    ],
+    "ordered_poles": [
+      "-19425",
+      "6600"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        23
+      ]
+    ],
+    "ordered_poles": [
+      "-16200",
+      "-64800"
+    ],
+    "weight": -1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        26
+      ]
+    ],
+    "ordered_poles": [
+      "13230",
+      "8640"
+    ],
+    "weight": -1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        14
+      ]
+    ],
+    "ordered_poles": [
+      "-23275/2",
+      "-93100"
+    ],
+    "weight": 504
+  },
+  {
+    "entries": [
+      [
+        "right",
+        27
+      ]
+    ],
+    "ordered_poles": [
+      "10800",
+      "-10800"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        28
+      ]
+    ],
+    "ordered_poles": [
+      "36855",
+      "359640"
+    ],
+    "weight": 1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        29
+      ]
+    ],
+    "ordered_poles": [
+      "-20250",
+      "-97200"
+    ],
+    "weight": -1008
+  },
+  {
+    "entries": [
+      [
+        "right",
+        13
+      ]
+    ],
+    "ordered_poles": [
+      "-6245/2",
+      "-41180"
+    ],
+    "weight": -504
+  },
+  {
+    "entries": [
+      [
+        "right",
+        17
+      ]
+    ],
+    "ordered_poles": [
+      "-6215/2",
+      "-24860"
+    ],
+    "weight": 504
+  },
+  {
+    "entries": [
+      [
+        "right",
+        16
+      ]
+    ],
+    "ordered_poles": [
+      "8175",
+      "49200"
+    ],
+    "weight": -504
+  },
+  {
+    "entries": [
+      [
+        "right",
+        12
+      ]
+    ],
+    "ordered_poles": [
+      "-4115",
+      "-16720"
+    ],
+    "weight": -504
+  },
+  {
+    "entries": [
+      [
+        "right",
+        15
+      ]
+    ],
+    "ordered_poles": [
+      "-2855",
+      "-6640"
+    ],
+    "weight": -504
+  }
+]

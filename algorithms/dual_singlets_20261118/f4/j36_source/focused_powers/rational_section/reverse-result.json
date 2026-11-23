@@ -1,0 +1,16 @@
+{
+  "classical_pivots_checked": 703,
+  "common_points": 720,
+  "nonzero_A_evaluations": 720,
+  "rational_classical_A": "0",
+  "rational_classical_B": "-299015516814300/49",
+  "A_graph_entries": {
+    "left": 18,
+    "right": 30
+  },
+  "A_ordered_graph_scores": {
+    "left": "0",
+    "right": "0"
+  },
+  "A_corrected_pairing": "0"
+}

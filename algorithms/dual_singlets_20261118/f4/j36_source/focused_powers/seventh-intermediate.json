@@ -1,0 +1,42 @@
+{
+  "terminal_diagrams": [
+    [
+      9,
+      6
+    ],
+    [
+      8,
+      6,
+      1
+    ],
+    [
+      7,
+      6,
+      2
+    ],
+    [
+      6,
+      6,
+      3
+    ]
+  ],
+  "terminal_multiplicities": [
+    112,
+    573,
+    1167,
+    1107
+  ],
+  "intermediate_classical_rank": 2959,
+  "terminal_cokernel": 0,
+  "homogeneous_block_dimensions": [
+    43,
+    16,
+    9
+  ],
+  "minor_orders": 68,
+  "ordered_homogeneous_determinants": {
+    "1009": 909,
+    "1013": 962,
+    "1000003": 176568
+  }
+}

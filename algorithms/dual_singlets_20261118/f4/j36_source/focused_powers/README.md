@@ -66,3 +66,21 @@ OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 -B three_axis.py replay 
 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 -B sandwich.py replay --stage 3 --order 1 --prime 1013 --workers 4 --certificate sandwich-3-1.json
 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 -B sandwich.py replay --stage 3 --order 2 --prime 1013 --workers 4 --certificate sandwich-3-2.json
 ~~~
+
+## The first correction for the seventh power
+
+In the intermediate spin and flavour singlet at dotted and flavour degree $(6,6\mid1,1,1)$, the four terminal Taylor diagrams $(9,6),(8,6,1),(7,6,2),(6,6,3)$ have cochain dimensions $112,573,1167,1107$. A covector killing the same-species brackets lies in the three harmonic tensor spaces of dimensions $43,16,9$. On exactly these 68 columns the homogeneous differentiated-scalar bracket matrix has determinant $909\bmod1009$ and $962\bmod1013$. Hence its rational kernel is zero. The image of the complete classical map fills all $2959$ intermediate terminal cochains. Every classical cycle in the $62866$-dimensional second source of $S^7$ therefore admits a first correction. [Native matrix and character replay](seventh_intermediate.py) · [Three modular reductions](seventh-intermediate.json)
+
+For either power, write $\lambda$ for its classical target covector and $\eta$ for the rational solution of $\lambda Q_1=\eta Q_0$. The bare $Q_2$ vanishes on the selected sources by flavour counting. For $Q_0X=0$, choose $Q_0X_1=-Q_1X$. Then
+
+$$
+\lambda(d_2[X])=\lambda(Q_1X_1)=-\eta Q_1X.
+$$
+
+An incoming second differential is equivalent to the row $-\eta Q_1$ increasing the rank of $Q_0$ by one on the selected source. For $S^7$ this classical matrix has 8553 rows and 62866 columns. The preceding rank 2959 pertains to the intermediate equation for $X_1$.
+
+For a level-36 source $X$, multiplicativity gives $d_2([X][S])=d_2[X]\,[S]$. The ratio of the seventh and sixth target covectors on their native powers is $194893931232000/15313094596800=140/11$. Thus the two numerical obstruction pairings on a source and its product with $S$ have this fixed ratio. A seventh-power source outside this product image can still hit the target independently. The comparison here is in the relative jet complex.
+
+## Both orders of Dot's crossed graph
+
+Both orders of the two specified Albert exchanges now have zero corrected pairing over the rationals. For order A, 18 left-mark and 30 right-mark graph entries each give a total of zero after the exterior-order conversion. The classical section is zero independently. For order B, both the ordered graph and its section give $-299015516814300/49$. [Both calculations, coordinates and replay](rational_section/README.md)

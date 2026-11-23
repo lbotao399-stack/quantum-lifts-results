@@ -34,3 +34,15 @@ python3 -B solve_section.py --verify section-coordinates.json.gz
 python3 -B check_pinned.py /path/to/f4-j36-eight-Albert-certificate.zip --dense
 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 F4_INTEGER_WORKERS=2 python3 -B section_run.py --out /tmp/f4-crossed-points
 ~~~
+
+## The reverse order and a common classical functional
+
+The packet defines A by acting on tensor slots $(0,1)$ and then $(1,2)$ and B by reversing these actions. Their 720 classical evaluations use the same integral scale $28\cdot252\cdot84^2$. All 720 entries of A are nonzero. To subtract the section for any such column, solve the transposed system on the fixed 703 points once. The stored rational functional evaluates each of the 703 scaled pivot columns to its prescribed scaled physical score. The nonzero square minor makes this a functional on the entire classical image. In the stored point order its section values are $0$ for A and $-299015516814300/49$ for B. [Exact functional](classical-score-row.json.gz) · [Independent integral columns for A and B](reverse-columns.json)
+
+For A the native integral colour tensors and the exterior sign of each of the two ordered gaugino lists give zero in the left-mark bank of 18 graphs and zero in the right-mark bank of 30 graphs. Its corrected second pairing is exactly $0-0=0$. The endpoint test on B again gives zero after its own subtraction. [All A pole pairs](reverse-poles.json) · [Joint result](reverse-result.json)
+
+~~~sh
+python3 -B classical_score.py --poles reverse-poles.json --packet /path/to/f4-j36-eight-Albert-certificate.zip
+python3 -B other_crossing.py columns --workers 4 --output /tmp/reverse-columns.json
+python3 -B other_crossing.py poles --packet /path/to/f4-j36-eight-Albert-certificate.zip --workers 4 --output /tmp/reverse-poles.json
+~~~
