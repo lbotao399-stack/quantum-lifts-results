@@ -1,0 +1,309 @@
+{
+  "left": [
+    {
+      "graph": 0,
+      "ordered_poles": [
+        "5750",
+        "-24200"
+      ],
+      "weighted_sum": "1203976749578803200"
+    },
+    {
+      "graph": 1,
+      "ordered_poles": [
+        "-2445",
+        "12840"
+      ],
+      "weighted_sum": "-555681576728678400"
+    },
+    {
+      "graph": 2,
+      "ordered_poles": [
+        "3390",
+        "81120"
+      ],
+      "weighted_sum": "-926135961214464000"
+    },
+    {
+      "graph": 3,
+      "ordered_poles": [
+        "-75",
+        "-70800"
+      ],
+      "weighted_sum": "1203976749578803200"
+    },
+    {
+      "graph": 4,
+      "ordered_poles": [
+        "-13905/2",
+        "-23220"
+      ],
+      "weighted_sum": "-555681576728678400"
+    },
+    {
+      "graph": 5,
+      "ordered_poles": [
+        "6525/2",
+        "80100"
+      ],
+      "weighted_sum": "-926135961214464000"
+    },
+    {
+      "graph": 6,
+      "ordered_poles": [
+        "8525/2",
+        "-30700"
+      ],
+      "weighted_sum": "555681576728678400"
+    },
+    {
+      "graph": 7,
+      "ordered_poles": [
+        "26745/2",
+        "74580"
+      ],
+      "weighted_sum": "277840788364339200"
+    },
+    {
+      "graph": 8,
+      "ordered_poles": [
+        "7875/2",
+        "58500"
+      ],
+      "weighted_sum": "-231533990303616000"
+    },
+    {
+      "graph": 9,
+      "ordered_poles": [
+        "12690",
+        "36720"
+      ],
+      "weighted_sum": "555681576728678400"
+    },
+    {
+      "graph": 10,
+      "ordered_poles": [
+        "12195/2",
+        "16380"
+      ],
+      "weighted_sum": "277840788364339200"
+    },
+    {
+      "graph": 11,
+      "ordered_poles": [
+        "-7965",
+        "-36720"
+      ],
+      "weighted_sum": "-231533990303616000"
+    },
+    {
+      "graph": 12,
+      "ordered_poles": [
+        "-7000",
+        "-61400"
+      ],
+      "weighted_sum": "23153399030361600"
+    },
+    {
+      "graph": 13,
+      "ordered_poles": [
+        "465",
+        "68520"
+      ],
+      "weighted_sum": "-277840788364339200"
+    },
+    {
+      "graph": 14,
+      "ordered_poles": [
+        "600",
+        "31800"
+      ],
+      "weighted_sum": "-115766995151808000"
+    },
+    {
+      "graph": 15,
+      "ordered_poles": [
+        "-2625/2",
+        "-15900"
+      ],
+      "weighted_sum": "23153399030361600"
+    },
+    {
+      "graph": 16,
+      "ordered_poles": [
+        "-45/2",
+        "64620"
+      ],
+      "weighted_sum": "-277840788364339200"
+    },
+    {
+      "graph": 17,
+      "ordered_poles": [
+        "-4695",
+        "-10560"
+      ],
+      "weighted_sum": "-115766995151808000"
+    }
+  ],
+  "right": [
+    {
+      "graph": 12,
+      "ordered_poles": [
+        "13465/2",
+        "59260"
+      ],
+      "weighted_sum": "23153399030361600"
+    },
+    {
+      "graph": 13,
+      "ordered_poles": [
+        "8365/2",
+        "-31340"
+      ],
+      "weighted_sum": "-277840788364339200"
+    },
+    {
+      "graph": 14,
+      "ordered_poles": [
+        "225",
+        "-25200"
+      ],
+      "weighted_sum": "-115766995151808000"
+    },
+    {
+      "graph": 15,
+      "ordered_poles": [
+        "2300",
+        "23800"
+      ],
+      "weighted_sum": "23153399030361600"
+    },
+    {
+      "graph": 16,
+      "ordered_poles": [
+        "12195/2",
+        "-16020"
+      ],
+      "weighted_sum": "-277840788364339200"
+    },
+    {
+      "graph": 17,
+      "ordered_poles": [
+        "20915/2",
+        "56660"
+      ],
+      "weighted_sum": "-115766995151808000"
+    },
+    {
+      "graph": 18,
+      "ordered_poles": [
+        "5745",
+        "369960"
+      ],
+      "weighted_sum": "2778407883643392000"
+    },
+    {
+      "graph": 19,
+      "ordered_poles": [
+        "-32595",
+        "63240"
+      ],
+      "weighted_sum": "-2778407883643392000"
+    },
+    {
+      "graph": 20,
+      "ordered_poles": [
+        "-62780",
+        "-502240"
+      ],
+      "weighted_sum": "0"
+    },
+    {
+      "graph": 21,
+      "ordered_poles": [
+        "2605",
+        "20840"
+      ],
+      "weighted_sum": "0"
+    },
+    {
+      "graph": 22,
+      "ordered_poles": [
+        "-1800",
+        "-14400"
+      ],
+      "weighted_sum": "0"
+    },
+    {
+      "graph": 23,
+      "ordered_poles": [
+        "2250",
+        "18000"
+      ],
+      "weighted_sum": "0"
+    },
+    {
+      "graph": 24,
+      "ordered_poles": [
+        "-40860",
+        "-2880"
+      ],
+      "weighted_sum": "2778407883643392000"
+    },
+    {
+      "graph": 25,
+      "ordered_poles": [
+        "-29925",
+        "84600"
+      ],
+      "weighted_sum": "-2778407883643392000"
+    },
+    {
+      "graph": 26,
+      "ordered_poles": [
+        "-7560",
+        "-60480"
+      ],
+      "weighted_sum": "0"
+    },
+    {
+      "graph": 27,
+      "ordered_poles": [
+        "9450",
+        "75600"
+      ],
+      "weighted_sum": "0"
+    },
+    {
+      "graph": 28,
+      "ordered_poles": [
+        "-51600",
+        "-412800"
+      ],
+      "weighted_sum": "0"
+    },
+    {
+      "graph": 29,
+      "ordered_poles": [
+        "19950",
+        "159600"
+      ],
+      "weighted_sum": "0"
+    }
+  ],
+  "left_0_tree_swap": {
+    "side": "left",
+    "index": 0,
+    "swapped": true,
+    "sign": 1,
+    "poles": [
+      "5750",
+      "-24200"
+    ],
+    "canonical_poles": [
+      "5750",
+      "-24200"
+    ],
+    "canonical_weighted": "1203976749578803200"
+  }
+}

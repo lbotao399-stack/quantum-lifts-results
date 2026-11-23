@@ -1,0 +1,23 @@
+{
+  "audit": "F4 pure glueball powers in the relative holomorphic jet complex",
+  "date_local": "2026-11-23",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_pause.json",
+  "stage_counts": {
+    "independently_verified_d1_targets": 1,
+    "new_fortuitous_generators": 0,
+    "verified_d2_lifts": 0,
+    "new_d3_lifts": 0,
+    "new_nonperturbative_lifts": 0
+  },
+  "target_attribution": "Dot reported the S8 first-page hit. This audit supplies an independent proof by inconsistent rational Ward equations.",
+  "higher_differential_counting": "The two S6 primes and two graph markings refer to the same proposed source.",
+  "powers": {
+    "5": "survives perturbative E_infinity",
+    "6": "nonzero on E2; crossed-graph augmented minors zero at 1009 and 1013; rational incoming d2 open",
+    "7": "nonzero on E2; incoming d2 open",
+    "8": "nonzero on E1; d1 hits the target line"
+  },
+  "new_cluster_jobs_for_this_audit": 0,
+  "input_commit": "783cdacb1171fb21ef5bdaa155fe14202a8d026d",
+  "evidence": "algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md"
+}

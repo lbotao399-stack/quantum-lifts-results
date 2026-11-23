@@ -1,0 +1,154 @@
+{
+  "input_commit": "783cdacb1171fb21ef5bdaa155fe14202a8d026d",
+  "withdrawal_commit": "7fcfb7175703dd1ee6dcf4a71f2885c0d7dc8c73",
+  "crossed_graph": {
+    "modular": [
+      {
+        "prime": 1009,
+        "mark": "left",
+        "classical_det": 1005,
+        "archived_raw": 361,
+        "corrected_raw": 514,
+        "archived_score": 663,
+        "corrected_score": 44,
+        "section": 44,
+        "archived_augmented_det": 551,
+        "corrected_augmented_det": 0
+      },
+      {
+        "prime": 1009,
+        "mark": "right",
+        "classical_det": 1005,
+        "archived_raw": 361,
+        "corrected_raw": 514,
+        "archived_score": 663,
+        "corrected_score": 44,
+        "section": 44,
+        "archived_augmented_det": 551,
+        "corrected_augmented_det": 0
+      },
+      {
+        "prime": 1013,
+        "mark": "left",
+        "classical_det": 734,
+        "archived_raw": 850,
+        "corrected_raw": 129,
+        "archived_score": 457,
+        "corrected_score": 92,
+        "section": 92,
+        "archived_augmented_det": 478,
+        "corrected_augmented_det": 0
+      }
+    ],
+    "exact_graph_scores": {
+      "left": "-299015516814300/49",
+      "right": "-299015516814300/49"
+    }
+  },
+  "first_page": {
+    "universal_scalar_check": {
+      "ordered_scalar_inputs": 2704,
+      "symmetric_casimir_columns": 1378,
+      "homogeneous_tensors": 40
+    },
+    "powers": [
+      {
+        "power": 7,
+        "target_weights": [
+          874,
+          1105,
+          1035
+        ],
+        "branch_dimensions": [
+          1264120,
+          15997696,
+          19214624
+        ],
+        "target_pairing": -194893931232000,
+        "homogeneous_dimensions": [
+          43,
+          16,
+          9
+        ],
+        "differentiated_scalar_tests": 1117,
+        "nonzero_terms_cancelled": 1074,
+        "mixed_components_by_extremal_pair": [
+          6920,
+          2554,
+          2554,
+          6920
+        ]
+      },
+      {
+        "power": 8,
+        "target_weights": [
+          3478750,
+          6020625,
+          5173597
+        ],
+        "branch_dimensions": [
+          15611882,
+          13530946,
+          65609375
+        ],
+        "target_pairing": 19160509614246000000,
+        "homogeneous_dimensions": [
+          2,
+          1,
+          22,
+          7,
+          22,
+          37
+        ],
+        "homogeneous_and_augmented_ward_minors": {
+          "1009": [
+            156,
+            375
+          ],
+          "1013": [
+            382,
+            29
+          ]
+        }
+      }
+    ]
+  },
+  "graph_bank_size": {
+    "left": 18,
+    "right": 30,
+    "common": 12
+  },
+  "classical_source": {
+    "dimensions": [
+      10007,
+      3720,
+      704
+    ],
+    "cartan_gram_determinants": [
+      1728,
+      5184
+    ],
+    "cartan_value": 8957952,
+    "rows_by_family": {
+      "reference": 542,
+      "four": 158,
+      "nested": 3
+    },
+    "minor_determinants": {
+      "1009": 1005,
+      "1013": 734
+    },
+    "classical_rank": 703,
+    "classical_kernel_dimension": 3017,
+    "terminal_cokernel_dimension": 1
+  },
+  "target_S6_pairing": -15313094596800,
+  "integer_outgoing_replay": {
+    "points": 703,
+    "primes": [
+      1009,
+      1013
+    ],
+    "modulus": 1022117
+  }
+}

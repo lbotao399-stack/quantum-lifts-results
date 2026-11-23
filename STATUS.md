@@ -1,5 +1,9 @@
 # Running computations: daily status
 
+## F₄ crossed-graph audit, November 23
+
+The two exact evaluations of graph 0 change from $(-5750,24200)$ to $(5750,-24200)$ when two children of the contraction tree are interchanged. Reordering both sets of six odd insertions restores the same coefficient. For the full source B both first marks then give the unsubtracted rational score $-299015516814300/49$. The section has residues 44 and 92 at the two primes, equal to those of this score. The proposed nonzero order-704 minors fail. The first-page Ward equations independently establish survival of $S^7$ and an incoming $d_1$ on $S^8$. One first-page target is confirmed in this audit. New fortuitous generators, verified $d_2$ lifts and nonperturbative lifts are all zero. [Review and replay](algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md) · [Counts](data/N4_lift_campaign_counts_20261123_F4_audit.json)
+
 ## Campaign checkpoint
 
 The search is paused. The last A8 job, 5710208, reached its time limit after reproducing the known order-3002 minor. The exceptional source bound is 15. The A6 and A8 campaign queues are empty. [Slurm receipt and tested algorithm](algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md#final-a8-test-with-two-adjoint-edges)
