@@ -1,0 +1,337 @@
+{
+  "source_terms": 6139,
+  "weight": [
+    7,
+    4,
+    4
+  ],
+  "shear_residuals": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ]
+  ],
+  "clearing_coefficients": [
+    1,
+    -70,
+    2485,
+    -59640
+  ],
+  "truncated_product": [
+    1,
+    0,
+    0,
+    0
+  ],
+  "original_sufficient_power": 70,
+  "uniform_sufficient_power": 73,
+  "directions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6
+  ],
+  "matching_tests": [
+    {
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "determinant": 42
+    },
+    {
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "determinant": 26
+    },
+    {
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "determinant": 12
+    },
+    {
+      "matching": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "determinant": 24
+    },
+    {
+      "matching": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "determinant": 26
+    },
+    {
+      "matching": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "determinant": 30
+    },
+    {
+      "matching": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "determinant": -14
+    },
+    {
+      "matching": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "determinant": 4
+    },
+    {
+      "matching": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "determinant": 14
+    },
+    {
+      "matching": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "determinant": -28
+    },
+    {
+      "matching": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "determinant": -12
+    },
+    {
+      "matching": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "determinant": 12
+    },
+    {
+      "matching": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "determinant": -38
+    },
+    {
+      "matching": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "determinant": -16
+    },
+    {
+      "matching": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "determinant": -2
+    }
+  ],
+  "five_test_control": {
+    "eigenvalues": [
+      [
+        -36,
+        28,
+        -4
+      ],
+      [
+        -36,
+        31,
+        -7
+      ],
+      [
+        72,
+        -59,
+        11
+      ]
+    ],
+    "discriminants": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      5999756313600
+    ]
+  },
+  "nonperturbative_lift": "open"
+}

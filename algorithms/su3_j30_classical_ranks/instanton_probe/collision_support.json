@@ -1,0 +1,88 @@
+{
+  "pinned_block_input": "8ba864d4eb9413131922b75aa653ab119d10a04a",
+  "source_terms": 6139,
+  "lower_page_primitive_checks": 2808,
+  "dual_on_frozen_SU2_class": "-30",
+  "literal_block_multiplier_imaginary": "-5184/5",
+  "collision_dual_imaginary": 31104,
+  "collision_dual_exponents": [
+    3,
+    0,
+    0
+  ],
+  "clearing": {
+    "6": {
+      "degree": 3,
+      "inverse_coefficients": [
+        1,
+        -6,
+        21,
+        -56
+      ],
+      "uniform_power": 9
+    },
+    "70": {
+      "degree": 3,
+      "inverse_coefficients": [
+        1,
+        -70,
+        2485,
+        -59640
+      ],
+      "uniform_power": 73
+    }
+  },
+  "directions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6
+  ],
+  "secant_determinants": [
+    42,
+    26,
+    12,
+    24,
+    26,
+    30,
+    -14,
+    4,
+    14,
+    -28,
+    -12,
+    12,
+    -38,
+    -16,
+    -2
+  ],
+  "five_probe_counterexample": {
+    "eigenvalues": [
+      [
+        -36,
+        28,
+        -4
+      ],
+      [
+        -36,
+        31,
+        -7
+      ],
+      [
+        72,
+        -59,
+        11
+      ]
+    ],
+    "discriminants": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      5999756313600
+    ]
+  },
+  "physical_instanton_pairing": "open"
+}

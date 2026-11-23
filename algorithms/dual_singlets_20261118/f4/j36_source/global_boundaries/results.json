@@ -1,0 +1,39 @@
+{
+  "parent_ranks": [
+    3720,
+    703,
+    3017
+  ],
+  "koszul": {
+    "prime": 1009,
+    "rank": 2398,
+    "determinant": 676,
+    "seconds": 194,
+    "cpus": 56
+  },
+  "jacobi": {
+    "prime": 1009,
+    "rank": 2748,
+    "determinant": 873,
+    "same_minor_replay": {
+      "prime": 1013,
+      "size": 2748,
+      "determinant": 174
+    },
+    "seconds": 1345,
+    "cpus": 56
+  },
+  "five_channels": {
+    "prime": 1009,
+    "rank": 2879,
+    "determinant": 431,
+    "classical_upper_bound": 138,
+    "same_minor_replay": {
+      "size": 2879,
+      "prime": 1013,
+      "determinant": 100
+    },
+    "seconds": 615,
+    "cpus": 56
+  }
+}
