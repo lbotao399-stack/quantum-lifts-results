@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5268,
+      "sha256": "882b68dc421f9f20d24263daa4a26f11d8c2c10631d00f1afed4d6bf6cd55657"
+    },
+    {
+      "path": "STABILITY_CERTIFICATE.json",
+      "bytes": 4545,
+      "sha256": "c33d33a170528b3123674fbdc8852dbdb242da37202c42e4faf0fc41929d1fa2"
+    },
+    {
+      "path": "verify_stability.py",
+      "bytes": 3699,
+      "sha256": "bdbb4eaa3eb9a7a8c085ce5afa6ea9fbb7854e2d1718a63b8176b4e29a5d5631"
+    }
+  ]
+}

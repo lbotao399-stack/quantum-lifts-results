@@ -1,0 +1,185 @@
+{
+  "receipt_version": 1,
+  "scope": "Completed stable native Q0 complex; compact receipt assembled from saved results without rerunning ranks or identity recipes.",
+  "native_weight": [
+    3,
+    3,
+    9,
+    0,
+    0
+  ],
+  "native_weight_order": "first two Taylor indices; final three theta occupations",
+  "source_convention": "Original mixed_incoming.q and native highest-weight bases, without differential rescaling or projector renormalization.",
+  "upstream_source_hashes": {
+    "quantum_lifts_frontier_work/root_audit/so11_pin/algorithms/dual_singlets_20261118/mixed_incoming.py": "b029f43f0d030a8d3d143e10114a9e6a33ed382ce975b11c0b06b88ccbb4afeb",
+    "quantum_lifts_frontier_work/root_audit/so11_pin/algorithms/dual_singlets_20261118/trace_descent.py": "048cf5693c249b57b19e7aa0e82493abff9d69ac1c676bf1503939606d7559aa",
+    "quantum_lifts_frontier_source/algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/words.py": "779c524c1283715feb6fe03d50fa8b23d596f04d134d791daa8394524d2a5dc8"
+  },
+  "cochains": {
+    "12": {
+      "dimension": 38160,
+      "fermion_degree_dimensions": {
+        "3": 38160
+      },
+      "basis": {
+        "file": "formal_339_L12.pkl",
+        "sha256": "108f018566bcc910dfd40e37a1b9fdfda52a899020cc14d50d256b91d9bc8f41",
+        "bytes": 5591675
+      }
+    },
+    "13": {
+      "dimension": 37085,
+      "fermion_degree_dimensions": {
+        "4": 37085
+      },
+      "basis": {
+        "file": "formal_339_L13.pkl",
+        "sha256": "b6ac1c3fa9766f0f04f1f6f20a1bccb6761749c3648505e0627e416f4e771907",
+        "bytes": 5361252
+      }
+    },
+    "14": {
+      "dimension": 17745,
+      "fermion_degree_dimensions": {
+        "5": 17745
+      },
+      "basis": {
+        "file": "formal_339_L14.pkl",
+        "sha256": "9a176ee1ab5382f6f4b4df9a86f4816ba501e67de1aa6982d4a1e500fdbbd3ce",
+        "bytes": 2547862
+      }
+    }
+  },
+  "prime": 2147483647,
+  "differentials": {
+    "12": {
+      "rank_lower_bound": 22495,
+      "blocks": 410,
+      "rank_report": {
+        "file": "rank_339_L12_p2147483647.json",
+        "sha256": "66fefb9a1c6be7ac2a0685d41f3a3c21e3bb42c5f7df560d518cb5d80e6f7784",
+        "bytes": 139023
+      },
+      "block_certificate_type": "modular RREF ranks with saved pivot columns",
+      "source_length": 12,
+      "target_length": 13,
+      "map": {
+        "file": "q_339_L12.pkl",
+        "sha256": "37d19fdc975fd9bc70b6aefec8f40b190077b70c8275186cf9ddfab2f4dc027c",
+        "bytes": 35156358
+      },
+      "nonzero_images": 38111,
+      "integer_image_terms": 1502920
+    },
+    "13": {
+      "rank_lower_bound": 14590,
+      "blocks": 398,
+      "rank_report": {
+        "file": "rank_339_L13_p2147483647.json",
+        "sha256": "078455748d4be751a02f0a918fa409f77b3e8925d33e984c33d7abe24b03f8be",
+        "bytes": 108348
+      },
+      "block_certificate_type": "explicit nonzero square minors on original source rows and full output words",
+      "nonzero_square_minors": 398,
+      "block_diagonal_minor_order": 14590,
+      "block_diagonal_minor_determinant_mod_prime": 629988078,
+      "determinant_order": "rows and columns concatenated in component order, using each saved selected-source-row and pivot-column order",
+      "source_length": 13,
+      "target_length": 14,
+      "map": {
+        "file": "q_339_L13.pkl",
+        "sha256": "a800968cb07862a537bee4d3e59efd8a6622d8bfb1a648add33c48b6f6105c75",
+        "bytes": 20411204
+      },
+      "nonzero_images": 36867,
+      "integer_image_terms": 903890
+    }
+  },
+  "exact_checks": {
+    "12": {
+      "exact_Q0_squared_zero": true,
+      "basis_rows_checked": 38160,
+      "q2_receipt": {
+        "file": "q2_339_L12.json",
+        "sha256": "fed0a9626a7d61d557f6beeb060b1417102517dbfd0001789204c36ff1ffb7bd",
+        "bytes": 228
+      },
+      "exact_target_highest_weight_membership": true,
+      "highest_weight_receipt": {
+        "file": "q_hw_339_L12.json",
+        "sha256": "89aa0012091e6b62e366ca71f55bfa8662aa95af4a6e81a75ebe431c9f0c424c",
+        "bytes": 395
+      }
+    },
+    "13": {
+      "exact_Q0_squared_zero": true,
+      "basis_rows_checked": 37085,
+      "q2_receipt": {
+        "file": "q2_339_L13.json",
+        "sha256": "1fcfd450b21d6c89551d70d26e21be63df8f61ece7024ba020ccfc2256fc8978",
+        "bytes": 228
+      },
+      "exact_target_highest_weight_membership": true,
+      "highest_weight_receipt": {
+        "file": "q_hw_339_L13.json",
+        "sha256": "7420233520ad985ca448c6c9f1679f0b5fa543ce29f3c95c01fb96eb71ab352d",
+        "bytes": 395
+      }
+    }
+  },
+  "rank_block_receipt_index": {
+    "file": "stable_rank_block_receipts.json",
+    "sha256": "bab89d8b0fe76c21e5673f442722da6e5826294a7070b7440e0c28b4ec0aaeb1",
+    "bytes": 324340
+  },
+  "rank_receipt_note": "The incoming lower bound is certified by the saved modular RREF ranks and pivot columns. The outgoing receipt additionally contains explicit selected-source-row square minors. No unsaved incoming minor determinant is asserted.",
+  "target_coordinate_projection": {
+    "basis_length": 14,
+    "coordinates": 17745,
+    "blocks": 6452,
+    "basis_minor_determinant_mod_prime": 134217728,
+    "receipt": {
+      "file": "pivot_words_formal_339_L14_p2147483647.pkl",
+      "sha256": "f959999b068da25659f8448a0e26a5d6af9c7871aaf68d7f11657be9a2ac8093",
+      "bytes": 739322
+    },
+    "largest_outgoing_projected_shape": [
+      9230,
+      4290
+    ],
+    "largest_outgoing_rank": 3507,
+    "largest_outgoing_minor_determinant_mod_prime": 661493398,
+    "largest_block_receipt": {
+      "file": "rank_339_L13_last_projected.pkl",
+      "sha256": "e896ef9522b6e5aff875f9b6d8369be375c4f726b4e6be262beefe5ea8ff73ab",
+      "bytes": 680040
+    }
+  },
+  "saturation_argument": [
+    "Exact integer target highest-weight checks place Q0(C12) inside C13 and Q0(C13) inside C14.",
+    "Exact integer Q0 squared zero on every saved C12 basis vector implies rank_Q(Q0:C12->C13)+rank_Q(Q0:C13->C14)<=37085.",
+    "Modular elimination at prime 2147483647 gives rational rank lower bounds 22495 and 14590.",
+    "22495+14590=37085, so both rational rank lower bounds are equalities.",
+    "dim_Q H13=37085-22495-14590=0."
+  ],
+  "exact_rational_ranks": {
+    "12_to_13": 22495,
+    "13_to_14": 14590
+  },
+  "exact_stable_H13_dimension": 0,
+  "full_manifest": {
+    "file": "MANIFEST.json",
+    "sha256": "57aa5ff8318f7201c1554998cc8c3d2da768924c1027dab174e39d87e8fb2eda",
+    "bytes": 133926
+  },
+  "full_replay_archive": {
+    "file": "stable_complex_certificate.zip",
+    "sha256": "0799d81ae537c15cd814ee0fb90db1d74229d54fee6477b441effabce5c133ba",
+    "bytes": 13646536
+  },
+  "interface": {
+    "file": "INTERFACE.md",
+    "sha256": "28f89f1c4d1eb53211c593d5afdb63feefc59ae0ca29109bbe73310cf35f9253",
+    "bytes": 5316
+  }
+}

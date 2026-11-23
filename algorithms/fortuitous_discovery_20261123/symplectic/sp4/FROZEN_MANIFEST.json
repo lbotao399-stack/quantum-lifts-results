@@ -1,0 +1,15 @@
+{
+  "REPRODUCE.txt": "b88d487d4712d07515fa31374d7f88b3324a55ab0d1cddab1ca4756b46592d9f",
+  "exact_relations_sp4_L10.pkl": "9e131c3a01c2f7512e52a698391e625aa2d9b1e5f1ec1304dc264b6365d984f7",
+  "exact_relations_sp4_L11.pkl": "2b9a6e48fb9200064e2f26364f2c9774246c06430009f581bd734d7f39ad232d",
+  "formal_frontier.json": "5b7f111ab914a4c3a368fa8c170da0ea7d7e535c2ac804de14d3f0d78ce10bbf",
+  "paired_relation_basis.py": "4fa58d9c88e57e394480438d270067d9f294656cff8686c272735dbbda107f14",
+  "path_relation_completion.py": "6c99e573c7557f054b3ba750c0958aa86ef13ddd211dae0f919ac8bbdaab7762",
+  "pfaffian_relations.py": "aa3ca6d242b25a6b1c24228133cf744dd70df92440b837b144637b0b8ac453a6",
+  "relation_quotient.py": "8c926157d77b20335de3f6a239076840698c70c6e99de0f661ced8713d3b1df3",
+  "relation_rank_checks.json": "3a72576d20929187bfdafe6fe73b839a672ae9b278540bda2271a2e65dffd11d",
+  "replay_identities.py": "7071a391cd6427ddb916d85a624fbadd9af0877bab80fa5a5c53889b4993b226",
+  "sp4_discovery_certificate.json": "16dfaf6c307ea4902b9ae72ce75246aef8cf96c3da7bb020dedf7e4efff00058",
+  "sp4_new_fortuitous_operator.json.gz": "4eb865edcc3de1b9447bd67d272a670ad053d5f27d0171c7b6f1683ddb9ae254",
+  "target_snapshot_181.pkl": "e8378c196776792198c1e19343c317cdc0cb33cc4ab64f9f6501639f13900cab"
+}

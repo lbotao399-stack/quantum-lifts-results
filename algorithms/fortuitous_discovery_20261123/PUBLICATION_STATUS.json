@@ -1,0 +1,21 @@
+{
+  "status": "public_release_payload_authorized",
+  "repository": "lbotao399-stack/quantum-lifts-results",
+  "branch": "research/fortuitous-dual-discovery-20261123",
+  "directory": "algorithms/fortuitous_discovery_20261123",
+  "parent_commit": "990c8f91c0e6b2a89af749b026ea3f475cc4bb92",
+  "base_verified_tree": "9d2686f141229748bca40e8ec916b7e047f4ad18",
+  "release_file_count": 172,
+  "includes": [
+    "research source",
+    "derived data",
+    "exact certificates",
+    "pinned dependencies",
+    "included upstream source",
+    "enumeration addendum",
+    "stability proof"
+  ],
+  "explicit_publication_authorization_date": "2026-11-23",
+  "authorization_scope": "The user explicitly authorized public release of this complete reproduction package to the repository and branch above, and authorized subsequent similar releases.",
+  "verification_note": "The final commit and branch verification receipt is recorded outside this immutable payload to avoid a self-referential commit identifier."
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "field": "Q",
+  "classical_Q0_only": true,
+  "all_four_rational_witness_checks_passed": true,
+  "Sp4_full_exact_identity_recipes_rebuilt": 436,
+  "Sp5_full_exact_identity_recipes_rebuilt": 436,
+  "both_complete_source_identity_dimensions": 188,
+  "both_complete_target_identity_dimensions": 183,
+  "both_used_genuine_target_identity_subspaces": 181,
+  "SO15_integer_prime_case_rebuilds": 34,
+  "SO15_integer_residue_entries_rebuilt": 193800,
+  "SO15_exact_SO13_preimages_verified": [
+    44,
+    88
+  ],
+  "SO15_complete_SO13_terminal_frame_dimensions": [
+    45,
+    90
+  ],
+  "universal_auxiliary_identity_parameter_degree_bound": 3,
+  "universal_auxiliary_identity_unisolvent_nodes": 20,
+  "universal_auxiliary_identity_evaluation_determinant": 110592,
+  "closed_dual_actual_shape_checks": 19,
+  "closed_dual_actual_trace_count_checks": 50,
+  "portable_dependency_imports_use_included_pinned_modules": true,
+  "portable_full_rational_replay_exit_code": 0,
+  "no_full_symplectic_finite_census_claim": true,
+  "no_quantum_survival_claim": true
+}

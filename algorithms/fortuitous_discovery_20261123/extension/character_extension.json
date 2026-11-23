@@ -1,0 +1,124 @@
+{
+  "records": [
+    {
+      "rank": 6,
+      "native_weight": [
+        3,
+        3,
+        11,
+        0,
+        0
+      ],
+      "length": 14,
+      "stable": 107126,
+      "finite": 107059,
+      "identities": 67,
+      "elapsed_seconds": 4.7712919149998925
+    },
+    {
+      "rank": 6,
+      "native_weight": [
+        3,
+        3,
+        11,
+        0,
+        0
+      ],
+      "length": 15,
+      "stable": 100776,
+      "finite": 100588,
+      "identities": 188,
+      "elapsed_seconds": 11.793055981001089
+    },
+    {
+      "rank": 6,
+      "native_weight": [
+        3,
+        3,
+        11,
+        0,
+        0
+      ],
+      "length": 16,
+      "stable": 47346,
+      "finite": 47163,
+      "identities": 183,
+      "elapsed_seconds": 27.716363084000477
+    },
+    {
+      "rank": 7,
+      "native_weight": [
+        3,
+        3,
+        13,
+        0,
+        0
+      ],
+      "length": 16,
+      "stable": 265709,
+      "finite": 265642,
+      "identities": 67,
+      "elapsed_seconds": 29.98956444199939
+    },
+    {
+      "rank": 7,
+      "native_weight": [
+        3,
+        3,
+        13,
+        0,
+        0
+      ],
+      "length": 17,
+      "stable": 243989,
+      "finite": 243801,
+      "identities": 188,
+      "elapsed_seconds": 54.519676748001075
+    },
+    {
+      "rank": 7,
+      "native_weight": [
+        3,
+        3,
+        13,
+        0,
+        0
+      ],
+      "length": 18,
+      "stable": 113007,
+      "finite": 112824,
+      "identities": 183,
+      "elapsed_seconds": 98.70996600999933
+    },
+    {
+      "rank": 8,
+      "native_weight": [
+        3,
+        3,
+        15,
+        0,
+        0
+      ],
+      "length": 18,
+      "stable": 600578,
+      "finite": 600511,
+      "identities": 67,
+      "elapsed_seconds": 104.75760989199989
+    },
+    {
+      "rank": 8,
+      "native_weight": [
+        3,
+        3,
+        15,
+        0,
+        0
+      ],
+      "length": 19,
+      "stable": 541277,
+      "finite": 541089,
+      "identities": 188,
+      "elapsed_seconds": 200.916412483999
+    }
+  ]
+}

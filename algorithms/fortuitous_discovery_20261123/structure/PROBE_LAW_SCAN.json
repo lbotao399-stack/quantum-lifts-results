@@ -1,0 +1,592 @@
+{
+  "status": "finite exact experiment; no all-rank claim",
+  "records": [
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "orthogonal_colours": 7,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.ABC.BB.CC",
+          "target": "90",
+          "Q0_sources": [
+            "-45"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-1/2"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "ABC.ABC.ABC",
+          "target": "1440",
+          "Q0_sources": [
+            "-2160"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-1/2"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        5,
+        3,
+        3
+      ],
+      "orthogonal_colours": 9,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.ABC.BB.CC",
+          "target": "-630",
+          "Q0_sources": [
+            "255",
+            "135"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-17/42",
+            "-3/14"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.ABC.ABC.ABC",
+          "target": "-15120",
+          "Q0_sources": [
+            "18360",
+            "9720"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-17/42",
+            "-3/14"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        7,
+        3,
+        3
+      ],
+      "orthogonal_colours": 11,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.ABC.BB.CC",
+          "target": "5670",
+          "Q0_sources": [
+            "-1995",
+            "-1155"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-19/54",
+            "-11/54"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.ABC.ABC.ABC",
+          "target": "181440",
+          "Q0_sources": [
+            "-191520",
+            "-110880"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-19/54",
+            "-11/54"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        9,
+        3,
+        3
+      ],
+      "orthogonal_colours": 13,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.AA.ABC.BB.CC",
+          "target": "-62370",
+          "Q0_sources": [
+            "19845",
+            "12285"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-7/22",
+            "-13/66"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.AA.ABC.ABC.ABC",
+          "target": "-2494800",
+          "Q0_sources": [
+            "2381400",
+            "1474200"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-7/22",
+            "-13/66"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        11,
+        3,
+        3
+      ],
+      "orthogonal_colours": 15,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.AA.AA.ABC.BB.CC",
+          "target": "810810",
+          "Q0_sources": [
+            "-239085",
+            "-155925"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/78",
+            "-5/26"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.AA.AA.ABC.ABC.ABC",
+          "target": "38918880",
+          "Q0_sources": [
+            "-34428240",
+            "-22453200"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/78",
+            "-5/26"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        5,
+        5,
+        3
+      ],
+      "orthogonal_colours": 11,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.ABC.BB.BB.CC",
+          "target": "-3780",
+          "Q0_sources": [
+            "1140",
+            "180"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-19/63",
+            "-1/21"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.ABC.ABC.ABC.BB",
+          "target": "-151200",
+          "Q0_sources": [
+            "136800",
+            "21600"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-19/63",
+            "-1/21"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        7,
+        5,
+        3
+      ],
+      "orthogonal_colours": 13,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.ABC.BB.BB.CC",
+          "target": "34020",
+          "Q0_sources": [
+            "-8820",
+            "-4620",
+            "-1260"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-7/27",
+            "-11/81",
+            "-1/27"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.ABC.ABC.ABC.BB",
+          "target": "1814400",
+          "Q0_sources": [
+            "-1411200",
+            "-739200",
+            "-201600"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-7/27",
+            "-11/81",
+            "-1/27"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        9,
+        5,
+        3
+      ],
+      "orthogonal_colours": 15,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.AA.ABC.BB.BB.CC",
+          "target": "-374220",
+          "Q0_sources": [
+            "86940",
+            "49140",
+            "11340"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/99",
+            "-13/99",
+            "-1/33"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.AA.ABC.ABC.ABC.BB",
+          "target": "-24948000",
+          "Q0_sources": [
+            "17388000",
+            "9828000",
+            "2268000"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/99",
+            "-13/99",
+            "-1/33"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        7,
+        7,
+        3
+      ],
+      "orthogonal_colours": 15,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.ABC.BB.BB.BB.CC",
+          "target": "272160",
+          "Q0_sources": [
+            "-57960",
+            "-7560"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/108",
+            "-1/36"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.ABC.ABC.ABC.BB.BB",
+          "target": "20321280",
+          "Q0_sources": [
+            "-12983040",
+            "-1693440"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/108",
+            "-1/36"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "orthogonal_colours": 13,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.ABC.BB.BB.CC.CC",
+          "target": "4725",
+          "Q0_sources": [
+            "-945"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-1/5"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.ABC.ABC.ABC.BB.CC",
+          "target": "378000",
+          "Q0_sources": [
+            "-226800"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-1/5"
+          ]
+        },
+        {
+          "ABC_trace_factors": 5,
+          "word": "ABC.ABC.ABC.ABC.ABC",
+          "target": "1814400",
+          "Q0_sources": [
+            "-1814400"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-1/5"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        7,
+        5,
+        5
+      ],
+      "orthogonal_colours": 15,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.ABC.BB.BB.CC.CC",
+          "target": "-42525",
+          "Q0_sources": [
+            "7245",
+            "3465"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/135",
+            "-11/135"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.ABC.ABC.ABC.BB.CC",
+          "target": "-4536000",
+          "Q0_sources": [
+            "2318400",
+            "1108800"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/135",
+            "-11/135"
+          ]
+        },
+        {
+          "ABC_trace_factors": 5,
+          "word": "AA.ABC.ABC.ABC.ABC.ABC",
+          "target": "-32659200",
+          "Q0_sources": [
+            "27820800",
+            "13305600"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-23/135",
+            "-11/135"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        9,
+        5,
+        5
+      ],
+      "orthogonal_colours": 17,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.AA.ABC.BB.BB.CC.CC",
+          "target": "467775",
+          "Q0_sources": [
+            "-70875",
+            "-36855"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-5/33",
+            "-13/165"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.AA.ABC.ABC.ABC.BB.CC",
+          "target": "62370000",
+          "Q0_sources": [
+            "-28350000",
+            "-14742000"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-5/33",
+            "-13/165"
+          ]
+        },
+        {
+          "ABC_trace_factors": 5,
+          "word": "AA.AA.ABC.ABC.ABC.ABC.ABC",
+          "target": "598752000",
+          "Q0_sources": [
+            "-453600000",
+            "-235872000"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-5/33",
+            "-13/165"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        7,
+        7,
+        5
+      ],
+      "orthogonal_colours": 17,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.ABC.BB.BB.BB.CC.CC",
+          "target": "-340200",
+          "Q0_sources": [
+            "47250",
+            "9450"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-5/36",
+            "-1/36"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.ABC.ABC.ABC.BB.BB.CC",
+          "target": "-50803200",
+          "Q0_sources": [
+            "21168000",
+            "4233600"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-5/36",
+            "-1/36"
+          ]
+        },
+        {
+          "ABC_trace_factors": 5,
+          "word": "AA.ABC.ABC.ABC.ABC.ABC.BB",
+          "target": "-609638400",
+          "Q0_sources": [
+            "423360000",
+            "84672000"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-5/36",
+            "-1/36"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    },
+    {
+      "shape": [
+        7,
+        7,
+        7
+      ],
+      "orthogonal_colours": 19,
+      "rows": [
+        {
+          "ABC_trace_factors": 1,
+          "word": "AA.AA.AA.ABC.BB.BB.BB.CC.CC.CC",
+          "target": "595350",
+          "Q0_sources": [
+            "-127575/2"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-3/28"
+          ]
+        },
+        {
+          "ABC_trace_factors": 3,
+          "word": "AA.AA.ABC.ABC.ABC.BB.BB.CC.CC",
+          "target": "133358400",
+          "Q0_sources": [
+            "-42865200"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-3/28"
+          ]
+        },
+        {
+          "ABC_trace_factors": 5,
+          "word": "AA.ABC.ABC.ABC.ABC.ABC.BB.CC",
+          "target": "3200601600",
+          "Q0_sources": [
+            "-1714608000"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-3/28"
+          ]
+        },
+        {
+          "ABC_trace_factors": 7,
+          "word": "ABC.ABC.ABC.ABC.ABC.ABC.ABC",
+          "target": "7315660800",
+          "Q0_sources": [
+            "-5486745600"
+          ],
+          "Q0_divided_by_ABC_count_and_target": [
+            "-3/28"
+          ]
+        }
+      ],
+      "observed_identity_exact": true
+    }
+  ],
+  "seconds": 0.9430264790007641
+}

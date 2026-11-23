@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "group": "Sp(4)",
+  "native_weight": [
+    3,
+    3,
+    7,
+    0,
+    0
+  ],
+  "exact_target_identity_dimension": 183,
+  "Q0_rank": 45,
+  "stable_abelianization_rank": 24,
+  "combined_rank": 61,
+  "integer_minor_determinant": "19660266632258300811874950676834221032552013803846369280",
+  "relation_cohomology_dimension": 17,
+  "stable_abelianization_rank_on_relation_cohomology": 16,
+  "fortuitous_dimension": 1,
+  "full_finite_sector_cohomology_dimension": 1,
+  "full_finite_dimension_uses_previously_certified_stable_centre_acyclicity": true,
+  "native_letter_Q0_abelianization_checks": 127,
+  "baseline_witness_replayed": false,
+  "arithmetic": "Q and exact integer determinants",
+  "classical_Q0_only": true,
+  "elapsed_seconds": 8.32892891099982
+}

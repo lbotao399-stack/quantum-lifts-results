@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "field": "Q",
+  "universal_identity": "det(d/dX) [D^c AA^a ZZ^b] = c(c+2b+1)(c+2b+2a+2) D^(c-1) AA^a ZZ^b",
+  "parameter_degree_bound": 3,
+  "parameter_nodes": [
+    {
+      "a": 0,
+      "b": 0,
+      "c": 1,
+      "factor": 6,
+      "exact_polynomial_terms": 6
+    },
+    {
+      "a": 0,
+      "b": 0,
+      "c": 2,
+      "factor": 24,
+      "exact_polynomial_terms": 21
+    },
+    {
+      "a": 0,
+      "b": 0,
+      "c": 3,
+      "factor": 60,
+      "exact_polynomial_terms": 54
+    },
+    {
+      "a": 0,
+      "b": 0,
+      "c": 4,
+      "factor": 120,
+      "exact_polynomial_terms": 120
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "c": 1,
+      "factor": 20,
+      "exact_polynomial_terms": 34
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "c": 2,
+      "factor": 60,
+      "exact_polynomial_terms": 104
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "c": 3,
+      "factor": 126,
+      "exact_polynomial_terms": 226
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "c": 1,
+      "factor": 42,
+      "exact_polynomial_terms": 98
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "c": 2,
+      "factor": 112,
+      "exact_polynomial_terms": 285
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "c": 1,
+      "factor": 72,
+      "exact_polynomial_terms": 224
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "c": 1,
+      "factor": 10,
+      "exact_polynomial_terms": 12
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "c": 2,
+      "factor": 36,
+      "exact_polynomial_terms": 42
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "c": 3,
+      "factor": 84,
+      "exact_polynomial_terms": 108
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "c": 1,
+      "factor": 28,
+      "exact_polynomial_terms": 60
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "c": 2,
+      "factor": 80,
+      "exact_polynomial_terms": 179
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "c": 1,
+      "factor": 54,
+      "exact_polynomial_terms": 156
+    },
+    {
+      "a": 2,
+      "b": 0,
+      "c": 1,
+      "factor": 14,
+      "exact_polynomial_terms": 18
+    },
+    {
+      "a": 2,
+      "b": 0,
+      "c": 2,
+      "factor": 48,
+      "exact_polynomial_terms": 63
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "c": 1,
+      "factor": 36,
+      "exact_polynomial_terms": 86
+    },
+    {
+      "a": 3,
+      "b": 0,
+      "c": 1,
+      "factor": 18,
+      "exact_polynomial_terms": 24
+    }
+  ],
+  "parameter_evaluation_determinant": "110592",
+  "why_finite_nodes_prove_identity": "Repeated Leibniz expansion after division by D^(c-1) AA^a ZZ^b has total degree at most3 in a,b,c over Q(X). The20-node evaluation matrix is invertible overQ. All20 values vanish as exact full polynomials in X. Thus all rational-function coefficients vanish identically.",
+  "divergence_parameter_degree_bound": 1,
+  "divergence_checks": [
+    {
+      "source": 1,
+      "a": 0,
+      "b": 0,
+      "c": 1,
+      "factor": 9
+    },
+    {
+      "source": 1,
+      "a": 1,
+      "b": 0,
+      "c": 1,
+      "factor": 11
+    },
+    {
+      "source": 1,
+      "a": 0,
+      "b": 1,
+      "c": 1,
+      "factor": 13
+    },
+    {
+      "source": 1,
+      "a": 0,
+      "b": 0,
+      "c": 2,
+      "factor": 12
+    },
+    {
+      "source": 2,
+      "a": 1,
+      "b": 0,
+      "c": 1,
+      "factor": 7
+    },
+    {
+      "source": 2,
+      "a": 2,
+      "b": 0,
+      "c": 1,
+      "factor": 9
+    },
+    {
+      "source": 2,
+      "a": 1,
+      "b": 1,
+      "c": 1,
+      "factor": 9
+    },
+    {
+      "source": 2,
+      "a": 1,
+      "b": 0,
+      "c": 2,
+      "factor": 8
+    },
+    {
+      "source": 3,
+      "a": 0,
+      "b": 1,
+      "c": 1,
+      "factor": 1
+    },
+    {
+      "source": 3,
+      "a": 1,
+      "b": 1,
+      "c": 1,
+      "factor": 1
+    },
+    {
+      "source": 3,
+      "a": 0,
+      "b": 2,
+      "c": 1,
+      "factor": 1
+    },
+    {
+      "source": 3,
+      "a": 0,
+      "b": 1,
+      "c": 2,
+      "factor": 2
+    }
+  ],
+  "divergence_unisolvence": "For each of the3sources, the4 shifted affine-simplex nodes have determinant1.",
+  "seconds": 0.042670364997320576
+}

@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "path": "discovery_scripts/abelian_obstruction.py",
+      "original_sha256": "e71a740c3e29f5d935028ef9c471b4f69b2a16533814055651327883998a35f1",
+      "original_path": "/workspace/scratch/e0e12cf25856/fortuity_rank_extension_20261123/abelian_obstruction.py"
+    },
+    {
+      "path": "discovery_scripts/character_extension.py",
+      "original_sha256": "547af740260264dc5ed67cbb0173b916642541a33438d45d77c529d396de561a",
+      "original_path": "/workspace/scratch/e0e12cf25856/fortuity_rank_extension_20261123/character_extension.py"
+    },
+    {
+      "path": "discovery_scripts/complete_target.py",
+      "original_sha256": "3777510b09f3b4d2fcfa169bcf535706504c61c05cd6be33c273d19f5d60865f",
+      "original_path": "/workspace/scratch/e0e12cf25856/fortuity_rank_extension_20261123/complete_target.py"
+    },
+    {
+      "path": "discovery_scripts/relation_complex.py",
+      "original_sha256": "b0eceef4e10a8c3c5f34bbcc08e91157983a6620b00fad010b8e65f2b8a73d89",
+      "original_path": "/workspace/scratch/e0e12cf25856/fortuity_rank_extension_20261123/relation_complex.py"
+    },
+    {
+      "path": "discovery_scripts/run_full_quotient.py",
+      "original_sha256": "abdca00318b64c8ca4556d9d96aadc5cf782037c2994d09ece11ad3b56f6b789",
+      "original_path": "/workspace/scratch/e0e12cf25856/fortuity_rank_extension_20261123/run_full_quotient.py"
+    },
+    {
+      "path": "discovery_scripts/transport_completion.py",
+      "original_sha256": "fa2bc776f5918ed5b6cec9053b2db5911dd928a400814d08f4f7c96cecdccbf0",
+      "original_path": "/workspace/scratch/e0e12cf25856/fortuity_rank_extension_20261123/transport_completion.py"
+    }
+  ],
+  "note": "Historical discovery scripts use their recorded workspace layout. verify_extension.py is the portable reproduction entry point."
+}

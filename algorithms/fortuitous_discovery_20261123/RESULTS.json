@@ -1,0 +1,135 @@
+{
+  "arithmetic": "Q",
+  "physical_scope": "classical Q0 fortuitous cohomology; quantum corrections uncomputed",
+  "normalization": "unchanged pinned repository conventions",
+  "cases": [
+    {
+      "group": "Sp4=USp8",
+      "paper_weight": [
+        7,
+        0,
+        0,
+        3,
+        3
+      ],
+      "native_weight": [
+        3,
+        3,
+        7,
+        0,
+        0
+      ],
+      "length": 11,
+      "j": 32,
+      "rational_fortuitous_class_lower_bound": 1,
+      "complete_finite_census": true,
+      "cochain_terms": 17430,
+      "defect_terms": 15556,
+      "least_trace_coefficient_denominator": 360,
+      "dual_trace_probes": 103,
+      "complete_source_relation_dimension": 188,
+      "source_relation_image_rank": 121,
+      "target_identity_subspace": 181,
+      "complete_target_relation_dimension": 183,
+      "exact_fortuitous_quotient_dimension": 1,
+      "exact_full_sector_cohomology_dimension": 1,
+      "complete_target_identity_basis_now_available": true,
+      "proof_addendum": "extension/README.md"
+    },
+    {
+      "group": "Sp5=USp10",
+      "paper_weight": [
+        9,
+        0,
+        0,
+        3,
+        3
+      ],
+      "native_weight": [
+        3,
+        3,
+        9,
+        0,
+        0
+      ],
+      "length": 13,
+      "j": 36,
+      "rational_fortuitous_class_lower_bound": 1,
+      "complete_finite_census": true,
+      "cochain_terms": 48231,
+      "defect_terms": 42480,
+      "least_trace_coefficient_denominator": 288,
+      "formal_highest_weight_reconstruction_denominator": 576,
+      "dual_trace_probes": 40,
+      "complete_source_relation_dimension": 188,
+      "source_relation_image_rank": 121,
+      "target_identity_subspace": 181,
+      "complete_target_relation_dimension": 183,
+      "exact_fortuitous_quotient_dimension": 1,
+      "exact_full_sector_cohomology_dimension": 1,
+      "complete_target_identity_basis_now_available": true,
+      "proof_addendum": "extension/README.md"
+    },
+    {
+      "group": "SO15",
+      "paper_weight": [
+        7,
+        7,
+        3,
+        0,
+        0
+      ],
+      "length": 16,
+      "j": 34,
+      "SU3_Dynkin_labels": [
+        0,
+        4
+      ],
+      "SU3_dimension": 15,
+      "exact_fortuitous_quotient_dimension": 1,
+      "complete_source_relation_dimension": 2,
+      "complete_target_relation_dimension": 3,
+      "source_relation_image_rank": 2,
+      "dual_trace_probes": 2,
+      "odd_orthogonal_fortuitous_support": [
+        15
+      ],
+      "SO13_exact_preimage": true
+    },
+    {
+      "group": "SO15",
+      "paper_weight": [
+        9,
+        5,
+        3,
+        0,
+        0
+      ],
+      "length": 16,
+      "j": 34,
+      "SU3_Dynkin_labels": [
+        4,
+        2
+      ],
+      "SU3_dimension": 60,
+      "exact_fortuitous_quotient_dimension": 1,
+      "complete_source_relation_dimension": 3,
+      "complete_target_relation_dimension": 4,
+      "source_relation_image_rank": 3,
+      "dual_trace_probes": 2,
+      "odd_orthogonal_fortuitous_support": [
+        15
+      ],
+      "SO13_exact_preimage": true
+    }
+  ],
+  "closed_scalar_dual": {
+    "scope": "all odd lambda1>=lambda2>=lambda3>=3, SO defining dimension sum(lambda)-2; existence, not entire census",
+    "parameter_interpolation_determinant": 110592,
+    "actual_highest_weights_checked": 19,
+    "actual_odd_trace_counts_checked": 50
+  },
+  "novelty_scope": "relative to inspected pinned repositories/manuscript; no claim of unrelated new families, complete symplectic ring primitivity, or exhaustive unpublished-work survey",
+  "enumeration_addendum": "extension/README.md",
+  "first_relation_stability": "dimension67 in the specified first relation degree for every symplectic rank>=4; no all-rank cohomology claim"
+}

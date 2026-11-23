@@ -1,0 +1,761 @@
+{
+  "passed": true,
+  "arithmetic": "Q",
+  "physical_normalization": "unchanged native Q0 and auxiliary H,E,F conventions",
+  "records": [
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "SO_colours": 7,
+      "length": 8,
+      "j": 18,
+      "ordered_probe_words": [
+        "AA.ABC.BB.CC",
+        "ABC.ABC.ABC"
+      ],
+      "two_probe_matrix": [
+        [
+          "-45",
+          "90"
+        ],
+        [
+          "-2160",
+          "1440"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/60",
+        "-1/2880"
+      ],
+      "pairings": [
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        5,
+        3,
+        3
+      ],
+      "SO_colours": 9,
+      "length": 10,
+      "j": 22,
+      "ordered_probe_words": [
+        "AA.AA.ABC.BB.CC",
+        "AA.ABC.ABC.ABC"
+      ],
+      "two_probe_matrix": [
+        [
+          "255",
+          "135",
+          "-630"
+        ],
+        [
+          "18360",
+          "9720",
+          "-15120"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/420",
+        "1/30240"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        7,
+        3,
+        3
+      ],
+      "SO_colours": 11,
+      "length": 12,
+      "j": 26,
+      "ordered_probe_words": [
+        "AA.AA.AA.ABC.BB.CC",
+        "AA.AA.ABC.ABC.ABC"
+      ],
+      "two_probe_matrix": [
+        [
+          "-1995",
+          "-1155",
+          "5670"
+        ],
+        [
+          "-191520",
+          "-110880",
+          "181440"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/3780",
+        "-1/362880"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        9,
+        3,
+        3
+      ],
+      "SO_colours": 13,
+      "length": 14,
+      "j": 30,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.ABC.BB.CC",
+        "AA.AA.AA.ABC.ABC.ABC"
+      ],
+      "two_probe_matrix": [
+        [
+          "19845",
+          "12285",
+          "-62370"
+        ],
+        [
+          "2381400",
+          "1474200",
+          "-2494800"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/41580",
+        "1/4989600"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        11,
+        3,
+        3
+      ],
+      "SO_colours": 15,
+      "length": 16,
+      "j": 34,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.AA.ABC.BB.CC",
+        "AA.AA.AA.AA.ABC.ABC.ABC"
+      ],
+      "two_probe_matrix": [
+        [
+          "-239085",
+          "-155925",
+          "810810"
+        ],
+        [
+          "-34428240",
+          "-22453200",
+          "38918880"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/540540",
+        "-1/77837760"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        5,
+        5,
+        3
+      ],
+      "SO_colours": 11,
+      "length": 12,
+      "j": 26,
+      "ordered_probe_words": [
+        "AA.AA.ABC.BB.BB.CC",
+        "AA.ABC.ABC.ABC.BB"
+      ],
+      "two_probe_matrix": [
+        [
+          "1140",
+          "180",
+          "-3780"
+        ],
+        [
+          "136800",
+          "21600",
+          "-151200"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/2520",
+        "1/302400"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        7,
+        5,
+        3
+      ],
+      "SO_colours": 13,
+      "length": 14,
+      "j": 30,
+      "ordered_probe_words": [
+        "AA.AA.AA.ABC.BB.BB.CC",
+        "AA.AA.ABC.ABC.ABC.BB"
+      ],
+      "two_probe_matrix": [
+        [
+          "-8820",
+          "-4620",
+          "-1260",
+          "34020"
+        ],
+        [
+          "-1411200",
+          "-739200",
+          "-201600",
+          "1814400"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/22680",
+        "-1/3628800"
+      ],
+      "pairings": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        9,
+        5,
+        3
+      ],
+      "SO_colours": 15,
+      "length": 16,
+      "j": 34,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.ABC.BB.BB.CC",
+        "AA.AA.AA.ABC.ABC.ABC.BB"
+      ],
+      "two_probe_matrix": [
+        [
+          "86940",
+          "49140",
+          "11340",
+          "-374220"
+        ],
+        [
+          "17388000",
+          "9828000",
+          "2268000",
+          "-24948000"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/249480",
+        "1/49896000"
+      ],
+      "pairings": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        7,
+        7,
+        3
+      ],
+      "SO_colours": 15,
+      "length": 16,
+      "j": 34,
+      "ordered_probe_words": [
+        "AA.AA.AA.ABC.BB.BB.BB.CC",
+        "AA.AA.ABC.ABC.ABC.BB.BB"
+      ],
+      "two_probe_matrix": [
+        [
+          "-57960",
+          "-7560",
+          "272160"
+        ],
+        [
+          "-12983040",
+          "-1693440",
+          "20321280"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/181440",
+        "-1/40642560"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "SO_colours": 13,
+      "length": 14,
+      "j": 30,
+      "ordered_probe_words": [
+        "AA.AA.ABC.BB.BB.CC.CC",
+        "AA.ABC.ABC.ABC.BB.CC"
+      ],
+      "two_probe_matrix": [
+        [
+          "-945",
+          "4725"
+        ],
+        [
+          "-226800",
+          "378000"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/3150",
+        "-1/756000"
+      ],
+      "pairings": [
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "shape": [
+        7,
+        5,
+        5
+      ],
+      "SO_colours": 15,
+      "length": 16,
+      "j": 34,
+      "ordered_probe_words": [
+        "AA.AA.AA.ABC.BB.BB.CC.CC",
+        "AA.AA.ABC.ABC.ABC.BB.CC"
+      ],
+      "two_probe_matrix": [
+        [
+          "7245",
+          "3465",
+          "-42525"
+        ],
+        [
+          "2318400",
+          "1108800",
+          "-4536000"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/28350",
+        "1/9072000"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "shape": [
+        9,
+        5,
+        5
+      ],
+      "SO_colours": 17,
+      "length": 18,
+      "j": 38,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.ABC.BB.BB.CC.CC",
+        "AA.AA.AA.ABC.ABC.ABC.BB.CC"
+      ],
+      "two_probe_matrix": [
+        [
+          "-70875",
+          "-36855",
+          "467775"
+        ],
+        [
+          "-28350000",
+          "-14742000",
+          "62370000"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/311850",
+        "-1/124740000"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "shape": [
+        7,
+        7,
+        5
+      ],
+      "SO_colours": 17,
+      "length": 18,
+      "j": 38,
+      "ordered_probe_words": [
+        "AA.AA.AA.ABC.BB.BB.BB.CC.CC",
+        "AA.AA.ABC.ABC.ABC.BB.BB.CC"
+      ],
+      "two_probe_matrix": [
+        [
+          "47250",
+          "9450",
+          "-340200"
+        ],
+        [
+          "21168000",
+          "4233600",
+          "-50803200"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/226800",
+        "1/101606400"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "shape": [
+        7,
+        7,
+        7
+      ],
+      "SO_colours": 19,
+      "length": 20,
+      "j": 42,
+      "ordered_probe_words": [
+        "AA.AA.AA.ABC.BB.BB.BB.CC.CC.CC",
+        "AA.AA.ABC.ABC.ABC.BB.BB.CC.CC"
+      ],
+      "two_probe_matrix": [
+        [
+          "-127575/2",
+          "595350"
+        ],
+        [
+          "-42865200",
+          "133358400"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/396900",
+        "-1/266716800"
+      ],
+      "pairings": [
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "shape": [
+        9,
+        9,
+        3
+      ],
+      "SO_colours": 19,
+      "length": 20,
+      "j": 42,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.ABC.BB.BB.BB.BB.CC",
+        "AA.AA.AA.ABC.ABC.ABC.BB.BB.BB"
+      ],
+      "two_probe_matrix": [
+        [
+          "4898880",
+          "544320",
+          "-29937600"
+        ],
+        [
+          "1763596800",
+          "195955200",
+          "-3592512000"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/19958400",
+        "1/7185024000"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "shape": [
+        11,
+        7,
+        5
+      ],
+      "SO_colours": 21,
+      "length": 22,
+      "j": 46,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.AA.ABC.BB.BB.BB.CC.CC",
+        "AA.AA.AA.AA.ABC.ABC.ABC.BB.BB.CC"
+      ],
+      "two_probe_matrix": [
+        [
+          "5426190",
+          "2806650",
+          "935550",
+          "-48648600"
+        ],
+        [
+          "3646399680",
+          "1886068800",
+          "628689600",
+          "-10897286400"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/32432400",
+        "1/21794572800"
+      ],
+      "pairings": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "shape": [
+        9,
+        7,
+        7
+      ],
+      "SO_colours": 21,
+      "length": 22,
+      "j": 46,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.ABC.BB.BB.BB.CC.CC.CC",
+        "AA.AA.AA.ABC.ABC.ABC.BB.BB.CC.CC"
+      ],
+      "two_probe_matrix": [
+        [
+          "1233225/2",
+          "552825/2",
+          "-6548850"
+        ],
+        [
+          "517954500",
+          "232186500",
+          "-1833678000"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/4365900",
+        "1/3667356000"
+      ],
+      "pairings": [
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "shape": [
+        9,
+        9,
+        9
+      ],
+      "SO_colours": 25,
+      "length": 26,
+      "j": 54,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.ABC.BB.BB.BB.BB.CC.CC.CC.CC",
+        "AA.AA.AA.ABC.ABC.ABC.BB.BB.BB.CC.CC.CC"
+      ],
+      "two_probe_matrix": [
+        [
+          "-9823275",
+          "147349125"
+        ],
+        [
+          "-14145516000",
+          "70727580000"
+        ]
+      ],
+      "dual_coefficients": [
+        "1/98232750",
+        "-1/141455160000"
+      ],
+      "pairings": [
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "shape": [
+        13,
+        5,
+        3
+      ],
+      "SO_colours": 19,
+      "length": 20,
+      "j": 42,
+      "ordered_probe_words": [
+        "AA.AA.AA.AA.AA.AA.ABC.BB.BB.CC",
+        "AA.AA.AA.AA.AA.ABC.ABC.ABC.BB"
+      ],
+      "two_probe_matrix": [
+        [
+          "14594580",
+          "9189180",
+          "1621620",
+          "-72972900"
+        ],
+        [
+          "4086482400",
+          "2572970400",
+          "454053600",
+          "-6810804000"
+        ]
+      ],
+      "dual_coefficients": [
+        "-1/48648600",
+        "1/13621608000"
+      ],
+      "pairings": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_coefficient_checks_at_ABC_trace_counts": [
+        1,
+        3
+      ]
+    }
+  ],
+  "seconds": 3.3426265890011564
+}

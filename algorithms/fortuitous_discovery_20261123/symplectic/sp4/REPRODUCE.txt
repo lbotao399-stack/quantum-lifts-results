@@ -1,0 +1,36 @@
+Frozen Sp(4) exact identity and rational-class certificate
+
+Dependencies: Python 3, python-flint, NumPy, SciPy; pinned native trace code
+algorithms/dual_singlets_20261118 at source revision9a554a6d and its existing
+algorithms/su3_independent_prime_20261118/runtime/work/sp3-native.nosync runtime.
+All letter coefficients use the original repository divided-power convention.
+
+Exact identity recipe replay, character completeness, and independence:
+OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/workspace/scratch/e0e12cf25856/quantum_lifts_frontier_work/su3_second/deps python /workspace/scratch/e0e12cf25856/fortuity_discovery_20261123/jets/frozen_sp4/replay_identities.py
+
+For another checkout, set N4_DUAL_SOURCE, N4_TRACE_RUNTIME and
+N4_WORKSPACE_ROOT explicitly before invoking the same Python script.
+
+The frozen pkl files contain exact integer polynomials and their full recipes.
+The recipe verifier reconstructs all67 source,188 centre, and181 target
+identities; it does not infer exact polynomial vanishing from random samples.
+The character deficits are67,188,183 respectively, so the complete centre
+identity space is certified. The final two target identities are unnecessary
+for the positive existence certificate.
+
+Exact cochain and nonboundary proof data are in
+sp4_new_fortuitous_operator.json.gz and sp4_discovery_certificate.json.
+The cochain has17430 rational trace terms and common coefficient denominator360.
+Its exact Q0 image has15556 terms and is the displayed rational combination
+of the181 proved identities. The dual annihilates Q0 of all188 complete centre
+identities and pairs to1 with this image, at prime2147483647. The complete
+centre image has exact rational rank121: the preceding relation image has
+rank67, Q0 squared is zero, and188−67=121, attained by a nonzero minor.
+The augmented image has a nonzero122 minor, determinant306778697 modulo2147483647.
+The stable complex at the source has11627−6940−4687=0 cohomology.
+Thus at least one rational finite-colour class is fortuitous.
+
+Stable Q0 source rows and maps, which are reproducible from the pinned code,
+are checkpointed one directory above as formal_337_L10.pkl,formal_337_L11.pkl,
+q_337_L10.pkl,q_337_L11.pkl. Their generation/rank entry point is formal_frontier.py;
+it uses the complete native formal highest-weight spaces and actual Q0.

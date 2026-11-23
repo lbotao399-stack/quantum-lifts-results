@@ -1,0 +1,70 @@
+{
+  "README.md": {
+    "source": "DISCOVERY_README.md",
+    "sha256": "d56d3241b5bb7a4903ceaa3c3bb78c2b2ea9cccaecde914e4107c4201f5f7c2e"
+  },
+  "AUXILIARY_CONVENTIONS.md": {
+    "sha256": "b73ac4f8bfd333367e8a7d0e2ab46dd50853c94d9250980fcf0f8f499d301ccc",
+    "bytes": 7096
+  },
+  "RANK_BIRTH_PROOF.md": {
+    "sha256": "4e08826040d58fecfc8a8970dfcb648d2cd5a86dd2f683e67c3c46ab23934524",
+    "bytes": 6474
+  },
+  "pfaffian_scalar_candidates.py": {
+    "sha256": "188db29520f48334abd4ca93c4e850272c9b29410ec368f59ca0ab242b9d4b77",
+    "bytes": 10166
+  },
+  "so13_character_certificate.py": {
+    "sha256": "8d01e9d0e10498c174cbfac4612cd5656c74e44cbd100df4210f21625aa60977",
+    "bytes": 3649
+  },
+  "so13_exact_certificate.py": {
+    "sha256": "ab8a2ca584254c4cfc1984662748c62bdd53c2239e0429bc6e0a757c24ed6421",
+    "bytes": 9409
+  },
+  "minimal_scalar_certificates.py": {
+    "sha256": "c761d8dd050b84f578a436670184dc1e6c0f2b5365f01c303ed81a9d99519408",
+    "bytes": 7970
+  },
+  "verify_rank_birth.py": {
+    "sha256": "de1cca15ea928753d588213537c40ced6fe18f12887880a0e03314b4db8b50ea",
+    "bytes": 8466
+  },
+  "lower_rank_projection_probe.cpp": {
+    "sha256": "fd9e717aecd502c783e1938a1b0abef759f1ac7d279f88ccf0be8bd437c6e408",
+    "bytes": 19751
+  },
+  "SO15_RANK_BIRTH_CERTIFICATES.json": {
+    "sha256": "d8852e7a31430d8f78405413fc66d44481606797e5a0dbd0a76e3540f3a89b2b",
+    "bytes": 4745
+  },
+  "SO13_773_EXACT_BOUNDARY.json": {
+    "sha256": "c9a81a9489b17f23824f2bc713f942f35ba9d7119693b014f7a6497cf2201b23",
+    "bytes": 61108
+  },
+  "SO13_953_EXACT_BOUNDARY.json": {
+    "sha256": "d29fa35bff7d9f3a949cce76127d875ae27a7614484c1e68fd85d8a3908321f0",
+    "bytes": 209012
+  },
+  "RAW_TO_EXPLICIT_PFAFFIAN.json": {
+    "sha256": "265218d10605dc701be2a5babab7fa3678239a76b6d586527e4f69ed80888419",
+    "bytes": 1008
+  },
+  "RANK_BIRTH_VERIFIED.json": {
+    "sha256": "6fe1e6b7f5a37aef978b18a5475197d05f0c250d278adb13d4a81b3527c1418a",
+    "bytes": 7267
+  },
+  "lower773_probe_expansions.dat": {
+    "sha256": "0b4039b8e5592a19acd2a57e2ffde0017e5f72c10808ddf8dd4c1dce0286860b",
+    "bytes": 18765
+  },
+  "lower953_probe_expansions.dat": {
+    "sha256": "974325696165c3379dc87612027cffcee6b4248d40c1eb1690663987c0cb17a4",
+    "bytes": 5641
+  },
+  "NATIVE_CONVENTIONS.json": {
+    "sha256": "11de89af98bf4a698278b1e414ef86c00a5d49ec5f0a6d0d17a8f30e634ebbe7",
+    "bytes": 2405
+  }
+}

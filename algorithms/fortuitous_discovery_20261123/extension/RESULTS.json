@@ -1,0 +1,83 @@
+{
+  "arithmetic": "Q",
+  "classical_Q0_only": true,
+  "normalization": "unchanged parent repository conventions",
+  "cases": [
+    {
+      "group": "Sp(4)",
+      "paper_weight": [
+        7,
+        0,
+        0,
+        3,
+        3
+      ],
+      "length": 11,
+      "j": 32,
+      "exact_fortuitous_dimension": 1,
+      "exact_full_sector_cohomology_dimension": 1,
+      "target_identity_dimension": 183,
+      "source_identity_image_rank": 121,
+      "target_Q0_rank": 45,
+      "stable_abelianization_rank": 24,
+      "combined_rank": 61,
+      "relation_cohomology_dimension": 17,
+      "stable_abelianization_rank_on_relation_cohomology": 16,
+      "integer_minor_determinant": "19660266632258300811874950676834221032552013803846369280",
+      "integer_minor_factorization": {
+        "sign": 1,
+        "factors": [
+          [
+            2,
+            156
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "group": "Sp(5)",
+      "paper_weight": [
+        9,
+        0,
+        0,
+        3,
+        3
+      ],
+      "length": 13,
+      "j": 36,
+      "exact_fortuitous_dimension": 1,
+      "exact_full_sector_cohomology_dimension": 1,
+      "target_identity_dimension": 183,
+      "source_identity_image_rank": 121,
+      "target_Q0_rank": 45,
+      "stable_abelianization_rank": 24,
+      "combined_rank": 61,
+      "relation_cohomology_dimension": 17,
+      "stable_abelianization_rank_on_relation_cohomology": 16,
+      "integer_minor_determinant": "-79188731731498164979739428589463199233557397504",
+      "integer_minor_factorization": {
+        "sign": -1,
+        "factors": [
+          [
+            2,
+            113
+          ],
+          [
+            3,
+            27
+          ]
+        ]
+      }
+    }
+  ],
+  "new_ranks_6_and_7": "characters only; no cohomology class certified",
+  "all_rank_stability_theorem": false
+}

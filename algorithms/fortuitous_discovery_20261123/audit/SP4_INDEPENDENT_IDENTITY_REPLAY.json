@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "length": 10,
+      "identities": 67,
+      "exact_recipes_verified": 67,
+      "highest_weight_verified": 67,
+      "independent_modulo": 1000003,
+      "file_sha256": "9e131c3a01c2f7512e52a698391e625aa2d9b1e5f1ec1304dc264b6365d984f7"
+    },
+    {
+      "length": 11,
+      "identities": 188,
+      "exact_recipes_verified": 188,
+      "highest_weight_verified": 188,
+      "independent_modulo": 1000003,
+      "file_sha256": "2b9a6e48fb9200064e2f26364f2c9774246c06430009f581bd734d7f39ad232d"
+    },
+    {
+      "length": 12,
+      "identities": 181,
+      "exact_recipes_verified": 181,
+      "highest_weight_verified": 181,
+      "independent_modulo": 1000003,
+      "file_sha256": "e8378c196776792198c1e19343c317cdc0cb33cc4ab64f9f6501639f13900cab"
+    }
+  ],
+  "exact_character_receipts": {
+    "10": {
+      "stable": 11419,
+      "finite": 11352,
+      "identities": 67
+    },
+    "11": {
+      "stable": 11627,
+      "finite": 11439,
+      "identities": 188
+    },
+    "12": {
+      "stable": 5699,
+      "finite": 5516,
+      "identities": 183
+    }
+  },
+  "complete_source_identity_space": true,
+  "target_subspace_is_genuine_but_partial": true,
+  "seconds": 372.8282787619992
+}

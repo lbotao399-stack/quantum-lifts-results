@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "pinned_source_hashes_verified": 48,
+  "original_workspace_imports": []
+}
+PROBE 15 (7, 7, 3) AA.AA.AA.ABC.BB.BB.BB.CC ['-57960', '-7560', '272160']
+PROBE 15 (7, 7, 3) AA.AA.ABC.ABC.ABC.BB.BB ['-12983040', '-1693440', '20321280']
+PROBE 15 (7, 7, 3) AACBBC.AB.AB.AB.ABABC ['32336640', '2419200', '-52254720']
+PROBE 15 (9, 5, 3) AA.AA.AA.AA.ABC.BB.BB.CC ['86940', '49140', '11340', '-374220']
+PROBE 15 (9, 5, 3) AA.AA.AA.ABC.ABC.ABC.BB ['17388000', '9828000', '2268000', '-24948000']
+PROBE 15 (9, 5, 3) AA.AAAB.AB.AB.ABBCC.AC ['1179360', '997920', '-272160', '0']
+PROBE 15 (9, 5, 3) AA.AA.AABAAC.ABC.BB.BC ['-19051200', '-4536000', '-1088640', '35925120']
+{
+  "passed": true,
+  "SO15_quotients": [
+    1,
+    1
+  ],
+  "SO13_terminal_dimensions": [
+    45,
+    90
+  ],
+  "SO13_raw_to_explicit_ratios": [
+    "-4/3969",
+    "256/1091475"
+  ],
+  "full_lower_rebuild": {
+    "passed": true,
+    "prime_case_replays": 34,
+    "residue_entries_checked": 193800,
+    "proof": "Integer integrality and the a priori 2^256 bound in RANK_BIRTH_PROOF.md, together with CRT modulus>2^257, certify every rebuilt integer.",
+    "seconds": 11.29882200800057
+  },
+  "seconds": 15.798682578999433
+}
+{
+  "passed": true,
+  "field": "Q",
+  "universal_identity": "det(d/dX) [D^c AA^a ZZ^b] = c(c+2b+1)(c+2b+2a+2) D^(c-1) AA^a ZZ^b",
+  "parameter_degree_bound": 3,
+  "parameter_evaluation_determinant": "110592",
+  "why_finite_nodes_prove_identity": "Repeated Leibniz expansion after division by D^(c-1) AA^a ZZ^b has total degree at most3 in a,b,c over Q(X). The20-node evaluation matrix is invertible overQ. All20 values vanish as exact full polynomials in X. Thus all rational-function coefficients vanish identically.",
+  "divergence_parameter_degree_bound": 1,
+  "divergence_unisolvence": "For each of the3sources, the4 shifted affine-simplex nodes have determinant1.",
+  "seconds": 0.07040636099918629
+}
+{
+  "passed": true,
+  "shapes": 19,
+  "actual_trace_counts_checked": 50,
+  "seconds": 3.1385230270025204
+}
+{
+  "passed": true,
+  "group": "Sp(4)",
+  "native_weight": [
+    3,
+    3,
+    7,
+    0,
+    0
+  ],
+  "length": 11,
+  "j": 32,
+  "operator_terms": 17430,
+  "least_trace_coefficient_denominator": 360,
+  "variation_terms": 15556,
+  "exact_closure": true,
+  "native_highest_weights": true,
+  "source_Q0_images_recomputed": 188,
+  "dual_field": "Q",
+  "dual_nonzero_trace_coefficients": 103,
+  "dual_boundary_pairings": "all zero",
+  "dual_defect_pairing": "1",
+  "seconds": 19.17844357800277
+}
+{
+  "passed": true,
+  "group": "Sp(5)",
+  "native_weight": [
+    3,
+    3,
+    9,
+    0,
+    0
+  ],
+  "length": 13,
+  "j": 36,
+  "operator_terms": 48231,
+  "least_trace_coefficient_denominator": 288,
+  "variation_terms": 42480,
+  "exact_closure": true,
+  "native_highest_weights": true,
+  "source_Q0_images_recomputed": 188,
+  "dual_field": "Q",
+  "dual_nonzero_trace_coefficients": 40,
+  "dual_boundary_pairings": "all zero",
+  "dual_defect_pairing": "1",
+  "seconds": 113.94157395799994
+}

@@ -1,0 +1,111 @@
+{
+  "results": [
+    {
+      "group": "Sp(4)=USp(8)",
+      "native_weight": [
+        3,
+        3,
+        7,
+        0,
+        0
+      ],
+      "paper_weight": [
+        7,
+        0,
+        0,
+        3,
+        3
+      ],
+      "length": 11,
+      "j": 32,
+      "classical_Q0_rational_fortuitous_class_lower_bound": 1,
+      "finite_cohomology_total_dimension_not_claimed": true,
+      "stable_adjacent_dimensions": [
+        11419,
+        11627,
+        5699
+      ],
+      "stable_adjacent_Q0_ranks": [
+        6940,
+        4687
+      ],
+      "stable_rational_central_cohomology": 0,
+      "source_identity_space_dimension": 188,
+      "complete_source_identity_basis": true,
+      "preceding_identity_dimension_and_Q0_rank": [
+        67,
+        67
+      ],
+      "source_identity_Q0_rank": 121,
+      "target_identity_subspace_dimension": 181,
+      "target_identity_full_dimension": 183,
+      "exact_operator_trace_terms": 17430,
+      "exact_Q0_trace_terms": 15556,
+      "least_trace_coefficient_denominator": 360,
+      "formal_HW_reconstruction_common_denominator": 360,
+      "QQ_dual_nonzero_trace_probes": 103,
+      "QQ_dual_source_image_pairings": 0,
+      "QQ_dual_defect_pairing": 1,
+      "operator_file": "sp4_new_fortuitous_operator.json.gz",
+      "operator_sha256": "4eb865edcc3de1b9447bd67d272a670ad053d5f27d0171c7b6f1683ddb9ae254",
+      "certificate_file": "sp4_discovery_certificate.json",
+      "certificate_sha256": "16dfaf6c307ea4902b9ae72ce75246aef8cf96c3da7bb020dedf7e4efff00058"
+    },
+    {
+      "group": "Sp(5)=USp(10)",
+      "native_weight": [
+        3,
+        3,
+        9,
+        0,
+        0
+      ],
+      "paper_weight": [
+        9,
+        0,
+        0,
+        3,
+        3
+      ],
+      "length": 13,
+      "j": 36,
+      "classical_Q0_rational_fortuitous_class_lower_bound": 1,
+      "finite_cohomology_total_dimension_not_claimed": true,
+      "stable_adjacent_dimensions": [
+        38160,
+        37085,
+        17745
+      ],
+      "stable_adjacent_Q0_ranks": [
+        22495,
+        14590
+      ],
+      "stable_rational_central_cohomology": 0,
+      "source_identity_space_dimension": 188,
+      "complete_source_identity_basis": true,
+      "preceding_identity_dimension_and_Q0_rank": [
+        67,
+        67
+      ],
+      "source_identity_Q0_rank": 121,
+      "target_identity_subspace_dimension": 181,
+      "target_identity_full_dimension": 183,
+      "exact_operator_trace_terms": 48231,
+      "exact_Q0_trace_terms": 42480,
+      "least_trace_coefficient_denominator": 288,
+      "formal_HW_reconstruction_common_denominator": 576,
+      "QQ_dual_nonzero_trace_probes": 40,
+      "QQ_dual_source_image_pairings": 0,
+      "QQ_dual_defect_pairing": 1,
+      "operator_file": "sp5_new_fortuitous_operator.json.gz",
+      "operator_sha256": "57cc005717d856a23927a965fc987b71c2243bf41d50aa8e1727f442039218ba",
+      "certificate_file": "sp5_discovery_certificate.json",
+      "certificate_sha256": "ceb084a48618383b9352d4c20240641d27171793fee0865503e888179d9c58f3"
+    }
+  ],
+  "novelty_scope": "Two certified finite classes at different symplectic ranks and native weights, absent from the inspected repository/paper baseline. These may be members of one family. No claim of two unrelated families, a proved all-rank theorem, complete all-letter ring primitivity, or all-loop survival.",
+  "proof": "Exact rational closure in finite colour; exact rational trace-coordinate dual pairs defect to 1 and kills Q0 of the complete 188-dimensional source identity space. Hence the defect cannot be removed by changing a stable lift, and the finite class is nonzero and fortuitous.",
+  "identity_provenance": "Sp4 full 436 identity recipes and exact character dimensions independently replayed by root. Root is running its memoized independent Sp5 full recipe/character replay; all frozen input recipes are complete. The duplicate sp5_universal replay was stopped.",
+  "root_independent_replays": "Root independently passed exact operator/Q0/QQ-dual checks for both groups.",
+  "excluded_from_bundles": "Native executables, modular block intermediates and optional ancestry exploration."
+}

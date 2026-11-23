@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "field": "Q",
+  "SO15": [
+    {
+      "passed": true,
+      "group": "SO(15)",
+      "colours": 15,
+      "shape": [
+        7,
+        7,
+        3
+      ],
+      "j": 34,
+      "cochain_length": 16,
+      "Taylor_diagram": [
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_scalar_count": 15,
+      "matter_count": 1,
+      "source_dimension": 2,
+      "terminal_dimension": 3,
+      "source_Pieri_multiplicities": {
+        "6,6,3": 1,
+        "7,6,2": 1
+      },
+      "exact_Q0_rank": 2,
+      "exact_fortuitous_quotient_dimension": 1,
+      "source_marker_recipes": [
+        "D^2 T AA^0 ZZ^2",
+        "D^2 sum_i dot(Z,X_i)dot(Z,Y_i) AA^0 ZZ^1"
+      ],
+      "terminal_marker_recipe": "D^3 AA^0 ZZ^2",
+      "source_marker_term_counts": [
+        2565,
+        980
+      ],
+      "terminal_marker_term_count": 592,
+      "ordered_probes": [
+        "AA.AA.AA.ABC.BB.BB.BB.CC",
+        "AA.AA.ABC.ABC.ABC.BB.BB",
+        "AACBBC.AB.AB.AB.ABABC"
+      ],
+      "probe_matrix": [
+        [
+          "-57960",
+          "-7560",
+          "272160"
+        ],
+        [
+          "-12983040",
+          "-1693440",
+          "20321280"
+        ],
+        [
+          "32336640",
+          "2419200",
+          "-52254720"
+        ]
+      ],
+      "exact_determinant": "4236912357801984000",
+      "dual_coefficients": [
+        "1/181440",
+        "-1/40642560",
+        "0"
+      ],
+      "source_and_terminal_highest_weight_checks": true,
+      "equivariant_primitive_checks": [
+        {
+          "word": "AA.AA.AA.ABC.BB.BB.BB.CC",
+          "Q0_cochain_coefficient": "272160"
+        },
+        {
+          "word": "AA.AA.ABC.ABC.ABC.BB.BB",
+          "Q0_cochain_coefficient": "20321280"
+        },
+        {
+          "word": "AACBBC.AB.AB.AB.ABABC",
+          "Q0_cochain_coefficient": "-52254720"
+        }
+      ],
+      "representative": "h.PrimitiveCoefficient(p.Coefficient(operators(shape)[1]))",
+      "scope": "Exact classical Q0 fortuitous quotient. Historical novelty and quantum fate are separate questions.",
+      "probes_examined": 3,
+      "seconds": 0.33904083400011586
+    },
+    {
+      "passed": true,
+      "group": "SO(15)",
+      "colours": 15,
+      "shape": [
+        9,
+        5,
+        3
+      ],
+      "j": 34,
+      "cochain_length": 16,
+      "Taylor_diagram": [
+        3,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_scalar_count": 15,
+      "matter_count": 1,
+      "source_dimension": 3,
+      "terminal_dimension": 4,
+      "source_Pieri_multiplicities": {
+        "8,4,3": 1,
+        "8,5,2": 1,
+        "9,4,2": 1
+      },
+      "exact_Q0_rank": 3,
+      "exact_fortuitous_quotient_dimension": 1,
+      "source_marker_recipes": [
+        "D^2 T AA^2 ZZ^1",
+        "D^2 sum_i dot(A,X_i)dot(A,Y_i) AA^1 ZZ^1",
+        "D^2 sum_i dot(Z,X_i)dot(Z,Y_i) AA^2 ZZ^0"
+      ],
+      "terminal_marker_recipe": "D^3 AA^2 ZZ^1",
+      "source_marker_term_counts": [
+        2268,
+        2694,
+        765
+      ],
+      "terminal_marker_term_count": 542,
+      "ordered_probes": [
+        "AA.AA.AA.AA.ABC.BB.BB.CC",
+        "AA.AA.AA.ABC.ABC.ABC.BB",
+        "AA.AAAB.AB.AB.ABBCC.AC",
+        "AA.AA.AABAAC.ABC.BB.BC"
+      ],
+      "probe_matrix": [
+        [
+          "86940",
+          "49140",
+          "11340",
+          "-374220"
+        ],
+        [
+          "17388000",
+          "9828000",
+          "2268000",
+          "-24948000"
+        ],
+        [
+          "1179360",
+          "997920",
+          "-272160",
+          "0"
+        ],
+        [
+          "-19051200",
+          "-4536000",
+          "-1088640",
+          "35925120"
+        ]
+      ],
+      "exact_determinant": "13523262578496405504000000",
+      "dual_coefficients": [
+        "-1/249480",
+        "1/49896000",
+        "0",
+        "0"
+      ],
+      "source_and_terminal_highest_weight_checks": true,
+      "equivariant_primitive_checks": [
+        {
+          "word": "AA.AA.AA.AA.ABC.BB.BB.CC",
+          "Q0_cochain_coefficient": "-374220"
+        },
+        {
+          "word": "AA.AA.AA.ABC.ABC.ABC.BB",
+          "Q0_cochain_coefficient": "-24948000"
+        },
+        {
+          "word": "AA.AAAB.AB.AB.ABBCC.AC",
+          "Q0_cochain_coefficient": "0"
+        },
+        {
+          "word": "AA.AA.AABAAC.ABC.BB.BC",
+          "Q0_cochain_coefficient": "35925120"
+        }
+      ],
+      "representative": "h.PrimitiveCoefficient(p.Coefficient(operators(shape)[1]))",
+      "scope": "Exact classical Q0 fortuitous quotient. Historical novelty and quantum fate are separate questions.",
+      "probes_examined": 6,
+      "seconds": 0.26723635400048806
+    }
+  ],
+  "SO13": [
+    {
+      "passed": true,
+      "shape": [
+        7,
+        7,
+        3
+      ],
+      "source_dimension": 81,
+      "terminal_dimension": 45,
+      "full_terminal_frame_rank": 45,
+      "actual_Q0_rows_in_preimage": 44,
+      "rational_probe_identities": 50,
+      "raw_divided_by_explicit": "-4/3969",
+      "explicit_Pfaffian_probe_values": [
+        "468202291200",
+        "-468202291200"
+      ],
+      "raw_probe_values": [
+        -471859200,
+        471859200
+      ],
+      "fortuitous_component_at_SO13": "zero",
+      "scope": "Zero connecting class; no assertion that the total finite cohomology class is zero."
+    },
+    {
+      "passed": true,
+      "shape": [
+        9,
+        5,
+        3
+      ],
+      "source_dimension": 179,
+      "terminal_dimension": 90,
+      "full_terminal_frame_rank": 90,
+      "actual_Q0_rows_in_preimage": 88,
+      "rational_probe_identities": 100,
+      "raw_divided_by_explicit": "256/1091475",
+      "explicit_Pfaffian_probe_values": [
+        "0",
+        "268240896000"
+      ],
+      "raw_probe_values": [
+        0,
+        62914560
+      ],
+      "fortuitous_component_at_SO13": "zero",
+      "scope": "Zero connecting class; no assertion that the total finite cohomology class is zero."
+    }
+  ],
+  "rank_support": "For these fixed representatives the fortuitous component is supported exactly at SO(15) among odd orthogonal groups: zero connecting class for oddN<=13, nonzero at15, and not Q0-closed for oddN>=17.",
+  "integer_bound_proof": "RANK_BIRTH_PROOF.md",
+  "seconds": 4.166355003000717,
+  "full_lower_rebuild": {
+    "passed": true,
+    "prime_case_replays": 34,
+    "residue_entries_checked": 193800,
+    "proof": "Integer integrality and the a priori 2^256 bound in RANK_BIRTH_PROOF.md, together with CRT modulus>2^257, certify every rebuilt integer.",
+    "seconds": 14.372289183998873
+  },
+  "source_sha256": {
+    "pfaffian_scalar_candidates.py": "188db29520f48334abd4ca93c4e850272c9b29410ec368f59ca0ab242b9d4b77",
+    "so13_character_certificate.py": "8d01e9d0e10498c174cbfac4612cd5656c74e44cbd100df4210f21625aa60977",
+    "so13_exact_certificate.py": "ab8a2ca584254c4cfc1984662748c62bdd53c2239e0429bc6e0a757c24ed6421",
+    "minimal_scalar_certificates.py": "c761d8dd050b84f578a436670184dc1e6c0f2b5365f01c303ed81a9d99519408",
+    "lower_rank_projection_probe.cpp": "fd9e717aecd502c783e1938a1b0abef759f1ac7d279f88ccf0be8bd437c6e408",
+    "verify_rank_birth.py": "de1cca15ea928753d588213537c40ced6fe18f12887880a0e03314b4db8b50ea"
+  }
+}

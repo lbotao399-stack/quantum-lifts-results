@@ -1,0 +1,18 @@
+{
+  "rank": 5,
+  "weight": [
+    3,
+    3,
+    9,
+    0,
+    0
+  ],
+  "length": 12,
+  "input_pair_space": 318,
+  "raising_rank": 251,
+  "relation_dimension": 67,
+  "complete": true,
+  "seconds": 116.65973396700065,
+  "exact_character_relation_dimension": 67,
+  "relations": 67
+}

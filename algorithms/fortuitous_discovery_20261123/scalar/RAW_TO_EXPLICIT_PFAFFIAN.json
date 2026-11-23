@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "shape": [
+        7,
+        7,
+        3
+      ],
+      "our_Pfaffian_probe_values": [
+        "468202291200",
+        "-468202291200"
+      ],
+      "raw_singleton_probe_values": [
+        "-471859200",
+        "471859200"
+      ],
+      "raw_divided_by_ours": "-4/3969",
+      "checked_probes": 2
+    },
+    {
+      "shape": [
+        9,
+        5,
+        3
+      ],
+      "our_Pfaffian_probe_values": [
+        "0",
+        "268240896000"
+      ],
+      "raw_singleton_probe_values": [
+        "0",
+        "62914560"
+      ],
+      "raw_divided_by_ours": "256/1091475",
+      "checked_probes": 2
+    }
+  ],
+  "proof": "The odd-degree auxiliarySO3 invariant ring is D times the polynomial ring in the six quadratic Gram coordinates, with D^2=detGram. Its GL3 highest-weight multiplicity is one for each all-odd three-row shape. Thus both nonzero highest projections lie on the same line; the nonzero scalar is checked on two actual multilinear probes."
+}

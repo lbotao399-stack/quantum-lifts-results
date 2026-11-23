@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "group": "Sp(4)",
+  "native_weight": [
+    3,
+    3,
+    7,
+    0,
+    0
+  ],
+  "length": 11,
+  "j": 32,
+  "operator_terms": 17430,
+  "least_trace_coefficient_denominator": 360,
+  "variation_terms": 15556,
+  "exact_closure": true,
+  "native_highest_weights": true,
+  "source_Q0_images_recomputed": 188,
+  "dual_field": "Q",
+  "dual_nonzero_trace_coefficients": 103,
+  "dual_boundary_pairings": "all zero",
+  "dual_defect_pairing": "1",
+  "seconds": 19.17844357800277
+}

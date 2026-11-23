@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "length": 12,
+      "identities": 67,
+      "exact_recipes_verified": 67,
+      "highest_weight_verified": 67,
+      "independent_modulo": 1000003,
+      "file_sha256": "7a2ad20f46aef686994bd1de99947fb93676f32e92e5607d4b9caf44ff55218c"
+    },
+    {
+      "length": 13,
+      "identities": 188,
+      "exact_recipes_verified": 188,
+      "highest_weight_verified": 188,
+      "independent_modulo": 1000003,
+      "file_sha256": "19db2bdcd4d6758e83402c64fc98b3c1c259c3b26487b86ae0cdd06c125be055"
+    },
+    {
+      "length": 14,
+      "identities": 181,
+      "exact_recipes_verified": 181,
+      "highest_weight_verified": 181,
+      "independent_modulo": 1000003,
+      "file_sha256": "51b3dd252dff43755264b61c084ee23ff84e01b90981db43940ac88600dda343"
+    }
+  ],
+  "exact_character_receipts": {
+    "12": {
+      "stable": 38160,
+      "finite": 38093,
+      "identities": 67
+    },
+    "13": {
+      "stable": 37085,
+      "finite": 36897,
+      "identities": 188
+    },
+    "14": {
+      "stable": 17745,
+      "finite": 17562,
+      "identities": 183
+    }
+  },
+  "complete_source_identity_space": true,
+  "target_subspace_is_genuine_but_partial": true,
+  "seconds_this_invocation": 661.5968472980021
+}

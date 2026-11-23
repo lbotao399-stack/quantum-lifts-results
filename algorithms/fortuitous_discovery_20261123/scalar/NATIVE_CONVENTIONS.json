@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "native_letters_sha256": "0b3561e55f22d5135f2a04ba2996f1652e92af135556a7388fd423974072c8c5",
+  "scalar_letters": {
+    "A": [
+      0,
+      0,
+      [
+        0
+      ]
+    ],
+    "B": [
+      0,
+      0,
+      [
+        1
+      ]
+    ],
+    "C": [
+      0,
+      0,
+      [
+        2
+      ]
+    ]
+  },
+  "matter_letters": [
+    {
+      "cyclic_letter": "a",
+      "native_sorted_theta_indices": [
+        1,
+        2
+      ],
+      "cyclic_to_native_coefficient": 1,
+      "native_Q_terms": [
+        [
+          1,
+          [
+            0,
+            0,
+            [
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              2
+            ]
+          ]
+        ],
+        [
+          -1,
+          [
+            0,
+            0,
+            [
+              2
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              1
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "cyclic_letter": "b",
+      "native_sorted_theta_indices": [
+        0,
+        2
+      ],
+      "cyclic_to_native_coefficient": -1,
+      "native_Q_terms": [
+        [
+          1,
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              2
+            ]
+          ]
+        ],
+        [
+          -1,
+          [
+            0,
+            0,
+            [
+              2
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "cyclic_letter": "c",
+      "native_sorted_theta_indices": [
+        0,
+        1
+      ],
+      "cyclic_to_native_coefficient": 1,
+      "native_Q_terms": [
+        [
+          1,
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              1
+            ]
+          ]
+        ],
+        [
+          -1,
+          [
+            0,
+            0,
+            [
+              1
+            ]
+          ],
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ]
+        ]
+      ]
+    }
+  ],
+  "scope": "An explicit coefficient basis conversion, not a change of native Q0 or physical normalization."
+}

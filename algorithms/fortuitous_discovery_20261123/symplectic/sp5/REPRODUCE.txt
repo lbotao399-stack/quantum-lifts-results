@@ -1,0 +1,39 @@
+Sp(5), native weight (3,3,9,0,0), length 13, j=36.
+
+The operator uses the repository's original divided-power Taylor conventions.
+No stable-complex cache or modular search block is required for the exact
+closure and separating-dual verification below.
+
+In the existing workspace:
+  OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 \
+  PYTHONPATH=/workspace/scratch/e0e12cf25856/quantum_lifts_frontier_work/su3_second/deps \
+  python replay_sp5_witness.py
+
+Then replay all finite-colour identities and exact character completeness:
+  OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 \
+  PYTHONPATH=/workspace/scratch/e0e12cf25856/quantum_lifts_frontier_work/su3_second/deps \
+  python replay_sp5_identities.py --seconds 300
+
+The identity replay checkpoints each successful row. Repeat the command after
+a time cap; earlier checked rows are not expanded again, while their hashes,
+highest weights and independence are rechecked. The complete result requires
+67 preceding identities, 188 source identities, and 181 target identities.
+The full target identity space has dimension 183; its final two identities
+are unnecessary for the existence and nonboundary certificate.
+
+External source requirements:
+  pinned dual_singlets_20261118 code at 9a554a6d,
+  the repository trace/native runtime, python-flint and numpy.
+Override N4_WORKSPACE_ROOT, N4_DUAL_SOURCE and N4_TRACE_RUNTIME as needed.
+The frozen Pfaffian helper differs from the generating helper only in these
+loader path defaults. FROZEN_MANIFEST.json hashes the exact frozen bytes;
+sp5_discovery_certificate.json retains hashes of the original generating files.
+
+Proof: the displayed rational operator has Q0 equal to an exact combination
+of the 181 finite-colour target identities. A rational functional on actual
+trace coefficients annihilates Q0 of every one of the 188 source identities
+and pairs with the operator's Q0 defect to exactly 1. The source identities
+are independent and exhaust the exact character deficit. Thus the defect is
+not Q0 of any finite-colour source identity. The finite class is nonzero and
+does not lift to stable cohomology. This conclusion does not rely on lifting
+a positive modular cohomology dimension to characteristic zero.

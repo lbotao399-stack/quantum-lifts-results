@@ -1,0 +1,28 @@
+{
+  "group": "Sp(5)",
+  "native_weight": [
+    3,
+    3,
+    9,
+    0,
+    0
+  ],
+  "length": 13,
+  "files": {
+    "ORIGINAL_GENERATION_HASHES.json": "1f010b81ad498f73da6595e812e9c458541d2675bb3ba5f1b51214c40aaccf54",
+    "REPRODUCE.txt": "4edf61d3761a71db130201d098ba1e98cf9b747a708ac21850c2c36ece823065",
+    "character_frontier.json": "459b14257dadb4e25377c4cad5003b7b10b1e6cf26ebe19f550d96456bb55f96",
+    "exact_relations_sp5_L12.json": "5daf4580f2c90b28c5dade6b129b1594614ff81654df416c7958da6ef1f6c370",
+    "exact_relations_sp5_L12.pkl": "7a2ad20f46aef686994bd1de99947fb93676f32e92e5607d4b9caf44ff55218c",
+    "exact_relations_sp5_L13.json": "c9e4ffd2b5a6520627c1e6dec47d5639a8138abc82153dfa04cc32561d79ac2c",
+    "exact_relations_sp5_L13.pkl": "19db2bdcd4d6758e83402c64fc98b3c1c259c3b26487b86ae0cdd06c125be055",
+    "paired_relation_basis.py": "4fa58d9c88e57e394480438d270067d9f294656cff8686c272735dbbda107f14",
+    "path_relation_completion.py": "e9fa8c8edda1b4f463487cb2643f7fa344094bf3f66e56a158bfb87006da1d1e",
+    "pfaffian_relations.py": "48aa62bb06115f284ad7398bfe3b34988513aa48672e3cc7cbfe42c0290b3f2c",
+    "replay_sp5_identities.py": "14f391daddbec1dc66b44419912ee06806f5ce1a35dae0481c588cbdf9f2ea67",
+    "replay_sp5_witness.py": "d176097324af9b43b0560b20bfd05b73ec68c6a0161a4dd3c5f35b4e9326d661",
+    "sp5_discovery_certificate.json": "ceb084a48618383b9352d4c20240641d27171793fee0865503e888179d9c58f3",
+    "sp5_new_fortuitous_operator.json.gz": "57cc005717d856a23927a965fc987b71c2243bf41d50aa8e1727f442039218ba",
+    "target_sp5_snapshot_181.pkl": "51b3dd252dff43755264b61c084ee23ff84e01b90981db43940ac88600dda343"
+  }
+}

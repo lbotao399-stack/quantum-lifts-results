@@ -1,0 +1,25 @@
+{
+  "weight": [
+    3,
+    3,
+    7,
+    0,
+    0
+  ],
+  "length": 11,
+  "prime": 1000003,
+  "10": {
+    "rank": 6940,
+    "blocks": 30,
+    "largest_block_rows": 3652,
+    "rows": 11419
+  },
+  "seconds": 70.2362199800009,
+  "11": {
+    "rank": 4687,
+    "blocks": 29,
+    "largest_block_rows": 3460,
+    "rows": 11627
+  },
+  "stable_H_upper": 0
+}

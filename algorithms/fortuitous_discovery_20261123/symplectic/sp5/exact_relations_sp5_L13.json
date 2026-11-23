@@ -1,0 +1,16 @@
+{
+  "rank": 5,
+  "weight": [
+    3,
+    3,
+    9,
+    0,
+    0
+  ],
+  "length": 13,
+  "relations": 188,
+  "exact_character_relation_dimension": 188,
+  "complete": true,
+  "total_terms": 895048,
+  "seconds": 39.30392418000156
+}
