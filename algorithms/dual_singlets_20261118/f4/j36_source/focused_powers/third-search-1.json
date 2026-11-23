@@ -1,0 +1,17 @@
+{
+  "prime": 1009,
+  "order": 1,
+  "base_rank": 426,
+  "rank": 428,
+  "base_minor": 101,
+  "new_rows": [
+    7900,
+    7901
+  ],
+  "new_columns": [
+    0,
+    2
+  ],
+  "complement_minor": 548,
+  "determinant": 862
+}

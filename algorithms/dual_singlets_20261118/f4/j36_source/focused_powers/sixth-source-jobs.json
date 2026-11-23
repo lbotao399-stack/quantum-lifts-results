@@ -1,0 +1,20 @@
+[
+  {
+    "job": "5718896",
+    "purpose": "stage-two incoming search",
+    "accounting": "5718896|COMPLETED|85|56|0:0",
+    "submission_archive_sha256": "bce900cc154cfa6e222bc6226d5070359b284e3537068feb4da872c82fd4d3be"
+  },
+  {
+    "job": "5719151",
+    "purpose": "stage-two same-minor rebuild",
+    "accounting": "5719151|COMPLETED|334|56|0:0",
+    "submission_archive_sha256": "8b058315268b2c71672ccbcc8d9b080298f93e5c7e2320579df8d1e3d01eb73a"
+  },
+  {
+    "job": "5718997",
+    "purpose": "both stage-three maps at both primes",
+    "accounting": "5718997|COMPLETED|508|56|0:0",
+    "submission_archive_sha256": "bfde017a2d20cf4aa5211696f24fda9eec80ea0d980d9a7d920fe664ff1f9c63"
+  }
+]
