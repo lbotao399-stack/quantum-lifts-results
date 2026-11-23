@@ -1,5 +1,11 @@
 # Running computations: daily status
 
+## Campaign checkpoint
+
+The independent $SO(11)$ third differential into $S^6$ has coefficient $8640$ in the defining-trace normalization. Both primitive choices from Dot's tables give $3072000$, $-33177600$, and $-921600$ for Dot's $SO(11),SO(12),SO(13)$ sources respectively. The proposed $F_4$ second source is classically exact. A different source for $S^6$ and a physical instanton pairing remain open. [Third-page certificate](algorithms/dual_singlets_20261118/orthogonal_glueballs/so11_j36/README.md) · [Cross-check with Dot](notes/glueball-lift-exchange.md) · [Exceptional second-source bounds](algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md)
+
+New $d_1$ lifts **0**, cumulative **85** highest-weight multiplets. New fortuitous ring generators **1** in a full-jet $SU(3)$ grading. The previous **11** explicit BMN generator families use a family count. The new quotient has dimension $1896-825-1037-33=1$ at level 30. Its primary identification is open. [Exact product quotient and two zero outgoing channels](algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md) · [Counts](data/N4_lift_campaign_counts_20261122_pause.json)
+
 ## Polynomial commuting families and the exceptional instanton colour integral
 
 At $F_4$ level 36, exact polynomial families of commuting matrices exclude a classical source through transverse scalar degree six at 30 nilpotent root-tuple orbits. At degree seven only two local tests remain, with upper bounds one and two. Both rank-three Levi groups have zero classical source in the diagram $(4,4,2,2)$. At level 30 the four- and six-vertex native instanton colour integrals reduce to powers of a sextic of flattening rank 91. The global $d_2$ and physical instanton pairing remain open. New $d_1$ lifts **0** (85 cumulative). New explicit fortuitous generator families **0** (11 cumulative). Campaign higher-lift totals are $0,1,0$ at orders two, three and nonperturbative respectively. [Transverse calculation](algorithms/dual_singlets_20261118/f4/j36_source/first_page/nilpotent_source_bounds.md) · [Instanton colour kernel](algorithms/dual_singlets_20261118/f4/j36_source/first_page/fifth_radial_kernel.md) · [Counts](data/N4_lift_campaign_counts_20261122_transverse.json)

@@ -1,0 +1,48 @@
+{
+  "date_local": "2026-11-22",
+  "previous_ledger": "data/N4_lift_campaign_counts_20261122_transverse.json",
+  "order_convention": "supercharge spectral-sequence differentials in the relative holomorphic jet complex",
+  "increments": {
+    "d1_highest_weight_multiplets": 0,
+    "fortuitous_classical_ring_generators_in_the_verified_full_jet_grading": 1,
+    "explicit_BMN_generator_families": 0,
+    "d2": 0,
+    "d3": 0,
+    "nonperturbative": 0
+  },
+  "campaign_cumulative": {
+    "d1_highest_weight_multiplets": 85,
+    "explicit_BMN_generator_families": 11,
+    "campaign_originated_d2": 0,
+    "campaign_originated_d3": 1,
+    "physical_nonperturbative_lifts": 0
+  },
+  "SU3_full_jet_generator": {
+    "j": 30,
+    "flavour": [3, 0, 0],
+    "dotted_degrees": [4, 4],
+    "dotted_spin": 0,
+    "charge_conjugation": "odd",
+    "length": 7,
+    "classical_cohomology_dimension": 34,
+    "cartan_kernel_dimension": 0,
+    "proper_product_rank": 33,
+    "indecomposable_quotient_dimension": 1,
+    "factor_pairs": 56,
+    "factor_sectors": 112,
+    "primary_family_identification": "open",
+    "explicit_representative_outside_product_span": "open",
+    "physical_instanton_matrix_element": "open"
+  },
+  "SU3_A8_native_minors": [
+    {"job": "5708505", "state": "COMPLETED", "allocated_cpus": 56, "elapsed_seconds": 1089},
+    {"job": "5708370", "state": "COMPLETED", "allocated_cpus": 56, "elapsed_seconds": 1232},
+    {"job": "5710346", "state": "COMPLETED", "allocated_cpus": 56, "elapsed_seconds": 465}
+  ],
+  "evidence": [
+    "algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md",
+    "algorithms/dual_singlets_20261118/orthogonal_glueballs/so11_j36/README.md",
+    "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md",
+    "notes/glueball-lift-exchange.md"
+  ]
+}
