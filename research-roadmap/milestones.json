@@ -173,7 +173,7 @@
         "Rebuild required native code in a separate work directory and emit exact output receipts.",
         "Include an independently implemented check of a decisive identity."
       ],
-      "current_assessment": "Portable recipes, manifests and independent checks are public. There is no repository-wide clean verification job.",
+      "current_assessment": "Portable recipes, manifests and independent checks are public. A08 now adds the declared clean verification job, with its bounded replay scope.",
       "evidence": [
         "portable_replay",
         "fortuity"
@@ -187,7 +187,7 @@
       "id": "A07",
       "track": "A",
       "points": 1,
-      "status": "partial",
+      "status": "met",
       "title": "A current claim ledger covers the whole public evidence graph",
       "scope": "Every advertised undeformed-N4 result, including discussion-linked commits outside main.",
       "acceptance": [
@@ -195,22 +195,20 @@
         "Detect conflicting active claims and missing references automatically.",
         "Generate the current summary from this ledger and enumerate the explicit finite coverage manifest."
       ],
-      "current_assessment": "This roadmap reconciles its scored claims. It does not yet catalogue every historical/public claim, so writing it earns no point.",
+      "current_assessment": "The complete frozen public evidence graph and all three new release appendices pass the strict gate: 247 canonical records, 552 distinct advertised native tuples, zero metadata gaps/conflicts/missing references, and nine rejected corruption controls.",
       "evidence": [
-        "discussion",
-        "conventions",
-        "f4_withdrawal"
+        "complete_claim_ledger"
       ],
       "dependencies": [],
-      "next_action": "Import all discussion entries and manuscript/table claims; attach immutable evidence and label historical campaign totals.",
+      "next_action": "Append and independently review every subsequent scientific release before accepting its points; preserve the existing audit snapshots.",
       "required_artifact": "claims.json, coverage-blocks.json and a conflict/reference checker.",
-      "audit_basis": "open_or_partial_public_record"
+      "audit_basis": "fresh_complete_replay"
     },
     {
       "id": "A08",
       "track": "A",
       "points": 1,
-      "status": "open",
+      "status": "met",
       "title": "A clean verification job rejects corrupted evidence",
       "scope": "All designated inexpensive public verifiers; expensive replays remain separately callable.",
       "acceptance": [
@@ -218,18 +216,19 @@
         "Verify manifests and exact outputs, deliberately corrupt one copied payload and require rejection.",
         "Publish receipts and distinguish source rebuilding from reuse of saved production entries."
       ],
-      "current_assessment": "Portable bundles exist, but no repository-wide automated verification workflow was found at the audit pin.",
+      "current_assessment": "Both a clean local checkout and the public GitHub Actions job passed all sixteen declared checks, including actual public-input downloads and rejection of a copied corrupted input. The tree remained unchanged; detailed replay limitations are explicit.",
       "evidence": [
-        "portable_replay",
-        "g2_column"
+        "complete_claim_ledger",
+        "public_verification_v2",
+        "public_clean_ci"
       ],
       "dependencies": [
         "A06",
         "A07"
       ],
-      "next_action": "Create one public verification entry point and a clean runner for the existing cheap bundles.",
+      "next_action": "Keep the declared tier green as new complete certificates are added; distinguish inherited production evidence from fresh reconstruction.",
       "required_artifact": "CI workflow, negative-control receipt and replay manifest.",
-      "audit_basis": "open_or_partial_public_record"
+      "audit_basis": "fresh_complete_replay"
     },
     {
       "id": "B01",
@@ -331,7 +330,7 @@
       "id": "B05",
       "track": "B",
       "points": 2,
-      "status": "open",
+      "status": "met",
       "title": "The remaining SU3 generator is explicit",
       "scope": "The one-dimensional quotient in B04.",
       "acceptance": [
@@ -339,16 +338,17 @@
         "Give a rational functional zero on all boundaries and all proper products, and equal to one on the representative.",
         "Give its complete finite-rank relation test; do not assume that ring primitivity alone proves fortuity."
       ],
-      "current_assessment": "The dimension is established; a vector outside the complete product span is not yet published.",
+      "current_assessment": "The 12224-term remaining SU3 generator, complete coordinates and exact dual are explicit. Rational cohomology dimension 34, proper-product dimension 33 and fortuitous quotient 2311\u22122310=1 were verified; all 1588 target coordinates vanish independently.",
       "evidence": [
-        "generator_count"
+        "generator_count",
+        "explicit_su3_generator"
       ],
       "dependencies": [
         "B04"
       ],
-      "next_action": "Back-substitute the target/product rank certificates and verify the entire polynomial residual.",
+      "next_action": "Construct its physical renormalized primary and complete allowed partners for E03; the algebraic generator alone does not supply them.",
       "required_artifact": "Representative, full dual and exact replay.",
-      "audit_basis": "open_or_partial_public_record"
+      "audit_basis": "fresh_complete_replay"
     },
     {
       "id": "B06",
@@ -565,10 +565,11 @@
         "Evaluate the full classical action and retain all relations and homogeneous freedom.",
         "A certified matrix-action oracle is allowed only if it covers every basis vector and proves the same identities; saved minors alone do not pass."
       ],
-      "current_assessment": "Outgoing rank 703 and incoming rank at least 3002 leave at most 15 classes. The complete native input package is absent.",
+      "current_assessment": "D03 now uses the published complete-source rank theorem (kernel 3017, boundaries 3016, one product class) and fresh direct-factor identities. A complete freshly reconstructed native basis and classical action oracle for all 3720 source cochains remain absent.",
       "evidence": [
         "f4_bound",
-        "f4_withdrawal"
+        "f4_withdrawal",
+        "f4_sixth_second_map"
       ],
       "dependencies": [
         "A03",
@@ -793,7 +794,7 @@
       "id": "D03",
       "track": "D",
       "points": 2,
-      "status": "open",
+      "status": "met",
       "title": "The F4 sixth-power second differential is decided",
       "scope": "The complete incoming second-page source for the level-36 target.",
       "acceptance": [
@@ -801,8 +802,9 @@
         "Produce a rational nonzero chain with a nonzero target class, or prove the entire incoming map is zero.",
         "Close the remaining space by matching rank bounds or an exact full-space identity; an upper bound of 15 is not the answer."
       ],
-      "current_assessment": "The eight-Albert witness is withdrawn. Corrected order-704 augmented determinants vanish modulo 1009 and 1013. The rational section-subtracted score and the full second differential remain open.",
+      "current_assessment": "The complete F4 sixth-power incoming second map has rational rank zero. The published complete source-rank theorem is combined with fresh direct-factor closure and full correction-freedom checks. The withdrawn graph witness is not reinstated.",
       "evidence": [
+        "f4_sixth_second_map",
         "f4_bound",
         "f4_withdrawal"
       ],
@@ -811,9 +813,9 @@
         "A04",
         "A05"
       ],
-      "next_action": "Evaluate the corrected functional on the entire remaining source space, using C04 or an equivalent exact full-space argument.",
+      "next_action": "Keep the historical full minor attribution explicit. Rebuild the complete native source oracle for C04 separately, and attack the full seventh-power source for D04.",
       "required_artifact": "Complete rational incoming-map certificate, positive or zero.",
-      "audit_basis": "open_or_partial_public_record"
+      "audit_basis": "published_certificate_audit"
     },
     {
       "id": "D04",
@@ -1054,11 +1056,12 @@
         "Certify complete perturbative survival, all allowed boundaries, operator mixing and the physical inner products.",
         "Enumerate every symmetry-compatible physical partner; a bare-endpoint zero-mode test is insufficient."
       ],
-      "current_assessment": "R-007 and several targets survive formally; the explicit remaining generator, its parent and the physical dictionary are open.",
+      "current_assessment": "R-007 and several targets survive formally. B05 now supplies the explicit remaining algebraic generator, but the completed SU3 physical primaries, complete mixing, forms and all symmetry-compatible partners remain open.",
       "evidence": [
         "r007_all_order",
         "generator_count",
-        "np_open"
+        "np_open",
+        "explicit_su3_generator"
       ],
       "dependencies": [
         "B05",
@@ -1066,7 +1069,7 @@
         "F02",
         "F03"
       ],
-      "next_action": "Finish B05, then solve the primary/mixing conditions in a common physical convention.",
+      "next_action": "Use the explicit B05 generator and all-order formal source data to solve the full SU3 physical primary/mixing conditions in one normalization.",
       "required_artifact": "Complete primary census, physical dictionary and normalized channel.",
       "audit_basis": "open_or_partial_public_record"
     },
@@ -1222,7 +1225,7 @@
       "id": "F02",
       "track": "F",
       "points": 1,
-      "status": "open",
+      "status": "met",
       "title": "A complete physical block containing fortuitous survivors has its inner product",
       "scope": "One genuine non-Abelian complete physical charge block containing certified fortuitous survivors, selected before computing its metric.",
       "acceptance": [
@@ -1230,24 +1233,23 @@
         "Compute every two-point matrix entry, all null relations and positivity on the entire physical charge block, retaining all classes and mixed pairings.",
         "Check normalization and basis-change invariance independently; a coefficient dual is not a physical bra."
       ],
-      "current_assessment": "The exact fortuitous dual explicitly supplies no Wick metric. Existing half-BPS protection pairings do not fill this gap.",
+      "current_assessment": "The entire USp4 block at E=9, left spin 1, right spin 0 and flavour fundamental was computed at leading interacting order: 1539 formal cochains, 1168 finite cochains, 371 nulls, 23 highest weights and all 69 physical states. Every metric entry, harmonic equation, positivity and normalization check passed.",
       "evidence": [
-        "fortuity",
-        "np_physics"
+        "physical_usp4_block"
       ],
       "dependencies": [
         "A04",
         "F01"
       ],
-      "next_action": "Select the smallest complete non-Abelian survivor block and derive its full renormalized two-point matrix.",
+      "next_action": "Establish the higher-order physical completion/current/product comparison before treating these leading states as a complete finite-coupling chaos dataset.",
       "required_artifact": "Physical representatives, full positive inner product and normalization checks.",
-      "audit_basis": "open_or_partial_public_record"
+      "audit_basis": "fresh_complete_replay"
     },
     {
       "id": "F03",
       "track": "F",
       "points": 2,
-      "status": "open",
+      "status": "met",
       "title": "The formal differential is matched to physical composite operators",
       "scope": "One full-jet nonscalar N4 source/target sector, then its required local product/current operations.",
       "acceptance": [
@@ -1255,18 +1257,17 @@
         "Prove agreement of the differential and matched product/current operations through the first nonzero quantum order, at least third order for the orthogonal benchmark, or by an all-order theorem.",
         "State any remaining hypotheses explicitly; an existence theorem in the formal complex alone does not pass."
       ],
-      "current_assessment": "The formal theory is strong, but physical composite/current matching is an explicit remaining gap.",
+      "current_assessment": "A complete USp4 full-jet nonscalar three-to-two channel is matched through its first nonzero quantum coefficient. All finite relations, source/target mixing, physical forms, protected-descendant normalization and channel-specific Ward/contact conditions are included. The broader 69-state physical completion remains open.",
       "evidence": [
-        "np_open",
-        "np_physics",
-        "r007_all_order"
+        "physical_first_quantum_channel",
+        "physical_usp4_block"
       ],
       "dependencies": [
         "F01"
       ],
-      "next_action": "Choose one physically normalized channel and derive the local comparison rather than infer it from matching dimensions.",
+      "next_action": "Extend the physical Ward and composite-product comparison to the selected fortuitous recombination channel and to the full USp4 survivor block; do not infer it from the small control.",
       "required_artifact": "Physical comparison theorem or complete channel-specific derivation.",
-      "audit_basis": "open_or_partial_public_record"
+      "audit_basis": "fresh_complete_replay"
     },
     {
       "id": "F04",
@@ -1555,24 +1556,44 @@
     }
   ],
   "priority_queue": [
-    "A07",
-    "C03",
-    "B05",
-    "C04",
-    "D03",
     "D04",
-    "F02",
-    "F03",
+    "F04",
+    "D05",
+    "C03",
+    "C04",
+    "F05",
+    "G01",
+    "B06",
     "C05",
     "C08",
     "D06",
-    "D05"
+    "E03"
   ],
   "fresh_checks_this_assessment": [
     {
       "command": "python3 algorithms/fortuitous_duals_20261123/transpose_detector/score_candidate.py",
       "result": "Exact coefficient pairing 1; 186 source coordinates; 4264 input terms.",
       "limit": "Candidate scoring only; this command does not check closure or highest-weight membership."
+    },
+    {
+      "command": "python3 algorithms/su3_generator_20261124/reproduce.py /tmp/su3-generator-rebuild",
+      "result": "Complete nine-artifact native regeneration matched the frozen mathematical packet byte for byte; exact rational and independent residual checks also passed.",
+      "limit": "The proper-factor census remains an attributed immutable historical input; no SU3 physical primary was reconstructed."
+    },
+    {
+      "command": "python3 research-roadmap/claim-ledger/check.py --negative-controls --require-complete --receipt /tmp/claim-ledger-check.json",
+      "result": "247 canonical claims; zero errors and gate blockers; all nine corruption controls rejected.",
+      "limit": "The complete semantic review is a dated audit of the frozen inventory and three release appendices. It must be extended for later scientific claims."
+    },
+    {
+      "command": "python3 algorithms/f4_complete_source_20261124/verify_packet.py --inputs /tmp/f4-public --out /tmp/f4-check.json",
+      "result": "Complete direct-product/bilinear identities passed; incoming second-map rank is zero under the attributed full-source theorem.",
+      "limit": "The historical complete 3017-dimensional minor is not a fresh native reconstruction."
+    },
+    {
+      "command": "python3 research-roadmap/verification/run.py --output /tmp/public-verification-receipt",
+      "result": "All sixteen declared checks passed from a clean tree; all 100 public F4 inputs downloaded and authenticated; deliberate corruption rejected; tree unchanged.",
+      "limit": "This is the bounded tier. Full production Wick regeneration, complete historical source minors and a new semantic/reference audit are not claimed by this runner."
     }
   ]
 }

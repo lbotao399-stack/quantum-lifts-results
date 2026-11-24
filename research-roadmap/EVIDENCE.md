@@ -213,3 +213,59 @@ Complete earlier-source/cohomology argument and order cutoff for the specified n
 D014 reports zero incoming first image, no second/third-source class, no incoming order at least four and no outgoing map for the G2 third glueball power. This is a formal perturbative statement, separate from the conditional physical instanton-source argument.
 
 **Review scope:** The public statement and census summary were located; a distinct detailed packet passing every D07 acceptance condition was not located in this audit. D07 credits only the packaged F4 and SU3 proofs.
+
+## explicit_su3_generator
+
+[Complete explicit SU3 generator and fortuity certificate](https://github.com/lbotao399-stack/quantum-lifts-results/blob/eac7db42a6e27f4900826fe7b42cc75365698dc3/algorithms/su3_generator_20261124/README.md)
+
+1169→1896→1588; rational ranks 825 and 1037 give 34 classes. Complete proper-product span has dimension 33. The remaining generator has 12224 trace terms and an exact dual; its complete fortuitous relation quotient is 2311−2310=1.
+
+**Review scope:** Fresh complete polynomial and finite-frame reconstruction, rational ranks and independent full 1588-coordinate residual check. The complete proper-factor archive is attributed to its immutable historical input. No physical primary or instanton map follows.
+
+## physical_usp4_block
+
+[Complete USp4 physical block and positive form](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/README.md)
+
+At E=9, left spin 1, right spin 0 and flavour fundamental, the complete finite blocks have dimensions 35,379,605,149. All 371 formal null relations are included. Simultaneous supercharge and radial-adjoint equations give 0,21,1,1 highest-weight states; restoring the flavour triplet gives 69 states and all 4761 metric entries.
+
+**Review scope:** Fresh complete native frames and Wick generation; independent rational finite/null/harmonic equations, positivity, normalization and basis changes. This is the leading interacting physical block. Full finite-coupling and nonperturbative survival are not inferred.
+
+## physical_first_quantum_channel
+
+[Complete first quantum-order physical channel](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/REVIEW.md)
+
+The entire USp4 source has three operators and the entire target has two. Their physical forms are 10 times the identity and diag(15,10). The normalized physical supercharge column is (g/(2π),3i g²/(8π²)) through these displayed powers; the associated Konishi one-loop energy shift is 9g²/(4π²).
+
+**Review scope:** Fresh exact channel and all 25 independent Wick pairings; Casimir and point-split coefficient checks; channel-specific Ward, protected-descendant, contact-dimension and mixing argument reviewed against the cited primary literature. This is not a graph-by-graph general Noether-current calculation, an all-channel dictionary, a fortuitous lift or an instanton result.
+
+## f4_sixth_second_map
+
+[Complete F4 sixth-power second-map decision](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/README.md)
+
+The complete incoming second differential to the F4 sixth power has rank zero over the rationals. The source has dimension 3720, outgoing rank 703 and kernel dimension 3017. The attributed complete-source theorem supplies 3016 boundaries and one product class. All 3476 earlier homogeneous corrections are retained.
+
+**Review scope:** Fresh complete direct-product and 60-column bilinear identities, all 2704 Casimir entries, all 150850 native extension entries, and permitted packet checks. The historical full 3017-dimensional minor is explicitly attributed rather than freshly rebuilt. This does not close C04 or the seventh-power problem.
+
+## complete_claim_ledger
+
+[Complete public claim and native-coverage ledger](https://github.com/lbotao399-stack/quantum-lifts-results/blob/d6ac4814ca39420459faee1a7ed07fa4c5fe7871/research-roadmap/claim-ledger/CURRENT_SUMMARY.md)
+
+247 canonical claim/status records; 255 distinct baseline texts at 764 immutable occurrences; three release packets with 12 additional texts. All 552 advertised distinct native tuples and 1123 exact occurrences are joined to their claims. The strict gate has zero errors and blockers, and rejects all nine corruption controls.
+
+**Review scope:** Full semantic review and fresh strict Git-reference/metadata/coverage validation. The core envelope has 1376452 native group slots and 675081 physical group blocks; these are kinematic denominators, not BPS-state counts or a solved-coverage percentage. Immature isolated research is excluded.
+
+## public_verification_v2
+
+[Public sixteen-check verification tier](https://github.com/lbotao399-stack/quantum-lifts-results/blob/d6ac4814ca39420459faee1a7ed07fa4c5fe7871/research-roadmap/verification/README.md)
+
+Both a clean local checkout and the public GitHub Actions job passed all sixteen declared checks, including full physical null/harmonic equations, all 4761 metric entries, the first quantum-order channel, exact ledger transport, all 100 pinned F4 public downloads and deliberate input-corruption rejection. The checkout remained unchanged.
+
+**Review scope:** Bounded public certificate replay. Saved large Wick evaluations are authenticated and checked, not fully regenerated by this tier; the ledger semantic/reference audit and historical F4 full minor retain their explicit attribution. No private paths or scheduler impersonation are required.
+
+## public_clean_ci
+
+[Successful public clean-checkout verification job](https://github.com/lbotao399-stack/quantum-lifts-results/actions/runs/45327891279)
+
+Public GitHub Actions passed all sixteen declared checks and the real corruption control at d6ac4814ca39420459faee1a7ed07fa4c5fe7871. Every required step succeeded and the checkout remained clean.
+
+**Review scope:** Observed successful public workflow result. This bounded job does not claim to rebuild every production calculation.

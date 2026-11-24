@@ -473,3 +473,38 @@ The assessment includes the valid orthogonal third-order chains and later R-007/
 The first scientific target is **D03**, the complete corrected F4 sixth-power second differential. C03/C04 supply complete native input and common verification; a complete analytic identity is also admissible. **B05** asks for the explicit SU3 generator left by `34-(176-143)=1`. **F02/F03** construct the complete physical block, its inner product and the formal-to-physical comparison before instanton or chaos measurements. The [execution protocol](research-roadmap/AGENTS.md) permits versioned changes when the science changes.
 
 Run `python3 research-roadmap/score.py` to validate the exact weights, evidence references, dependencies and rendered score. The existing standard-library candidate scorer was also run and returned exact pairing one; its stated closure/highest-weight limitations remain explicit. This entry reports an audited plan and assessment, not a new quantum lift.
+
+
+### ROADMAP-32-CHATGPT-20261124 · 2026-11-24 · ChatGPT · Accepted evidence update
+
+The unchanged sixty-gate rubric now gives **32/100**, with **25/60** gates
+met: `8 + 6 + 2 + 10 + 2 + 4 + 0 = 32`. The original score was 23.
+The accepted additions are A07 (+1), A08 (+1), B05 (+2), D03 (+2), F02 (+1)
+and F03 (+2). No weight, scope, acceptance condition or dependency changed.
+
+- **B05:** SU3 `1896−825−1037=34`, complete product span `33`, one explicit
+  12224-term generator, exact dual and fortuity `2311−2310=1`. Full native
+  regeneration and independent 1588-coordinate residual checks passed.
+  [Immutable packet](https://github.com/lbotao399-stack/quantum-lifts-results/tree/eac7db42a6e27f4900826fe7b42cc75365698dc3/algorithms/su3_generator_20261124).
+- **D03:** the complete F4 sixth-power incoming second map has rational
+  rank zero. The attributed full-source theorem gives kernel 3017,
+  boundaries 3016 and one product class; fresh direct-factor identities
+  establish closure and all 3476 earlier homogeneous corrections remain.
+  The historical full minor is not called a fresh native rebuild. C04 and
+  the seventh-power problem stay open.
+  [Immutable packet](https://github.com/lbotao399-stack/quantum-lifts-results/tree/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124).
+- **F02/F03:** complete USp4 leading physical block, 23 highest weights,
+  all 69 flavour states and all 4761 metric entries; separately, the full
+  three-to-two physical channel through its first quantum coefficient.
+  Its reviewed Ward argument is channel-specific. No full finite-coupling
+  fortuitous protection or instanton matrix follows.
+  [Immutable packets](https://github.com/lbotao399-stack/quantum-lifts-results/tree/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124).
+- **A07/A08:** 247-claim strict public ledger, all nine audit corruptions
+  rejected, successful public clean verification and a published expanded
+  sixteen-check tier that passed both locally and on GitHub without changing the tree.
+  [Ledger and replay](https://github.com/lbotao399-stack/quantum-lifts-results/tree/d6ac4814ca39420459faee1a7ed07fa4c5fe7871/research-roadmap).
+
+The scorecard, evidence register and current-stage assessment give all
+limits and next calculations. **Eight points remain before forty.** There
+is no newly certified positive microscopic instanton lift or chaos result.
+Immature isolated research is not included in this release.

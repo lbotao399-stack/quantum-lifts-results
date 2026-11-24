@@ -1,100 +1,141 @@
-# Current stage: 23/100
+# Current stage: 32/100
 
-**Nineteen of sixty milestones are met.** This is version 1.0 of a weighted research programme, audited against public commit `2f268a0fb47a7b17119cda86a95f2fac574648cf` and its linked immutable inputs. The score uses published mathematical evidence with its stated limits; it is not a claim that all production computations were repeated in this assessment.
-
-The programme is at **exact finite-sector algebra and selected higher-order theorems, before autonomous complete coverage and before physical nonperturbative/chaos data**. The exact score is
+**Twenty-five of sixty milestones are met.** This is an evidence-only update
+under rubric 1.0. Every original weight, scope, acceptance condition and
+dependency is unchanged. The original baseline was **23/100**; six newly
+completed gates contribute **9 points**.
 
 | Track | Earned / maximum |
 |---|---:|
-| Scientific reliability | 6 / 8 |
-| Fortuitous discovery | 4 / 16 |
-| Transformative algorithms | 2 / 18 |
-| Perturbative higher differentials | 8 / 20 |
+| Scientific reliability | 8 / 8 |
+| Fortuitous discovery and classification | 6 / 16 |
+| Transformative algorithms and autonomous execution | 2 / 18 |
+| Perturbative higher differentials | 10 / 20 |
 | Physical nonperturbative lifts | 2 / 14 |
-| Physical explanation | 1 / 14 |
+| Physical explanation and dual descriptions | 4 / 14 |
 | BPS chaos | 0 / 10 |
-| **Total** | **23 / 100** |
+| **Total** | **32 / 100** |
 
-`6 + 4 + 2 + 8 + 2 + 1 + 0 = 23`
+`8 + 6 + 2 + 10 + 2 + 4 + 0 = 32`
 
-The two nonperturbative points are a physical protected-sector exclusion and a historical normalization control. They are **zero certified positive microscopic BPS instanton lifts**. The one physical-explanation point fixes the theory/charge/order dictionary; it does not award the missing physical composite-operator comparison.
+## Newly completed gates
 
-## What is actually established
+| Gate | Points | Decisive evidence |
+|---|---:|---|
+| A07 | 1 | Complete public claim ledger: 247 records; strict reference/metadata/coverage audit; nine rejected corruptions |
+| A08 | 1 | Successful public clean job and expanded sixteen-check local clean replay with actual corruption rejection |
+| B05 | 2 | Explicit SU3 generator, exact dual, full native residual and rational fortuitous quotient |
+| D03 | 2 | Complete F4 sixth-power incoming second-map rank zero, using the attributed full-source theorem and fresh direct-factor identities |
+| F02 | 1 | Complete USp4 leading interacting physical block: all 69 states and all 4761 physical metric entries |
+| F03 | 2 | Entire three-to-two USp4 physical channel matched through its first nonzero quantum coefficient |
+| **Change** | **9** | **23 + 9 = 32** |
 
-### Complete fortuity and generator calculations
+### SU3: a generator rather than a remaining dimension
 
-The Sp3 known-omega block has a complete rational relation certificate:
+The complete complex is `1169 → 1896 → 1588`. Exact rational ranks give
+`1896 − 825 − 1037 = 34`; the complete proper-product span has dimension
+`33`. The remaining explicit generator contains **12224 trace terms**.
+Its exact dual annihilates every boundary and proper product and pairs to
+one with the generator. Its complete fortuitous relation quotient is
+`2311 − 2310 = 1`. Independent differentiation checks every one of the
+**1588** native target coordinates. The complete native packet was rebuilt
+byte for byte. The proper-factor census retains its historical provenance.
+[Pinned certificate](https://github.com/lbotao399-stack/quantum-lifts-results/blob/eac7db42a6e27f4900826fe7b42cc75365698dc3/algorithms/su3_generator_20261124/README.md).
 
-```text
-2870 - 2689 = 181                  complete finite-colour source relations
-1198 - 116 - 1081 = 1             fortuitous quotient dimension
-2870 - 1672 - 1198 = 0            stable cohomology in this block
-```
+### USp4: a complete physical form at stated order
 
-The exact detector pairs to one with the unchanged known candidate. Across the symplectic ranks the fixed-block dimensions are `0, 0, 1, 0`; injectivity and block embedding prove zero at every rank at least four. This is a genuine finite-rank theorem, with no inference from a short scan. It is one grading and one known class, not a whole-spectrum discovery engine. [Complete source and limits](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/fortuitous_duals_20261123/README.md)
+At energy `9`, left spin `1`, right spin `0` and flavour fundamental,
+the complete highest-weight calculation is:
 
-The G2 level-30 highest-weight column is complete:
+| Native length | Formal | Finite | Null | Outgoing rank | Incoming rank | Physical kernel |
+|---|---:|---:|---:|---:|---:|---:|
+| 5 | 35 | 35 | 0 | 17 | 18 | 0 |
+| 6 | 427 | 379 | 48 | 156 | 202 | 21 |
+| 7 | 816 | 605 | 211 | 230 | 374 | 1 |
+| 8 | 261 | 149 | 112 | 45 | 103 | 1 |
+| **Total** | **1539** | **1168** | **371** | **448** | **697** | **23** |
 
-```text
-3030 - 1960 - 1066 = 4            cohomology upper bound
-1070 - 1066 = 4                   independent known-product classes
-```
+The physical states solve both the supercharge and radial-adjoint equations.
+Restoring the complete flavour triplet gives **69 states**. Every one of the
+**4761** metric entries, every finite null relation, positivity and exact
+basis-change invariance were checked. The length-seven class has a complete
+fortuitous relation test. This is a **leading interacting-order** physical
+statement. [Pinned physical block](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/README.md).
 
-The four classes exhaust the surviving sector; nine other sectors vanish. All generic product coordinates were independently regenerated. Some source-minor entries remain retained production evaluations, which is a specific replay gap rather than evidence of a new class. [Column certificate](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/bmn_rank_certificates_20261117/README.md)
+The separate F03 channel includes its entire three-dimensional source and
+two-dimensional target, including all mixing directions. Its forms are
+`10 I₃` and `diag(15,10)`. In the stated physical normalization the displayed
+supercharge column is `(g/(2π), 3i g²/(8π²))`; the corresponding Konishi
+one-loop energy shift is `9g²/(4π²)`. The proof uses the normalized current,
+protected descendant, complete target inventory and channel-specific contact
+conditions. It is not a full graph-by-graph Noether-current calculation or an
+all-channel physical dictionary.
+[Reviewed channel and limits](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/REVIEW.md).
 
-The SU3 length-seven outgoing channel has a complete proper-product count:
+### F4: the sixth-power second map is zero
 
-```text
-1896 - 825 - 1037 = 34            complete classical cohomology
-176 - 143 = 33                   complete proper-product span
-34 - 33 = 1                      remaining ring generator
-```
+The complete selected source has dimension **3720** and outgoing rank
+**703**, hence kernel dimension **3017**. The published complete-source
+theorem gives **3016 boundaries and one product class**. Fresh direct
+product identities and the complete sixty-column bilinear calculation prove
+the product class closed. All **3476** homogeneous earlier corrections are
+retained. The full incoming second differential therefore has **rank zero
+over the rationals**.
 
-All 56 factor pairs, 112 factor sectors and 114 matrices are included. The missing object is concrete: an explicit rational representative outside that full product span, with its dual and physical parent. That is B05. [Outgoing-channel proof](https://github.com/lbotao399-stack/quantum-lifts-results/blob/a90728a6ca04d74f5475adae4bf37c8d94f34ac0/algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md)
+The fresh work includes all **150850** entries of the native extension and
+all **2704** Casimir entries. The historical complete 3017-dimensional minor
+is attributed explicitly. This decision closes **D03**, while the complete
+fresh native action oracle required by **C04** remains unfinished. The older
+withdrawn graph witness stays withdrawn.
+[Pinned proof packet](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/README.md).
 
-### Perturbative lifts and survivors
+### Scientific audit and replay
 
-Uniform orthogonal first-differential results and complete third-order chains for SO(11), SO(12) and SO(13) are established. Packaged formal all-order exclusions for the named F4 and SU3 targets, and characteristic-zero R-007/F1 formal-survival theorems, are also established. D014 additionally reports G2 third-power formal survival; a distinct complete proof packet was not located in this audit, so D07 does not award it separate credit. Formal existence and a printed list of every repaired coefficient are distinct milestones. [Current discussion](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/RESEARCH_DISCUSSION.md) · [Third-order replays](https://github.com/lbotao399-stack/quantum-lifts-results/tree/e1d184d388c588c0a5a825a19ecbca4e24427242/reviews/dot-orthogonal-d3) · [R-007 proof](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/contributions/dot-r007-all-order/ALL_ORDER_PROOF.md)
+The completed ledger covers **247 canonical claim/status records**, **255
+distinct baseline texts at 764 immutable occurrences**, and **three release
+packets containing twelve additional texts**. It joins **552 distinct
+advertised native tuples** at **1123 occurrences** to the claims. The strict
+gate reports zero errors and zero blockers and rejects all nine corruption
+controls. Its expanded core envelope has **1376452 native group slots** and
+**675081 physical group blocks**. These are kinematic denominators; neither
+number counts BPS states or establishes a solved fraction.
+[Complete ledger](https://github.com/lbotao399-stack/quantum-lifts-results/blob/d6ac4814ca39420459faee1a7ed07fa4c5fe7871/research-roadmap/claim-ledger/CURRENT_SUMMARY.md).
 
-The current exceptional frontier is
+The sixteen-check bounded verification tier passed from a clean local tree,
+including actual download and authentication of all **100** F4 public
+inputs. A copied corrupted source was rejected, and the checkout remained
+unchanged. The expanded sixteen-check tier also passed on [GitHub Actions](https://github.com/lbotao399-stack/quantum-lifts-results/actions/runs/45327891279).
+The bounded tier authenticates the strict ledger review and saved large Wick
+evaluations; it does not call that a new semantic review or a full production
+Wick rebuild. [Verification and exact scope](https://github.com/lbotao399-stack/quantum-lifts-results/blob/d6ac4814ca39420459faee1a7ed07fa4c5fe7871/research-roadmap/verification/README.md).
 
-```text
-3720 - 703 - 3002 = 15            upper bound on the F4 source cohomology
-```
+## Remaining structural bottlenecks
 
-The bound is **at most fifteen**, not exactly fifteen. The eight-Albert second-order witness was withdrawn after the corrected raw score agreed with the classical section scores modulo both 1009 and 1013; both augmented order-704 determinants vanish at those two primes. The rational section-subtracted score remains open. That withdrawal does not prove the full second differential vanishes. The F4 seventh power survives the first differential; the eighth power is hit, with homogeneous/augmented ranks `91/92`. [Bound](https://github.com/lbotao399-stack/quantum-lifts-results/blob/c3688a7ad9d17f5c949d22ff96d098846c5698b4/algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md) · [Withdrawal and tower audit](https://github.com/lbotao399-stack/quantum-lifts-results/blob/53462d3102e77eea433207ab1d0fd7e09a8303f6/algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md)
-
-The public record inspected for this assessment contains **no valid positive undeformed-N4 second differential, no certified positive order-four-and-higher example, and no positive microscopic BPS instanton pairing**. Positive deformed/Abelian controls do not alter those statements. [Physical instanton gap](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/OPEN_PROBLEMS.md#n4-nonscalar-image)
-
-## Structural problems that now matter
-
-| Current structure | Concrete consequence | Milestones that change it |
+| Concrete gap | Consequence | Milestones |
 |---|---|---|
-| Results live in dated tables, discussion entries and separately pinned commits | A November 18 zero-third-order count can be mistaken for the current state; withdrawals do not automatically update every summary | A07, A08, C03 |
-| Important inputs are selected source constructions or evaluation minors | A successful ansatz is easy to test, but a complete zero or full-source obstruction is hard to certify | C04, D03, D04, D06 |
-| Source-basis generation, relation recognition, coupled solving and certificates use separate pipelines | Known controls run, while candidate-free discovery requires manual stitching | C03, C08, C09 |
-| Earlier corrections can be frozen too soon | An apparent higher obstruction can disappear after an allowed homogeneous change | A05 already supplies the control; D06 makes it generic |
-| Optimizations are measured at individual arithmetic stages | A large kernel speedup can coexist with unchanged total production cost | C06, C07, C10 |
-| Product comparison is often a selected list | A new-looking class can be a product; a ring generator need not be fortuitous | B04, B05, B07, B08 |
-| Formal completion and physical operator matching are separate | A formal survivor does not yet define a normalized instanton source or a physical probe matrix | F02, F03, E03, E04 |
-| Algebraic functionals have no physical inner product attached | Their matrices or eigenvalues cannot be treated as BPS-chaos data | F02, G01, G03 |
+| The remaining G2 source-minor entries lack a permitted fresh reconstruction | The common three-family certificate interface is still incomplete | C03 and dependent algorithm gates |
+| F4 complete-source action is not available as a fresh native oracle | An attributed proof can decide D03 without establishing a reusable source engine | C04, C05, C08 |
+| F4 seventh-power equations and higher orthogonal orders are unresolved | Selected lift theorems do not establish almost-complete perturbative coverage | D04, D05, D09, D10 |
+| A small physical channel is matched, but the full survivor product/current comparison is unfinished | The 69 leading states cannot yet be used as a complete finite-coupling chaos dataset | F04, F05, G01 |
+| SU3 physical primaries, mixing and every instanton partner are missing | No complete microscopic BPS instanton map can be inferred from formal survival | E03–E08 |
+| No complete physical probe dataset with qualified statistics exists | Chaos receives no points | G01–G06 |
 
-The strongest current bottleneck is therefore not a shortage of candidate ideas. It is the ability to convert a complete native input into a complete, independently replayable decision, and then into a physical operator calculation. This is a diagnosis from the audited evidence, not a claim that the existing constructions are mathematically invalid.
+There remain **zero certified positive microscopic BPS instanton lifts**
+and **zero points for BPS chaos**. The two existing nonperturbative points
+are a protected-sector exclusion and a historical normalization control.
 
-## First work sequence
+## Current attacks toward forty
 
-1. **A07 — Reconcile claims and enumerate coverage.** Import all advertised claims with their theory, grading, order, certificate and withdrawal state. Preserve historical snapshots. Produce the exact missing-block queue.
-2. **C03 — Establish one complete certificate interface.** Import a unitary, orthogonal and exceptional example. Reconstruct the still-unreplayed required source-minor entries. The format must retain native coordinates and full homogeneous freedom.
-3. **B05 — Extract the missing SU3 generator.** The count is already one. Construct the vector and dual outside all 33 proper-product directions, and test its full finite-rank relation class.
-4. **C04 then D03 — Decide the F4 sixth-power second differential.** Build the complete 3720-source input, or supply an equivalent exact full-space identity. Resolve the residual space bounded by fifteen; do not replace it with another selected graph score.
-5. **D04 — Decide the F4 seventh-power second differential.** Start from the complete allowed second-source inventory and retain the established first-page certificate.
-6. **F02 and F03 — Build a complete physical block.** Construct actual physical representatives, their full inner product and their formal-to-physical comparison. Keep every physical class in the charge block, including mixed matrix elements between different rank classifications.
-7. **C05/C08/D06 — Make this process automatic and order-independent.** Only then claim a general framework, matched-resource frontier advance, or almost-complete lift census.
+1. **D04:** assemble and decide the complete F4 seventh-power second-source
+   equations, preserving all earlier homogeneous freedom.
+2. **F04:** construct the complete physical SO7 recombination channel, its
+   parent, partners, normalized map and energy consequence.
+3. **D05:** decide every remaining incoming order for all three specified
+   high-order orthogonal targets, including the stable/finite comparison.
+4. **C03/C04:** finish the missing native source reconstruction needed by
+   the reusable engine.
+5. **F05/G01:** complete the required physical products and state comparison
+   before accepting a physical chaos diagnostic.
 
-These are a default sequence, not a ban on a better proof. For example, an analytic full-space vanishing identity could close D03 without first allocating its dense matrices. An exact new physical dictionary could accelerate E03 and G01 in parallel with the algebraic frontier.
-
-## What was executed for this assessment
-
-The existing standard-library candidate scorer was run and returned exact pairing `1`, with `186` source coordinates and `4264` input terms. Its own scope excludes closure and highest-weight verification; those are supplied by the published complete certificate, not by this short command.
-
-The new score validator was executed on all sixty records and checked the 100-point sum, score arithmetic, complete evidence references, dependency graph and generated documents. This work adds a reproducible research plan and a current assessment, **not a new physical lift or chaos result**.
+These are active scientific questions, not awarded points. **Eight more
+points are required to reach forty under the unchanged rubric.**

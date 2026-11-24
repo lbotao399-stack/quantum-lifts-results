@@ -2,7 +2,7 @@
 
 # Current score
 
-**23/100 points; 19/60 milestones met.**
+**32/100 points; 25/60 milestones met.**
 
 Rubric 1.0 · 2026-11-24 (Asia/Shanghai)
 
@@ -14,20 +14,20 @@ The assessment audits published certificates and their stated replay scope. It d
 
 | Track | Earned | Available | Met milestones |
 |---|---:|---:|---:|
-| A · Scientific reliability | 6 | 8 | 6/8 |
-| B · Fortuitous discovery and classification | 4 | 16 | 4/10 |
+| A · Scientific reliability | 8 | 8 | 8/8 |
+| B · Fortuitous discovery and classification | 6 | 16 | 5/10 |
 | C · Transformative algorithms and autonomous execution | 2 | 18 | 2/10 |
-| D · Perturbative higher differentials | 8 | 20 | 4/10 |
+| D · Perturbative higher differentials | 10 | 20 | 5/10 |
 | E · Physical nonperturbative lifts | 2 | 14 | 2/8 |
-| F · Physical explanation and dual descriptions | 1 | 14 | 1/8 |
+| F · Physical explanation and dual descriptions | 4 | 14 | 3/8 |
 | G · BPS chaos | 0 | 10 | 0/6 |
-| **Total** | **23** | **100** | **19/60** |
+| **Total** | **32** | **100** | **25/60** |
 
 ## Exact score calculation
 
-`6 + 4 + 2 + 8 + 2 + 1 + 0 = 23`
+`8 + 6 + 2 + 10 + 2 + 4 + 0 = 32`
 
-Earned gates: [A01](MILESTONES.md#a01) (1), [A02](MILESTONES.md#a02) (1), [A03](MILESTONES.md#a03) (1), [A04](MILESTONES.md#a04) (1), [A05](MILESTONES.md#a05) (1), [A06](MILESTONES.md#a06) (1), [B01](MILESTONES.md#b01) (1), [B02](MILESTONES.md#b02) (1), [B03](MILESTONES.md#b03) (1), [B04](MILESTONES.md#b04) (1), [C01](MILESTONES.md#c01) (1), [C02](MILESTONES.md#c02) (1), [D01](MILESTONES.md#d01) (2), [D02](MILESTONES.md#d02) (2), [D07](MILESTONES.md#d07) (2), [D08](MILESTONES.md#d08) (2), [E01](MILESTONES.md#e01) (1), [E02](MILESTONES.md#e02) (1), [F01](MILESTONES.md#f01) (1).
+Earned gates: [A01](MILESTONES.md#a01) (1), [A02](MILESTONES.md#a02) (1), [A03](MILESTONES.md#a03) (1), [A04](MILESTONES.md#a04) (1), [A05](MILESTONES.md#a05) (1), [A06](MILESTONES.md#a06) (1), [A07](MILESTONES.md#a07) (1), [A08](MILESTONES.md#a08) (1), [B01](MILESTONES.md#b01) (1), [B02](MILESTONES.md#b02) (1), [B03](MILESTONES.md#b03) (1), [B04](MILESTONES.md#b04) (1), [B05](MILESTONES.md#b05) (2), [C01](MILESTONES.md#c01) (1), [C02](MILESTONES.md#c02) (1), [D01](MILESTONES.md#d01) (2), [D02](MILESTONES.md#d02) (2), [D03](MILESTONES.md#d03) (2), [D07](MILESTONES.md#d07) (2), [D08](MILESTONES.md#d08) (2), [E01](MILESTONES.md#e01) (1), [E02](MILESTONES.md#e02) (1), [F01](MILESTONES.md#f01) (1), [F02](MILESTONES.md#f02) (1), [F03](MILESTONES.md#f03) (2).
 
 ## All milestones
 
@@ -39,13 +39,13 @@ Earned gates: [A01](MILESTONES.md#a01) (1), [A02](MILESTONES.md#a02) (1), [A03](
 | [A04](MILESTONES.md#a04) | Modular identities are certified in characteristic zero | 1 / 1 | met |
 | [A05](MILESTONES.md#a05) | Earlier homogeneous corrections remain free | 1 / 1 | met |
 | [A06](MILESTONES.md#a06) | Pinned calculations replay outside their checkout | 1 / 1 | met |
-| [A07](MILESTONES.md#a07) | A current claim ledger covers the whole public evidence graph | 0 / 1 | partial |
-| [A08](MILESTONES.md#a08) | A clean verification job rejects corrupted evidence | 0 / 1 | open |
+| [A07](MILESTONES.md#a07) | A current claim ledger covers the whole public evidence graph | 1 / 1 | met |
+| [A08](MILESTONES.md#a08) | A clean verification job rejects corrupted evidence | 1 / 1 | met |
 | [B01](MILESTONES.md#b01) | One complete exceptional-group column is solved | 1 / 1 | met |
 | [B02](MILESTONES.md#b02) | One full-jet fortuitous quotient is exact | 1 / 1 | met |
 | [B03](MILESTONES.md#b03) | Rank dependence is proved beyond a finite scan | 1 / 1 | met |
 | [B04](MILESTONES.md#b04) | A ring-generator count uses every proper product | 1 / 1 | met |
-| [B05](MILESTONES.md#b05) | The remaining SU3 generator is explicit | 0 / 2 | open |
+| [B05](MILESTONES.md#b05) | The remaining SU3 generator is explicit | 2 / 2 | met |
 | [B06](MILESTONES.md#b06) | The existing SU3 and SU4 full-jet frontiers are uniformly certified | 0 / 2 | partial |
 | [B07](MILESTONES.md#b07) | Unseeded discovery completes two gauge-family level scans | 0 / 2 | partial |
 | [B08](MILESTONES.md#b08) | Autonomous discovery finds a new independent generator family | 0 / 2 | open |
@@ -63,7 +63,7 @@ Earned gates: [A01](MILESTONES.md#a01) (1), [A02](MILESTONES.md#a02) (1), [A03](
 | [C10](MILESTONES.md#c10) | The improved framework moves the completed frontier | 0 / 2 | open |
 | [D01](MILESTONES.md#d01) | A uniform first-differential family is established | 2 / 2 | met |
 | [D02](MILESTONES.md#d02) | Three independent orthogonal third-order cases are certified | 2 / 2 | met |
-| [D03](MILESTONES.md#d03) | The F4 sixth-power second differential is decided | 0 / 2 | open |
+| [D03](MILESTONES.md#d03) | The F4 sixth-power second differential is decided | 2 / 2 | met |
 | [D04](MILESTONES.md#d04) | The F4 seventh-power second differential is decided | 0 / 2 | open |
 | [D05](MILESTONES.md#d05) | The three high-order orthogonal targets reach their final page | 0 / 2 | open |
 | [D06](MILESTONES.md#d06) | The higher-page engine has no hard-coded order ceiling | 0 / 2 | open |
@@ -80,8 +80,8 @@ Earned gates: [A01](MILESTONES.md#a01) (1), [A02](MILESTONES.md#a02) (1), [A03](
 | [E07](MILESTONES.md#e07) | The complete charge-one matrix is known in the instanton window | 0 / 2 | open |
 | [E08](MILESTONES.md#e08) | Higher instanton orders are controlled by a theorem | 0 / 2 | open |
 | [F01](MILESTONES.md#f01) | The physical BPS sector and loop-order convention are fixed | 1 / 1 | met |
-| [F02](MILESTONES.md#f02) | A complete physical block containing fortuitous survivors has its inner product | 0 / 1 | open |
-| [F03](MILESTONES.md#f03) | The formal differential is matched to physical composite operators | 0 / 2 | open |
+| [F02](MILESTONES.md#f02) | A complete physical block containing fortuitous survivors has its inner product | 1 / 1 | met |
+| [F03](MILESTONES.md#f03) | The formal differential is matched to physical composite operators | 2 / 2 | met |
 | [F04](MILESTONES.md#f04) | One lifted fortuitous class has an explicit recombining multiplet | 0 / 2 | open |
 | [F05](MILESTONES.md#f05) | Quantum products predict lifts beyond undressed classes | 0 / 2 | open |
 | [F06](MILESTONES.md#f06) | S-duality makes successful new operator-level predictions | 0 / 2 | open |
@@ -100,21 +100,25 @@ An unmet dependency blocks acceptance, not exploratory work. The queue is a defa
 
 | Priority | Milestone | Unmet dependencies |
 |---:|---|---|
-| 1 | [A07 · A current claim ledger covers the whole public evidence graph](MILESTONES.md#a07) | None |
-| 2 | [C03 · One certificate format handles three gauge families](MILESTONES.md#c03) | None |
-| 3 | [B05 · The remaining SU3 generator is explicit](MILESTONES.md#b05) | None |
-| 4 | [C04 · The complete F4 sixth-power source is usable natively](MILESTONES.md#c04) | C03 |
-| 5 | [D03 · The F4 sixth-power second differential is decided](MILESTONES.md#d03) | None |
-| 6 | [D04 · The F4 seventh-power second differential is decided](MILESTONES.md#d04) | None |
-| 7 | [F02 · A complete physical block containing fortuitous survivors has its inner product](MILESTONES.md#f02) | None |
-| 8 | [F03 · The formal differential is matched to physical composite operators](MILESTONES.md#f03) | None |
+| 1 | [D04 · The F4 seventh-power second differential is decided](MILESTONES.md#d04) | None |
+| 2 | [F04 · One lifted fortuitous class has an explicit recombining multiplet](MILESTONES.md#f04) | None |
+| 3 | [D05 · The three high-order orthogonal targets reach their final page](MILESTONES.md#d05) | None |
+| 4 | [C03 · One certificate format handles three gauge families](MILESTONES.md#c03) | None |
+| 5 | [C04 · The complete F4 sixth-power source is usable natively](MILESTONES.md#c04) | C03 |
+| 6 | [F05 · Quantum products predict lifts beyond undressed classes](MILESTONES.md#f05) | None |
+| 7 | [G01 · A permitted physical chaos diagnostic is defined](MILESTONES.md#g01) | None |
+| 8 | [B06 · The existing SU3 and SU4 full-jet frontiers are uniformly certified](MILESTONES.md#b06) | None |
 | 9 | [C05 · A solver avoids storing the full dense maps](MILESTONES.md#c05) | C03, C04 |
-| 10 | [C08 · Group and charges alone drive a complete discovery run](MILESTONES.md#c08) | A07, C03, C05 |
+| 10 | [C08 · Group and charges alone drive a complete discovery run](MILESTONES.md#c08) | C03, C05 |
 | 11 | [D06 · The higher-page engine has no hard-coded order ceiling](MILESTONES.md#d06) | C03, C05 |
-| 12 | [D05 · The three high-order orthogonal targets reach their final page](MILESTONES.md#d05) | None |
+| 12 | [E03 · One complete physical instanton source/target channel is fixed](MILESTONES.md#e03) | None |
 
 ## Checks actually run during this assessment
 
 - `python3 algorithms/fortuitous_duals_20261123/transpose_detector/score_candidate.py` — Exact coefficient pairing 1; 186 source coordinates; 4264 input terms. Limit: Candidate scoring only; this command does not check closure or highest-weight membership.
+- `python3 algorithms/su3_generator_20261124/reproduce.py /tmp/su3-generator-rebuild` — Complete nine-artifact native regeneration matched the frozen mathematical packet byte for byte; exact rational and independent residual checks also passed. Limit: The proper-factor census remains an attributed immutable historical input; no SU3 physical primary was reconstructed.
+- `python3 research-roadmap/claim-ledger/check.py --negative-controls --require-complete --receipt /tmp/claim-ledger-check.json` — 247 canonical claims; zero errors and gate blockers; all nine corruption controls rejected. Limit: The complete semantic review is a dated audit of the frozen inventory and three release appendices. It must be extended for later scientific claims.
+- `python3 algorithms/f4_complete_source_20261124/verify_packet.py --inputs /tmp/f4-public --out /tmp/f4-check.json` — Complete direct-product/bilinear identities passed; incoming second-map rank is zero under the attributed full-source theorem. Limit: The historical complete 3017-dimensional minor is not a fresh native reconstruction.
+- `python3 research-roadmap/verification/run.py --output /tmp/public-verification-receipt` — All sixteen declared checks passed from a clean tree; all 100 public F4 inputs downloaded and authenticated; deliberate corruption rejected; tree unchanged. Limit: This is the bounded tier. Full production Wick regeneration, complete historical source minors and a new semantic/reference audit are not claimed by this runner.
 
 The score validator additionally checks totals, unique IDs, evidence references, dependency cycles, met prerequisites and generated-file consistency. It does not replace the mathematical acceptance tests.

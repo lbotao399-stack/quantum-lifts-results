@@ -129,7 +129,7 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Rebuild required native code in a separate work directory and emit exact output receipts.
 3. Include an independently implemented check of a decisive identity.
 
-**Current assessment:** Portable recipes, manifests and independent checks are public. There is no repository-wide clean verification job.
+**Current assessment:** Portable recipes, manifests and independent checks are public. A08 now adds the declared clean verification job, with its bounded replay scope.
 
 **Evidence:** [portable_replay](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/so11_source_comparison_20261123/README.md); [fortuity](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/fortuitous_duals_20261123/README.md).
 
@@ -141,7 +141,7 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 
 ### A07
 
-**A current claim ledger covers the whole public evidence graph** — 0/1 points; **partial**.
+**A current claim ledger covers the whole public evidence graph** — 1/1 points; **met**.
 
 **Scope:** Every advertised undeformed-N4 result, including discussion-linked commits outside main.
 
@@ -151,19 +151,19 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Detect conflicting active claims and missing references automatically.
 3. Generate the current summary from this ledger and enumerate the explicit finite coverage manifest.
 
-**Current assessment:** This roadmap reconciles its scored claims. It does not yet catalogue every historical/public claim, so writing it earns no point.
+**Current assessment:** The complete frozen public evidence graph and all three new release appendices pass the strict gate: 247 canonical records, 552 distinct advertised native tuples, zero metadata gaps/conflicts/missing references, and nine rejected corruption controls.
 
-**Evidence:** [discussion](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/RESEARCH_DISCUSSION.md); [conventions](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/README.md); [f4_withdrawal](https://github.com/lbotao399-stack/quantum-lifts-results/blob/53462d3102e77eea433207ab1d0fd7e09a8303f6/algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md).
+**Evidence:** [complete_claim_ledger](https://github.com/lbotao399-stack/quantum-lifts-results/blob/d6ac4814ca39420459faee1a7ed07fa4c5fe7871/research-roadmap/claim-ledger/CURRENT_SUMMARY.md).
 
 **Prerequisites:** None.
 
-**Next calculation:** Import all discussion entries and manuscript/table claims; attach immutable evidence and label historical campaign totals.
+**Next calculation:** Append and independently review every subsequent scientific release before accepting its points; preserve the existing audit snapshots.
 
 **Required artifact:** claims.json, coverage-blocks.json and a conflict/reference checker.
 
 ### A08
 
-**A clean verification job rejects corrupted evidence** — 0/1 points; **open**.
+**A clean verification job rejects corrupted evidence** — 1/1 points; **met**.
 
 **Scope:** All designated inexpensive public verifiers; expensive replays remain separately callable.
 
@@ -173,13 +173,13 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Verify manifests and exact outputs, deliberately corrupt one copied payload and require rejection.
 3. Publish receipts and distinguish source rebuilding from reuse of saved production entries.
 
-**Current assessment:** Portable bundles exist, but no repository-wide automated verification workflow was found at the audit pin.
+**Current assessment:** Both a clean local checkout and the public GitHub Actions job passed all sixteen declared checks, including actual public-input downloads and rejection of a copied corrupted input. The tree remained unchanged; detailed replay limitations are explicit.
 
-**Evidence:** [portable_replay](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/so11_source_comparison_20261123/README.md); [g2_column](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/bmn_rank_certificates_20261117/README.md).
+**Evidence:** [complete_claim_ledger](https://github.com/lbotao399-stack/quantum-lifts-results/blob/d6ac4814ca39420459faee1a7ed07fa4c5fe7871/research-roadmap/claim-ledger/CURRENT_SUMMARY.md); [public_verification_v2](https://github.com/lbotao399-stack/quantum-lifts-results/blob/d6ac4814ca39420459faee1a7ed07fa4c5fe7871/research-roadmap/verification/README.md); [public_clean_ci](https://github.com/lbotao399-stack/quantum-lifts-results/actions/runs/45327891279).
 
 **Prerequisites:** [A06](#a06), [A07](#a07).
 
-**Next calculation:** Create one public verification entry point and a clean runner for the existing cheap bundles.
+**Next calculation:** Keep the declared tier green as new complete certificates are added; distinguish inherited production evidence from fresh reconstruction.
 
 **Required artifact:** CI workflow, negative-control receipt and replay manifest.
 
@@ -275,7 +275,7 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 
 ### B05
 
-**The remaining SU3 generator is explicit** — 0/2 points; **open**.
+**The remaining SU3 generator is explicit** — 2/2 points; **met**.
 
 **Scope:** The one-dimensional quotient in B04.
 
@@ -285,13 +285,13 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Give a rational functional zero on all boundaries and all proper products, and equal to one on the representative.
 3. Give its complete finite-rank relation test; do not assume that ring primitivity alone proves fortuity.
 
-**Current assessment:** The dimension is established; a vector outside the complete product span is not yet published.
+**Current assessment:** The 12224-term remaining SU3 generator, complete coordinates and exact dual are explicit. Rational cohomology dimension 34, proper-product dimension 33 and fortuitous quotient 2311−2310=1 were verified; all 1588 target coordinates vanish independently.
 
-**Evidence:** [generator_count](https://github.com/lbotao399-stack/quantum-lifts-results/blob/a90728a6ca04d74f5475adae4bf37c8d94f34ac0/algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md).
+**Evidence:** [generator_count](https://github.com/lbotao399-stack/quantum-lifts-results/blob/a90728a6ca04d74f5475adae4bf37c8d94f34ac0/algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md); [explicit_su3_generator](https://github.com/lbotao399-stack/quantum-lifts-results/blob/eac7db42a6e27f4900826fe7b42cc75365698dc3/algorithms/su3_generator_20261124/README.md).
 
 **Prerequisites:** [B04](#b04).
 
-**Next calculation:** Back-substitute the target/product rank certificates and verify the entire polynomial residual.
+**Next calculation:** Construct its physical renormalized primary and complete allowed partners for E03; the algebraic generator alone does not supply them.
 
 **Required artifact:** Representative, full dual and exact replay.
 
@@ -485,9 +485,9 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Evaluate the full classical action and retain all relations and homogeneous freedom.
 3. A certified matrix-action oracle is allowed only if it covers every basis vector and proves the same identities; saved minors alone do not pass.
 
-**Current assessment:** Outgoing rank 703 and incoming rank at least 3002 leave at most 15 classes. The complete native input package is absent.
+**Current assessment:** D03 now uses the published complete-source rank theorem (kernel 3017, boundaries 3016, one product class) and fresh direct-factor identities. A complete freshly reconstructed native basis and classical action oracle for all 3720 source cochains remain absent.
 
-**Evidence:** [f4_bound](https://github.com/lbotao399-stack/quantum-lifts-results/blob/c3688a7ad9d17f5c949d22ff96d098846c5698b4/algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md); [f4_withdrawal](https://github.com/lbotao399-stack/quantum-lifts-results/blob/53462d3102e77eea433207ab1d0fd7e09a8303f6/algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md).
+**Evidence:** [f4_bound](https://github.com/lbotao399-stack/quantum-lifts-results/blob/c3688a7ad9d17f5c949d22ff96d098846c5698b4/algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md); [f4_withdrawal](https://github.com/lbotao399-stack/quantum-lifts-results/blob/53462d3102e77eea433207ab1d0fd7e09a8303f6/algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md); [f4_sixth_second_map](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/README.md).
 
 **Prerequisites:** [A03](#a03), [C03](#c03).
 
@@ -675,7 +675,7 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 
 ### D03
 
-**The F4 sixth-power second differential is decided** — 0/2 points; **open**.
+**The F4 sixth-power second differential is decided** — 2/2 points; **met**.
 
 **Scope:** The complete incoming second-page source for the level-36 target.
 
@@ -685,13 +685,13 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Produce a rational nonzero chain with a nonzero target class, or prove the entire incoming map is zero.
 3. Close the remaining space by matching rank bounds or an exact full-space identity; an upper bound of 15 is not the answer.
 
-**Current assessment:** The eight-Albert witness is withdrawn. Corrected order-704 augmented determinants vanish modulo 1009 and 1013. The rational section-subtracted score and the full second differential remain open.
+**Current assessment:** The complete F4 sixth-power incoming second map has rational rank zero. The published complete source-rank theorem is combined with fresh direct-factor closure and full correction-freedom checks. The withdrawn graph witness is not reinstated.
 
-**Evidence:** [f4_bound](https://github.com/lbotao399-stack/quantum-lifts-results/blob/c3688a7ad9d17f5c949d22ff96d098846c5698b4/algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md); [f4_withdrawal](https://github.com/lbotao399-stack/quantum-lifts-results/blob/53462d3102e77eea433207ab1d0fd7e09a8303f6/algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md).
+**Evidence:** [f4_sixth_second_map](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/README.md); [f4_bound](https://github.com/lbotao399-stack/quantum-lifts-results/blob/c3688a7ad9d17f5c949d22ff96d098846c5698b4/algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md); [f4_withdrawal](https://github.com/lbotao399-stack/quantum-lifts-results/blob/53462d3102e77eea433207ab1d0fd7e09a8303f6/algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md).
 
 **Prerequisites:** [A03](#a03), [A04](#a04), [A05](#a05).
 
-**Next calculation:** Evaluate the corrected functional on the entire remaining source space, using C04 or an equivalent exact full-space argument.
+**Next calculation:** Keep the historical full minor attribution explicit. Rebuild the complete native source oracle for C04 separately, and attack the full seventh-power source for D04.
 
 **Required artifact:** Complete rational incoming-map certificate, positive or zero.
 
@@ -907,13 +907,13 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Certify complete perturbative survival, all allowed boundaries, operator mixing and the physical inner products.
 3. Enumerate every symmetry-compatible physical partner; a bare-endpoint zero-mode test is insufficient.
 
-**Current assessment:** R-007 and several targets survive formally; the explicit remaining generator, its parent and the physical dictionary are open.
+**Current assessment:** R-007 and several targets survive formally. B05 now supplies the explicit remaining algebraic generator, but the completed SU3 physical primaries, complete mixing, forms and all symmetry-compatible partners remain open.
 
-**Evidence:** [r007_all_order](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/contributions/dot-r007-all-order/ALL_ORDER_PROOF.md); [generator_count](https://github.com/lbotao399-stack/quantum-lifts-results/blob/a90728a6ca04d74f5475adae4bf37c8d94f34ac0/algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md); [np_open](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/OPEN_PROBLEMS.md).
+**Evidence:** [r007_all_order](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/contributions/dot-r007-all-order/ALL_ORDER_PROOF.md); [generator_count](https://github.com/lbotao399-stack/quantum-lifts-results/blob/a90728a6ca04d74f5475adae4bf37c8d94f34ac0/algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md); [np_open](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/OPEN_PROBLEMS.md); [explicit_su3_generator](https://github.com/lbotao399-stack/quantum-lifts-results/blob/eac7db42a6e27f4900826fe7b42cc75365698dc3/algorithms/su3_generator_20261124/README.md).
 
 **Prerequisites:** [B05](#b05), [D08](#d08), [F02](#f02), [F03](#f03).
 
-**Next calculation:** Finish B05, then solve the primary/mixing conditions in a common physical convention.
+**Next calculation:** Use the explicit B05 generator and all-order formal source data to solve the full SU3 physical primary/mixing conditions in one normalization.
 
 **Required artifact:** Complete primary census, physical dictionary and normalized channel.
 
@@ -1053,7 +1053,7 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 
 ### F02
 
-**A complete physical block containing fortuitous survivors has its inner product** — 0/1 points; **open**.
+**A complete physical block containing fortuitous survivors has its inner product** — 1/1 points; **met**.
 
 **Scope:** One genuine non-Abelian complete physical charge block containing certified fortuitous survivors, selected before computing its metric.
 
@@ -1063,19 +1063,19 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Compute every two-point matrix entry, all null relations and positivity on the entire physical charge block, retaining all classes and mixed pairings.
 3. Check normalization and basis-change invariance independently; a coefficient dual is not a physical bra.
 
-**Current assessment:** The exact fortuitous dual explicitly supplies no Wick metric. Existing half-BPS protection pairings do not fill this gap.
+**Current assessment:** The entire USp4 block at E=9, left spin 1, right spin 0 and flavour fundamental was computed at leading interacting order: 1539 formal cochains, 1168 finite cochains, 371 nulls, 23 highest weights and all 69 physical states. Every metric entry, harmonic equation, positivity and normalization check passed.
 
-**Evidence:** [fortuity](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/fortuitous_duals_20261123/README.md); [np_physics](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/research/22-n4-sym.md).
+**Evidence:** [physical_usp4_block](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/README.md).
 
 **Prerequisites:** [A04](#a04), [F01](#f01).
 
-**Next calculation:** Select the smallest complete non-Abelian survivor block and derive its full renormalized two-point matrix.
+**Next calculation:** Establish the higher-order physical completion/current/product comparison before treating these leading states as a complete finite-coupling chaos dataset.
 
 **Required artifact:** Physical representatives, full positive inner product and normalization checks.
 
 ### F03
 
-**The formal differential is matched to physical composite operators** — 0/2 points; **open**.
+**The formal differential is matched to physical composite operators** — 2/2 points; **met**.
 
 **Scope:** One full-jet nonscalar N4 source/target sector, then its required local product/current operations.
 
@@ -1085,13 +1085,13 @@ See [scope](SCOPE.md), [current score](SCORECARD.md), [structural assessment](CU
 2. Prove agreement of the differential and matched product/current operations through the first nonzero quantum order, at least third order for the orthogonal benchmark, or by an all-order theorem.
 3. State any remaining hypotheses explicitly; an existence theorem in the formal complex alone does not pass.
 
-**Current assessment:** The formal theory is strong, but physical composite/current matching is an explicit remaining gap.
+**Current assessment:** A complete USp4 full-jet nonscalar three-to-two channel is matched through its first nonzero quantum coefficient. All finite relations, source/target mixing, physical forms, protected-descendant normalization and channel-specific Ward/contact conditions are included. The broader 69-state physical completion remains open.
 
-**Evidence:** [np_open](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/OPEN_PROBLEMS.md); [np_physics](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/research/22-n4-sym.md); [r007_all_order](https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/contributions/dot-r007-all-order/ALL_ORDER_PROOF.md).
+**Evidence:** [physical_first_quantum_channel](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/REVIEW.md); [physical_usp4_block](https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/README.md).
 
 **Prerequisites:** [F01](#f01).
 
-**Next calculation:** Choose one physically normalized channel and derive the local comparison rather than infer it from matching dimensions.
+**Next calculation:** Extend the physical Ward and composite-product comparison to the selected fortuitous recombination channel and to the full USp4 survivor block; do not infer it from the small control.
 
 **Required artifact:** Physical comparison theorem or complete channel-specific derivation.
 
