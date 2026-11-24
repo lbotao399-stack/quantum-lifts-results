@@ -1,0 +1,39 @@
+{
+  "universal_scalar_check": {
+    "ordered_scalar_inputs": 2704,
+    "symmetric_casimir_columns": 1378,
+    "homogeneous_tensors": 40
+  },
+  "powers": [
+    {
+      "power": 7,
+      "target_weights": [
+        874,
+        1105,
+        1035
+      ],
+      "branch_dimensions": [
+        1264120,
+        15997696,
+        19214624
+      ],
+      "target_pairing": -194893931232000,
+      "homogeneous_dimensions": [
+        43,
+        16,
+        9
+      ],
+      "differentiated_scalar_tests": 1117,
+      "nonzero_terms_cancelled": 1074,
+      "mixed_components_by_extremal_pair": [
+        6920,
+        2554,
+        2554,
+        6920
+      ]
+    }
+  ],
+  "elapsed_seconds": 76.17263832199933,
+  "public_commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+  "scope": "Fresh native rational first-page certificate for the entire seventh-power incoming profiles:2704 scalar pairs,1378 symmetric pairs,1117 differentiated-scalar entries and18948 mixed-ghost components. This does not decide the second differential."
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "f4-sixth-proof-dependencies-v1",
+  "inputs": [
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth_survival.md",
+      "role": "Published complete kernel and formal survival theorem",
+      "sha256": "46d9b792e6983ffd557924f73882a605afe010e97cd65e77cf709e66ba72856a",
+      "bytes": 5545,
+      "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/c778cd7c3ceb72ad8082d791b2aee5f0df082164/algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth_survival.md"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth-product-1009.json",
+      "role": "Published complete kernel minor at1009",
+      "sha256": "4d5c442ca31bc186cce7fe742ada93db1989b23eb26c99d7a3b67f5fccfbb69d",
+      "bytes": 448,
+      "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/c778cd7c3ceb72ad8082d791b2aee5f0df082164/algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth-product-1009.json"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth-product-1013.json",
+      "role": "Published same complete kernel minor at1013",
+      "sha256": "164ae18b9ea0092024480982b8aec9fa244ba10f1d76899955bb10e98c9b328d",
+      "bytes": 447,
+      "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/c778cd7c3ceb72ad8082d791b2aee5f0df082164/algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth-product-1013.json"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/README.md",
+      "role": "Published rational outgoing rank703 and its completeness proof",
+      "sha256": "cc735e89c486944142c9eade9f1885a239273984fbb8454504f4cb007b034b9f",
+      "bytes": 5337,
+      "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/3b30b8ff242977debd90581c12f4a767d7875c6c/reviews/independent-f4/sixth-glueball-classical-rank/README.md"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md",
+      "role": "Full Taylor covariance and unrestricted earlier corrections",
+      "sha256": "0b2b57891d2be5faafbec05e409f079926958dd7add262f3ef5b0fc0e139a365",
+      "bytes": 42369,
+      "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/c778cd7c3ceb72ad8082d791b2aee5f0df082164/algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md"
+    },
+    {
+      "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+      "path": "nonperturbative-lift/sources/all-loop/main.tex",
+      "role": "Matched product chain identity eq-chain and product theorem b-00513; upstream revision3ef33773984a525d2520a4f1ffaf60f3b29ee04f",
+      "sha256": "6be4980a75ef4af7985f67a8663e4c1cfd008336175e4e156a8a0285d4c8f697",
+      "bytes": 355412,
+      "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/sources/all-loop/main.tex"
+    },
+    {
+      "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+      "path": "nonperturbative-lift/sources/inventory.json",
+      "role": "Immutable provenance of the matched product manuscript",
+      "sha256": "c4bb8385c8aebac0f6b97e96281f86e7980950f37d5fe5e1d2618e7f5c551b43",
+      "bytes": 19348,
+      "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/sources/inventory.json"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "character_backend/b2_schur_complex.py",
+    "source_commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+    "source_path": "reviews/independent-f4/sixth-glueball-classical-rank/b2_schur_complex.py",
+    "sha256": "24adfafd5d6d3354aa278ec82e23be19e680bc271439be17a24ad279da64343c"
+  },
+  {
+    "path": "character_backend/f4_singlet_characters.py",
+    "source_commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+    "source_path": "reviews/independent-f4/sixth-glueball-classical-rank/f4_singlet_characters.py",
+    "sha256": "df4a47b6e39c5e7dc109eed97d17a2127f15e33e89b6e91b3e9947df11f8637b"
+  }
+]

@@ -1,0 +1,899 @@
+{
+  "schema": "f4-seventh-complete-ward-character-inventory-v1",
+  "public_commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+  "source_cochain_dimensions_at_lengths_14_15_16": [
+    217297,
+    62866,
+    8553
+  ],
+  "first_correction_cochain_dimension": 23895,
+  "first_correction_outgoing_rank": 2959,
+  "homogeneous_first_corrections_retained": 20936,
+  "dotted_colour_pairs_in_order": [
+    [
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        3
+      ]
+    ]
+  ],
+  "scalar_colour_types": [
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "irreducible_colour_dimension": 1,
+      "terminal_copies": 4,
+      "scalar_bracket_image_copies": 3,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        1,
+        0,
+        1
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        1,
+        0,
+        1
+      ],
+      "homogeneous_parameters_total": 2
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "irreducible_colour_dimension": 324,
+      "terminal_copies": 9,
+      "scalar_bracket_image_copies": 8,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        3,
+        1,
+        5
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        3,
+        1,
+        5
+      ],
+      "homogeneous_parameters_total": 9
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "irreducible_colour_dimension": 2652,
+      "terminal_copies": 5,
+      "scalar_bracket_image_copies": 4,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        4,
+        3,
+        7
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        4,
+        3,
+        7
+      ],
+      "homogeneous_parameters_total": 14
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        0,
+        4
+      ],
+      "irreducible_colour_dimension": 16302,
+      "terminal_copies": 6,
+      "scalar_bracket_image_copies": 5,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        6,
+        6,
+        12
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        6,
+        6,
+        12
+      ],
+      "homogeneous_parameters_total": 24
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        0,
+        5
+      ],
+      "irreducible_colour_dimension": 81081,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        6,
+        7,
+        12
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        6,
+        7,
+        12
+      ],
+      "homogeneous_parameters_total": 25
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        0,
+        6
+      ],
+      "irreducible_colour_dimension": 342056,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        7,
+        7,
+        13
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        7,
+        7,
+        13
+      ],
+      "homogeneous_parameters_total": 27
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "irreducible_colour_dimension": 212992,
+      "terminal_copies": 4,
+      "scalar_bracket_image_copies": 3,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        10,
+        30,
+        25
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        10,
+        30,
+        25
+      ],
+      "homogeneous_parameters_total": 65
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "irreducible_colour_dimension": 19448,
+      "terminal_copies": 14,
+      "scalar_bracket_image_copies": 12,
+      "remaining_scalar_copies": 2,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        9,
+        13,
+        18
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        18,
+        26,
+        36
+      ],
+      "homogeneous_parameters_total": 80
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        2,
+        1
+      ],
+      "irreducible_colour_dimension": 205751,
+      "terminal_copies": 6,
+      "scalar_bracket_image_copies": 5,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        14,
+        36,
+        33
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        14,
+        36,
+        33
+      ],
+      "homogeneous_parameters_total": 83
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "irreducible_colour_dimension": 1341522,
+      "terminal_copies": 4,
+      "scalar_bracket_image_copies": 2,
+      "remaining_scalar_copies": 2,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        26,
+        58,
+        56
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        52,
+        116,
+        112
+      ],
+      "homogeneous_parameters_total": 280
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "irreducible_colour_dimension": 11955216,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        13,
+        25,
+        25
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        13,
+        25,
+        25
+      ],
+      "homogeneous_parameters_total": 63
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "irreducible_colour_dimension": 107406,
+      "terminal_copies": 5,
+      "scalar_bracket_image_copies": 4,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        11,
+        26,
+        22
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        11,
+        26,
+        22
+      ],
+      "homogeneous_parameters_total": 59
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "irreducible_colour_dimension": 1118208,
+      "terminal_copies": 4,
+      "scalar_bracket_image_copies": 3,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        22,
+        69,
+        52
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        22,
+        69,
+        52
+      ],
+      "homogeneous_parameters_total": 143
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "irreducible_colour_dimension": 7113106,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        32,
+        94,
+        73
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        32,
+        94,
+        73
+      ],
+      "homogeneous_parameters_total": 199
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "irreducible_colour_dimension": 226746,
+      "terminal_copies": 6,
+      "scalar_bracket_image_copies": 4,
+      "remaining_scalar_copies": 2,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        11,
+        19,
+        22
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        22,
+        38,
+        44
+      ],
+      "homogeneous_parameters_total": 104
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "irreducible_colour_dimension": 2488563,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        18,
+        43,
+        37
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        18,
+        43,
+        37
+      ],
+      "homogeneous_parameters_total": 98
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "irreducible_colour_dimension": 15997696,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        24,
+        54,
+        49
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        24,
+        54,
+        49
+      ],
+      "homogeneous_parameters_total": 127
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "irreducible_colour_dimension": 8424,
+      "terminal_copies": 8,
+      "scalar_bracket_image_copies": 7,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        5,
+        10,
+        10
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        5,
+        10,
+        10
+      ],
+      "homogeneous_parameters_total": 25
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "irreducible_colour_dimension": 106496,
+      "terminal_copies": 12,
+      "scalar_bracket_image_copies": 10,
+      "remaining_scalar_copies": 2,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        12,
+        37,
+        29
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        24,
+        74,
+        58
+      ],
+      "homogeneous_parameters_total": 156
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "irreducible_colour_dimension": 787644,
+      "terminal_copies": 6,
+      "scalar_bracket_image_copies": 4,
+      "remaining_scalar_copies": 2,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        25,
+        71,
+        56
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        50,
+        142,
+        112
+      ],
+      "homogeneous_parameters_total": 304
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "irreducible_colour_dimension": 4313088,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        27,
+        84,
+        64
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        27,
+        84,
+        64
+      ],
+      "homogeneous_parameters_total": 175
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "irreducible_colour_dimension": 3921372,
+      "terminal_copies": 2,
+      "scalar_bracket_image_copies": 1,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        30,
+        92,
+        66
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        30,
+        92,
+        66
+      ],
+      "homogeneous_parameters_total": 188
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "irreducible_colour_dimension": 379848,
+      "terminal_copies": 5,
+      "scalar_bracket_image_copies": 3,
+      "remaining_scalar_copies": 2,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        16,
+        45,
+        34
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        32,
+        90,
+        68
+      ],
+      "homogeneous_parameters_total": 190
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "irreducible_colour_dimension": 2792556,
+      "terminal_copies": 3,
+      "scalar_bracket_image_copies": 2,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        26,
+        81,
+        63
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        26,
+        81,
+        63
+      ],
+      "homogeneous_parameters_total": 170
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "irreducible_colour_dimension": 1801371,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        19,
+        57,
+        41
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        19,
+        57,
+        41
+      ],
+      "homogeneous_parameters_total": 117
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "irreducible_colour_dimension": 16777216,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        36,
+        109,
+        79
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        36,
+        109,
+        79
+      ],
+      "homogeneous_parameters_total": 224
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "irreducible_colour_dimension": 1053,
+      "terminal_copies": 9,
+      "scalar_bracket_image_copies": 8,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        3,
+        2,
+        6
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        3,
+        2,
+        6
+      ],
+      "homogeneous_parameters_total": 11
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "irreducible_colour_dimension": 17901,
+      "terminal_copies": 3,
+      "scalar_bracket_image_copies": 2,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        5,
+        10,
+        10
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        5,
+        10,
+        10
+      ],
+      "homogeneous_parameters_total": 25
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "irreducible_colour_dimension": 160056,
+      "terminal_copies": 9,
+      "scalar_bracket_image_copies": 7,
+      "remaining_scalar_copies": 2,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        14,
+        27,
+        30
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        28,
+        54,
+        60
+      ],
+      "homogeneous_parameters_total": 142
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        2,
+        0,
+        0,
+        3
+      ],
+      "irreducible_colour_dimension": 1002456,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        15,
+        37,
+        32
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        15,
+        37,
+        32
+      ],
+      "homogeneous_parameters_total": 84
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        2,
+        0,
+        0,
+        4
+      ],
+      "irreducible_colour_dimension": 4940676,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        17,
+        37,
+        38
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        17,
+        37,
+        38
+      ],
+      "homogeneous_parameters_total": 92
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "irreducible_colour_dimension": 1327104,
+      "terminal_copies": 3,
+      "scalar_bracket_image_copies": 2,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        21,
+        63,
+        46
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        21,
+        63,
+        46
+      ],
+      "homogeneous_parameters_total": 130
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "irreducible_colour_dimension": 4582656,
+      "terminal_copies": 2,
+      "scalar_bracket_image_copies": 1,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        24,
+        54,
+        49
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        24,
+        54,
+        49
+      ],
+      "homogeneous_parameters_total": 127
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        3,
+        0,
+        0,
+        1
+      ],
+      "irreducible_colour_dimension": 184756,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        5,
+        14,
+        8
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        5,
+        14,
+        8
+      ],
+      "homogeneous_parameters_total": 27
+    },
+    {
+      "scalar_colour_dynkin_labels": [
+        3,
+        0,
+        1,
+        0
+      ],
+      "irreducible_colour_dimension": 1074944,
+      "terminal_copies": 1,
+      "scalar_bracket_image_copies": 0,
+      "remaining_scalar_copies": 1,
+      "invariant_tensor_multiplicities_by_dotted_pair": [
+        11,
+        23,
+        19
+      ],
+      "homogeneous_parameters_by_dotted_pair": [
+        11,
+        23,
+        19
+      ],
+      "homogeneous_parameters_total": 53
+    }
+  ],
+  "homogeneous_parameters_after_scalar_equations": 3642,
+  "scalar_singlet_mixed_ghost_rank": 1,
+  "homogeneous_parameter_upper_bound_after_that_equation": 3641,
+  "differentiated_scalar_colour_types_before_scalar_bracket_relations": [
+    {
+      "shape": [
+        3,
+        2,
+        1
+      ],
+      "dimension": 438534720,
+      "total_scalar_derivative": false
+    },
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "dimension": 129428650,
+      "total_scalar_derivative": true
+    },
+    {
+      "shape": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "dimension": 223835430,
+      "total_scalar_derivative": false
+    }
+  ],
+  "remaining_complete_calculation": "Evaluate the full mixed-ghost equations and both differentiated-scalar colour types (3,2,1) and (2,2,1,1), including every invariant tensor multiplicity listed here and all 20936 first-correction freedoms. Test the complete intersection with the scalar-bracket image. No chosen Albert-word family substitutes for this system.",
+  "full_second_map_decided": false,
+  "scope": "This complete character inventory refines a public Ward reduction. It supplies no native basis of the listed multiplicity spaces and no rank of the unresolved mixed equations."
+}

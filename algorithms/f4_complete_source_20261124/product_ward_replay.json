@@ -1,0 +1,12 @@
+{
+  "full_record_matches_pinned": true,
+  "terminal_dimension": 55,
+  "rational_terminal_cokernel": 0,
+  "rational_reduced_determinant": "523032987223594133/125439321093750",
+  "rational_unreduced_determinant": "523032987223594133/83626214062500",
+  "scope": "Fresh native rational reconstruction of all 25 extremal coordinates and the complete 8-dimensional boundary test needed by the sixth-power classical-product theorem.",
+  "public_commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+  "stage": "product-ward",
+  "elapsed_seconds": 3.437318358999619,
+  "input_manifest_sha256": "e5e976f09f3efd598380b2c7dd3f49d3f122bb1ddaf7764e843c29d15ed787c9"
+}

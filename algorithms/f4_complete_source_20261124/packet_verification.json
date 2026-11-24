@@ -1,0 +1,44 @@
+{
+  "schema": "f4-sixth-scoped-packet-verification-v1",
+  "field": "Q, with modular nonzero minors supplying rational lower bounds",
+  "verified_public_files": 100,
+  "numerical_input_files": 98,
+  "input_manifest_sha256": "e5e976f09f3efd598380b2c7dd3f49d3f122bb1ddaf7764e843c29d15ed787c9",
+  "proof_dependencies_sha256": "ac6c56591edf83c2338d7b6a840b3a9f8a85a493dc4049fbcc14128cabbf915b",
+  "fresh_rational_product": {
+    "columns": 96,
+    "equations": 172,
+    "rank": 95,
+    "nonzero_coefficients": 87,
+    "closed_spectator_pairs": 45
+  },
+  "fresh_complete_bilinear_identity": {
+    "columns": 60,
+    "classical_rank": 20,
+    "complete_kernel_dimension": 40,
+    "quantum_rank_on_kernel": 0
+  },
+  "authenticated_literal_extension_entries": 150850,
+  "literal_extension_prime": 1009,
+  "attributed_complete_kernel_minors": {
+    "1009": 449,
+    "1013": 60
+  },
+  "fresh_native_complete_kernel_minor_rebuild": false,
+  "outgoing_saved_matrix_determinants": {
+    "1009": 1005,
+    "1013": 734
+  },
+  "complete_kernel_dimension": 3017,
+  "classical_boundaries_plus_closed_product": [
+    3016,
+    1
+  ],
+  "all_homogeneous_first_corrections": 3476,
+  "complete_second_map_rank": 0,
+  "decision_basis": "Audited published full-kernel rank theorem, exact direct closed-factor proof, matched quantum-product chain identity and the published full first-page Ward identity.",
+  "fresh_verification_scope": "Complete small rational product and bilinear identities; authenticated full literal extension; saved outgoing determinants. The historical 3002-column block and full 3017 determinant are not freshly rebuilt.",
+  "C04_complete_predecessor_basis": false,
+  "D04_complete_seventh_second_map": false,
+  "physical_instanton_protection_inferred": false
+}

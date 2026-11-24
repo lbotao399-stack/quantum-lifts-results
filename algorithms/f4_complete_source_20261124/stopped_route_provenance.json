@@ -1,0 +1,95 @@
+{
+  "schema": "f4-stopped-route-provenance-v1",
+  "status": "stopped_and_excluded_from_permitted_verification",
+  "reason": "The inherited boundary compiler contains ad/jo colour-subspace maps and complementary skew/sym operations. The no-projection instruction excludes applying that route. Its code and receipts were moved outside the publication directory; no result from it is presented as permitted fresh verification.",
+  "files_removed_from_publication_directory": [
+    {
+      "filename": "boundary_rank_1009.json",
+      "sha256": "efb0e461447e74a6a8aebd5dc79921f27b3f12487d92fe114009be2edf8ee2ba",
+      "bytes": 4377
+    },
+    {
+      "filename": "contraction_controls_1009.json",
+      "sha256": "97290bbd2665a01b79bda0316cc25230ed7d21c453b080636254236b7aee0a7b",
+      "bytes": 1272
+    },
+    {
+      "filename": "contraction_plan.py",
+      "sha256": "3d07292ff176a9bba3657d1753c4defcc850f6e01d7d1aa23dbf69e2d9e0eabb",
+      "bytes": 12767
+    },
+    {
+      "filename": "contraction_runner.cpp",
+      "sha256": "b4a8f3567c5743796dacad5f4b733ad1ae9c1e72ca92f0071e4619aa932d9249",
+      "bytes": 12156
+    },
+    {
+      "filename": "contraction_sparse_controls_1009.json",
+      "sha256": "4f5e2e642999961ad95575dead2da7b13b1434564964d4de5f67b93d1a56aa90",
+      "bytes": 1263
+    },
+    {
+      "filename": "decide_boundary_rank.py",
+      "sha256": "68fb94199eafff61c86404a28c950c9a2dd92d60c286650a34fbf4941060a4fa",
+      "bytes": 4947
+    },
+    {
+      "filename": "edge_contraction_plan.py",
+      "sha256": "828d671c3ed13c6c9faab1e1195c9f4650b0d33828c725b97be7af185e603c72",
+      "bytes": 7058
+    },
+    {
+      "filename": "edge_controls.py",
+      "sha256": "cee0f05e18d9ab67de1216277e9593fa8b8f49d4d973a659057c752f9afa3e1c",
+      "bytes": 5505
+    },
+    {
+      "filename": "edge_controls_1009.json",
+      "sha256": "3395375e9959ba08efa42e70797a75ef5413cf25420957d893d1bea76e08228a",
+      "bytes": 738
+    },
+    {
+      "filename": "edge_sparse_controls_1009.json",
+      "sha256": "bd1417b705b88101d7f7449b2ba60a32fab30daa542d36d359f30db56fd45b88",
+      "bytes": 739
+    },
+    {
+      "filename": "public_input_manifest.json",
+      "sha256": "e1e3c27fe4c0547026de5a01d1c47356a6240e23729c10a6e4e38d96716b6c33",
+      "bytes": 3415
+    },
+    {
+      "filename": "public_inputs.py",
+      "sha256": "65290061d902e3be2c7947670dac92526e6859887af51cdb3850d99efa477d81",
+      "bytes": 1629
+    },
+    {
+      "filename": "rebuild_frame.py",
+      "sha256": "e9ceb17597183e028d8c6f1936a272883a900883719ca8cddd2e129521869259",
+      "bytes": 4036
+    },
+    {
+      "filename": "rebuild_kernel_frame.py",
+      "sha256": "8ee3bc5008e66dc1052df12861f2aff75495a8645ecb27ee2cd226b9597e3821",
+      "bytes": 6652
+    },
+    {
+      "filename": "run_contraction_plan.py",
+      "sha256": "75ec11a7a2185da6223a95617145eb3f9f58166338838bc256f33b86961e69f0",
+      "bytes": 3822
+    },
+    {
+      "filename": "verify_kernel_minor.py",
+      "sha256": "37eaf93701822586d6caab36ae965876bff8f8b987526a6e9b54644d04e1c44f",
+      "bytes": 6928
+    },
+    {
+      "filename": "outgoing_rank_replay.json (superseded native-sample receipt)",
+      "sha256": "3976da1f3cd75a8de72dabf9be1e242f7a409dda14d8b05fb20bddc4757d264f",
+      "bytes": 868
+    }
+  ],
+  "permitted_extension_scope": "3002 rows of the literal AlbertRunner extension were complete at the stop. A standalone runner regenerated the remaining15 literal extension rows without loading or executing any baseline operation list. The extension totals3017 by50 entries.",
+  "historical_rank_prerequisite": "The published c778cd7 full3017 minor is retained as an attributed lemma, not a claimed fresh native replay.",
+  "additional_audit_finding": "The historical outgoing native-column rebuilder invokes exceptional_colour.projectors. Its sample replay is excluded; the replacement outgoing receipt checks only the saved matrices, rational characters and literal Cartan Gram determinants."
+}

@@ -1,0 +1,281 @@
+{
+  "schema": "f4-adjacent-character-inventory-v1",
+  "arithmetic": "integer Weyl characters and rational symmetric-group characters",
+  "scope": "Cochain dimensions only; native bases and differential ranks are not certified here.",
+  "inputs": [
+    {
+      "path": "character_backend/b2_schur_complex.py",
+      "source_commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "source_path": "reviews/independent-f4/sixth-glueball-classical-rank/b2_schur_complex.py",
+      "sha256": "24adfafd5d6d3354aa278ec82e23be19e680bc271439be17a24ad279da64343c"
+    },
+    {
+      "path": "character_backend/f4_singlet_characters.py",
+      "source_commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "source_path": "reviews/independent-f4/sixth-glueball-classical-rank/f4_singlet_characters.py",
+      "sha256": "df4a47b6e39c5e7dc109eed97d17a2127f15e33e89b6e91b3e9947df11f8637b"
+    }
+  ],
+  "records": [
+    {
+      "power": 6,
+      "order": 1,
+      "native_charge_dotted_first": [
+        5,
+        5,
+        1,
+        1,
+        1
+      ],
+      "source_length": 12,
+      "all_spin_flavour_singlet_taylor_types": [
+        {
+          "taylor_partition": [
+            7,
+            5,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            5,
+            1,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            8,
+            6,
+            0,
+            -1,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "11": 3630,
+            "12": 1034,
+            "13": 150
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            6,
+            5,
+            2
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            6,
+            5,
+            1,
+            1,
+            0
+          ],
+          "shifted_highest_weight": [
+            7,
+            6,
+            0,
+            0,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "11": 5746,
+            "12": 1717,
+            "13": 238
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            5,
+            5,
+            3
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            5,
+            5,
+            1,
+            1,
+            1
+          ],
+          "shifted_highest_weight": [
+            6,
+            6,
+            0,
+            0,
+            0
+          ],
+          "cochain_dimensions_by_length": {
+            "11": 3341,
+            "12": 1134,
+            "13": 209
+          },
+          "selected_by_full_taylor_ward_identity": true
+        },
+        {
+          "taylor_partition": [
+            8,
+            5
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            8,
+            5,
+            0,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            9,
+            6,
+            -1,
+            -1,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "11": 853,
+            "12": 224,
+            "13": 36
+          },
+          "selected_by_full_taylor_ward_identity": false
+        }
+      ],
+      "full_singlet_dimensions_by_length": {
+        "11": 13570,
+        "12": 4109,
+        "13": 633
+      }
+    },
+    {
+      "power": 7,
+      "order": 1,
+      "native_charge_dotted_first": [
+        6,
+        6,
+        1,
+        1,
+        1
+      ],
+      "source_length": 14,
+      "all_spin_flavour_singlet_taylor_types": [
+        {
+          "taylor_partition": [
+            8,
+            6,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            8,
+            6,
+            1,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            9,
+            7,
+            0,
+            -1,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "13": 20091,
+            "14": 4858,
+            "15": 573
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            7,
+            6,
+            2
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            6,
+            1,
+            1,
+            0
+          ],
+          "shifted_highest_weight": [
+            8,
+            7,
+            0,
+            0,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "13": 38919,
+            "14": 9924,
+            "15": 1167
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            6,
+            6,
+            3
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            6,
+            6,
+            1,
+            1,
+            1
+          ],
+          "shifted_highest_weight": [
+            7,
+            7,
+            0,
+            0,
+            0
+          ],
+          "cochain_dimensions_by_length": {
+            "13": 30171,
+            "14": 8203,
+            "15": 1107
+          },
+          "selected_by_full_taylor_ward_identity": true
+        },
+        {
+          "taylor_partition": [
+            9,
+            6
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            9,
+            6,
+            0,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            10,
+            7,
+            -1,
+            -1,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "13": 3987,
+            "14": 910,
+            "15": 112
+          },
+          "selected_by_full_taylor_ward_identity": false
+        }
+      ],
+      "full_singlet_dimensions_by_length": {
+        "13": 93168,
+        "14": 23895,
+        "15": 2959
+      }
+    }
+  ]
+}

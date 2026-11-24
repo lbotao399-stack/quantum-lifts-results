@@ -1,0 +1,19 @@
+{
+  "selected_before_metric": true,
+  "selected_at_utc": "2026-11-24",
+  "principal_gate": "F02",
+  "theory": "undeformed four-dimensional N=4 supersymmetric Yang-Mills",
+  "gauge_group": "USp(4), rank two",
+  "physical_charges": {"E": 9, "R": [3,2,2], "J_L": 1, "J_R": 0},
+  "symmetry_block": "SU(3) flavour highest weight (R1-R2,R2-R3)=(1,0), dotted-spin singlet, fixed left highest weight J_L=1",
+  "native_blocks": [
+    {"weight_z_z_theta_theta_theta": [3,3,1,0,0], "length": 5},
+    {"weight_z_z_theta_theta_theta": [2,2,2,1,1], "length": 6},
+    {"weight_z_z_theta_theta_theta": [1,1,3,2,2], "length": 7},
+    {"weight_z_z_theta_theta_theta": [0,0,4,3,3], "length": 8}
+  ],
+  "coupling_scope": "Leading weak-coupling coefficient: free radial Wick form and the first interacting supercharge. Later physical supercharge corrections and renormalized metric corrections require separate matching.",
+  "fortuity_scope": "The public Sp(2) threshold is a candidate. Exact stable-to-finite comparison must be checked here; Cartan-nullness alone will not be used as fortuity.",
+  "excluded_shortcuts": ["No projection construction", "No restriction to a chosen candidate", "No omission of other native lengths with the same physical charges", "No coefficient dual identified with a physical bra"],
+  "base_commit": "19cd8718b752b04104d6ff0becee42d580b27ca3"
+}

@@ -1,0 +1,629 @@
+{
+  "schema": "f4-adjacent-character-inventory-v1",
+  "arithmetic": "integer Weyl characters and rational symmetric-group characters",
+  "scope": "Cochain dimensions only; native bases and differential ranks are not certified here.",
+  "inputs": [
+    {
+      "path": "character_backend/b2_schur_complex.py",
+      "source_commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "source_path": "reviews/independent-f4/sixth-glueball-classical-rank/b2_schur_complex.py",
+      "sha256": "24adfafd5d6d3354aa278ec82e23be19e680bc271439be17a24ad279da64343c"
+    },
+    {
+      "path": "character_backend/f4_singlet_characters.py",
+      "source_commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "source_path": "reviews/independent-f4/sixth-glueball-classical-rank/f4_singlet_characters.py",
+      "sha256": "df4a47b6e39c5e7dc109eed97d17a2127f15e33e89b6e91b3e9947df11f8637b"
+    }
+  ],
+  "records": [
+    {
+      "power": 6,
+      "order": 2,
+      "native_charge_dotted_first": [
+        4,
+        4,
+        2,
+        2,
+        2
+      ],
+      "source_length": 13,
+      "all_spin_flavour_singlet_taylor_types": [
+        {
+          "taylor_partition": [
+            6,
+            6,
+            1,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            6,
+            6,
+            2,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            8,
+            8,
+            0,
+            -2,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 8479,
+            "13": 2529,
+            "14": 417
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            6,
+            5,
+            2,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            6,
+            5,
+            2,
+            1,
+            0
+          ],
+          "shifted_highest_weight": [
+            8,
+            7,
+            0,
+            -1,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 42109,
+            "13": 12432,
+            "14": 1658
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            6,
+            4,
+            3,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            6,
+            4,
+            2,
+            1,
+            1
+          ],
+          "shifted_highest_weight": [
+            8,
+            6,
+            0,
+            -1,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 54273,
+            "13": 16649,
+            "14": 2337
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            7,
+            6,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            6,
+            1,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            9,
+            8,
+            -1,
+            -2,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 6689,
+            "13": 1722,
+            "14": 209
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            5,
+            5,
+            2,
+            2
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            5,
+            5,
+            2,
+            2,
+            0
+          ],
+          "shifted_highest_weight": [
+            7,
+            7,
+            0,
+            0,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 21195,
+            "13": 7042,
+            "14": 1173
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            5,
+            4,
+            3,
+            2
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            5,
+            4,
+            2,
+            2,
+            1
+          ],
+          "shifted_highest_weight": [
+            7,
+            6,
+            0,
+            0,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 45820,
+            "13": 15134,
+            "14": 2212
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            7,
+            5,
+            2
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            5,
+            1,
+            1,
+            0
+          ],
+          "shifted_highest_weight": [
+            9,
+            7,
+            -1,
+            -1,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 18678,
+            "13": 5150,
+            "14": 676
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            4,
+            4,
+            3,
+            3
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            4,
+            4,
+            2,
+            2,
+            2
+          ],
+          "shifted_highest_weight": [
+            6,
+            6,
+            0,
+            0,
+            0
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 10007,
+            "13": 3720,
+            "14": 704
+          },
+          "selected_by_full_taylor_ward_identity": true
+        },
+        {
+          "taylor_partition": [
+            7,
+            4,
+            3
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            4,
+            1,
+            1,
+            1
+          ],
+          "shifted_highest_weight": [
+            9,
+            6,
+            -1,
+            -1,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 20413,
+            "13": 5662,
+            "14": 718
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            7,
+            7
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            7,
+            0,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            9,
+            9,
+            -2,
+            -2,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "12": 606,
+            "13": 198,
+            "14": 56
+          },
+          "selected_by_full_taylor_ward_identity": false
+        }
+      ],
+      "full_singlet_dimensions_by_length": {
+        "12": 228269,
+        "13": 70238,
+        "14": 10160
+      }
+    },
+    {
+      "power": 7,
+      "order": 2,
+      "native_charge_dotted_first": [
+        5,
+        5,
+        2,
+        2,
+        2
+      ],
+      "source_length": 15,
+      "all_spin_flavour_singlet_taylor_types": [
+        {
+          "taylor_partition": [
+            7,
+            7,
+            1,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            7,
+            2,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            9,
+            9,
+            0,
+            -2,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 56424,
+            "15": 13839,
+            "16": 1729
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            7,
+            6,
+            2,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            6,
+            2,
+            1,
+            0
+          ],
+          "shifted_highest_weight": [
+            9,
+            8,
+            0,
+            -1,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 347116,
+            "15": 85946,
+            "16": 9647
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            7,
+            5,
+            3,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            7,
+            5,
+            2,
+            1,
+            1
+          ],
+          "shifted_highest_weight": [
+            9,
+            7,
+            0,
+            -1,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 650606,
+            "15": 166396,
+            "16": 19376
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            8,
+            7,
+            1
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            8,
+            7,
+            1,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            10,
+            9,
+            -1,
+            -2,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 36620,
+            "15": 8197,
+            "16": 854
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            6,
+            6,
+            2,
+            2
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            6,
+            6,
+            2,
+            2,
+            0
+          ],
+          "shifted_highest_weight": [
+            8,
+            8,
+            0,
+            0,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 220173,
+            "15": 58673,
+            "16": 7410
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            6,
+            5,
+            3,
+            2
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            6,
+            5,
+            2,
+            2,
+            1
+          ],
+          "shifted_highest_weight": [
+            8,
+            7,
+            0,
+            0,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 698612,
+            "15": 189196,
+            "16": 22954
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            8,
+            6,
+            2
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            8,
+            6,
+            1,
+            1,
+            0
+          ],
+          "shifted_highest_weight": [
+            10,
+            8,
+            -1,
+            -1,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 128865,
+            "15": 30010,
+            "16": 3245
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            5,
+            5,
+            3,
+            3
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            5,
+            5,
+            2,
+            2,
+            2
+          ],
+          "shifted_highest_weight": [
+            7,
+            7,
+            0,
+            0,
+            0
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 217297,
+            "15": 62866,
+            "16": 8553
+          },
+          "selected_by_full_taylor_ward_identity": true
+        },
+        {
+          "taylor_partition": [
+            8,
+            5,
+            3
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            8,
+            5,
+            1,
+            1,
+            1
+          ],
+          "shifted_highest_weight": [
+            10,
+            7,
+            -1,
+            -1,
+            -1
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 199864,
+            "15": 47540,
+            "16": 5193
+          },
+          "selected_by_full_taylor_ward_identity": false
+        },
+        {
+          "taylor_partition": [
+            8,
+            8
+          ],
+          "branching_multiplicity": 1,
+          "highest_weight_dotted_first": [
+            8,
+            8,
+            0,
+            0,
+            0
+          ],
+          "shifted_highest_weight": [
+            10,
+            10,
+            -2,
+            -2,
+            -2
+          ],
+          "cochain_dimensions_by_length": {
+            "14": 2980,
+            "15": 737,
+            "16": 140
+          },
+          "selected_by_full_taylor_ward_identity": false
+        }
+      ],
+      "full_singlet_dimensions_by_length": {
+        "14": 2558557,
+        "15": 663400,
+        "16": 79101
+      }
+    }
+  ]
+}

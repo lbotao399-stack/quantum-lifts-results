@@ -1,0 +1,1497 @@
+{
+  "field": "Q",
+  "formal_columns": 96,
+  "equations": 172,
+  "rational_rank": 95,
+  "rational_kernel_dimension": 1,
+  "nonzero_coefficients": 87,
+  "coefficient_gcd": 1,
+  "raising_equations": 150,
+  "classical_split_equations": 22,
+  "separately_closed_spectator_pairs": 45,
+  "maximum_absolute_constraint_residual": 0,
+  "matches_public_rational_product": true,
+  "terms": [
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        0,
+        0,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        0
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        0,
+        0,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        0
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        0,
+        0,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        0
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": 3,
+      "omitted_flavours": [
+        0,
+        0,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        0,
+        0,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        0,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        0
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 2,
+      "omitted_flavours": [
+        0,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        0,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        0,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        0,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 3,
+      "omitted_flavours": [
+        0,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        1
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        0,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        0,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        0
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 3,
+      "omitted_flavours": [
+        0,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        0,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        0,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        0,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": 3,
+      "omitted_flavours": [
+        0,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        0,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        0
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        0
+      ],
+      "marked_pair": [
+        1,
+        3
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        0
+      ],
+      "marked_pair": [
+        2,
+        3
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 2,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        0,
+        3
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        2,
+        3
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        0,
+        3
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        1,
+        3
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        3
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        3
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        3
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": 3,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        3
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        0,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        3
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        1,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        1,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        1
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 2,
+      "omitted_flavours": [
+        1,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        1
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        1,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        1
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        1,
+        1,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        1,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        1,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 3,
+      "omitted_flavours": [
+        1,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        1
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        1,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        1,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 2,
+      "omitted_flavours": [
+        1,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        1,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        1,
+        3
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        1
+      ],
+      "marked_pair": [
+        2,
+        3
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        3
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 2,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        1
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        1
+      ],
+      "marked_pair": [
+        0,
+        3
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        1
+      ],
+      "marked_pair": [
+        2,
+        3
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        3
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        1,
+        3
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        3
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 2,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        3
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        3
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        1,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        3
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        2,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 3,
+      "omitted_flavours": [
+        2,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        2,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        2,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        2
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        2,
+        2,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        2
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        1,
+        3
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        2
+      ],
+      "marked_pair": [
+        2,
+        3
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": -3,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        3
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 2,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        0,
+        3
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        2
+      ],
+      "marked_pair": [
+        2,
+        3
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": 3,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        3
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        2
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        2
+      ],
+      "marked_pair": [
+        0,
+        3
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        2
+      ],
+      "marked_pair": [
+        1,
+        3
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        3
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        3
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        2,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        3
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        3
+      ],
+      "marked_pair": [
+        1,
+        2
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        3
+      ],
+      "marked_pair": [
+        1,
+        3
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        0,
+        3
+      ],
+      "marked_pair": [
+        2,
+        3
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 2,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        3
+      ],
+      "marked_pair": [
+        0,
+        2
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        3
+      ],
+      "marked_pair": [
+        0,
+        3
+      ],
+      "marked_bilinear_last": 2
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        1,
+        3
+      ],
+      "marked_pair": [
+        2,
+        3
+      ],
+      "marked_bilinear_last": 0
+    },
+    {
+      "coefficient": -2,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        3
+      ],
+      "marked_pair": [
+        0,
+        1
+      ],
+      "marked_bilinear_last": 3
+    },
+    {
+      "coefficient": -1,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        3
+      ],
+      "marked_pair": [
+        0,
+        3
+      ],
+      "marked_bilinear_last": 1
+    },
+    {
+      "coefficient": 1,
+      "omitted_flavours": [
+        3,
+        3,
+        3
+      ],
+      "scalar_bilinear": [
+        2,
+        3
+      ],
+      "marked_pair": [
+        1,
+        3
+      ],
+      "marked_bilinear_last": 0
+    }
+  ],
+  "constraint_matrix_sha256": "6af5747e213993237e5add904b39c5fc312c0337160b9d374347b2cd366dfce1",
+  "scope": "Exact rational closure and highest-weight equations. Evaluation minors separately certify native finite-colour independence."
+}

@@ -1,0 +1,58 @@
+{'weight': (3, 3, 1, 0, 0), 'length': 4, 'offset': -1, 'formal_word_count': 130, 'dimensions': {3: 22}, 'sha256': '165ec77dbca16f328f641b00728a58178dcc6bfc6a18865a5106bf95e1a3f9b9'} seconds 0.06105976099934196
+{'weight': (3, 3, 1, 0, 0), 'length': 5, 'offset': 0, 'formal_word_count': 165, 'dimensions': {4: 35}, 'sha256': '3380400edd5f82e8b7488ec56e212a8dbff542d8de621ecacebb810f716234cb'} seconds 0.10293737099891587
+{'weight': (2, 2, 2, 1, 1), 'length': 5, 'offset': -1, 'formal_word_count': 3237, 'dimensions': {1: 87, 3: 206, 5: 14}, 'sha256': '201a271171bc46752181b79579b215e6199f2815a82b8d77b7d90e7105a58191'} seconds 2.744392410999353
+{'weight': (2, 2, 2, 1, 1), 'length': 6, 'offset': 0, 'formal_word_count': 4569, 'dimensions': {2: 211, 4: 204, 6: 12}, 'sha256': 'c5b3af975989c4b5e065cb265703773f5fc3b71a08b11b472b79d485dd9973b6'} seconds 4.7501709459993435
+{'weight': (1, 1, 3, 2, 2), 'length': 6, 'offset': -1, 'formal_word_count': 8396, 'dimensions': {1: 251, 3: 387, 5: 40}, 'sha256': 'f0337bc6e26ed13e96464c088c5ea6e1beb17d9aa41b669d791ed9447bff7e58'} seconds 14.308877990999463
+{'weight': (1, 1, 3, 2, 2), 'length': 7, 'offset': 0, 'formal_word_count': 11316, 'dimensions': {2: 512, 0: 80, 4: 224}, 'sha256': '906e9bc83dc27a92aed75edd6b75add8c3db1569aac37680de74e41c4567d282'} seconds 25.827100479000364
+{'weight': (0, 0, 4, 3, 3), 'length': 7, 'offset': -1, 'formal_word_count': 1816, 'dimensions': {1: 77, 3: 141}, 'sha256': '504b949f346fd6d98c9ce8af33163c63c23af49fc38163a29675e39fa61c44c3'} seconds 29.918441972999062
+{'weight': (0, 0, 4, 3, 3), 'length': 8, 'offset': 0, 'formal_word_count': 2932, 'dimensions': {0: 34, 2: 227}, 'sha256': 'c2ceb12faec107fbaa5bf8b5497bb213c3a389a5747a85e8338f2251a90a0c40'} seconds 34.95418313600021
+Y 5 centre 35 incoming 22
+Y5 full profiles 17 / 17 cache 86 seconds 0.019864878999214852
+Y 5 metric finite rank 35 exact nulls 0 seconds 0.053076570000484935
+Y5 outgoing profiles 5 / 5 cache 759 seconds 0.024681932998646516
+Y 5 harmonics 0 seconds 0.11170251300063683
+Y 6 centre 427 incoming 307
+Y6 full profiles 20 / 65 cache 825 seconds 1.0382779560004565
+Y6 full profiles 40 / 65 cache 961 seconds 2.3925733910000417
+Y6 full profiles 60 / 65 cache 964 seconds 3.808909809000397
+Y6 full profiles 65 / 65 cache 974 seconds 3.9737083019990678
+Y 6 metric finite rank 379 exact nulls 48 seconds 8.821967284000493
+Y6 outgoing profiles 12 / 12 cache 8282 seconds 1.946598788999836
+Y 6 harmonics 21 seconds 14.42035640100039
+Y 7 centre 816 incoming 678
+Y7 full profiles 20 / 40 cache 7089 seconds 10.503741134998563
+Y7 full profiles 40 / 40 cache 7356 seconds 22.25099641899942
+Y 7 metric finite rank 605 exact nulls 211 seconds 42.29430384300031
+Y7 outgoing profiles 9 / 9 cache 92407 seconds 20.149782644999505
+Y 7 harmonics 1 seconds 69.84726604299976
+Y 8 centre 261 incoming 218
+Y8 full profiles 7 / 7 cache 98442 seconds 14.591312998998546
+Y 8 metric finite rank 149 exact nulls 112 seconds 18.74727459800124
+Y8 outgoing profiles 3 / 3 cache 995060 seconds 189.64003790300012
+Y 8 harmonics 1 seconds 209.6095083630007
+{'length': 5, 'highest_weight_multiplicities_by_fermion_number': {'4': 35}, 'finite_highest_weight_dimension': 35, 'all_flavour_triplet_states': 105}
+{'length': 6, 'highest_weight_multiplicities_by_fermion_number': {'2': 188, '4': 181, '6': 10}, 'finite_highest_weight_dimension': 379, 'all_flavour_triplet_states': 1137}
+{'length': 7, 'highest_weight_multiplicities_by_fermion_number': {'0': 59, '2': 380, '4': 166}, 'finite_highest_weight_dimension': 605, 'all_flavour_triplet_states': 1815}
+{'length': 8, 'highest_weight_multiplicities_by_fermion_number': {'0': 19, '2': 130}, 'finite_highest_weight_dimension': 149, 'all_flavour_triplet_states': 447}
+exact rank input 35 80
+exact rank result 17
+exact rank input 0 0
+exact rank result 0
+{'passed': True, 'length': 5, 'full_stable_dimension': 35, 'full_finite_dimension': 35, 'all_relation_count': 0, 'stable_outgoing_rank': 17, 'relation_image_rank': 0, 'finite_outgoing_rank': 17, 'finite_incoming_rank': 18, 'fortuitous_quotient_dimension': 0, 'stable_image_in_finite_cohomology_dimension': 0, 'full_finite_classical_cohomology_dimension': 0, 'seconds': 0.029362110000874964, 'scope': 'Complete universal symplectic trace cover, with every finite relation and incoming boundary. No Cartan test is substituted.'}
+exact rank input 427 2732
+exact rank result 199
+exact rank input 48 2732
+exact rank result 43
+{'passed': True, 'length': 6, 'full_stable_dimension': 427, 'full_finite_dimension': 379, 'all_relation_count': 48, 'stable_outgoing_rank': 199, 'relation_image_rank': 43, 'finite_outgoing_rank': 156, 'finite_incoming_rank': 202, 'fortuitous_quotient_dimension': 0, 'stable_image_in_finite_cohomology_dimension': 21, 'full_finite_classical_cohomology_dimension': 21, 'seconds': 1.6797599740002624, 'scope': 'Complete universal symplectic trace cover, with every finite relation and incoming boundary. No Cartan test is substituted.'}
+exact rank input 816 7756
+exact rank result 365
+exact rank input 211 7756
+exact rank result 134
+{'passed': True, 'length': 7, 'full_stable_dimension': 816, 'full_finite_dimension': 605, 'all_relation_count': 211, 'stable_outgoing_rank': 365, 'relation_image_rank': 134, 'finite_outgoing_rank': 230, 'finite_incoming_rank': 374, 'fortuitous_quotient_dimension': 1, 'stable_image_in_finite_cohomology_dimension': 0, 'full_finite_classical_cohomology_dimension': 1, 'seconds': 22.567022627999904, 'scope': 'Complete universal symplectic trace cover, with every finite relation and incoming boundary. No Cartan test is substituted.'}
+exact rank input 261 1864
+exact rank result 103
+exact rank input 112 1864
+exact rank result 58
+{'passed': True, 'length': 8, 'full_stable_dimension': 261, 'full_finite_dimension': 149, 'all_relation_count': 112, 'stable_outgoing_rank': 103, 'relation_image_rank': 58, 'finite_outgoing_rank': 45, 'finite_incoming_rank': 103, 'fortuitous_quotient_dimension': 0, 'stable_image_in_finite_cohomology_dimension': 1, 'full_finite_classical_cohomology_dimension': 1, 'seconds': 4.109773942000174, 'scope': 'Complete universal symplectic trace cover, with every finite relation and incoming boundary. No Cartan test is substituted.'}
+{'passed': True, 'covariance': 256, 'Wick_entries': 63, 'letters': 48, 'basis_changes': [0, 21, 1, 1], 'seconds': 7.4743804529989575}
+{'passed': True, 'formal_rows': 1539, 'harmonic_multiplicity': 23, 'all_weight_states': 69, 'seconds': 73.60793778900006}

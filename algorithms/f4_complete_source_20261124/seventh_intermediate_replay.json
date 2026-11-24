@@ -1,0 +1,48 @@
+{
+  "terminal_diagrams": [
+    [
+      9,
+      6
+    ],
+    [
+      8,
+      6,
+      1
+    ],
+    [
+      7,
+      6,
+      2
+    ],
+    [
+      6,
+      6,
+      3
+    ]
+  ],
+  "terminal_multiplicities": [
+    112,
+    573,
+    1167,
+    1107
+  ],
+  "intermediate_classical_rank": 2959,
+  "terminal_cokernel": 0,
+  "homogeneous_block_dimensions": [
+    43,
+    16,
+    9
+  ],
+  "minor_orders": 68,
+  "ordered_homogeneous_determinants": {
+    "1009": 909,
+    "1013": 962,
+    "1000003": 176568
+  },
+  "homogeneous_first_corrections": 20936,
+  "scope": "Fresh native 68-square homogeneous Ward matrix and complete terminal character. This proves rational rank 2959 of the full first-correction map; it does not decide the seventh-power second map.",
+  "public_commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+  "stage": "seventh-intermediate",
+  "elapsed_seconds": 4.141091526998935,
+  "input_manifest_sha256": "e5e976f09f3efd598380b2c7dd3f49d3f122bb1ddaf7764e843c29d15ed787c9"
+}

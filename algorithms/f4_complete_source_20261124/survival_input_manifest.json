@@ -1,0 +1,595 @@
+{
+  "schema": "f4-public-survival-inputs-v1",
+  "repository": "lbotao399-stack/quantum-lifts-results",
+  "scope": "Only the public sixth-power kernel/product proof and seventh-power Ward/intermediate prerequisites. The original baseline bank has its separate c3688a7 input manifest.",
+  "files": [
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/b2_schur_complex.py",
+      "bytes": 5611,
+      "sha256": "24adfafd5d6d3354aa278ec82e23be19e680bc271439be17a24ad279da64343c"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md",
+      "bytes": 10524,
+      "sha256": "c58eb5959fca355567da1fafa011e14b9991c4e5ffbfd19d09bd53c25c3324c2"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/first_page_tower.py",
+      "bytes": 18613,
+      "sha256": "e908017afd999958c142466d0ada7d413cddfe4c20015014469a6ab1c63ac52d"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/tower_probes.json",
+      "bytes": 13853,
+      "sha256": "29b15f92755b560dcae92c4602f7a049fec97c09820da37908783c30b4b01a57"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md",
+      "bytes": 42369,
+      "sha256": "0b2b57891d2be5faafbec05e409f079926958dd7add262f3ef5b0fc0e139a365"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/colour.py",
+      "bytes": 7583,
+      "sha256": "1d5f5a7b3ad9da61a798a1828ab01fda903a523e311a0389137e2c2612153f91"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/dotted_filtration.py",
+      "bytes": 6778,
+      "sha256": "9cc0a63e06b472113ccd5b3bfeba7f0ecae8fa40517fab0e35c2f793fefc4d90"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/dotted_syzygies.py",
+      "bytes": 5408,
+      "sha256": "6adc307d6c4ab35abf83f54eb88be5db32256a67336e4c5b71fa532ea3cff99f"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/double_trace_flag.py",
+      "bytes": 8928,
+      "sha256": "4c030eb924553750751af96c2bb591ad4e084dc5521514457e43791e137c6db9"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/flag_boundaries.py",
+      "bytes": 10420,
+      "sha256": "0492d630a32822f3a146e5f286442202b9a56d58fc3d2b00f18d3b621c5a2a2e"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/glueball_factor_ward.json",
+      "bytes": 30954,
+      "sha256": "9553f6709cc19bfb36a55dc687cfd08a06d7cea524abe0fe097351392f891656"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/glueball_factor_ward.py",
+      "bytes": 17687,
+      "sha256": "c9f968eb5c64f6baa73de8d01efbca6d3971d950089629c79f1281cb5f3b2341"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/glueball_factors.md",
+      "bytes": 8364,
+      "sha256": "8a55e1a6443856772513a7e291429b56b57b407bff882da237e3518c7174530c"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/inputs.json.gz",
+      "bytes": 27477,
+      "sha256": "2246b69a5339fbeccecbdbe9551dbe863b161ac347077cf0c24eafd91c6af26b"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/intermediate_rank.json",
+      "bytes": 3785,
+      "sha256": "c15895fcb392dd097b3f58c9723a2fc7ac4e41b84961eadc1a91977c42f35102"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/intermediate_rank.py",
+      "bytes": 8444,
+      "sha256": "a72422aeaa51ed5bc8d61e60b7014df24a2a4affb8122f41b48c4b47a0bb522c"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/mixed_syzygies.py",
+      "bytes": 10988,
+      "sha256": "3ebd1130c4d67f8622e7949034d783e95a6c60a89640e54df648d49cdfe7b65e"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/one_fermion.py",
+      "bytes": 4096,
+      "sha256": "a0e2574777da85aa4cf3cc54a1666e204c635e89d5241a919eca4990349c7ebf"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/representation26.json.gz",
+      "bytes": 1406,
+      "sha256": "49ceb60f78e9ac681a1a7c627ebb90b14dfe17e5e773214fc4cc1dd95e6cc8e0"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/second_test.py",
+      "bytes": 5186,
+      "sha256": "7dc51f245fe4548f5eb9909bface0a5f4b786cc0aa1fbd5a01f08955e6a67557"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/single_trace_flag.py",
+      "bytes": 10853,
+      "sha256": "2658a9f4c5b6b9c2acee731bd0c52b3de4bcd2c7d0e2024f9df0feb5a5a4e7c7"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/six_invariants.json",
+      "bytes": 2135,
+      "sha256": "f7b921be986a98db5f5a2499f0e3cf97dad6ee3addff6dcb42cc0497914c32f0"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/six_nonzero_weights.json",
+      "bytes": 19635,
+      "sha256": "d6fe4133cb0147aa31ca170b47fed0a57ca5102311e2d7821e376d73c1856f36"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/source_symmetry.json",
+      "bytes": 4707,
+      "sha256": "ee20317538d63a05e60f8d1a5f4250c25f1f4082bf8b9a88bbf1d45ae84317fb"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/source_symmetry.py",
+      "bytes": 4170,
+      "sha256": "f9f9746e5a0e8e218ab5ef8a596ac59699bf8089e29359cb72c49ddaf201a7f3"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/triple_trace_flag.py",
+      "bytes": 7806,
+      "sha256": "8f9455a72508c166cc7f41a0eb474202ea9f3358cd04cfbb5c59a4c53b3d20f8"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/ward.py",
+      "bytes": 13494,
+      "sha256": "368bb71896672cbbdc2c47f5fa1c4475dce8e4430c49bf64919f9aa3420f7517"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/README.md",
+      "bytes": 15509,
+      "sha256": "753f06663d57ceb2739c9101bd0b94c66c7e2b1c62795cb4264c0e69499af2d3"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/albert_boundaries.py",
+      "bytes": 8744,
+      "sha256": "70086c57fc83e621ced520b4e636eb02ee8059bc2968d4b16cafc2dad2a96122"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/albert_product_cycles.py",
+      "bytes": 5892,
+      "sha256": "1da2292dc01faa4e4a702851dbce1f1d7a14d7283f9b4348fa6c930303669df3"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/boundary-1009.json",
+      "bytes": 430,
+      "sha256": "9bc949d5e6ea9aed16c4c02be3d89afa6cd3df98715f7d2a78c9e497035052e0"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/boundary-1013.json",
+      "bytes": 430,
+      "sha256": "d23bac1898c75ab2f9a42a6c3bbd52c4ca8f8dbf3be8950fe8629e4f53d770d8"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/rational_section/cubic.json",
+      "bytes": 4827,
+      "sha256": "03ad3705cc69c129c53b4c6b2e43891e910b2c619a7f6a9bf24070b821937221"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/rational_section/integer_section.py",
+      "bytes": 11768,
+      "sha256": "f7c402c054a08a078c98efe127c5b59b4ce5f04bb33c3004dba9e80497d8bee6"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/rational_section/selected-1009.json",
+      "bytes": 14564,
+      "sha256": "88af17dac275b1c4b1686d4eb973f343d183bda5cf3e32d69017ec88d2e8f357"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/seventh-intermediate.json",
+      "bytes": 503,
+      "sha256": "7dec6b6200a5856f6851e4b261d081f1383d9275d9bc5428d4117ea5b00a9175"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/seventh-scalar-ward.json",
+      "bytes": 4567,
+      "sha256": "7fa22f7840373ea899faf39d6e20cde46b6086ba5249d68dea98fc09b7e70508"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/seventh_intermediate.py",
+      "bytes": 1387,
+      "sha256": "7ad7150d557d3977eb9c5f5ccbb1c1a3da94c048ce296a9bd285333a5273215c"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/seventh_products.md",
+      "bytes": 5784,
+      "sha256": "d8ef80f412be7d2ac53afb0376458283e12dbc9c5dd81b44c49c1a65ef90e196"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/seventh_scalar_ward.py",
+      "bytes": 6891,
+      "sha256": "a9fa9ac781e1a4d40f364487656dd0d302e2906d1cc336fa6d33ef35da366590"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/seventh_ward.md",
+      "bytes": 8498,
+      "sha256": "c6729b36823269d52e1831c7d5611bad60d3f126a191cf69516cb387137c7d3a"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth-product-1009.json",
+      "bytes": 448,
+      "sha256": "4d5c442ca31bc186cce7fe742ada93db1989b23eb26c99d7a3b67f5fccfbb69d"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth-product-1013.json",
+      "bytes": 447,
+      "sha256": "164ae18b9ea0092024480982b8aec9fa244ba10f1d76899955bb10e98c9b328d"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth_boundary_minor.py",
+      "bytes": 3377,
+      "sha256": "6d77a84dc2300366cb510c28bd5d4cc56dee30b896b578022a8c247d45bf62ba"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth_product_minor.py",
+      "bytes": 3857,
+      "sha256": "2feb58df4fa6f6abd23c1b65642bc7f1b967209146c91ec494d97b846adfbe49"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/sixth_survival.md",
+      "bytes": 5545,
+      "sha256": "46d9b792e6983ffd557924f73882a605afe010e97cd65e77cf709e66ba72856a"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/source_sizes.json",
+      "bytes": 1325,
+      "sha256": "475061a27b594b69256950eaba18ff48d214aef4a129b8ec4935f8fd288e9c9a"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/focused_powers/source_sizes.py",
+      "bytes": 898,
+      "sha256": "4c58cdbb3d74022b5f0cdbdf63e47040b2bcf031a0809db85bc4f890e3990e48"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/adjoint_edge_search.py",
+      "bytes": 7761,
+      "sha256": "7d490b43d2cc89fc01178bef0f17d488c42ad86e9e67594aa2fdede5686df7a2"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/channels-3060.json",
+      "bytes": 26691,
+      "sha256": "e3399576807b742f105db661270b8be52a046c6b64f6e56e9bd7a3f9d675ed52"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/cluster_batch.py",
+      "bytes": 1364,
+      "sha256": "e25372129209e985652d92b01fb5ee271bcd6471c8f48e3f26c8b218db230dc3"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/colour_channel_search.py",
+      "bytes": 8078,
+      "sha256": "bf5eef5aa44d8e27a79277c06260de1f7c1423dc29fc0645c60d11fe9c644526"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/colour_screen.json",
+      "bytes": 60172,
+      "sha256": "3649e74d654042fdee18605345da1b356a0b11fd2f29aa9cb474a28bbe18d247"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/global-2496.json",
+      "bytes": 22533,
+      "sha256": "cf84e1cca129b071637583707da23a13695aa09da4a78f389b5ad84811eb956c"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/global_boundary_cubic.json",
+      "bytes": 788,
+      "sha256": "3843382acf7320dc17f28d6d81d9fb48882dd9bc6f4614a35d52c05f3c2366fe"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/global_source_boundaries.py",
+      "bytes": 13157,
+      "sha256": "3b144e9b67b4ee51ede7589dccc38910a2258021665845fa8add8526c0fa6c3f"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/global_source_jacobi.py",
+      "bytes": 5514,
+      "sha256": "3ebd830327ec3f01426c94168341afb953f3295357ee7b6d1e23c464dcacc199"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/global_source_scan.py",
+      "bytes": 5379,
+      "sha256": "9db12636378b509009f22e066cdb6573842b1e503ed8397f365c78861bcbe036"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/jacobi-3088.json",
+      "bytes": 25413,
+      "sha256": "f017a256591482bf49ce69e91b167b92ede6115d1a66aa750ee0b7ebe52c9905"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/literal-channels.json",
+      "bytes": 870,
+      "sha256": "b84de0b31263196c4ca144ea7b0323ea6f305990db32a9577967c0a61f85263b"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/literal-mixed.json",
+      "bytes": 517,
+      "sha256": "6aea1cdc9ed7a36d276a912cb3823b988b520479839753fbcf656118f0f55d1b"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/literal_channels.py",
+      "bytes": 3757,
+      "sha256": "49a1573564280147a73e05e6a0507cb2a80ce57786e77fb4a00dd7ed49072e96"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/literal_mixed_edges.py",
+      "bytes": 3934,
+      "sha256": "d64f314c7b8cf52156621d74f4efccb8ef2e0f99deaba9994245883b93b8114c"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/marked_jet_blocks.py",
+      "bytes": 11344,
+      "sha256": "edfed90271cc069f9eab8b44d9b7c7ef37687752d3cdc4536bf5e633eaadcd23"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/mixed-minor.json",
+      "bytes": 1168,
+      "sha256": "ed2343e6d23329d52955260d661b573022ab891d809aec205418435f7cf751ef"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/mixed_colour_edges.py",
+      "bytes": 5084,
+      "sha256": "50945d0b172e0f798246c0115a74174516b6b2e496088f9c8c8af8d10a33acb0"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/mixed_screen.json",
+      "bytes": 18709,
+      "sha256": "0dd01d7526555bbc61f17d5d21ced8709729f3bcd3f8530ac7d06b9a730fb5ae"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/mixed_source_search.py",
+      "bytes": 9791,
+      "sha256": "af2201f360bbf4bc00cf4c98760607bae9a2ac28b5674d63cc90325c50284f34"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/representation26.json.gz",
+      "bytes": 1406,
+      "sha256": "49ceb60f78e9ac681a1a7c627ebb90b14dfe17e5e773214fc4cc1dd95e6cc8e0"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/results.json",
+      "bytes": 982,
+      "sha256": "c4eee80f4d5264d8b6167e8f293e5f25547b065ebcf88a55e0f8157aabee7336"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/dual_singlets_20261118/f4_singlet_characters.py",
+      "bytes": 5187,
+      "sha256": "df4a47b6e39c5e7dc109eed97d17a2127f15e33e89b6e91b3e9947df11f8637b"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/letters.py",
+      "bytes": 3734,
+      "sha256": "0b3561e55f22d5135f2a04ba2996f1652e92af135556a7388fd423974072c8c5"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/q1.py",
+      "bytes": 10091,
+      "sha256": "cdcb3b6cef93c8253f65ffe17b3f129a3abba320eae8d881055635c3cae05acb"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/words.py",
+      "bytes": 9829,
+      "sha256": "779c524c1283715feb6fe03d50fa8b23d596f04d134d791daa8394524d2a5dc8"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-protected/q1d_exact.py",
+      "bytes": 4613,
+      "sha256": "ff16e187f31f63888550ad2e2caabc81bf2b6c96a6046b093430da84c643e739"
+    },
+    {
+      "commit": "c778cd7c3ceb72ad8082d791b2aee5f0df082164",
+      "path": "algorithms/su3_j30_classical_ranks/bmn_return/reverse_ward.py",
+      "bytes": 12485,
+      "sha256": "8dbe07ccc7c5a3da26b50e46e7cdb35af607bfde766232cd9f4ab9ac4246a390"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/README.md",
+      "bytes": 5337,
+      "sha256": "cc735e89c486944142c9eade9f1885a239273984fbb8454504f4cb007b034b9f"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/SHA256SUMS",
+      "bytes": 1627,
+      "sha256": "b1e802f3501a2e34a5204aefbd592ba026c1de4a73bcc132c1e41d7529e9ccd3"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/b2_schur_complex.py",
+      "bytes": 5611,
+      "sha256": "24adfafd5d6d3354aa278ec82e23be19e680bc271439be17a24ad279da64343c"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/colour_tensors.py",
+      "bytes": 1752,
+      "sha256": "c0ddd357c0c69de6c425dcbf5be0f09885afbbda97254d8a87bdfa817f12d68c"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/double_trace_flag.py",
+      "bytes": 8928,
+      "sha256": "4c030eb924553750751af96c2bb591ad4e084dc5521514457e43791e137c6db9"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/exceptional_colour.py",
+      "bytes": 2791,
+      "sha256": "228622d276780e645e522b5458c24a47f46ca122cb0fe8ef47388d2b0fd4472b"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/f4_singlet_characters.py",
+      "bytes": 5187,
+      "sha256": "df4a47b6e39c5e7dc109eed97d17a2127f15e33e89b6e91b3e9947df11f8637b"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/flag_boundaries.py",
+      "bytes": 10420,
+      "sha256": "0492d630a32822f3a146e5f286442202b9a56d58fc3d2b00f18d3b621c5a2a2e"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/inputs.json.gz",
+      "bytes": 27477,
+      "sha256": "2246b69a5339fbeccecbdbe9551dbe863b161ac347077cf0c24eafd91c6af26b"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/rebuild_classical.py",
+      "bytes": 3559,
+      "sha256": "4690e1b09a146876fe3a687e60f1be00277db9da00450edb37ac39b6c2fd8e29"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/representation26.json.gz",
+      "bytes": 1406,
+      "sha256": "49ceb60f78e9ac681a1a7c627ebb90b14dfe17e5e773214fc4cc1dd95e6cc8e0"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/selected-1009.json",
+      "bytes": 14564,
+      "sha256": "88af17dac275b1c4b1686d4eb973f343d183bda5cf3e32d69017ec88d2e8f357"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/selected-1009.u16.gz",
+      "bytes": 750929,
+      "sha256": "4f55aee87e5f3dada9ba62564c8881b810900bac0f37a2a8d1f158c9017e80ce"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/selected-1013.json",
+      "bytes": 14563,
+      "sha256": "1dfcca70e8ffdf0dc1053d341ba1db6765eed33ca9b57c03edab762499318267"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/selected-1013.u16.gz",
+      "bytes": 751086,
+      "sha256": "92c950c84f2d36d2948d1fdf3dc47449d864d1a581d559b9e9f3de353d419517"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/single_trace_flag.py",
+      "bytes": 10853,
+      "sha256": "2658a9f4c5b6b9c2acee731bd0c52b3de4bcd2c7d0e2024f9df0feb5a5a4e7c7"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/triple_selected.json",
+      "bytes": 24521,
+      "sha256": "786adafd8a193b8abebff1e61f18344a8d95f9e663ccfe7376cbf385842c5358"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/triple_trace_flag.py",
+      "bytes": 7806,
+      "sha256": "8f9455a72508c166cc7f41a0eb474202ea9f3358cd04cfbb5c59a4c53b3d20f8"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/verified.json",
+      "bytes": 384,
+      "sha256": "1fc9c221d103d0fa923518ad719b2084d333baf70d69748004c4fea6c75d8d33"
+    },
+    {
+      "commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+      "path": "reviews/independent-f4/sixth-glueball-classical-rank/verify_classical.py",
+      "bytes": 3781,
+      "sha256": "fc48e9cea2a0467d73fe1241ddd333e2cf71e18acc16a1dcde802564d442873e"
+    }
+  ]
+}

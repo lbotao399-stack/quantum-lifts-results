@@ -1,0 +1,30 @@
+{
+  "dimensions": [
+    10007,
+    3720,
+    704
+  ],
+  "cartan_gram_determinants": [
+    1728,
+    5184
+  ],
+  "cartan_value": 8957952,
+  "rows_by_family": {
+    "reference": 542,
+    "four": 158,
+    "nested": 3
+  },
+  "minor_determinants": {
+    "1009": 1005,
+    "1013": 734
+  },
+  "classical_rank": 703,
+  "classical_kernel_dimension": 3017,
+  "terminal_cokernel_dimension": 1,
+  "native_column_positions_rebuilt_at_each_prime": [],
+  "scope": "Fresh rational characters, explicit Cartan Gram complement and determinants of both saved complete 703-square matrices. No historical native-column rebuilder or colour-subspace map is invoked.",
+  "public_commit": "3b30b8ff242977debd90581c12f4a767d7875c6c",
+  "stage": "outgoing",
+  "elapsed_seconds": 2.211425624000185,
+  "input_manifest_sha256": "e5e976f09f3efd598380b2c7dd3f49d3f122bb1ddaf7764e843c29d15ed787c9"
+}

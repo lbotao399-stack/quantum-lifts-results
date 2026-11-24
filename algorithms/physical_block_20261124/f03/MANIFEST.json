@@ -1,0 +1,25 @@
+{
+  "scope": "Complete channel-specific first quantum-order comparison; REVIEW.md fixes acceptance and limits.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 19472,
+      "sha256": "8ea583fa15b63670dbc536192d292ee6c736da1b89a418a5a5eaaf817ecd18d2"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 4875,
+      "sha256": "f63947b35090252489139ee1c607616a2044685a78871c44f1891eba5b2b8e53"
+    },
+    {
+      "path": "channel.py",
+      "bytes": 11041,
+      "sha256": "a04cb0f938f9d6fc3e48badb42f0eaf6fced3486aa777e2ce357cc87c88af251"
+    },
+    {
+      "path": "channel_receipt.json",
+      "bytes": 3288,
+      "sha256": "d73736dc96ee12866e8d29879d8dfd008aa7293eac0ed7c4b3f125408e81accd"
+    }
+  ]
+}

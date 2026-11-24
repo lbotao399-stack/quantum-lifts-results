@@ -1,0 +1,11 @@
+__pycache__/
+*.so
+/frames_Y7_offset-1.json.gz
+/frames_Y7_offset0.json.gz
+/full_gram_Y6.json.gz
+/full_gram_Y7.json.gz
+/full_gram_Y8.json.gz
+/harmonic_Y6.json.gz
+/harmonic_Y7.json.gz
+/outgoing_gram_Y7.json.gz
+/physical_representatives.json.gz

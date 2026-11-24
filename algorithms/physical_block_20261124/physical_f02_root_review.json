@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "covariance_entries": 256,
+  "direct_Wick_entries": 63,
+  "letters": 48,
+  "normalization": {
+    "passed": true,
+    "radially_conjugated_curvature_entries_checked": 256,
+    "spinor_pair_entries_checked": 16,
+    "spinor_pair_entries": [
+      "1/128",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1/256",
+      "1/256",
+      "0",
+      "0",
+      "1/256",
+      "1/256",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1/128"
+    ],
+    "field_strength_primary_norm_in_units_g_squared_over_pi_squared": "1/128",
+    "native_undifferentiated_field_strength_norm": "2",
+    "source_equations": [
+      "2306.04673v2 (A.1)-(A.5)",
+      "2306.04673v2 (D.4),(D.9)"
+    ],
+    "audit_note": "The direct action calculation agrees with (3.13)/(E.30); the field-strength line in (E.12)/(E.13) is smaller by a factor two and is not used."
+  },
+  "multiplicity_dimension": 23,
+  "full_dimension": 69,
+  "full_gram_entries_checked": 4761,
+  "whole_multiplicity_basis_change_verified": true,
+  "length_dimensions": [
+    0,
+    21,
+    1,
+    1
+  ],
+  "elapsed_seconds": 8.343247103999602
+}

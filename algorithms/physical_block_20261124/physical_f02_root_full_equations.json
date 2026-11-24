@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "length": 5,
+      "formal": 35,
+      "finite": 35,
+      "all_relations": 0,
+      "harmonic": 0
+    },
+    {
+      "length": 6,
+      "formal": 427,
+      "finite": 379,
+      "all_relations": 48,
+      "harmonic": 21
+    },
+    {
+      "length": 7,
+      "formal": 816,
+      "finite": 605,
+      "all_relations": 211,
+      "harmonic": 1
+    },
+    {
+      "length": 8,
+      "formal": 261,
+      "finite": 149,
+      "all_relations": 112,
+      "harmonic": 1
+    }
+  ],
+  "exact_full_reconstruction": true,
+  "all_null_relations_verified": true,
+  "all_supercharge_and_radial_adjoint_constraints_verified": true,
+  "seconds": 4.523248535999301
+}
