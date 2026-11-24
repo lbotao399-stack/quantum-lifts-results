@@ -1,0 +1,131 @@
+{
+  "assessment_date": "2026-11-24",
+  "baseline_commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+  "rubric_version": "1.0",
+  "score_validation": {
+    "score": 23,
+    "maximum": 100,
+    "met": 19,
+    "count": 60,
+    "tracks": [
+      {
+        "id": "A",
+        "title": "Scientific reliability",
+        "earned": 6,
+        "maximum": 8,
+        "met": 6,
+        "count": 8
+      },
+      {
+        "id": "B",
+        "title": "Fortuitous discovery and classification",
+        "earned": 4,
+        "maximum": 16,
+        "met": 4,
+        "count": 10
+      },
+      {
+        "id": "C",
+        "title": "Transformative algorithms and autonomous execution",
+        "earned": 2,
+        "maximum": 18,
+        "met": 2,
+        "count": 10
+      },
+      {
+        "id": "D",
+        "title": "Perturbative higher differentials",
+        "earned": 8,
+        "maximum": 20,
+        "met": 4,
+        "count": 10
+      },
+      {
+        "id": "E",
+        "title": "Physical nonperturbative lifts",
+        "earned": 2,
+        "maximum": 14,
+        "met": 2,
+        "count": 8
+      },
+      {
+        "id": "F",
+        "title": "Physical explanation and dual descriptions",
+        "earned": 1,
+        "maximum": 14,
+        "met": 1,
+        "count": 8
+      },
+      {
+        "id": "G",
+        "title": "BPS chaos",
+        "earned": 0,
+        "maximum": 10,
+        "met": 0,
+        "count": 6
+      }
+    ]
+  },
+  "generated_documents_match": true,
+  "relative_document_links_checked": 107,
+  "missing_relative_links": [],
+  "negative_controls": [
+    {
+      "case": "extra_point",
+      "rejected": true,
+      "message": "track weight mismatch: A"
+    },
+    {
+      "case": "missing_evidence",
+      "rejected": true,
+      "message": "unknown evidence: A01"
+    },
+    {
+      "case": "dependency_cycle",
+      "rejected": true,
+      "message": "dependency cycle through A01"
+    },
+    {
+      "case": "unmet_prerequisite",
+      "rejected": true,
+      "message": "met milestone has unmet dependency: A01"
+    }
+  ],
+  "fresh_algebraic_check": {
+    "command": "python3 algorithms/fortuitous_duals_20261123/transpose_detector/score_candidate.py",
+    "exit_code": 0,
+    "output": {
+      "exact_coefficient_pairing": "1",
+      "source_coordinates": 186,
+      "input_terms": 4264,
+      "weight": [
+        3,
+        3,
+        5,
+        0,
+        0
+      ],
+      "length": 9,
+      "interpretation": "For a finite Q0-closed cochain in the certified highest-weight block, a nonzero score proves a nonzero fortuitous component. In this one-dimensional cohomology block, zero score means the class is zero. This command does not check Q0-closure or highest-weight membership."
+    }
+  },
+  "large_physics_calculations_rerun_this_assessment": false,
+  "file_sha256": {
+    "AGENTS.md": "0d69e1c1948a4d877ca3444176f8abb255f201474578132c9875b9dc7a30de3b",
+    "README.md": "c8ac5613bd7999556788aa7ce23c956ff0fcd33c55f0b3325bbee9aa6452d576",
+    "RESEARCH_DISCUSSION.md": "5803628cd11a776b8f52f92b7c5e201963dc10cb06727eae3abfa0d17d259c92",
+    "STATUS.md": "8c351d7f765e37ad6857786fd1e5731a45b3fc77280c68f42691e36736fb8d64",
+    "research-roadmap/AGENTS.md": "737cae12655376f16e36c2ab383445833ba51b32419b09d059b0713085fe2d65",
+    "research-roadmap/CURRENT_STAGE.md": "dbf96626acda9342f151ff8a4caea25894416e2585255e97553223a943a87f0b",
+    "research-roadmap/EVIDENCE.md": "f2f089cba789f58238c1daa5fadddf06e0e5641fa2c4f508cc6894449cbb6574",
+    "research-roadmap/HISTORY.md": "1ef61cdf0b0f9dc8e844b9d65da347932c0f26483b39663d134ec64f8b657c76",
+    "research-roadmap/MILESTONES.md": "0538dd63831514be089cc8dc48b82b168194e6c45b24d6947f52e4251a9030b1",
+    "research-roadmap/README.md": "113a23e8741512d2508373b46caf9b0f007648d9068995e65304b82b7e144040",
+    "research-roadmap/SCOPE.md": "d5594ca36062d3ff8737f1ab2f918b390a057b45f13c7018df73b945d6531b98",
+    "research-roadmap/SCORECARD.md": "040f4acfc1f657c68ee48e912c833958791138202c0b1373b7e8f849fa25ae43",
+    "research-roadmap/evidence.json": "5b5a549682f4ee4d399df955e57adf1177b1d14ed99dc45b4e7495155be8d9d8",
+    "research-roadmap/milestones.json": "5ff3cea52b1772f23a5cdcec1537fcfcd0aca1f569b487ddf3d224b4a502c4d2",
+    "research-roadmap/scope.json": "dc7050e1dfafaab86c1dd5ed994434e86dc75fcc951303e7b2ac42fa2b02e4a5",
+    "research-roadmap/score.py": "96920714a4064921dc18e44e390b090fbbef66589638e1391f2868012f0098b0"
+  }
+}

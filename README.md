@@ -2,9 +2,11 @@
 
 Botao Li, October 2026. Companion to [All-loop-holomorphic-kernels](https://github.com/lbotao399-stack/All-loop-holomorphic-kernels) (the operators Q_n used below).
 
+**Research roadmap, November 24, 2026:** [60 concrete milestones totaling 100 points](research-roadmap/README.md), with a [current assessment of 23/100](research-roadmap/SCORECARD.md), exact completion tests, evidence pins, dependencies and a revisable execution sequence. The assessment includes later orthogonal third-order results, the F4 second-order withdrawal and the source bound fifteen; older dated campaign counts below retain their historical scope.
+
 [Manuscript v2, 20261123-180653](https://github.com/lbotao399-stack/All-loop-holomorphic-kernels/blob/f927e3492c1c8b730026041478fcc8ab62741a4a/Holomorphic_Feynman_diagrams_quantum_BPS_ring.pdf) reports new three-loop BPS lifts in $SO(11)$, $SO(12)$ and $SO(13)$ and corrects citations, including the original source of Proposition D.1 ([Brandt, 1993](https://doi.org/10.1016/0550-3213(93)90680-N)).
 
-**Running computations (updated daily): [STATUS.md](STATUS.md).**
+**Dated computation snapshots: [STATUS.md](STATUS.md).** See the [roadmap assessment](research-roadmap/CURRENT_STAGE.md) for the reconciled November 24 research stage.
 
 [**Nonperturbative lifts**](nonperturbative-lift/) contains the English research manuscript, a claim index, exact polynomial witnesses, and executable checks for supersymmetric gauge theories. The [results chapter](nonperturbative-lift/research/02-results.md) includes determinant and Pfaffian relations in supersymmetric QCD. The project lists the [search for a nonscalar instanton pairing in undeformed N=4 SYM](nonperturbative-lift/OPEN_PROBLEMS.md#n4-nonscalar-image) as open.
 

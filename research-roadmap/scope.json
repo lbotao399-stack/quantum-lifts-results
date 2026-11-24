@@ -1,0 +1,67 @@
+{
+  "scope_version": "1.0",
+  "assessment_date": "2026-11-24",
+  "theory": "Undeformed four-dimensional N=4 super Yang-Mills",
+  "complex": "Pinned normalized relative holomorphic Taylor-jet complex; physical matching is a separate milestone",
+  "level_definition": "Twice the sum of energy and left spin, in the pinned repository convention",
+  "core_full_jet_groups": ["SU(3)", "SU(4)", "SU(5)", "Sp(2)=USp(4)", "Sp(3)=USp(6)", "Sp(4)=USp(8)", "SO(7)", "SO(8)", "SO(9)", "G2", "F4"],
+  "core_maximum_target_level_inclusive": 36,
+  "include_all_native_charges_and_lengths": true,
+  "include_all_required_source_and_correction_spaces_outside_target_cutoff": true,
+  "include_holomorphic_derivatives": true,
+  "quotient_total_translations": false,
+  "projection_constructions_allowed": false,
+  "new_su2_sp1_so3_scans_allowed": false,
+  "expanded_block_manifest_status": "not_yet_generated; A07 remains partial",
+  "coverage": {
+    "exact_classical_dimensions_required_percent": 100,
+    "fully_decided_nonzero_blocks_required_percent": 99,
+    "fully_decided_classical_cohomology_dimension_required_percent": 99,
+    "partly_decided_block_contributes_to_resolved_numerator": false,
+    "zero_blocks_contribute_to_nonzero_denominators": false,
+    "empty_denominator_is_success": false,
+    "all_named_frontier_targets_must_be_resolved": true
+  },
+  "named_frontier": [
+    "F4 glueball powers 5, 6, 7, 8",
+    "SO(11) glueball power 6",
+    "SO(12) reflection-even glueball power 7",
+    "SO(13) glueball powers 7 and 8",
+    "SO(14) glueball power 8; attach exact replay provenance",
+    "SO(19) glueball power 10",
+    "SO(25) glueball power 13",
+    "SO(26) glueball power 14",
+    "SO(11) level-35 one-scalar target",
+    "SO(13) level-41 one-scalar target",
+    "Both SO(13) level-46 quadratic classes",
+    "G2 level-36 source lengths 11 and 13",
+    "G2 glueball power 3",
+    "SU3 R-007 and stated F1 tower",
+    "Specified SU3 nine-letter survivor and length-seven outgoing generator quotient"
+  ],
+  "uniform_family_goals": [
+    "Exact existence/disappearance and independent-generator classification for a new family over unbounded rank or charge",
+    "First-hit or protection rule for all classically nonzero pure-glueball powers of SO(N), every N >= 9",
+    "All-instanton physical selection, recursion or exact relation for one fixed nonscalar family"
+  ],
+  "instanton_window": {
+    "complete_map_charge": 1,
+    "full_jet_target_level_cutoffs": {"SU(3)": 36, "SU(4)": 28},
+    "named_extra_targets": ["G2 glueball power 3", "F4 glueball power 5"],
+    "all_symmetry_compatible_physical_partners_required": true,
+    "higher_charge_checks_for_uniform_theorem": [2, 3],
+    "first_uniform_family": "R-007 if physically nontrivial; otherwise the first eligible family in a prospectively frozen complete physical census",
+    "finite_low_charge_checks_alone_establish_all_instanton_result": false
+  },
+  "chaos": {
+    "space": "Complete physical charge/symmetry blocks containing fortuitous survivors; retain mixed matrix elements unless an exact preserved decomposition is proved",
+    "minimum_distinct_nonabelian_ranks_for_scaling_gate": 3,
+    "minimum_growing_charge_blocks_per_rank": 3,
+    "independently_defined_physical_probes": 2,
+    "calibration_maximum_false_positive_probability": {"numerator": 1, "denominator": 100},
+    "calibration_minimum_power_against_declared_finite_models": {"numerator": 9, "denominator": 10},
+    "sample_size_rule": "Determine from the prospectively fixed statistical calibration, using physical multiplicities rather than cochain counts",
+    "finite_rank_data_alone_proves_asymptotic_scaling": false,
+    "physical_probe_fourier_parameter_is_hamiltonian_time": false
+  }
+}

@@ -1,4 +1,6 @@
-# Running computations: daily status
+# Dated computation snapshots
+
+**Current audited research assessment, November 24, 2026:** [23/100 points across 60 milestones](research-roadmap/SCORECARD.md), with [current findings and next calculations](research-roadmap/CURRENT_STAGE.md). The sections below are preserved historical snapshots. Their job states are not live observations, and their November 18 zero-third-order count and SU3 solver status do not supersede the later orthogonal witnesses and R-007 formal-survival theorems.
 
 ## Verified BMN phase, November 18, 2026
 

@@ -1,0 +1,1578 @@
+{
+  "schema_version": 1,
+  "rubric_version": "1.0",
+  "assessment_date": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "repository": "lbotao399-stack/quantum-lifts-results",
+  "baseline_commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+  "total_points": 100,
+  "milestone_count": 60,
+  "scoring_rule": "Full integer weight only for met. Partial and open earn zero. Published evidence audit is distinguished from fresh replay. No points for writing this roadmap.",
+  "tracks": [
+    {
+      "id": "A",
+      "title": "Scientific reliability",
+      "maximum": 8
+    },
+    {
+      "id": "B",
+      "title": "Fortuitous discovery and classification",
+      "maximum": 16
+    },
+    {
+      "id": "C",
+      "title": "Transformative algorithms and autonomous execution",
+      "maximum": 18
+    },
+    {
+      "id": "D",
+      "title": "Perturbative higher differentials",
+      "maximum": 20
+    },
+    {
+      "id": "E",
+      "title": "Physical nonperturbative lifts",
+      "maximum": 14
+    },
+    {
+      "id": "F",
+      "title": "Physical explanation and dual descriptions",
+      "maximum": 14
+    },
+    {
+      "id": "G",
+      "title": "BPS chaos",
+      "maximum": 10
+    }
+  ],
+  "milestones": [
+    {
+      "id": "A01",
+      "track": "A",
+      "points": 1,
+      "status": "met",
+      "title": "Native input conventions are explicit",
+      "scope": "The existing Sp3 relation-quotient and SU3 coupled-correction packages.",
+      "acceptance": [
+        "Specify theory, complete letters, coordinate order, fermion signs, gauge representation and all charge shifts.",
+        "Give an invertible convention translation when two packages use different tuple orders or coupling normalizations."
+      ],
+      "current_assessment": "The audited packages fix these inputs; the whole repository still needs a common exchange format.",
+      "evidence": [
+        "conventions",
+        "fortuity",
+        "coupled_solver",
+        "portable_replay"
+      ],
+      "dependencies": [],
+      "next_action": "Preserve the existing conventions as fixtures when implementing C03.",
+      "required_artifact": "Pinned input schema and convention fixtures.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "A02",
+      "track": "A",
+      "points": 1,
+      "status": "met",
+      "title": "Native differential identities have exact controls",
+      "scope": "Published native classical actions and the orthogonal finite-chain controls.",
+      "acceptance": [
+        "Verify the graded action and nilpotence on the generating letters, with exact algebraic reasoning extending it to products.",
+        "Check the actual native signs and the complete residuals used by the named controls; no Abelian substitution for a non-Abelian result."
+      ],
+      "current_assessment": "Exact native identity and chain controls exist. This does not certify every map in the future coverage region.",
+      "evidence": [
+        "g2_column",
+        "fortuity",
+        "orthogonal_d3"
+      ],
+      "dependencies": [
+        "A01"
+      ],
+      "next_action": "Reuse these controls when introducing any new gauge-family backend.",
+      "required_artifact": "Native identity receipts and full residual checks.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "A03",
+      "track": "A",
+      "points": 1,
+      "status": "met",
+      "title": "Finite-colour bases have completeness witnesses",
+      "scope": "The complete Sp3 omega source.",
+      "acceptance": [
+        "Compute invariant dimensions independently of the generated basis.",
+        "Produce nonzero minors saturating those dimensions and an injective coordinate frame; account for every finite-colour relation."
+      ],
+      "current_assessment": "Stable and finite source dimensions 2870 and 2689 give all 181 source relations in a certified complete frame. The G2 column is scored separately under B01.",
+      "evidence": [
+        "relation_certificate"
+      ],
+      "dependencies": [
+        "A01"
+      ],
+      "next_action": "Extend the same completeness requirement to every new source block.",
+      "required_artifact": "Character dimensions, basis recipes and completeness certificates.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "A04",
+      "track": "A",
+      "points": 1,
+      "status": "met",
+      "title": "Modular identities are certified in characteristic zero",
+      "scope": "The complete integer-evaluation bridge for the Sp3 finite-colour source identities.",
+      "acceptance": [
+        "Specify a complete injective finite-colour coordinate frame and bounded integer evaluation matrices.",
+        "Prove an evaluation bound and use a Chinese-remainder modulus greater than twice that bound, or provide exact rational reconstruction, to certify every required zero in characteristic zero.",
+        "Verify the exact integer/rational identity certificate independently; numerical zeros without a bound do not pass."
+      ],
+      "current_assessment": "The modulus 1000073001431003663 exceeds twice 26822106842923008, certifying the rational source identities. The fortuitous quotient dimension and candidate pairing are credited only under B02.",
+      "evidence": [
+        "relation_certificate"
+      ],
+      "dependencies": [
+        "A03"
+      ],
+      "next_action": "Require a characteristic-zero identity bridge whenever modular evaluations are used for a full relation certificate.",
+      "required_artifact": "Complete coordinate frame, rigorous integer bounds and exact identity proof.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "A05",
+      "track": "A",
+      "points": 1,
+      "status": "met",
+      "title": "Earlier homogeneous corrections remain free",
+      "scope": "The SU3 coupled-solver algorithm controls.",
+      "acceptance": [
+        "Solve all coupled equations while retaining every homogeneous earlier correction.",
+        "Reproduce all five homogeneous solutions of the 30-equation, 16-variable rank-11 control.",
+        "Reject an inconsistent case and recover a solvable case falsely obstructed by freezing an earlier correction."
+      ],
+      "current_assessment": "Controls pass in the public record; production retains 10308 homogeneous first-correction parameters.",
+      "evidence": [
+        "coupled_solver"
+      ],
+      "dependencies": [
+        "A01"
+      ],
+      "next_action": "Keep this control mandatory for every higher-page solver change.",
+      "required_artifact": "Coupled-solver control and restart receipt.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "A06",
+      "track": "A",
+      "points": 1,
+      "status": "met",
+      "title": "Pinned calculations replay outside their checkout",
+      "scope": "Published orthogonal and fortuitous-dual replay packages.",
+      "acceptance": [
+        "Fetch immutable inputs and validate their hashes.",
+        "Rebuild required native code in a separate work directory and emit exact output receipts.",
+        "Include an independently implemented check of a decisive identity."
+      ],
+      "current_assessment": "Portable recipes, manifests and independent checks are public. There is no repository-wide clean verification job.",
+      "evidence": [
+        "portable_replay",
+        "fortuity"
+      ],
+      "dependencies": [],
+      "next_action": "Use these packages as the initial input set for A08.",
+      "required_artifact": "Portable command, dependency list, manifest and receipt.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "A07",
+      "track": "A",
+      "points": 1,
+      "status": "partial",
+      "title": "A current claim ledger covers the whole public evidence graph",
+      "scope": "Every advertised undeformed-N4 result, including discussion-linked commits outside main.",
+      "acceptance": [
+        "Record group, all charges, source, target, order, field, normalization, scope, certificate and supersession state for every advertised claim.",
+        "Detect conflicting active claims and missing references automatically.",
+        "Generate the current summary from this ledger and enumerate the explicit finite coverage manifest."
+      ],
+      "current_assessment": "This roadmap reconciles its scored claims. It does not yet catalogue every historical/public claim, so writing it earns no point.",
+      "evidence": [
+        "discussion",
+        "conventions",
+        "f4_withdrawal"
+      ],
+      "dependencies": [],
+      "next_action": "Import all discussion entries and manuscript/table claims; attach immutable evidence and label historical campaign totals.",
+      "required_artifact": "claims.json, coverage-blocks.json and a conflict/reference checker.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "A08",
+      "track": "A",
+      "points": 1,
+      "status": "open",
+      "title": "A clean verification job rejects corrupted evidence",
+      "scope": "All designated inexpensive public verifiers; expensive replays remain separately callable.",
+      "acceptance": [
+        "Run from a clean Linux checkout with declared dependencies and no private paths.",
+        "Verify manifests and exact outputs, deliberately corrupt one copied payload and require rejection.",
+        "Publish receipts and distinguish source rebuilding from reuse of saved production entries."
+      ],
+      "current_assessment": "Portable bundles exist, but no repository-wide automated verification workflow was found at the audit pin.",
+      "evidence": [
+        "portable_replay",
+        "g2_column"
+      ],
+      "dependencies": [
+        "A06",
+        "A07"
+      ],
+      "next_action": "Create one public verification entry point and a clean runner for the existing cheap bundles.",
+      "required_artifact": "CI workflow, negative-control receipt and replay manifest.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "B01",
+      "track": "B",
+      "points": 1,
+      "status": "met",
+      "title": "One complete exceptional-group column is solved",
+      "scope": "G2 derivative-free level 30, highest weight (5,5,5), all ten spin labels.",
+      "acceptance": [
+        "Determine every adjacent rank with matching bounds.",
+        "Show 3030-1960-1066=4 and 1070-1066=4, and prove the other nine sectors vanish.",
+        "State which source-minor entries have and have not been independently regenerated."
+      ],
+      "current_assessment": "The four surviving classes are exhausted by known products. This is a complete column, not the whole level.",
+      "evidence": [
+        "g2_column"
+      ],
+      "dependencies": [
+        "A02",
+        "A03"
+      ],
+      "next_action": "Reconstruct the remaining source-minor entries under C03; expand to B07.",
+      "required_artifact": "Complete column table with rank and product certificates.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "B02",
+      "track": "B",
+      "points": 1,
+      "status": "met",
+      "title": "One full-jet fortuitous quotient is exact",
+      "scope": "The known Sp3 omega grading, length nine, level 28.",
+      "acceptance": [
+        "Construct every finite-colour source identity and its full classical image.",
+        "Verify 1198-116-1081=1 and the candidate detector value one.",
+        "Prove finite closure independently of its detector score."
+      ],
+      "current_assessment": "The complete rational positive certificate exists. Rediscovering the known omega is not a new family.",
+      "evidence": [
+        "fortuity",
+        "relation_certificate"
+      ],
+      "dependencies": [
+        "A03",
+        "A04"
+      ],
+      "next_action": "Generalize complete relation-image recognition without a hand-supplied omega.",
+      "required_artifact": "Complete quotient certificate and closed representative.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "B03",
+      "track": "B",
+      "points": 1,
+      "status": "met",
+      "title": "Rank dependence is proved beyond a finite scan",
+      "scope": "The same fixed omega grading across the symplectic ranks.",
+      "acceptance": [
+        "Certify the rank-window dimensions 0,0,1,0 at the four displayed ranks.",
+        "Prove the vanishing statement for every rank at least four by injectivity and block embedding.",
+        "Keep this one grading distinct from a whole-level classification."
+      ],
+      "current_assessment": "A uniform exclusion beyond the measured ranks is established.",
+      "evidence": [
+        "rank_window"
+      ],
+      "dependencies": [
+        "B02"
+      ],
+      "next_action": "Use the proof pattern to search for a new family under B09, without new SU2 scans.",
+      "required_artifact": "Finite-rank table plus an unbounded-rank theorem.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "B04",
+      "track": "B",
+      "points": 1,
+      "status": "met",
+      "title": "A ring-generator count uses every proper product",
+      "scope": "The specified SU3 length-seven outgoing channel.",
+      "acceptance": [
+        "Certify target cohomology 1896-825-1037=34.",
+        "Cover all 56 proper-product factor pairs, 112 factor sectors and 114 differential matrices.",
+        "Certify product span 176-143=33, giving exactly one remaining generator."
+      ],
+      "current_assessment": "The quotient count is one. Its explicit representative and superconformal parent remain open.",
+      "evidence": [
+        "generator_count"
+      ],
+      "dependencies": [
+        "A03",
+        "A04"
+      ],
+      "next_action": "Extract one rational vector and a functional annihilating every boundary and proper product.",
+      "required_artifact": "Complete product-span certificate.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "B05",
+      "track": "B",
+      "points": 2,
+      "status": "open",
+      "title": "The remaining SU3 generator is explicit",
+      "scope": "The one-dimensional quotient in B04.",
+      "acceptance": [
+        "Publish an exact representative with the required native charges and all closure/symmetry checks.",
+        "Give a rational functional zero on all boundaries and all proper products, and equal to one on the representative.",
+        "Give its complete finite-rank relation test; do not assume that ring primitivity alone proves fortuity."
+      ],
+      "current_assessment": "The dimension is established; a vector outside the complete product span is not yet published.",
+      "evidence": [
+        "generator_count"
+      ],
+      "dependencies": [
+        "B04"
+      ],
+      "next_action": "Back-substitute the target/product rank certificates and verify the entire polynomial residual.",
+      "required_artifact": "Representative, full dual and exact replay.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "B06",
+      "track": "B",
+      "points": 2,
+      "status": "partial",
+      "title": "The existing SU3 and SU4 full-jet frontiers are uniformly certified",
+      "scope": "All native charge blocks through level 30 for SU3 and level 28 for SU4.",
+      "acceptance": [
+        "Freeze the complete block list and regenerate exact classical dimensions and relation quotients.",
+        "For every nonzero class, give exact closure and nonexactness; classify all proper products and descendants separately.",
+        "Resolve every conditional or modular-only item needed for the claimed census, with no failed block omitted."
+      ],
+      "current_assessment": "The root table reports these extensive frontiers and explicit classes. A uniform machine-checkable fortuity/generator census at this standard is not present.",
+      "evidence": [
+        "conventions",
+        "discussion"
+      ],
+      "dependencies": [
+        "A03",
+        "A04",
+        "A07"
+      ],
+      "next_action": "Import the per-level data and enumerate precisely which class, product and rational certificates remain absent.",
+      "required_artifact": "Complete SU3/SU4 census manifest and certificates.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "B07",
+      "track": "B",
+      "points": 2,
+      "status": "partial",
+      "title": "Unseeded discovery completes two gauge-family level scans",
+      "scope": "Every character-nonzero derivative-free level-30 block for Sp3 and G2.",
+      "acceptance": [
+        "Start from group, level and letter specification, with no supplied candidate list.",
+        "Resolve every block, including cancelling boson/fermion pairs invisible to the signed index.",
+        "Output complete cohomology, fortuitous quotients and proper-product generator counts with witnesses."
+      ],
+      "current_assessment": "41 product sectors per group and the complete G2 column are useful inputs; they do not exhaust the level.",
+      "evidence": [
+        "g2_column",
+        "fortuity"
+      ],
+      "dependencies": [
+        "A07",
+        "B01",
+        "B02",
+        "C08"
+      ],
+      "next_action": "Enumerate the unresolved character-nonzero blocks before launching the complete solver.",
+      "required_artifact": "Exhaustive discovery manifest, zero certificates and nonzero witnesses.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "B08",
+      "track": "B",
+      "points": 2,
+      "status": "open",
+      "title": "Autonomous discovery finds a new independent generator family",
+      "scope": "A prospectively frozen region outside the known generator list, with gauge rank at least three.",
+      "acceptance": [
+        "Freeze the known-class list and candidate-free input before execution.",
+        "Produce a previously unlisted closed, nonexact, fortuitous class with a complete product/descendant comparison.",
+        "Generate and independently replay the certificate without manually supplying the successful source ansatz."
+      ],
+      "current_assessment": "Known-control regeneration and a nonzero coefficient on a chosen ansatz do not meet this gate.",
+      "evidence": [
+        "fortuity",
+        "discussion"
+      ],
+      "dependencies": [
+        "A04",
+        "C08"
+      ],
+      "next_action": "Choose the first unresolved block in the frozen discovery manifest and record the algorithm input before inspecting candidates.",
+      "required_artifact": "New family record, frozen search input and independent certificate.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "B09",
+      "track": "B",
+      "points": 2,
+      "status": "open",
+      "title": "A new family has an exact rank/charge classification",
+      "scope": "One family beyond the fixed omega grading, extending over unbounded rank or unbounded charge.",
+      "acceptance": [
+        "Prove the complete existence and disappearance range, including all exceptional low cases.",
+        "Distinguish independent generators from dressed products throughout the family.",
+        "Validate three cases outside the data originally used to formulate the family."
+      ],
+      "current_assessment": "The fixed omega rank theorem is established; a general generator classification is not.",
+      "evidence": [
+        "rank_window",
+        "f1_tower"
+      ],
+      "dependencies": [
+        "B03",
+        "B08"
+      ],
+      "next_action": "Derive a relation-space recursion or representation-theoretic construction from a certified new family.",
+      "required_artifact": "Uniform theorem, exceptional cases and held-out certificates.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "B10",
+      "track": "B",
+      "points": 2,
+      "status": "open",
+      "title": "The full census meets both 99-percent discovery thresholds",
+      "scope": "Every block in the core full-jet region of SCOPE.md.",
+      "acceptance": [
+        "Obtain exact classical cohomology dimensions for 100% of admitted blocks.",
+        "Classify fortuity and the full proper-product quotient in at least 99% of nonzero blocks and at least 99% of classical cohomology dimensions.",
+        "List the remaining blocks explicitly; resolved zero blocks do not inflate either nonzero denominator."
+      ],
+      "current_assessment": "No complete manifest or two-denominator coverage measurement exists yet.",
+      "evidence": [
+        "conventions",
+        "discussion"
+      ],
+      "dependencies": [
+        "A07",
+        "B06",
+        "B07"
+      ],
+      "next_action": "Generate the immutable coverage manifest; compute denominators only from certified dimensions.",
+      "required_artifact": "Coverage table with exact integer numerators and denominators.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "C01",
+      "track": "C",
+      "points": 1,
+      "status": "met",
+      "title": "Production profile bases attain their character dimensions",
+      "scope": "All 94 archived SU3 second-source and second-target profiles.",
+      "acceptance": [
+        "Reach the independently specified dimension in each profile.",
+        "Preserve all seed recipes, hashes, counts and nonzero production basis evidence.",
+        "Reject a missing profile; distinguish production evidence from independent reconstruction of every minor entry."
+      ],
+      "current_assessment": "All 94 profile bases are present at their exact dimensions. This is input construction, not a solved quantum obstruction.",
+      "evidence": [
+        "coupled_solver",
+        "distributed_maps"
+      ],
+      "dependencies": [
+        "A03"
+      ],
+      "next_action": "Import this basis inventory into C03 without changing source order or frames.",
+      "required_artifact": "Complete profile inventory and pinned basis evidence.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "C02",
+      "track": "C",
+      "points": 1,
+      "status": "met",
+      "title": "Distributed map assembly is lossless",
+      "scope": "The public SU3 assembly and two-prime packing controls.",
+      "acceptance": [
+        "Cover every task and row exactly once; preserve original source order and evaluation frames.",
+        "Compare every packed/unpacked control entry at two primes.",
+        "Reject missing blocks, incompatible frames and corrupted payloads."
+      ],
+      "current_assessment": "Task coverage and packing controls are published. A runtime improvement for the entire calculation is not established.",
+      "evidence": [
+        "distributed_maps",
+        "coupled_solver"
+      ],
+      "dependencies": [
+        "A05",
+        "C01"
+      ],
+      "next_action": "Measure total execution costs only after the common production benchmark is frozen.",
+      "required_artifact": "Coverage manifest, packing comparisons and failure controls.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "C03",
+      "track": "C",
+      "points": 2,
+      "status": "open",
+      "title": "One certificate format handles three gauge families",
+      "scope": "Import one SU3, one orthogonal and one exceptional public calculation.",
+      "acceptance": [
+        "Represent complete bases, native maps, finite-colour identities, rational rank bounds, chains and full duals in one documented format.",
+        "Reject incompatible fields, coordinate frames, gradings and incomplete row coverage.",
+        "Independently reconstruct every minor entry required by these three designated imports, including the remaining G2 source entries."
+      ],
+      "current_assessment": "Per-bundle formats are strong but fragmented; some relevant packages live only at linked commits.",
+      "evidence": [
+        "g2_column",
+        "portable_replay",
+        "coupled_solver"
+      ],
+      "dependencies": [
+        "A06"
+      ],
+      "next_action": "Write adapters preserving native conventions; begin with the complete G2 column and SU3 profile inventory.",
+      "required_artifact": "Schema, three adapters and a common exact verifier.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "C04",
+      "track": "C",
+      "points": 2,
+      "status": "open",
+      "title": "The complete F4 sixth-power source is usable natively",
+      "scope": "All 3720 selected source cochains and the complete classical incoming/outgoing maps for the F4 sixth-power second-source sector.",
+      "acceptance": [
+        "Provide a character-complete native basis and an injective common coordinate frame.",
+        "Evaluate the full classical action and retain all relations and homogeneous freedom.",
+        "A certified matrix-action oracle is allowed only if it covers every basis vector and proves the same identities; saved minors alone do not pass."
+      ],
+      "current_assessment": "Outgoing rank 703 and incoming rank at least 3002 leave at most 15 classes. The complete native input package is absent.",
+      "evidence": [
+        "f4_bound",
+        "f4_withdrawal"
+      ],
+      "dependencies": [
+        "A03",
+        "C03"
+      ],
+      "next_action": "Rebuild the 3720-cochain basis and test frame injectivity before solving the residual quotient.",
+      "required_artifact": "Complete native source package or an equivalent complete action oracle.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "C05",
+      "track": "C",
+      "points": 2,
+      "status": "open",
+      "title": "A solver avoids storing the full dense maps",
+      "scope": "The SU3 second-correction task and the F4 source task, with all original variables retained.",
+      "acceptance": [
+        "Implement exact sparse, streamed or matrix-action elimination with restart support.",
+        "Recover the full solution family or a complete separating witness; preserve all homogeneous freedom.",
+        "Match every certified output of the pinned baseline and count all construction and certificate costs."
+      ],
+      "current_assessment": "Large dense payloads and repeated small-file reads are documented bottlenecks. Packing is an input improvement, not this solver.",
+      "evidence": [
+        "distributed_maps",
+        "coupled_solver",
+        "f4_bound"
+      ],
+      "dependencies": [
+        "A05",
+        "C03",
+        "C04"
+      ],
+      "next_action": "Prototype one complete matrix-action solve on a frozen production task with exact output comparison.",
+      "required_artifact": "Complete solver, resource receipt and equivalent certificates.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "C06",
+      "track": "C",
+      "points": 2,
+      "status": "open",
+      "title": "Total processor time improves by a factor of at least ten",
+      "scope": "Two predeclared production tasks from different gauge families.",
+      "acceptance": [
+        "Use the best reproducible pinned baseline, identical mathematical outputs and the same resource limits.",
+        "Run five alternating paired fresh-process trials; median total processor time must be at most one tenth of baseline on both tasks.",
+        "Include input construction, solving and certificate production; peak resident memory must not increase."
+      ],
+      "current_assessment": "Enumeration is faster, but full recipe regeneration does not show a reliable total-stage gain. No end-to-end factor-ten result is established.",
+      "evidence": [
+        "optimization",
+        "distributed_maps"
+      ],
+      "dependencies": [
+        "A06",
+        "C03"
+      ],
+      "next_action": "Freeze workloads, exact output hashes and baseline commands before optimizing.",
+      "required_artifact": "Raw paired timings, stage totals, memory receipts and exact comparisons.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "C07",
+      "track": "C",
+      "points": 2,
+      "status": "open",
+      "title": "Peak memory improves by a factor of at least ten",
+      "scope": "The complete SU3 production correction solve, followed by one exceptional-group task.",
+      "acceptance": [
+        "Measure peak resident memory including children, input construction and certificate generation.",
+        "Use at most one tenth of baseline peak memory on both tasks, without dropping coordinates or increasing total processor time beyond baseline.",
+        "Resume a deliberately interrupted run and reproduce the full exact output."
+      ],
+      "current_assessment": "No complete production receipt establishes this reduction.",
+      "evidence": [
+        "distributed_maps",
+        "coupled_solver"
+      ],
+      "dependencies": [
+        "A06",
+        "C03",
+        "C05"
+      ],
+      "next_action": "Measure baseline peak memory and identify when full maps can be replaced by exact action queries.",
+      "required_artifact": "Whole-process memory logs, restart receipt and complete certificates.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "C08",
+      "track": "C",
+      "points": 2,
+      "status": "open",
+      "title": "Group and charges alone drive a complete discovery run",
+      "scope": "At least one full-jet block and one derivative-free block, with no hand-supplied state.",
+      "acceptance": [
+        "Generate complete cochains, relations, classical cohomology and the allowed quantum equations from native inputs.",
+        "Produce positive or zero certificates, preserve every correction freedom and label unsupported cases as unknown.",
+        "Resume after interruption and generate a reviewable result ledger automatically."
+      ],
+      "current_assessment": "Existing engines perform substantial stages; a generic candidate-free pipeline with complete certificates is not demonstrated.",
+      "evidence": [
+        "fortuity",
+        "coupled_solver"
+      ],
+      "dependencies": [
+        "A07",
+        "C03",
+        "C05"
+      ],
+      "next_action": "Connect the independent input, relation-image and coupled-solver stages on one complete block.",
+      "required_artifact": "One-command discovery pipeline and candidate-free input receipt.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "C09",
+      "track": "C",
+      "points": 2,
+      "status": "open",
+      "title": "The same engine runs across three gauge families",
+      "scope": "SU3, SO7 and G2, each in a predeclared complete nontrivial block.",
+      "acceptance": [
+        "Change only the gauge realization and invariant-tensor input, not hand-written sector solvers.",
+        "Certify full dimensions, relations, native differential identities and output equivalence in all three cases.",
+        "Document the mathematical assumptions needed for another compact gauge group."
+      ],
+      "current_assessment": "Multiple group-specific engines exist; this common interface and complete cross-family run are absent.",
+      "evidence": [
+        "g2_column",
+        "coupled_solver",
+        "conventions"
+      ],
+      "dependencies": [
+        "A02",
+        "A03",
+        "C03"
+      ],
+      "next_action": "Separate gauge-specific data from the complete graded-algebra and elimination algorithms.",
+      "required_artifact": "Gauge interface and three exact end-to-end receipts.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "C10",
+      "track": "C",
+      "points": 2,
+      "status": "open",
+      "title": "The improved framework moves the completed frontier",
+      "scope": "SU3 and one of G2 or Sp3, relative to a frozen completed baseline.",
+      "acceptance": [
+        "Complete every admitted block at two successive new physical levels in both groups.",
+        "Use at most the baseline total processor time and peak memory for its previous two-level frontier.",
+        "Publish exact coverage and certificates, including zero results; isolated fast kernels and selected easy blocks do not pass."
+      ],
+      "current_assessment": "No matched-resource complete-frontier advance has been established by the new optimizations.",
+      "evidence": [
+        "optimization",
+        "conventions"
+      ],
+      "dependencies": [
+        "C06",
+        "C07",
+        "C08",
+        "C09"
+      ],
+      "next_action": "Freeze the baseline frontier and resource receipt, then run the next two whole levels.",
+      "required_artifact": "Before/after coverage manifests and matched-resource receipts.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "D01",
+      "track": "D",
+      "points": 2,
+      "status": "met",
+      "title": "A uniform first-differential family is established",
+      "scope": "The published orthogonal Pfaffian/glueball family, in its full stated parameter range.",
+      "acceptance": [
+        "Verify the native source, finite-colour identity, coefficient convention and nonzero target class.",
+        "Prove the parameter-dependent coefficient and its range; do not extrapolate from sampled ranks.",
+        "Keep target counts distinct from multiplets, source normalizations and product consequences."
+      ],
+      "current_assessment": "The uniform first-differential family is public. The F4 eighth-power target adds a separate first-order result.",
+      "evidence": [
+        "orthogonal_first_family",
+        "discussion",
+        "f4_withdrawal"
+      ],
+      "dependencies": [
+        "A02",
+        "A04",
+        "A06"
+      ],
+      "next_action": "Attach the exact family source pin to A07 and use it as a uniform-family regression.",
+      "required_artifact": "Parameter-dependent theorem and native replay.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "D02",
+      "track": "D",
+      "points": 2,
+      "status": "met",
+      "title": "Three independent orthogonal third-order cases are certified",
+      "scope": "SO11 sixth glueball power, SO12 seventh power and SO13 seventh power.",
+      "acceptance": [
+        "Replay the complete correction chains and terminal nonzero coefficients.",
+        "Certify earlier-page survival of the targets and all permitted correction freedoms.",
+        "Check closure of the final correction and maintain the published source normalizations."
+      ],
+      "current_assessment": "All three have public replay evidence. The second SO11 source and the SO13 eighth-power product are not extra independent target families.",
+      "evidence": [
+        "orthogonal_d3",
+        "portable_replay",
+        "mixed_orthogonal"
+      ],
+      "dependencies": [
+        "A05",
+        "A06"
+      ],
+      "next_action": "Import these three independent chains into C03; attach SO14 provenance separately before counting it.",
+      "required_artifact": "Three full chains with earlier-page and normalization certificates.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "D03",
+      "track": "D",
+      "points": 2,
+      "status": "open",
+      "title": "The F4 sixth-power second differential is decided",
+      "scope": "The complete incoming second-page source for the level-36 target.",
+      "acceptance": [
+        "Use the corrected signs and include every admissible classical source and earlier correction.",
+        "Produce a rational nonzero chain with a nonzero target class, or prove the entire incoming map is zero.",
+        "Close the remaining space by matching rank bounds or an exact full-space identity; an upper bound of 15 is not the answer."
+      ],
+      "current_assessment": "The eight-Albert witness is withdrawn. Corrected order-704 augmented determinants vanish modulo 1009 and 1013. The rational section-subtracted score and the full second differential remain open.",
+      "evidence": [
+        "f4_bound",
+        "f4_withdrawal"
+      ],
+      "dependencies": [
+        "A03",
+        "A04",
+        "A05"
+      ],
+      "next_action": "Evaluate the corrected functional on the entire remaining source space, using C04 or an equivalent exact full-space argument.",
+      "required_artifact": "Complete rational incoming-map certificate, positive or zero.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "D04",
+      "track": "D",
+      "points": 2,
+      "status": "open",
+      "title": "The F4 seventh-power second differential is decided",
+      "scope": "All admissible second-page sources of the level-42 seventh-power target.",
+      "acceptance": [
+        "Retain the exact first-page survival certificate.",
+        "Enumerate and certify every admissible second-order source and all homogeneous corrections.",
+        "Give a full nonzero pairing or a complete zero-map certificate."
+      ],
+      "current_assessment": "First-page survival is established by the 68-coefficient Ward certificate; the second page remains open.",
+      "evidence": [
+        "f4_withdrawal",
+        "discussion"
+      ],
+      "dependencies": [
+        "A03",
+        "A04",
+        "A05"
+      ],
+      "next_action": "Generate the exact second-source inventory before testing further special ansatzes.",
+      "required_artifact": "Full second-page source inventory and exact map decision.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "D05",
+      "track": "D",
+      "points": 2,
+      "status": "open",
+      "title": "The three high-order orthogonal targets reach their final page",
+      "scope": "SO19 tenth power, SO25 thirteenth power and SO26 fourteenth power.",
+      "acceptance": [
+        "Prove the maximal admissible incoming order separately for each target.",
+        "Test every remaining order while preserving all earlier freedoms.",
+        "Give the first nonzero differential or an all-order survival proof for each of the three targets."
+      ],
+      "current_assessment": "SO19 reaches the fifth page; SO25 and SO26 reach the sixth. No positive fifth-order result follows from that survival.",
+      "evidence": [
+        "discussion"
+      ],
+      "dependencies": [
+        "A04",
+        "A05",
+        "D02"
+      ],
+      "next_action": "Start with SO19 at the first unresolved order and keep a complete source inventory.",
+      "required_artifact": "Three final-page certificates and explicit order cutoffs.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "D06",
+      "track": "D",
+      "points": 2,
+      "status": "open",
+      "title": "The higher-page engine has no hard-coded order ceiling",
+      "scope": "Every order permitted by the finite charge/length bounds of a supplied target.",
+      "acceptance": [
+        "Generate complete coupled correction equations and all homogeneous freedoms recursively.",
+        "Prove and use a finite order cutoff from the actual native charges, not a user-selected truncation.",
+        "Replay known first/third-order cases and completely decide a native case whose allowed order is at least five."
+      ],
+      "current_assessment": "Local higher-order constructions and a second-correction solver exist; the general complete engine is absent.",
+      "evidence": [
+        "coupled_solver",
+        "orthogonal_d3",
+        "discussion"
+      ],
+      "dependencies": [
+        "A05",
+        "C03",
+        "C05"
+      ],
+      "next_action": "Implement source-order bounds and an order-independent equation assembler before adding a special fifth-order source.",
+      "required_artifact": "Generic engine, termination proof and native order-five-or-higher decision.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "D07",
+      "track": "D",
+      "points": 2,
+      "status": "met",
+      "title": "Named survivors have complete all-order exclusions",
+      "scope": "The packaged F4 fifth-glueball-power proof and the SU3 level-30 unique Cartan-kernel line at dotted degrees (2,2), flavour degrees (5,2,2), length nine, in their declared formal complexes.",
+      "acceptance": [
+        "Account for every possible incoming source at every allowed order.",
+        "Prove the terminal order cutoffs and vanishing of all remaining source cohomology or maps.",
+        "Keep formal relative-cohomology survival distinct from physical instanton protection."
+      ],
+      "current_assessment": "Both packaged cases pass the formal all-order gate. F4 fifth power has no first image by the sixth-power argument, no second source because 141-80-61=0, and no higher allowed source. The separate G2 third-power all-page statement in D014 is reported but is not credited by this gate without its full proof packet.",
+      "evidence": [
+        "f4_fifth_survival",
+        "su3_nine_survival"
+      ],
+      "dependencies": [
+        "A02",
+        "A04"
+      ],
+      "next_action": "Package the named order cutoffs as regression fixtures for D06.",
+      "required_artifact": "Named all-page exclusions with hypotheses and finite cutoffs.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "D08",
+      "track": "D",
+      "points": 2,
+      "status": "met",
+      "title": "A nontrivial SU3 tower survives formally at all orders",
+      "scope": "Corrected R-007 and the stated F1 tower, including its exceptional low seeds.",
+      "acceptance": [
+        "Prove characteristic-zero existence of completed classes and absence of formal-coupling torsion.",
+        "Use the matched quantum product and differential consistently, with all exceptional seeds covered.",
+        "Separate an existence theorem from an explicit list of every repaired coefficient."
+      ],
+      "current_assessment": "Later public proofs and independent checks supersede the old solver snapshot as a statement about formal existence.",
+      "evidence": [
+        "r007_all_order",
+        "f1_tower",
+        "discussion"
+      ],
+      "dependencies": [
+        "A02",
+        "A04"
+      ],
+      "next_action": "Construct the specific repaired coefficients required by the physical dictionary, without reopening the already proved existence question.",
+      "required_artifact": "Uniform formal-survival theorem and low-seed certificates.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "D09",
+      "track": "D",
+      "points": 2,
+      "status": "open",
+      "title": "The first incoming order is predicted uniformly for orthogonal powers",
+      "scope": "Every classically nonzero pure-glueball power in SO(N), N at least nine.",
+      "acceptance": [
+        "Give a parameter-dependent first-hit or protection rule with all exceptional ranks/powers.",
+        "Prove completeness of all earlier-page exclusions and the predicted nonzero maps.",
+        "Validate three new rank/power cases not used in formulating the rule."
+      ],
+      "current_assessment": "A first-order family and several third-order cases exist; they do not determine the higher-order pattern.",
+      "evidence": [
+        "discussion",
+        "orthogonal_d3"
+      ],
+      "dependencies": [
+        "D01",
+        "D02",
+        "D05"
+      ],
+      "next_action": "Use the resolved high-order targets to derive and then independently test a rank-dependent mechanism.",
+      "required_artifact": "Uniform first-hit theorem with held-out native witnesses.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "D10",
+      "track": "D",
+      "points": 2,
+      "status": "open",
+      "title": "Almost all perturbative lifts in the frozen region are decided",
+      "scope": "The core region and every named frontier target in SCOPE.md.",
+      "acceptance": [
+        "Resolve the final perturbative fate of at least 99% of nonzero classical blocks and at least 99% of their total classical cohomology dimension.",
+        "Resolve every named frontier target completely, including mixed orthogonal targets and the G2 level-36 length-eleven/thirteen sources.",
+        "Publish first nonzero orders or all-order survival, exact order cutoffs and the complete unresolved remainder."
+      ],
+      "current_assessment": "Neither complete denominators nor this coverage are available. No valid positive undeformed-N4 second differential or order-four-and-higher example was located.",
+      "evidence": [
+        "discussion",
+        "f4_withdrawal",
+        "conventions"
+      ],
+      "dependencies": [
+        "B10",
+        "D03",
+        "D04",
+        "D05",
+        "D06"
+      ],
+      "next_action": "Generate the per-block order bounds and a work queue from the certified classical census.",
+      "required_artifact": "Exact coverage ledger, final fates and complete remaining-work list.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "E01",
+      "track": "E",
+      "points": 1,
+      "status": "met",
+      "title": "Known protected sectors are rigorously removed from the instanton search",
+      "scope": "The stated SU(N) pure-scalar quotient and total translations of one-scalar half-BPS primaries.",
+      "acceptance": [
+        "State the exact physical operators, assumptions and nonzero protection detectors.",
+        "Prove the no-lift claim on the complete stated subspaces.",
+        "Do not extend the result to general spinful or fermionic primaries."
+      ],
+      "current_assessment": "These physical exclusions are public and reduce the search space.",
+      "evidence": [
+        "np_physics",
+        "np_open"
+      ],
+      "dependencies": [],
+      "next_action": "Encode only these proved exclusions in the physical partner census.",
+      "required_artifact": "Protected-sector theorems and exact exclusion predicates.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "E02",
+      "track": "E",
+      "points": 1,
+      "status": "met",
+      "title": "The instanton normalization machinery passes a physical control",
+      "scope": "The archived undeformed-N4 Konishi calculation; historical SU2 control only.",
+      "acceptance": [
+        "Rebuild the specified colour/Grassmann contractions and zero-mode saturation exactly from the published scalar profiles; those profiles are inputs, not independently solved field equations.",
+        "Check the bosonic integral normalization against the primary-source formulas.",
+        "Record that this long-multiplet calculation is not a BPS instanton lift."
+      ],
+      "current_assessment": "An exact portable control and receipt exist. This contributes one infrastructure point and zero positive-lift claims.",
+      "evidence": [
+        "konishi"
+      ],
+      "dependencies": [],
+      "next_action": "Reuse the checked normalization conventions; schedule no new SU2 research.",
+      "required_artifact": "Historical normalization receipt with its precise physical scope.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "E03",
+      "track": "E",
+      "points": 2,
+      "status": "open",
+      "title": "One complete physical instanton source/target channel is fixed",
+      "scope": "SU3 R-007 and every allowed incoming/outgoing primary in its charge channels, including the new length-seven quotient.",
+      "acceptance": [
+        "Construct the needed completed representatives and match them to physical renormalized primaries.",
+        "Certify complete perturbative survival, all allowed boundaries, operator mixing and the physical inner products.",
+        "Enumerate every symmetry-compatible physical partner; a bare-endpoint zero-mode test is insufficient."
+      ],
+      "current_assessment": "R-007 and several targets survive formally; the explicit remaining generator, its parent and the physical dictionary are open.",
+      "evidence": [
+        "r007_all_order",
+        "generator_count",
+        "np_open"
+      ],
+      "dependencies": [
+        "B05",
+        "D08",
+        "F02",
+        "F03"
+      ],
+      "next_action": "Finish B05, then solve the primary/mixing conditions in a common physical convention.",
+      "required_artifact": "Complete primary census, physical dictionary and normalized channel.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "E04",
+      "track": "E",
+      "points": 2,
+      "status": "open",
+      "title": "The charge-one microscopic Ward insertion is complete",
+      "scope": "The physical channel fixed in E03.",
+      "acceptance": [
+        "Derive and evaluate all current-connected graphs, operator mixing and contact contributions.",
+        "Include action/measure variations and the relevant spatial, small-instanton and large-instanton boundaries in one regulator.",
+        "Show the renormalized result is regulator independent after the common subtraction."
+      ],
+      "current_assessment": "Zero-mode and selected-topology controls exist. The full microscopic current action is absent.",
+      "evidence": [
+        "np_open",
+        "np_physics"
+      ],
+      "dependencies": [
+        "E02",
+        "E03"
+      ],
+      "next_action": "Write a complete insertion/face/contact inventory before evaluating another isolated topology.",
+      "required_artifact": "Regulated current action, all contributions and exact cancellation/renormalization checks.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "E05",
+      "track": "E",
+      "points": 2,
+      "status": "open",
+      "title": "One genuine N4 instanton channel is decided",
+      "scope": "The complete physical source-target sector from E03 and E04.",
+      "acceptance": [
+        "Compute the normalized cohomology coefficient of the charge-one supercharge action.",
+        "For a nonzero result, exhibit a nonzero target class modulo all perturbative boundaries.",
+        "For zero, annihilate the entire declared channel with the complete insertion, not just selected graphs."
+      ],
+      "current_assessment": "No microscopic nonzero BPS instanton pairing is certified. A complete zero result earns a channel-resolution point but never a positive-lift label.",
+      "evidence": [
+        "np_open"
+      ],
+      "dependencies": [
+        "E04"
+      ],
+      "next_action": "Evaluate the complete insertion on the normalized physical channel and reduce only by proved boundaries.",
+      "required_artifact": "Actual nonzero cohomology coefficient or complete channel-zero certificate.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "E06",
+      "track": "E",
+      "points": 2,
+      "status": "open",
+      "title": "A second method independently checks the instanton decision",
+      "scope": "The same normalized channel decided in E05.",
+      "acceptance": [
+        "Use an independently derived microscopic calculation, exact Ward identity, or rigorously matched dual/bootstrap constraint.",
+        "Match operators, normalization, boundary/contact prescriptions and coupling dependence.",
+        "Reproduce the complete coefficient or exclusion; an effective-potential analogy does not pass."
+      ],
+      "current_assessment": "No physical channel has yet reached the stage where such an independent check is possible.",
+      "evidence": [
+        "np_open",
+        "np_physics"
+      ],
+      "dependencies": [
+        "E05"
+      ],
+      "next_action": "Choose the independent method after the first channel is fully specified, before comparing its outcome.",
+      "required_artifact": "Independent derivation and complete convention match.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "E07",
+      "track": "E",
+      "points": 2,
+      "status": "open",
+      "title": "The complete charge-one matrix is known in the instanton window",
+      "scope": "SU3 full-jet targets through level 36, SU4 through level 28, plus the named G2/F4 targets in SCOPE.md.",
+      "acceptance": [
+        "List every complete perturbative-survivor source and target, including incoming partners outside the target level cutoff.",
+        "Compute or rigorously exclude every symmetry-allowed charge-one matrix entry.",
+        "Report exact map ranks, kernels and complete class pairings; propagate products only through a matched physical product Ward identity."
+      ],
+      "current_assessment": "Several channels and protected subspaces are excluded, but the complete physical matrix is open.",
+      "evidence": [
+        "np_open",
+        "np_physics",
+        "generator_count"
+      ],
+      "dependencies": [
+        "D10",
+        "E01",
+        "E06"
+      ],
+      "next_action": "Extend the first checked channel to all admissible primary pairs in the frozen instanton manifest.",
+      "required_artifact": "Complete charge-one map and physical cohomology certificates.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "E08",
+      "track": "E",
+      "points": 2,
+      "status": "open",
+      "title": "Higher instanton orders are controlled by a theorem",
+      "scope": "One explicitly fixed nontrivial nonscalar survivor family, starting with the R-007 channel if nontrivial.",
+      "acceptance": [
+        "Decide charges two and three with all disconnected/contact and mixing contributions included.",
+        "Prove an all-instanton selection, recursion or exact relation determining the remaining orders for that family.",
+        "If all orders vanish, prove that statement physically; finitely many zero coefficients do not establish it."
+      ],
+      "current_assessment": "There is no all-instanton control of a general nonscalar family in the public record.",
+      "evidence": [
+        "np_open",
+        "np_physics"
+      ],
+      "dependencies": [
+        "E06",
+        "E07"
+      ],
+      "next_action": "Derive a multi-instanton recursion or exact physical identity and test the first two new charges independently.",
+      "required_artifact": "Charge-two/three checks and an all-order physical family theorem.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "F01",
+      "track": "F",
+      "points": 1,
+      "status": "met",
+      "title": "The physical BPS sector and loop-order convention are fixed",
+      "scope": "Undeformed N4 one-sixteenth-BPS local operators in the repository convention.",
+      "acceptance": [
+        "Identify the physical supercharge, Lorentz/R charges and retained holomorphic derivatives.",
+        "Distinguish a spectral-sequence differential order from a dilatation-energy loop order.",
+        "State the formal-relative-complex scope whenever a physical operator comparison is not proved."
+      ],
+      "current_assessment": "The sector and order conventions are documented. This is a dictionary point, not a completed physical composite-operator theorem.",
+      "evidence": [
+        "conventions",
+        "np_physics"
+      ],
+      "dependencies": [
+        "A01"
+      ],
+      "next_action": "Make these fields mandatory in every new claim and physical dataset.",
+      "required_artifact": "Theory/charge/order dictionary with explicit formal-to-physical assumptions.",
+      "audit_basis": "published_certificate_audit"
+    },
+    {
+      "id": "F02",
+      "track": "F",
+      "points": 1,
+      "status": "open",
+      "title": "A complete physical block containing fortuitous survivors has its inner product",
+      "scope": "One genuine non-Abelian complete physical charge block containing certified fortuitous survivors, selected before computing its metric.",
+      "acceptance": [
+        "Construct physical states obeying the supercharge and radial-adjoint conditions at the stated coupling order.",
+        "Compute every two-point matrix entry, all null relations and positivity on the entire physical charge block, retaining all classes and mixed pairings.",
+        "Check normalization and basis-change invariance independently; a coefficient dual is not a physical bra."
+      ],
+      "current_assessment": "The exact fortuitous dual explicitly supplies no Wick metric. Existing half-BPS protection pairings do not fill this gap.",
+      "evidence": [
+        "fortuity",
+        "np_physics"
+      ],
+      "dependencies": [
+        "A04",
+        "F01"
+      ],
+      "next_action": "Select the smallest complete non-Abelian survivor block and derive its full renormalized two-point matrix.",
+      "required_artifact": "Physical representatives, full positive inner product and normalization checks.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "F03",
+      "track": "F",
+      "points": 2,
+      "status": "open",
+      "title": "The formal differential is matched to physical composite operators",
+      "scope": "One full-jet nonscalar N4 source/target sector, then its required local product/current operations.",
+      "acceptance": [
+        "Derive the comparison with renormalized physical local operators, including finite-rank relations and all relevant mixings.",
+        "Prove agreement of the differential and matched product/current operations through the first nonzero quantum order, at least third order for the orthogonal benchmark, or by an all-order theorem.",
+        "State any remaining hypotheses explicitly; an existence theorem in the formal complex alone does not pass."
+      ],
+      "current_assessment": "The formal theory is strong, but physical composite/current matching is an explicit remaining gap.",
+      "evidence": [
+        "np_open",
+        "np_physics",
+        "r007_all_order"
+      ],
+      "dependencies": [
+        "F01"
+      ],
+      "next_action": "Choose one physically normalized channel and derive the local comparison rather than infer it from matching dimensions.",
+      "required_artifact": "Physical comparison theorem or complete channel-specific derivation.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "F04",
+      "track": "F",
+      "points": 2,
+      "status": "open",
+      "title": "One lifted fortuitous class has an explicit recombining multiplet",
+      "scope": "One certified positive orthogonal differential; an alternative channel requires an independently certified physical lift first.",
+      "acceptance": [
+        "Identify the complete superconformal parent and every required short-multiplet partner.",
+        "Match quantum numbers, operator mixing and the physical norm of the recombination map.",
+        "Derive the corresponding energy/order consequence in the same normalization."
+      ],
+      "current_assessment": "Algebraic differential witnesses are available; a complete physical multiplet reconstruction is not.",
+      "evidence": [
+        "orthogonal_d3",
+        "generator_count"
+      ],
+      "dependencies": [
+        "D02",
+        "F02",
+        "F03"
+      ],
+      "next_action": "Solve primary conditions for one certified chain and calculate its partner matrix elements.",
+      "required_artifact": "Explicit physical multiplet and normalized recombination calculation.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "F05",
+      "track": "F",
+      "points": 2,
+      "status": "open",
+      "title": "Quantum products predict lifts beyond undressed classes",
+      "scope": "A complete finite set of nonscalar survivor generators and all their products in a frozen charge window.",
+      "acceptance": [
+        "Compute matched quantum products including cross-factor contractions and associativity homotopies where required.",
+        "Determine the induced relations and first incoming maps for every product in the window.",
+        "Validate three product predictions with independent native calculations; ordinary tree multiplication is insufficient."
+      ],
+      "current_assessment": "Matched formal product machinery and specific product consequences exist; the complete physically matched product table does not.",
+      "evidence": [
+        "r007_all_order",
+        "f1_tower",
+        "mixed_orthogonal"
+      ],
+      "dependencies": [
+        "B05",
+        "F03"
+      ],
+      "next_action": "Build one finite physically matched product table from fully specified generators.",
+      "required_artifact": "Complete quantum product table and independent predicted-lift checks.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "F06",
+      "track": "F",
+      "points": 2,
+      "status": "open",
+      "title": "S-duality makes successful new operator-level predictions",
+      "scope": "The SO7/Sp3 pair first, with a prospective common full-charge window.",
+      "acceptance": [
+        "Match complete perturbative survivor multiplicities and charge conventions.",
+        "Construct an operator-level or protected-correlator dictionary for the relevant classes, not just an index equality.",
+        "Predict and independently verify three previously uncomputed sectors or physical pairings."
+      ],
+      "current_assessment": "Finite-window second-page dimension agreement is already reported; the stronger operator/correlator predictions are open.",
+      "evidence": [
+        "conventions",
+        "discussion"
+      ],
+      "dependencies": [
+        "D10",
+        "F02",
+        "F03"
+      ],
+      "next_action": "Freeze three new sectors and derive their duality predictions before either direct calculation.",
+      "required_artifact": "Duality dictionary and held-out prediction/verification records.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "F07",
+      "track": "F",
+      "points": 2,
+      "status": "open",
+      "title": "A giant-graviton description reproduces a fortuitous result",
+      "scope": "One explicitly selected non-Abelian fortuitous family or complete finite charge block.",
+      "acceptance": [
+        "Construct a precise Hilbert-space/operator correspondence including finite-rank constraints.",
+        "Reproduce exact multiplicities and one nontrivial lift/protection decision beyond a signed-index match.",
+        "Predict a new block or pairing and verify it with the native algebraic framework."
+      ],
+      "current_assessment": "No such matched giant-graviton calculation is present in the audited record.",
+      "evidence": [
+        "fortuity_paper",
+        "discussion"
+      ],
+      "dependencies": [
+        "B08",
+        "D06",
+        "F03"
+      ],
+      "next_action": "Choose one completely certified family and formulate a finite-rank brane quantization problem with testable outputs.",
+      "required_artifact": "Explicit dual correspondence, exact match and new verified prediction.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "F08",
+      "track": "F",
+      "points": 2,
+      "status": "open",
+      "title": "One physical mechanism explains and predicts the observed patterns",
+      "scope": "Fortuity, rank dependence, perturbative first-hit orders and at least one physical instanton decision.",
+      "acceptance": [
+        "Derive a common mechanism with clearly stated coupling and large-charge limits.",
+        "Explain the complete known positive and negative cases in its declared domain, including exceptional low ranks.",
+        "Verify three prospectively recorded predictions and justify any continuation toward the black-hole regime."
+      ],
+      "current_assessment": "Several exact mechanisms and strong clues exist; a single physically validated predictive account is not established.",
+      "evidence": [
+        "discussion",
+        "np_open",
+        "fortuity_paper"
+      ],
+      "dependencies": [
+        "B09",
+        "D09",
+        "E06",
+        "F04"
+      ],
+      "next_action": "Compare independently certified patterns only after operator matching, and record falsifiable predictions before calculations.",
+      "required_artifact": "Physical derivation, scope limits and held-out tests.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "G01",
+      "track": "G",
+      "points": 1,
+      "status": "open",
+      "title": "A permitted physical chaos diagnostic is defined",
+      "scope": "A complete genuine non-Abelian one-sixteenth-BPS state block at fixed charges.",
+      "acceptance": [
+        "Define directly evaluated physical correlator observables using explicitly constructed states annihilated by the supercharge and its radial adjoint, or an intrinsic cohomology endomorphism; no projection construction or truncated complex.",
+        "For direct correlators, establish physical state and mixing independence; for an intrinsic endomorphism, prove descent, charge preservation, Hermiticity, physical simplicity and its connection to the diagnostic. Fix observable normalization in either route.",
+        "State the competing chaos hypotheses and the coupling/charge regime before inspecting spectra."
+      ],
+      "current_assessment": "No public observable specification was found. The degenerate BPS Hamiltonian and an arbitrary coefficient matrix do not supply it.",
+      "evidence": [
+        "chaos_paper",
+        "fortuity"
+      ],
+      "dependencies": [
+        "F02",
+        "F03"
+      ],
+      "next_action": "Derive an admissible correlator-based diagnostic; if its assumptions fail, expose the obstruction and revise the question explicitly.",
+      "required_artifact": "Physical observable definition and mathematical well-definedness proof.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "G02",
+      "track": "G",
+      "points": 1,
+      "status": "open",
+      "title": "The chaos-analysis pipeline passes matched controls",
+      "scope": "Exactly specified structured and random reference models, plus a protected physical benchmark.",
+      "acceptance": [
+        "Resolve continuous, discrete and antiunitary symmetries before combining any levels.",
+        "Validate eigenvalue residuals, precision, null modes and invariance under exact basis changes.",
+        "Demonstrate the declared test distinguishes matched-size controls at its preregistered false-positive and power thresholds."
+      ],
+      "current_assessment": "Classical charge infrastructure exists, but no physical chaos calibration pipeline is public.",
+      "evidence": [
+        "chaos_paper",
+        "conventions"
+      ],
+      "dependencies": [
+        "G01"
+      ],
+      "next_action": "Freeze reference ensembles, test windows and numerical error bounds before analyzing the target dataset.",
+      "required_artifact": "Calibration dataset, exact/controlled numerical checks and test specification.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "G03",
+      "track": "G",
+      "points": 2,
+      "status": "open",
+      "title": "Two physical probes are fully computed on usable survivor blocks",
+      "scope": "The prospectively fixed complete blocks from G01; sample sizes follow the power requirement in G02.",
+      "acceptance": [
+        "Compute the full physical two-point matrix and all entries for two independently defined simple probes.",
+        "Include operator renormalization/mixing and every symmetry sector used in the analysis.",
+        "Report actual physical multiplicity and distinct-level counts; cochain dimensions and dressed copies are not sample-size substitutes."
+      ],
+      "current_assessment": "No complete physical probe matrices are public. The one-dimensional omega block has zero adjacent gaps and cannot provide a spacing sample.",
+      "evidence": [
+        "fortuity",
+        "chaos_paper"
+      ],
+      "dependencies": [
+        "F02",
+        "G01",
+        "G02"
+      ],
+      "next_action": "Generate a complete survivor block large enough for the predeclared test and evaluate both physical observables.",
+      "required_artifact": "Two full probe datasets, physical metric and symmetry decomposition.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "G04",
+      "track": "G",
+      "points": 2,
+      "status": "open",
+      "title": "A finite-block chaos test has reproducible statistical conclusions",
+      "scope": "The complete target and control datasets from G02/G03.",
+      "acceptance": [
+        "Run both adjacent-gap statistics and a predeclared long-range correlation diagnostic.",
+        "Publish all windows, normalization choices, numerical error bounds, uncertainty and multiple-testing treatment.",
+        "A positive, negative or inconclusive outcome must retain its actual label; local repulsion alone is not strong chaos.",
+        "Bound uncomputed perturbative and nonperturbative contributions at the spectral scales used by the diagnostic, or restrict the conclusion explicitly to the fixed-rank weak-coupling limit. Numerical eigenvalue accuracy alone does not establish physical spectral accuracy."
+      ],
+      "current_assessment": "No target spectra or statistical analysis were located in the audited public files.",
+      "evidence": [
+        "chaos_paper"
+      ],
+      "dependencies": [
+        "G02",
+        "G03"
+      ],
+      "next_action": "Run the frozen analysis once on the complete dataset and preserve every result, including failed hypotheses.",
+      "required_artifact": "Complete analysis code, raw spectra and reproducible statistical report.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "G05",
+      "track": "G",
+      "points": 2,
+      "status": "open",
+      "title": "Rank, charge and coupling dependence are resolved",
+      "scope": "At least three distinct non-Abelian ranks, three growing-charge blocks per rank and both physical probes.",
+      "acceptance": [
+        "Select blocks by a rule fixed before observing chaos statistics; do not pool incompatible symmetries.",
+        "Distinguish the stated competing size/coupling scalings by analytic bounds or a quantitatively justified inference with uncertainty.",
+        "Separate a finite-data conclusion from an asymptotic theorem; three ranks alone cannot prove a large-rank law.",
+        "Control omitted perturbative and nonperturbative effects at the measured spectral scales. A simultaneous large-rank, finite-coupling claim requires a bound uniform in rank; fixed-rank weak-coupling evidence cannot supply it."
+      ],
+      "current_assessment": "There is no growing physical chaos dataset, and no controlled continuation from weak coupling to the black-hole regime.",
+      "evidence": [
+        "chaos_paper",
+        "fortuity_paper"
+      ],
+      "dependencies": [
+        "G04",
+        "F03"
+      ],
+      "next_action": "Extend the same normalized physical observable along the frozen rank/charge sequence.",
+      "required_artifact": "Scaling dataset, controlled inference or theorem, and explicit limits.",
+      "audit_basis": "open_or_partial_public_record"
+    },
+    {
+      "id": "G06",
+      "track": "G",
+      "points": 2,
+      "status": "open",
+      "title": "Fortuity, lifting and chaos are connected by a controlled predictive test",
+      "scope": "Complete physical blocks containing classified fortuitous and monotone states, with controlled rank or coupling variation.",
+      "acceptance": [
+        "Compare complete physical charge/symmetry blocks using matched-size statistical controls and consistent normalization. Retain all mixed matrix elements unless the observable is proved to preserve a finer decomposition.",
+        "Track a certified lift or disappearance, record other simultaneous changes in the theory, and prospectively predict and independently verify observable changes; rank/coupling variation alone is not a causal identification of fortuity.",
+        "Establish the proposed connection in a declared regime or rigorously delimit its failure. Do not identify a black-hole microstate from fortuity alone."
+      ],
+      "current_assessment": "The connection is motivated by primary literature, but no repository calculation tests it physically.",
+      "evidence": [
+        "fortuity_paper",
+        "chaos_paper"
+      ],
+      "dependencies": [
+        "B09",
+        "D09",
+        "F08",
+        "G05"
+      ],
+      "next_action": "Choose a rank/coupling transition with known state fate and derive its observable prediction before measurement.",
+      "required_artifact": "Matched-sector experiment and physically justified fortuity/lift/chaos conclusion.",
+      "audit_basis": "open_or_partial_public_record"
+    }
+  ],
+  "priority_queue": [
+    "A07",
+    "C03",
+    "B05",
+    "C04",
+    "D03",
+    "D04",
+    "F02",
+    "F03",
+    "C05",
+    "C08",
+    "D06",
+    "D05"
+  ],
+  "fresh_checks_this_assessment": [
+    {
+      "command": "python3 algorithms/fortuitous_duals_20261123/transpose_detector/score_candidate.py",
+      "result": "Exact coefficient pairing 1; 186 source coordinates; 4264 input terms.",
+      "limit": "Candidate scoring only; this command does not check closure or highest-weight membership."
+    }
+  ]
+}

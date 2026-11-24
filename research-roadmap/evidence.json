@@ -1,0 +1,206 @@
+{
+  "conventions": {
+    "title": "Repository theory, grading and certification conventions",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "README.md",
+    "finding": "Undeformed N=4 is distinct from N=2, deformed and Abelian controls. The physical level is twice the sum of energy and left spin. Native coordinate order must be read from each manifest; two packages use different tuple orders.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "discussion": {
+    "title": "Current research discussion, including corrections",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/RESEARCH_DISCUSSION.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "RESEARCH_DISCUSSION.md",
+    "finding": "Latest discussion supersedes dated November 18 campaign totals. It records orthogonal third-order results, the F4 withdrawal, the bound 15 and the later SU3 formal-survival proofs.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "fortuity": {
+    "title": "Complete rational Sp3 fortuitous relation quotient",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/fortuitous_duals_20261123/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "algorithms/fortuitous_duals_20261123/README.md",
+    "finding": "2870-2689=181 complete source relations; relation-image rank 116; 1198-116-1081=1. An unchanged known omega has exact detector value one. No new generator, physical norm or chaos observable is claimed.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "relation_certificate": {
+    "title": "Characteristic-zero identities and rank bounds",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/fortuitous_duals_20261123/positive_sector/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "algorithms/fortuitous_duals_20261123/positive_sector/README.md",
+    "finding": "Complete rational finite-colour identities; CRT modulus 1000073001431003663 exceeds twice evaluation bound 26822106842923008; image rank certified by a 116-square minor and 65 null relations.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "rank_window": {
+    "title": "Fixed-grading Sp rank window and unbounded-rank exclusion",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/fortuitous_duals_20261123/rank_persistence/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "algorithms/fortuitous_duals_20261123/rank_persistence/README.md",
+    "finding": "Cohomology dimensions 0,0,1,0 at Sp1,Sp2,Sp3,Sp4; injectivity and block embedding prove zero at every rank at least four in this grading. Historical Sp1 evidence is not a request for new SU2 computations.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "g2_column": {
+    "title": "Complete G2 level-30 highest-weight column",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/bmn_rank_certificates_20261117/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "algorithms/bmn_rank_certificates_20261117/README.md",
+    "finding": "3030-1960-1066=4 and 1070-1066=4; other nine sectors vanish. Product coordinates were independently regenerated; some source-minor entries remain retained production evaluations.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "coupled_solver": {
+    "title": "Solver preserving all earlier homogeneous freedom",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/su3_second_correction_20261118/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "algorithms/su3_second_correction_20261118/README.md",
+    "finding": "Control: 30 equations, 16 variables, rank 11, all five homogeneous solutions, inconsistency and checkpoint checks. Production retains 10308 earlier homogeneous parameters. This old solver status is not the latest R-007 survival status.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "distributed_maps": {
+    "title": "Complete production bases and lossless packing",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/su3_independent_prime_20261118/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "algorithms/su3_independent_prime_20261118/README.md",
+    "finding": "94 production profile bases and 2197 map tasks. Packing preserves entries and coordinates; no end-to-end speedup is established by packing alone.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "portable_replay": {
+    "title": "Pinned portable orthogonal replay",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/algorithms/so11_source_comparison_20261123/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "algorithms/so11_source_comparison_20261123/README.md",
+    "finding": "Independent coordinate arithmetic, native regeneration, file hashes and isolated replay instructions. Its older open fortuity comparison is resolved by the newer fortuitous-duals bundle.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "generator_count": {
+    "title": "Complete SU3 outgoing-channel product quotient",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/a90728a6ca04d74f5475adae4bf37c8d94f34ac0/algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md",
+    "commit": "a90728a6ca04d74f5475adae4bf37c8d94f34ac0",
+    "path": "algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_channels.md",
+    "finding": "1896-825-1037=34; complete proper-product span 176-143=33; quotient dimension 1. 56 factor pairs, 112 factor sectors, 114 matrices. Explicit remaining generator and its primary remain open.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "f4_bound": {
+    "title": "Current F4 sixth-power source bound",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/c3688a7ad9d17f5c949d22ff96d098846c5698b4/algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md",
+    "commit": "c3688a7ad9d17f5c949d22ff96d098846c5698b4",
+    "path": "algorithms/dual_singlets_20261118/f4/j36_source/global_boundaries/README.md",
+    "finding": "3720-703-3002=15 is an upper bound, not an exact cohomology dimension. The boundary minor has residues 833 modulo 1009 and 615 modulo 1013.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "f4_withdrawal": {
+    "title": "Eight-Albert withdrawal and F4 seventh/eighth powers",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/53462d3102e77eea433207ab1d0fd7e09a8303f6/algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md",
+    "commit": "53462d3102e77eea433207ab1d0fd7e09a8303f6",
+    "path": "algorithms/dual_singlets_20261118/f4/j36_source/eight_albert_review/README.md",
+    "finding": "Corrected unsubtracted score -299015516814300/49 reduces to 44 and 92, equal to the classical section scores modulo 1009 and 1013. The corrected order-704 augmented determinants vanish at those two primes; the rational section-subtracted score remains open. Seventh power survives d1; eighth power is hit by d1, ranks 91 and 92. The complete d2 problem is open.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "orthogonal_d3": {
+    "title": "Three independently replayed third-order chains",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/e1d184d388c588c0a5a825a19ecbca4e24427242/reviews/dot-orthogonal-d3/README.md",
+    "commit": "e1d184d388c588c0a5a825a19ecbca4e24427242",
+    "path": "reviews/dot-orthogonal-d3/README.md",
+    "finding": "SO11 sixth power, SO12 seventh power and SO13 seventh power have complete positive third-order witnesses and earlier-page checks. Multiple source normalizations do not multiply the target count.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "mixed_orthogonal": {
+    "title": "Mixed orthogonal target checks",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/f05b289fc69fb5f65bd8286c09060156a554f23d/reviews/orthogonal-mixed-lifts/README.md",
+    "commit": "f05b289fc69fb5f65bd8286c09060156a554f23d",
+    "path": "reviews/orthogonal-mixed-lifts/README.md",
+    "finding": "Earlier-page certificates include the SO13 eighth-power product consequence; selected mixed targets remain open at higher order.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "r007_all_order": {
+    "title": "SU3 R-007 all-order formal existence",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/contributions/dot-r007-all-order/ALL_ORDER_PROOF.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "nonperturbative-lift/contributions/dot-r007-all-order/ALL_ORDER_PROOF.md",
+    "finding": "Characteristic-zero existence and non-torsion for the corrected 6139-term R-007 seed. This does not provide every repaired coefficient or physical instanton matrix element.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "f1_tower": {
+    "title": "SU3 F1 formal survivor tower",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/contributions/dot-su3-f1-tower/ALL_ORDER_PROOF.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "nonperturbative-lift/contributions/dot-su3-f1-tower/ALL_ORDER_PROOF.md",
+    "finding": "All-order formal existence and non-torsion of the stated family, with the low seeds treated separately; not a physical nonperturbative-protection theorem.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "np_open": {
+    "title": "Explicit undeformed N4 instanton gap",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/OPEN_PROBLEMS.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "nonperturbative-lift/OPEN_PROBLEMS.md",
+    "finding": "Claim n4-nonscalar-image remains open: no certified microscopic nonzero instanton class-target pairing. Effective potentials, isolated zero-mode exclusions and anomalous dimensions do not supply that map.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "np_physics": {
+    "title": "Physical protected-sector exclusions and limits",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/research/22-n4-sym.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "nonperturbative-lift/research/22-n4-sym.md",
+    "finding": "Specified SU(N) pure-scalar quotient and total holomorphic translations of one-scalar half-BPS primaries have physical exclusions. General spinful classes and complete current-connected instanton actions remain open.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "konishi": {
+    "title": "Historical physical instanton normalization control",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/nonperturbative-lift/contributions/dot-konishi-control/README.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "nonperturbative-lift/contributions/dot-konishi-control/README.md",
+    "finding": "Exact SU2 Konishi contraction/integration normalization control in undeformed N4. It is a long-multiplet control and earns no positive BPS-instanton-lift credit. No new SU2 computation is scheduled.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "optimization": {
+    "title": "Enumeration optimization and full-stage timing limits",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/optimization_20261122/README.md",
+    "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+    "path": "algorithms/optimization_20261122/README.md",
+    "finding": "Enumeration 5.842376918 to 0.120266592 seconds preserves 52552 coordinates. Complete recipe-regeneration paired ratios 1.149373003,1.279476352,0.971209215 do not establish reliable total-stage acceleration.",
+    "review": "Public evidence audited; a fresh complete numerical replay is not implied."
+  },
+  "chaos_paper": {
+    "title": "Chen, Lin and Shenker, BPS Chaos",
+    "url": "https://arxiv.org/abs/2407.19387v4",
+    "finding": "A physical probe diagnostic differs from the degenerate BPS Hamiltonian. Weak-chaos evidence in protected examples does not establish strong chaos in the present one-sixteenth-BPS fortuitous sector.",
+    "review": "Primary-source context, not a completed repository milestone."
+  },
+  "fortuity_paper": {
+    "title": "Chang and Lin, Holographic covering and the fortuity of black holes",
+    "url": "https://arxiv.org/abs/2402.10129v3",
+    "finding": "Cohomological fortuity has a precise definition; the identification with typical black-hole microstates and continuation across coupling require additional physical arguments.",
+    "review": "Primary-source context, not a completed repository milestone."
+  },
+  "orthogonal_first_family": {
+    "title": "Uniform orthogonal first-differential family",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/d320363f2eb54898e6ff554943b0d6d66705c120/algorithms/dual_singlets_20261118/orthogonal_glueballs/first_family.md",
+    "commit": "d320363f2eb54898e6ff554943b0d6d66705c120",
+    "path": "algorithms/dual_singlets_20261118/orthogonal_glueballs/first_family.md",
+    "finding": "Parameter-dependent first-order coefficient, exact source identity and full stated range.",
+    "review": "Public proof and replay scope audited; no fresh complete numerical replay is implied."
+  },
+  "f4_fifth_survival": {
+    "title": "F4 fifth-power all-page exclusion",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/03fc9a5d8a68a1b70072242a0770335df1d862d3/algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md",
+    "commit": "03fc9a5d8a68a1b70072242a0770335df1d862d3",
+    "path": "algorithms/dual_singlets_20261118/f4/j36_source/first_page/README.md",
+    "finding": "First differential excluded using sixth-power survival; the second source has multiplicity 141-80-61=0; orders three and higher are kinematically excluded.",
+    "review": "Public proof and replay scope audited; no fresh complete numerical replay is implied."
+  },
+  "su3_nine_survival": {
+    "title": "SU3 nine-letter target all-page survival",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/acf631f4f92c2c271bbf1d6076d5d576e5dd0b7b/algorithms/su3_j30_classical_ranks/bmn_return/README.md",
+    "commit": "acf631f4f92c2c271bbf1d6076d5d576e5dd0b7b",
+    "path": "algorithms/su3_j30_classical_ranks/bmn_return/README.md",
+    "finding": "Complete earlier-source/cohomology argument and order cutoff for the specified nine-letter target.",
+    "review": "Public proof and replay scope audited; no fresh complete numerical replay is implied."
+  },
+  "g2_formal_report": {
+    "title": "G2 third-power all-page result reported in D014",
+    "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/2f268a0fb47a7b17119cda86a95f2fac574648cf/RESEARCH_DISCUSSION.md",
+    "commit": "2f268a0fb47a7b17119cda86a95f2fac574648cf",
+    "path": "RESEARCH_DISCUSSION.md",
+    "finding": "D014 reports zero incoming first image, no second/third-source class, no incoming order at least four and no outgoing map for the G2 third glueball power. This is a formal perturbative statement, separate from the conditional physical instanton-source argument.",
+    "review": "The public statement and census summary were located; a distinct detailed packet passing every D07 acceptance condition was not located in this audit. D07 credits only the packaged F4 and SU3 proofs."
+  }
+}
