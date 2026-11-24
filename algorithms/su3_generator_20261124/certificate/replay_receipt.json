@@ -1,0 +1,97 @@
+{
+  "clean_source_rebuild": true,
+  "private_inputs": false,
+  "source_enumeration_rebuilt": true,
+  "all_finite_relations_reconstructed": true,
+  "all_native_polynomial_maps_reconstructed": true,
+  "independent_full_polynomial_residual_verified": true,
+  "bit_identical_core_artifacts": {
+    "basis.json.gz": "b490bc860f044331b3fe29ef477e2bb52d09d2dd4b439ca9dc8c60722960cbe1",
+    "maps.json.gz": "ca6672bb5267f9bd98ac282b5e25edc9ba1795369996c58a7c956174be9fc37b",
+    "frames.json.gz": "268c11ecfc8dc4feebf74d4e9668a5db504bf89cd068280fb49159054fe0ec4d",
+    "generator.json.gz": "8f8235fd5a6903c1f97a78d9ca238ea7f692f1707475abac01929f7fe40a2530",
+    "rank_certificates.json": "71a18e8d95ae0b026f42f0204111442678d104895f6ef7a11eef2715adfe2737",
+    "proper_product_recipes.json": "e6f0209ae81e6cc385d72d576f254dd5096a967fe580e5abe528321a1a970f92",
+    "complete_graviton_recipes.json": "7fab01d96b9744feb7fd4a4d6f8e7ded0fc09d18b74bfd37582d9e6953641f19",
+    "summary.json": "75b0dd582af4f3218d997658934446253dd79dcb38a4ceac2542e71804ff030a",
+    "closure_relation.json": "bbd6630f574bd1de6eb125b0f4b9b58b0bfe6479b9f8e9214481102a985ca4e7"
+  },
+  "stages": [
+    {
+      "script": "characters.py",
+      "seconds": 0.4442463539999153,
+      "exit_code": 0
+    },
+    {
+      "script": "prepare.py",
+      "seconds": 35.418069985999864,
+      "exit_code": 0
+    },
+    {
+      "script": "prepare.py",
+      "seconds": 44.15046341099969,
+      "exit_code": 0
+    },
+    {
+      "script": "prepare.py",
+      "seconds": 37.14852326200071,
+      "exit_code": 0
+    },
+    {
+      "script": "finite_frame.py",
+      "seconds": 4.260988463000103,
+      "exit_code": 0
+    },
+    {
+      "script": "finite_frame.py",
+      "seconds": 9.155419152999457,
+      "exit_code": 0
+    },
+    {
+      "script": "finite_frame.py",
+      "seconds": 25.5757942070004,
+      "exit_code": 0
+    },
+    {
+      "script": "maps.py",
+      "seconds": 22.524963044000287,
+      "exit_code": 0
+    },
+    {
+      "script": "maps.py",
+      "seconds": 191.6131591149997,
+      "exit_code": 0
+    },
+    {
+      "script": "products.py",
+      "seconds": 1.9022780040004363,
+      "exit_code": 0
+    },
+    {
+      "script": "extract.py",
+      "seconds": 17.591372638000394,
+      "exit_code": 0
+    },
+    {
+      "script": "relation_test.py",
+      "seconds": 40.82874777199959,
+      "exit_code": 0
+    },
+    {
+      "script": "export.py",
+      "seconds": 40.95754130899968,
+      "exit_code": 0
+    },
+    {
+      "script": "verify.py",
+      "seconds": 46.738930692000395,
+      "exit_code": 0
+    },
+    {
+      "script": "independent_verify.py",
+      "seconds": 24.073480866000864,
+      "exit_code": 0
+    }
+  ],
+  "seconds": 542.4354278740002
+}

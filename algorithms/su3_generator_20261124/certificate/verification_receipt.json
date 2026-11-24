@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "manifest_counts": null,
+  "complete_finite_frames": 54,
+  "complete_source_relations": 3095,
+  "complete_target_relations": 5021,
+  "finite_ranks": {
+    "incoming": 825,
+    "outgoing": 1037,
+    "boundaries_and_proper_products": 858,
+    "closed_span_with_representative": 859
+  },
+  "representative_pairing": 1,
+  "all_boundary_pairings_zero": true,
+  "all_proper_product_pairings_zero": true,
+  "full_stable_kernel": 1643,
+  "stable_kernel_finite_image": 858,
+  "complete_relation_quotient": "2311 - 2310 = 1",
+  "rational_rank_recalculation": true,
+  "source_rebuilt": false,
+  "scope": "Archived exact coefficients, complete frame minors, exact map identities and all decisive ranks; source rebuilding is reproduce.py.",
+  "seconds": 78.67555132799953
+}

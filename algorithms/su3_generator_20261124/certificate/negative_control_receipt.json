@@ -1,0 +1,7 @@
+{
+  "corrupted_copy_rejected": true,
+  "corrupted_payload": "certificate/generator.json.gz",
+  "reported_failure": "certificate/generator.json.gz",
+  "copied_payload_sha256": "fd7c020507b853845661ebf7af17858c4ff8a898468ac045c8f9d4c87c03b480",
+  "original_payload_unchanged": true
+}

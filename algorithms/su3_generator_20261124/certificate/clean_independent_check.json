@@ -1,0 +1,87 @@
+{
+  "independent_implementation": true,
+  "operator_terms": 12224,
+  "stable_residual_terms": 39829,
+  "integral_operator_denominator": 2687385600,
+  "all_charge_checks": true,
+  "dotted_raising_residual_terms": 0,
+  "dotted_lowering_residual_terms": 0,
+  "colour_conjugation_residual_terms": 0,
+  "full_target_coordinates_checked": 1588,
+  "full_polynomial_residual_nonzero": 0,
+  "boundary_columns_checked": 1169,
+  "proper_product_columns_checked": 33,
+  "all_stable_graviton_columns_checked": 86,
+  "representative_dual_pairing": 1,
+  "blocks": [
+    {
+      "block": 0,
+      "polynomial_terms": 3797,
+      "coordinates": 98,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 1,
+      "polynomial_terms": 5640,
+      "coordinates": 160,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 2,
+      "polynomial_terms": 15276,
+      "coordinates": 451,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 3,
+      "polynomial_terms": 6676,
+      "coordinates": 318,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 4,
+      "polynomial_terms": 4400,
+      "coordinates": 216,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 5,
+      "polynomial_terms": 3354,
+      "coordinates": 147,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 6,
+      "polynomial_terms": 392,
+      "coordinates": 12,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 7,
+      "polynomial_terms": 294,
+      "coordinates": 123,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 8,
+      "polynomial_terms": 0,
+      "coordinates": 29,
+      "nonzero_residuals": 0
+    },
+    {
+      "block": 9,
+      "polynomial_terms": 0,
+      "coordinates": 34,
+      "nonzero_residuals": 0
+    }
+  ],
+  "coefficient_arithmetic": "unbounded Python integers and exact Fraction",
+  "seconds": 23.47012611000082,
+  "maximum_resident_set_kib": 803408,
+  "input_sha256": {
+    "basis.json.gz": "b490bc860f044331b3fe29ef477e2bb52d09d2dd4b439ca9dc8c60722960cbe1",
+    "maps.json.gz": "ca6672bb5267f9bd98ac282b5e25edc9ba1795369996c58a7c956174be9fc37b",
+    "frames.json.gz": "268c11ecfc8dc4feebf74d4e9668a5db504bf89cd068280fb49159054fe0ec4d",
+    "generator.json.gz": "8f8235fd5a6903c1f97a78d9ca238ea7f692f1707475abac01929f7fe40a2530"
+  }
+}

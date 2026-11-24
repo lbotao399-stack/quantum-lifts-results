@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "scope": "B05 exact complete SU3 representative, full dual and finite-relation certificate",
+  "base_commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+  "proper_product_evidence_commit": "a90728a6ca04d74f5475adae4bf37c8d94f34ac0",
+  "files": [
+    {
+      "path": "PROOF.md",
+      "sha256": "16c3faab80eb6241a13e849d2ef4d3a8d03cec047c42bb3fcffc20c32e57e0f0",
+      "bytes": 9346
+    },
+    {
+      "path": "README.md",
+      "sha256": "7379854fe1666276b498cdace68468cf74f73246153cf94a72dd08820cab3f48",
+      "bytes": 7569
+    },
+    {
+      "path": "certificate/b04/outgoing_factor_minors.json.gz",
+      "sha256": "76b5c720d637908e0df89e3c3e975ea0007551f2c886809d40d04385cc4e52e7",
+      "bytes": 8416
+    },
+    {
+      "path": "certificate/b04/outgoing_minors.json.gz",
+      "sha256": "adcc281a848c305d498c5502356f2a12d39e83b5d84e49d0deea5f94b49c568e",
+      "bytes": 301751
+    },
+    {
+      "path": "certificate/b04/outgoing_products.json",
+      "sha256": "5a67db63232d9596d0daf312996251c1f9003faef3108e26f473ecebca2b9361",
+      "bytes": 15637
+    },
+    {
+      "path": "certificate/basis.json.gz",
+      "sha256": "b490bc860f044331b3fe29ef477e2bb52d09d2dd4b439ca9dc8c60722960cbe1",
+      "bytes": 1500238
+    },
+    {
+      "path": "certificate/clean_archived_check.json",
+      "sha256": "bcc66a273e3c3bcc7e2d9a95be5e524bc2724da1a03f2067d78be2ab92bb571f",
+      "bytes": 824
+    },
+    {
+      "path": "certificate/clean_independent_check.json",
+      "sha256": "cd2f01c498f6b82e1c01bc94053a754775d47edba5a6b05eda372a6de02240ce",
+      "bytes": 2255
+    },
+    {
+      "path": "certificate/closure_relation.json",
+      "sha256": "bbd6630f574bd1de6eb125b0f4b9b58b0bfe6479b9f8e9214481102a985ca4e7",
+      "bytes": 123865
+    },
+    {
+      "path": "certificate/complete_graviton_recipes.json",
+      "sha256": "7fab01d96b9744feb7fd4a4d6f8e7ded0fc09d18b74bfd37582d9e6953641f19",
+      "bytes": 26263
+    },
+    {
+      "path": "certificate/frames.json.gz",
+      "sha256": "268c11ecfc8dc4feebf74d4e9668a5db504bf89cd068280fb49159054fe0ec4d",
+      "bytes": 3585856
+    },
+    {
+      "path": "certificate/generator.json.gz",
+      "sha256": "8f8235fd5a6903c1f97a78d9ca238ea7f692f1707475abac01929f7fe40a2530",
+      "bytes": 443171
+    },
+    {
+      "path": "certificate/independent_receipt.json",
+      "sha256": "9bd70dd9ad6cfa9c6ab369f993a1490828301feb6d3713718d7468a03cc7c6bc",
+      "bytes": 2218
+    },
+    {
+      "path": "certificate/maps.json.gz",
+      "sha256": "ca6672bb5267f9bd98ac282b5e25edc9ba1795369996c58a7c956174be9fc37b",
+      "bytes": 2789125
+    },
+    {
+      "path": "certificate/negative_control_receipt.json",
+      "sha256": "549885af466189b48e14ecf583a675fb2090617f632320be44649c97d2def7ab",
+      "bytes": 282
+    },
+    {
+      "path": "certificate/proper_product_recipes.json",
+      "sha256": "e6f0209ae81e6cc385d72d576f254dd5096a967fe580e5abe528321a1a970f92",
+      "bytes": 15637
+    },
+    {
+      "path": "certificate/rank_certificates.json",
+      "sha256": "71a18e8d95ae0b026f42f0204111442678d104895f6ef7a11eef2715adfe2737",
+      "bytes": 86857
+    },
+    {
+      "path": "certificate/replay_receipt.json",
+      "sha256": "47ffe2cad6cd1ce3bf6fd2232da4be24092cd31f898051a6d8b18d582c6c477a",
+      "bytes": 2731
+    },
+    {
+      "path": "certificate/summary.json",
+      "sha256": "75b0dd582af4f3218d997658934446253dd79dcb38a4ceac2542e71804ff030a",
+      "bytes": 704
+    },
+    {
+      "path": "certificate/verification_receipt.json",
+      "sha256": "0953513cb58d598b04696fa2a3cb9c0f074901f85cabe10490726ab7ad7b970f",
+      "bytes": 785
+    },
+    {
+      "path": "characters.py",
+      "sha256": "4303d51263ab1feda1af4b9a4377b227c5aa06234afbfadf0f4009b3c250174d",
+      "bytes": 3109
+    },
+    {
+      "path": "export.py",
+      "sha256": "9c31132cbb58e2c7fa24bafc303cf4a07a56a5aea48b1efe1b916deeb48dcf2c",
+      "bytes": 7186
+    },
+    {
+      "path": "extract.py",
+      "sha256": "c46ba7dc378c6b8ec66a66f69b60d29d63fd1850dc02b0295385abdc917dbd9f",
+      "bytes": 5422
+    },
+    {
+      "path": "finite_frame.py",
+      "sha256": "215736f86b38a9b54357c9cbe6cdec6b3f30b9d9c9b4214b8fe303cccaf337ca",
+      "bytes": 7652
+    },
+    {
+      "path": "independent_verify.py",
+      "sha256": "cbb95af798730c3772212b9e534a155345e52293cf58a3b2d50cdf40ebab0e27",
+      "bytes": 12939
+    },
+    {
+      "path": "integer_frame.cpp",
+      "sha256": "f6e5c453674ddcfd0cfe69dcf2d2367f7729aaba1be62c74588ecd3806f33157",
+      "bytes": 8332
+    },
+    {
+      "path": "maps.py",
+      "sha256": "1caf75d1a5aad5f3e2783bdec3bbedd18e6f8a4267dc3482fc0f9928ad823294",
+      "bytes": 3682
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "4c6fe65a59acb397d29bed697469c62c9e06eb0bdabc4291f209d86de66023f3",
+      "bytes": 1030
+    },
+    {
+      "path": "products.py",
+      "sha256": "a9fc0ef1618329a3ca89232607a881943fe962a5d07d711c6abfb252df41ec03",
+      "bytes": 6675
+    },
+    {
+      "path": "relation_test.py",
+      "sha256": "c6cf88c8db26a790352b029f98cd4c68725054e594b0b7a45d685ba137db617b",
+      "bytes": 4000
+    },
+    {
+      "path": "reproduce.py",
+      "sha256": "bd9729815191ae0a45a3cd08a8b33514f36e4de17d7dce18307573d27c97873f",
+      "bytes": 2531
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "f316cfe9d3cc7a32d4d8c597b5d31b0a44699919b3b9e9d0d3e92c6a36b54a4f",
+      "bytes": 47
+    },
+    {
+      "path": "trace_algebra.py",
+      "sha256": "03ef03a4cf440a47c9d4e47f1945c50f782a25d178e8fe94b681ccde32573494",
+      "bytes": 5783
+    },
+    {
+      "path": "verify.py",
+      "sha256": "abcd0ead3a698f3a603e79fc210d2864111b91f706a5705339fc62668b6ba2db",
+      "bytes": 6859
+    }
+  ],
+  "repository_dependencies": [
+    {
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    {
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/letters.py",
+      "sha256": "0b3561e55f22d5135f2a04ba2996f1652e92af135556a7388fd423974072c8c5",
+      "bytes": 3734
+    },
+    {
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/words.py",
+      "sha256": "779c524c1283715feb6fe03d50fa8b23d596f04d134d791daa8394524d2a5dc8",
+      "bytes": 9829
+    },
+    {
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/vendor/fortuity/full/wordenum.py",
+      "sha256": "e003ac53a33b1685ca85616d06a1e42a0aeb407d205b0f6a1560c1f398e8bc95",
+      "bytes": 3590
+    },
+    {
+      "path": "algorithms/su3_independent_prime_20261118/runtime/work/cluster-next-v2.nosync/work/so8-bmn/src/exact_dims.py",
+      "sha256": "8dd059e835f67ee1886744f06fa5bdf5d3fe74bae525b53731c347853ab8528c",
+      "bytes": 4408
+    }
+  ],
+  "public_inputs": [
+    {
+      "commit": "a90728a6ca04d74f5475adae4bf37c8d94f34ac0",
+      "path": "algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_factor_minors.json.gz",
+      "local_path": "certificate/b04/outgoing_factor_minors.json.gz",
+      "sha256": "76b5c720d637908e0df89e3c3e975ea0007551f2c886809d40d04385cc4e52e7"
+    },
+    {
+      "commit": "a90728a6ca04d74f5475adae4bf37c8d94f34ac0",
+      "path": "algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_minors.json.gz",
+      "local_path": "certificate/b04/outgoing_minors.json.gz",
+      "sha256": "adcc281a848c305d498c5502356f2a12d39e83b5d84e49d0deea5f94b49c568e"
+    },
+    {
+      "commit": "a90728a6ca04d74f5475adae4bf37c8d94f34ac0",
+      "path": "algorithms/su3_j30_classical_ranks/instanton_probe/outgoing_products.json",
+      "local_path": "certificate/b04/outgoing_products.json",
+      "sha256": "5a67db63232d9596d0daf312996251c1f9003faef3108e26f473ecebca2b9361"
+    }
+  ],
+  "source_arithmetic": "Rational and bounded integer; modular tests certify nonzero minors only",
+  "legacy_replay_limit": "The copied B04 proper-factor and Cartan-injectivity minor entries are inherited public evidence. All new B05 cochains, finite frames, maps, relations, representative and dual were rebuilt from source and compared byte for byte."
+}
