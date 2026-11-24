@@ -1,0 +1,59 @@
+{
+  "A07_complete": true,
+  "artifact_sha256": {
+    "CURRENT_SUMMARY.md": "ee20cee58c60add2c0c7ddb1ab26ed079319d295d4d211c0a7df6b4ed980d008",
+    "advertised-native-inputs.json": "3fac5429a4604e8ad99ed7c64236005908315104efcd9fd84b5e3edb21367e46",
+    "advertisement-spans.jsonl.gz": "7b73b28c1cde48a1f2fe12f536fdcf4c5f1d5fa226b9e3b28898bcfbe2c3cd66",
+    "claims.json": "ac0b371203325cc6a6ef53eb184b0d6c0272b79a05aa039ccfc98d8bc5de29b4",
+    "coverage-blocks.json": "40962a3013638e6eafd2746b69ed033a1d54f8e2612e46c5169b00d9af5aa76f",
+    "deduplication.json": "e709b2f28ed71daee6362a5182098ad6fbc95d580747da4fcdebaf2073826f16",
+    "native-frontiers.json": "a1c4403d73bfae488f42b4808cedb27597223e5bba7aba7e8e0f9cd2c588eddb",
+    "release-audit.json": "8ce4142961bb09254aea4b363b610d938afcf091efefd8dd920c0d35a9e8af5f",
+    "release-sources.json.gz": "0f293b0dea47f6e65ecbab7fe93df2d8b746096395ed140e95cf605b7bc26a38",
+    "source-audit.json": "507e3658d29604e21c0a285eb89752ec2e846c99e8b760f42d2489c062b993af"
+  },
+  "canonical_claim_count": 247,
+  "command": "python3 research-roadmap/claim-ledger/check.py --negative-controls --require-complete",
+  "errors": [],
+  "gate_blockers": [],
+  "ledger_consistent": true,
+  "negative_controls": [
+    {
+      "name": "contradictory_active_outcome",
+      "rejected": true
+    },
+    {
+      "name": "missing_immutable_certificate",
+      "rejected": true
+    },
+    {
+      "name": "missing_native_certificate_anchor",
+      "rejected": true
+    },
+    {
+      "name": "duplicate_claim_identifier",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_physical_charge_translation",
+      "rejected": true
+    },
+    {
+      "name": "omitted_homogeneous_correction_slot",
+      "rejected": true
+    },
+    {
+      "name": "omitted_semantic_document_review",
+      "rejected": true
+    },
+    {
+      "name": "omitted_advertised_native_occurrence",
+      "rejected": true
+    },
+    {
+      "name": "omitted_post_baseline_release",
+      "rejected": true
+    }
+  ],
+  "schema_version": 1
+}

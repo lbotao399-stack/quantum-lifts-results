@@ -1,0 +1,19 @@
+{
+  "advertised_native_inputs": "advertised-native-inputs.json",
+  "advertised_native_inputs_sha256": "3fac5429a4604e8ad99ed7c64236005908315104efcd9fd84b5e3edb21367e46",
+  "core_manifest": "coverage/coverage_manifest.json",
+  "core_manifest_sha256": "df8ba8db62ef2a77810b65a73ef730a19316c21eae8638f5db0494a11fb23040",
+  "deduplication": "deduplication.json",
+  "deduplication_sha256": "e709b2f28ed71daee6362a5182098ad6fbc95d580747da4fcdebaf2073826f16",
+  "discovery_coverage_percentage": null,
+  "exact_classical_cohomology_dimensions_complete": false,
+  "lift_coverage_percentage": null,
+  "native_frontiers": "native-frontiers.json",
+  "native_frontiers_sha256": "a1c4403d73bfae488f42b4808cedb27597223e5bba7aba7e8e0f9cd2c588eddb",
+  "release_audit": "release-audit.json",
+  "release_audit_sha256": "8ce4142961bb09254aea4b363b610d938afcf091efefd8dd920c0d35a9e8af5f",
+  "schema_version": 1,
+  "scope_version": "1.0",
+  "source_of_scope": "research-roadmap/scope.json",
+  "status": "kinematic_manifest_complete; semantic_A07_gate_complete"
+}

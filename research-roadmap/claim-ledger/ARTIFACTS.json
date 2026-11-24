@@ -1,0 +1,250 @@
+{
+  "schema": "exact-concatenated-xz-v1",
+  "files": [
+    {
+      "path": "advertised-native-inputs.json",
+      "bytes": 39722845,
+      "sha256": "3fac5429a4604e8ad99ed7c64236005908315104efcd9fd84b5e3edb21367e46",
+      "offset": 0
+    },
+    {
+      "path": "advertisement-spans.jsonl.gz",
+      "bytes": 2127239,
+      "sha256": "7b73b28c1cde48a1f2fe12f536fdcf4c5f1d5fa226b9e3b28898bcfbe2c3cd66",
+      "offset": 39722845
+    },
+    {
+      "path": "claims.json",
+      "bytes": 2724160,
+      "sha256": "ac0b371203325cc6a6ef53eb184b0d6c0272b79a05aa039ccfc98d8bc5de29b4",
+      "offset": 41850084
+    },
+    {
+      "path": "coverage/native_slots.jsonl.gz",
+      "bytes": 535221,
+      "sha256": "3ca1c80e8e587fd77a9fa8f7dd74eed2c21e40f60c5c74ecf6312dc0aa94ac41",
+      "offset": 44574244
+    },
+    {
+      "path": "coverage/physical_blocks.jsonl.gz",
+      "bytes": 540060,
+      "sha256": "a6587becd7b9f770f924ad149b5bf3e172126b1c4ddefd73cc06c21751d9bba3",
+      "offset": 45109465
+    },
+    {
+      "path": "deduplication.json",
+      "bytes": 591727,
+      "sha256": "e709b2f28ed71daee6362a5182098ad6fbc95d580747da4fcdebaf2073826f16",
+      "offset": 45649525
+    },
+    {
+      "path": "inventory/manifest.json",
+      "bytes": 3644629,
+      "sha256": "294242e04a3e298c958e4aca6baff6748e82a9362a76b83174284b60cb1244c3",
+      "offset": 46241252
+    },
+    {
+      "path": "inventory/public_sources.json.gz",
+      "bytes": 3858739,
+      "sha256": "0443ebe0967b39dd856c69a591a3fa9df9258673ed604485c9cb2c8754d4eb6d",
+      "offset": 49885881
+    },
+    {
+      "path": "native-frontiers.json",
+      "bytes": 1124706,
+      "sha256": "a1c4403d73bfae488f42b4808cedb27597223e5bba7aba7e8e0f9cd2c588eddb",
+      "offset": 53744620
+    },
+    {
+      "path": "review-queue.json",
+      "bytes": 214888,
+      "sha256": "77779c93b3186acc4ef05fbb91251925e64b42d2e61bdbb7b0c8ebaa1555d957",
+      "offset": 54869326
+    },
+    {
+      "path": "reviews/all-loop.json",
+      "bytes": 138605,
+      "sha256": "c9e6b13edc3068f133b8041b43ccce6188ba62fae40eb1853e9f0e7646ea63cc",
+      "offset": 55084214
+    },
+    {
+      "path": "reviews/f4.json",
+      "bytes": 563177,
+      "sha256": "e01004bb83b3db27d18b12644c9cb2e89041d15065db49c085ff1ba67b7e13aa",
+      "offset": 55222819
+    },
+    {
+      "path": "reviews/ledger.json",
+      "bytes": 1961059,
+      "sha256": "42fc81211f57967fe0cda57ca596f2c24c63cfc625ad89f18adc9311e37a9148",
+      "offset": 55785996
+    },
+    {
+      "path": "source-audit.json",
+      "bytes": 2253972,
+      "sha256": "507e3658d29604e21c0a285eb89752ec2e846c99e8b760f42d2489c062b993af",
+      "offset": 57747055
+    }
+  ],
+  "raw_bytes": 60001027,
+  "raw_sha256": "c5d7d5c87a0d7d00d457cf56c75ced46d46dde95ffca37d62987b21c8e1ee62b",
+  "xz_bytes": 7954044,
+  "xz_sha256": "23066590912fe6721dd58ba160bc737ae286ad7544f6f6465cd83e8d43b2d352",
+  "chunks": [
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part000",
+      "bytes": 262144,
+      "sha256": "45d5185755f575598f6023ee8392572a9a3f6d6cea1203b6db8a6508c9c567d9"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part001",
+      "bytes": 262144,
+      "sha256": "18953953ee87c9464709b81265e84ffcd8869dad64517189e47bb55b684d7e1d"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part002",
+      "bytes": 262144,
+      "sha256": "9c27816248e80fbdfb6c59df82ad219c43d05f61103700631ebb9aa675af79db"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part003",
+      "bytes": 262144,
+      "sha256": "bdc70fb7eb908e0bfaefef1a552a33837360e52dcb464f6ea67d654104f3255d"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part004",
+      "bytes": 262144,
+      "sha256": "7fb1bae183463054128ea6b55f49184b67e72f8e01e2682b5f784b4ebcdbe593"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part005",
+      "bytes": 262144,
+      "sha256": "36020d5f4d656f75a2671fb8cc5d5da5a043333a8528cdbfd627c475db6a43b0"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part006",
+      "bytes": 262144,
+      "sha256": "2de09fa159d82822a335628ac8ed714fb036a45d5d967a8be8331012bffbd63a"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part007",
+      "bytes": 262144,
+      "sha256": "a4efe5b3757832ab86e1b7602cd484c87f56fb806ca23a8603a366cf7eca5cd2"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part008",
+      "bytes": 262144,
+      "sha256": "62f3e74b8c5fec81e994f66e21a4ea383290a5a4e6f0c5c236368a3094d71fa4"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part009",
+      "bytes": 262144,
+      "sha256": "6ec97ef9cb438fc1cce5370e1da2378cc42cbd3853c41e2d4811aa9fa520f16e"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part010",
+      "bytes": 262144,
+      "sha256": "72d166bdef581ca6d954e097b60193a026563f688bc495e3c829d7d3b499a47e"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part011",
+      "bytes": 262144,
+      "sha256": "bf62c86d4022a1fb1088f213b064e5c5345cf1c731ddd857f4bb657241161ac1"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part012",
+      "bytes": 262144,
+      "sha256": "fd9a779cb3941603743bda3b7a02e7a51e2a08a22d166c6542be173497108ec1"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part013",
+      "bytes": 262144,
+      "sha256": "ea4e915d75b9e241fb6a8dd5330db934ef0e9af38f82e1e4a057f46e59ed4744"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part014",
+      "bytes": 262144,
+      "sha256": "787b1ddfa59f4d287aff731a4ec081be05260d091081b879c6455749d6ed0b27"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part015",
+      "bytes": 262144,
+      "sha256": "4c9dd2a0856c100a8ecd18d7282fb78532d1427ae5d65cce24af51852c500623"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part016",
+      "bytes": 262144,
+      "sha256": "f74deaabedce2509ddeffd39dc93107c27c2a08792872dde0624dedb9c6b654d"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part017",
+      "bytes": 262144,
+      "sha256": "3f7a1a49a8e2c2e0c376c0091e2811fdc9528f4bf6ab758cc5e8fb37cdc5dcda"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part018",
+      "bytes": 262144,
+      "sha256": "34cc868ba3dcfc5977e06d6f12739d24f1a38c21ca93a175e4506586a2068c38"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part019",
+      "bytes": 262144,
+      "sha256": "bc58dd3d45326ce23e3b95afd7e0f230a155c1e636e29d2a1f103ff18f7e4922"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part020",
+      "bytes": 262144,
+      "sha256": "cba139e9a773f5c600fc924539ddb35939dfe94b09614a185c31f5ce909a99ba"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part021",
+      "bytes": 262144,
+      "sha256": "da0a4aa94bf7d2c23b977c2fe30ff815b4234f3d24b6d210404c29309b67b4e3"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part022",
+      "bytes": 262144,
+      "sha256": "4105f0bfe9b2bf3767f3d42cc220123debdcc561e8af3ad657f694e51d6122f0"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part023",
+      "bytes": 262144,
+      "sha256": "498e6aa1ea9ff3d0420494d40e0f3b21e4fd042410d590a15afc57cea6d40d11"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part024",
+      "bytes": 262144,
+      "sha256": "76db2d5780a2f489800e21a5f13d557c09c70941b71647a00bf37360073cde95"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part025",
+      "bytes": 262144,
+      "sha256": "ad94e16f436a40773705da43e26e281d2c906bde5ae21d69aa7c1eeb0fb10740"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part026",
+      "bytes": 262144,
+      "sha256": "93ac50e5866620039acd84e118ee8f48a2d5b1024b6a69b9e87bf5b69b4904e3"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part027",
+      "bytes": 262144,
+      "sha256": "949167a0e1b76dc96f8bb14c69e59681a674fee0505b270a62cd5112405727ff"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part028",
+      "bytes": 262144,
+      "sha256": "65e083895daad702c53a7f1d71021f1c52dde4c28a81aff8d47febc878c5c5f0"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part029",
+      "bytes": 262144,
+      "sha256": "0449fc75c08174fc914a94aa68d63dcef824ddddc1613ac9790d93cf360021c0"
+    },
+    {
+      "path": "artifact_chunks/ledger.bin.xz.part030",
+      "bytes": 89724,
+      "sha256": "c9ed33e1b22252f7af0df34f997a9a1f2900db04e5b1a722aee23816a21c67ad"
+    }
+  ]
+}

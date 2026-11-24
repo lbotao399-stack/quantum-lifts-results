@@ -1,0 +1,608 @@
+{
+  "schema_version": 1,
+  "release_id": "physical",
+  "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+  "reviewer": "/root: complete release acceptance and immutable-byte review",
+  "documents": [
+    {
+      "path": "algorithms/physical_block_20261124/README.md",
+      "sha256": "affd6d10cd1a616bdabd05df6d9ae4f9cfabafc821237377b3adac67db7a7618",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "usp4-complete-leading-physical-block"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Complete physical radial form for the first Sp(2) fortuitous block; Result and coupling scope; Exact meaning of completeness; Physical letters, coupling and radial conjugation; Independent field-strength normalization; Full matrix, all nulls and the two physical conditions; Fortuity of the entire block; Files and replay; Remaining physical matching",
+          "claim_ids": [
+            "usp4-complete-leading-physical-block"
+          ],
+          "description": "All four complete native lengths, full finite-colour relations, independent character dimensions, both physical harmonic equations, all69 flavour-weight states and4761 radial pairings. Native normalization, independent curvature/spinor checks, positive form and exact basis changes are included. The23 harmonic multiplicities are accepted only at the stated leading interacting order, not as an all-coupling survivor count."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": "The root independently replayed full Gram/null/equation checks and normalization; the47-file mathematical manifest is unchanged."
+    },
+    {
+      "path": "algorithms/physical_block_20261124/f03/README.md",
+      "sha256": "8ea583fa15b63670dbc536192d292ee6c736da1b89a418a5a5eaaf817ecd18d2",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "usp4-first-quantum-physical-comparison"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Complete quadratic nonscalar channel: physical comparison at first quantum order; Scope and review status; 1. Complete native spaces, including every derivative alternative; 2. Renormalization and the operator dictionary; 3. Independent physical determination of the anomaly, including its phase; 4. Independent point-split residue and the native formal differential; 5. Local products, current contacts and the remaining review question; Replay",
+          "claim_ids": [
+            "usp4-first-quantum-physical-comparison"
+          ],
+          "description": "All three nonscalar sources and both targets are matched through physical coupling powers one and two. The complete source/target metrics, scalar–gaugino mixing, exact anomaly phase/magnitude, pole matrices, finite eigenoperator changes and current/contact Ward argument are retained. The review accepts a complete channel-specific calculation and explicitly excludes a global69-state/all-order or instanton claim."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": "The later REVIEW.md resolves the earlier candidate status without rewriting the calculation."
+    },
+    {
+      "path": "algorithms/physical_block_20261124/f03/REVIEW.md",
+      "sha256": "f63947b35090252489139ee1c607616a2044685a78871c44f1891eba5b2b8e53",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "usp4-first-quantum-physical-comparison"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Independent acceptance review: complete first quantum-order channel; Exact replay and independent physical checks; Why the current comparison is determined in this channel; Scope retained after acceptance",
+          "claim_ids": [
+            "usp4-first-quantum-physical-comparison"
+          ],
+          "description": "All three nonscalar sources and both targets are matched through physical coupling powers one and two. The complete source/target metrics, scalar–gaugino mixing, exact anomaly phase/magnitude, pole matrices, finite eigenoperator changes and current/contact Ward argument are retained. The review accepts a complete channel-specific calculation and explicitly excludes a global69-state/all-order or instanton claim."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": "Root independently read the primary physical sources, translated the complete operator dictionary and reran channel.py."
+    },
+    {
+      "path": "algorithms/physical_block_20261124/PACKAGING.md",
+      "sha256": "71e05ac09e16a9d83450edd55d567fe2d557cbfb1709618f34dec0700308a61d",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole transport/publication document",
+          "reason": "Lossless packaging, commands and verification scope; no additional mathematical or physical result is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": ""
+    }
+  ],
+  "additional_claims": [
+    {
+      "id": "usp4-complete-leading-physical-block",
+      "title": "The complete leading physical USp4 block has all radial pairings and null relations",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "USp4 (Sp2)",
+      "proposition": {
+        "key": "accepted-release/usp4-complete-leading-physical-block",
+        "value": {
+          "formal_cochains": 1539,
+          "finite_cochains": 1168,
+          "finite_colour_nulls": 371,
+          "classical_outgoing_rank": 448,
+          "classical_incoming_rank": 697,
+          "harmonic_multiplicity": 23,
+          "stable_multiplicity": 22,
+          "fortuitous_multiplicity": 1,
+          "full_flavour_physical_states": 69,
+          "full_flavour_metric_entries": 4761,
+          "length_rows": [
+            {
+              "length": 5,
+              "formal": 35,
+              "finite": 35,
+              "nulls": 0,
+              "outgoing": 17,
+              "incoming": 18,
+              "harmonic": 0,
+              "stable": 0,
+              "fortuitous": 0
+            },
+            {
+              "length": 6,
+              "formal": 427,
+              "finite": 379,
+              "nulls": 48,
+              "outgoing": 156,
+              "incoming": 202,
+              "harmonic": 21,
+              "stable": 21,
+              "fortuitous": 0
+            },
+            {
+              "length": 7,
+              "formal": 816,
+              "finite": 605,
+              "nulls": 211,
+              "outgoing": 230,
+              "incoming": 374,
+              "harmonic": 1,
+              "stable": 0,
+              "fortuitous": 1
+            },
+            {
+              "length": 8,
+              "formal": 261,
+              "finite": 149,
+              "nulls": 112,
+              "outgoing": 45,
+              "incoming": 103,
+              "harmonic": 1,
+              "stable": 1,
+              "fortuitous": 0
+            }
+          ],
+          "physical_conditions": "Every state obeys both the leading interacting supercharge and its radial adjoint; every finite-colour null and all mixed pairings are retained.",
+          "fortuity_relation_dimension": "365−134−230=1",
+          "independent_checks": "Complete Gram reconstruction and every null/action equation;63 direct Wick entries,256 covariance entries,48 letter norm recurrences, and the independent spinor-curvature normalization."
+        }
+      },
+      "charges": {
+        "physical_energy": 9,
+        "physical_left_spin": 1,
+        "physical_right_spin": 0,
+        "flavour_SU3_highest_weight": [
+          1,
+          0
+        ],
+        "physical_R_weights": [
+          [
+            3,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "native_coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "highest_flavour_weight_inputs": [
+          {
+            "native_weight": [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            "letter_length": 8,
+            "twice_energy": 18,
+            "twice_R": [
+              6,
+              4,
+              4
+            ],
+            "twice_J_left": 2,
+            "twice_J_right": 0,
+            "physical_level": 20
+          },
+          {
+            "native_weight": [
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            "letter_length": 7,
+            "twice_energy": 18,
+            "twice_R": [
+              6,
+              4,
+              4
+            ],
+            "twice_J_left": 2,
+            "twice_J_right": 0,
+            "physical_level": 20
+          },
+          {
+            "native_weight": [
+              2,
+              1,
+              1,
+              2,
+              2
+            ],
+            "letter_length": 6,
+            "twice_energy": 18,
+            "twice_R": [
+              6,
+              4,
+              4
+            ],
+            "twice_J_left": 2,
+            "twice_J_right": 0,
+            "physical_level": 20
+          },
+          {
+            "native_weight": [
+              1,
+              0,
+              0,
+              3,
+              3
+            ],
+            "letter_length": 5,
+            "twice_energy": 18,
+            "twice_R": [
+              6,
+              4,
+              4
+            ],
+            "twice_J_left": 2,
+            "twice_J_right": 0,
+            "physical_level": 20
+          }
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/README.md",
+          "sha256": "affd6d10cd1a616bdabd05df6d9ae4f9cfabafc821237377b3adac67db7a7618"
+        }
+      },
+      "source": {
+        "quantified_domain": "The entire prospectively declared compact-irrep physical charge block, all four lengths and all three flavour weights.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/README.md",
+          "sha256": "affd6d10cd1a616bdabd05df6d9ae4f9cfabafc821237377b3adac67db7a7618"
+        }
+      },
+      "target": {
+        "quantified_domain": "Every radial-conjugate bra in the same complete block; the full69×69 form is exported.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/README.md",
+          "sha256": "affd6d10cd1a616bdabd05df6d9ae4f9cfabafc821237377b3adac67db7a7618"
+        }
+      },
+      "order": "leading nonzero physical supercharge; leading one-loop Hamiltonian; free radial two-point form",
+      "direction": "physical_inner_product_and_simultaneous_supercharge_conditions",
+      "field": "Exact rational native Wick coefficients, with physical g_YM and pi retained symbolically",
+      "normalization": "Chang–Yin physical rescaling (4*pi/g_YM)*2^(a+b); normalized letter norm (a+b+s−1)!/(a!b!); native field-strength norm2; Q_phys=(g_YM/(4*pi))*Q_native at the accepted order; H_phys=(g_YM^2/(8*pi^2))*{Q_native,Q_native^dagger}.",
+      "scope": {
+        "description": "Full finite-rank SU3-fundamental, dotted-spin-zero block at E=9 and J_L=1. Completeness is for this declared compact symmetry block, including all multiplicities and weights, at its stated coupling order.",
+        "completeness": "The complete explicitly declared finite spaces and every stated equation; limits are recorded separately.",
+        "physical_identification": "Only the stated physical coupling order and channel are identified; no instanton or chaos conclusion is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/README.md",
+          "sha256": "affd6d10cd1a616bdabd05df6d9ae4f9cfabafc821237377b3adac67db7a7618"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/MANIFEST.json",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/MANIFEST.json",
+          "sha256": "0051093d0b36582d8d0a81bb5d59a735421407156041d6804d65c37f917ed2ae"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/physical_f02_root_review.json",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/physical_f02_root_review.json",
+          "sha256": "c61a2e5a37045f05b8655909bdee01ea0d7aceb2cfebcb7669ab71a68c833e7a"
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "accepted_complete_calculation_with_independent_review",
+      "supersedes": [],
+      "limitations": [
+        "This is leading interacting harmonic-state data. It does not prove that all23 directions survive every perturbative order or finite coupling.",
+        "The all-order physical survival problem and the complete69-state quantum composite comparison are separate calculations.",
+        "No physical instanton map, physical chaos probe or chaos spectrum is computed here."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/physical_block_20261124/README.md",
+        "algorithms/physical_block_20261124/MANIFEST.json",
+        "algorithms/physical_block_20261124/physical_f02_root_review.json"
+      ]
+    },
+    {
+      "id": "usp4-first-quantum-physical-comparison",
+      "title": "A complete nonscalar USp4 channel matches physical composites through the first quantum coefficient",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "USp4 (Sp2)",
+      "proposition": {
+        "key": "accepted-release/usp4-first-quantum-physical-comparison",
+        "value": {
+          "source_dimension": 3,
+          "target_dimension": 2,
+          "source_gram": "10 I_3",
+          "target_gram": "diag(15,10)",
+          "native_classical_matrix": [
+            [
+              2,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "native_first_quantum_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -12,
+              -12,
+              -12
+            ]
+          ],
+          "physical_charge_columns": [
+            "g_YM/(2*pi)",
+            "3*i*g_YM^2/(8*pi^2)"
+          ],
+          "homogeneous_source_kernel_dimension": 2,
+          "adjoint_Casimir": 6,
+          "physical_protected_coordinates": [
+            "i*g_YM/(2*pi)",
+            "1"
+          ],
+          "physical_Konishi_coordinates": [
+            "1",
+            "3*i*g_YM/(4*pi)"
+          ],
+          "one_loop_Konishi_dimension_correction": "9*g_YM^2/(4*pi^2)",
+          "independent_checks": "All three source and both target polynomials;25 Wick entries;100 Casimir entries; all source-kernel columns; full charge matrices and radial adjoints; primary-source physical mixing/phase derivation and independent point-split magnitude."
+        }
+      },
+      "charges": {
+        "source": {
+          "native_weight": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "letter_length": 2,
+          "twice_energy": 5,
+          "twice_R": [
+            1,
+            1,
+            1
+          ],
+          "twice_J_left": 1,
+          "twice_J_right": 0,
+          "physical_level": 6
+        },
+        "targets": [
+          {
+            "native_weight": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "letter_length": 3,
+            "twice_energy": 6,
+            "twice_R": [
+              2,
+              2,
+              2
+            ],
+            "twice_J_left": 0,
+            "twice_J_right": 0,
+            "physical_level": 6
+          },
+          {
+            "native_weight": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "letter_length": 2,
+            "twice_energy": 6,
+            "twice_R": [
+              2,
+              2,
+              2
+            ],
+            "twice_J_left": 0,
+            "twice_J_right": 0,
+            "physical_level": 6
+          }
+        ],
+        "native_coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/f03/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/README.md",
+          "sha256": "8ea583fa15b63670dbc536192d292ee6c736da1b89a418a5a5eaaf817ecd18d2"
+        }
+      },
+      "source": {
+        "quantified_domain": "All three gauge-invariant Tr(phi^i psi_i) source columns at the stated physical charges, including every allowed derivative alternative; the only one-letter derivative alternative is identically traceless.",
+        "native_input": {
+          "native_weight": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "letter_length": 2,
+          "twice_energy": 5,
+          "twice_R": [
+            1,
+            1,
+            1
+          ],
+          "twice_J_left": 1,
+          "twice_J_right": 0,
+          "physical_level": 6
+        },
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/f03/REVIEW.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/REVIEW.md",
+          "sha256": "f63947b35090252489139ee1c607616a2044685a78871c44f1891eba5b2b8e53"
+        }
+      },
+      "target": {
+        "quantified_domain": "The complete two-dimensional physical target: the cubic commutator and covariantly contracted gaugino bilinear.",
+        "native_inputs": [
+          {
+            "native_weight": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "letter_length": 3,
+            "twice_energy": 6,
+            "twice_R": [
+              2,
+              2,
+              2
+            ],
+            "twice_J_left": 0,
+            "twice_J_right": 0,
+            "physical_level": 6
+          },
+          {
+            "native_weight": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "letter_length": 2,
+            "twice_energy": 6,
+            "twice_R": [
+              2,
+              2,
+              2
+            ],
+            "twice_J_left": 0,
+            "twice_J_right": 0,
+            "physical_level": 6
+          }
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/f03/REVIEW.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/REVIEW.md",
+          "sha256": "f63947b35090252489139ee1c607616a2044685a78871c44f1891eba5b2b8e53"
+        }
+      },
+      "order": "physical coupling powers g_YM and g_YM^2 only; first nonzero bare quantum coefficient",
+      "direction": "physical_supercharge_and_radial_adjoint",
+      "field": "Exact rational colour/Wick data over Q(i), with g_YM and pi symbolic",
+      "normalization": "The exact Chang–Feng–Lin–Tao2306.04673v2 superfield convention, elementary supersymmetry normalization and the minimal-subtracted normal-product basis. All source/target pole matrices and first physical eigenoperator mixing are stated in f03/README.md.",
+      "scope": {
+        "description": "A complete charge-specific physical composite/current comparison, with every finite-colour relation and relevant mixing through the displayed coupling powers. The independent local contact/dimension Ward argument fixes the full target residue.",
+        "completeness": "The complete explicitly declared finite spaces and every stated equation; limits are recorded separately.",
+        "physical_identification": "Only the stated physical coupling order and channel are identified; no instanton or chaos conclusion is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/f03/REVIEW.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/REVIEW.md",
+          "sha256": "f63947b35090252489139ee1c607616a2044685a78871c44f1891eba5b2b8e53"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/f03/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/README.md",
+          "sha256": "8ea583fa15b63670dbc536192d292ee6c736da1b89a418a5a5eaaf817ecd18d2"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/f03/channel_receipt.json",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/channel_receipt.json",
+          "sha256": "d73736dc96ee12866e8d29879d8dfd008aa7293eac0ed7c4b3f125408e81accd"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/physical_block_20261124/f03/MANIFEST.json",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/physical_block_20261124/f03/MANIFEST.json",
+          "sha256": "97c383df48f9257742fd4091f82057e18712bcc61dc981c1ac5eb83fa30c9e78"
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "accepted_complete_calculation_with_independent_review",
+      "supersedes": [],
+      "limitations": [
+        "This is the complete small quadratic source channel, not the full69-state block, the orthogonal third-differential benchmark or an all-order matching theorem.",
+        "A graph-by-graph component Noether-current computation was not performed; the accepted channel-specific result uses the complete target space, supersymmetry Ward identity, physical multiplet mixing and an independent point-split magnitude check.",
+        "No one-loop exactness of the physical Konishi anomaly at all coupling powers is inferred; pole effects on the accepted nonzero action begin at the third physical coupling power.",
+        "The original f03 README describes a pending review; its subsequent pinned REVIEW.md supplies the actual channel-specific acceptance decision."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/physical_block_20261124/f03/REVIEW.md",
+        "algorithms/physical_block_20261124/f03/README.md",
+        "algorithms/physical_block_20261124/f03/channel_receipt.json",
+        "algorithms/physical_block_20261124/f03/MANIFEST.json"
+      ]
+    }
+  ],
+  "claim_updates": []
+}

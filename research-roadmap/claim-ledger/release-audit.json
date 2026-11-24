@@ -1,0 +1,418 @@
+{
+  "documents": [
+    {
+      "commit": "eac7db42a6e27f4900826fe7b42cc75365698dc3",
+      "path": "algorithms/su3_generator_20261124/README.md",
+      "release_id": "b05",
+      "review_packet": "releases/b05.json",
+      "review_packet_sha256": "83c2123288d990c5d31261124eb287833c52545de2034c0defebc192eac0d81b",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "su3-seven-letter-generator-explicit"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "su3-seven-letter-generator-explicit"
+            ],
+            "description": "Complete finite SU3 cochains 1169→1896→1588, rational ranks825 and1037, cohomology34, all33 proper-product directions and one remaining generator. The explicit12224-term trace polynomial and 349-entry rational dual satisfy every full polynomial/symmetry/duality equation. Complete finite-rank relation rank difference2311−2310=1 proves fortuity separately from primitivity. All54 finite frames have character dimension witnesses; historical proper-factor completeness is retained as an attributed prerequisite.",
+            "location": "Explicit rational SU(3) outgoing generator; Complete spaces; Normalization and dictionary; Proper-product coverage; Verification; Scope"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "Root replayed rational ranks and the independent complete target-polynomial check; the published CI passed.",
+        "path": "algorithms/su3_generator_20261124/README.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "7379854fe1666276b498cdace68468cf74f73246153cf94a72dd08820cab3f48"
+      },
+      "sha256": "7379854fe1666276b498cdace68468cf74f73246153cf94a72dd08820cab3f48",
+      "source": "eac7db42a6e27f4900826fe7b42cc75365698dc3:algorithms/su3_generator_20261124/README.md"
+    },
+    {
+      "commit": "eac7db42a6e27f4900826fe7b42cc75365698dc3",
+      "path": "algorithms/su3_generator_20261124/PROOF.md",
+      "release_id": "b05",
+      "review_packet": "releases/b05.json",
+      "review_packet_sha256": "83c2123288d990c5d31261124eb287833c52545de2034c0defebc192eac0d81b",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "su3-seven-letter-generator-explicit"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "su3-seven-letter-generator-explicit"
+            ],
+            "description": "Complete finite SU3 cochains 1169→1896→1588, rational ranks825 and1037, cohomology34, all33 proper-product directions and one remaining generator. The explicit12224-term trace polynomial and 349-entry rational dual satisfy every full polynomial/symmetry/duality equation. Complete finite-rank relation rank difference2311−2310=1 proves fortuity separately from primitivity. All54 finite frames have character dimension witnesses; historical proper-factor completeness is retained as an attributed prerequisite. The proof includes complete stable kernels, all finite identities and the full relation quotient; imported historical factor certificates are not labelled freshly reconstructed.",
+            "location": "Completeness and exact finite-rank test; 1. Complete native inputs; 2. Exact finite-colour identities; 3. Exact differential and ordinary cohomology; 4. Full dual and every proper product; 5. Complete stable kernel; 6. Complete relation quotient and fortuity; 7. Independent check and replay limits"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "",
+        "path": "algorithms/su3_generator_20261124/PROOF.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "16c3faab80eb6241a13e849d2ef4d3a8d03cec047c42bb3fcffc20c32e57e0f0"
+      },
+      "sha256": "16c3faab80eb6241a13e849d2ef4d3a8d03cec047c42bb3fcffc20c32e57e0f0",
+      "source": "eac7db42a6e27f4900826fe7b42cc75365698dc3:algorithms/su3_generator_20261124/PROOF.md"
+    },
+    {
+      "commit": "eac7db42a6e27f4900826fe7b42cc75365698dc3",
+      "path": "algorithms/su3_generator_20261124/PACKAGING.md",
+      "release_id": "b05",
+      "review_packet": "releases/b05.json",
+      "review_packet_sha256": "83c2123288d990c5d31261124eb287833c52545de2034c0defebc192eac0d81b",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [],
+        "classification": "navigation",
+        "covered_assertions": [],
+        "metadata_gaps": [],
+        "notes": "",
+        "path": "algorithms/su3_generator_20261124/PACKAGING.md",
+        "review_complete": true,
+        "scope_exclusions": [
+          {
+            "location": "Whole transport/publication document",
+            "reason": "Lossless packaging, commands and verification scope; no additional mathematical or physical result is asserted."
+          }
+        ],
+        "sha256": "5a8633e56a05d21ad0366c52a42c08a491b013af2e2a361ac35d6ffdedf92db8"
+      },
+      "sha256": "5a8633e56a05d21ad0366c52a42c08a491b013af2e2a361ac35d6ffdedf92db8",
+      "source": "eac7db42a6e27f4900826fe7b42cc75365698dc3:algorithms/su3_generator_20261124/PACKAGING.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+      "release_id": "f4",
+      "review_packet": "releases/f4.json",
+      "review_packet_sha256": "a059e6c873b030092674ee49aeaa7af1e9c7bc209f8e0223bda8c7211086f291",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "f4-power6-full-second-zero-report",
+          "f4-sixth-direct-closed-factor-audit"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "f4-power6-full-second-zero-report",
+              "f4-sixth-direct-closed-factor-audit"
+            ],
+            "description": "The published703 outgoing rank and3017 independent cycles give3720−703=3016+1. The new full bilinear and direct product calculations supply a closed completion for the explicit product; every boundary also completes. The full first-page Ward identity retains all3476 homogeneous corrections, so the entire incoming second map is zero. Complete-minor reconstruction is historical, while the150850 literal extension entries are newly rebuilt.",
+            "location": "Complete sixth-power second-map decision; Complete source and matching rank bounds; The actual product closes without a subspace projector; All earlier corrections remain free; What was freshly reconstructed"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "Root read the complete proof and exact method audit, then independently reran verify_packet.py against all100 pinned public input blobs.",
+        "path": "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "d3c54a87eb0609156026c0a8cc02c8db70b5d19f01fadeb59e6b3297c2ecd154"
+      },
+      "sha256": "d3c54a87eb0609156026c0a8cc02c8db70b5d19f01fadeb59e6b3297c2ecd154",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/f4_complete_source_20261124/D03_PROOF.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/f4_complete_source_20261124/README.md",
+      "release_id": "f4",
+      "review_packet": "releases/f4.json",
+      "review_packet_sha256": "a059e6c873b030092674ee49aeaa7af1e9c7bc209f8e0223bda8c7211086f291",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "f4-power6-full-second-zero-report",
+          "f4-sixth-direct-closed-factor-audit",
+          "f4-power7-later-open",
+          "f4-focused-native-source-inventories",
+          "f4-seventh-complete-first-correction",
+          "f4-seventh-homogeneous-scalar-ward-count",
+          "f4-seventh-mixed-source-necessity",
+          "f4-tower-first-page-ward-data"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "f4-power6-full-second-zero-report",
+              "f4-sixth-direct-closed-factor-audit",
+              "f4-power7-later-open",
+              "f4-focused-native-source-inventories",
+              "f4-seventh-complete-first-correction",
+              "f4-seventh-homogeneous-scalar-ward-count",
+              "f4-seventh-mixed-source-necessity",
+              "f4-tower-first-page-ward-data"
+            ],
+            "description": "The published703 outgoing rank and3017 independent cycles give3720−703=3016+1. The new full bilinear and direct product calculations supply a closed completion for the explicit product; every boundary also completes. The full first-page Ward identity retains all3476 homogeneous corrections, so the entire incoming second map is zero. Complete-minor reconstruction is historical, while the150850 literal extension entries are newly rebuilt. The complete seventh-power selected character counts217297→62866→8553, the2959-rank intermediate map and20936 homogeneous first corrections are retained. The35 scalar irreducible types and3642 invariant Ward parameters are an inventory, not a native complete basis. Both differentiated-scalar shapes and every mixed equation remain unresolved, so D04 is open.",
+            "location": "F4 sixth-power proof audit and seventh-power source inventory; Fresh permitted calculations; Replay; Exact native inventories and correction freedom; Seventh power and the remaining native-input gate"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "",
+        "path": "algorithms/f4_complete_source_20261124/README.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "8da07add23d8f230f3ed183e6c44f17dd54d9aa6bb2d6a47afd634aab8022dba"
+      },
+      "sha256": "8da07add23d8f230f3ed183e6c44f17dd54d9aa6bb2d6a47afd634aab8022dba",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/f4_complete_source_20261124/README.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/f4_complete_source_20261124/D04_STATUS.md",
+      "release_id": "f4",
+      "review_packet": "releases/f4.json",
+      "review_packet_sha256": "a059e6c873b030092674ee49aeaa7af1e9c7bc209f8e0223bda8c7211086f291",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "f4-power7-later-open",
+          "f4-focused-native-source-inventories",
+          "f4-seventh-complete-first-correction",
+          "f4-seventh-homogeneous-scalar-ward-count",
+          "f4-seventh-mixed-source-necessity",
+          "f4-tower-first-page-ward-data"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "f4-power7-later-open",
+              "f4-focused-native-source-inventories",
+              "f4-seventh-complete-first-correction",
+              "f4-seventh-homogeneous-scalar-ward-count",
+              "f4-seventh-mixed-source-necessity",
+              "f4-tower-first-page-ward-data"
+            ],
+            "description": "The complete seventh-power selected character counts217297→62866→8553, the2959-rank intermediate map and20936 homogeneous first corrections are retained. The35 scalar irreducible types and3642 invariant Ward parameters are an inventory, not a native complete basis. Both differentiated-scalar shapes and every mixed equation remain unresolved, so D04 is open.",
+            "location": "Seventh-power second map: open"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "",
+        "path": "algorithms/f4_complete_source_20261124/D04_STATUS.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "196e9ab29865da753d4c6df6aa9960d83b262005c56d2727b15bbdb421ee2c17"
+      },
+      "sha256": "196e9ab29865da753d4c6df6aa9960d83b262005c56d2727b15bbdb421ee2c17",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/f4_complete_source_20261124/D04_STATUS.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/f4_complete_source_20261124/METHOD_AUDIT.md",
+      "release_id": "f4",
+      "review_packet": "releases/f4.json",
+      "review_packet_sha256": "a059e6c873b030092674ee49aeaa7af1e9c7bc209f8e0223bda8c7211086f291",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "f4-sixth-direct-closed-factor-audit"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "f4-sixth-direct-closed-factor-audit"
+            ],
+            "description": "The actual permitted literal tensor and simultaneous-equation paths are listed; stopped idempotent routes and historical saved matrices are explicitly distinguished. No full original-source reconstruction or gateC04/D04 completion is claimed.",
+            "location": "Method audit under the no-projection instruction; Permitted fresh path; Stopped and excluded path; Exact public call paths used by the core replay; Remaining gates"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "",
+        "path": "algorithms/f4_complete_source_20261124/METHOD_AUDIT.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "d618136035d7ad166d2582f6234f7a0f2dd532a569ff27e3a543c88fef787bd7"
+      },
+      "sha256": "d618136035d7ad166d2582f6234f7a0f2dd532a569ff27e3a543c88fef787bd7",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/f4_complete_source_20261124/METHOD_AUDIT.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/f4_complete_source_20261124/PUBLICATION.md",
+      "release_id": "f4",
+      "review_packet": "releases/f4.json",
+      "review_packet_sha256": "a059e6c873b030092674ee49aeaa7af1e9c7bc209f8e0223bda8c7211086f291",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [],
+        "classification": "navigation",
+        "covered_assertions": [],
+        "metadata_gaps": [],
+        "notes": "",
+        "path": "algorithms/f4_complete_source_20261124/PUBLICATION.md",
+        "review_complete": true,
+        "scope_exclusions": [
+          {
+            "location": "Whole transport/publication document",
+            "reason": "Lossless packaging, commands and verification scope; no additional mathematical or physical result is asserted."
+          }
+        ],
+        "sha256": "d38c21904cd95ca6ed8f3fcaa4979e73bd8913481876d921d431a0be8e86a02e"
+      },
+      "sha256": "d38c21904cd95ca6ed8f3fcaa4979e73bd8913481876d921d431a0be8e86a02e",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/f4_complete_source_20261124/PUBLICATION.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/physical_block_20261124/README.md",
+      "release_id": "physical",
+      "review_packet": "releases/physical.json",
+      "review_packet_sha256": "68f116d6a7690a17b3dd9ae67e9a5efbca1ea94f1d492e0f153e63755a26840c",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "usp4-complete-leading-physical-block"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "usp4-complete-leading-physical-block"
+            ],
+            "description": "All four complete native lengths, full finite-colour relations, independent character dimensions, both physical harmonic equations, all69 flavour-weight states and4761 radial pairings. Native normalization, independent curvature/spinor checks, positive form and exact basis changes are included. The23 harmonic multiplicities are accepted only at the stated leading interacting order, not as an all-coupling survivor count.",
+            "location": "Complete physical radial form for the first Sp(2) fortuitous block; Result and coupling scope; Exact meaning of completeness; Physical letters, coupling and radial conjugation; Independent field-strength normalization; Full matrix, all nulls and the two physical conditions; Fortuity of the entire block; Files and replay; Remaining physical matching"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "The root independently replayed full Gram/null/equation checks and normalization; the47-file mathematical manifest is unchanged.",
+        "path": "algorithms/physical_block_20261124/README.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "affd6d10cd1a616bdabd05df6d9ae4f9cfabafc821237377b3adac67db7a7618"
+      },
+      "sha256": "affd6d10cd1a616bdabd05df6d9ae4f9cfabafc821237377b3adac67db7a7618",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/physical_block_20261124/README.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/physical_block_20261124/f03/README.md",
+      "release_id": "physical",
+      "review_packet": "releases/physical.json",
+      "review_packet_sha256": "68f116d6a7690a17b3dd9ae67e9a5efbca1ea94f1d492e0f153e63755a26840c",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "usp4-first-quantum-physical-comparison"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "usp4-first-quantum-physical-comparison"
+            ],
+            "description": "All three nonscalar sources and both targets are matched through physical coupling powers one and two. The complete source/target metrics, scalar–gaugino mixing, exact anomaly phase/magnitude, pole matrices, finite eigenoperator changes and current/contact Ward argument are retained. The review accepts a complete channel-specific calculation and explicitly excludes a global69-state/all-order or instanton claim.",
+            "location": "Complete quadratic nonscalar channel: physical comparison at first quantum order; Scope and review status; 1. Complete native spaces, including every derivative alternative; 2. Renormalization and the operator dictionary; 3. Independent physical determination of the anomaly, including its phase; 4. Independent point-split residue and the native formal differential; 5. Local products, current contacts and the remaining review question; Replay"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "The later REVIEW.md resolves the earlier candidate status without rewriting the calculation.",
+        "path": "algorithms/physical_block_20261124/f03/README.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "8ea583fa15b63670dbc536192d292ee6c736da1b89a418a5a5eaaf817ecd18d2"
+      },
+      "sha256": "8ea583fa15b63670dbc536192d292ee6c736da1b89a418a5a5eaaf817ecd18d2",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/physical_block_20261124/f03/README.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/physical_block_20261124/f03/REVIEW.md",
+      "release_id": "physical",
+      "review_packet": "releases/physical.json",
+      "review_packet_sha256": "68f116d6a7690a17b3dd9ae67e9a5efbca1ea94f1d492e0f153e63755a26840c",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [
+          "usp4-first-quantum-physical-comparison"
+        ],
+        "classification": "in_scope",
+        "covered_assertions": [
+          {
+            "claim_ids": [
+              "usp4-first-quantum-physical-comparison"
+            ],
+            "description": "All three nonscalar sources and both targets are matched through physical coupling powers one and two. The complete source/target metrics, scalar–gaugino mixing, exact anomaly phase/magnitude, pole matrices, finite eigenoperator changes and current/contact Ward argument are retained. The review accepts a complete channel-specific calculation and explicitly excludes a global69-state/all-order or instanton claim.",
+            "location": "Independent acceptance review: complete first quantum-order channel; Exact replay and independent physical checks; Why the current comparison is determined in this channel; Scope retained after acceptance"
+          }
+        ],
+        "metadata_gaps": [],
+        "notes": "Root independently read the primary physical sources, translated the complete operator dictionary and reran channel.py.",
+        "path": "algorithms/physical_block_20261124/f03/REVIEW.md",
+        "review_complete": true,
+        "scope_exclusions": [],
+        "sha256": "f63947b35090252489139ee1c607616a2044685a78871c44f1891eba5b2b8e53"
+      },
+      "sha256": "f63947b35090252489139ee1c607616a2044685a78871c44f1891eba5b2b8e53",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/physical_block_20261124/f03/REVIEW.md"
+    },
+    {
+      "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+      "path": "algorithms/physical_block_20261124/PACKAGING.md",
+      "release_id": "physical",
+      "review_packet": "releases/physical.json",
+      "review_packet_sha256": "68f116d6a7690a17b3dd9ae67e9a5efbca1ea94f1d492e0f153e63755a26840c",
+      "semantic_coverage": "complete",
+      "semantic_review": {
+        "claim_ids": [],
+        "classification": "navigation",
+        "covered_assertions": [],
+        "metadata_gaps": [],
+        "notes": "",
+        "path": "algorithms/physical_block_20261124/PACKAGING.md",
+        "review_complete": true,
+        "scope_exclusions": [
+          {
+            "location": "Whole transport/publication document",
+            "reason": "Lossless packaging, commands and verification scope; no additional mathematical or physical result is asserted."
+          }
+        ],
+        "sha256": "71e05ac09e16a9d83450edd55d567fe2d557cbfb1709618f34dec0700308a61d"
+      },
+      "sha256": "71e05ac09e16a9d83450edd55d567fe2d557cbfb1709618f34dec0700308a61d",
+      "source": "b362a657a92a929d13fba7ef102dc29753edcbc9:algorithms/physical_block_20261124/PACKAGING.md"
+    }
+  ],
+  "missing_release_ids": [],
+  "release_distinct_text_count": 12,
+  "release_document_count": 12,
+  "release_ids": [
+    "b05",
+    "f4",
+    "physical"
+  ],
+  "required_release_ids": [
+    "b05",
+    "f4",
+    "physical"
+  ],
+  "review_packets": [
+    {
+      "path": "releases/b05.json",
+      "sha256": "83c2123288d990c5d31261124eb287833c52545de2034c0defebc192eac0d81b"
+    },
+    {
+      "path": "releases/f4.json",
+      "sha256": "a059e6c873b030092674ee49aeaa7af1e9c7bc209f8e0223bda8c7211086f291"
+    },
+    {
+      "path": "releases/physical.json",
+      "sha256": "68f116d6a7690a17b3dd9ae67e9a5efbca1ea94f1d492e0f153e63755a26840c"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Finite post-baseline mathematical release addendum: accepted B05, F02/F03 and D03 evidence. Generated ledger, navigation and score reports do not recursively expand their own review queue.",
+  "semantic_gate": "complete",
+  "sources_sha256": "0f293b0dea47f6e65ecbab7fe93df2d8b746096395ed140e95cf605b7bc26a38"
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "release_id": "b05",
+  "commit": "eac7db42a6e27f4900826fe7b42cc75365698dc3",
+  "reviewer": "/root: complete release acceptance and immutable-byte review",
+  "documents": [
+    {
+      "path": "algorithms/su3_generator_20261124/README.md",
+      "sha256": "7379854fe1666276b498cdace68468cf74f73246153cf94a72dd08820cab3f48",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "su3-seven-letter-generator-explicit"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Explicit rational SU(3) outgoing generator; Complete spaces; Normalization and dictionary; Proper-product coverage; Verification; Scope",
+          "claim_ids": [
+            "su3-seven-letter-generator-explicit"
+          ],
+          "description": "Complete finite SU3 cochains 1169→1896→1588, rational ranks825 and1037, cohomology34, all33 proper-product directions and one remaining generator. The explicit12224-term trace polynomial and 349-entry rational dual satisfy every full polynomial/symmetry/duality equation. Complete finite-rank relation rank difference2311−2310=1 proves fortuity separately from primitivity. All54 finite frames have character dimension witnesses; historical proper-factor completeness is retained as an attributed prerequisite."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": "Root replayed rational ranks and the independent complete target-polynomial check; the published CI passed."
+    },
+    {
+      "path": "algorithms/su3_generator_20261124/PROOF.md",
+      "sha256": "16c3faab80eb6241a13e849d2ef4d3a8d03cec047c42bb3fcffc20c32e57e0f0",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "su3-seven-letter-generator-explicit"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Completeness and exact finite-rank test; 1. Complete native inputs; 2. Exact finite-colour identities; 3. Exact differential and ordinary cohomology; 4. Full dual and every proper product; 5. Complete stable kernel; 6. Complete relation quotient and fortuity; 7. Independent check and replay limits",
+          "claim_ids": [
+            "su3-seven-letter-generator-explicit"
+          ],
+          "description": "Complete finite SU3 cochains 1169→1896→1588, rational ranks825 and1037, cohomology34, all33 proper-product directions and one remaining generator. The explicit12224-term trace polynomial and 349-entry rational dual satisfy every full polynomial/symmetry/duality equation. Complete finite-rank relation rank difference2311−2310=1 proves fortuity separately from primitivity. All54 finite frames have character dimension witnesses; historical proper-factor completeness is retained as an attributed prerequisite. The proof includes complete stable kernels, all finite identities and the full relation quotient; imported historical factor certificates are not labelled freshly reconstructed."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": ""
+    },
+    {
+      "path": "algorithms/su3_generator_20261124/PACKAGING.md",
+      "sha256": "5a8633e56a05d21ad0366c52a42c08a491b013af2e2a361ac35d6ffdedf92db8",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole transport/publication document",
+          "reason": "Lossless packaging, commands and verification scope; no additional mathematical or physical result is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": ""
+    }
+  ],
+  "additional_claims": [],
+  "claim_updates": [
+    {
+      "id": "su3-seven-letter-generator-explicit",
+      "append_certificate": [
+        {
+          "kind": "git",
+          "commit": "eac7db42a6e27f4900826fe7b42cc75365698dc3",
+          "path": "algorithms/su3_generator_20261124/PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/eac7db42a6e27f4900826fe7b42cc75365698dc3/algorithms/su3_generator_20261124/PROOF.md",
+          "sha256": "16c3faab80eb6241a13e849d2ef4d3a8d03cec047c42bb3fcffc20c32e57e0f0"
+        },
+        {
+          "kind": "git",
+          "commit": "eac7db42a6e27f4900826fe7b42cc75365698dc3",
+          "path": "algorithms/su3_generator_20261124/MANIFEST.json",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/eac7db42a6e27f4900826fe7b42cc75365698dc3/algorithms/su3_generator_20261124/MANIFEST.json",
+          "sha256": "98e546ec4365b0911a9a59a1dd67e75e9c812f052e0c9fb571b393dcef50dd64"
+        }
+      ],
+      "proof_status": "accepted_exact_representative_dual_and_fortuity_certificate",
+      "append_limitations": [
+        "The complete historical proper-factor archive remains a published prerequisite; the new target, dual and relation-quotient checks do not claim every old factor minor was freshly reconstructed."
+      ],
+      "acceptance_note": "B05 accepted after the exact rational and independent full-polynomial replays; the score gate is unchanged."
+    }
+  ]
+}

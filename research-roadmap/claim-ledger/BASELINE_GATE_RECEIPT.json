@@ -1,0 +1,53 @@
+{
+  "A07_complete": true,
+  "artifact_sha256": {
+    "CURRENT_SUMMARY.md": "200a9f7f7561a40df8297a56974fee949a9f3011fb59a2e507f8e7ea641621a2",
+    "advertised-native-inputs.json": "d1302e2ae160f6845f7712e11468a74f195e4f7cd124d94b3beca7fce383290f",
+    "advertisement-spans.jsonl.gz": "7b73b28c1cde48a1f2fe12f536fdcf4c5f1d5fa226b9e3b28898bcfbe2c3cd66",
+    "claims.json": "85d7104f3d36415df9bd1d676857d223d544496e2d5dda9a2f14b28806883393",
+    "coverage-blocks.json": "7c4b897df6940ee97a8f4b79becddfad112bd280d6db7b5c6e37ceef29ebd86f",
+    "deduplication.json": "5937bed1f10e4f8a52fbc1beffa61d0ad1f96a5719c881a1c0e4093b48dae876",
+    "native-frontiers.json": "a1c4403d73bfae488f42b4808cedb27597223e5bba7aba7e8e0f9cd2c588eddb",
+    "source-audit.json": "507e3658d29604e21c0a285eb89752ec2e846c99e8b760f42d2489c062b993af"
+  },
+  "canonical_claim_count": 244,
+  "command": "python3 research-roadmap/claim-ledger/check.py --negative-controls --require-complete",
+  "errors": [],
+  "gate_blockers": [],
+  "ledger_consistent": true,
+  "negative_controls": [
+    {
+      "name": "contradictory_active_outcome",
+      "rejected": true
+    },
+    {
+      "name": "missing_immutable_certificate",
+      "rejected": true
+    },
+    {
+      "name": "missing_native_certificate_anchor",
+      "rejected": true
+    },
+    {
+      "name": "duplicate_claim_identifier",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_physical_charge_translation",
+      "rejected": true
+    },
+    {
+      "name": "omitted_homogeneous_correction_slot",
+      "rejected": true
+    },
+    {
+      "name": "omitted_semantic_document_review",
+      "rejected": true
+    },
+    {
+      "name": "omitted_advertised_native_occurrence",
+      "rejected": true
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,1929 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/resume_physical",
+  "documents": [
+    {
+      "sha256": "223be3ee86bdf53e6a71def771f98bb6bbb6e233ecfb7e980a01b86f659ffdce",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-sp3-detector-diagnostics",
+        "sp3-omega-exact-fortuity"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 3–46; Added results",
+          "claim_ids": [
+            "sp3-omega-exact-fortuity",
+            "public-fortuity-sp3-detector-diagnostics"
+          ],
+          "description": "Spacetime-first omega tuple, complete stable and finite dimensions, stable acyclicity, 181 complete relations, rational rank116 and quotient dimension1; detector is for the existing class."
+        },
+        {
+          "location": "lines 48–129; Full native regeneration / Exact rational identities / Original rational omega",
+          "claim_ids": [
+            "sp3-omega-exact-fortuity"
+          ],
+          "description": "Complete finite frames, all predecessor/outgoing rows, exact CRT bound and three-prime identity certificate, independent integer relation-image rank, and unchanged 819-coefficient/4264-term rational omega with 4502-term derivative."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 131–159; Inputs and reproduction",
+          "reason": "Pins, dependency versions, commands and payload distribution rules are reproduction metadata. They do not add an operator or differential claim."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 159-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "944f11514a663ab271e4165043b4d8b0c4ecabedaeda8c5767c02c02b4d4d3cd",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-so11-global-return-identity",
+        "public-fortuity-so11-scalar-relation-quotient",
+        "public-fortuity-so11-two-coordinate-comparison",
+        "public-fortuity-sp3-detector-diagnostics",
+        "so11-aligned-source-fortuity-zero",
+        "sp-rank-window",
+        "sp3-omega-exact-fortuity"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 14–53; complete rational Sp(3) detector",
+          "claim_ids": [
+            "sp3-omega-exact-fortuity",
+            "public-fortuity-sp3-detector-diagnostics"
+          ],
+          "description": "Complete exact quotient and all source-identity annihilations, forty-term detector and stable acyclicity; precise CRT and rank certificates."
+        },
+        {
+          "location": "lines 55–76; rank window",
+          "claim_ids": [
+            "sp-rank-window"
+          ],
+          "description": "All four displayed cohomology rows and the all-ranks-at-least-four vanishing proof from source injectivity and symplectic block embedding; scope is one fixed highest-weight grading."
+        },
+        {
+          "location": "lines 78–101; direct candidate scoring",
+          "claim_ids": [
+            "public-fortuity-sp3-detector-diagnostics"
+          ],
+          "description": "Complete transposed source scoring, 187 candidates/186 nonzero coefficients, full source/predecessor/relation checks and trace-partition support diagnostics."
+        },
+        {
+          "location": "lines 103–151; SO(11) comparison",
+          "claim_ids": [
+            "public-fortuity-so11-scalar-relation-quotient",
+            "public-fortuity-so11-global-return-identity",
+            "public-fortuity-so11-two-coordinate-comparison",
+            "so11-aligned-source-fortuity-zero"
+          ],
+          "description": "Complete 21-to-17 scalar relation map, rank16 dual, Dot and Codex pairings, global factor25200, actual sixteen-term preimage, zero aligned fortuity and failure of the two old coordinate probes."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 153–175; Enumeration principle",
+          "reason": "The abstract long-exact-sequence/row-intersection identities are standard method background, explicitly not a new homological theorem; their concrete N4 applications are mapped above."
+        },
+        {
+          "location": "lines 177–196; Files and reproduction",
+          "reason": "Navigation and reproducibility instructions. The stated absence of new states, quantum maps, Wick metrics and physical observables is retained as the scope limitation of the mapped claims."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 196-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "ba016ff4f794699879b5355c652fe0856483392eefb38fb8dd69c6f26d7c5d83",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "sp-rank-window",
+        "sp3-omega-exact-fortuity"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 3–57; Exact dimensions and ranks",
+          "claim_ids": [
+            "sp-rank-window",
+            "sp3-omega-exact-fortuity"
+          ],
+          "description": "Complete adjacent-space dimensions at Sp(1) through Sp(5), exact incoming/outgoing rank saturation and the rational one-dimensional Sp(3) lower-bound argument."
+        },
+        {
+          "location": "lines 59–102; every N>=4",
+          "claim_ids": [
+            "sp-rank-window"
+          ],
+          "description": "Source trace generation and injectivity at Sp(4), restriction I_N subset I_4=0, embedding of the outgoing minor, fixed-block vanishing at every larger rank, and lower-rank boundary restrictions."
+        },
+        {
+          "location": "lines 104–119; chosen-lift control",
+          "claim_ids": [
+            "sp-rank-window"
+          ],
+          "description": "All six exact Sp(4) chosen-derivative evaluations are sample controls; the full rank argument, rather than these samples, excludes every closed lift."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 121–169; Reproduce / Inputs and files",
+          "reason": "Portability, command and artifact details describe the historical certificate. No new lower-rank scan is authorized or performed by this review."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 169-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "681b4aaa41e5b37fbfbaa96c8d434b84ba25fea297d2f00cf1c5441effa7607c",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-sp3-detector-diagnostics",
+        "public-fortuity-su3-streaming-arithmetic-control",
+        "sp3-omega-exact-fortuity"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 3–105; Main result / actual Sp(3) block",
+          "claim_ids": [
+            "sp3-omega-exact-fortuity",
+            "public-fortuity-sp3-detector-diagnostics"
+          ],
+          "description": "Forty-entry rational detector, exact score split, full181 relation annihilation and the CRT-supported exact quotient dimension."
+        },
+        {
+          "location": "lines 107–190; direct dual and coordinate support",
+          "claim_ids": [
+            "public-fortuity-sp3-detector-diagnostics"
+          ],
+          "description": "402-entry modular factorization, exact-rank dimension arithmetic, full eleven-row rational partition-rank table, and the precise distinction between field-level factorization and rational intrinsic dual."
+        },
+        {
+          "location": "lines 192–227; Streaming dual updates",
+          "claim_ids": [
+            "public-fortuity-su3-streaming-arithmetic-control"
+          ],
+          "description": "Finite supplied-matrix arithmetic benchmark, both primes, complete four-profile sequence, all pairings, matrix-entry counts and timing limitations."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 42–73 and 107–146; abstract connecting and row-intersection formulas",
+          "reason": "Standard finite-dimensional linear algebra explains the detector; it is not an additional novel N4 theorem."
+        },
+        {
+          "location": "lines 229–268; Reproduction and scientific limits",
+          "reason": "Operational instructions are not separate results. Candidate closure/highest-weight requirements and the absence of a Wick-bra interpretation are included in the mapped detector limitations."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 268-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "83ea5dbb59e87454d006919824e01cd05cda5e189d3dd8accd328ab1f2446683",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-sp3-detector-diagnostics"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 3–26; complete transpose verification",
+          "claim_ids": [
+            "public-fortuity-sp3-detector-diagnostics"
+          ],
+          "description": "187 inverse-splitting candidates, 186 nonzero integer source coefficients, maximum522, all2870 direct-score agreements,2624 predecessor and181 source-identity zeros, unchanged omega score1."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 28–55; use and timing scope",
+          "reason": "Scorer usage and seven-trial timing metadata; the exact source-functional certificate is the mathematical result and no complete enumeration speedup is inferred."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 55-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "6d219c1f8cbd489b377e4393d1168f76df16a1d4d1014adec7ce9ac1a0cfafe1",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-so11-global-return-identity",
+        "public-fortuity-so11-scalar-relation-quotient",
+        "public-fortuity-so11-two-coordinate-comparison",
+        "so11-aligned-source-fortuity-zero"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 8–169; complete scalar relation quotient",
+          "claim_ids": [
+            "public-fortuity-so11-scalar-relation-quotient"
+          ],
+          "description": "Full pre-return scalar source/target spaces, all21/17 relation dimensions, rank16, explicit six-coordinate dual, Gram membership and exact completeness, stable odd-trace primitive, and three actual relation-boundary identities."
+        },
+        {
+          "location": "lines 171–244; constructive Codex comparison",
+          "claim_ids": [
+            "public-fortuity-so11-global-return-identity",
+            "so11-aligned-source-fortuity-zero"
+          ],
+          "description": "Unchanged scalar Pfaffian ancestor score -189/128, all seventeen coordinates, all sixteen genuine predecessor coefficients, global factor25200 and stable-closed-lift construction for the aligned leading class."
+        },
+        {
+          "location": "lines 246–252; global audit requirement",
+          "claim_ids": [
+            "public-fortuity-so11-global-return-identity"
+          ],
+          "description": "Complete1000 marker monomials,36 assignments,32 ghost distributions and222+54 original weights are separate global evidence; the two old probes cannot replace it."
+        },
+        {
+          "location": "lines 254–276; two-probe countercertificate",
+          "claim_ids": [
+            "public-fortuity-so11-two-coordinate-comparison"
+          ],
+          "description": "Two genuine relation-image vectors span the two old coordinates, determinant -4718592, and the historical aligned two-vector decomposition is explicitly only a coordinate equality."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 278–321; Replay / Inputs and limits",
+          "reason": "Commands, dependencies and pins explain historical reproducibility; no full larger post-return singlet enumeration, physical metric or complete stable quantum lift is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 321-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "67c5c3ca7470f120179e1fe1794dc5a80af6ce11cbc7b2c83b74652fd75d30f7",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-so11-global-return-identity",
+        "so11-aligned-source-fortuity-zero"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 3–22 and 53–68; Result and check inventory",
+          "claim_ids": [
+            "public-fortuity-so11-global-return-identity"
+          ],
+          "description": "Exact positive25200 coefficient-operator identity, original scalar/first-jet coefficient-oracle conventions, full check counts and table hash."
+        },
+        {
+          "location": "lines 70–248; Global operator argument",
+          "claim_ids": [
+            "public-fortuity-so11-global-return-identity"
+          ],
+          "description": "Full degree bookkeeping, finite-colour Pfaffian degree bound, six physical substitutions and Fischer transposition, all marker permutations and signs, complete1000 monomials, repeated-trace multiplicities, cyclic/reversal descent and all32 ghost splittings."
+        },
+        {
+          "location": "lines 250–268; Scope in fortuitous calculation",
+          "claim_ids": [
+            "public-fortuity-so11-global-return-identity",
+            "so11-aligned-source-fortuity-zero"
+          ],
+          "description": "Combination arithmetic is valid only together with the separately complete scalar quotient and actual sixteen-term predecessor; finite class nonvanishing and full quantum stable lift remain undecided."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 24–51; Reproduction",
+          "reason": "Dependency, source-hash and invocation details are reproduction metadata, not additional mathematical or physical claims."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 268-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "c3f79cbbbbc366cdd1cc2d97bca12d83f243683b89d3cb25be84cf653dcb5579",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-so11-two-coordinate-comparison",
+        "so11-power6-d3",
+        "so11-power6-d3-codex"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 9–46; conventions and exact answer",
+          "claim_ids": [
+            "public-fortuity-so11-two-coordinate-comparison"
+          ],
+          "description": "Two unchanged stable-derivative coefficient vectors, determinant2654208000 and aligned chosen-lift vector. This establishes formal independence and literal nonclosure only."
+        },
+        {
+          "location": "lines 48–95; regenerated data",
+          "claim_ids": [
+            "public-fortuity-so11-two-coordinate-comparison",
+            "so11-power6-d3",
+            "so11-power6-d3-codex"
+          ],
+          "description": "Historical exact restricted endpoint regeneration and independent coordinate arithmetic, with original scalar operation/odd-return order and reversal factor. Existing third coefficients -24576000 and8640 cancel in the aligned combination."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 97–128; Pins and reproduction",
+          "reason": "Immutable inputs, hash and portable reproduction instructions are artifact metadata."
+        },
+        {
+          "location": "lines 130–136; Remaining question",
+          "reason": "This question was open in the earlier coordinate report and is answered by the later complete relation/preimage certificate. It is not a new currently unresolved scientific claim."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 136-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. The later so11-aligned-source-fortuity-zero record settles the old quotient-obstruction question. The numerical two-coordinate results themselves remain valid and are retained with historical scope."
+    },
+    {
+      "sha256": "2241d9a9bb16dec04a192068f9f7112c1677d5c18cf5713558dec151a67e95f3",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-f4-native-bianchi-negative",
+        "public-fortuity-trace-enumeration-benchmark"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 1–69; alternative construction and executed results",
+          "claim_ids": [
+            "public-fortuity-f4-native-bianchi-negative"
+          ],
+          "description": "All936 positive-order mark coefficients and all native equations retained on the fixed thirteen curves; leading dimensions enlarge on seven curves, but every additional evaluation is dependent and bounds remain1/2. Separate degree-five search and lack of speed gain are retained."
+        },
+        {
+          "location": "lines 92–103; Independent native catalogue audit",
+          "claim_ids": [
+            "public-fortuity-trace-enumeration-benchmark"
+          ],
+          "description": "Separate algorithm audit of dtype/shape, boundary and invalid-input cases and10000 sanitized canonicalizations; this is not evidence for the local Bianchi result."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 71–90 and 105–107; Reproduction",
+          "reason": "Command and dependency details define the historical finite experiment. They are not instructions executed in this review."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 107-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "926adcba85af2ae86c36fc82bff21c5d2f352c988effb0c2ae4550d402be0d05",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "public-fortuity-trace-enumeration-benchmark"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 14–49; Measured result",
+          "claim_ids": [
+            "public-fortuity-trace-enumeration-benchmark"
+          ],
+          "description": "All degree6–10 counts and wall-time observations, exact degree-fourteen catalogue size, all474 recipes/8283801 coefficients, and the explicitly mixed full-source-replay performance."
+        },
+        {
+          "location": "lines 51–125; What changes",
+          "claim_ids": [
+            "public-fortuity-trace-enumeration-benchmark"
+          ],
+          "description": "Exact labelled enumeration argument and recurrence, signed fixed-content catalogue and Burnside count, one-to-four-colour/length2–31 API boundary, and retained slower repeated-content case."
+        },
+        {
+          "location": "lines 127–153; Exact verification",
+          "claim_ids": [
+            "public-fortuity-trace-enumeration-benchmark"
+          ],
+          "description": "Complete coordinate/action/native-evaluation checks, source recipe equality, independent canonicalizer and native API audits, without a new rank or cohomology assertion."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 108–115; prior enumeration literature",
+          "reason": "Attribution to established necklace/bracelet algorithms; the external algorithm complexity theorem is expressly not claimed for this implementation."
+        },
+        {
+          "location": "lines 155–184; Reproduce and status",
+          "reason": "Commands and opt-in adapter behavior are software-use metadata. The claim explicitly excludes new physical lifts or fortuitous families."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 184-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    },
+    {
+      "sha256": "54a104f080a6017b8f8a11d5623c3ab3d1e816f83c870752b9ea975b42f9139c",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "f4-degree8-colour-and-quartic-arms",
+        "public-fortuity-f4-native-bianchi-negative",
+        "public-fortuity-trace-enumeration-benchmark"
+      ],
+      "covered_assertions": [
+        {
+          "location": "lines 9–33; required trace orbits",
+          "claim_ids": [
+            "public-fortuity-trace-enumeration-benchmark"
+          ],
+          "description": "Coordinate-preserving catalogue improvement and its finite performance scope, with no full-solver acceleration conclusion."
+        },
+        {
+          "location": "lines 35–48; exact constraint solving",
+          "claim_ids": [
+            "public-fortuity-f4-native-bianchi-negative"
+          ],
+          "description": "Historical simultaneous native local Bianchi test, more complete higher-mark ansatz and unchanged bounds1/2."
+        },
+        {
+          "location": "lines 83–94; existing exceptional tensor result",
+          "claim_ids": [
+            "f4-degree8-colour-and-quartic-arms",
+            "public-fortuity-trace-enumeration-benchmark"
+          ],
+          "description": "The already known degree-eight F4 invariant count2877+14=2891 is attributed to the separate complete invariant-space record. The closed-trace enumerator does not act on open matrix words between Albert covariants."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "lines 1–8, 50–54; baseline and prior methods",
+          "reason": "Scheduling/baseline context and pointers to already existing augmented-rank and Smith-valuation methods do not create a new scientific result."
+        },
+        {
+          "location": "lines 20–27, 56–81; cited enumeration, giant-graviton and exceptional-tensor literature",
+          "reason": "Literature is method background: no interacting full-jet differential is obtained from a giant-graviton/index expansion, and fullness of an Albert diagrammatic functor alone does not certify a local rewriting system. External papers are not independently reviewed in this fixed eleven-document lane."
+        },
+        {
+          "location": "lines 86–88 and 96–101; future route and claims made",
+          "reason": "The proposed covariant transport network is prospective and its corrected pairing is not established by this report; the stated new-physical-lift and generator-family counts are both zero."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Read the complete 101-line immutable source, including all scope and normalization qualifications. This is semantic/status review only; no stated construction, scan or projection is rerun. "
+    }
+  ],
+  "additional_claims": [
+    {
+      "id": "public-fortuity-sp3-detector-diagnostics",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "Sp(3)=USp(6)",
+      "title": "Exact support diagnostics and transposed scoring for the known Sp(3) omega detector",
+      "proposition": {
+        "key": "public-fortuity/sp3-detector-diagnostics",
+        "value": {
+          "same_known_class": "The complete one-dimensional rational quotient is sp3-omega-exact-fortuity; this record isolates its additional coefficient-support and scoring diagnostics.",
+          "intrinsic_target_functional": {
+            "nonzero_integer_coefficients": 40,
+            "maximum_absolute_coefficient": 282,
+            "annihilated_source_relation_dimension": 181,
+            "pairing_with_unchanged_omega": "1",
+            "partition_pairings": [
+              "52793/144",
+              "-2989/9",
+              "157/3",
+              "1139/36",
+              "-5639/48"
+            ],
+            "sum": "1"
+          },
+          "complete_partition_table": [
+            {
+              "trace_lengths": [
+                2,
+                2,
+                2,
+                4
+              ],
+              "coordinates": 82,
+              "relation_image_rank": 21,
+              "rank_with_omega_derivative": 21
+            },
+            {
+              "trace_lengths": [
+                2,
+                2,
+                3,
+                3
+              ],
+              "coordinates": 68,
+              "relation_image_rank": 13,
+              "rank_with_omega_derivative": 13
+            },
+            {
+              "trace_lengths": [
+                2,
+                2,
+                6
+              ],
+              "coordinates": 454,
+              "relation_image_rank": 101,
+              "rank_with_omega_derivative": 101
+            },
+            {
+              "trace_lengths": [
+                2,
+                3,
+                5
+              ],
+              "coordinates": 392,
+              "relation_image_rank": 43,
+              "rank_with_omega_derivative": 43
+            },
+            {
+              "trace_lengths": [
+                2,
+                4,
+                4
+              ],
+              "coordinates": 182,
+              "relation_image_rank": 21,
+              "rank_with_omega_derivative": 21
+            },
+            {
+              "trace_lengths": [
+                2,
+                8
+              ],
+              "coordinates": 1444,
+              "relation_image_rank": 116,
+              "rank_with_omega_derivative": 117
+            },
+            {
+              "trace_lengths": [
+                3,
+                3,
+                4
+              ],
+              "coordinates": 68,
+              "relation_image_rank": 13,
+              "rank_with_omega_derivative": 13
+            },
+            {
+              "trace_lengths": [
+                3,
+                7
+              ],
+              "coordinates": 452,
+              "relation_image_rank": 43,
+              "rank_with_omega_derivative": 43
+            },
+            {
+              "trace_lengths": [
+                4,
+                6
+              ],
+              "coordinates": 458,
+              "relation_image_rank": 102,
+              "rank_with_omega_derivative": 102
+            },
+            {
+              "trace_lengths": [
+                5,
+                5
+              ],
+              "coordinates": 272,
+              "relation_image_rank": 54,
+              "rank_with_omega_derivative": 54
+            },
+            {
+              "trace_lengths": [
+                10
+              ],
+              "coordinates": 2148,
+              "relation_image_rank": 116,
+              "rank_with_omega_derivative": 117
+            }
+          ],
+          "support_consequence": "A single-trace detector and a detector supported only on trace lengths (2,8) exist; no other individual trace-length partition separates this derivative from the relation image. The forty-term support is not claimed minimal.",
+          "transposed_source_functional": {
+            "candidate_words": 187,
+            "nonzero_integer_coefficients": 186,
+            "maximum_absolute_coefficient": 522,
+            "supported_words_present_in_omega": 106,
+            "direct_scoring_agreements": 2870,
+            "predecessor_images_annihilated": 2624,
+            "source_relations_annihilated": 181,
+            "omega_score": "1"
+          },
+          "separate_modular_factorization": {
+            "nonzero_target_coefficients": 402,
+            "identity": "ell Q_st=b pi",
+            "formal_source_columns_checked": 2870,
+            "formal_predecessor_rows_checked": 2624,
+            "outgoing_coordinates_checked": 1281,
+            "minor_determinant_mod_1000003": 452105,
+            "row_intersection_dimension": 1082,
+            "outgoing_dual_coboundary_dimension": 1081,
+            "dual_quotient_dimension": 1,
+            "stacked_rank": 2805,
+            "status": "The 402-coefficient factorization is explicitly modular; its dimensions are derived from the complete companion complex. The 40-coefficient annihilation and score are rational."
+          }
+        }
+      },
+      "charges": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          5,
+          0,
+          0,
+          3,
+          3
+        ],
+        "letter_length": 9,
+        "twice_energy": 26,
+        "twice_R": [
+          14,
+          4,
+          4
+        ],
+        "twice_J_left": 2,
+        "twice_J_right": 0,
+        "physical_level": 28,
+        "original_package_order": [
+          "n_plus",
+          "n_minus",
+          "theta1",
+          "theta2",
+          "theta3"
+        ],
+        "original_package_tuple": [
+          3,
+          3,
+          5,
+          0,
+          0
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/positive_sector/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/positive_sector/README.md#L3-L11",
+          "sha256": "223be3ee86bdf53e6a71def771f98bb6bbb6e233ecfb7e980a01b86f659ffdce",
+          "anchor": "L3-L11"
+        }
+      },
+      "source": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          5,
+          0,
+          0,
+          3,
+          3
+        ],
+        "letter_length": 9,
+        "twice_energy": 26,
+        "twice_R": [
+          14,
+          4,
+          4
+        ],
+        "twice_J_left": 2,
+        "twice_J_right": 0,
+        "physical_level": 28,
+        "original_package_order": [
+          "n_plus",
+          "n_minus",
+          "theta1",
+          "theta2",
+          "theta3"
+        ],
+        "original_package_tuple": [
+          3,
+          3,
+          5,
+          0,
+          0
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/positive_sector/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/positive_sector/README.md#L3-L11",
+          "sha256": "223be3ee86bdf53e6a71def771f98bb6bbb6e233ecfb7e980a01b86f659ffdce",
+          "anchor": "L3-L11"
+        }
+      },
+      "target": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          5,
+          0,
+          0,
+          3,
+          3
+        ],
+        "letter_length": 10,
+        "twice_energy": 27,
+        "twice_R": [
+          15,
+          5,
+          5
+        ],
+        "twice_J_left": 1,
+        "twice_J_right": 0,
+        "physical_level": 28
+      },
+      "order": "classical",
+      "direction": "not_applicable",
+      "field": "Q for the intrinsic detector, transpose and partition ranks; F_1000003 for the separately stated 402-term factorization",
+      "normalization": "Original 4264-term rational omega, from 819 source coefficients with common denominator 13824, is unchanged. The forty-entry target functional pairs to one; its actual ordered native words are specified by sp3_intrinsic_dual.json. The transposed source functional uses the pinned original Q0 signs and coefficients. Neither functional is a physical bra.",
+      "scope": {
+        "description": "The complete highest-weight block at spacetime-first tuple (3,3,5,0,0), equivalently theta-first (5,0,0;3,3), source length nine. All partition ranks and rational annihilation checks are complete for this block; the modular direct-factorization result retains its distinct field.",
+        "completeness": "Exactly the stated block, input family or finite benchmark; no enlargement beyond its advertised completeness.",
+        "physical_identification": "A formal coefficient certificate or arithmetic benchmark only; no physical Wick bra, Hilbert metric or untwisted matrix element is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/enumeration/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/enumeration/README.md#L3-L190",
+          "sha256": "681b4aaa41e5b37fbfbaa96c8d434b84ba25fea297d2f00cf1c5441effa7607c",
+          "anchor": "L3-L190"
+        },
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/transpose_detector/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/transpose_detector/README.md#L1-L26",
+          "sha256": "83ea5dbb59e87454d006919824e01cd05cda5e189d3dd8accd328ab1f2446683",
+          "anchor": "L1-L26"
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "attributed_public_certificate",
+      "supersedes": [],
+      "limitations": [
+        "Semantic review records the immutable public report and its literal scope; it performs no scientific replay, new projection, new scan or physical matrix-element calculation.",
+        "An arbitrary candidate must separately satisfy finite Q0 closure and highest-weight membership before a detector score has a cohomology meaning.",
+        "Individual partition contributions to the score are not cohomology invariants.",
+        "The seven paired timing trials measure scoring on an already loaded cochain only, excluding parsing, detector construction, closure and enumeration. No end-to-end speedup is asserted."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/fortuitous_duals_20261123/enumeration/README.md:L3-L190",
+        "algorithms/fortuitous_duals_20261123/transpose_detector/README.md:L1-L26"
+      ]
+    },
+    {
+      "id": "public-fortuity-so11-scalar-relation-quotient",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "SO(11)",
+      "title": "The complete scalar SO(11) relation map has rank sixteen and a six-coordinate fortuity dual",
+      "proposition": {
+        "key": "public-fortuity/so11-scalar-relation-quotient",
+        "value": {
+          "cochain_dimensions": {
+            "stable_predecessor": 4529,
+            "finite_predecessor": 4508,
+            "stable_terminal": 962,
+            "finite_terminal": 945
+          },
+          "relation_dimensions": {
+            "predecessor": 21,
+            "terminal": 17,
+            "classical_image_rank": 16,
+            "terminal_quotient": 1
+          },
+          "complete_scope": "Scalar BMN block before six odd returns; terminal scalar weight (5,5,5), length fifteen; predecessor thirteen scalars and one matter fermion, length fourteen. Taylor branching shape is (3,3,3,3,3).",
+          "dual": [
+            {
+              "ordered_traces": "AA.AA.ABBBBBC.CC.CC",
+              "coefficient": "-1/640"
+            },
+            {
+              "ordered_traces": "AA.AA.ABBBBCB.CC.CC",
+              "coefficient": "-3/5120"
+            },
+            {
+              "ordered_traces": "AA.AA.ABBBC.BB.CC.CC",
+              "coefficient": "-9/3200"
+            },
+            {
+              "ordered_traces": "AA.AA.ABBBCBB.CC.CC",
+              "coefficient": "-1/5120"
+            },
+            {
+              "ordered_traces": "AA.AA.ABBCB.BB.CC.CC",
+              "coefficient": "-17/12800"
+            },
+            {
+              "ordered_traces": "AA.AA.ABBCB.BB.CCCC",
+              "coefficient": "-1/2560"
+            }
+          ],
+          "seed_pairings": {
+            "Pi G_cycle": "1",
+            "Pi G_path3": "-1/2",
+            "Pi G_path3-alt": "-1/50",
+            "Pi(G_cycle-5 G_path3+(500/3)G_path3-alt)": "1/6"
+          },
+          "membership_and_completeness": "Twenty-one signed 12-by-12 Gram predecessor identities on 28 endpoints, with two remaining metric edges and one matter edge Q0(psi_BC)=BC-CB; source minor 681334 modulo 1000003. Sixteen images plus Pi G_cycle have terminal minor 263827 modulo 1000003. Character upper bounds 21 and 17 make both frames complete over Q.",
+          "full_checks": {
+            "source_dual_annihilations": 21,
+            "additional_high_factor_image_coordinates": 39963,
+            "rational_image_rank": 16
+          },
+          "boundary_relations": [
+            "Pi G_path3+(1/2)Pi G_cycle",
+            "Pi G_path3-alt+(1/50)Pi G_cycle",
+            "Pi(G_cycle-5 G_path3+(500/3)G_path3-alt)-(1/6)Pi G_cycle"
+          ],
+          "stable_terminal_acyclicity": "Every total-length-fifteen scalar word contains an odd trace factor and admits the source literal reversal primitive Q0 h_B(word)=word. Consequently every terminal relation has a stable primitive, so the quotient detects exactly one finite-source fortuitous direction."
+        }
+      },
+      "charges": {
+        "source": {
+          "coordinate_order": [
+            "theta1",
+            "theta2",
+            "theta3",
+            "n_plus",
+            "n_minus"
+          ],
+          "native_weight": [
+            5,
+            5,
+            5,
+            0,
+            0
+          ],
+          "letter_length": 14,
+          "twice_energy": 29,
+          "twice_R": [
+            9,
+            9,
+            9
+          ],
+          "twice_J_left": 1,
+          "twice_J_right": 0,
+          "physical_level": 30
+        },
+        "target": {
+          "coordinate_order": [
+            "theta1",
+            "theta2",
+            "theta3",
+            "n_plus",
+            "n_minus"
+          ],
+          "native_weight": [
+            5,
+            5,
+            5,
+            0,
+            0
+          ],
+          "letter_length": 15,
+          "twice_energy": 30,
+          "twice_R": [
+            10,
+            10,
+            10
+          ],
+          "twice_J_left": 0,
+          "twice_J_right": 0,
+          "physical_level": 30
+        },
+        "physical_level_convention": "j=2(E+J_L)=30",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/so11/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/so11/README.md#L17-L24",
+          "sha256": "6d219c1f8cbd489b377e4393d1168f76df16a1d4d1014adec7ce9ac1a0cfafe1",
+          "anchor": "L17-L24"
+        }
+      },
+      "source": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          5,
+          5,
+          5,
+          0,
+          0
+        ],
+        "letter_length": 14,
+        "twice_energy": 29,
+        "twice_R": [
+          9,
+          9,
+          9
+        ],
+        "twice_J_left": 1,
+        "twice_J_right": 0,
+        "physical_level": 30
+      },
+      "target": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          5,
+          5,
+          5,
+          0,
+          0
+        ],
+        "letter_length": 15,
+        "twice_energy": 30,
+        "twice_R": [
+          10,
+          10,
+          10
+        ],
+        "twice_J_left": 0,
+        "twice_J_right": 0,
+        "physical_level": 30
+      },
+      "order": "classical",
+      "direction": "outgoing",
+      "field": "Q",
+      "normalization": "Original defining traces, scalar singlet operation Pi, odd-trace primitive h_B and signed Gram seeds are retained. The six rational dual coefficients are displayed explicitly and pair to one on Pi G_cycle without rescaling the source. Matter splitting is exactly BC-CB; source and terminal minors refer to the integerized numerators of the original flavour operation.",
+      "scope": {
+        "description": "The entire 21-to-17 rational relation map in the specified scalar flavour block, before odd returns. The full stable 4529-to-962 cochain map and the larger post-return singlet block are not enumerated by this certificate.",
+        "completeness": "Exactly the stated block, input family or finite benchmark; no enlargement beyond its advertised completeness.",
+        "physical_identification": "A formal coefficient certificate or arithmetic benchmark only; no physical Wick bra, Hilbert metric or untwisted matrix element is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/so11/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/so11/README.md#L8-L169",
+          "sha256": "6d219c1f8cbd489b377e4393d1168f76df16a1d4d1014adec7ce9ac1a0cfafe1",
+          "anchor": "L8-L169"
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "attributed_public_certificate",
+      "supersedes": [],
+      "limitations": [
+        "Semantic review records the immutable public report and its literal scope; it performs no scientific replay, new projection, new scan or physical matrix-element calculation.",
+        "Character and Taylor-branching counts use the same pinned orthogonal invariant-tensor character and do not independently reprove the orthogonal second fundamental theorem.",
+        "Historical scalar-flavour projection formulas are source definitions read for this audit; no projection was executed.",
+        "This is a scalar classical quotient result. The later aligned post-return comparison additionally requires the separately recorded global return identity."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/fortuitous_duals_20261123/so11/README.md:L8-L169"
+      ]
+    },
+    {
+      "id": "public-fortuity-so11-global-return-identity",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "SO(11)",
+      "title": "Six ordered odd returns give the exact global SO(11) Pfaffian multiplier 25200",
+      "proposition": {
+        "key": "public-fortuity/so11-global-return-identity",
+        "value": {
+          "identity": "P^6 G_C=25200 R_C for every ordered trace coefficient in the specified homogeneous degree, including repeated trace products.",
+          "source_definition": "G_C uses the universal exp((1/2)Tr log(1+A)) Pfaffian series with PfaffianCoefficient(5,0) scalar differential weights, exterior mask zero, doubles=0, and no external minus sign.",
+          "target_definition": "R_C is exactly the original PfaffianCoefficient(3,0) oracle, including its prescribed external marker-colour minus sign.",
+          "ordered_returns": [
+            "A-",
+            "A+",
+            "B-",
+            "B+",
+            "C-",
+            "C+"
+          ],
+          "determinant_identity": "det(partial_X)^2(det X)^5=(5*6*7)*(4*5*6)*(det X)^3=25200*(det X)^3.",
+          "complete_checks": {
+            "scalar_marker_monomials": 1000,
+            "nonzero_returned_monomials": 54,
+            "admissible_marker_label_assignments": 36,
+            "original_factorial_weights_order_three": 54,
+            "original_factorial_weights_order_five": 222,
+            "coefficient_method_checks": 2376,
+            "trace_multiplicity_patterns": 44,
+            "rejected_masks_or_double_ghost_grade": 64,
+            "ghost_splittings_among_trace_factors": 32
+          },
+          "marker_table_sha256": "4b17601b362e4a365fa0d5049aabc3f212211bc69f8e29f9e2e2db4e0df53586",
+          "global_proof_scope": "Both coefficient functionals vanish outside row degree (3,3,3); each universal ordered-trace coefficient is a linear combination of the complete 1000 marker monomials. The identity therefore holds before selecting ordered trace probes.",
+          "sign_accounting": "Left derivative removals have inversion count six for identity plus/minus assignments. Left marker insertion instead reverses six markers and yields -25200, while the original oracle already incorporates the separate marker-colour sign (-1)^15. The physical ordered return coefficient multiplying the unchanged oracle is positive 25200.",
+          "multiplicities": "The logarithm factor (-1)^(length+1)/(2*length) and exponential trace-multiplicity factorials are retained. No division by 6! or number of returns occurs."
+        }
+      },
+      "charges": {
+        "source": {
+          "coordinate_order": [
+            "theta1",
+            "theta2",
+            "theta3",
+            "n_plus",
+            "n_minus"
+          ],
+          "native_weight": [
+            5,
+            5,
+            5,
+            0,
+            0
+          ],
+          "letter_length": 15,
+          "twice_energy": 30,
+          "twice_R": [
+            10,
+            10,
+            10
+          ],
+          "twice_J_left": 0,
+          "twice_J_right": 0,
+          "physical_level": 30
+        },
+        "target": {
+          "coordinate_order": [
+            "theta1",
+            "theta2",
+            "theta3",
+            "n_plus",
+            "n_minus"
+          ],
+          "native_weight": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "letter_length": 15,
+          "twice_energy": 36,
+          "twice_R": [
+            12,
+            12,
+            12
+          ],
+          "twice_J_left": 0,
+          "twice_J_right": 0,
+          "physical_level": 36
+        },
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/so11_independent_audit/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/so11_independent_audit/README.md#L89-L102",
+          "sha256": "67c5c3ca7470f120179e1fe1794dc5a80af6ce11cbc7b2c83b74652fd75d30f7",
+          "anchor": "L89-L102"
+        }
+      },
+      "source": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          5,
+          5,
+          5,
+          0,
+          0
+        ],
+        "letter_length": 15,
+        "twice_energy": 30,
+        "twice_R": [
+          10,
+          10,
+          10
+        ],
+        "twice_J_left": 0,
+        "twice_J_right": 0,
+        "physical_level": 30
+      },
+      "target": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "letter_length": 15,
+        "twice_energy": 36,
+        "twice_R": [
+          12,
+          12,
+          12
+        ],
+        "twice_J_left": 0,
+        "twice_J_right": 0,
+        "physical_level": 36
+      },
+      "order": "classical",
+      "direction": "not_applicable",
+      "field": "Q",
+      "normalization": "The exact unchanged Pfaffian coefficient conventions and ordered six odd returns are stated in the proposition; the original scalar oracle has no external odd-marker sign, whereas the target oracle coefficient is -Fraction(value,multiplicity). The pinned oracle file SHA256 is eeb6d6d3acb94df435bbac3424c695abcd82156c569e2c9aa37be5676f553033.",
+      "scope": {
+        "description": "Global coefficient-functional identity in total length fifteen, from scalar weights (5,5,5) to scalar weights (3,3,3) and dotted counts (3,3), with doubles=0. This is complete in that degree and sector, not across arbitrary degrees.",
+        "completeness": "Exactly the stated block, input family or finite benchmark; no enlargement beyond its advertised completeness.",
+        "physical_identification": "A formal coefficient certificate or arithmetic benchmark only; no physical Wick bra, Hilbert metric or untwisted matrix element is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/so11_independent_audit/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/so11_independent_audit/README.md#L3-L22",
+          "sha256": "67c5c3ca7470f120179e1fe1794dc5a80af6ce11cbc7b2c83b74652fd75d30f7",
+          "anchor": "L3-L22"
+        },
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/so11_independent_audit/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/so11_independent_audit/README.md#L70-L248",
+          "sha256": "67c5c3ca7470f120179e1fe1794dc5a80af6ce11cbc7b2c83b74652fd75d30f7",
+          "anchor": "L70-L248"
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "attributed_public_certificate",
+      "supersedes": [],
+      "limitations": [
+        "Semantic review records the immutable public report and its literal scope; it performs no scientific replay, new projection, new scan or physical matrix-element calculation.",
+        "This certificate proves the global return identity only. The zero fortuitous component of the aligned source separately needs the complete scalar relation quotient and its actual sixteen-term predecessor.",
+        "The coefficient identity does not settle whether the finite aligned class vanishes, whether its monotone component is nonzero, or whether a full quantum stable lift exists."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/fortuitous_duals_20261123/so11_independent_audit/README.md:L3-L22",
+        "algorithms/fortuitous_duals_20261123/so11_independent_audit/README.md:L70-L248"
+      ]
+    },
+    {
+      "id": "public-fortuity-so11-two-coordinate-comparison",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "SO(11)",
+      "title": "The two historical SO(11) derivative probes distinguish chosen lifts but fail as fortuity detectors",
+      "proposition": {
+        "key": "public-fortuity/so11-two-coordinate-comparison",
+        "value": {
+          "ordered_coordinate_values": [
+            {
+              "ordered_traces": "ABC A+ A- B+ B- C+ C-",
+              "Dot": 7372800,
+              "Codex": 540
+            },
+            {
+              "ordered_traces": "ABC ABC ABC +- +- +-",
+              "Dot": 0,
+              "Codex": 360
+            }
+          ],
+          "formal_derivative_determinant": 2654208000,
+          "aligned_combination": "9 Y_D(-2 hbar_C)+25600 Y_C(hbar_C)",
+          "aligned_chosen_derivative_coordinates": [
+            80179200,
+            9216000
+          ],
+          "actual_relation_image_coordinate_vectors": [
+            [
+              4096,
+              0
+            ],
+            [
+              4608,
+              -1152
+            ]
+          ],
+          "relation_image_coordinate_determinant": -4718592,
+          "two_coordinate_decomposition": "28575*(4096,0)-8000*(4608,-1152)=(80179200,9216000).",
+          "conclusions": [
+            "The two specified stable derivatives are linearly independent as formal ordered-trace expressions.",
+            "Their coordinate functionals do not descend to fortuitous-quotient detectors: no nonzero combination of the two annihilates the full relation image.",
+            "The displayed two-coordinate decomposition is not a full predecessor identity; the later complete quotient/preimage certificate establishes the actual aligned quotient zero."
+          ],
+          "historical_replay_scope": "The report regenerated the three Gram endpoint banks with accepted matching counts 1309440,42240,11136 and output-line counts 156,12,12, using the exact trace-factor-count restriction appropriate to these two queries; independent rational cyclic/reversal arithmetic agreed.",
+          "existing_quantum_alignment_check": "The separately known coupling-aligned third coefficients are -24576000 and 8640, and 9*(-24576000)+25600*8640=0; these repeat the existing witnesses rather than introducing a new differential."
+        }
+      },
+      "charges": {
+        "source": {
+          "coordinate_order": [
+            "theta1",
+            "theta2",
+            "theta3",
+            "n_plus",
+            "n_minus"
+          ],
+          "native_weight": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "letter_length": 14,
+          "twice_energy": 35,
+          "twice_R": [
+            11,
+            11,
+            11
+          ],
+          "twice_J_left": 1,
+          "twice_J_right": 0,
+          "physical_level": 36
+        },
+        "target": {
+          "coordinate_order": [
+            "theta1",
+            "theta2",
+            "theta3",
+            "n_plus",
+            "n_minus"
+          ],
+          "native_weight": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "letter_length": 15,
+          "twice_energy": 36,
+          "twice_R": [
+            12,
+            12,
+            12
+          ],
+          "twice_J_left": 0,
+          "twice_J_right": 0,
+          "physical_level": 36
+        },
+        "physical_level_convention": "j=2(E+J_L)=36",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/so11_source_comparison_20261123/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/so11_source_comparison_20261123/README.md#L9-L46",
+          "sha256": "c3f79cbbbbc366cdd1cc2d97bca12d83f243683b89d3cb25be84cf653dcb5579",
+          "anchor": "L9-L46"
+        }
+      },
+      "source": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "letter_length": 14,
+        "twice_energy": 35,
+        "twice_R": [
+          11,
+          11,
+          11
+        ],
+        "twice_J_left": 1,
+        "twice_J_right": 0,
+        "physical_level": 36
+      },
+      "target": {
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "native_weight": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "letter_length": 15,
+        "twice_energy": 36,
+        "twice_R": [
+          12,
+          12,
+          12
+        ],
+        "twice_J_left": 0,
+        "twice_J_right": 0,
+        "physical_level": 36
+      },
+      "order": "classical",
+      "direction": "not_applicable",
+      "field": "Q",
+      "normalization": "Five letters A,B,C,+,-, defining trace and ordered products exactly as D006; Dot combination is G_cycle-5*G_path3+(500/3)*G_path3-alt with the original reversal primitive factor 1/2, source scalar-root order BC,AC,AB and shifts 1,2,1, followed by odd returns A-,A+,B-,B+,C-,C+. No free rescaling of the specified stable lifts.",
+      "scope": {
+        "description": "Only the two exact ordered coordinates of the original specified leading stable lifts and the explicit relation-image countercertificate. The original open quotient question is resolved by the distinct later full-source record so11-aligned-source-fortuity-zero.",
+        "completeness": "Exactly the stated block, input family or finite benchmark; no enlargement beyond its advertised completeness.",
+        "physical_identification": "A formal coefficient certificate or arithmetic benchmark only; no physical Wick bra, Hilbert metric or untwisted matrix element is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/so11_source_comparison_20261123/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/so11_source_comparison_20261123/README.md#L9-L95",
+          "sha256": "c3f79cbbbbc366cdd1cc2d97bca12d83f243683b89d3cb25be84cf653dcb5579",
+          "anchor": "L9-L95"
+        },
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/so11/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/so11/README.md#L254-L276",
+          "sha256": "6d219c1f8cbd489b377e4393d1168f76df16a1d4d1014adec7ce9ac1a0cfafe1",
+          "anchor": "L254-L276"
+        }
+      ],
+      "supersession_state": "historical",
+      "proof_status": "attributed_public_certificate",
+      "supersedes": [],
+      "limitations": [
+        "Semantic review records the immutable public report and its literal scope; it performs no scientific replay, new projection, new scan or physical matrix-element calculation.",
+        "Formal independence of chosen derivatives does not imply independence of finite-colour cohomology classes.",
+        "The old two-coordinate report is historical evidence; its remaining-question paragraph must not override the later complete quotient-zero result.",
+        "No scalar operation or odd-return reconstruction was executed in this semantic review."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/so11_source_comparison_20261123/README.md:L9-L95",
+        "algorithms/fortuitous_duals_20261123/so11/README.md:L254-L276"
+      ]
+    },
+    {
+      "id": "public-fortuity-trace-enumeration-benchmark",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "F4 defining 26-dimensional representation, with universal even-colour trace combinatorics",
+      "title": "Exact coordinate-preserving trace enumeration and the finite F4 catalogue benchmarks",
+      "proposition": {
+        "key": "public-fortuity/trace-enumeration-benchmark",
+        "value": {
+          "ordered_coordinate_counts_degrees_zero_through_ten": [
+            1,
+            0,
+            1,
+            1,
+            6,
+            22,
+            130,
+            822,
+            6202,
+            52552,
+            499194
+          ],
+          "construction": "Choose the trace containing the least unused label, fix its cyclic start and reversal orientation, recurse on unused labels, then preserve the old sorted coordinate ordering. Fixed-content necklace recursion plus signed reversal filtering handles repeated even colour letters.",
+          "degree_fourteen_catalogue": {
+            "content": [
+              4,
+              4,
+              4,
+              2
+            ],
+            "old_word_visits": 3153150,
+            "canonical_int32_codes": 112950,
+            "Burnside_identity": "(3153780+14*630)/28=112950",
+            "archived_recipes": 474,
+            "sparse_recipe_coefficients_reproduced": 8283801
+          },
+          "finite_exact_checks": {
+            "signed_adjacent_transposition_entries": 48996,
+            "native_F4_trace_evaluations_at_two_primes": 14308,
+            "native_evaluation_primes": [
+              1000003,
+              1000033
+            ],
+            "full_degree_fourteen_order_and_dtype": true,
+            "full_474_source_recipes": true
+          },
+          "independent_native_API_audit": {
+            "dtype_shape_cases": 20,
+            "edge_contents_including_length31": 11,
+            "sanitized_random_canonicalizations": 10000,
+            "invalid_inputs_checked": true
+          },
+          "reported_labelled_wall_seconds": [
+            {
+              "degree": 6,
+              "old": "0.005463856999995187",
+              "new": "0.0004159520000257544"
+            },
+            {
+              "degree": 7,
+              "old": "0.05369108499996855",
+              "new": "0.0024481539999214874"
+            },
+            {
+              "degree": 8,
+              "old": "0.5403879990000178",
+              "new": "0.012962569000023905"
+            },
+            {
+              "degree": 9,
+              "old": "5.842376918000014",
+              "new": "0.12026659200000722"
+            }
+          ],
+          "degree_nine_report": {
+            "measured_speed_ratio": "48.57855220508504",
+            "old_peak_KiB": 272444,
+            "new_peak_KiB": 64136,
+            "old_permutation_visits": 2903040,
+            "new_final_words": 52552
+          },
+          "degree_ten_new_only_report": {
+            "seconds": "1.343708242000048",
+            "peak_KiB": 159328,
+            "coordinates": 499194,
+            "old_combinatorial_visits": 43545600,
+            "old_timing": "not run"
+          },
+          "catalogue_reported_speed_ratios": [
+            "14.546945913188251",
+            "20.03028379034609",
+            "13.437204471422687"
+          ],
+          "cached_source_recipe_replay_speed_ratios": [
+            "1.1493730027683784",
+            "1.279476352088898",
+            "0.9712092149390688"
+          ],
+          "end_to_end_conclusion": "The complete archived source-row replay does not demonstrate a reliable speedup; one of three runs is slower. Later elimination, finite-colour ranks and quantum-differential generation are excluded.",
+          "repeated_content_limits": "The optional pure-Python function is faster for degree-eight contents (5,3) and (4,4), but slower than specialization of a cached labelled list for (2,2,2,2); it is not installed as a universal replacement."
+        }
+      },
+      "charges": {
+        "quantified_domain": "Ordinary even Lie-algebra colour letters, with no fixed spacetime or R-charge assignment. The claim is equality of formal trace coordinate catalogues and specified source recipes, not a cohomology statement.",
+        "labelled_degrees": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "fixed_content_degree": 14,
+        "fixed_content": [
+          4,
+          4,
+          4,
+          2
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/optimization_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/optimization_20261122/README.md#L53-L106",
+          "sha256": "926adcba85af2ae86c36fc82bff21c5d2f352c988effb0c2ae4550d402be0d05",
+          "anchor": "L53-L106"
+        }
+      },
+      "source": {
+        "quantified_domain": "The original labelled trace enumerator, content-(4,4,4,2) degree-fourteen catalogue, and all 474 pinned archived source recipes.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/optimization_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/optimization_20261122/README.md#L53-L106",
+          "sha256": "926adcba85af2ae86c36fc82bff21c5d2f352c988effb0c2ae4550d402be0d05",
+          "anchor": "L53-L106"
+        }
+      },
+      "target": {
+        "quantified_domain": "The exact same ordered coordinates, signs, integer dtype and source coefficients produced by the new opt-in implementation.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/optimization_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/optimization_20261122/README.md#L127-L153",
+          "sha256": "926adcba85af2ae86c36fc82bff21c5d2f352c988effb0c2ae4550d402be0d05",
+          "anchor": "L127-L153"
+        }
+      },
+      "order": "algorithm benchmark",
+      "direction": "not_applicable",
+      "field": "Exact integer/rational combinatorial coordinates; native evaluations over F_1000003 and F_1000033; archived floating wall-clock observations are separately labelled",
+      "normalization": "Original reversal sign (-1)^trace_length, defining trace, base-four encoding, sorted coordinate IDs, int32 catalogue dtype and source coefficients are unchanged. Arbitrary superletter parities and open matrix words are outside this API. Timings are verbatim finite-machine observations, not algebraic constants.",
+      "scope": {
+        "description": "Historical integration/benchmark at baseline 0b2e1a6724361fb2666089bfbe0c1a36a23d48a1. Native catalogue supports one through four ordinary even colours and length 2 through 31; verification ranges and every measured timing are restricted as stated.",
+        "completeness": "Exactly the stated block, input family or finite benchmark; no enlargement beyond its advertised completeness.",
+        "physical_identification": "A formal coefficient certificate or arithmetic benchmark only; no physical Wick bra, Hilbert metric or untwisted matrix element is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/optimization_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/optimization_20261122/README.md#L14-L153",
+          "sha256": "926adcba85af2ae86c36fc82bff21c5d2f352c988effb0c2ae4550d402be0d05",
+          "anchor": "L14-L153"
+        },
+        {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/alternative_method_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/alternative_method_20261122/README.md#L92-L103",
+          "sha256": "2241d9a9bb16dec04a192068f9f7112c1677d5c18cf5713558dec151a67e95f3",
+          "anchor": "L92-L103"
+        },
+        {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/optimization_20261122/research_routes.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/optimization_20261122/research_routes.md#L9-L33",
+          "sha256": "54a104f080a6017b8f8a11d5623c3ab3d1e816f83c870752b9ea975b42f9139c",
+          "anchor": "L9-L33"
+        }
+      ],
+      "supersession_state": "historical",
+      "proof_status": "attributed_historical_algorithm_benchmark",
+      "supersedes": [],
+      "limitations": [
+        "Semantic review records the immutable public report and its literal scope; it performs no scientific replay, new projection, new scan or physical matrix-element calculation.",
+        "No new finite-colour rank, cohomology class, quantum lift or generator family is established.",
+        "The old degree-ten function was not run; its combinatorial visit count is not a timing or memory measurement.",
+        "No constant-amortized-time complexity theorem is claimed for this implementation.",
+        "The opt-in adapter restores original references and does not automatically change callers holding separately imported aliases."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/optimization_20261122/README.md:L14-L153",
+        "algorithms/alternative_method_20261122/README.md:L92-L103",
+        "algorithms/optimization_20261122/research_routes.md:L9-L33"
+      ]
+    },
+    {
+      "id": "public-fortuity-f4-native-bianchi-negative",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "F4",
+      "title": "Retaining all higher local mark coefficients leaves the two historical F4 bounds unchanged",
+      "proposition": {
+        "key": "public-fortuity/f4-native-bianchi-negative",
+        "value": {
+          "scope": "Degree-three simultaneous native solve on three archived curves for (8,19,25,46) and ten for (8,19,27,47), using the unchanged pinned rational leading frames.",
+          "higher_mark_unknowns": 936,
+          "curve_results": [
+            {
+              "root_tuple": [
+                8,
+                19,
+                25,
+                46
+              ],
+              "curve_count": 3,
+              "old_allowed_leading_dimensions": [
+                48,
+                44,
+                44
+              ],
+              "simultaneous_dimensions": [
+                48,
+                48,
+                48
+              ],
+              "new_independent_evaluations": 0,
+              "remaining_local_invariant_bound": 1
+            },
+            {
+              "root_tuple": [
+                8,
+                19,
+                27,
+                47
+              ],
+              "curve_count": 10,
+              "old_allowed_leading_dimensions": [
+                38,
+                37,
+                45,
+                45,
+                38,
+                37,
+                45,
+                45,
+                44,
+                45
+              ],
+              "simultaneous_dimensions": [
+                45,
+                45,
+                45,
+                45,
+                45,
+                45,
+                45,
+                45,
+                45,
+                45
+              ],
+              "new_independent_evaluations": 0,
+              "remaining_local_invariant_bound": 2
+            }
+          ],
+          "enlarged_leading_spaces": 7,
+          "first_two_second_tuple_matrices": [
+            {
+              "nonempty_equation_rows": 933,
+              "higher_unknowns": 936,
+              "leading_coordinates": 66,
+              "rational_rank": 587,
+              "old_dimension": 38,
+              "new_dimension": 45
+            },
+            {
+              "nonempty_equation_rows": 953,
+              "higher_unknowns": 936,
+              "leading_coordinates": 66,
+              "rational_rank": 579,
+              "old_dimension": 37,
+              "new_dimension": 45
+            }
+          ],
+          "native_validation": "Every scalar-commutator coefficient and every coefficient of the original local Bianchi mark bracket is checked exactly. The old allowed leading space lies in the new one, and every emitted evaluation annihilates the archived incoming matrix.",
+          "degree_five_control": "Extending the original polynomial-family search to degree five with twelve coefficient samples also leaves both local bounds unchanged.",
+          "performance": "The simultaneous solve was slower than the fixed-preimage ansatz on every tested curve; no speed improvement is claimed."
+        }
+      },
+      "charges": {
+        "quantified_domain": "Local polynomial mark equations on exactly thirteen archived commuting scalar curves in the four-axis F4 adjoint model; no full physical homogeneous cochain block is asserted.",
+        "adjoint_dimension": 52,
+        "two_form_coefficients_per_positive_order": 312,
+        "mark_degree": 3,
+        "source_polynomial_degree": 7,
+        "root_tuples": [
+          [
+            8,
+            19,
+            25,
+            46
+          ],
+          [
+            8,
+            19,
+            27,
+            47
+          ]
+        ],
+        "short_axis": 19,
+        "leading_frame_dimensions": [
+          70,
+          66
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/alternative_method_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/alternative_method_20261122/README.md#L9-L46",
+          "sha256": "2241d9a9bb16dec04a192068f9f7112c1677d5c18cf5713558dec151a67e95f3",
+          "anchor": "L9-L46"
+        }
+      },
+      "source": {
+        "quantified_domain": "All 936 positive-order mark unknowns through degree three on each of the specified fixed exact scalar curves, plus the unchanged 70- or 66-dimensional leading frame.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/alternative_method_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/alternative_method_20261122/README.md#L16-L46",
+          "sha256": "2241d9a9bb16dec04a192068f9f7112c1677d5c18cf5713558dec151a67e95f3",
+          "anchor": "L16-L46"
+        }
+      },
+      "target": {
+        "quantified_domain": "The allowed leading-mark spaces, their complete evaluations against the archived incoming matrix, and the two local invariant bounds after adjoining those evaluations.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/alternative_method_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/alternative_method_20261122/README.md#L48-L69",
+          "sha256": "2241d9a9bb16dec04a192068f9f7112c1677d5c18cf5713558dec151a67e95f3",
+          "anchor": "L48-L69"
+        }
+      },
+      "order": "local polynomial-degree-three/five arithmetic experiment",
+      "direction": "not_applicable",
+      "field": "Q",
+      "normalization": "The original native commutator and alternating Taylor-axis product, all 52 adjoint colour components, all six two-form axis pairs, and the pinned rational leading frames are unchanged. Higher mark unknowns are eliminated before leading coordinates; no reduced equation space is introduced.",
+      "scope": {
+        "description": "Historical finite local experiment at first_page baseline 0b2e1a6724361fb2666089bfbe0c1a36a23d48a1. The scalar curves are held fixed; all homogeneous higher mark corrections through degree three are retained. The original degree-five control has its separately stated twelve-sample scope.",
+        "completeness": "Exactly the stated block, input family or finite benchmark; no enlargement beyond its advertised completeness.",
+        "physical_identification": "A formal coefficient certificate or arithmetic benchmark only; no physical Wick bra, Hilbert metric or untwisted matrix element is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/alternative_method_20261122/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/alternative_method_20261122/README.md#L1-L90",
+          "sha256": "2241d9a9bb16dec04a192068f9f7112c1677d5c18cf5713558dec151a67e95f3",
+          "anchor": "L1-L90"
+        },
+        {
+          "kind": "git",
+          "commit": "715d185f85e9277c7cc7a54cec80e6bdb2a65544",
+          "path": "algorithms/optimization_20261122/research_routes.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/715d185f85e9277c7cc7a54cec80e6bdb2a65544/algorithms/optimization_20261122/research_routes.md#L35-L48",
+          "sha256": "54a104f080a6017b8f8a11d5623c3ab3d1e816f83c870752b9ea975b42f9139c",
+          "anchor": "L35-L48"
+        }
+      ],
+      "supersession_state": "historical",
+      "proof_status": "attributed_historical_algorithm_benchmark",
+      "supersedes": [],
+      "limitations": [
+        "Semantic review records the immutable public report and its literal scope; it performs no scientific replay, new projection, new scan or physical matrix-element calculation.",
+        "The unchanged bounds are local bounds for these tuples and archived curves, not a global F4 source dimension or a vanishing quantum differential.",
+        "The report says the global source question was unresolved at its date; this historical statement does not supersede later full-source results.",
+        "No new physical lift or independent local evaluation constraint is claimed."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/alternative_method_20261122/README.md:L1-L90",
+        "algorithms/optimization_20261122/research_routes.md:L35-L48"
+      ]
+    },
+    {
+      "id": "public-fortuity-su3-streaming-arithmetic-control",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "SU(3)",
+      "title": "Streaming the supplied SU(3) target31 rows preserves its four-dimensional arithmetic dual space",
+      "proposition": {
+        "key": "public-fortuity/su3-streaming-arithmetic-control",
+        "value": {
+          "matrices": "The supplied projected target31 classical-differential matrix, dimensions 1454 by 434; this is not a fortuitous census or the coupled second-correction equation.",
+          "profile_sequence": [
+            {
+              "profile": 38,
+              "rows": 791,
+              "added_rank": 424,
+              "residual_width_before": 434,
+              "remaining_dual_dimension": 10
+            },
+            {
+              "profile": 39,
+              "rows": 321,
+              "added_rank": 6,
+              "residual_width_before": 10,
+              "remaining_dual_dimension": 4
+            },
+            {
+              "profile": 41,
+              "rows": 160,
+              "added_rank": 0,
+              "residual_width_before": 4,
+              "remaining_dual_dimension": 4
+            },
+            {
+              "profile": 53,
+              "rows": 182,
+              "added_rank": 0,
+              "residual_width_before": 4,
+              "remaining_dual_dimension": 4
+            }
+          ],
+          "primes": [
+            1000003,
+            1000033
+          ],
+          "arithmetic_work_counts": {
+            "elimination_entries_streamed": 347872,
+            "full_matrix_entries": 631036,
+            "unconstructed_source_kernel_dimension": 1024,
+            "source_dual_pairings_per_prime": 5816,
+            "right_hand_side_pairings_per_prime": 4
+          },
+          "update_identity": "If columns Z span the current annihilator and B is the next complete row batch, the new annihilator is Z*kernel(BZ); every remaining row must be checked or excluded by a completeness proof.",
+          "timing_scope": "Four alternating paired arithmetic trials at each prime favor the incremental update; native differential generation is excluded. No overall physical-solver speed gain is claimed."
+        }
+      },
+      "charges": {
+        "quantified_domain": "The explicitly supplied 1454-by-434 SU(3) projected target31 arithmetic matrix and its four supplied right-hand sides. This record does not attach an unverified physical native grading.",
+        "matrix_shape": [
+          1454,
+          434
+        ],
+        "source_profiles": [
+          38,
+          39,
+          41,
+          53
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/enumeration/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/enumeration/README.md#L192-L227",
+          "sha256": "681b4aaa41e5b37fbfbaa96c8d434b84ba25fea297d2f00cf1c5441effa7607c",
+          "anchor": "L192-L227"
+        }
+      },
+      "source": {
+        "quantified_domain": "Exactly the supplied 1454-by-434 matrix with profile batches 38,39,41,53 and four right-hand sides.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/enumeration/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/enumeration/README.md#L208-L227",
+          "sha256": "681b4aaa41e5b37fbfbaa96c8d434b84ba25fea297d2f00cf1c5441effa7607c",
+          "anchor": "L208-L227"
+        }
+      },
+      "target": {
+        "quantified_domain": "The same four-dimensional supplied-matrix annihilator and its four right-hand-side pairings at the two stated primes.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/enumeration/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/enumeration/README.md#L208-L227",
+          "sha256": "681b4aaa41e5b37fbfbaa96c8d434b84ba25fea297d2f00cf1c5441effa7607c",
+          "anchor": "L208-L227"
+        }
+      },
+      "order": "algorithm benchmark",
+      "direction": "not_applicable",
+      "field": "F_1000003 and F_1000033",
+      "normalization": "Original native word tuples, source order and trace normalization are unchanged. This record preserves the original projected-matrix description solely as historical metadata; no projection or reconstruction is performed.",
+      "scope": {
+        "description": "Finite arithmetic comparison on a fixed archived matrix. Its abstract annihilator update is ordinary exact linear algebra; no physical charge-block completeness or new SU(3) cohomology result is attached to this benchmark.",
+        "completeness": "Exactly the stated block, input family or finite benchmark; no enlargement beyond its advertised completeness.",
+        "physical_identification": "A formal coefficient certificate or arithmetic benchmark only; no physical Wick bra, Hilbert metric or untwisted matrix element is inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "algorithms/fortuitous_duals_20261123/enumeration/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/algorithms/fortuitous_duals_20261123/enumeration/README.md#L192-L227",
+          "sha256": "681b4aaa41e5b37fbfbaa96c8d434b84ba25fea297d2f00cf1c5441effa7607c",
+          "anchor": "L192-L227"
+        }
+      ],
+      "supersession_state": "historical",
+      "proof_status": "attributed_historical_algorithm_benchmark",
+      "supersedes": [],
+      "limitations": [
+        "Semantic review records the immutable public report and its literal scope; it performs no scientific replay, new projection, new scan or physical matrix-element calculation.",
+        "A projected-target cokernel is not the full second-correction compatibility problem.",
+        "The source README does not state a physical grading for this arithmetic packet; none is inferred or claimed. The matrix shape/profile order define the whole claimed benchmark.",
+        "No native differential generation, coefficient-space projection or new SU(3) scan is executed in this review."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/fortuitous_duals_20261123/enumeration/README.md:L192-L227"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "release_id": "f4",
+  "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+  "reviewer": "/root: complete release acceptance and immutable-byte review",
+  "documents": [
+    {
+      "path": "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+      "sha256": "d3c54a87eb0609156026c0a8cc02c8db70b5d19f01fadeb59e6b3297c2ecd154",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "f4-power6-full-second-zero-report",
+        "f4-sixth-direct-closed-factor-audit"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Complete sixth-power second-map decision; Complete source and matching rank bounds; The actual product closes without a subspace projector; All earlier corrections remain free; What was freshly reconstructed",
+          "claim_ids": [
+            "f4-power6-full-second-zero-report",
+            "f4-sixth-direct-closed-factor-audit"
+          ],
+          "description": "The published703 outgoing rank and3017 independent cycles give3720−703=3016+1. The new full bilinear and direct product calculations supply a closed completion for the explicit product; every boundary also completes. The full first-page Ward identity retains all3476 homogeneous corrections, so the entire incoming second map is zero. Complete-minor reconstruction is historical, while the150850 literal extension entries are newly rebuilt."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": "Root read the complete proof and exact method audit, then independently reran verify_packet.py against all100 pinned public input blobs."
+    },
+    {
+      "path": "algorithms/f4_complete_source_20261124/README.md",
+      "sha256": "8da07add23d8f230f3ed183e6c44f17dd54d9aa6bb2d6a47afd634aab8022dba",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "f4-power6-full-second-zero-report",
+        "f4-sixth-direct-closed-factor-audit",
+        "f4-power7-later-open",
+        "f4-focused-native-source-inventories",
+        "f4-seventh-complete-first-correction",
+        "f4-seventh-homogeneous-scalar-ward-count",
+        "f4-seventh-mixed-source-necessity",
+        "f4-tower-first-page-ward-data"
+      ],
+      "covered_assertions": [
+        {
+          "location": "F4 sixth-power proof audit and seventh-power source inventory; Fresh permitted calculations; Replay; Exact native inventories and correction freedom; Seventh power and the remaining native-input gate",
+          "claim_ids": [
+            "f4-power6-full-second-zero-report",
+            "f4-sixth-direct-closed-factor-audit",
+            "f4-power7-later-open",
+            "f4-focused-native-source-inventories",
+            "f4-seventh-complete-first-correction",
+            "f4-seventh-homogeneous-scalar-ward-count",
+            "f4-seventh-mixed-source-necessity",
+            "f4-tower-first-page-ward-data"
+          ],
+          "description": "The published703 outgoing rank and3017 independent cycles give3720−703=3016+1. The new full bilinear and direct product calculations supply a closed completion for the explicit product; every boundary also completes. The full first-page Ward identity retains all3476 homogeneous corrections, so the entire incoming second map is zero. Complete-minor reconstruction is historical, while the150850 literal extension entries are newly rebuilt. The complete seventh-power selected character counts217297→62866→8553, the2959-rank intermediate map and20936 homogeneous first corrections are retained. The35 scalar irreducible types and3642 invariant Ward parameters are an inventory, not a native complete basis. Both differentiated-scalar shapes and every mixed equation remain unresolved, so D04 is open."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": ""
+    },
+    {
+      "path": "algorithms/f4_complete_source_20261124/D04_STATUS.md",
+      "sha256": "196e9ab29865da753d4c6df6aa9960d83b262005c56d2727b15bbdb421ee2c17",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "f4-power7-later-open",
+        "f4-focused-native-source-inventories",
+        "f4-seventh-complete-first-correction",
+        "f4-seventh-homogeneous-scalar-ward-count",
+        "f4-seventh-mixed-source-necessity",
+        "f4-tower-first-page-ward-data"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Seventh-power second map: open",
+          "claim_ids": [
+            "f4-power7-later-open",
+            "f4-focused-native-source-inventories",
+            "f4-seventh-complete-first-correction",
+            "f4-seventh-homogeneous-scalar-ward-count",
+            "f4-seventh-mixed-source-necessity",
+            "f4-tower-first-page-ward-data"
+          ],
+          "description": "The complete seventh-power selected character counts217297→62866→8553, the2959-rank intermediate map and20936 homogeneous first corrections are retained. The35 scalar irreducible types and3642 invariant Ward parameters are an inventory, not a native complete basis. Both differentiated-scalar shapes and every mixed equation remain unresolved, so D04 is open."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": ""
+    },
+    {
+      "path": "algorithms/f4_complete_source_20261124/METHOD_AUDIT.md",
+      "sha256": "d618136035d7ad166d2582f6234f7a0f2dd532a569ff27e3a543c88fef787bd7",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "f4-sixth-direct-closed-factor-audit"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Method audit under the no-projection instruction; Permitted fresh path; Stopped and excluded path; Exact public call paths used by the core replay; Remaining gates",
+          "claim_ids": [
+            "f4-sixth-direct-closed-factor-audit"
+          ],
+          "description": "The actual permitted literal tensor and simultaneous-equation paths are listed; stopped idempotent routes and historical saved matrices are explicitly distinguished. No full original-source reconstruction or gateC04/D04 completion is claimed."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": ""
+    },
+    {
+      "path": "algorithms/f4_complete_source_20261124/PUBLICATION.md",
+      "sha256": "d38c21904cd95ca6ed8f3fcaa4979e73bd8913481876d921d431a0be8e86a02e",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole transport/publication document",
+          "reason": "Lossless packaging, commands and verification scope; no additional mathematical or physical result is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": ""
+    }
+  ],
+  "additional_claims": [
+    {
+      "id": "f4-sixth-direct-closed-factor-audit",
+      "title": "Direct closed factors independently support the complete sixth-power second-map zero",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "F4",
+      "proposition": {
+        "key": "accepted-release/f4-sixth-direct-closed-factor-audit",
+        "value": {
+          "product_equations": 172,
+          "product_variables": 96,
+          "product_rank": 95,
+          "primitive_product_terms": 87,
+          "closed_spectator_pairs": 45,
+          "bilinear_columns": 60,
+          "bilinear_classical_rank": 20,
+          "bilinear_kernel_dimension": 40,
+          "quantum_rank_on_complete_bilinear_kernel": 0,
+          "Casimir_entries": 2704,
+          "Casimir_value": 18,
+          "literal_extension_shape": [
+            3017,
+            50
+          ],
+          "literal_extension_entries": 150850,
+          "complete_kernel_dimension": 3017,
+          "classical_boundaries_plus_closed_product": [
+            3016,
+            1
+          ],
+          "homogeneous_first_corrections": 3476,
+          "inherited_complete_minor_residues": {
+            "1009": 449,
+            "1013": 60
+          },
+          "fresh_complete_minor_reconstruction": false
+        }
+      },
+      "charges": {
+        "product_source": {
+          "native_weight": [
+            2,
+            2,
+            2,
+            4,
+            4
+          ],
+          "letter_length": 13,
+          "physical_level": 36
+        },
+        "invariant_bilinear_domain": "Every invariant bilinear with one first and one second Taylor jet: length2 and total Taylor degree3, all60 columns, with ordered native letters in closed_bilinears_rational.json.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "sha256": "d3c54a87eb0609156026c0a8cc02c8db70b5d19f01fadeb59e6b3297c2ecd154"
+        }
+      },
+      "source": {
+        "quantified_domain": "The full60-column invariant bilinear complex and the full96-coefficient direct product construction; the literal extension comprises all50 named columns on3017 native evaluations.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "sha256": "d3c54a87eb0609156026c0a8cc02c8db70b5d19f01fadeb59e6b3297c2ecd154"
+        }
+      },
+      "target": {
+        "quantified_domain": "All20 bilinear classical output rows, the complete quantum row, and the fixed sixth-power second-page target.",
+        "native_input": {
+          "native_weight": [
+            0,
+            0,
+            0,
+            6,
+            6
+          ],
+          "letter_length": 12,
+          "physical_level": 36
+        },
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "sha256": "d3c54a87eb0609156026c0a8cc02c8db70b5d19f01fadeb59e6b3297c2ecd154"
+        }
+      },
+      "order": "complete formal incoming second differential, with all earlier correction freedom",
+      "direction": "formal_incoming",
+      "field": "Q for the direct identities; F_1009 for the fully regenerated literal extension; two regular-prime nonzero minors provide attributed rational rank lower bounds",
+      "normalization": "Pinned native F4 matrices, invariant form, Albert cubic and ordered Taylor/exterior conventions in publication_manifest.json and the authenticated public inputs.",
+      "scope": {
+        "description": "Fresh direct-factor theorem and literal native extension audit supporting the already published full-source second-map zero. The historical3017-minor theorem is a separate prerequisite, not a newly reconstructed native block.",
+        "completeness": "The complete explicitly declared finite spaces and every stated equation; limits are recorded separately.",
+        "physical_identification": "The relative holomorphic jet complex only; physical instanton protection is not inferred."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "sha256": "d3c54a87eb0609156026c0a8cc02c8db70b5d19f01fadeb59e6b3297c2ecd154"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/METHOD_AUDIT.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/METHOD_AUDIT.md",
+          "sha256": "d618136035d7ad166d2582f6234f7a0f2dd532a569ff27e3a543c88fef787bd7"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/packet_verification.json",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/packet_verification.json",
+          "sha256": "cecf01364ee0f45a8f61a0d3aeb143981e7979cec06b6d542b2563e7ccf26016"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/publication_manifest.json",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/publication_manifest.json",
+          "sha256": "aadf1e1ee9669ca3836877728fb86a00603335a106b38cc03fcb08977bc8f4bc"
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "accepted_complete_calculation_with_independent_review",
+      "supersedes": [],
+      "limitations": [
+        "The complete historical3002-column block and3017 determinant were not freshly rebuilt. Their attributed published rational rank theorem remains necessary.",
+        "The literal extension is a complete3017×50 bank, not a character-complete basis for all10007 predecessors.",
+        "No stopped colour/Taylor idempotent path was used as permitted fresh evidence. Its provenance is recorded only to distinguish it from the accepted calculation.",
+        "D04 and C04 remain open. The result is formal perturbative cohomology, not a physical instanton protection theorem."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+        "algorithms/f4_complete_source_20261124/METHOD_AUDIT.md",
+        "algorithms/f4_complete_source_20261124/packet_verification.json",
+        "algorithms/f4_complete_source_20261124/publication_manifest.json"
+      ]
+    }
+  ],
+  "claim_updates": [
+    {
+      "id": "f4-power6-full-second-zero-report",
+      "append_certificate": [
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/D03_PROOF.md",
+          "sha256": "d3c54a87eb0609156026c0a8cc02c8db70b5d19f01fadeb59e6b3297c2ecd154"
+        },
+        {
+          "kind": "git",
+          "commit": "b362a657a92a929d13fba7ef102dc29753edcbc9",
+          "path": "algorithms/f4_complete_source_20261124/packet_verification.json",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/b362a657a92a929d13fba7ef102dc29753edcbc9/algorithms/f4_complete_source_20261124/packet_verification.json",
+          "sha256": "cecf01364ee0f45a8f61a0d3aeb143981e7979cec06b6d542b2563e7ccf26016"
+        }
+      ],
+      "proof_status": "accepted_published_theorem_with_independent_closed_factor_audit",
+      "append_limitations": [
+        "The complete historical3017 minor remains an attributed prerequisite; the fresh native extension and full small rational identities do not constitute a fresh complete-minor reconstruction."
+      ],
+      "acceptance_note": "D03 accepted at its unchanged full-source zero-map gate. This recognizes the existing public theorem with independent direct-factor evidence, not a newly discovered lift."
+    }
+  ]
+}

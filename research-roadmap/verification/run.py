@@ -61,13 +61,16 @@ def main():
     require(args.allow_dirty or not initial_status, 'A clean checkout is required.')
     started = time.monotonic()
     receipt = {
-        'schema_version': 1, 'tier': 'public-bounded-verification-v1',
+        'schema_version': 1, 'tier': 'public-bounded-verification-v2',
         'commit': git('rev-parse', 'HEAD'), 'tree': git('rev-parse', 'HEAD^{tree}'),
         'clean_at_start': not bool(initial_status), 'development_run': args.allow_dirty,
         'python': sys.version, 'platform': platform.platform(),
         'packages': {name: importlib.metadata.version(name) for name in ('numpy', 'scipy', 'sympy', 'python-flint')},
         'manifests': [], 'checks': [],
     }
+    receipt.update(passed=False, status='running')
+    receipt_path = output / 'receipt.json'
+    receipt_path.write_text(json.dumps(receipt, indent=2) + '\n')
     for relative in (
         'algorithms/fortuitous_duals_20261123/MANIFEST.json',
         'algorithms/su3_second_correction_20261118/SOURCE_MANIFEST.json',
@@ -152,9 +155,36 @@ def main():
                                      '--receipt', str(output / 'su3-generator-independent.json')],
         'Separate polynomial differentiation, symmetry checks and evaluation of every residual at all 1588 complete target coordinates.',
         required_text=('"full_target_coordinates_checked": 1588', '"full_polynomial_residual_nonzero": 0'))
+
+    ledger = ROOT / 'research-roadmap/claim-ledger'
+    run('ledger-assemble', [python, '-B', str(ledger / 'assemble_artifacts.py')],
+        'Restore the exact reviewed ledger bytes from authenticated bounded chunks.',
+        required_text=('"verified": true',))
+    checker = HERE / 'check_new_packets.py'
+    run('ledger-accepted-artifacts', [python, '-B', str(checker), 'ledger', '--output', str(output)],
+        'Authenticate the complete strict-audit receipt, its unchanged data and expanded finite coverage. The full Git-reference audit is separately callable.',
+        required_text=('"passed": true', '"fresh_git_reference_audit": false'))
+    physical = ROOT / 'algorithms/physical_block_20261124'
+    run('physical-assemble', [python, '-B', str(physical / 'assemble_artifacts.py')],
+        'Restore every exact physical certificate payload and verify all original file hashes.',
+        required_text=('"verified": true',))
+    receipt['manifests'].append(check_manifest(physical / 'MANIFEST.json'))
+    receipt['manifests'].append(check_manifest(physical / 'f03/MANIFEST.json'))
+    run('physical-complete-packet', [python, '-B', str(checker), 'physical', '--output', str(output)],
+        'Every finite null and physical harmonic equation, all 4761 metric entries, independent normalization/Wick checks and the full 3-to-2 quantum channel. Stored large Wick evaluations are reused.',
+        required_text=('"passed": true', '"complete_physical_metric_entries": 4761'))
+    f4 = ROOT / 'algorithms/f4_complete_source_20261124'
+    run('f4-publication-manifest', [python, '-B', str(f4 / 'publication.py')],
+        'Authenticate the exact permitted F4 packet allowlist; stopped-route source is excluded.')
+    inputs = output / 'f4-inputs'
+    run('f4-public-inputs', [python, '-B', str(f4 / 'survival_inputs.py'), '--download', '--destination', str(inputs)],
+        'Fetch only 100 explicitly pinned public input blobs and authenticate every byte.')
+    run('f4-complete-small-identities', [python, '-B', str(f4 / 'verify_packet.py'), '--inputs', str(inputs), '--out', str(output / 'f4-packet.json')],
+        'Recompute the full rational direct-product and 60-column bilinear identities; authenticate the 150850-entry extension. The historical complete 3017 minor remains attributed.',
+        required_text=('"complete_second_map_rank": 0', '"fresh_native_complete_kernel_minor_rebuild": false'))
     final_status = git('status', '--porcelain', '--untracked-files=all')
     require(final_status == initial_status, 'The verification job modified the checkout.')
-    receipt.update(clean_at_end=not bool(final_status), passed=True,
+    receipt.update(clean_at_end=not bool(final_status), passed=True, status='complete',
                    full_production_sources_rebuilt=False, wall_seconds=time.monotonic() - started,
                    runner_sha256=digest(Path(__file__)))
     (output / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')

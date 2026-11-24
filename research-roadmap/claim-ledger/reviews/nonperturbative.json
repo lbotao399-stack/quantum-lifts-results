@@ -1,0 +1,2766 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/resume_physical",
+  "documents": [
+    {
+      "sha256": "01ae68fec0e2ef5d11077fa9a8b5f0c7219a64f39a5057bc82a953ee6c91f4f7",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole appendix: one-loop triangle, two-loop forests, source ring-law hypothesis",
+          "reason": "The displayed b,c complex and pure-SYM product are the four-dimensional N=1 holomorphic Ward model; its anomaly-cancellation/ring-law theorem is background, with no claimed undeformed-N4 application here."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "01e37941059cf3ce7b9acecdab9fc30b42325b8903f06840cbc1bd452dee9d12",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-scalar-detector",
+        "np-index-n4-konishi",
+        "np-index-n4-fourier-positivity",
+        "np-index-n4-nonscalar-image"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Sections 1 and 6",
+          "claim_ids": [
+            "np-index-n4-scalar-detector"
+          ],
+          "description": "The complete traceless SU(N) commuting-three-matrix invariant quotient is reduced and detected by exact diagonal vacua. Suitable renormalized scalar chiral representatives cannot become exact; this excludes scalar instanton-only removal, without extending to arbitrary bare words or nonscalar classes."
+        },
+        {
+          "location": "Sections 4, 5, and 8",
+          "claim_ids": [
+            "np-index-n4-konishi"
+          ],
+          "description": "Sixteen exact modes require full insertions; the stated leading long-Konishi instanton-plus-anti-instanton coefficient is -27*kappa_N/(5*(N^2-1)) times (g^2/(4*pi^2))^2, with kappa_N=2*Gamma(N-1/2)/(sqrt(pi)*Gamma(N-1)); the SO(7)/USp(6) pairing is perturbative."
+        },
+        {
+          "location": "Section 7",
+          "claim_ids": [
+            "np-index-n4-fourier-positivity"
+          ],
+          "description": "On a finite complete survivor space with positive physical metric and a uniform leading expansion containing only Fourier modes +1 and -1 and no neutral term at that exponential order, positivity for every theta forces that leading matrix to vanish. A first-instanton supercharge may instead produce neutral quadratic energy at twice the action."
+        },
+        {
+          "location": "Sections 6 and 8",
+          "claim_ids": [
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "A formal weak-cusp zero does not establish finite-coupling zero; the checked sources supply no microscopic instanton-only removal of a fully certified nonscalar perturbative survivor."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Sections 2 and 3",
+          "reason": "Attributed representation-recombination, protected-correlator and Berry-bundle background is used to limit inferences; these are not new native-block calculations or new cohomology claims."
+        },
+        {
+          "location": "End of section 1: cubic SU(5) counterexample",
+          "reason": "The nonreduced cubic-superpotential quotient belongs to an N=1 theory and is used only to delimit the N=4 detector theorem."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "064091a9e1c94c8520782f4374fab748a884ba0cfb5a33a84dd0ffe9c3c498ba",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole chapter, including Propositions 18.1 and 18.2",
+          "reason": "SP and SO Seiberg duality, Pfaffian/determinant superpotentials, scale matching, scalar torsion and effective meson jet images concern four-dimensional N=1 gauge theories with fundamental matter; the complete theory is not undeformed N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "0d0c9973a4eb64534a56370b233558764c0186e1fdf7ae08e6ed920a89d47a71",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Sections 1–5",
+          "reason": "The complete audit concerns N=1 SQCD and its low-energy Higgs-branch higher F-terms. It explicitly does not establish a UV single-supercharge operator lift or its absolute coefficient, and supplies no undeformed-N4 result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "0e0fc04faed672ef28fe1c78e72c100d29723e51318042b865cba8fb14d39632",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Source-map table and engine instructions",
+          "reason": "Bibliographic and reproducibility navigation, not an independent scientific result."
+        },
+        {
+          "location": "Two trace invariants and two-adjoint subsections",
+          "reason": "The Casimir cross-term belongs to the pure N=1 b,c model; the two-adjoint Kutasov-type duality discussion concerns N=1 deformations and conjectural truncations."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "0eac15414920e7974f537bbc677b50eb46ecdaf8f8e064dca806a6772615a0f9",
+      "classification": "mixed",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-scalar-detector",
+        "np-index-n4-konishi"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Final paragraph: theory with sixteen independent supersymmetry transformations",
+          "claim_ids": [
+            "np-index-n4-scalar-detector",
+            "np-index-n4-konishi"
+          ],
+          "description": "Abstract-level advertisement of exact scalar-vacuum protection and the distinct long-Konishi anomalous-dimension correction."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "All preceding paragraphs",
+          "reason": "The nilpotent quantum product, conditional secondary pairing, microscopic connection matching, SQCD determinant/Pfaffian torsion, sixteen currents and eight-supercharge bulk translation theorem belong to the N=1/N=2 program, not undeformed N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "161519ad95fa362508b2b3b90b3dfa3855cc26fde6afd74f9d6e01e98c6291b0",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Sections 3.1–3.7",
+          "reason": "Pedagogical filtered-complex, quantum-product, invariant-theory, effective-interaction and instanton-Ward calculations are applied to the pure N=1 b,c model and N=1 SQCD; the separately cited translation application is N=2. No undeformed-N4 sector result is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "1a170b889aee0b206a2c245526d4f772d5c3897c2f97d0401530c834d002fc15",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Sections 1–3 and scope comparison",
+          "reason": "All results concern two-dimensional (0,2)/(2,2) sigma models or three-dimensional N=2 monopole duality. The final comparison explicitly refuses to infer the current four-dimensional project differential from these examples."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "1d71b9db63c809279c2ab0043adad397d8d7677987d77aef7a53155af5db2388",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole invariant-quotient proof",
+          "reason": "The equation X^2-Tr(X^2)I/5=0 is the cubic-superpotential N=1 SU(5) F-term relation, not the undeformed-N4 commuting-scalar relation. Its three-dimensional nonreduced invariant quotient is an other-theory algebraic result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "2177e525bf47678911465a4023ddbcff40748ac21031eaf7c12c5d9369a12292",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole chapter, including Theorem 21.1 and Corollary 21.2",
+          "reason": "Seiberg–Witten periods, matter curves, adjoint-mass condensates and translation-protected bulk towers are explicitly four-dimensional N=2 (eight-supercharge) results; the N_f=4 flavor count does not denote N=4 supersymmetry."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "21926dcb2a6d13022e73948003068038c3eaac0b62c94777f8a82e003de44493",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole first-lift construction and final conditional gate",
+          "reason": "This SU(4) is the pure N=1 holomorphic b,c model. Its k=2,4,5 and conditional k=6 scalar first-lift bridge is not the N=4 SU(4) threshold block; the document explicitly leaves the k=6 rational identity unfinished."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "23f99a6ee1ca9e7876dd32532777074b1d773fafcaf9abbfce6ca22b2f3ef426",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire manuscript, including abstract, propositions, instanton input, massive matter, discussion and rank appendix",
+          "reason": "The title and field dictionary specify pure four-dimensional N=1 Yang–Mills and massive N=1 matter. Its formal partner claims and conditional instanton relation are not undeformed-N4 claims; Seiberg–Witten comparisons are mass-deformed N=2 background."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "26e868eefe3d002b368992498c4bbcf43df0cb6446aa0ecdec4d8955d1ebc15f",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Propositions 1–13 and Theorems 6, 11, 14–17, with all evidence descriptions",
+          "reason": "The complete rational-chain calculation is for the N=1 b,c complex. It contains exact formal SU(3) partner, product, module, E2, E3 and E-infinity statements, but no undeformed-N4 source/target sector. Its explicit nonperturbative and higher-order exclusions are retained as other-theory limitations."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "2a3a9b8292d44809028af2f986c02d124fe5ab35037aab752b2709b5e8ce4390",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole chapter: complex, product, P1–P3 and Proposition 4.2",
+          "reason": "The chapter explicitly defines the pure N=1 holomorphic b,c model from arXiv:2306.01039. Its SU(2) nilpotency, hidden products, partner existence and incomplete higher explicit chain are not N=4 results."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "2aa9b275d5c2f917650f7ffb0037558cdd3e6b2cfa86fbb18e2188da5e585509",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "All C3 and C4 trace-coefficient tables",
+          "reason": "These are full rational representatives in the pure N=1 b,c model with its original formal loop parameter. The quoted ranks and source rotation construction concern that model, not N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "34c5e2b15f5834fad6d5d1458fadb5e7435e3ed707f8ca4cd88a8fa71d40d253",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole chapter: profiles, separated integral, regulated Ward identity and Wilson-line insertion",
+          "reason": "The four-mode SU(2) pure N=1 instanton calculation and its Lambda^6 coefficient are distinct from sixteen-exact-mode undeformed N=4. The manuscript itself leaves full local-composite/Noether-current matching open."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "3734a91ac32cafc50d7f4b1c6a236dbeb72fd89cbd0d16578a9ebb5cb3806a0b",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Complete tree module, radial one-loop calculation, recurrence and saved evidence",
+          "reason": "The two-ghost leading scalar module and all-degree first-page formula are for the pure N=1 b,c complex. SU(3) denotes its gauge group; no undeformed-N4 source/target block is claimed."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "382173f57ec77dcd48e949c08eb7efa5047214f8f8d9c5e070dff095a417cb2a",
+      "classification": "mixed",
+      "review_complete": true,
+      "claim_ids": [
+        "np-so7-sp3-frame-bound",
+        "np-so9-sp4-frame-bound",
+        "np-su2-sampled-leibniz"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Section 3 handle B, the two N=4 rows",
+          "claim_ids": [
+            "np-so7-sp3-frame-bound",
+            "np-so9-sp4-frame-bound"
+          ],
+          "description": "The historical table reports zero forced-lift dimension lower bounds at every charge through j22 for SO(7)/Sp(3) after d1 and through j19 for SO(9)/Sp(4); no exact physical no-lifting theorem follows."
+        },
+        {
+          "location": "Section 14 checks table, N=4 SU(2) rows",
+          "claim_ids": [
+            "np-su2-sampled-leibniz"
+          ],
+          "description": "Reports 110 one-loop and 140 two-loop finite-field word-pair Leibniz checks, with the one-loop jets bounded by two; this is sampled formal-model validation only."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Sections 1–2 and general handles in section 3",
+          "reason": "General filtration/selection-rule background; the N=4 zero anomalous-charge line supplies no additional no-go theorem or computed block."
+        },
+        {
+          "location": "Sections 4–13, remaining section-14 rows and all pure-theory products/instanton/matter statements",
+          "reason": "These are pure N=1 Yang–Mills, massive N=1 matter or N=2 comparisons; their gauge group labels and C_n nomenclature do not denote undeformed-N4 blocks."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "All 736 lines reviewed, including the mixed N=4 checks near the end. Old campaign status is attributed; absent per-row raw payloads are limitations, not claims of a fresh replay. No physical acceptance is inferred."
+    },
+    {
+      "sha256": "3a2a079e6fed3c6408fb3f6f4dfe07eab0b480234d70ac0b80cdf8c7e90c5d3e",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Verdict and sections 1–4",
+          "reason": "The complete benchmark is Kutasov N=1 SU(5) with four flavors and cubic adjoint superpotential, including its all-perturbative square and conditional quantum trace map. Setting its quadratic coupling to zero does not yield undeformed N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "3cc13e8dd2734b616a8597aa52073894d1eebcbf54302333b054e22ca45be95c",
+      "classification": "mixed",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-konishi",
+        "np-index-n4-scalar-detector",
+        "np-index-n4-fourier-positivity",
+        "np-index-n4-nonscalar-image"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Established source inputs: first three bullets",
+          "claim_ids": [
+            "np-index-n4-konishi",
+            "np-index-n4-scalar-detector",
+            "np-index-n4-fourier-positivity"
+          ],
+          "description": "Restates the separate long-Konishi instanton correction/perturbative SO(7) pairing, complete scalar vacuum detector and conditional Fourier-positivity deduction."
+        },
+        {
+          "location": "Next calculations, item 3",
+          "claim_ids": [
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "The nonscalar N=4 instanton calculation still requires a complete perturbative survivor and a partner; first-order tower protection is insufficient."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Remaining source-input bullets and SU(5) candidate section",
+          "reason": "N=1 SQCD, cubic-adjoint SU(5), and two-/three-dimensional benchmark models are other theories; the general unitary-SCFT implication is used for that N=1 candidate, without supplying an undeformed-N4 result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "446e0f3ac213f0506f047f8b72a96efd0451264db10f20999a42fc8fc7706fc5",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Propositions 16.1–16.4, Theorems 16.3/16.5 and every determinant/current/mass subsection",
+          "reason": "The complete chapter is N=1 magnetic SQCD with fundamental matter and singlet mesons. Its determinant saturation, 39-column current calculation, free rank-sixteen module, mass-pole requirement and specialization differential are not undeformed-N4 results."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "49a887723020a2abdf6822da7a6981c69fde714125763e46bdecab6d0da3bf23",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "np-neutral-cluster-trace-criterion",
+        "np-index-n4-nonscalar-image"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Hypotheses, Calculation, Trace-only criterion and counterexample",
+          "claim_ids": [
+            "np-neutral-cluster-trace-criterion"
+          ],
+          "description": "The conditional two-orientation theorem relates the neutral coefficient of the full matched small-cluster trace to the squared norms of both first-instanton maps, under explicit positivity, gap, frame, saddle and uniform-expansion assumptions."
+        },
+        {
+          "location": "Use for R-007",
+          "claim_ids": [
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "The note proposes a future physical Ward/neutral-gap test, supplies neither quantity, and expressly retains contact-term and matching requirements."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": "Complete text reviewed. The source uses spectral projection in its conditional historical argument; this review records that hypothesis without performing or authorizing a new projection calculation."
+    },
+    {
+      "sha256": "528ee3597d3cacbe67ae7be2fe4b1a7b021df956d249fda3b5d192db0976cae0",
+      "classification": "mixed",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-scalar-detector",
+        "np-index-n4-total-descendants",
+        "np-index-n4-konishi",
+        "orthogonal-first-family",
+        "np-index-n4-fourier-positivity",
+        "np-index-n4-nonscalar-image"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Section 2.18: scalar relations and invariant-theory detector",
+          "claim_ids": [
+            "np-index-n4-scalar-detector"
+          ],
+          "description": "Every nonzero SU(N) gauge-invariant pure scalar class has a nonzero diagonal vacuum value and survives the exact supercharge, subject to the stated invariant-theory and vacuum assumptions."
+        },
+        {
+          "location": "Section 2.18: total translations of single-scalar half-BPS primaries",
+          "claim_ids": [
+            "np-index-n4-total-descendants"
+          ],
+          "description": "At scalar degree p≥2 and total holomorphic derivative order k≥0 the protected translated subspace has dimension (k+1)[t^p] product_{j=2}^N(1−t^j)^{-1}; exact separated two-point functions detect all its linear combinations."
+        },
+        {
+          "location": "Section 2.18: Konishi anomalous dimension and SO(7)–USp(6) comparison",
+          "claim_ids": [
+            "np-index-n4-konishi",
+            "orthogonal-first-family"
+          ],
+          "description": "The displayed Alday–Korchemsky one-instanton plus anti-instanton Konishi anomalous dimension is a correction to an already long multiplet; the SO(7)–USp(6) removal cited here occurs at first perturbative quantum order."
+        },
+        {
+          "location": "Section 2.18: positivity and remaining open problem",
+          "claim_ids": [
+            "np-index-n4-fourier-positivity",
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "Positive finite perturbative-survivor blocks exclude a leading energy matrix consisting solely of nonzero vacuum-angle Fourier modes, while a first supercharge instanton coefficient produces the neutral positive anticommutator at doubled action; a calculated microscopic image of a fully perturbatively surviving nonscalar remains open."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Sections 2.1–2.17",
+          "reason": "Pure N=1 gauge complexes, fundamental-matter theories, effective superpotentials, mass deformations, lower-dimensional monopole models and their mathematical deformation machinery are not undeformed N=4 claims."
+        },
+        {
+          "location": "Section 2.18 before the N=4 scalar paragraph",
+          "reason": "Seiberg–Witten periods, mass-selected vacua and pure N=2 bulk translation towers concern N=2 or mass-deformed theories, not N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "55f0b36b327b4d0a7bf299f94e11f25720eb15a35d2dd3e2571d3462e16b9856",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document, Sections 1–8",
+          "reason": "Theories are four-dimensional N=1 SQCD with fundamental matter, their confined singlet or localized ADS effective complexes and mass decoupling; no undeformed N=4 assertion is made. The stated ultraviolet/effective matching limitations are retained as other-theory content."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "59233a6655d999d3a0eafd1d5f6ce64b45652511c781e826ac15d58d72d4e6d8",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [
+        "su3-r007-formal-survival"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Entire replay recipe and final scope paragraph",
+          "claim_ids": [
+            "su3-r007-formal-survival"
+          ],
+          "description": "Replays finite exact inputs supporting the rational non-torsion formal-existence theorem. It explicitly does not reconstruct the full repaired cochains or an instanton matrix element."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Dependency, archive and command instructions",
+          "reason": "Reproducibility metadata rather than a separate scientific claim."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "599f911ebbe47cc100c0f056a985e6b850f237c4e7c04f9256257cc2c274c3af",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document, Propositions 1–3 and k=4 result",
+          "reason": "The b,c positive-jet gauge complex and its SU(4) leading tree module are the pure N=1 theory from this source campaign. The historical scalar operations, Casimir kernels and perturbative cocycles do not supply an undeformed N=4 result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "5b5aa0b4b5ae3f2af5e00f005086b7a723bdf901dccac79602c0e3024ea98bb9",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [
+        "su3-f1-formal-tower"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Finite-check recipe",
+          "claim_ids": [
+            "su3-f1-formal-tower"
+          ],
+          "description": "Reconstructs the level-32 seed, graded syzygy, small ranks and split dual used by the F1 formal-survival proof; the prefactor test does not determine a physical quantum product."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Dependency and command instructions",
+          "reason": "Reproducibility navigation; no additional cohomology multiplicity theorem is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "5bce823e2d9066abab690c5adb96b2a5396021eb6378884137ad7318c01c0908",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "su3-f1-formal-tower"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Opening theorem, exact classical input, small repairs and split-pairing sections",
+          "claim_ids": [
+            "su3-f1-formal-tower"
+          ],
+          "description": "For the pinned 8640-term level-32 seed and the level-30 seed, exact small repairs, the common-scheme product syzygy and nonzero split dual prove a finite rational formal lift without parameter torsion; marked scalar products give at least one class at every level 24+2n, n>=3, in [n,0]. All stated parity, grading, coefficient and allowed-prefactor hypotheses are retained."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Replay section and implementation descriptions",
+          "reason": "Proof inputs and method details are supporting evidence, not independent physical protection or instanton results."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Full text reviewed, including every small-rank row and both seed/tower arguments. Historical use of restricted/projection constructions is recorded as source methodology only; none was performed in this review. No uniqueness, full higher-loop coordinate export, physical dictionary, or instanton conclusion is added."
+    },
+    {
+      "sha256": "5d35b743f842e1399d10c1bc3c05d5f37ba89b4dcd521c2af1abe020ba4f099c",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-konishi",
+        "orthogonal-first-family",
+        "su3-f1-formal-tower",
+        "np-index-n4-nonscalar-image"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Sections 1 and 6",
+          "claim_ids": [
+            "np-index-n4-konishi"
+          ],
+          "description": "Literature attribution: the SO(7)/USp(6) level-18 mismatch is paired perturbatively in the displayed target normalization; the SU(2) long-Konishi leading instanton coefficient is -9/5 in the stated coupling convention."
+        },
+        {
+          "location": "Section 3",
+          "claim_ids": [
+            "orthogonal-first-family"
+          ],
+          "description": "Attributes the SO(7) fourth-glueball-power descendant pairing [Q1][F4]=-12*kappa_Q*[S^4], with detector values -4608*kappa_Q and 384 and a one-dimensional target; this retains the paper-specific normalization and is not silently equated to the separate native-family coefficient."
+        },
+        {
+          "location": "Section 4",
+          "claim_ids": [
+            "su3-f1-formal-tower"
+          ],
+          "description": "Historical literature input establishes only first quantum-order F1 tower protection, using the nonnegative derivative-free grading and scalar dressing. The canonical later formal all-order theorem is stronger and is not attributed to this source."
+        },
+        {
+          "location": "Opening statement and section 7",
+          "claim_ids": [
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "The checked papers do not certify microscopic instanton removal of an all-perturbative nonscalar survivor; the proposed complete-sector and operator-mixing calculation remains a research target."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Section 2",
+          "reason": "The Budzik–Kulp pair kernel, v3 factor 1/2, higher-jet extension and nilpotency coefficient equation are cited formal-framework background, not a newly computed complete-block lifting result."
+        },
+        {
+          "location": "Section 5",
+          "reason": "Protected-correlator and primary/descendant literature is explicitly used to prevent an unsupported cohomology-protection inference, not advertised as a new result of this repository."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "5e5de5d903c4ae65094cecf00e21afbcd16fb84297c3ecaaeb6d68b8b9cfd94c",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-scalar-detector",
+        "np-index-n4-total-descendants",
+        "np-index-n4-konishi",
+        "np-index-n4-fourier-positivity"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Section 22 table row",
+          "claim_ids": [
+            "np-index-n4-scalar-detector",
+            "np-index-n4-total-descendants",
+            "np-index-n4-konishi",
+            "np-index-n4-fourier-positivity"
+          ],
+          "description": "Chapter-map advertisement of the four separately stated N=4 results; each resolves to the detailed chapter, not a new claim."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "All other chapter rows",
+          "reason": "Navigation to N=1/N=2 calculations, methods and electronic certificates; these do not add undeformed-N4 results."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "61573274fd6da718c80db9d498c562ca265435cbff9f7a7256eac8d647c34905",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Complete proposition, proof and saved-evidence paragraph",
+          "reason": "The all-degree two-ghost leading scalar result is in the pure N=1 SU(2) b,c model; neither the gauge name nor scalar terminology identifies an N=4 block."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "62f762af1011f19e1cebd14380fb832c3efa7516e91c3a0c1f65dc3d04d91ba3",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The massive adjoint and fundamental theories flow to pure N=1 SU(2), with a massless N=2 adjoint limit. Their bilinear Konishi identities, finite-sector census and gaugino vacuum algebra are not undeformed N=4 results."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "6940cdc25ec26bd5d1617e0bc90b0c52e2b05184f805304f18e0398901c7e0de",
+      "classification": "mixed",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-scalar-detector",
+        "np-index-n4-konishi"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Operator-data table: N=4 scalar quotient row",
+          "claim_ids": [
+            "np-index-n4-scalar-detector"
+          ],
+          "description": "Exact diagonal vacua detect nonzero scalar classes under the reduced invariant quotient and vacuum Ward hypotheses."
+        },
+        {
+          "location": "Operator-data table: N=4 long multiplets row",
+          "claim_ids": [
+            "np-index-n4-konishi"
+          ],
+          "description": "A specified long multiplet with complete instanton zero-mode saturation has a nonzero instanton anomalous-dimension correction."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Other operator-data rows and final local-calculation paragraph",
+          "reason": "Pure N=1, matter, effective Pfaffian/monopole and N=2 examples are different theories."
+        },
+        {
+          "location": "Complete tests and index-test discussion",
+          "reason": "General localization, saturation, Smith normal form and signed-index facts are background tools. This document applies them to N=1 or effective matter models and does not supply an actual N=4 differential matrix or new N=4 sector result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "726de80f6535ac60091c92b541d446c75fd708f9d64b31a70926cb785f364357",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The physical opposite-curvature, Weyl Green response, collective-coordinate and boundary-potential calculations belong to the pure N=1 instanton/secondary-partner campaign. No undeformed N=4 operator or differential is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "77a08c734633f0f330d72fafd0856b79627c8c1365f0e44419207bd632bc4dea",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "su3-r007-formal-survival"
+      ],
+      "covered_assertions": [
+        {
+          "location": "What was verified, items 1–3; Open gates",
+          "claim_ids": [
+            "su3-r007-formal-survival"
+          ],
+          "description": "Exact input checks establish finite-SU(3) closure of the complete 6139-term R-007, literal reconstruction of its 213104-term first-loop image, and a classical block dual with pairing 31104*i in unscaled Pauli coordinates. This packet alone makes non-torsion conditional on an all-order completion and supplies no rational first-image primitive; the later canonical survival theorem supplies that separate completion."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Replay commands and measured execution data",
+          "reason": "Reproducibility and provenance details, not a new theorem."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "7915ba3f5577f346dcf7372d0e8b5e5ceef2b3cd5cf5a3ebf4e0a41d82b1a9fe",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Exact chain, third witness, still-unexpanded list and final convention paragraph",
+          "reason": "The rational B5/M6 source at (Nb,Nc;n1,n2)=(5,5;9,9) belongs to the pure N=1 b,c program; the complete third correction and unexpanded fourth/fifth equations are not N=4 j24 or R-007."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "7a2d6ae9366d05f63388ca49db5e1f67bab3c192ca63084a196dcd0b5e397cc6",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document, including Conditional Theorem 9.2 and finite-support ghost proposition",
+          "reason": "The primary setting is pure N=1 SU(N), with perturbative gaugino nilpotency C0^N=0 and scale Λ^(3N). The secondary products, finite homotopies and conditional instanton images are not undeformed N=4 assertions. General ghost-algebra statements are method background rather than a calculated N=4 channel."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "842c5c96882573beafb26574e12709808a9f3cd346745633b3f8622d7fb14f7b",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire critical source audit",
+          "reason": "The SU(5), four-flavor cubic-adjoint Kutasov–Schwimmer–Seiberg model is an N=1 matter theory. Its nilpotent trace-sector prediction and conditional generalized Konishi/characteristic identities do not establish an undeformed N=4 claim."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "8832cc03ac210af1a47db9977fe881c0de7a547ee50f09404f2b8dee0cc9c5d2",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The SU(3) common-root/algebraic secondary-partner comparison belongs to the pure N=1 b,c complex and C0^3 multiplication homotopy; it is distinct from the N=4 SU(3) R-007 and F1 sectors."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "8cd3c7c478ef7934a388edabf70ddaf7099ba94ad327ec1d55b40c76a0f06fe3",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "np-su2-j24-incoming-zero"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Opening theorem and complete incoming argument",
+          "claim_ids": [
+            "np-su2-j24-incoming-zero"
+          ],
+          "description": "Three actually completed translation descendants exhaust the full five-lane incoming formal cohomology by exact characters, full incoming images and Nakayama; quotient zero holds before and after inverting the formal parameter."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Replay instructions and external approach link",
+          "reason": "Supporting provenance and an alternative method, not an outgoing or physical no-pairing theorem."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Full README and the pinned public archive PROVENANCE.md, TRANSLATION_SCOPE.md, characters.py and RESULT.json metadata were inspected; archive SHA-256 matches its published value. No historical SU(2) calculation was rerun."
+    },
+    {
+      "sha256": "8ff3e51f6f2ab891fdd9d49e99459257546bfbfd69b24947d2c4c41932c981f8",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire introduction",
+          "reason": "The concrete summaries concern pure N=1 b,c products/instantons, N=1 matter determinants and an explicitly eight-supercharge N=2 bulk theory. General explanations of cohomology, scaling dimensions and proof scope announce no additional undeformed N=4 result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "8ff87f543f0dde64e893ff997898dc2e35145a0854c765ee2cb0212218066036",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document, Propositions 1–10 and Theorem 11",
+          "reason": "The SU(2) C6 partner calculation at b,c weights (9,9) is in the pure N=1 relative gauge complex. It is not the N=4 SU(2) j=24 formal-completion sector and supplies no new undeformed N=4 theorem."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "957d8e5b45d233bac9d94d1caf7ae27c3bd0ebf526d151942d546beaa519c3e9",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "su3-r007-formal-survival"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Opening theorem and sections 1–3",
+          "claim_ids": [
+            "su3-r007-formal-survival"
+          ],
+          "description": "The pinned 6139-term level-30 odd seed admits a finite rational closed completion with no formal-coupling torsion. The proof uses a free graded syzygy, common-scheme marked products, complete small repair slots, the actual second residual, an injective 300-column Cartan-prefactor map and the split dual. It is a formal existence theorem and leaves the physical comparison and instanton coefficient open."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Replay and implementation instructions",
+          "reason": "Finite supporting checks do not print complete repaired coefficient polynomials or compute physical matrix elements."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete text reviewed, including all three small-rank rows, the exact determinant residues and the residual-versus-bare-Q2 distinction. Source projection terminology is retained only as historical methodology; no such construction was performed during this semantic review."
+    },
+    {
+      "sha256": "97c6c13e16506aa7a1b4d150ecd8a5251771c866ee2bf8644208836950f746b6",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Sections 1–3: graph counting and derivative degree",
+          "reason": "General N=1 gauge/matter holomorphic graph-scheme lemmas are background and contain no separately advertised undeformed N=4 sector calculation."
+        },
+        {
+          "location": "Section 4 and audit result",
+          "reason": "The actual scalar nonexactness application is the N=1 SU(5) cubic-adjoint square with fundamental matter. Its stated formal graph-scheme proof does not assert a physical N=4 instanton result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "988fef4cc1bf845d5cbdf63345c530a51459847f2e4d44415252c764b0eb7949",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The ADS, mass-deformed, quantum-constraint and confined Pfaffian models are N=1 SQCD or their localized effective Koszul complexes; all displayed cohomologies and vacuum branches concern those theories."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "98bfac93d815c2b9b4d49504964117e40632de57d56dbf1d560d91d3e8e4c7e5",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "np-su2-j24-formal-completion"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Whole threshold-completion README",
+          "claim_ids": [
+            "np-su2-j24-formal-completion"
+          ],
+          "description": "The pinned rational coefficients solve all five formal closure equations; the full classical dual pairs to -30 and excludes any formal-parameter multiple being a boundary. The claim is the particular free formal line, not physical protection."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": "Full README and public archive README/convention and classical-dual metadata were inspected; archive SHA-256 matches its published value. Restricted-kernel and physical-comparison limitations are retained; no new SU(2) calculation was performed."
+    },
+    {
+      "sha256": "9a044ede9a67fc217cfc2dd060b5ce722a6810c9a0d783cb921800f462838c21",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-total-descendants",
+        "np-index-n4-scalar-detector",
+        "np-index-n4-nonscalar-image"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Which derivative operators are protected? row",
+          "claim_ids": [
+            "np-index-n4-total-descendants"
+          ],
+          "description": "Advertises the independent nondegenerate two-point detector for total translations of one-scalar half-BPS primaries."
+        },
+        {
+          "location": "What do other dualities and extended supersymmetry constrain? row",
+          "claim_ids": [
+            "np-index-n4-scalar-detector",
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "Advertises complete scalar-vacuum detection and the absence of a certified nonscalar microscopic instanton pairing in this project."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "All other research rows",
+          "reason": "The pure N=1, SQCD, cubic-adjoint and N=2 results concern other theories."
+        },
+        {
+          "location": "Project commands, release and verification instructions",
+          "reason": "Navigation and provenance; no new scientific statement."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "9bb61890a81c346a288c64209e89b0153185c293dccb0472d5f350409dbbaa23",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Sections 1–4",
+          "reason": "The physical radial-algebra implication is a general N=1 superconformal representation-theory theorem with explicit matching assumptions, not a separately advertised calculation in undeformed N=4."
+        },
+        {
+          "location": "Section 5 and readback",
+          "reason": "The only concrete application is conditional in the SU(5), four-flavor cubic-adjoint N=1 theory, including free-meson and renormalized-product caveats. No N=4 sector claim is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "9c240a6fa457d49e1059ea96911291e90172d1034d949d2c2740bb56681334b2",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The characteristic-residue and Hessian families are compared to SU(3)/SU(4) leading b,c Cartan kernels of the pure N=1 complex. The arbitrary-rank period theorem is mathematical background, and an arbitrary-rank identification with that quantum complex is explicitly open; no N=4 sector is advertised."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "9f96646f78d27b9746e454bf829551fbff6a92858d38624c3198ff0739382d8c",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "su3-cartangraviton-5080-target"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Result and Certificate",
+          "claim_ids": [
+            "su3-cartangraviton-5080-target"
+          ],
+          "description": "A literal 5080-term nonabelian classical SU(3) vector at (E;R;JL,JR)=(13;5,2,2;2,0), native (2,2;5,2,2), length 9, is annihilated by the stated fourteen classical operators and has nonzero 34104-term Cartan image with first coefficient 432/5."
+        },
+        {
+          "location": "The same class survives the formal perturbative complex",
+          "claim_ids": [
+            "su3-cartangraviton-5080-target"
+          ],
+          "description": "Its expression in closed single-graviton components gives a marked-product formal completion; the all-page Cartan theorem excludes parameter torsion. Classical primarity is not promoted to quantum or physical primarity."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Replay instructions and negative control",
+          "reason": "Method and validation details, not an independent state count."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Full text reviewed. This 5080-term Cartan-visible vector is kept distinct from the 34492-term Cartan-null nine-letter target in the same native grading; no whole-sector graviton-exhaustion claim is inferred."
+    },
+    {
+      "sha256": "a7a1f024f0a8a26d74594dd820a9caacbea50cf65dc6832f5ee84e13e760b4d8",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document, both trace tables and uniqueness counts",
+          "reason": "These C3 and C4 trace representatives use the pure N=1 b,c complex, its trace-dual convention and loop parameter. They are unrelated to the N=4 SU(3) F1/R-007 formal towers."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "a9e8aff78872ae50d7ca2a94684d47b4883da17d224008015df48b6d44a38fb6",
+      "classification": "mixed",
+      "review_complete": true,
+      "claim_ids": [
+        "np-su2-sampled-leibniz"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Checks, Leibniz table: n=1 and n=2 N=4 SU(2) rows",
+          "claim_ids": [
+            "np-su2-sampled-leibniz"
+          ],
+          "description": "Historical exact arithmetic modulo 2147483647 found zero Leibniz residual for 110 N=4 SU(2) word pairs at one loop with at most two derivatives per letter and 140 at two loops; the two-loop row does not state a jet bound."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Formula, trees, tables, code and general checks",
+          "reason": "General cubic N=1 quantum-product kernel data and their combinatorial consistency tests are formal method background, not a complete physical N=4 operator-sector calculation."
+        },
+        {
+          "location": "Leibniz table: rows not explicitly N=4",
+          "reason": "The remaining SU(2)/SU(3) rows belong to the pure gauge N=1 component campaign and are not promoted to N=4 checks."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "aa78de3e997729173a70b64e94d89c5b12cd302fa982106a635f003041b8b39e",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Higher F-terms sections",
+          "reason": "These are N=1 SU(2) SQCD Higgs-branch interactions and their mass descent, with fundamental matter and explicit effective-patch qualifications."
+        },
+        {
+          "location": "Circle, multiplier and lower-dimensional sections",
+          "reason": "The results concern compactified N=1 SQCD, three-dimensional N=2 monopole disorder operators, effective multiplier models and two-dimensional (0,2)/(2,2) theories. None is an undeformed four-dimensional N=4 result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "adfc1f700b69fd672b4bf085420049676e26d8637b42d3ee1bf06c4084531cb4",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Two anchored theorem summaries",
+          "reason": "Guide to general perturbative anomaly-cancellation/nilpotency and marked-product inputs. The explicit local application is the pure N=1 nilpotency proof; no separate N=4 charge-block, physical comparison or instanton theorem is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "b0be4d0a36dffd880495930603dd87de527ebb51416b9e379a1ee4d2545c917b",
+      "classification": "mixed",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-nonscalar-image",
+        "np-index-n4-scalar-detector",
+        "np-index-n4-total-descendants",
+        "np-index-n4-fourier-positivity"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Problem 5: N=4 Yang–Mills",
+          "claim_ids": [
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "Requires a complete nonscalar perturbative survivor, matched target, all mixing/boundaries and a full microscopic instanton insertion; no such nonzero pairing is certified in the project."
+        },
+        {
+          "location": "Problem 5 inputs",
+          "claim_ids": [
+            "np-index-n4-scalar-detector",
+            "np-index-n4-total-descendants",
+            "np-index-n4-fourier-positivity"
+          ],
+          "description": "Exact scalar vacua and the half-BPS total-translation detector exclude the specified protected subspaces; absence of a linear instanton energy correction is insufficient because a supercharge correction can contribute quadratically."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Problems 1–4, two unfinished representatives and resolved SQCD torsion",
+          "reason": "These concern the pure N=1 b,c theory, N=1 SQCD or the cubic-adjoint N=1 SU(5) deformation, including their incomplete microscopic matching."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "b250d1f68f31760da0c204df0d221ca375815e1196b8da3d681e17ce80468529",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The complete SU(2), SU(3), SU(4) leading modules, first-loop classifications and full low-degree lifts all concern the pure N=1 b,c complex and its two-ghost rotation-scalar sectors. They are not undeformed N=4 states, despite sharing gauge-group labels with other campaigns."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "b5c4d5a3a19769506f72a30fdbec97b3daec739af45950adafd5a6f192d47b75",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-scalar-detector",
+        "np-index-n4-konishi",
+        "np-index-n4-total-descendants"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Citations linked to Section 22 and N=4 descendant detector",
+          "claim_ids": [
+            "np-index-n4-scalar-detector",
+            "np-index-n4-konishi",
+            "np-index-n4-total-descendants"
+          ],
+          "description": "Bibliographic navigation for the separately recorded scalar, long-multiplet and descendant statements. It advertises no new coefficient, operator or acceptance."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "All other bibliography entries",
+          "reason": "Navigation to N=1, N=2, effective matter, lower-dimensional or mathematical background sources; no additional undeformed N=4 assertion occurs in this bibliography."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "b67120b8f5b6167b8dc6b1cbcc1cb4365b8d3ba02eba624897fac16b54de0ebc",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-konishi"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Entire normalization-replay description",
+          "claim_ids": [
+            "np-index-n4-konishi"
+          ],
+          "description": "Independently coded color/Grassmann, wedge/determinant saturation and bosonic Gamma-residue comparisons verify the stated long-Konishi normalization from published instanton profiles. The profiles remain source inputs; no new profile solution, BPS lift or supercurrent matrix element is claimed."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Command, timing and checksum metadata",
+          "reason": "Supporting reproducibility information."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "bb816ff543834e1a28d632777dd9d3824ad2cdcae39d037f82d27c80fee3cb88",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The electric/magnetic rank bounds, threshold matching and massive vacua are N=1 SQCD with fundamental matter, not undeformed N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "c08748733f0747c5bf3606ba3b5f48a371c71395850382b6d3400d8d616c6308",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-total-descendants"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Paragraph describing the translation check",
+          "claim_ids": [
+            "np-index-n4-total-descendants"
+          ],
+          "description": "The guide points to exact conformal-descendant coefficient recomputation as supporting validation, without replacing the analytic dimension theorem."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Evidence-kind table, nilpotency example, downloads and four polynomial payloads",
+          "reason": "Verification/provenance navigation; the explicitly listed large polynomials belong to the N=1 b,c program, not undeformed-N4 new results."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "c546f65d5277e31874c1d139debdcf161b1bc145345aef7d78686f901fd2b12e",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The mathematical twisted-period and Hessian identifications are applied to pure N=1 SU(3)/SU(4) b,c cohomology. The all-rank residue consequence is mathematical background and does not assert an N=4 complex identification."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "c851aef48c6889752a0fdabe5d8e9d794a1c757b379257a0774ae69a07743ae6",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "These finite-support ghost-contraction propositions are general algebraic limitations motivated by a pure N=1 instanton ansatz. They neither construct an N=4 instanton differential nor advertise a concrete N=4 sector result; the positive-jet and finite-support caveats remain explicit."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "cdae6036fd8ada1c80f34019f12cd5fe3dc798c66d4c999aa3f10cb479f9f420",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The M4 class at weights (7,7), with only b,c letter counts, is the pure N=1 SU(2) secondary-partner sector; its exact rational uniqueness is not a claim about N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "cde200bedbad6c5197bdd0db19247d7e707cdd815ecf3e8b660e060e7a6021eb",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The explicit fundamental triangle, Higgs-frame polynomial completion and contraction count concern the N=1 magnetic SQCD current with fundamental quarks and meson singlets. The representation-general triangle formula is method background; no N=4 specialization is asserted here."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "db4b6ca847f2bad6e312af14ac57da59cfcd82f53918034c38fab827cd4bafad",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The finite-ball normal connection, collective-coordinate transport and measure balance continue the pure N=1 SU(2) instanton/secondary-partner calculation. They do not assert a physical N=4 operator comparison or lift."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "dd4be74d3f1fd6fff5b996f37acc370f88ecffbeba3fb4b81706771f6268d109",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Whole research-claim map",
+          "reason": "All named C2/C3/C4/M4/M6, Casimir modules, physical connection insertions and exact nilpotency are in the pure N=1 b,c program. Literature Hessian comparisons are mathematical background for that program. The local source path is provenance text only and was not accessed."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "e020dab79f92f2bc6cf4cae38580cbb5b2ea3573acf57d9a2c271f64da2e3c72",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The polynomial unit-contraction identity is in the mass-deformed constrained effective N=1 SU(2) two-flavor SQCD model, with its microscopic comparison explicitly separate."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "e0b3fa934eb1d9824be8bfe3bba1c02305b28c5c618af6122d264a41884dbfe4",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "np-index-n4-scalar-detector",
+        "np-index-n4-total-descendants",
+        "orthogonal-first-family",
+        "su3-f1-formal-tower",
+        "su3-b1-formal-tower",
+        "np-index-n4-konishi",
+        "np-index-n4-fourier-positivity",
+        "np-index-n4-nonscalar-image"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Exact vacuum detector for the pure-scalar SU(N) sector",
+          "claim_ids": [
+            "np-index-n4-scalar-detector"
+          ],
+          "description": "Characteristic-zero commuting-scalar invariant quotient is the reduced multisymmetric algebra with all three trace constraints. Nonzero vacuum values exclude exact-supercharge boundaries for the stated closed scalar representatives; the general fermion/derivative complex is excluded from that inference."
+        },
+        {
+          "location": "Proposition 22.1 and its separated-correlator calculation",
+          "claim_ids": [
+            "np-index-n4-total-descendants"
+          ],
+          "description": "All total holomorphic translations of degree-p single-scalar half-BPS primaries are harmonic and independent, with dimension (k+1)[t^p] product_{j=2}^N(1−t^j)^{-1}. The exact correlator derivative coefficient is 2^k(p+k−1)!/(p−1)!; derivatives distributed among factors outside this subspace and spinful primaries need separate tests."
+        },
+        {
+          "location": "Perturbative nature of the known cohomology pairings",
+          "claim_ids": [
+            "orthogonal-first-family",
+            "su3-f1-formal-tower",
+            "su3-b1-formal-tower"
+          ],
+          "description": "The SO(7)–USp(6) classical mismatch pairs at first perturbative quantum order, with the cited source-normalized detector ratio −4608κ_Q/384=−12κ_Q. The brane-fused SU(3) literature statement here is explicitly only through first quantum order; it is historical and does not supersede the separately recorded complete formal-tower results."
+        },
+        {
+          "location": "Nonzero instanton coefficient in a long multiplet",
+          "claim_ids": [
+            "np-index-n4-konishi"
+          ],
+          "description": "The Alday–Korchemsky source gives the full stated leading one-instanton/anti-instanton anomalous dimension, κ_N, SU(2) coefficient −9/5 and K^(8) profile, with K^(4)=0. Its sixteen-mode two-insertion saturation concerns Konishi, already a long multiplet."
+        },
+        {
+          "location": "Positivity constraint on leading Fourier sectors and closing open question",
+          "claim_ids": [
+            "np-index-n4-fourier-positivity",
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "Under a positive finite fixed-charge survivor block and zero neutral coefficient at the leading exponential order, positivity at every angle forces the linear Fourier matrix to vanish. A nonzero instanton supercharge coefficient can instead have a neutral positive quadratic Hamiltonian at doubled action. A fully perturbatively surviving nonscalar with computed nonzero microscopic instanton image remains open in this source."
+        }
+      ],
+      "scope_exclusions": [
+        {
+          "location": "Representation-theory, correlator and bundle-flatness literature discussion",
+          "reason": "Attributed established external background: absolutely protected scalar representations, the displayed long-multiplet recombination, specified protected correlators and local no-level-crossing hypothesis. These are not advertised as newly calculated repository sectors and do not replace the microscopic comparison."
+        },
+        {
+          "location": "Chain-level identity Q1²+{Q0,Q2}=0",
+          "reason": "General formal quantum-master-equation consistency input, not a separately calculated physical N=4 channel in this document."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "e4791451b3581f36042842be93a692fba2beb1b167ce437bc745a233436ec7be",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The massless secondary operator, heavy/light Euler current and formal torsion caveat concern the N=1 magnetic SQCD complex with fundamental matter and meson singlets; no undeformed N=4 result is asserted."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "e6f0e7649aa0d20557a3e2229e1ca53825d3dce0763b8c3f8e639f8a6aef68a8",
+      "classification": "in_scope",
+      "review_complete": true,
+      "claim_ids": [
+        "np-cartan-image-discriminant-theorem",
+        "su3-complete-second-source-zero",
+        "np-index-n4-nonscalar-image"
+      ],
+      "covered_assertions": [
+        {
+          "location": "Statement, Inputs, Page proof and Equivalent chain argument",
+          "claim_ids": [
+            "np-cartan-image-discriminant-theorem"
+          ],
+          "description": "Every actual higher-page image is Cartan-null; the pagewise Cartan kernel equals discriminant-power torsion under the complete stated multi-trace, scalar-discriminant and common marked-product hypotheses."
+        },
+        {
+          "location": "SU(3) j30 implication",
+          "claim_ids": [
+            "su3-complete-second-source-zero",
+            "np-cartan-image-discriminant-theorem"
+          ],
+          "description": "The historical theorem removes Cartan-visible components of the actual second residual but explicitly leaves the possible Cartan-null target for separate complete-sector certification. The later second-source-zero record must not be attributed to Cartan detection alone."
+        },
+        {
+          "location": "Nonperturbative scope",
+          "claim_ids": [
+            "np-index-n4-nonscalar-image"
+          ],
+          "description": "No instanton coefficient, exact physical ring or nonperturbative extension of the filtered-product assumptions is derived."
+        }
+      ],
+      "scope_exclusions": [],
+      "metadata_gaps": [],
+      "notes": "Full proof reviewed. This is an attributed formal theorem, not a new scientific acceptance or a computation using the historical restricted constructions."
+    },
+    {
+      "sha256": "ea8d88224d93bcdaf45aef2a87b5d45f1fe3f8c27d331cee2d68dcfb0cebb300",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The full SU(5) invariant quotient, all-loop scalar detector and conditional Kutasov trace relation concern the cubic-adjoint N=1 theory with four fundamental flavors. The general unitary N=1 superconformal scalar implication is background for that model, not an N=4 channel calculation."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "ed1df22dff03050aa0b1d40380789e7e64817bfb68063153651cbe07144342bc",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The claimed monopole removal occurs in the three-dimensional effective chiral ring of circle-compactified N=1 SQCD and its disorder sector. The source explicitly separates it from uncompactified four-dimensional polynomial-operator cohomology; it is not N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "ed8a14b8f53a11f343dc5836ce6226be3c0a6282d2ab4c516bb82d402446edec",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The common-root/coherence comparisons and C2/C4 secondary classes are in the pure N=1 b,c product complex. Their finite rational identities do not assert N=4 operator cohomology or a physical instanton measure."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "edce339f5975025b012b8990d06c77f5c881762ec4131497363777482a5ed4f7",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The universal Casimir bracket identity uses the pure N=1 gauge b,c differential and its source normalization. It supports that campaign’s leading modules and does not claim a distinct N=4 sector result."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "ee613043bf0da5153815208767138d29e817167ed341f89d3d33def161f81d8f",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Sections 1–5: general criterion",
+          "reason": "The derivative and terminal-count proof is a general formal N=1 holomorphic gauge/matter criterion; no concrete undeformed N=4 application is advertised."
+        },
+        {
+          "location": "SU(5) application and scope section",
+          "reason": "The scalar square belongs to the cubic-adjoint N=1 SU(5) matter theory. Its formal survival and explicit non-conclusion about ring injection remain other-theory results, not a physical N=4 instanton statement."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "ee801ca7ddfa749a2e552726a50c487ae522bd320b006b6b18c5f4d66bf69602",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The exact connection insertion and open full coefficient are for the pure N=1 SU(2) C2 secondary partner. The source explicitly cites the N=1 semichiral campaign; this is distinct from the N=4 SU(3) R-007 profile/flux zeros and the new USp(4) physical block."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "f2c3c3df3d79edf5c0b42f10235fe4c20a9ac166f10ddb282fa9c8432055ce5f",
+      "classification": "navigation",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire electronic-certificate appendix",
+          "reason": "Every listed C0,C2,C4,C6, M4, leading-module, period and higher-lift payload belongs to the pure N=1 b,c campaign. It provides provenance/navigation and no undeformed N=4 assertion."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "f3d8dd1c0ce0e63096eca3b6e13a0589a908a31f3648ac74311ed7a547b15cb7",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Entire document",
+          "reason": "The SU(3) C1 secondary partner, C1 squared, C3/C4 and k=6 lift are in the pure N=1 b,c complex. Their exact ranks, coefficients and loop equations must not be conflated with the N=4 SU(3) R-007/F1/B1 towers."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    },
+    {
+      "sha256": "ff3c1178e64ce98f7fa281e72cd28adf4d8a20606d9e16a50e7676b3fe9116e9",
+      "classification": "out_of_scope",
+      "review_complete": true,
+      "claim_ids": [],
+      "covered_assertions": [],
+      "scope_exclusions": [
+        {
+          "location": "Rank method and normalization discussion",
+          "reason": "General exact-rank methodology is background for the source pure N=1 complex; it supplies no concrete N=4 calculation here."
+        },
+        {
+          "location": "All tables, census rows and tower conjectures",
+          "reason": "The b,c-count sectors and C2j partner ratios belong to the pure N=1 SU(2)/SU(3)/SU(4) campaign. Its rational, modular, partial and conjectural statuses are not transferred to undeformed N=4."
+        }
+      ],
+      "metadata_gaps": [],
+      "notes": "Complete source text reviewed. This is an attributed semantic/status review, not a new scientific acceptance or proof replay."
+    }
+  ],
+  "additional_claims": [
+    {
+      "id": "np-so7-sp3-frame-bound",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": [
+        "SO(7)",
+        "Sp(3)=USp(6)"
+      ],
+      "title": "Historical zero dual-frame dimension lower bound through level 22",
+      "proposition": {
+        "key": "historical/dual-frame-bound/np-so7-sp3-frame-bound",
+        "value": {
+          "forced_lift_dimension_lower_bound": 0,
+          "every_advertised_charge": true,
+          "inclusive_level": 22
+        }
+      },
+      "charges": {
+        "quantified_domain": "Every charge sector advertised by the historical dual-frame comparison with level j <= 22",
+        "level_convention": "Repository physical level j=2*(theta1+theta2+theta3)+3*(n_plus+n_minus); all compatible native weights, lengths, spins and R charges in the historical stated domain.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/sources/claude/ledger.tex",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/sources/claude/ledger.tex",
+          "location": "Section 3, handle B; section 7 methods"
+        }
+      },
+      "source": {
+        "kind": "not_applicable",
+        "reason": "This is not a claim of a particular differential image."
+      },
+      "target": {
+        "kind": "not_applicable",
+        "reason": "This is not a claim of a particular differential image."
+      },
+      "order": "After the first perturbative differential, as explicitly stated in the historical row",
+      "direction": "not_applicable",
+      "field": "F_2147483647 (historical method section 7)",
+      "normalization": "A dimension-difference lower bound, invariant under nonzero rescaling of operators; no supercharge matrix coefficient is asserted.",
+      "scope": {
+        "description": "Attributed November 11 ledger comparison of two perturbative frames. Retain the row wording rather than interpreting its zero lower bound as an equality of exact physical cohomologies.",
+        "completeness": "Only the exact quantified domain, objects and hypotheses stated here.",
+        "physical_identification": "No new physical comparison is inferred by this semantic review."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/sources/claude/ledger.tex",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/sources/claude/ledger.tex",
+          "location": "Section 3, handle B; section 7 methods"
+        }
+      ],
+      "supersession_state": "historical",
+      "proof_status": "finite_field_campaign",
+      "supersedes": [],
+      "limitations": [
+        "A zero lower bound after d1 does not exclude later perturbative or instanton-only pairings.",
+        "No row-specific full charge census or rational replay payload is attached to this historical table."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "nonperturbative-lift/sources/claude/ledger.tex:section3-handleB"
+      ]
+    },
+    {
+      "id": "np-so9-sp4-frame-bound",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": [
+        "SO(9)",
+        "Sp(4)=USp(8)"
+      ],
+      "title": "Historical zero dual-frame dimension lower bound through level 19",
+      "proposition": {
+        "key": "historical/dual-frame-bound/np-so9-sp4-frame-bound",
+        "value": {
+          "forced_lift_dimension_lower_bound": 0,
+          "every_advertised_charge": true,
+          "inclusive_level": 19
+        }
+      },
+      "charges": {
+        "quantified_domain": "Every charge sector advertised by the historical dual-frame comparison with level j <= 19",
+        "level_convention": "Repository physical level j=2*(theta1+theta2+theta3)+3*(n_plus+n_minus); all compatible native weights, lengths, spins and R charges in the historical stated domain.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/sources/claude/ledger.tex",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/sources/claude/ledger.tex",
+          "location": "Section 3, handle B; section 7 methods"
+        }
+      },
+      "source": {
+        "kind": "not_applicable",
+        "reason": "This is not a claim of a particular differential image."
+      },
+      "target": {
+        "kind": "not_applicable",
+        "reason": "This is not a claim of a particular differential image."
+      },
+      "order": "Historical perturbative-frame comparison; the row does not separately identify its last page",
+      "direction": "not_applicable",
+      "field": "F_2147483647 (historical method section 7)",
+      "normalization": "A dimension-difference lower bound, invariant under nonzero rescaling of operators; no supercharge matrix coefficient is asserted.",
+      "scope": {
+        "description": "Attributed November 11 ledger comparison of two perturbative frames. Retain the row wording rather than interpreting its zero lower bound as an equality of exact physical cohomologies.",
+        "completeness": "Only the exact quantified domain, objects and hypotheses stated here.",
+        "physical_identification": "No new physical comparison is inferred by this semantic review."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/sources/claude/ledger.tex",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/sources/claude/ledger.tex",
+          "location": "Section 3, handle B; section 7 methods"
+        }
+      ],
+      "supersession_state": "historical",
+      "proof_status": "finite_field_campaign",
+      "supersedes": [],
+      "limitations": [
+        "A zero lower bound does not exclude instanton-only pairings in either frame.",
+        "No row-specific full charge census or rational replay payload is attached to this historical table.",
+        "The SO(9)/Sp(4) row does not state a separately completed all-order page; no such completion is inferred."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "nonperturbative-lift/sources/claude/ledger.tex:section3-handleB"
+      ]
+    },
+    {
+      "id": "np-su2-sampled-leibniz",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "SU(2)",
+      "title": "Historical sampled one- and two-loop formal product Leibniz checks",
+      "proposition": {
+        "key": "historical/formal-product/n4-su2-sampled-leibniz",
+        "value": {
+          "one_loop_pairs": 110,
+          "one_loop_input_jets_at_most": 2,
+          "one_loop_failures": 0,
+          "two_loop_pairs": 140,
+          "two_loop_failures": 0
+        }
+      },
+      "charges": {
+        "quantified_domain": "Only the random N=4 SU(2) word pairs on b,c,beta,gamma reported in section 14; no fixed-charge completeness claim.",
+        "one_loop_inputs": "110 pairs with jets at most two",
+        "two_loop_inputs": "140 pairs; no additional derivative bound is claimed by this row",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/sources/claude/ledger.tex",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/sources/claude/ledger.tex",
+          "location": "Section 14 checks table, explicit N=4 SU(2) rows"
+        }
+      },
+      "source": {
+        "kind": "not_applicable",
+        "reason": "This is not a claim of a particular differential image."
+      },
+      "target": {
+        "kind": "not_applicable",
+        "reason": "This is not a claim of a particular differential image."
+      },
+      "order": [
+        1,
+        2
+      ],
+      "direction": "not_applicable",
+      "field": "F_2147483647",
+      "normalization": "The section-14 engine graph convention has (-2)^n times the product-forest sum; the checked coefficient is [hbar^n](Q(A star B)-(QA) star B-(-1)^|A| A star QB). No conversion to a physical gauge coupling is claimed.",
+      "scope": {
+        "description": "Finite-field sampled validation of the common formal differential/product implementation; not a theorem on all words, a complete charge sector or physical correlators.",
+        "completeness": "Only the exact quantified domain, objects and hypotheses stated here.",
+        "physical_identification": "No new physical comparison is inferred by this semantic review."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/sources/claude/ledger.tex",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/sources/claude/ledger.tex",
+          "location": "Section 14"
+        }
+      ],
+      "supersession_state": "historical",
+      "proof_status": "finite_field_campaign",
+      "supersedes": [],
+      "limitations": [
+        "The literal sampled word list and random seed are not attached to the historical table.",
+        "The zero failures establish only the reported checks and do not independently derive the all-loop product theorem."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "nonperturbative-lift/sources/claude/ledger.tex:section14-checks"
+      ]
+    },
+    {
+      "id": "np-su2-j24-formal-completion",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "SU(2)",
+      "title": "Exact rational finite completion and free formal line for the j24 threshold class",
+      "proposition": {
+        "key": "survival/su2-j24/formal-completion",
+        "value": {
+          "finite_completion_orders": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "coefficient_term_counts": [
+            117,
+            29799,
+            39651,
+            8271,
+            105
+          ],
+          "all_closure_equations": true,
+          "classical_dual_incoming_columns": 2808,
+          "classical_dual_pairing": "-30",
+          "formal_parameter_torsion": false
+        }
+      },
+      "charges": {
+        "physical_level": 24,
+        "twice_energy": 19,
+        "twice_R": [
+          3,
+          3,
+          3
+        ],
+        "twice_J_left": 5,
+        "twice_J_right": 0,
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "leading_native_weight": [
+          4,
+          4,
+          4,
+          0,
+          0
+        ],
+        "leading_letter_length": 7,
+        "coefficients": [
+          {
+            "order": 0,
+            "native_weight": [
+              4,
+              4,
+              4,
+              0,
+              0
+            ],
+            "letter_length": 7
+          },
+          {
+            "order": 1,
+            "native_weight": [
+              3,
+              3,
+              3,
+              1,
+              1
+            ],
+            "letter_length": 6
+          },
+          {
+            "order": 2,
+            "native_weight": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "letter_length": 5
+          },
+          {
+            "order": 3,
+            "native_weight": [
+              1,
+              1,
+              1,
+              3,
+              3
+            ],
+            "letter_length": 4
+          },
+          {
+            "order": 4,
+            "native_weight": [
+              0,
+              0,
+              0,
+              4,
+              4
+            ],
+            "letter_length": 3
+          }
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "sha256": "daa1aa82c077784f7aafb084909bc844ea5a1f6207aa7e601c584a3e049eab61",
+          "members": [
+            "j24-phase7-public-full-chain/README.md",
+            "j24-phase7-public-full-chain/completion-reduced.json.gz",
+            "j24-phase7-public-full-chain/o0_classical_certificate.json"
+          ]
+        }
+      },
+      "source": {
+        "physical_level": 24,
+        "twice_energy": 19,
+        "twice_R": [
+          3,
+          3,
+          3
+        ],
+        "twice_J_left": 5,
+        "twice_J_right": 0,
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "leading_native_weight": [
+          4,
+          4,
+          4,
+          0,
+          0
+        ],
+        "leading_letter_length": 7,
+        "coefficients": [
+          {
+            "order": 0,
+            "native_weight": [
+              4,
+              4,
+              4,
+              0,
+              0
+            ],
+            "letter_length": 7
+          },
+          {
+            "order": 1,
+            "native_weight": [
+              3,
+              3,
+              3,
+              1,
+              1
+            ],
+            "letter_length": 6
+          },
+          {
+            "order": 2,
+            "native_weight": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "letter_length": 5
+          },
+          {
+            "order": 3,
+            "native_weight": [
+              1,
+              1,
+              1,
+              3,
+              3
+            ],
+            "letter_length": 4
+          },
+          {
+            "order": 4,
+            "native_weight": [
+              0,
+              0,
+              0,
+              4,
+              4
+            ],
+            "letter_length": 3
+          }
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "sha256": "daa1aa82c077784f7aafb084909bc844ea5a1f6207aa7e601c584a3e049eab61",
+          "members": [
+            "j24-phase7-public-full-chain/README.md",
+            "j24-phase7-public-full-chain/completion-reduced.json.gz",
+            "j24-phase7-public-full-chain/o0_classical_certificate.json"
+          ]
+        }
+      },
+      "target": {
+        "physical_level": 24,
+        "twice_energy": 19,
+        "twice_R": [
+          3,
+          3,
+          3
+        ],
+        "twice_J_left": 5,
+        "twice_J_right": 0,
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "leading_native_weight": [
+          4,
+          4,
+          4,
+          0,
+          0
+        ],
+        "leading_letter_length": 7,
+        "coefficients": [
+          {
+            "order": 0,
+            "native_weight": [
+              4,
+              4,
+              4,
+              0,
+              0
+            ],
+            "letter_length": 7
+          },
+          {
+            "order": 1,
+            "native_weight": [
+              3,
+              3,
+              3,
+              1,
+              1
+            ],
+            "letter_length": 6
+          },
+          {
+            "order": 2,
+            "native_weight": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "letter_length": 5
+          },
+          {
+            "order": 3,
+            "native_weight": [
+              1,
+              1,
+              1,
+              3,
+              3
+            ],
+            "letter_length": 4
+          },
+          {
+            "order": 4,
+            "native_weight": [
+              0,
+              0,
+              0,
+              4,
+              4
+            ],
+            "letter_length": 3
+          }
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "sha256": "daa1aa82c077784f7aafb084909bc844ea5a1f6207aa7e601c584a3e049eab61",
+          "members": [
+            "j24-phase7-public-full-chain/README.md",
+            "j24-phase7-public-full-chain/completion-reduced.json.gz",
+            "j24-phase7-public-full-chain/o0_classical_certificate.json"
+          ]
+        }
+      },
+      "order": "all_perturbative_orders",
+      "direction": "both",
+      "field": "Q[[u]]",
+      "normalization": {
+        "formal_differential": "Q_LLC/i=sum u^n Q_n,reduced; u=i*hbar/(64*pi^2)",
+        "letters": "Divided-power Taylor jets, epsilon colour constants, no undifferentiated empty-theta ghost.",
+        "trace": "Tr(T_a T_b)=delta_ab/2; Tr(T_a T_b T_c)=i epsilon_abc/4.",
+        "leading_operator": "Supplement O0=(i/16)*reduced O0; the archived reduced representative pairs to -30."
+      },
+      "scope": {
+        "description": "The particular pinned threshold representative in the relative holomorphic Taylor complex over Q[[u]], with no total-derivative quotient and only the equations already encoded by its letters. Conditional on the cited common formal differential and finite grading.",
+        "completeness": "Only the exact quantified domain, objects and hypotheses stated here.",
+        "physical_identification": "No new physical comparison is inferred by this semantic review."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-formal-completion/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-formal-completion/README.md"
+        },
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "sha256": "daa1aa82c077784f7aafb084909bc844ea5a1f6207aa7e601c584a3e049eab61",
+          "members": [
+            "j24-phase7-public-full-chain/README.md",
+            "j24-phase7-public-full-chain/completion-reduced.json.gz",
+            "j24-phase7-public-full-chain/o0_classical_certificate.json"
+          ]
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "published_certificate",
+      "supersedes": [],
+      "limitations": [
+        "The archive replays the resulting identities, not the original solves or homogeneous branch selection.",
+        "Only the Q3 inputs used by this vector are implemented; arbitrary-jet Q3 and arbitrary Q4 are not supplied.",
+        "Physical radial comparison and every instanton supercurrent matrix element remain outside the theorem."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "nonperturbative-lift/contributions/dot-j24-formal-completion/README.md",
+        "discussion:N4-NP-DOT-001"
+      ]
+    },
+    {
+      "id": "np-su2-j24-incoming-zero",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "SU(2)",
+      "title": "Complete j24 incoming formal cohomology modulo completed translations is zero",
+      "proposition": {
+        "key": "survival/su2-j24/incoming-translation-quotient",
+        "value": {
+          "complete_classical_chain_dimensions": [
+            4,
+            55,
+            86,
+            13,
+            0
+          ],
+          "classical_cohomology_upper_bounds": [
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "completed_independent_descendants": 3,
+          "complete_k2_incoming_rank": 7,
+          "augmented_original_minor_size": 10,
+          "augmented_minor_mod_2147483647": 715827797,
+          "quotient_dimension": 0
+        }
+      },
+      "charges": {
+        "physical_level": 24,
+        "twice_energy": 18,
+        "twice_R": [
+          2,
+          2,
+          2
+        ],
+        "twice_J_left": 6,
+        "twice_J_right": 0,
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "complete_native_lanes": [
+          {
+            "k": 0,
+            "native_weight": [
+              4,
+              4,
+              4,
+              0,
+              0
+            ],
+            "letter_length": 6
+          },
+          {
+            "k": 1,
+            "native_weight": [
+              3,
+              3,
+              3,
+              1,
+              1
+            ],
+            "letter_length": 5
+          },
+          {
+            "k": 2,
+            "native_weight": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "letter_length": 4
+          },
+          {
+            "k": 3,
+            "native_weight": [
+              1,
+              1,
+              1,
+              3,
+              3
+            ],
+            "letter_length": 3
+          },
+          {
+            "k": 4,
+            "native_weight": [
+              0,
+              0,
+              0,
+              4,
+              4
+            ],
+            "letter_length": 2
+          }
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-incoming-zero/incoming-zero-public.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-incoming-zero/incoming-zero-public.zip",
+          "sha256": "60afb546e71b6e35f8943bcdc20fb9bb92dbc34486eec60259311116fcb1b27b",
+          "members": [
+            "PROVENANCE.md",
+            "TRANSLATION_SCOPE.md",
+            "characters.py",
+            "RESULT.json",
+            "descendant2.json.gz",
+            "descendant3.json.gz",
+            "descendant8.json.gz"
+          ]
+        }
+      },
+      "source": {
+        "physical_level": 24,
+        "twice_energy": 18,
+        "twice_R": [
+          2,
+          2,
+          2
+        ],
+        "twice_J_left": 6,
+        "twice_J_right": 0,
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "complete_native_lanes": [
+          {
+            "k": 0,
+            "native_weight": [
+              4,
+              4,
+              4,
+              0,
+              0
+            ],
+            "letter_length": 6
+          },
+          {
+            "k": 1,
+            "native_weight": [
+              3,
+              3,
+              3,
+              1,
+              1
+            ],
+            "letter_length": 5
+          },
+          {
+            "k": 2,
+            "native_weight": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "letter_length": 4
+          },
+          {
+            "k": 3,
+            "native_weight": [
+              1,
+              1,
+              1,
+              3,
+              3
+            ],
+            "letter_length": 3
+          },
+          {
+            "k": 4,
+            "native_weight": [
+              0,
+              0,
+              0,
+              4,
+              4
+            ],
+            "letter_length": 2
+          }
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-incoming-zero/incoming-zero-public.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-incoming-zero/incoming-zero-public.zip",
+          "sha256": "60afb546e71b6e35f8943bcdc20fb9bb92dbc34486eec60259311116fcb1b27b",
+          "members": [
+            "PROVENANCE.md",
+            "TRANSLATION_SCOPE.md",
+            "characters.py",
+            "RESULT.json",
+            "descendant2.json.gz",
+            "descendant3.json.gz",
+            "descendant8.json.gz"
+          ]
+        }
+      },
+      "target": {
+        "physical_level": 24,
+        "twice_energy": 19,
+        "twice_R": [
+          3,
+          3,
+          3
+        ],
+        "twice_J_left": 5,
+        "twice_J_right": 0,
+        "coordinate_order": [
+          "theta1",
+          "theta2",
+          "theta3",
+          "n_plus",
+          "n_minus"
+        ],
+        "leading_native_weight": [
+          4,
+          4,
+          4,
+          0,
+          0
+        ],
+        "leading_letter_length": 7,
+        "coefficients": [
+          {
+            "order": 0,
+            "native_weight": [
+              4,
+              4,
+              4,
+              0,
+              0
+            ],
+            "letter_length": 7
+          },
+          {
+            "order": 1,
+            "native_weight": [
+              3,
+              3,
+              3,
+              1,
+              1
+            ],
+            "letter_length": 6
+          },
+          {
+            "order": 2,
+            "native_weight": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "letter_length": 5
+          },
+          {
+            "order": 3,
+            "native_weight": [
+              1,
+              1,
+              1,
+              3,
+              3
+            ],
+            "letter_length": 4
+          },
+          {
+            "order": 4,
+            "native_weight": [
+              0,
+              0,
+              0,
+              4,
+              4
+            ],
+            "letter_length": 3
+          }
+        ],
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-formal-completion/j24-phase7-public-full-chain.zip",
+          "sha256": "daa1aa82c077784f7aafb084909bc844ea5a1f6207aa7e601c584a3e049eab61",
+          "members": [
+            "j24-phase7-public-full-chain/README.md",
+            "j24-phase7-public-full-chain/completion-reduced.json.gz",
+            "j24-phase7-public-full-chain/o0_classical_certificate.json"
+          ]
+        }
+      },
+      "order": "all_perturbative_orders",
+      "direction": "incoming",
+      "field": "Q[[u]] and Q((u))",
+      "normalization": {
+        "formal_model": "Same divided-power relative Taylor convention as the j24 completion; rational epsilon/2 implementation.",
+        "translation": "D_plus multiplies by a+1 and raises a; D_minus multiplies by b+1 and raises b. The scalar combination is D_minus X-D_plus F X.",
+        "coefficient_ring": "Q[[u]], and separately its localization at u.",
+        "native_conventions": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-incoming-zero/incoming-zero-public.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-incoming-zero/incoming-zero-public.zip",
+          "sha256": "60afb546e71b6e35f8943bcdc20fb9bb92dbc34486eec60259311116fcb1b27b",
+          "members": [
+            "PROVENANCE.md",
+            "TRANSLATION_SCOPE.md",
+            "characters.py",
+            "RESULT.json",
+            "descendant2.json.gz",
+            "descendant3.json.gz",
+            "descendant8.json.gz"
+          ]
+        }
+      },
+      "scope": {
+        "description": "The entire five-lane incoming fixed-charge formal complex; quotient only by the three explicitly completed closed-current translations, with all source images retained. Finite-module Nakayama argument allows possible u-torsion and assumes the published common differential/filtration theorem.",
+        "completeness": "Only the exact quantified domain, objects and hypotheses stated here.",
+        "physical_identification": "No new physical comparison is inferred by this semantic review."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-incoming-zero/README.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-incoming-zero/README.md"
+        },
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-j24-incoming-zero/incoming-zero-public.zip",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-j24-incoming-zero/incoming-zero-public.zip",
+          "sha256": "60afb546e71b6e35f8943bcdc20fb9bb92dbc34486eec60259311116fcb1b27b",
+          "members": [
+            "PROVENANCE.md",
+            "TRANSLATION_SCOPE.md",
+            "characters.py",
+            "RESULT.json",
+            "descendant2.json.gz",
+            "descendant3.json.gz",
+            "descendant8.json.gz"
+          ]
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "published_certificate",
+      "supersedes": [],
+      "limitations": [
+        "This is a formal translation quotient, not a physical no-recombination theorem.",
+        "No outgoing quotient, physical primary multiplicity, full twist comparison, positive radial form or instanton integral is certified.",
+        "Translations were checked on the actual completed current series; subtracting classical descendants alone would be insufficient."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "nonperturbative-lift/contributions/dot-j24-incoming-zero/README.md"
+      ]
+    },
+    {
+      "id": "np-cartan-image-discriminant-theorem",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "Every gauge theory/group in the stated discriminant-lemma multi-trace domain; explicitly SU(3)",
+      "title": "All formal page images are Cartan-null and the Cartan kernel is discriminant-power torsion",
+      "proposition": {
+        "key": "formal/cartans/all-page-image-discriminant",
+        "value": {
+          "all_page_images_have_zero_Cartan_restriction": true,
+          "Cartan_kernel_equals_discriminant_power_torsion": true,
+          "actual_partial_lift_residual_Cartan_restriction": 0
+        }
+      },
+      "charges": {
+        "quantified_domain": "Every page r>=1 and every cohomology class of the common formal multi-trace Taylor complex covered by the classical discriminant lemma; in particular all gauge-invariant polynomial SU(3) local jets.",
+        "all_charges": "All compatible finite native charge blocks in that stated domain, rather than a selected residual alone.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-cartan-image/PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-cartan-image/PROOF.md"
+        }
+      },
+      "source": {
+        "quantified_domain": "Every page r>=1 and every cohomology class of the common formal multi-trace Taylor complex covered by the classical discriminant lemma; in particular all gauge-invariant polynomial SU(3) local jets.",
+        "all_charges": "All compatible finite native charge blocks in that stated domain, rather than a selected residual alone.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-cartan-image/PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-cartan-image/PROOF.md"
+        }
+      },
+      "target": {
+        "quantified_domain": "Classical Cartan super-polynomial algebra and its Weyl invariants in the same charge convention"
+      },
+      "order": "every perturbative spectral-sequence page",
+      "direction": "outgoing",
+      "field": "Characteristic zero; formal normalized holomorphic coefficients",
+      "normalization": "Use one common normalized Q(u)=Q0+uQ1+... and its binary marked product. The discriminant is the defining characteristic-polynomial discriminant of one fixed-flavour scalar. No physical coupling coefficient is asserted.",
+      "scope": {
+        "description": "Assume classical Cartan is an algebra map; its scalar discriminant is a non-zero-divisor; the stated classical discriminant lemma supplies a multigraviton multiple of every cycle; every such multigraviton and the discriminant have closed marked-product lifts; and induced page differentials are product derivations. The argument is pagewise and does not assume spectral-sequence convergence.",
+        "completeness": "Only the exact quantified domain, objects and hypotheses stated here.",
+        "physical_identification": "No new physical comparison is inferred by this semantic review."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-cartan-image/PROOF.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-cartan-image/PROOF.md"
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "published_proof",
+      "supersedes": [],
+      "limitations": [
+        "The theorem concerns actual corrected higher residuals, not an uncorrected bare Q_r applied to a seed.",
+        "Vanishing Cartan restriction does not eliminate a surviving Cartan-null target; that sector still requires a complete separate argument.",
+        "No nonperturbative filtered product, exact physical ring, instanton differential or finite-coupling anomalous dimension is supplied."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "nonperturbative-lift/contributions/dot-cartan-image/PROOF.md"
+      ]
+    },
+    {
+      "id": "np-neutral-cluster-trace-criterion",
+      "theory": "undeformed four-dimensional N=4 SYM",
+      "group": "Any unitary undeformed-N4 theory satisfying the stated matching and analytic hypotheses",
+      "title": "Conditional two-orientation neutral-gap trace criterion",
+      "proposition": {
+        "key": "physical/conditional/neutral-cluster-trace",
+        "value": {
+          "leading_energy_order": "exp(-16*pi^2/g^2)",
+          "neutral_coefficient": "{A,A^dagger}+{B,B^dagger}",
+          "trace_identity": "Tr(neutral coefficient)=2*||A||_HS^2+2*||B||_HS^2",
+          "positive_neutral_trace_equivalent_to": "A or B nonzero under every stated hypothesis"
+        }
+      },
+      "charges": {
+        "quantified_domain": "The full finite matched near-BPS radial window with an isolated completed perturbative harmonic cluster, containing every source and target required for the trace converse.",
+        "all_charges": "Whatever complete finite charge window satisfies the explicit matching/analytic assumptions; no particular SU(3) matrix element is computed.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md"
+        }
+      },
+      "source": {
+        "quantified_domain": "The full finite matched near-BPS radial window with an isolated completed perturbative harmonic cluster, containing every source and target required for the trace converse.",
+        "all_charges": "Whatever complete finite charge window satisfies the explicit matching/analytic assumptions; no particular SU(3) matrix element is computed.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md"
+        }
+      },
+      "target": {
+        "quantified_domain": "The full finite matched near-BPS radial window with an isolated completed perturbative harmonic cluster, containing every source and target required for the trace converse.",
+        "all_charges": "Whatever complete finite charge window satisfies the explicit matching/analytic assumptions; no particular SU(3) matrix element is computed.",
+        "native_input_reference": {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md"
+        }
+      },
+      "order": "First instanton/anti-instanton supercharge order and second exponential energy order",
+      "direction": "both",
+      "field": "Complex finite-dimensional Hilbert spaces; positive real weak-coupling weight; real theta",
+      "normalization": "H={Q,Q^dagger}; t=exp(-8*pi^2/g^2). A and B are the two first-orientation maps on the matched perturbative harmonic cluster with its positive radial metric. Any conversion from H to a physical dimension gap is a fixed separately matched normalization.",
+      "scope": {
+        "description": "Historical conditional finite-dimensional theorem: nilpotent physical Q; positive radial form identified isometrically in a theta-independent perturbative frame; Q=Qp+t(e^(i theta)Qplus+e^(-i theta)Qminus)+O(t^2); no other saddle/neutral Q term at that action; an isolated perturbative cluster; controlled operator-norm expansion and resolvent losses; theta-uniform control for angular averages. The source transports the true small cluster before taking its full trace.",
+        "completeness": "Only the exact quantified domain, objects and hypotheses stated here.",
+        "physical_identification": "No new physical comparison is inferred by this semantic review."
+      },
+      "certificate": [
+        {
+          "kind": "git",
+          "commit": "19cd8718b752b04104d6ff0becee42d580b27ca3",
+          "path": "nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md",
+          "url": "https://github.com/lbotao399-stack/quantum-lifts-results/blob/19cd8718b752b04104d6ff0becee42d580b27ca3/nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md"
+        }
+      ],
+      "supersession_state": "current",
+      "proof_status": "conditional_physical",
+      "supersedes": [],
+      "limitations": [
+        "This records the source conditional argument only; no projection or spectrum computation was performed in this review.",
+        "A raw compression of the Hamiltonian or raw two-point logarithm is not the transported small-cluster gap; the source gives a two-by-two counterexample.",
+        "The note supplies neither a nonzero SU(3) instanton entry nor a computed neutral gap coefficient, and does not establish its physical matching assumptions."
+      ],
+      "unresolved_metadata": [],
+      "advertisements": [
+        "nonperturbative-lift/contributions/dot-r007-t2-primary/NEUTRAL_TEST.md"
+      ]
+    }
+  ]
+}
